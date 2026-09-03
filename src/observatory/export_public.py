@@ -42,10 +42,19 @@ def export_public(database_path: Path, output_path: Path, generated_at: str) -> 
         }
         documents, document_source_ids = _export_documents(connection, published["documents"])
         events, event_source_ids = _export_events(connection, published["events"], published_ids)
-        relationships, relationship_source_ids = _export_relationships(
-            published["relationships"], published_ids
+        exported_ids = {
+            "policy": published_ids["policy"],
+            "document": {document["id"] for document in documents},
+            "event": {event["id"] for event in events},
+            "concept": published_ids["concept"],
+            "institution": published_ids["institution"],
+            "source": published_ids["source"],
+        }
+        relationships, source_ids = _export_relationships(
+            published["relationships"],
+            exported_ids,
+            document_source_ids | event_source_ids,
         )
-        source_ids = document_source_ids | event_source_ids | relationship_source_ids
         sources = [
             row for row in published["sources"] if row["id"] in source_ids
         ]
@@ -142,7 +151,7 @@ def _corpus_assessment(
     connection: sqlite3.Connection, document_id: str
 ) -> dict[str, Any] | None:
     row = connection.execute(
-        "SELECT corpus_tier, policy_stage, inclusion_rationale, researcher_notes, "
+        "SELECT document_id, corpus_tier, policy_stage, inclusion_rationale, researcher_notes, "
         "review_status, reviewed_by, reviewed_at "
         "FROM corpus_assessments WHERE document_id = ?",
         (document_id,),
@@ -169,62 +178,48 @@ def _export_events(
 
 
 def _export_relationships(
-    relationships: list[dict[str, Any]], published_ids: dict[str, set[str]]
+    relationships: list[dict[str, Any]],
+    exported_ids: dict[str, set[str]],
+    base_source_ids: set[str],
 ) -> tuple[list[dict[str, Any]], set[str]]:
-    exported = [
-        relationship
-        for relationship in relationships
-        if _relationship_dependencies_are_published(relationship, published_ids)
-    ]
-    exported = _remove_relationships_with_hidden_relationship_endpoints(exported)
-    source_ids: set[str] = set()
-    for relationship in exported:
+    exported = relationships
+    while True:
+        source_ids = _relationship_source_ids(base_source_ids, exported)
+        visible_ids = {
+            **exported_ids,
+            "source": source_ids & exported_ids["source"],
+            "relationship": {relationship["id"] for relationship in exported},
+        }
+        filtered = [
+            relationship
+            for relationship in exported
+            if _relationship_dependencies_are_exported(relationship, visible_ids)
+        ]
+        if len(filtered) == len(exported):
+            return filtered, visible_ids["source"]
+        exported = filtered
+
+
+def _relationship_source_ids(
+    base_source_ids: set[str], relationships: list[dict[str, Any]]
+) -> set[str]:
+    source_ids = set(base_source_ids)
+    for relationship in relationships:
         evidence_source_id = relationship["evidence_source_id"]
         if evidence_source_id is not None:
             source_ids.add(evidence_source_id)
         for side in ("source", "target"):
             if relationship[f"{side}_entity_type"] == "source":
                 source_ids.add(relationship[f"{side}_entity_id"])
-    return exported, source_ids
+    return source_ids
 
 
-def _relationship_dependencies_are_published(
-    relationship: dict[str, Any], published_ids: dict[str, set[str]]
+def _relationship_dependencies_are_exported(
+    relationship: dict[str, Any], exported_ids: dict[str, set[str]]
 ) -> bool:
     evidence_source_id = relationship["evidence_source_id"]
-    return (
-        _endpoint_is_published(relationship, "source", published_ids)
-        and _endpoint_is_published(relationship, "target", published_ids)
-        and (
-            evidence_source_id is None
-            or evidence_source_id in published_ids["source"]
-        )
+    return evidence_source_id in exported_ids["source"] and all(
+        relationship[f"{side}_entity_id"]
+        in exported_ids.get(relationship[f"{side}_entity_type"], set())
+        for side in ("source", "target")
     )
-
-
-def _remove_relationships_with_hidden_relationship_endpoints(
-    relationships: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """Keep relationship endpoints closed over records that can be exported."""
-    exported = relationships
-    while True:
-        visible_ids = {relationship["id"] for relationship in exported}
-        filtered = [
-            relationship
-            for relationship in exported
-            if all(
-                relationship[f"{side}_entity_type"] != "relationship"
-                or relationship[f"{side}_entity_id"] in visible_ids
-                for side in ("source", "target")
-            )
-        ]
-        if len(filtered) == len(exported):
-            return filtered
-        exported = filtered
-
-
-def _endpoint_is_published(
-    relationship: dict[str, Any], side: str, published_ids: dict[str, set[str]]
-) -> bool:
-    entity_type = relationship[f"{side}_entity_type"]
-    return relationship[f"{side}_entity_id"] in published_ids.get(entity_type, set())

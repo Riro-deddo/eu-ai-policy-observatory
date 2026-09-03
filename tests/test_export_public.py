@@ -95,6 +95,24 @@ def built_mixed_status_database(tmp_path):
                 "example-source",
                 "published",
             ),
+            _relationship(
+                "relationship-without-evidence",
+                "document",
+                "example-document",
+                "policy",
+                "example-policy",
+                None,
+                "published",
+            ),
+            _relationship(
+                "relationship-to-hidden-event",
+                "document",
+                "example-document",
+                "event",
+                "event-with-draft-document",
+                "example-source",
+                "published",
+            ),
         ]
     )
 
@@ -154,6 +172,7 @@ def test_export_filters_unpublished_dependencies_and_embeds_document_page_data(
         }
     ]
     assert document["corpus_assessment"] == {
+        "document_id": "example-document",
         "corpus_tier": "core",
         "policy_stage": "proposal",
         "inclusion_rationale": "Directly relevant to the example policy.",
@@ -166,6 +185,47 @@ def test_export_filters_unpublished_dependencies_and_embeds_document_page_data(
     assert [item["id"] for item in payload["relationships"]] == ["published-relationship"]
     assert [item["id"] for item in payload["events"]] == ["published-event"]
     assert [item["id"] for item in payload["sources"]] == ["example-source"]
+
+
+def test_export_requires_a_published_evidence_source_for_every_relationship(
+    built_mixed_status_database, tmp_path
+):
+    """Relationships without evidence would be untraceable public claims."""
+    output = tmp_path / "public-data.json"
+
+    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    assert "relationship-without-evidence" not in {
+        item["id"] for item in payload["relationships"]
+    }
+
+
+def test_export_excludes_relationships_targeting_filtered_events(
+    built_mixed_status_database, tmp_path
+):
+    """A relationship cannot point at an event omitted for a draft dependency."""
+    output = tmp_path / "public-data.json"
+
+    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    assert "relationship-to-hidden-event" not in {
+        item["id"] for item in payload["relationships"]
+    }
+
+
+def test_export_embeds_the_document_id_in_each_corpus_assessment(
+    built_mixed_status_database, tmp_path
+):
+    """The static-site assessment contract needs its owning document ID."""
+    output = tmp_path / "public-data.json"
+
+    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    document = next(item for item in payload["documents"] if item["id"] == "example-document")
+    assert document["corpus_assessment"]["document_id"] == "example-document"
 
 
 def test_export_is_stable_and_uses_the_caller_timestamp(built_mixed_status_database, tmp_path):
