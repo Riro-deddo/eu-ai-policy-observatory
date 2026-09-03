@@ -13,7 +13,7 @@
   "celex": "32024R1689",
   "eli": "https://data.europa.eu/eli/reg/2024/1689/oj",
   "language": "en",
-  "official_summary": "Regulation laying down harmonised rules on artificial intelligence.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "european-parliament", "role": "adopter"}, {"institution_id": "council-of-the-european-union", "role": "adopter"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"],

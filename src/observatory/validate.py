@@ -2,8 +2,10 @@
 
 from collections import defaultdict
 from datetime import datetime
+import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
+import re
 from typing import Iterable, Mapping
 from urllib.parse import urlparse
 
@@ -55,6 +57,10 @@ def validate_records(
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     vocabulary = json.loads(vocabulary_path.read_text(encoding="utf-8"))
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    entity_validators = {
+        entity_type: _entity_validator(schema, entity_type)
+        for entity_type in ENTITY_DIRECTORY_BY_TYPE
+    }
     loaded_by_directory = load_records(data_root)
     loaded = [record for records in loaded_by_directory.values() for record in records]
     issues: list[ValidationIssue] = []
@@ -73,18 +79,23 @@ def validate_records(
             issues.append(_issue("schema", path, "$", "A record must be a JSON object."))
             continue
 
-        for error in validator.iter_errors(record.data):
+        entity_type = record.data.get("entity_type")
+        schema_validator = (
+            entity_validators.get(entity_type, validator)
+            if isinstance(entity_type, str)
+            else validator
+        )
+        for error in _leaf_schema_errors(schema_validator.iter_errors(record.data)):
             issues.append(
                 _issue(
                     "schema",
                     path,
-                    _error_field(error),
-                    error.message,
+                    _schema_error_field(error),
+                    _schema_error_message(error),
                 )
             )
 
         _validate_vocabulary(record, path, vocabulary, issues)
-        entity_type = record.data.get("entity_type")
         identifier = record.data.get("id")
         if isinstance(entity_type, str) and isinstance(identifier, str):
             records_by_type[entity_type][identifier].append(record)
@@ -95,6 +106,7 @@ def validate_records(
     _validate_duplicate_ids(records_by_id, data_root, issues)
     _validate_duplicate_legal_identifiers(records_by_type, data_root, issues)
     _validate_duplicate_slugs(records_by_type, data_root, issues)
+    _validate_snapshots(records_by_type, data_root, issues)
 
     for record in loaded:
         if record.syntax_error is not None or not isinstance(record.data, Mapping):
@@ -129,6 +141,63 @@ def _relative_path(path: Path, data_root: Path) -> str:
 def _error_field(error: object) -> str:
     absolute_path = getattr(error, "absolute_path", ())
     return ".".join(str(part) for part in absolute_path) or "$"
+
+
+def _entity_validator(schema: Mapping[str, object], entity_type: str) -> Draft202012Validator:
+    """Build a validator for one record kind, avoiding root oneOf diagnostics."""
+    entity_schema = {
+        "$defs": schema["$defs"],
+        "$ref": f"#/$defs/{entity_type}",
+        "unevaluatedProperties": False,
+    }
+    return Draft202012Validator(entity_schema, format_checker=FormatChecker())
+
+
+def _leaf_schema_errors(errors: Iterable[object]) -> Iterable[object]:
+    """Yield actionable leaf errors rather than noisy composition wrappers."""
+    for error in errors:
+        contexts = getattr(error, "context", ())
+        if contexts and getattr(error, "validator", None) in {"oneOf", "anyOf"}:
+            yield from _leaf_schema_errors(contexts)
+            continue
+        yield error
+
+
+_MISSING_PROPERTY = re.compile(r"'([^']+)' is a required property")
+
+
+def _schema_error_field(error: object) -> str:
+    """Return the failing leaf path, including a missing required property."""
+    field = _error_field(error)
+    if getattr(error, "validator", None) == "required":
+        match = _MISSING_PROPERTY.search(str(getattr(error, "message", "")))
+        if match:
+            missing = match.group(1)
+            return missing if field == "$" else f"{field}.{missing}"
+    return field
+
+
+def _schema_error_message(error: object) -> str:
+    """Describe schema failures without echoing canonical record values."""
+    validator = getattr(error, "validator", None)
+    if validator == "required":
+        return str(getattr(error, "message", "Required property is missing."))
+    if validator == "type":
+        expected = getattr(error, "validator_value", "the required type")
+        return f"Value must be of type {expected!r}."
+    if validator == "format":
+        return "Value does not match the required format."
+    if validator == "pattern":
+        return "Value does not match the required pattern."
+    if validator in {"enum", "const"}:
+        return "Value is not an allowed value."
+    if validator == "minLength":
+        return "Value is shorter than the required minimum length."
+    if validator == "uniqueItems":
+        return "Array items must be unique."
+    if validator == "unevaluatedProperties":
+        return "Record contains unsupported properties."
+    return "Value does not satisfy the schema."
 
 
 def _validate_vocabulary(
@@ -348,6 +417,122 @@ def _validate_duplicate_slugs(
                     f"Document slug {slug!r} occurs in more than one document.",
                 )
             )
+
+
+def _validate_snapshots(
+    records_by_type: Mapping[str, Mapping[str, list[LoadedRecord]]],
+    data_root: Path,
+    issues: list[ValidationIssue],
+) -> None:
+    """Enforce the database snapshot key and validate archived provenance files."""
+    repository_root = data_root.resolve().parent
+    by_identifier: dict[str, list[tuple[LoadedRecord, int]]] = defaultdict(list)
+    for records in records_by_type.get("document", {}).values():
+        for record in records:
+            snapshots = record.data.get("snapshots")
+            if not isinstance(snapshots, list):
+                continue
+            for index, snapshot in enumerate(snapshots):
+                if not isinstance(snapshot, Mapping):
+                    continue
+                identifier = snapshot.get("id")
+                if isinstance(identifier, str):
+                    by_identifier[identifier].append((record, index))
+                _validate_snapshot_archive(
+                    record, index, snapshot, repository_root, data_root, issues
+                )
+
+    for identifier, locations in by_identifier.items():
+        if len(locations) < 2:
+            continue
+        for record, index in locations:
+            issues.append(
+                _issue(
+                    "duplicate_snapshot_id",
+                    _relative_path(record.path, data_root),
+                    f"snapshots.{index}.id",
+                    f"Snapshot id {identifier!r} occurs more than once in canonical documents.",
+                )
+            )
+
+
+def _validate_snapshot_archive(
+    record: LoadedRecord,
+    index: int,
+    snapshot: Mapping[str, object],
+    repository_root: Path,
+    data_root: Path,
+    issues: list[ValidationIssue],
+) -> None:
+    archived_path = snapshot.get("archived_path")
+    if archived_path is None:
+        return
+    path = _relative_path(record.path, data_root)
+    archive_field = f"snapshots.{index}.archived_path"
+    hash_field = f"snapshots.{index}.content_hash"
+    if not isinstance(archived_path, str) or not _is_safe_archive_path(archived_path):
+        issues.append(
+            _issue(
+                "invalid_snapshot_archive",
+                path,
+                archive_field,
+                "archived_path must be a safe repository-relative file path.",
+            )
+        )
+        return
+
+    archive = (repository_root / PurePosixPath(archived_path)).resolve()
+    try:
+        archive.relative_to(repository_root)
+    except ValueError:
+        issues.append(
+            _issue(
+                "invalid_snapshot_archive",
+                path,
+                archive_field,
+                "archived_path must resolve within the repository root.",
+            )
+        )
+        return
+    if not archive.is_file():
+        issues.append(
+            _issue(
+                "invalid_snapshot_archive",
+                path,
+                archive_field,
+                "archived_path must identify an existing regular file.",
+            )
+        )
+        return
+
+    content_hash = snapshot.get("content_hash")
+    if isinstance(content_hash, str):
+        actual_hash = hashlib.sha256(archive.read_bytes()).hexdigest()
+        if actual_hash != content_hash:
+            issues.append(
+                _issue(
+                    "snapshot_hash_mismatch",
+                    path,
+                    hash_field,
+                    "content_hash does not match the archived file SHA-256.",
+                )
+            )
+
+
+def _is_safe_archive_path(value: str) -> bool:
+    """Accept only portable repository-relative POSIX paths."""
+    parsed = urlparse(value)
+    posix = PurePosixPath(value)
+    windows = PureWindowsPath(value)
+    return (
+        bool(value)
+        and "\\" not in value
+        and not parsed.scheme
+        and not posix.is_absolute()
+        and not windows.is_absolute()
+        and not windows.drive
+        and ".." not in posix.parts
+    )
 
 
 def _references(data: Mapping[str, object]) -> Iterable[tuple[str, str, str]]:

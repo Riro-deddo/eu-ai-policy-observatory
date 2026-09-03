@@ -13,7 +13,7 @@
   "celex": null,
   "eli": null,
   "language": "en",
-  "official_summary": "Guidelines presenting a framework for lawful, ethical and robust artificial intelligence.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "high-level-expert-group-on-ai", "role": "author"}, {"institution_id": "european-commission", "role": "publisher"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["trustworthiness", "accountability", "risk"],

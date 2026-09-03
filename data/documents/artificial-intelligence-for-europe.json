@@ -13,7 +13,7 @@
   "celex": "52018DC0237",
   "eli": null,
   "language": "en",
-  "official_summary": "Communication setting out a European initiative on artificial intelligence.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["risk", "trustworthiness"],

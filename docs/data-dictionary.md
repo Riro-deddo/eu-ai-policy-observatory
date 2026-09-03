@@ -36,7 +36,7 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | `celex` | string or `null` | No | Official | Unique when non-null; only where assigned. |
 | `eli` | string or `null` | No | Official | Unique when non-null; only where assigned. |
 | `language` | string | Yes | Official | Exactly `en`. |
-| `official_summary` | string or `null` | No | Official | Concise metadata; never full policy text. |
+| `official_summary` | string or `null` | No | Official | Only an EU-supplied abstract or summary specifically evidenced by a cited source; otherwise `null`. Never full policy text or a researcher paraphrase. |
 | `institution_roles` | array of `institution_role` | Yes | Official | Unique items; nested fields below. |
 | `policy_ids` | array of string IDs | Yes | Analytical | Unique existing policy IDs. |
 | `concept_ids` | array of string IDs | Yes | Analytical | Unique existing concept IDs. |
@@ -71,8 +71,8 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | `source_id` | string | Yes | Official | Existing source ID for the retrieved representation. |
 | `retrieved_at` | offset ISO-8601 timestamp | Yes | System | Actual retrieval time. |
 | `format` | string | Yes | Official | Retrieved representation format, for example `pdf`. |
-| `content_hash` | string | Yes | System | Hash calculated from actual retrieved bytes. |
-| `archived_path` | string or `null` | Yes | System | Repository path only for a deliberately committed archival copy. |
+| `content_hash` | string | Yes | System | Lowercase 64-hex SHA-256 calculated from actual retrieved bytes. |
+| `archived_path` | string or `null` | Yes | System | `null` unless a deliberately committed archive exists; when set, a safe repository-relative POSIX path to an existing regular file whose SHA-256 matches `content_hash`. |
 
 ## Event, Concept and Institution
 
@@ -93,7 +93,7 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | Institution `official_name` | string | Yes | Official | Non-empty official name. |
 | Institution `short_name` | string | Yes | Official | Non-empty official short name. |
 | Institution `institution_type` | string | Yes | Official | Non-empty official organisational type. |
-| Institution `official_url` | URI string | Yes | Official | Official location. |
+| Institution `official_url` | HTTP(S) URI string | Yes | Official | Official HTTP or HTTPS location. |
 
 ## Relationship and Source
 
@@ -109,7 +109,7 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | Relationship `evidence_source_id` | string or `null` | Yes | Official | Existing official source; analytical links require one. |
 | Relationship `verification_status` | string | Yes | System | `unverified`, `pending`, `verified`. |
 | Source `source_type` | string | Yes | System | `eur_lex`, `eli`, `commission_webpage`, `official_pdf`, `publications_office`. |
-| Source `url` | URI string | Yes | Official | Official source location. |
+| Source `url` | HTTP(S) URI string | Yes | Official | Official HTTP or HTTPS source location. |
 | Source `publisher` | string | Yes | Official | Non-empty issuing organisation. |
 | Source `retrieved_at` | offset ISO-8601 timestamp | Yes | System | Actual retrieval time. |
 | Source `last_verified_at` | offset ISO-8601 timestamp | Yes | System | Last metadata-verification time. |

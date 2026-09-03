@@ -13,7 +13,7 @@
   "celex": "52018DC0795",
   "eli": null,
   "language": "en",
-  "official_summary": "Commission communication presenting a coordinated plan on artificial intelligence.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["trustworthiness", "compliance"],

@@ -13,7 +13,7 @@
   "celex": "52020DC0065",
   "eli": null,
   "language": "en",
-  "official_summary": "White Paper presenting policy options for trustworthy and secure AI development in Europe.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["trustworthiness", "risk", "compliance"],

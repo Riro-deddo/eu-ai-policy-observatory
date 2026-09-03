@@ -9,14 +9,14 @@
   "short_title": "AI Liability Directive proposal",
   "document_type": "legislative_proposal",
   "publication_date": "2022-09-28",
-  "legal_status": "proposed",
+  "legal_status": "withdrawn",
   "celex": "52022PC0496",
   "eli": null,
   "language": "en",
-  "official_summary": "Commission proposal on adapting non-contractual civil liability rules to artificial intelligence.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "proposer"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["accountability", "risk", "compliance"],
-  "source_ids": ["ai-liability-proposal-eur-lex"],
+  "source_ids": ["ai-liability-proposal-eur-lex", "ai-liability-proposal-history-eur-lex"],
   "corpus_assessment": {"corpus_tier": "core", "policy_stage": "proposal", "inclusion_rationale": "Core liability proposal in the selected EU AI policy pathway.", "researcher_notes": "Analytical assessment; it is not represented as an adopted directive.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-03T00:00:00Z"}
 }

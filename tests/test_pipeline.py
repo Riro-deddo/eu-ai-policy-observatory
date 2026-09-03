@@ -9,6 +9,7 @@ import pytest
 
 import observatory.pipeline as pipeline
 from observatory.pipeline import run_pipeline
+from observatory.validate import RecordValidationError
 
 
 def test_repository_build_produces_database_and_public_export(tmp_path):
@@ -107,6 +108,27 @@ def test_malformed_timestamp_does_not_touch_outputs_and_cli_reports_it(tmp_path_
     assert "build_timestamp must be an ISO-8601 UTC timestamp" in result.stderr
     assert cli_database.read_bytes() == b"CLI database before malformed timestamp"
     assert cli_public_json.read_bytes() == b"CLI public JSON before malformed timestamp"
+
+
+def test_invalid_provenance_fails_before_existing_outputs_are_touched(tmp_path_factory):
+    tmp_path = tmp_path_factory.mktemp("provenance")
+    project_root = _isolated_project_root(tmp_path)
+    source_path = project_root / "data" / "sources" / "ai-act-eur-lex.json"
+    source = json.loads(source_path.read_text(encoding="utf-8"))
+    source["url"] = "file:///private/metadata.txt"
+    source_path.write_text(json.dumps(source), encoding="utf-8")
+    output_root = project_root / "generated"
+    output_root.mkdir()
+    database = output_root / pipeline.DATABASE_FILENAME
+    public_json = output_root / pipeline.PUBLIC_JSON_FILENAME
+    database.write_bytes(b"database before invalid provenance")
+    public_json.write_bytes(b"public JSON before invalid provenance")
+
+    with pytest.raises(RecordValidationError):
+        run_pipeline(project_root, "2026-09-03T00:00:00Z", output_root=output_root)
+
+    assert database.read_bytes() == b"database before invalid provenance"
+    assert public_json.read_bytes() == b"public JSON before invalid provenance"
 
 
 def _isolated_project_root(tmp_path):

@@ -13,7 +13,7 @@
   "celex": "52021PC0206",
   "eli": null,
   "language": "en",
-  "official_summary": "Commission proposal for harmonised rules on artificial intelligence.",
+  "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "proposer"}],
   "policy_ids": ["european-ai-policy-pathway"],
   "concept_ids": ["risk", "compliance", "trustworthiness", "accountability"],

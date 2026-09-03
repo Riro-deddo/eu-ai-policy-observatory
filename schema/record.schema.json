@@ -43,6 +43,11 @@
     "nullable_string": {
       "type": ["string", "null"]
     },
+    "http_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
     "id_list": {
       "type": "array",
       "items": { "$ref": "#/$defs/id" },
@@ -161,7 +166,7 @@
             "official_name": { "type": "string", "minLength": 1 },
             "short_name": { "type": "string", "minLength": 1 },
             "institution_type": { "type": "string", "minLength": 1 },
-            "official_url": { "type": "string", "format": "uri" }
+            "official_url": { "$ref": "#/$defs/http_url" }
           },
           "required": ["official_name", "short_name", "institution_type", "official_url"]
         }
@@ -196,7 +201,7 @@
           "properties": {
             "entity_type": { "const": "source" },
             "source_type": { "enum": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office"] },
-            "url": { "type": "string", "format": "uri" },
+            "url": { "$ref": "#/$defs/http_url" },
             "publisher": { "type": "string", "minLength": 1 },
             "retrieved_at": { "$ref": "#/$defs/timestamp" },
             "last_verified_at": { "$ref": "#/$defs/timestamp" },
@@ -236,7 +241,7 @@
         "source_id": { "$ref": "#/$defs/id" },
         "retrieved_at": { "$ref": "#/$defs/timestamp" },
         "format": { "type": "string", "minLength": 1 },
-        "content_hash": { "type": "string", "minLength": 1 },
+        "content_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
         "archived_path": { "$ref": "#/$defs/nullable_string" }
       },
       "required": ["id", "source_id", "retrieved_at", "format", "content_hash", "archived_path"],

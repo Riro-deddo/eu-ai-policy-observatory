@@ -1,0 +1,13 @@
+{
+  "id": "ai-liability-proposal-history-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=CELEX:52022PC0496",
+  "publisher": "European Commission / EUR-Lex",
+  "retrieved_at": "2026-09-03T00:00:00Z",
+  "last_verified_at": "2026-09-03T00:00:00Z",
+  "verification_note": "EUR-Lex procedure history for 2022/0303/COD records the Commission withdrawal on 6 October 2025 (main document CELEX 52025XC05423)."
+}
