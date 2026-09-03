@@ -70,3 +70,9 @@ test('Policy Map binds its rendered SVG dimensions to its computed layout', () =
   assert.match(policyMap, /aria-label=\{node\.label\}/);
   assert.match(policyMap, /<svg width=\{layout\.width\} height=\{layout\.height\}/);
 });
+
+test('policy-map relationships retain positioned geometry at their rendering boundary', () => {
+  assert.match(policyMap, /type PositionedMapNode = MapNode & PolicyMapGeometry;/);
+  assert.match(policyMap, /source: PositionedMapNode;/);
+  assert.match(policyMap, /target: PositionedMapNode;/);
+});

@@ -1,6 +1,7 @@
 ---
 import type { DocumentRecord, Policy, PublicData, Relationship, Source } from '../lib/types';
 import { layoutPolicyMapNodes, policyMapNodeWidth } from '../lib/policy-map';
+import type { PolicyMapGeometry } from '../lib/policy-map';
 
 interface Props {
   data: PublicData;
@@ -14,10 +15,12 @@ interface MapNode {
   stage: string;
 }
 
+type PositionedMapNode = MapNode & PolicyMapGeometry;
+
 interface MapRelationship {
   relationship: Relationship;
-  source: MapNode;
-  target: MapNode;
+  source: PositionedMapNode;
+  target: PositionedMapNode;
   evidence: Source | undefined;
 }
 
