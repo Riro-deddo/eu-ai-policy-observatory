@@ -1,0 +1,33 @@
+{
+  "id": "example-document",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "slug": "example-document",
+  "official_title": "Example AI Policy Document",
+  "short_title": "Example document",
+  "document_type": "communication",
+  "publication_date": "2026-09-03",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": "An official example document used for validation.",
+  "institution_roles": [
+    {"institution_id": "european-commission", "role": "author"}
+  ],
+  "policy_ids": ["example-policy"],
+  "concept_ids": ["risk"],
+  "source_ids": ["example-source"],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "proposal",
+    "inclusion_rationale": "Directly relevant to the example policy.",
+    "researcher_notes": "Complete corpus assessment for the fixture.",
+    "review_status": "verified",
+    "reviewed_by": "Researcher",
+    "reviewed_at": "2026-09-03T12:00:00Z"
+  },
+  "snapshots": []
+}

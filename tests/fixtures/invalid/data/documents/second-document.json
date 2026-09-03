@@ -1,0 +1,31 @@
+{
+  "id": "second-document",
+  "entity_type": "document",
+  "publication_status": "draft",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "slug": "second-document",
+  "official_title": "Second Document",
+  "short_title": "Second",
+  "document_type": "communication",
+  "publication_date": "2026-09-03",
+  "legal_status": "non_binding",
+  "celex": "32026R0001",
+  "eli": "https://eur-lex.europa.eu/eli/2026/1/oj",
+  "language": "en",
+  "official_summary": "A document that duplicates legal identifiers.",
+  "institution_roles": [],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [],
+  "corpus_assessment": {
+    "corpus_tier": "contextual",
+    "policy_stage": "proposal",
+    "inclusion_rationale": "Duplicate legal identifier test.",
+    "researcher_notes": "Support record.",
+    "review_status": "pending",
+    "reviewed_by": "Researcher",
+    "reviewed_at": "2026-09-03T12:00:00Z"
+  },
+  "snapshots": []
+}

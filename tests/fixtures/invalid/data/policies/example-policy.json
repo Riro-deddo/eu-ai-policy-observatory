@@ -1,0 +1,13 @@
+{
+  "id": "example-policy",
+  "entity_type": "policy",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "name": "Duplicate policy",
+  "short_name": "Duplicate",
+  "summary": "A policy used to exercise duplicate identifier validation.",
+  "policy_family": "European AI policy",
+  "policy_status": "active",
+  "scope_note": "Canonical invalid-fixture support record."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "risk",
+  "entity_type": "concept",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "name": "Risk",
+  "definition": "A concept supporting invalid validation fixtures.",
+  "research_scope": "Cross-record validation.",
+  "eurovoc_uri": null,
+  "notes": "Support record."
+}

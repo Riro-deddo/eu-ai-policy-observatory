@@ -1,0 +1,12 @@
+{
+  "id": "risk",
+  "entity_type": "concept",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "name": "Risk",
+  "definition": "The possibility of harm arising from an AI system.",
+  "research_scope": "Used to classify policy documents concerned with AI risk.",
+  "eurovoc_uri": null,
+  "notes": "A canonical controlled concept fixture."
+}

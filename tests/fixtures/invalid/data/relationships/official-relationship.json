@@ -1,0 +1,16 @@
+{
+  "id": "official-relationship",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "example-policy",
+  "target_entity_type": "policy",
+  "target_entity_id": "example-policy",
+  "relationship_type": "related_to",
+  "basis": "official",
+  "rationale": null,
+  "evidence_source_id": "unpublished-source",
+  "verification_status": "verified"
+}

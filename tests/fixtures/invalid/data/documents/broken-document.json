@@ -1,0 +1,42 @@
+{
+  "id": "example-policy",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T11:00:00Z",
+  "slug": "example-policy",
+  "official_title": "Broken Document",
+  "short_title": "Broken",
+  "document_type": "communication",
+  "publication_date": "2026-09-03",
+  "legal_status": "non_binding",
+  "celex": "32026R0001",
+  "eli": "https://eur-lex.europa.eu/eli/2026/1/oj",
+  "language": "en",
+  "official_summary": "A deliberately invalid record.",
+  "institution_roles": [
+    {"institution_id": "unpublished-institution", "role": "author"}
+  ],
+  "policy_ids": ["missing-policy"],
+  "concept_ids": ["risk"],
+  "source_ids": ["unpublished-source", "missing-source"],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "proposal",
+    "inclusion_rationale": "Required test coverage.",
+    "researcher_notes": "Deliberately invalid fixture.",
+    "review_status": "verified",
+    "reviewed_by": "Researcher",
+    "reviewed_at": "2026-09-03T12:00:00Z"
+  },
+  "snapshots": [
+    {
+      "id": "missing-snapshot",
+      "source_id": "missing-snapshot-source",
+      "retrieved_at": "2026-09-03T12:00:00Z",
+      "format": "text/html",
+      "content_hash": "example-hash",
+      "archived_path": null
+    }
+  ]
+}

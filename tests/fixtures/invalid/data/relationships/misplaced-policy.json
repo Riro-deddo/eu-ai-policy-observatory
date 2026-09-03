@@ -1,0 +1,13 @@
+{
+  "id": "misplaced-policy",
+  "entity_type": "policy",
+  "publication_status": "draft",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "name": "Misplaced Policy",
+  "short_name": "Misplaced",
+  "summary": "A policy deliberately stored in the wrong entity directory.",
+  "policy_family": "European AI policy",
+  "policy_status": "active",
+  "scope_note": "Directory validation support record."
+}

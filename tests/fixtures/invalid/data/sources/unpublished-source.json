@@ -1,0 +1,13 @@
+{
+  "id": "unpublished-source",
+  "entity_type": "source",
+  "publication_status": "draft",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "http://example.org/not-an-official-source",
+  "publisher": "Example publisher",
+  "retrieved_at": "2026-09-03T12:00:00Z",
+  "last_verified_at": "2026-09-03T12:00:00Z",
+  "verification_note": "Deliberately unsuitable official evidence."
+}

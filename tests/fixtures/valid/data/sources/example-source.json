@@ -1,0 +1,13 @@
+{
+  "id": "example-source",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-03T12:00:00Z",
+  "updated_at": "2026-09-03T12:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://commission.europa.eu/example-ai-policy",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-03T12:00:00Z",
+  "last_verified_at": "2026-09-03T12:00:00Z",
+  "verification_note": "Official European Commission publication."
+}
