@@ -1,0 +1,12 @@
+{
+  "id": "accountability",
+  "entity_type": "concept",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "name": "Accountability",
+  "definition": "Arrangements for responsibility, auditability and redress in relation to AI systems.",
+  "research_scope": "Used to trace responsibility and liability themes across the core corpus.",
+  "eurovoc_uri": null,
+  "notes": "Researcher-authored concept; it does not substitute for a legal definition."
+}

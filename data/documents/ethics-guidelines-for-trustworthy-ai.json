@@ -1,0 +1,22 @@
+{
+  "id": "ethics-guidelines-for-trustworthy-ai",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "slug": "ethics-guidelines-for-trustworthy-ai",
+  "official_title": "Ethics Guidelines for Trustworthy AI",
+  "short_title": "Ethics Guidelines for Trustworthy AI",
+  "document_type": "expert_guidelines",
+  "publication_date": "2019-04-08",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": "Guidelines presenting a framework for lawful, ethical and robust artificial intelligence.",
+  "institution_roles": [{"institution_id": "high-level-expert-group-on-ai", "role": "author"}, {"institution_id": "european-commission", "role": "publisher"}],
+  "policy_ids": ["european-ai-policy-pathway"],
+  "concept_ids": ["trustworthiness", "accountability", "risk"],
+  "source_ids": ["ethics-guidelines-commission", "ethics-guidelines-publications-office"],
+  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "consultation", "inclusion_rationale": "Core non-binding ethics framework that introduces the trustworthiness lens.", "researcher_notes": "Analytical assessment, not a claim about legal force.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-03T00:00:00Z"}
+}

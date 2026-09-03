@@ -1,0 +1,22 @@
+{
+  "id": "coordinated-plan-on-artificial-intelligence",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "slug": "coordinated-plan-on-artificial-intelligence",
+  "official_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Coordinated Plan on Artificial Intelligence",
+  "short_title": "Coordinated Plan on Artificial Intelligence",
+  "document_type": "coordinated_plan",
+  "publication_date": "2018-12-07",
+  "legal_status": "non_binding",
+  "celex": "52018DC0795",
+  "eli": null,
+  "language": "en",
+  "official_summary": "Commission communication presenting a coordinated plan on artificial intelligence.",
+  "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
+  "policy_ids": ["european-ai-policy-pathway"],
+  "concept_ids": ["trustworthiness", "compliance"],
+  "source_ids": ["coordinated-plan-eur-lex"],
+  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "coordination", "inclusion_rationale": "Core coordination document for the selected policy pathway.", "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-03T00:00:00Z"}
+}

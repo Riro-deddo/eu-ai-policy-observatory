@@ -1,0 +1,16 @@
+{
+  "id": "white-paper-precedes-ai-act-proposal",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "white-paper-on-artificial-intelligence",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-act-proposal",
+  "relationship_type": "precedes",
+  "basis": "analytical",
+  "rationale": "The White Paper's discussion of a future regulatory framework precedes the Commission's 2021 legislative proposal in this research pathway.",
+  "evidence_source_id": "ai-act-proposal-eur-lex",
+  "verification_status": "verified"
+}

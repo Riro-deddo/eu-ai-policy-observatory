@@ -1,10 +1,14 @@
 .superpowers/
 .worktrees/
+.venv/
 work/
 outputs/
 node_modules/
 .astro/
 dist/
 generated/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
 __pycache__/
 *.pyc

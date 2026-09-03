@@ -1,0 +1,12 @@
+{
+  "id": "compliance",
+  "entity_type": "concept",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "name": "Compliance",
+  "definition": "Conformity with applicable requirements governing artificial intelligence systems.",
+  "research_scope": "Used to identify obligations, conformity assessment and enforcement-oriented passages in later work.",
+  "eurovoc_uri": null,
+  "notes": "Researcher-authored concept used consistently across the seed corpus."
+}

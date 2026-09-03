@@ -1,0 +1,13 @@
+{
+  "id": "ethics-guidelines-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-03T00:00:00Z",
+  "last_verified_at": "2026-09-03T00:00:00Z",
+  "verification_note": "Commission page records publication on 8 April 2019 and presentation by the High-Level Expert Group on AI."
+}

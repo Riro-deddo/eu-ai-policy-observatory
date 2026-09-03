@@ -1,0 +1,12 @@
+{
+  "id": "trustworthiness",
+  "entity_type": "concept",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "name": "Trustworthiness",
+  "definition": "The quality of AI being framed as lawful, ethical and robust.",
+  "research_scope": "Used to identify trust-oriented normative and policy language in the corpus.",
+  "eurovoc_uri": null,
+  "notes": "Researcher-authored lens informed by the 2019 Ethics Guidelines."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "white-paper-on-artificial-intelligence",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "slug": "white-paper-on-artificial-intelligence",
+  "official_title": "WHITE PAPER On Artificial Intelligence - A European approach to excellence and trust",
+  "short_title": "White Paper on Artificial Intelligence",
+  "document_type": "white_paper",
+  "publication_date": "2020-02-19",
+  "legal_status": "non_binding",
+  "celex": "52020DC0065",
+  "eli": null,
+  "language": "en",
+  "official_summary": "White Paper presenting policy options for trustworthy and secure AI development in Europe.",
+  "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
+  "policy_ids": ["european-ai-policy-pathway"],
+  "concept_ids": ["trustworthiness", "risk", "compliance"],
+  "source_ids": ["white-paper-eur-lex"],
+  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "consultation", "inclusion_rationale": "Core consultation document connecting excellence, trust and a future regulatory framework.", "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-03T00:00:00Z"}
+}

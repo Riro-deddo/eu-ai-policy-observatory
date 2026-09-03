@@ -31,7 +31,8 @@ def export_public(database_path: Path, output_path: Path, generated_at: str) -> 
     destination = Path(output_path)
     destination.parent.mkdir(parents=True, exist_ok=True)
 
-    with sqlite3.connect(Path(database_path)) as connection:
+    connection = sqlite3.connect(Path(database_path))
+    try:
         connection.row_factory = sqlite3.Row
         published = {
             table: _published_rows(connection, table) for table in CORE_TABLES
@@ -58,6 +59,8 @@ def export_public(database_path: Path, output_path: Path, generated_at: str) -> 
         sources = [
             row for row in published["sources"] if row["id"] in source_ids
         ]
+    finally:
+        connection.close()
 
     payload = {
         "generated_at": generated_at,

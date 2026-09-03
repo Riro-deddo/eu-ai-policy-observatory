@@ -1,0 +1,14 @@
+{
+  "id": "coordinated-plan-publication",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "event_type": "publication",
+  "event_date": "2018-12-07",
+  "title": "Publication of Coordinated Plan on Artificial Intelligence",
+  "description": "EUR-Lex records the Commission communication dated 7 December 2018.",
+  "policy_id": "european-ai-policy-pathway",
+  "document_id": "coordinated-plan-on-artificial-intelligence",
+  "source_id": "coordinated-plan-eur-lex"
+}

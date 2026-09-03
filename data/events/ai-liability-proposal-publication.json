@@ -1,0 +1,14 @@
+{
+  "id": "ai-liability-proposal-publication",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "event_type": "proposal",
+  "event_date": "2022-09-28",
+  "title": "Commission proposal for the AI Liability Directive",
+  "description": "EUR-Lex records COM(2022) 496 final as the Commission's proposal.",
+  "policy_id": "european-ai-policy-pathway",
+  "document_id": "ai-liability-directive-proposal",
+  "source_id": "ai-liability-proposal-eur-lex"
+}

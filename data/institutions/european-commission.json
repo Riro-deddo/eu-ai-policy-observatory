@@ -1,0 +1,11 @@
+{
+  "id": "european-commission",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "official_name": "European Commission",
+  "short_name": "European Commission",
+  "institution_type": "European Union institution",
+  "official_url": "https://commission.europa.eu/"
+}

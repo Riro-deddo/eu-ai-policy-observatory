@@ -1,0 +1,12 @@
+{
+  "id": "risk",
+  "entity_type": "concept",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "name": "Risk",
+  "definition": "Potential for adverse consequences associated with artificial intelligence systems.",
+  "research_scope": "Used to trace how the corpus frames, classifies or mitigates AI-related risk.",
+  "eurovoc_uri": null,
+  "notes": "Researcher-authored concept; not an official legal definition."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "european-ai-policy-pathway",
+  "entity_type": "policy",
+  "publication_status": "published",
+  "created_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
+  "name": "European Union artificial intelligence policy pathway",
+  "short_name": "EU AI policy pathway",
+  "summary": "Research grouping for the 2018–2024 EU artificial intelligence policy corpus.",
+  "policy_family": "European artificial intelligence policy",
+  "policy_status": "active",
+  "scope_note": "Analytical grouping; it is not an official EU policy title."
+}
