@@ -1,0 +1,158 @@
+---
+import type { DocumentRecord, Policy, PublicData, Relationship, Source } from '../lib/types';
+
+interface Props {
+  data: PublicData;
+}
+
+interface MapNode {
+  id: string;
+  type: 'policy' | 'document';
+  label: string;
+  href: string;
+  stage: string;
+  x: number;
+  y: number;
+}
+
+interface MapRelationship {
+  relationship: Relationship;
+  source: MapNode;
+  target: MapNode;
+  evidence: Source | undefined;
+}
+
+const { data }: Props = Astro.props;
+const base = import.meta.env.BASE_URL;
+const documents = new Map(data.documents.map((document) => [document.id, document]));
+const policies = new Map(data.policies.map((policy) => [policy.id, policy]));
+const sources = new Map(data.sources.map((source) => [source.id, source]));
+const titleValue = (value: string) => value.replaceAll('_', ' ');
+
+const createNode = (type: string, id: string): Omit<MapNode, 'x' | 'y'> | undefined => {
+  if (type === 'document') {
+    const document: DocumentRecord | undefined = documents.get(id);
+    return document === undefined ? undefined : {
+      id,
+      type: 'document',
+      label: document.short_title,
+      href: `${base}corpus/${document.slug}/`,
+      stage: document.corpus_assessment?.policy_stage ?? 'unclassified',
+    };
+  }
+  if (type === 'policy') {
+    const policy: Policy | undefined = policies.get(id);
+    return policy === undefined ? undefined : {
+      id,
+      type: 'policy',
+      label: policy.short_name,
+      href: `${base}policies/${policy.id}/`,
+      stage: 'policy',
+    };
+  }
+  return undefined;
+};
+
+const relationshipPairs = data.relationships.flatMap((relationship) => {
+  const source = createNode(relationship.source_entity_type, relationship.source_entity_id);
+  const target = createNode(relationship.target_entity_type, relationship.target_entity_id);
+  return source === undefined || target === undefined ? [] : [{ relationship, source, target }];
+});
+const stages = [...new Set(relationshipPairs.flatMap((pair) => [pair.source.stage, pair.target.stage]))].sort();
+const nodeDefinitions = new Map<string, Omit<MapNode, 'x' | 'y'>>();
+for (const pair of relationshipPairs) {
+  nodeDefinitions.set(`${pair.source.type}:${pair.source.id}`, pair.source);
+  nodeDefinitions.set(`${pair.target.type}:${pair.target.id}`, pair.target);
+}
+const nodesByStage = [...nodeDefinitions.values()]
+  .sort((first, second) => first.label.localeCompare(second.label, 'en-GB'))
+  .reduce((groups, node) => {
+    const stageNodes = groups.get(node.stage) ?? [];
+    stageNodes.push(node);
+    groups.set(node.stage, stageNodes);
+    return groups;
+  }, new Map<string, Array<Omit<MapNode, 'x' | 'y'>>>());
+const mapNodes = [...nodesByStage.entries()].flatMap(([stage, stageNodes]) => {
+  const column = stages.indexOf(stage);
+  return stageNodes.map((node, index) => ({
+    ...node,
+    x: 130 + column * 210,
+    y: 105 + index * 115,
+  }));
+});
+const positionedNodes = new Map(mapNodes.map((node) => [`${node.type}:${node.id}`, node]));
+const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
+  const source = positionedNodes.get(`${pair.source.type}:${pair.source.id}`);
+  const target = positionedNodes.get(`${pair.target.type}:${pair.target.id}`);
+  if (source === undefined || target === undefined) {
+    throw new Error(`Policy Map node placement failed for ${pair.relationship.id}`);
+  }
+  return {
+    relationship: pair.relationship,
+    source,
+    target,
+    evidence: pair.relationship.evidence_source_id === null
+      ? undefined
+      : sources.get(pair.relationship.evidence_source_id),
+  };
+});
+const width = Math.max(500, stages.length * 210 + 60);
+const height = Math.max(260, ...mapNodes.map((node) => node.y + 80));
+---
+
+<section class="research-section policy-map" aria-labelledby="policy-map-heading">
+  <div class="section-heading">
+    <p class="section-kicker">Published relationships</p>
+    <h1 id="policy-map-heading">Policy Map</h1>
+    <p>Relationships shown here are recorded research data. The text list following the diagram is the equivalent citation-friendly account.</p>
+  </div>
+
+  <div class="policy-map__legend" aria-label="Relationship legend">
+    <p><span class="policy-map__line policy-map__line--official"></span>Official relationship</p>
+    <p><span class="policy-map__line policy-map__line--analytical"></span>Analytical relationship</p>
+  </div>
+
+  <div class="policy-map__graphic" tabindex="0">
+    <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-labelledby="policy-map-svg-title policy-map-svg-description">
+      <title id="policy-map-svg-title">Published policy and document relationships</title>
+      <desc id="policy-map-svg-description">A deterministic diagram of the published official and analytical relationships listed immediately below.</desc>
+      <g class="policy-map__edges">
+        {mapRelationships.map(({ relationship, source, target }) => (
+          <line
+            data-policy-map-edge={relationship.id}
+            x1={source.x}
+            y1={source.y}
+            x2={target.x}
+            y2={target.y}
+            class:list={['policy-map__edge', relationship.basis === 'analytical' && 'policy-map__edge--analytical']}
+          />
+        ))}
+      </g>
+      <g class="policy-map__nodes">
+        {mapNodes.map((node) => (
+          <a data-policy-map-node={node.id} href={node.href} aria-label={`${node.label} (${node.type})`}>
+            <rect x={node.x - 84} y={node.y - 27} width="168" height="54" rx="0" />
+            <text x={node.x} y={node.y - 4} text-anchor="middle">{node.type}</text>
+            <text x={node.x} y={node.y + 13} text-anchor="middle">{node.label}</text>
+          </a>
+        ))}
+      </g>
+    </svg>
+  </div>
+
+  <section class="policy-map__relationships" aria-labelledby="policy-map-relationships-heading">
+    <h2 id="policy-map-relationships-heading">Relationship list</h2>
+    {mapRelationships.length === 0 ? <p>No published relationships can be shown with stable policy or document routes.</p> : (
+      <ol data-policy-map-relationships>
+        {mapRelationships.map(({ relationship, source, target, evidence }) => (
+          <li data-policy-map-relationship={relationship.id}>
+            <p><a href={source.href}>{source.label}</a> · {titleValue(relationship.relationship_type)} · <a href={target.href}>{target.label}</a></p>
+            <p>{relationship.basis === 'official' ? 'Official relationship' : 'Analytical relationship'} · Basis: {relationship.basis}</p>
+            {relationship.rationale === null ? <p>No rationale has been published.</p> : <p>Rationale: {relationship.rationale}</p>}
+            {evidence === undefined ? <p>No evidence link has been published.</p> : <p><a href={evidence.url}>Evidence source: {evidence.publisher}</a></p>}
+          </li>
+        ))}
+      </ol>
+    )}
+  </section>
+</section>

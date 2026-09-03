@@ -1,0 +1,166 @@
+---
+import { buildTimelineEntries } from '../lib/filter';
+import type { TimelineEntry } from '../lib/filter';
+import type { PublicData } from '../lib/types';
+
+interface Props {
+  data: PublicData;
+}
+
+const { data }: Props = Astro.props;
+const base = import.meta.env.BASE_URL;
+const entries = buildTimelineEntries(data);
+const documentsById = new Map(data.documents.map((document) => [document.id, document]));
+const policiesById = new Map(data.policies.map((policy) => [policy.id, policy]));
+const sourcesById = new Map(data.sources.map((source) => [source.id, source]));
+const institutionsById = new Map(data.institutions.map((institution) => [institution.id, institution]));
+const groupedEntries = entries.reduce((groups, entry) => {
+  const year = entry.date.slice(0, 4);
+  const yearEntries = groups.get(year) ?? [];
+  yearEntries.push(entry);
+  groups.set(year, yearEntries);
+  return groups;
+}, new Map<string, TimelineEntry[]>());
+const institutionIds = [...new Set(entries.flatMap((entry) => entry.institutionIds))].sort();
+const documentTypes = [...new Set(entries.flatMap((entry) => entry.documentType === null ? [] : [entry.documentType]))].sort();
+const policyStages = [...new Set(entries.flatMap((entry) => entry.policyStage === null ? [] : [entry.policyStage]))].sort();
+const eventTypes = [...new Set(entries.flatMap((entry) => entry.eventType === null ? [] : [entry.eventType]))].sort();
+
+const displayValue = (value: string) => value.replaceAll('_', ' ');
+const hrefFor = (entry: TimelineEntry) => `${base}${entry.href}`;
+---
+
+<section class="research-section timeline" aria-labelledby="timeline-heading">
+  <div class="section-heading">
+    <p class="section-kicker">Published chronology</p>
+    <h1 id="timeline-heading">Timeline</h1>
+    <p>Published documents and recorded policy events, bounded by the current 2018–2024 corpus.</p>
+  </div>
+
+  <form class="timeline-filters" data-timeline-filters method="get" action={`${base}timeline/`}>
+    <div>
+      <label for="timeline-institution">Institution</label>
+      <select id="timeline-institution" name="institution">
+        <option value="">All institutions</option>
+        {institutionIds.map((institutionId) => (
+          <option value={institutionId}>{institutionsById.get(institutionId)?.official_name ?? institutionId}</option>
+        ))}
+      </select>
+    </div>
+    <div>
+      <label for="timeline-document-type">Document type</label>
+      <select id="timeline-document-type" name="documentType">
+        <option value="">All document types</option>
+        {documentTypes.map((documentType) => <option value={documentType}>{displayValue(documentType)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="timeline-policy-stage">Policy stage</label>
+      <select id="timeline-policy-stage" name="policyStage">
+        <option value="">All policy stages</option>
+        {policyStages.map((policyStage) => <option value={policyStage}>{displayValue(policyStage)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="timeline-event-type">Event type</label>
+      <select id="timeline-event-type" name="eventType">
+        <option value="">All event types</option>
+        {eventTypes.map((eventType) => <option value={eventType}>{displayValue(eventType)}</option>)}
+      </select>
+    </div>
+    <div class="timeline-filters__actions">
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset filters</button>
+    </div>
+  </form>
+
+  <noscript>
+    <p>Interactive filtering requires JavaScript. The complete chronology is shown below.</p>
+  </noscript>
+  <p data-timeline-count aria-live="polite">{entries.length} timeline entries</p>
+  <p data-timeline-empty hidden>No timeline entries match these criteria. Reset filters to view the complete chronology.</p>
+
+  <div data-timeline-list>
+    {[...groupedEntries.entries()].map(([year, yearEntries]) => (
+      <section class="timeline-year" data-timeline-year={year} aria-labelledby={`timeline-year-${year}`}>
+        <h2 id={`timeline-year-${year}`}>{year}</h2>
+        <ol>
+          {yearEntries.map((entry) => {
+            const event = entry.kind === 'event' ? data.events.find((candidate) => candidate.id === entry.id) : undefined;
+            const document = entry.kind === 'document'
+              ? documentsById.get(entry.id)
+              : event?.document_id === null || event === undefined
+                ? undefined
+                : documentsById.get(event.document_id);
+            const policy = event === undefined
+              ? document?.policies[0]
+              : policiesById.get(event.policy_id);
+            const evidence = event === undefined ? undefined : sourcesById.get(event.source_id);
+
+            return (
+              <li data-timeline-entry={entry.id}>
+                <time datetime={entry.date}>{entry.date}</time>
+                <p class="timeline-entry__kind">
+                  {entry.kind === 'document' ? `Document · ${displayValue(entry.documentType ?? 'document')}` : `Event · ${displayValue(entry.eventType ?? 'event')}`}
+                </p>
+                <h3><a href={hrefFor(entry)}>{entry.title}</a></h3>
+                {policy !== undefined && <p>Policy: <a href={`${base}policies/${policy.id}/`}>{policy.short_name}</a></p>}
+                {entry.kind === 'event' && document !== undefined && <p>Related document: <a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a></p>}
+                {entry.kind === 'event' && evidence !== undefined && <p>Evidence source: <a href={evidence.url}>{evidence.publisher}</a></p>}
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    ))}
+  </div>
+</section>
+
+<script id="timeline-entries" type="application/json" set:html={JSON.stringify(entries).replaceAll('<', '\\u003c')}></script>
+<script>
+  import { filterTimeline } from '../lib/filter';
+  import type { TimelineCriteria, TimelineEntry } from '../lib/filter';
+
+  const form = document.querySelector('[data-timeline-filters]');
+  const serializedEntries = document.querySelector('#timeline-entries');
+  const count = document.querySelector('[data-timeline-count]');
+  const empty = document.querySelector('[data-timeline-empty]');
+  const items = [...document.querySelectorAll<HTMLElement>('[data-timeline-entry]')];
+  const years = [...document.querySelectorAll<HTMLElement>('[data-timeline-year]')];
+
+  if (form instanceof HTMLFormElement && serializedEntries instanceof HTMLScriptElement
+    && count instanceof HTMLElement && empty instanceof HTMLElement) {
+    const timelineEntries: TimelineEntry[] = JSON.parse(serializedEntries.textContent ?? '[]');
+
+    const applyFilters = () => {
+      const criteria: TimelineCriteria = {};
+      for (const [name, value] of new FormData(form).entries()) {
+        if (typeof value !== 'string' || value === '') continue;
+        if (name === 'institution') criteria.institution = value;
+        if (name === 'documentType') criteria.documentType = value;
+        if (name === 'policyStage') criteria.policyStage = value;
+        if (name === 'eventType') criteria.eventType = value;
+      }
+      const visibleIds = new Set(filterTimeline(timelineEntries, criteria).map((entry) => entry.id));
+
+      for (const item of items) {
+        const entryId = item.dataset.timelineEntry;
+        item.hidden = entryId === undefined || !visibleIds.has(entryId);
+      }
+      for (const year of years) year.hidden = [...year.querySelectorAll('[data-timeline-entry]')]
+        .every((item) => item instanceof HTMLElement && item.hidden);
+
+      const suffix = visibleIds.size === 1 ? 'timeline entry' : 'timeline entries';
+      count.textContent = `${visibleIds.size} ${suffix}`;
+      empty.hidden = visibleIds.size !== 0;
+    };
+
+    form.addEventListener('input', applyFilters);
+    form.addEventListener('change', applyFilters);
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      applyFilters();
+    });
+    form.addEventListener('reset', () => window.setTimeout(applyFilters));
+  }
+</script>

@@ -1,0 +1,15 @@
+---
+import Timeline from '../components/Timeline.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadPublicData } from '../lib/data';
+
+const data = loadPublicData();
+---
+
+<BaseLayout
+  title="Timeline | EU AI Policy Observatory"
+  description="Published EU AI policy documents and recorded events from 2018 to 2024."
+  canonicalPath="/timeline/"
+>
+  <Timeline data={data} />
+</BaseLayout>

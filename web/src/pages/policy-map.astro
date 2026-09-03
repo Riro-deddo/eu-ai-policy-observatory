@@ -1,0 +1,15 @@
+---
+import PolicyMap from '../components/PolicyMap.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadPublicData } from '../lib/data';
+
+const data = loadPublicData();
+---
+
+<BaseLayout
+  title="Policy Map | EU AI Policy Observatory"
+  description="Published relationships between EU AI policy documents and policy records."
+  canonicalPath="/policy-map/"
+>
+  <PolicyMap data={data} />
+</BaseLayout>

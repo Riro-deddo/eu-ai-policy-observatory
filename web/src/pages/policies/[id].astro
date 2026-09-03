@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadPublicData } from '../../lib/data';
+import type { PublicData } from '../../lib/types';
+
+interface Props {
+  data: PublicData;
+  policyId: string;
+}
+
+export function getStaticPaths() {
+  const data = loadPublicData();
+  return data.policies.map((policy) => ({
+    params: { id: policy.id },
+    props: { data, policyId: policy.id },
+  }));
+}
+
+const { data, policyId }: Props = Astro.props;
+const policy = data.policies.find((candidate) => candidate.id === policyId);
+if (policy === undefined) throw new Error(`Published policy not found: ${policyId}`);
+
+const base = import.meta.env.BASE_URL;
+const relatedDocuments = data.documents.filter((document) => document.policies.some((candidate) => candidate.id === policy.id));
+const relationships = data.relationships.filter((relationship) => (
+  relationship.source_entity_type === 'policy' && relationship.source_entity_id === policy.id
+  || relationship.target_entity_type === 'policy' && relationship.target_entity_id === policy.id
+));
+const labels = new Map<string, string>();
+for (const entry of data.policies) labels.set(`policy:${entry.id}`, entry.short_name);
+for (const entry of data.documents) labels.set(`document:${entry.id}`, entry.short_title);
+for (const entry of data.events) labels.set(`event:${entry.id}`, entry.title);
+for (const entry of data.sources) labels.set(`source:${entry.id}`, entry.publisher);
+const sourceById = new Map(data.sources.map((source) => [source.id, source]));
+const labelFor = (entityType: string, entityId: string) => labels.get(`${entityType}:${entityId}`) ?? entityId;
+const linkFor = (entityType: string, entityId: string) => {
+  if (entityType === 'policy') return `${base}policies/${entityId}/`;
+  const document = data.documents.find((entry) => entry.id === entityId);
+  return document === undefined ? undefined : `${base}corpus/${document.slug}/`;
+};
+const titleValue = (value: string) => value.replaceAll('_', ' ');
+---
+
+<BaseLayout
+  title={`${policy.short_name} | EU AI Policy Observatory`}
+  description={`Published policy record for ${policy.short_name}.`}
+  canonicalPath={`/policies/${policy.id}/`}
+>
+  <article class="research-section policy-record">
+    <p class="section-kicker">Published policy record</p>
+    <h1>{policy.name}</h1>
+    <p class="policy-record__short-name">{policy.short_name}</p>
+
+    <section aria-labelledby="official-policy-description">
+      <h2 id="official-policy-description">Official policy description</h2>
+      <dl>
+        <dt>Policy name</dt><dd>{policy.name}</dd>
+        <dt>Short name</dt><dd>{policy.short_name}</dd>
+        <dt>Summary</dt><dd>{policy.summary}</dd>
+        <dt>Policy family</dt><dd>{policy.policy_family}</dd>
+        <dt>Policy status</dt><dd>{titleValue(policy.policy_status)}</dd>
+        <dt>Scope note</dt><dd>{policy.scope_note}</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="related-documents">
+      <h2 id="related-documents">Related documents</h2>
+      {relatedDocuments.length === 0 ? <p>No published documents are linked to this policy record.</p> : (
+        <ul>
+          {relatedDocuments.map((document) => (
+            <li><a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a> · {document.publication_date}</li>
+          ))}
+        </ul>
+      )}
+    </section>
+
+    <section aria-labelledby="research-assessment-relationships">
+      <h2 id="research-assessment-relationships">Research assessment relationships</h2>
+      <p>Relationship-based assessments are distinct from the official policy description above.</p>
+      {relationships.length === 0 ? <p>No published relationships touch this policy record.</p> : (
+        <ul>
+          {relationships.map((relationship) => {
+            const sourceLink = linkFor(relationship.source_entity_type, relationship.source_entity_id);
+            const targetLink = linkFor(relationship.target_entity_type, relationship.target_entity_id);
+            const evidence = relationship.evidence_source_id === null ? undefined : sourceById.get(relationship.evidence_source_id);
+            return (
+              <li>
+                <p>{sourceLink === undefined ? labelFor(relationship.source_entity_type, relationship.source_entity_id) : <a href={sourceLink}>{labelFor(relationship.source_entity_type, relationship.source_entity_id)}</a>} · {titleValue(relationship.relationship_type)} · {targetLink === undefined ? labelFor(relationship.target_entity_type, relationship.target_entity_id) : <a href={targetLink}>{labelFor(relationship.target_entity_type, relationship.target_entity_id)}</a>}</p>
+                <p>{relationship.basis === 'analytical' ? 'Analytical relationship' : 'Official relationship'} · Basis: {relationship.basis}</p>
+                {relationship.rationale === null ? <p>No rationale has been published.</p> : <p>{relationship.basis === 'analytical' ? 'Research assessment rationale: ' : 'Official rationale: '}{relationship.rationale}</p>}
+                {evidence === undefined ? <p>No evidence link has been published.</p> : <p><a href={evidence.url}>Evidence source: {evidence.publisher}</a></p>}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </section>
+
+    <p><a href={`${base}policy-map/`}>Return to the Policy Map</a></p>
+  </article>
+</BaseLayout>
