@@ -1,0 +1,53 @@
+---
+import type { DocumentRecord, PolicyEvent } from '../lib/types';
+
+interface Props {
+  documents: DocumentRecord[];
+  events: PolicyEvent[];
+}
+
+type PathwayItem = {
+  id: string;
+  date: string;
+  kind: 'Document' | 'Event';
+  title: string;
+};
+
+const { documents, events } = Astro.props;
+const coreDocuments = documents.filter(
+  (document) => document.corpus_assessment?.corpus_tier === 'core',
+);
+const coreDocumentIds = new Set(coreDocuments.map((document) => document.id));
+const pathwayItems: PathwayItem[] = [
+  ...coreDocuments.map((document) => ({
+    id: document.id,
+    date: document.publication_date,
+    kind: 'Document' as const,
+    title: document.short_title,
+  })),
+  ...events
+    .filter((event) => event.document_id !== null && coreDocumentIds.has(event.document_id))
+    .map((event) => ({
+      id: event.id,
+      date: event.event_date,
+      kind: 'Event' as const,
+      title: event.title,
+    })),
+].sort((first, second) => first.date.localeCompare(second.date) || first.id.localeCompare(second.id));
+---
+
+<section class="research-section policy-pathway" aria-labelledby="core-policy-pathway">
+  <div class="section-heading">
+    <p class="section-kicker">Core policy pathway</p>
+    <h2 id="core-policy-pathway">Selected documents and recorded events</h2>
+  </div>
+  <ol class="pathway-list">
+    {pathwayItems.map((item) => (
+      <li>
+        <time datetime={item.date}>{item.date}</time>
+        <span class="pathway-list__kind">{item.kind}</span>
+        <span>{item.title}</span>
+      </li>
+    ))}
+  </ol>
+</section>

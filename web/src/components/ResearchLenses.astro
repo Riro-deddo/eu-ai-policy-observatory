@@ -1,0 +1,31 @@
+---
+import type { Concept } from '../lib/types';
+
+interface Props {
+  concepts: Concept[];
+}
+
+const { concepts } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const lensIds = ['risk', 'trustworthiness', 'accountability', 'compliance'];
+const conceptsById = new Map(concepts.map((concept) => [concept.id, concept]));
+const lenses = lensIds.flatMap((id) => {
+  const concept = conceptsById.get(id);
+  return concept === undefined ? [] : [concept];
+});
+---
+
+<section class="research-section" aria-labelledby="research-lenses">
+  <div class="section-heading">
+    <p class="section-kicker">Research lenses</p>
+    <h2 id="research-lenses">Four concepts for reading the corpus</h2>
+  </div>
+  <ol class="research-lenses">
+    {lenses.map((concept) => (
+      <li>
+        <a href={`${base}corpus/?concept=${encodeURIComponent(concept.id)}`}>{concept.name}</a>
+        <p>{concept.definition}</p>
+      </li>
+    ))}
+  </ol>
+</section>
