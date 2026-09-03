@@ -1,0 +1,21 @@
+import { defineConfig, devices } from '@playwright/test';
+
+const baseURL = 'http://127.0.0.1:4321/eu-ai-policy-observatory/';
+
+export default defineConfig({
+  testDir: './tests',
+  use: { baseURL },
+  webServer: {
+    command:
+      'cmd /c "set ASTRO_TELEMETRY_DISABLED=1&& pnpm build && pnpm preview --host 127.0.0.1"',
+    url: baseURL,
+    reuseExistingServer: false,
+  },
+  projects: [
+    { name: 'chromium-desktop', use: { ...devices['Desktop Chrome'] } },
+    {
+      name: 'chromium-mobile',
+      use: { ...devices['Desktop Chrome'], viewport: { width: 390, height: 844 } },
+    },
+  ],
+});

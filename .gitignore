@@ -4,8 +4,10 @@
 work/
 outputs/
 node_modules/
+.pnpm-store/
 .astro/
 dist/
+test-results/
 generated/
 *.sqlite
 *.sqlite-shm

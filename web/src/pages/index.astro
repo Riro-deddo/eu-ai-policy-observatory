@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadPublicData } from '../lib/data';
+
+loadPublicData();
+---
+
+<BaseLayout
+  title="EU AI Policy Observatory"
+  description="A static research atlas of published European Union artificial intelligence policy records."
+  canonicalPath="/"
+>
+  <section class="hero" aria-labelledby="project-argument">
+    <div class="hero__meta">Research database · European Union AI policy · 2018–2024</div>
+    <h1 id="project-argument">How EU AI policy is formulated, interpreted and transformed</h1>
+    <p class="hero__lede">
+      The database is the primary research output; this interface is a view of it. Browse a
+      verified, published corpus of European Union AI policy documents, events and relationships.
+    </p>
+  </section>
+</BaseLayout>
