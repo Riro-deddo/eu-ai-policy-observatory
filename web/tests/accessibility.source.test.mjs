@@ -7,6 +7,20 @@ const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
 const noJavaScriptSpec = readFileSync(new URL('./no-js.spec.ts', import.meta.url), 'utf8');
 
+function testBlock(source, name) {
+  const start = source.indexOf(`test('${name}'`);
+  assert.notEqual(start, -1, `Could not find test block: ${name}`);
+  const next = source.indexOf("\ntest(", start + 1);
+  return source.slice(start, next === -1 ? undefined : next);
+}
+
+function assertPolicyRouteCoverage(block, routeConsumption) {
+  assert.match(block, /page\.goto\('timeline\/'\)/);
+  assert.match(block, /\[data-timeline-entry\] a\[href\*="\/policies\/"\]/);
+  assert.match(block, /expect\(policyRoutes\.length\)\.toBeGreaterThan\(0\)/);
+  assert.match(block, routeConsumption);
+}
+
 test('the skip link targets a focusable main landmark', () => {
   assert.match(layout, /<a class="skip-link" href="#main-content">Skip to main content<\/a>/);
   assert.match(layout, /<main id="main-content" tabindex="-1">/);
@@ -28,16 +42,36 @@ test('long metadata and source links can wrap within the page width', () => {
   );
 });
 
-test('cross-route checks collect non-vacuous policy links from the data-driven timeline', () => {
-  assert.match(siteSpec, /page\.goto\('timeline\/'\)/);
-  assert.match(siteSpec, /\[data-timeline-entry\] a\[href\*="\/policies\/"\]/);
-  assert.match(siteSpec, /expect\(policyRoutes\.length\)\.toBeGreaterThan\(0\)/);
-  assert.doesNotMatch(siteSpec, /\[data-policy-map-node\].*?includes\('\/policies\/'\)/s);
+test('cross-route and mobile checks independently collect and navigate policy routes from the Timeline', () => {
+  const crossRouteBlock = testBlock(
+    siteSpec,
+    'every generated route has one main heading, one main landmark, a working skip link and no console errors',
+  );
+  const mobileBlock = testBlock(siteSpec, 'mobile routes do not make the document body horizontally overflow');
+
+  assertPolicyRouteCoverage(crossRouteBlock, /for \(const route of policyRoutes\) await assertRouteAccessibility\(route\)/);
+  assertPolicyRouteCoverage(mobileBlock, /const routes = \[[\s\S]*?\.\.\.policyRoutes,[\s\S]*?for \(const route of routes\) \{/);
 });
 
-test('no-JavaScript checks require all fourteen timeline entries and a non-vacuous policy route set', () => {
-  assert.match(noJavaScriptSpec, /page\.locator\('\[data-timeline-entry\]'\)\)\.toHaveCount\(14\)/);
-  assert.match(noJavaScriptSpec, /page\.locator\('\[data-timeline-entry\]\[hidden\]'\)\)\.toHaveCount\(0\)/);
-  assert.match(noJavaScriptSpec, /\[data-timeline-entry\] a\[href\*="\/policies\/"\]/);
-  assert.match(noJavaScriptSpec, /expect\(policyRoutes\.length\)\.toBeGreaterThan\(0\)/);
+test('the no-JavaScript block requires all fourteen timeline entries and consumes Timeline policy routes', () => {
+  const noJavaScriptBlock = testBlock(noJavaScriptSpec, 'core atlas content remains readable without JavaScript');
+
+  assert.match(noJavaScriptBlock, /page\.locator\('\[data-timeline-entry\]'\)\)\.toHaveCount\(14\)/);
+  assert.match(noJavaScriptBlock, /page\.locator\('\[data-timeline-entry\]\[hidden\]'\)\)\.toHaveCount\(0\)/);
+  assertPolicyRouteCoverage(noJavaScriptBlock, /for \(const route of policyRoutes\) \{[\s\S]*?await page\.goto\(route\)/);
+});
+
+test('the scoped policy-route guard rejects an in-memory collection that is never navigated', () => {
+  const deliberatelyRegressedBlock = `
+    test('regressed', async ({ page }) => {
+      await page.goto('timeline/');
+      const policyRoutes = await page.locator('[data-timeline-entry] a[href*="/policies/"]');
+      expect(policyRoutes.length).toBeGreaterThan(0);
+    });
+  `;
+
+  assert.throws(
+    () => assertPolicyRouteCoverage(deliberatelyRegressedBlock, /for \(const route of policyRoutes\) await page\.goto\(route\)/),
+    assert.AssertionError,
+  );
 });
