@@ -99,6 +99,7 @@
             }
           },
           "required": [
+            "slug",
             "official_title",
             "short_title",
             "document_type",

@@ -109,3 +109,18 @@ def test_duplicate_document_slugs_are_reported(tmp_path):
     issues = validate_records(data_root, SCHEMA, VOCAB)
 
     assert any(issue.code == "duplicate_slug" for issue in issues)
+
+
+def test_validation_rejects_a_document_without_a_slug(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    document_path = data_root / "documents" / "example-document.json"
+    document = json.loads(document_path.read_text(encoding="utf-8"))
+    del document["slug"]
+    document_path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "schema" and issue.record_path == "documents/example-document.json"
+        for issue in issues
+    )

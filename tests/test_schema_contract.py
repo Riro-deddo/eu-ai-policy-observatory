@@ -25,6 +25,21 @@ def test_validation_issue_is_immutable():
     assert issue.record_path.endswith("example.json")
 
 
+def test_schema_requires_a_document_slug_for_stable_public_routes():
+    schema_path = Path(__file__).parents[1] / "schema" / "record.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    record_path = Path("tests/fixtures/valid/data/documents/example-document.json")
+    record = json.loads(record_path.read_text(encoding="utf-8"))
+    del record["slug"]
+
+    errors = list(Draft202012Validator(schema).iter_errors(record))
+
+    assert any(
+        error.validator == "required" and "slug" in error.message
+        for error in _validation_errors(errors[0])
+    )
+
+
 def _validation_errors(error):
     yield error
     for context_error in error.context:
