@@ -1,5 +1,13 @@
 import { expect, test } from '@playwright/test';
 
+const siteOrigin = process.env.SITE_ORIGIN ?? 'https://eu-ai-policy-observatory.test';
+const basePath = process.env.BASE_PATH ?? '/eu-ai-policy-observatory';
+const canonicalBase = new URL(
+  `${basePath.replace(/^\/+|\/+$/g, '')}/`,
+  `${siteOrigin.replace(/\/+$/, '')}/`,
+);
+const expectedBasePath = canonicalBase.pathname;
+
 test('homepage exposes the six primary destinations', async ({ page }) => {
   await page.goto('./');
 
@@ -15,17 +23,17 @@ test('homepage preserves the repository base path in navigation and canonical me
 
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
-    'https://eu-ai-policy-observatory.test/eu-ai-policy-observatory/',
+    canonicalBase.href,
   );
   await expect(page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name: 'Home' }))
-    .toHaveAttribute('href', '/eu-ai-policy-observatory/');
+    .toHaveAttribute('href', expectedBasePath);
   await expect(page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name: 'Policy Map' }))
-    .toHaveAttribute('href', '/eu-ai-policy-observatory/policy-map/');
+    .toHaveAttribute('href', `${expectedBasePath}policy-map/`);
 
   await page.goto('policy-map/');
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
-    'https://eu-ai-policy-observatory.test/eu-ai-policy-observatory/policy-map/',
+    new URL('policy-map/', canonicalBase).href,
   );
 });
 
@@ -180,7 +188,7 @@ test('policy map nodes and stable policy pages expose live base-safe routes', as
   await page.goto('policy-map/');
 
   const node = page.locator('[data-policy-map-node]').first();
-  await expect(node).toHaveAttribute('href', /\/eu-ai-policy-observatory\/(policies|corpus)\//);
+  await expect(node).toHaveAttribute('href', new RegExp(`${expectedBasePath}(policies|corpus)/`));
   await node.click();
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 

@@ -3,16 +3,21 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 const config = readFileSync(new URL('../astro.config.mjs', import.meta.url), 'utf8');
+const playwrightConfig = readFileSync(new URL('../playwright.config.ts', import.meta.url), 'utf8');
 const explorer = readFileSync(new URL('../src/components/CorpusExplorer.astro', import.meta.url), 'utf8');
 const map = readFileSync(new URL('../src/components/PolicyMap.astro', import.meta.url), 'utf8');
 const mapLayout = readFileSync(new URL('../src/lib/policy-map.ts', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
 
-test('Astro retains a trailing slash in BASE_URL for GitHub Pages internal links', () => {
+test('canonical browser assertions derive the deployment origin and base path from their environment', () => {
   assert.match(config, /trailingSlash:\s*'always'/);
-  assert.match(siteSpec, /'\/eu-ai-policy-observatory\/policy-map\/'/);
-  assert.match(siteSpec, /'https:\/\/eu-ai-policy-observatory\.test\/eu-ai-policy-observatory\/policy-map\/'/);
+  assert.match(playwrightConfig, /const siteOrigin = process\.env\.SITE_ORIGIN \?\? 'https:\/\/eu-ai-policy-observatory\.test';/);
+  assert.match(playwrightConfig, /const basePath = process\.env\.BASE_PATH \?\? '\/eu-ai-policy-observatory';/);
+  assert.match(siteSpec, /const siteOrigin = process\.env\.SITE_ORIGIN \?\? 'https:\/\/eu-ai-policy-observatory\.test';/);
+  assert.match(siteSpec, /const basePath = process\.env\.BASE_PATH \?\? '\/eu-ai-policy-observatory';/);
+  assert.match(siteSpec, /new URL\('policy-map\/', canonicalBase\)\.href/);
+  assert.doesNotMatch(siteSpec, /https:\/\/eu-ai-policy-observatory\.test\/eu-ai-policy-observatory\/policy-map\//);
 });
 
 test('Corpus enhancement hydrates a whitelisted query before applying filters', () => {

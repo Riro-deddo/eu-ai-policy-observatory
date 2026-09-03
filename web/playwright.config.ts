@@ -1,6 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const baseURL = 'http://127.0.0.1:4321/eu-ai-policy-observatory/';
+const siteOrigin = process.env.SITE_ORIGIN ?? 'https://eu-ai-policy-observatory.test';
+const basePath = process.env.BASE_PATH ?? '/eu-ai-policy-observatory';
+const normalizedBasePath = `/${basePath.replace(/^\/+|\/+$/g, '')}/`;
+const baseURL = `http://127.0.0.1:4321${normalizedBasePath}`;
 
 export default defineConfig({
   testDir: './tests',
@@ -8,7 +11,11 @@ export default defineConfig({
   use: { baseURL },
   webServer: {
     command: 'pnpm build && pnpm preview --host 127.0.0.1',
-    env: { ASTRO_TELEMETRY_DISABLED: '1' },
+    env: {
+      ASTRO_TELEMETRY_DISABLED: '1',
+      BASE_PATH: basePath,
+      SITE_ORIGIN: siteOrigin,
+    },
     url: baseURL,
     reuseExistingServer: false,
   },
