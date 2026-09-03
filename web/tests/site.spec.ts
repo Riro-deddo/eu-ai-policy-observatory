@@ -159,6 +159,6 @@ test('policy map nodes and stable policy pages expose live base-safe routes', as
 
   await page.goto('policies/european-ai-policy-pathway/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('European Union artificial intelligence policy pathway');
-  await expect(page.getByRole('heading', { name: 'Official policy description' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Research-defined policy grouping' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Research assessment relationships' })).toBeVisible();
 });

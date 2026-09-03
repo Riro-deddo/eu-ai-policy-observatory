@@ -139,7 +139,9 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .policy-map__edges { stroke: var(--muted); stroke-width: 1.5; }
 .policy-map__edge--analytical { stroke-dasharray: 6 5; }
 .policy-map__nodes a { fill: var(--canvas); stroke: var(--ink); stroke-width: 1; }
-.policy-map__nodes a:hover, .policy-map__nodes a:focus { fill: var(--ink); color: var(--canvas); }
+.policy-map__nodes a:hover rect, .policy-map__nodes a:focus rect { fill: var(--ink); }
+.policy-map__nodes a:hover text, .policy-map__nodes a:focus text { fill: var(--canvas); }
+.policy-map__nodes a:focus rect { stroke: var(--focus); stroke-width: 3; }
 .policy-map__nodes text { fill: var(--ink); font-family: var(--sans); font-size: 10px; pointer-events: none; }
 .policy-map__nodes text + text { font-family: var(--serif); font-size: 12px; }
 .policy-map__relationships { max-inline-size: var(--measure); padding-top: var(--space-4); }

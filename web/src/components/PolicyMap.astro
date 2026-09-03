@@ -9,10 +9,12 @@ interface MapNode {
   id: string;
   type: 'policy' | 'document';
   label: string;
+  labelLines: string[];
   href: string;
   stage: string;
   x: number;
   y: number;
+  height: number;
 }
 
 interface MapRelationship {
@@ -28,14 +30,34 @@ const documents = new Map(data.documents.map((document) => [document.id, documen
 const policies = new Map(data.policies.map((policy) => [policy.id, policy]));
 const sources = new Map(data.sources.map((source) => [source.id, source]));
 const titleValue = (value: string) => value.replaceAll('_', ' ');
+const nodeWidth = 260;
+const nodeColumnGap = 64;
+const nodeGap = 24;
+const nodeLabelLineHeight = 16;
+const nodeTopPadding = 20;
+const nodeBottomPadding = 18;
+const maxLabelCharacters = 27;
 
-const createNode = (type: string, id: string): Omit<MapNode, 'x' | 'y'> | undefined => {
+function wrapNodeLabel(label: string): string[] {
+  return label.trim().split(/\s+/).reduce<string[]>((lines, word) => {
+    const current = lines.at(-1);
+    if (current === undefined || `${current} ${word}`.length > maxLabelCharacters) {
+      lines.push(word);
+    } else {
+      lines[lines.length - 1] = `${current} ${word}`;
+    }
+    return lines;
+  }, []);
+}
+
+const createNode = (type: string, id: string): Omit<MapNode, 'x' | 'y' | 'height'> | undefined => {
   if (type === 'document') {
     const document: DocumentRecord | undefined = documents.get(id);
     return document === undefined ? undefined : {
       id,
       type: 'document',
       label: document.short_title,
+      labelLines: wrapNodeLabel(document.short_title),
       href: `${base}corpus/${document.slug}/`,
       stage: document.corpus_assessment?.policy_stage ?? 'unclassified',
     };
@@ -46,6 +68,7 @@ const createNode = (type: string, id: string): Omit<MapNode, 'x' | 'y'> | undefi
       id,
       type: 'policy',
       label: policy.short_name,
+      labelLines: wrapNodeLabel(policy.short_name),
       href: `${base}policies/${policy.id}/`,
       stage: 'policy',
     };
@@ -58,8 +81,23 @@ const relationshipPairs = data.relationships.flatMap((relationship) => {
   const target = createNode(relationship.target_entity_type, relationship.target_entity_id);
   return source === undefined || target === undefined ? [] : [{ relationship, source, target }];
 });
-const stages = [...new Set(relationshipPairs.flatMap((pair) => [pair.source.stage, pair.target.stage]))].sort();
-const nodeDefinitions = new Map<string, Omit<MapNode, 'x' | 'y'>>();
+const semanticStageOrder = [
+  'policy',
+  'agenda_setting',
+  'coordination',
+  'consultation',
+  'proposal',
+  'negotiation',
+  'adoption',
+  'implementation',
+  'unclassified',
+];
+const populatedStages = new Set(relationshipPairs.flatMap((pair) => [pair.source.stage, pair.target.stage]));
+const unexpectedStages = [...populatedStages]
+  .filter((stage) => !semanticStageOrder.includes(stage))
+  .sort((first, second) => first.localeCompare(second, 'en-GB'));
+const stages = [...semanticStageOrder.filter((stage) => populatedStages.has(stage)), ...unexpectedStages];
+const nodeDefinitions = new Map<string, Omit<MapNode, 'x' | 'y' | 'height'>>();
 for (const pair of relationshipPairs) {
   nodeDefinitions.set(`${pair.source.type}:${pair.source.id}`, pair.source);
   nodeDefinitions.set(`${pair.target.type}:${pair.target.id}`, pair.target);
@@ -71,14 +109,20 @@ const nodesByStage = [...nodeDefinitions.values()]
     stageNodes.push(node);
     groups.set(node.stage, stageNodes);
     return groups;
-  }, new Map<string, Array<Omit<MapNode, 'x' | 'y'>>>());
+  }, new Map<string, Array<Omit<MapNode, 'x' | 'y' | 'height'>>>());
 const mapNodes = [...nodesByStage.entries()].flatMap(([stage, stageNodes]) => {
   const column = stages.indexOf(stage);
-  return stageNodes.map((node, index) => ({
-    ...node,
-    x: 130 + column * 210,
-    y: 105 + index * 115,
-  }));
+  return stageNodes.reduce<{ nodes: MapNode[]; nextTop: number }>((placement, node) => {
+    const height = nodeTopPadding + nodeBottomPadding + 14 + node.labelLines.length * nodeLabelLineHeight;
+    placement.nodes.push({
+      ...node,
+      x: 48 + nodeWidth / 2 + column * (nodeWidth + nodeColumnGap),
+      y: placement.nextTop + height / 2,
+      height,
+    });
+    placement.nextTop += height + nodeGap;
+    return placement;
+  }, { nodes: [], nextTop: 44 }).nodes;
 });
 const positionedNodes = new Map(mapNodes.map((node) => [`${node.type}:${node.id}`, node]));
 const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
@@ -96,8 +140,8 @@ const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
       : sources.get(pair.relationship.evidence_source_id),
   };
 });
-const width = Math.max(500, stages.length * 210 + 60);
-const height = Math.max(260, ...mapNodes.map((node) => node.y + 80));
+const width = Math.max(580, stages.length * (nodeWidth + nodeColumnGap) + 48);
+const height = Math.max(260, ...mapNodes.map((node) => node.y + node.height / 2 + 44));
 ---
 
 <section class="research-section policy-map" aria-labelledby="policy-map-heading">
@@ -130,10 +174,14 @@ const height = Math.max(260, ...mapNodes.map((node) => node.y + 80));
       </g>
       <g class="policy-map__nodes">
         {mapNodes.map((node) => (
-          <a data-policy-map-node={node.id} href={node.href} aria-label={`${node.label} (${node.type})`}>
-            <rect x={node.x - 84} y={node.y - 27} width="168" height="54" rx="0" />
-            <text x={node.x} y={node.y - 4} text-anchor="middle">{node.type}</text>
-            <text x={node.x} y={node.y + 13} text-anchor="middle">{node.label}</text>
+          <a data-policy-map-node={node.id} href={node.href} aria-label={node.label}>
+            <rect x={node.x - nodeWidth / 2} y={node.y - node.height / 2} width={nodeWidth} height={node.height} rx="0" />
+            <text x={node.x} y={node.y - node.height / 2 + 18} text-anchor="middle">{node.type}</text>
+            <text x={node.x} y={node.y - node.height / 2 + 36} text-anchor="middle">
+              {node.labelLines.map((line, index) => (
+                <tspan x={node.x} dy={index === 0 ? 0 : nodeLabelLineHeight}>{line}</tspan>
+              ))}
+            </text>
           </a>
         ))}
       </g>

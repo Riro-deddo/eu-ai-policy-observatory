@@ -32,7 +32,40 @@ test('Policy Map has an accessible SVG, explicit relationship legend and text al
 test('policy routes are generated from published data and distinguish official and analytical content', () => {
   assert.match(policyRoute, /export function getStaticPaths\(\)/);
   assert.match(policyRoute, /data\.policies\.map/);
-  assert.match(policyRoute, /Official policy description/);
+  assert.match(policyRoute, /Research-defined policy grouping/);
   assert.match(policyRoute, /Research assessment relationships/);
   assert.match(policyRoute, /import\.meta\.env\.BASE_URL/);
+});
+
+test('the analytical policy grouping is not presented as an official EU policy description', () => {
+  assert.match(policyRoute, /Research-defined policy grouping/);
+  assert.match(policyRoute, /organises the corpus analytically/);
+  assert.match(policyRoute, /not an official EU policy title/);
+  assert.doesNotMatch(policyRoute, /Official policy description/);
+});
+
+test('focused and hovered policy-map nodes keep their labels legible and visibly focused', () => {
+  assert.match(
+    stylesheet,
+    /\.policy-map__nodes a:hover text, \.policy-map__nodes a:focus text \{[\s\S]*?fill: var\(--canvas\);/,
+  );
+  assert.match(
+    stylesheet,
+    /\.policy-map__nodes a:focus rect \{[\s\S]*?stroke: var\(--focus\);/,
+  );
+});
+
+test('policy-map stages use the controlled semantic column order before deterministic unknown stages', () => {
+  assert.match(
+    policyMap,
+    /const semanticStageOrder = \[\s*'policy',\s*'agenda_setting',\s*'coordination',\s*'consultation',\s*'proposal',\s*'negotiation',\s*'adoption',\s*'implementation',\s*'unclassified',\s*\]/,
+  );
+  assert.match(policyMap, /const stages = \[.*semanticStageOrder.*unexpectedStages.*\]/s);
+});
+
+test('policy-map labels retain every word through deterministic SVG tspans', () => {
+  assert.match(policyMap, /function wrapNodeLabel\(/);
+  assert.match(policyMap, /<tspan/);
+  assert.match(policyMap, /aria-label=\{node\.label\}/);
+  assert.match(policyMap, /maxLabelCharacters/);
 });

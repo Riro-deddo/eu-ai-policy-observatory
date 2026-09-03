@@ -51,8 +51,9 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
     <h1>{policy.name}</h1>
     <p class="policy-record__short-name">{policy.short_name}</p>
 
-    <section aria-labelledby="official-policy-description">
-      <h2 id="official-policy-description">Official policy description</h2>
+    <section aria-labelledby="research-defined-policy-grouping">
+      <h2 id="research-defined-policy-grouping">Research-defined policy grouping</h2>
+      <p>This policy record organises the corpus analytically; it is not an official EU policy title.</p>
       <dl>
         <dt>Policy name</dt><dd>{policy.name}</dd>
         <dt>Short name</dt><dd>{policy.short_name}</dd>
@@ -76,7 +77,7 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
 
     <section aria-labelledby="research-assessment-relationships">
       <h2 id="research-assessment-relationships">Research assessment relationships</h2>
-      <p>Relationship-based assessments are distinct from the official policy description above.</p>
+      <p>Relationship-based assessments are distinct from the analytical policy grouping above.</p>
       {relationships.length === 0 ? <p>No published relationships touch this policy record.</p> : (
         <ul>
           {relationships.map((relationship) => {
