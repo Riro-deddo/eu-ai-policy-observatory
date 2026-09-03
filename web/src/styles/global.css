@@ -157,7 +157,12 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .policy-record dl, .document-record dl { display: grid; gap: var(--space-1) var(--space-3); grid-template-columns: minmax(9rem, 13rem) minmax(0, 1fr); line-height: 1.55; }
 .policy-record dt, .document-record dt { color: var(--muted); font-size: 0.875rem; }
 .policy-record dd, .document-record dd { margin: 0; }
-.policy-record dd, .document-record dd, .document-record li { overflow-wrap: anywhere; }
+.policy-record dd,
+.document-record dd,
+.document-record li,
+.policy-record li,
+.policy-map__relationships li { overflow-wrap: anywhere; }
+.policy-record a, .policy-map__relationships a { overflow-wrap: anywhere; }
 .policy-record li, .document-record li { line-height: 1.55; margin-block: var(--space-1); }
 
 .site-footer__inner { align-items: baseline; color: var(--muted); display: flex; font-size: 0.8125rem; justify-content: space-between; padding-block: var(--space-3); }

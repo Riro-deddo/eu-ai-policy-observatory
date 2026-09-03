@@ -189,11 +189,11 @@ test('every generated route has one main heading, one main landmark, a working s
   ));
   for (const route of documentRoutes) await assertRouteAccessibility(route);
 
-  await page.goto('policy-map/');
-  const policyRoutes = await page.locator('[data-policy-map-node]').evaluateAll((nodes) => (
-    nodes.map((node) => node.getAttribute('href'))
-      .filter((href): href is string => href?.includes('/policies/') ?? false)
-  ));
+  await page.goto('timeline/');
+  const policyRoutes = [...new Set(await page.locator('[data-timeline-entry] a[href*="/policies/"]').evaluateAll((links) => (
+    links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)
+  )))];
+  expect(policyRoutes.length).toBeGreaterThan(0);
   for (const route of policyRoutes) await assertRouteAccessibility(route);
 
   expect(consoleErrors).toEqual([]);
@@ -205,11 +205,11 @@ test('mobile routes do not make the document body horizontally overflow', async 
     links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)
   ));
 
-  await page.goto('policy-map/');
-  const policyRoutes = await page.locator('[data-policy-map-node]').evaluateAll((nodes) => (
-    nodes.map((node) => node.getAttribute('href'))
-      .filter((href): href is string => href?.includes('/policies/') ?? false)
-  ));
+  await page.goto('timeline/');
+  const policyRoutes = [...new Set(await page.locator('[data-timeline-entry] a[href*="/policies/"]').evaluateAll((links) => (
+    links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)
+  )))];
+  expect(policyRoutes.length).toBeGreaterThan(0);
   const routes = [
     './',
     'policy-map/',
