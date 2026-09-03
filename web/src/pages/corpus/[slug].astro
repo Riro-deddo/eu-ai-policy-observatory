@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadPublicData } from '../../lib/data';
+import type { DocumentRecord, PublicData } from '../../lib/types';
+
+interface Props {
+  data: PublicData;
+  document: DocumentRecord;
+}
+
+export function getStaticPaths() {
+  const data = loadPublicData();
+  return data.documents.map((document) => ({
+    params: { slug: document.slug },
+    props: { data, document },
+  }));
+}
+
+const { data, document }: Props = Astro.props;
+const base = import.meta.env.BASE_URL;
+const relationships = data.relationships.filter((relationship) => (
+  relationship.source_entity_type === 'document' && relationship.source_entity_id === document.id
+  || relationship.target_entity_type === 'document' && relationship.target_entity_id === document.id
+));
+
+const labels = new Map<string, string>();
+for (const policy of data.policies) labels.set(`policy:${policy.id}`, policy.short_name);
+for (const entry of data.documents) labels.set(`document:${entry.id}`, entry.short_title);
+for (const event of data.events) labels.set(`event:${event.id}`, event.title);
+for (const concept of data.concepts) labels.set(`concept:${concept.id}`, concept.name);
+for (const institution of data.institutions) labels.set(`institution:${institution.id}`, institution.official_name);
+for (const source of data.sources) labels.set(`source:${source.id}`, source.publisher);
+
+const readableLabel = (entityType: string, entityId: string) => labels.get(`${entityType}:${entityId}`) ?? entityId;
+const sourceById = new Map(data.sources.map((source) => [source.id, source]));
+const assessment = document.corpus_assessment;
+const titleValue = (value: string) => value.replaceAll('_', ' ');
+---
+
+<BaseLayout
+  title={`${document.short_title} | EU AI Policy Observatory`}
+  description={`Published record for ${document.short_title}.`}
+  canonicalPath={`/corpus/${document.slug}/`}
+>
+  <article class="research-section document-record">
+    <p class="section-kicker">Published document record</p>
+    <h1>{document.official_title}</h1>
+    <p>{document.short_title}</p>
+
+    <section aria-labelledby="official-metadata">
+      <h2 id="official-metadata">Official metadata</h2>
+      <dl>
+        <dt>Document type</dt><dd>{titleValue(document.document_type)}</dd>
+        <dt>Publication date</dt><dd>{document.publication_date}</dd>
+        <dt>Legal status</dt><dd>{titleValue(document.legal_status)}</dd>
+        <dt>Language</dt><dd>{document.language}</dd>
+        {document.official_summary !== null && <><dt>Official summary</dt><dd>{document.official_summary}</dd></>}
+      </dl>
+    </section>
+
+    <section aria-labelledby="institutions-and-roles">
+      <h2 id="institutions-and-roles">Institutions and roles</h2>
+      <ul>
+        {document.institutions.map((institution) => (
+          <li><a href={institution.official_url}>{institution.official_name}</a> · {institution.role}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section aria-labelledby="official-sources-and-identifiers">
+      <h2 id="official-sources-and-identifiers">Official sources and identifiers</h2>
+      <dl>
+        <dt>CELEX</dt><dd>{document.celex ?? 'Not assigned'}</dd>
+        <dt>ELI</dt><dd>{document.eli ?? 'Not assigned'}</dd>
+      </dl>
+      <ul>
+        {document.sources.map((source) => (
+          <li><a href={source.url}>Source URL: {source.publisher}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section aria-labelledby="policy-placement-and-concepts">
+      <h2 id="policy-placement-and-concepts">Policy placement and concepts</h2>
+      <p><strong>Research assessment:</strong> Policy placement and concepts are researcher classifications.</p>
+      <dl>
+        <dt>Policy stage</dt><dd>{assessment?.policy_stage ?? 'Not assigned'}</dd>
+        <dt>Corpus tier</dt><dd>{assessment?.corpus_tier ?? 'Not assigned'}</dd>
+      </dl>
+      <ul>
+        {document.policies.map((policy) => <li>{policy.short_name}</li>)}
+        {document.concepts.map((concept) => <li>{concept.name}</li>)}
+      </ul>
+    </section>
+
+    <section aria-labelledby="research-assessment">
+      <h2 id="research-assessment">Research assessment</h2>
+      {assessment === null ? (
+        <p>No research assessment has been published for this record.</p>
+      ) : (
+        <dl>
+          <dt>Inclusion rationale</dt><dd>{assessment.inclusion_rationale}</dd>
+          <dt>Researcher notes</dt><dd>{assessment.researcher_notes}</dd>
+          <dt>Review status</dt><dd>{assessment.review_status}</dd>
+        </dl>
+      )}
+    </section>
+
+    <section aria-labelledby="relationships">
+      <h2 id="relationships">Relationships</h2>
+      {relationships.length === 0 ? <p>No published relationships touch this record.</p> : (
+        <ul>
+          {relationships.map((relationship) => {
+            const evidence = relationship.evidence_source_id === null
+              ? undefined
+              : sourceById.get(relationship.evidence_source_id);
+            return (
+              <li>
+                <p>{readableLabel(relationship.source_entity_type, relationship.source_entity_id)} · {titleValue(relationship.relationship_type)} · {readableLabel(relationship.target_entity_type, relationship.target_entity_id)}</p>
+                <p>{relationship.basis === 'analytical' ? 'Research assessment' : 'Official relationship'} · {relationship.verification_status}</p>
+                {relationship.rationale !== null && <p>{relationship.basis === 'analytical' ? 'Research assessment rationale: ' : 'Official rationale: '}{relationship.rationale}</p>}
+                {evidence !== undefined && <p><a href={evidence.url}>Evidence source: {evidence.publisher}</a></p>}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </section>
+
+    <section aria-labelledby="verification">
+      <h2 id="verification">Verification</h2>
+      {assessment === null ? <p>Research assessment verification has not been assigned.</p> : (
+        <dl>
+          <dt>Reviewed by</dt><dd>{assessment.reviewed_by}</dd>
+          <dt>Verification date</dt><dd>{assessment.reviewed_at}</dd>
+        </dl>
+      )}
+      <ul>
+        {document.sources.map((source) => <li>Last verified: {source.last_verified_at} · {source.verification_note}</li>)}
+      </ul>
+    </section>
+
+    <p><a href={`${base}corpus/`}>Return to the Corpus</a></p>
+  </article>
+</BaseLayout>

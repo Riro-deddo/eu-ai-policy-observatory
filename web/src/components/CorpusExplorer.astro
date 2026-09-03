@@ -1,0 +1,157 @@
+---
+import { filterDocuments } from '../lib/filter';
+import type { DocumentRecord } from '../lib/types';
+
+interface Props {
+  documents: DocumentRecord[];
+}
+
+const { documents }: Props = Astro.props;
+const base = import.meta.env.BASE_URL;
+const sortedDocuments = filterDocuments(documents, {});
+
+const years = [...new Set(documents.map((document) => document.publication_date.slice(0, 4)))].sort().reverse();
+const institutions = [...new Map(
+  documents.flatMap((document) => document.institutions.map((institution) => [institution.id, institution])),
+).values()].sort((first, second) => first.official_name.localeCompare(second.official_name, 'en-GB'));
+const documentTypes = [...new Set(documents.map((document) => document.document_type))].sort();
+const legalStatuses = [...new Set(documents.map((document) => document.legal_status))].sort();
+const policyStages = [...new Set(
+  documents.flatMap((document) => document.corpus_assessment === null ? [] : [document.corpus_assessment.policy_stage]),
+)].sort();
+const concepts = [...new Map(
+  documents.flatMap((document) => document.concepts.map((concept) => [concept.id, concept])),
+).values()].sort((first, second) => first.name.localeCompare(second.name, 'en-GB'));
+const corpusTiers = [...new Set(
+  documents.flatMap((document) => document.corpus_assessment === null ? [] : [document.corpus_assessment.corpus_tier]),
+)].sort();
+
+const labelValue = (value: string) => value.replaceAll('_', ' ');
+---
+
+<section class="research-section corpus-explorer" aria-labelledby="corpus-heading">
+  <div class="section-heading">
+    <p class="section-kicker">Published corpus</p>
+    <h1 id="corpus-heading">Browse policy documents</h1>
+    <p>Search official records and apply research classifications without leaving the page.</p>
+  </div>
+
+  <form class="corpus-filters" data-corpus-filters method="get" action={`${base}corpus/`}>
+    <div>
+      <label for="corpus-query">Search title, CELEX or ELI</label>
+      <input id="corpus-query" name="query" type="search" />
+    </div>
+    <div>
+      <label for="corpus-year">Publication year</label>
+      <select id="corpus-year" name="year">
+        <option value="">All years</option>
+        {years.map((year) => <option value={year}>{year}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-institution">Institution</label>
+      <select id="corpus-institution" name="institution">
+        <option value="">All institutions</option>
+        {institutions.map((institution) => <option value={institution.id}>{institution.official_name}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-document-type">Document type</label>
+      <select id="corpus-document-type" name="documentType">
+        <option value="">All document types</option>
+        {documentTypes.map((documentType) => <option value={documentType}>{labelValue(documentType)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-legal-status">Legal status</label>
+      <select id="corpus-legal-status" name="legalStatus">
+        <option value="">All legal statuses</option>
+        {legalStatuses.map((legalStatus) => <option value={legalStatus}>{labelValue(legalStatus)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-policy-stage">Policy stage</label>
+      <select id="corpus-policy-stage" name="policyStage">
+        <option value="">All policy stages</option>
+        {policyStages.map((policyStage) => <option value={policyStage}>{labelValue(policyStage)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-concept">Concept</label>
+      <select id="corpus-concept" name="concept">
+        <option value="">All concepts</option>
+        {concepts.map((concept) => <option value={concept.id}>{concept.name}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-tier">Corpus tier</label>
+      <select id="corpus-tier" name="corpusTier">
+        <option value="">All corpus tiers</option>
+        {corpusTiers.map((corpusTier) => <option value={corpusTier}>{labelValue(corpusTier)}</option>)}
+      </select>
+    </div>
+    <div class="corpus-filters__actions">
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset filters</button>
+    </div>
+  </form>
+
+  <p data-corpus-count aria-live="polite">{sortedDocuments.length} published documents</p>
+  <p data-corpus-empty hidden>No documents match these criteria. Reset filters to view the complete published corpus.</p>
+  <ul data-corpus-list>
+    {sortedDocuments.map((document) => (
+      <li data-document-id={document.id}>
+        <a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a>
+        <span> · {document.publication_date} · {labelValue(document.document_type)}</span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<script id="corpus-documents" type="application/json" set:html={JSON.stringify(documents)}></script>
+<script>
+  import { filterDocuments } from '../lib/filter';
+  import type { CorpusCriteria } from '../lib/filter';
+  import type { DocumentRecord } from '../lib/types';
+
+  const form = document.querySelector('[data-corpus-filters]');
+  const serializedDocuments = document.querySelector('#corpus-documents');
+  const count = document.querySelector('[data-corpus-count]');
+  const empty = document.querySelector('[data-corpus-empty]');
+  const items = [...document.querySelectorAll('[data-document-id]')];
+
+  if (form instanceof HTMLFormElement && serializedDocuments instanceof HTMLScriptElement
+    && count instanceof HTMLElement && empty instanceof HTMLElement) {
+    const documents: DocumentRecord[] = JSON.parse(serializedDocuments.textContent ?? '[]');
+
+    const applyFilters = () => {
+      const formData = new FormData(form);
+      const criteria: CorpusCriteria = Object.fromEntries(
+        [...formData.entries()]
+          .filter(([, value]) => typeof value === 'string' && value !== '')
+          .map(([name, value]) => [name, value.toString()]),
+      );
+      const visibleIds = new Set(filterDocuments(documents, criteria).map((entry) => entry.id));
+
+      for (const item of items) {
+        if (item instanceof HTMLElement) {
+          item.hidden = !visibleIds.has(item.dataset.documentId);
+        }
+      }
+
+      const suffix = visibleIds.size === 1 ? 'document' : 'documents';
+      count.textContent = `${visibleIds.size} published ${suffix}`;
+      empty.hidden = visibleIds.size !== 0;
+    };
+
+    form.addEventListener('input', applyFilters);
+    form.addEventListener('change', applyFilters);
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      applyFilters();
+    });
+    form.addEventListener('reset', () => {
+      window.setTimeout(applyFilters);
+    });
+  }
+</script>

@@ -1,0 +1,15 @@
+---
+import CorpusExplorer from '../../components/CorpusExplorer.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadPublicData } from '../../lib/data';
+
+const data = loadPublicData();
+---
+
+<BaseLayout
+  title="Corpus | EU AI Policy Observatory"
+  description="Search and browse the published EU AI policy document corpus."
+  canonicalPath="/corpus/"
+>
+  <CorpusExplorer documents={data.documents} />
+</BaseLayout>
