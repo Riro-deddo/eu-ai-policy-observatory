@@ -66,6 +66,9 @@ def validate_records(
 
     for record in loaded:
         path = _relative_path(record.path, data_root)
+        if record.syntax_error is not None:
+            issues.append(_issue("json_syntax", path, "$", record.syntax_error))
+            continue
         if not isinstance(record.data, Mapping):
             issues.append(_issue("schema", path, "$", "A record must be a JSON object."))
             continue
@@ -91,9 +94,10 @@ def validate_records(
 
     _validate_duplicate_ids(records_by_id, data_root, issues)
     _validate_duplicate_legal_identifiers(records_by_type, data_root, issues)
+    _validate_duplicate_slugs(records_by_type, data_root, issues)
 
     for record in loaded:
-        if not isinstance(record.data, Mapping):
+        if record.syntax_error is not None or not isinstance(record.data, Mapping):
             continue
         path = _relative_path(record.path, data_root)
         references = list(_references(record.data))
@@ -229,8 +233,20 @@ def _validate_canonical_location(
 
 
 def _validate_timestamp_order(record: LoadedRecord, path: str, issues: list[ValidationIssue]) -> None:
-    created_at = _parse_timestamp(record.data.get("created_at"))
-    updated_at = _parse_timestamp(record.data.get("updated_at"))
+    created_value = record.data.get("created_at")
+    updated_value = record.data.get("updated_at")
+    for field, value in (("created_at", created_value), ("updated_at", updated_value)):
+        if _is_offset_naive_timestamp(value):
+            issues.append(
+                _issue(
+                    "schema",
+                    path,
+                    field,
+                    "Timestamps must include a UTC offset.",
+                )
+            )
+    created_at = _parse_timestamp(created_value)
+    updated_at = _parse_timestamp(updated_value)
     if created_at is not None and updated_at is not None and updated_at < created_at:
         issues.append(
             _issue(
@@ -246,9 +262,19 @@ def _parse_timestamp(value: object) -> datetime | None:
     if not isinstance(value, str):
         return None
     try:
-        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+        timestamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return timestamp if timestamp.tzinfo is not None else None
     except ValueError:
         return None
+
+
+def _is_offset_naive_timestamp(value: object) -> bool:
+    if not isinstance(value, str):
+        return False
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).tzinfo is None
+    except ValueError:
+        return False
 
 
 def _validate_duplicate_ids(
@@ -297,6 +323,31 @@ def _validate_duplicate_legal_identifiers(
                         f"{field.upper()} value {value!r} occurs in more than one document.",
                     )
                 )
+
+
+def _validate_duplicate_slugs(
+    records_by_type: Mapping[str, Mapping[str, list[LoadedRecord]]],
+    data_root: Path,
+    issues: list[ValidationIssue],
+) -> None:
+    grouped: dict[str, list[LoadedRecord]] = defaultdict(list)
+    for records in records_by_type.get("document", {}).values():
+        for record in records:
+            slug = record.data.get("slug")
+            if isinstance(slug, str) and slug:
+                grouped[slug].append(record)
+    for slug, records in grouped.items():
+        if len(records) < 2:
+            continue
+        for record in records:
+            issues.append(
+                _issue(
+                    "duplicate_slug",
+                    _relative_path(record.path, data_root),
+                    "slug",
+                    f"Document slug {slug!r} occurs in more than one document.",
+                )
+            )
 
 
 def _references(data: Mapping[str, object]) -> Iterable[tuple[str, str, str]]:

@@ -1,4 +1,6 @@
+import json
 from pathlib import Path
+import shutil
 
 import pytest
 
@@ -7,6 +9,13 @@ from observatory.validate import RecordValidationError, assert_valid, validate_r
 
 SCHEMA = Path("schema/record.schema.json")
 VOCAB = Path("schema/controlled-vocabularies.json")
+VALID_DATA = Path("tests/fixtures/valid/data")
+
+
+def _copy_valid_data(tmp_path: Path) -> Path:
+    data_root = tmp_path / "data"
+    shutil.copytree(VALID_DATA, data_root)
+    return data_root
 
 
 def test_valid_fixture_has_no_issues():
@@ -57,3 +66,46 @@ def test_assert_valid_raises_sorted_actionable_messages():
     lines = str(error.value).splitlines()
     assert lines == sorted(lines)
     assert "[duplicate_id]" in str(error.value)
+
+
+def test_malformed_json_is_a_sorted_issue_without_skipping_other_records(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    (data_root / "documents" / "broken.json").write_text("{", encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "json_syntax" and issue.record_path == "documents/broken.json"
+        for issue in issues
+    )
+    assert not any(issue.record_path == "documents/example-document.json" for issue in issues)
+    assert issues == sorted(issues, key=lambda issue: (issue.record_path, issue.field, issue.code))
+
+
+def test_mixed_naive_and_aware_timestamps_report_schema_issue_without_crashing(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    document_path = data_root / "documents" / "example-document.json"
+    document = json.loads(document_path.read_text(encoding="utf-8"))
+    document["updated_at"] = "2026-09-03T12:00:00"
+    document_path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "schema" and issue.record_path == "documents/example-document.json"
+        for issue in issues
+    )
+
+
+def test_duplicate_document_slugs_are_reported(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    document_path = data_root / "documents" / "second-document.json"
+    document = json.loads(
+        (data_root / "documents" / "example-document.json").read_text(encoding="utf-8")
+    )
+    document["id"] = "second-document"
+    document_path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(issue.code == "duplicate_slug" for issue in issues)
