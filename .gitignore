@@ -1,0 +1,9 @@
+.superpowers/
+work/
+outputs/
+node_modules/
+.astro/
+dist/
+generated/
+__pycache__/
+*.pyc
