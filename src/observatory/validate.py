@@ -61,6 +61,10 @@ def validate_records(
         entity_type: _entity_validator(schema, entity_type)
         for entity_type in ENTITY_DIRECTORY_BY_TYPE
     }
+    entity_properties = {
+        entity_type: _entity_property_names(schema, entity_type)
+        for entity_type in ENTITY_DIRECTORY_BY_TYPE
+    }
     loaded_by_directory = load_records(data_root)
     loaded = [record for records in loaded_by_directory.values() for record in records]
     issues: list[ValidationIssue] = []
@@ -94,6 +98,18 @@ def validate_records(
                     _schema_error_message(error),
                 )
             )
+        if isinstance(entity_type, str):
+            for property_name in _unexpected_entity_properties(
+                record.data, entity_properties.get(entity_type, set())
+            ):
+                issues.append(
+                    _issue(
+                        "schema",
+                        path,
+                        property_name,
+                        f"Record contains unsupported property {property_name!r}.",
+                    )
+                )
 
         _validate_vocabulary(record, path, vocabulary, issues)
         identifier = record.data.get("id")
@@ -148,9 +164,42 @@ def _entity_validator(schema: Mapping[str, object], entity_type: str) -> Draft20
     entity_schema = {
         "$defs": schema["$defs"],
         "$ref": f"#/$defs/{entity_type}",
-        "unevaluatedProperties": False,
     }
     return Draft202012Validator(entity_schema, format_checker=FormatChecker())
+
+
+def _entity_property_names(schema: Mapping[str, object], entity_type: str) -> set[str]:
+    """Return the top-level properties permitted by one canonical entity schema."""
+    definitions = schema["$defs"]
+    common = definitions["common_envelope"]
+    entity = definitions[entity_type]
+    properties: set[str] = set()
+    for definition in (common, entity):
+        if not isinstance(definition, Mapping):
+            continue
+        for component in definition.get("allOf", [definition]):
+            if not isinstance(component, Mapping):
+                continue
+            referenced = component.get("$ref")
+            if isinstance(referenced, str) and referenced.startswith("#/$defs/"):
+                component = definitions.get(referenced.rsplit("/", 1)[-1], {})
+            component_properties = component.get("properties", {})
+            if isinstance(component_properties, Mapping):
+                properties.update(
+                    name for name in component_properties if isinstance(name, str)
+                )
+    return properties
+
+
+def _unexpected_entity_properties(
+    data: Mapping[str, object], permitted_properties: set[str]
+) -> list[str]:
+    """Return unsupported root fields without reporting their potentially private values."""
+    return sorted(
+        property_name
+        for property_name in data
+        if property_name not in permitted_properties
+    )
 
 
 def _leaf_schema_errors(errors: Iterable[object]) -> Iterable[object]:

@@ -139,8 +139,28 @@ def test_schema_errors_name_missing_leaf_without_leaking_researcher_notes(tmp_pa
     messages = str(RecordValidationError(issues))
 
     assert any(issue.field == "slug" for issue in issues)
+    assert not any(issue.code == "schema" and issue.field == "$" for issue in issues)
     assert "PRIVATE-RESEARCH-SENTINEL" not in messages
     assert "oneOf" not in messages
+
+
+def test_unexpected_properties_are_rejected_without_leaking_values(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    document_path = data_root / "documents" / "example-document.json"
+    document = json.loads(document_path.read_text(encoding="utf-8"))
+    document["unexpected_private_property"] = "PRIVATE-RESEARCH-SENTINEL"
+    document_path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+    messages = str(RecordValidationError(issues))
+
+    assert any(
+        issue.code == "schema"
+        and issue.field == "unexpected_private_property"
+        and "unsupported property" in issue.message
+        for issue in issues
+    )
+    assert "PRIVATE-RESEARCH-SENTINEL" not in messages
 
 
 def test_non_string_entity_type_is_reported_without_crashing(tmp_path):
