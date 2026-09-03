@@ -4,6 +4,7 @@ import test from 'node:test';
 
 const timeline = readFileSync(new URL('../src/components/Timeline.astro', import.meta.url), 'utf8');
 const policyMap = readFileSync(new URL('../src/components/PolicyMap.astro', import.meta.url), 'utf8');
+const policyMapLayout = readFileSync(new URL('../src/lib/policy-map.ts', import.meta.url), 'utf8');
 const timelinePage = readFileSync(new URL('../src/pages/timeline.astro', import.meta.url), 'utf8');
 const policyMapPage = readFileSync(new URL('../src/pages/policy-map.astro', import.meta.url), 'utf8');
 const policyRoute = readFileSync(new URL('../src/pages/policies/[id].astro', import.meta.url), 'utf8');
@@ -57,15 +58,15 @@ test('focused and hovered policy-map nodes keep their labels legible and visibly
 
 test('policy-map stages use the controlled semantic column order before deterministic unknown stages', () => {
   assert.match(
-    policyMap,
-    /const semanticStageOrder = \[\s*'policy',\s*'agenda_setting',\s*'coordination',\s*'consultation',\s*'proposal',\s*'negotiation',\s*'adoption',\s*'implementation',\s*'unclassified',\s*\]/,
+    policyMapLayout,
+    /const semanticPolicyMapStages = \[\s*'policy',\s*'agenda_setting',\s*'coordination',\s*'consultation',\s*'proposal',\s*'negotiation',\s*'adoption',\s*'implementation',\s*'unclassified',\s*\]/,
   );
-  assert.match(policyMap, /const stages = \[.*semanticStageOrder.*unexpectedStages.*\]/s);
+  assert.match(policyMapLayout, /const stages = \[.*semanticPolicyMapStages.*unexpectedStages.*\]/s);
 });
 
-test('policy-map labels retain every word through deterministic SVG tspans', () => {
-  assert.match(policyMap, /function wrapNodeLabel\(/);
+test('Policy Map binds its rendered SVG dimensions to its computed layout', () => {
+  assert.match(policyMap, /layoutPolicyMapNodes/);
   assert.match(policyMap, /<tspan/);
   assert.match(policyMap, /aria-label=\{node\.label\}/);
-  assert.match(policyMap, /maxLabelCharacters/);
+  assert.match(policyMap, /<svg width=\{layout\.width\} height=\{layout\.height\}/);
 });
