@@ -2,6 +2,7 @@
 
 from dataclasses import dataclass
 import argparse
+from datetime import datetime, timedelta
 import os
 from pathlib import Path
 import shutil
@@ -31,6 +32,7 @@ def run_pipeline(
     project_root: Path, build_timestamp: str, output_root: Path | None = None
 ) -> BuildOutputs:
     """Validate, build, export, then atomically publish both generated artefacts."""
+    _validate_build_timestamp(build_timestamp)
     root = Path(project_root).resolve()
     data_root = root / "data"
     schema_root = root / "schema"
@@ -51,11 +53,68 @@ def run_pipeline(
         build_database(records, schema_root / "database.sql", temporary_database)
         export_public(temporary_database, temporary_public_json, build_timestamp)
         destination.mkdir(parents=True, exist_ok=True)
-        os.replace(temporary_database, database)
-        os.replace(temporary_public_json, public_json)
+        _publish_output_pair(
+            temporary_database,
+            temporary_public_json,
+            database,
+            public_json,
+        )
     finally:
         shutil.rmtree(temporary_root, ignore_errors=True)
     return BuildOutputs(database, public_json, record_counts)
+
+
+def _validate_build_timestamp(value: str) -> None:
+    """Reject non-UTC timestamps before validation or output-directory mutation."""
+    try:
+        if "T" not in value:
+            raise ValueError
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None or parsed.utcoffset() != timedelta(0):
+            raise ValueError
+    except (TypeError, ValueError):
+        raise ValueError(
+            "build_timestamp must be an ISO-8601 UTC timestamp "
+            "(for example, 2026-09-03T00:00:00Z)."
+        ) from None
+
+
+def _publish_output_pair(
+    temporary_database: Path,
+    temporary_public_json: Path,
+    database: Path,
+    public_json: Path,
+) -> None:
+    """Publish both artefacts or restore the exact prior pair after replacement failure."""
+    backups = (
+        (database, temporary_database.with_name("previous-database.sqlite")),
+        (public_json, temporary_public_json.with_name("previous-public-data.json")),
+    )
+    existing = {destination: destination.exists() for destination, _ in backups}
+    for destination, backup in backups:
+        if existing[destination]:
+            shutil.copyfile(destination, backup)
+
+    try:
+        os.replace(temporary_database, database)
+        os.replace(temporary_public_json, public_json)
+    except Exception:
+        _restore_output_pair(backups, existing)
+        raise
+
+
+def _restore_output_pair(
+    backups: tuple[tuple[Path, Path], ...], existing: dict[Path, bool]
+) -> None:
+    """Best-effort restoration that preserves the publication exception for the caller."""
+    for destination, backup in backups:
+        try:
+            if existing[destination]:
+                os.replace(backup, destination)
+            elif destination.exists():
+                destination.unlink()
+        except OSError:
+            pass
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -72,6 +131,9 @@ def main(argv: list[str] | None = None) -> int:
                 f"{issue.record_path}: {issue.field}: [{issue.code}] {issue.message}",
                 file=sys.stderr,
             )
+        return 1
+    except ValueError as error:
+        print(str(error), file=sys.stderr)
         return 1
     print(f"database: {outputs.database}")
     print(f"public_json: {outputs.public_json}")
