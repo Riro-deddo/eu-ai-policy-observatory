@@ -113,7 +113,7 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
 
 <script id="corpus-documents" type="application/json" set:html={JSON.stringify(documents).replaceAll('<', '\\u003c')}></script>
 <script>
-  import { filterDocuments } from '../lib/filter';
+  import { filterDocuments, parseCorpusCriteria } from '../lib/filter';
   import type { CorpusCriteria } from '../lib/filter';
   import type { DocumentRecord } from '../lib/types';
 
@@ -129,11 +129,11 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
 
     const applyFilters = () => {
       const formData = new FormData(form);
-      const criteria: CorpusCriteria = Object.fromEntries(
+      const criteria: CorpusCriteria = parseCorpusCriteria(new URLSearchParams(
         [...formData.entries()]
-          .filter(([, value]) => typeof value === 'string' && value !== '')
+          .filter(([, value]) => typeof value === 'string')
           .map(([name, value]) => [name, value.toString()]),
-      );
+      ));
       const visibleIds = new Set(filterDocuments(documents, criteria).map((entry) => entry.id));
 
       for (const item of items) {
@@ -156,5 +156,17 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
     form.addEventListener('reset', () => {
       window.setTimeout(applyFilters);
     });
+
+    const criteria = parseCorpusCriteria(new URLSearchParams(window.location.search));
+    for (const [name, value] of Object.entries(criteria)) {
+      const control = form.elements.namedItem(name);
+      if (control instanceof HTMLInputElement) {
+        control.value = value;
+      } else if (control instanceof HTMLSelectElement
+        && [...control.options].some((option) => option.value === value)) {
+        control.value = value;
+      }
+    }
+    applyFilters();
   }
 </script>

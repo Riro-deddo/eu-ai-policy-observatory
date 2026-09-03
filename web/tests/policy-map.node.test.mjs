@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import {
+import * as policyMap from '../src/lib/policy-map.ts';
+
+const {
   layoutPolicyMapNodes,
   maxLabelCharacters,
   wrapPolicyMapLabel,
-} from '../src/lib/policy-map.ts';
+} = policyMap;
 
 test('long current policy labels wrap without losing words and grow node height', () => {
   const label = 'Coordinated Plan on Artificial Intelligence';
@@ -40,4 +42,19 @@ test('policy-map layout preserves semantic stage order and full SVG geometry', (
   assert.deepEqual(layout.stages, ['proposal', 'adoption', 'zeta']);
   assert.ok(proposal.x < adoption.x);
   assert.equal(layout.width, 1020);
+});
+
+test('stage headings reuse the exact x-coordinate allocated to their node column', () => {
+  assert.equal(typeof policyMap.policyMapStageX, 'function');
+  const layout = layoutPolicyMapNodes([
+    { id: 'proposal', label: 'AI Act proposal', stage: 'proposal' },
+    { id: 'adoption', label: 'Final AI Act', stage: 'adoption' },
+  ]);
+
+  for (const [index, stage] of layout.stages.entries()) {
+    assert.equal(
+      layout.nodes.find((node) => node.stage === stage)?.x,
+      policyMap.policyMapStageX(index),
+    );
+  }
 });

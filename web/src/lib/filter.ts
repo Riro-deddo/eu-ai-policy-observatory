@@ -11,6 +11,33 @@ export interface CorpusCriteria {
   corpusTier?: string;
 }
 
+const corpusCriteriaKeys = [
+  'query',
+  'year',
+  'institution',
+  'documentType',
+  'legalStatus',
+  'policyStage',
+  'concept',
+  'corpusTier',
+] as const;
+
+function isCorpusCriteriaKey(value: string): value is keyof CorpusCriteria {
+  return corpusCriteriaKeys.includes(value as keyof CorpusCriteria);
+}
+
+export function parseCorpusCriteria(search: URLSearchParams): CorpusCriteria {
+  const criteria: CorpusCriteria = {};
+
+  for (const [key, value] of search) {
+    if (isCorpusCriteriaKey(key) && value.trim() !== '' && criteria[key] === undefined) {
+      criteria[key] = value;
+    }
+  }
+
+  return criteria;
+}
+
 export interface TimelineCriteria {
   institution?: string;
   documentType?: string;

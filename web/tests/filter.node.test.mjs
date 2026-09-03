@@ -3,6 +3,8 @@ import test from 'node:test';
 
 import { filterDocuments } from '../src/lib/filter.ts';
 
+const filterModule = await import('../src/lib/filter.ts');
+
 const publishedAt = '2026-09-03T00:00:00Z';
 const document = (id, shortTitle, publicationDate, details = {}) => ({
   id,
@@ -88,5 +90,13 @@ test('filters scalar criteria and excludes records without a research assessment
   assert.deepEqual(
     filterDocuments(documents, { corpusTier: 'core' }).map((entry) => entry.id),
     ['final-ai-act'],
+  );
+});
+
+test('parses only named Corpus criteria and discards blank or unsupported query parameters', () => {
+  assert.equal(typeof filterModule.parseCorpusCriteria, 'function');
+  assert.deepEqual(
+    filterModule.parseCorpusCriteria(new URLSearchParams('concept=risk&year=&eventType=proposal&unknown=value&query=AI')),
+    { concept: 'risk', query: 'AI' },
   );
 });

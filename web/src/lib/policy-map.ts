@@ -15,7 +15,11 @@ export const policyMapNodeWidth = 260;
 
 const nodeColumnGap = 64;
 const nodeGap = 24;
-const nodeLabelLineHeight = 16;
+const mapLeftInset = 48;
+const nodeStartTop = 68;
+export const policyMapNodeTypeBaseline = 18;
+export const policyMapNodeLabelBaseline = 42;
+export const policyMapNodeLabelLineHeight = 18;
 const nodeTopPadding = 20;
 const nodeBottomPadding = 18;
 
@@ -36,6 +40,10 @@ export interface PolicyMapLayout<T extends PolicyMapLayoutInput> {
   nodes: Array<T & PolicyMapGeometry>;
   width: number;
   height: number;
+}
+
+export function policyMapStageX(column: number): number {
+  return mapLeftInset + policyMapNodeWidth / 2 + column * (policyMapNodeWidth + nodeColumnGap);
 }
 
 export function wrapPolicyMapLabel(label: string): string[] {
@@ -71,17 +79,17 @@ export function layoutPolicyMapNodes<T extends PolicyMapLayoutInput>(nodes: T[])
     const column = stages.indexOf(stage);
     return stageNodes.reduce<{ nodes: Array<T & PolicyMapGeometry>; nextTop: number }>((placement, node) => {
       const labelLines = wrapPolicyMapLabel(node.label);
-      const height = nodeTopPadding + nodeBottomPadding + 14 + labelLines.length * nodeLabelLineHeight;
+      const height = nodeTopPadding + nodeBottomPadding + 22 + labelLines.length * policyMapNodeLabelLineHeight;
       placement.nodes.push({
         ...node,
         labelLines,
-        x: 48 + policyMapNodeWidth / 2 + column * (policyMapNodeWidth + nodeColumnGap),
+        x: policyMapStageX(column),
         y: placement.nextTop + height / 2,
         height,
       });
       placement.nextTop += height + nodeGap;
       return placement;
-    }, { nodes: [], nextTop: 44 }).nodes;
+    }, { nodes: [], nextTop: nodeStartTop }).nodes;
   });
 
   return {

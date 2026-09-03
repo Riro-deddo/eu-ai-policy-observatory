@@ -67,7 +67,7 @@ test('policy-map stages use the controlled semantic column order before determin
 test('Policy Map binds its rendered SVG dimensions to its computed layout', () => {
   assert.match(policyMap, /layoutPolicyMapNodes/);
   assert.match(policyMap, /<tspan/);
-  assert.match(policyMap, /aria-label=\{node\.label\}/);
+  assert.match(policyMap, /aria-label=\{`\$\{node\.label\} \(\$\{stageLabel\(node\.stage\)\}\)`\}/);
   assert.match(policyMap, /<svg width=\{layout\.width\} height=\{layout\.height\}/);
 });
 

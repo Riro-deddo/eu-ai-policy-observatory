@@ -68,7 +68,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18e
 
 .wordmark { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.015em; text-decoration: none; white-space: nowrap; }
 .primary-nav { display: flex; flex-wrap: wrap; gap: 0 var(--space-2); list-style: none; margin: 0; padding: 0; }
-.primary-nav a { color: var(--muted); display: inline-block; font-size: 0.8125rem; padding: 0.7rem 0; text-decoration: none; }
+.primary-nav a { color: var(--muted); display: inline-block; font-size: 0.875rem; padding: 0.7rem 0; text-decoration: none; }
 .primary-nav a:hover { color: var(--ink); text-decoration: underline; }
 
 .hero { border-bottom: 1px solid var(--rule); max-inline-size: 70rem; padding-block: clamp(4rem, 12vw, 10rem) var(--space-5); }
@@ -101,7 +101,7 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .corpus-explorer > .section-heading > p:last-child { color: var(--muted); line-height: 1.65; max-inline-size: var(--measure); }
 .corpus-filters { border-block: 1px solid var(--rule); display: grid; gap: var(--space-2); grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-4) var(--space-2); max-inline-size: var(--measure); padding-block: var(--space-3); }
 .corpus-filters > div { min-inline-size: 0; }
-.corpus-filters label { display: block; font-size: 0.8125rem; font-weight: 700; margin-bottom: var(--space-1); }
+.corpus-filters label { display: block; font-size: 0.875rem; font-weight: 700; margin-bottom: var(--space-1); }
 .corpus-filters input, .corpus-filters select { background: var(--canvas); border: 1px solid var(--rule); border-radius: 0; color: var(--ink); font: inherit; inline-size: 100%; min-block-size: 2.75rem; padding-inline: 0.65rem; }
 .corpus-filters button { background: var(--ink); border: 1px solid var(--ink); border-radius: 0; color: var(--canvas); cursor: pointer; font: inherit; min-block-size: 2.75rem; padding-inline: var(--space-2); }
 .corpus-filters button[type="reset"] { background: transparent; color: var(--ink); }
@@ -115,7 +115,7 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .timeline > .section-heading > p:last-child, .policy-map > .section-heading > p:last-child { color: var(--muted); line-height: 1.65; max-inline-size: var(--measure); }
 .timeline-filters { border-block: 1px solid var(--rule); display: grid; gap: var(--space-2); grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-4) var(--space-2); max-inline-size: var(--measure); padding-block: var(--space-3); }
 .timeline-filters > div { min-inline-size: 0; }
-.timeline-filters label { display: block; font-size: 0.8125rem; font-weight: 700; margin-bottom: var(--space-1); }
+.timeline-filters label { display: block; font-size: 0.875rem; font-weight: 700; margin-bottom: var(--space-1); }
 .timeline-filters select { background: var(--canvas); border: 1px solid var(--rule); border-radius: 0; color: var(--ink); font: inherit; inline-size: 100%; min-block-size: 2.75rem; padding-inline: 0.65rem; }
 .timeline-filters button { background: var(--ink); border: 1px solid var(--ink); border-radius: 0; color: var(--canvas); cursor: pointer; font: inherit; min-block-size: 2.75rem; padding-inline: var(--space-2); }
 .timeline-filters button[type="reset"] { background: transparent; color: var(--ink); }
@@ -143,8 +143,9 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .policy-map__nodes a:hover rect, .policy-map__nodes a:focus rect { fill: var(--ink); }
 .policy-map__nodes a:hover text, .policy-map__nodes a:focus text { fill: var(--canvas); }
 .policy-map__nodes a:focus rect { stroke: var(--focus); stroke-width: 3; }
-.policy-map__nodes text { fill: var(--ink); font-family: var(--sans); font-size: 10px; pointer-events: none; }
-.policy-map__nodes text + text { font-family: var(--serif); font-size: 12px; }
+.policy-map__nodes text { fill: var(--ink); font-family: var(--sans); font-size: 12px; pointer-events: none; }
+.policy-map__nodes text + text { font-family: var(--serif); font-size: 14px; }
+.policy-map__stages text { fill: var(--muted); font-size: 0.875rem; font-weight: 700; text-transform: capitalize; }
 .policy-map__relationships { max-inline-size: var(--measure); padding-top: var(--space-4); }
 .policy-map__relationships h2 { font-size: clamp(1.45rem, 3vw, 2rem); }
 .policy-map__relationships ol { border-top: 1px solid var(--rule); list-style: decimal; margin: var(--space-2) 0 0; padding: 0 0 0 var(--space-3); }

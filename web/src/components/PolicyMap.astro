@@ -1,6 +1,13 @@
 ---
 import type { DocumentRecord, Policy, PublicData, Relationship, Source } from '../lib/types';
-import { layoutPolicyMapNodes, policyMapNodeWidth } from '../lib/policy-map';
+import {
+  layoutPolicyMapNodes,
+  policyMapNodeLabelBaseline,
+  policyMapNodeLabelLineHeight,
+  policyMapNodeTypeBaseline,
+  policyMapNodeWidth,
+  policyMapStageX,
+} from '../lib/policy-map';
 import type { PolicyMapGeometry } from '../lib/policy-map';
 
 interface Props {
@@ -30,7 +37,7 @@ const documents = new Map(data.documents.map((document) => [document.id, documen
 const policies = new Map(data.policies.map((policy) => [policy.id, policy]));
 const sources = new Map(data.sources.map((source) => [source.id, source]));
 const titleValue = (value: string) => value.replaceAll('_', ' ');
-const nodeLabelLineHeight = 16;
+const stageLabel = titleValue;
 
 const createNode = (type: string, id: string): MapNode | undefined => {
   if (type === 'document') {
@@ -99,9 +106,14 @@ const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
   </div>
 
   <div class="policy-map__graphic" tabindex="0">
-    <svg width={layout.width} height={layout.height} viewBox={`0 0 ${layout.width} ${layout.height}`} role="img" aria-labelledby="policy-map-svg-title policy-map-svg-description">
+    <svg width={layout.width} height={layout.height} viewBox={`0 0 ${layout.width} ${layout.height}`} role="group" aria-labelledby="policy-map-svg-title" aria-describedby="policy-map-svg-description">
       <title id="policy-map-svg-title">Published policy and document relationships</title>
       <desc id="policy-map-svg-description">A deterministic diagram of the published official and analytical relationships listed immediately below.</desc>
+      <g class="policy-map__stages">
+        {layout.stages.map((stage, index) => (
+          <text data-policy-map-stage={stage} x={policyMapStageX(index)} y="32" text-anchor="middle">{stageLabel(stage)}</text>
+        ))}
+      </g>
       <g class="policy-map__edges">
         {mapRelationships.map(({ relationship, source, target }) => (
           <line
@@ -116,12 +128,12 @@ const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
       </g>
       <g class="policy-map__nodes">
         {mapNodes.map((node) => (
-          <a data-policy-map-node={node.id} href={node.href} aria-label={node.label}>
+          <a data-policy-map-node={node.id} href={node.href} aria-label={`${node.label} (${stageLabel(node.stage)})`}>
             <rect x={node.x - policyMapNodeWidth / 2} y={node.y - node.height / 2} width={policyMapNodeWidth} height={node.height} rx="0" />
-            <text x={node.x} y={node.y - node.height / 2 + 18} text-anchor="middle">{node.type}</text>
-            <text x={node.x} y={node.y - node.height / 2 + 36} text-anchor="middle">
+            <text x={node.x} y={node.y - node.height / 2 + policyMapNodeTypeBaseline} text-anchor="middle">{node.type}</text>
+            <text x={node.x} y={node.y - node.height / 2 + policyMapNodeLabelBaseline} text-anchor="middle">
               {node.labelLines.map((line, index) => (
-                <tspan x={node.x} dy={index === 0 ? 0 : nodeLabelLineHeight}>{line}</tspan>
+                <tspan x={node.x} dy={index === 0 ? 0 : policyMapNodeLabelLineHeight}>{line}</tspan>
               ))}
             </text>
           </a>

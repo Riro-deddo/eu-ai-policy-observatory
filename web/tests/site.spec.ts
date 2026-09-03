@@ -19,6 +19,14 @@ test('homepage preserves the repository base path in navigation and canonical me
   );
   await expect(page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name: 'Home' }))
     .toHaveAttribute('href', '/eu-ai-policy-observatory/');
+  await expect(page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name: 'Policy Map' }))
+    .toHaveAttribute('href', '/eu-ai-policy-observatory/policy-map/');
+
+  await page.goto('policy-map/');
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    'https://eu-ai-policy-observatory.test/eu-ai-policy-observatory/policy-map/',
+  );
 });
 
 test('home presents the four research lenses from data', async ({ page }) => {
@@ -35,7 +43,7 @@ test('methodology states the publication boundary', async ({ page }) => {
 
 test('about uses project-led authorship without university affiliation', async ({ page }) => {
   await page.goto('about/');
-  await expect(page.getByText('Created and maintained by Yichen Hao')).toBeVisible();
+  await expect(page.locator('main').getByText('Created and maintained by Yichen Hao', { exact: true })).toBeVisible();
   await expect(page.getByText(/University of Edinburgh/i)).toHaveCount(0);
 });
 
@@ -51,8 +59,18 @@ test('corpus renders every published seed document as a normal link', async ({ p
     'Ethics Guidelines for Trustworthy AI',
     'White Paper on Artificial Intelligence',
   ]) {
-    await expect(page.getByRole('link', { name: title })).toBeVisible();
+    await expect(page.getByRole('link', { name: title, exact: true })).toBeVisible();
   }
+});
+
+test('research lens links hydrate the matching Corpus concept on arrival', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('link', { name: 'Risk', exact: true }).click();
+
+  expect(new URL(page.url()).search).toBe('?concept=risk');
+  await expect(page.getByLabel('Concept')).toHaveValue('risk');
+  await expect(page.locator('[data-corpus-list] > li:not([hidden])')).toHaveCount(6);
+  await expect(page.locator('[data-corpus-count]')).toHaveText('6 published documents');
 });
 
 test('corpus search, combined classifications and reset update the rendered list', async ({ page }) => {
@@ -135,8 +153,9 @@ test('timeline event-type filtering updates the visible chronology and announces
 test('policy map states both relationship conventions and pairs every visual edge with one text entry', async ({ page }) => {
   await page.goto('policy-map/');
 
-  await expect(page.getByText('Official relationship')).toBeVisible();
-  await expect(page.getByText('Analytical relationship')).toBeVisible();
+  const legend = page.locator('.policy-map__legend');
+  await expect(legend.getByText('Official relationship', { exact: true })).toBeVisible();
+  await expect(legend.getByText('Analytical relationship', { exact: true })).toBeVisible();
   const visualRelationships = page.locator('[data-policy-map-edge]');
   const relationshipList = page.locator('[data-policy-map-relationship]');
   await expect(visualRelationships).toHaveCount(3);
@@ -147,6 +166,14 @@ test('policy map states both relationship conventions and pairs every visual edg
   ))) {
     await expect(relationshipList.locator(`[data-policy-map-relationship="${relationshipId}"]`)).toHaveCount(1);
   }
+});
+
+test('policy map exposes a labelled interactive group with live node links', async ({ page }) => {
+  await page.goto('policy-map/');
+
+  const map = page.getByRole('group', { name: 'Published policy and document relationships' });
+  await expect(map).toBeVisible();
+  await expect(map.getByRole('link').first()).toHaveAttribute('href', /\/(policies|corpus)\//);
 });
 
 test('policy map nodes and stable policy pages expose live base-safe routes', async ({ page }) => {
