@@ -9,3 +9,14 @@ test('homepage exposes the six primary destinations', async ({ page }) => {
     'How EU AI policy is formulated, interpreted and transformed',
   );
 });
+
+test('homepage preserves the repository base path in navigation and canonical metadata', async ({ page }) => {
+  await page.goto('./');
+
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    'https://eu-ai-policy-observatory.test/eu-ai-policy-observatory/',
+  );
+  await expect(page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name: 'Home' }))
+    .toHaveAttribute('href', '/eu-ai-policy-observatory/');
+});

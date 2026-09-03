@@ -52,16 +52,16 @@ function assertPublishedEntities(value: unknown, path: string): void {
   });
 }
 
-export function loadPublicData(): PublicData {
-  const publicDataPath = resolve(process.cwd(), '..', 'generated', 'public-data.json');
+export function loadPublicDataFromPath(publicDataPath: string): PublicData {
+  const resolvedPublicDataPath = resolve(publicDataPath);
 
-  if (!existsSync(publicDataPath)) {
-    throw new Error(`Public data file is missing: ${publicDataPath}`);
+  if (!existsSync(resolvedPublicDataPath)) {
+    throw new Error(`Public data file is missing: ${resolvedPublicDataPath}`);
   }
 
-  const parsed: unknown = JSON.parse(readFileSync(publicDataPath, 'utf8'));
+  const parsed: unknown = JSON.parse(readFileSync(resolvedPublicDataPath, 'utf8'));
   if (!isPublicData(parsed)) {
-    throw new Error(`Public data must be an object: ${publicDataPath}`);
+    throw new Error(`Public data must be an object: ${resolvedPublicDataPath}`);
   }
 
   for (const collectionName of collectionNames) {
@@ -69,4 +69,10 @@ export function loadPublicData(): PublicData {
   }
 
   return parsed;
+}
+
+export function loadPublicData(): PublicData {
+  return loadPublicDataFromPath(
+    resolve(process.cwd(), '..', 'generated', 'public-data.json'),
+  );
 }

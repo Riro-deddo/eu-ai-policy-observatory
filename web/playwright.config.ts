@@ -6,8 +6,8 @@ export default defineConfig({
   testDir: './tests',
   use: { baseURL },
   webServer: {
-    command:
-      'cmd /c "set ASTRO_TELEMETRY_DISABLED=1&& pnpm build && pnpm preview --host 127.0.0.1"',
+    command: 'pnpm build && pnpm preview --host 127.0.0.1',
+    env: { ASTRO_TELEMETRY_DISABLED: '1' },
     url: baseURL,
     reuseExistingServer: false,
   },
