@@ -28,7 +28,10 @@ const document = (id, shortTitle, publicationDate, details = {}) => ({
 });
 
 const documents = [
-  document('communication', 'Artificial Intelligence for Europe', '2018-04-25'),
+  document('communication', 'Artificial Intelligence for Europe', '2018-04-25', {
+    document_type: 'communication',
+    legal_status: 'non_binding',
+  }),
   document('final-ai-act', 'Artificial Intelligence Act', '2024-07-12', {
     celex: '32024R1689',
     eli: 'https://data.europa.eu/eli/reg/2024/1689/oj',
@@ -62,4 +65,28 @@ test('returns a new deterministic sorted array without mutating input', () => {
   assert.deepEqual(input.map((entry) => entry.id), before);
   assert.notStrictEqual(result, input);
   assert.deepEqual(result.map((entry) => entry.id), ['same-date', 'final-ai-act', 'communication']);
+});
+
+test('filters scalar criteria and excludes records without a research assessment', () => {
+  assert.deepEqual(
+    filterDocuments(documents, { year: '2018' }).map((entry) => entry.id),
+    ['communication'],
+  );
+  assert.deepEqual(
+    filterDocuments(documents, { documentType: 'communication' }).map((entry) => entry.id),
+    ['communication'],
+  );
+  assert.deepEqual(
+    filterDocuments(documents, { legalStatus: 'in_force' }).map((entry) => entry.id),
+    ['same-date', 'final-ai-act'],
+  );
+  assert.doesNotThrow(() => filterDocuments(documents, { policyStage: 'adoption' }));
+  assert.deepEqual(
+    filterDocuments(documents, { policyStage: 'adoption' }).map((entry) => entry.id),
+    ['final-ai-act'],
+  );
+  assert.deepEqual(
+    filterDocuments(documents, { corpusTier: 'core' }).map((entry) => entry.id),
+    ['final-ai-act'],
+  );
 });

@@ -96,6 +96,9 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
     </div>
   </form>
 
+  <noscript>
+    <p>Interactive filtering requires JavaScript. The complete published corpus is shown below.</p>
+  </noscript>
   <p data-corpus-count aria-live="polite">{sortedDocuments.length} published documents</p>
   <p data-corpus-empty hidden>No documents match these criteria. Reset filters to view the complete published corpus.</p>
   <ul data-corpus-list>
@@ -108,7 +111,7 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
   </ul>
 </section>
 
-<script id="corpus-documents" type="application/json" set:html={JSON.stringify(documents)}></script>
+<script id="corpus-documents" type="application/json" set:html={JSON.stringify(documents).replaceAll('<', '\\u003c')}></script>
 <script>
   import { filterDocuments } from '../lib/filter';
   import type { CorpusCriteria } from '../lib/filter';

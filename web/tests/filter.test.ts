@@ -42,4 +42,17 @@ describe('filterDocuments', () => {
     expect(documents.map((document) => document.id)).toEqual(before);
     expect(result).not.toBe(documents);
   });
+
+  it('applies scalar filters without matching documents lacking an assessment', () => {
+    expect(filterDocuments(publishedDocuments, { year: '2024' }).map((document) => document.id))
+      .toEqual(['artificial-intelligence-act-2024']);
+    expect(filterDocuments(publishedDocuments, { documentType: 'regulation' }).map((document) => document.id))
+      .toEqual(['artificial-intelligence-act-2024']);
+    expect(filterDocuments(publishedDocuments, { legalStatus: 'in_force' }).map((document) => document.id))
+      .toEqual(['artificial-intelligence-act-2024']);
+    expect(filterDocuments(publishedDocuments, { policyStage: 'adoption' }).map((document) => document.id))
+      .toEqual(['artificial-intelligence-act-2024']);
+    expect(filterDocuments(publishedDocuments, { corpusTier: 'core' }).map((document) => document.id))
+      .toEqual(['artificial-intelligence-act-2024']);
+  });
 });
