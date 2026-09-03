@@ -162,3 +162,67 @@ test('policy map nodes and stable policy pages expose live base-safe routes', as
   await expect(page.getByRole('heading', { name: 'Research-defined policy grouping' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Research assessment relationships' })).toBeVisible();
 });
+
+test('every generated route has one main heading, one main landmark, a working skip link and no console errors', async ({ page }) => {
+  const consoleErrors: string[] = [];
+  page.on('console', (message) => {
+    if (message.type() === 'error') consoleErrors.push(message.text());
+  });
+
+  const assertRouteAccessibility = async (path: string) => {
+    await page.goto(path);
+    await expect(page.locator('main')).toHaveCount(1);
+    await expect(page.locator('h1:visible')).toHaveCount(1);
+    const skipLink = page.getByRole('link', { name: 'Skip to main content' });
+    await skipLink.focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('#main-content')).toBeFocused();
+  };
+
+  for (const route of ['./', 'policy-map/', 'timeline/', 'corpus/', 'methodology/', 'about/']) {
+    await assertRouteAccessibility(route);
+  }
+
+  await page.goto('corpus/');
+  const documentRoutes = await page.locator('[data-corpus-list] a').evaluateAll((links) => (
+    links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)
+  ));
+  for (const route of documentRoutes) await assertRouteAccessibility(route);
+
+  await page.goto('policy-map/');
+  const policyRoutes = await page.locator('[data-policy-map-node]').evaluateAll((nodes) => (
+    nodes.map((node) => node.getAttribute('href'))
+      .filter((href): href is string => href?.includes('/policies/') ?? false)
+  ));
+  for (const route of policyRoutes) await assertRouteAccessibility(route);
+
+  expect(consoleErrors).toEqual([]);
+});
+
+test('mobile routes do not make the document body horizontally overflow', async ({ page }) => {
+  await page.goto('corpus/');
+  const documentRoutes = await page.locator('[data-corpus-list] a').evaluateAll((links) => (
+    links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)
+  ));
+
+  await page.goto('policy-map/');
+  const policyRoutes = await page.locator('[data-policy-map-node]').evaluateAll((nodes) => (
+    nodes.map((node) => node.getAttribute('href'))
+      .filter((href): href is string => href?.includes('/policies/') ?? false)
+  ));
+  const routes = [
+    './',
+    'policy-map/',
+    'timeline/',
+    'corpus/',
+    'methodology/',
+    'about/',
+    ...documentRoutes,
+    ...policyRoutes,
+  ];
+
+  for (const route of routes) {
+    await page.goto(route);
+    await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  }
+});

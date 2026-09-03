@@ -28,13 +28,13 @@
 
 * { box-sizing: border-box; }
 
-html { background: var(--canvas); color: var(--ink); font-family: var(--sans); }
+html { background: var(--canvas); color: var(--ink); font-family: var(--sans); overflow-x: clip; }
 
-body { margin: 0; min-inline-size: 0; overflow-x: hidden; }
+body { margin: 0; min-inline-size: 0; overflow-x: clip; }
 
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 
-a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+:is(a, button, input, select, [tabindex]):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 .skip-link {
   background: var(--ink);
@@ -135,6 +135,7 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .policy-map__line { border-top: 2px solid var(--ink); display: inline-block; inline-size: 2.5rem; }
 .policy-map__line--analytical { border-top-style: dashed; }
 .policy-map__graphic { border-block: 1px solid var(--rule); max-inline-size: 70rem; overflow-x: auto; padding-block: var(--space-2); }
+.policy-map__graphic:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .policy-map__graphic svg { display: block; min-inline-size: 500px; overflow: visible; }
 .policy-map__edges { stroke: var(--muted); stroke-width: 1.5; }
 .policy-map__edge--analytical { stroke-dasharray: 6 5; }
@@ -156,6 +157,7 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .policy-record dl, .document-record dl { display: grid; gap: var(--space-1) var(--space-3); grid-template-columns: minmax(9rem, 13rem) minmax(0, 1fr); line-height: 1.55; }
 .policy-record dt, .document-record dt { color: var(--muted); font-size: 0.875rem; }
 .policy-record dd, .document-record dd { margin: 0; }
+.policy-record dd, .document-record dd, .document-record li { overflow-wrap: anywhere; }
 .policy-record li, .document-record li { line-height: 1.55; margin-block: var(--space-1); }
 
 .site-footer__inner { align-items: baseline; color: var(--muted); display: flex; font-size: 0.8125rem; justify-content: space-between; padding-block: var(--space-3); }
@@ -191,4 +193,13 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
     min-block-size: 44px;
   }
   .timeline-filters select, .timeline-filters button { min-block-size: 44px; }
+  .corpus-explorer [data-corpus-list] a,
+  .timeline-year a,
+  .policy-map__relationships a,
+  .policy-record a,
+  .document-record a {
+    align-items: center;
+    display: inline-flex;
+    min-block-size: 44px;
+  }
 }

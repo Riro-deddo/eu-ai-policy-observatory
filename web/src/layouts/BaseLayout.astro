@@ -27,7 +27,7 @@ const canonical = new URL(`${base}${canonicalPath.replace(/^\//, '')}`, site).to
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <SiteHeader />
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <slot />
     </main>
     <SiteFooter />
