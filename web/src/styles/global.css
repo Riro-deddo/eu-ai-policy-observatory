@@ -109,8 +109,16 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
   .research-lenses { grid-template-columns: 1fr; }
   .pathway-list li { gap: var(--space-1) var(--space-2); grid-template-columns: 6.5rem minmax(0, 1fr); }
   .pathway-list__kind { grid-column: 2; }
+  .pathway-list__title { grid-column: 2; }
 }
 
 @media (pointer: coarse) {
   .wordmark, .site-footer a { display: inline-block; min-block-size: 44px; padding-block: 0.7rem; }
+  .research-lenses a, .atlas-links a, .primary-nav a {
+    align-items: center;
+    display: inline-flex;
+    min-block-size: 44px;
+    padding-block: 0.5rem;
+    padding-inline: 0.35rem;
+  }
 }
