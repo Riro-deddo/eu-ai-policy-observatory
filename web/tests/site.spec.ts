@@ -98,11 +98,11 @@ test('corpus search, combined classifications and reset update the rendered list
   await page.getByLabel('Institution').selectOption('european-commission');
   await expect(visibleRecords).toHaveCount(5);
   await expect(visibleRecords).toContainText([
-    'Artificial Intelligence Act proposal',
     'AI Liability Directive proposal',
-    'Artificial Intelligence for Europe',
-    'Ethics Guidelines for Trustworthy AI',
+    'Artificial Intelligence Act proposal',
     'White Paper on Artificial Intelligence',
+    'Ethics Guidelines for Trustworthy AI',
+    'Artificial Intelligence for Europe',
   ]);
 });
 

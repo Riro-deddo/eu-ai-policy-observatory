@@ -5,6 +5,7 @@ import test from 'node:test';
 const config = readFileSync(new URL('../astro.config.mjs', import.meta.url), 'utf8');
 const playwrightConfig = readFileSync(new URL('../playwright.config.ts', import.meta.url), 'utf8');
 const explorer = readFileSync(new URL('../src/components/CorpusExplorer.astro', import.meta.url), 'utf8');
+const filter = readFileSync(new URL('../src/lib/filter.ts', import.meta.url), 'utf8');
 const map = readFileSync(new URL('../src/components/PolicyMap.astro', import.meta.url), 'utf8');
 const mapLayout = readFileSync(new URL('../src/lib/policy-map.ts', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
@@ -24,6 +25,14 @@ test('Corpus enhancement hydrates a whitelisted query before applying filters', 
   assert.match(explorer, /parseCorpusCriteria\(new URLSearchParams\(window\.location\.search\)\)/);
   assert.match(explorer, /form\.elements\.namedItem\(name\)/);
   assert.match(explorer, /applyFilters\(\);/);
+});
+
+test('the Corpus browser assertion preserves the descending-date filter order', () => {
+  assert.match(filter, /second\.publication_date\.localeCompare\(first\.publication_date, 'en-GB'\)/);
+  assert.match(
+    siteSpec,
+    /await expect\(visibleRecords\)\.toContainText\(\[\s*'AI Liability Directive proposal',\s*'Artificial Intelligence Act proposal',\s*'White Paper on Artificial Intelligence',\s*'Ethics Guidelines for Trustworthy AI',\s*'Artificial Intelligence for Europe',\s*\]\);/,
+  );
 });
 
 test('Policy Map exposes semantic stage headings and linked nodes within a labelled group', () => {
