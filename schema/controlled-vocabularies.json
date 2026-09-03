@@ -1,0 +1,14 @@
+{
+  "publication_status": ["draft", "pending_review", "verified", "published"],
+  "corpus_tier": ["core", "directly_related", "contextual", "excluded"],
+  "relationship_basis": ["official", "analytical"],
+  "institution_role": ["author", "proposer", "adopter", "publisher", "contributor"],
+  "document_type": ["communication", "coordinated_plan", "expert_guidelines", "white_paper", "legislative_proposal", "regulation"],
+  "legal_status": ["non_binding", "proposed", "adopted", "in_force", "withdrawn", "superseded"],
+  "policy_status": ["active", "completed", "withdrawn", "superseded"],
+  "policy_stage": ["agenda_setting", "coordination", "consultation", "proposal", "negotiation", "adoption", "implementation"],
+  "event_type": ["proposal", "publication", "adoption", "entry_into_force", "application", "amendment", "withdrawal", "implementation"],
+  "relationship_type": ["part_of", "precedes", "adopted_as", "replaces", "amends", "implements", "based_on", "related_to", "supersedes"],
+  "verification_status": ["unverified", "pending", "verified"],
+  "source_type": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office"]
+}
