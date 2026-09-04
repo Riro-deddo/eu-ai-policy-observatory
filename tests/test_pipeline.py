@@ -237,7 +237,7 @@ def test_workflows_build_generated_data_before_running_tests(workflow_name: str)
         Path(__file__).parents[1] / ".github" / "workflows" / workflow_name
     ).read_text(encoding="utf-8")
 
-    build_command = 'observatory-build --project-root . --timestamp "1970-01-01T00:00:00Z"'
+    build_command = "observatory-build --project-root . --timestamp"
     test_command = "python -m pytest -q"
 
     assert workflow.index(build_command) < workflow.index(test_command)
