@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eu-ai-policy-observatory.example/schema/source-sweep.schema.json",
+  "title": "EU AI Policy Observatory source sweep",
+  "type": "object",
+  "properties": {
+    "generated_at": { "$ref": "#/$defs/timestamp" },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "required": ["generated_at", "sources"],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "https_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string", "minLength": 1 },
+        "institution": { "type": "string", "minLength": 1 },
+        "url": { "$ref": "#/$defs/https_url" },
+        "scope_note": { "type": "string", "minLength": 1 },
+        "scan_status": {
+          "enum": ["pending", "in_progress", "complete"]
+        },
+        "checked_at": { "$ref": "#/$defs/timestamp" }
+      },
+      "required": [
+        "id",
+        "name",
+        "institution",
+        "url",
+        "scope_note",
+        "scan_status",
+        "checked_at"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

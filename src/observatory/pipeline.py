@@ -12,7 +12,11 @@ import tempfile
 from observatory.build_db import build_database
 from observatory.export_public import export_public
 from observatory.io import load_records
-from observatory.validate import RecordValidationError, assert_valid
+from observatory.validate import (
+    RecordValidationError,
+    assert_valid,
+    assert_valid_research_inventory,
+)
 
 
 DATABASE_FILENAME = "eu-ai-policy-observatory.sqlite"
@@ -40,6 +44,7 @@ def run_pipeline(
 
     # Validation is deliberately first: a failed validation never changes existing outputs.
     assert_valid(data_root, schema_root / "record.schema.json", schema_root / "controlled-vocabularies.json")
+    assert_valid_research_inventory(root / "research", schema_root, data_root)
     records = load_records(data_root)
     record_counts = {directory: len(entries) for directory, entries in records.items()}
     public_records = {

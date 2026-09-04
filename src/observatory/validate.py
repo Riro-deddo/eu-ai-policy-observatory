@@ -146,6 +146,298 @@ def assert_valid(data_root: Path, schema_path: Path, vocabulary_path: Path) -> N
         raise RecordValidationError(issues)
 
 
+def validate_research_inventory(
+    research_root: Path, schema_root: Path, data_root: Path
+) -> list[ValidationIssue]:
+    """Validate the offline discovery audit and its canonical document links."""
+    sweep_path = research_root / "source-sweep.json"
+    inventory_path = research_root / "corpus-inventory.json"
+    sweep, sweep_issues = _load_audit_json(sweep_path, "research/source-sweep.json")
+    inventory, inventory_issues = _load_audit_json(
+        inventory_path, "research/corpus-inventory.json"
+    )
+    issues = [*sweep_issues, *inventory_issues]
+    if sweep is not None:
+        issues.extend(
+            _validate_audit_schema(
+                sweep,
+                schema_root / "source-sweep.schema.json",
+                "research/source-sweep.json",
+            )
+        )
+    if inventory is not None:
+        issues.extend(
+            _validate_audit_schema(
+                inventory,
+                schema_root / "corpus-inventory.schema.json",
+                "research/corpus-inventory.json",
+            )
+        )
+    if sweep is not None and inventory is not None:
+        issues.extend(_validate_inventory_links(sweep, inventory, data_root))
+    return sorted(issues, key=lambda issue: (issue.record_path, issue.field, issue.code))
+
+
+def assert_valid_research_inventory(
+    research_root: Path, schema_root: Path, data_root: Path
+) -> None:
+    """Raise an actionable error when the source sweep or inventory is invalid."""
+    issues = validate_research_inventory(research_root, schema_root, data_root)
+    if issues:
+        raise RecordValidationError(issues)
+
+
+def _load_audit_json(
+    path: Path, record_path: str
+) -> tuple[Mapping[str, object] | None, list[ValidationIssue]]:
+    try:
+        decoded = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return None, [_issue("missing_file", record_path, "$", "Required audit file is missing.")]
+    except json.JSONDecodeError as error:
+        return None, [
+            _issue(
+                "json_syntax",
+                record_path,
+                "$",
+                f"Invalid JSON syntax at line {error.lineno}, column {error.colno}.",
+            )
+        ]
+    if not isinstance(decoded, Mapping):
+        return None, [_issue("schema", record_path, "$", "Audit data must be a JSON object.")]
+    return decoded, []
+
+
+def _validate_audit_schema(
+    data: Mapping[str, object], schema_path: Path, record_path: str
+) -> list[ValidationIssue]:
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return [_issue("missing_schema", record_path, "$", "Required audit schema is missing.")]
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    return [
+        _issue(
+            "schema",
+            record_path,
+            _schema_error_field(error),
+            _schema_error_message(error),
+        )
+        for error in _leaf_schema_errors(validator.iter_errors(data))
+    ]
+
+
+def _validate_inventory_links(
+    sweep: Mapping[str, object],
+    inventory: Mapping[str, object],
+    data_root: Path,
+) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    sources = sweep.get("sources")
+    candidates = inventory.get("candidates")
+    if not isinstance(sources, list) or not isinstance(candidates, list):
+        return issues
+
+    source_ids = _audit_unique_ids(
+        sources,
+        "research/source-sweep.json",
+        "sources",
+        "duplicate_source_id",
+        issues,
+    )
+    _validate_official_audit_urls(
+        sources, "research/source-sweep.json", "sources", "url", issues
+    )
+    _audit_unique_ids(
+        candidates,
+        "research/corpus-inventory.json",
+        "candidates",
+        "duplicate_candidate_id",
+        issues,
+    )
+    _validate_official_audit_urls(
+        candidates,
+        "research/corpus-inventory.json",
+        "candidates",
+        "official_source_url",
+        issues,
+    )
+    canonical_documents = {
+        identifier: records
+        for identifier, records in _canonical_documents_by_id(data_root).items()
+    }
+
+    for index, candidate in enumerate(candidates):
+        if not isinstance(candidate, Mapping):
+            continue
+        field_root = f"candidates.{index}"
+        reason = candidate.get("decision_reason")
+        if isinstance(reason, str) and not reason.strip():
+            issues.append(
+                _issue(
+                    "blank_decision_reason",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.decision_reason",
+                    "Inventory decisions require a nonblank reason.",
+                )
+            )
+        candidate_sources = candidate.get("source_ids")
+        if isinstance(candidate_sources, list):
+            for source_index, source_id in enumerate(candidate_sources):
+                if isinstance(source_id, str) and source_id not in source_ids:
+                    issues.append(
+                        _issue(
+                            "missing_sweep_source",
+                            "research/corpus-inventory.json",
+                            f"{field_root}.source_ids.{source_index}",
+                            "Referenced source-sweep entry does not exist.",
+                        )
+                    )
+        _validate_inventory_decision(
+            candidate, index, canonical_documents, issues
+        )
+    return issues
+
+
+def _audit_unique_ids(
+    entries: list[object],
+    record_path: str,
+    field_name: str,
+    issue_code: str,
+    issues: list[ValidationIssue],
+) -> set[str]:
+    seen: set[str] = set()
+    identifiers: set[str] = set()
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, Mapping):
+            continue
+        identifier = entry.get("id")
+        if not isinstance(identifier, str):
+            continue
+        if identifier in seen:
+            issues.append(
+                _issue(
+                    issue_code,
+                    record_path,
+                    f"{field_name}.{index}.id",
+                    "Audit identifiers must be unique.",
+                )
+            )
+        seen.add(identifier)
+        identifiers.add(identifier)
+    return identifiers
+
+
+def _validate_official_audit_urls(
+    entries: list[object],
+    record_path: str,
+    field_name: str,
+    url_field: str,
+    issues: list[ValidationIssue],
+) -> None:
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, Mapping):
+            continue
+        value = entry.get(url_field)
+        if isinstance(value, str) and not _is_official_eu_url(value):
+            issues.append(
+                _issue(
+                    "unofficial_url",
+                    record_path,
+                    f"{field_name}.{index}.{url_field}",
+                    "Audit evidence URLs must use HTTPS on an official europa.eu host.",
+                )
+            )
+
+
+def _is_official_eu_url(value: str) -> bool:
+    parsed = urlparse(value)
+    hostname = (parsed.hostname or "").casefold()
+    return parsed.scheme == "https" and (
+        hostname == "europa.eu" or hostname.endswith(".europa.eu")
+    )
+
+
+def _canonical_documents_by_id(data_root: Path) -> dict[str, list[LoadedRecord]]:
+    records = load_records(data_root).get("documents", [])
+    grouped: dict[str, list[LoadedRecord]] = defaultdict(list)
+    for record in records:
+        identifier = record.data.get("id") if isinstance(record.data, Mapping) else None
+        if isinstance(identifier, str):
+            grouped[identifier].append(record)
+    return grouped
+
+
+def _validate_inventory_decision(
+    candidate: Mapping[str, object],
+    index: int,
+    canonical_documents: Mapping[str, list[LoadedRecord]],
+    issues: list[ValidationIssue],
+) -> None:
+    decision = candidate.get("decision")
+    document_id = candidate.get("document_id")
+    merged_into = candidate.get("merged_into_document_id")
+    field_root = f"candidates.{index}"
+
+    if decision == "included":
+        if not isinstance(document_id, str) or document_id not in canonical_documents:
+            issues.append(
+                _issue(
+                    "missing_inventory_document",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.document_id",
+                    "Included candidates must identify an existing canonical document.",
+                )
+            )
+        if merged_into is not None:
+            issues.append(
+                _issue(
+                    "invalid_decision_link",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.merged_into_document_id",
+                    "Included candidates cannot also be merged.",
+                )
+            )
+    elif decision == "merged":
+        if not isinstance(merged_into, str) or merged_into not in canonical_documents:
+            issues.append(
+                _issue(
+                    "missing_inventory_document",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.merged_into_document_id",
+                    "Merged candidates must identify an existing canonical merge target.",
+                )
+            )
+        if document_id is not None:
+            issues.append(
+                _issue(
+                    "invalid_decision_link",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.document_id",
+                    "Merged candidates cannot identify a separate canonical document.",
+                )
+            )
+    elif decision in {"excluded", "pending"}:
+        if document_id is not None:
+            issues.append(
+                _issue(
+                    "invalid_decision_link",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.document_id",
+                    f"{decision.title()} candidates cannot identify a canonical document.",
+                )
+            )
+        if merged_into is not None:
+            issues.append(
+                _issue(
+                    "invalid_decision_link",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.merged_into_document_id",
+                    f"{decision.title()} candidates cannot identify a merge target.",
+                )
+            )
+
+
 def _issue(code: str, record_path: str, field: str, message: str) -> ValidationIssue:
     return ValidationIssue(code, record_path, field, message)
 

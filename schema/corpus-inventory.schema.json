@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eu-ai-policy-observatory.example/schema/corpus-inventory.schema.json",
+  "title": "EU AI Policy Observatory corpus inventory",
+  "type": "object",
+  "properties": {
+    "generated_at": { "$ref": "#/$defs/timestamp" },
+    "candidates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/candidate" }
+    }
+  },
+  "required": ["generated_at", "candidates"],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "nullable_id": {
+      "anyOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }]
+    },
+    "nullable_string": {
+      "type": ["string", "null"]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "https_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "candidate": {
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "source_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/id" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "official_reference": { "$ref": "#/$defs/nullable_string" },
+        "official_title": { "type": "string", "minLength": 1 },
+        "year": { "type": "integer", "minimum": 2018, "maximum": 2026 },
+        "issuing_institution": { "type": "string", "minLength": 1 },
+        "record_level": {
+          "enum": ["principal", "supporting", "version", "attachment"]
+        },
+        "version_label": { "$ref": "#/$defs/nullable_string" },
+        "official_source_url": { "$ref": "#/$defs/https_url" },
+        "decision": {
+          "enum": ["included", "merged", "excluded", "pending"]
+        },
+        "decision_reason": { "type": "string", "minLength": 1 },
+        "document_id": { "$ref": "#/$defs/nullable_id" },
+        "merged_into_document_id": { "$ref": "#/$defs/nullable_id" }
+      },
+      "required": [
+        "id",
+        "source_ids",
+        "official_reference",
+        "official_title",
+        "year",
+        "issuing_institution",
+        "record_level",
+        "version_label",
+        "official_source_url",
+        "decision",
+        "decision_reason",
+        "document_id",
+        "merged_into_document_id"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -31,6 +31,55 @@ def test_pipeline_excludes_unpublished_canonical_records_from_every_public_outpu
     project_root = tmp_path / "project"
     shutil.copytree(Path("tests/fixtures/valid/data"), project_root / "data")
     shutil.copytree(Path("schema"), project_root / "schema")
+    research_root = project_root / "research"
+    research_root.mkdir()
+    source_id = json.loads(
+        (Path("research/source-sweep.json")).read_text(encoding="utf-8")
+    )["sources"][0]["id"]
+    (research_root / "source-sweep.json").write_text(
+        json.dumps(
+            {
+                "generated_at": "2026-09-04T00:00:00Z",
+                "sources": [
+                    {
+                        "id": source_id,
+                        "name": "Test source entrance",
+                        "institution": "Publications Office of the European Union",
+                        "url": "https://eur-lex.europa.eu/",
+                        "scope_note": "Isolated pipeline fixture.",
+                        "scan_status": "complete",
+                        "checked_at": "2026-09-04T00:00:00Z",
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+    (research_root / "corpus-inventory.json").write_text(
+        json.dumps(
+            {
+                "generated_at": "2026-09-04T00:00:00Z",
+                "candidates": [
+                    {
+                        "id": "example-document",
+                        "source_ids": [source_id],
+                        "official_reference": "COM(2026) 1 final",
+                        "official_title": "Example document",
+                        "year": 2026,
+                        "issuing_institution": "European Commission",
+                        "record_level": "principal",
+                        "version_label": "Final",
+                        "official_source_url": "https://eur-lex.europa.eu/example",
+                        "decision": "included",
+                        "decision_reason": "Verified fixture document.",
+                        "document_id": "example-document",
+                        "merged_into_document_id": None,
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
     draft_concept = json.loads(
         (project_root / "data" / "concepts" / "risk.json").read_text(encoding="utf-8")
     )
@@ -198,8 +247,63 @@ def test_invalid_provenance_fails_before_existing_outputs_are_touched(tmp_path_f
     assert public_json.read_bytes() == b"public JSON before invalid provenance"
 
 
+def test_invalid_inventory_fails_before_existing_outputs_are_touched(tmp_path_factory):
+    tmp_path = tmp_path_factory.mktemp("inventory")
+    project_root = _isolated_project_root(tmp_path)
+    inventory_path = project_root / "research" / "corpus-inventory.json"
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    inventory["candidates"][0]["document_id"] = "missing-document"
+    inventory_path.write_text(json.dumps(inventory), encoding="utf-8")
+    output_root = project_root / "generated"
+    output_root.mkdir()
+    database = output_root / pipeline.DATABASE_FILENAME
+    public_json = output_root / pipeline.PUBLIC_JSON_FILENAME
+    database.write_bytes(b"database before invalid inventory")
+    public_json.write_bytes(b"public JSON before invalid inventory")
+
+    with pytest.raises(RecordValidationError, match="research/corpus-inventory.json"):
+        run_pipeline(project_root, "2026-09-03T00:00:00Z", output_root=output_root)
+
+    assert database.read_bytes() == b"database before invalid inventory"
+    assert public_json.read_bytes() == b"public JSON before invalid inventory"
+
+
+def test_pending_inventory_candidate_is_absent_from_public_output(tmp_path_factory):
+    tmp_path = tmp_path_factory.mktemp("pending-inventory")
+    project_root = _isolated_project_root(tmp_path)
+    inventory_path = project_root / "research" / "corpus-inventory.json"
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    inventory["candidates"].append(
+        {
+            "id": "pending-secret-candidate",
+            "source_ids": [inventory["candidates"][0]["source_ids"][0]],
+            "official_reference": None,
+            "official_title": "Pending candidate must not be published",
+            "year": 2026,
+            "issuing_institution": "European Commission",
+            "record_level": "supporting",
+            "version_label": None,
+            "official_source_url": "https://commission.europa.eu/example-pending",
+            "decision": "pending",
+            "decision_reason": "Metadata verification is not yet complete.",
+            "document_id": None,
+            "merged_into_document_id": None,
+        }
+    )
+    inventory_path.write_text(json.dumps(inventory), encoding="utf-8")
+
+    outputs = run_pipeline(
+        project_root, "2026-09-03T00:00:00Z", output_root=tmp_path / "generated"
+    )
+
+    assert "Pending candidate must not be published" not in outputs.public_json.read_text(
+        encoding="utf-8"
+    )
+
+
 def _isolated_project_root(tmp_path):
     project_root = tmp_path / "project"
     shutil.copytree(Path.cwd() / "data", project_root / "data")
     shutil.copytree(Path.cwd() / "schema", project_root / "schema")
+    shutil.copytree(Path.cwd() / "research", project_root / "research")
     return project_root
