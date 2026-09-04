@@ -40,6 +40,58 @@ def test_schema_requires_a_document_slug_for_stable_public_routes():
     )
 
 
+def test_document_fixture_declares_version_aware_canonical_metadata():
+    document_path = Path("tests/fixtures/valid/data/documents/example-document.json")
+    document = json.loads(document_path.read_text(encoding="utf-8"))
+
+    assert document["record_level"] in {"principal", "supporting", "version", "attachment"}
+    assert document["version_status"] in {
+        "draft",
+        "revised",
+        "final",
+        "consolidated",
+        "not_applicable",
+    }
+    assert document["document_date"] == "2026-09-03"
+    assert document["procedure_references"] == ["2021/0106(COD)"]
+
+
+@pytest.mark.parametrize(
+    ("field", "value", "validator"),
+    [
+        ("procedure_references", ["2021/0106(COD)", "2021/0106(COD)"], "uniqueItems"),
+        ("record_level", "unsupported_level", "enum"),
+        ("version_status", "unsupported_status", "enum"),
+        ("document_type", "unsupported_type", "enum"),
+    ],
+)
+def test_document_schema_rejects_unknown_or_duplicate_version_metadata(field, value, validator):
+    schema_path = Path(__file__).parents[1] / "schema" / "record.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    record_path = Path("tests/fixtures/valid/data/documents/example-document.json")
+    record = json.loads(record_path.read_text(encoding="utf-8"))
+    record[field] = value
+
+    errors = list(Draft202012Validator(schema).iter_errors(record))
+
+    assert any(error.validator == validator for error in _validation_errors(errors[0]))
+
+
+def test_document_schema_requires_document_date():
+    schema_path = Path(__file__).parents[1] / "schema" / "record.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    record_path = Path("tests/fixtures/valid/data/documents/example-document.json")
+    record = json.loads(record_path.read_text(encoding="utf-8"))
+    del record["document_date"]
+
+    errors = list(Draft202012Validator(schema).iter_errors(record))
+
+    assert any(
+        error.validator == "required" and "document_date" in error.message
+        for error in _validation_errors(errors[0])
+    )
+
+
 def _validation_errors(error):
     yield error
     for context_error in error.context:

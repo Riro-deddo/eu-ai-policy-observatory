@@ -112,6 +112,58 @@ def test_duplicate_document_slugs_are_reported(tmp_path):
     assert any(issue.code == "duplicate_slug" for issue in issues)
 
 
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("record_level", "unsupported_level"),
+        ("version_status", "unsupported_status"),
+    ],
+)
+def test_document_version_metadata_is_checked_against_controlled_vocabularies(
+    tmp_path, field, value
+):
+    data_root = _copy_valid_data(tmp_path)
+    document_path = data_root / "documents" / "example-document.json"
+    document = json.loads(document_path.read_text(encoding="utf-8"))
+    document[field] = value
+    document_path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "vocabulary"
+        and issue.field == field
+        and issue.record_path == "documents/example-document.json"
+        for issue in issues
+    )
+
+
+def test_duplicate_document_identity_uses_normalised_version_and_institution_ids(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    first_path = data_root / "documents" / "example-document.json"
+    first = json.loads(first_path.read_text(encoding="utf-8"))
+    first["official_reference"] = "COM(2026) 1 final"
+    first["version_label"] = "Final"
+    first_path.write_text(json.dumps(first), encoding="utf-8")
+
+    second = dict(first)
+    second["id"] = "second-document"
+    second["slug"] = "second-document"
+    second["version_label"] = "  FINAL  "
+    (data_root / "documents" / "second-document.json").write_text(
+        json.dumps(second), encoding="utf-8"
+    )
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    identity_issues = [issue for issue in issues if issue.code == "duplicate_document_identity"]
+    assert {issue.record_path for issue in identity_issues} == {
+        "documents/example-document.json",
+        "documents/second-document.json",
+    }
+    assert all("COM(2026) 1 final" not in issue.message for issue in identity_issues)
+
+
 def test_validation_rejects_a_document_without_a_slug(tmp_path):
     data_root = _copy_valid_data(tmp_path)
     document_path = data_root / "documents" / "example-document.json"

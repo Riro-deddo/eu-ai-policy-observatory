@@ -27,6 +27,8 @@ ENTITY_DIRECTORY_BY_TYPE = {
 
 _VOCABULARY_FIELDS = {
     "publication_status": "publication_status",
+    "record_level": "record_level",
+    "version_status": "version_status",
     "policy_status": "policy_status",
     "document_type": "document_type",
     "legal_status": "legal_status",
@@ -121,6 +123,7 @@ def validate_records(
 
     _validate_duplicate_ids(records_by_id, data_root, issues)
     _validate_duplicate_legal_identifiers(records_by_type, data_root, issues)
+    _validate_duplicate_document_identities(records_by_type, data_root, issues)
     _validate_duplicate_slugs(records_by_type, data_root, issues)
     _validate_snapshots(records_by_type, data_root, issues)
 
@@ -441,6 +444,60 @@ def _validate_duplicate_legal_identifiers(
                         f"{field.upper()} value {value!r} occurs in more than one document.",
                     )
                 )
+
+
+def _validate_duplicate_document_identities(
+    records_by_type: Mapping[str, Mapping[str, list[LoadedRecord]]],
+    data_root: Path,
+    issues: list[ValidationIssue],
+) -> None:
+    """Reject documents sharing the canonical version-aware identity."""
+    grouped: dict[tuple[str, str, str | None, tuple[str, ...]], list[LoadedRecord]] = defaultdict(list)
+    for records in records_by_type.get("document", {}).values():
+        for record in records:
+            official_reference = record.data.get("official_reference")
+            language = record.data.get("language")
+            if not isinstance(official_reference, str) or not isinstance(language, str):
+                continue
+            version_label = record.data.get("version_label")
+            normalized_label = _normalize_version_label(version_label)
+            institution_ids = _issuing_institution_ids(record.data)
+            grouped[(official_reference, language, normalized_label, institution_ids)].append(record)
+
+    for records in grouped.values():
+        if len(records) < 2:
+            continue
+        locations = ", ".join(
+            sorted(_relative_path(record.path, data_root) for record in records)
+        )
+        for record in records:
+            issues.append(
+                _issue(
+                    "duplicate_document_identity",
+                    _relative_path(record.path, data_root),
+                    "official_reference",
+                    f"Document identity occurs more than once: {locations}.",
+                )
+            )
+
+
+def _normalize_version_label(value: object) -> str | None:
+    if not isinstance(value, str):
+        return None
+    return " ".join(value.split()).casefold()
+
+
+def _issuing_institution_ids(data: Mapping[str, object]) -> tuple[str, ...]:
+    roles = data.get("institution_roles")
+    if not isinstance(roles, list):
+        return ()
+    return tuple(
+        sorted(
+            role["institution_id"]
+            for role in roles
+            if isinstance(role, Mapping) and isinstance(role.get("institution_id"), str)
+        )
+    )
 
 
 def _validate_duplicate_slugs(

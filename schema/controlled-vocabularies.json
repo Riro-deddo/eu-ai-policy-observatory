@@ -1,14 +1,16 @@
 {
   "publication_status": ["draft", "pending_review", "verified", "published"],
+  "record_level": ["principal", "supporting", "version", "attachment"],
+  "version_status": ["draft", "revised", "final", "consolidated", "not_applicable"],
   "corpus_tier": ["core", "directly_related", "contextual", "excluded"],
   "relationship_basis": ["official", "analytical"],
   "institution_role": ["author", "proposer", "adopter", "publisher", "contributor"],
-  "document_type": ["communication", "coordinated_plan", "expert_guidelines", "white_paper", "legislative_proposal", "regulation"],
+  "document_type": ["communication", "coordinated_plan", "expert_guidelines", "white_paper", "legislative_proposal", "regulation", "staff_working_document", "institutional_position", "opinion", "resolution", "decision", "implementing_regulation", "guidelines", "code_of_practice", "template", "report", "standardisation_request"],
   "legal_status": ["non_binding", "proposed", "adopted", "in_force", "withdrawn", "superseded"],
   "policy_status": ["active", "completed", "withdrawn", "superseded"],
   "policy_stage": ["agenda_setting", "coordination", "consultation", "proposal", "negotiation", "adoption", "implementation"],
   "event_type": ["proposal", "publication", "adoption", "entry_into_force", "application", "amendment", "withdrawal", "implementation"],
-  "relationship_type": ["part_of", "precedes", "adopted_as", "replaces", "amends", "implements", "based_on", "related_to", "supersedes"],
+  "relationship_type": ["part_of", "precedes", "adopted_as", "replaces", "amends", "implements", "based_on", "related_to", "supersedes", "version_of", "annex_to", "revises", "endorses", "procedural_step_for"],
   "verification_status": ["unverified", "pending", "verified"],
-  "source_type": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office"]
+  "source_type": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office", "council_register", "parliament_register", "official_register", "official_consultation"]
 }
