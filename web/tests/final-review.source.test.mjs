@@ -6,8 +6,12 @@ const config = readFileSync(new URL('../astro.config.mjs', import.meta.url), 'ut
 const playwrightConfig = readFileSync(new URL('../playwright.config.ts', import.meta.url), 'utf8');
 const explorer = readFileSync(new URL('../src/components/CorpusExplorer.astro', import.meta.url), 'utf8');
 const filter = readFileSync(new URL('../src/lib/filter.ts', import.meta.url), 'utf8');
+const home = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
+const methodology = readFileSync(new URL('../src/pages/methodology.astro', import.meta.url), 'utf8');
+const about = readFileSync(new URL('../src/pages/about.astro', import.meta.url), 'utf8');
 const map = readFileSync(new URL('../src/components/PolicyMap.astro', import.meta.url), 'utf8');
 const mapLayout = readFileSync(new URL('../src/lib/policy-map.ts', import.meta.url), 'utf8');
+const pathway = readFileSync(new URL('../src/components/PolicyPathway.astro', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
 
@@ -58,4 +62,27 @@ test('end-to-end assertions scope all reviewed potentially ambiguous text select
   assert.match(siteSpec, /const legend = page\.locator\('\.policy-map__legend'\);/);
   assert.match(siteSpec, /legend\.getByText\('Official relationship', \{ exact: true \}\)/);
   assert.match(siteSpec, /legend\.getByText\('Analytical relationship', \{ exact: true \}\)/);
+});
+
+test('Home renders current corpus coverage from the generated data contract', () => {
+  assert.match(home, /<PolicyPathway[\s\S]*coverage=\{data\.coverage\}/);
+  assert.match(pathway, /Coverage: \{coverage\.from_year\}–\{coverage\.to_year\}/);
+  assert.match(pathway, /\{coverage\.principal_documents\}/);
+  assert.match(pathway, /\{coverage\.supporting_files_and_versions\}/);
+  assert.match(pathway, /datetime=\{coverage\.last_verified_date\}/);
+  assert.match(pathway, /Pending-review records are excluded from public totals\./);
+});
+
+test('public pages no longer describe the active corpus as the seven-document 2018–2024 seed', () => {
+  const publicCopy = [home, methodology, about, pathway].join('\n');
+
+  assert.doesNotMatch(publicCopy, /2018[–-]2024/);
+  assert.doesNotMatch(publicCopy, /seven (?:reviewed, published )?documents/i);
+});
+
+test('Methodology separates implemented corpus work from the planned LLM protocol', () => {
+  assert.match(methodology, /Current corpus method/);
+  assert.match(methodology, /Planned LLM comparison protocol/);
+  assert.match(methodology, /not all EU digital law/);
+  assert.match(methodology, /included[\s\S]*merged[\s\S]*excluded[\s\S]*pending/);
 });

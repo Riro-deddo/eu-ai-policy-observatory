@@ -11,8 +11,75 @@ import pytest
 from scripts.check_public_build import check_public_build
 
 
+PROJECT_ROOT = Path(__file__).parents[1]
+
+
 def write_public_data(path: Path, payload: object) -> None:
     path.write_text(json.dumps(payload), encoding="utf-8")
+
+
+def test_public_coverage_copy_uses_generated_values_and_rejects_seed_scope():
+    payload = json.loads(
+        (PROJECT_ROOT / "generated" / "public-data.json").read_text(encoding="utf-8")
+    )
+    coverage = payload["coverage"]
+    documents = payload["documents"]
+    home = (PROJECT_ROOT / "web" / "src" / "pages" / "index.astro").read_text(
+        encoding="utf-8"
+    )
+    methodology = (
+        PROJECT_ROOT / "web" / "src" / "pages" / "methodology.astro"
+    ).read_text(encoding="utf-8")
+    about = (PROJECT_ROOT / "web" / "src" / "pages" / "about.astro").read_text(
+        encoding="utf-8"
+    )
+    pathway = (
+        PROJECT_ROOT / "web" / "src" / "components" / "PolicyPathway.astro"
+    ).read_text(encoding="utf-8")
+    public_copy = "\n".join((home, methodology, about, pathway))
+
+    assert coverage["principal_documents"] == sum(
+        document["record_level"] == "principal" for document in documents
+    )
+    assert coverage["supporting_files_and_versions"] == sum(
+        document["record_level"] != "principal" for document in documents
+    )
+    assert "coverage={data.coverage}" in home
+    assert "{coverage.principal_documents}" in pathway
+    assert "{coverage.supporting_files_and_versions}" in pathway
+    assert "{coverage.last_verified_date}" in pathway
+    assert "Pending-review records are excluded from public totals." in pathway
+    assert "2018–2024" not in public_copy
+    assert "seven reviewed, published documents" not in public_copy
+
+
+def test_contributor_dictionary_documents_expanded_corpus_contract():
+    dictionary = (PROJECT_ROOT / "docs" / "data-dictionary.md").read_text(
+        encoding="utf-8"
+    )
+    readme = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
+    documented_contract = f"{dictionary}\n{readme}"
+
+    for field in (
+        "record_level",
+        "official_reference",
+        "procedure_references",
+        "oj_reference",
+        "document_date",
+        "version_label",
+        "version_status",
+    ):
+        assert f"`{field}`" in dictionary
+
+    for decision in ("included", "merged", "excluded", "pending"):
+        assert f"`{decision}`" in documented_contract
+
+    assert "duplicate document identity" in documented_contract.lower()
+    assert "research/corpus-inventory.json" in documented_contract
+    assert "research/source-sweep.json" in documented_contract
+    assert "observatory-build --project-root ." in documented_contract
+    assert "--require-database" in documented_contract
+    assert "official" in documented_contract.lower()
 
 
 def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):

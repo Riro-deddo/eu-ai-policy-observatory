@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 const layout = readFileSync(new URL('../src/layouts/BaseLayout.astro', import.meta.url), 'utf8');
+const pathway = readFileSync(new URL('../src/components/PolicyPathway.astro', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
 const noJavaScriptSpec = readFileSync(new URL('./no-js.spec.ts', import.meta.url), 'utf8');
@@ -74,4 +75,16 @@ test('the scoped policy-route guard rejects an in-memory collection that is neve
     () => assertPolicyRouteCoverage(deliberatelyRegressedBlock, /for \(const route of policyRoutes\) await page\.goto\(route\)/),
     assert.AssertionError,
   );
+});
+
+test('the coverage summary has a labelled section, a description list and a machine-readable date', () => {
+  assert.match(pathway, /<section[\s\S]*aria-labelledby="core-policy-pathway"/);
+  assert.match(pathway, /<h2 id="core-policy-pathway">/);
+  assert.match(pathway, /<dl class="coverage-summary"/);
+  assert.match(pathway, /<dt>Principal documents<\/dt>[\s\S]*?<dd>\{coverage\.principal_documents\}<\/dd>/);
+  assert.match(
+    pathway,
+    /<dt>Supporting files and versions<\/dt>[\s\S]*?<dd>\{coverage\.supporting_files_and_versions\}<\/dd>/,
+  );
+  assert.match(pathway, /<time datetime=\{coverage\.last_verified_date\}>/);
 });

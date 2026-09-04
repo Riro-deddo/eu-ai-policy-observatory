@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadPublicData } from '../lib/data';
+
+const data = loadPublicData();
 ---
 
 <BaseLayout
@@ -17,12 +20,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
     </header>
 
-    <section aria-labelledby="inclusion-criteria">
-      <h2 id="inclusion-criteria">Inclusion criteria</h2>
+    <section aria-labelledby="current-method">
+      <h2 id="current-method">Current corpus method</h2>
       <p>
-        The current corpus selects European Union AI policy documents and events relevant to
-        the 2018–2024 pathway. Records are included only where their official source,
-        identifier or documented verification basis can be inspected.
+        The published corpus spans {data.coverage.from_year}–{data.coverage.to_year}. Its scope is
+        the AI Act policy process and directly relevant implementation, not all EU digital law.
+        Candidates are identified through a bounded sweep of official EU publication and register
+        entrances. A record is published only when its official English source and verification
+        basis can be inspected.
+      </p>
+    </section>
+
+    <section aria-labelledby="corpus-tiers">
+      <h2 id="corpus-tiers">Corpus tiers</h2>
+      <p>
+        <strong>Core</strong> records form the main AI Act policy pathway. <strong>Directly related</strong>
+        records materially inform, implement or apply that pathway. <strong>Contextual</strong> records
+        supply necessary surrounding policy context. <em>Excluded</em> is an inventory decision,
+        not a published corpus tier.
+      </p>
+    </section>
+
+    <section aria-labelledby="inventory-decisions">
+      <h2 id="inventory-decisions">Inventory decisions</h2>
+      <p>
+        Every discovered candidate receives a reasoned decision: <code>included</code> creates or
+        identifies a canonical document record; <code>merged</code> links another manifestation to
+        an existing record; <code>excluded</code> records a scope or evidence decision; and
+        <code>pending</code> retains unresolved metadata for later review. Pending candidates and
+        unpublished records do not enter public totals or downloads.
       </p>
     </section>
 
@@ -41,7 +67,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Official metadata, sources and stated relationships are kept distinct from
         researcher-authored corpus assessments, concepts and analytical relationships. This
         distinction makes clear whether a statement originates with an EU institution or with
-        the research classification.
+        the research classification. An analytical relationship carries a researcher-written
+        rationale and an evidence source; that source supports the assessment without turning it
+        into an official EU relationship.
+      </p>
+    </section>
+
+    <section aria-labelledby="versions-and-dates">
+      <h2 id="versions-and-dates">Versions and date semantics</h2>
+      <p>
+        A principal document is distinct from supporting files, formal versions and separately
+        citable attachments. Version relationships preserve the sequence between drafts, revisions,
+        final and consolidated texts without treating each as a new policy. <code>document_date</code>
+        dates the particular text or version; <code>publication_date</code> records its official
+        publication or release date; and <code>event_date</code> dates a policy event. The coverage
+        range is derived from published documents’ <code>document_date</code> values.
       </p>
     </section>
 
@@ -54,10 +94,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <section aria-labelledby="future-research">
-      <h2 id="future-research">Future research</h2>
+      <h2 id="future-research">Planned LLM comparison protocol</h2>
       <p>
-        A planned comparison of large language model interpretations of the corpus is future
-        research. It is not implemented in this interface.
+        A future study will compare large language model interpretations against selected official
+        texts using a separately documented sampling, prompting and coding protocol. No model
+        outputs, experiments or comparison results are implemented in this release; the method
+        described above concerns corpus construction and publication only.
       </p>
     </section>
   </article>

@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadPublicData } from '../lib/data';
+
+const data = loadPublicData();
 ---
 
 <BaseLayout
@@ -20,8 +23,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <section aria-labelledby="scope">
       <h2 id="scope">Current scope</h2>
       <p>
-        The current research scope is 2018–2024 and focuses on a deliberately bounded corpus of
-        foundational EU AI policy documents and recorded policy events.
+        The published database currently spans {data.coverage.from_year}–{data.coverage.to_year},
+        with {data.coverage.principal_documents} principal documents and
+        {data.coverage.supporting_files_and_versions} supporting files and versions. It is a
+        deliberately bounded study of the AI Act policy process and directly relevant
+        implementation, rather than an archive of all European Union digital law.
       </p>
     </section>
 

@@ -14,15 +14,16 @@ const base = import.meta.env.BASE_URL;
   canonicalPath="/"
 >
   <section class="hero" aria-labelledby="project-argument">
-    <div class="hero__meta">Research database · European Union AI policy · 2018–2024</div>
+    <div class="hero__meta">Research database · EU AI Act policy process · English-language records</div>
     <h1 id="project-argument">How EU AI policy is formulated, interpreted and transformed</h1>
     <p class="hero__lede">
-      The database is the primary research output; this interface is a view of it. Browse a
-      verified, published corpus of European Union AI policy documents, events and relationships.
+      The database is the primary research output; this interface is a view of it. Browse the
+      verified, published part of a bounded corpus covering the AI Act policy process and directly
+      relevant implementation.
     </p>
   </section>
   <ResearchLenses concepts={data.concepts} />
-  <PolicyPathway documents={data.documents} events={data.events} />
+  <PolicyPathway coverage={data.coverage} documents={data.documents} events={data.events} />
   <section class="research-section atlas-links" aria-labelledby="explore-the-atlas">
     <div class="section-heading">
       <p class="section-kicker">Explore the atlas</p>

@@ -1,7 +1,8 @@
 ---
-import type { DocumentRecord, PolicyEvent } from '../lib/types';
+import type { CorpusCoverage, DocumentRecord, PolicyEvent } from '../lib/types';
 
 interface Props {
+  coverage: CorpusCoverage;
   documents: DocumentRecord[];
   events: PolicyEvent[];
 }
@@ -13,15 +14,16 @@ type PathwayItem = {
   title: string;
 };
 
-const { documents, events } = Astro.props;
+const { coverage, documents, events } = Astro.props;
 const coreDocuments = documents.filter(
-  (document) => document.corpus_assessment?.corpus_tier === 'core',
+  (document) =>
+    document.record_level === 'principal' && document.corpus_assessment?.corpus_tier === 'core',
 );
 const coreDocumentIds = new Set(coreDocuments.map((document) => document.id));
 const pathwayItems: PathwayItem[] = [
   ...coreDocuments.map((document) => ({
     id: document.id,
-    date: document.publication_date,
+    date: document.document_date,
     kind: 'Document' as const,
     title: document.short_title,
   })),
@@ -38,8 +40,29 @@ const pathwayItems: PathwayItem[] = [
 
 <section class="research-section policy-pathway" aria-labelledby="core-policy-pathway">
   <div class="section-heading">
+    <p class="section-kicker">Corpus coverage</p>
+    <h2 id="core-policy-pathway">Coverage: {coverage.from_year}–{coverage.to_year}</h2>
+  </div>
+  <dl class="coverage-summary">
+    <div>
+      <dt>Principal documents</dt>
+      <dd>{coverage.principal_documents}</dd>
+    </div>
+    <div>
+      <dt>Supporting files and versions</dt>
+      <dd>{coverage.supporting_files_and_versions}</dd>
+    </div>
+    <div>
+      <dt>Most recent source verification</dt>
+      <dd>
+        <time datetime={coverage.last_verified_date}>{coverage.last_verified_date ?? 'Not available'}</time>
+      </dd>
+    </div>
+  </dl>
+  <p>Pending-review records are excluded from public totals.</p>
+  <div class="section-heading">
     <p class="section-kicker">Core policy pathway</p>
-    <h2 id="core-policy-pathway">Selected documents and recorded events</h2>
+    <h3>Principal documents and their recorded events</h3>
   </div>
   <ol class="pathway-list">
     {pathwayItems.map((item) => (
