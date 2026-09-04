@@ -19,6 +19,8 @@ jobs:
         with:
           python-version: '3.13'
           cache: pip
+      - name: Enforce repository script policy
+        run: python scripts/check_repository_english.py --root .
       - uses: pnpm/action-setup@v6
         with:
           version: 10

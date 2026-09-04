@@ -9,7 +9,7 @@ from pathlib import Path
 import pytest
 
 from scripts.check_public_build import check_public_build
-from scripts.check_repository_english import find_cjk_in_tracked_files
+from scripts.check_repository_english import find_non_latin_script_in_tracked_files
 
 
 PROJECT_ROOT = Path(__file__).parents[1]
@@ -135,22 +135,59 @@ def test_contributor_documentation_defines_stage_one_coverage_contract():
     ) in readme
 
 
-def test_repository_english_guard_reports_only_tracked_cjk_text(tmp_path: Path):
+def test_repository_english_guard_rejects_non_latin_scripts_and_escaped_json(
+    tmp_path: Path,
+):
     repository = tmp_path / "repository"
     repository.mkdir()
     subprocess.run(["git", "init", "-q"], cwd=repository, check=True)
-    (repository / "README.md").write_text("English copy with José.\n", encoding="utf-8")
-    docs = repository / "docs"
-    docs.mkdir()
-    (docs / "scope.md").write_text("English then \u4e2d\u6587.\n", encoding="utf-8")
-    (repository / "scratch.md").write_text("\u672a\u8ddf\u8e2a\n", encoding="utf-8")
+    tracked_files = {
+        "README.md": "English copy with José.\n",
+        "kana.md": f"English then {chr(0x3042)}.\n",
+        "hangul.md": f"English then {chr(0xD55C)}.\n",
+        "cyrillic.md": f"English then {chr(0x0416)}.\n",
+        "arabic.md": f"English then {chr(0x0639)}.\n",
+        "greek.md": f"English then {chr(0x03A9)}.\n",
+        "astral-han.md": f"English then {chr(0x20000)}.\n",
+        "escaped.json": json.dumps({"title": chr(0x4E2D)}, ensure_ascii=True),
+        "escaped-astral.json": json.dumps({"title": chr(0x20000)}, ensure_ascii=True),
+    }
+    for filename, contents in tracked_files.items():
+        (repository / filename).write_text(contents, encoding="utf-8")
+    non_latin_filename = f"report-{chr(0x0434)}.md"
+    (repository / non_latin_filename).write_text("English body.\n", encoding="utf-8")
+    (repository / "scratch.md").write_text(
+        f"Untracked {chr(0x4E2D)}.\n", encoding="utf-8"
+    )
     subprocess.run(
-        ["git", "add", "README.md", "docs/scope.md"], cwd=repository, check=True
+        ["git", "add", *tracked_files, non_latin_filename], cwd=repository, check=True
     )
 
-    findings = find_cjk_in_tracked_files(repository)
+    findings = find_non_latin_script_in_tracked_files(repository)
 
-    assert findings == ["docs/scope.md:1:14: U+4E2D"]
+    for codepoint in (
+        "U+3042",
+        "U+D55C",
+        "U+0416",
+        "U+0639",
+        "U+03A9",
+        "U+20000",
+        "U+4E2D",
+        "U+0434",
+    ):
+        assert any(codepoint in finding for finding in findings)
+    assert not any("README.md" in finding for finding in findings)
+    assert not any("scratch.md" in finding for finding in findings)
+    assert any("tracked path" in finding for finding in findings)
+    assert any("escaped.json" in finding and "JSON string" in finding for finding in findings)
+    assert any(
+        "escaped-astral.json" in finding and "U+20000" in finding
+        for finding in findings
+    )
+
+
+def test_actual_repository_passes_non_latin_script_guard():
+    assert find_non_latin_script_in_tracked_files(PROJECT_ROOT) == []
 
 
 def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):

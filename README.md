@@ -104,7 +104,7 @@ python scripts/check_public_build.py --site web/dist --data generated/public-dat
 python scripts/check_repository_english.py --root .
 ```
 
-Use the same fixed UTC timestamp when comparing deterministic builds. Generated release files are derived artefacts, while `web/dist/` and the copied downloadable database are disposable build outputs; change canonical JSON, research audit data, schema, source code or documentation instead of editing generated files.
+Use the same fixed UTC timestamp when comparing deterministic builds. Generated release files are derived artefacts, while `web/dist/` and the copied downloadable database are disposable build outputs; change canonical JSON, research audit data, schema, source code or documentation instead of editing generated files. The automated repository guard rejects letters from non-Latin scripts in tracked text and path names, including escaped JSON strings. It allows Latin-script diacritics but cannot determine whether Latin-script prose is semantically English, so copy still requires human review.
 
 The full Python suite validates the canonical records, the source sweep, inventory decisions, cross-record references, composite identities and output pipeline. `observatory-build` repeats validation before atomically replacing the generated public JSON and SQLite database. The public scanner then checks the static distribution and, with `--require-database`, the downloadable database and its published-only boundary.
 
