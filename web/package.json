@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "test": "vitest run",
+    "test": "node --test \"tests/*.test.mjs\" && vitest run",
     "test:e2e": "playwright test",
     "check:public": "python ../scripts/check_public_build.py --site dist --data ../generated/public-data.json"
   },
