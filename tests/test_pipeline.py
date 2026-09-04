@@ -231,6 +231,17 @@ def test_deployment_workflow_normalises_commit_epoch_to_a_utc_build_timestamp():
     assert "--format=%cI" not in workflow
 
 
+def test_validation_workflow_builds_generated_data_before_running_tests():
+    workflow = (
+        Path(__file__).parents[1] / ".github" / "workflows" / "validate.yml"
+    ).read_text(encoding="utf-8")
+
+    build_command = 'observatory-build --project-root . --timestamp "1970-01-01T00:00:00Z"'
+    test_command = "python -m pytest -q"
+
+    assert workflow.index(build_command) < workflow.index(test_command)
+
+
 def test_invalid_provenance_fails_before_existing_outputs_are_touched(tmp_path_factory):
     tmp_path = tmp_path_factory.mktemp("provenance")
     project_root = _isolated_project_root(tmp_path)
