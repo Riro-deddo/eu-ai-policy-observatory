@@ -1,5 +1,6 @@
 import json
 import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
 import shutil
 import subprocess
@@ -153,6 +154,24 @@ def test_malformed_timestamp_does_not_touch_outputs_and_cli_reports_it(tmp_path_
     assert "build_timestamp must be an ISO-8601 UTC timestamp" in result.stderr
     assert cli_database.read_bytes() == b"CLI database before malformed timestamp"
     assert cli_public_json.read_bytes() == b"CLI public JSON before malformed timestamp"
+
+
+def test_deployment_workflow_normalises_commit_epoch_to_a_utc_build_timestamp():
+    workflow = (Path(__file__).parents[1] / ".github" / "workflows" / "deploy-pages.yml").read_text(
+        encoding="utf-8"
+    )
+    timestamp = datetime.fromtimestamp(1735689600, timezone.utc).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+
+    with pytest.raises(ValueError, match="ISO-8601 UTC timestamp"):
+        pipeline._validate_build_timestamp("2025-01-01T01:00:00+01:00")
+    pipeline._validate_build_timestamp(timestamp)
+
+    assert timestamp == "2025-01-01T00:00:00Z"
+    assert "git show -s --format=%ct HEAD" in workflow
+    assert 'date -u -d "@$BUILD_EPOCH" +\'%Y-%m-%dT%H:%M:%SZ\'' in workflow
+    assert "--format=%cI" not in workflow
 
 
 def test_invalid_provenance_fails_before_existing_outputs_are_touched(tmp_path_factory):

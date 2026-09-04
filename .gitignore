@@ -13,4 +13,5 @@ generated/
 *.sqlite-shm
 *.sqlite-wal
 __pycache__/
+.pytest_cache/
 *.pyc

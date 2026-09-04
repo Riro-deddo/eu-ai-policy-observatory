@@ -45,7 +45,10 @@ jobs:
           python -m pip install -e ".[test]"
           pnpm --dir web install --frozen-lockfile
       - name: Set reproducible build timestamp
-        run: echo "BUILD_TIMESTAMP=$(git show -s --format=%cI HEAD)" >> "$GITHUB_ENV"
+        run: |
+          BUILD_EPOCH="$(git show -s --format=%ct HEAD)"
+          BUILD_TIMESTAMP="$(date -u -d "@$BUILD_EPOCH" +'%Y-%m-%dT%H:%M:%SZ')"
+          printf 'BUILD_TIMESTAMP=%s\n' "$BUILD_TIMESTAMP" >> "$GITHUB_ENV"
       - name: Test and generate database
         run: |
           python -m pytest -q
