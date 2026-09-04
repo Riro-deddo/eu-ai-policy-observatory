@@ -140,16 +140,37 @@ def test_document_version_metadata_is_checked_against_controlled_vocabularies(
 
 def test_duplicate_document_identity_uses_normalised_version_and_institution_ids(tmp_path):
     data_root = _copy_valid_data(tmp_path)
+    (data_root / "institutions" / "european-parliament.json").write_text(
+        json.dumps(
+            {
+                "id": "european-parliament",
+                "entity_type": "institution",
+                "publication_status": "published",
+                "created_at": "2026-09-03T12:00:00Z",
+                "updated_at": "2026-09-03T12:00:00Z",
+                "official_name": "European Parliament",
+                "short_name": "Parliament",
+                "institution_type": "European Union institution",
+                "official_url": "https://www.europarl.europa.eu/",
+            }
+        ),
+        encoding="utf-8",
+    )
     first_path = data_root / "documents" / "example-document.json"
     first = json.loads(first_path.read_text(encoding="utf-8"))
     first["official_reference"] = "COM(2026) 1 final"
     first["version_label"] = "Final"
+    first["institution_roles"] = [
+        {"institution_id": "european-commission", "role": "author"},
+        {"institution_id": "european-parliament", "role": "contributor"},
+    ]
     first_path.write_text(json.dumps(first), encoding="utf-8")
 
     second = dict(first)
     second["id"] = "second-document"
     second["slug"] = "second-document"
     second["version_label"] = "  FINAL  "
+    second["institution_roles"] = list(reversed(first["institution_roles"]))
     (data_root / "documents" / "second-document.json").write_text(
         json.dumps(second), encoding="utf-8"
     )
