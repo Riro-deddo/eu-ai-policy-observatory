@@ -22,6 +22,16 @@ CREATE TABLE documents (
     official_title TEXT NOT NULL,
     short_title TEXT NOT NULL,
     document_type TEXT NOT NULL,
+    record_level TEXT NOT NULL,
+    official_reference TEXT,
+    oj_reference TEXT,
+    document_date TEXT NOT NULL CHECK (
+        length(document_date) = 10
+        AND document_date GLOB '????-??-??'
+        AND date(document_date, '+0 days') = document_date
+    ),
+    version_label TEXT,
+    version_status TEXT NOT NULL,
     publication_date TEXT NOT NULL CHECK (
         length(publication_date) = 10
         AND publication_date GLOB '????-??-??'
@@ -125,6 +135,12 @@ CREATE TABLE document_institutions (
     institution_id TEXT NOT NULL REFERENCES institutions(id),
     role TEXT NOT NULL,
     PRIMARY KEY (document_id, institution_id, role)
+);
+
+CREATE TABLE document_procedure_references (
+    document_id TEXT NOT NULL REFERENCES documents(id),
+    procedure_reference TEXT NOT NULL,
+    PRIMARY KEY (document_id, procedure_reference)
 );
 
 CREATE TABLE document_snapshots (

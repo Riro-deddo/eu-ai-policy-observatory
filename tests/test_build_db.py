@@ -27,6 +27,38 @@ def test_build_database_normalises_document_links(tmp_path):
         assert connection.execute("SELECT COUNT(*) FROM document_sources").fetchone() == (1,)
 
 
+def test_build_database_normalises_version_metadata_and_procedure_references(tmp_path):
+    """Version metadata and each formal procedure belong in public database rows."""
+    records = load_records(DATA_ROOT)
+    records["documents"][0].data["procedure_references"] = [
+        "2025/0359(COD)",
+        "2021/0106(COD)",
+    ]
+    output = tmp_path / "observatory.sqlite"
+
+    build_database(records, SCHEMA_PATH, output)
+
+    with sqlite3.connect(output) as connection:
+        assert connection.execute(
+            "SELECT record_level, official_reference, oj_reference, document_date, "
+            "version_label, version_status FROM documents"
+        ).fetchone() == (
+            "principal",
+            "COM(2026) 1 final",
+            None,
+            "2026-09-03",
+            "Final",
+            "final",
+        )
+        assert connection.execute(
+            "SELECT document_id, procedure_reference "
+            "FROM document_procedure_references ORDER BY procedure_reference"
+        ).fetchall() == [
+            ("example-document", "2021/0106(COD)"),
+            ("example-document", "2025/0359(COD)"),
+        ]
+
+
 def test_schema_rejects_an_impossible_iso_calendar_date():
     connection = sqlite3.connect(":memory:")
     connection.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
@@ -35,8 +67,9 @@ def test_schema_rejects_an_impossible_iso_calendar_date():
         connection.execute(
             "INSERT INTO documents "
             "(id, publication_status, created_at, updated_at, slug, official_title, short_title, "
-            "document_type, publication_date, legal_status, language) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "document_type, record_level, document_date, version_status, publication_date, "
+            "legal_status, language) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 "invalid-date-document",
                 "draft",
@@ -46,7 +79,10 @@ def test_schema_rejects_an_impossible_iso_calendar_date():
                 "Invalid date document",
                 "Invalid date",
                 "communication",
+                "principal",
                 "2026-02-29",
+                "not_applicable",
+                "2026-02-28",
                 "non_binding",
                 "en",
             ),

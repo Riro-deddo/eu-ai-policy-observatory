@@ -42,6 +42,10 @@ def built_mixed_status_database(tmp_path):
     records["documents"][0].data["institution_roles"].append(
         {"institution_id": "draft-institution", "role": "contributor"}
     )
+    records["documents"][0].data["procedure_references"] = [
+        "2025/0359(COD)",
+        "2021/0106(COD)",
+    ]
 
     draft_document = _variant(records["documents"][0], "draft-document", "Draft document", "draft")
     draft_document.data.update(
@@ -226,6 +230,27 @@ def test_export_embeds_the_document_id_in_each_corpus_assessment(
     payload = json.loads(output.read_text(encoding="utf-8"))
     document = next(item for item in payload["documents"] if item["id"] == "example-document")
     assert document["corpus_assessment"]["document_id"] == "example-document"
+
+
+def test_export_embeds_sorted_procedures_and_deterministic_coverage(
+    built_mixed_status_database, tmp_path
+):
+    """Public metadata exposes official procedures and corpus coverage reproducibly."""
+    output = tmp_path / "public-data.json"
+
+    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    document = next(item for item in payload["documents"] if item["id"] == "example-document")
+    assert document["procedure_references"] == ["2021/0106(COD)", "2025/0359(COD)"]
+    assert payload["coverage"] == {
+        "from_year": 2026,
+        "to_year": 2026,
+        "last_verified_date": "2026-09-03",
+        "published_documents": 1,
+        "principal_documents": 1,
+        "supporting_files_and_versions": 0,
+    }
 
 
 def test_export_is_stable_and_uses_the_caller_timestamp(built_mixed_status_database, tmp_path):

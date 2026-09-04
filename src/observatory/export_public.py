@@ -63,6 +63,7 @@ def export_public(database_path: Path, output_path: Path, generated_at: str) -> 
         connection.close()
 
     payload = {
+        "coverage": _coverage(documents, sources),
         "generated_at": generated_at,
         "policies": published["policies"],
         "documents": documents,
@@ -103,6 +104,7 @@ def _export_documents(
         exported.append(
             {
                 **document,
+                "procedure_references": _procedure_references(connection, document_id),
                 "policies": policies,
                 "concepts": concepts,
                 "institutions": institutions,
@@ -111,6 +113,37 @@ def _export_documents(
             }
         )
     return exported, source_ids
+
+
+def _procedure_references(
+    connection: sqlite3.Connection, document_id: str
+) -> list[str]:
+    return [
+        row["procedure_reference"]
+        for row in connection.execute(
+            "SELECT procedure_reference FROM document_procedure_references "
+            "WHERE document_id = ? ORDER BY procedure_reference",
+            (document_id,),
+        )
+    ]
+
+
+def _coverage(
+    documents: list[dict[str, Any]], sources: list[dict[str, Any]]
+) -> dict[str, int | str | None]:
+    document_years = [int(document["document_date"][:4]) for document in documents]
+    verified_dates = [source["last_verified_at"][:10] for source in sources]
+    principal_documents = sum(
+        document["record_level"] == "principal" for document in documents
+    )
+    return {
+        "from_year": min(document_years) if document_years else None,
+        "to_year": max(document_years) if document_years else None,
+        "last_verified_date": max(verified_dates) if verified_dates else None,
+        "published_documents": len(documents),
+        "principal_documents": principal_documents,
+        "supporting_files_and_versions": len(documents) - principal_documents,
+    }
 
 
 def _document_dependencies(

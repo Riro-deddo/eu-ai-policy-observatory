@@ -128,7 +128,13 @@ def _insert_documents(connection: sqlite3.Connection, records: list[LoadedRecord
     _insert_entity_rows(
         connection,
         "documents",
-        ("id", "publication_status", "created_at", "updated_at", "slug", "official_title", "short_title", "document_type", "publication_date", "legal_status", "celex", "eli", "language", "official_summary"),
+        (
+            "id", "publication_status", "created_at", "updated_at", "slug",
+            "official_title", "short_title", "document_type", "record_level",
+            "official_reference", "oj_reference", "document_date", "version_label",
+            "version_status", "publication_date", "legal_status", "celex", "eli",
+            "language", "official_summary",
+        ),
         records,
     )
 
@@ -195,6 +201,14 @@ def _insert_document_supporting_rows(
         _insert_junction_rows(connection, "policy_documents", "policy_id", data, "policy_ids", document_id)
         _insert_junction_rows(connection, "document_concepts", "concept_id", data, "concept_ids", document_id)
         _insert_junction_rows(connection, "document_sources", "source_id", data, "source_ids", document_id)
+        _insert_junction_rows(
+            connection,
+            "document_procedure_references",
+            "procedure_reference",
+            data,
+            "procedure_references",
+            document_id,
+        )
 
 
 def _insert_junction_rows(

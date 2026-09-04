@@ -22,6 +22,9 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     payload = json.loads(outputs.public_json.read_text(encoding="utf-8"))
     assert len(payload["documents"]) >= 6
     assert all(item["publication_status"] == "published" for item in payload["documents"])
+    assert payload["coverage"]["published_documents"] == len(payload["documents"])
+    assert payload["coverage"]["principal_documents"] == len(payload["documents"])
+    assert payload["coverage"]["supporting_files_and_versions"] == 0
 
 
 def test_pipeline_excludes_unpublished_canonical_records_from_every_public_output(tmp_path):
