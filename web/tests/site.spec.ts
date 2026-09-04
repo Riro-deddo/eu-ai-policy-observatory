@@ -47,6 +47,17 @@ test('home presents the four research lenses from data', async ({ page }) => {
 test('methodology states the publication boundary', async ({ page }) => {
   await page.goto('methodology/');
   await expect(page.getByText('Only published records appear in the public interface.')).toBeVisible();
+  const coverage = await page.locator('#methodology-coverage').evaluate((element) => ({
+    statement: element.getAttribute('data-coverage-statement'),
+    unresolved: element.getAttribute('data-unresolved-candidates'),
+  }));
+  if (coverage.statement === null || coverage.unresolved === null) {
+    throw new Error('Methodology coverage metadata was not rendered');
+  }
+  await expect(page.getByText(coverage.statement, { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole('term', { name: 'Unresolved candidates' }).locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText(coverage.unresolved);
 });
 
 test('about uses project-led authorship without university affiliation', async ({ page }) => {
@@ -154,15 +165,26 @@ test('corpus search, combined classifications and reset update the rendered list
   );
 });
 
+test('corpus sector filtering shows only matching human-readable classification tags', async ({ page }) => {
+  await page.goto('corpus/');
+
+  await page.getByLabel('Sector').selectOption('financial_services');
+  const visibleRecords = page.locator('[data-corpus-list] > li:not([hidden])');
+  expect(await visibleRecords.count()).toBeGreaterThan(0);
+  for (const record of await visibleRecords.all()) {
+    await expect(record.getByText('Financial services', { exact: true })).toBeVisible();
+  }
+});
+
 test('the final AI Act detail page separates official and research content', async ({ page }) => {
   await page.goto('corpus/');
   await page.getByRole('link', { name: 'Artificial Intelligence Act', exact: true }).click();
 
   for (const section of [
     'Official metadata',
-    'Institutions and roles',
+    'Research classifications',
+    'Production provenance',
     'Official sources and identifiers',
-    'Policy placement and concepts',
     'Research assessment',
     'Relationships',
     'Verification',
@@ -284,6 +306,17 @@ test('timeline event-type filtering updates the visible chronology and announces
   await expect(page.locator('[data-timeline-count]')).toHaveText('3 timeline entries');
 });
 
+test('timeline all-records view never reduces the visible chronology', async ({ page }) => {
+  await page.goto('timeline/');
+
+  const visibleEntries = page.locator('[data-timeline-entry]:not([hidden])');
+  const principalCount = await visibleEntries.count();
+  await page.getByRole('radio', { name: 'All documents and versions' }).check();
+  const allCount = await visibleEntries.count();
+
+  expect(allCount).toBeGreaterThanOrEqual(principalCount);
+});
+
 test('policy map states both relationship conventions and pairs every visual edge with one text entry', async ({ page }) => {
   await page.goto('policy-map/');
 
@@ -365,6 +398,7 @@ test('every generated route has one main heading, one main landmark, a working s
 });
 
 test('mobile routes do not make the document body horizontally overflow', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 844 });
   await page.goto('corpus/');
   const documentRoutes = await page.locator('[data-corpus-list] a').evaluateAll((links) => (
     links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)

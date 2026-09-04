@@ -1,5 +1,5 @@
 ---
-import { filterDocuments } from '../lib/filter';
+import { filterDocuments, vocabularyLabel } from '../lib/filter';
 import type { DocumentRecord } from '../lib/types';
 
 interface Props {
@@ -18,6 +18,8 @@ const institutions = [...new Map(
 ).values()].sort((first, second) => first.official_name.localeCompare(second.official_name, 'en-GB'));
 const documentTypes = [...new Set(documents.map((document) => document.document_type))].sort();
 const legalStatuses = [...new Set(documents.map((document) => document.legal_status))].sort();
+const sectors = [...new Set(documents.flatMap((document) => document.sector_tags))].sort();
+const provenance = [...new Set(documents.flatMap((document) => document.provenance_tags))].sort();
 const policyStages = [...new Set(
   documents.flatMap((document) => document.corpus_assessment === null ? [] : [document.corpus_assessment.policy_stage]),
 )].sort();
@@ -33,10 +35,6 @@ const policies = [...new Map(
   documents.flatMap((document) => document.policies.map((policy) => [policy.id, policy])),
 ).values()].sort((first, second) => first.name.localeCompare(second.name, 'en-GB'));
 
-const labelValue = (value: string) => {
-  const words = value.replaceAll('_', ' ');
-  return words.charAt(0).toLocaleUpperCase('en-GB') + words.slice(1);
-};
 ---
 
 <section class="research-section corpus-explorer" aria-labelledby="corpus-heading">
@@ -76,21 +74,35 @@ const labelValue = (value: string) => {
       <label for="corpus-document-type">Document type</label>
       <select id="corpus-document-type" name="documentType">
         <option value="">All document types</option>
-        {documentTypes.map((documentType) => <option value={documentType}>{labelValue(documentType)}</option>)}
+        {documentTypes.map((documentType) => <option value={documentType}>{vocabularyLabel(documentType)}</option>)}
       </select>
     </div>
     <div>
       <label for="corpus-legal-status">Legal status</label>
       <select id="corpus-legal-status" name="legalStatus">
         <option value="">All legal statuses</option>
-        {legalStatuses.map((legalStatus) => <option value={legalStatus}>{labelValue(legalStatus)}</option>)}
+        {legalStatuses.map((legalStatus) => <option value={legalStatus}>{vocabularyLabel(legalStatus)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-sector">Sector</label>
+      <select id="corpus-sector" name="sector">
+        <option value="">All sectors</option>
+        {sectors.map((sector) => <option value={sector}>{vocabularyLabel(sector)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-provenance">Provenance</label>
+      <select id="corpus-provenance" name="provenance">
+        <option value="">All provenance types</option>
+        {provenance.map((provenance) => <option value={provenance}>{vocabularyLabel(provenance)}</option>)}
       </select>
     </div>
     <div>
       <label for="corpus-policy-stage">Policy stage</label>
       <select id="corpus-policy-stage" name="policyStage">
         <option value="">All policy stages</option>
-        {policyStages.map((policyStage) => <option value={policyStage}>{labelValue(policyStage)}</option>)}
+        {policyStages.map((policyStage) => <option value={policyStage}>{vocabularyLabel(policyStage)}</option>)}
       </select>
     </div>
     <div>
@@ -104,21 +116,21 @@ const labelValue = (value: string) => {
       <label for="corpus-tier">Corpus tier</label>
       <select id="corpus-tier" name="corpusTier">
         <option value="">All corpus tiers</option>
-        {corpusTiers.map((corpusTier) => <option value={corpusTier}>{labelValue(corpusTier)}</option>)}
+        {corpusTiers.map((corpusTier) => <option value={corpusTier}>{vocabularyLabel(corpusTier)}</option>)}
       </select>
     </div>
     <div>
       <label for="corpus-record-level">Record level</label>
       <select id="corpus-record-level" name="recordLevel">
         <option value="">All record levels</option>
-        {recordLevels.map((recordLevel) => <option value={recordLevel}>{labelValue(recordLevel)}</option>)}
+        {recordLevels.map((recordLevel) => <option value={recordLevel}>{vocabularyLabel(recordLevel)}</option>)}
       </select>
     </div>
     <div>
       <label for="corpus-version-status">Version status</label>
       <select id="corpus-version-status" name="versionStatus">
         <option value="">All version statuses</option>
-        {versionStatuses.map((versionStatus) => <option value={versionStatus}>{labelValue(versionStatus)}</option>)}
+        {versionStatuses.map((versionStatus) => <option value={versionStatus}>{vocabularyLabel(versionStatus)}</option>)}
       </select>
     </div>
     <div>
@@ -146,12 +158,30 @@ const labelValue = (value: string) => {
     {sortedDocuments.map((document) => (
       <li data-document-id={document.id}>
         <a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a>
-        <span>
+        <span class="record-summary">
           {' · '}{document.publication_date}
-          {' · '}{labelValue(document.document_type)}
-          {' · '}{labelValue(document.record_level)}
-          {' · '}{labelValue(document.version_status)}
+          {' · '}{vocabularyLabel(document.document_type)}
+          {' · '}{vocabularyLabel(document.record_level)}
+          {' · '}{vocabularyLabel(document.version_status)}
         </span>
+        <dl class="record-classifications">
+          <div>
+            <dt>Sectors</dt>
+            <dd>
+              <ul class="tag-list">
+                {document.sector_tags.map((sector) => <li>{vocabularyLabel(sector)}</li>)}
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Provenance</dt>
+            <dd>
+              <ul class="tag-list">
+                {document.provenance_tags.map((provenance) => <li>{vocabularyLabel(provenance)}</li>)}
+              </ul>
+            </dd>
+          </div>
+        </dl>
       </li>
     ))}
   </ul>

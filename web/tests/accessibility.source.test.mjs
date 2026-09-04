@@ -64,6 +64,12 @@ test('the no-JavaScript block derives its timeline count from serialized public 
   assertPolicyRouteCoverage(noJavaScriptBlock, /for \(const route of policyRoutes\) \{[\s\S]*?await page\.goto\(route\)/);
 });
 
+test('classification controls use native keyboard-reachable form elements', () => {
+  assert.match(siteSpec, /page\.getByLabel\('Sector'\)\.selectOption\('financial_services'\)/);
+  assert.match(siteSpec, /page\.getByRole\('radio', \{ name: 'All documents and versions' \}\)\.check\(\)/);
+  assert.match(stylesheet, /:is\(a, button, input, select, \[tabindex\]\):focus-visible/);
+});
+
 test('the scoped policy-route guard rejects an in-memory collection that is never navigated', () => {
   const deliberatelyRegressedBlock = `
     test('regressed', async ({ page }) => {
