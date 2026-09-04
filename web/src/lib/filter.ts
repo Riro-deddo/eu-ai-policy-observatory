@@ -28,6 +28,7 @@ const corpusStringCriteriaKeys = [
   'versionStatus',
   'policy',
 ] as const;
+const corpusCriteriaKeys = ['view', ...corpusStringCriteriaKeys] as const;
 
 type CorpusStringCriteriaKey = (typeof corpusStringCriteriaKeys)[number];
 
@@ -49,6 +50,23 @@ export function parseCorpusCriteria(search: URLSearchParams): CorpusCriteria {
   }
 
   return criteria;
+}
+
+export function buildCorpusSearchParams(
+  current: URLSearchParams,
+  criteria: CorpusCriteria,
+): URLSearchParams {
+  const next = new URLSearchParams(current);
+
+  for (const key of corpusCriteriaKeys) next.delete(key);
+
+  if (criteria.view === 'all') next.append('view', 'all');
+  for (const key of corpusStringCriteriaKeys) {
+    const value = criteria[key];
+    if (value !== undefined && value.trim() !== '') next.append(key, value);
+  }
+
+  return next;
 }
 
 export interface TimelineCriteria {

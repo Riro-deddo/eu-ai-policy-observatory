@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { filterDocuments } from '../src/lib/filter.ts';
+import { buildCorpusSearchParams, filterDocuments } from '../src/lib/filter.ts';
 
 const filterModule = await import('../src/lib/filter.ts');
 
@@ -172,5 +172,36 @@ test('parses only named Corpus criteria and discards blank or unsupported query 
       policy: 'ai-act-legislative-process',
       query: 'AI',
     },
+  );
+});
+
+test('builds a stable Corpus query while preserving unrelated parameters', () => {
+  const current = new URLSearchParams(
+    'campaign=research&view=principal&query=old&recordLevel=principal&unrelated=keep',
+  );
+
+  assert.equal(
+    buildCorpusSearchParams(current, {
+      view: 'all',
+      query: 'AI Act',
+      recordLevel: 'version',
+      versionStatus: 'draft',
+      policy: 'ai-act-legislative-process',
+    }).toString(),
+    'campaign=research&unrelated=keep&view=all&query=AI+Act&recordLevel=version&versionStatus=draft&policy=ai-act-legislative-process',
+  );
+  assert.equal(
+    current.toString(),
+    'campaign=research&view=principal&query=old&recordLevel=principal&unrelated=keep',
+  );
+});
+
+test('omits the principal default and removes stale Corpus criteria from a shareable query', () => {
+  assert.equal(
+    buildCorpusSearchParams(
+      new URLSearchParams('campaign=research&view=all&query=old&versionStatus=draft'),
+      { view: 'principal' },
+    ).toString(),
+    'campaign=research',
   );
 });

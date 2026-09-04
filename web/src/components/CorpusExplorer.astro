@@ -159,7 +159,7 @@ const labelValue = (value: string) => {
 
 <script id="corpus-documents" type="application/json" set:html={JSON.stringify(documents).replaceAll('<', '\\u003c')}></script>
 <script>
-  import { filterDocuments, parseCorpusCriteria } from '../lib/filter';
+  import { buildCorpusSearchParams, filterDocuments, parseCorpusCriteria } from '../lib/filter';
   import type { CorpusCriteria } from '../lib/filter';
   import type { DocumentRecord } from '../lib/types';
 
@@ -173,13 +173,16 @@ const labelValue = (value: string) => {
     && count instanceof HTMLElement && empty instanceof HTMLElement) {
     const documents: DocumentRecord[] = JSON.parse(serializedDocuments.textContent ?? '[]');
 
-    const applyFilters = () => {
+    const readFormCriteria = (): CorpusCriteria => {
       const formData = new FormData(form);
-      const criteria: CorpusCriteria = parseCorpusCriteria(new URLSearchParams(
+      return parseCorpusCriteria(new URLSearchParams(
         [...formData.entries()]
           .filter(([, value]) => typeof value === 'string')
           .map(([name, value]) => [name, value.toString()]),
       ));
+    };
+
+    const applyFilters = (criteria: CorpusCriteria) => {
       const visibleIds = new Set(filterDocuments(documents, criteria).map((entry) => entry.id));
 
       for (const item of items) {
@@ -196,26 +199,76 @@ const labelValue = (value: string) => {
       empty.hidden = visibleIds.size !== 0;
     };
 
-    form.addEventListener('input', applyFilters);
-    form.addEventListener('change', applyFilters);
+    const syncHistory = (criteria: CorpusCriteria, mode: 'push' | 'replace') => {
+      const parameters = buildCorpusSearchParams(
+        new URLSearchParams(window.location.search),
+        criteria,
+      );
+      const search = parameters.toString();
+      const nextUrl = `${window.location.pathname}${search === '' ? '' : `?${search}`}${window.location.hash}`;
+      const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+      if (nextUrl === currentUrl) return;
+
+      if (mode === 'push') {
+        window.history.pushState(window.history.state, '', nextUrl);
+      } else {
+        window.history.replaceState(window.history.state, '', nextUrl);
+      }
+    };
+
+    const hydrateControlsFromUrl = (criteria: CorpusCriteria) => {
+      for (const control of form.elements) {
+        if (control instanceof HTMLInputElement) {
+          control.value = control.defaultValue;
+        } else if (control instanceof HTMLSelectElement) {
+          control.selectedIndex = 0;
+        }
+      }
+
+      for (const [name, value] of Object.entries(criteria)) {
+        const control = form.elements.namedItem(name);
+        if (control instanceof HTMLInputElement) {
+          control.value = value;
+        } else if (control instanceof HTMLSelectElement
+          && [...control.options].some((option) => option.value === value)) {
+          control.value = value;
+        }
+      }
+    };
+
+    const readUrlAndApplyFilters = () => {
+      const criteria = parseCorpusCriteria(new URLSearchParams(window.location.search));
+      hydrateControlsFromUrl(criteria);
+      applyFilters(readFormCriteria());
+    };
+
+    form.addEventListener('input', (event) => {
+      if (!(event.target instanceof HTMLInputElement)) return;
+      const criteria = readFormCriteria();
+      applyFilters(criteria);
+      syncHistory(criteria, 'replace');
+    });
+    form.addEventListener('change', (event) => {
+      if (!(event.target instanceof HTMLSelectElement)) return;
+      const criteria = readFormCriteria();
+      applyFilters(criteria);
+      syncHistory(criteria, 'push');
+    });
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      applyFilters();
+      const criteria = readFormCriteria();
+      applyFilters(criteria);
+      syncHistory(criteria, 'replace');
     });
     form.addEventListener('reset', () => {
-      window.setTimeout(applyFilters);
+      window.setTimeout(() => {
+        const criteria = readFormCriteria();
+        applyFilters(criteria);
+        syncHistory(criteria, 'push');
+      });
     });
 
-    const criteria = parseCorpusCriteria(new URLSearchParams(window.location.search));
-    for (const [name, value] of Object.entries(criteria)) {
-      const control = form.elements.namedItem(name);
-      if (control instanceof HTMLInputElement) {
-        control.value = value;
-      } else if (control instanceof HTMLSelectElement
-        && [...control.options].some((option) => option.value === value)) {
-        control.value = value;
-      }
-    }
-    applyFilters();
+    window.addEventListener('popstate', readUrlAndApplyFilters);
+    readUrlAndApplyFilters();
   }
 </script>

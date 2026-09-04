@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 
-import { buildTimelineEntries, filterDocuments, filterTimeline } from '../src/lib/filter';
+import {
+  buildCorpusSearchParams,
+  buildTimelineEntries,
+  filterDocuments,
+  filterTimeline,
+} from '../src/lib/filter';
 import type { DocumentRecord, PolicyEvent, PublicData } from '../src/lib/types';
 import { publishedDocuments } from './fixtures/documents';
 
@@ -152,6 +157,30 @@ describe('filterDocuments', () => {
       .toEqual(['artificial-intelligence-act-2024']);
     expect(filterDocuments(publishedDocuments, { corpusTier: 'core' }).map((document) => document.id))
       .toEqual(['artificial-intelligence-act-2024']);
+  });
+});
+
+describe('Corpus query serialisation', () => {
+  it('preserves unrelated query parameters and emits controlled criteria in stable order', () => {
+    expect(buildCorpusSearchParams(
+      new URLSearchParams('ref=phd&query=old&view=principal&preview=true'),
+      {
+        view: 'all',
+        query: 'AI Act',
+        recordLevel: 'version',
+        versionStatus: 'draft',
+        policy: 'artificial-intelligence-act-legislative-process',
+      },
+    ).toString()).toBe(
+      'ref=phd&preview=true&view=all&query=AI+Act&recordLevel=version&versionStatus=draft&policy=artificial-intelligence-act-legislative-process',
+    );
+  });
+
+  it('canonicalises the principal default by removing stale controlled criteria', () => {
+    expect(buildCorpusSearchParams(
+      new URLSearchParams('ref=phd&view=all&query=old&recordLevel=version'),
+      { view: 'principal' },
+    ).toString()).toBe('ref=phd');
   });
 });
 

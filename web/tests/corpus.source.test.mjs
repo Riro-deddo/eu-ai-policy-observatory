@@ -52,3 +52,27 @@ test('Corpus distinguishes the active result count from the published total', ()
   assert.match(explorer, /data-corpus-count aria-live="polite"/);
   assert.match(explorer, /data-corpus-total/);
 });
+
+test('Corpus writes stable filter state to browser history without no-op entries', () => {
+  assert.match(
+    explorer,
+    /buildCorpusSearchParams\(\s*new URLSearchParams\(window\.location\.search\),\s*criteria,?\s*\)/,
+  );
+  assert.match(explorer, /if \(nextUrl === currentUrl\) return;/);
+  assert.match(explorer, /window\.history\.pushState\(window\.history\.state, '', nextUrl\)/);
+  assert.match(explorer, /window\.history\.replaceState\(window\.history\.state, '', nextUrl\)/);
+});
+
+test('Corpus restores defaults and URL criteria on browser history navigation', () => {
+  assert.match(explorer, /const hydrateControlsFromUrl = \(criteria: CorpusCriteria\)/);
+  assert.match(explorer, /control\.selectedIndex = 0;/);
+  assert.match(explorer, /window\.addEventListener\('popstate', readUrlAndApplyFilters\)/);
+  assert.match(explorer, /const criteria = parseCorpusCriteria\(new URLSearchParams\(window\.location\.search\)\);[\s\S]*?hydrateControlsFromUrl\(criteria\);[\s\S]*?applyFilters\(readFormCriteria\(\)\);/);
+});
+
+test('Corpus updates history for live search, select changes, submit and reset', () => {
+  assert.match(explorer, /form\.addEventListener\('input',[\s\S]*?syncHistory\(criteria, 'replace'\)/);
+  assert.match(explorer, /form\.addEventListener\('change',[\s\S]*?syncHistory\(criteria, 'push'\)/);
+  assert.match(explorer, /form\.addEventListener\('submit',[\s\S]*?syncHistory\(criteria, 'replace'\)/);
+  assert.match(explorer, /form\.addEventListener\('reset',[\s\S]*?syncHistory\(criteria, 'push'\)/);
+});

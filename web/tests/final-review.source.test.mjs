@@ -24,7 +24,8 @@ test('canonical browser assertions derive the deployment origin and base path fr
 test('Corpus enhancement hydrates a whitelisted query before applying filters', () => {
   assert.match(explorer, /parseCorpusCriteria\(new URLSearchParams\(window\.location\.search\)\)/);
   assert.match(explorer, /form\.elements\.namedItem\(name\)/);
-  assert.match(explorer, /applyFilters\(\);/);
+  assert.match(explorer, /hydrateControlsFromUrl\(criteria\);/);
+  assert.match(explorer, /applyFilters\(readFormCriteria\(\)\);/);
 });
 
 test('the Corpus browser assertion preserves the descending-date filter order', () => {
