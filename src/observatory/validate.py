@@ -39,6 +39,18 @@ _VOCABULARY_FIELDS = {
     "source_type": "source_type",
 }
 
+_OFFICIAL_SOURCE_TYPES = {
+    "eur_lex",
+    "eli",
+    "commission_webpage",
+    "official_pdf",
+    "publications_office",
+    "council_register",
+    "parliament_register",
+    "official_register",
+    "official_consultation",
+}
+
 
 class RecordValidationError(ValueError):
     """Raised when canonical records contain one or more validation issues."""
@@ -1037,9 +1049,12 @@ def _validate_source_evidence(
             identifier
             for identifier in source_ids if isinstance(identifier, str)
         ] if isinstance(source_ids, list) else []
-        if not valid_source_ids or not any(
-            records_by_type.get("source", {}).get(identifier) for identifier in valid_source_ids
-        ):
+        sources = [
+            source
+            for identifier in valid_source_ids
+            for source in records_by_type.get("source", {}).get(identifier, [])
+        ]
+        if not sources:
             issues.append(
                 _issue(
                     "missing_evidence",
@@ -1048,15 +1063,43 @@ def _validate_source_evidence(
                     "Published or verified documents require at least one existing source record.",
                 )
             )
+        else:
+            for index, identifier in enumerate(valid_source_ids):
+                matched_sources = records_by_type.get("source", {}).get(identifier, [])
+                if matched_sources and any(
+                    not _is_official_source(source.data) for source in matched_sources
+                ):
+                    issues.append(
+                        _issue(
+                            "official_evidence",
+                            path,
+                            f"source_ids.{index}",
+                            "Published or verified documents require evidence from official EU HTTPS sources.",
+                        )
+                    )
     elif entity_type == "event":
         source_id = record.data.get("source_id")
-        if not isinstance(source_id, str) or not records_by_type.get("source", {}).get(source_id):
+        sources = (
+            records_by_type.get("source", {}).get(source_id, [])
+            if isinstance(source_id, str)
+            else []
+        )
+        if not sources:
             issues.append(
                 _issue(
                     "missing_evidence",
                     path,
                     "source_id",
                     "Published or verified events require an existing source record.",
+                )
+            )
+        elif not any(_is_official_source(source.data) for source in sources):
+            issues.append(
+                _issue(
+                    "official_evidence",
+                    path,
+                    "source_id",
+                    "Published or verified events require evidence from an official EU HTTPS source.",
                 )
             )
     elif entity_type == "relationship":
@@ -1114,11 +1157,4 @@ def _is_official_source(data: Mapping[str, object]) -> bool:
     source_type = data.get("source_type")
     if not isinstance(url, str) or not isinstance(source_type, str):
         return False
-    parsed = urlparse(url)
-    return parsed.scheme == "https" and source_type in {
-        "eur_lex",
-        "eli",
-        "commission_webpage",
-        "official_pdf",
-        "publications_office",
-    }
+    return _is_official_eu_url(url) and source_type in _OFFICIAL_SOURCE_TYPES

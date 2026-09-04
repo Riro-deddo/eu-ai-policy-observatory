@@ -19,6 +19,64 @@ def _copy_valid_data(tmp_path: Path) -> Path:
     return data_root
 
 
+def _replace_example_source(data_root: Path, source_type: str, url: str) -> None:
+    source_path = data_root / "sources" / "example-source.json"
+    source = json.loads(source_path.read_text(encoding="utf-8"))
+    source["source_type"] = source_type
+    source["url"] = url
+    source_path.write_text(json.dumps(source), encoding="utf-8")
+
+
+def _write_event(data_root: Path) -> None:
+    event_root = data_root / "events"
+    event_root.mkdir()
+    (event_root / "example-event.json").write_text(
+        json.dumps(
+            {
+                "id": "example-event",
+                "entity_type": "event",
+                "publication_status": "published",
+                "created_at": "2026-09-03T12:00:00Z",
+                "updated_at": "2026-09-03T12:00:00Z",
+                "event_type": "publication",
+                "event_date": "2026-09-03",
+                "title": "Example publication event",
+                "description": "A canonical validation fixture.",
+                "policy_id": "example-policy",
+                "document_id": "example-document",
+                "source_id": "example-source",
+            }
+        ),
+        encoding="utf-8",
+    )
+
+
+def _write_official_relationship(data_root: Path) -> None:
+    relationship_root = data_root / "relationships"
+    relationship_root.mkdir()
+    (relationship_root / "example-relationship.json").write_text(
+        json.dumps(
+            {
+                "id": "example-relationship",
+                "entity_type": "relationship",
+                "publication_status": "published",
+                "created_at": "2026-09-03T12:00:00Z",
+                "updated_at": "2026-09-03T12:00:00Z",
+                "source_entity_type": "document",
+                "source_entity_id": "example-document",
+                "target_entity_type": "policy",
+                "target_entity_id": "example-policy",
+                "relationship_type": "part_of",
+                "basis": "official",
+                "rationale": None,
+                "evidence_source_id": "example-source",
+                "verification_status": "verified",
+            }
+        ),
+        encoding="utf-8",
+    )
+
+
 def test_valid_fixture_has_no_issues():
     assert validate_records(Path("tests/fixtures/valid/data"), SCHEMA, VOCAB) == []
 
@@ -288,6 +346,127 @@ def test_source_and_institution_urls_require_http_or_https(tmp_path, directory, 
     issues = validate_records(data_root, SCHEMA, VOCAB)
 
     assert any(issue.field == field and issue.code == "schema" for issue in issues)
+
+
+def test_published_document_rejects_self_declared_official_source_on_deceptive_host(
+    tmp_path,
+):
+    data_root = _copy_valid_data(tmp_path)
+    _replace_example_source(
+        data_root,
+        "commission_webpage",
+        "https://eur-lex.europa.eu.example.org/not-an-eu-source",
+    )
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "official_evidence"
+        and issue.record_path == "documents/example-document.json"
+        and issue.field == "source_ids.0"
+        for issue in issues
+    )
+
+
+def test_published_document_rejects_non_eu_source_even_with_an_official_source(
+    tmp_path,
+):
+    data_root = _copy_valid_data(tmp_path)
+    source_path = data_root / "sources" / "example-source.json"
+    source = json.loads(source_path.read_text(encoding="utf-8"))
+    source.update(
+        {
+            "id": "non-eu-source",
+            "source_type": "official_pdf",
+            "url": "https://example.org/not-an-eu-source.pdf",
+        }
+    )
+    (data_root / "sources" / "non-eu-source.json").write_text(
+        json.dumps(source), encoding="utf-8"
+    )
+    document_path = data_root / "documents" / "example-document.json"
+    document = json.loads(document_path.read_text(encoding="utf-8"))
+    document["source_ids"].append("non-eu-source")
+    document_path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "official_evidence"
+        and issue.record_path == "documents/example-document.json"
+        and issue.field == "source_ids.1"
+        for issue in issues
+    )
+
+
+def test_published_event_rejects_self_declared_official_source_on_arbitrary_host(
+    tmp_path,
+):
+    data_root = _copy_valid_data(tmp_path)
+    _replace_example_source(
+        data_root, "official_register", "https://example.org/not-an-eu-source"
+    )
+    _write_event(data_root)
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "official_evidence"
+        and issue.record_path == "events/example-event.json"
+        and issue.field == "source_id"
+        for issue in issues
+    )
+
+
+def test_official_relationship_rejects_self_declared_official_source_on_arbitrary_host(
+    tmp_path,
+):
+    data_root = _copy_valid_data(tmp_path)
+    _replace_example_source(
+        data_root, "commission_webpage", "https://example.org/not-an-eu-source"
+    )
+    _write_official_relationship(data_root)
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(
+        issue.code == "official_evidence"
+        and issue.record_path == "relationships/example-relationship.json"
+        and issue.field == "evidence_source_id"
+        for issue in issues
+    )
+
+
+@pytest.mark.parametrize(
+    ("source_type", "url"),
+    [
+        (
+            "council_register",
+            "https://www.consilium.europa.eu/en/documents-publications/public-register/",
+        ),
+        (
+            "parliament_register",
+            "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html",
+        ),
+        (
+            "official_register",
+            "https://ec.europa.eu/transparency/documents-register/detail",
+        ),
+        (
+            "official_consultation",
+            "https://digital-strategy.ec.europa.eu/en/consultations/example",
+        ),
+    ],
+)
+def test_expanded_official_source_types_satisfy_published_provenance(
+    tmp_path, source_type, url
+):
+    data_root = _copy_valid_data(tmp_path)
+    _replace_example_source(data_root, source_type, url)
+    _write_event(data_root)
+    _write_official_relationship(data_root)
+
+    assert validate_records(data_root, SCHEMA, VOCAB) == []
 
 
 @pytest.mark.parametrize(
