@@ -44,8 +44,7 @@ jobs:
         run: |
           pnpm test
           pnpm build
-          pnpm test:e2e -- --project=chromium-desktop
-          pnpm test:e2e -- --project=chromium-mobile
+          pnpm test:e2e
       - name: Check public output
         run: python scripts/check_public_build.py --site web/dist --data generated/public-data.json
       - name: Upload generated database build
