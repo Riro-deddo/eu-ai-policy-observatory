@@ -306,6 +306,31 @@ def test_scanner_rejects_downloadable_database_with_non_published_entity_row(
     )
 
 
+def test_scanner_reports_draft_rows_in_hostile_table_names(tmp_path: Path):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute(
+            'CREATE TABLE "draft records""; --" '
+            "(id TEXT PRIMARY KEY, publication_status TEXT NOT NULL)"
+        )
+        connection.execute(
+            'INSERT INTO "draft records""; --" VALUES (?, ?)',
+            ("draft-row", "draft"),
+        )
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert errors == [
+        "non-published row in downloadable SQLite database: "
+        "draft records\"; --/draft-row ('draft')"
+    ]
+
+
 def test_scanner_accepts_downloadable_database_with_only_published_entity_rows(
     tmp_path: Path,
 ):
