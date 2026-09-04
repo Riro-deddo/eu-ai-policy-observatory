@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 import sqlite3
-from typing import Any
+from typing import Any, Mapping
 
 
 CORE_TABLES = (
@@ -26,7 +26,12 @@ ENDPOINT_TABLES = {
 }
 
 
-def export_public(database_path: Path, output_path: Path, generated_at: str) -> Path:
+def export_public(
+    database_path: Path,
+    output_path: Path,
+    generated_at: str,
+    audit_summary: Mapping[str, object],
+) -> Path:
     """Export only publishable records and their publishable static-page dependencies."""
     destination = Path(output_path)
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -63,7 +68,7 @@ def export_public(database_path: Path, output_path: Path, generated_at: str) -> 
         connection.close()
 
     payload = {
-        "coverage": _coverage(documents, sources),
+        "coverage": _coverage(documents, sources, audit_summary),
         "generated_at": generated_at,
         "policies": published["policies"],
         "documents": documents,
@@ -148,8 +153,10 @@ def _procedure_references(
 
 
 def _coverage(
-    documents: list[dict[str, Any]], sources: list[dict[str, Any]]
-) -> dict[str, int | str | None]:
+    documents: list[dict[str, Any]],
+    sources: list[dict[str, Any]],
+    audit_summary: Mapping[str, object],
+) -> dict[str, object]:
     document_years = [int(document["document_date"][:4]) for document in documents]
     verified_dates = [source["last_verified_at"][:10] for source in sources]
     principal_documents = sum(
@@ -162,6 +169,7 @@ def _coverage(
         "published_documents": len(documents),
         "principal_documents": principal_documents,
         "supporting_files_and_versions": len(documents) - principal_documents,
+        **audit_summary,
     }
 
 

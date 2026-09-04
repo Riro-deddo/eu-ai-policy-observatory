@@ -11,6 +11,25 @@ from observatory.export_public import export_public
 
 DATA_ROOT = Path("tests/fixtures/valid/data")
 SCHEMA_PATH = Path("schema/database.sql")
+AUDIT_SUMMARY = {
+    "coverage_cutoff": "2026-09-04",
+    "coverage_statement": (
+        "Comprehensive within the documented inclusion boundary, "
+        "verified through 4 September 2026."
+    ),
+    "source_families": {
+        "total": 2,
+        "by_status": {
+            "not_started": 0,
+            "in_progress": 0,
+            "reviewed": 2,
+            "gap_found": 0,
+            "recheck_due": 0,
+        },
+    },
+    "inventory": {"included": 1, "merged": 0, "excluded": 0, "pending": 0},
+    "unresolved_candidates": 0,
+}
 
 
 @pytest.fixture
@@ -134,7 +153,12 @@ def test_export_excludes_every_non_published_record(built_mixed_status_database,
     """A publication-boundary regression must never disclose a draft core record."""
     output = tmp_path / "public-data.json"
 
-    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+    export_public(
+        built_mixed_status_database,
+        output,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     payload = json.loads(output.read_text(encoding="utf-8"))
     for collection in (
@@ -156,7 +180,12 @@ def test_export_filters_unpublished_dependencies_and_embeds_document_page_data(
     """Export must not retain IDs or embedded rows from unpublished dependencies."""
     output = tmp_path / "public-data.json"
 
-    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+    export_public(
+        built_mixed_status_database,
+        output,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     payload = json.loads(output.read_text(encoding="utf-8"))
     document = next(item for item in payload["documents"] if item["id"] == "example-document")
@@ -202,7 +231,12 @@ def test_export_requires_a_published_evidence_source_for_every_relationship(
     """Relationships without evidence would be untraceable public claims."""
     output = tmp_path / "public-data.json"
 
-    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+    export_public(
+        built_mixed_status_database,
+        output,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     payload = json.loads(output.read_text(encoding="utf-8"))
     assert "relationship-without-evidence" not in {
@@ -216,7 +250,12 @@ def test_export_excludes_relationships_targeting_filtered_events(
     """A relationship cannot point at an event omitted for a draft dependency."""
     output = tmp_path / "public-data.json"
 
-    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+    export_public(
+        built_mixed_status_database,
+        output,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     payload = json.loads(output.read_text(encoding="utf-8"))
     assert "relationship-to-hidden-event" not in {
@@ -230,7 +269,12 @@ def test_export_embeds_the_document_id_in_each_corpus_assessment(
     """The static-site assessment contract needs its owning document ID."""
     output = tmp_path / "public-data.json"
 
-    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+    export_public(
+        built_mixed_status_database,
+        output,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     payload = json.loads(output.read_text(encoding="utf-8"))
     document = next(item for item in payload["documents"] if item["id"] == "example-document")
@@ -243,7 +287,12 @@ def test_export_embeds_sorted_procedures_and_deterministic_coverage(
     """Public metadata exposes official procedures and corpus coverage reproducibly."""
     output = tmp_path / "public-data.json"
 
-    export_public(built_mixed_status_database, output, "2026-09-03T00:00:00Z")
+    export_public(
+        built_mixed_status_database,
+        output,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     payload = json.loads(output.read_text(encoding="utf-8"))
     document = next(item for item in payload["documents"] if item["id"] == "example-document")
@@ -255,6 +304,7 @@ def test_export_embeds_sorted_procedures_and_deterministic_coverage(
         "published_documents": 1,
         "principal_documents": 1,
         "supporting_files_and_versions": 0,
+        **AUDIT_SUMMARY,
     }
 
 
@@ -263,8 +313,18 @@ def test_export_is_stable_and_uses_the_caller_timestamp(built_mixed_status_datab
     first = tmp_path / "first.json"
     second = tmp_path / "second.json"
 
-    assert export_public(built_mixed_status_database, first, "2026-09-03T00:00:00Z") == first
-    export_public(built_mixed_status_database, second, "2026-09-03T00:00:00Z")
+    assert export_public(
+        built_mixed_status_database,
+        first,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    ) == first
+    export_public(
+        built_mixed_status_database,
+        second,
+        "2026-09-03T00:00:00Z",
+        AUDIT_SUMMARY,
+    )
 
     content = first.read_text(encoding="utf-8")
     payload = json.loads(content)
