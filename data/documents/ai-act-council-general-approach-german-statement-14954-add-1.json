@@ -1,6 +1,61 @@
 {
-  "id": "ai-act-council-general-approach-german-statement-14954-add-1", "entity_type": "document", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "slug": "ai-act-council-general-approach-german-statement-14954-add-1", "official_title": "Statement by Germany – Regulation laying down harmonised rules on artificial intelligence (AI Act) – General approach", "short_title": "German statement on the Council general approach", "document_type": "institutional_position", "record_level": "attachment", "official_reference": "ST 14954/22 ADD 1", "procedure_references": ["2021/0106(COD)"], "oj_reference": null, "document_date": "2022-11-25", "version_label": "Addendum 1", "version_status": "final", "publication_date": "2022-11-25", "legal_status": "non_binding", "celex": null, "eli": null, "language": "en", "official_summary": null,
-  "institution_roles": [{"institution_id": "council-of-the-european-union", "role": "publisher"}], "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"], "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"], "source_ids": ["council-st-14954-2022-add-1"],
-  "corpus_assessment": {"corpus_tier": "directly_related", "policy_stage": "negotiation", "inclusion_rationale": "Official attachment recording a member-state statement on the Council general approach.", "researcher_notes": "Issuer and status follow the Council cover; directly_related is an analytical selection.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ai-act-council-general-approach-german-statement-14954-add-1",
+  "official_title": "Statement by Germany – Regulation laying down harmonised rules on artificial intelligence (AI Act) – General approach",
+  "short_title": "German statement on the Council general approach",
+  "document_type": "institutional_position",
+  "record_level": "attachment",
+  "official_reference": "ST 14954/22 ADD 1",
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2022-11-25",
+  "version_label": "Addendum 1",
+  "version_status": "final",
+  "publication_date": "2022-11-25",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "publisher"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "council-st-14954-2022-add-1"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Official attachment recording a member-state statement on the Council general approach.",
+    "researcher_notes": "Issuer and status follow the Council cover; directly_related is an analytical selection.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }

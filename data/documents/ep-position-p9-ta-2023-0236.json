@@ -1,6 +1,61 @@
 {
-  "id": "ep-position-p9-ta-2023-0236", "entity_type": "document", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "slug": "ep-position-p9-ta-2023-0236", "official_title": "Amendments adopted by the European Parliament on 14 June 2023 on the proposal for a regulation of the European Parliament and of the Council on laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts (COM(2021)0206 – C9-0146/2021 – 2021/0106(COD))", "short_title": "Parliament amendments on the AI Act, June 2023", "document_type": "institutional_position", "record_level": "principal", "official_reference": "P9_TA(2023)0236", "procedure_references": ["2021/0106(COD)"], "oj_reference": "OJ C, C/2024/506, 23.1.2024", "document_date": "2023-06-14", "version_label": "Amendments adopted by Parliament", "version_status": "revised", "publication_date": "2024-01-23", "legal_status": "adopted", "celex": "52023AP0236", "eli": "https://data.europa.eu/eli/C/2024/506/oj", "language": "en", "official_summary": null,
-  "institution_roles": [{"institution_id": "european-parliament", "role": "adopter"}], "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"], "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"], "source_ids": ["ep-p9-ta-2023-0236"],
-  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "negotiation", "inclusion_rationale": "Parliament's adopted June 2023 negotiating amendments.", "researcher_notes": "Document date and later Official Journal publication date are deliberately separate.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "id": "ep-position-p9-ta-2023-0236",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ep-position-p9-ta-2023-0236",
+  "official_title": "Amendments adopted by the European Parliament on 14 June 2023 on the proposal for a regulation of the European Parliament and of the Council on laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts (COM(2021)0206 – C9-0146/2021 – 2021/0106(COD))",
+  "short_title": "Parliament amendments on the AI Act, June 2023",
+  "document_type": "institutional_position",
+  "record_level": "principal",
+  "official_reference": "P9_TA(2023)0236",
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
+  "oj_reference": "OJ C, C/2024/506, 23.1.2024",
+  "document_date": "2023-06-14",
+  "version_label": "Amendments adopted by Parliament",
+  "version_status": "revised",
+  "publication_date": "2024-01-23",
+  "legal_status": "adopted",
+  "celex": "52023AP0236",
+  "eli": "https://data.europa.eu/eli/C/2024/506/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "ep-p9-ta-2023-0236"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Parliament's adopted June 2023 negotiating amendments.",
+    "researcher_notes": "Document date and later Official Journal publication date are deliberately separate.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }
