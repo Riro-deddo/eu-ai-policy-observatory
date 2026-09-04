@@ -2,6 +2,12 @@
 
 The EU AI Policy Observatory is a verified research database of European Union artificial intelligence policy. The database is the primary output; the accompanying website is a read-only research atlas over generated public data. It makes a bounded, inspectable corpus easier to browse, cite and interrogate without replacing the official sources on which individual records rely.
 
+## Version 0.1 release
+
+- [Browse the public research atlas](https://riro-deddo.github.io/eu-ai-policy-observatory/)
+- [View the GitHub repository](https://github.com/Riro-deddo/eu-ai-policy-observatory)
+- [Download the published SQLite database](https://riro-deddo.github.io/eu-ai-policy-observatory/downloads/eu-ai-policy-observatory.sqlite)
+
 ## Purpose
 
 Version 0.1 establishes the policy, document, event, concept, institution, relationship and provenance infrastructure for a research corpus. It distinguishes official metadata and evidence from researcher-authored classifications and analysis. The project is not an official European Union service and does not imply official endorsement.
@@ -23,7 +29,7 @@ The read-only atlas has six pages:
 - **Methodology** explains inclusion, publication, provenance and the distinction between official evidence and research analysis.
 - **About** summarises the project’s scope, limitations and authorship.
 
-The build also produces a downloadable SQLite research artefact, `eu-ai-policy-observatory.sqlite`. Its exact GitHub Pages release and download URL are pending the first deployment; the external publication step will record that URL here. The generated Pages artefact places the file at `downloads/eu-ai-policy-observatory.sqlite`.
+The build also produces the downloadable SQLite research artefact [`eu-ai-policy-observatory.sqlite`](https://riro-deddo.github.io/eu-ai-policy-observatory/downloads/eu-ai-policy-observatory.sqlite). The generated Pages artefact places the file at `downloads/eu-ai-policy-observatory.sqlite`.
 
 ## Data model
 
