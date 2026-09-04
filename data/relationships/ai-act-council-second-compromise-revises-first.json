@@ -1,0 +1,4 @@
+{
+  "id": "ai-act-council-second-compromise-revises-first", "entity_type": "relationship", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document", "source_entity_id": "ai-act-council-second-compromise-st-11124-2022", "target_entity_type": "document", "target_entity_id": "ai-act-council-first-consolidated-compromise-st-10069-2022", "relationship_type": "revises", "basis": "official", "rationale": "ST 11124/22 calls itself the second Presidency compromise and cites ST 10069/22 as the previous document.", "evidence_source_id": "council-st-11124-2022", "verification_status": "verified"
+}

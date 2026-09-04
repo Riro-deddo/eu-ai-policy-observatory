@@ -1,0 +1,4 @@
+{
+  "id": "ai-act-council-adoption-note-procedural-step", "entity_type": "relationship", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document", "source_entity_id": "ai-act-council-adoption-note-st-9645-2024-rev-1", "target_entity_type": "document", "target_entity_id": "ai-act-proposal", "relationship_type": "procedural_step_for", "basis": "official", "rationale": "ST 9645/1/24 REV 1 is the Council adoption note for 2021/0106(COD).", "evidence_source_id": "council-st-9645-2024-rev-1", "verification_status": "verified"
+}

@@ -1,0 +1,4 @@
+{
+  "id": "ep-2024-position-revises-2023", "entity_type": "relationship", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document", "source_entity_id": "ep-position-p9-ta-2024-0138", "target_entity_type": "document", "target_entity_id": "ep-position-p9-ta-2023-0236", "relationship_type": "revises", "basis": "official", "rationale": "Parliament's first-reading text states that it replaces the amendments adopted on 14 June 2023.", "evidence_source_id": "ep-p9-ta-2024-0138", "verification_status": "verified"
+}

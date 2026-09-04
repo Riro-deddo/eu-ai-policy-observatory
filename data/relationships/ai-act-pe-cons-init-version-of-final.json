@@ -1,0 +1,4 @@
+{
+  "id": "ai-act-pe-cons-init-version-of-final", "entity_type": "relationship", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document", "source_entity_id": "ai-act-pe-cons-24-2024", "target_entity_type": "document", "target_entity_id": "artificial-intelligence-act", "relationship_type": "version_of", "basis": "official", "rationale": "PE-CONS 24/24 is the formal legislative-act text for the regulation later published as Regulation (EU) 2024/1689.", "evidence_source_id": "council-pe-cons-24-2024", "verification_status": "verified"
+}

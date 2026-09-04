@@ -1,0 +1,4 @@
+{
+  "id": "artificial-intelligence-act-adoption", "entity_type": "event", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "adoption", "event_date": "2024-06-13", "title": "Artificial Intelligence Act signed", "description": "The official act bears the date 13 June 2024, distinct from its Official Journal publication date.", "policy_id": "artificial-intelligence-act-legislative-process", "document_id": "artificial-intelligence-act", "source_id": "ai-act-eur-lex"
+}

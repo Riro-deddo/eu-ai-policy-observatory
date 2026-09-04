@@ -1,0 +1,4 @@
+{
+  "id": "ai-act-council-15698-version-of-14954", "entity_type": "relationship", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document", "source_entity_id": "ai-act-council-general-approach-st-15698-2022", "target_entity_type": "document", "target_entity_id": "ai-act-council-general-approach-st-14954-2022", "relationship_type": "version_of", "basis": "official", "rationale": "ST 15698/22 records the Council outcome for the general-approach text submitted in ST 14954/22.", "evidence_source_id": "council-st-15698-2022", "verification_status": "verified"
+}

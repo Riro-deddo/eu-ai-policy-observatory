@@ -239,8 +239,73 @@ def test_2018_to_2021_inventory_has_a_decision_for_every_published_anchor():
         assert candidate["merged_into_document_id"] is None
 
 
-def test_ai_act_procedure_remains_in_progress_after_2021_batch():
+def test_2021_0106_procedure_sweep_is_complete_and_has_no_pending_candidates():
     sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
     sources = {source["id"]: source for source in sweep["sources"]}
+    procedure_source_ids = {
+        "eur-lex-procedure-2021-0106",
+        "ep-oeil-2021-0106",
+        "ep-adopted-texts-2021-0106",
+        "council-register-2021-0106",
+    }
+    procedure_candidates = [
+        candidate
+        for candidate in inventory["candidates"]
+        if procedure_source_ids & set(candidate["source_ids"])
+    ]
 
-    assert sources["eur-lex-procedure-2021-0106"]["scan_status"] == "in_progress"
+    assert all(sources[source_id]["scan_status"] == "complete" for source_id in procedure_source_ids)
+    assert procedure_candidates
+    assert all(candidate["decision"] != "pending" for candidate in procedure_candidates)
+
+
+def test_2022_to_2024_inventory_reconciles_required_official_records():
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
+    candidates = {candidate["id"]: candidate for candidate in inventory["candidates"]}
+    required_included_ids = {
+        "ai-act-council-first-consolidated-compromise-st-10069-2022",
+        "ai-act-council-second-compromise-st-11124-2022",
+        "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+        "ai-act-council-third-compromise-part-two-st-12549-2022",
+        "ai-act-council-fourth-compromise-st-13102-2022",
+        "ai-act-council-final-compromise-st-13955-2022",
+        "ai-act-council-coreper-general-approach-st-14336-2022",
+        "ai-act-council-general-approach-st-14954-2022",
+        "council-general-approach-st-15698-2022",
+        "ai-act-provisional-agreement-st-5662-2024",
+        "ep-ai-act-draft-report-pe-731563",
+        "ep-ai-act-envi-opinion-pe-699056",
+        "ep-ai-act-itre-opinion-pe-719801",
+        "ep-ai-act-cult-opinion-pe-719637",
+        "ep-ai-act-tran-opinion-pe-730085",
+        "ep-ai-act-juri-opinion-pe-719827",
+        "ep-joint-committee-report-a9-0188-2023",
+        "ep-position-p9-ta-2023-0236",
+        "ep-position-p9-ta-2024-0138",
+        "commission-decision-ai-office-2024",
+        "standardisation-request-c-2023-3215",
+    }
+
+    assert required_included_ids <= candidates.keys()
+    for candidate_id in required_included_ids:
+        candidate = candidates[candidate_id]
+        assert candidate["decision"] == "included"
+        expected_document_id = (
+            "ai-act-council-general-approach-st-15698-2022"
+            if candidate_id == "council-general-approach-st-15698-2022"
+            else (
+                "ai-standardisation-request-c-2023-3215"
+                if candidate_id == "standardisation-request-c-2023-3215"
+                else candidate_id
+            )
+        )
+        assert candidate["document_id"] == expected_document_id
+        assert candidate["merged_into_document_id"] is None
+
+    assert candidates["ai-act-corrigendum-2025-non-english"]["decision"] == "excluded"
+    assert candidates["ai-act-corrigendum-2025-non-english"]["document_id"] is None

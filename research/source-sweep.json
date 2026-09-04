@@ -7,7 +7,7 @@
       "institution": "Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/procedure/EN/2021_106",
       "scope_note": "Primary procedure entrance for the original Artificial Intelligence Act, including the proposal, preparatory documents, institutional steps and adopted act.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -52,7 +52,7 @@
       "institution": "European Parliament",
       "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29",
       "scope_note": "Parliament procedure file and documentation gateway for committee reports, opinions, amendments and plenary decisions on the original AI Act.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -61,7 +61,7 @@
       "institution": "European Parliament",
       "url": "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html",
       "scope_note": "Adopted-text entrance linking the 2023 and 2024 Parliament positions and related parliamentary documents.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -70,7 +70,7 @@
       "institution": "Council of the European Union",
       "url": "https://www.consilium.europa.eu/en/documents-publications/public-register/",
       "scope_note": "Council public-register search for the original AI Act procedure, including mandates, compromise texts, general approach and formal positions.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -223,7 +223,7 @@
       "institution": "European Commission",
       "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
       "scope_note": "Official register record for the 2023 AI standardisation request M/593 and its attachments.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {

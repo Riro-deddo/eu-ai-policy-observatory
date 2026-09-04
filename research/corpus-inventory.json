@@ -251,9 +251,9 @@
       "record_level": "version",
       "version_label": "General approach",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-15698-2022-INIT/en/pdf",
-      "decision": "pending",
-      "decision_reason": "The Council general approach is a core negotiating version; register metadata and version relationships remain to be completed.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The official outcome-of-proceedings text is the definitive Council general approach and has verified version and event relationships.",
+      "document_id": "ai-act-council-general-approach-st-15698-2022",
       "merged_into_document_id": null
     },
     {
@@ -266,9 +266,9 @@
       "record_level": "supporting",
       "version_label": "Committee report",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/A-9-2023-0188_EN.html",
-      "decision": "pending",
-      "decision_reason": "The joint committee report is a core procedural document; its files and annexes still require inventory decisions.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The verified adopted joint-committee report is a core procedural document and is linked to the proposal and draft report.",
+      "document_id": "ep-joint-committee-report-a9-0188-2023",
       "merged_into_document_id": null
     },
     {
@@ -281,9 +281,9 @@
       "record_level": "version",
       "version_label": "Parliament amendments",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0236_EN.html",
-      "decision": "pending",
-      "decision_reason": "The adopted Parliament amendments form a core negotiating version; cross-register metadata remains to be completed.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The adopted Parliament amendments form a verified core negotiating position with CELEX and ELI metadata.",
+      "document_id": "ep-position-p9-ta-2023-0236",
       "merged_into_document_id": null
     },
     {
@@ -296,9 +296,9 @@
       "record_level": "version",
       "version_label": "First-reading position",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html",
-      "decision": "pending",
-      "decision_reason": "The adopted first-reading position is a core legislative version; its replacement relation to the 2023 text requires encoding.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The verified first-reading position is a core legislative version and its revision of the 2023 text is explicitly encoded.",
+      "document_id": "ep-position-p9-ta-2024-0138",
       "merged_into_document_id": null
     },
     {
@@ -311,24 +311,24 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024D01459",
-      "decision": "pending",
-      "decision_reason": "The decision directly establishes an AI Act governance body; OJ and Commission-register metadata require verification.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies the decision, CELEX, Official Journal reference and ELI; it directly establishes an AI Act governance body.",
+      "document_id": "commission-decision-ai-office-2024",
       "merged_into_document_id": null
     },
     {
       "id": "standardisation-request-c-2023-3215",
       "source_ids": ["commission-register-c-2023-3215", "commission-standardisation-notifications"],
-      "official_reference": "C(2023) 3215",
+      "official_reference": "C(2023) 3215 final",
       "official_title": "Commission Implementing Decision on a standardisation request to the European Committee for Standardisation and the European Committee for Electrotechnical Standardisation in support of Union policy on artificial intelligence",
       "year": 2023,
       "issuing_institution": "European Commission",
       "record_level": "principal",
       "version_label": "M/593",
       "official_source_url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
-      "decision": "pending",
-      "decision_reason": "The original standardisation request is directly relevant; the decision and annex files require separate inventory checks.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The Commission register verifies the decision and annexed M/593 request as the original AI standardisation request.",
+      "document_id": "ai-standardisation-request-c-2023-3215",
       "merged_into_document_id": null
     },
     {
@@ -987,6 +987,126 @@
       "decision_reason": "This is an official press release retained as discovery and event evidence, not an independently citable policy instrument.",
       "document_id": null,
       "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-first-consolidated-compromise-st-10069-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 10069/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "First consolidated Presidency compromise", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official Council text is the first consolidated compromise and a core historical state.", "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-second-compromise-st-11124-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 11124/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Second Presidency compromise", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-11124-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official Council text identifies itself as the second compromise and cites the first version.", "document_id": "ai-act-council-second-compromise-st-11124-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 12206/1/22 REV 1", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text (Articles 1–29 and related annexes)", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Third compromise, part one, REV 1", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf", "decision": "included", "decision_reason": "The official revised file is the first part of the third Presidency compromise.", "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-two-st-12549-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 12549/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text (remaining provisions)", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Third compromise, part two", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official file completes the third Presidency compromise and is not duplicated by part one.", "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-fourth-compromise-st-13102-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 13102/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Fourth Presidency compromise", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-13102-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official fourth compromise identifies changes from the third version.", "document_id": "ai-act-council-fourth-compromise-st-13102-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-final-compromise-st-13955-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 13955/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Final Presidency compromise", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-13955-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official final Presidency compromise is a distinct historical negotiating state.", "document_id": "ai-act-council-final-compromise-st-13955-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-coreper-general-approach-st-14336-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 14336/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – General approach", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Coreper general-approach text", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-14336-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official Coreper text records explicit revisions to ST 13955/22.", "document_id": "ai-act-council-coreper-general-approach-st-14336-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-general-approach-st-14954-2022", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 14954/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – General approach", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Text submitted to Council", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-14954-2022-INIT/en/pdf", "decision": "included", "decision_reason": "The official file is the Council-submission manifestation immediately preceding the outcome record.", "document_id": "ai-act-council-general-approach-st-14954-2022", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-general-approach-german-statement-14954-add-1", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 14954/22 ADD 1", "official_title": "Statement by Germany – Regulation laying down harmonised rules on artificial intelligence – General approach", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "attachment", "version_label": "Addendum 1", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-14954-2022-ADD-1/en/pdf", "decision": "included", "decision_reason": "The official addendum contains a substantive member-state statement and is linked as an attachment.", "document_id": "ai-act-council-general-approach-german-statement-14954-add-1", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-provisional-agreement-st-5662-2024", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 5662/24", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Analysis of the final compromise text with a view to agreement", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Final interinstitutional compromise", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-5662-2024-INIT/en/pdf", "decision": "included", "decision_reason": "The annex is the officially published provisional-agreement text and a core historical state.", "document_id": "ai-act-provisional-agreement-st-5662-2024", "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-draft-report-pe-731563", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE731.563", "official_title": "Draft report on the proposal for a regulation laying down harmonised rules on artificial intelligence", "year": 2022, "issuing_institution": "European Parliament", "record_level": "version", "version_label": "Joint IMCO-LIBE draft report", "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-PR-731563_EN.pdf", "decision": "included", "decision_reason": "The procedure file verifies the joint draft report as the starting parliamentary report version.", "document_id": "ep-ai-act-draft-report-pe-731563", "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-envi-opinion-pe-699056", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE699.056", "official_title": "ENVI opinion on the proposal for a regulation laying down harmonised rules on artificial intelligence", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee opinion", "official_source_url": "https://www.europarl.europa.eu/doceo/document/ENVI-AD-699056_EN.pdf", "decision": "included", "decision_reason": "Formal ENVI opinion listed in the official Parliament procedure file.", "document_id": "ep-ai-act-envi-opinion-pe-699056", "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-itre-opinion-pe-719801", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE719.801", "official_title": "ITRE opinion on the proposal for a regulation laying down harmonised rules on artificial intelligence", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee opinion", "official_source_url": "https://www.europarl.europa.eu/doceo/document/ITRE-AD-719801_EN.pdf", "decision": "included", "decision_reason": "Formal ITRE opinion listed in the official Parliament procedure file.", "document_id": "ep-ai-act-itre-opinion-pe-719801", "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-cult-opinion-pe-719637", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE719.637", "official_title": "CULT opinion on the proposal for a regulation laying down harmonised rules on artificial intelligence", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee opinion", "official_source_url": "https://www.europarl.europa.eu/doceo/document/CULT-AD-719637_EN.pdf", "decision": "included", "decision_reason": "Formal CULT opinion listed in the official Parliament procedure file.", "document_id": "ep-ai-act-cult-opinion-pe-719637", "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-tran-opinion-pe-730085", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE730.085", "official_title": "TRAN opinion on the proposal for a regulation laying down harmonised rules on artificial intelligence", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee opinion", "official_source_url": "https://www.europarl.europa.eu/doceo/document/TRAN-AD-730085_EN.pdf", "decision": "included", "decision_reason": "Formal TRAN opinion listed in the official Parliament procedure file.", "document_id": "ep-ai-act-tran-opinion-pe-730085", "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-juri-opinion-pe-719827", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE719.827", "official_title": "JURI opinion on the proposal for a regulation laying down harmonised rules on artificial intelligence", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee opinion", "official_source_url": "https://www.europarl.europa.eu/doceo/document/JURI-AD-719827_EN.pdf", "decision": "included", "decision_reason": "Formal JURI opinion listed in the official Parliament procedure file.", "document_id": "ep-ai-act-juri-opinion-pe-719827", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024", "source_ids": ["eur-lex-procedure-2021-0106", "council-register-2021-0106"], "official_reference": "PE-CONS 24/24", "official_title": "Regulation laying down harmonised rules on artificial intelligence – legislative-act text", "year": 2024, "issuing_institution": "European Parliament and Council of the European Union", "record_level": "version", "version_label": "INIT", "official_source_url": "https://data.consilium.europa.eu/doc/document/PE-24-2024-INIT/en/pdf", "decision": "included", "decision_reason": "Formal 14 May legislative-act version retained as a historical state.", "document_id": "ai-act-pe-cons-24-2024", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024-rev-1", "source_ids": ["eur-lex-procedure-2021-0106", "council-register-2021-0106"], "official_reference": "PE-CONS 24/1/24 REV 1", "official_title": "Regulation laying down harmonised rules on artificial intelligence – revised legislative-act text", "year": 2024, "issuing_institution": "European Parliament and Council of the European Union", "record_level": "version", "version_label": "REV 1", "official_source_url": "https://data.consilium.europa.eu/doc/document/PE-24-2024-REV-1/en/pdf", "decision": "included", "decision_reason": "Formal signed 13 June revised version retained separately from Official Journal publication.", "document_id": "ai-act-pe-cons-24-2024-rev-1", "merged_into_document_id": null
+    },
+    {
+      "id": "boosting-startups-innovation-trustworthy-ai", "source_ids": ["eur-lex-commission-communications"], "official_reference": "COM(2024) 28 final", "official_title": "Communication on boosting startups and innovation in trustworthy artificial intelligence", "year": 2024, "issuing_institution": "European Commission", "record_level": "principal", "version_label": "Final", "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DC0028", "decision": "included", "decision_reason": "Verified Commission communication directly connects trustworthy-AI policy and implementation capacity.", "document_id": "boosting-startups-innovation-trustworthy-ai", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-adoption-note-st-9645-2024-init", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 9645/24", "official_title": "Artificial Intelligence Act (first reading) – Adoption of the legislative act", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "supporting", "version_label": "I/A item note, INIT", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-INIT/en/pdf", "decision": "merged", "decision_reason": "Initial manifestation superseded by the verified REV 1 adoption note.", "document_id": null, "merged_into_document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1"
+    },
+    {
+      "id": "ai-act-council-adoption-note-st-9645-2024-rev-1", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 9645/1/24 REV 1", "official_title": "Artificial Intelligence Act (first reading) – Adoption of the legislative act", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "supporting", "version_label": "I/A item note, REV 1", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf", "decision": "included", "decision_reason": "Final published revision of the Council adoption note.", "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-init", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 9645/24 ADD 1", "official_title": "Artificial Intelligence Act adoption – Statements", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "attachment", "version_label": "ADD 1 INIT", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1/en/pdf", "decision": "merged", "decision_reason": "Initial statements attachment superseded by later revisions.", "document_id": null, "merged_into_document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2"
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-1", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 9645/24 ADD 1 REV 1", "official_title": "Artificial Intelligence Act adoption – Statements", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "attachment", "version_label": "ADD 1 REV 1", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-1/en/pdf", "decision": "merged", "decision_reason": "Intermediate statements attachment superseded by REV 2.", "document_id": null, "merged_into_document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2"
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 9645/24 ADD 1 REV 2", "official_title": "Artificial Intelligence Act adoption – Statements", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "attachment", "version_label": "ADD 1 REV 2", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf", "decision": "included", "decision_reason": "Final English revision of the statements attachment, linked to the adoption note.", "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2", "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-agreed-text-pe-758862", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE758.862", "official_title": "Text agreed during interinstitutional negotiations", "year": 2024, "issuing_institution": "European Parliament", "record_level": "version", "version_label": "Agreed text", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "merged", "decision_reason": "Parliament's agreed-text manifestation is represented by the identical provisional-agreement state in ST 5662/24.", "document_id": null, "merged_into_document_id": "ai-act-provisional-agreement-st-5662-2024"
+    },
+    {
+      "id": "ai-act-parliament-first-reading-council-copy-st-7536-2024", "source_ids": ["eur-lex-procedure-2021-0106", "council-register-2021-0106"], "official_reference": "ST 7536/24", "official_title": "Outcome of the European Parliament's first reading on the Artificial Intelligence Act", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "supporting", "version_label": "Council information note", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-7536-2024-INIT/en/pdf", "decision": "merged", "decision_reason": "Council information-note manifestation reproduces Parliament's first-reading position already represented by P9_TA(2024)0138.", "document_id": null, "merged_into_document_id": "ep-position-p9-ta-2024-0138"
+    },
+    {
+      "id": "ai-act-final-act-lex-00024-2024", "source_ids": ["ep-oeil-2021-0106", "council-register-2021-0106"], "official_reference": "00024/2024/LEX", "official_title": "Draft final act – Artificial Intelligence Act", "year": 2024, "issuing_institution": "European Parliament and Council of the European Union", "record_level": "version", "version_label": "Draft final act", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "merged", "decision_reason": "The procedure entry is represented by the exact signed PE-CONS 24/1/24 REV 1 source record.", "document_id": null, "merged_into_document_id": "ai-act-pe-cons-24-2024-rev-1"
+    },
+    {
+      "id": "ai-act-coreper-letter-geda-2024-000753", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "GEDA/A/(2024)000753", "official_title": "Coreper letter on the AI Act provisional agreement", "year": 2024, "issuing_institution": "Council of the European Union", "record_level": "supporting", "version_label": "Procedure correspondence", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Procedural cover correspondence retained as discovery evidence; it is not an independently citable policy text.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-commission-response-sp-2024-350", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "SP(2024)350", "official_title": "Commission response to text adopted in plenary", "year": 2024, "issuing_institution": "European Commission", "record_level": "supporting", "version_label": "Procedure response", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Administrative response retained as procedure evidence; it is not a distinct policy instrument in the research corpus.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-corrigendum-2025-non-english", "source_ids": ["eur-lex-procedure-2021-0106"], "official_reference": "32024R1689R(01)", "official_title": "Corrigendum to Regulation (EU) 2024/1689 (non-English language versions)", "year": 2025, "issuing_institution": "Publications Office of the European Union", "record_level": "version", "version_label": "Corrigendum", "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689R(01)", "decision": "excluded", "decision_reason": "The corrigendum applies only to specified non-English language versions; no official English corrigendum exists for inclusion in this English-only corpus.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732802", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.802", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; the adopted report and plenary positions are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732836", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.836", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732837", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.837", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732838", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.838", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732839", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.839", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732840", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.840", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732841", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.841", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732843", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.843", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732844", "source_ids": ["ep-oeil-2021-0106"], "official_reference": "PE732.844", "official_title": "Amendments to the draft report on the Artificial Intelligence Act", "year": 2022, "issuing_institution": "European Parliament", "record_level": "supporting", "version_label": "Committee amendments", "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29", "decision": "excluded", "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.", "document_id": null, "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init", "source_ids": ["council-register-2021-0106"], "official_reference": "ST 12206/22", "official_title": "Proposal for a Regulation laying down harmonised rules on artificial intelligence – Presidency compromise text (Articles 1–29 and related annexes)", "year": 2022, "issuing_institution": "Council of the European Union", "record_level": "version", "version_label": "Third compromise, part one, INIT", "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf", "decision": "merged", "decision_reason": "The initial manifestation is superseded by ST 12206/1/22 REV 1 and is retained as version-discovery evidence.", "document_id": null, "merged_into_document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1"
     }
   ]
 }

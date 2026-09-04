@@ -22,7 +22,7 @@
   "language": "en",
   "official_summary": null,
   "institution_roles": [{"institution_id": "european-parliament", "role": "adopter"}, {"institution_id": "council-of-the-european-union", "role": "adopter"}],
-  "policy_ids": ["european-ai-policy-pathway"],
+  "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"],
   "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"],
   "source_ids": ["ai-act-eur-lex"],
   "corpus_assessment": {"corpus_tier": "core", "policy_stage": "adoption", "inclusion_rationale": "Final in-force regulation anchoring the 2018–2024 core pathway.", "researcher_notes": "Analytical assessment; the metadata retains the Official Journal publication date rather than the signature date.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
