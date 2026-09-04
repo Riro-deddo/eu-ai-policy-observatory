@@ -14,7 +14,7 @@ from typing import Any, Iterable
 _WINDOWS_USER_PATH = re.compile(
     r"(?:[A-Za-z]:\\+Users\\+|\\\\Users\\+)", re.IGNORECASE
 )
-_UNIX_USER_PATH = re.compile(r"/(?:Users|home)/", re.IGNORECASE)
+_UNIX_USER_PATH = re.compile(r"\\?/(?:Users|home)\\?/", re.IGNORECASE)
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
 _TOKEN_PREFIX = re.compile(r"(?:gh[oprsu]_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)")
 _PRIVATE_KEY_HEADER = re.compile(

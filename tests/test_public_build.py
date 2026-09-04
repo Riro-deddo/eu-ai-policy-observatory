@@ -44,6 +44,29 @@ def test_scanner_rejects_ordinary_and_escaped_windows_user_paths(tmp_path: Path)
     assert any("escaped.txt" in error for error in errors)
 
 
+@pytest.mark.parametrize(
+    ("filename", "content"),
+    [
+        ("users-literal.txt", "/Users/Researcher/secret"),
+        ("home-literal.txt", "/home/name/secret"),
+        ("users-escaped.txt", r"\/Users\/Researcher\/secret"),
+        ("home-escaped.txt", r"\/home\/name\/secret"),
+    ],
+)
+def test_scanner_rejects_literal_and_escaped_unix_user_paths(
+    tmp_path: Path, filename: str, content: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / filename).write_text(content, encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("local filesystem path" in error and filename in error for error in errors)
+
+
 def test_scanner_rejects_common_private_key_headers(tmp_path: Path):
     site = tmp_path / "site"
     site.mkdir()
