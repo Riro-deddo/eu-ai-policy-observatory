@@ -1,0 +1,129 @@
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+from scripts.check_public_build import check_public_build
+
+
+def write_public_data(path: Path, payload: object) -> None:
+    path.write_text(json.dumps(payload), encoding="utf-8")
+
+
+def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text(r"C:\\Users\\Researcher\\secret", encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": [{"publication_status": "draft"}]})
+
+    errors = check_public_build(site, data)
+
+    assert any("local filesystem path" in error for error in errors)
+    assert any("non-published record" in error for error in errors)
+
+
+def test_scanner_checks_each_public_text_boundary(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "leaks.txt").write_text(
+        "\n".join(
+            [
+                "/Users/researcher/private",
+                "/home/researcher/private",
+                "http://localhost:3000",
+                "ghp_exampletoken",
+                "-----BEGIN PRIVATE KEY-----",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("local filesystem path" in error for error in errors)
+    assert any("localhost" in error for error in errors)
+    assert any("credential or token" in error for error in errors)
+    assert any("private-key header" in error for error in errors)
+    assert errors == sorted(errors)
+
+
+def test_scanner_reports_every_non_published_record_without_rejecting_methodology_prose(
+    tmp_path: Path,
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "methodology.html").write_text(
+        "Draft records and pending_review records are excluded from the corpus.",
+        encoding="utf-8",
+    )
+    data = tmp_path / "public-data.json"
+    write_public_data(
+        data,
+        {
+            "documents": [
+                {"id": "draft-document", "publication_status": "draft"},
+                {"id": "published-document", "publication_status": "published"},
+            ],
+            "nested": {"publication_status": "pending_review"},
+        },
+    )
+
+    errors = check_public_build(site, data)
+
+    non_published = [error for error in errors if "non-published record" in error]
+    assert len(non_published) == 2
+    assert all("methodology" not in error for error in errors)
+
+
+def test_scanner_reports_invalid_and_missing_inputs_without_crashing(tmp_path: Path):
+    missing_site = tmp_path / "missing-site"
+    invalid_data = tmp_path / "public-data.json"
+    invalid_data.write_text("{", encoding="utf-8")
+
+    errors = check_public_build(missing_site, invalid_data)
+
+    assert any("site root" in error for error in errors)
+    assert any("invalid JSON" in error for error in errors)
+
+
+def test_scanner_reports_text_decoding_errors_and_ignores_binary_files(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "invalid.txt").write_bytes(b"\xff\xfe")
+    (site / "image.png").write_bytes(b"\x89PNG\r\n\x1a\nC:\\Users\\ignored")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("UTF-8 decoding" in error for error in errors)
+    assert not any("image.png" in error for error in errors)
+
+
+def test_scanner_cli_returns_nonzero_when_public_output_is_unsafe(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text("localhost", encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "scripts/check_public_build.py",
+            "--site",
+            str(site),
+            "--data",
+            str(data),
+        ],
+        cwd=Path(__file__).parents[1],
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+
+    assert result.returncode == 1
+    assert "localhost" in result.stdout
