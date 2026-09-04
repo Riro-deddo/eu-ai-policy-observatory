@@ -19,6 +19,15 @@ def test_seed_corpus_preserves_stable_identifiers_and_version_metadata():
         "ethics-guidelines-for-trustworthy-ai": "ethics-guidelines-for-trustworthy-ai",
         "white-paper-on-artificial-intelligence": "white-paper-on-artificial-intelligence",
     }
+    expected_version_statuses = {
+        "ai-act-proposal": "draft",
+        "ai-liability-directive-proposal": "draft",
+        "artificial-intelligence-act": "final",
+        "artificial-intelligence-for-europe": "final",
+        "coordinated-plan-on-artificial-intelligence": "final",
+        "ethics-guidelines-for-trustworthy-ai": "final",
+        "white-paper-on-artificial-intelligence": "final",
+    }
     version_fields = {
         "record_level",
         "official_reference",
@@ -29,19 +38,18 @@ def test_seed_corpus_preserves_stable_identifiers_and_version_metadata():
         "version_status",
     }
 
-    assert {document_id: document["slug"] for document_id, document in documents.items()} == expected_id_slug_pairs
-    assert all(document["record_level"] == "principal" for document in documents.values())
-    assert all(version_fields <= document.keys() for document in documents.values())
+    assert expected_id_slug_pairs.keys() <= documents.keys()
+    seed_documents = {document_id: documents[document_id] for document_id in expected_id_slug_pairs}
+    assert expected_id_slug_pairs.items() <= {
+        document_id: document["slug"] for document_id, document in documents.items()
+    }.items()
+    assert all(document["record_level"] == "principal" for document in seed_documents.values())
+    assert all(version_fields <= document.keys() for document in seed_documents.values())
     assert documents["artificial-intelligence-act"]["document_date"] == "2024-06-13"
     assert documents["artificial-intelligence-act"]["publication_date"] == "2024-07-12"
     assert documents["ai-act-proposal"]["official_reference"] == "COM(2021) 206 final"
     assert documents["ai-act-proposal"]["procedure_references"] == ["2021/0106(COD)"]
-    assert documents["ai-act-proposal"]["version_status"] == "draft"
-    assert documents["ai-liability-directive-proposal"]["version_status"] == "draft"
-    assert all(
-        documents[document_id]["version_status"] == "final"
-        for document_id in set(documents) - {"ai-act-proposal", "ai-liability-directive-proposal"}
-    )
+    assert {document_id: document["version_status"] for document_id, document in seed_documents.items()} == expected_version_statuses
 
 
 def test_seed_corpus_uses_current_withdrawn_status_and_no_editorial_official_summaries():

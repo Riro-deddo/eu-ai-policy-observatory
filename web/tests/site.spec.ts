@@ -72,17 +72,21 @@ test('corpus renders every published seed document as a normal link', async ({ p
 });
 
 test('the original seed corpus routes remain available', async ({ page }) => {
-  for (const route of [
-    'corpus/ai-act-proposal/',
-    'corpus/ai-liability-directive-proposal/',
-    'corpus/artificial-intelligence-act/',
-    'corpus/artificial-intelligence-for-europe/',
-    'corpus/coordinated-plan-on-artificial-intelligence/',
-    'corpus/ethics-guidelines-for-trustworthy-ai/',
-    'corpus/white-paper-on-artificial-intelligence/',
+  for (const { route, heading } of [
+    { route: 'corpus/ai-act-proposal/', heading: 'Artificial Intelligence Act proposal' },
+    { route: 'corpus/ai-liability-directive-proposal/', heading: 'AI Liability Directive proposal' },
+    { route: 'corpus/artificial-intelligence-act/', heading: 'Artificial Intelligence Act' },
+    { route: 'corpus/artificial-intelligence-for-europe/', heading: 'Artificial Intelligence for Europe' },
+    { route: 'corpus/coordinated-plan-on-artificial-intelligence/', heading: 'Coordinated Plan on Artificial Intelligence' },
+    { route: 'corpus/ethics-guidelines-for-trustworthy-ai/', heading: 'Ethics Guidelines for Trustworthy AI' },
+    { route: 'corpus/white-paper-on-artificial-intelligence/', heading: 'White Paper on Artificial Intelligence' },
   ]) {
     await page.goto(route);
-    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 1, name: heading, exact: true })).toBeVisible();
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      new URL(route, canonicalBase).href,
+    );
   }
 });
 
