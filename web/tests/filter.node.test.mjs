@@ -13,6 +13,8 @@ const document = (id, shortTitle, publicationDate, details = {}) => ({
   short_title: shortTitle,
   document_type: 'regulation',
   record_level: 'principal',
+  sector_tags: [],
+  provenance_tags: [],
   official_reference: null,
   procedure_references: [],
   oj_reference: null,
@@ -47,6 +49,8 @@ const documents = [
     concepts: [{ id: 'risk' }],
     institutions: [{ id: 'european-commission' }],
     corpus_assessment: { corpus_tier: 'core', policy_stage: 'adoption' },
+    sector_tags: ['financial_services'],
+    provenance_tags: ['eu_institution_authored'],
   }),
   document('same-date', 'A companion communication', '2024-07-12'),
   document('draft-version', 'First Presidency compromise', '2022-06-15', {
@@ -95,6 +99,23 @@ test('returns a new deterministic sorted array without mutating input', () => {
   assert.deepEqual(input.map((entry) => entry.id), before);
   assert.notStrictEqual(result, input);
   assert.deepEqual(result.map((entry) => entry.id), ['same-date', 'final-ai-act', 'communication']);
+});
+
+test('filters sector and provenance tags and serialises them in stable order', () => {
+  assert.deepEqual(
+    filterDocuments(documents, {
+      sector: 'financial_services',
+      provenance: 'eu_institution_authored',
+    }).map((entry) => entry.id),
+    ['final-ai-act'],
+  );
+  assert.equal(
+    buildCorpusSearchParams(new URLSearchParams('ref=phd'), {
+      sector: 'health',
+      provenance: 'eu_agency_or_body_authored',
+    }).toString(),
+    'ref=phd&sector=health&provenance=eu_agency_or_body_authored',
+  );
 });
 
 test('defaults to principal records and exposes every published record only in the all view', () => {
