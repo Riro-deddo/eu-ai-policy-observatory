@@ -116,3 +116,9 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | Source `verification_note` | string | Yes | System | Human-readable verification record. |
 
 References are validated before SQLite generation. Published records may refer only to published records; published documents, events and relationships require source evidence. SQLite and public JSON are generated outputs, not canonical editing surfaces.
+
+## Generated public distribution
+
+The deterministic build writes `generated/public-data.json` and `generated/eu-ai-policy-observatory.sqlite`. These ignored artefacts are derived from canonical JSON and must not be edited or committed. The static atlas consumes the public JSON at build time; the Pages publication artefact also carries the SQLite database as a downloadable research artefact.
+
+Only records with `publication_status: published` and their published dependencies enter these generated public outputs. Canonical repository records may legitimately remain in `draft`, `pending_review` or `verified` editorial states, but they are outside the reviewed public corpus until intentional publication.
