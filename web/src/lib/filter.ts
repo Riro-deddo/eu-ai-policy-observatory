@@ -1,6 +1,7 @@
 import type { DocumentRecord, PublicData } from './types';
 
 export interface CorpusCriteria {
+  view?: 'principal' | 'all';
   query?: string;
   year?: string;
   institution?: string;
@@ -9,9 +10,12 @@ export interface CorpusCriteria {
   policyStage?: string;
   concept?: string;
   corpusTier?: string;
+  recordLevel?: string;
+  versionStatus?: string;
+  policy?: string;
 }
 
-const corpusCriteriaKeys = [
+const corpusStringCriteriaKeys = [
   'query',
   'year',
   'institution',
@@ -20,17 +24,26 @@ const corpusCriteriaKeys = [
   'policyStage',
   'concept',
   'corpusTier',
+  'recordLevel',
+  'versionStatus',
+  'policy',
 ] as const;
 
-function isCorpusCriteriaKey(value: string): value is keyof CorpusCriteria {
-  return corpusCriteriaKeys.includes(value as keyof CorpusCriteria);
+type CorpusStringCriteriaKey = (typeof corpusStringCriteriaKeys)[number];
+
+function isCorpusStringCriteriaKey(value: string): value is CorpusStringCriteriaKey {
+  return corpusStringCriteriaKeys.includes(value as CorpusStringCriteriaKey);
 }
 
 export function parseCorpusCriteria(search: URLSearchParams): CorpusCriteria {
   const criteria: CorpusCriteria = {};
 
   for (const [key, value] of search) {
-    if (isCorpusCriteriaKey(key) && value.trim() !== '' && criteria[key] === undefined) {
+    if (value.trim() === '') continue;
+
+    if (key === 'view' && criteria.view === undefined && (value === 'principal' || value === 'all')) {
+      criteria.view = value;
+    } else if (isCorpusStringCriteriaKey(key) && criteria[key] === undefined) {
       criteria[key] = value;
     }
   }
@@ -82,14 +95,19 @@ export function filterDocuments(
         document.short_title,
         document.celex,
         document.eli,
+        document.official_reference,
       ].some((value) => value !== null && normalise(value).includes(query));
       const assessment = document.corpus_assessment;
 
-      return queryMatches
+      return (criteria.view === 'all' || document.record_level === 'principal')
+        && queryMatches
         && (criteria.year === undefined || document.publication_date.startsWith(criteria.year))
         && hasMatchingId(document.institutions, criteria.institution)
         && matchesValue(document.document_type, criteria.documentType)
         && matchesValue(document.legal_status, criteria.legalStatus)
+        && matchesValue(document.record_level, criteria.recordLevel)
+        && matchesValue(document.version_status, criteria.versionStatus)
+        && hasMatchingId(document.policies, criteria.policy)
         && (criteria.policyStage === undefined
           || assessment?.policy_stage !== undefined
             && matchesValue(assessment.policy_stage, criteria.policyStage))

@@ -8,7 +8,9 @@ interface Props {
 
 const { documents }: Props = Astro.props;
 const base = import.meta.env.BASE_URL;
-const sortedDocuments = filterDocuments(documents, {});
+const sortedDocuments = filterDocuments(documents, { view: 'all' });
+const principalCount = documents.filter((document) => document.record_level === 'principal').length;
+const supportingCount = documents.length - principalCount;
 
 const years = [...new Set(documents.map((document) => document.publication_date.slice(0, 4)))].sort().reverse();
 const institutions = [...new Map(
@@ -25,8 +27,16 @@ const concepts = [...new Map(
 const corpusTiers = [...new Set(
   documents.flatMap((document) => document.corpus_assessment === null ? [] : [document.corpus_assessment.corpus_tier]),
 )].sort();
+const recordLevels = [...new Set(documents.map((document) => document.record_level))].sort();
+const versionStatuses = [...new Set(documents.map((document) => document.version_status))].sort();
+const policies = [...new Map(
+  documents.flatMap((document) => document.policies.map((policy) => [policy.id, policy])),
+).values()].sort((first, second) => first.name.localeCompare(second.name, 'en-GB'));
 
-const labelValue = (value: string) => value.replaceAll('_', ' ');
+const labelValue = (value: string) => {
+  const words = value.replaceAll('_', ' ');
+  return words.charAt(0).toLocaleUpperCase('en-GB') + words.slice(1);
+};
 ---
 
 <section class="research-section corpus-explorer" aria-labelledby="corpus-heading">
@@ -37,6 +47,13 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
   </div>
 
   <form class="corpus-filters" data-corpus-filters method="get" action={`${base}corpus/`}>
+    <div>
+      <label for="corpus-view">Corpus view</label>
+      <select id="corpus-view" name="view">
+        <option value="principal">Principal documents</option>
+        <option value="all">All files and versions</option>
+      </select>
+    </div>
     <div>
       <label for="corpus-query">Search title, CELEX or ELI</label>
       <input id="corpus-query" name="query" type="search" />
@@ -90,6 +107,27 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
         {corpusTiers.map((corpusTier) => <option value={corpusTier}>{labelValue(corpusTier)}</option>)}
       </select>
     </div>
+    <div>
+      <label for="corpus-record-level">Record level</label>
+      <select id="corpus-record-level" name="recordLevel">
+        <option value="">All record levels</option>
+        {recordLevels.map((recordLevel) => <option value={recordLevel}>{labelValue(recordLevel)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-version-status">Version status</label>
+      <select id="corpus-version-status" name="versionStatus">
+        <option value="">All version statuses</option>
+        {versionStatuses.map((versionStatus) => <option value={versionStatus}>{labelValue(versionStatus)}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="corpus-policy">Policy process</label>
+      <select id="corpus-policy" name="policy">
+        <option value="">All policy processes</option>
+        {policies.map((policy) => <option value={policy.id}>{policy.name}</option>)}
+      </select>
+    </div>
     <div class="corpus-filters__actions">
       <button type="submit">Apply filters</button>
       <button type="reset">Reset filters</button>
@@ -99,13 +137,21 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
   <noscript>
     <p>Interactive filtering requires JavaScript. The complete published corpus is shown below.</p>
   </noscript>
-  <p data-corpus-count aria-live="polite">{sortedDocuments.length} published documents</p>
+  <p data-corpus-count aria-live="polite">{sortedDocuments.length} published records shown</p>
+  <p data-corpus-total>
+    {principalCount} principal documents · {supportingCount} supporting files and versions · {documents.length} published records total
+  </p>
   <p data-corpus-empty hidden>No documents match these criteria. Reset filters to view the complete published corpus.</p>
   <ul data-corpus-list>
     {sortedDocuments.map((document) => (
       <li data-document-id={document.id}>
         <a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a>
-        <span> · {document.publication_date} · {labelValue(document.document_type)}</span>
+        <span>
+          {' · '}{document.publication_date}
+          {' · '}{labelValue(document.document_type)}
+          {' · '}{labelValue(document.record_level)}
+          {' · '}{labelValue(document.version_status)}
+        </span>
       </li>
     ))}
   </ul>
@@ -143,8 +189,10 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
         }
       }
 
-      const suffix = visibleIds.size === 1 ? 'document' : 'documents';
-      count.textContent = `${visibleIds.size} published ${suffix}`;
+      const usesAllView = criteria.view === 'all';
+      const singular = usesAllView ? 'published record' : 'principal document';
+      const plural = usesAllView ? 'published records' : 'principal documents';
+      count.textContent = `${visibleIds.size} ${visibleIds.size === 1 ? singular : plural} shown`;
       empty.hidden = visibleIds.size !== 0;
     };
 

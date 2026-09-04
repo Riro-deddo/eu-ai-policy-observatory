@@ -4,12 +4,107 @@ import { buildTimelineEntries, filterDocuments, filterTimeline } from '../src/li
 import type { DocumentRecord, PolicyEvent, PublicData } from '../src/lib/types';
 import { publishedDocuments } from './fixtures/documents';
 
+const act = publishedDocuments[0];
+if (act === undefined) throw new Error('Expected an AI Act fixture.');
+
+const versionedDocuments: DocumentRecord[] = [
+  ...publishedDocuments,
+  {
+    ...act,
+    id: 'ai-act-presidency-compromise-2022',
+    slug: 'ai-act-presidency-compromise-2022',
+    official_title: 'Presidency compromise text on the Artificial Intelligence Act',
+    short_title: 'AI Act Presidency compromise',
+    record_level: 'version',
+    official_reference: 'ST 10069/22',
+    document_date: '2022-06-15',
+    version_label: 'First consolidated Presidency compromise',
+    version_status: 'draft',
+    publication_date: '2022-06-15',
+  },
+  {
+    ...act,
+    id: 'ai-act-presidency-compromise-annex-2022',
+    slug: 'ai-act-presidency-compromise-annex-2022',
+    official_title: 'Annex to a Presidency compromise text on the Artificial Intelligence Act',
+    short_title: 'AI Act Presidency compromise annex',
+    record_level: 'attachment',
+    official_reference: 'ST 10069/22 ADD 1',
+    document_date: '2022-06-15',
+    version_label: 'Annex',
+    version_status: 'draft',
+    publication_date: '2022-06-15',
+  },
+  {
+    ...act,
+    id: 'ai-act-revised-compromise-2022',
+    slug: 'ai-act-revised-compromise-2022',
+    official_title: 'Revised Presidency compromise text on the Artificial Intelligence Act',
+    short_title: 'Earlier AI Act Presidency compromise',
+    record_level: 'version',
+    official_reference: 'ST 10068/22',
+    document_date: '2022-05-15',
+    version_label: 'Earlier Presidency compromise',
+    version_status: 'revised',
+    publication_date: '2022-05-15',
+  },
+  {
+    ...act,
+    id: 'transparency-code-draft-2022',
+    slug: 'transparency-code-draft-2022',
+    official_title: 'Draft code on AI-generated content transparency',
+    short_title: 'Transparency code draft',
+    record_level: 'version',
+    official_reference: 'Draft transparency code',
+    document_date: '2022-04-15',
+    version_label: 'Draft',
+    version_status: 'draft',
+    publication_date: '2022-04-15',
+    policies: [{
+      ...act.policies[0]!,
+      id: 'ai-generated-content-transparency',
+      name: 'AI-generated content transparency',
+    }],
+  },
+];
+
 describe('filterDocuments', () => {
   it('matches titles, CELEX and ELI case-insensitively', () => {
     expect(filterDocuments(publishedDocuments, { query: '32024r1689' }).map((document) => document.id))
       .toEqual(['artificial-intelligence-act-2024']);
     expect(filterDocuments(publishedDocuments, { query: 'ELI/REG/2024' }).map((document) => document.id))
       .toEqual(['artificial-intelligence-act-2024']);
+  });
+
+  it('matches the general official reference case-insensitively', () => {
+    expect(filterDocuments(versionedDocuments, {
+      view: 'all',
+      query: 'st 10069/22 add 1',
+    }).map((document) => document.id)).toEqual(['ai-act-presidency-compromise-annex-2022']);
+  });
+
+  it('defaults to principal records and exposes every record in the all view', () => {
+    expect(filterDocuments(publishedDocuments, {}).map((document) => document.id)).toEqual([
+      'artificial-intelligence-act-2024',
+      'artificial-intelligence-for-europe-2018',
+    ]);
+    expect(filterDocuments(versionedDocuments, { view: 'all' }).map((document) => document.id)).toEqual([
+      'artificial-intelligence-act-2024',
+      'ai-act-presidency-compromise-2022',
+      'ai-act-presidency-compromise-annex-2022',
+      'ai-act-revised-compromise-2022',
+      'transparency-code-draft-2022',
+      'artificial-intelligence-for-europe-2018',
+    ]);
+  });
+
+  it('combines record level, version status and policy filters with logical AND', () => {
+    expect(filterDocuments(versionedDocuments, {
+      view: 'all',
+      recordLevel: 'version',
+      versionStatus: 'draft',
+      policy: 'artificial-intelligence-act-legislative-process',
+    }).map((document) => document.id)).toEqual(['ai-act-presidency-compromise-2022']);
   });
 
   it('combines concept and institution filters with logical AND', () => {
@@ -105,6 +200,14 @@ const timelineEvents: PolicyEvent[] = [
 ];
 
 const timelineData: PublicData = {
+  coverage: {
+    from_year: 2018,
+    to_year: 2024,
+    last_verified_date: '2026-09-03',
+    published_documents: publishedDocuments.length,
+    principal_documents: 2,
+    supporting_files_and_versions: 0,
+  },
   generated_at: publishedAt,
   policies: [],
   documents: publishedDocuments,

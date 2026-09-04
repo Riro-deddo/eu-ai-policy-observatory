@@ -85,6 +85,13 @@ export interface DocumentRecord extends PublishedEntity {
   official_title: string;
   short_title: string;
   document_type: string;
+  record_level: 'principal' | 'supporting' | 'version' | 'attachment';
+  official_reference: string | null;
+  procedure_references: string[];
+  oj_reference: string | null;
+  document_date: string;
+  version_label: string | null;
+  version_status: 'draft' | 'revised' | 'final' | 'consolidated' | 'not_applicable';
   publication_date: string;
   legal_status: string;
   language: string;
@@ -98,7 +105,17 @@ export interface DocumentRecord extends PublishedEntity {
   corpus_assessment: CorpusAssessment | null;
 }
 
+export interface CorpusCoverage {
+  from_year: number | null;
+  to_year: number | null;
+  last_verified_date: string | null;
+  published_documents: number;
+  principal_documents: number;
+  supporting_files_and_versions: number;
+}
+
 export interface PublicData {
+  coverage: CorpusCoverage;
   generated_at: string;
   policies: Policy[];
   documents: DocumentRecord[];

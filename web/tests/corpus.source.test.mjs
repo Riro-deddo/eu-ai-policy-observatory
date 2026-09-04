@@ -34,3 +34,21 @@ test('Corpus filtering hides any enhanced list item missing its document ID', ()
     /const documentId = item\.dataset\.documentId;\s*item\.hidden = documentId === undefined \|\| !visibleIds\.has\(documentId\);/,
   );
 });
+
+test('Corpus renders the complete record list before JavaScript applies the principal default', () => {
+  assert.match(explorer, /filterDocuments\(documents, \{ view: 'all' \}\)/);
+  assert.match(explorer, /<noscript>[\s\S]*?complete published corpus is shown below[\s\S]*?<\/noscript>/);
+});
+
+test('Corpus exposes labelled view and version-aware filter controls', () => {
+  assert.match(explorer, /<option value="principal">Principal documents<\/option>/);
+  assert.match(explorer, /<option value="all">All files and versions<\/option>/);
+  assert.match(explorer, /<label for="corpus-record-level">Record level<\/label>/);
+  assert.match(explorer, /<label for="corpus-version-status">Version status<\/label>/);
+  assert.match(explorer, /<label for="corpus-policy">Policy process<\/label>/);
+});
+
+test('Corpus distinguishes the active result count from the published total', () => {
+  assert.match(explorer, /data-corpus-count aria-live="polite"/);
+  assert.match(explorer, /data-corpus-total/);
+});

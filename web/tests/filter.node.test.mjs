@@ -12,6 +12,13 @@ const document = (id, shortTitle, publicationDate, details = {}) => ({
   official_title: shortTitle,
   short_title: shortTitle,
   document_type: 'regulation',
+  record_level: 'principal',
+  official_reference: null,
+  procedure_references: [],
+  oj_reference: null,
+  document_date: publicationDate,
+  version_label: 'Final',
+  version_status: 'final',
   publication_date: publicationDate,
   legal_status: 'in_force',
   language: 'en',
@@ -42,6 +49,27 @@ const documents = [
     corpus_assessment: { corpus_tier: 'core', policy_stage: 'adoption' },
   }),
   document('same-date', 'A companion communication', '2024-07-12'),
+  document('draft-version', 'First Presidency compromise', '2022-06-15', {
+    record_level: 'version',
+    official_reference: 'ST 10069/22',
+    version_status: 'draft',
+    policies: [{ id: 'ai-act-legislative-process' }],
+  }),
+  document('draft-attachment', 'Presidency compromise annex', '2022-06-15', {
+    record_level: 'attachment',
+    version_status: 'draft',
+    policies: [{ id: 'ai-act-legislative-process' }],
+  }),
+  document('revised-version', 'Earlier Presidency compromise', '2022-05-15', {
+    record_level: 'version',
+    version_status: 'revised',
+    policies: [{ id: 'ai-act-legislative-process' }],
+  }),
+  document('other-policy-version', 'Transparency code draft', '2022-04-15', {
+    record_level: 'version',
+    version_status: 'draft',
+    policies: [{ id: 'ai-generated-content-transparency' }],
+  }),
 ];
 
 test('filters published documents by case-insensitive metadata with AND semantics', () => {
@@ -67,6 +95,44 @@ test('returns a new deterministic sorted array without mutating input', () => {
   assert.deepEqual(input.map((entry) => entry.id), before);
   assert.notStrictEqual(result, input);
   assert.deepEqual(result.map((entry) => entry.id), ['same-date', 'final-ai-act', 'communication']);
+});
+
+test('defaults to principal records and exposes every published record only in the all view', () => {
+  assert.deepEqual(
+    filterDocuments(documents, {}).map((entry) => entry.id),
+    ['same-date', 'final-ai-act', 'communication'],
+  );
+  assert.deepEqual(
+    filterDocuments(documents, { view: 'all' }).map((entry) => entry.id),
+    [
+      'same-date',
+      'final-ai-act',
+      'draft-version',
+      'draft-attachment',
+      'revised-version',
+      'other-policy-version',
+      'communication',
+    ],
+  );
+});
+
+test('combines record level, version status and policy filters with logical AND', () => {
+  assert.deepEqual(
+    filterDocuments(documents, {
+      view: 'all',
+      recordLevel: 'version',
+      versionStatus: 'draft',
+      policy: 'ai-act-legislative-process',
+    }).map((entry) => entry.id),
+    ['draft-version'],
+  );
+});
+
+test('searches the general official reference case-insensitively', () => {
+  assert.deepEqual(
+    filterDocuments(documents, { view: 'all', query: 'st 10069/22' }).map((entry) => entry.id),
+    ['draft-version'],
+  );
 });
 
 test('filters scalar criteria and excludes records without a research assessment', () => {
@@ -96,7 +162,15 @@ test('filters scalar criteria and excludes records without a research assessment
 test('parses only named Corpus criteria and discards blank or unsupported query parameters', () => {
   assert.equal(typeof filterModule.parseCorpusCriteria, 'function');
   assert.deepEqual(
-    filterModule.parseCorpusCriteria(new URLSearchParams('concept=risk&year=&eventType=proposal&unknown=value&query=AI')),
-    { concept: 'risk', query: 'AI' },
+    filterModule.parseCorpusCriteria(new URLSearchParams(
+      'view=all&recordLevel=version&versionStatus=draft&policy=ai-act-legislative-process&year=&eventType=proposal&unknown=value&query=AI',
+    )),
+    {
+      view: 'all',
+      recordLevel: 'version',
+      versionStatus: 'draft',
+      policy: 'ai-act-legislative-process',
+      query: 'AI',
+    },
   );
 });
