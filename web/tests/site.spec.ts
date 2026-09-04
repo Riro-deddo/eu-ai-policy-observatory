@@ -71,6 +71,21 @@ test('corpus renders every published seed document as a normal link', async ({ p
   }
 });
 
+test('the original seed corpus routes remain available', async ({ page }) => {
+  for (const route of [
+    'corpus/ai-act-proposal/',
+    'corpus/ai-liability-directive-proposal/',
+    'corpus/artificial-intelligence-act/',
+    'corpus/artificial-intelligence-for-europe/',
+    'corpus/coordinated-plan-on-artificial-intelligence/',
+    'corpus/ethics-guidelines-for-trustworthy-ai/',
+    'corpus/white-paper-on-artificial-intelligence/',
+  ]) {
+    await page.goto(route);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+  }
+});
+
 test('research lens links hydrate the matching Corpus concept on arrival', async ({ page }) => {
   await page.goto('./');
   await page.getByRole('link', { name: 'Risk', exact: true }).click();
