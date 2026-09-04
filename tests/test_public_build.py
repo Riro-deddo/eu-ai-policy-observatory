@@ -1,5 +1,6 @@
 from base64 import b64decode
 import json
+import os
 import sqlite3
 import subprocess
 import sys
@@ -275,8 +276,76 @@ def test_scanner_accepts_valid_downloadable_database(tmp_path: Path):
         connection.execute("CREATE TABLE documents (id TEXT PRIMARY KEY)")
     data = tmp_path / "public-data.json"
     write_public_data(data, {"documents": []})
+    original_bytes = database.read_bytes()
 
     assert check_public_build(site, data, require_database=True) == []
+    assert database.read_bytes() == original_bytes
+
+
+def test_scanner_rejects_directory_at_downloadable_database_path(tmp_path: Path):
+    site = tmp_path / "site"
+    database = site / "downloads" / "eu-ai-policy-observatory.sqlite"
+    database.mkdir(parents=True)
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert any("downloadable SQLite database is not a regular file" in error for error in errors)
+
+
+@pytest.mark.skipif(
+    os.name == "nt",
+    reason="Windows ACL semantics cannot reliably make a test-owned file unreadable with chmod.",
+)
+def test_scanner_rejects_genuinely_unreadable_downloadable_database(tmp_path: Path):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute("CREATE TABLE documents (id TEXT PRIMARY KEY)")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+    original_mode = database.stat().st_mode
+    database.chmod(0)
+    try:
+        if os.access(database, os.R_OK):
+            pytest.skip("The test process retains read access after chmod(0).")
+        errors = check_public_build(site, data, require_database=True)
+    finally:
+        database.chmod(original_mode)
+
+    assert any("downloadable SQLite database is unreadable" in error for error in errors)
+
+
+@pytest.mark.skipif(
+    os.name != "nt",
+    reason="Windows-only fallback for ACL environments where chmod cannot prove unreadability.",
+)
+def test_scanner_reports_windows_database_access_denial(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute("CREATE TABLE documents (id TEXT PRIMARY KEY)")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+    path_open = Path.open
+
+    def deny_database_read(path: Path, *args: object, **kwargs: object):
+        if path == database:
+            raise PermissionError("test access denial")
+        return path_open(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", deny_database_read)
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert any("downloadable SQLite database is unreadable" in error for error in errors)
 
 
 @pytest.mark.parametrize(
