@@ -1,5 +1,6 @@
 from base64 import b64decode
 import json
+import sqlite3
 import subprocess
 import sys
 from pathlib import Path
@@ -252,3 +253,70 @@ def test_scanner_cli_returns_nonzero_when_public_output_is_unsafe(tmp_path: Path
 
     assert result.returncode == 1
     assert "localhost" in result.stdout
+
+
+def test_scanner_requires_downloadable_database(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert any("downloadable SQLite database" in error for error in errors)
+
+
+def test_scanner_accepts_valid_downloadable_database(tmp_path: Path):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute("CREATE TABLE documents (id TEXT PRIMARY KEY)")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    assert check_public_build(site, data, require_database=True) == []
+
+
+@pytest.mark.parametrize(
+    ("contents", "expected_error"),
+    [
+        (b"", "is empty"),
+        (b"this is not a SQLite database", "is not a SQLite database"),
+    ],
+)
+def test_scanner_rejects_empty_or_non_sqlite_downloadable_database(
+    tmp_path: Path, contents: bytes, expected_error: str
+):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    (downloads / "eu-ai-policy-observatory.sqlite").write_bytes(contents)
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert any(expected_error in error for error in errors)
+
+
+def test_scanner_rejects_downloadable_database_that_fails_integrity_check(
+    tmp_path: Path,
+):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute("CREATE TABLE documents (id TEXT PRIMARY KEY)")
+        connection.execute("INSERT INTO documents VALUES ('first')")
+    with database.open("r+b") as database_file:
+        database_file.seek(36)
+        database_file.write((1).to_bytes(4, "big"))
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert any("failed integrity check" in error for error in errors)

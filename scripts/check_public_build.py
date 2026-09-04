@@ -6,6 +6,8 @@ import argparse
 import json
 import os
 import re
+import sqlite3
+import stat
 import sys
 from pathlib import Path
 from typing import Any, Iterable
@@ -22,10 +24,14 @@ _PRIVATE_KEY_HEADER = re.compile(
 )
 
 
-def check_public_build(site_root: Path, public_data_path: Path) -> list[str]:
+def check_public_build(
+    site_root: Path, public_data_path: Path, require_database: bool = False
+) -> list[str]:
     """Return sorted errors for unsafe static output or unpublished public data."""
 
     errors = [* _scan_site(site_root), * _scan_public_data(public_data_path)]
+    if require_database:
+        errors.extend(_scan_downloadable_database(site_root))
     return sorted(errors)
 
 
@@ -98,6 +104,46 @@ def _scan_public_data(public_data_path: Path) -> list[str]:
     return list(_publication_errors(payload, "$"))
 
 
+def _scan_downloadable_database(site_root: Path) -> list[str]:
+    """Validate the required downloadable SQLite database without modifying it."""
+    database_path = site_root / "downloads" / "eu-ai-policy-observatory.sqlite"
+    try:
+        database_stat = database_path.lstat()
+    except FileNotFoundError:
+        return [f"downloadable SQLite database is missing: {database_path}"]
+    except OSError:
+        return [f"downloadable SQLite database is unreadable: {database_path}"]
+
+    if not stat.S_ISREG(database_stat.st_mode):
+        return [f"downloadable SQLite database is not a regular file: {database_path}"]
+    if database_stat.st_size == 0:
+        return [f"downloadable SQLite database is empty: {database_path}"]
+
+    try:
+        with database_path.open("rb") as database_file:
+            if database_file.read(16) != b"SQLite format 3\x00":
+                return [f"downloadable SQLite database is not a SQLite database: {database_path}"]
+    except OSError:
+        return [f"downloadable SQLite database is unreadable: {database_path}"]
+
+    connection: sqlite3.Connection | None = None
+    try:
+        database_uri = f"{database_path.resolve().as_uri()}?mode=ro"
+        connection = sqlite3.connect(database_uri, uri=True)
+        integrity_rows = connection.execute("PRAGMA integrity_check").fetchall()
+    except (OSError, sqlite3.Error):
+        return [
+            f"downloadable SQLite database is corrupt or unreadable: {database_path}"
+        ]
+    finally:
+        if connection is not None:
+            connection.close()
+
+    if integrity_rows != [("ok",)]:
+        return [f"downloadable SQLite database failed integrity check: {database_path}"]
+    return []
+
+
 def _publication_errors(value: Any, location: str) -> Iterable[str]:
     if isinstance(value, dict):
         if "publication_status" in value and value["publication_status"] != "published":
@@ -116,9 +162,14 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--site", required=True, type=Path, help="Static site output directory")
     parser.add_argument("--data", required=True, type=Path, help="Public JSON data file")
+    parser.add_argument(
+        "--require-database",
+        action="store_true",
+        help="Require a valid downloadable SQLite database in the static site output",
+    )
     args = parser.parse_args(argv)
 
-    errors = check_public_build(args.site, args.data)
+    errors = check_public_build(args.site, args.data, args.require_database)
     for error in errors:
         print(error)
     return 1 if errors else 0
