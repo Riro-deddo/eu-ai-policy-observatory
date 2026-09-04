@@ -51,8 +51,8 @@ jobs:
           printf 'BUILD_TIMESTAMP=%s\n' "$BUILD_TIMESTAMP" >> "$GITHUB_ENV"
       - name: Test and generate database
         run: |
-          python -m pytest -q
           observatory-build --project-root . --timestamp "$BUILD_TIMESTAMP"
+          python -m pytest -q
       - name: Test and build website
         run: |
           pnpm --dir web test

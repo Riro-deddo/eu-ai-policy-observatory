@@ -231,9 +231,10 @@ def test_deployment_workflow_normalises_commit_epoch_to_a_utc_build_timestamp():
     assert "--format=%cI" not in workflow
 
 
-def test_validation_workflow_builds_generated_data_before_running_tests():
+@pytest.mark.parametrize("workflow_name", ["validate.yml", "deploy-pages.yml"])
+def test_workflows_build_generated_data_before_running_tests(workflow_name: str):
     workflow = (
-        Path(__file__).parents[1] / ".github" / "workflows" / "validate.yml"
+        Path(__file__).parents[1] / ".github" / "workflows" / workflow_name
     ).read_text(encoding="utf-8")
 
     build_command = 'observatory-build --project-root . --timestamp "1970-01-01T00:00:00Z"'
