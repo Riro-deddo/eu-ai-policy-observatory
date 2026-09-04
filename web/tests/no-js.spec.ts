@@ -17,7 +17,11 @@ test('core atlas content remains readable without JavaScript', async ({ page }) 
   }
 
   await page.goto('timeline/');
-  await expect(page.locator('[data-timeline-entry]')).toHaveCount(14);
+  const serializedEntries = await page.locator('#timeline-entries').textContent();
+  if (serializedEntries === null) throw new Error('Timeline public data was not rendered');
+  const timelineEntries = JSON.parse(serializedEntries) as Array<{ id: string }>;
+  expect(timelineEntries.length).toBeGreaterThan(0);
+  await expect(page.locator('[data-timeline-entry]')).toHaveCount(timelineEntries.length);
   await expect(page.locator('[data-timeline-entry][hidden]')).toHaveCount(0);
 
   await page.goto('policy-map/');

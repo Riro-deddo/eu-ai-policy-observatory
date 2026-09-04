@@ -54,10 +54,12 @@ test('cross-route and mobile checks independently collect and navigate policy ro
   assertPolicyRouteCoverage(mobileBlock, /const routes = \[[\s\S]*?\.\.\.policyRoutes,[\s\S]*?for \(const route of routes\) \{/);
 });
 
-test('the no-JavaScript block requires all fourteen timeline entries and consumes Timeline policy routes', () => {
+test('the no-JavaScript block derives its timeline count from serialized public data and consumes Timeline policy routes', () => {
   const noJavaScriptBlock = testBlock(noJavaScriptSpec, 'core atlas content remains readable without JavaScript');
 
-  assert.match(noJavaScriptBlock, /page\.locator\('\[data-timeline-entry\]'\)\)\.toHaveCount\(14\)/);
+  assert.match(noJavaScriptBlock, /page\.locator\('#timeline-entries'\)\.textContent\(\)/);
+  assert.match(noJavaScriptBlock, /JSON\.parse\(serializedEntries\)/);
+  assert.match(noJavaScriptBlock, /page\.locator\('\[data-timeline-entry\]'\)\)\.toHaveCount\(timelineEntries\.length\)/);
   assert.match(noJavaScriptBlock, /page\.locator\('\[data-timeline-entry\]\[hidden\]'\)\)\.toHaveCount\(0\)/);
   assertPolicyRouteCoverage(noJavaScriptBlock, /for \(const route of policyRoutes\) \{[\s\S]*?await page\.goto\(route\)/);
 });
