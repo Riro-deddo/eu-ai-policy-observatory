@@ -208,6 +208,7 @@ def test_2022_to_2024_ai_act_negotiation_and_implementation_records_are_publishe
     expected_references = {
         "ai-act-council-first-consolidated-compromise-st-10069-2022": "ST 10069/22",
         "ai-act-council-second-compromise-st-11124-2022": "ST 11124/22",
+        "ai-act-council-third-compromise-part-one-st-12206-2022-init": "ST 12206/22",
         "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1": "ST 12206/1/22 REV 1",
         "ai-act-council-third-compromise-part-two-st-12549-2022": "ST 12549/22",
         "ai-act-council-fourth-compromise-st-13102-2022": "ST 13102/22",
@@ -266,6 +267,16 @@ def test_2022_to_2024_formal_versions_and_positions_have_explicit_relationships(
             "ai-act-council-second-compromise-st-11124-2022",
             "revises",
             "ai-act-council-first-consolidated-compromise-st-10069-2022",
+        ),
+        (
+            "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+            "version_of",
+            "ai-act-proposal",
+        ),
+        (
+            "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+            "revises",
+            "ai-act-council-third-compromise-part-one-st-12206-2022-init",
         ),
         (
             "ai-act-council-fourth-compromise-st-13102-2022",

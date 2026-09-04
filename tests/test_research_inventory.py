@@ -270,6 +270,7 @@ def test_2022_to_2024_inventory_reconciles_required_official_records():
     required_included_ids = {
         "ai-act-council-first-consolidated-compromise-st-10069-2022",
         "ai-act-council-second-compromise-st-11124-2022",
+        "ai-act-council-third-compromise-part-one-st-12206-2022-init",
         "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
         "ai-act-council-third-compromise-part-two-st-12549-2022",
         "ai-act-council-fourth-compromise-st-13102-2022",
