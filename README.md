@@ -14,9 +14,11 @@ Version 0.1 establishes the policy, document, event, concept, institution, relat
 
 ## Current scope
 
-The current corpus is bounded to the EU AI Act policy process and directly relevant implementation; it is not an archive of all EU digital law. Its generated coverage range, principal-document total, supporting/version/attachment total and latest source-verification date are published on the Home page from `data.coverage`. The four research lenses remain risk, trustworthiness, accountability and compliance.
+The documented inclusion boundary covers official EU documents substantively concerning artificial intelligence from 1 January 2018 through the published coverage cutoff. It includes formally published drafts and sector-specific materials as well as adopted instruments; formal official publication, not adoption or entry into force, is the eligibility threshold. It is not an archive of all EU digital law. The four research lenses remain risk, trustworthiness, accountability and compliance.
 
-The corpus is deliberately bounded rather than comprehensive. The canonical repository may contain records in editorial states such as `draft`, `pending_review` or `verified`. Only records whose `publication_status` is `published` enter the generated public JSON, static site and SQLite output. Pending-review records are excluded from public totals. Those generated outputs, rather than repository visibility alone, define the reviewed public corpus.
+Comprehensive within the documented inclusion boundary, verified through 4 September 2026.
+
+That statement is cutoff-bound and auditable, not a claim of permanent or universal completeness. Stage 1 establishes the schema and interface over the existing reviewed corpus, controlled classifications, source registry and candidate inventory. It is not the completed EU-wide source sweep. The canonical repository may contain records in editorial states such as `draft`, `pending_review` or `verified`; only records whose `publication_status` is `published` enter the generated public JSON, static site and SQLite output. Pending candidates and pending-review records are excluded from public details and totals.
 
 The implemented method constructs, verifies and publishes the corpus. It does not yet run LLM experiments; comparison of large-language-model interpretations will use a separately documented future protocol.
 
@@ -43,14 +45,24 @@ The `record_level` vocabulary distinguishes `principal`, `supporting`, `version`
 
 ## Source sweep and inventory
 
-[`research/source-sweep.json`](research/source-sweep.json) records each bounded official entrance, its scope, check time and `pending`, `in_progress` or `complete` scan status. [`research/corpus-inventory.json`](research/corpus-inventory.json) gives every discovered candidate a reasoned decision:
+[`research/source-sweep.json`](research/source-sweep.json) records each bounded official entrance, its source family, covered interval, discovery method, cutoff and one of five review states: `not_started`, `in_progress`, `reviewed`, `gap_found` or `recheck_due`. Empty document-type or sector coverage arrays mean that the entrance review was not restricted by that dimension. [`research/corpus-inventory.json`](research/corpus-inventory.json) gives every discovered candidate a reasoned decision:
 
 - `included` points to a canonical document record;
 - `merged` identifies another manifestation represented by an existing canonical document;
 - `excluded` records why a candidate is outside the corpus or lacks the required evidence; and
 - `pending` retains an unresolved candidate for later verification without publishing it.
 
-An independently citable annex is represented as an `attachment` with an `annex_to` relationship. A second file format or duplicate manifestation is merged rather than counted as another document. Inventory and sweep files are validated offline before generated outputs are replaced.
+An independently citable annex is represented as an `attachment` with an `annex_to` relationship. A second file format or duplicate manifestation is merged rather than counted as another document. Inventory and sweep files are validated offline before generated outputs are replaced. Public data expose aggregate status and decision counts only; pending candidate titles, URLs and reasons remain out of the public payload.
+
+## Expansion sequence
+
+The corpus expansion is deliberately staged:
+
+1. **Stage 1 — schema and interface:** establish controlled sector and provenance classifications, the auditable coverage contract, deterministic exports and the English browsing interface over the existing reviewed corpus.
+2. **Stage 2 — priority backfill:** review the highest-value document, institution and sector gaps identified by the audit without weakening the publication boundary.
+3. **Stage 3 — EU-wide source sweep:** execute and document the bounded search across every registered official source family, review each discovered candidate and publish only verified eligible records.
+
+Stage completion is evidence-based. A registered source count is not proof that every eligible record has been found.
 
 ## Verification and provenance
 
@@ -74,6 +86,7 @@ pnpm --dir web build
 New-Item -ItemType Directory -Force web/dist/downloads
 Copy-Item generated/eu-ai-policy-observatory.sqlite web/dist/downloads/eu-ai-policy-observatory.sqlite
 python scripts/check_public_build.py --site web/dist --data generated/public-data.json --require-database
+python scripts/check_repository_english.py --root .
 ```
 
 Portable shell:
@@ -88,9 +101,10 @@ pnpm --dir web build
 mkdir -p web/dist/downloads
 cp generated/eu-ai-policy-observatory.sqlite web/dist/downloads/eu-ai-policy-observatory.sqlite
 python scripts/check_public_build.py --site web/dist --data generated/public-data.json --require-database
+python scripts/check_repository_english.py --root .
 ```
 
-Use the same fixed UTC timestamp when comparing deterministic builds. `generated/`, `web/dist/` and the copied downloadable database are ignored build outputs, not editing surfaces; change canonical JSON, schema, source code or documentation instead.
+Use the same fixed UTC timestamp when comparing deterministic builds. Generated release files are derived artefacts, while `web/dist/` and the copied downloadable database are disposable build outputs; change canonical JSON, research audit data, schema, source code or documentation instead of editing generated files.
 
 The full Python suite validates the canonical records, the source sweep, inventory decisions, cross-record references, composite identities and output pipeline. `observatory-build` repeats validation before atomically replacing the generated public JSON and SQLite database. The public scanner then checks the static distribution and, with `--require-database`, the downloadable database and its published-only boundary.
 

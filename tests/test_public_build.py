@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from scripts.check_public_build import check_public_build
+from scripts.check_repository_english import find_cjk_in_tracked_files
 
 
 PROJECT_ROOT = Path(__file__).parents[1]
@@ -53,6 +54,20 @@ def test_public_coverage_copy_uses_generated_values_and_rejects_seed_scope():
     assert "seven reviewed, published documents" not in public_copy
 
 
+def test_public_documents_expose_classifications_and_exact_coverage_cutoff():
+    payload = json.loads(
+        (PROJECT_ROOT / "generated" / "public-data.json").read_text(encoding="utf-8")
+    )
+
+    assert payload["coverage"]["coverage_cutoff"] == "2026-09-04"
+    assert payload["documents"]
+    for document in payload["documents"]:
+        assert document["sector_tags"]
+        assert document["provenance_tags"]
+        assert "third_party_submission" not in document["provenance_tags"]
+        assert "unknown_pending_review" not in document["provenance_tags"]
+
+
 def test_contributor_dictionary_documents_expanded_corpus_contract():
     dictionary = (PROJECT_ROOT / "docs" / "data-dictionary.md").read_text(
         encoding="utf-8"
@@ -80,6 +95,62 @@ def test_contributor_dictionary_documents_expanded_corpus_contract():
     assert "observatory-build --project-root ." in documented_contract
     assert "--require-database" in documented_contract
     assert "official" in documented_contract.lower()
+
+
+def test_contributor_documentation_defines_stage_one_coverage_contract():
+    dictionary = (PROJECT_ROOT / "docs" / "data-dictionary.md").read_text(
+        encoding="utf-8"
+    )
+    readme = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
+    vocabularies = json.loads(
+        (PROJECT_ROOT / "schema" / "controlled-vocabularies.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    for value in (*vocabularies["sector_tag"], *vocabularies["provenance_tag"]):
+        assert f"`{value}`" in dictionary
+    for value in ("third_party_submission", "unknown_pending_review"):
+        assert f"`{value}`" in dictionary
+        assert "inventory-only" in dictionary
+    for field in ("publication_status", "version_status", "legal_status"):
+        assert f"`{field}`" in dictionary
+    for status in (
+        "not_started",
+        "in_progress",
+        "reviewed",
+        "gap_found",
+        "recheck_due",
+    ):
+        assert f"`{status}`" in dictionary
+    assert "empty `covered_document_types`" in dictionary
+    assert "empty `covered_sector_tags`" in dictionary
+    assert "formal publication" in dictionary.lower()
+    assert "principal" in dictionary and "all records" in dictionary.lower()
+    assert "Stage 1" in readme and "Stage 2" in readme and "Stage 3" in readme
+    assert "schema and interface" in readme.lower()
+    assert (
+        "Comprehensive within the documented inclusion boundary, "
+        "verified through 4 September 2026."
+    ) in readme
+
+
+def test_repository_english_guard_reports_only_tracked_cjk_text(tmp_path: Path):
+    repository = tmp_path / "repository"
+    repository.mkdir()
+    subprocess.run(["git", "init", "-q"], cwd=repository, check=True)
+    (repository / "README.md").write_text("English copy with José.\n", encoding="utf-8")
+    docs = repository / "docs"
+    docs.mkdir()
+    (docs / "scope.md").write_text("English then \u4e2d\u6587.\n", encoding="utf-8")
+    (repository / "scratch.md").write_text("\u672a\u8ddf\u8e2a\n", encoding="utf-8")
+    subprocess.run(
+        ["git", "add", "README.md", "docs/scope.md"], cwd=repository, check=True
+    )
+
+    findings = find_cjk_in_tracked_files(repository)
+
+    assert findings == ["docs/scope.md:1:14: U+4E2D"]
 
 
 def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):
