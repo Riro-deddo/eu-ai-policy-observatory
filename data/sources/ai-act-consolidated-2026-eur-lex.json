@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-consolidated-2026-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "eli",
+  "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng",
+  "publisher": "Publications Office of the European Union / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official ELI consolidated English text dated 27 July 2026, CELEX 02024R1689-20260727."
+}

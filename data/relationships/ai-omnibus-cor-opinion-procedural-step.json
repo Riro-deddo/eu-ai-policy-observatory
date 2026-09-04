@@ -1,0 +1,16 @@
+{
+  "id": "ai-omnibus-cor-opinion-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "cor-opinion-ai-omnibus-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-omnibus-proposal-2025",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "The opinion concerns the Digital Omnibus proposal.",
+  "evidence_source_id": "ai-omnibus-cor-eur-lex",
+  "verification_status": "verified"
+}

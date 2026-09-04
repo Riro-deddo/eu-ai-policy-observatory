@@ -346,3 +346,155 @@ def test_ai_act_and_liability_events_keep_distinct_document_and_event_dates():
     assert liability["publication_date"] == "2022-09-28"
     assert events["ai-liability-directive-withdrawal"]["event_date"] == "2025-10-06"
     assert events["ai-liability-directive-withdrawal"]["event_type"] == "withdrawal"
+
+
+def test_2025_to_2026_implementation_and_amendment_anchors_are_verified():
+    documents = {
+        document["id"]: document
+        for document in (
+            json.loads(path.read_text(encoding="utf-8"))
+            for path in Path("data/documents").glob("*.json")
+        )
+    }
+    expected = {
+        "ai-system-definition-guidelines-2025": ("C(2025) 5053 final", None),
+        "prohibited-ai-practices-guidelines-2025": ("C(2025) 5052 final", None),
+        "gpai-provider-guidelines-2025": ("C(2025) 5045 final", None),
+        "scientific-panel-implementing-regulation-2025-454": ("Commission Implementing Regulation (EU) 2025/454", "32025R0454"),
+        "ai-act-proceedings-implementing-regulation-2026-1755": ("Commission Implementing Regulation (EU) 2026/1755", "32026R1755"),
+        "standardisation-request-c-2025-3871": ("C(2025) 3871 final", None),
+        "ai-continent-action-plan": ("COM(2025) 165 final", "52025DC0165"),
+        "apply-ai-strategy": ("COM(2025) 723 final", "52025DC0723"),
+        "ai-omnibus-proposal-2025": ("COM(2025) 836 final", "52025PC0836"),
+        "ai-omnibus-staff-working-document-2025": ("SWD(2025) 836 final", "52025SC0836"),
+        "eesc-opinion-ai-omnibus-2026": ("EESC 2025/03929", "52025AE3929"),
+        "cor-opinion-ai-omnibus-2026": ("COR 2025/04240", "52025AR4240"),
+        "ecb-opinion-con-2026-10": ("CON/2026/10", "52026AB0010"),
+        "edpb-edps-joint-opinion-1-2026": ("Joint Opinion 1/2026", None),
+        "ep-ai-omnibus-report-a10-0073-2026": ("A10-0073/2026", None),
+        "ep-ai-omnibus-position-p10-ta-2026-0198": ("P10_TA(2026)0198", None),
+        "ai-omnibus-regulation-2026-1744": ("Regulation (EU) 2026/1744", "32026R1744"),
+        "ai-act-consolidated-2026-07-27": ("Regulation (EU) 2024/1689", "02024R1689-20260727"),
+        "commission-ai-act-article-112-review-2026": ("COM(2026) 234 final", "52026DC0234"),
+    }
+
+    assert expected.keys() <= documents.keys()
+    for document_id, (official_reference, celex) in expected.items():
+        document = documents[document_id]
+        assert document["publication_status"] == "published"
+        assert document["language"] == "en"
+        assert document["official_reference"] == official_reference
+        assert document["celex"] == celex
+        assert document["source_ids"]
+        assert document["corpus_assessment"]["review_status"] == "verified"
+
+
+def test_2025_to_2026_codes_guidelines_and_templates_keep_component_versions():
+    documents = {
+        document["id"]: document
+        for document in (
+            json.loads(path.read_text(encoding="utf-8"))
+            for path in Path("data/documents").glob("*.json")
+        )
+    }
+    expected_ids = {
+        "gpai-code-first-draft",
+        "gpai-code-second-draft",
+        "gpai-code-third-draft-transparency",
+        "gpai-code-third-draft-copyright",
+        "gpai-code-third-draft-safety-security",
+        "gpai-code-final-transparency",
+        "gpai-code-final-copyright",
+        "gpai-code-final-safety-security",
+        "gpai-code-model-documentation-form-2025",
+        "gpai-code-signatory-form-2025",
+        "commission-opinion-gpai-code-2025",
+        "ai-board-assessment-gpai-code-2025",
+        "gpai-training-content-explanatory-notice-2025",
+        "gpai-training-content-template-2025",
+        "gpai-serious-incident-reporting-template-2025",
+        "draft-guidance-serious-ai-incidents-2025",
+        "draft-serious-ai-incident-report-template-2025",
+        "transparency-code-first-draft-2025",
+        "transparency-code-second-draft-2026",
+        "transparency-code-final-2026",
+        "transparency-code-signatory-form-2026",
+        "commission-opinion-transparency-code-2026",
+        "ai-board-assessment-transparency-code-2026",
+        "draft-transparency-guidelines-2026",
+        "final-transparency-guidelines-2026",
+        "draft-high-risk-classification-guidelines-2026",
+        "draft-high-risk-classification-guidelines-annex-i-2026",
+        "draft-high-risk-classification-guidelines-annex-iii-2026",
+    }
+
+    assert expected_ids <= documents.keys()
+    assert all(documents[document_id]["language"] == "en" for document_id in expected_ids)
+    assert all(
+        documents[document_id]["corpus_assessment"]["review_status"] == "verified"
+        for document_id in expected_ids
+    )
+    assert documents["gpai-code-first-draft"]["version_status"] == "draft"
+    assert documents["transparency-code-second-draft-2026"]["version_status"] == "draft"
+    assert documents["final-transparency-guidelines-2026"]["version_status"] == "final"
+
+
+def test_2025_to_2026_relationships_and_dates_preserve_official_sequence():
+    relationships = [
+        json.loads(path.read_text(encoding="utf-8"))
+        for path in Path("data/relationships").glob("*.json")
+    ]
+    relationship_keys = {
+        (
+            relationship["source_entity_id"],
+            relationship["relationship_type"],
+            relationship["target_entity_id"],
+        )
+        for relationship in relationships
+    }
+    assert {
+        ("gpai-code-second-draft", "revises", "gpai-code-first-draft"),
+        ("gpai-code-final-transparency", "version_of", "gpai-code-final"),
+        ("commission-opinion-gpai-code-2025", "endorses", "gpai-code-final"),
+        ("ai-board-assessment-gpai-code-2025", "endorses", "gpai-code-final"),
+        ("transparency-code-second-draft-2026", "revises", "transparency-code-first-draft-2025"),
+        ("transparency-code-final-2026", "revises", "transparency-code-second-draft-2026"),
+        ("commission-opinion-transparency-code-2026", "endorses", "transparency-code-final-2026"),
+        ("final-transparency-guidelines-2026", "revises", "draft-transparency-guidelines-2026"),
+        ("scientific-panel-implementing-regulation-2025-454", "implements", "artificial-intelligence-act"),
+        ("ai-act-proceedings-implementing-regulation-2026-1755", "implements", "artificial-intelligence-act"),
+        ("standardisation-request-c-2025-3871", "implements", "artificial-intelligence-act"),
+        ("ai-omnibus-regulation-2026-1744", "amends", "artificial-intelligence-act"),
+        ("ai-act-consolidated-2026-07-27", "version_of", "artificial-intelligence-act"),
+    } <= relationship_keys
+
+    events = {
+        event["id"]: event
+        for event in (
+            json.loads(path.read_text(encoding="utf-8"))
+            for path in Path("data/events").glob("*.json")
+        )
+    }
+    assert events["ai-omnibus-proposal-event-2025"]["event_date"] == "2025-11-19"
+    assert events["ai-omnibus-adoption-2026"]["event_date"] == "2026-06-29"
+    assert events["ai-omnibus-publication-2026"]["event_date"] == "2026-07-24"
+    assert events["ai-omnibus-entry-into-force-2026"]["event_date"] == "2026-07-27"
+    assert events["ai-act-general-application-2026"]["event_date"] == "2026-08-02"
+
+
+def test_2025_to_2026_batch_adds_narrow_research_groupings_and_formal_bodies():
+    policies = {
+        json.loads(path.read_text(encoding="utf-8"))["id"]
+        for path in Path("data/policies").glob("*.json")
+    }
+    institutions = {
+        json.loads(path.read_text(encoding="utf-8"))["id"]
+        for path in Path("data/institutions").glob("*.json")
+    }
+    assert {
+        "ai-act-implementation-and-governance",
+        "digital-omnibus-ai-act-amendments",
+        "general-purpose-ai-code-of-practice",
+        "ai-generated-content-transparency",
+    } <= policies
+    assert {"european-ai-office", "european-artificial-intelligence-board"} <= institutions

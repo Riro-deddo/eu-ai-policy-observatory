@@ -1,0 +1,16 @@
+{
+  "id": "gpai-provider-guidelines-implements-ai-act",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "gpai-provider-guidelines-2025",
+  "target_entity_type": "document",
+  "target_entity_id": "artificial-intelligence-act",
+  "relationship_type": "implements",
+  "basis": "official",
+  "rationale": "The guidelines clarify obligations for GPAI model providers under the AI Act.",
+  "evidence_source_id": "gpai-guidelines-commission",
+  "verification_status": "verified"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ai-omnibus-publication-2026",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "publication",
+  "event_date": "2026-07-24",
+  "title": "Digital Omnibus Regulation is published in the Official Journal",
+  "description": "Regulation (EU) 2026/1744 was published in OJ L on 24 July 2026.",
+  "policy_id": "digital-omnibus-ai-act-amendments",
+  "document_id": "ai-omnibus-regulation-2026-1744",
+  "source_id": "ai-omnibus-regulation-eur-lex"
+}

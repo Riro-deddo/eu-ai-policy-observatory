@@ -1,0 +1,11 @@
+{
+  "id": "european-ai-office",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "official_name": "European AI Office",
+  "short_name": "AI Office",
+  "institution_type": "European Commission service",
+  "official_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+}

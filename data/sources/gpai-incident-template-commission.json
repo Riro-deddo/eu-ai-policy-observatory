@@ -1,0 +1,13 @@
+{
+  "id": "gpai-incident-template-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/ai-act-commission-publishes-reporting-template-serious-incidents-involving-general-purpose-ai",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official page published 4 November 2025 provides the same serious-incident reporting template in PDF and DOCX manifestations (newsroom documents 121268 and 121270)."
+}

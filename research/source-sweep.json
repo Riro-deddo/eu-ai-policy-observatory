@@ -16,7 +16,7 @@
       "institution": "Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/procedure/EN/2025_359",
       "scope_note": "Primary procedure entrance for the Digital Omnibus on AI amendment process and its adopted act.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -25,7 +25,7 @@
       "institution": "Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
       "scope_note": "Search entrance for English Commission communications about artificial intelligence within the 2018–2026 date boundary; exact CELEX records are retained per candidate.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -34,7 +34,7 @@
       "institution": "Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
       "scope_note": "Search entrance for English SWD records supporting the AI Act and directly related Commission initiatives within 2018–2026.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -43,7 +43,7 @@
       "institution": "Publications Office of the European Union",
       "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
       "scope_note": "Search entrance for English decisions, regulations and implementing regulations that establish, amend or directly implement the AI Act within 2018–2026.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -79,7 +79,7 @@
       "institution": "Council of the European Union",
       "url": "https://www.consilium.europa.eu/en/documents-publications/public-register/",
       "scope_note": "Council public-register search for the Digital Omnibus on AI amendment procedure.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -88,7 +88,7 @@
       "institution": "European Economic and Social Committee",
       "url": "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions",
       "scope_note": "Opinion-register entrance for formal EESC opinions on the AI Act and directly related AI policy files.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -97,7 +97,7 @@
       "institution": "European Committee of the Regions",
       "url": "https://cor.europa.eu/en/our-work/Pages/Opinions.aspx",
       "scope_note": "Opinion-register entrance for formal Committee of the Regions opinions on the AI Act and directly related AI initiatives.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -106,7 +106,7 @@
       "institution": "European Central Bank",
       "url": "https://www.ecb.europa.eu/ecb/legal/opinions/html/index.en.html",
       "scope_note": "Legal-opinion register for ECB opinions associated with the AI Act and the Digital Omnibus on AI.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -115,7 +115,7 @@
       "institution": "European Data Protection Board",
       "url": "https://www.edpb.europa.eu/positions-of-the-edpb-on-legislative-proposals_en",
       "scope_note": "Official EDPB entrance for joint EDPB–EDPS opinions on the original AI Act and its amendment.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -124,7 +124,7 @@
       "institution": "European Data Protection Supervisor",
       "url": "https://www.edps.europa.eu/data-protection/our-work/our-work-by-type/edps-edpb-joint-opinions_en",
       "scope_note": "Official EDPS register for joint opinions that directly address the AI Act legislative files.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -133,7 +133,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
       "scope_note": "Commission implementation hub linking the AI Act, implementation timeline, guidance, codes, templates, governance and amendment instruments.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -142,7 +142,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
       "scope_note": "AI Office entrance for implementation, enforcement, guidance, codes, templates and institutional material.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -160,7 +160,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice",
       "scope_note": "Official process page for GPAI Code drafts, the final Code, related Commission assessment, training-content template and guidance.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -169,7 +169,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers",
       "scope_note": "Official guidance hub for GPAI provider obligations, submission materials and linked compliance instruments.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -178,7 +178,7 @@
       "institution": "European Artificial Intelligence Board",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
       "scope_note": "Official Board page for meeting records and endorsed documents that directly interpret or support AI Act implementation.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -187,7 +187,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
       "scope_note": "Official consultation entrance for the draft high-risk classification guidelines and consultation materials.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -196,7 +196,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
       "scope_note": "Official consultation entrance for draft Article 73 guidance and the serious-incident reporting template.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -205,7 +205,7 @@
       "institution": "European Commission",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/consultation-draft-guidelines-transparency-obligations-under-ai-act",
       "scope_note": "Official consultation entrance for Article 50 draft guidelines and related transparency instruments.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -214,7 +214,7 @@
       "institution": "European Commission",
       "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/notification-system_en",
       "scope_note": "Official notification entrance for adopted and draft AI standardisation requests, including the 2025 amendment and 2026 follow-up draft.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {
@@ -232,7 +232,7 @@
       "institution": "European Commission",
       "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
       "scope_note": "Official register record for the amended AI standardisation request M/613, which repeals C(2023) 3215, and its attachments.",
-      "scan_status": "in_progress",
+      "scan_status": "complete",
       "checked_at": "2026-09-04T00:00:00Z"
     },
     {

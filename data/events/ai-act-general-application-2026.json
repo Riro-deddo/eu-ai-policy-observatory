@@ -1,0 +1,14 @@
+{
+  "id": "ai-act-general-application-2026",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "application",
+  "event_date": "2026-08-02",
+  "title": "AI Act general application date",
+  "description": "Article 113 of Regulation (EU) 2024/1689 provides the general application date, subject to the provision-specific timetable and later amendments.",
+  "policy_id": "ai-act-implementation-and-governance",
+  "document_id": "artificial-intelligence-act",
+  "source_id": "ai-act-eur-lex"
+}

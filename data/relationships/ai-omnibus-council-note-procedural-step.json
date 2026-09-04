@@ -1,0 +1,16 @@
+{
+  "id": "ai-omnibus-council-note-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-omnibus-proposal-2025",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "ST 10752/26 documents Council adoption in procedure 2025/0359(COD).",
+  "evidence_source_id": "council-st-10752-2026",
+  "verification_status": "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "apply-ai-strategy-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0723",
+  "publisher": "Publications Office of the European Union / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "EUR-Lex confirms COM(2025) 723 final, CELEX 52025DC0723, dated 8 October 2025, with separately downloadable annexes."
+}

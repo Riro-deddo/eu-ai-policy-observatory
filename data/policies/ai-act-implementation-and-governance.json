@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-implementation-and-governance",
+  "entity_type": "policy",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "name": "AI Act implementation and governance",
+  "short_name": "AI Act implementation",
+  "summary": "Research grouping for Commission and AI Board instruments that operationalise Regulation (EU) 2024/1689.",
+  "policy_family": "European artificial intelligence regulation",
+  "policy_status": "active",
+  "scope_note": "Analytical grouping; it is not an official EU programme title."
+}

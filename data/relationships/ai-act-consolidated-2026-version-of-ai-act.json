@@ -1,0 +1,16 @@
+{
+  "id": "ai-act-consolidated-2026-version-of-ai-act",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ai-act-consolidated-2026-07-27",
+  "target_entity_type": "document",
+  "target_entity_id": "artificial-intelligence-act",
+  "relationship_type": "version_of",
+  "basis": "official",
+  "rationale": "The ELI identifies this as the consolidated version of Regulation (EU) 2024/1689 at 27 July 2026.",
+  "evidence_source_id": "ai-act-consolidated-2026-eur-lex",
+  "verification_status": "verified"
+}

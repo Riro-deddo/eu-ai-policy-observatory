@@ -1,0 +1,53 @@
+{
+  "id": "ecb-opinion-con-2026-10",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ecb-opinion-con-2026-10",
+  "official_title": "Opinion of the European Central Bank of 13 March 2026 on a proposal for a regulation as regards the simplification of the implementation of harmonised rules on artificial intelligence (CON/2026/10)",
+  "short_title": "ECB opinion CON/2026/10",
+  "document_type": "opinion",
+  "record_level": "supporting",
+  "official_reference": "CON/2026/10",
+  "procedure_references": [
+    "2025/0359(COD)"
+  ],
+  "oj_reference": "OJ C, C/2026/2285, 15.4.2026",
+  "document_date": "2026-03-13",
+  "version_label": "Adopted opinion",
+  "version_status": "final",
+  "publication_date": "2026-04-15",
+  "legal_status": "non_binding",
+  "celex": "52026AB0010",
+  "eli": "https://data.europa.eu/eli/C/2026/2285/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-central-bank",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "digital-omnibus-ai-act-amendments"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "ai-omnibus-ecb-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

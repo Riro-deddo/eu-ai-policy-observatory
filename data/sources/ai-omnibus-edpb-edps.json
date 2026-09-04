@@ -1,0 +1,13 @@
+{
+  "id": "ai-omnibus-edpb-edps",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "official_pdf",
+  "url": "https://www.edpb.europa.eu/system/files/2026-01/edpb_edps_jointopinion_202601_proposal_ai-omnibus_en.pdf",
+  "publisher": "European Data Protection Board and European Data Protection Supervisor",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official English PDF confirms EDPB–EDPS Joint Opinion 1/2026, adopted 20 January 2026, on COM(2025) 836 final."
+}

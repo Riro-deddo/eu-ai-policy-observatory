@@ -1,0 +1,16 @@
+{
+  "id": "transparency-code-final-revises-second",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "transparency-code-final-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "transparency-code-second-draft-2026",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "The final code follows the second consultation draft.",
+  "evidence_source_id": "transparency-code-final-commission",
+  "verification_status": "verified"
+}

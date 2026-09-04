@@ -87,6 +87,33 @@ def test_repository_source_sweep_and_inventory_are_valid_and_auditable():
     assert all(entry["decision_reason"].strip() for entry in inventory["candidates"])
 
 
+def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditable():
+    sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
+    candidates = {candidate["id"]: candidate for candidate in inventory["candidates"]}
+
+    assert sweep["sources"]
+    assert all(source["scan_status"] == "complete" for source in sweep["sources"])
+    assert all(candidate["decision"] != "pending" for candidate in inventory["candidates"])
+    assert {
+        "gpai-code-final",
+        "gpai-code-third-draft-transparency",
+        "transparency-code-final-2026",
+        "final-transparency-guidelines-2026",
+        "ai-omnibus-regulation-2026-1744",
+        "eesc-opinion-ai-omnibus-2026",
+        "cor-opinion-ai-omnibus-2026",
+        "ep-ai-omnibus-position-p10-ta-2026-0198",
+        "ai-omnibus-council-adoption-note-st-10752-2026",
+    } <= candidates.keys()
+    assert all(
+        candidates[candidate_id]["decision"] in {"included", "merged", "excluded"}
+        for candidate_id in candidates
+    )
+
+
 @pytest.mark.parametrize(
     ("mutate", "expected_field", "expected_code"),
     [

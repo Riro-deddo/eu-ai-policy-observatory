@@ -1,0 +1,13 @@
+{
+  "id": "definition-guidelines-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official library page and English PDF confirm C(2025) 5053 final, dated 29 July 2025; the downloadable English file is Commission newsroom document 112455."
+}

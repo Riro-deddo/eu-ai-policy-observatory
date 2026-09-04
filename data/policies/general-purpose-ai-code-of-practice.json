@@ -1,0 +1,13 @@
+{
+  "id": "general-purpose-ai-code-of-practice",
+  "entity_type": "policy",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "name": "General-Purpose AI Code of Practice",
+  "short_name": "GPAI Code",
+  "summary": "Research grouping for successive drafts, independently issued chapters, forms and adequacy assessments of the General-Purpose AI Code of Practice.",
+  "policy_family": "AI Act implementation instruments",
+  "policy_status": "active",
+  "scope_note": "The grouping follows the official Commission publication sequence but is a research-layer entity."
+}

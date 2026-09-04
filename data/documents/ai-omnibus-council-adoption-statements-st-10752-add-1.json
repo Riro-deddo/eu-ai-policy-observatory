@@ -1,0 +1,53 @@
+{
+  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+  "official_title": "Digital Omnibus AI proposal — Statements",
+  "short_title": "Council Digital Omnibus adoption statements",
+  "document_type": "institutional_position",
+  "record_level": "attachment",
+  "official_reference": "ST 10752/26 ADD 1",
+  "procedure_references": [
+    "2025/0359(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2026-06-22",
+  "version_label": "ADD 1",
+  "version_status": "final",
+  "publication_date": "2026-06-22",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "digital-omnibus-ai-act-amendments"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "council-st-10752-2026-add-1"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

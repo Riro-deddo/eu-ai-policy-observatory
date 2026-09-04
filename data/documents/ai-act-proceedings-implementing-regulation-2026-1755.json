@@ -1,0 +1,51 @@
+{
+  "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ai-act-proceedings-implementing-regulation-2026-1755",
+  "official_title": "Commission Implementing Regulation (EU) 2026/1755 of 20 July 2026 on detailed arrangements for the conduct of certain proceedings by the Commission pursuant to Regulation (EU) 2024/1689 of the European Parliament and of the Council",
+  "short_title": "AI Act proceedings implementing regulation",
+  "document_type": "implementing_regulation",
+  "record_level": "principal",
+  "official_reference": "Commission Implementing Regulation (EU) 2026/1755",
+  "procedure_references": [],
+  "oj_reference": "OJ L, 2026/1755, 21.7.2026",
+  "document_date": "2026-07-20",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "2026-07-21",
+  "legal_status": "in_force",
+  "celex": "32026R1755",
+  "eli": "https://data.europa.eu/eli/reg_impl/2026/1755/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "ai-act-implementation-and-governance"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "ai-act-proceedings-regulation-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

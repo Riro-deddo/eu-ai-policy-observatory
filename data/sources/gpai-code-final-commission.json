@@ -1,0 +1,13 @@
+{
+  "id": "gpai-code-final-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official Commission page publishes the final GPAI Code and separate Transparency, Copyright, Safety and Security, Model Documentation Form and Signatory Form files (newsroom documents 118120, 118115, 118119, 118118, 118312)."
+}

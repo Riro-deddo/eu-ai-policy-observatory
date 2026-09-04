@@ -1,0 +1,57 @@
+{
+  "id": "edpb-edps-joint-opinion-1-2026",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "edpb-edps-joint-opinion-1-2026",
+  "official_title": "EDPB–EDPS Joint Opinion 1/2026 on the Proposal for a Regulation as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)",
+  "short_title": "EDPB–EDPS Joint Opinion 1/2026",
+  "document_type": "opinion",
+  "record_level": "supporting",
+  "official_reference": "Joint Opinion 1/2026",
+  "procedure_references": [
+    "2025/0359(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2026-01-20",
+  "version_label": "Adopted opinion",
+  "version_status": "final",
+  "publication_date": "2026-01-20",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-data-protection-board",
+      "role": "author"
+    },
+    {
+      "institution_id": "european-data-protection-supervisor",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "digital-omnibus-ai-act-amendments"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "ai-omnibus-edpb-edps"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

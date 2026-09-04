@@ -1,0 +1,13 @@
+{
+  "id": "transparency-code-final-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official policy page publishes the final Code of Practice on Transparency of AI-Generated Content of 10 June 2026 (newsroom document 129555)."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai-omnibus-ecb-opinion-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ecb-opinion-con-2026-10",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-omnibus-proposal-2025",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "The opinion concerns COM(2025) 836 final.",
+  "evidence_source_id": "ai-omnibus-ecb-eur-lex",
+  "verification_status": "verified"
+}

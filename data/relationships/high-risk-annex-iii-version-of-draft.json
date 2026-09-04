@@ -1,0 +1,16 @@
+{
+  "id": "high-risk-annex-iii-version-of-draft",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "draft-high-risk-classification-guidelines-2026",
+  "relationship_type": "version_of",
+  "basis": "official",
+  "rationale": "The Commission publishes Annex III guidance as a separate component of the consultation draft.",
+  "evidence_source_id": "high-risk-guidelines-draft-commission",
+  "verification_status": "verified"
+}

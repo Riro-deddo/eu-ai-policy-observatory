@@ -1,0 +1,13 @@
+{
+  "id": "standardisation-request-c-2025-3871-register",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Commission register webpage confirms C(2025) 3871 final / M/613, adopted 23 June 2025, requests CEN and CENELEC standards for high-risk AI systems and repeals C(2023) 3215."
+}

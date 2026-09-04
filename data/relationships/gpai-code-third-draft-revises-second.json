@@ -1,0 +1,16 @@
+{
+  "id": "gpai-code-third-draft-revises-second",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "gpai-code-third-draft",
+  "target_entity_type": "document",
+  "target_entity_id": "gpai-code-second-draft",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "The official process labels this publication the third draft.",
+  "evidence_source_id": "gpai-code-third-draft-commission",
+  "verification_status": "verified"
+}

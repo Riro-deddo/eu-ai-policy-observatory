@@ -1,0 +1,13 @@
+{
+  "id": "high-risk-incident-consultation-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "official_consultation",
+  "url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official consultation opened 26 September 2025 and supplies separate draft guidance and reporting-template files (newsroom documents 119624 and 119623)."
+}

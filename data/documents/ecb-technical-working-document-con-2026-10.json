@@ -1,0 +1,53 @@
+{
+  "id": "ecb-technical-working-document-con-2026-10",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ecb-technical-working-document-con-2026-10",
+  "official_title": "Technical working document produced in connection with ECB Opinion CON/2026/10 — Drafting proposals in relation to the proposed amendments to Regulation (EU) 2024/1689 (the AI Act)",
+  "short_title": "ECB technical working document for CON/2026/10",
+  "document_type": "staff_working_document",
+  "record_level": "attachment",
+  "official_reference": "TWD/2026/10",
+  "procedure_references": [
+    "2025/0359(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2026-03-13",
+  "version_label": "Technical working document",
+  "version_status": "final",
+  "publication_date": "2026-03-13",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-central-bank",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "digital-omnibus-ai-act-amendments"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "ecb-technical-working-document-con-2026-10-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Verified official English drafting proposals formally linked by EUR-Lex to ECB Opinion CON/2026/10.",
+    "researcher_notes": "The attachment status is a researcher classification; the official title and relationship to CON/2026/10 come from EUR-Lex.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

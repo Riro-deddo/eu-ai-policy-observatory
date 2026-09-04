@@ -1,0 +1,16 @@
+{
+  "id": "ai-omnibus-ep-position-revises-amendments",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+  "target_entity_type": "document",
+  "target_entity_id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "The June first-reading position follows Parliament's March amendments in the same procedure.",
+  "evidence_source_id": "ai-omnibus-ep-position",
+  "verification_status": "verified"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "gpai-code-second-draft",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "gpai-code-second-draft",
+  "official_title": "Second Draft of the General-Purpose AI Code of Practice",
+  "short_title": "GPAI Code second draft",
+  "document_type": "code_of_practice",
+  "record_level": "version",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-12-19",
+  "version_label": "Second draft",
+  "version_status": "draft",
+  "publication_date": "2024-12-19",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-ai-office",
+      "role": "publisher"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "ai-act-implementation-and-governance",
+    "general-purpose-ai-code-of-practice"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "gpai-code-second-draft-commission"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

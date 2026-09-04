@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-article-112-report-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026DC0234",
+  "publisher": "Publications Office of the European Union / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "EUR-Lex confirms COM(2026) 234 final, CELEX 52026DC0234, dated 20 May 2026, adopted pursuant to Article 112(1) of the AI Act."
+}

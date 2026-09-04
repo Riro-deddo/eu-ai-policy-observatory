@@ -1,0 +1,51 @@
+{
+  "id": "draft-serious-ai-incident-report-template-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "draft-serious-ai-incident-report-template-2025",
+  "official_title": "Draft reporting template for serious incidents involving high-risk AI systems",
+  "short_title": "Draft high-risk AI incident-report template",
+  "document_type": "template",
+  "record_level": "version",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-09-26",
+  "version_label": "Consultation draft",
+  "version_status": "draft",
+  "publication_date": "2025-09-26",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "ai-act-implementation-and-governance"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "high-risk-incident-consultation-commission"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

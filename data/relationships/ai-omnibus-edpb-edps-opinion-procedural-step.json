@@ -1,0 +1,16 @@
+{
+  "id": "ai-omnibus-edpb-edps-opinion-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "edpb-edps-joint-opinion-1-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-omnibus-proposal-2025",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "Joint Opinion 1/2026 concerns COM(2025) 836 final.",
+  "evidence_source_id": "ai-omnibus-edpb-edps",
+  "verification_status": "verified"
+}

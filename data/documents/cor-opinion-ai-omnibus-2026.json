@@ -1,0 +1,54 @@
+{
+  "id": "cor-opinion-ai-omnibus-2026",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "cor-opinion-ai-omnibus-2026",
+  "official_title": "Opinion of the European Committee of the Regions — Digital simplification and Data Union Strategy",
+  "short_title": "Committee of the Regions opinion on digital simplification",
+  "document_type": "opinion",
+  "record_level": "supporting",
+  "official_reference": "COR 2025/04240",
+  "procedure_references": [
+    "2025/0359(COD)",
+    "2025/0360(COD)"
+  ],
+  "oj_reference": "OJ C, C/2026/3469, 24.7.2026",
+  "document_date": "2026-05-07",
+  "version_label": "Adopted opinion",
+  "version_status": "final",
+  "publication_date": "2026-07-24",
+  "legal_status": "non_binding",
+  "celex": "52025AR4240",
+  "eli": "https://data.europa.eu/eli/C/2026/3469/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-committee-of-the-regions",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "digital-omnibus-ai-act-amendments"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "ai-omnibus-cor-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai-continent-annex-annex-to-plan",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ai-continent-action-plan-annex",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-continent-action-plan",
+  "relationship_type": "annex_to",
+  "basis": "official",
+  "rationale": "EUR-Lex publishes the file as the annex to COM(2025) 165 final.",
+  "evidence_source_id": "ai-continent-action-plan-eur-lex",
+  "verification_status": "verified"
+}

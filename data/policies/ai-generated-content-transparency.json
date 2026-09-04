@@ -1,0 +1,13 @@
+{
+  "id": "ai-generated-content-transparency",
+  "entity_type": "policy",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "name": "AI-generated content transparency",
+  "short_name": "AI transparency",
+  "summary": "Research grouping for Article 50 guidelines and the Code of Practice on Transparency of AI-Generated Content.",
+  "policy_family": "AI Act implementation instruments",
+  "policy_status": "active",
+  "scope_note": "The grouping distinguishes official files from the researcher's analytical family label."
+}
