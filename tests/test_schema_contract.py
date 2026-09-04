@@ -92,6 +92,67 @@ def test_document_schema_requires_document_date():
     )
 
 
+@pytest.mark.parametrize("field", ["sector_tags", "provenance_tags"])
+def test_document_schema_requires_non_empty_unique_classification_arrays(field):
+    schema = json.loads(Path("schema/record.schema.json").read_text(encoding="utf-8"))
+    document = json.loads(
+        Path("tests/fixtures/valid/data/documents/example-document.json")
+        .read_text(encoding="utf-8")
+    )
+
+    missing = dict(document)
+    del missing[field]
+    empty = {**document, field: []}
+    duplicate = {**document, field: [document[field][0], document[field][0]]}
+
+    validator = Draft202012Validator(schema)
+    assert list(validator.iter_errors(missing))
+    assert list(validator.iter_errors(empty))
+    assert list(validator.iter_errors(duplicate))
+
+
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("sector_tags", ["not_a_sector"]),
+        ("provenance_tags", ["third_party_submission"]),
+    ],
+)
+def test_document_schema_rejects_unknown_or_inventory_only_classifications(field, value):
+    schema = json.loads(Path("schema/record.schema.json").read_text(encoding="utf-8"))
+    document = json.loads(
+        Path("tests/fixtures/valid/data/documents/example-document.json")
+        .read_text(encoding="utf-8")
+    )
+    document[field] = value
+
+    assert list(Draft202012Validator(schema).iter_errors(document))
+
+
+@pytest.mark.parametrize(
+    "document_type",
+    [
+        "study",
+        "consultation_document",
+        "declaration",
+        "recommendation",
+        "judgment",
+        "briefing",
+        "technical_specification",
+        "work_programme",
+    ],
+)
+def test_document_schema_accepts_expanded_document_types(document_type):
+    schema = json.loads(Path("schema/record.schema.json").read_text(encoding="utf-8"))
+    document = json.loads(
+        Path("tests/fixtures/valid/data/documents/example-document.json")
+        .read_text(encoding="utf-8")
+    )
+    document["document_type"] = document_type
+
+    assert not list(Draft202012Validator(schema).iter_errors(document))
+
+
 def _validation_errors(error):
     yield error
     for context_error in error.context:
