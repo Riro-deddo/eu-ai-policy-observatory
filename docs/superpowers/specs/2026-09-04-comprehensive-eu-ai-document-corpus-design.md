@@ -1,7 +1,7 @@
 # Comprehensive EU AI Document Corpus Design
 
 **Date:** 4 September 2026  
-**Status:** Approved in conversation; awaiting written-spec review  
+**Status:** Approved
 **Project:** EU AI Policy Observatory
 
 ## 1. Objective
