@@ -130,6 +130,30 @@ test('the final AI Act detail page separates official and research content', asy
   await expect(page.getByText('Verification date')).toBeVisible();
 });
 
+test('document records prioritise a readable short title while retaining the official title', async ({ page }) => {
+  await page.goto('corpus/artificial-intelligence-for-europe/');
+
+  const recordTitle = page.getByRole('heading', {
+    level: 1,
+    name: 'Artificial Intelligence for Europe',
+    exact: true,
+  });
+  await expect(recordTitle).toBeVisible();
+
+  const officialMetadata = page.getByRole('region', { name: 'Official metadata' });
+  await expect(officialMetadata.getByText('Official title', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText(
+    'COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Artificial Intelligence for Europe',
+    { exact: true },
+  )).toBeVisible();
+
+  const titleSize = Number.parseFloat(await recordTitle.evaluate((element) => (
+    window.getComputedStyle(element).fontSize
+  )));
+  const maximumTitleSize = page.viewportSize()!.width <= 390 ? 48 : 72;
+  expect(titleSize).toBeLessThanOrEqual(maximumTitleSize);
+});
+
 test('timeline presents every recorded event within the published 2018–2024 boundary', async ({ page }) => {
   await page.goto('timeline/');
 

@@ -44,12 +44,12 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
 >
   <article class="research-section document-record">
     <p class="section-kicker">Published document record</p>
-    <h1>{document.official_title}</h1>
-    <p>{document.short_title}</p>
+    <h1>{document.short_title}</h1>
 
     <section aria-labelledby="official-metadata">
       <h2 id="official-metadata">Official metadata</h2>
       <dl>
+        <dt>Official title</dt><dd>{document.official_title}</dd>
         <dt>Document type</dt><dd>{titleValue(document.document_type)}</dd>
         <dt>Publication date</dt><dd>{document.publication_date}</dd>
         <dt>Legal status</dt><dd>{titleValue(document.legal_status)}</dd>
