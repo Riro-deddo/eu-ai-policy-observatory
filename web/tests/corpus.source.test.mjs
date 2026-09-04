@@ -27,3 +27,10 @@ test('Corpus serialisation protects a closing-script sequence', () => {
 test('Corpus explains that JavaScript enables interactive filtering', () => {
   assert.match(explorer, /<noscript>[\s\S]*?Interactive filtering requires JavaScript[\s\S]*?<\/noscript>/);
 });
+
+test('Corpus filtering hides any enhanced list item missing its document ID', () => {
+  assert.match(
+    explorer,
+    /const documentId = item\.dataset\.documentId;\s*item\.hidden = documentId === undefined \|\| !visibleIds\.has\(documentId\);/,
+  );
+});

@@ -138,7 +138,8 @@ const labelValue = (value: string) => value.replaceAll('_', ' ');
 
       for (const item of items) {
         if (item instanceof HTMLElement) {
-          item.hidden = !visibleIds.has(item.dataset.documentId);
+          const documentId = item.dataset.documentId;
+          item.hidden = documentId === undefined || !visibleIds.has(documentId);
         }
       }
 
