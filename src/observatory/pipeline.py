@@ -42,6 +42,14 @@ def run_pipeline(
     assert_valid(data_root, schema_root / "record.schema.json", schema_root / "controlled-vocabularies.json")
     records = load_records(data_root)
     record_counts = {directory: len(entries) for directory, entries in records.items()}
+    public_records = {
+        directory: [
+            record
+            for record in entries
+            if record.data.get("publication_status") == "published"
+        ]
+        for directory, entries in records.items()
+    }
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary_root = Path(tempfile.mkdtemp(prefix=".observatory-build-", dir=destination.parent))
@@ -50,7 +58,7 @@ def run_pipeline(
     database = destination / DATABASE_FILENAME
     public_json = destination / PUBLIC_JSON_FILENAME
     try:
-        build_database(records, schema_root / "database.sql", temporary_database)
+        build_database(public_records, schema_root / "database.sql", temporary_database)
         export_public(temporary_database, temporary_public_json, build_timestamp)
         destination.mkdir(parents=True, exist_ok=True)
         _publish_output_pair(

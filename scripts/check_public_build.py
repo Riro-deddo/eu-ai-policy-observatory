@@ -131,6 +131,9 @@ def _scan_downloadable_database(site_root: Path) -> list[str]:
         database_uri = f"{database_path.resolve().as_uri()}?mode=ro"
         connection = sqlite3.connect(database_uri, uri=True)
         integrity_rows = connection.execute("PRAGMA integrity_check").fetchall()
+        if integrity_rows != [("ok",)]:
+            return [f"downloadable SQLite database failed integrity check: {database_path}"]
+        return _database_publication_errors(connection, database_path)
     except (OSError, sqlite3.Error):
         return [
             f"downloadable SQLite database is corrupt or unreadable: {database_path}"
@@ -139,9 +142,61 @@ def _scan_downloadable_database(site_root: Path) -> list[str]:
         if connection is not None:
             connection.close()
 
-    if integrity_rows != [("ok",)]:
-        return [f"downloadable SQLite database failed integrity check: {database_path}"]
-    return []
+
+
+def _database_publication_errors(
+    connection: sqlite3.Connection, database_path: Path
+) -> list[str]:
+    """Return deterministic errors for non-published rows in public SQLite tables."""
+    try:
+        tables = [
+            row[0]
+            for row in connection.execute(
+                "SELECT name FROM sqlite_master "
+                "WHERE type = 'table' AND name NOT LIKE 'sqlite_%' ORDER BY name"
+            )
+        ]
+        errors: list[str] = []
+        for table in tables:
+            quoted_table = _quote_sql_identifier(table)
+            columns = {
+                row[1]
+                for row in connection.execute(f"PRAGMA table_info({quoted_table})")
+            }
+            if "publication_status" not in columns:
+                continue
+            if "id" in columns:
+                rows = connection.execute(
+                    f"SELECT id, publication_status FROM {quoted_table} "
+                    "WHERE publication_status IS NULL OR publication_status != ? ORDER BY id",
+                    ("published",),
+                )
+                errors.extend(
+                    "non-published row in downloadable SQLite database: "
+                    f"{table}/{identifier} ({status!r})"
+                    for identifier, status in rows
+                )
+            else:
+                rows = connection.execute(
+                    f"SELECT publication_status FROM {quoted_table} "
+                    "WHERE publication_status IS NULL OR publication_status != ? "
+                    "ORDER BY publication_status",
+                    ("published",),
+                )
+                errors.extend(
+                    "non-published row in downloadable SQLite database: "
+                    f"{table} ({status!r})"
+                    for (status,) in rows
+                )
+        return errors
+    except sqlite3.Error:
+        return [
+            f"downloadable SQLite database schema is unreadable: {database_path}"
+        ]
+
+
+def _quote_sql_identifier(identifier: str) -> str:
+    return '"' + identifier.replace('"', '""') + '"'
 
 
 def _publication_errors(value: Any, location: str) -> Iterable[str]:

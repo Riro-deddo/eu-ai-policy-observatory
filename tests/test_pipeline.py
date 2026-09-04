@@ -23,6 +23,51 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     assert all(item["publication_status"] == "published" for item in payload["documents"])
 
 
+def test_pipeline_excludes_unpublished_canonical_records_from_every_public_output(tmp_path):
+    project_root = tmp_path / "project"
+    shutil.copytree(Path("tests/fixtures/valid/data"), project_root / "data")
+    shutil.copytree(Path("schema"), project_root / "schema")
+    draft_concept = json.loads(
+        (project_root / "data" / "concepts" / "risk.json").read_text(encoding="utf-8")
+    )
+    draft_concept.update(
+        {
+            "id": "unpublished-concept",
+            "publication_status": "draft",
+            "name": "Unpublished concept",
+        }
+    )
+    (project_root / "data" / "concepts" / "unpublished-concept.json").write_text(
+        json.dumps(draft_concept), encoding="utf-8"
+    )
+
+    outputs = run_pipeline(
+        project_root, "2026-09-03T00:00:00Z", output_root=tmp_path / "generated"
+    )
+
+    assert outputs.record_counts["concepts"] == 2
+    with sqlite3.connect(outputs.database) as connection:
+        for table in (
+            "policies",
+            "documents",
+            "events",
+            "concepts",
+            "institutions",
+            "relationships",
+            "sources",
+        ):
+            assert connection.execute(
+                f"SELECT DISTINCT publication_status FROM {table}"
+            ).fetchall() in ([], [("published",)])
+        assert connection.execute(
+            "SELECT id FROM concepts WHERE id = 'unpublished-concept'"
+        ).fetchall() == []
+    public_payload = json.loads(outputs.public_json.read_text(encoding="utf-8"))
+    assert "unpublished-concept" not in {
+        concept["id"] for concept in public_payload["concepts"]
+    }
+
+
 def test_module_cli_builds_repository_outputs(tmp_path_factory):
     tmp_path = tmp_path_factory.mktemp("cli")
     project_root = _isolated_project_root(tmp_path)

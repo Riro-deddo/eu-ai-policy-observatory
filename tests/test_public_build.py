@@ -282,6 +282,48 @@ def test_scanner_accepts_valid_downloadable_database(tmp_path: Path):
     assert database.read_bytes() == original_bytes
 
 
+def test_scanner_rejects_downloadable_database_with_non_published_entity_row(
+    tmp_path: Path,
+):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute(
+            "CREATE TABLE documents (id TEXT PRIMARY KEY, publication_status TEXT NOT NULL)"
+        )
+        connection.execute("INSERT INTO documents VALUES ('draft-document', 'draft')")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data, require_database=True)
+
+    assert any(
+        "non-published row in downloadable SQLite database: documents/draft-document"
+        in error
+        for error in errors
+    )
+
+
+def test_scanner_accepts_downloadable_database_with_only_published_entity_rows(
+    tmp_path: Path,
+):
+    site = tmp_path / "site"
+    downloads = site / "downloads"
+    downloads.mkdir(parents=True)
+    database = downloads / "eu-ai-policy-observatory.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute(
+            "CREATE TABLE documents (id TEXT PRIMARY KEY, publication_status TEXT NOT NULL)"
+        )
+        connection.execute("INSERT INTO documents VALUES ('published-document', 'published')")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    assert check_public_build(site, data, require_database=True) == []
+
+
 def test_scanner_rejects_directory_at_downloadable_database_path(tmp_path: Path):
     site = tmp_path / "site"
     database = site / "downloads" / "eu-ai-policy-observatory.sqlite"
