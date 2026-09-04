@@ -6,8 +6,17 @@ import * as policyMap from '../src/lib/policy-map.ts';
 const {
   layoutPolicyMapNodes,
   maxLabelCharacters,
+  policyMapStageLabel,
+  relationshipTypeLabel,
   wrapPolicyMapLabel,
 } = policyMap;
+
+test('policy-map vocabulary labels are readable for expanded stages and relationships', () => {
+  assert.equal(policyMapStageLabel('agenda_setting'), 'Agenda setting');
+  assert.equal(relationshipTypeLabel('version_of'), 'Version of');
+  assert.equal(relationshipTypeLabel('annex_to'), 'Annex to');
+  assert.equal(relationshipTypeLabel('procedural_step_for'), 'Procedural step for');
+});
 
 test('long current policy labels wrap without losing words and grow node height', () => {
   const label = 'Coordinated Plan on Artificial Intelligence';

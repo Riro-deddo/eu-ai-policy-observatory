@@ -149,6 +149,47 @@ test('the final AI Act detail page separates official and research content', asy
   await expect(page.getByText('Verification date')).toBeVisible();
 });
 
+test('version records expose version-aware official metadata without null placeholders', async ({ page }) => {
+  await page.goto('corpus/ai-act-consolidated-2026-07-27/');
+
+  const officialMetadata = page.getByRole('region', { name: 'Official metadata' });
+  for (const value of [
+    'Regulation (EU) 2024/1689',
+    '2026-07-27',
+    'Version',
+    'Consolidated text, 27 July 2026',
+    'Consolidated',
+  ]) {
+    await expect(officialMetadata.getByText(value, { exact: true }).first()).toBeVisible();
+  }
+  await expect(officialMetadata.getByText('Document date', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText('Publication date', { exact: true })).toBeVisible();
+  await expect(page.getByText('null', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('OJ reference', { exact: true })).toHaveCount(0);
+});
+
+test('record relationships expose parent, attachment, version and procedure navigation', async ({ page }) => {
+  await page.goto('corpus/ai-act-impact-assessment-swd-2021-84/');
+  const parent = page.getByRole('region', { name: 'Parent or principal record' });
+  await expect(parent.getByRole('link', { name: 'Artificial Intelligence Act proposal' })).toHaveAttribute(
+    'href',
+    `${expectedBasePath}corpus/ai-act-proposal/`,
+  );
+  await expect(parent.getByText('Official relationship', { exact: true })).toBeVisible();
+  const attachments = page.getByRole('region', { name: 'Attachments' });
+  await expect(attachments.getByRole('link', { name: 'Annexes to the AI Act proposal impact assessment' }))
+    .toHaveAttribute('href', `${expectedBasePath}corpus/ai-act-impact-assessment-annexes-swd-2021-84/`);
+
+  await page.goto('corpus/ai-act-council-third-compromise-part-one-st-12206-2022-init/');
+  const versions = page.getByRole('region', { name: 'Previous and next versions' });
+  await expect(versions.getByRole('link', { name: 'Second Council Presidency compromise' })).toBeVisible();
+  await expect(versions.getByRole('link', { name: 'Third Council compromise, part one' })).toBeVisible();
+
+  await page.goto('corpus/ai-act-proposal/');
+  const procedure = page.getByRole('region', { name: 'Formal procedure' });
+  await expect(procedure.getByText('2021/0106(COD)', { exact: true })).toBeVisible();
+});
+
 test('document records prioritise a readable short title while retaining the official title', async ({ page }) => {
   await page.goto('corpus/artificial-intelligence-for-europe/');
 
@@ -173,22 +214,30 @@ test('document records prioritise a readable short title while retaining the off
   expect(titleSize).toBeLessThanOrEqual(maximumTitleSize);
 });
 
-test('timeline presents every recorded event within the published 2018–2024 boundary', async ({ page }) => {
+test('timeline separates document dates from distinct policy events across the published boundary', async ({ page }) => {
   await page.goto('timeline/');
 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Timeline');
-  await expect(page.getByText('2018–2024')).toBeVisible();
+  await expect(page.getByText('2018–2026')).toBeVisible();
+  for (const document of [
+    'Artificial Intelligence for Europe',
+    'Coordinated Plan on Artificial Intelligence',
+    'Ethics Guidelines for Trustworthy AI',
+    'White Paper on Artificial Intelligence',
+  ]) {
+    await expect(page.getByRole('heading', { level: 3, name: document, exact: true })).toBeVisible();
+  }
   for (const event of [
-    'Publication of Artificial Intelligence for Europe',
-    'Publication of Coordinated Plan on Artificial Intelligence',
-    'Presentation of Ethics Guidelines for Trustworthy AI',
-    'Publication of White Paper on Artificial Intelligence',
     'Commission proposal for the Artificial Intelligence Act',
     'Commission proposal for the AI Liability Directive',
+    'Artificial Intelligence Act signed',
     'Official Journal publication of the Artificial Intelligence Act',
+    'Artificial Intelligence Act enters into force',
+    'AI Act general application date',
   ]) {
     await expect(page.getByText(event)).toBeVisible();
   }
+  await expect(page.getByText('Publication of Artificial Intelligence for Europe', { exact: true })).toHaveCount(0);
 });
 
 test('timeline event-type filtering updates the visible chronology and announces its count', async ({ page }) => {
@@ -197,12 +246,13 @@ test('timeline event-type filtering updates the visible chronology and announces
   const visibleEntries = page.locator('[data-timeline-entry]:not([hidden])');
   await page.getByLabel('Event type').selectOption('proposal');
 
-  await expect(visibleEntries).toHaveCount(2);
+  await expect(visibleEntries).toHaveCount(3);
   await expect(visibleEntries).toContainText([
     'Commission proposal for the Artificial Intelligence Act',
     'Commission proposal for the AI Liability Directive',
+    'Commission proposes Digital Omnibus amendments to the AI Act',
   ]);
-  await expect(page.locator('[data-timeline-count]')).toHaveText('2 timeline entries');
+  await expect(page.locator('[data-timeline-count]')).toHaveText('3 timeline entries');
 });
 
 test('policy map states both relationship conventions and pairs every visual edge with one text entry', async ({ page }) => {
@@ -214,8 +264,9 @@ test('policy map states both relationship conventions and pairs every visual edg
   const visualRelationships = page.locator('[data-policy-map-edge]');
   const relationshipSection = page.getByRole('region', { name: 'Relationship list' });
   const relationshipList = relationshipSection.locator('[data-policy-map-relationship]');
-  await expect(visualRelationships).toHaveCount(3);
-  await expect(relationshipList).toHaveCount(3);
+  const relationshipCount = await visualRelationships.count();
+  expect(relationshipCount).toBeGreaterThan(3);
+  await expect(relationshipList).toHaveCount(relationshipCount);
 
   for (const relationshipId of await visualRelationships.evaluateAll((edges) => (
     edges.map((edge) => edge.getAttribute('data-policy-map-edge'))

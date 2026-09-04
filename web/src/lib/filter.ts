@@ -1,4 +1,4 @@
-import type { DocumentRecord, PublicData } from './types';
+import type { DocumentRecord, PublicData, Relationship } from './types';
 
 export interface CorpusCriteria {
   view?: 'principal' | 'all';
@@ -88,6 +88,97 @@ export interface TimelineEntry {
   eventType: string | null;
 }
 
+export function vocabularyLabel(value: string): string {
+  const readable = value.replaceAll('_', ' ');
+  return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`;
+}
+
+export const documentTypeLabel = vocabularyLabel;
+
+export interface DocumentRelationshipLink {
+  relationship: Relationship;
+  relatedDocument: DocumentRecord;
+  contextLabel: string;
+}
+
+export interface DocumentRelationshipGroups {
+  parent: DocumentRelationshipLink[];
+  attachments: DocumentRelationshipLink[];
+  versions: DocumentRelationshipLink[];
+  other: Relationship[];
+}
+
+export function groupDocumentRelationships(
+  document: DocumentRecord,
+  documents: DocumentRecord[],
+  relationships: Relationship[],
+): DocumentRelationshipGroups {
+  const documentsById = new Map(documents.map((entry) => [entry.id, entry]));
+  const relevantRelationships = relationships.filter((relationship) => (
+    relationship.source_entity_type === 'document' && relationship.source_entity_id === document.id
+    || relationship.target_entity_type === 'document' && relationship.target_entity_id === document.id
+  ));
+  const isCurrentSource = (relationship: Relationship) => (
+    relationship.source_entity_type === 'document' && relationship.source_entity_id === document.id
+  );
+  const relatedDocument = (relationship: Relationship): DocumentRecord | undefined => {
+    if (isCurrentSource(relationship) && relationship.target_entity_type === 'document') {
+      return documentsById.get(relationship.target_entity_id);
+    }
+    if (relationship.target_entity_type === 'document' && relationship.target_entity_id === document.id
+      && relationship.source_entity_type === 'document') {
+      return documentsById.get(relationship.source_entity_id);
+    }
+    return undefined;
+  };
+  const sortLinks = (entries: DocumentRelationshipLink[]) => entries.sort((first, second) => (
+    first.relatedDocument.document_date.localeCompare(second.relatedDocument.document_date, 'en-GB')
+    || first.relatedDocument.short_title.localeCompare(second.relatedDocument.short_title, 'en-GB')
+    || first.relationship.id.localeCompare(second.relationship.id, 'en-GB')
+  ));
+  const parentRelationshipTypes = new Set(['annex_to', 'part_of', 'procedural_step_for', 'version_of']);
+  const parent = sortLinks(relevantRelationships.flatMap((relationship) => {
+    const related = relatedDocument(relationship);
+    return isCurrentSource(relationship) && related !== undefined
+      && parentRelationshipTypes.has(relationship.relationship_type)
+      ? [{ relationship, relatedDocument: related, contextLabel: 'Parent or principal record' }]
+      : [];
+  }));
+  const attachments = sortLinks(relevantRelationships.flatMap((relationship) => {
+    const related = relatedDocument(relationship);
+    return !isCurrentSource(relationship) && related !== undefined && relationship.relationship_type === 'annex_to'
+      ? [{ relationship, relatedDocument: related, contextLabel: 'Attachment' }]
+      : [];
+  }));
+  const versionRelationshipTypes = new Set(['adopted_as', 'precedes', 'replaces', 'revises', 'supersedes']);
+  const versionContextLabel = (relationship: Relationship): string => {
+    const currentIsSource = isCurrentSource(relationship);
+    if (relationship.relationship_type === 'version_of') return 'Related version';
+    if (relationship.relationship_type === 'precedes') return currentIsSource ? 'Next version' : 'Previous version';
+    if (relationship.relationship_type === 'adopted_as') return currentIsSource ? 'Adopted text' : 'Earlier proposal';
+    if (['replaces', 'revises', 'supersedes'].includes(relationship.relationship_type)) {
+      return currentIsSource ? 'Previous version' : 'Next version';
+    }
+    return 'Related version';
+  };
+  const versions = sortLinks(relevantRelationships.flatMap((relationship) => {
+    const related = relatedDocument(relationship);
+    const incomingVersion = !isCurrentSource(relationship) && relationship.relationship_type === 'version_of';
+    return related !== undefined && (incomingVersion || versionRelationshipTypes.has(relationship.relationship_type))
+      ? [{ relationship, relatedDocument: related, contextLabel: versionContextLabel(relationship) }]
+      : [];
+  }));
+  const groupedRelationshipIds = new Set([...parent, ...attachments, ...versions]
+    .map((entry) => entry.relationship.id));
+
+  return {
+    parent,
+    attachments,
+    versions,
+    other: relevantRelationships.filter((relationship) => !groupedRelationshipIds.has(relationship.id)),
+  };
+}
+
 function normalise(value: string): string {
   return value.trim().toLocaleLowerCase('en-GB');
 }
@@ -155,7 +246,7 @@ export function buildTimelineEntries(data: PublicData): TimelineEntry[] {
     .map((document) => ({
       id: document.id,
       kind: 'document',
-      date: document.publication_date,
+      date: document.document_date,
       title: document.short_title,
       href: `corpus/${document.slug}/`,
       institutionIds: document.institutions.map((institution) => institution.id),
@@ -165,6 +256,13 @@ export function buildTimelineEntries(data: PublicData): TimelineEntry[] {
     }));
   const events: TimelineEntry[] = data.events
     .filter((event) => event.publication_status === 'published')
+    .filter((event) => {
+      const document = event.document_id === null ? undefined : documentsById.get(event.document_id);
+      return document === undefined
+        || event.event_type !== 'publication'
+        || event.event_date !== document.document_date
+        || event.event_date !== document.publication_date;
+    })
     .map((event) => {
       const document = event.document_id === null ? undefined : documentsById.get(event.document_id);
 

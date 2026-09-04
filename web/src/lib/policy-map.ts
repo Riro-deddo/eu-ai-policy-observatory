@@ -23,6 +23,14 @@ export const policyMapNodeLabelLineHeight = 18;
 const nodeTopPadding = 20;
 const nodeBottomPadding = 18;
 
+function readableVocabularyLabel(value: string): string {
+  const readable = value.replaceAll('_', ' ');
+  return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`;
+}
+
+export const policyMapStageLabel = readableVocabularyLabel;
+export const relationshipTypeLabel = readableVocabularyLabel;
+
 export interface PolicyMapLayoutInput {
   label: string;
   stage: string;

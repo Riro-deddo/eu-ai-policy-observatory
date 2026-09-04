@@ -7,6 +7,8 @@ import {
   policyMapNodeTypeBaseline,
   policyMapNodeWidth,
   policyMapStageX,
+  policyMapStageLabel,
+  relationshipTypeLabel,
 } from '../lib/policy-map';
 import type { PolicyMapGeometry } from '../lib/policy-map';
 
@@ -36,8 +38,7 @@ const base = import.meta.env.BASE_URL;
 const documents = new Map(data.documents.map((document) => [document.id, document]));
 const policies = new Map(data.policies.map((policy) => [policy.id, policy]));
 const sources = new Map(data.sources.map((source) => [source.id, source]));
-const titleValue = (value: string) => value.replaceAll('_', ' ');
-const stageLabel = titleValue;
+const stageLabel = policyMapStageLabel;
 
 const createNode = (type: string, id: string): MapNode | undefined => {
   if (type === 'document') {
@@ -111,7 +112,7 @@ const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
       <desc id="policy-map-svg-description">A deterministic diagram of the published official and analytical relationships listed immediately below.</desc>
       <g class="policy-map__stages">
         {layout.stages.map((stage, index) => (
-          <text data-policy-map-stage={stage} x={policyMapStageX(index)} y="32" text-anchor="middle">{stageLabel(stage)}</text>
+          <text data-policy-map-stage={stage} x={policyMapStageX(index)} y="32" text-anchor="middle">{policyMapStageLabel(stage)}</text>
         ))}
       </g>
       <g class="policy-map__edges">
@@ -148,7 +149,7 @@ const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
       <ol data-policy-map-relationships>
         {mapRelationships.map(({ relationship, source, target, evidence }) => (
           <li data-policy-map-relationship={relationship.id}>
-            <p><a href={source.href}>{source.label}</a> · {titleValue(relationship.relationship_type)} · <a href={target.href}>{target.label}</a></p>
+            <p><a href={source.href}>{source.label}</a> · {relationshipTypeLabel(relationship.relationship_type)} · <a href={target.href}>{target.label}</a></p>
             <p>{relationship.basis === 'official' ? 'Official relationship' : 'Analytical relationship'} · Basis: {relationship.basis}</p>
             {relationship.rationale === null ? <p>No rationale has been published.</p> : <p>Rationale: {relationship.rationale}</p>}
             {evidence === undefined ? <p>No evidence link has been published.</p> : <p><a href={evidence.url}>Evidence source: {evidence.publisher}</a></p>}

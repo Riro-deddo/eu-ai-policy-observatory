@@ -17,6 +17,8 @@ test('Timeline retains a complete no-JavaScript chronology and escapes embedded 
   assert.match(timeline, /JSON\.stringify\(entries\)\.replaceAll\('<', '\\\\u003c'\)/);
   assert.match(timeline, /data-timeline-entry/);
   assert.match(timelinePage, /<Timeline data=\{data\} \/>/);
+  assert.match(timeline, /documentTypeLabel\(entry\.documentType/);
+  assert.match(timeline, /entry\.kind === 'document' \? 'Document date' : 'Event date'/);
 });
 
 test('Policy Map has an accessible SVG, explicit relationship legend and text alternative', () => {
@@ -28,6 +30,8 @@ test('Policy Map has an accessible SVG, explicit relationship legend and text al
   assert.match(policyMap, /data-policy-map-relationship/);
   assert.match(policyMap, /<ol[^>]*data-policy-map-relationships/);
   assert.match(policyMapPage, /<PolicyMap data=\{data\} \/>/);
+  assert.match(policyMap, /relationshipTypeLabel\(relationship\.relationship_type\)/);
+  assert.match(policyMap, /policyMapStageLabel\(stage\)/);
 });
 
 test('policy routes are generated from published data and distinguish official and analytical content', () => {

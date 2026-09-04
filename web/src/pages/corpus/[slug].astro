@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { loadPublicData } from '../../lib/data';
-import type { DocumentRecord, PublicData } from '../../lib/types';
+import { documentTypeLabel, groupDocumentRelationships, vocabularyLabel } from '../../lib/filter';
+import { relationshipTypeLabel } from '../../lib/policy-map';
+import type { DocumentRecord, PublicData, Relationship } from '../../lib/types';
 
 interface Props {
   data: PublicData;
@@ -18,10 +20,7 @@ export function getStaticPaths() {
 
 const { data, document }: Props = Astro.props;
 const base = import.meta.env.BASE_URL;
-const relationships = data.relationships.filter((relationship) => (
-  relationship.source_entity_type === 'document' && relationship.source_entity_id === document.id
-  || relationship.target_entity_type === 'document' && relationship.target_entity_id === document.id
-));
+const documentsById = new Map(data.documents.map((entry) => [entry.id, entry]));
 
 const labels = new Map<string, string>();
 for (const policy of data.policies) labels.set(`policy:${policy.id}`, policy.short_name);
@@ -34,7 +33,23 @@ for (const source of data.sources) labels.set(`source:${source.id}`, source.publ
 const readableLabel = (entityType: string, entityId: string) => labels.get(`${entityType}:${entityId}`) ?? entityId;
 const sourceById = new Map(data.sources.map((source) => [source.id, source]));
 const assessment = document.corpus_assessment;
-const titleValue = (value: string) => value.replaceAll('_', ' ');
+const relationshipBasisLabel = (relationship: Relationship) => (
+  relationship.basis === 'analytical' ? 'Analytical relationship' : 'Official relationship'
+);
+const entityHref = (entityType: string, entityId: string): string | undefined => {
+  if (entityType === 'document') {
+    const relatedDocument = documentsById.get(entityId);
+    return relatedDocument === undefined ? undefined : `${base}corpus/${relatedDocument.slug}/`;
+  }
+  if (entityType === 'policy') return `${base}policies/${entityId}/`;
+  return undefined;
+};
+const relationshipGroups = groupDocumentRelationships(document, data.documents, data.relationships);
+const parentRelationships = relationshipGroups.parent;
+const attachmentRelationships = relationshipGroups.attachments;
+const versionRelationships = relationshipGroups.versions;
+const otherRelationships = relationshipGroups.other;
+const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_reference].some((value) => value !== null);
 ---
 
 <BaseLayout
@@ -50,9 +65,14 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
       <h2 id="official-metadata">Official metadata</h2>
       <dl>
         <dt>Official title</dt><dd>{document.official_title}</dd>
-        <dt>Document type</dt><dd>{titleValue(document.document_type)}</dd>
+        {document.official_reference !== null && <><dt>Official reference</dt><dd>{document.official_reference}</dd></>}
+        <dt>Document type</dt><dd>{documentTypeLabel(document.document_type)}</dd>
+        <dt>Document date</dt><dd>{document.document_date}</dd>
         <dt>Publication date</dt><dd>{document.publication_date}</dd>
-        <dt>Legal status</dt><dd>{titleValue(document.legal_status)}</dd>
+        <dt>Record level</dt><dd>{vocabularyLabel(document.record_level)}</dd>
+        {document.version_label !== null && <><dt>Version label</dt><dd>{document.version_label}</dd></>}
+        <dt>Version status</dt><dd>{vocabularyLabel(document.version_status)}</dd>
+        <dt>Legal status</dt><dd>{vocabularyLabel(document.legal_status)}</dd>
         <dt>Language</dt><dd>{document.language}</dd>
         {document.official_summary !== null && <><dt>Official summary</dt><dd>{document.official_summary}</dd></>}
       </dl>
@@ -69,10 +89,13 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
 
     <section aria-labelledby="official-sources-and-identifiers">
       <h2 id="official-sources-and-identifiers">Official sources and identifiers</h2>
-      <dl>
-        <dt>CELEX</dt><dd>{document.celex ?? 'Not assigned'}</dd>
-        <dt>ELI</dt><dd>{document.eli ?? 'Not assigned'}</dd>
-      </dl>
+      {hasOfficialIdentifiers && (
+        <dl>
+          {document.celex !== null && <><dt>CELEX</dt><dd>{document.celex}</dd></>}
+          {document.eli !== null && <><dt>ELI</dt><dd>{document.eli}</dd></>}
+          {document.oj_reference !== null && <><dt>OJ reference</dt><dd>{document.oj_reference}</dd></>}
+        </dl>
+      )}
       <ul>
         {document.sources.map((source) => (
           <li><a href={source.url}>Source URL: {source.publisher}</a></li>
@@ -80,18 +103,68 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
       </ul>
     </section>
 
+    {document.procedure_references.length > 0 && (
+      <section aria-labelledby="formal-procedure">
+        <h2 id="formal-procedure">Formal procedure</h2>
+        <p>Official procedure reference{document.procedure_references.length === 1 ? '' : 's'}:</p>
+        <ul>{document.procedure_references.map((reference) => <li>{reference}</li>)}</ul>
+      </section>
+    )}
+
     <section aria-labelledby="policy-placement-and-concepts">
       <h2 id="policy-placement-and-concepts">Policy placement and concepts</h2>
       <p><strong>Research assessment:</strong> Policy placement and concepts are researcher classifications.</p>
       <dl>
-        <dt>Policy stage</dt><dd>{assessment?.policy_stage ?? 'Not assigned'}</dd>
-        <dt>Corpus tier</dt><dd>{assessment?.corpus_tier ?? 'Not assigned'}</dd>
+        <dt>Policy stage</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.policy_stage)}</dd>
+        <dt>Corpus tier</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.corpus_tier)}</dd>
       </dl>
       <ul>
         {document.policies.map((policy) => <li>{policy.short_name}</li>)}
         {document.concepts.map((concept) => <li>{concept.name}</li>)}
       </ul>
     </section>
+
+    {parentRelationships.length > 0 && (
+      <section aria-labelledby="parent-or-principal-record">
+        <h2 id="parent-or-principal-record">Parent or principal record</h2>
+        <ul>
+          {parentRelationships.map(({ relationship, relatedDocument, contextLabel }) => (
+            <li>
+              <p>{contextLabel}: <a href={`${base}corpus/${relatedDocument.slug}/`}>{relatedDocument.short_title}</a></p>
+              <p>{relationshipTypeLabel(relationship.relationship_type)} · {relationshipBasisLabel(relationship)} · {vocabularyLabel(relationship.verification_status)}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {attachmentRelationships.length > 0 && (
+      <section aria-labelledby="attachments">
+        <h2 id="attachments">Attachments</h2>
+        <ul>
+          {attachmentRelationships.map(({ relationship, relatedDocument, contextLabel }) => (
+            <li>
+              <p>{contextLabel}: <a href={`${base}corpus/${relatedDocument.slug}/`}>{relatedDocument.short_title}</a></p>
+              <p>{relationshipTypeLabel(relationship.relationship_type)} · {relationshipBasisLabel(relationship)} · {vocabularyLabel(relationship.verification_status)}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {versionRelationships.length > 0 && (
+      <section aria-labelledby="previous-and-next-versions">
+        <h2 id="previous-and-next-versions">Previous and next versions</h2>
+        <ul>
+          {versionRelationships.map(({ relationship, relatedDocument, contextLabel }) => (
+            <li>
+              <p>{contextLabel}: <a href={`${base}corpus/${relatedDocument.slug}/`}>{relatedDocument.short_title}</a></p>
+              <p>{relationshipTypeLabel(relationship.relationship_type)} · {relationshipBasisLabel(relationship)} · {vocabularyLabel(relationship.verification_status)}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <section aria-labelledby="research-assessment">
       <h2 id="research-assessment">Research assessment</h2>
@@ -108,16 +181,26 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
 
     <section aria-labelledby="relationships">
       <h2 id="relationships">Relationships</h2>
-      {relationships.length === 0 ? <p>No published relationships touch this record.</p> : (
+      {otherRelationships.length === 0 ? <p>No additional published relationships touch this record.</p> : (
         <ul>
-          {relationships.map((relationship) => {
+          {otherRelationships.map((relationship) => {
             const evidence = relationship.evidence_source_id === null
               ? undefined
               : sourceById.get(relationship.evidence_source_id);
+            const sourceHref = entityHref(relationship.source_entity_type, relationship.source_entity_id);
+            const targetHref = entityHref(relationship.target_entity_type, relationship.target_entity_id);
             return (
               <li>
-                <p>{readableLabel(relationship.source_entity_type, relationship.source_entity_id)} · {titleValue(relationship.relationship_type)} · {readableLabel(relationship.target_entity_type, relationship.target_entity_id)}</p>
-                <p>{relationship.basis === 'analytical' ? 'Research assessment' : 'Official relationship'} · {relationship.verification_status}</p>
+                <p>
+                  {sourceHref === undefined
+                    ? readableLabel(relationship.source_entity_type, relationship.source_entity_id)
+                    : <a href={sourceHref}>{readableLabel(relationship.source_entity_type, relationship.source_entity_id)}</a>}
+                  {' · '}{relationshipTypeLabel(relationship.relationship_type)}{' · '}
+                  {targetHref === undefined
+                    ? readableLabel(relationship.target_entity_type, relationship.target_entity_id)
+                    : <a href={targetHref}>{readableLabel(relationship.target_entity_type, relationship.target_entity_id)}</a>}
+                </p>
+                <p>{relationshipBasisLabel(relationship)} · {vocabularyLabel(relationship.verification_status)}</p>
                 {relationship.rationale !== null && <p>{relationship.basis === 'analytical' ? 'Research assessment rationale: ' : 'Official rationale: '}{relationship.rationale}</p>}
                 {evidence !== undefined && <p><a href={evidence.url}>Evidence source: {evidence.publisher}</a></p>}
               </li>
