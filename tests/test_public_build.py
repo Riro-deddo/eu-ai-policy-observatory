@@ -237,6 +237,19 @@ def test_scanner_rejects_common_github_token_prefixes(
     assert any("credential or token" in error and filename in error for error in errors)
 
 
+def test_scanner_does_not_treat_high_risk_hyphenation_as_a_token(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text(
+        "Draft high-risk-classification guidelines",
+        encoding="utf-8",
+    )
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    assert check_public_build(site, data) == []
+
+
 def test_scanner_reports_every_non_published_record_without_rejecting_methodology_prose(
     tmp_path: Path,
 ):

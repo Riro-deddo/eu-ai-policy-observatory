@@ -18,7 +18,9 @@ _WINDOWS_USER_PATH = re.compile(
 )
 _UNIX_USER_PATH = re.compile(r"\\?/(?:Users|home)\\?/", re.IGNORECASE)
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
-_TOKEN_PREFIX = re.compile(r"(?:gh[oprsu]_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)")
+_TOKEN_PREFIX = re.compile(
+    r"(?<![A-Za-z0-9])(?:gh[oprsu]_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)"
+)
 _PRIVATE_KEY_HEADER = re.compile(
     r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----", re.IGNORECASE
 )
