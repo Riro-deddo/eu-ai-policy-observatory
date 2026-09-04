@@ -121,7 +121,11 @@ test('the final AI Act detail page separates official and research content', asy
   ]) {
     await expect(page.getByRole('heading', { name: section })).toBeVisible();
   }
-  await expect(page.getByText('32024R1689')).toBeVisible();
+  await expect(
+    page
+      .getByRole('region', { name: 'Official sources and identifiers' })
+      .getByText('32024R1689', { exact: true }),
+  ).toBeVisible();
   await expect(page.getByRole('link', { name: /Source URL:/ })).toBeVisible();
   await expect(page.getByText('Verification date')).toBeVisible();
 });
@@ -165,14 +169,17 @@ test('policy map states both relationship conventions and pairs every visual edg
   await expect(legend.getByText('Official relationship', { exact: true })).toBeVisible();
   await expect(legend.getByText('Analytical relationship', { exact: true })).toBeVisible();
   const visualRelationships = page.locator('[data-policy-map-edge]');
-  const relationshipList = page.locator('[data-policy-map-relationship]');
+  const relationshipSection = page.getByRole('region', { name: 'Relationship list' });
+  const relationshipList = relationshipSection.locator('[data-policy-map-relationship]');
   await expect(visualRelationships).toHaveCount(3);
   await expect(relationshipList).toHaveCount(3);
 
   for (const relationshipId of await visualRelationships.evaluateAll((edges) => (
     edges.map((edge) => edge.getAttribute('data-policy-map-edge'))
   ))) {
-    await expect(relationshipList.locator(`[data-policy-map-relationship="${relationshipId}"]`)).toHaveCount(1);
+    await expect(
+      relationshipSection.locator(`[data-policy-map-relationship="${relationshipId}"]`),
+    ).toHaveCount(1);
   }
 });
 
