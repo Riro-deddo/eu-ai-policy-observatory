@@ -1,0 +1,16 @@
+{
+  "id": "cor-ai-act-opinion-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "cor-opinion-ai-act-2021",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-act-proposal",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "EUR-Lex links the revised Committee of the Regions opinion to procedure 2021/0106(COD).",
+  "evidence_source_id": "cor-ai-act-opinion-eur-lex",
+  "verification_status": "verified"
+}

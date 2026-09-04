@@ -116,9 +116,9 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52019DC0168",
-      "decision": "pending",
-      "decision_reason": "The record is in scope, but its full metadata and relationship evidence remain to be verified in the 2018–2021 pass.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies COM(2019) 168 final, CELEX 52019DC0168, its official English title and document date.",
+      "document_id": "building-trust-human-centric-ai",
       "merged_into_document_id": null
     },
     {
@@ -131,9 +131,9 @@
       "record_level": "supporting",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment",
-      "decision": "pending",
-      "decision_reason": "The assessment list is directly relevant to operationalising trustworthiness; the downloadable English version still requires file-level verification.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The Commission library page verifies the final AI HLEG Assessment List and its publication on 17 July 2020.",
+      "document_id": "altai-assessment-list",
       "merged_into_document_id": null
     },
     {
@@ -144,11 +144,11 @@
       "year": 2021,
       "issuing_institution": "European Commission",
       "record_level": "principal",
-      "version_label": "2021 review",
+      "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0205",
-      "decision": "pending",
-      "decision_reason": "The 2021 review is in scope; the communication and attached coordinated-plan file structure must be resolved before publication.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies COM(2021) 205 final as the covering communication; its separately downloadable Coordinated Plan annex is inventoried independently.",
+      "document_id": "coordinated-plan-2021-review",
       "merged_into_document_id": null
     },
     {
@@ -158,12 +158,12 @@
       "official_title": "Impact Assessment accompanying the Proposal for a Regulation laying down harmonised rules on artificial intelligence",
       "year": 2021,
       "issuing_institution": "European Commission",
-      "record_level": "attachment",
+      "record_level": "supporting",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021SC0084",
-      "decision": "pending",
-      "decision_reason": "The supporting impact assessment is within scope; its component parts and attachment relationships require verification.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies SWD(2021) 84 final and CELEX 52021SC0084; the separately transmitted annexes are inventoried independently.",
+      "document_id": "ai-act-impact-assessment-swd-2021-84",
       "merged_into_document_id": null
     },
     {
@@ -174,41 +174,41 @@
       "year": 2021,
       "issuing_institution": "European Commission",
       "record_level": "attachment",
-      "version_label": "Final",
+      "version_label": "Final executive summary",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021SC0085",
-      "decision": "pending",
-      "decision_reason": "The executive summary is a separately citable supporting file; metadata and attachment relationships require verification.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies SWD(2021) 85 final, CELEX 52021SC0085 and its status as the executive summary accompanying the proposal.",
+      "document_id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
       "merged_into_document_id": null
     },
     {
       "id": "eesc-opinion-ai-act-2021",
       "source_ids": ["eur-lex-procedure-2021-0106", "eesc-opinion-register"],
       "official_reference": "EESC 2021/02482",
-      "official_title": "Opinion of the European Economic and Social Committee on the proposal for a Regulation laying down harmonised rules on artificial intelligence",
+      "official_title": "Opinion of the European Economic and Social Committee on ‘Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain union legislative acts’ (COM(2021) 206 final — 2021/106 (COD))",
       "year": 2021,
       "issuing_institution": "European Economic and Social Committee",
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AE2482",
-      "decision": "pending",
-      "decision_reason": "The formal opinion is linked to the legislative procedure; its register metadata remains to be reconciled with EUR-Lex.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex and the EESC register verify EESC 2021/02482, CELEX 52021AE2482 and OJ reference 2021/C 517/09.",
+      "document_id": "eesc-opinion-ai-act-2021",
       "merged_into_document_id": null
     },
     {
       "id": "cor-opinion-ai-act-2021",
       "source_ids": ["eur-lex-procedure-2021-0106", "cor-opinion-register"],
-      "official_reference": "CoR 2021/02682",
-      "official_title": "European approach to artificial intelligence – Artificial Intelligence Act",
+      "official_reference": "COR 2021/02682",
+      "official_title": "Opinion of the European Committee of the Regions — European approach to artificial intelligence — Artificial Intelligence Act (revised opinion)",
       "year": 2021,
       "issuing_institution": "European Committee of the Regions",
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AR2682",
-      "decision": "pending",
-      "decision_reason": "The formal regional opinion is linked to the legislative procedure; its register metadata remains to be verified.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies COR 2021/02682, CELEX 52021AR2682, its vote date and later Official Journal publication.",
+      "document_id": "cor-opinion-ai-act-2021",
       "merged_into_document_id": null
     },
     {
@@ -221,9 +221,9 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AB0040",
-      "decision": "pending",
-      "decision_reason": "The formal ECB opinion is part of the procedure; source and publication metadata require final reconciliation.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies CON/2021/40, CELEX 52021AB0040, its adoption date and OJ reference 2022/C 115/05.",
+      "document_id": "ecb-opinion-con-2021-40",
       "merged_into_document_id": null
     },
     {
@@ -236,9 +236,9 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://www.edpb.europa.eu/documents/legislative-opinion/edpb-edps-joint-opinion-52021-on-the-proposal-for-a-regulation-of-the_en",
-      "decision": "pending",
-      "decision_reason": "The joint legislative opinion is directly relevant; its canonical source and relationship evidence require final verification.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "The official EDPB and EDPS records and English joint PDF verify Joint Opinion 5/2021 and its adoption on 18 June 2021.",
+      "document_id": "edpb-edps-joint-opinion-5-2021",
       "merged_into_document_id": null
     },
     {
@@ -703,6 +703,288 @@
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/news/general-purpose-ai-code-practice-now-available",
       "decision": "excluded",
       "decision_reason": "This is an official press release retained as discovery evidence, while the underlying Code files are inventoried separately.",
+      "document_id": null,
+      "merged_into_document_id": null
+    },
+    {
+      "id": "coordinated-plan-2018-annex",
+      "source_ids": [
+        "eur-lex-commission-communications"
+      ],
+      "official_reference": "COM(2018) 795 final",
+      "official_title": "ANNEX to the COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Coordinated Plan on Artificial Intelligence: Coordinated Plan on the Development and Use of Artificial Intelligence Made in Europe – 2018",
+      "year": 2018,
+      "issuing_institution": "European Commission",
+      "record_level": "attachment",
+      "version_label": "Annex — 2018 Coordinated Plan",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018DC0795",
+      "decision": "included",
+      "decision_reason": "The English EUR-Lex text identifies the substantive coordinated plan as an annex to COM(2018) 795 final.",
+      "document_id": "coordinated-plan-2018-annex",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "report-ai-safety-liability-2020",
+      "source_ids": [
+        "eur-lex-commission-communications"
+      ],
+      "official_reference": "COM(2020) 64 final",
+      "official_title": "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Report on the safety and liability implications of Artificial Intelligence, the Internet of Things and robotics",
+      "year": 2020,
+      "issuing_institution": "European Commission",
+      "record_level": "principal",
+      "version_label": "Final",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0064",
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies COM(2020) 64 final, CELEX 52020DC0064, its official English title and document date.",
+      "document_id": "report-ai-safety-liability-2020",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "coordinated-plan-2021-annex",
+      "source_ids": [
+        "eur-lex-commission-communications"
+      ],
+      "official_reference": "COM(2021) 205 final",
+      "official_title": "ANNEX to the COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Fostering a European approach to Artificial Intelligence: 2021 review of the Coordinated Plan on Artificial Intelligence",
+      "year": 2021,
+      "issuing_institution": "European Commission",
+      "record_level": "attachment",
+      "version_label": "Annex — 2021 Coordinated Plan review",
+      "official_source_url": "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:01ff45fa-a375-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+      "decision": "included",
+      "decision_reason": "The official English EUR-Lex PDF is a separately citable annex containing the substantive 2021 Coordinated Plan review.",
+      "document_id": "coordinated-plan-2021-annex",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-proposal-annexes",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106"
+      ],
+      "official_reference": "COM(2021) 206 final",
+      "official_title": "ANNEXES 1 to 9 to the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "European Commission",
+      "record_level": "attachment",
+      "version_label": "Annexes 1 to 9",
+      "official_source_url": "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+      "decision": "included",
+      "decision_reason": "The official English EUR-Lex PDF is a separately citable attachment to COM(2021) 206 final.",
+      "document_id": "ai-act-proposal-annexes",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "eur-lex-commission-staff-documents",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "SWD(2021) 84 final",
+      "official_title": "COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT ANNEXES Accompanying the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "European Commission",
+      "record_level": "attachment",
+      "version_label": "Impact assessment annexes",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_2",
+      "decision": "included",
+      "decision_reason": "Council record ST 8115/21 ADD 2 verifies a separately citable English annex file to SWD(2021) 84 final.",
+      "document_id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "eur-lex-commission-staff-documents"
+      ],
+      "official_reference": "SEC(2021) 167 final",
+      "official_title": "REGULATORY SCRUTINY BOARD OPINION Proposal for a Regulation of the European Parliament and of the Council laying down harmonized rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "year": 2021,
+      "issuing_institution": "European Commission",
+      "record_level": "supporting",
+      "version_label": "Second opinion",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=PI_COM:SEC(2021)167",
+      "decision": "included",
+      "decision_reason": "The official Commission PDF verifies SEC(2021) 167, its title and date; the procedure record lists it in the proposal package.",
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "eesc-opinion-coordinated-plan-2021",
+      "source_ids": [
+        "eesc-opinion-register",
+        "eur-lex-commission-communications"
+      ],
+      "official_reference": "EESC 2021/02456",
+      "official_title": "Opinion of the European Economic and Social Committee on Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions — Fostering a European approach to Artificial Intelligence (COM(2021) 205 final)",
+      "year": 2021,
+      "issuing_institution": "European Economic and Social Committee",
+      "record_level": "supporting",
+      "version_label": "Adopted opinion",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AE2456",
+      "decision": "included",
+      "decision_reason": "EUR-Lex verifies EESC 2021/02456, CELEX 52021AE2456 and OJ reference 2021/C 517/08.",
+      "document_id": "eesc-opinion-coordinated-plan-2021",
+      "merged_into_document_id": null
+    },
+    {
+      "id": "altai-official-pdf-manifestation",
+      "source_ids": [
+        "commission-ai-hleg-publications"
+      ],
+      "official_reference": null,
+      "official_title": "Assessment List for Trustworthy Artificial Intelligence (ALTAI) for self-assessment",
+      "year": 2020,
+      "issuing_institution": "High-Level Expert Group on Artificial Intelligence",
+      "record_level": "supporting",
+      "version_label": "Official PDF manifestation",
+      "official_source_url": "https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342",
+      "decision": "merged",
+      "decision_reason": "The linked English PDF is a manifestation of the same final ALTAI record, not a distinct policy version.",
+      "document_id": null,
+      "merged_into_document_id": "altai-assessment-list"
+    },
+    {
+      "id": "ai-act-proposal-council-transmission-st-8115-2021-init",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "ST 8115/21",
+      "official_title": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "principal",
+      "version_label": "Council transmission",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_INIT",
+      "decision": "merged",
+      "decision_reason": "The Council cover note transmits the same Commission proposal text represented by the canonical COM(2021) 206 record.",
+      "document_id": null,
+      "merged_into_document_id": "ai-act-proposal"
+    },
+    {
+      "id": "ai-act-proposal-annexes-council-transmission-st-8115-2021-add-1",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "ST 8115/21 ADD 1",
+      "official_title": "ANNEXES to the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "attachment",
+      "version_label": "Council transmission",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_1",
+      "decision": "merged",
+      "decision_reason": "The Council cover note transmits the same Commission proposal annexes represented by the canonical attachment record.",
+      "document_id": null,
+      "merged_into_document_id": "ai-act-proposal-annexes"
+    },
+    {
+      "id": "ai-act-impact-assessment-annexes-council-transmission-st-8115-2021-add-2",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "ST 8115/21 ADD 2",
+      "official_title": "COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT ANNEXES Accompanying the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "attachment",
+      "version_label": "Council transmission",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_2",
+      "decision": "merged",
+      "decision_reason": "The Council cover note is a second manifestation of the canonical SWD(2021) 84 annex record.",
+      "document_id": null,
+      "merged_into_document_id": "ai-act-impact-assessment-annexes-swd-2021-84"
+    },
+    {
+      "id": "ai-act-impact-assessment-council-transmission-st-8115-2021-add-3",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "ST 8115/21 ADD 3",
+      "official_title": "COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT Accompanying the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "supporting",
+      "version_label": "Council transmission",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_3",
+      "decision": "merged",
+      "decision_reason": "The Council cover note transmits SWD(2021) 84 final, already represented by its canonical CELEX record.",
+      "document_id": null,
+      "merged_into_document_id": "ai-act-impact-assessment-swd-2021-84"
+    },
+    {
+      "id": "ai-act-impact-summary-council-transmission-st-8115-2021-add-4",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "ST 8115/21 ADD 4",
+      "official_title": "COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
+      "year": 2021,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "attachment",
+      "version_label": "Council transmission",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_4",
+      "decision": "merged",
+      "decision_reason": "The Council cover note transmits SWD(2021) 85 final, already represented by its canonical CELEX record.",
+      "document_id": null,
+      "merged_into_document_id": "ai-act-impact-assessment-executive-summary-swd-2021-85"
+    },
+    {
+      "id": "ai-act-rsb-opinion-council-transmission-st-8115-2021-add-5",
+      "source_ids": [
+        "eur-lex-procedure-2021-0106",
+        "council-register-2021-0106"
+      ],
+      "official_reference": "ST 8115/21 ADD 5",
+      "official_title": "REGULATORY SCRUTINY BOARD OPINION Proposal for a Regulation of the European Parliament and of the Council laying down harmonized rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "year": 2021,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "supporting",
+      "version_label": "Council transmission",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_5",
+      "decision": "merged",
+      "decision_reason": "The Council cover note transmits SEC(2021) 167, already represented by the canonical official Commission PDF record.",
+      "document_id": null,
+      "merged_into_document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167"
+    },
+    {
+      "id": "white-paper-ai-questions-and-answers-2020",
+      "source_ids": [
+        "commission-white-paper-consultation-2020"
+      ],
+      "official_reference": null,
+      "official_title": "Shaping Europe’s digital future – Questions and Answers",
+      "year": 2020,
+      "issuing_institution": "European Commission",
+      "record_level": "supporting",
+      "version_label": null,
+      "official_source_url": "https://digital-strategy.ec.europa.eu/en/news/shaping-europes-digital-future-questions-and-answers",
+      "decision": "excluded",
+      "decision_reason": "This is an official explanatory question-and-answer page, not an independently citable policy text.",
+      "document_id": null,
+      "merged_into_document_id": null
+    },
+    {
+      "id": "commission-ai-package-press-release-2021",
+      "source_ids": [
+        "commission-ai-package-press-2021"
+      ],
+      "official_reference": "IP/21/1682",
+      "official_title": "Europe fit for the Digital Age: Commission proposes new rules and actions for excellence and trust in Artificial Intelligence",
+      "year": 2021,
+      "issuing_institution": "European Commission",
+      "record_level": "supporting",
+      "version_label": null,
+      "official_source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1682",
+      "decision": "excluded",
+      "decision_reason": "This is an official press release retained as discovery and event evidence, not an independently citable policy instrument.",
       "document_id": null,
       "merged_into_document_id": null
     }

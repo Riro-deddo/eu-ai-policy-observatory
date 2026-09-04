@@ -1,0 +1,16 @@
+{
+  "id": "altai-based-on-ethics-guidelines",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "altai-assessment-list",
+  "target_entity_type": "document",
+  "target_entity_id": "ethics-guidelines-for-trustworthy-ai",
+  "relationship_type": "based_on",
+  "basis": "official",
+  "rationale": "The Commission page states that ALTAI translates the Ethics Guidelines' key requirements into a self-assessment checklist.",
+  "evidence_source_id": "altai-commission",
+  "verification_status": "verified"
+}

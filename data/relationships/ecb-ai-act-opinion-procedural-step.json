@@ -1,0 +1,16 @@
+{
+  "id": "ecb-ai-act-opinion-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ecb-opinion-con-2021-40",
+  "target_entity_type": "document",
+  "target_entity_id": "ai-act-proposal",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "EUR-Lex links CON/2021/40 to procedure 2021/0106(COD) and identifies the proposal addressed.",
+  "evidence_source_id": "ecb-ai-act-opinion-eur-lex",
+  "verification_status": "verified"
+}

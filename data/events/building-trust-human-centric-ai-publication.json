@@ -1,0 +1,14 @@
+{
+  "id": "building-trust-human-centric-ai-publication",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "publication",
+  "event_date": "2019-04-08",
+  "title": "Publication of Building Trust in Human-Centric Artificial Intelligence",
+  "description": "EUR-Lex records COM(2019) 168 final as a Commission communication dated 8 April 2019.",
+  "policy_id": "coordinated-european-ai-strategy",
+  "document_id": "building-trust-human-centric-ai",
+  "source_id": "building-trust-human-centric-ai-eur-lex"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "eesc-ai-opinions-adoption",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "adoption",
+  "event_date": "2021-09-22",
+  "title": "Adoption of the EESC opinions on the 2021 AI package",
+  "description": "EUR-Lex records both EESC 2021/02456 and EESC 2021/02482 as adopted at plenary on 22 September 2021.",
+  "policy_id": "artificial-intelligence-act-legislative-process",
+  "document_id": "eesc-opinion-ai-act-2021",
+  "source_id": "eesc-ai-act-opinion-eur-lex"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "altai-assessment-list-publication",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "publication",
+  "event_date": "2020-07-17",
+  "title": "Publication of the final Assessment List for Trustworthy AI",
+  "description": "The Commission records the AI HLEG's final ALTAI as published on 17 July 2020.",
+  "policy_id": "coordinated-european-ai-strategy",
+  "document_id": "altai-assessment-list",
+  "source_id": "altai-commission"
+}

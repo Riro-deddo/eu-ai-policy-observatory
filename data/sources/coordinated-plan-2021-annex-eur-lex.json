@@ -1,0 +1,13 @@
+{
+  "id": "coordinated-plan-2021-annex-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:01ff45fa-a375-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+  "publisher": "European Commission / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "Official English EUR-Lex PDF is the separately downloadable annex to COM(2021) 205 final, titled 2021 review of the Coordinated Plan on Artificial Intelligence."
+}

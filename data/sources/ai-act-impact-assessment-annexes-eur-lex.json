@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-impact-assessment-annexes-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_2",
+  "publisher": "European Commission / Council of the European Union / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "The official English Council transmission record ST 8115/21 ADD 2 identifies the separately citable annexes to SWD(2021) 84 final."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ecb-ai-act-opinion-adoption",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "adoption",
+  "event_date": "2021-12-29",
+  "title": "Adoption of ECB Opinion CON/2021/40",
+  "description": "EUR-Lex records the ECB opinion as adopted on 29 December 2021.",
+  "policy_id": "artificial-intelligence-act-legislative-process",
+  "document_id": "ecb-opinion-con-2021-40",
+  "source_id": "ecb-ai-act-opinion-eur-lex"
+}

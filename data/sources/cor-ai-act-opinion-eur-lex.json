@@ -1,0 +1,13 @@
+{
+  "id": "cor-ai-act-opinion-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AR2682",
+  "publisher": "European Committee of the Regions / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-04T00:00:00Z",
+  "verification_note": "EUR-Lex confirms CELEX 52021AR2682, COR 2021/02682, vote on 2 December 2021 and publication in OJ C 97 on 28 February 2022."
+}

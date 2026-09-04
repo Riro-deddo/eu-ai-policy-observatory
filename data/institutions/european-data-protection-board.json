@@ -1,0 +1,11 @@
+{
+  "id": "european-data-protection-board",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "official_name": "European Data Protection Board",
+  "short_name": "EDPB",
+  "institution_type": "Independent European data protection body",
+  "official_url": "https://www.edpb.europa.eu/"
+}

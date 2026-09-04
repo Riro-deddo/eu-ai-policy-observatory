@@ -1,0 +1,14 @@
+{
+  "id": "ai-act-rsb-opinion-adoption",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "adoption",
+  "event_date": "2021-03-22",
+  "title": "Regulatory Scrutiny Board opinion on the AI Act impact assessment",
+  "description": "The official SEC(2021) 167 PDF is dated 22 March 2021.",
+  "policy_id": "artificial-intelligence-act-legislative-process",
+  "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+  "source_id": "ai-act-rsb-opinion-eur-lex"
+}

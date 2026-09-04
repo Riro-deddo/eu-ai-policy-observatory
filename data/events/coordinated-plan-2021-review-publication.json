@@ -1,0 +1,14 @@
+{
+  "id": "coordinated-plan-2021-review-publication",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "publication",
+  "event_date": "2021-04-21",
+  "title": "Publication of the 2021 European AI policy package",
+  "description": "EUR-Lex records COM(2021) 205 final and its revised Coordinated Plan on 21 April 2021.",
+  "policy_id": "coordinated-european-ai-strategy",
+  "document_id": "coordinated-plan-2021-review",
+  "source_id": "coordinated-plan-review-eur-lex"
+}

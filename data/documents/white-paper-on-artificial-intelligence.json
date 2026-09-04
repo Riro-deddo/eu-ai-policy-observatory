@@ -22,7 +22,7 @@
   "language": "en",
   "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
-  "policy_ids": ["european-ai-policy-pathway"],
+  "policy_ids": ["european-ai-policy-pathway", "coordinated-european-ai-strategy", "artificial-intelligence-act-legislative-process"],
   "concept_ids": ["trustworthiness", "risk", "compliance"],
   "source_ids": ["white-paper-eur-lex"],
   "corpus_assessment": {"corpus_tier": "core", "policy_stage": "consultation", "inclusion_rationale": "Core consultation document connecting excellence, trust and a future regulatory framework.", "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}

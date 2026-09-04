@@ -205,3 +205,42 @@ def test_inventory_errors_raise_with_actionable_research_paths(tmp_path):
         assert_valid_research_inventory(
             research_root, SCHEMA_ROOT, Path("tests/fixtures/valid/data")
         )
+
+
+def test_2018_to_2021_inventory_has_a_decision_for_every_published_anchor():
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
+    candidates = {candidate["id"]: candidate for candidate in inventory["candidates"]}
+    required_ids = {
+        "coordinated-plan-2018-annex",
+        "building-trust-human-centric-ai",
+        "report-ai-safety-liability-2020",
+        "altai-assessment-list",
+        "coordinated-plan-2021-review",
+        "coordinated-plan-2021-annex",
+        "ai-act-proposal-annexes",
+        "ai-act-impact-assessment-swd-2021-84",
+        "ai-act-impact-assessment-annexes-swd-2021-84",
+        "ai-act-impact-assessment-executive-summary-swd-2021-85",
+        "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+        "eesc-opinion-coordinated-plan-2021",
+        "eesc-opinion-ai-act-2021",
+        "cor-opinion-ai-act-2021",
+        "ecb-opinion-con-2021-40",
+        "edpb-edps-joint-opinion-5-2021",
+    }
+
+    assert required_ids <= candidates.keys()
+    for candidate_id in required_ids:
+        candidate = candidates[candidate_id]
+        assert candidate["decision"] == "included"
+        assert candidate["document_id"] == candidate_id
+        assert candidate["merged_into_document_id"] is None
+
+
+def test_ai_act_procedure_remains_in_progress_after_2021_batch():
+    sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
+    sources = {source["id"]: source for source in sweep["sources"]}
+
+    assert sources["eur-lex-procedure-2021-0106"]["scan_status"] == "in_progress"

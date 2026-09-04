@@ -1,0 +1,11 @@
+{
+  "id": "european-data-protection-supervisor",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "official_name": "European Data Protection Supervisor",
+  "short_name": "EDPS",
+  "institution_type": "Independent European Union supervisory authority",
+  "official_url": "https://www.edps.europa.eu/"
+}

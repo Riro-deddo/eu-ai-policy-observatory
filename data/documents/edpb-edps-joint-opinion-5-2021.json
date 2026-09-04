@@ -1,0 +1,40 @@
+{
+  "id": "edpb-edps-joint-opinion-5-2021",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "edpb-edps-joint-opinion-5-2021",
+  "official_title": "EDPB-EDPS Joint Opinion 5/2021 on the proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)",
+  "short_title": "EDPB–EDPS Joint Opinion 5/2021",
+  "document_type": "opinion",
+  "record_level": "supporting",
+  "official_reference": "Joint Opinion 5/2021",
+  "procedure_references": ["2021/0106(COD)"],
+  "oj_reference": null,
+  "document_date": "2021-06-18",
+  "version_label": "Adopted opinion",
+  "version_status": "final",
+  "publication_date": "2021-06-18",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {"institution_id": "european-data-protection-board", "role": "author"},
+    {"institution_id": "european-data-protection-supervisor", "role": "author"}
+  ],
+  "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"],
+  "concept_ids": ["risk", "trustworthiness", "accountability", "compliance"],
+  "source_ids": ["edpb-edps-joint-opinion-5-2021-official-pdf"],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "The joint opinion is a formal data-protection intervention in the AI Act procedure and is central to comparing institutional constructions of risk and fundamental-rights safeguards.",
+    "researcher_notes": "Analytical selection; title and adoption date follow the official joint PDF and EDPB record.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  }
+}

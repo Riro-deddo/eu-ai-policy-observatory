@@ -22,7 +22,7 @@
   "language": "en",
   "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
-  "policy_ids": ["european-ai-policy-pathway"],
+  "policy_ids": ["european-ai-policy-pathway", "coordinated-european-ai-strategy"],
   "concept_ids": ["risk", "trustworthiness"],
   "source_ids": ["ai-communication-eur-lex"],
   "corpus_assessment": {"corpus_tier": "core", "policy_stage": "agenda_setting", "inclusion_rationale": "Foundational Commission communication in the selected 2018–2024 pathway.", "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}

@@ -22,7 +22,7 @@
   "language": "en",
   "official_summary": null,
   "institution_roles": [{"institution_id": "european-commission", "role": "proposer"}],
-  "policy_ids": ["european-ai-policy-pathway"],
+  "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"],
   "concept_ids": ["risk", "compliance", "trustworthiness", "accountability"],
   "source_ids": ["ai-act-proposal-eur-lex"],
   "corpus_assessment": {"corpus_tier": "core", "policy_stage": "proposal", "inclusion_rationale": "Core Commission legislative proposal for the EU Artificial Intelligence Act.", "researcher_notes": "Analytical assessment; this record remains distinct from the final regulation.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}

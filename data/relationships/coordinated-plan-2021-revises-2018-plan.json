@@ -1,0 +1,16 @@
+{
+  "id": "coordinated-plan-2021-revises-2018-plan",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "coordinated-plan-2021-annex",
+  "target_entity_type": "document",
+  "target_entity_id": "coordinated-plan-2018-annex",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "The annex is explicitly titled the 2021 review of the Coordinated Plan first adopted in 2018.",
+  "evidence_source_id": "coordinated-plan-2021-annex-eur-lex",
+  "verification_status": "verified"
+}

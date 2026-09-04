@@ -1,0 +1,16 @@
+{
+  "id": "eesc-coordinated-plan-opinion-based-on-communication",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "eesc-opinion-coordinated-plan-2021",
+  "target_entity_type": "document",
+  "target_entity_id": "coordinated-plan-2021-review",
+  "relationship_type": "based_on",
+  "basis": "official",
+  "rationale": "The official EESC opinion identifies COM(2021) 205 final as the communication on which it comments.",
+  "evidence_source_id": "eesc-coordinated-plan-opinion-eur-lex",
+  "verification_status": "verified"
+}

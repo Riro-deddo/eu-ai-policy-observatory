@@ -1,0 +1,14 @@
+{
+  "id": "edpb-edps-ai-act-opinion-adoption",
+  "entity_type": "event",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "event_type": "adoption",
+  "event_date": "2021-06-18",
+  "title": "Adoption of EDPB–EDPS Joint Opinion 5/2021",
+  "description": "The official joint opinion records adoption on 18 June 2021.",
+  "policy_id": "artificial-intelligence-act-legislative-process",
+  "document_id": "edpb-edps-joint-opinion-5-2021",
+  "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf"
+}
