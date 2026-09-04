@@ -185,6 +185,11 @@ def test_export_filters_unpublished_dependencies_and_embeds_document_page_data(
         "reviewed_by": "Researcher",
         "reviewed_at": "2026-09-03T12:00:00Z",
     }
+    assert document["sector_tags"] == ["general_cross_sector"]
+    assert document["provenance_tags"] == [
+        "eu_institution_authored",
+        "officially_published",
+    ]
     assert [item["id"] for item in document["sources"]] == ["example-source"]
     assert [item["id"] for item in payload["relationships"]] == ["published-relationship"]
     assert [item["id"] for item in payload["events"]] == ["published-event"]

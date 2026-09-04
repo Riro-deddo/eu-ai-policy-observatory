@@ -104,6 +104,15 @@ def _export_documents(
         exported.append(
             {
                 **document,
+                "sector_tags": _string_values(
+                    connection, "document_sector_tags", "sector_tag", document_id
+                ),
+                "provenance_tags": _string_values(
+                    connection,
+                    "document_provenance_tags",
+                    "provenance_tag",
+                    document_id,
+                ),
                 "procedure_references": _procedure_references(connection, document_id),
                 "policies": policies,
                 "concepts": concepts,
@@ -113,6 +122,16 @@ def _export_documents(
             }
         )
     return exported, source_ids
+
+
+def _string_values(
+    connection: sqlite3.Connection,
+    table: str,
+    value_column: str,
+    document_id: str,
+) -> list[str]:
+    query = f"SELECT {value_column} FROM {table} WHERE document_id = ? ORDER BY rowid"
+    return [row[0] for row in connection.execute(query, (document_id,)).fetchall()]
 
 
 def _procedure_references(
