@@ -1,3 +1,4 @@
+from base64 import b64decode
 import json
 import subprocess
 import sys
@@ -89,6 +90,21 @@ def test_scanner_checks_each_public_text_boundary(tmp_path: Path):
     assert errors == sorted(errors)
 
 
+def test_scanner_inspects_utf8_text_disguised_as_a_png(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "leak.png").write_text(
+        r"C:\Users\Researcher\secret\nghp_exampletoken", encoding="utf-8"
+    )
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("local filesystem path" in error and "leak.png" in error for error in errors)
+    assert any("credential or token" in error and "leak.png" in error for error in errors)
+
+
 def test_scanner_reports_every_non_published_record_without_rejecting_methodology_prose(
     tmp_path: Path,
 ):
@@ -128,11 +144,18 @@ def test_scanner_reports_invalid_and_missing_inputs_without_crashing(tmp_path: P
     assert any("invalid JSON" in error for error in errors)
 
 
-def test_scanner_reports_text_decoding_errors_and_ignores_binary_files(tmp_path: Path):
+def test_scanner_reports_text_decoding_errors_and_ignores_real_binary_png(
+    tmp_path: Path,
+):
     site = tmp_path / "site"
     site.mkdir()
     (site / "invalid.txt").write_bytes(b"\xff\xfe")
-    (site / "image.png").write_bytes(b"\x89PNG\r\n\x1a\nC:\\Users\\ignored")
+    (site / "image.png").write_bytes(
+        b64decode(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB"
+            "9Wl0mAAAAABJRU5ErkJggg=="
+        )
+    )
     data = tmp_path / "public-data.json"
     write_public_data(data, {"documents": []})
 

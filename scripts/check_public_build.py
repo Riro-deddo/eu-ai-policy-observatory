@@ -20,25 +20,6 @@ _TOKEN_PREFIX = re.compile(r"(?:ghp_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)")
 _PRIVATE_KEY_HEADER = re.compile(
     r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----", re.IGNORECASE
 )
-_BINARY_SUFFIXES = {
-    ".avif",
-    ".bmp",
-    ".gif",
-    ".ico",
-    ".jpeg",
-    ".jpg",
-    ".mp3",
-    ".mp4",
-    ".pdf",
-    ".png",
-    ".sqlite",
-    ".svgz",
-    ".webp",
-    ".woff",
-    ".woff2",
-}
-
-
 def check_public_build(site_root: Path, public_data_path: Path) -> list[str]:
     """Return sorted errors for unsafe static output or unpublished public data."""
 
@@ -63,8 +44,6 @@ def _scan_site(site_root: Path) -> list[str]:
     errors.extend(f"site root is unreadable: {site_root} ({exc})" for exc in walk_errors)
 
     for path in paths:
-        if path.suffix.lower() in _BINARY_SUFFIXES:
-            continue
         try:
             content = path.read_bytes()
         except OSError as exc:
@@ -82,6 +61,7 @@ def _scan_site(site_root: Path) -> list[str]:
 
 
 def _looks_binary(content: bytes) -> bool:
+    """Recognise binary bytes without trusting a filename extension."""
     return b"\x00" in content or content.startswith(
         (b"\x89PNG\r\n\x1a\n", b"GIF87a", b"GIF89a", b"\xff\xd8\xff", b"%PDF-")
     )
