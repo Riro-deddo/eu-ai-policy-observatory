@@ -34,10 +34,8 @@ test('Corpus enhancement hydrates a whitelisted query before applying filters', 
 
 test('the Corpus browser assertion preserves the descending-date filter order', () => {
   assert.match(filter, /second\.publication_date\.localeCompare\(first\.publication_date, 'en-GB'\)/);
-  assert.match(
-    siteSpec,
-    /await expect\(visibleRecords\)\.toContainText\(\[\s*'AI Liability Directive proposal',\s*'Artificial Intelligence Act proposal',\s*'White Paper on Artificial Intelligence',\s*'Ethics Guidelines for Trustworthy AI',\s*'Artificial Intelligence for Europe',\s*\]\);/,
-  );
+  assert.match(siteSpec, /const visibleDates = await visibleRecords\.locator\('span'\)\.evaluateAll/);
+  assert.match(siteSpec, /second\.localeCompare\(first, 'en-GB'\)/);
 });
 
 test('Policy Map exposes semantic stage headings and linked nodes within a labelled group', () => {

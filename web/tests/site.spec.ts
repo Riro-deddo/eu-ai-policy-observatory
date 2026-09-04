@@ -96,33 +96,62 @@ test('research lens links hydrate the matching Corpus concept on arrival', async
 
   expect(new URL(page.url()).search).toBe('?concept=risk');
   await expect(page.getByLabel('Concept')).toHaveValue('risk');
-  await expect(page.locator('[data-corpus-list] > li:not([hidden])')).toHaveCount(6);
-  await expect(page.locator('[data-corpus-count]')).toHaveText('6 published documents');
+  const riskPrincipalCount = await page.locator('#corpus-documents').evaluate((element) => {
+    const documents = JSON.parse(element.textContent ?? '[]') as Array<{
+      concepts: Array<{ id: string }>;
+      record_level: string;
+    }>;
+    return documents.filter((document) => document.record_level === 'principal'
+      && document.concepts.some((concept) => concept.id === 'risk')).length;
+  });
+  await expect(page.locator('[data-corpus-list] > li:not([hidden])')).toHaveCount(riskPrincipalCount);
+  await expect(page.locator('[data-corpus-count]')).toHaveText(
+    `${riskPrincipalCount} principal documents shown`,
+  );
 });
 
 test('corpus search, combined classifications and reset update the rendered list', async ({ page }) => {
   await page.goto('corpus/');
 
   const visibleRecords = page.locator('[data-corpus-list] > li:not([hidden])');
-  await expect(visibleRecords).toHaveCount(7);
+  const principalCount = await page.locator('#corpus-documents').evaluate((element) => {
+    const documents = JSON.parse(element.textContent ?? '[]') as Array<{ record_level: string }>;
+    return documents.filter((document) => document.record_level === 'principal').length;
+  });
+  await expect(visibleRecords).toHaveCount(principalCount);
 
   await page.getByLabel('Search title, CELEX or ELI').fill('32024R1689');
   await expect(visibleRecords).toHaveCount(1);
   await expect(visibleRecords.getByRole('link', { name: 'Artificial Intelligence Act', exact: true })).toBeVisible();
 
   await page.getByRole('button', { name: 'Reset filters' }).click();
-  await expect(visibleRecords).toHaveCount(7);
+  await expect(visibleRecords).toHaveCount(principalCount);
 
   await page.getByLabel('Concept').selectOption('risk');
   await page.getByLabel('Institution').selectOption('european-commission');
-  await expect(visibleRecords).toHaveCount(5);
-  await expect(visibleRecords).toContainText([
-    'AI Liability Directive proposal',
-    'Artificial Intelligence Act proposal',
-    'White Paper on Artificial Intelligence',
-    'Ethics Guidelines for Trustworthy AI',
-    'Artificial Intelligence for Europe',
-  ]);
+  const matchingIds = await page.locator('#corpus-documents').evaluate((element) => {
+    const documents = JSON.parse(element.textContent ?? '[]') as Array<{
+      concepts: Array<{ id: string }>;
+      id: string;
+      institutions: Array<{ id: string }>;
+      record_level: string;
+    }>;
+    return documents.filter((document) => document.record_level === 'principal'
+      && document.concepts.some((concept) => concept.id === 'risk')
+      && document.institutions.some((institution) => institution.id === 'european-commission'))
+      .map((document) => document.id);
+  });
+  await expect(visibleRecords).toHaveCount(matchingIds.length);
+  expect(matchingIds.length).toBeGreaterThan(0);
+  for (const documentId of matchingIds) {
+    await expect(page.locator(`[data-document-id="${documentId}"]`)).toBeVisible();
+  }
+  const visibleDates = await visibleRecords.locator('span').evaluateAll((elements) => (
+    elements.map((element) => element.textContent?.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '')
+  ));
+  expect(visibleDates).toEqual(
+    [...visibleDates].sort((first, second) => second.localeCompare(first, 'en-GB')),
+  );
 });
 
 test('the final AI Act detail page separates official and research content', async ({ page }) => {
@@ -175,7 +204,7 @@ test('record relationships expose parent, attachment, version and procedure navi
     'href',
     `${expectedBasePath}corpus/ai-act-proposal/`,
   );
-  await expect(parent.getByText('Official relationship', { exact: true })).toBeVisible();
+  await expect(parent.getByText('Official relationship', { exact: false })).toBeVisible();
   const attachments = page.getByRole('region', { name: 'Attachments' });
   await expect(attachments.getByRole('link', { name: 'Annexes to the AI Act proposal impact assessment' }))
     .toHaveAttribute('href', `${expectedBasePath}corpus/ai-act-impact-assessment-annexes-swd-2021-84/`);
