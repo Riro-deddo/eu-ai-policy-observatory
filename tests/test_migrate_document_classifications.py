@@ -61,11 +61,17 @@ def test_every_existing_document_receives_required_classifications():
 @pytest.mark.parametrize(
     ("document_id", "expected"),
     [
+        ("ecb-opinion-con-2021-40", ["general_cross_sector", "financial_services"]),
+        ("ecb-opinion-con-2026-10", ["general_cross_sector", "financial_services"]),
         (
-            "ecb-opinion-con-2021-40",
+            "ecb-technical-working-document-con-2026-10",
             ["general_cross_sector", "financial_services"],
         ),
         ("ep-ai-act-cult-opinion-pe-719637", ["education", "media_and_culture"]),
+        (
+            "ep-ai-omnibus-cult-opinion-pe-784261",
+            ["education", "media_and_culture"],
+        ),
         (
             "ep-ai-act-envi-opinion-pe-699056",
             ["health", "agriculture_and_environment"],
@@ -78,25 +84,38 @@ def test_every_existing_document_receives_required_classifications():
             "ep-ai-act-juri-opinion-pe-719827",
             ["justice", "intellectual_property"],
         ),
+        (
+            "ep-ai-omnibus-juri-opinion-pe-784179",
+            ["justice", "intellectual_property"],
+        ),
         ("ep-ai-act-tran-opinion-pe-730085", ["transport_and_mobility"]),
-        ("artificial-intelligence-act", ["general_cross_sector"]),
     ],
 )
 def test_sector_tags_use_reviewed_overrides_in_vocabulary_order(document_id, expected):
     assert sector_tags_for(document_id) == expected
 
 
+def test_sector_tags_use_reviewed_cross_sector_default():
+    assert sector_tags_for("artificial-intelligence-act") == ["general_cross_sector"]
+
+
 @pytest.mark.parametrize(
-    ("document_id", "institution_ids", "expected"),
+    ("document_id", "institution_roles", "expected"),
     [
         (
             "artificial-intelligence-act",
-            {"european-parliament", "council-of-the-european-union"},
+            [
+                {"institution_id": "european-parliament", "role": "adopter"},
+                {
+                    "institution_id": "council-of-the-european-union",
+                    "role": "adopter",
+                },
+            ],
             ["eu_institution_authored", "joint_institutional", "officially_published"],
         ),
         (
             "draft-transparency-guidelines-2026",
-            {"european-commission"},
+            [{"institution_id": "european-commission", "role": "author"}],
             [
                 "eu_institution_authored",
                 "official_consultation_material",
@@ -105,7 +124,16 @@ def test_sector_tags_use_reviewed_overrides_in_vocabulary_order(document_id, exp
         ),
         (
             "edpb-edps-joint-opinion-5-2021",
-            {"european-data-protection-board", "european-data-protection-supervisor"},
+            [
+                {
+                    "institution_id": "european-data-protection-board",
+                    "role": "author",
+                },
+                {
+                    "institution_id": "european-data-protection-supervisor",
+                    "role": "author",
+                },
+            ],
             [
                 "eu_agency_or_body_authored",
                 "joint_institutional",
@@ -114,30 +142,89 @@ def test_sector_tags_use_reviewed_overrides_in_vocabulary_order(document_id, exp
         ),
         (
             "ethics-guidelines-for-trustworthy-ai",
-            {"high-level-expert-group-on-ai", "european-commission"},
             [
-                "eu_institution_authored",
+                {"institution_id": "high-level-expert-group-on-ai", "role": "author"},
+                {"institution_id": "european-commission", "role": "publisher"},
+            ],
+            [
                 "eu_expert_group_authored",
-                "joint_institutional",
                 "officially_published",
             ],
         ),
         (
             "gpai-code-final",
-            {"european-ai-office"},
-            ["eu_commissioned_external", "officially_published"],
+            [{"institution_id": "european-ai-office", "role": "publisher"}],
+            ["officially_published"],
+        ),
+        (
+            "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+            [
+                {
+                    "institution_id": "council-of-the-european-union",
+                    "role": "publisher",
+                }
+            ],
+            ["officially_published"],
         ),
     ],
 )
 def test_provenance_tags_derive_origin_and_flags_in_vocabulary_order(
-    document_id, institution_ids, expected
+    document_id, institution_roles, expected
 ):
-    assert provenance_tags_for(document_id, institution_ids) == expected
+    assert provenance_tags_for(document_id, institution_roles) == expected
 
 
 def test_provenance_tags_reject_unknown_origins_with_document_id():
     with pytest.raises(ValueError, match="unknown-document"):
-        provenance_tags_for("unknown-document", {"unknown-institution"})
+        provenance_tags_for(
+            "unknown-document",
+            [{"institution_id": "unknown-institution", "role": "author"}],
+        )
+
+
+@pytest.mark.parametrize("starting_tags", [None, ["financial_services"]])
+def test_migration_primary_write_changes_only_classifications_and_timestamp(
+    tmp_path, starting_tags
+):
+    copied = tmp_path / "document.json"
+    record = json.loads(
+        Path("data/documents/draft-high-risk-classification-guidelines-2026.json")
+        .read_text(encoding="utf-8")
+    )
+    record["updated_at"] = "2026-09-03T00:00:00Z"
+    if starting_tags is None:
+        record.pop("sector_tags")
+        record.pop("provenance_tags")
+    else:
+        record["sector_tags"] = starting_tags
+        record["provenance_tags"] = ["officially_published"]
+    copied.write_text(json.dumps(record, ensure_ascii=False), encoding="utf-8")
+    before = json.loads(copied.read_text(encoding="utf-8"))
+
+    assert migrate_document(copied) is True
+
+    after_bytes = copied.read_bytes()
+    after = json.loads(after_bytes.decode("utf-8"))
+    allowed_changes = {"sector_tags", "provenance_tags", "updated_at"}
+    assert {key: value for key, value in after.items() if key not in allowed_changes} == {
+        key: value for key, value in before.items() if key not in allowed_changes
+    }
+    assert after["sector_tags"] == ["general_cross_sector"]
+    assert after["provenance_tags"] == [
+        "eu_institution_authored",
+        "official_consultation_material",
+        "officially_published",
+    ]
+    assert after["updated_at"] == "2026-09-04T00:00:00Z"
+    assert after_bytes == (
+        json.dumps(after, indent=2, ensure_ascii=False) + "\n"
+    ).encode("utf-8")
+    assert after_bytes.endswith(b"\n")
+    assert "—".encode("utf-8") in after_bytes
+
+    before_second_run = copied.read_bytes()
+    assert migrate_document(copied) is False
+    assert copied.read_bytes() == before_second_run
 
 
 def test_migration_is_idempotent(tmp_path):

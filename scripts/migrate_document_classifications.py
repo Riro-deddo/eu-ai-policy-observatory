@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import argparse
+from collections.abc import Iterable, Mapping
 import json
 from pathlib import Path
-from typing import Iterable
 
 
 MIGRATION_UPDATED_AT = "2026-09-04T00:00:00Z"
@@ -77,6 +77,7 @@ EU_BODIES = {
 }
 EU_EXPERT_GROUPS = {"high-level-expert-group-on-ai"}
 EU_INSTITUTION_SERVICES = {"european-ai-office"}
+PRODUCTION_ROLES = {"author", "proposer", "adopter", "contributor"}
 
 OFFICIAL_CONSULTATION_DOCUMENTS = {
     "draft-guidance-serious-ai-incidents-2025",
@@ -99,8 +100,15 @@ def sector_tags_for(document_id: str) -> list[str]:
     return _in_vocabulary_order(tags, SECTOR_TAG_ORDER)
 
 
-def provenance_tags_for(document_id: str, institution_ids: set[str]) -> list[str]:
-    """Derive production provenance from the canonical issuing institutions."""
+def provenance_tags_for(
+    document_id: str, institution_roles: Iterable[Mapping[str, str]]
+) -> list[str]:
+    """Derive production provenance without treating publishers as authors."""
+    institution_ids = {
+        institution_role["institution_id"]
+        for institution_role in institution_roles
+        if institution_role.get("role") in PRODUCTION_ROLES
+    }
     tags: set[str] = set()
     if institution_ids & EU_INSTITUTIONS:
         tags.add("eu_institution_authored")
@@ -111,7 +119,7 @@ def provenance_tags_for(document_id: str, institution_ids: set[str]) -> list[str
     if institution_ids & EU_INSTITUTION_SERVICES:
         tags.add("eu_commissioned_external")
 
-    if not tags:
+    if institution_ids and not tags:
         institutions = ", ".join(sorted(institution_ids)) or "none"
         raise ValueError(
             f"Document {document_id!r} has no known authoring origin "
@@ -130,12 +138,8 @@ def migrate_document(path: Path) -> bool:
     """Apply classifications to one document, returning whether bytes changed."""
     record = json.loads(path.read_text(encoding="utf-8"))
     document_id = record["id"]
-    institution_ids = {
-        role["institution_id"]
-        for role in record["institution_roles"]
-    }
     sector_tags = sector_tags_for(document_id)
-    provenance_tags = provenance_tags_for(document_id, institution_ids)
+    provenance_tags = provenance_tags_for(document_id, record["institution_roles"])
 
     if (
         record.get("sector_tags") == sector_tags
