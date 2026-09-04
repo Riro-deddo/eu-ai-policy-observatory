@@ -39,6 +39,11 @@ _VOCABULARY_FIELDS = {
     "source_type": "source_type",
 }
 
+_VOCABULARY_LIST_FIELDS = {
+    "sector_tags": "sector_tag",
+    "provenance_tags": "provenance_tag",
+}
+
 _OFFICIAL_SOURCE_TYPES = {
     "eur_lex",
     "eli",
@@ -126,6 +131,8 @@ def validate_records(
                 )
 
         _validate_vocabulary(record, path, vocabulary, issues)
+        if entity_type == "document":
+            issues.extend(_validate_document_status_combination(record.data, path))
         identifier = record.data.get("id")
         if isinstance(entity_type, str) and isinstance(identifier, str):
             records_by_type[entity_type][identifier].append(record)
@@ -566,6 +573,10 @@ def _validate_vocabulary(
     for field, vocabulary_name in _VOCABULARY_FIELDS.items():
         value = data.get(field)
         _validate_vocabulary_value(path, field, value, vocabulary_name, vocabulary, issues)
+    for field, vocabulary_name in _VOCABULARY_LIST_FIELDS.items():
+        issues.extend(
+            _validate_vocabulary_list(data, field, vocabulary_name, vocabulary, path)
+        )
 
     corpus = data.get("corpus_assessment")
     if isinstance(corpus, Mapping):
@@ -606,6 +617,64 @@ def _validate_vocabulary(
                     vocabulary,
                     issues,
                 )
+
+
+def _validate_vocabulary_list(
+    record: Mapping[str, object],
+    field: str,
+    vocabulary_key: str,
+    vocabularies: Mapping[str, object],
+    record_path: str,
+) -> list[ValidationIssue]:
+    """Validate string items in a record classification array."""
+    values = record.get(field)
+    choices = vocabularies.get(vocabulary_key)
+    if not isinstance(values, list) or not isinstance(choices, list):
+        return []
+
+    return [
+        _issue(
+            "vocabulary",
+            record_path,
+            f"{field}.{index}",
+            f"{value!r} is not in the {vocabulary_key!r} controlled vocabulary.",
+        )
+        for index, value in enumerate(values)
+        if isinstance(value, str) and value not in choices
+    ]
+
+
+def _validate_document_status_combination(
+    record: Mapping[str, object], record_path: str
+) -> list[ValidationIssue]:
+    """Reject document status combinations that cannot coexist."""
+    publication_status = record.get("publication_status")
+    version_status = record.get("version_status")
+    legal_status = record.get("legal_status")
+
+    if legal_status == "in_force" and publication_status != "published":
+        invalid = True
+    elif legal_status == "in_force" and version_status not in {"final", "consolidated"}:
+        invalid = True
+    elif version_status == "consolidated" and legal_status not in {
+        "adopted",
+        "in_force",
+        "superseded",
+    }:
+        invalid = True
+    else:
+        invalid = False
+
+    if not invalid:
+        return []
+    return [
+        _issue(
+            "status_combination",
+            record_path,
+            "publication_status/version_status/legal_status",
+            "Document publication, version, and legal statuses are inconsistent.",
+        )
+    ]
 
 
 def _validate_vocabulary_value(
