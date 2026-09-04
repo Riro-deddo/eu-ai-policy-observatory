@@ -56,6 +56,11 @@ _OFFICIAL_SOURCE_TYPES = {
     "official_consultation",
 }
 
+_INVENTORY_ONLY_PROVENANCE = {
+    "third_party_submission",
+    "unknown_pending_review",
+}
+
 
 class RecordValidationError(ValueError):
     """Raised when canonical records contain one or more validation issues."""
@@ -193,7 +198,12 @@ def validate_research_inventory(
             )
         )
     if sweep is not None and inventory is not None:
-        issues.extend(_validate_inventory_links(sweep, inventory, data_root))
+        vocabulary = json.loads(
+            (schema_root / "controlled-vocabularies.json").read_text(encoding="utf-8")
+        )
+        issues.extend(
+            _validate_inventory_links(sweep, inventory, data_root, vocabulary)
+        )
     return sorted(issues, key=lambda issue: (issue.record_path, issue.field, issue.code))
 
 
@@ -250,6 +260,7 @@ def _validate_inventory_links(
     sweep: Mapping[str, object],
     inventory: Mapping[str, object],
     data_root: Path,
+    vocabulary: Mapping[str, object],
 ) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     sources = sweep.get("sources")
@@ -267,6 +278,7 @@ def _validate_inventory_links(
     _validate_official_audit_urls(
         sources, "research/source-sweep.json", "sources", "url", issues
     )
+    _validate_source_audit_contract(sweep, sources, vocabulary, issues)
     _audit_unique_ids(
         candidates,
         "research/corpus-inventory.json",
@@ -285,6 +297,15 @@ def _validate_inventory_links(
         identifier: records
         for identifier, records in _canonical_documents_by_id(data_root).items()
     }
+
+    candidate_provenance = vocabulary.get("provenance_tag")
+    allowed_candidate_provenance = (
+        set(candidate_provenance) | _INVENTORY_ONLY_PROVENANCE
+        if isinstance(candidate_provenance, list)
+        else set(_INVENTORY_ONLY_PROVENANCE)
+    )
+    sector_tags = vocabulary.get("sector_tag")
+    allowed_sector_tags = set(sector_tags) if isinstance(sector_tags, list) else set()
 
     for index, candidate in enumerate(candidates):
         if not isinstance(candidate, Mapping):
@@ -312,10 +333,139 @@ def _validate_inventory_links(
                             "Referenced source-sweep entry does not exist.",
                         )
                     )
+        provenance = candidate.get("candidate_provenance")
+        if (
+            isinstance(provenance, str)
+            and provenance not in allowed_candidate_provenance
+        ):
+            issues.append(
+                _issue(
+                    "audit_vocabulary",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.candidate_provenance",
+                    "Candidate provenance is not in the audit provenance vocabulary.",
+                )
+            )
+        candidate_sectors = candidate.get("provisional_sector_tags")
+        if isinstance(candidate_sectors, list):
+            for sector_index, sector in enumerate(candidate_sectors):
+                if isinstance(sector, str) and sector not in allowed_sector_tags:
+                    issues.append(
+                        _issue(
+                            "audit_vocabulary",
+                            "research/corpus-inventory.json",
+                            f"{field_root}.provisional_sector_tags.{sector_index}",
+                            (
+                                "Candidate sector is not in the controlled sector "
+                                "vocabulary."
+                            ),
+                        )
+                    )
         _validate_inventory_decision(
             candidate, index, canonical_documents, issues
         )
     return issues
+
+
+def _validate_source_audit_contract(
+    sweep: Mapping[str, object],
+    sources: list[object],
+    vocabulary: Mapping[str, object],
+    issues: list[ValidationIssue],
+) -> None:
+    document_types = vocabulary.get("document_type")
+    sector_tags = vocabulary.get("sector_tag")
+    allowed_document_types = (
+        set(document_types) if isinstance(document_types, list) else set()
+    )
+    allowed_sector_tags = set(sector_tags) if isinstance(sector_tags, list) else set()
+    top_level_cutoff = sweep.get("coverage_cutoff")
+
+    for index, source in enumerate(sources):
+        if not isinstance(source, Mapping):
+            continue
+        field_root = f"sources.{index}"
+        _validate_audit_vocabulary_list(
+            source.get("covered_document_types"),
+            allowed_document_types,
+            "research/source-sweep.json",
+            f"{field_root}.covered_document_types",
+            "Source document type is not in the controlled document-type vocabulary.",
+            issues,
+        )
+        _validate_audit_vocabulary_list(
+            source.get("covered_sector_tags"),
+            allowed_sector_tags,
+            "research/source-sweep.json",
+            f"{field_root}.covered_sector_tags",
+            "Source sector is not in the controlled sector vocabulary.",
+            issues,
+        )
+
+        source_cutoff = source.get("coverage_cutoff")
+        covered_from = source.get("covered_from")
+        covered_through = source.get("covered_through")
+        if (
+            isinstance(source_cutoff, str)
+            and isinstance(top_level_cutoff, str)
+            and source_cutoff > top_level_cutoff
+        ):
+            issues.append(
+                _issue(
+                    "audit_cutoff",
+                    "research/source-sweep.json",
+                    f"{field_root}.coverage_cutoff",
+                    "A source cutoff cannot be later than the registry cutoff.",
+                )
+            )
+        if (
+            isinstance(covered_through, str)
+            and isinstance(source_cutoff, str)
+            and covered_through > source_cutoff
+        ):
+            issues.append(
+                _issue(
+                    "audit_cutoff",
+                    "research/source-sweep.json",
+                    f"{field_root}.covered_through",
+                    "Source coverage cannot extend beyond its verified cutoff.",
+                )
+            )
+        if (
+            isinstance(covered_from, str)
+            and isinstance(covered_through, str)
+            and covered_from > covered_through
+        ):
+            issues.append(
+                _issue(
+                    "audit_cutoff",
+                    "research/source-sweep.json",
+                    f"{field_root}.covered_from",
+                    "Source coverage must start on or before its covered-through date.",
+                )
+            )
+
+
+def _validate_audit_vocabulary_list(
+    values: object,
+    allowed_values: set[object],
+    record_path: str,
+    field_root: str,
+    message: str,
+    issues: list[ValidationIssue],
+) -> None:
+    if not isinstance(values, list):
+        return
+    for index, value in enumerate(values):
+        if isinstance(value, str) and value not in allowed_values:
+            issues.append(
+                _issue(
+                    "audit_vocabulary",
+                    record_path,
+                    f"{field_root}.{index}",
+                    message,
+                )
+            )
 
 
 def _audit_unique_ids(
@@ -396,9 +546,35 @@ def _validate_inventory_decision(
     decision = candidate.get("decision")
     document_id = candidate.get("document_id")
     merged_into = candidate.get("merged_into_document_id")
+    reviewed_at = candidate.get("reviewed_at")
+    reviewed_by = candidate.get("reviewed_by")
+    candidate_sectors = candidate.get("provisional_sector_tags")
     field_root = f"candidates.{index}"
 
+    if decision != "pending":
+        if not isinstance(reviewed_at, str):
+            issues.append(
+                _issue(
+                    "audit_decision",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.reviewed_at",
+                    "Decided candidates require a review timestamp.",
+                )
+            )
+        if not isinstance(reviewed_by, str) or not reviewed_by.strip():
+            issues.append(
+                _issue(
+                    "audit_decision",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.reviewed_by",
+                    "Decided candidates require a reviewer.",
+                )
+            )
+
+    canonical_id: object = None
+
     if decision == "included":
+        canonical_id = document_id
         if not isinstance(document_id, str) or document_id not in canonical_documents:
             issues.append(
                 _issue(
@@ -418,6 +594,7 @@ def _validate_inventory_decision(
                 )
             )
     elif decision == "merged":
+        canonical_id = merged_into
         if not isinstance(merged_into, str) or merged_into not in canonical_documents:
             issues.append(
                 _issue(
@@ -455,6 +632,81 @@ def _validate_inventory_decision(
                     f"{decision.title()} candidates cannot identify a merge target.",
                 )
             )
+
+    if decision in {"included", "merged"}:
+        if not isinstance(candidate_sectors, list) or not candidate_sectors:
+            issues.append(
+                _issue(
+                    "audit_decision",
+                    "research/corpus-inventory.json",
+                    f"{field_root}.provisional_sector_tags",
+                    (
+                        "Included and merged candidates require a provisional sector "
+                        "classification."
+                    ),
+                )
+            )
+        _validate_candidate_classification(
+            candidate,
+            field_root,
+            canonical_id,
+            canonical_documents,
+            issues,
+        )
+
+
+def _validate_candidate_classification(
+    candidate: Mapping[str, object],
+    field_root: str,
+    canonical_id: object,
+    canonical_documents: Mapping[str, list[LoadedRecord]],
+    issues: list[ValidationIssue],
+) -> None:
+    if not isinstance(canonical_id, str):
+        return
+    records = canonical_documents.get(canonical_id)
+    if not records:
+        return
+    canonical = records[0].data
+    if not isinstance(canonical, Mapping):
+        return
+
+    candidate_sectors = candidate.get("provisional_sector_tags")
+    canonical_sectors = canonical.get("sector_tags")
+    if isinstance(candidate_sectors, list) and candidate_sectors != canonical_sectors:
+        issues.append(
+            _issue(
+                "audit_classification_mismatch",
+                "research/corpus-inventory.json",
+                f"{field_root}.provisional_sector_tags",
+                "Candidate sectors must match the canonical document classification.",
+            )
+        )
+
+    provenance = candidate.get("candidate_provenance")
+    expected_provenance = _canonical_candidate_provenance(canonical)
+    if isinstance(provenance, str) and provenance != expected_provenance:
+        issues.append(
+            _issue(
+                "audit_classification_mismatch",
+                "research/corpus-inventory.json",
+                f"{field_root}.candidate_provenance",
+                (
+                    "Candidate provenance must match the canonical document "
+                    "classification."
+                ),
+            )
+        )
+
+
+def _canonical_candidate_provenance(document: Mapping[str, object]) -> str | None:
+    provenance_tags = document.get("provenance_tags")
+    if not isinstance(provenance_tags, list):
+        return None
+    for provenance in reversed(provenance_tags):
+        if isinstance(provenance, str) and provenance != "officially_published":
+            return provenance
+    return "officially_published" if "officially_published" in provenance_tags else None
 
 
 def _issue(code: str, record_path: str, field: str, message: str) -> ValidationIssue:

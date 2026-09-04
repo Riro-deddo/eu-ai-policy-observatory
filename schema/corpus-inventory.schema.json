@@ -23,9 +23,15 @@
     "nullable_string": {
       "type": ["string", "null"]
     },
+    "nullable_timestamp": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
     "timestamp": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})$"
     },
     "https_url": {
       "type": "string",
@@ -51,12 +57,22 @@
         },
         "version_label": { "$ref": "#/$defs/nullable_string" },
         "official_source_url": { "$ref": "#/$defs/https_url" },
+        "commissioning_body": { "$ref": "#/$defs/nullable_string" },
+        "candidate_provenance": { "type": "string", "minLength": 1 },
+        "provisional_sector_tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "discovered_at": { "$ref": "#/$defs/timestamp" },
         "decision": {
           "enum": ["included", "merged", "excluded", "pending"]
         },
         "decision_reason": { "type": "string", "minLength": 1 },
         "document_id": { "$ref": "#/$defs/nullable_id" },
-        "merged_into_document_id": { "$ref": "#/$defs/nullable_id" }
+        "merged_into_document_id": { "$ref": "#/$defs/nullable_id" },
+        "reviewed_at": { "$ref": "#/$defs/nullable_timestamp" },
+        "reviewed_by": { "$ref": "#/$defs/nullable_string" }
       },
       "required": [
         "id",
@@ -68,10 +84,16 @@
         "record_level",
         "version_label",
         "official_source_url",
+        "commissioning_body",
+        "candidate_provenance",
+        "provisional_sector_tags",
+        "discovered_at",
         "decision",
         "decision_reason",
         "document_id",
-        "merged_into_document_id"
+        "merged_into_document_id",
+        "reviewed_at",
+        "reviewed_by"
       ],
       "additionalProperties": false
     }
