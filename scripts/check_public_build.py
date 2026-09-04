@@ -16,10 +16,12 @@ _WINDOWS_USER_PATH = re.compile(
 )
 _UNIX_USER_PATH = re.compile(r"/(?:Users|home)/", re.IGNORECASE)
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
-_TOKEN_PREFIX = re.compile(r"(?:ghp_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)")
+_TOKEN_PREFIX = re.compile(r"(?:gh[oprsu]_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)")
 _PRIVATE_KEY_HEADER = re.compile(
     r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----", re.IGNORECASE
 )
+
+
 def check_public_build(site_root: Path, public_data_path: Path) -> list[str]:
     """Return sorted errors for unsafe static output or unpublished public data."""
 
@@ -49,11 +51,11 @@ def _scan_site(site_root: Path) -> list[str]:
         except OSError as exc:
             errors.append(f"site file is unreadable: {path} ({exc})")
             continue
-        if _looks_binary(content):
-            continue
         try:
             text = content.decode("utf-8")
         except UnicodeDecodeError as exc:
+            if _looks_binary(content):
+                continue
             errors.append(f"site file has a UTF-8 decoding error: {path} ({exc})")
             continue
         errors.extend(_text_errors(path, text))
@@ -61,7 +63,7 @@ def _scan_site(site_root: Path) -> list[str]:
 
 
 def _looks_binary(content: bytes) -> bool:
-    """Recognise binary bytes without trusting a filename extension."""
+    """Recognise undecodable binary bytes without trusting a filename extension."""
     return b"\x00" in content or content.startswith(
         (b"\x89PNG\r\n\x1a\n", b"GIF87a", b"GIF89a", b"\xff\xd8\xff", b"%PDF-")
     )

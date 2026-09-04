@@ -4,6 +4,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
 from scripts.check_public_build import check_public_build
 
 
@@ -103,6 +105,44 @@ def test_scanner_inspects_utf8_text_disguised_as_a_png(tmp_path: Path):
 
     assert any("local filesystem path" in error and "leak.png" in error for error in errors)
     assert any("credential or token" in error and "leak.png" in error for error in errors)
+
+
+@pytest.mark.parametrize(
+    ("filename", "content"),
+    [
+        ("fake.gif", b"GIF89aghp_exampletoken"),
+        ("fake.pdf", b"%PDF-ghp_exampletoken"),
+        ("nul.txt", b"\x00ghp_exampletoken"),
+    ],
+)
+def test_scanner_inspects_valid_utf8_text_with_binary_markers(
+    tmp_path: Path, filename: str, content: bytes
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / filename).write_bytes(content)
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("credential or token" in error and filename in error for error in errors)
+
+
+@pytest.mark.parametrize("token_prefix", ["ghp_", "gho_", "ghu_", "ghs_", "ghr_"])
+def test_scanner_rejects_common_github_token_prefixes(
+    tmp_path: Path, token_prefix: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    filename = f"{token_prefix[:-1]}.txt"
+    (site / filename).write_text(f"{token_prefix}exampletoken", encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("credential or token" in error and filename in error for error in errors)
 
 
 def test_scanner_reports_every_non_published_record_without_rejecting_methodology_prose(
