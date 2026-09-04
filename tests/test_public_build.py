@@ -23,6 +23,45 @@ def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):
     assert any("non-published record" in error for error in errors)
 
 
+def test_scanner_rejects_ordinary_and_escaped_windows_user_paths(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "ordinary.txt").write_text(
+        r"c:\Users\Researcher\secret", encoding="utf-8"
+    )
+    (site / "escaped.txt").write_text(
+        r"Z:\\Users\\Researcher\\secret", encoding="utf-8"
+    )
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("ordinary.txt" in error for error in errors)
+    assert any("escaped.txt" in error for error in errors)
+
+
+def test_scanner_rejects_common_private_key_headers(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    headers = {
+        "private.pem": "-----BEGIN PRIVATE KEY-----",
+        "rsa.pem": "-----BEGIN RSA PRIVATE KEY-----",
+        "ec.pem": "-----BEGIN EC PRIVATE KEY-----",
+        "openssh.pem": "-----BEGIN OPENSSH PRIVATE KEY-----",
+        "pgp.asc": "-----BEGIN PGP PRIVATE KEY BLOCK-----",
+    }
+    for filename, header in headers.items():
+        (site / filename).write_text(header, encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    for filename in headers:
+        assert any(filename in error for error in errors)
+
+
 def test_scanner_checks_each_public_text_boundary(tmp_path: Path):
     site = tmp_path / "site"
     site.mkdir()

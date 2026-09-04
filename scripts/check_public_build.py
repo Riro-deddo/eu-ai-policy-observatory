@@ -11,12 +11,14 @@ from pathlib import Path
 from typing import Any, Iterable
 
 
-_WINDOWS_USER_PATH = re.compile(r"(?:[A-Za-z]:\\Users\\|\\\\Users\\)", re.IGNORECASE)
+_WINDOWS_USER_PATH = re.compile(
+    r"(?:[A-Za-z]:\\+Users\\+|\\\\Users\\+)", re.IGNORECASE
+)
 _UNIX_USER_PATH = re.compile(r"/(?:Users|home)/", re.IGNORECASE)
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
 _TOKEN_PREFIX = re.compile(r"(?:ghp_|github_pat_|glpat-|sk-|AKIA|xox[abprs]-)")
 _PRIVATE_KEY_HEADER = re.compile(
-    r"-----BEGIN (?:[A-Z0-9 ]+ )?PRIVATE KEY-----", re.IGNORECASE
+    r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----", re.IGNORECASE
 )
 _BINARY_SUFFIXES = {
     ".avif",
