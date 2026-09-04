@@ -65,7 +65,14 @@ test('the no-JavaScript block derives its timeline count from serialized public 
 });
 
 test('classification controls use native keyboard-reachable form elements', () => {
-  assert.match(siteSpec, /page\.getByLabel\('Sector'\)\.selectOption\('financial_services'\)/);
+  const corpusClassificationBlock = testBlock(
+    siteSpec,
+    'corpus sector filtering shows only matching human-readable classification tags',
+  );
+  assert.match(
+    corpusClassificationBlock,
+    /page\.getByLabel\('Corpus view'\)\.selectOption\('all'\)[\s\S]*?page\.getByLabel\('Sector'\)\.selectOption\('financial_services'\)/,
+  );
   assert.match(siteSpec, /page\.getByRole\('radio', \{ name: 'All documents and versions' \}\)\.check\(\)/);
   assert.match(stylesheet, /:is\(a, button, input, select, \[tabindex\]\):focus-visible/);
 });

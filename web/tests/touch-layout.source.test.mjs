@@ -24,6 +24,7 @@ test('pathway titles have a dedicated class in the mobile grid column', () => {
 test('classification filters and tags can shrink and wrap at narrow widths', () => {
   assert.match(stylesheet, /\.corpus-filters :is\(input, select\)[^{]*\{[\s\S]*?min-inline-size: 0;/);
   assert.match(stylesheet, /\.timeline-filters input[^{]*\{[\s\S]*?min-inline-size: 0;/);
+  assert.match(stylesheet, /\.timeline-filters select[^{]*\{[\s\S]*?min-inline-size: 0;/);
   assert.match(stylesheet, /\.tag-list \{[\s\S]*?display: flex;[\s\S]*?flex-wrap: wrap;/);
   assert.match(stylesheet, /\.record-classifications \{[\s\S]*?min-inline-size: 0;/);
   assert.match(siteSpec, /page\.setViewportSize\(\{ width: 375, height: 844 \}\)/);

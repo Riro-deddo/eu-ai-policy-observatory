@@ -128,7 +128,7 @@ h2 { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 3.2rem); font-weig
 .timeline-filters input { accent-color: var(--focus); min-inline-size: 0; }
 .timeline-view__options { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); }
 .timeline-view__options label { align-items: center; display: inline-flex; gap: var(--space-1); margin: 0; }
-.timeline-filters select { background: var(--canvas); border: 1px solid var(--rule); border-radius: 0; color: var(--ink); font: inherit; inline-size: 100%; min-block-size: 2.75rem; padding-inline: 0.65rem; }
+.timeline-filters select { background: var(--canvas); border: 1px solid var(--rule); border-radius: 0; color: var(--ink); font: inherit; inline-size: 100%; min-block-size: 2.75rem; min-inline-size: 0; padding-inline: 0.65rem; }
 .timeline-filters button { background: var(--ink); border: 1px solid var(--ink); border-radius: 0; color: var(--canvas); cursor: pointer; font: inherit; min-block-size: 2.75rem; padding-inline: var(--space-2); }
 .timeline-filters button[type="reset"] { background: transparent; color: var(--ink); }
 .timeline-filters__actions { align-items: end; display: flex; flex-wrap: wrap; gap: var(--space-2); grid-column: 1 / -1; }

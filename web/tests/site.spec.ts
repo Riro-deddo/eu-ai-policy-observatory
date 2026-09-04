@@ -168,6 +168,7 @@ test('corpus search, combined classifications and reset update the rendered list
 test('corpus sector filtering shows only matching human-readable classification tags', async ({ page }) => {
   await page.goto('corpus/');
 
+  await page.getByLabel('Corpus view').selectOption('all');
   await page.getByLabel('Sector').selectOption('financial_services');
   const visibleRecords = page.locator('[data-corpus-list] > li:not([hidden])');
   expect(await visibleRecords.count()).toBeGreaterThan(0);
