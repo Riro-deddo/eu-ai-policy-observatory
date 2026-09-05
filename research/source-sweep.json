@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:00:00Z",
+  "generated_at": "2026-09-05T05:38:52Z",
   "coverage_cutoff": "2026-09-04",
   "sources": [
     {
@@ -112,11 +112,11 @@
       "covered_document_types": [],
       "covered_sector_tags": [],
       "discovery_method": "Reviewed the Legislative Observatory procedure file and its linked committee and plenary documents.",
-      "scan_status": "reviewed",
-      "checked_at": "2026-09-04T00:00:00Z",
+      "scan_status": "recheck_due",
+      "checked_at": "2026-09-05T05:38:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Yichen Hao",
-      "verification_note": "The documented bounded query completed without an unresolved access failure."
+      "reviewer": "Codex (scope-review reopening)",
+      "verification_note": "The earlier reviewed result needs rechecking because the broadened inclusion boundary leaves the independent citability, version identity and metadata of nine listed amendment files unresolved; this scope/status review did not retrieve or verify those files."
     },
     {
       "id": "ep-adopted-texts-2021-0106",
@@ -392,11 +392,11 @@
       ],
       "covered_sector_tags": [],
       "discovery_method": "Reviewed the official AI Board page for independently citable endorsed documents and reports.",
-      "scan_status": "reviewed",
-      "checked_at": "2026-09-04T00:00:00Z",
+      "scan_status": "recheck_due",
+      "checked_at": "2026-09-05T05:38:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Yichen Hao",
-      "verification_note": "The documented bounded query completed without an unresolved access failure."
+      "reviewer": "Codex (scope-review reopening)",
+      "verification_note": "The earlier reviewed result needs rechecking because three listed reports still lack record-level verification of an independently citable English version and required metadata; this scope/status review did not retrieve or verify those files."
     },
     {
       "id": "commission-consultation-high-risk",
