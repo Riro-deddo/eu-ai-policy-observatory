@@ -40,6 +40,7 @@ Node source baseline tests pass; local Vitest initialization is blocked by esbui
 - Modify `web/package.json`, `web/pnpm-lock.yaml`: pinned build dependency `elkjs: 0.12.0`.
 - Replace `web/tests/policy-map.node.test.mjs`; adapt the map-only tests in `web/tests/timeline-policy-map.source.test.mjs`, `web/tests/site.spec.ts` and `web/tests/no-js.spec.ts`; add `web/tests/policy-map.spec.ts` for new browser behaviors.
 - Modify `README.md`: map usage, scope and ELK build-time dependency/license link.
+- Modify `.github/workflows/validate.yml`: after website tests/build, upload `web/dist` using `actions/upload-artifact@v7`, artifact name `site-preview`, `if-no-files-found: error`, `retention-days: 7`. This read-only build artifact enables browser QA before main deployment; preserve all existing gates.
 
 **Interfaces:**
 - Consumes `PublicData` from `web/src/lib/types.ts` and `loadPublicData()` from `web/src/lib/data.ts`.
