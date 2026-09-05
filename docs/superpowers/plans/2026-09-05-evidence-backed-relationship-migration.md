@@ -126,6 +126,6 @@ Report exact RED/GREEN commands/output, tested export counts, remaining issue co
 ### Delivery checklist
 
 - [x] Evidence-led TDD and data corrections.
-- [ ] Task review (specification and quality).
-- [ ] Fresh controller verification and final broader review.
-- [ ] Local commit and explicit held-work handoff; no publication.
+- [x] Task review (specification and quality).
+- [x] Fresh controller verification and final broader review.
+- [x] Local commit and explicit held-work handoff; no publication.
