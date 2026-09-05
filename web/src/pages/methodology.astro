@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { loadPublicData } from '../lib/data';
+import { vocabularyLabel } from '../lib/filter';
 
 const data = loadPublicData();
 ---
@@ -23,8 +24,9 @@ const data = loadPublicData();
     <section aria-labelledby="current-method">
       <h2 id="current-method">Current corpus method</h2>
       <p>
-        The current published records are concentrated on the AI Act pathway and related implementation.
-        Their document dates span {data.coverage.from_year}–{data.coverage.to_year},
+        The published records now include a bounded, verified historical-lineage collection alongside
+        contemporary EU AI policy and AI Act implementation material. Their document dates span
+        {data.coverage.from_year}–{data.coverage.to_year},
         with a publication cutoff of {data.coverage.coverage_cutoff}.
         The approved research boundary also admits earlier European Communities and EU material,
         but historical backfill and the wider institutional and sectoral sweep remain incomplete.
@@ -57,13 +59,50 @@ const data = loadPublicData();
       <p>These are aggregate states of registered, bounded searches, not a complete source matrix. Unregistered sources and unreviewed periods are not covered by these counts.</p>
     </section>
 
+    <section aria-labelledby="expanded-evidence-review">
+      <h2 id="expanded-evidence-review">Expanded evidence review</h2>
+      <p>
+        {data.coverage.historical_review.verified} published records have completed the expanded date,
+        attribution and historical-classification evidence review. {data.coverage.historical_review.legacy_review_pending}
+        retained records remain published under their existing checks while that additional evidence review is pending.
+        Pending status is not a finding that an official record is false, and no temporal or relevance class is inferred for it.
+      </p>
+    </section>
+
+    <section aria-labelledby="bounded-source-scopes">
+      <h2 id="bounded-source-scopes">Bounded source scopes</h2>
+      <p>
+        Each entry records an actual bounded scan, not comprehensive EU coverage. An in-progress scope is partial;
+        empty document-type or sector fields are shown as unspecified. A zero pending count means no candidate is
+        pending within that admitted-set scan, not that no historical leads remain.
+      </p>
+      <ol>
+        {data.coverage.source_scopes.map((scope) => (
+          <li>
+            <h3>{scope.name}</h3>
+            <dl>
+              <dt>Source family</dt><dd>{scope.source_family}</dd>
+              <dt>Institution</dt><dd>{scope.institution}</dd>
+              <dt>Status</dt><dd>{scope.scan_status === 'in_progress' ? 'Partial · in progress' : vocabularyLabel(scope.scan_status)}</dd>
+              <dt>Covered interval</dt><dd>{scope.covered_from}–{scope.covered_through}</dd>
+              <dt>Coverage cutoff</dt><dd>{scope.coverage_cutoff}</dd>
+              <dt>Document types</dt><dd>{scope.covered_document_types.length === 0 ? 'Unspecified' : scope.covered_document_types.map(vocabularyLabel).join(', ')}</dd>
+              <dt>Sectors</dt><dd>{scope.covered_sector_tags.length === 0 ? 'Unspecified' : scope.covered_sector_tags.map(vocabularyLabel).join(', ')}</dd>
+              <dt>Pending candidates in scope</dt><dd>{scope.pending_candidate_count}</dd>
+            </dl>
+          </li>
+        ))}
+      </ol>
+    </section>
+
     <section aria-labelledby="corpus-tiers">
       <h2 id="corpus-tiers">Corpus tiers</h2>
       <p>
-        <strong>Core</strong> records form the main AI Act policy pathway. <strong>Directly related</strong>
-        records materially inform, implement or apply that pathway. <strong>Contextual</strong> records
-        supply necessary surrounding policy context. <em>Excluded</em> is an inventory decision,
-        not a published corpus tier.
+        <strong>Core</strong> records are central to a defined research pathway or lineage. <strong>Directly related</strong>
+        records materially inform a selected policy pathway or documented historical development. <strong>Contextual</strong>
+        records supply necessary surrounding policy or legal context. These tiers do not by themselves make a historical
+        record an AI Act predecessor or member; policy memberships and relationships are modelled separately.
+        <em>Excluded</em> is an inventory decision, not a published corpus tier.
       </p>
     </section>
 
@@ -97,6 +136,15 @@ const data = loadPublicData();
         the research classification. An analytical relationship carries a researcher-written
         rationale and an evidence source; that source supports the assessment without turning it
         into an official EU relationship.
+      </p>
+    </section>
+
+    <section aria-labelledby="seed-and-analysis-samples">
+      <h2 id="seed-and-analysis-samples">Database seed and analytical samples</h2>
+      <p>
+        The seven-record original database seed remains a versioned operational subset. It is not the frozen
+        all-route baseline, the full published corpus, or a researcher-approved PhD analytical sample. Any PhD
+        sample will be selected and documented through a separate research protocol.
       </p>
     </section>
 

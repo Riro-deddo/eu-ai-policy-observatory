@@ -132,4 +132,10 @@ Run `node.exe node_modules/vitest/vitest.mjs run tests/filter.test.ts` for RED/G
 
 ## Self-review and explicit remaining scope
 
+## Implementation verification (2026-09-05)
+
+The bounded backend and atlas work is implemented locally: 14 historical admissions and three existing-record upgrades, 131 published documents in the scratch export, 17 expanded reviews complete and 114 pending. All original document IDs and slugs are retained. Independent Task 1 review is clean; Task 2 review is tracked separately before final handoff.
+
+Final integration checks: Python 373 passed / 1 skipped; Node source tests 64 passed; Vitest 26 passed; Astro check 0 errors / 0 warnings / 3 hints; 144 static pages built. The public-output scanner passes with the downloadable database required. Rendered in-app browser checks cover desktop filtering and mobile Corpus, historical and pending record pages, Timeline and Methodology without horizontal overflow; sampled console logs are clean. Full standalone Playwright execution and remote release are not claimed. The protected generated pair was preserved.
+
 Task 1 implements the historical inclusion gate, compatible old-record handling, evidence/attribution/date persistence, bounded source scopes, and actual additions. Task 2 makes these semantics visible and filterable without redesign. The following are not claimed complete: all 117 evidence reviews, all EU source/year searches, a fully populated source/type/sector cross-product, adjudication of held leads, a researcher-approved RP analytical sample, or remote release checks. These remain visibly incomplete rather than blocking truthful partial publication semantics.

@@ -72,7 +72,7 @@ export function loadPublicDataFromPath(publicDataPath: string): PublicData {
 }
 
 export function loadPublicData(): PublicData {
-  return loadPublicDataFromPath(
-    resolve(process.cwd(), '..', 'generated', 'public-data.json'),
-  );
+  const publicDataPath = process.env.EU_AI_POLICY_PUBLIC_DATA_PATH
+    ?? resolve(process.cwd(), '..', 'generated', 'public-data.json');
+  return loadPublicDataFromPath(publicDataPath);
 }

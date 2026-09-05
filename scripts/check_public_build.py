@@ -17,6 +17,7 @@ _WINDOWS_USER_PATH = re.compile(
     r"(?:[A-Za-z]:\\+Users\\+|\\\\Users\\+)", re.IGNORECASE
 )
 _UNIX_USER_PATH = re.compile(r"\\?/(?:Users|home)\\?/", re.IGNORECASE)
+_HTTPS_URL_PREFIX = re.compile(r"https?:\\*/\\*/[^\s\"'<>]*$", re.IGNORECASE)
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
 _TOKEN_PREFIX = re.compile(
     r"(?:gh[oprsu]_|github_pat_|glpat-|(?<![A-Za-z0-9])sk-|AKIA|xox[abprs]-)"
@@ -81,8 +82,18 @@ def _looks_binary(content: bytes) -> bool:
     )
 
 
+def _contains_unix_user_path(text: str) -> bool:
+    """Distinguish local user paths from ordinary path segments in HTTPS URLs."""
+    for match in _UNIX_USER_PATH.finditer(text):
+        url_prefix = _HTTPS_URL_PREFIX.search(text, 0, match.start())
+        if url_prefix is not None and "?" not in url_prefix.group() and "#" not in url_prefix.group():
+            continue
+        return True
+    return False
+
+
 def _text_errors(path: Path, text: str) -> Iterable[str]:
-    if _WINDOWS_USER_PATH.search(text) or _UNIX_USER_PATH.search(text):
+    if _WINDOWS_USER_PATH.search(text) or _contains_unix_user_path(text):
         yield f"local filesystem path found in public output: {path}"
     if _LOCALHOST.search(text):
         yield f"localhost reference found in public output: {path}"

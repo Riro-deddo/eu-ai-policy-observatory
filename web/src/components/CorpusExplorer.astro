@@ -11,8 +11,17 @@ const base = import.meta.env.BASE_URL;
 const sortedDocuments = filterDocuments(documents, { view: 'all' });
 const principalCount = documents.filter((document) => document.record_level === 'principal').length;
 const supportingCount = documents.length - principalCount;
+const pendingPublishedCount = documents.filter(
+  (document) => document.historical_review_status === 'legacy_review_pending',
+).length;
 
 const years = [...new Set(documents.map((document) => document.publication_date.slice(0, 4)))].sort().reverse();
+const collections = ['historical_lineage', 'contemporary_eu_ai_policy'].filter((collection) => (
+  documents.some((document) => document.temporal_collection === collection)
+));
+const relevanceClasses = ['direct_ai_substantive', 'ai_related_precursor', 'indirect_adm_legal_context'].filter(
+  (relevance) => documents.some((document) => document.relevance_class === relevance),
+);
 const institutions = [...new Map(
   documents.flatMap((document) => document.institutions.map((institution) => [institution.id, institution])),
 ).values()].sort((first, second) => first.official_name.localeCompare(second.official_name, 'en-GB'));
@@ -85,6 +94,22 @@ const policies = [...new Map(
       </select>
     </div>
     <div>
+      <label for="corpus-collection">Collection</label>
+      <select id="corpus-collection" name="collection">
+        <option value="">All collections and review states</option>
+        {collections.map((collection) => <option value={collection}>{vocabularyLabel(collection)}</option>)}
+        <option value="legacy_review_pending">Expanded evidence review pending</option>
+      </select>
+    </div>
+    <div>
+      <label for="corpus-relevance">Relevance</label>
+      <select id="corpus-relevance" name="relevance">
+        <option value="">All relevance classes and review states</option>
+        {relevanceClasses.map((relevance) => <option value={relevance}>{vocabularyLabel(relevance)}</option>)}
+        <option value="legacy_review_pending">Expanded evidence review pending</option>
+      </select>
+    </div>
+    <div>
       <label for="corpus-sector">Sector</label>
       <select id="corpus-sector" name="sector">
         <option value="">All sectors</option>
@@ -149,7 +174,9 @@ const policies = [...new Map(
   <noscript>
     <p>Interactive filtering requires JavaScript. The complete published corpus is shown below.</p>
   </noscript>
-  <p data-corpus-count aria-live="polite">{sortedDocuments.length} published records shown</p>
+  <p data-corpus-count aria-live="polite">
+    {sortedDocuments.length} published records shown · {pendingPublishedCount}/{sortedDocuments.length} shown records pending expanded evidence review
+  </p>
   <p data-corpus-total>
     {principalCount} principal documents · {supportingCount} supporting files and versions · {documents.length} published records total
   </p>
@@ -159,12 +186,21 @@ const policies = [...new Map(
       <li data-document-id={document.id}>
         <a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a>
         <span class="record-summary">
-          {' · '}{document.publication_date}
+          {' · '}Document date {document.document_date}
+          {' · '}Publication date {document.publication_date}
           {' · '}{vocabularyLabel(document.document_type)}
           {' · '}{vocabularyLabel(document.record_level)}
           {' · '}{vocabularyLabel(document.version_status)}
         </span>
         <dl class="record-classifications">
+          <div>
+            <dt>Collection</dt>
+            <dd>{vocabularyLabel(document.temporal_collection ?? document.historical_review_status)}</dd>
+          </div>
+          <div>
+            <dt>Relevance</dt>
+            <dd>{vocabularyLabel(document.relevance_class ?? document.historical_review_status)}</dd>
+          </div>
           <div>
             <dt>Sectors</dt>
             <dd>
@@ -213,7 +249,11 @@ const policies = [...new Map(
     };
 
     const applyFilters = (criteria: CorpusCriteria) => {
-      const visibleIds = new Set(filterDocuments(documents, criteria).map((entry) => entry.id));
+      const visibleDocuments = filterDocuments(documents, criteria);
+      const visibleIds = new Set(visibleDocuments.map((entry) => entry.id));
+      const pendingVisible = visibleDocuments.filter(
+        (document) => document.historical_review_status === 'legacy_review_pending',
+      ).length;
 
       for (const item of items) {
         if (item instanceof HTMLElement) {
@@ -225,7 +265,7 @@ const policies = [...new Map(
       const usesAllView = criteria.view === 'all';
       const singular = usesAllView ? 'published record' : 'principal document';
       const plural = usesAllView ? 'published records' : 'principal documents';
-      count.textContent = `${visibleIds.size} ${visibleIds.size === 1 ? singular : plural} shown`;
+      count.textContent = `${visibleIds.size} ${visibleIds.size === 1 ? singular : plural} shown · ${pendingVisible}/${visibleIds.size} shown records pending expanded evidence review`;
       empty.hidden = visibleIds.size !== 0;
     };
 

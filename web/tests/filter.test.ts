@@ -5,6 +5,8 @@ import {
   buildTimelineEntries,
   filterDocuments,
   filterTimeline,
+  parseCorpusCriteria,
+  vocabularyLabel,
 } from '../src/lib/filter';
 import type { DocumentRecord, PolicyEvent, PublicData } from '../src/lib/types';
 import { publishedDocuments } from './fixtures/documents';
@@ -126,6 +128,39 @@ describe('filterDocuments', () => {
     }).map((document) => document.id)).toEqual(['artificial-intelligence-act-2024']);
   });
 
+  it('separates a historical collection from publication year and pending review', () => {
+    const historical = {
+      ...act,
+      id: 'historical-test-resolution',
+      historical_review_status: 'verified' as const,
+      temporal_collection: 'historical_lineage' as const,
+      relevance_class: 'direct_ai_substantive' as const,
+      document_date: '2017-02-16',
+      publication_date: '2018-07-18',
+      record_level: 'principal' as const,
+    };
+    const pending = {
+      ...act,
+      id: 'legacy-test-record',
+      historical_review_status: 'legacy_review_pending' as const,
+      temporal_collection: null,
+      relevance_class: null,
+      record_level: 'principal' as const,
+    };
+    const rows = [historical, pending];
+
+    expect(filterDocuments(rows, {
+      collection: 'historical_lineage',
+      relevance: 'direct_ai_substantive',
+      year: '2018',
+    }).map((row) => row.id)).toEqual(['historical-test-resolution']);
+    expect(filterDocuments(rows, { collection: 'historical_lineage', year: '2017' })).toEqual([]);
+    expect(filterDocuments(rows, { relevance: 'legacy_review_pending' }).map((row) => row.id))
+      .toEqual(['legacy-test-record']);
+    expect(filterDocuments(rows, {}).map((row) => row.id).sort())
+      .toEqual(['historical-test-resolution', 'legacy-test-record']);
+  });
+
   it('sorts by publication date descending and short title ascending', () => {
     const communication = publishedDocuments[1];
     if (communication === undefined) throw new Error('Expected a communication fixture.');
@@ -168,6 +203,30 @@ describe('filterDocuments', () => {
 });
 
 describe('Corpus query serialisation', () => {
+  it('uses explicit human labels for verified classes and pending review', () => {
+    expect(vocabularyLabel('direct_ai_substantive')).toBe('Direct AI relevance');
+    expect(vocabularyLabel('ai_related_precursor')).toBe('AI-related precursor');
+    expect(vocabularyLabel('indirect_adm_legal_context')).toBe('Automated-decision legal context');
+    expect(vocabularyLabel('legacy_review_pending')).toBe('Expanded evidence review pending');
+  });
+
+  it('parses collection and relevance criteria without treating pending as verified', () => {
+    expect(parseCorpusCriteria(new URLSearchParams(
+      'collection=historical_lineage&relevance=legacy_review_pending',
+    ))).toEqual({
+      collection: 'historical_lineage',
+      relevance: 'legacy_review_pending',
+    });
+  });
+
+  it('serialises collection and relevance criteria in stable order', () => {
+    expect(buildCorpusSearchParams(new URLSearchParams('ref=phd'), {
+      collection: 'historical_lineage',
+      relevance: 'direct_ai_substantive',
+    }).toString()).toBe(
+      'ref=phd&collection=historical_lineage&relevance=direct_ai_substantive',
+    );
+  });
   it('serialises sector and provenance criteria in stable order', () => {
     expect(buildCorpusSearchParams(new URLSearchParams('ref=phd'), {
       sector: 'health',
@@ -271,6 +330,11 @@ const timelineData: PublicData = {
       pending: 0,
     },
     unresolved_candidates: 0,
+    historical_review: {
+      verified: 1,
+      legacy_review_pending: 1,
+    },
+    source_scopes: [],
   },
   generated_at: publishedAt,
   policies: [],
@@ -323,6 +387,11 @@ describe('timeline filtering', () => {
       documentType: null,
       policyStage: null,
       eventType: 'publication',
+      dateKind: null,
+    });
+    expect(entries.find((entry) => entry.id === 'artificial-intelligence-act-2024')).toMatchObject({
+      kind: 'document',
+      dateKind: 'official_act_date',
     });
   });
 

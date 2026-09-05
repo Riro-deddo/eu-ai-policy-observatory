@@ -2,6 +2,8 @@
 
 This repository now applies a compatibility-gated historical metadata contract in the production pipeline. New published documents must carry a complete, evidence-backed extension and pass the readiness checks. The 117 routes frozen before activation remain publishable as `legacy_review_pending` until individually reviewed; they do not receive inferred classifications. The initial migration adds 14 reviewed historical documents and upgrades three existing documents, producing 17 `verified` and 114 `legacy_review_pending` documents in a 131-document corpus. A verified status records passage through this evidence gate; it is not a researcher-approved PhD sample or a claim that historical source discovery is complete.
 
+The new-admission evidence gate is active. The 114 retained routes are a separate, measurable legacy-review queue: their pending state means the expanded date, role and classification evidence has not been completed, not that their prior official-record checks failed. Public UI/build verification and remote publication checks remain release gates distinct from metadata admission.
+
 ## Command and API
 
 Run the preflight with an explicit cutoff:
