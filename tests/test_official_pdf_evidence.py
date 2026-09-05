@@ -6,6 +6,7 @@ No network or ignored local binaries are required for the offline test suite.
 """
 from __future__ import annotations
 
+from copy import deepcopy
 import json
 from pathlib import Path
 import sqlite3
@@ -20,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-05-official-pdf-evidence.json"
 RETAINED_LEDGER = ROOT / "research/migrations/2026-09-05-retained-section-notices.json"
 BASELINE = ROOT / "research/migrations/2026-09-05-public-document-baseline.json"
+EXPANDED_LEDGER = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
 # Hand-checked observations, not values derived by the exporter under test.
 FILES = [
     ("draft-guidance-serious-ai-incidents-2025", "119624", "f1d58ecf69004b361d2201ea44e6219f00c27ba249ad5011965152de9167686d", "2026-09-05T08:08:53.261079Z", 341927, 13),
@@ -84,8 +86,8 @@ def test_pipeline_retains_pdf_provenance_without_adding_documents(tmp_path):
     assert template["record_level"] == "principal"
     assert template["document_date"] == "2025-09-26"
     assert template["publication_date"] == "2025-09-26"
-    assert template["corpus_assessment"]["reviewed_by"] == "Yichen Hao"
-    assert template["corpus_assessment"]["reviewed_at"] == "2026-09-04T00:00:00Z"
+    assert template["corpus_assessment"]["reviewed_by"] == "Codex (AI-assisted evidence review)"
+    assert template["corpus_assessment"]["reviewed_at"] == "2026-09-05T18:07:46Z"
 
 
 def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
@@ -112,12 +114,68 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
         (ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json").read_text(encoding="utf-8")
     )
     retained_review = json.loads(RETAINED_LEDGER.read_text(encoding="utf-8"))
+    expanded_review = json.loads(EXPANDED_LEDGER.read_text(encoding="utf-8"))
     retained_changes = {
         item["document_id"]: item for item in retained_review["documents"]
     }
     later_changes = {item["before"]["id"]: item for item in identity_review["documents"]}
+    expanded_audit = {
+        item["document_id"]: item
+        for item in expanded_review["record_audit"]
+        if item["decision"] == "upgrade"
+    }
+    expanded_handoffs = {
+        item["path"]: json.loads((ROOT / item["path"]).read_text(encoding="utf-8"))
+        for item in expanded_review["handoffs"]
+    }
+    applied_source_ids = {item["source_id"] for item in expanded_review["source_changes"]}
+    expanded_source_updates = {
+        source_id: source
+        for handoff in expanded_handoffs.values()
+        for source_id, source in (
+            handoff.get("source_updates", {}).items()
+            if isinstance(handoff.get("source_updates", {}), dict)
+            else ()
+        )
+        if source_id in applied_source_ids
+    }
     for change in ledger["changes"]:
         record = json.loads((ROOT / change["path"]).read_text(encoding="utf-8"))
+        # First reverse the chronologically latest expanded evidence review.
+        # Its exact patch scope is declared in the reviewed handoff; the older
+        # ledgers below then remain independently testable and immutable.
+        if record.get("entity_type") == "document" and record["id"] in expanded_audit:
+            audit = expanded_audit[record["id"]]
+            reviewed = expanded_handoffs[audit["handoff_path"]]["records"][
+                audit["handoff_record_index"]
+            ]
+            assert reviewed["document_id"] == record["id"]
+            patch = reviewed["proposed_patch"]
+            assert set(audit["changed_fields"]) <= set(patch)
+            prior = deepcopy(later_changes[record["id"]]["before"])
+            for dotted, expected in later_changes[record["id"]]["after_changes"].items():
+                target = prior
+                parts = dotted.split(".")
+                for part in parts[:-1]:
+                    target = target[part]
+                target[parts[-1]] = deepcopy(expected)
+            for field, expected in patch.items():
+                assert record[field] == expected
+                if field in prior:
+                    record[field] = deepcopy(prior[field])
+                else:
+                    record.pop(field)
+        elif record.get("entity_type") == "source" and record["id"] in expanded_source_updates:
+            assert record == expanded_source_updates[record["id"]]
+            if "added_record" in change:
+                record = deepcopy(change["added_record"])
+            else:
+                for field in change["fields"]:
+                    target = record
+                    parts = field["field"].split(".")
+                    for part in parts[:-1]:
+                        target = target[part]
+                    target[parts[-1]] = deepcopy(field["after"])
         # Reverse only the subsequent retained-route correction in this local copy.
         # Fields absent before the correction are removed, not replaced wholesale.
         if record.get("entity_type") == "document" and record["id"] in retained_changes:

@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T08:35:01Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "draft-serious-ai-incident-report-template-2025",
   "official_title": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
   "short_title": "Draft high-risk AI incident-report template",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "commission-newsroom-119623-pdf",
+      "evidence_locator": "Consultation page field 'Publication 26 September 2025' and PDF 119623 cover identifying the separate reporting form, version 1.0.0."
     }
   ],
   "policy_ids": [
@@ -46,8 +48,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 119623 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. The version_label is transcribed from PDF page 1; draft status and editorial record level remain unchanged. Identity review by Codex at 2026-09-05T08:35:01Z: The separately titled reporting template is an independently citable operational instrument with five reporting sections and its own version label 1.0.0. Its principal classification describes standalone documentary identity, not final adoption. The title is transcribed from official PDF 119623, page 1, with line breaks joined. Draft status remains explicit; the other incident document is not its parent or another version. This field-limited review preserves all other metadata, classifications and earlier review attribution.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -66,5 +68,60 @@
       "content_hash": "20f90c54a7cd0fb952d08965947dabfa6e423515cab925d9c4b9c81364ed5a82",
       "archived_path": null
     }
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Consultation page field 'Publication 26 September 2025' and PDF 119623 cover identifying the separate reporting form, version 1.0.0.",
+      "meaning": "Establishes 2025-09-26 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Official consultation page metadata field 'Publication 26 September 2025' beside reporting-template download 119623.",
+      "meaning": "Establishes 2025-09-26 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Exact version-1.0.0 form 'Incident Report for Serious Incidents under the AI Act (High-risk AI systems)': report-identification, incident, harm, system and submitter fields for Article 73 high-risk-AI reporting.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Exact version-1.0.0 form 'Incident Report for Serious Incidents under the AI Act (High-risk AI systems)': report-identification, incident, harm, system and submitter fields for Article 73 high-risk-AI reporting. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Consultation page field 'Publication 26 September 2025' and PDF 119623 cover identifying the separate reporting form, version 1.0.0.",
+      "rationale": "The exact institutional artifact supports the retained EU-institution provenance classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Consultation page field 'Publication 26 September 2025' and PDF 119623 cover identifying the separate reporting form, version 1.0.0. The official page and exact file label the material as a draft consultation instrument.",
+      "rationale": "The exact artifact is expressly a consultation draft."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "commission-newsroom-119623-pdf",
+      "locator": "Official consultation page metadata field 'Publication 26 September 2025' beside reporting-template download 119623.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

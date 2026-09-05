@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T17:51:59Z",
   "slug": "ep-joint-committee-report-a9-0188-2023",
   "official_title": "Report on the proposal for a regulation of the European Parliament and of the Council on laying down harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
   "short_title": "Joint IMCO-LIBE report on the AI Act",
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ep-a9-0188-2023",
+      "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
     }
   ],
   "policy_ids": [
@@ -40,7 +42,8 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "ep-a9-0188-2023"
+    "ep-a9-0188-2023",
+    "ep-oeil-ai-act-procedure-2021-0106"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -48,8 +51,8 @@
     "inclusion_rationale": "Adopted joint-committee report forming the basis for Parliament's June 2023 amendments.",
     "researcher_notes": "Report status and date are official; policy-stage classification is analytical.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T17:51:59Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +60,74 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-a9-0188-2023",
+      "locator": "Cover: A9-0188/2023, 22.5.2023; joint IMCO-LIBE report, 2021/0106(COD).",
+      "meaning": "Official text establishes 2023-05-22 as the issue date of this manifestation."
+    },
+    "publication_date": {
+      "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+      "locator": "OEIL Documentation gateway: report A9-0188/2023, 22/05/2023.",
+      "meaning": "Official OEIL catalogue independently establishes first publication on 22 May 2023."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-a9-0188-2023",
+      "locator": "Cover: A9-0188/2023, 22.5.2023; joint IMCO-LIBE report, 2021/0106(COD).",
+      "rationale": "Joint report contains horizontal AI Act amendments spanning public/private uses and sectors."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ep-a9-0188-2023",
+      "locator": "Joint report contains horizontal AI Act amendments spanning public/private uses and sectors.",
+      "rationale": "Horizontal AI Act across providers, deployers, authorities and high-risk domains."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-a9-0188-2023",
+      "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+      "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+      "locator": "OEIL Documentation gateway: report A9-0188/2023, 22/05/2023.",
+      "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Brando Benifei",
+      "affiliation": "European Parliament",
+      "evidence_source_id": "ep-a9-0188-2023",
+      "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+    },
+    {
+      "name": "Ioan-Dragoş Tudorache",
+      "affiliation": "European Parliament",
+      "evidence_source_id": "ep-a9-0188-2023",
+      "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2023-05-11",
+      "precision": "day",
+      "source_id": "ep-a9-0188-2023",
+      "locator": "Procedure appendix: committees responsible adopted 11.5.2023; tabled 22.5.2023."
+    }
+  ],
+  "historical_review_status": "verified"
 }

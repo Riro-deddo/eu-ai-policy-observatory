@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "cor-opinion-ai-omnibus-2026",
   "official_title": "Opinion of the European Committee of the Regions — Digital simplification and Data Union Strategy",
   "short_title": "Committee of the Regions opinion on digital simplification",
@@ -27,7 +27,9 @@
   "institution_roles": [
     {
       "institution_id": "european-committee-of-the-regions",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-cor-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2025/04240 opinion heading names the Committee."
     }
   ],
   "policy_ids": [
@@ -48,8 +50,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +59,53 @@
   "provenance_tags": [
     "eu_agency_or_body_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-cor-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of vote: 07/05/2026 for COR 2025/04240.",
+      "meaning": "Establishes retained document date 2026-05-07."
+    },
+    "publication_date": {
+      "source_id": "ai-omnibus-cor-eur-lex",
+      "locator": "OJ C, C/2026/3469, 24.7.2026.",
+      "meaning": "Establishes retained publication date 2026-07-24 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-omnibus-cor-eur-lex",
+      "locator": "Official COR 2025/04240: General and Specific comments assess AI Act simplification for regional authorities, businesses and public services.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-omnibus-cor-eur-lex",
+      "locator": "Official COR 2025/04240: General and Specific comments assess AI Act simplification for regional authorities, businesses and public services.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "ai-omnibus-cor-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2025/04240 opinion heading names the Committee.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-omnibus-cor-eur-lex",
+      "locator": "OJ C, C/2026/3469, 24.7.2026.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

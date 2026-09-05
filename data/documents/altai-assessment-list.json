@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "altai-assessment-list",
   "official_title": "Assessment List for Trustworthy Artificial Intelligence (ALTAI) for self-assessment",
   "short_title": "Assessment List for Trustworthy AI (ALTAI)",
@@ -24,7 +24,15 @@
   "institution_roles": [
     {
       "institution_id": "high-level-expert-group-on-ai",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "altai-commission",
+      "evidence_locator": "Official PDF identifies the High-Level Expert Group on AI as the author and states responsibility for the text."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "publisher",
+      "evidence_source_id": "altai-commission",
+      "evidence_locator": "Commission library page officially publishes the expert-group document; hosting is not treated as authorship."
     }
   ],
   "policy_ids": [
@@ -46,8 +54,8 @@
     "inclusion_rationale": "The final self-assessment list operationalises the seven requirements introduced by the Ethics Guidelines and therefore anchors analysis of proceduralisation.",
     "researcher_notes": "Analytical selection; authorship and publication date are verified on the Commission library page.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -55,5 +63,60 @@
   "provenance_tags": [
     "eu_expert_group_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "altai-commission",
+      "locator": "Commission library page heading 'Assessment List for Trustworthy Artificial Intelligence (ALTAI) for self-assessment', field 'Publication 17 July 2020', and English PDF 68342.",
+      "meaning": "Establishes 2020-07-17 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "altai-commission",
+      "locator": "Commission library page metadata field 'Publication 17 July 2020' for the exact ALTAI publication.",
+      "meaning": "Establishes 2020-07-17 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "altai-commission",
+      "locator": "ALTAI PDF title and the seven assessment sections operationalising the Ethics Guidelines' requirements for trustworthy AI.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "altai-commission",
+      "locator": "ALTAI PDF title and the seven assessment sections operationalising the Ethics Guidelines' requirements for trustworthy AI. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "altai-commission",
+      "locator": "PDF authorship/responsibility statement names the High-Level Expert Group on AI.",
+      "rationale": "The text expressly assigns authorship and responsibility to the expert group."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "altai-commission",
+      "locator": "Commission library page metadata field 'Publication 17 July 2020' for the exact ALTAI publication.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "High-Level Expert Group on Artificial Intelligence",
+      "affiliation": null,
+      "evidence_source_id": "altai-commission",
+      "evidence_locator": "PDF cover and responsibility statement identify the High-Level Expert Group on AI as author."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

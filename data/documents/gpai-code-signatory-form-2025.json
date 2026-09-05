@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T07:35:00Z",
+  "updated_at": "2026-09-05T18:11:15Z",
   "slug": "gpai-code-signatory-form-2025",
   "official_title": "General-Purpose AI Code of Practice — Signatory Form",
   "short_title": "GPAI Code signatory form",
@@ -12,10 +12,10 @@
   "official_reference": null,
   "procedure_references": [],
   "oj_reference": null,
-  "document_date": "2025-07-10",
+  "document_date": "2025-07-17",
   "version_label": "Signatory form",
   "version_status": "final",
-  "publication_date": "2025-07-10",
+  "publication_date": "2025-07-17",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-ai-office",
-      "role": "publisher"
+      "role": "responsible_body",
+      "evidence_source_id": "gpai-code-signatory-dedicated-commission",
+      "evidence_locator": "Official page and form identify the AI Office as the body receiving and administering signatures."
     }
   ],
   "policy_ids": [
@@ -38,21 +40,63 @@
     "accountability"
   ],
   "source_ids": [
-    "gpai-code-final-commission"
+    "gpai-code-final-commission",
+    "gpai-code-signatory-dedicated-commission"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified. This historical note describes a prior canonical record-level correction; this handoff preserves the existing supporting level and proposes no record_level change. Later expanded evidence review by Codex opened and read exact DOCX 118312, including its binding statement, chapter-selection declarations and reference to Code text published 10 July 2025; the dedicated page independently dates the form to 17 July 2025.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:11:15Z"
   },
   "sector_tags": [
     "general_cross_sector"
   ],
   "provenance_tags": [
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "gpai-code-signatory-dedicated-commission",
+      "locator": "Dedicated page heading 'General-Purpose AI Code of Practice – Signatory Form', field 'Publication 17 July 2025', and DOCX 118312.",
+      "meaning": "Establishes 2025-07-17 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "gpai-code-signatory-dedicated-commission",
+      "locator": "Dedicated page metadata field 'Publication 17 July 2025'; DOCX text separately references Code text published 10 July and does not date the form to that day.",
+      "meaning": "Establishes 2025-07-17 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "gpai-code-signatory-dedicated-commission",
+      "locator": "Exact signatory artifact 'General-Purpose AI Code of Practice — Signatory Form': named commitments, measures or form fields implementing GPAI transparency, copyright or systemic-risk obligations.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "gpai-code-signatory-dedicated-commission",
+      "locator": "Exact signatory artifact 'General-Purpose AI Code of Practice — Signatory Form': named commitments, measures or form fields implementing GPAI transparency, copyright or systemic-risk obligations. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "gpai-code-signatory-dedicated-commission",
+      "locator": "Dedicated page metadata field 'Publication 17 July 2025'; DOCX text separately references Code text published 10 July and does not date the form to that day.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

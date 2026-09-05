@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "edpb-edps-joint-opinion-5-2021",
   "official_title": "EDPB-EDPS Joint Opinion 5/2021 on the proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)",
   "short_title": "EDPB–EDPS Joint Opinion 5/2021",
@@ -26,11 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-data-protection-board",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "evidence_locator": "Joint-opinion PDF cover: 'EDPB-EDPS Joint Opinion 5/2021' and 'Adopted on 18 June 2021'."
     },
     {
       "institution_id": "european-data-protection-supervisor",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "evidence_locator": "Joint-opinion PDF cover: 'EDPB-EDPS Joint Opinion 5/2021' and 'Adopted on 18 June 2021'."
     }
   ],
   "policy_ids": [
@@ -44,7 +48,8 @@
     "compliance"
   ],
   "source_ids": [
-    "edpb-edps-joint-opinion-5-2021-official-pdf"
+    "edpb-edps-joint-opinion-5-2021-official-pdf",
+    "edpb-edps-joint-opinion-5-2021-landing"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -52,8 +57,8 @@
     "inclusion_rationale": "The joint opinion is a formal data-protection intervention in the AI Act procedure and is central to comparing institutional constructions of risk and fundamental-rights safeguards.",
     "researcher_notes": "Analytical selection; title and adoption date follow the official joint PDF and EDPB record.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -62,5 +67,60 @@
     "eu_agency_or_body_authored",
     "joint_institutional",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "locator": "Joint-opinion PDF cover: 'EDPB-EDPS Joint Opinion 5/2021' and 'Adopted on 18 June 2021'.",
+      "meaning": "Establishes 2021-06-18 as this exact record's institutional adoption date."
+    },
+    "publication_date": {
+      "source_id": "edpb-edps-joint-opinion-5-2021-landing",
+      "locator": "EDPS official page dated 18 June 2021 announcing the joint opinion and linking the exact English PDF.",
+      "meaning": "Establishes 2021-06-18 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "locator": "Exact 'EDPB-EDPS Joint Opinion 5/2021 on the proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)': subject heading and analysis/recommendation sections addressing the proposed EU AI Regulation or AI Omnibus.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "locator": "Exact 'EDPB-EDPS Joint Opinion 5/2021 on the proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)': subject heading and analysis/recommendation sections addressing the proposed EU AI Regulation or AI Omnibus. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "locator": "Exact PDF cover title 'EDPB-EDPS Joint Opinion 5/2021' names the European Data Protection Board and European Data Protection Supervisor as the joint issuing bodies.",
+      "rationale": "The exact opinion is issued by the named EU body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "locator": "Exact PDF cover title 'EDPB-EDPS Joint Opinion 5/2021' jointly names EDPB and EDPS; the cover records adoption on 18 June 2021.",
+      "rationale": "The opinion is expressly a joint instrument of two EU supervisory bodies."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "edpb-edps-joint-opinion-5-2021-official-pdf",
+      "locator": "EDPS official page dated 18 June 2021 announcing the joint opinion and linking the exact English PDF.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

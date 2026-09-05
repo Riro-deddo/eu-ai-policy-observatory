@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "gpai-code-third-draft-transparency",
   "official_title": "Third Draft General-Purpose AI Code of Practice — Transparency",
   "short_title": "GPAI Code third-draft transparency chapter",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-ai-office",
-      "role": "publisher"
+      "role": "commissioner",
+      "evidence_source_id": "gpai-code-chairs-commission",
+      "evidence_locator": "Official Commission page expressly says the AI Office appointed the chairs and vice-chairs leading drafting."
     }
   ],
   "policy_ids": [
@@ -38,7 +40,8 @@
     "accountability"
   ],
   "source_ids": [
-    "gpai-code-third-draft-commission"
+    "gpai-code-third-draft-commission",
+    "gpai-code-chairs-commission"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -46,13 +49,67 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
   ],
   "provenance_tags": [
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "gpai-code-third-draft-commission",
+      "locator": "Third-draft page field 'Publication 11 March 2025' and download 'Third Draft – Transparency' (113607).",
+      "meaning": "Establishes 2025-03-11 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "gpai-code-third-draft-commission",
+      "locator": "Third-draft page field 'Publication 11 March 2025' beside exact Transparency file 113607.",
+      "meaning": "Establishes 2025-03-11 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "gpai-code-third-draft-commission",
+      "locator": "Exact Transparency/model-documentation artifact 'Third Draft General-Purpose AI Code of Practice — Transparency': named commitments, measures or form fields implementing GPAI transparency, copyright or systemic-risk obligations.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "gpai-code-third-draft-commission",
+      "locator": "Exact Transparency/model-documentation artifact 'Third Draft General-Purpose AI Code of Practice — Transparency': named commitments, measures or form fields implementing GPAI transparency, copyright or systemic-risk obligations. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "gpai-code-third-draft-commission",
+      "locator": "Third-draft page field 'Publication 11 March 2025' beside exact Transparency file 113607.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Nuria Oliver",
+      "affiliation": null,
+      "evidence_source_id": "gpai-code-third-draft-commission",
+      "evidence_locator": "Exact linked Transparency chapter/form identifies the Transparency working-group chairs responsible for this component."
+    },
+    {
+      "name": "Rishi Bommasani",
+      "affiliation": null,
+      "evidence_source_id": "gpai-code-third-draft-commission",
+      "evidence_locator": "Exact linked Transparency chapter/form identifies the Transparency working-group chairs responsible for this component."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

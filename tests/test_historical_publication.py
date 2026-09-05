@@ -11,6 +11,9 @@ from observatory.io import LoadedRecord, load_records
 from observatory.pipeline import run_pipeline
 
 
+LEGACY_PENDING_DOCUMENT = "ai-act-council-general-approach-st-15698-2022"
+
+
 def test_historical_batch_round_trips_without_losing_old_routes(tmp_path):
     outputs = run_pipeline(
         Path.cwd(),
@@ -54,7 +57,7 @@ def test_historical_batch_round_trips_without_losing_old_routes(tmp_path):
 def test_legacy_role_evidence_cannot_bypass_complete_extension_gate(tmp_path):
     data_root = tmp_path / "data"
     shutil.copytree(Path("data"), data_root)
-    document_path = data_root / "documents" / "white-paper-on-artificial-intelligence.json"
+    document_path = data_root / "documents" / f"{LEGACY_PENDING_DOCUMENT}.json"
     document = json.loads(document_path.read_text(encoding="utf-8"))
     document["institution_roles"][0].update(
         {
@@ -83,7 +86,7 @@ def test_unknown_new_legacy_like_document_is_rejected():
     legacy = next(
         record
         for record in records["documents"]
-        if record.data.get("id") == "white-paper-on-artificial-intelligence"
+        if record.data.get("id") == LEGACY_PENDING_DOCUMENT
     )
     legacy.data["id"] = "unlisted-new-document"
     legacy.data["slug"] = "unlisted-new-document"
@@ -107,7 +110,7 @@ def test_scalar_only_historical_extension_is_rejected_as_partial():
     legacy = next(
         record
         for record in records["documents"]
-        if record.data.get("id") == "white-paper-on-artificial-intelligence"
+        if record.data.get("id") == LEGACY_PENDING_DOCUMENT
     )
     legacy.data["historical_review_status"] = "verified"
 

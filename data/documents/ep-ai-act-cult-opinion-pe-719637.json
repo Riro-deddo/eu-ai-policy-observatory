@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T17:51:59Z",
   "slug": "ep-ai-act-cult-opinion-pe-719637",
   "official_title": "Opinion of the Committee on Culture and Education on the proposal for a regulation laying down harmonised rules on artificial intelligence",
   "short_title": "CULT opinion on the AI Act proposal",
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
     }
   ],
   "policy_ids": [
@@ -40,7 +42,8 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "ep-ai-act-cult-opinion-pe-719637-source"
+    "ep-ai-act-cult-opinion-pe-719637-source",
+    "ep-oeil-ai-act-procedure-2021-0106"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
@@ -48,8 +51,8 @@
     "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
     "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T17:51:59Z"
   },
   "sector_tags": [
     "education",
@@ -58,5 +61,75 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "locator": "Cover: PE719.637v02-00, 16.6.2022; OPINION, procedure 2021/0106(COD).",
+      "meaning": "Official text establishes 2022-06-16 as the issue date of this manifestation."
+    },
+    "publication_date": {
+      "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+      "locator": "OEIL Documentation gateway: Committee opinion CULT PE719.637, 16/06/2022.",
+      "meaning": "Official OEIL catalogue independently establishes first publication on 16 June 2022."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "locator": "Cover: PE719.637v02-00, 16.6.2022; OPINION, procedure 2021/0106(COD).",
+      "rationale": "Opinion and justification address AI in education, culture, media, disinformation and deepfakes."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "locator": "Opinion and justification address AI in education, culture, media, disinformation and deepfakes.",
+      "rationale": "AI systems used in education and vocational training."
+    },
+    {
+      "field": "sector_tags",
+      "value": "media_and_culture",
+      "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "locator": "Opinion and justification address AI in education, culture, media, disinformation and deepfakes.",
+      "rationale": "Culture, media, journalism, disinformation and deepfakes."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+      "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+      "locator": "OEIL Documentation gateway: Committee opinion CULT PE719.637, 16/06/2022.",
+      "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Marcel Kolaja",
+      "affiliation": "European Parliament",
+      "evidence_source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2022-06-15",
+      "precision": "day",
+      "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+      "locator": "Procedure appendix: Date adopted 15.6.2022."
+    }
+  ],
+  "historical_review_status": "verified"
 }

@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T17:51:59Z",
   "slug": "ep-position-p9-ta-2024-0138",
   "official_title": "European Parliament legislative resolution of 13 March 2024 on the proposal for a regulation of the European Parliament and of the Council on laying down harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts (COM(2021)0206 – C9-0146/2021 – 2021/0106(COD))",
   "short_title": "Parliament first-reading position on the AI Act",
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "ep-p9-ta-2024-0138",
+      "evidence_locator": "Official title and operative text identify adoption by the European Parliament."
     }
   ],
   "policy_ids": [
@@ -48,8 +50,8 @@
     "inclusion_rationale": "Formal Parliament first-reading position embodying the interinstitutional compromise.",
     "researcher_notes": "The 2024 adoption date and 2025 Official Journal publication date are separately recorded.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T17:51:59Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +59,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-p9-ta-2024-0138",
+      "locator": "EUR-Lex title: legislative resolution 13 March 2024; P9_TA(2024)0138; 2021/0106(COD).",
+      "meaning": "Official text establishes 2024-03-13 as the institutional adoption date of this manifestation."
+    },
+    "publication_date": {
+      "source_id": "ep-p9-ta-2024-0138",
+      "locator": "EUR-Lex metadata: OJ C, C/2025/1027, 27.2.2025 and its ELI.",
+      "meaning": "Official EUR-Lex/OJ metadata independently establishes first publication on 27 February 2025."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-p9-ta-2024-0138",
+      "locator": "EUR-Lex title: legislative resolution 13 March 2024; P9_TA(2024)0138; 2021/0106(COD).",
+      "rationale": "Resolution adopts Parliament's first-reading horizontal AI Act position."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ep-p9-ta-2024-0138",
+      "locator": "Resolution adopts Parliament's first-reading horizontal AI Act position.",
+      "rationale": "Full position governs providers, deployers and authorities across sectors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-p9-ta-2024-0138",
+      "locator": "Official title and operative text identify adoption by the European Parliament.",
+      "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-p9-ta-2024-0138",
+      "locator": "EUR-Lex metadata: OJ C, C/2025/1027, 27.2.2025 and its ELI.",
+      "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

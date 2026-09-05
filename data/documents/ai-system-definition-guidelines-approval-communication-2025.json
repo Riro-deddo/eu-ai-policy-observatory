@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "ai-system-definition-guidelines-approval-communication-2025",
   "official_title": "Communication to the Commission — Approval of the content of the draft Guidelines on the definition of an artificial intelligence system established by Regulation (EU) 2024/1689 (AI Act)",
   "short_title": "Approval communication for AI system definition guidelines",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "definition-guidelines-commission",
+      "evidence_locator": "Communication masthead: 'Brussels, 6.2.2025', 'C(2025) 924 final', and title 'Approval of the content of the draft Guidelines' on the AI-system definition."
     }
   ],
   "policy_ids": [
@@ -45,8 +47,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -54,5 +56,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "definition-guidelines-commission",
+      "locator": "Communication masthead: 'Brussels, 6.2.2025', 'C(2025) 924 final', and title 'Approval of the content of the draft Guidelines' on the AI-system definition.",
+      "meaning": "Establishes 2025-02-06 as this exact record's document issue date."
+    },
+    "publication_date": {
+      "source_id": "definition-guidelines-commission",
+      "locator": "Commission library page metadata field 'Publication 06 February 2025' and approval-communication download 118559.",
+      "meaning": "Establishes 2025-02-06 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "definition-guidelines-commission",
+      "locator": "Exact communication 'Communication to the Commission — Approval of the content of the draft Guidelines on the definition of an artificial intelligence system established by Regulation (EU) 2024/1689 (AI Act)': opening approval paragraphs identify the named draft AI Act guidelines and distinguish content approval from later formal adoption.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "definition-guidelines-commission",
+      "locator": "Exact communication 'Communication to the Commission — Approval of the content of the draft Guidelines on the definition of an artificial intelligence system established by Regulation (EU) 2024/1689 (AI Act)': opening approval paragraphs identify the named draft AI Act guidelines and distinguish content approval from later formal adoption. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "definition-guidelines-commission",
+      "locator": "Communication masthead: 'Brussels, 6.2.2025', 'C(2025) 924 final', and title 'Approval of the content of the draft Guidelines' on the AI-system definition.",
+      "rationale": "The exact institutional artifact supports the retained EU-institution provenance classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "definition-guidelines-commission",
+      "locator": "Commission library page metadata field 'Publication 06 February 2025' and approval-communication download 118559.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

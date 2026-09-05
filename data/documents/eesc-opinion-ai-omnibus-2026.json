@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "eesc-opinion-ai-omnibus-2026",
   "official_title": "Opinion of the European Economic and Social Committee on a) Proposal for a Regulation of the European Parliament and of the Council amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (COM(2025) 836 final — 2025/0359 (COD)) and b) Proposal for a Regulation of the European Parliament and of the Council amending Regulations (EU) 2016/679, (EU) 2018/1724, (EU) 2018/1725, (EU) 2023/2854 and Directives 2002/58/EC, (EU) 2022/2555 and (EU) 2022/2557 as regards the simplification of the digital legislative framework, and repealing Regulations (EU) 2018/1807, (EU) 2019/1150, (EU) 2022/868 and Directive (EU) 2019/1024 (Digital Omnibus) (COM(2025) 837 final — 2025/0360 (COD))",
   "short_title": "EESC opinion on the Digital Omnibus",
@@ -27,7 +27,9 @@
   "institution_roles": [
     {
       "institution_id": "european-economic-and-social-committee",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-eesc-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2025/03929 opinion heading names the Committee."
     }
   ],
   "policy_ids": [
@@ -48,8 +50,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +59,53 @@
   "provenance_tags": [
     "eu_agency_or_body_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-eesc-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of vote: 18/03/2026 for EESC 2025/03929.",
+      "meaning": "Establishes retained document date 2026-03-18."
+    },
+    "publication_date": {
+      "source_id": "ai-omnibus-eesc-eur-lex",
+      "locator": "OJ C, C/2026/3225, 2.7.2026.",
+      "meaning": "Establishes retained publication date 2026-07-02 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-omnibus-eesc-eur-lex",
+      "locator": "Official EESC 2025/03929: sections 3-4 assess Digital Omnibus AI measures for businesses, workers, consumers and public authorities.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-omnibus-eesc-eur-lex",
+      "locator": "Official EESC 2025/03929: sections 3-4 assess Digital Omnibus AI measures for businesses, workers, consumers and public authorities.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "ai-omnibus-eesc-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2025/03929 opinion heading names the Committee.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-omnibus-eesc-eur-lex",
+      "locator": "OJ C, C/2026/3225, 2.7.2026.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "ai-act-impact-assessment-annexes-swd-2021-84",
   "official_title": "COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT ANNEXES Accompanying the Proposal for a Regulation of the European Parliament and of the Council LAYING DOWN HARMONISED RULES ON ARTIFICIAL INTELLIGENCE (ARTIFICIAL INTELLIGENCE ACT) AND AMENDING CERTAIN UNION LEGISLATIVE ACTS",
   "short_title": "Annexes to the AI Act proposal impact assessment",
@@ -17,7 +17,7 @@
   "document_date": "2021-04-21",
   "version_label": "Impact assessment annexes",
   "version_status": "final",
-  "publication_date": "2021-04-23",
+  "publication_date": "2021-04-21",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-act-impact-assessment-annexes-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 84 final masthead reads EUROPEAN COMMISSION."
     }
   ],
   "policy_ids": [
@@ -40,7 +42,8 @@
     "accountability"
   ],
   "source_ids": [
-    "ai-act-impact-assessment-annexes-eur-lex"
+    "ai-act-impact-assessment-annexes-eur-lex",
+    "ai-act-impact-assessment-commission-library"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -48,8 +51,8 @@
     "inclusion_rationale": "The separately transmitted impact-assessment annexes contain the evidence, consultation and cost material underpinning SWD(2021) 84 final.",
     "researcher_notes": "Analytical selection; official title and attachment identity are verified through Council record ST 8115/21 ADD 2.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +60,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; SWD(2021) 84 final Brussels masthead carries the same date.",
+      "meaning": "Establishes exact component issue date."
+    },
+    "publication_date": {
+      "source_id": "ai-act-impact-assessment-commission-library",
+      "locator": "Publication 21 April 2021 and distinct download 2. Annex to the Impact assessment.",
+      "meaning": "Establishes exact component publication independently of Council cover/receipt dates."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+      "locator": "Official SWD(2021) 84 final: download 2 contains Annex 1 on the Scrutiny Board opinion plus option, sector and stakeholder annexes spanning health, transport, public services, finance and employment.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+      "locator": "Official SWD(2021) 84 final: download 2 contains Annex 1 on the Scrutiny Board opinion plus option, sector and stakeholder annexes spanning health, transport, public services, finance and employment.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 84 final masthead reads EUROPEAN COMMISSION.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-act-impact-assessment-commission-library",
+      "locator": "Publication 21 April 2021 and distinct download 2. Annex to the Impact assessment.",
+      "rationale": "Official Commission page dates and identifies the exact component."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

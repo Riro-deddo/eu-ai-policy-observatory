@@ -1,0 +1,13 @@
+{
+  "id": "digital-omnibus-regulation-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T18:06:34Z",
+  "updated_at": "2026-09-05T18:06:34Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T18:06:34Z",
+  "last_verified_at": "2026-09-05T18:06:34Z",
+  "verification_note": "Publication 19 November 2025; labelled Staff Working Document download; PDF cover identifies SWD(2025) 836 final and COM(2025) 836 final."
+}

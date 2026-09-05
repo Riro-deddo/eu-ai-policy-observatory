@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "ai-omnibus-staff-working-document-2025",
   "official_title": "Commission Staff Working Document accompanying the proposals for Regulations as regards simplification of the digital regulatory framework",
   "short_title": "Digital Omnibus staff working document",
@@ -27,7 +27,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-swd-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Commission; SWD(2025) 836 final masthead reads EUROPEAN COMMISSION."
     }
   ],
   "policy_ids": [
@@ -40,7 +42,8 @@
     "accountability"
   ],
   "source_ids": [
-    "ai-omnibus-swd-eur-lex"
+    "ai-omnibus-swd-eur-lex",
+    "digital-omnibus-regulation-commission-library"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -48,8 +51,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +60,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-swd-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 19/11/2025; SWD(2025) 836 final Brussels masthead carries the same date.",
+      "meaning": "Establishes retained document date 2025-11-19."
+    },
+    "publication_date": {
+      "source_id": "digital-omnibus-regulation-commission-library",
+      "locator": "Commission library Publication 19 November 2025 labels the accompanying Staff Working Document; linked PDF cover identifies SWD(2025) 836 final and COM(2025) 836 final.",
+      "meaning": "Establishes exact publication separately from issue, vote, adoption, signature, receipt, or consolidation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-omnibus-swd-eur-lex",
+      "locator": "Official SWD(2025) 836 final: section 3 on pp.68-81 analyzes targeted AI Act amendments for providers, deployers, SMEs, authorities and sectoral legislation.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-omnibus-swd-eur-lex",
+      "locator": "Official SWD(2025) 836 final: section 3 on pp.68-81 analyzes targeted AI Act amendments for providers, deployers, SMEs, authorities and sectoral legislation.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-omnibus-swd-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Commission; SWD(2025) 836 final masthead reads EUROPEAN COMMISSION.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "digital-omnibus-regulation-commission-library",
+      "locator": "Commission library Publication 19 November 2025 labels the accompanying Staff Working Document; linked PDF cover identifies SWD(2025) 836 final and COM(2025) 836 final.",
+      "rationale": "Official EU page establishes publication of this exact manifestation."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

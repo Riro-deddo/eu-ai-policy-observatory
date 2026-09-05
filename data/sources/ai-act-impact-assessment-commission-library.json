@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-impact-assessment-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:43:48Z",
+  "updated_at": "2026-09-05T17:43:48Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T17:43:48Z",
+  "last_verified_at": "2026-09-05T17:43:48Z",
+  "verification_note": "Official page gives Publication 21 April 2021 and separately exposes impact assessment, annex, and executive summary downloads, corroborated against SWD(2021) 84/85 EUR-Lex identities."
+}

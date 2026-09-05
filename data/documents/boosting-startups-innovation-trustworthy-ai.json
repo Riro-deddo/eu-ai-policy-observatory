@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "boosting-startups-innovation-trustworthy-ai",
   "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions on boosting startups and innovation in trustworthy artificial intelligence",
   "short_title": "Boosting startups and innovation in trustworthy AI",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "boosting-startups-ai-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2024) 28 final masthead reads EUROPEAN COMMISSION."
     }
   ],
   "policy_ids": [
@@ -36,7 +38,8 @@
     "compliance"
   ],
   "source_ids": [
-    "boosting-startups-ai-eur-lex"
+    "boosting-startups-ai-eur-lex",
+    "boosting-startups-ai-commission-release"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
@@ -44,8 +47,8 @@
     "inclusion_rationale": "Commission policy communication linking trustworthy-AI governance with European AI innovation capacity.",
     "researcher_notes": "The scope link is analytical and kept separate from official metadata.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -53,5 +56,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "boosting-startups-ai-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 24/01/2024; COM(2024) 28 final Brussels masthead carries the same date.",
+      "meaning": "Establishes retained document date 2024-01-24."
+    },
+    "publication_date": {
+      "source_id": "boosting-startups-ai-commission-release",
+      "locator": "Publication 24 January 2024; exact communication link.",
+      "meaning": "Establishes retained publication date 2024-01-24 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "boosting-startups-ai-eur-lex",
+      "locator": "Official COM(2024) 28 final: the communication addresses AI Factories, computing, data and talent for startups, SMEs, researchers, public services and industry.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "boosting-startups-ai-eur-lex",
+      "locator": "Official COM(2024) 28 final: the communication addresses AI Factories, computing, data and talent for startups, SMEs, researchers, public services and industry.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "boosting-startups-ai-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Commission; COM(2024) 28 final masthead reads EUROPEAN COMMISSION.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "boosting-startups-ai-commission-release",
+      "locator": "Publication 24 January 2024; exact communication link.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

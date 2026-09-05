@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "coordinated-plan-2021-review",
   "official_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Fostering a European approach to Artificial Intelligence",
   "short_title": "Fostering a European approach to Artificial Intelligence",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "coordinated-plan-review-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 205 final masthead reads EUROPEAN COMMISSION."
     }
   ],
   "policy_ids": [
@@ -38,7 +40,8 @@
     "compliance"
   ],
   "source_ids": [
-    "coordinated-plan-review-eur-lex"
+    "coordinated-plan-review-eur-lex",
+    "coordinated-plan-2021-cover-commission-library"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -46,8 +49,8 @@
     "inclusion_rationale": "The communication presents the Commission's 2021 AI package and introduces the revised Coordinated Plan and regulatory proposal.",
     "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -55,5 +58,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "coordinated-plan-review-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; COM(2021) 205 final Brussels masthead carries the same date.",
+      "meaning": "Establishes retained issue date 2021-04-21."
+    },
+    "publication_date": {
+      "source_id": "coordinated-plan-2021-cover-commission-library",
+      "locator": "Heading 'Communication on Fostering a European approach to Artificial Intelligence', metadata line 'Publication 21 April 2021', and link to COM:2021:205:FIN in all EU languages.",
+      "meaning": "Establishes retained publication date 2021-04-21 separately from issue/dispatch."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "coordinated-plan-review-eur-lex",
+      "locator": "Official COM(2021) 205 final: the communication explains the 2021 Plan review and horizontal coordinated AI action across public and private domains.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "coordinated-plan-review-eur-lex",
+      "locator": "Official COM(2021) 205 final: the communication explains the 2021 Plan review and horizontal coordinated AI action across public and private domains.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "coordinated-plan-review-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 205 final masthead reads EUROPEAN COMMISSION.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "coordinated-plan-2021-cover-commission-library",
+      "locator": "Heading 'Communication on Fostering a European approach to Artificial Intelligence', metadata line 'Publication 21 April 2021', and link to COM:2021:205:FIN in all EU languages.",
+      "rationale": "The official Commission publication page independently dates and identifies the exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

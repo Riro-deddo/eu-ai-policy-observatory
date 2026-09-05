@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "eesc-opinion-coordinated-plan-2021",
   "official_title": "Opinion of the European Economic and Social Committee on Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions — Fostering a European approach to Artificial Intelligence (COM(2021) 205 final)",
   "short_title": "EESC opinion on the 2021 coordinated plan",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-economic-and-social-committee",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2021/02456 opinion heading names the Committee."
     }
   ],
   "policy_ids": [
@@ -45,8 +47,8 @@
     "inclusion_rationale": "The formal EESC response is a distinct institutional interpretation of COM(2021) 205 and its revised Coordinated Plan.",
     "researcher_notes": "Included separately from the EESC opinion on COM(2021) 206; EUR-Lex assigns this record 2021/C 517/08 and CELEX 52021AE2456.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -54,5 +56,53 @@
   "provenance_tags": [
     "eu_agency_or_body_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of vote: 22/09/2021 for EESC 2021/02456.",
+      "meaning": "Establishes retained document date 2021-09-22."
+    },
+    "publication_date": {
+      "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "locator": "OJ C 517, 22.12.2021, pp. 56-60.",
+      "meaning": "Establishes retained publication date 2021-12-22 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "locator": "Official EESC 2021/02456: sections 3-4 assess AI investment, skills, labour, public services and sectoral adoption.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "locator": "Official EESC 2021/02456: sections 3-4 assess AI investment, skills, labour, public services and sectoral adoption.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2021/02456 opinion heading names the Committee.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+      "locator": "OJ C 517, 22.12.2021, pp. 56-60.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

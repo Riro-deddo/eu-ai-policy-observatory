@@ -15,6 +15,7 @@ DATA_ROOT = PROJECT_ROOT / "data"
 SCHEMA_ROOT = PROJECT_ROOT / "schema"
 LEDGER_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-05-relationship-evidence-migration.json"
 FROZEN_BASELINE_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-05-public-document-baseline.json"
+EXPANDED_LEDGER_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-05-expanded-evidence-review.json"
 REVIEW_TIMESTAMP = "2026-09-05T07:35:00Z"
 
 RESOLVED_TARGETS = {
@@ -158,6 +159,10 @@ def test_record_levels_statuses_and_published_identity_routes_are_preserved():
     records = load_records(DATA_ROOT)
     documents = _records_by_id(records, "documents")
     baseline = json.loads(FROZEN_BASELINE_PATH.read_text(encoding="utf-8"))
+    expanded = json.loads(EXPANDED_LEDGER_PATH.read_text(encoding="utf-8"))
+    expanded_audit = {
+        item["document_id"]: item for item in expanded["record_audit"]
+    }
 
     expected_forms = {
         "gpai-code-model-documentation-form-2025": "final",
@@ -166,12 +171,17 @@ def test_record_levels_statuses_and_published_identity_routes_are_preserved():
     }
     for document_id, version_status in expected_forms.items():
         document = documents[document_id]
+        audit = expanded_audit[document_id]
         assert document["record_level"] == "supporting"
         assert document["version_status"] == version_status
-        assert document["updated_at"] == REVIEW_TIMESTAMP
+        assert audit["decision"] == "upgrade"
+        assert audit["before"]["updated_at"] == REVIEW_TIMESTAMP
+        assert audit["before"]["corpus_reviewed_by"] == "Yichen Hao"
+        assert audit["before"]["corpus_reviewed_at"] == "2026-09-04T00:00:00Z"
+        assert document["updated_at"] == audit["after"]["updated_at"]
         assert "Codex" in document["corpus_assessment"]["researcher_notes"]
-        assert document["corpus_assessment"]["reviewed_by"] == "Yichen Hao"
-        assert document["corpus_assessment"]["reviewed_at"] == "2026-09-04T00:00:00Z"
+        assert document["corpus_assessment"]["reviewed_by"] == audit["after"]["corpus_reviewed_by"]
+        assert document["corpus_assessment"]["reviewed_at"] == audit["after"]["corpus_reviewed_at"]
 
     published_routes = {
         (record.data["id"], record.data["slug"])

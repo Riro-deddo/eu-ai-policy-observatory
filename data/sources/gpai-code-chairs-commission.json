@@ -1,0 +1,13 @@
+{
+  "id": "gpai-code-chairs-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:58:09Z",
+  "updated_at": "2026-09-05T17:58:09Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/news/meet-chairs-leading-development-first-general-purpose-ai-code-practice",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T17:58:09Z",
+  "last_verified_at": "2026-09-05T17:58:09Z",
+  "verification_note": "Live official-page review on 5 September 2026. The Commission page names the thirteen chairs and vice-chairs leading the GPAI Code drafting process and expressly states that the AI Office appointed them; it is used for named external-author and commissioning evidence, not as evidence that the Commission or AI Office authored the Code."
+}
