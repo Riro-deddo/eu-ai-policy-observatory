@@ -80,7 +80,7 @@ def test_pipeline_retains_pdf_provenance_without_adding_documents(tmp_path):
     template = documents["draft-serious-ai-incident-report-template-2025"]
     assert template["version_label"] == "1.0.0"
     assert template["version_status"] == "draft"
-    assert template["record_level"] == "version"
+    assert template["record_level"] == "principal"
     assert template["document_date"] == "2025-09-26"
     assert template["publication_date"] == "2025-09-26"
     assert template["corpus_assessment"]["reviewed_by"] == "Yichen Hao"
@@ -107,8 +107,23 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
     assert ledger["whole_guidelines_identity_lead"]["public_endpoint_added"] is False
     assert ledger["review"]["publication_cutoff"] == "2026-09-04"
     assert ledger["changes"]
+    identity_review = json.loads(
+        (ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json").read_text(encoding="utf-8")
+    )
+    later_changes = {item["before"]["id"]: item for item in identity_review["documents"]}
     for change in ledger["changes"]:
         record = json.loads((ROOT / change["path"]).read_text(encoding="utf-8"))
+        # Reverse only the subsequent declared corrections in this local copy.
+        # Keep real current snapshots/sources under the original B3 assertions.
+        if record.get("entity_type") == "document" and record["id"] in later_changes:
+            later = later_changes[record["id"]]
+            for dotted, expected in later["after_changes"].items():
+                target, previous = record, later["before"]
+                parts = dotted.split(".")
+                for part in parts[:-1]:
+                    target, previous = target[part], previous[part]
+                assert target[parts[-1]] == expected
+                target[parts[-1]] = previous[parts[-1]]
         if "added_record" in change:
             assert record == change["added_record"]
             continue
@@ -119,8 +134,16 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
             assert actual == field["after"], (change["path"], field["field"])
 
 
-def test_acquiring_files_does_not_fabricate_relationship_readiness():
-    issues = validate_historical_readiness(load_records(ROOT / "data"), ROOT / "schema", "2026-09-04")
+def test_pdf_acquisition_alone_does_not_fabricate_relationship_readiness():
+    records = load_records(ROOT / "data")
+    # Recreate B3's pre-identity-review levels in memory, without editing data.
+    for record in records["documents"]:
+        if record.data["id"] in {
+            "draft-guidance-serious-ai-incidents-2025",
+            "draft-serious-ai-incident-report-template-2025",
+        }:
+            record.data["record_level"] = "version"
+    issues = validate_historical_readiness(records, ROOT / "schema", "2026-09-04")
     holds = {
         Path(issue.record_path).stem
         for issue in issues

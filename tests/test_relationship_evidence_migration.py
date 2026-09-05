@@ -204,7 +204,13 @@ def test_general_principles_and_siblings_remain_explicit_relationship_holds():
         for issue in issues
         if issue.code == "historical_relationship" and issue.field == "record_level"
     }
-    assert relationship_holds & (RESOLVED_TARGETS | HELD_TARGETS) == HELD_TARGETS
+    # B2 held five records at that review; B4 independently resolved the two
+    # standalone incident instruments without rewriting the historical ledger.
+    assert relationship_holds & (RESOLVED_TARGETS | HELD_TARGETS) == {
+        "draft-high-risk-classification-guidelines-2026",
+        "draft-high-risk-classification-guidelines-annex-i-2026",
+        "draft-high-risk-classification-guidelines-annex-iii-2026",
+    }
 
 
 def test_evidence_ledger_covers_exact_review_scope_with_concrete_sources():
