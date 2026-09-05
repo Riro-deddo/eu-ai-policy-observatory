@@ -94,8 +94,16 @@ export interface TimelineEntry {
   recordLevel: DocumentRecord['record_level'] | null;
 }
 
+const provenanceLabels = new Map<string, string>([
+  ['eu_institution_authored', 'Authored by an EU institution'],
+  ['eu_agency_or_body_authored', 'Authored by an EU agency or body'],
+  ['eu_expert_group_authored', 'Authored by an EU expert group'],
+]);
+
 export function vocabularyLabel(value: string): string {
-  const readable = value.replaceAll('_', ' ');
+  const label = provenanceLabels.get(value);
+  if (label !== undefined) return label;
+  const readable = value.replaceAll('_', ' ').replace(/\beu\b/gi, 'EU');
   return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`;
 }
 

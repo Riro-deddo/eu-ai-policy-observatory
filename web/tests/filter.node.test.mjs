@@ -5,6 +5,29 @@ import { buildCorpusSearchParams, filterDocuments } from '../src/lib/filter.ts';
 
 const filterModule = await import('../src/lib/filter.ts');
 
+test('formats EU provenance labels without changing their filter identifiers', () => {
+  for (const [value, expected] of [
+    ['eu_institution_authored', 'Authored by an EU institution'],
+    ['eu_agency_or_body_authored', 'Authored by an EU agency or body'],
+    ['eu_expert_group_authored', 'Authored by an EU expert group'],
+  ]) {
+    assert.equal(filterModule.vocabularyLabel(value), expected);
+    assert.equal(buildCorpusSearchParams(new URLSearchParams(), { provenance: value }).get('provenance'), value);
+  }
+});
+
+test('preserves the EU acronym in fallback labels without changing ordinary words', () => {
+  for (const [value, expected] of [
+    ['eu_hosted', 'EU hosted'],
+    ['non_eu_source', 'Non EU source'],
+    ['european_cooperation', 'European cooperation'],
+    ['financial_services', 'Financial services'],
+    ['', ''],
+  ]) {
+    assert.equal(filterModule.vocabularyLabel(value), expected);
+  }
+});
+
 const publishedAt = '2026-09-03T00:00:00Z';
 const document = (id, shortTitle, publicationDate, details = {}) => ({
   id,
