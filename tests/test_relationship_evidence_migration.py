@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime
 from pathlib import Path
 import sqlite3
 
@@ -190,7 +191,7 @@ def test_general_principles_and_siblings_remain_explicit_relationship_holds():
     general = documents["draft-high-risk-classification-guidelines-2026"]
     assert general["record_level"] == "attachment"
     assert general["version_status"] == "draft"
-    assert general["updated_at"] == REVIEW_TIMESTAMP
+    assert datetime.fromisoformat(general["updated_at"]) >= datetime.fromisoformat(REVIEW_TIMESTAMP)
     for relationship_id, expected in EXPECTED_SIBLING_EDGES.items():
         relationship = relationships[relationship_id]
         assert _edge_tuple(relationship) == expected

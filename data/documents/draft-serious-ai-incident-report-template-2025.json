@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T08:20:53Z",
   "slug": "draft-serious-ai-incident-report-template-2025",
   "official_title": "Draft reporting template for serious incidents involving high-risk AI systems",
   "short_title": "Draft high-risk AI incident-report template",
@@ -13,7 +13,7 @@
   "procedure_references": [],
   "oj_reference": null,
   "document_date": "2025-09-26",
-  "version_label": "Consultation draft",
+  "version_label": "1.0.0",
   "version_status": "draft",
   "publication_date": "2025-09-26",
   "legal_status": "non_binding",
@@ -37,13 +37,14 @@
     "accountability"
   ],
   "source_ids": [
-    "high-risk-incident-consultation-commission"
+    "high-risk-incident-consultation-commission",
+    "commission-newsroom-119623-pdf"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "consultation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 119623 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. The version_label is transcribed from PDF page 1; draft status and editorial record level remain unchanged.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -55,5 +56,15 @@
     "eu_institution_authored",
     "official_consultation_material",
     "officially_published"
+  ],
+  "snapshots": [
+    {
+      "id": "snapshot-newsroom-119623-20260905",
+      "source_id": "commission-newsroom-119623-pdf",
+      "retrieved_at": "2026-09-05T08:08:53.258506Z",
+      "format": "pdf",
+      "content_hash": "20f90c54a7cd0fb952d08965947dabfa6e423515cab925d9c4b9c81364ed5a82",
+      "archived_path": null
+    }
   ]
 }

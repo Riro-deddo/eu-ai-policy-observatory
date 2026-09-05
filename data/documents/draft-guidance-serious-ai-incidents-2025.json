@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T08:20:53Z",
   "slug": "draft-guidance-serious-ai-incidents-2025",
   "official_title": "Draft guidance on serious-incident reporting under the AI Act for high-risk AI systems",
   "short_title": "Draft high-risk AI serious-incident guidance",
@@ -37,13 +37,14 @@
     "accountability"
   ],
   "source_ids": [
-    "high-risk-incident-consultation-commission"
+    "high-risk-incident-consultation-commission",
+    "commission-newsroom-119624-pdf"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "consultation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 119624 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Complete selected pages transcribed for identity/scope review; pages 4-12 not reviewed. Page 1 identifies Article 73 high-risk incident reporting and expressly excludes systemic-risk GPAI reporting. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -55,5 +56,15 @@
     "eu_institution_authored",
     "official_consultation_material",
     "officially_published"
+  ],
+  "snapshots": [
+    {
+      "id": "snapshot-newsroom-119624-20260905",
+      "source_id": "commission-newsroom-119624-pdf",
+      "retrieved_at": "2026-09-05T08:08:53.261079Z",
+      "format": "pdf",
+      "content_hash": "f1d58ecf69004b361d2201ea44e6219f00c27ba249ad5011965152de9167686d",
+      "archived_path": null
+    }
   ]
 }

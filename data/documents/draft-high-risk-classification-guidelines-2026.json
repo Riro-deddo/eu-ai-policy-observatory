@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T07:35:00Z",
+  "updated_at": "2026-09-05T08:20:53Z",
   "slug": "draft-high-risk-classification-guidelines-2026",
   "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — General principles",
   "short_title": "Draft high-risk classification guidelines",
@@ -37,13 +37,14 @@
     "accountability"
   ],
   "source_ids": [
-    "high-risk-guidelines-draft-commission"
+    "high-risk-guidelines-draft-commission",
+    "commission-newsroom-128559-pdf"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "consultation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -55,5 +56,15 @@
     "eu_institution_authored",
     "official_consultation_material",
     "officially_published"
+  ],
+  "snapshots": [
+    {
+      "id": "snapshot-newsroom-128559-20260905",
+      "source_id": "commission-newsroom-128559-pdf",
+      "retrieved_at": "2026-09-05T08:08:53.264585Z",
+      "format": "pdf",
+      "content_hash": "b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42",
+      "archived_path": null
+    }
   ]
 }
