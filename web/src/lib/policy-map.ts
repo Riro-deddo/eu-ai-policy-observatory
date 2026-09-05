@@ -1,109 +1,52 @@
-export const semanticPolicyMapStages = [
-  'policy',
-  'agenda_setting',
-  'coordination',
-  'consultation',
-  'proposal',
-  'negotiation',
-  'adoption',
-  'implementation',
-  'unclassified',
-];
+import ELK from 'elkjs/lib/elk.bundled.js';
+import type { ElkNode } from 'elkjs/lib/elk-api';
+import type { PublicData } from './types';
+import type { PolicyMapAtlas, PolicyMapEdge, PolicyMapLayout, PolicyMapMode, PolicyMapModel, PolicyMapNode, PolicyMapView } from './policy-map-types';
 
-export const maxLabelCharacters = 27;
-export const policyMapNodeWidth = 260;
+const elk = new ELK();
+export const readablePolicyMapLabel = (value: string): string => { const readable = value.replaceAll('_', ' '); return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`; };
+export function wrapPolicyMapLabel(label: string): string[] { const lines: string[] = []; for (const word of label.trim().split(/\s+/)) { const current = lines.at(-1); if (current === undefined || `${current} ${word}`.length > 26) lines.push(word); else lines[lines.length - 1] = `${current} ${word}`; } return lines; }
 
-const nodeColumnGap = 64;
-const nodeGap = 24;
-const mapLeftInset = 48;
-const nodeStartTop = 68;
-export const policyMapNodeTypeBaseline = 18;
-export const policyMapNodeLabelBaseline = 42;
-export const policyMapNodeLabelLineHeight = 18;
-const nodeTopPadding = 20;
-const nodeBottomPadding = 18;
-
-function readableVocabularyLabel(value: string): string {
-  const readable = value.replaceAll('_', ' ');
-  return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`;
+export function createPolicyMapModel(data: PublicData, base: string): PolicyMapModel {
+  const prefix = base.endsWith('/') ? base : base + '/';
+  const documents = new Map(data.documents.map((item) => [item.id, item]));
+  const policies = new Map(data.policies.map((item) => [item.id, item]));
+  const sources = new Map(data.sources.map((item) => [item.id, item]));
+  const keys = new Set(data.relationships.flatMap((edge) => [`${edge.source_entity_type}:${edge.source_entity_id}`, `${edge.target_entity_type}:${edge.target_entity_id}`]));
+  const nodes: PolicyMapNode[] = [];
+  for (const key of keys) {
+    const split = key.indexOf(':'); const kind = key.slice(0, split); const id = key.slice(split + 1);
+    if (kind === 'document') { const item = documents.get(id); if (!item) throw new Error(`Unresolved policy map endpoint: document:${id}`); nodes.push({ id, kind, title: item.short_title, date: item.document_date, level: item.record_level, stage: item.corpus_assessment?.policy_stage ?? 'unclassified', policyIds: item.policies.map((policy) => policy.id), href: `${prefix}corpus/${item.slug}/` }); }
+    else if (kind === 'policy') { const item = policies.get(id); if (!item) throw new Error(`Unresolved policy map endpoint: policy:${id}`); nodes.push({ id, kind, title: item.short_name, date: '', level: 'principal', stage: 'policy', policyIds: [id], href: `${prefix}policies/${id}/` }); }
+    else throw new Error(`Unsupported policy map endpoint type: ${kind}`);
+  }
+  nodes.sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+  const ids = new Set(nodes.map((node) => node.id));
+  const edges: PolicyMapEdge[] = data.relationships.map((edge) => { if (!ids.has(edge.source_entity_id) || !ids.has(edge.target_entity_id)) throw new Error(`Unresolved policy map endpoint for relationship: ${edge.id}`); const evidence = edge.evidence_source_id === null ? undefined : sources.get(edge.evidence_source_id); return { id: edge.id, source: edge.source_entity_id, target: edge.target_entity_id, type: edge.relationship_type, basis: edge.basis, rationale: edge.rationale, evidence: evidence ? { url: evidence.url, publisher: evidence.publisher } : null }; });
+  return { nodes, edges, policies: data.policies.map((policy) => ({ id: policy.id, title: policy.short_name, description: policy.scope_note })), generatedAt: data.generated_at };
 }
 
-export const policyMapStageLabel = readableVocabularyLabel;
-export const relationshipTypeLabel = readableVocabularyLabel;
-
-export interface PolicyMapLayoutInput {
-  label: string;
-  stage: string;
+export function selectPolicyMapView(model: PolicyMapModel, family: string, mode: PolicyMapMode): PolicyMapView {
+  const eligible = new Set(model.nodes.filter((node) => mode === 'all' || node.level === 'principal').map((node) => node.id));
+  const members = new Set(model.nodes.filter((node) => node.policyIds.includes(family) && eligible.has(node.id)).map((node) => node.id));
+  const edges = model.edges.filter((edge) => eligible.has(edge.source) && eligible.has(edge.target) && (mode === 'principal' ? members.has(edge.source) && members.has(edge.target) : members.has(edge.source) || members.has(edge.target)));
+  const visible = new Set([...members, ...edges.flatMap((edge) => [edge.source, edge.target])]);
+  const nodes = model.nodes.filter((node) => visible.has(node.id)).map((node) => ({ ...node, context: !members.has(node.id) }));
+  return { family, mode, nodes, edges, memberCount: members.size, contextCount: nodes.length - members.size, hidden: model.nodes.filter((node) => node.policyIds.includes(family)).length - members.size };
 }
 
-export interface PolicyMapGeometry {
-  labelLines: string[];
-  x: number;
-  y: number;
-  height: number;
+async function arrange(view: PolicyMapView): Promise<PolicyMapLayout> {
+  const defs = new Map(view.nodes.map((node) => [node.id, node]));
+  const reversed = new Set(view.edges.filter((edge) => { const a = defs.get(edge.source); const b = defs.get(edge.target); if (!a || !b) throw new Error(`Missing layout endpoint: ${edge.id}`); return a.date > b.date || (a.date === b.date && a.id > b.id); }).map((edge) => edge.id));
+  const input: ElkNode = { id: 'root', layoutOptions: { 'elk.algorithm': 'layered', 'elk.direction': 'RIGHT', 'elk.edgeRouting': 'ORTHOGONAL', 'elk.randomSeed': '42', 'elk.spacing.nodeNode': '36', 'elk.spacing.componentComponent': '48', 'elk.layered.spacing.nodeNodeBetweenLayers': '86', 'elk.layered.considerModelOrder.strategy': 'NODES_AND_EDGES', 'elk.padding': '[top=32,left=32,bottom=32,right=32]' }, children: view.nodes.map((node) => ({ id: node.id, width: 232, height: 58 + wrapPolicyMapLabel(node.title).length * 20 })), edges: view.edges.map((edge) => ({ id: edge.id, sources: [reversed.has(edge.id) ? edge.target : edge.source], targets: [reversed.has(edge.id) ? edge.source : edge.target] })) };
+  const graph = await elk.layout(input);
+  const geometry = new Map((graph.children ?? []).map((node) => [node.id, node])); const routes = new Map((graph.edges ?? []).map((edge) => [edge.id, edge]));
+  return { ...view, width: graph.width ?? 0, height: graph.height ?? 0, nodes: view.nodes.map((node) => { const placed = geometry.get(node.id); if (placed?.x === undefined || placed.y === undefined || placed.width === undefined || placed.height === undefined) throw new Error(`Missing node geometry: ${node.id}`); return { ...node, x: placed.x, y: placed.y, width: placed.width, height: placed.height, lines: wrapPolicyMapLabel(node.title) }; }), edges: view.edges.map((edge) => { const section = routes.get(edge.id)?.sections?.[0]; if (!section) throw new Error(`Missing edge route: ${edge.id}`); const points = [section.startPoint, ...(section.bendPoints ?? []), section.endPoint]; return { ...edge, points: reversed.has(edge.id) ? points.reverse() : points }; }) };
 }
 
-export interface PolicyMapLayout<T extends PolicyMapLayoutInput> {
-  stages: string[];
-  nodes: Array<T & PolicyMapGeometry>;
-  width: number;
-  height: number;
-}
-
-export function policyMapStageX(column: number): number {
-  return mapLeftInset + policyMapNodeWidth / 2 + column * (policyMapNodeWidth + nodeColumnGap);
-}
-
-export function wrapPolicyMapLabel(label: string): string[] {
-  return label.trim().split(/\s+/).reduce<string[]>((lines, word) => {
-    const current = lines.at(-1);
-    if (current === undefined || `${current} ${word}`.length > maxLabelCharacters) {
-      lines.push(word);
-    } else {
-      lines[lines.length - 1] = `${current} ${word}`;
-    }
-    return lines;
-  }, []);
-}
-
-export function layoutPolicyMapNodes<T extends PolicyMapLayoutInput>(nodes: T[]): PolicyMapLayout<T> {
-  const populatedStages = new Set(nodes.map((node) => node.stage));
-  const unexpectedStages = [...populatedStages]
-    .filter((stage) => !semanticPolicyMapStages.includes(stage))
-    .sort((first, second) => first.localeCompare(second, 'en-GB'));
-  const stages = [
-    ...semanticPolicyMapStages.filter((stage) => populatedStages.has(stage)),
-    ...unexpectedStages,
-  ];
-  const nodesByStage = [...nodes]
-    .sort((first, second) => first.label.localeCompare(second.label, 'en-GB'))
-    .reduce((groups, node) => {
-      const stageNodes = groups.get(node.stage) ?? [];
-      stageNodes.push(node);
-      groups.set(node.stage, stageNodes);
-      return groups;
-    }, new Map<string, T[]>());
-  const positionedNodes = [...nodesByStage.entries()].flatMap(([stage, stageNodes]) => {
-    const column = stages.indexOf(stage);
-    return stageNodes.reduce<{ nodes: Array<T & PolicyMapGeometry>; nextTop: number }>((placement, node) => {
-      const labelLines = wrapPolicyMapLabel(node.label);
-      const height = nodeTopPadding + nodeBottomPadding + 22 + labelLines.length * policyMapNodeLabelLineHeight;
-      placement.nodes.push({
-        ...node,
-        labelLines,
-        x: policyMapStageX(column),
-        y: placement.nextTop + height / 2,
-        height,
-      });
-      placement.nextTop += height + nodeGap;
-      return placement;
-    }, { nodes: [], nextTop: nodeStartTop }).nodes;
-  });
-
-  return {
-    stages,
-    nodes: positionedNodes,
-    width: Math.max(580, stages.length * (policyMapNodeWidth + nodeColumnGap) + 48),
-    height: Math.max(260, ...positionedNodes.map((node) => node.y + node.height / 2 + 44)),
-  };
+export async function buildPolicyMapAtlas(data: PublicData, base: string): Promise<PolicyMapAtlas> {
+  const model = createPolicyMapModel(data, base); const views: Record<string, PolicyMapLayout> = {}; const neighborhoods: Record<string, PolicyMapLayout> = {};
+  for (const policy of model.policies) for (const mode of ['principal', 'all'] as const) views[`${policy.id}:${mode}`] = await arrange(selectPolicyMapView(model, policy.id, mode));
+  for (const node of model.nodes) { const edges = model.edges.filter((edge) => edge.source === node.id || edge.target === node.id); const ids = new Set([node.id, ...edges.flatMap((edge) => [edge.source, edge.target])]); const nodes = model.nodes.filter((item) => ids.has(item.id)).map((item) => ({ ...item, context: item.id !== node.id })); neighborhoods[node.id] = await arrange({ family: node.policyIds[0] ?? '', mode: 'all', nodes, edges, memberCount: 1, contextCount: nodes.length - 1, hidden: model.nodes.length - nodes.length }); }
+  return { model, views, neighborhoods };
 }

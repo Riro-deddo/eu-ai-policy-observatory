@@ -1,69 +1,75 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
-import * as policyMap from '../src/lib/policy-map.ts';
+import { buildPolicyMapAtlas, createPolicyMapModel, selectPolicyMapView, wrapPolicyMapLabel } from '../src/lib/policy-map.ts';
 
-const {
-  layoutPolicyMapNodes,
-  maxLabelCharacters,
-  policyMapStageLabel,
-  relationshipTypeLabel,
-  wrapPolicyMapLabel,
-} = policyMap;
+const data = JSON.parse(readFileSync(new URL('../../generated/public-data.json', import.meta.url), 'utf8'));
+const family = 'artificial-intelligence-act-legislative-process';
 
-test('policy-map vocabulary labels are readable for expanded stages and relationships', () => {
-  assert.equal(policyMapStageLabel('agenda_setting'), 'Agenda setting');
-  assert.equal(relationshipTypeLabel('version_of'), 'Version of');
-  assert.equal(relationshipTypeLabel('annex_to'), 'Annex to');
-  assert.equal(relationshipTypeLabel('procedural_step_for'), 'Procedural step for');
+test('public projection retains every linked endpoint and relationship without mutation', () => {
+  const before = JSON.stringify(data);
+  const model = createPolicyMapModel(data, '/eu-ai-policy-observatory/');
+  assert.equal(model.nodes.length, 93);
+  assert.equal(model.edges.length, 88);
+  assert.equal(JSON.stringify(data), before);
+  assert.ok(model.nodes.every((node) => node.href.startsWith('/eu-ai-policy-observatory/')));
+  for (const edge of model.edges) {
+    const original = data.relationships.find((relationship) => relationship.id === edge.id);
+    assert.equal(edge.source, original.source_entity_id);
+    assert.equal(edge.target, original.target_entity_id);
+  }
 });
 
-test('long current policy labels wrap without losing words and grow node height', () => {
+test('principal and expanded family views preserve membership, context and recorded edges', () => {
+  const model = createPolicyMapModel(data, '/');
+  const principal = selectPolicyMapView(model, family, 'principal');
+  const all = selectPolicyMapView(model, family, 'all');
+  assert.equal(principal.nodes.length, 9);
+  assert.equal(principal.edges.length, 7);
+  assert.ok(principal.nodes.every((node) => !node.context && node.level === 'principal'));
+  assert.equal(all.memberCount, 40);
+  assert.equal(all.nodes.length, 49);
+  assert.ok(all.nodes.filter((node) => node.context).every((node) => !node.policyIds.includes(family)));
+});
+
+test('projection supports root and subpath routes plus document and policy endpoints', () => {
+  const fixture = { generated_at: '2026-01-01', sources: [], events: [], concepts: [], institutions: [], coverage: {}, policies: [{ id: 'policy', short_name: 'Policy', scope_note: 'Scope' }], documents: [{ id: 'document', slug: 'document', short_title: 'Document', document_date: '2025-01-01', document_type: 'proposal', record_level: 'principal', corpus_assessment: null, policies: [{ id: 'policy' }] }], relationships: [{ id: 'edge', source_entity_type: 'policy', source_entity_id: 'policy', target_entity_type: 'document', target_entity_id: 'document', relationship_type: 'contains', basis: 'official', rationale: 'Recorded', evidence_source_id: null }] };
+  assert.deepEqual(createPolicyMapModel(fixture, '/').nodes.map((node) => node.href), ['/policies/policy/', '/corpus/document/']);
+  assert.deepEqual(createPolicyMapModel(fixture, '/observatory').nodes.map((node) => node.href), ['/observatory/policies/policy/', '/observatory/corpus/document/']);
+  assert.throws(() => createPolicyMapModel({ ...fixture, relationships: [{ ...fixture.relationships[0], target_entity_id: 'missing' }] }, '/'), /Unresolved policy map endpoint/);
+  assert.throws(() => createPolicyMapModel({ ...fixture, relationships: [{ ...fixture.relationships[0], target_entity_type: 'event' }] }, '/'), /Unsupported policy map endpoint type/);
+  assert.deepEqual(createPolicyMapModel({ ...fixture, relationships: [] }, '/').nodes, []);
+});
+
+test('label wrapping retains every word', () => {
   const label = 'Coordinated Plan on Artificial Intelligence';
   const lines = wrapPolicyMapLabel(label);
-  const layout = layoutPolicyMapNodes([
-    { id: 'short', label: 'AI Act', stage: 'proposal' },
-    { id: 'long', label, stage: 'coordination' },
-  ]);
-  const shortNode = layout.nodes.find((node) => node.id === 'short');
-  const longNode = layout.nodes.find((node) => node.id === 'long');
-
-  assert.ok(shortNode);
-  assert.ok(longNode);
   assert.ok(lines.length > 1);
   assert.equal(lines.join(' '), label);
-  assert.ok(lines.every((line) => line.length <= maxLabelCharacters));
-  assert.equal(longNode.labelLines.join(' '), label);
-  assert.ok(longNode.height > shortNode.height);
 });
 
-test('policy-map layout preserves semantic stage order and full SVG geometry', () => {
-  const layout = layoutPolicyMapNodes([
-    { id: 'adoption', label: 'Final AI Act', stage: 'adoption' },
-    { id: 'proposal', label: 'AI Act proposal', stage: 'proposal' },
-    { id: 'unknown', label: 'Future stage', stage: 'zeta' },
-  ]);
-  const proposal = layout.nodes.find((node) => node.id === 'proposal');
-  const adoption = layout.nodes.find((node) => node.id === 'adoption');
-
-  assert.ok(proposal);
-  assert.ok(adoption);
-  assert.deepEqual(layout.stages, ['proposal', 'adoption', 'zeta']);
-  assert.ok(proposal.x < adoption.x);
-  assert.equal(layout.width, 1020);
-});
-
-test('stage headings reuse the exact x-coordinate allocated to their node column', () => {
-  assert.equal(typeof policyMap.policyMapStageX, 'function');
-  const layout = layoutPolicyMapNodes([
-    { id: 'proposal', label: 'AI Act proposal', stage: 'proposal' },
-    { id: 'adoption', label: 'Final AI Act', stage: 'adoption' },
-  ]);
-
-  for (const [index, stage] of layout.stages.entries()) {
-    assert.equal(
-      layout.nodes.find((node) => node.stage === stage)?.x,
-      policyMap.policyMapStageX(index),
-    );
+test('atlas geometry is deterministic, non-overlapping and keeps semantic arrow endpoints', async () => {
+  const first = await buildPolicyMapAtlas(data, '/');
+  const second = await buildPolicyMapAtlas(data, '/');
+  assert.deepEqual(second, first);
+  assert.equal(Object.keys(first.views).length, first.model.policies.length * 2);
+  assert.equal(Object.keys(first.neighborhoods).length, first.model.nodes.length);
+  for (const graph of [...Object.values(first.views), ...Object.values(first.neighborhoods)]) {
+    for (let index = 0; index < graph.nodes.length; index += 1) {
+      const a = graph.nodes[index];
+      for (const b of graph.nodes.slice(index + 1)) assert.ok(a.x + a.width <= b.x || b.x + b.width <= a.x || a.y + a.height <= b.y || b.y + b.height <= a.y, `Overlap: ${a.id}, ${b.id}`);
+    }
+    for (const edge of graph.edges) {
+      const source = graph.nodes.find((node) => node.id === edge.source);
+      const target = graph.nodes.find((node) => node.id === edge.target);
+      const within = (point, node) => point.x >= node.x - 1 && point.x <= node.x + node.width + 1 && point.y >= node.y - 1 && point.y <= node.y + node.height + 1;
+      assert.ok(within(edge.points[0], source), `Wrong source: ${edge.id}`);
+      assert.ok(within(edge.points.at(-1), target), `Wrong target: ${edge.id}`);
+    }
+  }
+  for (const [id, graph] of Object.entries(first.neighborhoods)) {
+    const expected = first.model.edges.filter((edge) => edge.source === id || edge.target === id);
+    assert.deepEqual(graph.edges.map((edge) => edge.id).sort(), expected.map((edge) => edge.id).sort());
   }
 });

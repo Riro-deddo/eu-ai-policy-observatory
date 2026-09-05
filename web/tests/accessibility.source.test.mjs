@@ -5,6 +5,7 @@ import test from 'node:test';
 const layout = readFileSync(new URL('../src/layouts/BaseLayout.astro', import.meta.url), 'utf8');
 const pathway = readFileSync(new URL('../src/components/PolicyPathway.astro', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
+const policyMapStylesheet = readFileSync(new URL('../src/styles/policy-map.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
 const noJavaScriptSpec = readFileSync(new URL('./no-js.spec.ts', import.meta.url), 'utf8');
 
@@ -29,7 +30,7 @@ test('the skip link targets a focusable main landmark', () => {
 
 test('keyboard and coarse-pointer controls retain visible focus and usable targets', () => {
   assert.match(stylesheet, /:is\(a, button, input, select, \[tabindex\]\):focus-visible/);
-  assert.match(stylesheet, /\.policy-map__graphic:focus-visible/);
+  assert.match(policyMapStylesheet, /\.policy-map__node:hover rect, \.policy-map__node:focus rect/);
   assert.match(
     stylesheet,
     /@media \(pointer: coarse\) \{[\s\S]*?\.corpus-explorer \[data-corpus-list\] a,[\s\S]*?\.timeline-year a,[\s\S]*?\.policy-map__relationships a,[\s\S]*?min-block-size: 44px;/,
