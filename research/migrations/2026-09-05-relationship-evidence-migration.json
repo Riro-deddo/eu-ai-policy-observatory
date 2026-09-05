@@ -239,7 +239,8 @@
     {
       "source_id": "transparency-code-signatory-commission",
       "url": "https://digital-strategy.ec.europa.eu/en/library/how-sign-code-practice-transparency-ai-generated-content",
-      "locators": ["Signing instructions", "'Signatory form (DOCX)' download and redirect 129548", "Corroborating Commission policy page's two sections and separate signature instructions"],
+      "corroborating_url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "locators": ["Signing instructions", "'Signatory form (DOCX)' download and redirect 129548", "Corroborating Commission policy page at corroborating_url: its two sections and separate signature instructions"],
       "review_scope": "Landing-page purpose, instructions and download label only.",
       "binary_interiors_verified": false,
       "source_snapshot_retained": false

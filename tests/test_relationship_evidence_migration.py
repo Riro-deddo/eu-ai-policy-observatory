@@ -235,6 +235,7 @@ def test_evidence_ledger_covers_exact_review_scope_with_concrete_sources():
         "high-risk-incident-consultation-commission",
     }
     assert all(item["url"].startswith("https://digital-strategy.ec.europa.eu/") for item in evidence.values())
+    assert evidence["transparency-code-signatory-commission"]["corroborating_url"] == "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
     assert all(item["locators"] and all(locator.strip() for locator in item["locators"]) for item in evidence.values())
     assert all(item["binary_interiors_verified"] is False for item in evidence.values())
     assert all(item["source_snapshot_retained"] is False for item in evidence.values())
@@ -277,12 +278,13 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
                 ),
             )
         )
+        expected_sqlite_edges = {**EXPECTED_EDGES, **EXPECTED_SIBLING_EDGES}
         sqlite_edges = {
             row[0]: row[1:]
             for row in connection.execute(
                 "SELECT id, source_entity_id, target_entity_id, relationship_type, basis, evidence_source_id "
-                "FROM relationships WHERE id IN ({})".format(",".join("?" for _ in EXPECTED_EDGES)),
-                tuple(EXPECTED_EDGES),
+                "FROM relationships WHERE id IN ({})".format(",".join("?" for _ in expected_sqlite_edges)),
+                tuple(expected_sqlite_edges),
             )
         }
 
@@ -293,4 +295,4 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
         "gpai-code-signatory-form-2025": "supporting",
         "transparency-code-signatory-form-2026": "supporting",
     }
-    assert sqlite_edges == EXPECTED_EDGES
+    assert sqlite_edges == expected_sqlite_edges
