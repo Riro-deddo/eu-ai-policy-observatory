@@ -3,14 +3,14 @@
   "entity_type": "relationship",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T07:35:00Z",
   "source_entity_type": "document",
   "source_entity_id": "draft-high-risk-classification-guidelines-annex-i-2026",
   "target_entity_type": "document",
   "target_entity_id": "draft-high-risk-classification-guidelines-2026",
-  "relationship_type": "version_of",
-  "basis": "official",
-  "rationale": "The Commission publishes Annex I guidance as a separate component of the consultation draft.",
+  "relationship_type": "related_to",
+  "basis": "analytical",
+  "rationale": "The Commission landing page presents this file and the General-principles file as sibling sections of one draft guideline, not versions or annexes of the General-principles file; related_to records association only and does not establish parent readiness.",
   "evidence_source_id": "high-risk-guidelines-draft-commission",
   "verification_status": "verified"
 }

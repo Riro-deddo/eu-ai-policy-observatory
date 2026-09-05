@@ -1,0 +1,13 @@
+{
+  "id": "commission-newsroom-128561-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T08:20:53Z",
+  "updated_at": "2026-09-05T08:20:53Z",
+  "source_type": "official_pdf",
+  "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128561",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T08:08:53.836269Z",
+  "last_verified_at": "2026-09-05T08:20:53Z",
+  "verification_note": "Codex retrieved this official download with normal TLS verification. The 1547742-byte response is a 148-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json."
+}

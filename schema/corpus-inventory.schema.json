@@ -72,7 +72,23 @@
         "document_id": { "$ref": "#/$defs/nullable_id" },
         "merged_into_document_id": { "$ref": "#/$defs/nullable_id" },
         "reviewed_at": { "$ref": "#/$defs/nullable_timestamp" },
-        "reviewed_by": { "$ref": "#/$defs/nullable_string" }
+        "reviewed_by": { "$ref": "#/$defs/nullable_string" },
+        "decision_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "decision": { "enum": ["included", "merged", "excluded", "pending"] },
+              "decision_reason": { "type": "string", "minLength": 1 },
+              "document_id": { "$ref": "#/$defs/nullable_id" },
+              "merged_into_document_id": { "$ref": "#/$defs/nullable_id" },
+              "reviewed_at": { "$ref": "#/$defs/nullable_timestamp" },
+              "reviewed_by": { "$ref": "#/$defs/nullable_string" }
+            },
+            "required": ["decision", "decision_reason", "document_id", "merged_into_document_id", "reviewed_at", "reviewed_by"],
+            "additionalProperties": false
+          }
+        }
       },
       "required": [
         "id",

@@ -68,6 +68,7 @@ export const publishedDocuments: DocumentRecord[] = [
       },
     ],
     sources: [],
+    retained_route_notice: null,
     corpus_assessment: {
       document_id: 'artificial-intelligence-act-2024',
       corpus_tier: 'core',
@@ -120,6 +121,7 @@ export const publishedDocuments: DocumentRecord[] = [
     concepts: [],
     institutions: [],
     sources: [],
+    retained_route_notice: null,
     corpus_assessment: null,
   },
 ];

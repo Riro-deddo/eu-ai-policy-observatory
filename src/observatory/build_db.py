@@ -186,6 +186,28 @@ def _insert_document_supporting_rows(
                 "review_status", "reviewed_by", "reviewed_at",
             ))),
         )
+        notice = data.get("retained_route_notice")
+        if isinstance(notice, Mapping):
+            connection.execute(
+                "INSERT INTO document_retained_route_notices "
+                "(document_id, status, reason, reviewed_by, reviewed_at) "
+                "VALUES (?, ?, ?, ?, ?)",
+                (
+                    document_id,
+                    notice.get("status"),
+                    notice.get("reason"),
+                    notice.get("reviewed_by"),
+                    notice.get("reviewed_at"),
+                ),
+            )
+            connection.executemany(
+                "INSERT INTO document_retained_route_evidence "
+                "(document_id, evidence_order, source_id, locator) VALUES (?, ?, ?, ?)",
+                [
+                    (document_id, index, item.get("source_id"), item.get("locator"))
+                    for index, item in enumerate(_notice_evidence(notice, document_id))
+                ],
+            )
         for role in _mappings(data, "institution_roles"):
             connection.execute(
                 "INSERT INTO document_institutions (document_id, institution_id, role) VALUES (?, ?, ?)",
@@ -275,4 +297,15 @@ def _mappings(data: Mapping[str, object], field: str) -> list[Mapping[str, objec
     value = data.get(field, [])
     if not isinstance(value, list) or not all(isinstance(item, Mapping) for item in value):
         raise ValueError(f"Expected object list {field!r} in a validated record.")
+    return value
+
+
+def _notice_evidence(
+    notice: Mapping[str, object], document_id: str
+) -> list[Mapping[str, object]]:
+    value = notice.get("evidence")
+    if not isinstance(value, list) or not all(isinstance(item, Mapping) for item in value):
+        raise ValueError(
+            f"Document {document_id!r} has no valid retained-route evidence list."
+        )
     return value

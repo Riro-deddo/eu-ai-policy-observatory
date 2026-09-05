@@ -1,0 +1,16 @@
+{
+  "id": "gpai-code-third-draft-transparency-part-of-third-draft",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T07:35:00Z",
+  "updated_at": "2026-09-05T07:35:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "gpai-code-third-draft-transparency",
+  "target_entity_type": "document",
+  "target_entity_id": "gpai-code-third-draft",
+  "relationship_type": "part_of",
+  "basis": "official",
+  "rationale": "The Commission landing page describes the commitments and three chapters as the structure of the third draft, so the Transparency component is represented as part of the third draft.",
+  "evidence_source_id": "gpai-code-third-draft-commission",
+  "verification_status": "verified"
+}

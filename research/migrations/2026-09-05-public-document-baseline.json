@@ -1,0 +1,592 @@
+{
+  "baseline_date": "2026-09-05",
+  "publication_cutoff": "2026-09-04",
+  "baseline_head": "e74b4a9c65a1c86edb01ecfd34f24423efd7fd16",
+  "documents": [
+    {
+      "id": "ai-act-consolidated-2026-07-27",
+      "slug": "ai-act-consolidated-2026-07-27",
+      "record_sha256": "f204212901e3c404cc7db669ab055e21127254f1fee3a77ed59c6e5796012942"
+    },
+    {
+      "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "slug": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "record_sha256": "464085f4175c8bddde2ef46a937e7b931d521c3b817f05ab702c92793eee78cd"
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "slug": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "record_sha256": "18d81be05b875bc238402ca3df2132a4188cd2809a1bf930eaf9e1b57f396d5e"
+    },
+    {
+      "id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "slug": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "record_sha256": "26a76bee8448434c4c4b89439f5b2efdfefb149fba2c750a1e991383ed7d0e3b"
+    },
+    {
+      "id": "ai-act-council-final-compromise-st-13955-2022",
+      "slug": "ai-act-council-final-compromise-st-13955-2022",
+      "record_sha256": "8af6a53b29003d4c1e0c08fc4c03eaac4b8321cb9c3ede7639e76bb70358539f"
+    },
+    {
+      "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "slug": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "record_sha256": "50fe9c60af74e2873185d7b43523be1b29572e0963c9643c15d440cdf5e1a331"
+    },
+    {
+      "id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "slug": "ai-act-council-fourth-compromise-st-13102-2022",
+      "record_sha256": "41b3c8b2e12f641bd864767496b2c2b8a920472d93d8f628c3af9e6fe8a2dc29"
+    },
+    {
+      "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "slug": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "record_sha256": "ec5e0d9db43c6ce6390eadbb1d8441de44111f4d40ec73683c200ab867bd0f08"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-14954-2022",
+      "slug": "ai-act-council-general-approach-st-14954-2022",
+      "record_sha256": "cc8671495b3595dd16673e2918695320667a542ec5eaf3e84f2cba9ea93648f1"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-15698-2022",
+      "slug": "ai-act-council-general-approach-st-15698-2022",
+      "record_sha256": "b98dabf4368f596e8e8541429e25951bd9a808c42d8d0709b16b4308c73daf45"
+    },
+    {
+      "id": "ai-act-council-second-compromise-st-11124-2022",
+      "slug": "ai-act-council-second-compromise-st-11124-2022",
+      "record_sha256": "4becb9451bdc84fef2acf0666d24c32740a323e5d78c41e6f4cb7c410fd40890"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "record_sha256": "5271c400ec3217b3605c5364a50d3564463156e1e697d72a6e4f4e1bda730a5b"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "record_sha256": "a1730cc369aa02ff411c1c011a00325e34a55a1819eabc50bb2f642630fe9c04"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "slug": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "record_sha256": "2d9703778e0bc3bca094fd2fe90a3fbe1abbf64b52571f61da465bdb607a36b7"
+    },
+    {
+      "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "slug": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "record_sha256": "e666adf6870b957ded812e3f265c8461d2c01a0c98c4832aa64bdde0a650c14c"
+    },
+    {
+      "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "slug": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "record_sha256": "39fcadeca4c94b50033de1ff316862b98776395c568e11b25e7cbb9bc3852cde"
+    },
+    {
+      "id": "ai-act-impact-assessment-swd-2021-84",
+      "slug": "ai-act-impact-assessment-swd-2021-84",
+      "record_sha256": "cc7fedae51f829dc188774b6e01b1854d2679c2dbc6872243a6bf2d982a72ef6"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024",
+      "slug": "ai-act-pe-cons-24-2024",
+      "record_sha256": "fa0d0cb57811bce319956742a2cbc24a94eaab931585775baec5ebef1cba550d"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024-rev-1",
+      "slug": "ai-act-pe-cons-24-2024-rev-1",
+      "record_sha256": "3cfc01ccc31e9d79ea56facbaff9a69dc456477d5ae22a901994be6fa57dd1f8"
+    },
+    {
+      "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "slug": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "record_sha256": "df0a497e0d0d1f4095208b480a644b99a8882f2f9cff7cc6eed7b0b30d25be18"
+    },
+    {
+      "id": "ai-act-proposal",
+      "slug": "ai-act-proposal",
+      "record_sha256": "36a0116f36d25726825febc2f30aee896d4e377882c75380c1eafc27b8c8a7e9"
+    },
+    {
+      "id": "ai-act-proposal-annexes",
+      "slug": "ai-act-proposal-annexes",
+      "record_sha256": "565b0637a228871fc9c0747f79e7edd365016aa9516baf1eec6510eab8f0a2a8"
+    },
+    {
+      "id": "ai-act-provisional-agreement-st-5662-2024",
+      "slug": "ai-act-provisional-agreement-st-5662-2024",
+      "record_sha256": "fd725c874545043858c05704707d348f76265b9b4cbbbc0be0a9b84b2b5e3b76"
+    },
+    {
+      "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "slug": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "record_sha256": "4f7b4591d9b580b5b27455d6b2fa2853080fc1613defc1c0747e711f9497c7cb"
+    },
+    {
+      "id": "ai-board-assessment-gpai-code-2025",
+      "slug": "ai-board-assessment-gpai-code-2025",
+      "record_sha256": "e265e6fc88ae5d51142b1cbe9085e71c47b1919f3563f3af2b41f1293d60eaad"
+    },
+    {
+      "id": "ai-board-assessment-transparency-code-2026",
+      "slug": "ai-board-assessment-transparency-code-2026",
+      "record_sha256": "28141eea4a3e07055224e77bbcadd00095edbc59efc433b1acd78d10ecfa3583"
+    },
+    {
+      "id": "ai-continent-action-plan",
+      "slug": "ai-continent-action-plan",
+      "record_sha256": "1404eefb56ebd13983b5905c562f31b159862c762507b87f2842d1f32f15357c"
+    },
+    {
+      "id": "ai-continent-action-plan-annex",
+      "slug": "ai-continent-action-plan-annex",
+      "record_sha256": "734bac87e212a91470fa3eff20e8d91e3aea4f8e941d575b9d023baed9f2a0a9"
+    },
+    {
+      "id": "ai-liability-directive-proposal",
+      "slug": "ai-liability-directive-proposal",
+      "record_sha256": "84fae751353753b7208ca1eae74e574fc0c89211978f86d4df3c3ff8184ebc82"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "slug": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "record_sha256": "9ba77d9207fc6c87bcd6220545e3e6fb01141195cbd7099c7d5de67d9604ba14"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "slug": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "record_sha256": "95b2f270975f2876b66e0aa1d14aa984dc42ddaaf384bca283ff11837f6a320e"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "record_sha256": "4a1eabe98b658c24198f51ef9c0465f8e7c5f100e86a1053cd3c6582992917d9"
+    },
+    {
+      "id": "ai-omnibus-council-information-note-st-10599-2026",
+      "slug": "ai-omnibus-council-information-note-st-10599-2026",
+      "record_sha256": "f35516839e17ecf2db38202855f05d5e296ea0108ba01f77dc16528929bade68"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026",
+      "slug": "ai-omnibus-pe-cons-30-2026",
+      "record_sha256": "9daee95f77968e595177e8ea2b2d12c89bf30b617062b53818ac58bf1c0a4c51"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "slug": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "record_sha256": "94bc47a7ac504b0886ef4b0eda49fb16080c05dbd90e8266329eaef21dec85b4"
+    },
+    {
+      "id": "ai-omnibus-proposal-2025",
+      "slug": "ai-omnibus-proposal-2025",
+      "record_sha256": "0c73f7813b1df0f27e75915f19194a27811744ffc98ed78d3eec52ff8637be14"
+    },
+    {
+      "id": "ai-omnibus-regulation-2026-1744",
+      "slug": "ai-omnibus-regulation-2026-1744",
+      "record_sha256": "371ebfe4a994ac95455708ac1f410eeba80f87a23431788a0f2271821776c24b"
+    },
+    {
+      "id": "ai-omnibus-staff-working-document-2025",
+      "slug": "ai-omnibus-staff-working-document-2025",
+      "record_sha256": "bc4fdad9f197b5a193f244a452ce589b3974be591a385a3bebe9b6776a25ddb8"
+    },
+    {
+      "id": "ai-standardisation-request-c-2023-3215",
+      "slug": "ai-standardisation-request-c-2023-3215",
+      "record_sha256": "21726ffda73507403dcd32756e9d082e244c612a4faa46f4ddb2ad5490a3bb7f"
+    },
+    {
+      "id": "ai-system-definition-guidelines-2025",
+      "slug": "ai-system-definition-guidelines-2025",
+      "record_sha256": "b0510c7a51b3d6b3a94641b6d0d752ccba66e13472975d4844ebc4f47905bcff"
+    },
+    {
+      "id": "ai-system-definition-guidelines-approval-communication-2025",
+      "slug": "ai-system-definition-guidelines-approval-communication-2025",
+      "record_sha256": "6bd8b0451dfa3a5451c9f3ed36eba6f179c0f8efeceddf84a6e34cf0b371a20b"
+    },
+    {
+      "id": "altai-assessment-list",
+      "slug": "altai-assessment-list",
+      "record_sha256": "1753f8ef75592b65bbd56ec1926ac47aa0054d61d07155726564e86a37895bd9"
+    },
+    {
+      "id": "apply-ai-strategy",
+      "slug": "apply-ai-strategy",
+      "record_sha256": "8cfe5235717a0b133bab6c4577a52807d6af56bb05aa4520e78965510edb8d21"
+    },
+    {
+      "id": "apply-ai-strategy-annexes",
+      "slug": "apply-ai-strategy-annexes",
+      "record_sha256": "c5e3a4276314cbab0c716400d990b3addb9f21660d3ef731981cf0a68d1e851c"
+    },
+    {
+      "id": "artificial-intelligence-act",
+      "slug": "artificial-intelligence-act",
+      "record_sha256": "31b1243dc9e4300d64135a3aa1724ff71a8d700d5360ccd2edabe3e46c858660"
+    },
+    {
+      "id": "artificial-intelligence-for-europe",
+      "slug": "artificial-intelligence-for-europe",
+      "record_sha256": "d415c330ebd7107d599f6e1c3e502021032cfe95dc3e5421abc5835903127e9f"
+    },
+    {
+      "id": "boosting-startups-innovation-trustworthy-ai",
+      "slug": "boosting-startups-innovation-trustworthy-ai",
+      "record_sha256": "3b3652cbd609bdc6bc5271593ae91e330ee62f40818952538cd2b361e963b6cf"
+    },
+    {
+      "id": "building-trust-human-centric-ai",
+      "slug": "building-trust-human-centric-ai",
+      "record_sha256": "d09f24460c751f89d3adbca66679b2e8bf4a39addffdc4892bba766971bc8c65"
+    },
+    {
+      "id": "commission-ai-act-article-112-review-2026",
+      "slug": "commission-ai-act-article-112-review-2026",
+      "record_sha256": "998f4afae033837a7835e1951987183d506c41ee8d27e3ea2e22504314bde38c"
+    },
+    {
+      "id": "commission-decision-ai-office-2024",
+      "slug": "commission-decision-ai-office-2024",
+      "record_sha256": "429c652c80e1e0ac94c86cfc7367ba19bb78a211af3b60e6dfdb9192da2846de"
+    },
+    {
+      "id": "commission-opinion-gpai-code-2025",
+      "slug": "commission-opinion-gpai-code-2025",
+      "record_sha256": "84dc9559a5ca28586849adcf9c9b168d1f5686d86840ac97e1606fd06f6d9e1b"
+    },
+    {
+      "id": "commission-opinion-transparency-code-2026",
+      "slug": "commission-opinion-transparency-code-2026",
+      "record_sha256": "c260a27d541909bd228e35cebc5bb1a452985b7261db9f03da3ce89316a802bd"
+    },
+    {
+      "id": "coordinated-plan-2018-annex",
+      "slug": "coordinated-plan-2018-annex",
+      "record_sha256": "b32f077bd17051823e75a2f0d8dc69920a270ef9cba36bea63cfbcb05518d0e9"
+    },
+    {
+      "id": "coordinated-plan-2021-annex",
+      "slug": "coordinated-plan-2021-annex",
+      "record_sha256": "a2a040dc6af9661a53ac47c514a8f2ccf964cf93f2ad4833944e8b56dc3c1240"
+    },
+    {
+      "id": "coordinated-plan-2021-review",
+      "slug": "coordinated-plan-2021-review",
+      "record_sha256": "24201e4b13fcf43472fa0a16f942ee0289f40df1d01fc2ed2245ff0f07058915"
+    },
+    {
+      "id": "coordinated-plan-on-artificial-intelligence",
+      "slug": "coordinated-plan-on-artificial-intelligence",
+      "record_sha256": "b1d862613e1f45932a110f5478795a6406d63c40d04fd36e7dea38f97c87e701"
+    },
+    {
+      "id": "cor-opinion-ai-act-2021",
+      "slug": "cor-opinion-ai-act-2021",
+      "record_sha256": "b5ad8fc5bdb9c0e6df59bfaa3e25f480c4d552aa550280d8f071341479f48f6e"
+    },
+    {
+      "id": "cor-opinion-ai-omnibus-2026",
+      "slug": "cor-opinion-ai-omnibus-2026",
+      "record_sha256": "8b070f6a5ae6fa7d73270c23a2c3ff0253072aa40bdf7f95dfe14ae1b9c5bb60"
+    },
+    {
+      "id": "draft-guidance-serious-ai-incidents-2025",
+      "slug": "draft-guidance-serious-ai-incidents-2025",
+      "record_sha256": "62a2626644134a8df884b5bf26cf3a3d78da9b9661a75e18a9dd694987fa4f5b"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-2026",
+      "slug": "draft-high-risk-classification-guidelines-2026",
+      "record_sha256": "269ca9833799dd0b47f9054ad6b3891fa33d19fd1399b91f6ddf3cff30ea2ebd"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "slug": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "record_sha256": "444f6a80c2c5d2a37fd281d40d448b25257c1ae3ba49760b3e4e97f5c00ca5e6"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "slug": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "record_sha256": "7c6d846e9dddf7fd2faa40631e659fc779d7277bad51112326b315adbee8324f"
+    },
+    {
+      "id": "draft-serious-ai-incident-report-template-2025",
+      "slug": "draft-serious-ai-incident-report-template-2025",
+      "record_sha256": "cfa76ee732948599af71577580021593f5ba60f4e9b0979137a461533074d866"
+    },
+    {
+      "id": "draft-transparency-guidelines-2026",
+      "slug": "draft-transparency-guidelines-2026",
+      "record_sha256": "d641c96ea157a2917aeb9c1be07f0a5870086ae0e173ce93de9349762586d879"
+    },
+    {
+      "id": "ecb-opinion-con-2021-40",
+      "slug": "ecb-opinion-con-2021-40",
+      "record_sha256": "83f3e0249f261c21d29cfac11d2be754ae4a303d25fd0a3bcb3d0fce7fc07c44"
+    },
+    {
+      "id": "ecb-opinion-con-2026-10",
+      "slug": "ecb-opinion-con-2026-10",
+      "record_sha256": "da18da9b97c310c9c2d3a563ab29be90f56db766021232a1cbe2af428f104684"
+    },
+    {
+      "id": "ecb-technical-working-document-con-2026-10",
+      "slug": "ecb-technical-working-document-con-2026-10",
+      "record_sha256": "9f8ec161bc6f872a1a9c788b1fa85bd196dd83d5c20ea9df3ff0d236ab9dcaf3"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-1-2026",
+      "slug": "edpb-edps-joint-opinion-1-2026",
+      "record_sha256": "2ebc9bfc66f14b9a030c8515f4b820e5ef1262f586c89e56c5242a2948b7f3e2"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-5-2021",
+      "slug": "edpb-edps-joint-opinion-5-2021",
+      "record_sha256": "67245cbb72dbd9deb273ba70b7956ea11bb786646566a1fc0965d24f44e0c07a"
+    },
+    {
+      "id": "eesc-opinion-ai-act-2021",
+      "slug": "eesc-opinion-ai-act-2021",
+      "record_sha256": "84457baf7929993997f6810dd0625437ff225c47dd0468cc6d25f572f700edaf"
+    },
+    {
+      "id": "eesc-opinion-ai-omnibus-2026",
+      "slug": "eesc-opinion-ai-omnibus-2026",
+      "record_sha256": "ff34feeafc1e3a6fe5f90224a39e83e787c7e235827fd1ba47e996364c077781"
+    },
+    {
+      "id": "eesc-opinion-coordinated-plan-2021",
+      "slug": "eesc-opinion-coordinated-plan-2021",
+      "record_sha256": "9638af88ea1a5fbe286486cc8f027621d17e5a1e5aad7c7948bba79db64f18a1"
+    },
+    {
+      "id": "ep-ai-act-cult-opinion-pe-719637",
+      "slug": "ep-ai-act-cult-opinion-pe-719637",
+      "record_sha256": "703118312cf01184eb64cb717dcfad141dcbcacbabcac9fafbfb35e2eebb9c2e"
+    },
+    {
+      "id": "ep-ai-act-draft-report-pe-731563",
+      "slug": "ep-ai-act-draft-report-pe-731563",
+      "record_sha256": "6c988b8c0c11d6134f828d725cffaa75b78a82cf7a75b09b19a81a08d9c19f3d"
+    },
+    {
+      "id": "ep-ai-act-envi-opinion-pe-699056",
+      "slug": "ep-ai-act-envi-opinion-pe-699056",
+      "record_sha256": "8a03534af80bd69a2af76c03a90578b454799da1b0a9c671060cc7f4dabaebf4"
+    },
+    {
+      "id": "ep-ai-act-itre-opinion-pe-719801",
+      "slug": "ep-ai-act-itre-opinion-pe-719801",
+      "record_sha256": "b3fcde1744f94a4c0d7cd43737da053d192183c7d7abc8db1da159ad17699cec"
+    },
+    {
+      "id": "ep-ai-act-juri-opinion-pe-719827",
+      "slug": "ep-ai-act-juri-opinion-pe-719827",
+      "record_sha256": "69c3ad717d43c37611708a91f03aebd9b96bfcd21c4de1fb1adabf1ba7ecc755"
+    },
+    {
+      "id": "ep-ai-act-tran-opinion-pe-730085",
+      "slug": "ep-ai-act-tran-opinion-pe-730085",
+      "record_sha256": "a53cc38af014c727988aec3e82575d80a54eca3f0b5a57705500e80eee121fbe"
+    },
+    {
+      "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "slug": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "record_sha256": "7a4325670bfb69f32c83ba391aa649c95cd29797788651c8a3d7d33e951bc523"
+    },
+    {
+      "id": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "slug": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "record_sha256": "5523735086414da4aeb4b702d732967b14ed63dcd79fe4f44080f82a6042c03c"
+    },
+    {
+      "id": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "slug": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "record_sha256": "bea7a0e1b9c6e50f90bdaa2cc20963c7f97bd0dbd2197bee69f3efd4ea8e845d"
+    },
+    {
+      "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "slug": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "record_sha256": "95f3ad8b7ca841b1a0640f11c349a9fc36f9464da162e15d7f67041266ea9dcf"
+    },
+    {
+      "id": "ep-ai-omnibus-report-a10-0073-2026",
+      "slug": "ep-ai-omnibus-report-a10-0073-2026",
+      "record_sha256": "6368bf40bb4bb9c4885ae3b1f08e9e77b5c12a4414e52aeed9d720c043c93cac"
+    },
+    {
+      "id": "ep-joint-committee-report-a9-0188-2023",
+      "slug": "ep-joint-committee-report-a9-0188-2023",
+      "record_sha256": "57f404c3252c236247a76354aa9402378800c64ef786b7e121539b1af2177b55"
+    },
+    {
+      "id": "ep-position-p9-ta-2023-0236",
+      "slug": "ep-position-p9-ta-2023-0236",
+      "record_sha256": "bc3a207eb7469b75718fe04a8d5718ba109a1e686f7c39f4a24175cdb87f4a9c"
+    },
+    {
+      "id": "ep-position-p9-ta-2024-0138",
+      "slug": "ep-position-p9-ta-2024-0138",
+      "record_sha256": "84cb47537619166cf9fa4f2ec2e66688cda82d7ec6cb858c6cdc6f100848c466"
+    },
+    {
+      "id": "ethics-guidelines-for-trustworthy-ai",
+      "slug": "ethics-guidelines-for-trustworthy-ai",
+      "record_sha256": "4775cc34aa464c99b55868dc4412cd46b973927b003b7b30711a906000ac4327"
+    },
+    {
+      "id": "final-transparency-guidelines-2026",
+      "slug": "final-transparency-guidelines-2026",
+      "record_sha256": "b3bf1b8b1ffba478965e4bab704c840dd8e90434115ab5118a01812ee796f8d6"
+    },
+    {
+      "id": "gpai-code-final",
+      "slug": "gpai-code-final",
+      "record_sha256": "1f2f4a5b552e30ab42d74ab098810b9f9fca9a211e6f7d9e4538301ef326ebe9"
+    },
+    {
+      "id": "gpai-code-final-copyright",
+      "slug": "gpai-code-final-copyright",
+      "record_sha256": "d0d9086a944c3bd537832fa2e897bd376d3072556c94f64cb142fec33bf74e3a"
+    },
+    {
+      "id": "gpai-code-final-safety-security",
+      "slug": "gpai-code-final-safety-security",
+      "record_sha256": "3a1d7a32679be543bec90554303ce68fa3b2c35b1935572b7923ee18462160f1"
+    },
+    {
+      "id": "gpai-code-final-transparency",
+      "slug": "gpai-code-final-transparency",
+      "record_sha256": "6330d3ada7a8853b99f251f6d9928932312500e9ec29585c4d966f76abd28b4d"
+    },
+    {
+      "id": "gpai-code-first-draft",
+      "slug": "gpai-code-first-draft",
+      "record_sha256": "b3b4a87ac20354c2770a1fabbb4d17e1abe1c39f99ad08ef51c6c4e691976a06"
+    },
+    {
+      "id": "gpai-code-model-documentation-form-2025",
+      "slug": "gpai-code-model-documentation-form-2025",
+      "record_sha256": "694514bccdd872833bc72b81d7ce72d968e392c846de5e763b52e099ec53ff2b"
+    },
+    {
+      "id": "gpai-code-second-draft",
+      "slug": "gpai-code-second-draft",
+      "record_sha256": "af3bad07baa2007951bd4c7f7f6c6825964169e5c66aba263cdf231214c9f00d"
+    },
+    {
+      "id": "gpai-code-signatory-form-2025",
+      "slug": "gpai-code-signatory-form-2025",
+      "record_sha256": "53209d0208b0f83bc41e2b18a958f498e8d449b16e91a1fb5544bf78de734dd4"
+    },
+    {
+      "id": "gpai-code-third-draft",
+      "slug": "gpai-code-third-draft",
+      "record_sha256": "dffc196934bf067bdacd89282a07086115f0c83ae0fd0923e9f4c0ddd169c83e"
+    },
+    {
+      "id": "gpai-code-third-draft-commitments",
+      "slug": "gpai-code-third-draft-commitments",
+      "record_sha256": "74c06ef372245b26cbd3541a9fd243bbd5ec5123f73c7868ded691be65c2336c"
+    },
+    {
+      "id": "gpai-code-third-draft-copyright",
+      "slug": "gpai-code-third-draft-copyright",
+      "record_sha256": "d6192ba4225deacbdf990b7bb37d2bcee04ba130e0610d760318f3dbc02c05fb"
+    },
+    {
+      "id": "gpai-code-third-draft-safety-security",
+      "slug": "gpai-code-third-draft-safety-security",
+      "record_sha256": "983a0be8fb65a7ae969fb1ece36c2ea45ff533cdcff4bb1b0caf52ba008a0221"
+    },
+    {
+      "id": "gpai-code-third-draft-transparency",
+      "slug": "gpai-code-third-draft-transparency",
+      "record_sha256": "773795430ab3992dbd72f088366bfeb935b14b2823351cc8b294809e16d88fd6"
+    },
+    {
+      "id": "gpai-provider-guidelines-2025",
+      "slug": "gpai-provider-guidelines-2025",
+      "record_sha256": "b2f48d9abf27f5613db9542e9e1bea2eab962410cd4ebebb7ee86cd8f7720e82"
+    },
+    {
+      "id": "gpai-provider-guidelines-approval-communication-2025",
+      "slug": "gpai-provider-guidelines-approval-communication-2025",
+      "record_sha256": "5ad68d45b180f885fd2648df3c7f2e79c7cf1e5665e2e7c25791cba1870ca97c"
+    },
+    {
+      "id": "gpai-serious-incident-reporting-template-2025",
+      "slug": "gpai-serious-incident-reporting-template-2025",
+      "record_sha256": "17b59ede63ccc8ac3e4413124b45558d7435c5b73739f585847efbe6c295963f"
+    },
+    {
+      "id": "gpai-training-content-explanatory-notice-2025",
+      "slug": "gpai-training-content-explanatory-notice-2025",
+      "record_sha256": "de47b739353eed4486b5006fd92ad23bfa7247f932f7d6cc1b23d33db14997a7"
+    },
+    {
+      "id": "gpai-training-content-template-2025",
+      "slug": "gpai-training-content-template-2025",
+      "record_sha256": "474c97051ffeaca9bfbfa6851feaf32ffa236159a01d9c9ace6f2e01f861d18a"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-2025",
+      "slug": "prohibited-ai-practices-guidelines-2025",
+      "record_sha256": "1bcda7a2bce55f518605c304cccea457a5a313db9c2805da82a63ad442ece879"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
+      "slug": "prohibited-ai-practices-guidelines-approval-communication-2025",
+      "record_sha256": "a07202a3fcca467a7e1ca24a318e53cbd9a5fbef955f0013c69159ee54ad2f38"
+    },
+    {
+      "id": "report-ai-safety-liability-2020",
+      "slug": "report-ai-safety-liability-2020",
+      "record_sha256": "b6003ff6d49d4d4b8d29e36bf0ba084505778e7c616c4ee9e0b93812ef75a19c"
+    },
+    {
+      "id": "scientific-panel-implementing-regulation-2025-454",
+      "slug": "scientific-panel-implementing-regulation-2025-454",
+      "record_sha256": "2d1bb30559ac1037b448339045a3c2e4aa3cd2d9ed8de5ec38d33b0295cf11ad"
+    },
+    {
+      "id": "standardisation-request-c-2025-3871",
+      "slug": "standardisation-request-c-2025-3871",
+      "record_sha256": "f9250d8fb04f84c285bd4ec2cb28da181b4cd659c6a25cb93d73274782dfac43"
+    },
+    {
+      "id": "transparency-code-final-2026",
+      "slug": "transparency-code-final-2026",
+      "record_sha256": "c83a1dce931c4b89d942262cb7cc887b5b75bb4afddb35a327e59f5d8a8b0020"
+    },
+    {
+      "id": "transparency-code-first-draft-2025",
+      "slug": "transparency-code-first-draft-2025",
+      "record_sha256": "6ceff705815daaaa689fb63a2e5be4e7cc9a0b5b4f22029c77cfcb6064ae4e87"
+    },
+    {
+      "id": "transparency-code-second-draft-2026",
+      "slug": "transparency-code-second-draft-2026",
+      "record_sha256": "ab91ec9627a6d496ac61d1307dcdd3bb43edb2b064ac60393e2ee2c8338e6209"
+    },
+    {
+      "id": "transparency-code-signatory-form-2026",
+      "slug": "transparency-code-signatory-form-2026",
+      "record_sha256": "158d056dde20e83fe09e8bbd7fa9b904a26a707d6a50028456a1b0dc0f75304c"
+    },
+    {
+      "id": "transparency-guidelines-approval-communication-2026",
+      "slug": "transparency-guidelines-approval-communication-2026",
+      "record_sha256": "166a1506ed68992cda15db5d1b5d301f15c772711a487fd667c92b36ef871507"
+    },
+    {
+      "id": "white-paper-on-artificial-intelligence",
+      "slug": "white-paper-on-artificial-intelligence",
+      "record_sha256": "ff79a69c69b11385362776d59212ee8125dee8dd515b47a2e9df98aa558e5ec1"
+    }
+  ]
+}

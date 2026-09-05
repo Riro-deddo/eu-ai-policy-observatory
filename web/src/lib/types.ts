@@ -59,6 +59,19 @@ export interface CorpusAssessment {
   reviewed_at: string;
 }
 
+export interface RetainedRouteNoticeEvidence {
+  source_id: string;
+  locator: string;
+}
+
+export interface RetainedRouteNotice {
+  status: 'parent_relationship_under_review';
+  reason: string;
+  reviewed_by: string;
+  reviewed_at: string;
+  evidence: RetainedRouteNoticeEvidence[];
+}
+
 export interface Relationship extends PublishedEntity {
   source_entity_type: string;
   source_entity_id: string;
@@ -105,6 +118,7 @@ export interface DocumentRecord extends PublishedEntity {
   institutions: Array<Institution & { role: string }>;
   sources: Source[];
   corpus_assessment: CorpusAssessment | null;
+  retained_route_notice: RetainedRouteNotice | null;
 }
 
 export interface CorpusCoverage {

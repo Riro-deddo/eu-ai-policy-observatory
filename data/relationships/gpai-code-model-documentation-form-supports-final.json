@@ -1,0 +1,16 @@
+{
+  "id": "gpai-code-model-documentation-form-supports-final",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T07:35:00Z",
+  "updated_at": "2026-09-05T07:35:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "gpai-code-model-documentation-form-2025",
+  "target_entity_type": "document",
+  "target_entity_id": "gpai-code-final",
+  "relationship_type": "related_to",
+  "basis": "official",
+  "rationale": "The Commission landing page states that the model-documentation form supports the Transparency chapter; related_to conservatively represents that purpose without asserting a stronger unverified binary structure.",
+  "evidence_source_id": "gpai-code-final-commission",
+  "verification_status": "verified"
+}

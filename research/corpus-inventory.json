@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:00:00Z",
+  "generated_at": "2026-09-05T05:38:52Z",
   "candidates": [
     {
       "id": "artificial-intelligence-for-europe",
@@ -870,10 +870,10 @@
         "commission-consultation-incidents"
       ],
       "official_reference": null,
-      "official_title": "Draft guidance on serious-incident reporting under the AI Act for high-risk AI systems",
+      "official_title": "DRAFT GUIDANCE ARTICLE 73 AI ACT- INCIDENT REPORTING (HIGH-RISK AI SYSTEMS)",
       "year": 2025,
       "issuing_institution": "European Commission",
-      "record_level": "version",
+      "record_level": "principal",
       "version_label": "Consultation draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
       "commissioning_body": null,
@@ -895,11 +895,11 @@
         "commission-consultation-incidents"
       ],
       "official_reference": null,
-      "official_title": "Draft reporting template for serious incidents involving high-risk AI systems",
+      "official_title": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
       "year": 2025,
       "issuing_institution": "European Commission",
-      "record_level": "version",
-      "version_label": "Consultation draft",
+      "record_level": "principal",
+      "version_label": "1.0.0",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
       "commissioning_body": null,
       "candidate_provenance": "official_consultation_material",
@@ -1032,12 +1032,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+      "decision": "pending",
+      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ai-board-article-40-standardisation-report-2026",
@@ -1057,12 +1067,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+      "decision": "pending",
+      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ai-board-international-standardisation-report-2026",
@@ -1082,12 +1102,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+      "decision": "pending",
+      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ethics-guidelines-publications-office-manifestation",
@@ -2375,12 +2405,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; the adopted report and plenary positions are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; the adopted report and plenary positions are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732836",
@@ -2400,12 +2440,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732837",
@@ -2425,12 +2475,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732838",
@@ -2450,12 +2510,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732839",
@@ -2475,12 +2545,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732840",
@@ -2500,12 +2580,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732841",
@@ -2525,12 +2615,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732843",
@@ -2550,12 +2650,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732844",
@@ -2575,12 +2685,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",

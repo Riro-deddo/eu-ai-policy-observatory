@@ -14,8 +14,8 @@ SCHEMA_PATH = Path("schema/database.sql")
 AUDIT_SUMMARY = {
     "coverage_cutoff": "2026-09-04",
     "coverage_statement": (
-        "Comprehensive within the documented inclusion boundary, "
-        "verified through 4 September 2026."
+        "An expanding corpus of official EU and European Communities AI-related "
+        "documents. Verification dates and known coverage gaps are documented."
     ),
     "source_families": {
         "total": 2,

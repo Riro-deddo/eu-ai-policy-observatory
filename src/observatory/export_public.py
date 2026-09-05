@@ -123,6 +123,9 @@ def _export_documents(
                 "concepts": concepts,
                 "institutions": institutions,
                 "corpus_assessment": _corpus_assessment(connection, document_id),
+                "retained_route_notice": _retained_route_notice(
+                    connection, document_id
+                ),
                 "sources": sources,
             }
         )
@@ -220,6 +223,27 @@ def _corpus_assessment(
         (document_id,),
     ).fetchone()
     return dict(row) if row is not None else None
+
+
+def _retained_route_notice(
+    connection: sqlite3.Connection, document_id: str
+) -> dict[str, Any] | None:
+    row = connection.execute(
+        "SELECT status, reason, reviewed_by, reviewed_at "
+        "FROM document_retained_route_notices WHERE document_id = ?",
+        (document_id,),
+    ).fetchone()
+    if row is None:
+        return None
+    evidence = [
+        {"source_id": evidence_row["source_id"], "locator": evidence_row["locator"]}
+        for evidence_row in connection.execute(
+            "SELECT source_id, locator FROM document_retained_route_evidence "
+            "WHERE document_id = ? ORDER BY evidence_order",
+            (document_id,),
+        )
+    ]
+    return {**dict(row), "evidence": evidence}
 
 
 def _export_events(

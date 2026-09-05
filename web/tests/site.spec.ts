@@ -62,6 +62,23 @@ test('methodology states the publication boundary', async ({ page }) => {
   await expect(unresolvedCount).toHaveText(coverage.unresolved);
 });
 
+test('methodology distinguishes incomplete registered searches from corpus completeness', async ({ page }) => {
+  await page.goto('methodology/');
+  const section = page.locator('#methodology-coverage');
+  await expect(section).toContainText('An expanding corpus');
+  await expect(section).not.toContainText('Comprehensive within');
+  for (const label of [
+    'Publication cutoff', 'Registered source families', 'Reviewed registered families',
+    'Not started', 'In progress', 'Known gaps', 'Recheck due',
+    'Included candidates', 'Merged candidates', 'Excluded candidates', 'Unresolved candidates',
+  ]) {
+    const row = section.locator('dt').filter({ hasText: label });
+    await expect(row).toHaveCount(1);
+    await expect(row.locator('xpath=following-sibling::dd[1]')).toBeVisible();
+  }
+  await expect(section).toContainText('Unregistered sources and unreviewed periods are not covered by these counts.');
+});
+
 test('about uses project-led authorship without university affiliation', async ({ page }) => {
   await page.goto('about/');
   await expect(page.locator('main').getByText('Created and maintained by Yichen Hao', { exact: true })).toBeVisible();

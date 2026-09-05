@@ -74,12 +74,16 @@ test('document records separate researcher classifications, production provenanc
 });
 
 test('Methodology publishes the aggregate coverage statement and audit counts', () => {
-  assert.match(methodology, /official EU documents substantively concerning AI from 1 January 2018/);
-  assert.match(methodology, /formally published drafts and sector-specific materials/);
   assert.match(methodology, /<p>\{data\.coverage\.coverage_statement\}<\/p>/);
+  assert.match(methodology, /<dt>Publication cutoff<\/dt><dd>\{data\.coverage\.coverage_cutoff\}<\/dd>/);
   assert.match(methodology, /<dt>Registered source families<\/dt><dd>\{data\.coverage\.source_families\.total\}<\/dd>/);
-  assert.match(methodology, /<dt>Reviewed through cutoff<\/dt><dd>\{data\.coverage\.source_families\.by_status\.reviewed\}<\/dd>/);
+  assert.match(methodology, /<dt>Reviewed registered families<\/dt><dd>\{data\.coverage\.source_families\.by_status\.reviewed\}<\/dd>/);
+  assert.match(methodology, /<dt>Not started<\/dt><dd>\{data\.coverage\.source_families\.by_status\.not_started\}<\/dd>/);
+  assert.match(methodology, /<dt>In progress<\/dt><dd>\{data\.coverage\.source_families\.by_status\.in_progress\}<\/dd>/);
+  assert.match(methodology, /<dt>Known gaps<\/dt><dd>\{data\.coverage\.source_families\.by_status\.gap_found\}<\/dd>/);
+  assert.match(methodology, /<dt>Recheck due<\/dt><dd>\{data\.coverage\.source_families\.by_status\.recheck_due\}<\/dd>/);
   assert.match(methodology, /<dt>Included candidates<\/dt><dd>\{data\.coverage\.inventory\.included\}<\/dd>/);
+  assert.match(methodology, /<dt>Merged candidates<\/dt><dd>\{data\.coverage\.inventory\.merged\}<\/dd>/);
   assert.match(methodology, /<dt>Excluded candidates<\/dt><dd>\{data\.coverage\.inventory\.excluded\}<\/dd>/);
   assert.match(methodology, /<dt>Unresolved candidates<\/dt><dd>\{data\.coverage\.unresolved_candidates\}<\/dd>/);
 });

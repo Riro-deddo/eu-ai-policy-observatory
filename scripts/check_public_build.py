@@ -24,6 +24,10 @@ _TOKEN_PREFIX = re.compile(
 _PRIVATE_KEY_HEADER = re.compile(
     r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----", re.IGNORECASE
 )
+_UNSUPPORTED_COVERAGE = re.compile(
+    r"\bComprehensive\s+within\s+the\s+documented\s+inclusion\s+boundary\b",
+    re.IGNORECASE,
+)
 
 
 def check_public_build(
@@ -86,6 +90,8 @@ def _text_errors(path: Path, text: str) -> Iterable[str]:
         yield f"credential or token prefix found in public output: {path}"
     if _PRIVATE_KEY_HEADER.search(text):
         yield f"private-key header found in public output: {path}"
+    if _UNSUPPORTED_COVERAGE.search(text):
+        yield f"unsupported corpus-completeness claim found in public output: {path}"
 
 
 def _scan_public_data(public_data_path: Path) -> list[str]:
@@ -103,7 +109,7 @@ def _scan_public_data(public_data_path: Path) -> list[str]:
     except json.JSONDecodeError as exc:
         return [f"public data file contains invalid JSON: {public_data_path} ({exc})"]
 
-    return list(_publication_errors(payload, "$"))
+    return [*_publication_errors(payload, "$"), *_text_errors(public_data_path, text)]
 
 
 def _scan_downloadable_database(site_root: Path) -> list[str]:

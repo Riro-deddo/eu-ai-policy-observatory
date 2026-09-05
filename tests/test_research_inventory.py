@@ -12,6 +12,20 @@ from observatory.validate import (
 
 
 SCHEMA_ROOT = Path("schema")
+REOPEN_IDS = {
+    "ai-board-harmonised-standards-report-2026",
+    "ai-board-article-40-standardisation-report-2026",
+    "ai-board-international-standardisation-report-2026",
+    "ep-ai-act-committee-amendments-pe-732802",
+    "ep-ai-act-committee-amendments-pe-732836",
+    "ep-ai-act-committee-amendments-pe-732837",
+    "ep-ai-act-committee-amendments-pe-732838",
+    "ep-ai-act-committee-amendments-pe-732839",
+    "ep-ai-act-committee-amendments-pe-732840",
+    "ep-ai-act-committee-amendments-pe-732841",
+    "ep-ai-act-committee-amendments-pe-732843",
+    "ep-ai-act-committee-amendments-pe-732844",
+}
 
 
 def _valid_sweep():
@@ -82,6 +96,22 @@ def _write_research_files(tmp_path, sweep=None, inventory=None):
         json.dumps(inventory or _valid_inventory()), encoding="utf-8"
     )
     return research_root
+
+
+def test_decision_history_is_private_validated_audit_metadata(tmp_path):
+    inventory = _valid_inventory()
+    candidate = inventory["candidates"][0]
+    snapshot = {key: candidate[key] for key in (
+        "decision", "decision_reason", "document_id",
+        "merged_into_document_id", "reviewed_at", "reviewed_by",
+    )}
+    candidate["decision_history"] = [snapshot]
+    root = _write_research_files(tmp_path, inventory=inventory)
+    assert validate_research_inventory(root, SCHEMA_ROOT, Path("tests/fixtures/valid/data")) == []
+    candidate["decision_history"][0]["reviewed_at"] = "not-a-date"
+    (root / "corpus-inventory.json").write_text(json.dumps(inventory), encoding="utf-8")
+    issues = validate_research_inventory(root, SCHEMA_ROOT, Path("tests/fixtures/valid/data"))
+    assert any("decision_history" in issue.field for issue in issues)
 
 
 def test_repository_source_sweep_and_inventory_are_valid_and_auditable():
@@ -170,7 +200,7 @@ def test_repository_candidate_decisions_have_reviewable_classifications():
                 assert candidate["candidate_provenance"] == "unknown_pending_review"
 
 
-def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditable():
+def test_2025_to_2026_source_sweep_and_candidate_states_are_auditable():
     sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
     inventory = json.loads(
         Path("research/corpus-inventory.json").read_text(encoding="utf-8")
@@ -178,8 +208,13 @@ def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditab
     candidates = {candidate["id"]: candidate for candidate in inventory["candidates"]}
 
     assert sweep["sources"]
-    assert all(source["scan_status"] == "reviewed" for source in sweep["sources"])
-    assert all(candidate["decision"] != "pending" for candidate in inventory["candidates"])
+    assert all(source["verification_note"].strip() for source in sweep["sources"])
+    assert all(source["url"].startswith("https://") for source in sweep["sources"])
+    assert all(
+        candidate["official_source_url"].startswith("https://")
+        and candidate["decision_reason"].strip()
+        for candidate in inventory["candidates"]
+    )
     assert {
         "gpai-code-final",
         "gpai-code-third-draft-transparency",
@@ -192,8 +227,33 @@ def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditab
         "ai-omnibus-council-adoption-note-st-10752-2026",
     } <= candidates.keys()
     assert all(
-        candidates[candidate_id]["decision"] in {"included", "merged", "excluded"}
+        candidates[candidate_id]["decision"]
+        in {"included", "merged", "excluded", "pending"}
         for candidate_id in candidates
+    )
+
+
+def test_known_unresolved_exclusions_are_reopened_with_history():
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
+    candidates = {row["id"]: row for row in inventory["candidates"]}
+    for identifier in REOPEN_IDS:
+        row = candidates[identifier]
+        assert row["decision"] == "pending"
+        assert row["document_id"] is None and row["merged_into_document_id"] is None
+        assert row["decision_history"][-1]["decision"] == "excluded"
+        assert row["decision_history"][-1]["decision_reason"] != row["decision_reason"]
+    sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
+    affected = {
+        source_id
+        for identifier in REOPEN_IDS
+        for source_id in candidates[identifier]["source_ids"]
+    }
+    assert all(
+        row["scan_status"] == "recheck_due"
+        for row in sweep["sources"]
+        if row["id"] in affected
     )
 
 
@@ -456,7 +516,7 @@ def test_2018_to_2021_inventory_has_a_decision_for_every_published_anchor():
         assert candidate["merged_into_document_id"] is None
 
 
-def test_2021_0106_procedure_sweep_is_complete_and_has_no_pending_candidates():
+def test_2021_0106_procedure_sweep_exposes_reopened_parliament_candidates():
     sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
     inventory = json.loads(
         Path("research/corpus-inventory.json").read_text(encoding="utf-8")
@@ -474,12 +534,24 @@ def test_2021_0106_procedure_sweep_is_complete_and_has_no_pending_candidates():
         if procedure_source_ids & set(candidate["source_ids"])
     ]
 
+    unaffected_source_ids = procedure_source_ids - {"ep-oeil-2021-0106"}
     assert all(
         sources[source_id]["scan_status"] == "reviewed"
-        for source_id in procedure_source_ids
+        for source_id in unaffected_source_ids
     )
+    assert sources["ep-oeil-2021-0106"]["scan_status"] == "recheck_due"
     assert procedure_candidates
-    assert all(candidate["decision"] != "pending" for candidate in procedure_candidates)
+    expected_pending = {
+        identifier
+        for identifier in REOPEN_IDS
+        if identifier.startswith("ep-ai-act-committee-amendments-")
+    }
+    actual_pending = {
+        candidate["id"]
+        for candidate in procedure_candidates
+        if candidate["decision"] == "pending"
+    }
+    assert actual_pending == expected_pending
 
 
 def test_2022_to_2024_inventory_reconciles_required_official_records():
