@@ -132,7 +132,7 @@ Run `node.exe node_modules/vitest/vitest.mjs run tests/filter.test.ts` for RED/G
 
 ## Implementation verification (2026-09-05)
 
-The bounded backend and atlas work is implemented locally: 14 historical admissions and three existing-record upgrades, 131 published documents in the scratch export, 17 expanded reviews complete and 114 pending. All original document IDs and slugs are retained. Both tasks passed independent review after one fix round each. The final whole-branch integration review is tracked separately before handoff.
+The bounded backend and atlas work is implemented locally: 14 historical admissions and three existing-record upgrades, 131 published documents in the scratch export, 17 expanded reviews complete and 114 pending. All original document IDs and slugs are retained. Both tasks passed independent review after one fix round each. The final whole-branch integration review identified two issues; the single combined fix wave and independent scoped re-review cleared both, with no new blocking breakage. Local implementation is ready for the reviewed bounded scope; remote integration remains a separate user decision.
 
 Final integration checks: Python 375 passed / 1 skipped; Node source tests 65 passed against the current verified scratch payload; Vitest 26 passed; Astro check 0 errors / 0 warnings / 3 hints; 144 static pages built. The public-output scanner passes with the downloadable database required. Rendered in-app browser checks cover desktop filtering and mobile Corpus, historical and pending record pages, Timeline and Methodology without horizontal overflow; sampled console logs are clean. Full standalone Playwright execution and remote release are not claimed. The protected generated pair was preserved.
 
