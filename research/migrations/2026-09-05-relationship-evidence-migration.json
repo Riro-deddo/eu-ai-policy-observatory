@@ -1,0 +1,303 @@
+{
+  "migration_id": "2026-09-05-relationship-evidence-migration",
+  "review": {
+    "reviewed_at": "2026-09-05T07:35:00Z",
+    "publication_cutoff": "2026-09-04",
+    "reviewer": "Codex",
+    "base_commit": "f4085fdf6ada9da4954f815738ff2b8bffe81ec0"
+  },
+  "scope_note": "This was a narrow relationship and record-level editorial review. It does not verify every field or classification in each record, establish corpus completeness, or activate the prospective historical schema or gate.",
+  "targets": [
+    {
+      "document_id": "gpai-code-final-copyright",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-final-copyright-version-of-final"],
+      "action_rationale": "The Commission landing page identifies Copyright as one of the final code's three chapters, supporting part_of rather than version_of.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-final-safety-security",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-final-safety-version-of-final"],
+      "action_rationale": "The Commission landing page identifies Safety and Security as one of the final code's three chapters, supporting part_of rather than version_of.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-final-transparency",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-final-transparency-version-of-final"],
+      "action_rationale": "The Commission landing page identifies Transparency as one of the final code's three chapters, supporting part_of rather than version_of.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-third-draft-commitments",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-third-draft-commitments-part-of-third-draft"],
+      "action_rationale": "The opening structural paragraph, details section and downloads establish Commitments as a component of the third draft.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-third-draft-copyright",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-third-draft-copyright-part-of-third-draft"],
+      "action_rationale": "The opening structural paragraph, details section and downloads establish Copyright as a component of the third draft.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-third-draft-safety-security",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-third-draft-safety-security-part-of-third-draft"],
+      "action_rationale": "The opening structural paragraph, details section and downloads establish Safety and Security as a component of the third draft.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-third-draft-transparency",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["gpai-code-third-draft-transparency-part-of-third-draft"],
+      "action_rationale": "The opening structural paragraph, details section and downloads establish Transparency as a component of the third draft.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-model-documentation-form-2025",
+      "before_record_level": "attachment",
+      "after_record_level": "supporting",
+      "relationship_change_ids": ["gpai-code-model-documentation-form-supports-final"],
+      "action_rationale": "The HTML page states that the form supports the Transparency chapter. Supporting and related_to conservatively represent that stated purpose; a stronger binary structure was not verified.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "gpai-code-signatory-form-2025",
+      "before_record_level": "attachment",
+      "after_record_level": "supporting",
+      "relationship_change_ids": ["gpai-code-signatory-form-supports-final"],
+      "action_rationale": "The HTML page establishes the form's administrative signing purpose. Supporting and related_to conservatively represent that stated purpose; a stronger binary structure was not verified.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "transparency-code-signatory-form-2026",
+      "before_record_level": "attachment",
+      "after_record_level": "supporting",
+      "relationship_change_ids": ["transparency-code-signatory-form-supports-final"],
+      "action_rationale": "The HTML signing instructions establish the form's administrative purpose for the final Transparency Code. Supporting and related_to conservatively represent that purpose; a stronger binary structure was not verified.",
+      "status": "resolved"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "before_record_level": "version",
+      "after_record_level": "attachment",
+      "relationship_change_ids": [
+        "high-risk-annex-i-version-of-draft",
+        "high-risk-annex-iii-version-of-draft"
+      ],
+      "action_rationale": "The landing page identifies this record as the General-principles section rather than the entire draft guidelines.",
+      "status": "held",
+      "hold_reason": "A represented whole-guidelines endpoint is needed. The General-principles document must not be repurposed as that whole."
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["high-risk-annex-i-version-of-draft"],
+      "action_rationale": "The landing page presents this and General principles as sibling sections; Annex I names the AI Act annex covered, not an annex attached to the General-principles file.",
+      "status": "held",
+      "hold_reason": "A represented whole-guidelines endpoint is needed; the conservative sibling related_to association does not establish attachment parent readiness."
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "before_record_level": "attachment",
+      "after_record_level": "attachment",
+      "relationship_change_ids": ["high-risk-annex-iii-version-of-draft"],
+      "action_rationale": "The landing page presents this and General principles as sibling sections; Annex III names the AI Act annex covered, not an annex attached to the General-principles file.",
+      "status": "held",
+      "hold_reason": "A represented whole-guidelines endpoint is needed; the conservative sibling related_to association does not establish attachment parent readiness."
+    },
+    {
+      "document_id": "draft-guidance-serious-ai-incidents-2025",
+      "before_record_level": "version",
+      "after_record_level": "version",
+      "relationship_change_ids": [],
+      "action_rationale": "The consultation page establishes a separately titled guidance draft and reporting-template draft with distinct functions, not same-work version lineage.",
+      "status": "held",
+      "hold_reason": "No genuine predecessor, successor or represented parent was verified. Editorial level and lineage require a later review."
+    },
+    {
+      "document_id": "draft-serious-ai-incident-report-template-2025",
+      "before_record_level": "version",
+      "after_record_level": "version",
+      "relationship_change_ids": [],
+      "action_rationale": "The consultation page establishes a separately titled reporting-template draft and guidance draft with distinct functions, not same-work version lineage.",
+      "status": "held",
+      "hold_reason": "No genuine predecessor, successor or represented parent was verified. Editorial level and lineage require a later review."
+    }
+  ],
+  "relationship_changes": [
+    {
+      "relationship_id": "gpai-code-final-copyright-version-of-final",
+      "before": {"updated_at": "2026-09-04T00:00:00Z", "relationship_type": "version_of", "basis": "official", "rationale": "The Copyright chapter is an independently downloadable part of the final code."},
+      "after": {"updated_at": "2026-09-05T07:35:00Z", "relationship_type": "part_of", "basis": "official", "rationale": "The Commission landing page presents Copyright as one of the final code's three chapters, so this component is represented as part of the final code."}
+    },
+    {
+      "relationship_id": "gpai-code-final-safety-version-of-final",
+      "before": {"updated_at": "2026-09-04T00:00:00Z", "relationship_type": "version_of", "basis": "official", "rationale": "The Safety and Security chapter is an independently downloadable part of the final code."},
+      "after": {"updated_at": "2026-09-05T07:35:00Z", "relationship_type": "part_of", "basis": "official", "rationale": "The Commission landing page presents Safety and Security as one of the final code's three chapters, so this component is represented as part of the final code."}
+    },
+    {
+      "relationship_id": "gpai-code-final-transparency-version-of-final",
+      "before": {"updated_at": "2026-09-04T00:00:00Z", "relationship_type": "version_of", "basis": "official", "rationale": "The Transparency chapter is an independently downloadable part of the final code."},
+      "after": {"updated_at": "2026-09-05T07:35:00Z", "relationship_type": "part_of", "basis": "official", "rationale": "The Commission landing page presents Transparency as one of the final code's three chapters, so this component is represented as part of the final code."}
+    },
+    {
+      "relationship_id": "high-risk-annex-i-version-of-draft",
+      "before": {"updated_at": "2026-09-04T00:00:00Z", "relationship_type": "version_of", "basis": "official", "rationale": "The Commission publishes Annex I guidance as a separate component of the consultation draft."},
+      "after": {"updated_at": "2026-09-05T07:35:00Z", "relationship_type": "related_to", "basis": "analytical", "rationale": "The Commission landing page presents this file and the General-principles file as sibling sections of one draft guideline, not versions or annexes of the General-principles file; related_to records association only and does not establish parent readiness."}
+    },
+    {
+      "relationship_id": "high-risk-annex-iii-version-of-draft",
+      "before": {"updated_at": "2026-09-04T00:00:00Z", "relationship_type": "version_of", "basis": "official", "rationale": "The Commission publishes Annex III guidance as a separate component of the consultation draft."},
+      "after": {"updated_at": "2026-09-05T07:35:00Z", "relationship_type": "related_to", "basis": "analytical", "rationale": "The Commission landing page presents this file and the General-principles file as sibling sections of one draft guideline, not versions or annexes of the General-principles file; related_to records association only and does not establish parent readiness."}
+    }
+  ],
+  "new_relationships": [
+    {"relationship_id": "gpai-code-third-draft-commitments-part-of-third-draft", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "gpai-code-third-draft-commitments", "target_document_id": "gpai-code-third-draft", "relationship_type": "part_of", "basis": "official", "evidence_source_id": "gpai-code-third-draft-commission"},
+    {"relationship_id": "gpai-code-third-draft-copyright-part-of-third-draft", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "gpai-code-third-draft-copyright", "target_document_id": "gpai-code-third-draft", "relationship_type": "part_of", "basis": "official", "evidence_source_id": "gpai-code-third-draft-commission"},
+    {"relationship_id": "gpai-code-third-draft-safety-security-part-of-third-draft", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "gpai-code-third-draft-safety-security", "target_document_id": "gpai-code-third-draft", "relationship_type": "part_of", "basis": "official", "evidence_source_id": "gpai-code-third-draft-commission"},
+    {"relationship_id": "gpai-code-third-draft-transparency-part-of-third-draft", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "gpai-code-third-draft-transparency", "target_document_id": "gpai-code-third-draft", "relationship_type": "part_of", "basis": "official", "evidence_source_id": "gpai-code-third-draft-commission"},
+    {"relationship_id": "gpai-code-model-documentation-form-supports-final", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "gpai-code-model-documentation-form-2025", "target_document_id": "gpai-code-final", "relationship_type": "related_to", "basis": "official", "evidence_source_id": "gpai-code-final-commission"},
+    {"relationship_id": "gpai-code-signatory-form-supports-final", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "gpai-code-signatory-form-2025", "target_document_id": "gpai-code-final", "relationship_type": "related_to", "basis": "official", "evidence_source_id": "gpai-code-final-commission"},
+    {"relationship_id": "transparency-code-signatory-form-supports-final", "created_at": "2026-09-05T07:35:00Z", "updated_at": "2026-09-05T07:35:00Z", "source_document_id": "transparency-code-signatory-form-2026", "target_document_id": "transparency-code-final-2026", "relationship_type": "related_to", "basis": "official", "evidence_source_id": "transparency-code-signatory-commission"}
+  ],
+  "record_field_changes": [
+    {
+      "record_id": "gpai-code-model-documentation-form-2025",
+      "record_type": "document",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "record_level", "before": "attachment", "after": "supporting"},
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified."}
+      ]
+    },
+    {
+      "record_id": "gpai-code-signatory-form-2025",
+      "record_type": "document",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "record_level", "before": "attachment", "after": "supporting"},
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified."}
+      ]
+    },
+    {
+      "record_id": "transparency-code-signatory-form-2026",
+      "record_type": "document",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "record_level", "before": "attachment", "after": "supporting"},
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified."}
+      ]
+    },
+    {
+      "record_id": "draft-high-risk-classification-guidelines-2026",
+      "record_type": "document",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "record_level", "before": "version", "after": "attachment"},
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed."}
+      ]
+    }
+  ],
+  "source_evidence": [
+    {
+      "source_id": "gpai-code-final-commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "locators": ["Paragraph immediately before 'The 3 chapters of the code'", "'The 3 chapters of the code' heading and three chapter rows, especially Transparency", "Download labels and redirects 118120, 118115, 118119, 118118 and 118312"],
+      "review_scope": "Landing-page structure, stated purpose and download labels only.",
+      "binary_interiors_verified": false,
+      "source_snapshot_retained": false
+    },
+    {
+      "source_id": "gpai-code-third-draft-commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "locators": ["Opening structural paragraph on commitments", "'Details of the third draft'", "Numbered Downloads 1-4 and redirects 113606, 113607, 113605 and 113608"],
+      "review_scope": "Landing-page structure, stated purpose and download labels only.",
+      "binary_interiors_verified": false,
+      "source_snapshot_retained": false
+    },
+    {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+      "locators": ["Paragraph immediately before Downloads describing separately downloadable sections", "Downloads 1-3 and redirects 128559, 128560 and 128561", "Section III/IV explanation"],
+      "review_scope": "Landing-page sibling-section structure and download labels only; no whole-work endpoint was verified.",
+      "binary_interiors_verified": false,
+      "source_snapshot_retained": false
+    },
+    {
+      "source_id": "transparency-code-signatory-commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/how-sign-code-practice-transparency-ai-generated-content",
+      "locators": ["Signing instructions", "'Signatory form (DOCX)' download and redirect 129548", "Corroborating Commission policy page's two sections and separate signature instructions"],
+      "review_scope": "Landing-page purpose, instructions and download label only.",
+      "binary_interiors_verified": false,
+      "source_snapshot_retained": false
+    },
+    {
+      "source_id": "high-risk-incident-consultation-commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
+      "locators": ["Explanatory paragraph immediately before Downloads", "Two separately titled Downloads, redirects 119624 and 119623"],
+      "review_scope": "Read-only hold review of the landing-page descriptions and download labels; the canonical source record was not modified.",
+      "binary_interiors_verified": false,
+      "source_snapshot_retained": false
+    }
+  ],
+  "source_record_changes": [
+    {
+      "source_id": "gpai-code-final-commission",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "last_verified_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "verification_note", "before": "Official Commission page publishes the final GPAI Code and separate Transparency, Copyright, Safety and Security, Model Documentation Form and Signatory Form files (newsroom documents 118120, 118115, 118119, 118118, 118312).", "after": "Official Commission page publishes the final GPAI Code and separate Transparency, Copyright, Safety and Security, Model Documentation Form and Signatory Form files (newsroom documents 118120, 118115, 118119, 118118, 118312). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained."}
+      ]
+    },
+    {
+      "source_id": "gpai-code-third-draft-commission",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "last_verified_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "verification_note", "before": "Official library page published 11 March 2025 supplies the third-draft overview and separate Commitments, Transparency, Copyright, and Safety and Security English files (newsroom documents 113606, 113607, 113605, 113608).", "after": "Official library page published 11 March 2025 supplies the third-draft overview and separate Commitments, Transparency, Copyright, and Safety and Security English files (newsroom documents 113606, 113607, 113605, 113608). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained."}
+      ]
+    },
+    {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "last_verified_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "verification_note", "before": "Official page published 19 May 2026 provides three separate consultation-draft files: general principles, Annex I and Annex III guidance (newsroom documents 128559, 128560 and 128561); no final text had been issued by the cutoff.", "after": "Official page published 19 May 2026 provides three separate consultation-draft files: general principles, Annex I and Annex III guidance (newsroom documents 128559, 128560 and 128561); no final text had been issued by the cutoff. Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained."}
+      ]
+    },
+    {
+      "source_id": "transparency-code-signatory-commission",
+      "changes": [
+        {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "last_verified_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
+        {"field": "verification_note", "before": "Official page published 10 June 2026 provides the separately issued signatory form (newsroom document 129548).", "after": "Official page published 10 June 2026 provides the separately issued signatory form (newsroom document 129548). Narrow verification on 2026-09-05 checked the landing-page structure, stated purpose and download label recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; the linked binary file interior and retained bytes were not verified in this review, and no source snapshot was retained."}
+      ]
+    }
+  ],
+  "generated_artifacts": {
+    "status": "pre-migration_pending_controlled_rebuild",
+    "note": "generated/public-data.json and generated/eu-ai-policy-observatory.sqlite intentionally remain the pre-migration pair. A later controlled rebuild is required before publication."
+  },
+  "result_summary": {
+    "target_count": 15,
+    "relationship_readiness_resolved_count": 10,
+    "relationship_readiness_held_count": 5,
+    "relationship_count_before": 88,
+    "relationship_count_after_canonical_data": 95,
+    "document_count": 117,
+    "qualification": "Counts describe this inactive relationship-readiness preflight only, not overall historical readiness or corpus completeness."
+  }
+}

@@ -3,7 +3,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import tempfile
 
 
 def test_seed_corpus_preserves_stable_identifiers_and_version_metadata():
@@ -56,7 +55,7 @@ def test_seed_corpus_preserves_stable_identifiers_and_version_metadata():
     assert {document_id: document["version_status"] for document_id, document in seed_documents.items()} == expected_version_statuses
 
 
-def test_classification_migration_preserves_ordered_document_ids_and_slugs():
+def test_classification_migration_preserves_ordered_document_ids_and_slugs(tmp_path: Path):
     source_root = Path("data/documents")
 
     def ordered_id_slug_pairs(root):
@@ -68,26 +67,25 @@ def test_classification_migration_preserves_ordered_document_ids_and_slugs():
             )
         ]
 
-    with tempfile.TemporaryDirectory(dir=".") as temporary_directory:
-        copied_root = Path(temporary_directory) / "documents"
-        shutil.copytree(source_root, copied_root)
-        before = ordered_id_slug_pairs(copied_root)
-        result = subprocess.run(
-            [
-                sys.executable,
-                "scripts/migrate_document_classifications.py",
-                "--data-root",
-                str(copied_root),
-            ],
-            check=False,
-            capture_output=True,
-            text=True,
-        )
+    copied_root = tmp_path / "documents"
+    shutil.copytree(source_root, copied_root)
+    before = ordered_id_slug_pairs(copied_root)
+    result = subprocess.run(
+        [
+            sys.executable,
+            "scripts/migrate_document_classifications.py",
+            "--data-root",
+            str(copied_root),
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
 
-        assert result.returncode == 0, result.stderr
-        after = ordered_id_slug_pairs(copied_root)
-        assert len(after) == len(before)
-        assert after == before
+    assert result.returncode == 0, result.stderr
+    after = ordered_id_slug_pairs(copied_root)
+    assert len(after) == len(before)
+    assert after == before
 
 
 def test_seed_corpus_uses_current_withdrawn_status_and_no_editorial_official_summaries():
@@ -492,7 +490,7 @@ def test_2025_to_2026_relationships_and_dates_preserve_official_sequence():
     }
     assert {
         ("gpai-code-second-draft", "revises", "gpai-code-first-draft"),
-        ("gpai-code-final-transparency", "version_of", "gpai-code-final"),
+        ("gpai-code-final-transparency", "part_of", "gpai-code-final"),
         ("commission-opinion-gpai-code-2025", "endorses", "gpai-code-final"),
         ("ai-board-assessment-gpai-code-2025", "endorses", "gpai-code-final"),
         ("transparency-code-second-draft-2026", "revises", "transparency-code-first-draft-2025"),
