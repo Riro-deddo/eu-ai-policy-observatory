@@ -1,0 +1,123 @@
+{
+  "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
+  "slug": "horizon-2020-specific-programme-decision-2013-743-eu",
+  "official_title": "2013/743/EU: Council Decision of 3 December 2013 establishing the specific programme implementing Horizon 2020 - the Framework Programme for Research and Innovation (2014-2020) and repealing Decisions 2006/971/EC, 2006/972/EC, 2006/973/EC, 2006/974/EC and 2006/975/EC",
+  "short_title": "Horizon 2020 specific programme",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "2013/743/EU",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2013-12-03",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "2013-12-20",
+  "legal_status": "in_force",
+  "celex": "32013D0743",
+  "eli": "http://data.europa.eu/eli/dec/2013/743/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "evidence_locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "proposer",
+      "evidence_source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the European Commission'"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "The official record resolves identity, dates, roles, current status and dedicated machine-learning, robotics and adaptive-system provisions.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "meaning": "The cited official manifestation establishes the document date 2013-12-03 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "meaning": "The cited official manifestation establishes official publication on 2013-12-20."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "rationale": "Dedicated provisions fund machine learning, industrial and service robotics, cognitive and communicative systems, sentient machines and adaptive learning. The provisions are substantive, but they do not explicitly use the term artificial intelligence; the named learning and cognitive systems therefore satisfy the first applicable precursor class."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "rationale": "The act establishes the Horizon 2020 specific R&I programme."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "rationale": "The cited section targets industrial/service robotics and industrial leadership."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author; the European Commission remains separately represented as proposer."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+      "rationale": "EUR-Lex identifies OJ L 347, 20 December 2013, pp. 965-1041."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "consolidation",
+      "value": "2021-01-01",
+      "precision": "day",
+      "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+      "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
+    }
+  ]
+}

@@ -261,6 +261,27 @@ def test_published_draft_with_non_binding_status_is_allowed(tmp_path):
     assert not any(issue.code == "status_combination" for issue in issues)
 
 
+@pytest.mark.parametrize(
+    "legal_status", ["no_longer_in_force", "repealed", "expired"]
+)
+def test_consolidated_historical_act_can_have_evidenced_inactive_status(
+    tmp_path, legal_status
+):
+    data_root = _copy_valid_data(tmp_path)
+    path = data_root / "documents" / "example-document.json"
+    document = json.loads(path.read_text(encoding="utf-8"))
+    document.update(
+        publication_status="published",
+        version_status="consolidated",
+        legal_status=legal_status,
+    )
+    path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert not any(issue.code == "status_combination" for issue in issues)
+
+
 def test_duplicate_document_identity_uses_normalised_version_and_institution_ids(tmp_path):
     data_root = _copy_valid_data(tmp_path)
     (data_root / "institutions" / "european-parliament.json").write_text(

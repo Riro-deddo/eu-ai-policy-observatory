@@ -3,6 +3,8 @@ import type { DocumentRecord, PublicData, Relationship } from './types';
 export interface CorpusCriteria {
   view?: 'principal' | 'all';
   query?: string;
+  collection?: string;
+  relevance?: string;
   year?: string;
   institution?: string;
   documentType?: string;
@@ -19,6 +21,8 @@ export interface CorpusCriteria {
 
 const corpusStringCriteriaKeys = [
   'query',
+  'collection',
+  'relevance',
   'year',
   'institution',
   'documentType',
@@ -92,6 +96,7 @@ export interface TimelineEntry {
   policyStage: string | null;
   eventType: string | null;
   recordLevel: DocumentRecord['record_level'] | null;
+  dateKind: DocumentRecord['document_date_kind'] | null;
 }
 
 const provenanceLabels = new Map<string, string>([
@@ -100,8 +105,17 @@ const provenanceLabels = new Map<string, string>([
   ['eu_expert_group_authored', 'Authored by an EU expert group'],
 ]);
 
+const historicalLabels = new Map<string, string>([
+  ['historical_lineage', 'Historical lineage'],
+  ['contemporary_eu_ai_policy', 'Contemporary EU AI policy'],
+  ['legacy_review_pending', 'Expanded evidence review pending'],
+  ['direct_ai_substantive', 'Direct AI relevance'],
+  ['ai_related_precursor', 'AI-related precursor'],
+  ['indirect_adm_legal_context', 'Automated-decision legal context'],
+]);
+
 export function vocabularyLabel(value: string): string {
-  const label = provenanceLabels.get(value);
+  const label = provenanceLabels.get(value) ?? historicalLabels.get(value);
   if (label !== undefined) return label;
   const readable = value.replaceAll('_', ' ').replace(/\beu\b/gi, 'EU');
   return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`;
@@ -221,9 +235,19 @@ export function filterDocuments(
         document.official_reference,
       ].some((value) => value !== null && normalise(value).includes(query));
       const assessment = document.corpus_assessment;
+      const collectionMatches = criteria.collection === undefined
+        || (criteria.collection === 'legacy_review_pending'
+          ? document.historical_review_status === 'legacy_review_pending'
+          : matchesValue(document.temporal_collection ?? '', criteria.collection));
+      const relevanceMatches = criteria.relevance === undefined
+        || (criteria.relevance === 'legacy_review_pending'
+          ? document.historical_review_status === 'legacy_review_pending'
+          : matchesValue(document.relevance_class ?? '', criteria.relevance));
 
       return (criteria.view === 'all' || document.record_level === 'principal')
         && queryMatches
+        && collectionMatches
+        && relevanceMatches
         && (criteria.year === undefined || document.publication_date.startsWith(criteria.year))
         && hasMatchingId(document.institutions, criteria.institution)
         && matchesValue(document.document_type, criteria.documentType)
@@ -272,6 +296,7 @@ export function buildTimelineEntries(data: PublicData): TimelineEntry[] {
       policyStage: document.corpus_assessment?.policy_stage ?? null,
       eventType: null,
       recordLevel: document.record_level,
+      dateKind: document.document_date_kind,
     }));
   const events: TimelineEntry[] = data.events
     .filter((event) => event.publication_status === 'published')
@@ -296,6 +321,7 @@ export function buildTimelineEntries(data: PublicData): TimelineEntry[] {
         policyStage: document?.corpus_assessment?.policy_stage ?? null,
         eventType: event.event_type,
         recordLevel: document?.record_level ?? null,
+        dateKind: null,
       };
     });
 

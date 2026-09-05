@@ -1,0 +1,13 @@
+{
+  "id": "council-decision-89-415-eec-doses-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31989D0415",
+  "publisher": "Office for Official Publications of the European Communities",
+  "retrieved_at": "2026-09-05T06:27:41.6613488Z",
+  "last_verified_at": "2026-09-05T06:27:41.6613488Z",
+  "verification_note": "Identity panel; heading; Articles 1 and 8; Annex I: The full text resolves identity, dates, roles and validity; Annex I applies expert systems to the entire statistical-data-processing chain."
+}

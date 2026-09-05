@@ -1,0 +1,125 @@
+{
+  "id": "digitising-european-industry",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
+  "slug": "digitising-european-industry",
+  "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Digitising European Industry - Reaping the full benefits of a Digital Single Market",
+  "short_title": "Digitising European Industry",
+  "document_type": "communication",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "COM(2016) 180 final",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2016-04-19",
+  "version_label": "Final",
+  "version_status": "final",
+  "publication_date": "2016-04-19",
+  "legal_status": "non_binding",
+  "celex": "52016DC0180",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author",
+      "evidence_source_id": "digitising-european-industry-eur-lex-metadata",
+      "evidence_locator": "Document information"
+    },
+    {
+      "institution_id": "directorate-general-for-communications-networks-content-and-technology",
+      "role": "responsible_body",
+      "evidence_source_id": "digitising-european-industry-eur-lex-metadata",
+      "evidence_locator": "Document information"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "digitising-european-industry-eur-lex-metadata",
+    "digitising-european-industry-eur-lex-text",
+    "digitising-european-industry-commission-press-release-ip-16-1407"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Full text resolves identity, issue/dispatch date, authorship and direct AI relevance, and the Commission's dated IP/16/1407 press release independently establishes public presentation on 19 April 2016 by listing this communication among communications adopted that day.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "digitising-european-industry-eur-lex-metadata",
+      "locator": "Document information",
+      "meaning": "The cited official manifestation establishes the document date 2016-04-19 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "digitising-european-industry-commission-press-release-ip-16-1407",
+      "locator": "IP/16/1407, Brussels, 19 April 2016; list headed Communications adopted today",
+      "meaning": "The cited official manifestation establishes official publication on 2016-04-19."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "digitising-european-industry-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "The communication names AI and AI-based systems as industrial drivers, proposes AI/autonomous-system platforms, investment and regulatory work."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "digitising-european-industry-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "Sections 2 and 4 centre on industrial digitisation, intelligent machines and manufacturing platforms."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "digitising-european-industry-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "Section 4.2 commits Horizon 2020 investment and coordinated R&D for AI/robotics-related technologies."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "digitising-european-industry-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "The heading and EUR-Lex metadata identify the European Commission and DG CNECT."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "digitising-european-industry-commission-press-release-ip-16-1407",
+      "locator": "IP/16/1407, Brussels, 19 April 2016; list headed Communications adopted today",
+      "rationale": "The dated official Commission IP/16/1407 release publicly presents the package and lists the Digitising European Industry communication among communications adopted on 19 April 2016."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_dispatch",
+      "value": "2016-04-19",
+      "precision": "day",
+      "source_id": "digitising-european-industry-eur-lex-metadata",
+      "locator": "Document information"
+    }
+  ]
+}

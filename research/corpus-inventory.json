@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:00:00Z",
+  "generated_at": "2026-09-05T10:34:49Z",
   "candidates": [
     {
       "id": "artificial-intelligence-for-europe",
@@ -870,10 +870,10 @@
         "commission-consultation-incidents"
       ],
       "official_reference": null,
-      "official_title": "Draft guidance on serious-incident reporting under the AI Act for high-risk AI systems",
+      "official_title": "DRAFT GUIDANCE ARTICLE 73 AI ACT- INCIDENT REPORTING (HIGH-RISK AI SYSTEMS)",
       "year": 2025,
       "issuing_institution": "European Commission",
-      "record_level": "version",
+      "record_level": "principal",
       "version_label": "Consultation draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
       "commissioning_body": null,
@@ -895,11 +895,11 @@
         "commission-consultation-incidents"
       ],
       "official_reference": null,
-      "official_title": "Draft reporting template for serious incidents involving high-risk AI systems",
+      "official_title": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
       "year": 2025,
       "issuing_institution": "European Commission",
-      "record_level": "version",
-      "version_label": "Consultation draft",
+      "record_level": "principal",
+      "version_label": "1.0.0",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
       "commissioning_body": null,
       "candidate_provenance": "official_consultation_material",
@@ -1032,12 +1032,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+      "decision": "pending",
+      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ai-board-article-40-standardisation-report-2026",
@@ -1057,12 +1067,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+      "decision": "pending",
+      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ai-board-international-standardisation-report-2026",
@@ -1082,12 +1102,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+      "decision": "pending",
+      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ethics-guidelines-publications-office-manifestation",
@@ -2375,12 +2405,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; the adopted report and plenary positions are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; the adopted report and plenary positions are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732836",
@@ -2400,12 +2440,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732837",
@@ -2425,12 +2475,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732838",
@@ -2450,12 +2510,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732839",
@@ -2475,12 +2545,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732840",
@@ -2500,12 +2580,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732841",
@@ -2525,12 +2615,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732843",
@@ -2550,12 +2650,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732844",
@@ -2575,12 +2685,22 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "excluded",
-      "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+      "decision": "pending",
+      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-04T00:00:00Z",
-      "reviewed_by": "Yichen Hao"
+      "reviewed_at": "2026-09-05T05:38:52Z",
+      "reviewed_by": "Codex (scope-review reopening)",
+      "decision_history": [
+        {
+          "decision": "excluded",
+          "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-04T00:00:00Z",
+          "reviewed_by": "Yichen Hao"
+        }
+      ]
     },
     {
       "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
@@ -3959,6 +4079,524 @@
       "merged_into_document_id": null,
       "reviewed_at": "2026-09-04T00:00:00Z",
       "reviewed_by": "Yichen Hao"
+    },
+    {
+      "id": "council-decision-84-130-eec-esprit",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "84/130/EEC",
+      "official_title": "84/130/EEC: Council Decision of 28 February 1984 concerning a European programme for research and development in information technologies (ESPRIT)",
+      "year": 1984,
+      "issuing_institution": "Council of the European Communities",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/eli/dec/1984/130/oj/eng",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for council-decision-84-130-eec-esprit.",
+      "document_id": "council-decision-84-130-eec-esprit",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "council-decision-88-279-eec-esprit-ii",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "88/279/EEC",
+      "official_title": "88/279/EEC: Council Decision of 11 April 1988 concerning the European strategic programme for research and development in information technologies (Esprit)",
+      "year": 1988,
+      "issuing_institution": "Council of the European Communities",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31988D0279",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for council-decision-88-279-eec-esprit-ii.",
+      "document_id": "council-decision-88-279-eec-esprit-ii",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "council-decision-88-417-eec-delta",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "88/417/EEC",
+      "official_title": "88/417/EEC: Council Decision of 29 June 1988 on a Community action in the field of learning technologies - development of European learning through technological advance (Delta) exploratory action",
+      "year": 1988,
+      "issuing_institution": "Council of the European Communities",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31988D0417",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "education",
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for council-decision-88-417-eec-delta.",
+      "document_id": "council-decision-88-417-eec-delta",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "council-decision-89-415-eec-doses",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "89/415/EEC",
+      "official_title": "89/415/EEC: Council Decision of 20 June 1989 instituting a specific programme for the research and development of statistical expert systems (Doses)",
+      "year": 1989,
+      "issuing_institution": "Council of the European Communities",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31989D0415",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for council-decision-89-415-eec-doses.",
+      "document_id": "council-decision-89-415-eec-doses",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "council-decision-94-802-ec-esprit",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "94/802/EC",
+      "official_title": "94/802/EC: Council Decision of 23 November 1994 adopting a specific programme for research and technological development, including demonstration, in the field of information technologies (1994 to 1998)",
+      "year": 1994,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31994D0802",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for council-decision-94-802-ec-esprit.",
+      "document_id": "council-decision-94-802-ec-esprit",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "sixth-framework-programme-decision-1513-2002-ec",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "Decision No 1513/2002/EC",
+      "official_title": "Decision No 1513/2002/EC of the European Parliament and of the Council of 27 June 2002 concerning the sixth framework programme of the European Community for research, technological development and demonstration activities, contributing to the creation of the European Research Area and to innovation (2002 to 2006)",
+      "year": 2002,
+      "issuing_institution": "European Parliament and Council of the European Union",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002D1513",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for sixth-framework-programme-decision-1513-2002-ec.",
+      "document_id": "sixth-framework-programme-decision-1513-2002-ec",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "source_ids": [
+        "historical-eur-lex-ai-lineage-1984-2013"
+      ],
+      "official_reference": "2013/743/EU",
+      "official_title": "2013/743/EU: Council Decision of 3 December 2013 establishing the specific programme implementing Horizon 2020 - the Framework Programme for Research and Innovation (2014-2020) and repealing Decisions 2006/971/EC, 2006/972/EC, 2006/973/EC, 2006/974/EC and 2006/975/EC",
+      "year": 2013,
+      "issuing_institution": "Council of the European Union",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013D0743",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for horizon-2020-specific-programme-decision-2013-743-eu.",
+      "document_id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "digitising-european-industry",
+      "source_ids": [
+        "historical-commission-ai-policy-2016-2017"
+      ],
+      "official_reference": "COM(2016) 180 final",
+      "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Digitising European Industry - Reaping the full benefits of a Digital Single Market",
+      "year": 2016,
+      "issuing_institution": "European Commission",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52016DC0180",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for digitising-european-industry.",
+      "document_id": "digitising-european-industry",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "european-civil-law-rules-in-robotics-study-2016",
+      "source_ids": [
+        "historical-parliament-ai-studies-resolutions-2016-2017"
+      ],
+      "official_reference": "PE 571.379",
+      "official_title": "European Civil Law Rules in Robotics",
+      "year": 2016,
+      "issuing_institution": "European Parliament Committee on Legal Affairs",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/571379/IPOL_STU(2016)571379_EN.pdf",
+      "commissioning_body": "Policy Department C: Citizens' Rights and Constitutional Affairs, European Parliament",
+      "candidate_provenance": "eu_commissioned_external",
+      "provisional_sector_tags": [
+        "health",
+        "transport_and_mobility",
+        "justice",
+        "intellectual_property",
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-05T06:28:17.769Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for european-civil-law-rules-in-robotics-study-2016.",
+      "document_id": "european-civil-law-rules-in-robotics-study-2016",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:28:17.769Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:28:17.769Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "building-a-european-data-economy",
+      "source_ids": [
+        "historical-commission-ai-policy-2016-2017"
+      ],
+      "official_reference": "COM(2017) 9 final",
+      "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Building a European data economy",
+      "year": 2017,
+      "issuing_institution": "European Commission",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52017DC0009",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "transport_and_mobility",
+        "competition_and_markets"
+      ],
+      "discovered_at": "2026-09-05T06:37:06.8601555Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for building-a-european-data-economy.",
+      "document_id": "building-a-european-data-economy",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:37:06.8601555Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "civil-law-rules-on-robotics-resolution-2017",
+      "source_ids": [
+        "historical-parliament-ai-studies-resolutions-2016-2017"
+      ],
+      "official_reference": "P8_TA(2017)0051",
+      "official_title": "European Parliament resolution of 16 February 2017 with recommendations to the Commission on Civil Law Rules on Robotics (2015/2103(INL))",
+      "year": 2017,
+      "issuing_institution": "European Parliament",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/TA-8-2017-0051_EN.html",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "health",
+        "employment_and_labour",
+        "transport_and_mobility",
+        "justice",
+        "consumer_protection",
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-05T06:28:17.769Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for civil-law-rules-on-robotics-resolution-2017.",
+      "document_id": "civil-law-rules-on-robotics-resolution-2017",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:28:17.769Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:28:17.769Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+      "source_ids": [
+        "historical-parliament-ai-studies-resolutions-2016-2017"
+      ],
+      "official_reference": "P8_TA(2017)0076",
+      "official_title": "European Parliament resolution of 14 March 2017 on fundamental rights implications of big data: privacy, data protection, non-discrimination, security and law-enforcement (2016/2225(INI))",
+      "year": 2017,
+      "issuing_institution": "European Parliament",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/TA-8-2017-0076_EN.html",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "law_enforcement",
+        "justice",
+        "public_administration",
+        "consumer_protection",
+        "media_and_culture",
+        "competition_and_markets"
+      ],
+      "discovered_at": "2026-09-05T06:28:17.769Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for fundamental-rights-implications-of-big-data-resolution-2017.",
+      "document_id": "fundamental-rights-implications-of-big-data-resolution-2017",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:28:17.769Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:28:17.769Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "european-council-conclusions-2017-10-19",
+      "source_ids": [
+        "historical-european-council-ai-conclusions-2017"
+      ],
+      "official_reference": "EUCO 14/17",
+      "official_title": "European Council meeting (19 October 2017) - Conclusions",
+      "year": 2017,
+      "issuing_institution": "European Council",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://www.consilium.europa.eu/media/21620/19-euco-final-conclusions-en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-05T06:28:17.769Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for european-council-conclusions-2017-10-19.",
+      "document_id": "european-council-conclusions-2017-10-19",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:28:17.769Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:28:17.769Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
+    },
+    {
+      "id": "european-council-conclusions-2017-12-14",
+      "source_ids": [
+        "historical-european-council-ai-conclusions-2017"
+      ],
+      "official_reference": "EUCO 19/17",
+      "official_title": "European Council meeting (14 December 2017) - Conclusions",
+      "year": 2017,
+      "issuing_institution": "European Council",
+      "record_level": "principal",
+      "version_label": null,
+      "official_source_url": "https://www.consilium.europa.eu/media/32179/14-final-conclusions-en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "education"
+      ],
+      "discovered_at": "2026-09-05T06:28:17.769Z",
+      "decision": "included",
+      "decision_reason": "Admitted from the bounded 2026-09-05 evidence-ready historical batch after the active publication gate passed for european-council-conclusions-2017-12-14.",
+      "document_id": "european-council-conclusions-2017-12-14",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-05T06:28:17.769Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Evidence-ready staging recommendation awaiting canonical contract activation and reviewed admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T06:28:17.769Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
     }
   ]
 }

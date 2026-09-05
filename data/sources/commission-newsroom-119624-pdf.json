@@ -1,0 +1,13 @@
+{
+  "id": "commission-newsroom-119624-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T08:20:53Z",
+  "updated_at": "2026-09-05T08:20:53Z",
+  "source_type": "official_pdf",
+  "url": "https://ec.europa.eu/newsroom/dae/redirection/document/119624",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T08:08:53.261079Z",
+  "last_verified_at": "2026-09-05T08:20:53Z",
+  "verification_note": "Codex retrieved this official download with normal TLS verification. The 341927-byte response is a 13-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: f1d58ecf69004b361d2201ea44e6219f00c27ba249ad5011965152de9167686d. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Complete selected pages transcribed for identity/scope review; pages 4-12 not reviewed. Page 1 identifies Article 73 high-risk incident reporting and expressly excludes systemic-risk GPAI reporting. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "digitising-european-industry-eur-lex-metadata",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52016DC0180",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-05T06:27:41.6613488Z",
+  "last_verified_at": "2026-09-05T06:27:41.6613488Z",
+  "verification_note": "Document information: EUR-Lex gives 19 April 2016 as document and dispatch date and identifies Commission/DG CNECT."
+}

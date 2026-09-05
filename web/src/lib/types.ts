@@ -59,6 +59,48 @@ export interface CorpusAssessment {
   reviewed_at: string;
 }
 
+export interface HistoricalCitation {
+  source_id: string;
+  locator: string;
+  meaning: string;
+}
+
+export interface ClassificationEvidence {
+  field: 'relevance_class' | 'sector_tags' | 'provenance_tags';
+  value: string;
+  source_id: string;
+  locator: string;
+  rationale: string;
+}
+
+export interface BibliographicAuthor {
+  name: string;
+  affiliation: string | null;
+  evidence_source_id: string;
+  evidence_locator: string;
+}
+
+export interface AdditionalDate {
+  kind: 'document_issue' | 'institutional_adoption' | 'first_official_publication' | 'oj_publication' | 'manuscript_completion' | 'cover_issue' | 'consolidation' | 'official_end_of_validity' | 'official_dispatch' | 'parliament_adopted_text_manifestation';
+  value: string;
+  precision: 'day' | 'month' | 'year';
+  source_id: string;
+  locator: string;
+}
+
+export interface RetainedRouteNoticeEvidence {
+  source_id: string;
+  locator: string;
+}
+
+export interface RetainedRouteNotice {
+  status: 'parent_relationship_under_review';
+  reason: string;
+  reviewed_by: string;
+  reviewed_at: string;
+  evidence: RetainedRouteNoticeEvidence[];
+}
+
 export interface Relationship extends PublishedEntity {
   source_entity_type: string;
   source_entity_id: string;
@@ -95,6 +137,18 @@ export interface DocumentRecord extends PublishedEntity {
   version_label: string | null;
   version_status: 'draft' | 'revised' | 'final' | 'consolidated' | 'not_applicable';
   publication_date: string;
+  historical_review_status: 'verified' | 'legacy_review_pending';
+  temporal_collection: 'historical_lineage' | 'contemporary_eu_ai_policy' | null;
+  relevance_class: 'direct_ai_substantive' | 'ai_related_precursor' | 'indirect_adm_legal_context' | null;
+  document_date_kind: 'official_act_date' | 'institutional_adoption' | 'document_issue' | 'publication' | 'consolidation' | null;
+  date_evidence: {
+    document_date: HistoricalCitation;
+    publication_date: HistoricalCitation;
+  } | null;
+  classification_evidence: ClassificationEvidence[];
+  bibliographic_authors: BibliographicAuthor[];
+  additional_dates: AdditionalDate[];
+  legal_status_evidence: HistoricalCitation | null;
   legal_status: string;
   language: string;
   celex: string | null;
@@ -102,9 +156,28 @@ export interface DocumentRecord extends PublishedEntity {
   official_summary: string | null;
   policies: Policy[];
   concepts: Concept[];
-  institutions: Array<Institution & { role: string }>;
+  institutions: Array<Institution & {
+    role: string;
+    evidence_source_id: string | null;
+    evidence_locator: string | null;
+  }>;
   sources: Source[];
   corpus_assessment: CorpusAssessment | null;
+  retained_route_notice: RetainedRouteNotice | null;
+}
+
+export interface SourceScope {
+  id: string;
+  name: string;
+  source_family: string;
+  institution: string;
+  covered_from: string;
+  covered_through: string;
+  covered_document_types: string[];
+  covered_sector_tags: string[];
+  scan_status: 'not_started' | 'in_progress' | 'reviewed' | 'gap_found' | 'recheck_due';
+  coverage_cutoff: string;
+  pending_candidate_count: number;
 }
 
 export interface CorpusCoverage {
@@ -122,6 +195,8 @@ export interface CorpusCoverage {
   };
   inventory: Record<'included' | 'merged' | 'excluded' | 'pending', number>;
   unresolved_candidates: number;
+  historical_review: Record<'verified' | 'legacy_review_pending', number>;
+  source_scopes: SourceScope[];
 }
 
 export interface PublicData {

@@ -129,10 +129,6 @@ def test_contributor_documentation_defines_stage_one_coverage_contract():
     assert "principal" in dictionary and "all records" in dictionary.lower()
     assert "Stage 1" in readme and "Stage 2" in readme and "Stage 3" in readme
     assert "schema and interface" in readme.lower()
-    assert (
-        "Comprehensive within the documented inclusion boundary, "
-        "verified through 4 September 2026."
-    ) in readme
 
 
 def test_repository_english_guard_rejects_non_latin_scripts_and_escaped_json(
@@ -203,6 +199,40 @@ def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):
     assert any("non-published record" in error for error in errors)
 
 
+@pytest.mark.parametrize("location", ["html", "json"])
+@pytest.mark.parametrize(
+    "phrase",
+    [
+        "Comprehensive within the documented inclusion boundary",
+        "COMPREHENSIVE  within   the documented inclusion boundary",
+    ],
+)
+def test_public_scanner_rejects_withdrawn_completeness_claim(
+    tmp_path: Path, location: str, phrase: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text(
+        phrase if location == "html" else "An expanding corpus", encoding="utf-8"
+    )
+    data_path = tmp_path / "public.json"
+    write_public_data(
+        data_path,
+        {"coverage": {"coverage_statement": phrase if location == "json" else "An expanding corpus"}},
+    )
+    errors = check_public_build(site, data_path)
+    assert any("unsupported corpus-completeness claim" in error for error in errors)
+
+
+def test_public_scanner_accepts_expanding_corpus_statement(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text("An expanding corpus", encoding="utf-8")
+    data_path = tmp_path / "public.json"
+    write_public_data(data_path, {"coverage": {"coverage_statement": "An expanding corpus"}})
+    assert check_public_build(site, data_path) == []
+
+
 def test_scanner_rejects_ordinary_and_escaped_windows_user_paths(tmp_path: Path):
     site = tmp_path / "site"
     site.mkdir()
@@ -242,6 +272,74 @@ def test_scanner_rejects_literal_and_escaped_unix_user_paths(
     errors = check_public_build(site, data)
 
     assert any("local filesystem path" in error and filename in error for error in errors)
+
+
+@pytest.mark.parametrize(
+    "official_url",
+    [
+        "https://www.europarl.europa.eu/committees/en/juri/home/highlights",
+        r"https:\/\/www.europarl.europa.eu\/committees\/en\/juri\/home\/highlights",
+    ],
+)
+def test_scanner_accepts_https_routes_with_a_home_path_segment(
+    tmp_path: Path, official_url: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text(
+        f'<a href="{official_url}">Official source</a>', encoding="utf-8"
+    )
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"sources": [{"url": official_url}]})
+
+    assert check_public_build(site, data) == []
+
+
+@pytest.mark.parametrize(
+    "content",
+    [
+        "Download from /home/researcher/private",
+        "https://example.eu/document?source=/home/researcher/private",
+        "https://example.eu/document#source=/Users/researcher/private",
+        r"https:\/\/example.eu\/document?source=\/home\/researcher\/private",
+    ],
+)
+def test_scanner_still_rejects_embedded_or_query_unix_user_paths(
+    tmp_path: Path, content: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "leak.txt").write_text(content, encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any("local filesystem path" in error and "leak.txt" in error for error in errors)
+
+
+@pytest.mark.parametrize(
+    "content",
+    [
+        "a{background:url(https://official.example/page);src:url(/home/researcher/private)}",
+        "source=https://official.example/page;path=/home/researcher/private;",
+    ],
+)
+def test_scanner_does_not_bridge_a_previous_url_to_a_distinct_local_path(
+    tmp_path: Path, content: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "minified.txt").write_text(content, encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any(
+        "local filesystem path" in error and "minified.txt" in error
+        for error in errors
+    )
 
 
 def test_scanner_rejects_common_private_key_headers(tmp_path: Path):

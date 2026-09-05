@@ -41,7 +41,16 @@ CREATE TABLE documents (
     celex TEXT,
     eli TEXT,
     language TEXT NOT NULL,
-    official_summary TEXT
+    official_summary TEXT,
+    historical_review_status TEXT NOT NULL,
+    temporal_collection TEXT,
+    relevance_class TEXT,
+    document_date_kind TEXT,
+    date_evidence TEXT,
+    legal_status_evidence TEXT,
+    classification_evidence TEXT NOT NULL,
+    bibliographic_authors TEXT NOT NULL,
+    additional_dates TEXT NOT NULL
 );
 
 CREATE UNIQUE INDEX documents_celex_unique
@@ -130,10 +139,30 @@ CREATE TABLE corpus_assessments (
     reviewed_at TEXT NOT NULL
 );
 
+CREATE TABLE document_retained_route_notices (
+    document_id TEXT PRIMARY KEY REFERENCES documents(id),
+    status TEXT NOT NULL,
+    reason TEXT NOT NULL,
+    reviewed_by TEXT NOT NULL,
+    reviewed_at TEXT NOT NULL
+);
+
+CREATE TABLE document_retained_route_evidence (
+    document_id TEXT NOT NULL REFERENCES documents(id),
+    evidence_order INTEGER NOT NULL CHECK (evidence_order >= 0),
+    source_id TEXT NOT NULL REFERENCES sources(id),
+    locator TEXT NOT NULL,
+    PRIMARY KEY (document_id, evidence_order),
+    UNIQUE (document_id, source_id),
+    FOREIGN KEY (document_id) REFERENCES document_retained_route_notices(document_id)
+);
+
 CREATE TABLE document_institutions (
     document_id TEXT NOT NULL REFERENCES documents(id),
     institution_id TEXT NOT NULL REFERENCES institutions(id),
     role TEXT NOT NULL,
+    evidence_source_id TEXT REFERENCES sources(id),
+    evidence_locator TEXT,
     PRIMARY KEY (document_id, institution_id, role)
 );
 
@@ -181,4 +210,16 @@ CREATE TABLE document_provenance_tags (
     document_id TEXT NOT NULL REFERENCES documents(id),
     provenance_tag TEXT NOT NULL,
     PRIMARY KEY (document_id, provenance_tag)
+);
+
+CREATE TABLE research_subsets (
+    id TEXT PRIMARY KEY,
+    version INTEGER NOT NULL,
+    purpose TEXT NOT NULL
+);
+
+CREATE TABLE research_subset_documents (
+    subset_id TEXT NOT NULL REFERENCES research_subsets(id),
+    document_id TEXT NOT NULL REFERENCES documents(id),
+    PRIMARY KEY (subset_id, document_id)
 );

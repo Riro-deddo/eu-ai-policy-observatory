@@ -137,6 +137,8 @@ def provenance_tags_for(
 def migrate_document(path: Path) -> bool:
     """Apply classifications to one document, returning whether bytes changed."""
     record = json.loads(path.read_text(encoding="utf-8"))
+    if record.get("historical_review_status") == "verified":
+        return False
     document_id = record["id"]
     sector_tags = sector_tags_for(document_id)
     provenance_tags = provenance_tags_for(document_id, record["institution_roles"])

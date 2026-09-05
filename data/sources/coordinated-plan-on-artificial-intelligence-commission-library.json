@@ -1,0 +1,13 @@
+{
+  "id": "coordinated-plan-on-artificial-intelligence-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/coordinated-plan-artificial-intelligence",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T10:34:49Z",
+  "last_verified_at": "2026-09-05T10:34:49Z",
+  "verification_note": "Official Commission library page gives 'Publication 07 December 2018' and identifies the item as COM(2018) 795 final, Coordinated Plan on Artificial Intelligence."
+}

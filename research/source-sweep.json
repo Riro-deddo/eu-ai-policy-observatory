@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:00:00Z",
+  "generated_at": "2026-09-05T10:34:49Z",
   "coverage_cutoff": "2026-09-04",
   "sources": [
     {
@@ -112,11 +112,11 @@
       "covered_document_types": [],
       "covered_sector_tags": [],
       "discovery_method": "Reviewed the Legislative Observatory procedure file and its linked committee and plenary documents.",
-      "scan_status": "reviewed",
-      "checked_at": "2026-09-04T00:00:00Z",
+      "scan_status": "recheck_due",
+      "checked_at": "2026-09-05T05:38:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Yichen Hao",
-      "verification_note": "The documented bounded query completed without an unresolved access failure."
+      "reviewer": "Codex (scope-review reopening)",
+      "verification_note": "The earlier reviewed result needs rechecking because the broadened inclusion boundary leaves the independent citability, version identity and metadata of nine listed amendment files unresolved; this scope/status review did not retrieve or verify those files."
     },
     {
       "id": "ep-adopted-texts-2021-0106",
@@ -392,11 +392,11 @@
       ],
       "covered_sector_tags": [],
       "discovery_method": "Reviewed the official AI Board page for independently citable endorsed documents and reports.",
-      "scan_status": "reviewed",
-      "checked_at": "2026-09-04T00:00:00Z",
+      "scan_status": "recheck_due",
+      "checked_at": "2026-09-05T05:38:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Yichen Hao",
-      "verification_note": "The documented bounded query completed without an unresolved access failure."
+      "reviewer": "Codex (scope-review reopening)",
+      "verification_note": "The earlier reviewed result needs rechecking because three listed reports still lack record-level verification of an independently citable English version and required metadata; this scope/status review did not retrieve or verify those files."
     },
     {
       "id": "commission-consultation-high-risk",
@@ -598,6 +598,103 @@
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Yichen Hao",
       "verification_note": "The documented bounded query completed without an unresolved access failure."
+    },
+    {
+      "id": "historical-eur-lex-ai-lineage-1984-2013",
+      "name": "EUR-Lex historical AI and expert-systems decisions, bounded admitted set",
+      "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex historical legislation",
+      "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
+      "scope_note": "Bounded registry row for the seven admitted 1984-2013 decisions reviewed in the historical admission ledger; not a complete search of the interval.",
+      "covered_from": "1984-01-01",
+      "covered_through": "2013-12-31",
+      "covered_document_types": [
+        "decision"
+      ],
+      "covered_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing",
+        "education",
+        "public_administration"
+      ],
+      "discovery_method": "Reviewed the exact CELEX/ELI records and cited passages retained in the 2026-09-05 admission ledger.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-05T06:37:06Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "The bounded admitted set was checked; surrounding years, programmes and reverse citations remain incomplete."
+    },
+    {
+      "id": "historical-commission-ai-policy-2016-2017",
+      "name": "Commission historical AI policy communications, bounded admitted set",
+      "institution": "European Commission",
+      "source_family": "European Commission historical policy documents",
+      "url": "https://commission.europa.eu/publications_en",
+      "scope_note": "Bounded row for two admitted Commission communications; not a complete Commission historical search.",
+      "covered_from": "2016-01-01",
+      "covered_through": "2017-12-31",
+      "covered_document_types": [
+        "communication"
+      ],
+      "covered_sector_tags": [
+        "general_cross_sector",
+        "industry_and_manufacturing",
+        "research_and_innovation",
+        "competition_and_markets",
+        "transport_and_mobility"
+      ],
+      "discovery_method": "Reviewed exact EUR-Lex manifestations and dated Commission publication releases retained in the admission ledger.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-05T06:37:06Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Only the two admitted communications and their source manifestations are covered; the broader department search remains incomplete."
+    },
+    {
+      "id": "historical-parliament-ai-studies-resolutions-2016-2017",
+      "name": "European Parliament historical AI studies and resolutions, bounded admitted set",
+      "institution": "European Parliament",
+      "source_family": "European Parliament historical documents",
+      "url": "https://www.europarl.europa.eu/thinktank/en/research/advanced-search",
+      "scope_note": "Bounded row for one study and two resolutions admitted from reviewed official manifestations.",
+      "covered_from": "2016-01-01",
+      "covered_through": "2017-12-31",
+      "covered_document_types": [
+        "study",
+        "resolution"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the exact Parliament study/adopted-text files and related official catalogue or EUR-Lex manifestations in the admission ledger.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-05T06:28:17Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "The bounded three-record set is reviewed; empty sector scope is unspecified and wider Parliament searches remain incomplete."
+    },
+    {
+      "id": "historical-european-council-ai-conclusions-2017",
+      "name": "European Council 2017 AI conclusions, bounded admitted set",
+      "institution": "European Council",
+      "source_family": "European Council conclusions",
+      "url": "https://www.consilium.europa.eu/en/european-council/conclusions/",
+      "scope_note": "Bounded row for the two admitted 2017 conclusions with explicit AI passages; not a complete conclusions census.",
+      "covered_from": "2017-01-01",
+      "covered_through": "2017-12-31",
+      "covered_document_types": [
+        "conclusions"
+      ],
+      "covered_sector_tags": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "industry_and_manufacturing",
+        "education"
+      ],
+      "discovery_method": "Reviewed the exact official conclusion PDFs and same-day Consilium release pages retained in the admission ledger.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-05T06:28:17Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "The two admitted conclusions are covered; no complete search of all 2017 conclusions is claimed."
     }
   ]
 }

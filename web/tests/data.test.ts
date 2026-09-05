@@ -3,7 +3,7 @@ import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 
-import { loadPublicDataFromPath } from '../src/lib/data';
+import { loadPublicData, loadPublicDataFromPath } from '../src/lib/data';
 
 const temporaryDirectories: string[] = [];
 const coverage = {
@@ -35,9 +35,27 @@ const coverage = {
 };
 
 afterEach(() => {
+  delete process.env.EU_AI_POLICY_PUBLIC_DATA_PATH;
   for (const directory of temporaryDirectories.splice(0)) {
     rmSync(directory, { force: true, recursive: true });
   }
+});
+
+test('loads an explicitly scoped public-data override without replacing generated data', () => {
+  const dataPath = writeFixture({
+    coverage,
+    generated_at: '2026-09-05T00:00:00Z',
+    policies: [],
+    documents: [],
+    events: [],
+    concepts: [],
+    institutions: [],
+    relationships: [],
+    sources: [],
+  });
+  process.env.EU_AI_POLICY_PUBLIC_DATA_PATH = dataPath;
+
+  expect(loadPublicData().generated_at).toBe('2026-09-05T00:00:00Z');
 });
 
 function writeFixture(payload: unknown): string {

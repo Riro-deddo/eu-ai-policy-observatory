@@ -1,0 +1,13 @@
+{
+  "id": "council-decision-84-130-eec-esprit-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/eli/dec/1984/130/oj/eng",
+  "publisher": "Office for Official Publications of the European Communities",
+  "retrieved_at": "2026-09-05T06:27:41.6613488Z",
+  "last_verified_at": "2026-09-05T06:27:41.6613488Z",
+  "verification_note": "Identity panel and Annex section 3, Advanced information processing: The official record supplies act/OJ dates and end of validity; the annex funds expert systems, representation, inference, learning, pattern recognition and intelligent sensors."
+}

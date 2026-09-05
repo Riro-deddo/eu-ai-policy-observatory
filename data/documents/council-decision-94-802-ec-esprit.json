@@ -1,0 +1,128 @@
+{
+  "id": "council-decision-94-802-ec-esprit",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
+  "slug": "council-decision-94-802-ec-esprit",
+  "official_title": "94/802/EC: Council Decision of 23 November 1994 adopting a specific programme for research and technological development, including demonstration, in the field of information technologies (1994 to 1998)",
+  "short_title": "ESPRIT under the Fourth Framework Programme",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "94/802/EC",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "1994-11-23",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "1994-12-22",
+  "legal_status": "no_longer_in_force",
+  "celex": "31994D0802",
+  "eli": "http://data.europa.eu/eli/dec/1994/802/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "evidence_locator": "Identity panel; Articles 1 and 9; Annex I RTD activities"
+    },
+    {
+      "institution_id": "commission-of-the-european-communities",
+      "role": "proposer",
+      "evidence_source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "council-decision-94-802-ec-esprit-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "The formerly blocked full official text resolves identity, dates, roles and validity and contains multiple substantive precursor passages.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "meaning": "The cited official manifestation establishes the document date 1994-11-23 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "meaning": "The cited official manifestation establishes official publication on 1994-12-22."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "rationale": "The annex funds neural networks, knowledge-based systems, pattern recognition, intelligent machinery and intelligent control. The cited provisions do not explicitly use the term artificial intelligence, so the named precursor technologies satisfy the first applicable precursor class."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "rationale": "The decision establishes a specific RTD programme with detailed technical areas."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "rationale": "The annex ties intelligent control and machinery to manufacturing and industrial competitiveness."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. Adoption by the Council and proposal by the Commission of the European Communities remain separately recorded roles."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+      "rationale": "EUR-Lex identifies OJ L 334, 22 December 1994, pp. 24-46."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_end_of_validity",
+      "value": "1998-12-31",
+      "precision": "day",
+      "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+      "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities"
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+    "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+    "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+  }
+}

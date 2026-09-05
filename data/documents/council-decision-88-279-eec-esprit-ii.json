@@ -1,0 +1,128 @@
+{
+  "id": "council-decision-88-279-eec-esprit-ii",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
+  "slug": "council-decision-88-279-eec-esprit-ii",
+  "official_title": "88/279/EEC: Council Decision of 11 April 1988 concerning the European strategic programme for research and development in information technologies (Esprit)",
+  "short_title": "ESPRIT II",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "88/279/EEC",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "1988-04-11",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "1988-05-06",
+  "legal_status": "no_longer_in_force",
+  "celex": "31988D0279",
+  "eli": "http://data.europa.eu/eli/dec/1988/279/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-communities",
+      "role": "adopter",
+      "evidence_source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "evidence_locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41"
+    },
+    {
+      "institution_id": "commission-of-the-european-communities",
+      "role": "proposer",
+      "evidence_source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "council-decision-88-279-eec-esprit-ii-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "Official identity, dates, roles and validity are resolved, and AI is an expressly named research area.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "meaning": "The cited official manifestation establishes the document date 1988-04-11 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "meaning": "The cited official manifestation establishes official publication on 1988-05-06."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "rationale": "Annex II expressly lists artificial intelligence and cognitive science, making direct classification first applicable."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "rationale": "AI and cognitive science are basic-research work areas."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "rationale": "Other programme sections address knowledge engineering, computer-integrated manufacturing and robotics."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. The historical heading remains Council of the European Communities, and the Commission is separately represented as proposer."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+      "rationale": "EUR-Lex identifies OJ L 118, 6 May 1988, pp. 32-41."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_end_of_validity",
+      "value": "1991-12-31",
+      "precision": "day",
+      "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+      "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41"
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+    "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+    "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+  }
+}

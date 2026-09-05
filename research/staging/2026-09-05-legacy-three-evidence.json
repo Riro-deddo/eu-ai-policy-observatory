@@ -1,0 +1,255 @@
+{
+  "batch_id": "2026-09-05-legacy-three-evidence",
+  "scope": {
+    "document_ids": [
+      "artificial-intelligence-for-europe",
+      "coordinated-plan-on-artificial-intelligence",
+      "building-trust-human-centric-ai"
+    ],
+    "reviewed": 3,
+    "fully_evidenced": 3,
+    "evidence_hold": 0
+  },
+  "extension_schema": "schema/historical-document-extension.schema.json",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T10:34:49Z",
+  "review_method": "Official English Commission text was checked separately from an official Commission publication page. The document masthead supports the issue date and Commission authorship; the Commission publication page independently supports the publication date.",
+  "proposed_sources": [
+    {
+      "id": "artificial-intelligence-for-europe-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:34:49Z",
+      "updated_at": "2026-09-05T10:34:49Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/communication-artificial-intelligence-europe",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T10:34:49Z",
+      "last_verified_at": "2026-09-05T10:34:49Z",
+      "verification_note": "Official Commission library page identifies the item as policy and legislation, gives 'Publication 25 April 2018', describes it as a Communication from the Commission on Artificial Intelligence for Europe, and links to the official multilingual text."
+    },
+    {
+      "id": "coordinated-plan-on-artificial-intelligence-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:34:49Z",
+      "updated_at": "2026-09-05T10:34:49Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/coordinated-plan-artificial-intelligence",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T10:34:49Z",
+      "last_verified_at": "2026-09-05T10:34:49Z",
+      "verification_note": "Official Commission library page gives 'Publication 07 December 2018' and identifies the item as COM(2018) 795 final, Coordinated Plan on Artificial Intelligence."
+    },
+    {
+      "id": "building-trust-human-centric-ai-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:34:49Z",
+      "updated_at": "2026-09-05T10:34:49Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/communication-building-trust-human-centric-artificial-intelligence",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T10:34:49Z",
+      "last_verified_at": "2026-09-05T10:34:49Z",
+      "verification_note": "Official Commission library page gives 'Publication 08 April 2019' and identifies the item as COM(2019) 168, Building Trust in Human Centric Artificial Intelligence."
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "artificial-intelligence-for-europe",
+      "evidence_status": "fully_evidenced",
+      "source_ids_append": [
+        "artificial-intelligence-for-europe-commission-library"
+      ],
+      "extension": {
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-communication-eur-lex",
+            "locator": "Document masthead immediately above the title: 'EUROPEAN COMMISSION'; 'Brussels, 25.4.2018'; 'COM(2018) 237 final'.",
+            "meaning": "The dated Commission masthead establishes 25 April 2018 as the issue date of the final communication."
+          },
+          "publication_date": {
+            "source_id": "artificial-intelligence-for-europe-commission-library",
+            "locator": "Page heading 'Communication Artificial Intelligence for Europe', metadata line 'Publication 25 April 2018', followed by the description and official-text link.",
+            "meaning": "The Commission publication page independently establishes first official publication on 25 April 2018."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-communication-eur-lex",
+            "locator": "Title and section 1, especially the paragraphs beginning 'What is artificial intelligence?' and 'This Communication sets out a European initiative on AI'.",
+            "rationale": "The communication defines AI and sets out the EU's substantive AI initiative, objectives, investment, socioeconomic, ethical, and legal actions."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-communication-eur-lex",
+            "locator": "Section 1 paragraph beginning 'These are some of the many examples of what we know AI can do across all sectors', and the objectives immediately below 'This Communication sets out a European initiative on AI'.",
+            "rationale": "The text expressly frames AI across all sectors and across the economy, private and public sectors, rather than limiting the communication to one domain."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-communication-eur-lex",
+            "locator": "Document masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'.",
+            "rationale": "The official text identifies the European Commission as the issuing authoring institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "artificial-intelligence-for-europe-commission-library",
+            "locator": "Metadata line 'Publication 25 April 2018' and link 'Access the text of the Communication in all languages'.",
+            "rationale": "An official Commission publication page identifies the publication date and links the official text."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-communication-eur-lex",
+            "evidence_locator": "Document masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'."
+          }
+        ]
+      },
+      "unresolved_issues": []
+    },
+    {
+      "document_id": "coordinated-plan-on-artificial-intelligence",
+      "evidence_status": "fully_evidenced",
+      "source_ids_append": [
+        "coordinated-plan-on-artificial-intelligence-commission-library"
+      ],
+      "extension": {
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "Document masthead at the start of the communication: 'EUROPEAN COMMISSION'; 'Brussels, 7.12.2018'; 'COM(2018) 795 final'.",
+            "meaning": "The dated Commission masthead establishes 7 December 2018 as the issue date of the final communication."
+          },
+          "publication_date": {
+            "source_id": "coordinated-plan-on-artificial-intelligence-commission-library",
+            "locator": "Page heading 'Coordinated Plan on Artificial Intelligence', metadata line 'Publication 07 December 2018', and description naming COM(2018) 795 final.",
+            "meaning": "The Commission publication page independently establishes first official publication on 7 December 2018."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "Title 'Coordinated Plan on Artificial Intelligence' and sections 1-2, including 'THE EUROPEAN AI STRATEGY' and 'THE COORDINATED PLAN ON AI - OVERVIEW'.",
+            "rationale": "The document is expressly an AI plan and sets objectives and actions for AI investment, data, talent, trust, uptake, and coordination."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "Section 1 paragraphs beginning 'By making sense of vast amounts of data' and 'Member States ... and the Commission prepared the plan', which refer to all economic sectors, public services, healthcare, transport and mobility, safety, security, energy, manufacturing, and financial services.",
+            "rationale": "The official text expressly spans all economic sectors and public services and enumerates several distinct application domains."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "Opening masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'.",
+            "rationale": "The principal record is the Commission communication that presents the coordinated plan; its official text identifies the European Commission as the issuing institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "coordinated-plan-on-artificial-intelligence-commission-library",
+            "locator": "Metadata line 'Publication 07 December 2018' and description identifying COM(2018) 795 final.",
+            "rationale": "An official Commission publication page identifies the publication date and the exact official reference."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "coordinated-plan-eur-lex",
+            "evidence_locator": "Opening masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'."
+          }
+        ]
+      },
+      "unresolved_issues": []
+    },
+    {
+      "document_id": "building-trust-human-centric-ai",
+      "evidence_status": "fully_evidenced",
+      "source_ids_append": [
+        "building-trust-human-centric-ai-commission-library"
+      ],
+      "extension": {
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "building-trust-human-centric-ai-eur-lex",
+            "locator": "Document masthead immediately above the title: 'EUROPEAN COMMISSION'; 'Brussels, 8.4.2019'; 'COM(2019) 168 final'.",
+            "meaning": "The dated Commission masthead establishes 8 April 2019 as the issue date of the final communication."
+          },
+          "publication_date": {
+            "source_id": "building-trust-human-centric-ai-commission-library",
+            "locator": "Page heading 'Communication: Building Trust in Human Centric Artificial Intelligence', metadata line 'Publication 08 April 2019', and description naming COM(2019)168.",
+            "meaning": "The Commission publication page independently establishes first official publication on 8 April 2019."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "building-trust-human-centric-ai-eur-lex",
+            "locator": "Title and sections 1-2, especially the paragraphs beginning 'Artificial intelligence (AI) has the potential' and 'The purpose of this Communication is to launch a comprehensive piloting phase'.",
+            "rationale": "The communication substantively addresses trustworthy, human-centric AI and launches implementation testing of ethical guidance for AI development and use."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "building-trust-human-centric-ai-eur-lex",
+            "locator": "Section 1 opening paragraph, which enumerates healthcare, energy, cars, farming and natural resources, climate, financial risk, manufacturing, fraud, cybersecurity, and law enforcement uses of AI.",
+            "rationale": "The opening scope spans numerous public and private domains and is not confined to a single sector."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "building-trust-human-centric-ai-eur-lex",
+            "locator": "Document masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'.",
+            "rationale": "The official text identifies the European Commission as the issuing authoring institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "building-trust-human-centric-ai-commission-library",
+            "locator": "Metadata line 'Publication 08 April 2019' and description identifying COM(2019)168.",
+            "rationale": "An official Commission publication page identifies the publication date and exact official reference."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "building-trust-human-centric-ai-eur-lex",
+            "evidence_locator": "Document masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'."
+          }
+        ]
+      },
+      "unresolved_issues": []
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import RetainedRouteNotice from '../../components/RetainedRouteNotice.astro';
 import { loadPublicData } from '../../lib/data';
 import { documentTypeLabel, groupDocumentRelationships, vocabularyLabel } from '../../lib/filter';
 import { relationshipTypeLabel } from '../../lib/policy-map';
@@ -60,6 +61,22 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
   <article class="research-section document-record">
     <p class="section-kicker">Published document record</p>
     <h1>{document.short_title}</h1>
+    {document.retained_route_notice !== null && (
+      <RetainedRouteNotice
+        notice={document.retained_route_notice}
+        sources={document.sources}
+      />
+    )}
+    {document.historical_review_status === 'legacy_review_pending' && (
+      <aside aria-labelledby="expanded-evidence-review-pending">
+        <h2 id="expanded-evidence-review-pending">Expanded evidence review pending</h2>
+        <p>
+          This retained official record remains published under its existing checks. Its expanded
+          date, attribution and historical relevance evidence has not yet been completed, so no
+          temporal collection or relevance class is inferred here.
+        </p>
+      </aside>
+    )}
 
     <section aria-labelledby="official-metadata">
       <h2 id="official-metadata">Official metadata</h2>
@@ -68,11 +85,34 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
         {document.official_reference !== null && <><dt>Official reference</dt><dd>{document.official_reference}</dd></>}
         <dt>Document type</dt><dd>{documentTypeLabel(document.document_type)}</dd>
         <dt>Document date</dt><dd>{document.document_date}</dd>
+        <dt>Document date kind</dt><dd>{document.document_date_kind === null ? 'Expanded evidence review pending' : vocabularyLabel(document.document_date_kind)}</dd>
+        {document.date_evidence !== null && (() => {
+          const evidenceSource = sourceById.get(document.date_evidence.document_date.source_id);
+          return <><dt>Document-date evidence</dt><dd>
+            {evidenceSource === undefined ? document.date_evidence.document_date.source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>}
+            {' · '}{document.date_evidence.document_date.locator} — {document.date_evidence.document_date.meaning}
+          </dd></>;
+        })()}
         <dt>Publication date</dt><dd>{document.publication_date}</dd>
-        <dt>Record level</dt><dd>{vocabularyLabel(document.record_level)}</dd>
+        {document.date_evidence !== null && (() => {
+          const evidenceSource = sourceById.get(document.date_evidence.publication_date.source_id);
+          return <><dt>Publication-date evidence</dt><dd>
+            {evidenceSource === undefined ? document.date_evidence.publication_date.source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>}
+            {' · '}{document.date_evidence.publication_date.locator} — {document.date_evidence.publication_date.meaning}
+          </dd></>;
+        })()}
+        {document.additional_dates.length > 0 && <><dt>Additional official dates</dt><dd><ul>
+          {document.additional_dates.map((date) => {
+            const evidenceSource = sourceById.get(date.source_id);
+            return <li>{vocabularyLabel(date.kind)}: {date.value} ({date.precision}) · {evidenceSource === undefined ? date.source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>} · {date.locator}</li>;
+          })}
+        </ul></dd></>}
         {document.version_label !== null && <><dt>Version label</dt><dd>{document.version_label}</dd></>}
-        <dt>Version status</dt><dd>{vocabularyLabel(document.version_status)}</dd>
         <dt>Legal status</dt><dd>{vocabularyLabel(document.legal_status)}</dd>
+        {document.legal_status_evidence !== null && (() => {
+          const evidenceSource = sourceById.get(document.legal_status_evidence.source_id);
+          return <><dt>Legal-status evidence</dt><dd>{evidenceSource === undefined ? document.legal_status_evidence.source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>} · {document.legal_status_evidence.locator} — {document.legal_status_evidence.meaning}</dd></>;
+        })()}
         <dt>Language</dt><dd>{document.language}</dd>
         {document.official_summary !== null && <><dt>Official summary</dt><dd>{document.official_summary}</dd></>}
       </dl>
@@ -82,27 +122,55 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
       <h2 id="research-classifications">Research classifications</h2>
       <p>These are researcher classifications used to organise and analyse the corpus; they are not official EU metadata.</p>
       <dl>
+        <dt>Record level</dt><dd>{vocabularyLabel(document.record_level)}</dd>
+        <dt>Version status</dt><dd>{vocabularyLabel(document.version_status)}</dd>
+        <dt>Temporal collection</dt><dd>{vocabularyLabel(document.temporal_collection ?? document.historical_review_status)}</dd>
+        <dt>Relevance class</dt><dd>{vocabularyLabel(document.relevance_class ?? document.historical_review_status)}</dd>
         <dt>Policy stage</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.policy_stage)}</dd>
         <dt>Corpus tier</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.corpus_tier)}</dd>
         <dt>Sectors</dt>
-        <dd><ul class="tag-list">{document.sector_tags.map((sector) => <li>{vocabularyLabel(sector)}</li>)}</ul></dd>
+        <dd>{document.sector_tags.length === 0 ? 'Not assigned' : <ul class="tag-list">{document.sector_tags.map((sector) => <li>{vocabularyLabel(sector)}</li>)}</ul>}</dd>
         <dt>Policy membership</dt>
         <dd><ul class="tag-list">{document.policies.map((policy) => <li>{policy.short_name}</li>)}</ul></dd>
         <dt>Research concepts</dt>
         <dd><ul class="tag-list">{document.concepts.map((concept) => <li>{concept.name}</li>)}</ul></dd>
       </dl>
+      {document.classification_evidence.length > 0 && <>
+        <h3>Classification evidence</h3>
+        <ul>
+          {document.classification_evidence.map((evidence) => {
+            const evidenceSource = sourceById.get(evidence.source_id);
+            return <li><strong>{vocabularyLabel(evidence.field)}: {vocabularyLabel(evidence.value)}</strong> · {evidenceSource === undefined ? evidence.source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>} · {evidence.locator} — {evidence.rationale}</li>;
+          })}
+        </ul>
+      </>}
     </section>
 
     <section aria-labelledby="production-provenance">
       <h2 id="production-provenance">Production provenance</h2>
       <dl>
         <dt>Provenance tags</dt>
-        <dd><ul class="tag-list">{document.provenance_tags.map((provenance) => <li>{vocabularyLabel(provenance)}</li>)}</ul></dd>
+        <dd>{document.provenance_tags.length === 0 ? 'Not assigned' : <ul class="tag-list">{document.provenance_tags.map((provenance) => <li>{vocabularyLabel(provenance)}</li>)}</ul>}</dd>
+        <dt>Named bibliographic authors</dt>
+        <dd>{document.bibliographic_authors.length === 0
+          ? document.historical_review_status === 'legacy_review_pending' ? 'Expanded evidence review pending' : 'None recorded after review'
+          : <ul>
+          {document.bibliographic_authors.map((author) => {
+            const evidenceSource = sourceById.get(author.evidence_source_id);
+            return <li>{author.name}{author.affiliation === null ? '' : ` · ${author.affiliation}`} · {evidenceSource === undefined ? author.evidence_source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>} · {author.evidence_locator}</li>;
+          })}
+        </ul>}</dd>
         <dt>Institutions and roles</dt>
         <dd>
           <ul>
             {document.institutions.map((institution) => (
-              <li><a href={institution.official_url}>{institution.official_name}</a> · {vocabularyLabel(institution.role)}</li>
+              <li>
+                <a href={institution.official_url}>{institution.official_name}</a> · {vocabularyLabel(institution.role)}
+                {institution.evidence_source_id !== null && (() => {
+                  const evidenceSource = sourceById.get(institution.evidence_source_id);
+                  return <> · {evidenceSource === undefined ? institution.evidence_source_id : <a href={evidenceSource.url}>role evidence</a>}{institution.evidence_locator === null ? '' : ` · ${institution.evidence_locator}`}</>;
+                })()}
+              </li>
             ))}
           </ul>
         </dd>
@@ -120,7 +188,7 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
       )}
       <ul>
         {document.sources.map((source) => (
-          <li><a href={source.url}>Source URL: {source.publisher}</a></li>
+          <li><a href={source.url}>Official source</a> · Publisher/host: {source.publisher}</li>
         ))}
       </ul>
     </section>
@@ -221,6 +289,9 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
 
     <section aria-labelledby="verification">
       <h2 id="verification">Verification</h2>
+      <dl>
+        <dt>Expanded evidence review</dt><dd>{vocabularyLabel(document.historical_review_status)}</dd>
+      </dl>
       {assessment === null ? <p>Research assessment verification has not been assigned.</p> : (
         <dl>
           <dt>Reviewed by</dt><dd>{assessment.reviewed_by}</dd>

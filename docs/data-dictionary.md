@@ -50,6 +50,7 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | `policy_ids` | array of string IDs | Yes | Analytical | Unique existing policy IDs. |
 | `concept_ids` | array of string IDs | Yes | Analytical | Unique existing concept IDs. |
 | `source_ids` | array of string IDs | Yes | Official | Unique existing source IDs; source evidence is required for published/verified documents. |
+| `retained_route_notice` | object | No | System | Non-null editorial notice for the three reviewed draft-guideline section routes whose whole-work parent relationship remains unresolved. Public document records always expose this property, using `null` when absent. |
 | `corpus_assessment` | `corpus_assessment` object | Yes | Analytical | Explicitly separate from official metadata; nested fields below. |
 | `snapshots` | array of `snapshot` | No | Official | Add only for an actually retrieved official file with a real hash. |
 
@@ -60,6 +61,20 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 Document identity remains stable across filenames. In addition to unique `slug`, non-null `celex` and non-null `eli` values, validation rejects a duplicate document identity when records share all of the following: a non-null `official_reference`, `language`, a normalised `version_label`, and the same sorted issuing-institution IDs. Normalisation trims and collapses whitespace and compares the version label case-insensitively. Validation reports `duplicate_document_identity` against record paths without echoing the identifying values.
 
 The Corpus and Timeline open in their principal-record views. The Corpus control labelled “All files and versions” and the Timeline control labelled “All documents and versions” deliberately expose all records, including supporting, version and attachment records. This view choice changes presentation only; it does not change publication eligibility.
+
+### `retained_route_notice`
+
+A retained-route notice is an attributed editorial disclosure, not official EU metadata, authorship, a relationship, or evidence that lineage has been resolved. The first reviewed contract is limited to the three published draft high-risk-classification guideline sections already present at their stable routes. While their missing whole-work parent condition remains, each must carry the notice; admitting a genuine parent and valid evidenced lineage makes the notice stale and requires its explicit removal. Other records cannot use the field to bypass evidence or relationship gates.
+
+| Field | Type | Required when notice is present | Provenance | Constraint |
+| --- | --- | --- | --- | --- |
+| `status` | string | Yes | System | Exactly `parent_relationship_under_review`. |
+| `reason` | string | Yes | Analytical | Nonblank English explanation that the route is retained while the whole-work parent remains unadmitted; draft status remains unchanged. |
+| `reviewed_by` | string | Yes | System | Named editorial reviewer; `Codex` for this reviewed batch, distinct from the original metadata reviewer. |
+| `reviewed_at` | offset ISO-8601 timestamp | Yes | System | Must satisfy `created_at <= reviewed_at <= updated_at`. |
+| `evidence` | ordered array | Yes | Official | At least the common Commission landing page and the section's own PDF; source IDs must be distinct, declared by the document, and resolve uniquely to published official HTTPS sources. |
+| `evidence[].source_id` | string | Yes | Official | Existing canonical source ID. |
+| `evidence[].locator` | string | Yes | System | Nonblank bounded locator for the reviewed source passage or pages. |
 
 ### Document status dimensions
 
@@ -208,11 +223,11 @@ The source sweep and inventory are checked-in audit records, not public entities
 | `sources[].url` | HTTPS URI string | Yes | Official discovery entrance. |
 | `sources[].scope_note` | string | Yes | Bounded search scope used at that entrance. |
 | `sources[].covered_from` / `covered_through` | ISO calendar dates | Yes | Bounded interval reviewed at the entrance; `covered_through` cannot exceed the cutoff. |
-| `sources[].covered_document_types` | array of strings | Yes | Controlled document types. An empty `covered_document_types` array means the source review was not restricted by document type. |
-| `sources[].covered_sector_tags` | array of strings | Yes | Controlled sector tags. An empty `covered_sector_tags` array means the source review was not restricted to a named sector; canonical documents still require sector tags. |
+| `sources[].covered_document_types` | array of strings | Yes | Controlled document types. In a legacy entry, an empty `covered_document_types` array records no explicit type restriction; it does not prove that all document types were reviewed. |
+| `sources[].covered_sector_tags` | array of strings | Yes | Controlled sector tags. In a legacy entry, an empty `covered_sector_tags` array records no explicit named-sector restriction; it does not prove that all sectors were reviewed. Canonical documents still require sector tags. |
 | `sources[].discovery_method` | string | Yes | Reproducible register, site or query method used for discovery. |
 | `sources[].scan_status` | string | Yes | One of the five source-review states defined below. |
-| `sources[].checked_at` | offset ISO-8601 timestamp | Yes | Time at which the entrance was checked. |
+| `sources[].checked_at` | offset ISO-8601 timestamp | Yes | Actual time at which the entrance was checked; this is distinct from the publication cutoff. |
 | `sources[].coverage_cutoff` | ISO calendar date | Yes | Per-entrance cutoff, no later than the file-level cutoff. |
 | `sources[].reviewer` | string | Yes | Named reviewer. |
 | `sources[].verification_note` | string | Yes | Human-readable evidence and limitations of the review. |
@@ -229,22 +244,26 @@ A public source-family status is an aggregate. A family is `reviewed` only when 
 
 ### `research/corpus-inventory.json`
 
-Every candidate has `id`, `source_ids`, `official_reference`, `official_title`, `year`, `issuing_institution`, `commissioning_body`, `record_level`, `version_label`, `candidate_provenance`, `provisional_sector_tags`, `official_source_url`, `decision`, `decision_reason`, `document_id`, `merged_into_document_id`, `discovered_at`, `reviewed_at` and `reviewed_by`, plus the file-level `generated_at` timestamp. Candidate IDs are unique, source IDs must exist in the source sweep, and the official candidate URL must use HTTPS. The candidate provenance vocabulary consists of the seven published provenance values plus the two inventory-only values defined above.
+Every candidate has `id`, `source_ids`, `official_reference`, `official_title`, `year`, `issuing_institution`, `commissioning_body`, `record_level`, `version_label`, `candidate_provenance`, `provisional_sector_tags`, `official_source_url`, `decision`, `decision_reason`, `document_id`, `merged_into_document_id`, `discovered_at`, `reviewed_at` and `reviewed_by`, plus the file-level `generated_at` timestamp. A candidate may also have a private `decision_history` array. Candidate IDs are unique, source IDs must exist in the source sweep, and the official candidate URL must use HTTPS. The candidate provenance vocabulary consists of the seven published provenance values plus the two inventory-only values defined above.
 
 | Decision | Required linkage | Meaning |
 | --- | --- | --- |
 | `included` | `document_id` names a matching canonical document; `merged_into_document_id` is `null`. | The candidate is represented as its own canonical document record. |
 | `merged` | `merged_into_document_id` names the canonical record; `document_id` is `null`. | Another manifestation or duplicate candidate is represented by an existing record. |
-| `excluded` | Both document links are `null`. | A reasoned scope, language, document-status or evidence decision keeps it outside the corpus. |
-| `pending` | Both document links are `null`. | Verification is unresolved. The candidate remains auditable but cannot enter public output. |
+| `excluded` | Both document links are `null`. | A verified failure of the research boundary keeps the candidate outside the corpus. |
+| `pending` | Both document links are `null`. | Official availability, identity or metadata remains unresolved. The candidate remains auditable but cannot enter public output. |
 
-Every candidate needs a non-empty decision reason. An `included` or `merged` decision requires a canonical match, reviewed metadata and non-empty provisional sectors. An `excluded` decision requires completed review but no document link. A `pending` decision has no document link, may use `unknown_pending_review`, and may have an empty provisional sector list. Pending inventory candidates and all canonical records below `publication_status: published` are excluded from public JSON, SQLite, site routes and coverage totals.
+Every candidate needs a non-empty decision reason. An `included` or `merged` decision requires a canonical match, reviewed metadata and non-empty provisional sectors. An `excluded` decision requires completed review but no document link. A `pending` decision has no document link, may use `unknown_pending_review`, and may have an empty provisional sector list. The `reviewed_at` value records the actual time of the candidate review; it is not the source sweep publication cutoff.
+
+When a decision is reopened, each optional `decision_history` item snapshots exactly six prior fields: `decision`, `decision_reason`, `document_id`, `merged_into_document_id`, `reviewed_at` and `reviewed_by`. History is private research metadata, not a canonical entity or public field. Pending candidates contribute to aggregate audit decision counts, but their titles, URLs, reasons and history are excluded from public JSON, SQLite, site routes, published record counts and downloads. All canonical records below `publication_status: published` are likewise excluded from public outputs.
 
 ## Generated public distribution
 
 The deterministic build writes `generated/public-data.json` and `generated/eu-ai-policy-observatory.sqlite`. They are derived release artefacts and must never be edited directly; canonical JSON, research audit data and source code remain the editing surfaces. The static atlas consumes the public JSON at build time, and the Pages publication artefact carries the SQLite database as a downloadable research artefact.
 
 Only records with `publication_status: published` and their published dependencies enter these generated public outputs. Canonical repository records may legitimately remain in `draft`, `pending_review` or `verified` editorial states, but they are outside the reviewed public corpus until intentional publication.
+
+Every exported document contains `retained_route_notice`. It is `null` for ordinary documents and contains the complete attributed object plus ordered evidence for the three reviewed retained section routes. SQLite stores the same values in `document_retained_route_notices` and `document_retained_route_evidence`; the evidence order is explicit and both document and source references are foreign-key checked.
 
 The public JSON also contains a generated `coverage` object:
 
@@ -256,7 +275,7 @@ The public JSON also contains a generated `coverage` object:
 | `supporting_files_and_versions` | Published documents whose `record_level` is `supporting`, `version` or `attachment`. |
 | `last_verified_date` | Most recent calendar date among exported official sources’ `last_verified_at` values; `null` when no source is exported. |
 | `coverage_cutoff` | Exact audit cutoff copied from `research/source-sweep.json`; never computed from the current clock. |
-| `coverage_statement` | Human-readable bounded-completeness statement generated from the exact cutoff. |
+| `coverage_statement` | Human-readable statement of expanding scope and documented verification limits. |
 | `source_families.total` / `source_families.by_status` | Aggregate registered family count and zero-filled counts for the five source-review states. These counts do not prove record-level completeness. |
 | `inventory` | Aggregate candidate decision counts for `included`, `merged`, `excluded` and `pending`; no candidate details are exposed. |
 | `unresolved_candidates` | Number of inventory candidates whose decision remains `pending`. |

@@ -3,11 +3,11 @@
   "entity_type": "source",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T07:35:00Z",
   "source_type": "commission_webpage",
   "url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
   "publisher": "European Commission",
   "retrieved_at": "2026-09-04T00:00:00Z",
-  "last_verified_at": "2026-09-04T00:00:00Z",
-  "verification_note": "Official library page published 11 March 2025 supplies the third-draft overview and separate Commitments, Transparency, Copyright, and Safety and Security English files (newsroom documents 113606, 113607, 113605, 113608)."
+  "last_verified_at": "2026-09-05T07:35:00Z",
+  "verification_note": "Official library page published 11 March 2025 supplies the third-draft overview and separate Commitments, Transparency, Copyright, and Safety and Security English files (newsroom documents 113606, 113607, 113605, 113608). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained."
 }

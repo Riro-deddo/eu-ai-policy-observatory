@@ -62,6 +62,23 @@ test('methodology states the publication boundary', async ({ page }) => {
   await expect(unresolvedCount).toHaveText(coverage.unresolved);
 });
 
+test('methodology distinguishes incomplete registered searches from corpus completeness', async ({ page }) => {
+  await page.goto('methodology/');
+  const section = page.locator('#methodology-coverage');
+  await expect(section).toContainText('An expanding corpus');
+  await expect(section).not.toContainText('Comprehensive within');
+  for (const label of [
+    'Publication cutoff', 'Registered source families', 'Reviewed registered families',
+    'Not started', 'In progress', 'Known gaps', 'Recheck due',
+    'Included candidates', 'Merged candidates', 'Excluded candidates', 'Unresolved candidates',
+  ]) {
+    const row = section.locator('dt').filter({ hasText: label });
+    await expect(row).toHaveCount(1);
+    await expect(row.locator('xpath=following-sibling::dd[1]')).toBeVisible();
+  }
+  await expect(section).toContainText('Unregistered sources and unreviewed periods are not covered by these counts.');
+});
+
 test('about uses project-led authorship without university affiliation', async ({ page }) => {
   await page.goto('about/');
   await expect(page.locator('main').getByText('Created and maintained by Yichen Hao', { exact: true })).toBeVisible();
@@ -118,7 +135,7 @@ test('research lens links hydrate the matching Corpus concept on arrival', async
       && document.concepts.some((concept) => concept.id === 'risk')).length;
   });
   await expect(page.locator('[data-corpus-list] > li:not([hidden])')).toHaveCount(riskPrincipalCount);
-  await expect(page.locator('[data-corpus-count]')).toHaveText(
+  await expect(page.locator('[data-corpus-count]')).toContainText(
     `${riskPrincipalCount} principal documents shown`,
   );
 });
@@ -160,7 +177,7 @@ test('corpus search, combined classifications and reset update the rendered list
     await expect(page.locator(`[data-document-id="${documentId}"]`)).toBeVisible();
   }
   const visibleDates = await visibleRecords.locator('span').evaluateAll((elements) => (
-    elements.map((element) => element.textContent?.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '')
+    elements.map((element) => element.textContent?.match(/Publication date (\d{4}-\d{2}-\d{2})/)?.[1] ?? '')
   ));
   expect(visibleDates).toEqual(
     [...visibleDates].sort((first, second) => second.localeCompare(first, 'en-GB')),
@@ -199,7 +216,10 @@ test('the final AI Act detail page separates official and research content', asy
       .getByRole('region', { name: 'Official sources and identifiers' })
       .getByText('32024R1689', { exact: true }),
   ).toBeVisible();
-  await expect(page.getByRole('link', { name: /Source URL:/ })).toBeVisible();
+  await expect(
+    page.getByRole('region', { name: 'Official sources and identifiers' })
+      .getByRole('link', { name: 'Official source' }).first(),
+  ).toBeVisible();
   await expect(page.getByText('Verification date')).toBeVisible();
 });
 
@@ -210,14 +230,23 @@ test('version records expose version-aware official metadata without null placeh
   for (const value of [
     'Regulation (EU) 2024/1689',
     '2026-07-27',
-    'Version',
     'Consolidated text, 27 July 2026',
-    'Consolidated',
   ]) {
     await expect(officialMetadata.getByText(value, { exact: true }).first()).toBeVisible();
   }
   await expect(officialMetadata.getByText('Document date', { exact: true })).toBeVisible();
   await expect(officialMetadata.getByText('Publication date', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText('Record level', { exact: true })).toHaveCount(0);
+  await expect(officialMetadata.getByText('Version status', { exact: true })).toHaveCount(0);
+  const classifications = page.getByRole('region', { name: 'Research classifications' });
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Record level$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Version');
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Version status$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Consolidated');
   await expect(page.getByText('null', { exact: true })).toHaveCount(0);
   await expect(page.getByText('OJ reference', { exact: true })).toHaveCount(0);
 });
@@ -272,7 +301,8 @@ test('timeline separates document dates from distinct policy events across the p
   await page.goto('timeline/');
 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Timeline');
-  await expect(page.getByText('2018–2026')).toBeVisible();
+  await expect(page.getByText('1984–2026')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 2, name: '1984' })).toBeVisible();
   for (const document of [
     'Artificial Intelligence for Europe',
     'Coordinated Plan on Artificial Intelligence',
@@ -390,4 +420,104 @@ test('mobile routes do not make the document body horizontally overflow', async 
     await page.goto(route);
     await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   }
+});
+
+test('corpus filters historical classifications independently from pending legacy review', async ({ page }) => {
+  await page.goto('corpus/');
+  const documents = await page.locator('#corpus-documents').evaluate((element) => JSON.parse(
+    element.textContent ?? '[]',
+  ) as Array<{
+    historical_review_status: string;
+    id: string;
+    record_level: string;
+    relevance_class: string | null;
+    temporal_collection: string | null;
+  }>);
+  const principalDocuments = documents.filter((document) => document.record_level === 'principal');
+  const pendingPrincipal = principalDocuments.filter(
+    (document) => document.historical_review_status === 'legacy_review_pending',
+  );
+  const directHistorical = principalDocuments.filter((document) => (
+    document.temporal_collection === 'historical_lineage'
+      && document.relevance_class === 'direct_ai_substantive'
+  ));
+  const visibleRecords = page.locator('[data-corpus-list] > li:not([hidden])');
+
+  await expect(visibleRecords).toHaveCount(principalDocuments.length);
+  await expect(page.locator('[data-corpus-count]')).toHaveText(
+    `${principalDocuments.length} principal documents shown · ${pendingPrincipal.length}/${principalDocuments.length} shown records pending expanded evidence review`,
+  );
+  await page.getByLabel('Collection').selectOption('historical_lineage');
+  await page.getByLabel('Relevance').selectOption('direct_ai_substantive');
+  await expect(visibleRecords).toHaveCount(directHistorical.length);
+  for (const document of directHistorical) {
+    await expect(page.locator(`[data-document-id="${document.id}"]`)).toBeVisible();
+  }
+
+  await page.getByRole('button', { name: 'Reset filters' }).click();
+  await expect(visibleRecords).toHaveCount(principalDocuments.length);
+  await page.getByLabel('Relevance').selectOption('legacy_review_pending');
+  await expect(visibleRecords).toHaveCount(pendingPrincipal.length);
+  await expect(page.locator('[data-corpus-count]')).toHaveText(
+    `${pendingPrincipal.length} principal documents shown · ${pendingPrincipal.length}/${pendingPrincipal.length} shown records pending expanded evidence review`,
+  );
+});
+
+test('historical record pages render official date evidence and research classification evidence', async ({ page }) => {
+  await page.goto('corpus/building-a-european-data-economy/');
+
+  await expect(page.getByRole('heading', { level: 1, name: 'Building a European data economy' })).toBeVisible();
+  const officialMetadata = page.getByRole('region', { name: 'Official metadata' });
+  await expect(officialMetadata.getByText('Document date kind', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText('Publication-date evidence', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText('Record level', { exact: true })).toHaveCount(0);
+  await expect(officialMetadata.getByText('Version status', { exact: true })).toHaveCount(0);
+  const classifications = page.getByRole('region', { name: 'Research classifications' });
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Record level$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Principal');
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Version status$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Final');
+  await expect(classifications.getByText('Historical lineage', { exact: true })).toBeVisible();
+  await expect(classifications.getByText('AI-related precursor', { exact: true })).toBeVisible();
+  await expect(classifications.getByRole('heading', { name: 'Classification evidence' })).toBeVisible();
+});
+
+test('pending legacy records show a separate expanded-review notice without inferred classes', async ({ page }) => {
+  await page.goto('corpus/ai-act-council-general-approach-st-15698-2022/');
+
+  const notice = page.getByRole('complementary', { name: 'Expanded evidence review pending' });
+  await expect(notice).toBeVisible();
+  await expect(notice).toContainText('no temporal collection or relevance class is inferred');
+  const classifications = page.getByRole('region', { name: 'Research classifications' });
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Record level$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Principal');
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Version status$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Final');
+  await expect(classifications.getByText('Expanded evidence review pending', { exact: true })).toHaveCount(2);
+  await expect(classifications.getByText('Historical lineage', { exact: true })).toHaveCount(0);
+  await expect(classifications.getByText('Direct AI relevance', { exact: true })).toHaveCount(0);
+});
+
+test('methodology renders bounded source scopes and incomplete review semantics', async ({ page }) => {
+  await page.goto('methodology/');
+
+  const review = page.getByRole('region', { name: 'Expanded evidence review' });
+  await expect(review).toContainText('17 published records');
+  await expect(review).toContainText('114 retained records');
+  const scopes = page.getByRole('region', { name: 'Bounded source scopes' });
+  await expect(scopes.locator(':scope > ol > li')).toHaveCount(34);
+  await expect(scopes).toContainText('Partial · in progress');
+  await expect(scopes).toContainText('Unspecified');
+  await expect(scopes).toContainText('2026-09-04');
+  await expect(scopes).toContainText('zero pending count');
+  await expect(page.getByRole('region', { name: 'Database seed and analytical samples' }))
+    .toContainText('not the frozen all-route baseline');
 });

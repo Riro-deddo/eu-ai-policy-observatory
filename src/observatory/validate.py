@@ -160,6 +160,10 @@ def validate_records(
         _validate_source_evidence(record, path, records_by_type, issues)
         _validate_relationship(record, path, records_by_type, issues)
 
+    from observatory.retained_routes import validate_retained_route_notices
+
+    issues.extend(validate_retained_route_notices(loaded_by_directory, data_root))
+
     return sorted(issues, key=lambda issue: (issue.record_path, issue.field, issue.code))
 
 
@@ -912,6 +916,9 @@ def _validate_document_status_combination(
         "adopted",
         "in_force",
         "superseded",
+        "no_longer_in_force",
+        "repealed",
+        "expired",
     }:
         invalid = True
     else:

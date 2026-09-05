@@ -1,6 +1,7 @@
 import json
 import os
 import sqlite3
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 import shutil
@@ -33,25 +34,36 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     )
     assert payload["coverage"]["coverage_cutoff"] == "2026-09-04"
     assert payload["coverage"]["coverage_statement"] == (
-        "Comprehensive within the documented inclusion boundary, "
-        "verified through 4 September 2026."
+        "An expanding corpus of official EU and European Communities AI-related "
+        "documents. Verification dates and known coverage gaps are documented."
     )
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
+    decisions = Counter(row["decision"] for row in inventory["candidates"])
     assert payload["coverage"]["inventory"] == {
-        "included": 117,
-        "merged": 18,
-        "excluded": 22,
-        "pending": 0,
+        key: decisions[key] for key in ("included", "merged", "excluded", "pending")
     }
+    assert sum(decisions.values()) == 171
+    assert decisions["pending"] == 12
     assert payload["coverage"]["source_families"] == {
-        "total": 13,
+        "total": 17,
         "by_status": {
             "not_started": 0,
-            "in_progress": 0,
-            "reviewed": 13,
+            "in_progress": 4,
+            "reviewed": 11,
             "gap_found": 0,
-            "recheck_due": 0,
+            "recheck_due": 2,
         },
     }
+    public_text = json.dumps(payload)
+    assert "decision_history" not in public_text
+    public_ids = {record["id"] for record in payload["documents"]}
+    for candidate in inventory["candidates"]:
+        if candidate["decision"] == "pending":
+            assert candidate["id"] not in public_ids
+            assert candidate["official_title"] not in public_text
+            assert candidate["decision_reason"] not in public_text
 
 
 def test_pipeline_excludes_unpublished_canonical_records_from_every_public_output(tmp_path):
@@ -60,6 +72,25 @@ def test_pipeline_excludes_unpublished_canonical_records_from_every_public_outpu
     shutil.copytree(Path("schema"), project_root / "schema")
     research_root = project_root / "research"
     research_root.mkdir()
+    migrations_root = research_root / "migrations"
+    migrations_root.mkdir()
+    (migrations_root / "2026-09-05-public-document-baseline.json").write_text(
+        json.dumps(
+            {
+                "baseline_date": "2026-09-05",
+                "publication_cutoff": "2026-09-04",
+                "baseline_head": "fixture",
+                "documents": [
+                    {
+                        "id": "example-document",
+                        "slug": "example-document",
+                        "record_sha256": "fixture",
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
     source_id = json.loads(
         (Path("research/source-sweep.json")).read_text(encoding="utf-8")
     )["sources"][0]["id"]
@@ -242,6 +273,7 @@ def test_malformed_timestamp_does_not_touch_outputs_and_cli_reports_it(tmp_path_
             "--timestamp",
             "not-a-timestamp",
         ],
+        env={**os.environ, "PYTHONPATH": str(Path.cwd() / "src")},
         text=True,
         capture_output=True,
         check=False,
@@ -352,6 +384,9 @@ def test_pending_inventory_candidate_is_absent_from_public_output(tmp_path_facto
     project_root = _isolated_project_root(tmp_path)
     inventory_path = project_root / "research" / "corpus-inventory.json"
     inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    initial_pending = sum(
+        row["decision"] == "pending" for row in inventory["candidates"]
+    )
     inventory["candidates"].append(
         {
             "id": "pending-secret-candidate",
@@ -386,7 +421,9 @@ def test_pending_inventory_candidate_is_absent_from_public_output(tmp_path_facto
     assert "https://commission.europa.eu/example-pending" not in public_text
     assert "Metadata verification is not yet complete." not in public_text
     assert "pending-secret-candidate" not in public_text
-    assert json.loads(public_text)["coverage"]["inventory"]["pending"] == 1
+    assert json.loads(public_text)["coverage"]["inventory"]["pending"] == (
+        initial_pending + 1
+    )
 
 
 def _isolated_project_root(tmp_path):

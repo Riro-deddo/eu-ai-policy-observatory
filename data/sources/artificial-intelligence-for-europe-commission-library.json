@@ -1,0 +1,13 @@
+{
+  "id": "artificial-intelligence-for-europe-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/communication-artificial-intelligence-europe",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T10:34:49Z",
+  "last_verified_at": "2026-09-05T10:34:49Z",
+  "verification_note": "Official Commission library page identifies the item as policy and legislation, gives 'Publication 25 April 2018', describes it as a Communication from the Commission on Artificial Intelligence for Europe, and links to the official multilingual text."
+}

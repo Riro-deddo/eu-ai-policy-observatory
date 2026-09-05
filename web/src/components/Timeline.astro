@@ -110,6 +110,7 @@ const coverageLabel = data.coverage.from_year === null || data.coverage.to_year 
               <li data-timeline-entry={entry.id}>
                 <p class="timeline-entry__kind">
                   {entry.kind === 'document' ? 'Document date' : 'Event date'} · <time datetime={entry.date}>{entry.date}</time>
+                  {entry.kind === 'document' && entry.dateKind !== null && <> · {vocabularyLabel(entry.dateKind)}</>}
                 </p>
                 <p class="timeline-entry__kind">
                   {entry.kind === 'document' ? `Document · ${documentTypeLabel(entry.documentType ?? 'document')}` : `Event · ${vocabularyLabel(entry.eventType ?? 'event')}`}

@@ -17,12 +17,18 @@ _WINDOWS_USER_PATH = re.compile(
     r"(?:[A-Za-z]:\\+Users\\+|\\\\Users\\+)", re.IGNORECASE
 )
 _UNIX_USER_PATH = re.compile(r"\\?/(?:Users|home)\\?/", re.IGNORECASE)
+_HTTPS_URL_PREFIX = re.compile(r"https?:\\*/\\*/[^\s\"'<>]*$", re.IGNORECASE)
+_URL_TOKEN_BOUNDARY = re.compile(r'''[\s"'<>()\[\]{};,]''')
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
 _TOKEN_PREFIX = re.compile(
     r"(?:gh[oprsu]_|github_pat_|glpat-|(?<![A-Za-z0-9])sk-|AKIA|xox[abprs]-)"
 )
 _PRIVATE_KEY_HEADER = re.compile(
     r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----", re.IGNORECASE
+)
+_UNSUPPORTED_COVERAGE = re.compile(
+    r"\bComprehensive\s+within\s+the\s+documented\s+inclusion\s+boundary\b",
+    re.IGNORECASE,
 )
 
 
@@ -77,8 +83,24 @@ def _looks_binary(content: bytes) -> bool:
     )
 
 
+def _contains_unix_user_path(text: str) -> bool:
+    """Distinguish local user paths from ordinary path segments in HTTPS URLs."""
+    for match in _UNIX_USER_PATH.finditer(text):
+        token_start = max(
+            (boundary.end() for boundary in _URL_TOKEN_BOUNDARY.finditer(text, 0, match.start())),
+            default=0,
+        )
+        url_prefix = _HTTPS_URL_PREFIX.fullmatch(text[token_start : match.start()])
+        if url_prefix is not None and not any(
+            marker in url_prefix.group() for marker in "?#"
+        ):
+            continue
+        return True
+    return False
+
+
 def _text_errors(path: Path, text: str) -> Iterable[str]:
-    if _WINDOWS_USER_PATH.search(text) or _UNIX_USER_PATH.search(text):
+    if _WINDOWS_USER_PATH.search(text) or _contains_unix_user_path(text):
         yield f"local filesystem path found in public output: {path}"
     if _LOCALHOST.search(text):
         yield f"localhost reference found in public output: {path}"
@@ -86,6 +108,8 @@ def _text_errors(path: Path, text: str) -> Iterable[str]:
         yield f"credential or token prefix found in public output: {path}"
     if _PRIVATE_KEY_HEADER.search(text):
         yield f"private-key header found in public output: {path}"
+    if _UNSUPPORTED_COVERAGE.search(text):
+        yield f"unsupported corpus-completeness claim found in public output: {path}"
 
 
 def _scan_public_data(public_data_path: Path) -> list[str]:
@@ -103,7 +127,7 @@ def _scan_public_data(public_data_path: Path) -> list[str]:
     except json.JSONDecodeError as exc:
         return [f"public data file contains invalid JSON: {public_data_path} ({exc})"]
 
-    return list(_publication_errors(payload, "$"))
+    return [*_publication_errors(payload, "$"), *_text_errors(public_data_path, text)]
 
 
 def _scan_downloadable_database(site_root: Path) -> list[str]:

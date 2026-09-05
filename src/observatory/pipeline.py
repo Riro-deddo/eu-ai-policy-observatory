@@ -12,6 +12,7 @@ import tempfile
 from observatory.build_db import build_database
 from observatory.coverage import build_public_coverage_summary
 from observatory.export_public import export_public
+from observatory.historical_publication import validate_historical_publication
 from observatory.io import load_records
 from observatory.validate import (
     RecordValidationError,
@@ -48,6 +49,14 @@ def run_pipeline(
     assert_valid_research_inventory(root / "research", schema_root, data_root)
     audit_summary = build_public_coverage_summary(root / "research")
     records = load_records(data_root)
+    historical_issues = validate_historical_publication(
+        records,
+        schema_root,
+        str(audit_summary["coverage_cutoff"]),
+        root / "research" / "migrations" / "2026-09-05-public-document-baseline.json",
+    )
+    if historical_issues:
+        raise RecordValidationError(historical_issues)
     record_counts = {directory: len(entries) for directory, entries in records.items()}
     public_records = {
         directory: [

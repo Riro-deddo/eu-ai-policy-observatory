@@ -1,0 +1,16 @@
+{
+  "id": "transparency-code-signatory-form-supports-final",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T07:35:00Z",
+  "updated_at": "2026-09-05T07:35:00Z",
+  "source_entity_type": "document",
+  "source_entity_id": "transparency-code-signatory-form-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "transparency-code-final-2026",
+  "relationship_type": "related_to",
+  "basis": "official",
+  "rationale": "The Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; related_to conservatively represents that role without asserting a stronger unverified binary structure.",
+  "evidence_source_id": "transparency-code-signatory-commission",
+  "verification_status": "verified"
+}

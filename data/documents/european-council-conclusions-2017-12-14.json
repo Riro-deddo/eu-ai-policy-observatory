@@ -1,0 +1,114 @@
+{
+  "id": "european-council-conclusions-2017-12-14",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "european-council-conclusions-2017-12-14",
+  "official_title": "European Council meeting (14 December 2017) - Conclusions",
+  "short_title": "European Council conclusions, 14 December 2017",
+  "document_type": "conclusions",
+  "sector_tags": [
+    "education"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EUCO 19/17",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2017-12-14",
+  "version_label": "Adopted conclusions",
+  "version_status": "final",
+  "publication_date": "2017-12-14",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-council",
+      "role": "author",
+      "evidence_source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "evidence_locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4."
+    },
+    {
+      "institution_id": "european-council",
+      "role": "adopter",
+      "evidence_source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "evidence_locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4."
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council",
+      "role": "cover_note_sender",
+      "evidence_source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "evidence_locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "european-council-conclusions-2017-12-14-official-pdf",
+    "european-council-conclusions-2017-12-14-consilium-release"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "The official conclusions and same-day release verify the document and its adoption/publication. The education section contains a dedicated operative request to examine measures addressing skills challenges linked to AI. That is substantive enough for direct AI relevance, but only for education; it does not support general-cross-sector or employment tagging and is not recast as a precursor.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:28:17.769Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4.",
+      "meaning": "The cited official manifestation establishes the document date 2017-12-14 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "european-council-conclusions-2017-12-14-consilium-release",
+      "locator": "Release header, 14 December 2017 18:24",
+      "meaning": "The cited official manifestation establishes official publication on 2017-12-14."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4.",
+      "rationale": "The Education and Culture section asks the Commission, Council and Member States to examine measures addressing skills challenges explicitly linked to artificial intelligence. This is an operative, dedicated AI policy instruction and therefore meets direct_ai_substantive, narrowly; precursor is not used as a fallback."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4.",
+      "rationale": "Education and Culture section, printed p.4 (PDF p.5), asks for measures addressing AI-linked skills challenges and lifelong learning."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "european-council-conclusions-2017-12-14-official-pdf",
+      "locator": "Cover (PDF p.1); Education and Culture, printed pp.3-4 (PDF pp.4-5), AI-skills bullet on printed p.4.",
+      "rationale": "The cover note says the attached conclusions were adopted by the European Council; the Secretariat is identified separately as sender."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "european-council-conclusions-2017-12-14-consilium-release",
+      "locator": "Release header, 14 December 2017 18:24",
+      "rationale": "The PDF and dated conclusions release are hosted on the official Consilium site."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
+}
