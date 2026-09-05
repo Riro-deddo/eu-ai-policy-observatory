@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eu-ai-policy-observatory.example/schema/historical-document-extension.schema.json",
+  "title": "Inactive prospective historical document extension",
+  "type": "object",
+  "properties": {
+    "temporal_collection": {
+      "enum": ["historical_lineage", "contemporary_eu_ai_policy"]
+    },
+    "relevance_class": {
+      "enum": ["direct_ai_substantive", "ai_related_precursor", "indirect_adm_legal_context"]
+    },
+    "document_date_kind": {
+      "enum": ["official_act_date", "institutional_adoption", "document_issue", "publication", "consolidation"]
+    },
+    "date_evidence": {
+      "type": "object",
+      "properties": {
+        "document_date": {"$ref": "#/$defs/citation"},
+        "publication_date": {"$ref": "#/$defs/citation"}
+      },
+      "required": ["document_date", "publication_date"],
+      "additionalProperties": false
+    },
+    "classification_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/classification_evidence_item"}
+    },
+    "bibliographic_authors": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/bibliographic_author"}
+    },
+    "additional_dates": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/additional_date"}
+    },
+    "legal_status_evidence": {"$ref": "#/$defs/citation"},
+    "institution_roles": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/historical_institution_role"}
+    }
+  },
+  "required": [
+    "temporal_collection",
+    "relevance_class",
+    "document_date_kind",
+    "date_evidence",
+    "classification_evidence",
+    "bibliographic_authors",
+    "additional_dates"
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "citation": {
+      "type": "object",
+      "properties": {
+        "source_id": {"$ref": "#/$defs/id"},
+        "locator": {"type": "string", "pattern": "\\S"},
+        "meaning": {"type": "string", "pattern": "\\S"}
+      },
+      "required": ["source_id", "locator", "meaning"],
+      "additionalProperties": false
+    },
+    "classification_evidence_item": {
+      "type": "object",
+      "properties": {
+        "field": {"enum": ["relevance_class", "sector_tags", "provenance_tags"]},
+        "value": {"type": "string", "pattern": "\\S"},
+        "source_id": {"$ref": "#/$defs/id"},
+        "locator": {"type": "string", "pattern": "\\S"},
+        "rationale": {"type": "string", "pattern": "\\S"}
+      },
+      "required": ["field", "value", "source_id", "locator", "rationale"],
+      "additionalProperties": false
+    },
+    "bibliographic_author": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "pattern": "\\S"},
+        "affiliation": {"anyOf": [{"type": "string", "pattern": "\\S"}, {"type": "null"}]},
+        "evidence_source_id": {"$ref": "#/$defs/id"},
+        "evidence_locator": {"type": "string", "pattern": "\\S"}
+      },
+      "required": ["name", "affiliation", "evidence_source_id", "evidence_locator"],
+      "additionalProperties": false
+    },
+    "additional_date": {
+      "type": "object",
+      "properties": {
+        "kind": {"enum": ["document_issue", "institutional_adoption", "first_official_publication", "oj_publication", "manuscript_completion", "cover_issue", "consolidation"]},
+        "value": {"type": "string", "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
+        "precision": {"enum": ["day", "month", "year"]},
+        "source_id": {"$ref": "#/$defs/id"},
+        "locator": {"type": "string", "pattern": "\\S"}
+      },
+      "required": ["kind", "value", "precision", "source_id", "locator"],
+      "additionalProperties": false
+    },
+    "historical_institution_role": {
+      "type": "object",
+      "properties": {
+        "institution_id": {"$ref": "#/$defs/id"},
+        "role": {"enum": ["author", "proposer", "adopter", "publisher", "contributor", "commissioner", "official_host"]},
+        "evidence_source_id": {"$ref": "#/$defs/id"},
+        "evidence_locator": {"type": "string", "pattern": "\\S"}
+      },
+      "required": ["institution_id", "role", "evidence_source_id", "evidence_locator"],
+      "additionalProperties": false
+    }
+  }
+}
