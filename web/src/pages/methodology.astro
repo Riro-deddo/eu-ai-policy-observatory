@@ -23,11 +23,13 @@ const data = loadPublicData();
     <section aria-labelledby="current-method">
       <h2 id="current-method">Current corpus method</h2>
       <p>
-        The corpus covers official EU documents substantively concerning AI from 1 January 2018
-        through {data.coverage.coverage_cutoff}, including formally published drafts and sector-specific materials.
-        Its boundary is substantive relevance to AI, not all EU digital law. Candidates are identified through a bounded sweep of official
-        EU publication and register entrances. A record is published only when its official English
-        source and verification basis can be inspected.
+        The current published records are concentrated on the AI Act pathway and related implementation.
+        Their document dates span {data.coverage.from_year}–{data.coverage.to_year},
+        with a publication cutoff of {data.coverage.coverage_cutoff}.
+        The approved research boundary also admits earlier European Communities and EU material,
+        but historical backfill and the wider institutional and sectoral sweep remain incomplete.
+        Formally published drafts can qualify; all additions still require record-level official-source verification.
+        The research boundary concerns AI-related material, not all EU digital law.
       </p>
     </section>
 
@@ -40,13 +42,19 @@ const data = loadPublicData();
       <h2 id="coverage-and-audit">Coverage and audit status</h2>
       <p>{data.coverage.coverage_statement}</p>
       <dl>
+        <dt>Publication cutoff</dt><dd>{data.coverage.coverage_cutoff}</dd>
         <dt>Registered source families</dt><dd>{data.coverage.source_families.total}</dd>
-        <dt>Reviewed through cutoff</dt><dd>{data.coverage.source_families.by_status.reviewed}</dd>
+        <dt>Reviewed registered families</dt><dd>{data.coverage.source_families.by_status.reviewed}</dd>
+        <dt>Not started</dt><dd>{data.coverage.source_families.by_status.not_started}</dd>
+        <dt>In progress</dt><dd>{data.coverage.source_families.by_status.in_progress}</dd>
+        <dt>Known gaps</dt><dd>{data.coverage.source_families.by_status.gap_found}</dd>
+        <dt>Recheck due</dt><dd>{data.coverage.source_families.by_status.recheck_due}</dd>
         <dt>Included candidates</dt><dd>{data.coverage.inventory.included}</dd>
+        <dt>Merged candidates</dt><dd>{data.coverage.inventory.merged}</dd>
         <dt>Excluded candidates</dt><dd>{data.coverage.inventory.excluded}</dd>
         <dt>Unresolved candidates</dt><dd>{data.coverage.unresolved_candidates}</dd>
       </dl>
-      <p>These audit counts describe review coverage; a source-family total is not proof of record-level completeness.</p>
+      <p>These are aggregate states of registered, bounded searches, not a complete source matrix. Unregistered sources and unreviewed periods are not covered by these counts.</p>
     </section>
 
     <section aria-labelledby="corpus-tiers">
@@ -64,9 +72,10 @@ const data = loadPublicData();
       <p>
         Every discovered candidate receives a reasoned decision: <code>included</code> creates or
         identifies a canonical document record; <code>merged</code> links another manifestation to
-        an existing record; <code>excluded</code> records a scope or evidence decision; and
-        <code>pending</code> retains unresolved metadata for later review. Pending candidates and
-        unpublished records do not enter public totals or downloads.
+        an existing record; <code>excluded</code> records a verified boundary failure; and
+        <code>pending</code> retains unresolved official availability, identity or metadata for later
+        review. Pending candidates are counted in aggregate audit summaries but are excluded from
+        public document records, published record counts and downloads.
       </p>
     </section>
 

@@ -129,10 +129,6 @@ def test_contributor_documentation_defines_stage_one_coverage_contract():
     assert "principal" in dictionary and "all records" in dictionary.lower()
     assert "Stage 1" in readme and "Stage 2" in readme and "Stage 3" in readme
     assert "schema and interface" in readme.lower()
-    assert (
-        "Comprehensive within the documented inclusion boundary, "
-        "verified through 4 September 2026."
-    ) in readme
 
 
 def test_repository_english_guard_rejects_non_latin_scripts_and_escaped_json(
