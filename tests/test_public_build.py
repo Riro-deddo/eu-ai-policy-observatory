@@ -199,6 +199,40 @@ def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):
     assert any("non-published record" in error for error in errors)
 
 
+@pytest.mark.parametrize("location", ["html", "json"])
+@pytest.mark.parametrize(
+    "phrase",
+    [
+        "Comprehensive within the documented inclusion boundary",
+        "COMPREHENSIVE  within   the documented inclusion boundary",
+    ],
+)
+def test_public_scanner_rejects_withdrawn_completeness_claim(
+    tmp_path: Path, location: str, phrase: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text(
+        phrase if location == "html" else "An expanding corpus", encoding="utf-8"
+    )
+    data_path = tmp_path / "public.json"
+    write_public_data(
+        data_path,
+        {"coverage": {"coverage_statement": phrase if location == "json" else "An expanding corpus"}},
+    )
+    errors = check_public_build(site, data_path)
+    assert any("unsupported corpus-completeness claim" in error for error in errors)
+
+
+def test_public_scanner_accepts_expanding_corpus_statement(tmp_path: Path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text("An expanding corpus", encoding="utf-8")
+    data_path = tmp_path / "public.json"
+    write_public_data(data_path, {"coverage": {"coverage_statement": "An expanding corpus"}})
+    assert check_public_build(site, data_path) == []
+
+
 def test_scanner_rejects_ordinary_and_escaped_windows_user_paths(tmp_path: Path):
     site = tmp_path / "site"
     site.mkdir()
