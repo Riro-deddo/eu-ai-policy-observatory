@@ -33,8 +33,8 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     )
     assert payload["coverage"]["coverage_cutoff"] == "2026-09-04"
     assert payload["coverage"]["coverage_statement"] == (
-        "Comprehensive within the documented inclusion boundary, "
-        "verified through 4 September 2026."
+        "An expanding corpus of official EU and European Communities AI-related "
+        "documents. Verification dates and known coverage gaps are documented."
     )
     assert payload["coverage"]["inventory"] == {
         "included": 117,

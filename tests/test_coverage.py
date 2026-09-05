@@ -1,5 +1,7 @@
 import json
 
+import pytest
+
 from observatory.coverage import build_public_coverage_summary
 
 
@@ -40,8 +42,8 @@ def test_coverage_summary_counts_source_families_and_inventory_decisions(tmp_pat
     assert summary == {
         "coverage_cutoff": "2026-09-04",
         "coverage_statement": (
-            "Comprehensive within the documented inclusion boundary, "
-            "verified through 4 September 2026."
+            "An expanding corpus of official EU and European Communities AI-related "
+            "documents. Verification dates and known coverage gaps are documented."
         ),
         "source_families": {
             "total": 5,
@@ -64,6 +66,31 @@ def test_coverage_summary_counts_source_families_and_inventory_decisions(tmp_pat
     assert "Scope for reviewed-family-a only" not in public_text
     assert "covered_document_types" not in public_text
     assert "covered_sector_tags" not in public_text
+
+
+@pytest.mark.parametrize(
+    "status",
+    ["not_started", "in_progress", "reviewed", "gap_found", "recheck_due"],
+)
+@pytest.mark.parametrize("decision", ["excluded", "pending"])
+def test_cutoff_never_implies_completeness(tmp_path, status, decision):
+    sweep = {
+        "coverage_cutoff": "2026-09-04",
+        "sources": [_source("bounded-search", "One family", status)],
+    }
+    inventory = {"candidates": [_candidate("private-candidate", decision)]}
+    (tmp_path / "source-sweep.json").write_text(json.dumps(sweep), encoding="utf-8")
+    (tmp_path / "corpus-inventory.json").write_text(
+        json.dumps(inventory), encoding="utf-8"
+    )
+    result = build_public_coverage_summary(tmp_path)
+    assert result["coverage_statement"] == (
+        "An expanding corpus of official EU and European Communities AI-related "
+        "documents. Verification dates and known coverage gaps are documented."
+    )
+    assert result["coverage_cutoff"] == "2026-09-04"
+    assert result["unresolved_candidates"] == int(decision == "pending")
+    assert "private-candidate" not in json.dumps(result)
 
 
 def _source(identifier: str, source_family: str, scan_status: str) -> dict[str, object]:

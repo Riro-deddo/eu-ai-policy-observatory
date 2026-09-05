@@ -16,6 +16,10 @@ SOURCE_STATUSES = (
 )
 SOURCE_STATUS_PRIORITY = ("gap_found", "recheck_due", "in_progress", "not_started")
 INVENTORY_DECISIONS = ("included", "merged", "excluded", "pending")
+PUBLIC_COVERAGE_STATEMENT = (
+    "An expanding corpus of official EU and European Communities AI-related "
+    "documents. Verification dates and known coverage gaps are documented."
+)
 
 
 def build_public_coverage_summary(research_root: Path) -> dict[str, object]:
@@ -42,15 +46,11 @@ def build_public_coverage_summary(research_root: Path) -> dict[str, object]:
         for candidate in cast(list[Mapping[str, object]], inventory["candidates"])
     )
     cutoff_text = cast(str, source_sweep["coverage_cutoff"])
-    cutoff = date.fromisoformat(cutoff_text)
-    human_cutoff = f"{cutoff.day} {cutoff.strftime('%B %Y')}"
+    date.fromisoformat(cutoff_text)
 
     return {
         "coverage_cutoff": cutoff_text,
-        "coverage_statement": (
-            "Comprehensive within the documented inclusion boundary, "
-            f"verified through {human_cutoff}."
-        ),
+        "coverage_statement": PUBLIC_COVERAGE_STATEMENT,
         "source_families": {
             "total": len(family_rows),
             "by_status": {
