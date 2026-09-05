@@ -55,9 +55,11 @@ test('methodology states the publication boundary', async ({ page }) => {
     throw new Error('Methodology coverage metadata was not rendered');
   }
   await expect(page.getByText(coverage.statement, { exact: true })).toBeVisible();
-  await expect(
-    page.getByRole('term', { name: 'Unresolved candidates' }).locator('xpath=following-sibling::dd[1]'),
-  ).toHaveText(coverage.unresolved);
+  const unresolvedCount = page.locator('#methodology-coverage dt')
+    .filter({ hasText: /^Unresolved candidates$/ })
+    .locator('xpath=following-sibling::dd[1]');
+  await expect(unresolvedCount).toBeVisible();
+  await expect(unresolvedCount).toHaveText(coverage.unresolved);
 });
 
 test('about uses project-led authorship without university affiliation', async ({ page }) => {
