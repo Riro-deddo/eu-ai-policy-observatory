@@ -323,6 +323,28 @@ def test_valid_parent_is_not_overwritten_by_later_invalid_matching_edge(complete
     assert not any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
 
 
+@pytest.mark.parametrize("invalid_endpoint", ["self", "missing", "unpublished"])
+def test_each_invalid_published_lineage_edge_is_reported_even_with_valid_edge(complete_records, invalid_endpoint):
+    complete_records["documents"][0].data["record_level"] = "version"
+    parent = deepcopy(complete_records["documents"][0].data)
+    parent.update(id="parent-document", slug="parent-document", record_level="principal", official_reference="PARENT", version_label=None)
+    _add_document(complete_records, parent, "parent-document")
+    _add_relationship(complete_records, "example-document", "parent-document", "version_of")
+    target = "example-document" if invalid_endpoint == "self" else "missing-document"
+    if invalid_endpoint == "unpublished":
+        unpublished = deepcopy(parent)
+        unpublished.update(id="unpublished-document", slug="unpublished-document", publication_status="pending_review")
+        _add_document(complete_records, unpublished, "unpublished-document")
+        target = "unpublished-document"
+    _add_relationship(complete_records, "example-document", target, "revises")
+    invalid = complete_records["relationships"][-1]
+    invalid.data["id"] = f"invalid-{invalid_endpoint}-edge"
+    complete_records["relationships"][-1] = LoadedRecord(invalid.data, Path(f"data/relationships/invalid-{invalid_endpoint}-edge.json"))
+    issues = _issues(complete_records)
+    assert any(issue.record_path.endswith(f"invalid-{invalid_endpoint}-edge.json") for issue in issues)
+    assert not any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
+
+
 def test_version_accepts_incoming_revises_from_nonattachment_peer(complete_records):
     complete_records["documents"][0].data["record_level"] = "version"
     later = deepcopy(complete_records["documents"][0].data)
@@ -342,6 +364,35 @@ def test_version_lineage_peer_must_be_a_document_endpoint(complete_records):
     complete_records["relationships"][0].data["source_entity_type"] = "institution"
     issues = _issues(complete_records)
     assert any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
+
+
+def test_relationship_endpoint_type_and_unique_published_resolution_are_checked(complete_records):
+    _add_relationship(complete_records, "example-document", "example-source", "related_to")
+    complete_records["relationships"][-1].data["target_entity_type"] = "institution"
+    duplicate_institution = deepcopy(complete_records["institutions"][0])
+    complete_records["institutions"].append(duplicate_institution)
+    _add_relationship(complete_records, "example-document", "european-commission", "related_to")
+    complete_records["relationships"][-1].data["target_entity_type"] = "institution"
+    issues = _issues(complete_records)
+    assert sum(issue.code == "historical_relationship" and issue.field == "target_entity_id" for issue in issues) >= 2
+
+
+def test_valid_non_document_relationship_endpoints_are_allowed(complete_records):
+    policy = deepcopy(_json(FIXTURE_ROOT / "policies" / "example-policy.json"))
+    complete_records["policies"].append(LoadedRecord(policy, Path("data/policies/example-policy.json")))
+    _add_relationship(complete_records, "example-policy", "example-source", "related_to")
+    relationship = complete_records["relationships"][-1]
+    relationship.data.update(source_entity_type="policy", target_entity_type="source")
+    assert not any(issue.record_path == relationship.path.as_posix() for issue in _issues(complete_records))
+
+
+def test_malformed_relationship_endpoint_fields_report_without_type_error(complete_records):
+    _add_relationship(complete_records, "example-document", "example-source", "related_to")
+    relationship = complete_records["relationships"][-1]
+    relationship.data["source_entity_type"] = ["document"]
+    relationship.data["target_entity_id"] = {"bad": True}
+    issues = _issues(complete_records)
+    assert any(issue.record_path == relationship.path.as_posix() and issue.code == "historical_relationship" for issue in issues)
 
 
 def test_attachment_accepts_outgoing_part_of_parent(complete_records):
@@ -376,6 +427,17 @@ def test_incoming_child_attachment_link_does_not_establish_parent_lineage(comple
     _add_relationship(complete_records, "child-attachment", "example-document", "annex_to")
     issues = _issues(complete_records)
     assert any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
+
+
+def test_analytical_lineage_with_blank_rationale_does_not_qualify(complete_records):
+    complete_records["documents"][0].data["record_level"] = "version"
+    later = deepcopy(complete_records["documents"][0].data)
+    later.update(id="later-document", slug="later-document", record_level="principal", official_reference="LATER", version_label=None)
+    _add_document(complete_records, later, "later-document")
+    _add_relationship(complete_records, "later-document", "example-document", "revises", basis="analytical", rationale="   ")
+    issues = _issues(complete_records)
+    assert any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
+    assert any(issue.record_path.endswith("later-document-revises-example-document.json") and issue.field == "rationale" for issue in issues)
 
 
 def test_analytical_relationship_rejects_unofficial_evidence(complete_records):
@@ -521,6 +583,23 @@ def test_cli_relationship_issue_makes_source_document_not_ready(tmp_path, comple
     payload = json.loads(result.stdout)
     assert result.returncode == 1
     assert payload["documents_checked"] == 1 and payload["documents_ready"] == 0
+
+
+def test_cli_incoming_invalid_relationship_affects_source_and_target(tmp_path, complete_records):
+    complete_records["documents"][0].data["record_level"] = "version"
+    later = deepcopy(complete_records["documents"][0].data)
+    later.update(id="later-document", slug="later-document", record_level="principal", official_reference="LATER", version_label=None)
+    _add_document(complete_records, later, "later-document")
+    _add_relationship(complete_records, "later-document", "example-document", "revises")
+    _add_relationship(complete_records, "later-document", "example-document", "version_of", basis="analytical", rationale=" ")
+    invalid = complete_records["relationships"][-1]
+    invalid.data["id"] = "incoming-invalid-analytical"
+    complete_records["relationships"][-1] = LoadedRecord(invalid.data, Path("data/relationships/incoming-invalid-analytical.json"))
+    _write_cli_project(tmp_path, complete_records)
+    result = _run_cli(tmp_path)
+    payload = json.loads(result.stdout)
+    assert result.returncode == 1
+    assert payload["documents_checked"] == 2 and payload["documents_ready"] == 0
 
 
 @pytest.mark.parametrize("cutoff", ["2026-9-04", "2026-02-29", "today"])

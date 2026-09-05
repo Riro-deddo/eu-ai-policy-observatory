@@ -384,11 +384,16 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Error: invalid project input ({type(error).__name__}).", file=sys.stderr)
         return 2
     issue_paths = {issue.record_path for issue in issues}
-    relationship_sources = {
-        record.path.as_posix(): record.data.get("source_entity_id")
-        for record in records.get("relationships", ())
-    }
-    affected_ids = {relationship_sources[path] for path in issue_paths if path in relationship_sources}
+    relationship_documents: dict[str, set[str]] = {}
+    for record in records.get("relationships", ()):
+        endpoint_ids = {
+            record.data.get(f"{side}_entity_id")
+            for side in ("source", "target")
+            if record.data.get(f"{side}_entity_type") == "document"
+            and isinstance(record.data.get(f"{side}_entity_id"), str)
+        }
+        relationship_documents[record.path.as_posix()] = endpoint_ids
+    affected_ids = set().union(*(relationship_documents[path] for path in issue_paths if path in relationship_documents))
     ready = sum(record.path.as_posix() not in issue_paths and record.data.get("id") not in affected_ids for record in published)
     payload = {
         "contract_version": CONTRACT_VERSION,

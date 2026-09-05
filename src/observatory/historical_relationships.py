@@ -12,6 +12,15 @@ from observatory.validate import _is_official_source
 
 _VERSION_RELATIONSHIPS = {"version_of", "revises"}
 _ATTACHMENT_PARENT_RELATIONSHIPS = {"annex_to", "part_of"}
+_ENTITY_DIRECTORIES = {
+    "policy": "policies",
+    "document": "documents",
+    "event": "events",
+    "concept": "concepts",
+    "institution": "institutions",
+    "relationship": "relationships",
+    "source": "sources",
+}
 
 
 def _issue(record: LoadedRecord, field: str, message: str) -> ValidationIssue:
@@ -49,8 +58,19 @@ def validate_historical_relationships(
         if isinstance(document_id, str):
             documents_by_id[document_id].append(document)
 
+    endpoints: dict[tuple[str, str], list[LoadedRecord]] = defaultdict(list)
+    for entity_type, directory in _ENTITY_DIRECTORIES.items():
+        for record in records.get(directory, ()):
+            data = record.data
+            if not isinstance(data, Mapping) or data.get("publication_status") != "published":
+                continue
+            record_id = data.get("id")
+            if data.get("entity_type") == entity_type and isinstance(record_id, str):
+                endpoints[(entity_type, record_id)].append(record)
+
     outgoing: dict[str, list[LoadedRecord]] = defaultdict(list)
     incoming: dict[str, list[LoadedRecord]] = defaultdict(list)
+    eligible: dict[str, bool] = {}
     for relationship in records.get("relationships", ()):
         if not isinstance(relationship.data, Mapping):
             continue
@@ -62,19 +82,45 @@ def validate_historical_relationships(
             outgoing[source_id].append(relationship)
         if data.get("target_entity_type") == "document" and isinstance(target_id, str):
             incoming[target_id].append(relationship)
-        if not _official_evidence(data, sources):
+        endpoint_keys: list[tuple[str, str] | None] = []
+        endpoints_valid = True
+        for side in ("source", "target"):
+            entity_type, entity_id = data.get(f"{side}_entity_type"), data.get(f"{side}_entity_id")
+            if not isinstance(entity_type, str) or entity_type not in _ENTITY_DIRECTORIES:
+                issues.append(_issue(relationship, f"{side}_entity_type", "Relationship endpoint must declare a canonical entity type."))
+                endpoint_keys.append(None)
+                endpoints_valid = False
+                continue
+            if not isinstance(entity_id, str) or len(endpoints.get((entity_type, entity_id), ())) != 1:
+                issues.append(_issue(relationship, f"{side}_entity_id", "Relationship endpoint must resolve uniquely to a published record of its declared type."))
+                endpoint_keys.append(None)
+                endpoints_valid = False
+                continue
+            endpoint_keys.append((entity_type, entity_id))
+        if len(endpoint_keys) == 2 and endpoint_keys[0] is not None and endpoint_keys[0] == endpoint_keys[1]:
+            issues.append(_issue(relationship, "target_entity_id", "Relationship endpoints must refer to different records."))
+            endpoints_valid = False
+        evidence_valid = _official_evidence(data, sources)
+        if not evidence_valid:
             issues.append(_issue(relationship, "evidence_source_id", "Published relationships require one published official HTTPS evidence source."))
-        if data.get("basis") == "analytical":
+        basis = data.get("basis")
+        rationale_valid = basis == "official"
+        if basis == "analytical":
             rationale = data.get("rationale")
-            if not isinstance(rationale, str) or not rationale.strip():
+            rationale_valid = isinstance(rationale, str) and bool(rationale.strip())
+            if not rationale_valid:
                 issues.append(_issue(relationship, "rationale", "Analytical relationships require a nonblank rationale."))
+        elif basis != "official":
+            issues.append(_issue(relationship, "basis", "Published relationships require an official or analytical basis."))
+        eligible[relationship.path.as_posix()] = endpoints_valid and evidence_valid and rationale_valid
 
     def valid_edge(relationship: LoadedRecord, document_id: str, *, incoming_edge: bool) -> bool:
         data = relationship.data
         other_id = data.get("source_entity_id" if incoming_edge else "target_entity_id")
         other_type = data.get("source_entity_type" if incoming_edge else "target_entity_type")
         return (
-            isinstance(other_id, str)
+            eligible.get(relationship.path.as_posix(), False)
+            and isinstance(other_id, str)
             and other_type == "document"
             and other_id != document_id
             and other_id in documents_by_id
