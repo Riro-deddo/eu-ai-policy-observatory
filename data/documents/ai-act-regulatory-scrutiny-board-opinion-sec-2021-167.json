@@ -10,7 +10,9 @@
   "document_type": "opinion",
   "record_level": "supporting",
   "official_reference": "SEC(2021) 167 final",
-  "procedure_references": ["2021/0106(COD)"],
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
   "oj_reference": null,
   "document_date": "2021-03-22",
   "version_label": "Second opinion",
@@ -21,10 +23,24 @@
   "eli": null,
   "language": "en",
   "official_summary": null,
-  "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
-  "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"],
-  "concept_ids": ["risk", "accountability", "compliance"],
-  "source_ids": ["ai-act-rsb-opinion-eur-lex"],
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "accountability",
+    "compliance"
+  ],
+  "source_ids": [
+    "ai-act-rsb-opinion-eur-lex"
+  ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
     "policy_stage": "proposal",
@@ -33,5 +49,12 @@
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
-  }
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }

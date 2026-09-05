@@ -19,6 +19,8 @@ const document = (id, date, details = {}) => ({
   short_title: id,
   document_type: 'communication',
   record_level: 'principal',
+  sector_tags: [],
+  provenance_tags: [],
   official_reference: null,
   procedure_references: [],
   oj_reference: null,
@@ -56,6 +58,7 @@ const data = {
   policies: [],
   documents: [
     document('document-2018', '2018-04-25'),
+    document('document-version', '2022-06-15', { record_level: 'version' }),
     document('document-2024', '2024-07-12', {
       document_date: '2024-06-13',
       document_type: 'regulation',
@@ -81,6 +84,7 @@ test('timeline entries use base-agnostic paths and deterministic ascending chron
   assert.deepEqual(entries.map((entry) => entry.id), [
     'document-2018',
     'event-same-date',
+    'document-version',
     'event-unlinked',
     'document-2024',
     'event-2024',
@@ -168,4 +172,18 @@ test('timeline filtering inherits document metadata, uses AND semantics and pres
     'event-2024',
   ]);
   assert.deepEqual(entries.map((entry) => entry.id), before);
+});
+
+test('principal timeline view excludes version records but retains unlinked events', () => {
+  const entries = buildTimelineEntries(data);
+
+  assert.deepEqual(filterTimeline(entries, {}).map((entry) => entry.id), [
+    'document-2018',
+    'event-same-date',
+    'event-unlinked',
+    'document-2024',
+    'event-2024',
+  ]);
+  assert.ok(filterTimeline(entries, { view: 'all' }).some((entry) => entry.id === 'document-version'));
+  assert.equal(entries.find((entry) => entry.id === 'event-unlinked').recordLevel, null);
 });

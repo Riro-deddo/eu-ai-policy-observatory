@@ -21,6 +21,15 @@ test('Timeline retains a complete no-JavaScript chronology and escapes embedded 
   assert.match(timeline, /entry\.kind === 'document' \? 'Document date' : 'Event date'/);
 });
 
+test('Timeline defaults to principal records and offers all documents and versions', () => {
+  assert.match(timeline, /<input[^>]*type="radio"[^>]*name="view"[^>]*value="principal"[^>]*checked/);
+  assert.match(timeline, /Principal documents/);
+  assert.match(timeline, /<input[^>]*type="radio"[^>]*name="view"[^>]*value="all"/);
+  assert.match(timeline, /All documents and versions/);
+  assert.match(timeline, /filterTimeline\(entries, criteria\)/);
+  assert.match(timeline, /year\.hidden = !year\.querySelector\('\[data-timeline-entry\]:not\(\[hidden\]\)'\)/);
+});
+
 test('Policy Map has an accessible SVG, explicit relationship legend and text alternative', () => {
   assert.match(policyMap, /<svg[^>]*aria-labelledby=/);
   assert.match(policyMap, /Official relationship/);

@@ -1,6 +1,7 @@
 .superpowers/
 .worktrees/
 .venv/
+.python-deps/
 work/
 outputs/
 node_modules/

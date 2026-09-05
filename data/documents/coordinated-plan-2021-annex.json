@@ -21,10 +21,25 @@
   "eli": null,
   "language": "en",
   "official_summary": null,
-  "institution_roles": [{"institution_id": "european-commission", "role": "author"}],
-  "policy_ids": ["european-ai-policy-pathway", "coordinated-european-ai-strategy"],
-  "concept_ids": ["trustworthiness", "risk", "compliance", "accountability"],
-  "source_ids": ["coordinated-plan-2021-annex-eur-lex"],
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "coordinated-european-ai-strategy"
+  ],
+  "concept_ids": [
+    "trustworthiness",
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "coordinated-plan-2021-annex-eur-lex"
+  ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "coordination",
@@ -33,5 +48,12 @@
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
-  }
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }

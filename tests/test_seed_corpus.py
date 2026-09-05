@@ -1,5 +1,9 @@
 import json
 from pathlib import Path
+import shutil
+import subprocess
+import sys
+import tempfile
 
 
 def test_seed_corpus_preserves_stable_identifiers_and_version_metadata():
@@ -50,6 +54,40 @@ def test_seed_corpus_preserves_stable_identifiers_and_version_metadata():
     assert documents["ai-act-proposal"]["official_reference"] == "COM(2021) 206 final"
     assert documents["ai-act-proposal"]["procedure_references"] == ["2021/0106(COD)"]
     assert {document_id: document["version_status"] for document_id, document in seed_documents.items()} == expected_version_statuses
+
+
+def test_classification_migration_preserves_ordered_document_ids_and_slugs():
+    source_root = Path("data/documents")
+
+    def ordered_id_slug_pairs(root):
+        return [
+            (document["id"], document["slug"])
+            for document in (
+                json.loads(path.read_text(encoding="utf-8"))
+                for path in sorted(root.glob("*.json"))
+            )
+        ]
+
+    with tempfile.TemporaryDirectory(dir=".") as temporary_directory:
+        copied_root = Path(temporary_directory) / "documents"
+        shutil.copytree(source_root, copied_root)
+        before = ordered_id_slug_pairs(copied_root)
+        result = subprocess.run(
+            [
+                sys.executable,
+                "scripts/migrate_document_classifications.py",
+                "--data-root",
+                str(copied_root),
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+
+        assert result.returncode == 0, result.stderr
+        after = ordered_id_slug_pairs(copied_root)
+        assert len(after) == len(before)
+        assert after == before
 
 
 def test_seed_corpus_uses_current_withdrawn_status_and_no_editorial_official_summaries():

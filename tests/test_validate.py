@@ -196,6 +196,71 @@ def test_document_version_metadata_is_checked_against_controlled_vocabularies(
     )
 
 
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("sector_tags", ["general_cross_sector", "invented_sector"]),
+        ("provenance_tags", ["officially_published", "third_party_submission"]),
+    ],
+)
+def test_document_classification_arrays_use_controlled_vocabularies(
+    tmp_path, field, value
+):
+    data_root = _copy_valid_data(tmp_path)
+    path = data_root / "documents" / "example-document.json"
+    document = json.loads(path.read_text(encoding="utf-8"))
+    document[field] = value
+    path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert any(issue.code == "vocabulary" and issue.field == f"{field}.1" for issue in issues)
+
+
+@pytest.mark.parametrize(
+    ("publication_status", "version_status", "legal_status"),
+    [
+        ("verified", "final", "in_force"),
+        ("published", "draft", "in_force"),
+        ("published", "consolidated", "proposed"),
+        ("published", "consolidated", "withdrawn"),
+    ],
+)
+def test_invalid_document_status_combinations_are_rejected(
+    tmp_path, publication_status, version_status, legal_status
+):
+    data_root = _copy_valid_data(tmp_path)
+    path = data_root / "documents" / "example-document.json"
+    document = json.loads(path.read_text(encoding="utf-8"))
+    document.update(
+        publication_status=publication_status,
+        version_status=version_status,
+        legal_status=legal_status,
+    )
+    path.write_text(json.dumps(document), encoding="utf-8")
+
+    assert any(
+        issue.code == "status_combination"
+        for issue in validate_records(data_root, SCHEMA, VOCAB)
+    )
+
+
+def test_published_draft_with_non_binding_status_is_allowed(tmp_path):
+    data_root = _copy_valid_data(tmp_path)
+    path = data_root / "documents" / "example-document.json"
+    document = json.loads(path.read_text(encoding="utf-8"))
+    document.update(
+        publication_status="published",
+        version_status="draft",
+        legal_status="non_binding",
+    )
+    path.write_text(json.dumps(document), encoding="utf-8")
+
+    issues = validate_records(data_root, SCHEMA, VOCAB)
+
+    assert not any(issue.code == "status_combination" for issue in issues)
+
+
 def test_duplicate_document_identity_uses_normalised_version_and_institution_ids(tmp_path):
     data_root = _copy_valid_data(tmp_path)
     (data_root / "institutions" / "european-parliament.json").write_text(

@@ -1,275 +1,603 @@
 {
   "generated_at": "2026-09-04T00:00:00Z",
+  "coverage_cutoff": "2026-09-04",
   "sources": [
     {
       "id": "eur-lex-procedure-2021-0106",
       "name": "EUR-Lex procedure 2021/0106/COD",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex legislative procedures",
       "url": "https://eur-lex.europa.eu/procedure/EN/2021_106",
       "scope_note": "Primary procedure entrance for the original Artificial Intelligence Act, including the proposal, preparatory documents, institutional steps and adopted act.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed procedure 2021/0106/COD and each linked official document record.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eur-lex-procedure-2025-0359",
       "name": "EUR-Lex procedure 2025/0359/COD",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex legislative procedures",
       "url": "https://eur-lex.europa.eu/procedure/EN/2025_359",
       "scope_note": "Primary procedure entrance for the Digital Omnibus on AI amendment process and its adopted act.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed procedure 2025/0359/COD and each linked official document record.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eur-lex-commission-communications",
       "name": "EUR-Lex advanced search: Commission AI communications, 2018–2026",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex policy libraries",
       "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
       "scope_note": "Search entrance for English Commission communications about artificial intelligence within the 2018–2026 date boundary; exact CELEX records are retained per candidate.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "communication"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried English Commission communications for artificial intelligence from 2018 through the cutoff.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eur-lex-commission-staff-documents",
       "name": "EUR-Lex advanced search: Commission AI staff working documents, 2018–2026",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex policy libraries",
       "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
       "scope_note": "Search entrance for English SWD records supporting the AI Act and directly related Commission initiatives within 2018–2026.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "staff_working_document"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried English Commission staff working documents supporting the AI Act and directly related initiatives.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eur-lex-ai-decisions-and-regulations",
       "name": "EUR-Lex advanced search: AI decisions and regulations, 2018–2026",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex policy libraries",
       "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
       "scope_note": "Search entrance for English decisions, regulations and implementing regulations that establish, amend or directly implement the AI Act within 2018–2026.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "regulation",
+        "decision",
+        "implementing_regulation"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried English decisions and regulations that establish, amend or directly implement the AI Act.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "ep-oeil-2021-0106",
       "name": "European Parliament Legislative Observatory procedure 2021/0106(COD)",
       "institution": "European Parliament",
+      "source_family": "European Parliament Legislative Observatory",
       "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29",
       "scope_note": "Parliament procedure file and documentation gateway for committee reports, opinions, amendments and plenary decisions on the original AI Act.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the Legislative Observatory procedure file and its linked committee and plenary documents.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "ep-adopted-texts-2021-0106",
       "name": "European Parliament adopted texts for 2021/0106(COD)",
       "institution": "European Parliament",
+      "source_family": "European Parliament document register",
       "url": "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html",
       "scope_note": "Adopted-text entrance linking the 2023 and 2024 Parliament positions and related parliamentary documents.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "institutional_position",
+        "resolution"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the adopted-text record and linked Parliament positions for procedure 2021/0106(COD).",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "council-register-2021-0106",
       "name": "Council public register: 2021/0106(COD)",
       "institution": "Council of the European Union",
+      "source_family": "Council public register",
       "url": "https://www.consilium.europa.eu/en/documents-publications/public-register/",
       "scope_note": "Council public-register search for the original AI Act procedure, including mandates, compromise texts, general approach and formal positions.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried the Council public register for procedure 2021/0106(COD) and verified linked document versions.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "council-register-2025-0359",
       "name": "Council public register: 2025/0359(COD)",
       "institution": "Council of the European Union",
+      "source_family": "Council public register",
       "url": "https://www.consilium.europa.eu/en/documents-publications/public-register/",
       "scope_note": "Council public-register search for the Digital Omnibus on AI amendment procedure.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried the Council public register for procedure 2025/0359(COD) and verified linked document versions.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eesc-opinion-register",
       "name": "European Economic and Social Committee opinions",
       "institution": "European Economic and Social Committee",
+      "source_family": "EU institutional opinion registers",
       "url": "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions",
       "scope_note": "Opinion-register entrance for formal EESC opinions on the AI Act and directly related AI policy files.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried the EESC opinion register for formal opinions on the AI Act and directly related AI files.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "cor-opinion-register",
       "name": "European Committee of the Regions opinions",
       "institution": "European Committee of the Regions",
+      "source_family": "EU institutional opinion registers",
       "url": "https://cor.europa.eu/en/our-work/Pages/Opinions.aspx",
       "scope_note": "Opinion-register entrance for formal Committee of the Regions opinions on the AI Act and directly related AI initiatives.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried the Committee of the Regions opinion register for the AI Act and directly related AI initiatives.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "ecb-opinion-register",
       "name": "European Central Bank legal opinions",
       "institution": "European Central Bank",
+      "source_family": "EU institutional opinion registers",
       "url": "https://www.ecb.europa.eu/ecb/legal/opinions/html/index.en.html",
       "scope_note": "Legal-opinion register for ECB opinions associated with the AI Act and the Digital Omnibus on AI.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [
+        "financial_services"
+      ],
+      "discovery_method": "Queried the ECB legal-opinion register for opinions associated with the AI Act and its amendments.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "edpb-legislative-opinions",
       "name": "EDPB positions on legislative proposals",
       "institution": "European Data Protection Board",
+      "source_family": "EU institutional opinion registers",
       "url": "https://www.edpb.europa.eu/positions-of-the-edpb-on-legislative-proposals_en",
       "scope_note": "Official EDPB entrance for joint EDPB–EDPS opinions on the original AI Act and its amendment.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the EDPB legislative-opinion index for opinions directly addressing the AI Act files.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "edps-joint-opinion-register",
       "name": "EDPS–EDPB joint opinions",
       "institution": "European Data Protection Supervisor",
+      "source_family": "EU institutional opinion registers",
       "url": "https://www.edps.europa.eu/data-protection/our-work/our-work-by-type/edps-edpb-joint-opinions_en",
       "scope_note": "Official EDPS register for joint opinions that directly address the AI Act legislative files.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the EDPS register of joint opinions for records directly addressing the AI Act files.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-ai-act-framework",
       "name": "Commission AI Act regulatory framework",
       "institution": "European Commission",
+      "source_family": "European Commission policy libraries",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
       "scope_note": "Commission implementation hub linking the AI Act, implementation timeline, guidance, codes, templates, governance and amendment instruments.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the Commission regulatory-framework hub and its linked implementation instruments.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-ai-office",
       "name": "European AI Office",
       "institution": "European Commission",
+      "source_family": "European Commission policy libraries",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
       "scope_note": "AI Office entrance for implementation, enforcement, guidance, codes, templates and institutional material.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the AI Office policy entrance and its linked guidance, code, template and governance material.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-ai-hleg-publications",
       "name": "Commission AI High-Level Expert Group publications",
       "institution": "European Commission",
+      "source_family": "European Commission expert-group publications",
       "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai",
       "scope_note": "Official Commission publication entrance for the Ethics Guidelines and associated assessment material.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "expert_guidelines",
+        "template"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the Commission publication entrance for the expert group's guidelines and assessment material.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "ai-office-gpai-code",
       "name": "AI Office General-Purpose AI Code of Practice process",
       "institution": "European Commission",
+      "source_family": "European AI Office publication pages",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice",
       "scope_note": "Official process page for GPAI Code drafts, the final Code, related Commission assessment, training-content template and guidance.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "guidelines",
+        "code_of_practice",
+        "template"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the official GPAI Code process page, each draft, final component and linked implementation material.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "ai-office-gpai-guidance",
       "name": "AI Office guidance for GPAI providers",
       "institution": "European Commission",
+      "source_family": "European AI Office publication pages",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers",
       "scope_note": "Official guidance hub for GPAI provider obligations, submission materials and linked compliance instruments.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "guidelines",
+        "template"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the official GPAI provider-guidance hub and its linked compliance instruments.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "european-ai-board-documents",
       "name": "European AI Board documents",
       "institution": "European Artificial Intelligence Board",
+      "source_family": "European AI Board publication pages",
       "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
       "scope_note": "Official Board page for meeting records and endorsed documents that directly interpret or support AI Act implementation.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "opinion",
+        "report"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the official AI Board page for independently citable endorsed documents and reports.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-consultation-high-risk",
       "name": "Commission consultation on high-risk AI classification guidelines",
       "institution": "European Commission",
+      "source_family": "European Commission consultation registers",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
       "scope_note": "Official consultation entrance for the draft high-risk classification guidelines and consultation materials.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "guidelines",
+        "consultation_document"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the targeted consultation entrance and each published high-risk classification draft.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-consultation-incidents",
       "name": "Commission consultation on serious AI incident reporting",
       "institution": "European Commission",
+      "source_family": "European Commission consultation registers",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
       "scope_note": "Official consultation entrance for draft Article 73 guidance and the serious-incident reporting template.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "guidelines",
+        "template",
+        "consultation_document"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the serious-incident consultation entrance and each published draft or template.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-consultation-transparency",
       "name": "Commission consultation on AI Act transparency obligations",
       "institution": "European Commission",
+      "source_family": "European Commission consultation registers",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/consultation-draft-guidelines-transparency-obligations-under-ai-act",
       "scope_note": "Official consultation entrance for Article 50 draft guidelines and related transparency instruments.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "guidelines",
+        "code_of_practice",
+        "consultation_document"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the transparency consultation entrance and each linked draft, final text and code instrument.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-standardisation-notifications",
       "name": "Commission standardisation-request notification system",
       "institution": "European Commission",
+      "source_family": "European Commission standardisation notifications",
       "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/notification-system_en",
       "scope_note": "Official notification entrance for adopted and draft AI standardisation requests, including the 2025 amendment and 2026 follow-up draft.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "standardisation_request"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed AI standardisation-request notifications and linked adopted or draft instruments.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-register-c-2023-3215",
       "name": "Register of Commission Documents: C(2023) 3215",
       "institution": "European Commission",
+      "source_family": "Register of Commission Documents",
       "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
       "scope_note": "Official register record for the 2023 AI standardisation request M/593 and its attachments.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "standardisation_request"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed Commission register record C(2023) 3215 and its linked attachments.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-register-c-2025-3871",
       "name": "Register of Commission Documents: C(2025) 3871",
       "institution": "European Commission",
+      "source_family": "Register of Commission Documents",
       "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
       "scope_note": "Official register record for the amended AI standardisation request M/613, which repeals C(2023) 3215, and its attachments.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "standardisation_request"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed Commission register record C(2025) 3871 and its linked attachments.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eur-lex-ai-pathway-2018-2021",
       "name": "EUR-Lex AI policy pathway verification, 2018–2021",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex policy libraries",
       "url": "https://eur-lex.europa.eu/search.html?lang=en&scope=EURLEX&text=artificial%20intelligence",
       "scope_note": "Bounded verification entrance for Commission AI communications, reports and related formal opinions dated 2018–2021; exact record URLs are retained in the candidate inventory and canonical sources.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Queried the bounded 2018–2021 AI policy pathway and verified each retained exact record.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "eur-lex-ai-act-proposal-package-2021",
       "name": "EUR-Lex AI Act proposal package, 2021",
       "institution": "Publications Office of the European Union",
+      "source_family": "EUR-Lex legislative procedures",
       "url": "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=CELEX:52021PC0206",
       "scope_note": "Bounded scan of the initial 2021 proposal package, including COM(2021) 206, its annexes, SEC(2021) 167, SWD(2021) 84 and SWD(2021) 85 plus Council transmission manifestations.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the 2021 proposal history and each linked proposal-package document or transmission.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-white-paper-consultation-2020",
       "name": "Commission White Paper on Artificial Intelligence consultation",
       "institution": "European Commission",
+      "source_family": "European Commission consultation registers",
       "url": "https://digital-strategy.ec.europa.eu/en/consultations/white-paper-artificial-intelligence-european-approach-excellence-and-trust",
       "scope_note": "Official consultation page and linked explanatory material for the 2020 White Paper and safety and liability report.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "white_paper",
+        "report",
+        "consultation_document"
+      ],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the White Paper consultation page and its linked policy and explanatory documents.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     },
     {
       "id": "commission-ai-package-press-2021",
       "name": "Commission press material for the 2021 AI package",
       "institution": "European Commission",
+      "source_family": "European Commission policy libraries",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1682",
       "scope_note": "Official press entrance used to distinguish explanatory material from the independently citable 2021 policy and legislative documents.",
-      "scan_status": "complete",
-      "checked_at": "2026-09-04T00:00:00Z"
+      "covered_from": "2018-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [],
+      "covered_sector_tags": [],
+      "discovery_method": "Reviewed the official 2021 AI package press entrance to distinguish explanatory pages from citable documents.",
+      "scan_status": "reviewed",
+      "checked_at": "2026-09-04T00:00:00Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Yichen Hao",
+      "verification_note": "The documented bounded query completed without an unresolved access failure."
     }
   ]
 }

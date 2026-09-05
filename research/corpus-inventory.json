@@ -13,10 +13,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018DC0237",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified foundational Commission communication in the bounded AI Act policy pathway.",
       "document_id": "artificial-intelligence-for-europe",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "coordinated-plan-on-artificial-intelligence",
@@ -30,10 +38,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018DC0795",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified Commission coordination instrument in the selected contextual tier.",
       "document_id": "coordinated-plan-on-artificial-intelligence",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ethics-guidelines-for-trustworthy-ai",
@@ -47,10 +63,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified final expert guidelines central to the project's trustworthiness lens.",
       "document_id": "ethics-guidelines-for-trustworthy-ai",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "white-paper-on-artificial-intelligence",
@@ -64,10 +88,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0065",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified Commission White Paper that precedes the legislative proposal.",
       "document_id": "white-paper-on-artificial-intelligence",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-proposal",
@@ -81,10 +113,18 @@
       "record_level": "principal",
       "version_label": "Final proposal",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified Commission proposal opening procedure 2021/0106(COD).",
       "document_id": "ai-act-proposal",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-liability-directive-proposal",
@@ -98,10 +138,18 @@
       "record_level": "principal",
       "version_label": "Final proposal",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified contextual proposal needed for the project's accountability and liability analysis.",
       "document_id": "ai-liability-directive-proposal",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "artificial-intelligence-act",
@@ -115,10 +163,18 @@
       "record_level": "principal",
       "version_label": "Official Journal text",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified final act adopted under procedure 2021/0106(COD).",
       "document_id": "artificial-intelligence-act",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "building-trust-human-centric-ai",
@@ -132,10 +188,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52019DC0168",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies COM(2019) 168 final, CELEX 52019DC0168, its official English title and document date.",
       "document_id": "building-trust-human-centric-ai",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "altai-assessment-list",
@@ -149,10 +213,18 @@
       "record_level": "supporting",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The Commission library page verifies the final AI HLEG Assessment List and its publication on 17 July 2020.",
       "document_id": "altai-assessment-list",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "coordinated-plan-2021-review",
@@ -166,10 +238,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0205",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies COM(2021) 205 final as the covering communication; its separately downloadable Coordinated Plan annex is inventoried independently.",
       "document_id": "coordinated-plan-2021-review",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-impact-assessment-swd-2021-84",
@@ -184,10 +264,18 @@
       "record_level": "supporting",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021SC0084",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies SWD(2021) 84 final and CELEX 52021SC0084; the separately transmitted annexes are inventoried independently.",
       "document_id": "ai-act-impact-assessment-swd-2021-84",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
@@ -202,10 +290,18 @@
       "record_level": "attachment",
       "version_label": "Final executive summary",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021SC0085",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies SWD(2021) 85 final, CELEX 52021SC0085 and its status as the executive summary accompanying the proposal.",
       "document_id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "eesc-opinion-ai-act-2021",
@@ -220,10 +316,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AE2482",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex and the EESC register verify EESC 2021/02482, CELEX 52021AE2482 and OJ reference 2021/C 517/09.",
       "document_id": "eesc-opinion-ai-act-2021",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "cor-opinion-ai-act-2021",
@@ -238,10 +342,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AR2682",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies COR 2021/02682, CELEX 52021AR2682, its vote date and later Official Journal publication.",
       "document_id": "cor-opinion-ai-act-2021",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ecb-opinion-con-2021-40",
@@ -256,10 +368,19 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AB0040",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "financial_services"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies CON/2021/40, CELEX 52021AB0040, its adoption date and OJ reference 2022/C 115/05.",
       "document_id": "ecb-opinion-con-2021-40",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "edpb-edps-joint-opinion-5-2021",
@@ -274,10 +395,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://www.edps.europa.eu/system/files/2021-06/2021-06-18-edpb-edps_joint_opinion_ai_regulation_en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official EDPB and EDPS records and English joint PDF verify Joint Opinion 5/2021 and its adoption on 18 June 2021.",
       "document_id": "edpb-edps-joint-opinion-5-2021",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "council-general-approach-st-15698-2022",
@@ -291,10 +420,18 @@
       "record_level": "version",
       "version_label": "General approach",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-15698-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official outcome-of-proceedings text is the definitive Council general approach and has verified version and event relationships.",
       "document_id": "ai-act-council-general-approach-st-15698-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-joint-committee-report-a9-0188-2023",
@@ -308,10 +445,18 @@
       "record_level": "supporting",
       "version_label": "Committee report",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/A-9-2023-0188_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The verified adopted joint-committee report is a core procedural document and is linked to the proposal and draft report.",
       "document_id": "ep-joint-committee-report-a9-0188-2023",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-position-p9-ta-2023-0236",
@@ -326,10 +471,18 @@
       "record_level": "version",
       "version_label": "Parliament amendments",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The adopted Parliament amendments form a verified core negotiating position with CELEX and ELI metadata.",
       "document_id": "ep-position-p9-ta-2023-0236",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-position-p9-ta-2024-0138",
@@ -344,10 +497,18 @@
       "record_level": "version",
       "version_label": "First-reading position",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024AP0138",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The verified first-reading position is a core legislative version and its revision of the 2023 text is explicitly encoded.",
       "document_id": "ep-position-p9-ta-2024-0138",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "commission-decision-ai-office-2024",
@@ -362,10 +523,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024D01459",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies the decision, CELEX, Official Journal reference and ELI; it directly establishes an AI Act governance body.",
       "document_id": "commission-decision-ai-office-2024",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "standardisation-request-c-2023-3215",
@@ -380,10 +549,18 @@
       "record_level": "principal",
       "version_label": "M/593",
       "official_source_url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The Commission register verifies the decision and annexed M/593 request as the original AI standardisation request.",
       "document_id": "ai-standardisation-request-c-2023-3215",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-first-draft",
@@ -397,10 +574,18 @@
       "record_level": "version",
       "version_label": "First draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/first-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-first-draft",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-second-draft",
@@ -414,10 +599,18 @@
       "record_level": "version",
       "version_label": "Second draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/second-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-second-draft",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-third-draft",
@@ -431,10 +624,18 @@
       "record_level": "version",
       "version_label": "Third draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-third-draft",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-final",
@@ -448,10 +649,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-final",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-provider-guidelines-2025",
@@ -465,10 +674,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-provider-guidelines-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-training-content-template-2025",
@@ -482,10 +699,18 @@
       "record_level": "principal",
       "version_label": "Final template",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-training-content-template-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-adequacy-assessment-2025",
@@ -500,10 +725,18 @@
       "record_level": "supporting",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "Generic discovery entry resolved into the separately verified AI Board adequacy assessment; the Commission opinion is catalogued independently.",
       "document_id": null,
-      "merged_into_document_id": "ai-board-assessment-gpai-code-2025"
+      "merged_into_document_id": "ai-board-assessment-gpai-code-2025",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "scientific-panel-implementing-regulation-2025-454",
@@ -517,10 +750,18 @@
       "record_level": "principal",
       "version_label": "Official Journal text",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0454",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "scientific-panel-implementing-regulation-2025-454",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-proposal-2025",
@@ -534,10 +775,18 @@
       "record_level": "principal",
       "version_label": "Commission proposal",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0836",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-proposal-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "edpb-edps-joint-opinion-1-2026",
@@ -551,10 +800,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://www.edpb.europa.eu/system/files/2026-01/edpb_edps_jointopinion_202601_proposal_ai-omnibus_en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "edpb-edps-joint-opinion-1-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ecb-opinion-con-2026-10",
@@ -568,10 +825,19 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026AB0010",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "financial_services"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ecb-opinion-con-2026-10",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-regulation-2026-1744",
@@ -585,10 +851,18 @@
       "record_level": "principal",
       "version_label": "Official Journal text",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-regulation-2026-1744",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "draft-guidance-serious-ai-incidents-2025",
@@ -602,10 +876,18 @@
       "record_level": "version",
       "version_label": "Consultation draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "draft-guidance-serious-ai-incidents-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "draft-serious-ai-incident-report-template-2025",
@@ -619,10 +901,18 @@
       "record_level": "version",
       "version_label": "Consultation draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/consultations/ai-act-commission-issues-draft-guidance-and-reporting-template-serious-ai-incidents-and-seeks",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "draft-serious-ai-incident-report-template-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "draft-high-risk-classification-guidelines-2026",
@@ -636,10 +926,18 @@
       "record_level": "version",
       "version_label": "Consultation draft — General principles",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "draft-high-risk-classification-guidelines-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "draft-transparency-guidelines-2026",
@@ -653,10 +951,18 @@
       "record_level": "version",
       "version_label": "Consultation draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-guidelines-implementation-transparency-obligations-certain-ai-systems-under-article-50-ai-act",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "draft-transparency-guidelines-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "final-transparency-guidelines-2026",
@@ -670,10 +976,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "final-transparency-guidelines-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "standardisation-request-c-2025-3871",
@@ -687,10 +1001,18 @@
       "record_level": "principal",
       "version_label": "M/613",
       "official_source_url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "standardisation-request-c-2025-3871",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-board-harmonised-standards-report-2026",
@@ -704,10 +1026,18 @@
       "record_level": "supporting",
       "version_label": "Endorsed document",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-board-article-40-standardisation-report-2026",
@@ -721,10 +1051,18 @@
       "record_level": "supporting",
       "version_label": "Endorsed document",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-board-international-standardisation-report-2026",
@@ -738,10 +1076,18 @@
       "record_level": "supporting",
       "version_label": "Endorsed document",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "The AI Board page identifies the title, but an independently retrievable English report file and exact document metadata could not be verified by the 2026-09-04 cutoff; the page remains discovery evidence only.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ethics-guidelines-publications-office-manifestation",
@@ -755,10 +1101,18 @@
       "record_level": "principal",
       "version_label": "Publications Office manifestation",
       "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/d3988569-0434-11ea-8c1f-01aa75ed71a1/language-en",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "This is a second official manifestation of the same English final text, not a distinct policy version.",
       "document_id": null,
-      "merged_into_document_id": "ethics-guidelines-for-trustworthy-ai"
+      "merged_into_document_id": "ethics-guidelines-for-trustworthy-ai",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-eli-manifestation",
@@ -772,10 +1126,18 @@
       "record_level": "principal",
       "version_label": "ELI manifestation",
       "official_source_url": "https://data.europa.eu/eli/reg/2024/1689/oj",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The ELI and EUR-Lex pages identify the same adopted English instrument rather than separate corpus documents.",
       "document_id": null,
-      "merged_into_document_id": "artificial-intelligence-act"
+      "merged_into_document_id": "artificial-intelligence-act",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-adoption-news-2024",
@@ -789,10 +1151,18 @@
       "record_level": "supporting",
       "version_label": null,
       "official_source_url": "https://www.europarl.europa.eu/news/en/agenda/plenary-news/2024-03-11/0/artificial-intelligence-act-parliament-to-adopt-landmark-law",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "This is an official news article used only as event evidence, not an independently citable policy text.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "commission-gpai-code-news-2025",
@@ -806,10 +1176,18 @@
       "record_level": "supporting",
       "version_label": null,
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/news/general-purpose-ai-code-practice-now-available",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "This is an official press release retained as discovery evidence, while the underlying Code files are inventoried separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "coordinated-plan-2018-annex",
@@ -823,10 +1201,18 @@
       "record_level": "attachment",
       "version_label": "Annex — 2018 Coordinated Plan",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018DC0795",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The English EUR-Lex text identifies the substantive coordinated plan as an annex to COM(2018) 795 final.",
       "document_id": "coordinated-plan-2018-annex",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "report-ai-safety-liability-2020",
@@ -840,10 +1226,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0064",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies COM(2020) 64 final, CELEX 52020DC0064, its official English title and document date.",
       "document_id": "report-ai-safety-liability-2020",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "coordinated-plan-2021-annex",
@@ -857,10 +1251,18 @@
       "record_level": "attachment",
       "version_label": "Annex — 2021 Coordinated Plan review",
       "official_source_url": "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:01ff45fa-a375-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official English EUR-Lex PDF is a separately citable annex containing the substantive 2021 Coordinated Plan review.",
       "document_id": "coordinated-plan-2021-annex",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-proposal-annexes",
@@ -874,10 +1276,18 @@
       "record_level": "attachment",
       "version_label": "Annexes 1 to 9",
       "official_source_url": "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official English EUR-Lex PDF is a separately citable attachment to COM(2021) 206 final.",
       "document_id": "ai-act-proposal-annexes",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-impact-assessment-annexes-swd-2021-84",
@@ -893,10 +1303,18 @@
       "record_level": "attachment",
       "version_label": "Impact assessment annexes",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_2",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Council record ST 8115/21 ADD 2 verifies a separately citable English annex file to SWD(2021) 84 final.",
       "document_id": "ai-act-impact-assessment-annexes-swd-2021-84",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
@@ -911,10 +1329,18 @@
       "record_level": "supporting",
       "version_label": "Second opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=PI_COM:SEC(2021)167",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official Commission PDF verifies SEC(2021) 167, its title and date; the procedure record lists it in the proposal package.",
       "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "eesc-opinion-coordinated-plan-2021",
@@ -929,10 +1355,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AE2456",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "EUR-Lex verifies EESC 2021/02456, CELEX 52021AE2456 and OJ reference 2021/C 517/08.",
       "document_id": "eesc-opinion-coordinated-plan-2021",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "altai-official-pdf-manifestation",
@@ -946,10 +1380,18 @@
       "record_level": "supporting",
       "version_label": "Official PDF manifestation",
       "official_source_url": "https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The linked English PDF is a manifestation of the same final ALTAI record, not a distinct policy version.",
       "document_id": null,
-      "merged_into_document_id": "altai-assessment-list"
+      "merged_into_document_id": "altai-assessment-list",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-proposal-council-transmission-st-8115-2021-init",
@@ -964,10 +1406,18 @@
       "record_level": "principal",
       "version_label": "Council transmission",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_INIT",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council cover note transmits the same Commission proposal text represented by the canonical COM(2021) 206 record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-proposal"
+      "merged_into_document_id": "ai-act-proposal",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-proposal-annexes-council-transmission-st-8115-2021-add-1",
@@ -982,10 +1432,18 @@
       "record_level": "attachment",
       "version_label": "Council transmission",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_1",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council cover note transmits the same Commission proposal annexes represented by the canonical attachment record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-proposal-annexes"
+      "merged_into_document_id": "ai-act-proposal-annexes",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-impact-assessment-annexes-council-transmission-st-8115-2021-add-2",
@@ -1000,10 +1458,18 @@
       "record_level": "attachment",
       "version_label": "Council transmission",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_2",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council cover note is a second manifestation of the canonical SWD(2021) 84 annex record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-impact-assessment-annexes-swd-2021-84"
+      "merged_into_document_id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-impact-assessment-council-transmission-st-8115-2021-add-3",
@@ -1018,10 +1484,18 @@
       "record_level": "supporting",
       "version_label": "Council transmission",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_3",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council cover note transmits SWD(2021) 84 final, already represented by its canonical CELEX record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-impact-assessment-swd-2021-84"
+      "merged_into_document_id": "ai-act-impact-assessment-swd-2021-84",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-impact-summary-council-transmission-st-8115-2021-add-4",
@@ -1036,10 +1510,18 @@
       "record_level": "attachment",
       "version_label": "Council transmission",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_4",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council cover note transmits SWD(2021) 85 final, already represented by its canonical CELEX record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-impact-assessment-executive-summary-swd-2021-85"
+      "merged_into_document_id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-rsb-opinion-council-transmission-st-8115-2021-add-5",
@@ -1054,10 +1536,18 @@
       "record_level": "supporting",
       "version_label": "Council transmission",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_5",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council cover note transmits SEC(2021) 167, already represented by the canonical official Commission PDF record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167"
+      "merged_into_document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "white-paper-ai-questions-and-answers-2020",
@@ -1071,10 +1561,18 @@
       "record_level": "supporting",
       "version_label": null,
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/news/shaping-europes-digital-future-questions-and-answers",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "This is an official explanatory question-and-answer page, not an independently citable policy text.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "commission-ai-package-press-release-2021",
@@ -1088,10 +1586,18 @@
       "record_level": "supporting",
       "version_label": null,
       "official_source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1682",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "This is an official press release retained as discovery and event evidence, not an independently citable policy instrument.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
@@ -1105,10 +1611,18 @@
       "record_level": "version",
       "version_label": "First consolidated Presidency compromise",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official Council text is the first consolidated compromise and a core historical state.",
       "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-second-compromise-st-11124-2022",
@@ -1122,10 +1636,18 @@
       "record_level": "version",
       "version_label": "Second Presidency compromise",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-11124-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official Council text identifies itself as the second compromise and cites the first version.",
       "document_id": "ai-act-council-second-compromise-st-11124-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
@@ -1139,10 +1661,18 @@
       "record_level": "version",
       "version_label": "Third compromise, part one, REV 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official revised file is the first part of the third Presidency compromise.",
       "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
@@ -1156,10 +1686,18 @@
       "record_level": "version",
       "version_label": "Third compromise, part two",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official file completes the third Presidency compromise and is not duplicated by part one.",
       "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-fourth-compromise-st-13102-2022",
@@ -1173,10 +1711,18 @@
       "record_level": "version",
       "version_label": "Fourth Presidency compromise",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-13102-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official fourth compromise identifies changes from the third version.",
       "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-final-compromise-st-13955-2022",
@@ -1190,10 +1736,18 @@
       "record_level": "version",
       "version_label": "Final Presidency compromise",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-13955-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official final Presidency compromise is a distinct historical negotiating state.",
       "document_id": "ai-act-council-final-compromise-st-13955-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-coreper-general-approach-st-14336-2022",
@@ -1207,10 +1761,18 @@
       "record_level": "version",
       "version_label": "Coreper general-approach text",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-14336-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official Coreper text records explicit revisions to ST 13955/22.",
       "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-general-approach-st-14954-2022",
@@ -1224,10 +1786,18 @@
       "record_level": "version",
       "version_label": "Text submitted to Council",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-14954-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official file is the Council-submission manifestation immediately preceding the outcome record.",
       "document_id": "ai-act-council-general-approach-st-14954-2022",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-general-approach-german-statement-14954-add-1",
@@ -1241,10 +1811,18 @@
       "record_level": "attachment",
       "version_label": "Addendum 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-14954-2022-ADD-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The official addendum contains a substantive member-state statement and is linked as an attachment.",
       "document_id": "ai-act-council-general-approach-german-statement-14954-add-1",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-provisional-agreement-st-5662-2024",
@@ -1258,10 +1836,18 @@
       "record_level": "version",
       "version_label": "Final interinstitutional compromise",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-5662-2024-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The annex is the officially published provisional-agreement text and a core historical state.",
       "document_id": "ai-act-provisional-agreement-st-5662-2024",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-draft-report-pe-731563",
@@ -1275,10 +1861,18 @@
       "record_level": "version",
       "version_label": "Joint IMCO-LIBE draft report",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-PR-731563_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The procedure file verifies the joint draft report as the starting parliamentary report version.",
       "document_id": "ep-ai-act-draft-report-pe-731563",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-envi-opinion-pe-699056",
@@ -1292,10 +1886,19 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/ENVI-AD-699056_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "health",
+        "agriculture_and_environment"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal ENVI opinion listed in the official Parliament procedure file.",
       "document_id": "ep-ai-act-envi-opinion-pe-699056",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-itre-opinion-pe-719801",
@@ -1309,10 +1912,19 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/ITRE-AD-719801_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal ITRE opinion listed in the official Parliament procedure file.",
       "document_id": "ep-ai-act-itre-opinion-pe-719801",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-cult-opinion-pe-719637",
@@ -1326,10 +1938,19 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CULT-AD-719637_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "education",
+        "media_and_culture"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal CULT opinion listed in the official Parliament procedure file.",
       "document_id": "ep-ai-act-cult-opinion-pe-719637",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-tran-opinion-pe-730085",
@@ -1343,10 +1964,18 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/TRAN-AD-730085_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "transport_and_mobility"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal TRAN opinion listed in the official Parliament procedure file.",
       "document_id": "ep-ai-act-tran-opinion-pe-730085",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-juri-opinion-pe-719827",
@@ -1360,10 +1989,19 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/JURI-AD-719827_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "justice",
+        "intellectual_property"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal JURI opinion listed in the official Parliament procedure file.",
       "document_id": "ep-ai-act-juri-opinion-pe-719827",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-pe-cons-24-2024",
@@ -1378,10 +2016,18 @@
       "record_level": "version",
       "version_label": "INIT",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/PE-24-2024-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal 14 May legislative-act version retained as a historical state.",
       "document_id": "ai-act-pe-cons-24-2024",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-pe-cons-24-2024-rev-1",
@@ -1396,10 +2042,18 @@
       "record_level": "version",
       "version_label": "REV 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/PE-24-2024-REV-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Formal signed 13 June revised version retained separately from Official Journal publication.",
       "document_id": "ai-act-pe-cons-24-2024-rev-1",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "boosting-startups-innovation-trustworthy-ai",
@@ -1413,10 +2067,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DC0028",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified Commission communication directly connects trustworthy-AI policy and implementation capacity.",
       "document_id": "boosting-startups-innovation-trustworthy-ai",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-adoption-note-st-9645-2024-init",
@@ -1430,10 +2092,18 @@
       "record_level": "supporting",
       "version_label": "I/A item note, INIT",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "Initial manifestation superseded by the verified REV 1 adoption note.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1"
+      "merged_into_document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
@@ -1447,10 +2117,18 @@
       "record_level": "supporting",
       "version_label": "I/A item note, REV 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Final published revision of the Council adoption note.",
       "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-adoption-statements-st-9645-add-1-init",
@@ -1464,10 +2142,18 @@
       "record_level": "attachment",
       "version_label": "ADD 1 INIT",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "Initial statements attachment superseded by later revisions.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2"
+      "merged_into_document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-1",
@@ -1481,10 +2167,18 @@
       "record_level": "attachment",
       "version_label": "ADD 1 REV 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "Intermediate statements attachment superseded by REV 2.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2"
+      "merged_into_document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
@@ -1498,10 +2192,18 @@
       "record_level": "attachment",
       "version_label": "ADD 1 REV 2",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Final English revision of the statements attachment, linked to the adoption note.",
       "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-agreed-text-pe-758862",
@@ -1515,10 +2217,18 @@
       "record_level": "version",
       "version_label": "Agreed text",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "Parliament's agreed-text manifestation is represented by the identical provisional-agreement state in ST 5662/24.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-provisional-agreement-st-5662-2024"
+      "merged_into_document_id": "ai-act-provisional-agreement-st-5662-2024",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-parliament-first-reading-council-copy-st-7536-2024",
@@ -1533,10 +2243,18 @@
       "record_level": "supporting",
       "version_label": "Council information note",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-7536-2024-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "Council information-note manifestation reproduces Parliament's first-reading position already represented by P9_TA(2024)0138.",
       "document_id": null,
-      "merged_into_document_id": "ep-position-p9-ta-2024-0138"
+      "merged_into_document_id": "ep-position-p9-ta-2024-0138",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-final-act-lex-00024-2024",
@@ -1551,10 +2269,18 @@
       "record_level": "version",
       "version_label": "Draft final act",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The procedure entry is represented by the exact signed PE-CONS 24/1/24 REV 1 source record.",
       "document_id": null,
-      "merged_into_document_id": "ai-act-pe-cons-24-2024-rev-1"
+      "merged_into_document_id": "ai-act-pe-cons-24-2024-rev-1",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-coreper-letter-geda-2024-000753",
@@ -1568,10 +2294,18 @@
       "record_level": "supporting",
       "version_label": "Procedure correspondence",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Procedural cover correspondence retained as discovery evidence; it is not an independently citable policy text.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-commission-response-sp-2024-350",
@@ -1585,10 +2319,18 @@
       "record_level": "supporting",
       "version_label": "Procedure response",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Administrative response retained as procedure evidence; it is not a distinct policy instrument in the research corpus.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-corrigendum-2025-non-english",
@@ -1602,10 +2344,18 @@
       "record_level": "version",
       "version_label": "Corrigendum",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689R(01)",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "The corrigendum applies only to specified non-English language versions; no official English corrigendum exists for inclusion in this English-only corpus.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732802",
@@ -1619,10 +2369,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; the adopted report and plenary positions are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732836",
@@ -1636,10 +2394,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732837",
@@ -1653,10 +2419,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732838",
@@ -1670,10 +2444,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732839",
@@ -1687,10 +2469,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732840",
@@ -1704,10 +2494,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732841",
@@ -1721,10 +2519,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732843",
@@ -1738,10 +2544,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-act-committee-amendments-pe-732844",
@@ -1755,10 +2569,18 @@
       "record_level": "supporting",
       "version_label": "Committee amendments",
       "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Individual committee amendments are discovery evidence; adopted texts are represented separately.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
@@ -1772,10 +2594,18 @@
       "record_level": "version",
       "version_label": "Third compromise, part one, INIT",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "The initial formally published compromise version is independently citable and is preserved separately from REV 1.",
       "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-consolidated-2026-07-27",
@@ -1789,10 +2619,18 @@
       "record_level": "version",
       "version_label": "Consolidated text, 27 July 2026",
       "official_source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-act-consolidated-2026-07-27",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-act-proceedings-implementing-regulation-2026-1755",
@@ -1806,10 +2644,18 @@
       "record_level": "principal",
       "version_label": "Official Journal text",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1755",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-act-proceedings-implementing-regulation-2026-1755",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-board-assessment-gpai-code-2025",
@@ -1823,10 +2669,18 @@
       "record_level": "supporting",
       "version_label": "Adequacy assessment",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-general-purpose-ai-code-practice",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-board-assessment-gpai-code-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-board-assessment-transparency-code-2026",
@@ -1840,10 +2694,18 @@
       "record_level": "supporting",
       "version_label": "Adequacy assessment",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-board-assessment-transparency-code-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-continent-action-plan-annex",
@@ -1857,10 +2719,18 @@
       "record_level": "attachment",
       "version_label": "Annex",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0165",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-continent-action-plan-annex",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-continent-action-plan",
@@ -1874,10 +2744,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0165",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-continent-action-plan",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-council-adoption-note-st-10752-2026",
@@ -1891,10 +2769,18 @@
       "record_level": "supporting",
       "version_label": "I/A item note",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
@@ -1908,10 +2794,18 @@
       "record_level": "attachment",
       "version_label": "ADD 2",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
@@ -1925,10 +2819,18 @@
       "record_level": "attachment",
       "version_label": "ADD 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-council-information-note-st-10599-2026",
@@ -1942,10 +2844,18 @@
       "record_level": "supporting",
       "version_label": "Council information note",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-council-information-note-st-10599-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-pe-cons-30-2026-rev-1",
@@ -1959,10 +2869,18 @@
       "record_level": "version",
       "version_label": "REV 1",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/PE-30-2026-REV-1/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-pe-cons-30-2026-rev-1",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-pe-cons-30-2026",
@@ -1976,10 +2894,18 @@
       "record_level": "version",
       "version_label": "INIT",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/PE-30-2026-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-pe-cons-30-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-staff-working-document-2025",
@@ -1993,10 +2919,18 @@
       "record_level": "supporting",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025SC0836",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-omnibus-staff-working-document-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-system-definition-guidelines-2025",
@@ -2010,10 +2944,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-system-definition-guidelines-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-system-definition-guidelines-approval-communication-2025",
@@ -2027,10 +2969,18 @@
       "record_level": "supporting",
       "version_label": "Approval communication",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ai-system-definition-guidelines-approval-communication-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "apply-ai-strategy-annexes",
@@ -2044,10 +2994,18 @@
       "record_level": "attachment",
       "version_label": "Annexes 1–3",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0723",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "apply-ai-strategy-annexes",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "apply-ai-strategy",
@@ -2061,10 +3019,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0723",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "apply-ai-strategy",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "commission-ai-act-article-112-review-2026",
@@ -2078,10 +3044,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026DC0234",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "commission-ai-act-article-112-review-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "commission-opinion-gpai-code-2025",
@@ -2095,10 +3069,18 @@
       "record_level": "supporting",
       "version_label": "Final opinion",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-general-purpose-ai-code-practice",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "commission-opinion-gpai-code-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "commission-opinion-transparency-code-2026",
@@ -2112,10 +3094,18 @@
       "record_level": "supporting",
       "version_label": "Final opinion",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "commission-opinion-transparency-code-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "cor-opinion-ai-omnibus-2026",
@@ -2129,10 +3119,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025AR4240",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "cor-opinion-ai-omnibus-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "draft-high-risk-classification-guidelines-annex-i-2026",
@@ -2146,10 +3144,18 @@
       "record_level": "attachment",
       "version_label": "Consultation draft — Annex I",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
@@ -2163,10 +3169,18 @@
       "record_level": "attachment",
       "version_label": "Consultation draft — Annex III",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "eesc-opinion-ai-omnibus-2026",
@@ -2180,10 +3194,18 @@
       "record_level": "supporting",
       "version_label": "Adopted opinion",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025AE3929",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "eesc-opinion-ai-omnibus-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
@@ -2197,10 +3219,18 @@
       "record_level": "version",
       "version_label": "Amendments adopted",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/TA-10-2026-0098_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-omnibus-cult-opinion-pe-784261",
@@ -2214,10 +3244,19 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CULT-AD-784261_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "education",
+        "media_and_culture"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ep-ai-omnibus-cult-opinion-pe-784261",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-omnibus-juri-opinion-pe-784179",
@@ -2231,10 +3270,19 @@
       "record_level": "supporting",
       "version_label": "Committee opinion",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/JURI-AD-784179_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "justice",
+        "intellectual_property"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ep-ai-omnibus-juri-opinion-pe-784179",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
@@ -2248,10 +3296,18 @@
       "record_level": "version",
       "version_label": "First-reading position",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/TA-10-2026-0198_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ep-ai-omnibus-position-p10-ta-2026-0198",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ep-ai-omnibus-report-a10-0073-2026",
@@ -2265,10 +3321,18 @@
       "record_level": "supporting",
       "version_label": "Committee report",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/A-10-2026-0073_EN.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "ep-ai-omnibus-report-a10-0073-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-final-copyright",
@@ -2282,10 +3346,18 @@
       "record_level": "attachment",
       "version_label": "Final — Copyright",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-final-copyright",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-final-safety-security",
@@ -2299,10 +3371,18 @@
       "record_level": "attachment",
       "version_label": "Final — Safety and Security",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-final-safety-security",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-final-transparency",
@@ -2316,10 +3396,18 @@
       "record_level": "attachment",
       "version_label": "Final — Transparency",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-final-transparency",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-model-documentation-form-2025",
@@ -2333,10 +3421,18 @@
       "record_level": "attachment",
       "version_label": "Final form",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-model-documentation-form-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-signatory-form-2025",
@@ -2350,10 +3446,18 @@
       "record_level": "attachment",
       "version_label": "Signatory form",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-signatory-form-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-third-draft-commitments",
@@ -2367,10 +3471,18 @@
       "record_level": "attachment",
       "version_label": "Third draft — Commitments",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-third-draft-commitments",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-third-draft-copyright",
@@ -2384,10 +3496,18 @@
       "record_level": "attachment",
       "version_label": "Third draft — Copyright",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-third-draft-copyright",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-third-draft-safety-security",
@@ -2401,10 +3521,18 @@
       "record_level": "attachment",
       "version_label": "Third draft — Safety and Security",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-third-draft-safety-security",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-code-third-draft-transparency",
@@ -2418,10 +3546,18 @@
       "record_level": "attachment",
       "version_label": "Third draft — Transparency",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/third-draft-general-purpose-ai-code-practice-published-written-independent-experts",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-code-third-draft-transparency",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-provider-guidelines-approval-communication-2025",
@@ -2435,10 +3571,18 @@
       "record_level": "supporting",
       "version_label": "Approval communication",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-provider-guidelines-approval-communication-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-serious-incident-reporting-template-2025",
@@ -2452,10 +3596,18 @@
       "record_level": "principal",
       "version_label": "Final template",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/ai-act-commission-publishes-reporting-template-serious-incidents-involving-general-purpose-ai",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-serious-incident-reporting-template-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-training-content-explanatory-notice-2025",
@@ -2469,10 +3621,18 @@
       "record_level": "supporting",
       "version_label": "Final notice",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "gpai-training-content-explanatory-notice-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "prohibited-ai-practices-guidelines-2025",
@@ -2486,10 +3646,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "prohibited-ai-practices-guidelines-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
@@ -2503,10 +3671,18 @@
       "record_level": "supporting",
       "version_label": "Approval communication",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "prohibited-ai-practices-guidelines-approval-communication-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "transparency-code-final-2026",
@@ -2520,10 +3696,18 @@
       "record_level": "principal",
       "version_label": "Final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "transparency-code-final-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "transparency-code-first-draft-2025",
@@ -2537,10 +3721,18 @@
       "record_level": "version",
       "version_label": "First draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/first-draft-code-practice-transparency-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "transparency-code-first-draft-2025",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "transparency-code-second-draft-2026",
@@ -2554,10 +3746,18 @@
       "record_level": "version",
       "version_label": "Second draft",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-second-draft-code-practice-marking-and-labelling-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "transparency-code-second-draft-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "transparency-code-signatory-form-2026",
@@ -2571,10 +3771,18 @@
       "record_level": "attachment",
       "version_label": "Signatory form",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/how-sign-code-practice-transparency-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "transparency-code-signatory-form-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "transparency-guidelines-approval-communication-2026",
@@ -2588,10 +3796,18 @@
       "record_level": "supporting",
       "version_label": "Approval communication",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
       "document_id": "transparency-guidelines-approval-communication-2026",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "gpai-serious-incident-template-docx-2025",
@@ -2605,10 +3821,18 @@
       "record_level": "attachment",
       "version_label": "DOCX",
       "official_source_url": "https://ec.europa.eu/newsroom/dae/redirection/document/121270",
+      "commissioning_body": null,
+      "candidate_provenance": "officially_published",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "DOCX and PDF are manifestations of one work; the canonical template record cites the official publication page.",
       "document_id": null,
-      "merged_into_document_id": "gpai-serious-incident-reporting-template-2025"
+      "merged_into_document_id": "gpai-serious-incident-reporting-template-2025",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-proposal-council-st-15708-2025",
@@ -2622,10 +3846,18 @@
       "record_level": "supporting",
       "version_label": "Council transmittal",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-15708-2025-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "merged",
       "decision_reason": "The Council file transmits the same COM(2025) 836 proposal represented by the canonical EUR-Lex record.",
       "document_id": null,
-      "merged_into_document_id": "ai-omnibus-proposal-2025"
+      "merged_into_document_id": "ai-omnibus-proposal-2025",
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-omnibus-council-agenda-st-10825-2026",
@@ -2639,10 +3871,18 @@
       "record_level": "supporting",
       "version_label": "Agenda",
       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10825-2026-INIT/en/pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "Meeting agenda is procedural discovery evidence, not an independently substantive AI policy text.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "final-high-risk-classification-guidelines-2026",
@@ -2656,10 +3896,18 @@
       "record_level": "principal",
       "version_label": "Expected final",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "No final official English text had been adopted or published by the 2026-09-04 cutoff; only the three consultation drafts are published.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ai-generated-content-eu-icons-2026",
@@ -2673,10 +3921,18 @@
       "record_level": "attachment",
       "version_label": "Design asset",
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "excluded",
       "decision_reason": "The icon package is an implementation design asset rather than an independently citable policy text.",
       "document_id": null,
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     },
     {
       "id": "ecb-technical-working-document-con-2026-10",
@@ -2690,10 +3946,19 @@
       "record_level": "attachment",
       "version_label": "Technical working document",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=IMMC:TWD/2026/10",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "financial_services"
+      ],
+      "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
       "decision_reason": "Verified independently citable official English technical working document formally linked to ECB Opinion CON/2026/10.",
       "document_id": "ecb-technical-working-document-con-2026-10",
-      "merged_into_document_id": null
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-04T00:00:00Z",
+      "reviewed_by": "Yichen Hao"
     }
   ]
 }

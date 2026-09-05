@@ -1,4 +1,5 @@
 import json
+import os
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -30,6 +31,27 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     assert payload["coverage"]["supporting_files_and_versions"] == (
         len(payload["documents"]) - expected_principal_documents
     )
+    assert payload["coverage"]["coverage_cutoff"] == "2026-09-04"
+    assert payload["coverage"]["coverage_statement"] == (
+        "Comprehensive within the documented inclusion boundary, "
+        "verified through 4 September 2026."
+    )
+    assert payload["coverage"]["inventory"] == {
+        "included": 117,
+        "merged": 18,
+        "excluded": 22,
+        "pending": 0,
+    }
+    assert payload["coverage"]["source_families"] == {
+        "total": 13,
+        "by_status": {
+            "not_started": 0,
+            "in_progress": 0,
+            "reviewed": 13,
+            "gap_found": 0,
+            "recheck_due": 0,
+        },
+    }
 
 
 def test_pipeline_excludes_unpublished_canonical_records_from_every_public_output(tmp_path):
@@ -45,15 +67,25 @@ def test_pipeline_excludes_unpublished_canonical_records_from_every_public_outpu
         json.dumps(
             {
                 "generated_at": "2026-09-04T00:00:00Z",
+                "coverage_cutoff": "2026-09-04",
                 "sources": [
                     {
                         "id": source_id,
                         "name": "Test source entrance",
                         "institution": "Publications Office of the European Union",
+                        "source_family": "Test source family",
                         "url": "https://eur-lex.europa.eu/",
                         "scope_note": "Isolated pipeline fixture.",
-                        "scan_status": "complete",
+                        "covered_from": "2018-01-01",
+                        "covered_through": "2026-09-04",
+                        "covered_document_types": ["communication"],
+                        "covered_sector_tags": ["general_cross_sector"],
+                        "discovery_method": "Reviewed the isolated fixture source.",
+                        "scan_status": "reviewed",
                         "checked_at": "2026-09-04T00:00:00Z",
+                        "coverage_cutoff": "2026-09-04",
+                        "reviewer": "Test researcher",
+                        "verification_note": "Fixture review completed.",
                     }
                 ],
             }
@@ -75,10 +107,16 @@ def test_pipeline_excludes_unpublished_canonical_records_from_every_public_outpu
                         "record_level": "principal",
                         "version_label": "Final",
                         "official_source_url": "https://eur-lex.europa.eu/example",
+                        "commissioning_body": None,
+                        "candidate_provenance": "eu_institution_authored",
+                        "provisional_sector_tags": ["general_cross_sector"],
+                        "discovered_at": "2026-09-04T00:00:00Z",
                         "decision": "included",
                         "decision_reason": "Verified fixture document.",
                         "document_id": "example-document",
                         "merged_into_document_id": None,
+                        "reviewed_at": "2026-09-04T00:00:00Z",
+                        "reviewed_by": "Test researcher",
                     }
                 ],
             }
@@ -140,6 +178,7 @@ def test_module_cli_builds_repository_outputs(tmp_path_factory):
             "2026-09-03T00:00:00Z",
         ],
         cwd=tmp_path,
+        env={**os.environ, "PYTHONPATH": str(Path.cwd() / "src")},
         text=True,
         capture_output=True,
         check=False,
@@ -285,6 +324,29 @@ def test_invalid_inventory_fails_before_existing_outputs_are_touched(tmp_path_fa
     assert public_json.read_bytes() == b"public JSON before invalid inventory"
 
 
+def test_malformed_coverage_cutoff_fails_before_existing_outputs_are_touched(
+    tmp_path_factory,
+):
+    tmp_path = tmp_path_factory.mktemp("coverage-cutoff")
+    project_root = _isolated_project_root(tmp_path)
+    source_sweep_path = project_root / "research" / "source-sweep.json"
+    source_sweep = json.loads(source_sweep_path.read_text(encoding="utf-8"))
+    source_sweep["coverage_cutoff"] = "4 September 2026"
+    source_sweep_path.write_text(json.dumps(source_sweep), encoding="utf-8")
+    output_root = project_root / "generated"
+    output_root.mkdir()
+    database = output_root / pipeline.DATABASE_FILENAME
+    public_json = output_root / pipeline.PUBLIC_JSON_FILENAME
+    database.write_bytes(b"database before malformed coverage cutoff")
+    public_json.write_bytes(b"public JSON before malformed coverage cutoff")
+
+    with pytest.raises(RecordValidationError, match="research/source-sweep.json"):
+        run_pipeline(project_root, "2026-09-03T00:00:00Z", output_root=output_root)
+
+    assert database.read_bytes() == b"database before malformed coverage cutoff"
+    assert public_json.read_bytes() == b"public JSON before malformed coverage cutoff"
+
+
 def test_pending_inventory_candidate_is_absent_from_public_output(tmp_path_factory):
     tmp_path = tmp_path_factory.mktemp("pending-inventory")
     project_root = _isolated_project_root(tmp_path)
@@ -301,10 +363,16 @@ def test_pending_inventory_candidate_is_absent_from_public_output(tmp_path_facto
             "record_level": "supporting",
             "version_label": None,
             "official_source_url": "https://commission.europa.eu/example-pending",
+            "commissioning_body": None,
+            "candidate_provenance": "unknown_pending_review",
+            "provisional_sector_tags": [],
+            "discovered_at": "2026-09-04T00:00:00Z",
             "decision": "pending",
             "decision_reason": "Metadata verification is not yet complete.",
             "document_id": None,
             "merged_into_document_id": None,
+            "reviewed_at": None,
+            "reviewed_by": None,
         }
     )
     inventory_path.write_text(json.dumps(inventory), encoding="utf-8")
@@ -313,9 +381,12 @@ def test_pending_inventory_candidate_is_absent_from_public_output(tmp_path_facto
         project_root, "2026-09-03T00:00:00Z", output_root=tmp_path / "generated"
     )
 
-    assert "Pending candidate must not be published" not in outputs.public_json.read_text(
-        encoding="utf-8"
-    )
+    public_text = outputs.public_json.read_text(encoding="utf-8")
+    assert "Pending candidate must not be published" not in public_text
+    assert "https://commission.europa.eu/example-pending" not in public_text
+    assert "Metadata verification is not yet complete." not in public_text
+    assert "pending-secret-candidate" not in public_text
+    assert json.loads(public_text)["coverage"]["inventory"]["pending"] == 1
 
 
 def _isolated_project_root(tmp_path):

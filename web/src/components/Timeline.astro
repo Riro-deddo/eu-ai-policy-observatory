@@ -40,6 +40,13 @@ const coverageLabel = data.coverage.from_year === null || data.coverage.to_year 
   </div>
 
   <form class="timeline-filters" data-timeline-filters method="get" action={`${base}timeline/`}>
+    <fieldset class="timeline-view">
+      <legend>Timeline view</legend>
+      <div class="timeline-view__options">
+        <label><input type="radio" name="view" value="principal" checked /> Principal documents</label>
+        <label><input type="radio" name="view" value="all" /> All documents and versions</label>
+      </div>
+    </fieldset>
     <div>
       <label for="timeline-institution">Institution</label>
       <select id="timeline-institution" name="institution">
@@ -134,25 +141,25 @@ const coverageLabel = data.coverage.from_year === null || data.coverage.to_year 
 
   if (form instanceof HTMLFormElement && serializedEntries instanceof HTMLScriptElement
     && count instanceof HTMLElement && empty instanceof HTMLElement) {
-    const timelineEntries: TimelineEntry[] = JSON.parse(serializedEntries.textContent ?? '[]');
+    const entries: TimelineEntry[] = JSON.parse(serializedEntries.textContent ?? '[]');
 
     const applyFilters = () => {
       const criteria: TimelineCriteria = {};
       for (const [name, value] of new FormData(form).entries()) {
         if (typeof value !== 'string' || value === '') continue;
+        if (name === 'view' && (value === 'principal' || value === 'all')) criteria.view = value;
         if (name === 'institution') criteria.institution = value;
         if (name === 'documentType') criteria.documentType = value;
         if (name === 'policyStage') criteria.policyStage = value;
         if (name === 'eventType') criteria.eventType = value;
       }
-      const visibleIds = new Set(filterTimeline(timelineEntries, criteria).map((entry) => entry.id));
+      const visibleIds = new Set(filterTimeline(entries, criteria).map((entry) => entry.id));
 
       for (const item of items) {
         const entryId = item.dataset.timelineEntry;
         item.hidden = entryId === undefined || !visibleIds.has(entryId);
       }
-      for (const year of years) year.hidden = [...year.querySelectorAll('[data-timeline-entry]')]
-        .every((item) => item instanceof HTMLElement && item.hidden);
+      for (const year of years) year.hidden = !year.querySelector('[data-timeline-entry]:not([hidden])');
 
       const suffix = visibleIds.size === 1 ? 'timeline entry' : 'timeline entries';
       count.textContent = `${visibleIds.size} ${suffix}`;
@@ -166,5 +173,6 @@ const coverageLabel = data.coverage.from_year === null || data.coverage.to_year 
       applyFilters();
     });
     form.addEventListener('reset', () => window.setTimeout(applyFilters));
+    applyFilters();
   }
 </script>

@@ -170,3 +170,15 @@ CREATE TABLE document_sources (
     source_id TEXT NOT NULL REFERENCES sources(id),
     PRIMARY KEY (document_id, source_id)
 );
+
+CREATE TABLE document_sector_tags (
+    document_id TEXT NOT NULL REFERENCES documents(id),
+    sector_tag TEXT NOT NULL,
+    PRIMARY KEY (document_id, sector_tag)
+);
+
+CREATE TABLE document_provenance_tags (
+    document_id TEXT NOT NULL REFERENCES documents(id),
+    provenance_tag TEXT NOT NULL,
+    PRIMARY KEY (document_id, provenance_tag)
+);

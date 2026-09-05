@@ -1,6 +1,61 @@
 {
-  "id": "ai-act-council-general-approach-st-15698-2022", "entity_type": "document", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "slug": "ai-act-council-general-approach-st-15698-2022", "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – General approach – Outcome of proceedings", "short_title": "Council General Approach on the AI Act", "document_type": "institutional_position", "record_level": "principal", "official_reference": "ST 15698/22", "procedure_references": ["2021/0106(COD)"], "oj_reference": null, "document_date": "2022-12-06", "version_label": "Outcome of proceedings", "version_status": "final", "publication_date": "2022-12-06", "legal_status": "adopted", "celex": null, "eli": null, "language": "en", "official_summary": null,
-  "institution_roles": [{"institution_id": "council-of-the-european-union", "role": "adopter"}], "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"], "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"], "source_ids": ["council-st-15698-2022"],
-  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "negotiation", "inclusion_rationale": "Definitive official record of the Council's general approach adopted on 6 December 2022.", "researcher_notes": "The status is tied to the Council outcome-of-proceedings record, distinct from adoption of the final regulation.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "id": "ai-act-council-general-approach-st-15698-2022",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ai-act-council-general-approach-st-15698-2022",
+  "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – General approach – Outcome of proceedings",
+  "short_title": "Council General Approach on the AI Act",
+  "document_type": "institutional_position",
+  "record_level": "principal",
+  "official_reference": "ST 15698/22",
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2022-12-06",
+  "version_label": "Outcome of proceedings",
+  "version_status": "final",
+  "publication_date": "2022-12-06",
+  "legal_status": "adopted",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "council-st-15698-2022"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Definitive official record of the Council's general approach adopted on 6 December 2022.",
+    "researcher_notes": "The status is tied to the Council outcome-of-proceedings record, distinct from adoption of the final regulation.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }

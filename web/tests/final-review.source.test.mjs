@@ -14,6 +14,9 @@ const mapLayout = readFileSync(new URL('../src/lib/policy-map.ts', import.meta.u
 const pathway = readFileSync(new URL('../src/components/PolicyPathway.astro', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
+const publicData = JSON.parse(
+  readFileSync(new URL('../../generated/public-data.json', import.meta.url), 'utf8'),
+);
 
 test('canonical browser assertions derive the deployment origin and base path from their environment', () => {
   assert.match(config, /trailingSlash:\s*'always'/);
@@ -83,4 +86,29 @@ test('Methodology separates implemented corpus work from the planned LLM protoco
   assert.match(methodology, /Planned LLM comparison protocol/);
   assert.match(methodology, /not all EU digital law/);
   assert.match(methodology, /included[\s\S]*merged[\s\S]*excluded[\s\S]*pending/);
+});
+
+test('generated public data satisfies the browser classification and coverage contract', () => {
+  const allowedRecordLevels = new Set(['principal', 'supporting', 'version', 'attachment']);
+  const allowedVersionStatuses = new Set(['draft', 'revised', 'final', 'consolidated', 'not_applicable']);
+  const coverage = publicData.coverage;
+
+  assert.equal(coverage.coverage_cutoff, '2026-09-04');
+  assert.equal(typeof coverage.coverage_statement, 'string');
+  assert.equal(typeof coverage.source_families.total, 'number');
+  for (const status of ['not_started', 'in_progress', 'reviewed', 'gap_found', 'recheck_due']) {
+    assert.equal(typeof coverage.source_families.by_status[status], 'number');
+  }
+  for (const decision of ['included', 'merged', 'excluded', 'pending']) {
+    assert.equal(typeof coverage.inventory[decision], 'number');
+  }
+  assert.equal(typeof coverage.unresolved_candidates, 'number');
+
+  for (const document of publicData.documents) {
+    assert.equal(document.publication_status, 'published');
+    assert.ok(allowedRecordLevels.has(document.record_level));
+    assert.ok(allowedVersionStatuses.has(document.version_status));
+    assert.ok(Array.isArray(document.sector_tags) && document.sector_tags.length > 0);
+    assert.ok(Array.isArray(document.provenance_tags) && document.provenance_tags.length > 0);
+  }
 });

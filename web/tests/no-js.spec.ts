@@ -7,6 +7,8 @@ test('core atlas content remains readable without JavaScript', async ({ page }) 
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 
   await page.goto('corpus/');
+  await expect(page.getByLabel('Sector')).toBeVisible();
+  await expect(page.getByLabel('Provenance')).toBeVisible();
   const documentRoutes = await page.locator('[data-corpus-list] a').evaluateAll((links) => (
     links.map((link) => link.getAttribute('href')).filter((href): href is string => href !== null)
   ));
@@ -17,6 +19,7 @@ test('core atlas content remains readable without JavaScript', async ({ page }) 
   }
 
   await page.goto('timeline/');
+  await expect(page.getByRole('radio', { name: 'Principal documents' })).toBeChecked();
   const serializedEntries = await page.locator('#timeline-entries').textContent();
   if (serializedEntries === null) throw new Error('Timeline public data was not rendered');
   const timelineEntries = JSON.parse(serializedEntries) as Array<{ id: string }>;

@@ -1,6 +1,62 @@
 {
-  "id": "ep-ai-act-itre-opinion-pe-719801", "entity_type": "document", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "slug": "ep-ai-act-itre-opinion-pe-719801", "official_title": "Opinion of the Committee on Industry, Research and Energy on the proposal for a regulation laying down harmonised rules on artificial intelligence", "short_title": "ITRE opinion on the AI Act proposal", "document_type": "opinion", "record_level": "supporting", "official_reference": "PE719.801", "procedure_references": ["2021/0106(COD)"], "oj_reference": null, "document_date": "2022-06-14", "version_label": "Committee opinion", "version_status": "final", "publication_date": "2022-06-14", "legal_status": "non_binding", "celex": null, "eli": null, "language": "en", "official_summary": null,
-  "institution_roles": [{"institution_id": "european-parliament", "role": "author"}], "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"], "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"], "source_ids": ["ep-ai-act-itre-opinion-pe-719801-source"],
-  "corpus_assessment": {"corpus_tier": "directly_related", "policy_stage": "negotiation", "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.", "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "id": "ep-ai-act-itre-opinion-pe-719801",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ep-ai-act-itre-opinion-pe-719801",
+  "official_title": "Opinion of the Committee on Industry, Research and Energy on the proposal for a regulation laying down harmonised rules on artificial intelligence",
+  "short_title": "ITRE opinion on the AI Act proposal",
+  "document_type": "opinion",
+  "record_level": "supporting",
+  "official_reference": "PE719.801",
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2022-06-14",
+  "version_label": "Committee opinion",
+  "version_status": "final",
+  "publication_date": "2022-06-14",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "ep-ai-act-itre-opinion-pe-719801-source"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
+    "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }
