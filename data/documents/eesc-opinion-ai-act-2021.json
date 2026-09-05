@@ -10,7 +10,9 @@
   "document_type": "opinion",
   "record_level": "supporting",
   "official_reference": "EESC 2021/02482",
-  "procedure_references": ["2021/0106(COD)"],
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
   "oj_reference": "OJ C 517, 22.12.2021, pp. 61–66 (2021/C 517/09)",
   "document_date": "2021-09-22",
   "version_label": "Adopted opinion",
@@ -21,10 +23,25 @@
   "eli": null,
   "language": "en",
   "official_summary": null,
-  "institution_roles": [{"institution_id": "european-economic-and-social-committee", "role": "author"}],
-  "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"],
-  "concept_ids": ["risk", "trustworthiness", "accountability", "compliance"],
-  "source_ids": ["eesc-ai-act-opinion-eur-lex"],
+  "institution_roles": [
+    {
+      "institution_id": "european-economic-and-social-committee",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "trustworthiness",
+    "accountability",
+    "compliance"
+  ],
+  "source_ids": [
+    "eesc-ai-act-opinion-eur-lex"
+  ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "negotiation",
@@ -33,5 +50,12 @@
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
-  }
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ]
 }

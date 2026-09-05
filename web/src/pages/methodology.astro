@@ -23,12 +23,30 @@ const data = loadPublicData();
     <section aria-labelledby="current-method">
       <h2 id="current-method">Current corpus method</h2>
       <p>
-        The published corpus spans {data.coverage.from_year}–{data.coverage.to_year}. Its scope is
-        the AI Act policy process and directly relevant implementation, not all EU digital law.
-        Candidates are identified through a bounded sweep of official EU publication and register
-        entrances. A record is published only when its official English source and verification
-        basis can be inspected.
+        The corpus covers official EU documents substantively concerning AI from 1 January 2018
+        through {data.coverage.coverage_cutoff}, including formally published drafts and sector-specific materials.
+        Its boundary is substantive relevance to AI, not all EU digital law. Candidates are identified through a bounded sweep of official
+        EU publication and register entrances. A record is published only when its official English
+        source and verification basis can be inspected.
       </p>
+    </section>
+
+    <section
+      id="methodology-coverage"
+      aria-labelledby="coverage-and-audit"
+      data-coverage-statement={data.coverage.coverage_statement}
+      data-unresolved-candidates={data.coverage.unresolved_candidates}
+    >
+      <h2 id="coverage-and-audit">Coverage and audit status</h2>
+      <p>{data.coverage.coverage_statement}</p>
+      <dl>
+        <dt>Registered source families</dt><dd>{data.coverage.source_families.total}</dd>
+        <dt>Reviewed through cutoff</dt><dd>{data.coverage.source_families.by_status.reviewed}</dd>
+        <dt>Included candidates</dt><dd>{data.coverage.inventory.included}</dd>
+        <dt>Excluded candidates</dt><dd>{data.coverage.inventory.excluded}</dd>
+        <dt>Unresolved candidates</dt><dd>{data.coverage.unresolved_candidates}</dd>
+      </dl>
+      <p>These audit counts describe review coverage; a source-family total is not proof of record-level completeness.</p>
     </section>
 
     <section aria-labelledby="corpus-tiers">

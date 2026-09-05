@@ -21,9 +21,43 @@
   "eli": null,
   "language": "en",
   "official_summary": null,
-  "institution_roles": [{"institution_id": "high-level-expert-group-on-ai", "role": "author"}, {"institution_id": "european-commission", "role": "publisher"}],
-  "policy_ids": ["european-ai-policy-pathway", "coordinated-european-ai-strategy"],
-  "concept_ids": ["trustworthiness", "accountability", "risk"],
-  "source_ids": ["ethics-guidelines-commission", "ethics-guidelines-publications-office"],
-  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "consultation", "inclusion_rationale": "Core non-binding ethics framework that introduces the trustworthiness lens.", "researcher_notes": "Analytical assessment, not a claim about legal force.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "institution_roles": [
+    {
+      "institution_id": "high-level-expert-group-on-ai",
+      "role": "author"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "publisher"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "coordinated-european-ai-strategy"
+  ],
+  "concept_ids": [
+    "trustworthiness",
+    "accountability",
+    "risk"
+  ],
+  "source_ids": [
+    "ethics-guidelines-commission",
+    "ethics-guidelines-publications-office"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "Core non-binding ethics framework that introduces the trustworthiness lens.",
+    "researcher_notes": "Analytical assessment, not a claim about legal force.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ]
 }

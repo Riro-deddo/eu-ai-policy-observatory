@@ -21,10 +21,24 @@
   "eli": null,
   "language": "en",
   "official_summary": null,
-  "institution_roles": [{"institution_id": "european-economic-and-social-committee", "role": "author"}],
-  "policy_ids": ["european-ai-policy-pathway", "coordinated-european-ai-strategy"],
-  "concept_ids": ["trustworthiness", "accountability", "compliance"],
-  "source_ids": ["eesc-coordinated-plan-opinion-eur-lex"],
+  "institution_roles": [
+    {
+      "institution_id": "european-economic-and-social-committee",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "coordinated-european-ai-strategy"
+  ],
+  "concept_ids": [
+    "trustworthiness",
+    "accountability",
+    "compliance"
+  ],
+  "source_ids": [
+    "eesc-coordinated-plan-opinion-eur-lex"
+  ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
     "policy_stage": "coordination",
@@ -33,5 +47,12 @@
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
-  }
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ]
 }

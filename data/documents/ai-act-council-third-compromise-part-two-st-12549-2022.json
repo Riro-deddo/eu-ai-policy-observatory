@@ -1,6 +1,61 @@
 {
-  "id": "ai-act-council-third-compromise-part-two-st-12549-2022", "entity_type": "document", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "slug": "ai-act-council-third-compromise-part-two-st-12549-2022", "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – Presidency compromise text (Title IA, Articles 30–85, recitals and related annexes)", "short_title": "Third Council compromise, part two", "document_type": "institutional_position", "record_level": "version", "official_reference": "ST 12549/22", "procedure_references": ["2021/0106(COD)"], "oj_reference": null, "document_date": "2022-09-23", "version_label": "Third Presidency compromise, remaining provisions", "version_status": "revised", "publication_date": "2022-09-23", "legal_status": "non_binding", "celex": null, "eli": null, "language": "en", "official_summary": null,
-  "institution_roles": [{"institution_id": "council-of-the-european-union", "role": "author"}], "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"], "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"], "source_ids": ["council-st-12549-2022"],
-  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "negotiation", "inclusion_rationale": "Published second part completing the third Council Presidency compromise.", "researcher_notes": "Paired with ST 12206/1/22 REV 1.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ai-act-council-third-compromise-part-two-st-12549-2022",
+  "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – Presidency compromise text (Title IA, Articles 30–85, recitals and related annexes)",
+  "short_title": "Third Council compromise, part two",
+  "document_type": "institutional_position",
+  "record_level": "version",
+  "official_reference": "ST 12549/22",
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2022-09-23",
+  "version_label": "Third Presidency compromise, remaining provisions",
+  "version_status": "revised",
+  "publication_date": "2022-09-23",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "author"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "council-st-12549-2022"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Published second part completing the third Council Presidency compromise.",
+    "researcher_notes": "Paired with ST 12206/1/22 REV 1.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }

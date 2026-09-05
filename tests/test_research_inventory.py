@@ -17,15 +17,27 @@ SCHEMA_ROOT = Path("schema")
 def _valid_sweep():
     return {
         "generated_at": "2026-09-04T00:00:00Z",
+        "coverage_cutoff": "2026-09-04",
         "sources": [
             {
                 "id": "eur-lex-procedure-2021-0106",
                 "name": "EUR-Lex procedure 2021/0106/COD",
                 "institution": "Publications Office of the European Union",
+                "source_family": "EUR-Lex legislative procedures",
                 "url": "https://eur-lex.europa.eu/procedure/EN/2021_106",
                 "scope_note": "Official procedure record and linked documents.",
+                "covered_from": "2018-01-01",
+                "covered_through": "2026-09-04",
+                "covered_document_types": [],
+                "covered_sector_tags": [],
+                "discovery_method": (
+                    "Reviewed the procedure record and its linked documents."
+                ),
                 "scan_status": "in_progress",
                 "checked_at": "2026-09-04T00:00:00Z",
+                "coverage_cutoff": "2026-09-04",
+                "reviewer": "Yichen Hao",
+                "verification_note": "The registered procedure entrance was reviewed.",
             }
         ],
     }
@@ -45,10 +57,16 @@ def _valid_inventory():
                 "record_level": "principal",
                 "version_label": "Final",
                 "official_source_url": "https://eur-lex.europa.eu/example",
+                "commissioning_body": None,
+                "candidate_provenance": "eu_institution_authored",
+                "provisional_sector_tags": ["general_cross_sector"],
+                "discovered_at": "2026-09-04T00:00:00Z",
                 "decision": "included",
                 "decision_reason": "The verified canonical document is within scope.",
                 "document_id": "example-document",
                 "merged_into_document_id": None,
+                "reviewed_at": "2026-09-04T00:00:00Z",
+                "reviewed_by": "Yichen Hao",
             }
         ],
     }
@@ -73,11 +91,27 @@ def test_repository_source_sweep_and_inventory_are_valid_and_auditable():
     inventory = json.loads(
         Path("research/corpus-inventory.json").read_text(encoding="utf-8")
     )
-    assert {source["scan_status"] for source in sweep["sources"]} <= {
-        "pending",
-        "in_progress",
-        "complete",
-    }
+    assert sweep["coverage_cutoff"] == "2026-09-04"
+    for source in sweep["sources"]:
+        assert source["source_family"].strip()
+        assert source["covered_from"] <= source["covered_through"]
+        assert source["covered_through"] <= source["coverage_cutoff"]
+        assert len(source["covered_document_types"]) == len(
+            set(source["covered_document_types"])
+        )
+        assert len(source["covered_sector_tags"]) == len(
+            set(source["covered_sector_tags"])
+        )
+        assert source["discovery_method"].strip()
+        assert source["scan_status"] in {
+            "not_started",
+            "in_progress",
+            "reviewed",
+            "gap_found",
+            "recheck_due",
+        }
+        assert source["reviewer"].strip()
+        assert source["verification_note"].strip()
     assert {entry["decision"] for entry in inventory["candidates"]} <= {
         "included",
         "merged",
@@ -85,6 +119,55 @@ def test_repository_source_sweep_and_inventory_are_valid_and_auditable():
         "pending",
     }
     assert all(entry["decision_reason"].strip() for entry in inventory["candidates"])
+
+
+def test_repository_candidate_decisions_have_reviewable_classifications():
+    inventory = json.loads(
+        Path("research/corpus-inventory.json").read_text(encoding="utf-8")
+    )
+    canonical_documents = {
+        document["id"]: document
+        for path in Path("data/documents").glob("*.json")
+        for document in [json.loads(path.read_text(encoding="utf-8"))]
+    }
+    allowed_provenance = {
+        "eu_institution_authored",
+        "eu_agency_or_body_authored",
+        "eu_expert_group_authored",
+        "eu_commissioned_external",
+        "joint_institutional",
+        "official_consultation_material",
+        "officially_published",
+        "third_party_submission",
+        "unknown_pending_review",
+    }
+
+    for candidate in inventory["candidates"]:
+        assert candidate["candidate_provenance"] in allowed_provenance
+        assert len(candidate["provisional_sector_tags"]) == len(
+            set(candidate["provisional_sector_tags"])
+        )
+        if candidate["decision"] in {"included", "merged"}:
+            canonical_id = (
+                candidate["document_id"]
+                if candidate["decision"] == "included"
+                else candidate["merged_into_document_id"]
+            )
+            assert candidate["provisional_sector_tags"]
+            assert candidate["reviewed_at"] is not None
+            assert candidate["reviewed_by"] is not None
+            assert canonical_id in canonical_documents
+        elif candidate["decision"] == "excluded":
+            assert candidate["reviewed_at"] is not None
+            assert candidate["reviewed_by"] is not None
+            assert candidate["document_id"] is None
+            assert candidate["merged_into_document_id"] is None
+        else:
+            assert candidate["decision"] == "pending"
+            assert candidate["document_id"] is None
+            assert candidate["merged_into_document_id"] is None
+            if not candidate["provisional_sector_tags"]:
+                assert candidate["candidate_provenance"] == "unknown_pending_review"
 
 
 def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditable():
@@ -95,7 +178,7 @@ def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditab
     candidates = {candidate["id"]: candidate for candidate in inventory["candidates"]}
 
     assert sweep["sources"]
-    assert all(source["scan_status"] == "complete" for source in sweep["sources"])
+    assert all(source["scan_status"] == "reviewed" for source in sweep["sources"])
     assert all(candidate["decision"] != "pending" for candidate in inventory["candidates"])
     assert {
         "gpai-code-final",
@@ -173,6 +256,90 @@ def test_2025_to_2026_source_sweep_is_closed_and_candidate_decisions_are_auditab
             "candidates.0.official_source_url",
             "unofficial_url",
         ),
+        (
+            lambda sweep, inventory: sweep["sources"][0][
+                "covered_document_types"
+            ].append("press_release"),
+            "sources.0.covered_document_types.0",
+            "audit_vocabulary",
+        ),
+        (
+            lambda sweep, inventory: sweep["sources"][0][
+                "covered_sector_tags"
+            ].append("space_mining"),
+            "sources.0.covered_sector_tags.0",
+            "audit_vocabulary",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"candidate_provenance": "publisher_webpage"}
+            ),
+            "candidates.0.candidate_provenance",
+            "audit_vocabulary",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"provisional_sector_tags": ["space_mining"]}
+            ),
+            "candidates.0.provisional_sector_tags.0",
+            "audit_vocabulary",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"provisional_sector_tags": []}
+            ),
+            "candidates.0.provisional_sector_tags",
+            "audit_decision",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"provisional_sector_tags": ["financial_services"]}
+            ),
+            "candidates.0.provisional_sector_tags",
+            "audit_classification_mismatch",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"candidate_provenance": "officially_published"}
+            ),
+            "candidates.0.candidate_provenance",
+            "audit_classification_mismatch",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"candidate_provenance": "third_party_submission"}
+            ),
+            "candidates.0.candidate_provenance",
+            "audit_classification_mismatch",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"candidate_provenance": "unknown_pending_review"}
+            ),
+            "candidates.0.candidate_provenance",
+            "audit_classification_mismatch",
+        ),
+        (
+            lambda sweep, inventory: sweep["sources"][0].update(
+                {"coverage_cutoff": "2026-09-05"}
+            ),
+            "sources.0.coverage_cutoff",
+            "audit_cutoff",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"reviewed_at": None}
+            ),
+            "candidates.0.reviewed_at",
+            "audit_decision",
+        ),
+        (
+            lambda sweep, inventory: inventory["candidates"][0].update(
+                {"reviewed_by": None}
+            ),
+            "candidates.0.reviewed_by",
+            "audit_decision",
+        ),
     ],
 )
 def test_inventory_validator_rejects_broken_audit_contracts(
@@ -218,6 +385,29 @@ def test_inventory_decisions_require_consistent_document_links(
     )
 
     assert any(issue.field == expected_field for issue in issues)
+
+
+def test_pending_candidate_can_retain_unknown_classification(tmp_path):
+    inventory = _valid_inventory()
+    inventory["candidates"][0].update(
+        {
+            "decision": "pending",
+            "candidate_provenance": "unknown_pending_review",
+            "provisional_sector_tags": [],
+            "document_id": None,
+            "merged_into_document_id": None,
+            "reviewed_at": None,
+            "reviewed_by": None,
+        }
+    )
+    research_root = _write_research_files(tmp_path, inventory=inventory)
+
+    assert (
+        validate_research_inventory(
+            research_root, SCHEMA_ROOT, Path("tests/fixtures/valid/data")
+        )
+        == []
+    )
 
 
 def test_inventory_errors_raise_with_actionable_research_paths(tmp_path):
@@ -284,7 +474,10 @@ def test_2021_0106_procedure_sweep_is_complete_and_has_no_pending_candidates():
         if procedure_source_ids & set(candidate["source_ids"])
     ]
 
-    assert all(sources[source_id]["scan_status"] == "complete" for source_id in procedure_source_ids)
+    assert all(
+        sources[source_id]["scan_status"] == "reviewed"
+        for source_id in procedure_source_ids
+    )
     assert procedure_candidates
     assert all(candidate["decision"] != "pending" for candidate in procedure_candidates)
 

@@ -4,6 +4,8 @@ import test from 'node:test';
 
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const explorer = readFileSync(new URL('../src/components/CorpusExplorer.astro', import.meta.url), 'utf8');
+const documentRoute = readFileSync(new URL('../src/pages/corpus/[slug].astro', import.meta.url), 'utf8');
+const methodology = readFileSync(new URL('../src/pages/methodology.astro', import.meta.url), 'utf8');
 
 test('Corpus filters have responsive layout and 44px coarse-pointer controls', () => {
   assert.match(stylesheet, /\.corpus-filters \{[\s\S]*?display: grid;/);
@@ -46,6 +48,40 @@ test('Corpus exposes labelled view and version-aware filter controls', () => {
   assert.match(explorer, /<label for="corpus-record-level">Record level<\/label>/);
   assert.match(explorer, /<label for="corpus-version-status">Version status<\/label>/);
   assert.match(explorer, /<label for="corpus-policy">Policy process<\/label>/);
+});
+
+test('Corpus exposes controlled sector and provenance filters with human-readable labels', () => {
+  assert.match(explorer, /<label for="corpus-sector">Sector<\/label>[\s\S]*?<select id="corpus-sector" name="sector">/);
+  assert.match(explorer, /<label for="corpus-provenance">Provenance<\/label>[\s\S]*?<select id="corpus-provenance" name="provenance">/);
+  assert.match(explorer, /document\.sector_tags/);
+  assert.match(explorer, /document\.provenance_tags/);
+  assert.match(explorer, /vocabularyLabel\(sector\)/);
+  assert.match(explorer, /vocabularyLabel\(provenance\)/);
+});
+
+test('Corpus result cards separate sector and production provenance labels', () => {
+  assert.match(explorer, /<dt>Sectors<\/dt>[\s\S]*?document\.sector_tags\.map/);
+  assert.match(explorer, /<dt>Provenance<\/dt>[\s\S]*?document\.provenance_tags\.map/);
+});
+
+test('document records separate researcher classifications, production provenance and official sources', () => {
+  assert.match(documentRoute, /<h2 id="research-classifications">Research classifications<\/h2>/);
+  assert.match(documentRoute, /These are researcher classifications/);
+  assert.match(documentRoute, /<h2 id="production-provenance">Production provenance<\/h2>/);
+  assert.match(documentRoute, /document\.provenance_tags/);
+  assert.match(documentRoute, /document\.institutions/);
+  assert.match(documentRoute, /<h2 id="official-sources-and-identifiers">Official sources and identifiers<\/h2>/);
+});
+
+test('Methodology publishes the aggregate coverage statement and audit counts', () => {
+  assert.match(methodology, /official EU documents substantively concerning AI from 1 January 2018/);
+  assert.match(methodology, /formally published drafts and sector-specific materials/);
+  assert.match(methodology, /<p>\{data\.coverage\.coverage_statement\}<\/p>/);
+  assert.match(methodology, /<dt>Registered source families<\/dt><dd>\{data\.coverage\.source_families\.total\}<\/dd>/);
+  assert.match(methodology, /<dt>Reviewed through cutoff<\/dt><dd>\{data\.coverage\.source_families\.by_status\.reviewed\}<\/dd>/);
+  assert.match(methodology, /<dt>Included candidates<\/dt><dd>\{data\.coverage\.inventory\.included\}<\/dd>/);
+  assert.match(methodology, /<dt>Excluded candidates<\/dt><dd>\{data\.coverage\.inventory\.excluded\}<\/dd>/);
+  assert.match(methodology, /<dt>Unresolved candidates<\/dt><dd>\{data\.coverage\.unresolved_candidates\}<\/dd>/);
 });
 
 test('Corpus distinguishes the active result count from the published total', () => {

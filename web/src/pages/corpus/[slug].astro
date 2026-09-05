@@ -78,13 +78,35 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
       </dl>
     </section>
 
-    <section aria-labelledby="institutions-and-roles">
-      <h2 id="institutions-and-roles">Institutions and roles</h2>
-      <ul>
-        {document.institutions.map((institution) => (
-          <li><a href={institution.official_url}>{institution.official_name}</a> · {institution.role}</li>
-        ))}
-      </ul>
+    <section aria-labelledby="research-classifications">
+      <h2 id="research-classifications">Research classifications</h2>
+      <p>These are researcher classifications used to organise and analyse the corpus; they are not official EU metadata.</p>
+      <dl>
+        <dt>Policy stage</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.policy_stage)}</dd>
+        <dt>Corpus tier</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.corpus_tier)}</dd>
+        <dt>Sectors</dt>
+        <dd><ul class="tag-list">{document.sector_tags.map((sector) => <li>{vocabularyLabel(sector)}</li>)}</ul></dd>
+        <dt>Policy membership</dt>
+        <dd><ul class="tag-list">{document.policies.map((policy) => <li>{policy.short_name}</li>)}</ul></dd>
+        <dt>Research concepts</dt>
+        <dd><ul class="tag-list">{document.concepts.map((concept) => <li>{concept.name}</li>)}</ul></dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="production-provenance">
+      <h2 id="production-provenance">Production provenance</h2>
+      <dl>
+        <dt>Provenance tags</dt>
+        <dd><ul class="tag-list">{document.provenance_tags.map((provenance) => <li>{vocabularyLabel(provenance)}</li>)}</ul></dd>
+        <dt>Institutions and roles</dt>
+        <dd>
+          <ul>
+            {document.institutions.map((institution) => (
+              <li><a href={institution.official_url}>{institution.official_name}</a> · {vocabularyLabel(institution.role)}</li>
+            ))}
+          </ul>
+        </dd>
+      </dl>
     </section>
 
     <section aria-labelledby="official-sources-and-identifiers">
@@ -110,19 +132,6 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
         <ul>{document.procedure_references.map((reference) => <li>{reference}</li>)}</ul>
       </section>
     )}
-
-    <section aria-labelledby="policy-placement-and-concepts">
-      <h2 id="policy-placement-and-concepts">Policy placement and concepts</h2>
-      <p><strong>Research assessment:</strong> Policy placement and concepts are researcher classifications.</p>
-      <dl>
-        <dt>Policy stage</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.policy_stage)}</dd>
-        <dt>Corpus tier</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.corpus_tier)}</dd>
-      </dl>
-      <ul>
-        {document.policies.map((policy) => <li>{policy.short_name}</li>)}
-        {document.concepts.map((concept) => <li>{concept.name}</li>)}
-      </ul>
-    </section>
 
     {parentRelationships.length > 0 && (
       <section aria-labelledby="parent-or-principal-record">

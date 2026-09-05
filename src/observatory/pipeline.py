@@ -10,6 +10,7 @@ import sys
 import tempfile
 
 from observatory.build_db import build_database
+from observatory.coverage import build_public_coverage_summary
 from observatory.export_public import export_public
 from observatory.io import load_records
 from observatory.validate import (
@@ -45,6 +46,7 @@ def run_pipeline(
     # Validation is deliberately first: a failed validation never changes existing outputs.
     assert_valid(data_root, schema_root / "record.schema.json", schema_root / "controlled-vocabularies.json")
     assert_valid_research_inventory(root / "research", schema_root, data_root)
+    audit_summary = build_public_coverage_summary(root / "research")
     records = load_records(data_root)
     record_counts = {directory: len(entries) for directory, entries in records.items()}
     public_records = {
@@ -64,7 +66,12 @@ def run_pipeline(
     public_json = destination / PUBLIC_JSON_FILENAME
     try:
         build_database(public_records, schema_root / "database.sql", temporary_database)
-        export_public(temporary_database, temporary_public_json, build_timestamp)
+        export_public(
+            temporary_database,
+            temporary_public_json,
+            build_timestamp,
+            audit_summary,
+        )
         destination.mkdir(parents=True, exist_ok=True)
         _publish_output_pair(
             temporary_database,

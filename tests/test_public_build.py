@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from scripts.check_public_build import check_public_build
+from scripts.check_repository_english import find_non_latin_script_in_tracked_files
 
 
 PROJECT_ROOT = Path(__file__).parents[1]
@@ -53,6 +54,20 @@ def test_public_coverage_copy_uses_generated_values_and_rejects_seed_scope():
     assert "seven reviewed, published documents" not in public_copy
 
 
+def test_public_documents_expose_classifications_and_exact_coverage_cutoff():
+    payload = json.loads(
+        (PROJECT_ROOT / "generated" / "public-data.json").read_text(encoding="utf-8")
+    )
+
+    assert payload["coverage"]["coverage_cutoff"] == "2026-09-04"
+    assert payload["documents"]
+    for document in payload["documents"]:
+        assert document["sector_tags"]
+        assert document["provenance_tags"]
+        assert "third_party_submission" not in document["provenance_tags"]
+        assert "unknown_pending_review" not in document["provenance_tags"]
+
+
 def test_contributor_dictionary_documents_expanded_corpus_contract():
     dictionary = (PROJECT_ROOT / "docs" / "data-dictionary.md").read_text(
         encoding="utf-8"
@@ -80,6 +95,99 @@ def test_contributor_dictionary_documents_expanded_corpus_contract():
     assert "observatory-build --project-root ." in documented_contract
     assert "--require-database" in documented_contract
     assert "official" in documented_contract.lower()
+
+
+def test_contributor_documentation_defines_stage_one_coverage_contract():
+    dictionary = (PROJECT_ROOT / "docs" / "data-dictionary.md").read_text(
+        encoding="utf-8"
+    )
+    readme = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
+    vocabularies = json.loads(
+        (PROJECT_ROOT / "schema" / "controlled-vocabularies.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    for value in (*vocabularies["sector_tag"], *vocabularies["provenance_tag"]):
+        assert f"`{value}`" in dictionary
+    for value in ("third_party_submission", "unknown_pending_review"):
+        assert f"`{value}`" in dictionary
+        assert "inventory-only" in dictionary
+    for field in ("publication_status", "version_status", "legal_status"):
+        assert f"`{field}`" in dictionary
+    for status in (
+        "not_started",
+        "in_progress",
+        "reviewed",
+        "gap_found",
+        "recheck_due",
+    ):
+        assert f"`{status}`" in dictionary
+    assert "empty `covered_document_types`" in dictionary
+    assert "empty `covered_sector_tags`" in dictionary
+    assert "formal publication" in dictionary.lower()
+    assert "principal" in dictionary and "all records" in dictionary.lower()
+    assert "Stage 1" in readme and "Stage 2" in readme and "Stage 3" in readme
+    assert "schema and interface" in readme.lower()
+    assert (
+        "Comprehensive within the documented inclusion boundary, "
+        "verified through 4 September 2026."
+    ) in readme
+
+
+def test_repository_english_guard_rejects_non_latin_scripts_and_escaped_json(
+    tmp_path: Path,
+):
+    repository = tmp_path / "repository"
+    repository.mkdir()
+    subprocess.run(["git", "init", "-q"], cwd=repository, check=True)
+    tracked_files = {
+        "README.md": "English copy with José.\n",
+        "kana.md": f"English then {chr(0x3042)}.\n",
+        "hangul.md": f"English then {chr(0xD55C)}.\n",
+        "cyrillic.md": f"English then {chr(0x0416)}.\n",
+        "arabic.md": f"English then {chr(0x0639)}.\n",
+        "greek.md": f"English then {chr(0x03A9)}.\n",
+        "astral-han.md": f"English then {chr(0x20000)}.\n",
+        "escaped.json": json.dumps({"title": chr(0x4E2D)}, ensure_ascii=True),
+        "escaped-astral.json": json.dumps({"title": chr(0x20000)}, ensure_ascii=True),
+    }
+    for filename, contents in tracked_files.items():
+        (repository / filename).write_text(contents, encoding="utf-8")
+    non_latin_filename = f"report-{chr(0x0434)}.md"
+    (repository / non_latin_filename).write_text("English body.\n", encoding="utf-8")
+    (repository / "scratch.md").write_text(
+        f"Untracked {chr(0x4E2D)}.\n", encoding="utf-8"
+    )
+    subprocess.run(
+        ["git", "add", *tracked_files, non_latin_filename], cwd=repository, check=True
+    )
+
+    findings = find_non_latin_script_in_tracked_files(repository)
+
+    for codepoint in (
+        "U+3042",
+        "U+D55C",
+        "U+0416",
+        "U+0639",
+        "U+03A9",
+        "U+20000",
+        "U+4E2D",
+        "U+0434",
+    ):
+        assert any(codepoint in finding for finding in findings)
+    assert not any("README.md" in finding for finding in findings)
+    assert not any("scratch.md" in finding for finding in findings)
+    assert any("tracked path" in finding for finding in findings)
+    assert any("escaped.json" in finding and "JSON string" in finding for finding in findings)
+    assert any(
+        "escaped-astral.json" in finding and "U+20000" in finding
+        for finding in findings
+    )
+
+
+def test_actual_repository_passes_non_latin_script_guard():
+    assert find_non_latin_script_in_tracked_files(PROJECT_ROOT) == []
 
 
 def test_scanner_rejects_local_paths_and_non_published_payloads(tmp_path: Path):

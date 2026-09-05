@@ -7,6 +7,8 @@ export interface CorpusCriteria {
   institution?: string;
   documentType?: string;
   legalStatus?: string;
+  sector?: string;
+  provenance?: string;
   policyStage?: string;
   concept?: string;
   corpusTier?: string;
@@ -21,6 +23,8 @@ const corpusStringCriteriaKeys = [
   'institution',
   'documentType',
   'legalStatus',
+  'sector',
+  'provenance',
   'policyStage',
   'concept',
   'corpusTier',
@@ -70,6 +74,7 @@ export function buildCorpusSearchParams(
 }
 
 export interface TimelineCriteria {
+  view?: 'principal' | 'all';
   institution?: string;
   documentType?: string;
   policyStage?: string;
@@ -86,6 +91,7 @@ export interface TimelineEntry {
   documentType: string | null;
   policyStage: string | null;
   eventType: string | null;
+  recordLevel: DocumentRecord['record_level'] | null;
 }
 
 export function vocabularyLabel(value: string): string {
@@ -214,6 +220,10 @@ export function filterDocuments(
         && hasMatchingId(document.institutions, criteria.institution)
         && matchesValue(document.document_type, criteria.documentType)
         && matchesValue(document.legal_status, criteria.legalStatus)
+        && (criteria.sector === undefined
+          || document.sector_tags.some((sector) => matchesValue(sector, criteria.sector)))
+        && (criteria.provenance === undefined
+          || document.provenance_tags.some((provenance) => matchesValue(provenance, criteria.provenance)))
         && matchesValue(document.record_level, criteria.recordLevel)
         && matchesValue(document.version_status, criteria.versionStatus)
         && hasMatchingId(document.policies, criteria.policy)
@@ -253,6 +263,7 @@ export function buildTimelineEntries(data: PublicData): TimelineEntry[] {
       documentType: document.document_type,
       policyStage: document.corpus_assessment?.policy_stage ?? null,
       eventType: null,
+      recordLevel: document.record_level,
     }));
   const events: TimelineEntry[] = data.events
     .filter((event) => event.publication_status === 'published')
@@ -276,6 +287,7 @@ export function buildTimelineEntries(data: PublicData): TimelineEntry[] {
         documentType: document?.document_type ?? null,
         policyStage: document?.corpus_assessment?.policy_stage ?? null,
         eventType: event.event_type,
+        recordLevel: document?.record_level ?? null,
       };
     });
 
@@ -287,7 +299,8 @@ export function filterTimeline(
   criteria: TimelineCriteria,
 ): TimelineEntry[] {
   return sortTimelineEntries(entries.filter((entry) => (
-    (criteria.institution === undefined
+    (criteria.view === 'all' || entry.recordLevel === null || entry.recordLevel === 'principal')
+    && (criteria.institution === undefined
       || entry.institutionIds.some((institutionId) => matchesValue(institutionId, criteria.institution)))
     && (criteria.documentType === undefined
       || entry.documentType !== null && matchesValue(entry.documentType, criteria.documentType))

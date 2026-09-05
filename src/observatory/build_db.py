@@ -203,6 +203,22 @@ def _insert_document_supporting_rows(
         _insert_junction_rows(connection, "document_sources", "source_id", data, "source_ids", document_id)
         _insert_junction_rows(
             connection,
+            "document_sector_tags",
+            "sector_tag",
+            data,
+            "sector_tags",
+            document_id,
+        )
+        _insert_junction_rows(
+            connection,
+            "document_provenance_tags",
+            "provenance_tag",
+            data,
+            "provenance_tags",
+            document_id,
+        )
+        _insert_junction_rows(
+            connection,
             "document_procedure_references",
             "procedure_reference",
             data,

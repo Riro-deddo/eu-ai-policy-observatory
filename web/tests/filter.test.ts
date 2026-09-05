@@ -119,6 +119,13 @@ describe('filterDocuments', () => {
     }).map((document) => document.id)).toEqual(['artificial-intelligence-act-2024']);
   });
 
+  it('matches sector and provenance tags with logical AND', () => {
+    expect(filterDocuments(publishedDocuments, {
+      sector: 'financial_services',
+      provenance: 'eu_institution_authored',
+    }).map((document) => document.id)).toEqual(['artificial-intelligence-act-2024']);
+  });
+
   it('sorts by publication date descending and short title ascending', () => {
     const communication = publishedDocuments[1];
     if (communication === undefined) throw new Error('Expected a communication fixture.');
@@ -161,6 +168,15 @@ describe('filterDocuments', () => {
 });
 
 describe('Corpus query serialisation', () => {
+  it('serialises sector and provenance criteria in stable order', () => {
+    expect(buildCorpusSearchParams(new URLSearchParams('ref=phd'), {
+      sector: 'health',
+      provenance: 'eu_agency_or_body_authored',
+    }).toString()).toBe(
+      'ref=phd&sector=health&provenance=eu_agency_or_body_authored',
+    );
+  });
+
   it('preserves unrelated query parameters and emits controlled criteria in stable order', () => {
     expect(buildCorpusSearchParams(
       new URLSearchParams('ref=phd&query=old&view=principal&preview=true'),
@@ -236,10 +252,40 @@ const timelineData: PublicData = {
     published_documents: publishedDocuments.length,
     principal_documents: 2,
     supporting_files_and_versions: 0,
+    coverage_cutoff: '2026-09-04',
+    coverage_statement: 'A deterministic test audit for the public corpus.',
+    source_families: {
+      total: 2,
+      by_status: {
+        not_started: 0,
+        in_progress: 0,
+        reviewed: 2,
+        gap_found: 0,
+        recheck_due: 0,
+      },
+    },
+    inventory: {
+      included: 2,
+      merged: 0,
+      excluded: 0,
+      pending: 0,
+    },
+    unresolved_candidates: 0,
   },
   generated_at: publishedAt,
   policies: [],
-  documents: publishedDocuments,
+  documents: [
+    ...publishedDocuments,
+    {
+      ...act,
+      id: 'ai-act-presidency-compromise-2022',
+      slug: 'ai-act-presidency-compromise-2022',
+      short_title: 'AI Act Presidency compromise',
+      record_level: 'version',
+      document_date: '2022-06-15',
+      publication_date: '2022-06-15',
+    },
+  ],
   events: timelineEvents,
   concepts: [],
   institutions: [],
@@ -252,6 +298,7 @@ describe('timeline filtering', () => {
     expect(buildTimelineEntries(timelineData).map((entry) => entry.id)).toEqual([
       'artificial-intelligence-for-europe-2018',
       'event-tie',
+      'ai-act-presidency-compromise-2022',
       'unlinked-publication',
       'artificial-intelligence-act-2024',
       'final-act-publication',
@@ -297,6 +344,22 @@ describe('timeline filtering', () => {
       'artificial-intelligence-act-2024',
       'final-act-publication',
     ]);
+  });
+
+  it('defaults to principal timeline records while retaining unlinked events', () => {
+    const entries = buildTimelineEntries(timelineData);
+
+    expect(filterTimeline(entries, {}).map((entry) => entry.id)).toEqual([
+      'artificial-intelligence-for-europe-2018',
+      'event-tie',
+      'unlinked-publication',
+      'artificial-intelligence-act-2024',
+      'final-act-publication',
+    ]);
+    expect(filterTimeline(entries, { view: 'all' }).map((entry) => entry.id)).toContain(
+      'ai-act-presidency-compromise-2022',
+    );
+    expect(entries.find((entry) => entry.id === 'unlinked-publication')?.recordLevel).toBeNull();
   });
 
   it('returns new arrays without mutating source documents, events or entries', () => {

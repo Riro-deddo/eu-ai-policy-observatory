@@ -10,7 +10,9 @@
   "document_type": "regulation",
   "record_level": "principal",
   "official_reference": "Regulation (EU) 2024/1689",
-  "procedure_references": ["2021/0106(COD)"],
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
   "oj_reference": "OJ L, 2024/1689, 12.7.2024",
   "document_date": "2024-06-13",
   "version_label": "Official Journal text",
@@ -21,9 +23,44 @@
   "eli": "https://data.europa.eu/eli/reg/2024/1689/oj",
   "language": "en",
   "official_summary": null,
-  "institution_roles": [{"institution_id": "european-parliament", "role": "adopter"}, {"institution_id": "council-of-the-european-union", "role": "adopter"}],
-  "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"],
-  "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"],
-  "source_ids": ["ai-act-eur-lex"],
-  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "adoption", "inclusion_rationale": "Final in-force regulation anchoring the 2018–2024 core pathway.", "researcher_notes": "Analytical assessment; the metadata retains the Official Journal publication date rather than the signature date.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter"
+    },
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "ai-act-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "Final in-force regulation anchoring the 2018–2024 core pathway.",
+    "researcher_notes": "Analytical assessment; the metadata retains the Official Journal publication date rather than the signature date.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "joint_institutional",
+    "officially_published"
+  ]
 }

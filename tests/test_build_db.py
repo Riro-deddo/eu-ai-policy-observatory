@@ -25,6 +25,16 @@ def test_build_database_normalises_document_links(tmp_path):
         assert connection.execute("SELECT COUNT(*) FROM policy_documents").fetchone() == (1,)
         assert connection.execute("SELECT COUNT(*) FROM document_concepts").fetchone() == (1,)
         assert connection.execute("SELECT COUNT(*) FROM document_sources").fetchone() == (1,)
+        assert connection.execute(
+            "SELECT document_id, sector_tag FROM document_sector_tags ORDER BY sector_tag"
+        ).fetchall() == [("example-document", "general_cross_sector")]
+        assert connection.execute(
+            "SELECT document_id, provenance_tag FROM document_provenance_tags "
+            "ORDER BY provenance_tag"
+        ).fetchall() == [
+            ("example-document", "eu_institution_authored"),
+            ("example-document", "officially_published"),
+        ]
 
 
 def test_build_database_normalises_version_metadata_and_procedure_references(tmp_path):

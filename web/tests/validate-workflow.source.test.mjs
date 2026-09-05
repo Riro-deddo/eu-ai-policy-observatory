@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 const workflow = readFileSync(new URL('../../.github/workflows/validate.yml', import.meta.url), 'utf8');
+const deployWorkflow = readFileSync(new URL('../../.github/workflows/deploy-pages.yml', import.meta.url), 'utf8');
 const playwrightConfig = readFileSync(new URL('../playwright.config.ts', import.meta.url), 'utf8');
 const packageJson = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
 
@@ -15,4 +16,16 @@ test('validation runs the complete configured Playwright project set once', () =
   assert.match(playwrightConfig, /name: 'chromium-mobile'/);
   assert.match(packageJson.scripts.test, /node --test "tests\/\*\.test\.mjs"/);
   assert.match(packageJson.scripts.test, /vitest run/);
+});
+
+test('validation and deployment enforce the repository language gate before building', () => {
+  const guardCommand = 'python scripts/check_repository_english.py --root .';
+
+  for (const source of [workflow, deployWorkflow]) {
+    assert.equal(source.split(guardCommand).length - 1, 1);
+    assert.ok(source.indexOf(guardCommand) < source.indexOf('observatory-build'));
+  }
+
+  assert.ok(workflow.indexOf(guardCommand) < workflow.indexOf('pnpm build'));
+  assert.ok(deployWorkflow.indexOf(guardCommand) < deployWorkflow.indexOf('actions/deploy-pages'));
 });

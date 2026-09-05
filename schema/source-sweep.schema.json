@@ -5,48 +5,92 @@
   "type": "object",
   "properties": {
     "generated_at": { "$ref": "#/$defs/timestamp" },
+    "coverage_cutoff": { "$ref": "#/$defs/date" },
     "sources": {
       "type": "array",
       "items": { "$ref": "#/$defs/source" }
     }
   },
-  "required": ["generated_at", "sources"],
+  "required": ["generated_at", "coverage_cutoff", "sources"],
   "additionalProperties": false,
   "$defs": {
     "id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
     "timestamp": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})$"
     },
     "https_url": {
       "type": "string",
       "format": "uri",
       "pattern": "^https://"
     },
+    "nonblank_string": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
     "source": {
       "type": "object",
       "properties": {
         "id": { "$ref": "#/$defs/id" },
-        "name": { "type": "string", "minLength": 1 },
-        "institution": { "type": "string", "minLength": 1 },
+        "name": { "$ref": "#/$defs/nonblank_string" },
+        "institution": { "$ref": "#/$defs/nonblank_string" },
+        "source_family": { "$ref": "#/$defs/nonblank_string" },
         "url": { "$ref": "#/$defs/https_url" },
-        "scope_note": { "type": "string", "minLength": 1 },
-        "scan_status": {
-          "enum": ["pending", "in_progress", "complete"]
+        "scope_note": { "$ref": "#/$defs/nonblank_string" },
+        "covered_from": { "$ref": "#/$defs/date" },
+        "covered_through": { "$ref": "#/$defs/date" },
+        "covered_document_types": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
         },
-        "checked_at": { "$ref": "#/$defs/timestamp" }
+        "covered_sector_tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "discovery_method": { "$ref": "#/$defs/nonblank_string" },
+        "scan_status": {
+          "enum": [
+            "not_started",
+            "in_progress",
+            "reviewed",
+            "gap_found",
+            "recheck_due"
+          ]
+        },
+        "checked_at": { "$ref": "#/$defs/timestamp" },
+        "coverage_cutoff": { "$ref": "#/$defs/date" },
+        "reviewer": { "$ref": "#/$defs/nonblank_string" },
+        "verification_note": { "$ref": "#/$defs/nonblank_string" }
       },
       "required": [
         "id",
         "name",
         "institution",
+        "source_family",
         "url",
         "scope_note",
+        "covered_from",
+        "covered_through",
+        "covered_document_types",
+        "covered_sector_tags",
+        "discovery_method",
         "scan_status",
-        "checked_at"
+        "checked_at",
+        "coverage_cutoff",
+        "reviewer",
+        "verification_note"
       ],
       "additionalProperties": false
     }

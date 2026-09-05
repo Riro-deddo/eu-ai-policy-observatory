@@ -86,6 +86,8 @@ export interface DocumentRecord extends PublishedEntity {
   short_title: string;
   document_type: string;
   record_level: 'principal' | 'supporting' | 'version' | 'attachment';
+  sector_tags: string[];
+  provenance_tags: string[];
   official_reference: string | null;
   procedure_references: string[];
   oj_reference: string | null;
@@ -112,6 +114,14 @@ export interface CorpusCoverage {
   published_documents: number;
   principal_documents: number;
   supporting_files_and_versions: number;
+  coverage_cutoff: string;
+  coverage_statement: string;
+  source_families: {
+    total: number;
+    by_status: Record<'not_started' | 'in_progress' | 'reviewed' | 'gap_found' | 'recheck_due', number>;
+  };
+  inventory: Record<'included' | 'merged' | 'excluded' | 'pending', number>;
+  unresolved_candidates: number;
 }
 
 export interface PublicData {

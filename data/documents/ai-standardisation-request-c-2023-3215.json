@@ -1,6 +1,59 @@
 {
-  "id": "ai-standardisation-request-c-2023-3215", "entity_type": "document", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "slug": "ai-standardisation-request-c-2023-3215", "official_title": "Commission Implementing Decision of 22.5.2023 on a standardisation request to the European Committee for Standardisation and the European Committee for Electrotechnical Standardisation in support of Union policy on artificial intelligence", "short_title": "AI standardisation request M/593", "document_type": "standardisation_request", "record_level": "principal", "official_reference": "C(2023) 3215 final", "procedure_references": [], "oj_reference": null, "document_date": "2023-05-22", "version_label": "Final", "version_status": "final", "publication_date": "2023-05-22", "legal_status": "adopted", "celex": null, "eli": null, "language": "en", "official_summary": null,
-  "institution_roles": [{"institution_id": "european-commission", "role": "adopter"}], "policy_ids": ["european-ai-policy-pathway", "artificial-intelligence-act-legislative-process"], "concept_ids": ["risk", "compliance", "accountability", "trustworthiness"], "source_ids": ["ai-standardisation-request-c-2023-3215-register"],
-  "corpus_assessment": {"corpus_tier": "core", "policy_stage": "implementation", "inclusion_rationale": "Original Commission standardisation request supporting technical standards for the emerging AI Act framework.", "researcher_notes": "The register identifies the decision and annexed request as M/593; implementation-stage classification is analytical.", "review_status": "verified", "reviewed_by": "Yichen Hao", "reviewed_at": "2026-09-04T00:00:00Z"}
+  "id": "ai-standardisation-request-c-2023-3215",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-04T00:00:00Z",
+  "slug": "ai-standardisation-request-c-2023-3215",
+  "official_title": "Commission Implementing Decision of 22.5.2023 on a standardisation request to the European Committee for Standardisation and the European Committee for Electrotechnical Standardisation in support of Union policy on artificial intelligence",
+  "short_title": "AI standardisation request M/593",
+  "document_type": "standardisation_request",
+  "record_level": "principal",
+  "official_reference": "C(2023) 3215 final",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2023-05-22",
+  "version_label": "Final",
+  "version_status": "final",
+  "publication_date": "2023-05-22",
+  "legal_status": "adopted",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "adopter"
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability",
+    "trustworthiness"
+  ],
+  "source_ids": [
+    "ai-standardisation-request-c-2023-3215-register"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Original Commission standardisation request supporting technical standards for the emerging AI Act framework.",
+    "researcher_notes": "The register identifies the decision and annexed request as M/593; implementation-stage classification is analytical.",
+    "review_status": "verified",
+    "reviewed_by": "Yichen Hao",
+    "reviewed_at": "2026-09-04T00:00:00Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ]
 }
