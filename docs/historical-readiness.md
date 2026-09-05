@@ -27,7 +27,7 @@ The output contains:
 - `documents_checked` and `documents_ready`;
 - sorted `issues`, each with `code`, `record_path`, `field`, and `message`.
 
-Exit code `0` means all published documents passed this structural preflight, `1` means readiness gaps were found, and `2` means the invocation or canonical input was invalid. Empty document input and malformed JSON fail closed rather than appearing as a successful zero-document run.
+Exit code `0` means all published documents passed this structural preflight, `1` means readiness gaps were found, and `2` means the invocation or canonical input was invalid. Empty document input and malformed JSON fail closed rather than appearing as a successful zero-document run. Malformed JSON and non-object JSON errors list the affected project-relative source paths in deterministic order without echoing record contents. Wrong-typed fields inside an otherwise valid object remain structured readiness issues in the JSON result; values are never coerced.
 
 The public Python interfaces are:
 

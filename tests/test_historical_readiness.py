@@ -464,6 +464,38 @@ def test_malformed_nested_shapes_report_issues_instead_of_crashing(complete_reco
     assert any(issue.code == "historical_schema" for issue in _issues(complete_records))
 
 
+@pytest.mark.parametrize(
+    ("field", "value", "expected_field"),
+    [
+        ("document_type", [], "document_type"),
+        ("legal_status", {}, "legal_status"),
+        ("record_level", [], "record_level"),
+        ("institution_role", {}, "institution_roles.0.role"),
+    ],
+)
+def test_wrong_typed_document_scalar_fields_return_schema_issues(complete_records, field, value, expected_field):
+    document = complete_records["documents"][0].data
+    if field == "institution_role":
+        document["institution_roles"][0]["role"] = value
+    else:
+        document[field] = value
+    issues = _issues(complete_records)
+    assert any(issue.code == "historical_schema" and issue.field == expected_field for issue in issues)
+
+
+@pytest.mark.parametrize("value", [[], {}])
+def test_wrong_typed_relationship_type_returns_relationship_issue(complete_records, value):
+    complete_records["documents"][0].data["record_level"] = "version"
+    parent = deepcopy(complete_records["documents"][0].data)
+    parent.update(id="parent-document", slug="parent-document", record_level="principal", official_reference="PARENT", version_label=None)
+    _add_document(complete_records, parent, "parent-document")
+    _add_relationship(complete_records, "example-document", "parent-document", "version_of")
+    relationship = complete_records["relationships"][0]
+    relationship.data["relationship_type"] = value
+    issues = _issues(complete_records)
+    assert any(issue.record_path == relationship.path.as_posix() and issue.field == "relationship_type" for issue in issues)
+
+
 def test_prospective_schema_is_document_only_and_does_not_mutate_active_schema():
     schema_path = SCHEMA_ROOT / "record.schema.json"
     before = schema_path.read_bytes()
@@ -602,6 +634,42 @@ def test_cli_incoming_invalid_relationship_affects_source_and_target(tmp_path, c
     assert payload["documents_checked"] == 2 and payload["documents_ready"] == 0
 
 
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("document_type", []),
+        ("legal_status", {}),
+        ("record_level", []),
+        ("institution_role", {}),
+        ("id", []),
+    ],
+)
+def test_cli_wrong_typed_document_scalars_return_json_gaps(tmp_path, complete_records, field, value):
+    document = complete_records["documents"][0].data
+    if field == "institution_role":
+        document["institution_roles"][0]["role"] = value
+    else:
+        document[field] = value
+    _write_cli_project(tmp_path, complete_records)
+    result = _run_cli(tmp_path)
+    assert result.returncode == 1
+    payload = json.loads(result.stdout)
+    assert payload["documents_checked"] == 1 and payload["documents_ready"] == 0
+    assert "traceback" not in result.stderr.lower()
+
+
+@pytest.mark.parametrize("value", [[], {}])
+def test_cli_wrong_typed_relationship_type_returns_json_gap(tmp_path, complete_records, value):
+    _add_relationship(complete_records, "example-document", "example-document", "related_to")
+    complete_records["relationships"][0].data["relationship_type"] = value
+    _write_cli_project(tmp_path, complete_records)
+    result = _run_cli(tmp_path)
+    assert result.returncode == 1
+    payload = json.loads(result.stdout)
+    assert any(issue["field"] == "relationship_type" for issue in payload["issues"])
+    assert "traceback" not in result.stderr.lower()
+
+
 @pytest.mark.parametrize("cutoff", ["2026-9-04", "2026-02-29", "today"])
 def test_cli_rejects_malformed_cutoff_without_traceback(tmp_path, complete_records, cutoff):
     _write_cli_project(tmp_path, complete_records)
@@ -618,8 +686,12 @@ def test_cli_empty_or_malformed_input_fails_closed(tmp_path, complete_records):
     malformed = tmp_path / "malformed"
     _write_cli_project(malformed, complete_records)
     (malformed / "data" / "documents" / "example-document.json").write_text("{broken", encoding="utf-8")
+    (malformed / "data" / "documents" / "aaa-broken.json").write_text("{also-broken", encoding="utf-8")
     result = _run_cli(malformed)
     assert result.returncode == 2 and "traceback" not in result.stderr.lower()
+    assert "data/documents/aaa-broken.json" in result.stderr
+    assert "data/documents/example-document.json" in result.stderr
+    assert result.stderr.index("aaa-broken.json") < result.stderr.index("example-document.json")
 
 
 def test_cli_non_object_json_fails_closed_without_traceback(tmp_path, complete_records):
@@ -628,3 +700,4 @@ def test_cli_non_object_json_fails_closed_without_traceback(tmp_path, complete_r
     result = _run_cli(tmp_path)
     assert result.returncode == 2
     assert "error" in result.stderr.lower() and "traceback" not in result.stderr.lower()
+    assert "data/documents/example-document.json" in result.stderr

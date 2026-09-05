@@ -112,7 +112,11 @@ def validate_historical_relationships(
                 issues.append(_issue(relationship, "rationale", "Analytical relationships require a nonblank rationale."))
         elif basis != "official":
             issues.append(_issue(relationship, "basis", "Published relationships require an official or analytical basis."))
-        eligible[relationship.path.as_posix()] = endpoints_valid and evidence_valid and rationale_valid
+        relationship_type = data.get("relationship_type")
+        relationship_type_valid = isinstance(relationship_type, str)
+        if not relationship_type_valid:
+            issues.append(_issue(relationship, "relationship_type", "Relationship type must be a string."))
+        eligible[relationship.path.as_posix()] = endpoints_valid and evidence_valid and rationale_valid and relationship_type_valid
 
     def valid_edge(relationship: LoadedRecord, document_id: str, *, incoming_edge: bool) -> bool:
         data = relationship.data
@@ -130,18 +134,18 @@ def validate_historical_relationships(
     for document in documents:
         data = document.data
         level, document_id = data.get("record_level"), data.get("id")
-        if not isinstance(document_id, str) or level not in {"version", "attachment"}:
+        if not isinstance(document_id, str) or not isinstance(level, str) or level not in {"version", "attachment"}:
             continue
         valid = False
         if level == "version":
             candidates = [
                 (edge, False)
                 for edge in outgoing.get(document_id, ())
-                if edge.data.get("relationship_type") in _VERSION_RELATIONSHIPS
+                if isinstance(edge.data.get("relationship_type"), str) and edge.data.get("relationship_type") in _VERSION_RELATIONSHIPS
             ] + [
                 (edge, True)
                 for edge in incoming.get(document_id, ())
-                if edge.data.get("relationship_type") in _VERSION_RELATIONSHIPS
+                if isinstance(edge.data.get("relationship_type"), str) and edge.data.get("relationship_type") in _VERSION_RELATIONSHIPS
             ]
             valid = any(
                 valid_edge(edge, document_id, incoming_edge=is_incoming)
@@ -154,9 +158,9 @@ def validate_historical_relationships(
                 if not valid_edge(edge, document_id, incoming_edge=False):
                     continue
                 target_id = edge.data.get("target_entity_id")
-                if relation_type in _ATTACHMENT_PARENT_RELATIONSHIPS:
+                if isinstance(relation_type, str) and relation_type in _ATTACHMENT_PARENT_RELATIONSHIPS:
                     valid = True
-                elif relation_type in _VERSION_RELATIONSHIPS and all(
+                elif isinstance(relation_type, str) and relation_type in _VERSION_RELATIONSHIPS and all(
                     peer.data.get("record_level") == "attachment"
                     for peer in documents_by_id[target_id]
                 ):

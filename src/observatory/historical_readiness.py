@@ -192,8 +192,8 @@ def _validate_dates(record: LoadedRecord, cutoff: date, issues: list[ValidationI
     document_type = data.get("document_type")
     version_status = data.get("version_status")
     invalid_kind = (
-        (kind == "official_act_date" and document_type not in _ACT_TYPES)
-        or (kind == "institutional_adoption" and document_type not in _ADOPTION_TYPES)
+        (kind == "official_act_date" and (not isinstance(document_type, str) or document_type not in _ACT_TYPES))
+        or (kind == "institutional_adoption" and (not isinstance(document_type, str) or document_type not in _ADOPTION_TYPES))
         or (kind == "consolidation" and version_status != "consolidated")
         or (version_status == "consolidated" and kind != "consolidation")
     )
@@ -304,7 +304,7 @@ def _identity_issues(documents: Sequence[LoadedRecord]) -> list[ValidationIssue]
         label = data.get("version_label")
         normalized_label = " ".join(label.split()).casefold() if isinstance(label, str) else None
         roles = data.get("institution_roles")
-        issuers = tuple(sorted(role["institution_id"] for role in roles if isinstance(role, Mapping) and role.get("role") in _ISSUER_ROLES and isinstance(role.get("institution_id"), str))) if isinstance(roles, list) else ()
+        issuers = tuple(sorted(role["institution_id"] for role in roles if isinstance(role, Mapping) and isinstance(role.get("role"), str) and role.get("role") in _ISSUER_ROLES and isinstance(role.get("institution_id"), str))) if isinstance(roles, list) else ()
         language = data.get("language")
         if isinstance(language, str):
             identities[(reference, language, normalized_label, issuers)].append(record)
@@ -348,7 +348,8 @@ def validate_historical_readiness(
         declared = {value for value in record.data.get("source_ids", ()) if isinstance(value, str)} if isinstance(record.data.get("source_ids"), list) else set()
         for field, source_id in _document_evidence_references(record.data):
             _check_evidence_source(source_id, declared, sources, record, field, issues)
-        if record.data.get("legal_status") in {"repealed", "expired"} and not isinstance(record.data.get("legal_status_evidence"), Mapping):
+        legal_status = record.data.get("legal_status")
+        if isinstance(legal_status, str) and legal_status in {"repealed", "expired"} and not isinstance(record.data.get("legal_status_evidence"), Mapping):
             issues.append(_issue("historical_evidence", record, "legal_status_evidence", "Repealed or expired status requires its own official citation."))
     issues.extend(_identity_issues(documents))
     issues.extend(validate_historical_relationships(records, documents, sources))
@@ -369,11 +370,13 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     try:
         records = load_records(args.project_root / "data")
-        if any(record.syntax_error for group in records.values() for record in group):
-            print("Error: malformed canonical JSON input; inspect the reported source path.", file=sys.stderr)
+        malformed = sorted(record.path.resolve().relative_to(args.project_root.resolve()).as_posix() for group in records.values() for record in group if record.syntax_error)
+        if malformed:
+            print(f"Error: malformed canonical JSON input: {', '.join(malformed)}.", file=sys.stderr)
             return 2
-        if any(not isinstance(record.data, Mapping) for group in records.values() for record in group):
-            print("Error: canonical JSON records must decode to objects.", file=sys.stderr)
+        nonobjects = sorted(record.path.resolve().relative_to(args.project_root.resolve()).as_posix() for group in records.values() for record in group if not isinstance(record.data, Mapping))
+        if nonobjects:
+            print(f"Error: canonical JSON records must decode to objects: {', '.join(nonobjects)}.", file=sys.stderr)
             return 2
         published = [record for record in records.get("documents", ()) if record.data.get("publication_status") == "published"]
         if not published:
@@ -394,7 +397,7 @@ def main(argv: list[str] | None = None) -> int:
         }
         relationship_documents[record.path.as_posix()] = endpoint_ids
     affected_ids = set().union(*(relationship_documents[path] for path in issue_paths if path in relationship_documents))
-    ready = sum(record.path.as_posix() not in issue_paths and record.data.get("id") not in affected_ids for record in published)
+    ready = sum(record.path.as_posix() not in issue_paths and isinstance(record.data.get("id"), str) and record.data.get("id") not in affected_ids for record in published)
     payload = {
         "contract_version": CONTRACT_VERSION,
         "publication_contract_active": False,
