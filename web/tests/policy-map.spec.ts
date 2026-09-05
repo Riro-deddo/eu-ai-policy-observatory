@@ -12,6 +12,7 @@ test('default group and expanded view render recorded graph scopes', async ({ pa
 
 test('selection exposes evidence, complete focus and back navigation', async ({ page }) => {
   await page.goto('policy-map/');
+  await page.getByRole('button', { name: 'Fit', exact: true }).click();
   await page.locator('[data-policy-map-node="document:artificial-intelligence-act"]').click();
   await expect(page.getByLabel('Selected document')).toBeVisible();
   await expect(page.getByLabel('Selected document').getByRole('link')).not.toHaveCount(0);
@@ -25,10 +26,12 @@ test('selection exposes evidence, complete focus and back navigation', async ({ 
 test('search, keyboard selection and map controls are operable', async ({ page }) => {
   await page.goto('policy-map/');
   await page.getByLabel('Find a record').fill('White Paper');
-  await page.getByRole('button', { name: /White Paper on Artificial Intelligence/ }).click();
+  await page.locator('[data-policy-map-search-results]')
+    .getByRole('button', { name: /White Paper on Artificial Intelligence/ })
+    .click();
   await expect(page.locator('[data-policy-map-node]')).toHaveCount(2);
   await expect(page.locator('[data-policy-map-edge]')).toHaveCount(2);
-  await page.locator('[data-policy-map-node]').first().focus();
+  await page.locator('[data-policy-map-node="document:white-paper-on-artificial-intelligence"]').focus();
   await page.keyboard.press('Enter');
   await expect(page.getByLabel('Selected document')).toBeVisible();
   await page.getByRole('button', { name: 'Zoom in' }).click();
@@ -41,8 +44,39 @@ test('search, keyboard selection and map controls are operable', async ({ page }
 test('initial camera fit measures the visible canvas', async ({ page }) => {
   await page.goto('policy-map/');
   await expect(page.getByLabel('Policy grouping')).toBeVisible();
-  const camera = await page.locator('[data-policy-map-scene]').getAttribute('transform');
-  expect(camera).toMatch(/^translate\((?!NaN)[\d.-]+ (?!NaN)[\d.-]+\) scale\((?!0(?:\D|$)|NaN)[\d.]+\)$/);
+  const camera = await page.evaluate(async () => {
+    const root = document.querySelector<HTMLElement>('[data-policy-map-root]');
+    const viewport = document.querySelector<HTMLElement>('[data-policy-map-viewport]');
+    const scene = document.querySelector<SVGGElement>('[data-policy-map-scene]');
+    if (!root?.dataset.atlasUrl || !viewport || !scene) throw new Error('Policy Map did not initialise');
+    const atlas = await fetch(root.dataset.atlasUrl).then((response) => response.json()) as {
+      views: Record<string, { width: number; height: number }>;
+    };
+    const graph = atlas.views['artificial-intelligence-act-legislative-process:principal'];
+    const matrix = scene.transform.baseVal.consolidate()?.matrix;
+    if (!graph || !matrix) throw new Error('Policy Map camera is unavailable');
+    const viewportBox = viewport.getBoundingClientRect();
+    const expectedScale = Math.max(
+      .85,
+      Math.min(1, (viewportBox.width - 30) / graph.width, (viewportBox.height - 30) / graph.height),
+    );
+    return {
+      actual: { x: matrix.e, y: matrix.f, scaleX: matrix.a, scaleY: matrix.d },
+      expected: {
+        x: Math.max(12, (viewportBox.width - graph.width * expectedScale) / 2),
+        y: Math.max(12, (viewportBox.height - graph.height * expectedScale) / 2),
+        scale: expectedScale,
+      },
+    };
+  });
+  expect(Number.isFinite(camera.actual.x)).toBe(true);
+  expect(Number.isFinite(camera.actual.y)).toBe(true);
+  expect(camera.actual.scaleX).toBeGreaterThan(0);
+  expect(camera.actual.scaleY).toBeGreaterThan(0);
+  expect(camera.actual.scaleX).toBeCloseTo(camera.expected.scale, 5);
+  expect(camera.actual.scaleY).toBeCloseTo(camera.expected.scale, 5);
+  expect(camera.actual.x).toBeCloseTo(camera.expected.x, 4);
+  expect(camera.actual.y).toBeCloseTo(camera.expected.y, 4);
   await expect(page.getByLabel('Map zoom')).not.toHaveText('0%');
 });
 
