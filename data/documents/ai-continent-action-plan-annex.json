@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "ai-continent-action-plan-annex",
   "official_title": "Annex to the Communication AI Continent Action Plan",
   "short_title": "AI Continent Action Plan annex",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-continent-action-plan-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 165 final masthead reads EUROPEAN COMMISSION."
     }
   ],
   "policy_ids": [
@@ -36,7 +38,8 @@
     "accountability"
   ],
   "source_ids": [
-    "ai-continent-action-plan-eur-lex"
+    "ai-continent-action-plan-eur-lex",
+    "ai-continent-action-plan-commission-library"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
@@ -44,8 +47,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -53,5 +56,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-continent-action-plan-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 09/04/2025; COM(2025) 165 final Brussels masthead carries the same date.",
+      "meaning": "Establishes retained document date 2025-04-09."
+    },
+    "publication_date": {
+      "source_id": "ai-continent-action-plan-commission-library",
+      "locator": "Commission library Publication 09 April 2025 links CELEX 52025DC0165, whose second component is the dated ANNEX manifestation.",
+      "meaning": "Establishes exact publication separately from issue, vote, adoption, signature, receipt, or consolidation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-continent-action-plan-eur-lex",
+      "locator": "Official COM(2025) 165 final: the second CELEX component is ANNEX to COM(2025) 165 and its table lists 13 AI Factories with manufacturing, health, finance, climate and public-sector priorities.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-continent-action-plan-eur-lex",
+      "locator": "Official COM(2025) 165 final: the second CELEX component is ANNEX to COM(2025) 165 and its table lists 13 AI Factories with manufacturing, health, finance, climate and public-sector priorities.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-continent-action-plan-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 165 final masthead reads EUROPEAN COMMISSION.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-continent-action-plan-commission-library",
+      "locator": "Commission library Publication 09 April 2025 links CELEX 52025DC0165, whose second component is the dated ANNEX manifestation.",
+      "rationale": "Official EU page establishes publication of this exact manifestation."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

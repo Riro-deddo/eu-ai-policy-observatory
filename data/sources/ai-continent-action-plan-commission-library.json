@@ -1,0 +1,13 @@
+{
+  "id": "ai-continent-action-plan-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:43:48Z",
+  "updated_at": "2026-09-05T17:43:48Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T17:43:48Z",
+  "last_verified_at": "2026-09-05T17:43:48Z",
+  "verification_note": "Publication 09 April 2025; exact CELEX 52025DC0165 link."
+}

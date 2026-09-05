@@ -3,11 +3,11 @@
   "entity_type": "source",
   "publication_status": "published",
   "created_at": "2026-09-05T08:20:53Z",
-  "updated_at": "2026-09-05T08:20:53Z",
+  "updated_at": "2026-09-05T17:58:09Z",
   "source_type": "official_pdf",
   "url": "https://ec.europa.eu/newsroom/dae/redirection/document/119623",
   "publisher": "European Commission",
   "retrieved_at": "2026-09-05T08:08:53.258506Z",
-  "last_verified_at": "2026-09-05T08:20:53Z",
-  "verification_note": "Codex retrieved this official download with normal TLS verification. The 238290-byte response is a 7-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: 20f90c54a7cd0fb952d08965947dabfa6e423515cab925d9c4b9c81364ed5a82. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json."
+  "last_verified_at": "2026-09-05T17:58:09Z",
+  "verification_note": "Codex retrieved this official download with normal TLS verification. The 238290-byte response is a 7-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: 20f90c54a7cd0fb952d08965947dabfa6e423515cab925d9c4b9c81364ed5a82. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
 }

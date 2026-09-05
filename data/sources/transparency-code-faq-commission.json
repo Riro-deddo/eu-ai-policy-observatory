@@ -1,0 +1,13 @@
+{
+  "id": "transparency-code-faq-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:58:09Z",
+  "updated_at": "2026-09-05T17:58:09Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/faqs/code-practice-transparency-ai-generated-content",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T17:58:09Z",
+  "last_verified_at": "2026-09-05T17:58:09Z",
+  "verification_note": "Live official FAQ review on 5 September 2026. The FAQ states that six independent experts led drafting and were appointed by the AI Office; the exact Code PDFs identify the six experts by name."
+}

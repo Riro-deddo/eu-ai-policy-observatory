@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "cor-opinion-ai-act-2021",
   "official_title": "Opinion of the European Committee of the Regions — European approach to artificial intelligence — Artificial Intelligence Act (revised opinion)",
   "short_title": "European Committee of the Regions opinion on the AI Act",
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-committee-of-the-regions",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "cor-ai-act-opinion-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2021/02682 opinion heading names the Committee."
     }
   ],
   "policy_ids": [
@@ -49,8 +51,8 @@
     "inclusion_rationale": "The revised regional opinion formally addresses both the European approach to AI and the AI Act proposal.",
     "researcher_notes": "Analytical selection; document and vote date follow the EUR-Lex record, while publication occurred in 2022.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -58,5 +60,53 @@
   "provenance_tags": [
     "eu_agency_or_body_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "cor-ai-act-opinion-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of vote: 02/12/2021 for COR 2021/02682.",
+      "meaning": "Establishes retained document date 2021-12-02."
+    },
+    "publication_date": {
+      "source_id": "cor-ai-act-opinion-eur-lex",
+      "locator": "OJ C 97, 28.2.2022, pp. 60-85.",
+      "meaning": "Establishes retained publication date 2022-02-28 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "cor-ai-act-opinion-eur-lex",
+      "locator": "Official COR 2021/02682: General and Specific comments assess COM(2021) 206 for regional authorities, public services, SMEs and high-risk domains.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "cor-ai-act-opinion-eur-lex",
+      "locator": "Official COR 2021/02682: General and Specific comments assess COM(2021) 206 for regional authorities, public services, SMEs and high-risk domains.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "cor-ai-act-opinion-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2021/02682 opinion heading names the Committee.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "cor-ai-act-opinion-eur-lex",
+      "locator": "OJ C 97, 28.2.2022, pp. 60-85.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

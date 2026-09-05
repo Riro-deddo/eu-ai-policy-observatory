@@ -1,0 +1,2942 @@
+{
+  "batch_id": "2026-09-05-expanded-review-eurlex",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T18:06:34Z",
+  "publication_cutoff": "2026-09-04",
+  "records": [
+    {
+      "document_id": "ai-act-consolidated-2026-07-27",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng"
+      ],
+      "findings": [
+        "Exact 27 July 2026 consolidated manifestation and version_of relationship checked.",
+        "ELI version selector proves consolidation date but not independently labelled publication."
+      ],
+      "hold_reasons": [
+        "No official field or separately dated page independently establishes publication_date 2026-07-27 for this consolidated manifestation."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=consil:ST_8115_2021_ADD_2",
+        "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence"
+      ],
+      "findings": [
+        "Exact package component checked: 2. Annex to the Impact assessment.",
+        "Correction: publication_date 2021-04-21; 23 April is the later Council cover-note date.",
+        "Retained roles and classifications evidenced; author/date arrays reviewed empty.",
+        "Touching relationships rechecked: ",
+        "ai-act-impact-assessment-annexes-annex-to-assessment (annex_to, verified, ai-act-impact-assessment-annexes-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-impact-assessment-annexes-eur-lex",
+          "ai-act-impact-assessment-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-impact-assessment-annexes-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 84 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "The separately transmitted impact-assessment annexes contain the evidence, consultation and cost material underpinning SWD(2021) 84 final.",
+          "researcher_notes": "Analytical selection; official title and attachment identity are verified through Council record ST 8115/21 ADD 2.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; SWD(2021) 84 final Brussels masthead carries the same date.",
+            "meaning": "Establishes exact component issue date."
+          },
+          "publication_date": {
+            "source_id": "ai-act-impact-assessment-commission-library",
+            "locator": "Publication 21 April 2021 and distinct download 2. Annex to the Impact assessment.",
+            "meaning": "Establishes exact component publication independently of Council cover/receipt dates."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+            "locator": "Official SWD(2021) 84 final: download 2 contains Annex 1 on the Scrutiny Board opinion plus option, sector and stakeholder annexes spanning health, transport, public services, finance and employment.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+            "locator": "Official SWD(2021) 84 final: download 2 contains Annex 1 on the Scrutiny Board opinion plus option, sector and stakeholder annexes spanning health, transport, public services, finance and employment.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-impact-assessment-annexes-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 84 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-impact-assessment-commission-library",
+            "locator": "Publication 21 April 2021 and distinct download 2. Annex to the Impact assessment.",
+            "rationale": "Official Commission page dates and identifies the exact component."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "publication_date": "2021-04-21",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021SC0085",
+        "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence"
+      ],
+      "findings": [
+        "Exact package component checked: 3. Executive summary of the Impact Assessment.",
+        "Issue and publication independently evidenced as 21 April 2021.",
+        "Retained roles and classifications evidenced; author/date arrays reviewed empty.",
+        "Touching relationships rechecked: ",
+        "ai-act-impact-summary-part-of-assessment (part_of, verified, ai-act-impact-summary-eur-lex); ai-act-impact-summary-procedural-step (procedural_step_for, verified, ai-act-impact-summary-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-impact-summary-eur-lex",
+          "ai-act-impact-assessment-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-impact-summary-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 85 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "The separately citable executive summary condenses the impact assessment's problem framing and preferred policy option.",
+          "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-impact-summary-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; SWD(2021) 85 final Brussels masthead carries the same date.",
+            "meaning": "Establishes exact component issue date."
+          },
+          "publication_date": {
+            "source_id": "ai-act-impact-assessment-commission-library",
+            "locator": "Publication 21 April 2021 and distinct download 3. Executive summary of the Impact Assessment.",
+            "meaning": "Establishes exact component publication independently of Council cover/receipt dates."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-impact-summary-eur-lex",
+            "locator": "Official SWD(2021) 85 final: download 3 summarizes the problem, objectives, policy options and economy-wide impacts of the horizontal AI framework.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-impact-summary-eur-lex",
+            "locator": "Official SWD(2021) 85 final: download 3 summarizes the problem, objectives, policy options and economy-wide impacts of the horizontal AI framework.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-impact-summary-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 85 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-impact-assessment-commission-library",
+            "locator": "Publication 21 April 2021 and distinct download 3. Executive summary of the Impact Assessment.",
+            "rationale": "Official Commission page dates and identifies the exact component."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-act-impact-assessment-swd-2021-84",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021SC0084",
+        "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence"
+      ],
+      "findings": [
+        "Exact package component checked: 1. Impact assessment.",
+        "Issue and publication independently evidenced as 21 April 2021.",
+        "Retained roles and classifications evidenced; author/date arrays reviewed empty.",
+        "Touching relationships rechecked: ",
+        "ai-act-impact-assessment-annexes-annex-to-assessment (annex_to, verified, ai-act-impact-assessment-annexes-eur-lex); ai-act-impact-assessment-procedural-step (procedural_step_for, verified, ai-act-impact-assessment-eur-lex); ai-act-impact-summary-part-of-assessment (part_of, verified, ai-act-impact-summary-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-impact-assessment-eur-lex",
+          "ai-act-impact-assessment-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-impact-assessment-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 84 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "The impact assessment records the problem definition, policy options and evidence base for the Commission proposal.",
+          "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-impact-assessment-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; SWD(2021) 84 final Brussels masthead carries the same date.",
+            "meaning": "Establishes exact component issue date."
+          },
+          "publication_date": {
+            "source_id": "ai-act-impact-assessment-commission-library",
+            "locator": "Publication 21 April 2021 and distinct download 1. Impact assessment.",
+            "meaning": "Establishes exact component publication independently of Council cover/receipt dates."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-impact-assessment-eur-lex",
+            "locator": "Official SWD(2021) 84 final: Chapters 2, 5 and 6 analyze the AI-policy problem, options and impacts across industries, public authorities and rights-sensitive uses.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-impact-assessment-eur-lex",
+            "locator": "Official SWD(2021) 84 final: Chapters 2, 5 and 6 analyze the AI-policy problem, options and impacts across industries, public authorities and rights-sensitive uses.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-impact-assessment-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; SWD(2021) 84 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-impact-assessment-commission-library",
+            "locator": "Publication 21 April 2021 and distinct download 1. Impact assessment.",
+            "rationale": "Official Commission page dates and identifies the exact component."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1755"
+      ],
+      "findings": [
+        "Exact manifestation checked: Commission Implementing Regulation (EU) 2026/1755; document 2026-07-20; publication 2026-07-21.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-act-proceedings-regulation-implements-ai-act (implements, verified, ai-act-proceedings-regulation-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-proceedings-regulation-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-proceedings-regulation-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; Commission Implementing Regulation (EU) 2026/1755 masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-proceedings-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document: 20/07/2026; Commission Implementing Regulation (EU) 2026/1755 enactment heading carries the same act date.",
+            "meaning": "Establishes retained document date 2026-07-20."
+          },
+          "publication_date": {
+            "source_id": "ai-act-proceedings-regulation-eur-lex",
+            "locator": "OJ L, 2026/1755, 21.7.2026.",
+            "meaning": "Establishes retained publication date 2026-07-21 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-proceedings-regulation-eur-lex",
+            "locator": "Official Commission Implementing Regulation (EU) 2026/1755: Article 1 sets procedural rules under Article 113 of Regulation (EU) 2024/1689 across the horizontal AI Act market framework.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-proceedings-regulation-eur-lex",
+            "locator": "Official Commission Implementing Regulation (EU) 2026/1755: Article 1 sets procedural rules under Article 113 of Regulation (EU) 2024/1689 across the horizontal AI Act market framework.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-proceedings-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; Commission Implementing Regulation (EU) 2026/1755 masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-proceedings-regulation-eur-lex",
+            "locator": "OJ L, 2026/1755, 21.7.2026.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-act-proposal-annexes",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:e0649735-a372-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206",
+        "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-laying-down-harmonised-rules-artificial-intelligence"
+      ],
+      "findings": [
+        "CELEX 52021PC0206 HTML has second component ANNEXES to COM(2021) 206 final, Brussels 21.4.2021, followed by Annexes I-IX.",
+        "Commission library Publication 21 April 2021 links exact CELEX package; annex_to relationship remains verified."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-proposal-annexes-eur-lex",
+          "ai-act-proposal-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "proposer",
+            "evidence_source_id": "ai-act-proposal-annexes-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 206 final heading expressly identifies a Commission proposal."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "The separately downloadable annexes define the original proposal's techniques, high-risk uses and amendment schedules and are essential to version comparison.",
+          "researcher_notes": "Analytical selection; the annexes are modelled separately from the proposal's main text.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-proposal-annexes-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; COM(2021) 206 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2021-04-21."
+          },
+          "publication_date": {
+            "source_id": "ai-act-proposal-commission-library",
+            "locator": "Commission library Publication 21 April 2021 links CELEX 52021PC0206, whose second component is the dated ANNEXES manifestation.",
+            "meaning": "Establishes exact publication separately from issue, vote, adoption, signature, receipt, or consolidation."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-proposal-annexes-eur-lex",
+            "locator": "Official COM(2021) 206 final: the second CELEX text component is ANNEXES to COM(2021) 206; Annex I defines AI techniques, Annex II spans product laws and Annex III lists eight high-risk domains.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-proposal-annexes-eur-lex",
+            "locator": "Official COM(2021) 206 final: the second CELEX text component is ANNEXES to COM(2021) 206; Annex I defines AI techniques, Annex II spans product laws and Annex III lists eight high-risk domains.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-proposal-annexes-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 206 final heading expressly identifies a Commission proposal.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-proposal-commission-library",
+            "locator": "Commission library Publication 21 April 2021 links CELEX 52021PC0206, whose second component is the dated ANNEXES manifestation.",
+            "rationale": "Official EU page establishes publication of this exact manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-act-proposal",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206",
+        "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-laying-down-harmonised-rules-artificial-intelligence"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2021) 206 final; document 2021-04-21; publication 2021-04-21.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-act-council-adoption-note-procedural-step (procedural_step_for, verified, council-st-9645-2024-rev-1); ai-act-council-first-compromise-version-of-proposal (version_of, verified, council-st-10069-2022); ai-act-council-third-part-one-init-version-of-proposal (version_of, verified, council-st-12206-2022-init); ai-act-council-third-part-two-version-of-proposal (version_of, verified, council-st-12549-2022); ai-act-impact-assessment-procedural-step (procedural_step_for, verified, ai-act-impact-assessment-eur-lex); ai-act-impact-summary-procedural-step (procedural_step_for, verified, ai-act-impact-summary-eur-lex); ai-act-proposal-annexes-annex-to-proposal (annex_to, verified, ai-act-proposal-annexes-eur-lex); ai-act-proposal-based-on-white-paper (based_on, verified, ai-act-proposal-eur-lex); ai-act-proposal-related-to-final-act (adopted_as, verified, ai-act-eur-lex); ai-act-provisional-agreement-version-of-proposal (version_of, verified, council-st-5662-2024); ai-act-rsb-opinion-procedural-step (procedural_step_for, verified, ai-act-rsb-opinion-eur-lex); cor-ai-act-opinion-procedural-step (procedural_step_for, verified, cor-ai-act-opinion-eur-lex); ecb-ai-act-opinion-procedural-step (procedural_step_for, verified, ecb-ai-act-opinion-eur-lex); edpb-edps-ai-act-opinion-procedural-step (procedural_step_for, verified, edpb-edps-joint-opinion-5-2021-official-pdf); eesc-ai-act-opinion-procedural-step (procedural_step_for, verified, eesc-ai-act-opinion-eur-lex); ep-2023-position-procedural-step (procedural_step_for, verified, ep-p9-ta-2023-0236); ep-2024-position-procedural-step (procedural_step_for, verified, ep-p9-ta-2024-0138); ep-a9-report-procedural-step (procedural_step_for, verified, ep-a9-0188-2023); ep-ai-act-cult-opinion-procedural-step (procedural_step_for, verified, ep-ai-act-cult-opinion-pe-719637-source); ep-ai-act-draft-report-procedural-step (procedural_step_for, verified, ep-ai-act-draft-report-pe-731563-source); ep-ai-act-envi-opinion-procedural-step (procedural_step_for, verified, ep-ai-act-envi-opinion-pe-699056-source); ep-ai-act-itre-opinion-procedural-step (procedural_step_for, verified, ep-ai-act-itre-opinion-pe-719801-source); ep-ai-act-juri-opinion-procedural-step (procedural_step_for, verified, ep-ai-act-juri-opinion-pe-719827-source); ep-ai-act-tran-opinion-procedural-step (procedural_step_for, verified, ep-ai-act-tran-opinion-pe-730085-source); white-paper-precedes-ai-act-proposal (precedes, verified, ai-act-proposal-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-proposal-eur-lex",
+          "ai-act-proposal-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "proposer",
+            "evidence_source_id": "ai-act-proposal-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 206 final heading expressly identifies a Commission proposal."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "Core Commission legislative proposal for the EU Artificial Intelligence Act.",
+          "researcher_notes": "Analytical assessment; this record remains distinct from the final regulation.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-proposal-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; COM(2021) 206 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2021-04-21."
+          },
+          "publication_date": {
+            "source_id": "ai-act-proposal-commission-library",
+            "locator": "Publication 21 April 2021 and exact COM(2021) 206 link.",
+            "meaning": "Establishes retained publication date 2021-04-21 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-proposal-eur-lex",
+            "locator": "Official COM(2021) 206 final: Article 1 states horizontal Union-market subject matter; Titles II and III regulate prohibited and high-risk AI, with Annex III spanning eight domains.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-proposal-eur-lex",
+            "locator": "Official COM(2021) 206 final: Article 1 states horizontal Union-market subject matter; Titles II and III regulate prohibited and high-risk AI, with Annex III spanning eight domains.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-proposal-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 206 final heading expressly identifies a Commission proposal.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-proposal-commission-library",
+            "locator": "Publication 21 April 2021 and exact COM(2021) 206 link.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=PI_COM:SEC(2021)167"
+      ],
+      "findings": [
+        "Official identity, issue/adoption metadata, institutional authorship, substantive AI relevance, retained tags, and touching relationships were screened.",
+        "No partial extension is proposed; the record remains legacy_review_pending."
+      ],
+      "hold_reasons": [
+        "Official PDF cover dates SEC(2021) 167 on 22 March 2021; EUR-Lex package metadata says 21 April, and the canonical 23 April publication date remains unsupported."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-continent-action-plan-annex",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0165",
+        "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan"
+      ],
+      "findings": [
+        "CELEX 52025DC0165 HTML has second component ANNEX to COM(2025) 165 final, Brussels 9.4.2025, with substantive AI Factory table.",
+        "Commission library Publication 09 April 2025 links exact CELEX package; annex_to relationship remains verified."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-continent-action-plan-eur-lex",
+          "ai-continent-action-plan-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-continent-action-plan-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 165 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 09/04/2025; COM(2025) 165 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2025-04-09."
+          },
+          "publication_date": {
+            "source_id": "ai-continent-action-plan-commission-library",
+            "locator": "Commission library Publication 09 April 2025 links CELEX 52025DC0165, whose second component is the dated ANNEX manifestation.",
+            "meaning": "Establishes exact publication separately from issue, vote, adoption, signature, receipt, or consolidation."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "Official COM(2025) 165 final: the second CELEX component is ANNEX to COM(2025) 165 and its table lists 13 AI Factories with manufacturing, health, finance, climate and public-sector priorities.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "Official COM(2025) 165 final: the second CELEX component is ANNEX to COM(2025) 165 and its table lists 13 AI Factories with manufacturing, health, finance, climate and public-sector priorities.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 165 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-continent-action-plan-commission-library",
+            "locator": "Commission library Publication 09 April 2025 links CELEX 52025DC0165, whose second component is the dated ANNEX manifestation.",
+            "rationale": "Official EU page establishes publication of this exact manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-continent-action-plan",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0165",
+        "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2025) 165 final; document 2025-04-09; publication 2025-04-09.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-continent-annex-annex-to-plan (annex_to, verified, ai-continent-action-plan-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-continent-action-plan-eur-lex",
+          "ai-continent-action-plan-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-continent-action-plan-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 165 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 09/04/2025; COM(2025) 165 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2025-04-09."
+          },
+          "publication_date": {
+            "source_id": "ai-continent-action-plan-commission-library",
+            "locator": "Publication 09 April 2025 and exact CELEX 52025DC0165 link.",
+            "meaning": "Establishes retained publication date 2025-04-09 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "Official COM(2025) 165 final: sections 1-5 cover AI factories, data, adoption in industry and public services, skills and AI Act compliance.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "Official COM(2025) 165 final: sections 1-5 cover AI factories, data, adoption in industry and public services, skills and AI Act compliance.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-continent-action-plan-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 165 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-continent-action-plan-commission-library",
+            "locator": "Publication 09 April 2025 and exact CELEX 52025DC0165 link.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-liability-directive-proposal",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496",
+        "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=CELEX:52022PC0496",
+        "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_5807"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2022) 496 final; document 2022-09-28; publication 2022-09-28.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-liability-proposal-eur-lex",
+          "ai-liability-proposal-history-eur-lex",
+          "ai-liability-proposal-commission-release"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "proposer",
+            "evidence_source_id": "ai-liability-proposal-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2022) 496 final heading expressly identifies a Commission proposal."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "Core liability proposal in the selected EU AI policy pathway.",
+          "researcher_notes": "Analytical assessment; it is not represented as an adopted directive.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-liability-proposal-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 28/09/2022; COM(2022) 496 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2022-09-28."
+          },
+          "publication_date": {
+            "source_id": "ai-liability-proposal-commission-release",
+            "locator": "IP/22/5807, Sep 28, 2022, adoption statement and exact proposal link.",
+            "meaning": "Establishes retained publication date 2022-09-28 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-liability-proposal-eur-lex",
+            "locator": "Official COM(2022) 496 final: Articles 3-4 regulate evidence disclosure and presumptions for AI damage claims across covered activities.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-liability-proposal-eur-lex",
+            "locator": "Official COM(2022) 496 final: Articles 3-4 regulate evidence disclosure and presumptions for AI damage claims across covered activities.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-liability-proposal-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2022) 496 final heading expressly identifies a Commission proposal.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-liability-proposal-commission-release",
+            "locator": "IP/22/5807, Sep 28, 2022, adoption statement and exact proposal link.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "legal_status_evidence": {
+          "source_id": "ai-liability-proposal-history-eur-lex",
+          "locator": "Procedure/history and Dates metadata: end of validity 06/10/2025, Withdrawn.",
+          "meaning": "Official record establishes withdrawal on 6 October 2025."
+        },
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-omnibus-proposal-2025",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0836",
+        "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai-regulation-proposal"
+      ],
+      "findings": [
+        "Exact AI-specific proposal checked: COM(2025) 836 final; issue and publication 19 November 2025.",
+        "Retained classifications and Commission proposer role evidenced; bibliographic authors/additional dates reviewed empty.",
+        "Touching relationships rechecked: ",
+        "ai-omnibus-cor-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-cor-eur-lex); ai-omnibus-council-note-procedural-step (procedural_step_for, verified, council-st-10752-2026); ai-omnibus-ecb-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-ecb-eur-lex); ai-omnibus-edpb-edps-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-edpb-edps); ai-omnibus-eesc-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-eesc-eur-lex); ai-omnibus-ep-report-procedural-step (procedural_step_for, verified, ai-omnibus-ep-report); ai-omnibus-proposal-adopted-as-regulation (adopted_as, verified, ai-omnibus-regulation-eur-lex); ai-omnibus-swd-procedural-step (procedural_step_for, verified, ai-omnibus-swd-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-omnibus-proposal-eur-lex",
+          "ai-omnibus-proposal-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "proposer",
+            "evidence_source_id": "ai-omnibus-proposal-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 836 final heading expressly identifies a Commission proposal."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-proposal-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 19/11/2025; COM(2025) 836 final Brussels masthead carries the same date.",
+            "meaning": "Establishes 19 November 2025 as the proposal issue date."
+          },
+          "publication_date": {
+            "source_id": "ai-omnibus-proposal-commission-library",
+            "locator": "Heading, 'Publication 19 November 2025', and CELEX 52025PC0836 link.",
+            "meaning": "Establishes publication of the exact proposal on 19 November 2025."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-proposal-eur-lex",
+            "locator": "Official COM(2025) 836 final: the explanatory memorandum and Article 1 amend horizontal Regulation (EU) 2024/1689 obligations for providers, deployers and authorities.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-proposal-eur-lex",
+            "locator": "Official COM(2025) 836 final: the explanatory memorandum and Article 1 amend horizontal Regulation (EU) 2024/1689 obligations for providers, deployers and authorities.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-proposal-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 836 final heading expressly identifies a Commission proposal.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-omnibus-proposal-commission-library",
+            "locator": "Heading 'Digital Omnibus on AI Regulation Proposal', metadata line 'Publication 19 November 2025', and link to CELEX 52025PC0836.",
+            "rationale": "The official Commission library page independently dates and identifies the exact AI-specific proposal."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-omnibus-regulation-2026-1744",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+      ],
+      "findings": [
+        "Exact manifestation checked: Regulation (EU) 2026/1744; document 2026-07-08; publication 2026-07-24.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-omnibus-proposal-adopted-as-regulation (adopted_as, verified, ai-omnibus-regulation-eur-lex); ai-omnibus-regulation-amends-ai-act (amends, verified, ai-omnibus-regulation-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-omnibus-regulation-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ai-omnibus-regulation-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author lists European Parliament and Council; Regulation (EU) 2026/1744 signature block names both."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "ai-omnibus-regulation-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author lists European Parliament and Council; Regulation (EU) 2026/1744 signature block names both."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document: 08/07/2026; Regulation (EU) 2026/1744 enactment heading carries the same act date.",
+            "meaning": "Establishes retained document date 2026-07-08."
+          },
+          "publication_date": {
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "OJ L, 2026/1744, 24.7.2026.",
+            "meaning": "Establishes retained publication date 2026-07-24 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "Official Regulation (EU) 2026/1744: Article 1 amends horizontal Regulation (EU) 2024/1689 rules for providers, deployers and sectoral uses.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "Official Regulation (EU) 2026/1744: Article 1 amends horizontal Regulation (EU) 2024/1689 rules for providers, deployers and sectoral uses.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Author lists European Parliament and Council; Regulation (EU) 2026/1744 signature block names both.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "joint_institutional",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Author lists European Parliament and Council for Regulation (EU) 2026/1744; signature block names both.",
+            "rationale": "The two EU co-legislators jointly authored and adopted the act."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "OJ L, 2026/1744, 24.7.2026.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ai-omnibus-staff-working-document-2025",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52025SC0836",
+        "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/121743"
+      ],
+      "findings": [
+        "Official 207-page PDF cover reads Brussels 19.11.2025, SWD(2025) 836 final and identifies COM(2025) 837 and COM(2025) 836.",
+        "Section 3 analyzes targeted AI Act amendments on pp.68-81; procedural_step_for relationship remains verified."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-omnibus-swd-eur-lex",
+          "digital-omnibus-regulation-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-swd-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; SWD(2025) 836 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "proposal",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-swd-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 19/11/2025; SWD(2025) 836 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2025-11-19."
+          },
+          "publication_date": {
+            "source_id": "digital-omnibus-regulation-commission-library",
+            "locator": "Commission library Publication 19 November 2025 labels the accompanying Staff Working Document; linked PDF cover identifies SWD(2025) 836 final and COM(2025) 836 final.",
+            "meaning": "Establishes exact publication separately from issue, vote, adoption, signature, receipt, or consolidation."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-swd-eur-lex",
+            "locator": "Official SWD(2025) 836 final: section 3 on pp.68-81 analyzes targeted AI Act amendments for providers, deployers, SMEs, authorities and sectoral legislation.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-swd-eur-lex",
+            "locator": "Official SWD(2025) 836 final: section 3 on pp.68-81 analyzes targeted AI Act amendments for providers, deployers, SMEs, authorities and sectoral legislation.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-swd-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; SWD(2025) 836 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "digital-omnibus-regulation-commission-library",
+            "locator": "Commission library Publication 19 November 2025 labels the accompanying Staff Working Document; linked PDF cover identifies SWD(2025) 836 final and COM(2025) 836 final.",
+            "rationale": "Official EU page establishes publication of this exact manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "apply-ai-strategy-annexes",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0723",
+        "https://digital-strategy.ec.europa.eu/en/library/commission-communication-apply-ai-strategy"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2025) 723 final; document 2025-10-08; publication 2025-10-08.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: apply-ai-annexes-annex-to-strategy (annex_to, verified, apply-ai-strategy-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "apply-ai-strategy-eur-lex",
+          "apply-ai-strategy-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "apply-ai-strategy-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 723 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 08/10/2025; COM(2025) 723 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2025-10-08."
+          },
+          "publication_date": {
+            "source_id": "apply-ai-strategy-commission-library",
+            "locator": "Publication 08 October 2025; link says including annexes in EurLex.",
+            "meaning": "Establishes retained publication date 2025-10-08 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "Official COM(2025) 723 final: the COM(2025) 723 annex components enumerate actions and uses in healthcare, manufacturing, energy, mobility, public administration and science.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "Official COM(2025) 723 final: the COM(2025) 723 annex components enumerate actions and uses in healthcare, manufacturing, energy, mobility, public administration and science.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 723 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "apply-ai-strategy-commission-library",
+            "locator": "Publication 08 October 2025; link says including annexes in EurLex.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "apply-ai-strategy",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0723",
+        "https://digital-strategy.ec.europa.eu/en/library/commission-communication-apply-ai-strategy"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2025) 723 final; document 2025-10-08; publication 2025-10-08.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: apply-ai-annexes-annex-to-strategy (annex_to, verified, apply-ai-strategy-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "apply-ai-strategy-eur-lex",
+          "apply-ai-strategy-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "apply-ai-strategy-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 723 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 08/10/2025; COM(2025) 723 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2025-10-08."
+          },
+          "publication_date": {
+            "source_id": "apply-ai-strategy-commission-library",
+            "locator": "Publication 08 October 2025; exact strategy link.",
+            "meaning": "Establishes retained publication date 2025-10-08 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "Official COM(2025) 723 final: the strategy chapters address AI adoption in healthcare, manufacturing, energy, mobility, public administration and science.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "Official COM(2025) 723 final: the strategy chapters address AI adoption in healthcare, manufacturing, energy, mobility, public administration and science.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "apply-ai-strategy-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2025) 723 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "apply-ai-strategy-commission-library",
+            "locator": "Publication 08 October 2025; exact strategy link.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "artificial-intelligence-act",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+      ],
+      "findings": [
+        "Exact manifestation checked: Regulation (EU) 2024/1689; document 2024-06-13; publication 2024-07-12.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-act-consolidated-2026-version-of-ai-act (version_of, verified, ai-act-consolidated-2026-eur-lex); ai-act-pe-cons-init-version-of-final (version_of, verified, council-pe-cons-24-2024); ai-act-pe-cons-rev-1-version-of-final (version_of, verified, council-pe-cons-24-2024-rev-1); ai-act-proceedings-regulation-implements-ai-act (implements, verified, ai-act-proceedings-regulation-eur-lex); ai-act-proposal-related-to-final-act (adopted_as, verified, ai-act-eur-lex); ai-omnibus-regulation-amends-ai-act (amends, verified, ai-omnibus-regulation-eur-lex); ai-system-definition-guidelines-implements-ai-act (implements, verified, definition-guidelines-commission); gpai-provider-guidelines-implements-ai-act (implements, verified, gpai-guidelines-commission); prohibited-practices-guidelines-implements-ai-act (implements, verified, prohibited-guidelines-commission); scientific-panel-regulation-implements-ai-act (implements, verified, scientific-panel-regulation-eur-lex); standardisation-request-2025-implements-ai-act (implements, verified, standardisation-request-c-2025-3871-register)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ai-act-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author lists European Parliament and Council; Regulation (EU) 2024/1689 signature block names both."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "ai-act-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author lists European Parliament and Council; Regulation (EU) 2024/1689 signature block names both."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Final in-force regulation anchoring the 2018–2024 core pathway.",
+          "researcher_notes": "Analytical assessment; the metadata retains the Official Journal publication date rather than the signature date.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document: 13/06/2024; Regulation (EU) 2024/1689 enactment heading carries the same act date.",
+            "meaning": "Establishes retained document date 2024-06-13."
+          },
+          "publication_date": {
+            "source_id": "ai-act-eur-lex",
+            "locator": "OJ L, 2024/1689, 12.7.2024.",
+            "meaning": "Establishes retained publication date 2024-07-12 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-eur-lex",
+            "locator": "Official Regulation (EU) 2024/1689: Article 1 is horizontal, Article 5 prohibits practices, Article 6 classifies high-risk systems and Annex III spans eight domains.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-eur-lex",
+            "locator": "Official Regulation (EU) 2024/1689: Article 1 is horizontal, Article 5 prohibits practices, Article 6 classifies high-risk systems and Annex III spans eight domains.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex Document information > Author lists European Parliament and Council; Regulation (EU) 2024/1689 signature block names both.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "joint_institutional",
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex Document information > Author lists European Parliament and Council for Regulation (EU) 2024/1689; signature block names both.",
+            "rationale": "The two EU co-legislators jointly authored and adopted the act."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-eur-lex",
+            "locator": "OJ L, 2024/1689, 12.7.2024.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "boosting-startups-innovation-trustworthy-ai",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024DC0028",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-launches-ai-innovation-package-support-artificial-intelligence-startups-and-smes"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2024) 28 final; document 2024-01-24; publication 2024-01-24.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "boosting-startups-ai-eur-lex",
+          "boosting-startups-ai-commission-release"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "boosting-startups-ai-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2024) 28 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Commission policy communication linking trustworthy-AI governance with European AI innovation capacity.",
+          "researcher_notes": "The scope link is analytical and kept separate from official metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "boosting-startups-ai-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 24/01/2024; COM(2024) 28 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2024-01-24."
+          },
+          "publication_date": {
+            "source_id": "boosting-startups-ai-commission-release",
+            "locator": "Publication 24 January 2024; exact communication link.",
+            "meaning": "Establishes retained publication date 2024-01-24 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "boosting-startups-ai-eur-lex",
+            "locator": "Official COM(2024) 28 final: the communication addresses AI Factories, computing, data and talent for startups, SMEs, researchers, public services and industry.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "boosting-startups-ai-eur-lex",
+            "locator": "Official COM(2024) 28 final: the communication addresses AI Factories, computing, data and talent for startups, SMEs, researchers, public services and industry.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "boosting-startups-ai-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2024) 28 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "boosting-startups-ai-commission-release",
+            "locator": "Publication 24 January 2024; exact communication link.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "commission-ai-act-article-112-review-2026",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52026DC0234",
+        "https://digital-strategy.ec.europa.eu/en/library/report-review-prohibitions-and-high-risk-ai",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128788"
+      ],
+      "findings": [
+        "EUR-Lex identifies COM(2026) 234 final and issue/dispatch 20 May 2026.",
+        "Commission library gives Publication 22 May 2026, describes Article 112(1) review and supplies exact report.",
+        "Correct publication_date from issue 2026-05-20 to 2026-05-22."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-act-article-112-report-eur-lex",
+          "ai-act-article-112-review-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-article-112-report-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2026) 234 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-article-112-report-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 20/05/2026; COM(2026) 234 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2026-05-20."
+          },
+          "publication_date": {
+            "source_id": "ai-act-article-112-review-commission-library",
+            "locator": "Commission library Publication 22 May 2026, exact Article 112(1) report heading and exact download.",
+            "meaning": "Establishes exact publication separately from issue, vote, adoption, signature, receipt, or consolidation."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-article-112-report-eur-lex",
+            "locator": "Official COM(2026) 234 final: the report applies Article 112(1) to Article 5 practices and Annex III uses spanning biometrics, infrastructure, education, employment, services, law enforcement and migration.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-article-112-report-eur-lex",
+            "locator": "Official COM(2026) 234 final: the report applies Article 112(1) to Article 5 practices and Annex III uses spanning biometrics, infrastructure, education, employment, services, law enforcement and migration.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-article-112-report-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2026) 234 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-article-112-review-commission-library",
+            "locator": "Commission library Publication 22 May 2026, exact Article 112(1) report heading and exact download.",
+            "rationale": "Official EU page establishes publication of this exact manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "publication_date": "2026-05-22",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "commission-decision-ai-office-2024",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024D01459"
+      ],
+      "findings": [
+        "Exact manifestation checked: C(2024) 390; document 2024-01-24; publication 2024-02-14.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "commission-ai-office-decision-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "adopter",
+            "evidence_source_id": "commission-ai-office-decision-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; C(2024) 390 Article 1 and closing formula identify Commission adoption."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Foundational institutional decision for centralised AI Act implementation and enforcement support.",
+          "researcher_notes": "The implementation-stage classification is analytical; identifiers and dates are official metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "commission-ai-office-decision-eur-lex",
+            "locator": "EUR-Lex Document information gives Date of document 24/01/2024 and Date of adoption 24/01/2024 for C(2024) 390.",
+            "meaning": "Establishes retained document date 2024-01-24 as official act date."
+          },
+          "publication_date": {
+            "source_id": "commission-ai-office-decision-eur-lex",
+            "locator": "OJ C, C/2024/1459, 14.2.2024.",
+            "meaning": "Establishes retained publication date 2024-02-14 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "commission-ai-office-decision-eur-lex",
+            "locator": "Official C(2024) 390: Article 1 establishes the AI Office and Articles 2-4 give horizontal implementation tasks across Commission services and sectors.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "commission-ai-office-decision-eur-lex",
+            "locator": "Official C(2024) 390: Article 1 establishes the AI Office and Articles 2-4 give horizontal implementation tasks across Commission services and sectors.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "commission-ai-office-decision-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; C(2024) 390 Article 1 and closing formula identify Commission adoption.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "commission-ai-office-decision-eur-lex",
+            "locator": "OJ C, C/2024/1459, 14.2.2024.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "coordinated-plan-2018-annex",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018DC0795",
+        "https://digital-strategy.ec.europa.eu/en/library/coordinated-plan-artificial-intelligence"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2018) 795 final; document 2018-12-07; publication 2018-12-07.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: coordinated-plan-2018-annex-annex-to-communication (annex_to, verified, coordinated-plan-eur-lex); coordinated-plan-2021-revises-2018-plan (revises, verified, coordinated-plan-2021-annex-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "coordinated-plan-eur-lex",
+          "coordinated-plan-on-artificial-intelligence-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "coordinated-plan-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2018) 795 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "coordination",
+          "inclusion_rationale": "The separately identifiable annex contains the substantive 2018 Coordinated Plan and is required to interpret the shorter covering communication.",
+          "researcher_notes": "Analytical selection; official title and reference follow the English EUR-Lex text.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 07/12/2018; COM(2018) 795 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2018-12-07."
+          },
+          "publication_date": {
+            "source_id": "coordinated-plan-on-artificial-intelligence-commission-library",
+            "locator": "Publication 07 December 2018 and COM(2018) 795 coordinated-plan identity.",
+            "meaning": "Establishes retained publication date 2018-12-07 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "Official COM(2018) 795 final: the annex action tables cover AI research, data, skills, health, transport, public administration and industry.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "Official COM(2018) 795 final: the annex action tables cover AI research, data, skills, health, transport, public administration and industry.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "coordinated-plan-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2018) 795 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "coordinated-plan-on-artificial-intelligence-commission-library",
+            "locator": "Publication 07 December 2018 and COM(2018) 795 coordinated-plan identity.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "coordinated-plan-2021-annex",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/resource.html?format=PDF&uri=cellar:01ff45fa-a375-11eb-9585-01aa75ed71a1.0001.02/DOC_2",
+        "https://digital-strategy.ec.europa.eu/en/library/coordinated-plan-artificial-intelligence-2021-review"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2021) 205 final; document 2021-04-21; publication 2021-04-21.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: coordinated-plan-2021-annex-annex-to-communication (annex_to, verified, coordinated-plan-2021-annex-eur-lex); coordinated-plan-2021-revises-2018-plan (revises, verified, coordinated-plan-2021-annex-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "coordinated-plan-2021-annex-eur-lex",
+          "coordinated-plan-2021-review-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "coordinated-plan-2021-annex-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 205 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "coordination",
+          "inclusion_rationale": "This separately downloadable annex is the substantive 2021 review of the Coordinated Plan and revises the 2018 coordination framework.",
+          "researcher_notes": "Analytical selection; the annex remains distinct from the covering communication.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "coordinated-plan-2021-annex-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; COM(2021) 205 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2021-04-21."
+          },
+          "publication_date": {
+            "source_id": "coordinated-plan-2021-review-commission-library",
+            "locator": "Publication 21 April 2021 and exact review PDF download.",
+            "meaning": "Establishes retained publication date 2021-04-21 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "coordinated-plan-2021-annex-eur-lex",
+            "locator": "Official COM(2021) 205 final: the annex chapters cover research, skills, health, environment, mobility, agriculture, public services and industry.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "coordinated-plan-2021-annex-eur-lex",
+            "locator": "Official COM(2021) 205 final: the annex chapters cover research, skills, health, environment, mobility, agriculture, public services and industry.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "coordinated-plan-2021-annex-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 205 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "coordinated-plan-2021-review-commission-library",
+            "locator": "Publication 21 April 2021 and exact review PDF download.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "coordinated-plan-2021-review",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0205",
+        "https://digital-strategy.ec.europa.eu/en/library/communication-fostering-european-approach-artificial-intelligence"
+      ],
+      "findings": [
+        "Exact official Commission publication page and EUR-Lex manifestation checked: COM(2021) 205 final; document 2021-04-21; publication 2021-04-21.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional role evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: coordinated-plan-2021-annex-annex-to-communication (annex_to, verified, coordinated-plan-2021-annex-eur-lex); eesc-coordinated-plan-opinion-based-on-communication (based_on, verified, eesc-coordinated-plan-opinion-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "coordinated-plan-review-eur-lex",
+          "coordinated-plan-2021-cover-commission-library"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "coordinated-plan-review-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 205 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "coordination",
+          "inclusion_rationale": "The communication presents the Commission's 2021 AI package and introduces the revised Coordinated Plan and regulatory proposal.",
+          "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "coordinated-plan-review-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 21/04/2021; COM(2021) 205 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained issue date 2021-04-21."
+          },
+          "publication_date": {
+            "source_id": "coordinated-plan-2021-cover-commission-library",
+            "locator": "Heading 'Communication on Fostering a European approach to Artificial Intelligence', metadata line 'Publication 21 April 2021', and link to COM:2021:205:FIN in all EU languages.",
+            "meaning": "Establishes retained publication date 2021-04-21 separately from issue/dispatch."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "coordinated-plan-review-eur-lex",
+            "locator": "Official COM(2021) 205 final: the communication explains the 2021 Plan review and horizontal coordinated AI action across public and private domains.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "coordinated-plan-review-eur-lex",
+            "locator": "Official COM(2021) 205 final: the communication explains the 2021 Plan review and horizontal coordinated AI action across public and private domains.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "coordinated-plan-review-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2021) 205 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "coordinated-plan-2021-cover-commission-library",
+            "locator": "Heading 'Communication on Fostering a European approach to Artificial Intelligence', metadata line 'Publication 21 April 2021', and link to COM:2021:205:FIN in all EU languages.",
+            "rationale": "The official Commission publication page independently dates and identifies the exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "cor-opinion-ai-act-2021",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AR2682"
+      ],
+      "findings": [
+        "Exact manifestation checked: COR 2021/02682; document 2021-12-02; publication 2022-02-28.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: cor-ai-act-opinion-procedural-step (procedural_step_for, verified, cor-ai-act-opinion-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "cor-ai-act-opinion-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-committee-of-the-regions",
+            "role": "author",
+            "evidence_source_id": "cor-ai-act-opinion-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2021/02682 opinion heading names the Committee."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "The revised regional opinion formally addresses both the European approach to AI and the AI Act proposal.",
+          "researcher_notes": "Analytical selection; document and vote date follow the EUR-Lex record, while publication occurred in 2022.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "cor-ai-act-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 02/12/2021 for COR 2021/02682.",
+            "meaning": "Establishes retained document date 2021-12-02."
+          },
+          "publication_date": {
+            "source_id": "cor-ai-act-opinion-eur-lex",
+            "locator": "OJ C 97, 28.2.2022, pp. 60-85.",
+            "meaning": "Establishes retained publication date 2022-02-28 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "cor-ai-act-opinion-eur-lex",
+            "locator": "Official COR 2021/02682: General and Specific comments assess COM(2021) 206 for regional authorities, public services, SMEs and high-risk domains.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "cor-ai-act-opinion-eur-lex",
+            "locator": "Official COR 2021/02682: General and Specific comments assess COM(2021) 206 for regional authorities, public services, SMEs and high-risk domains.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_agency_or_body_authored",
+            "source_id": "cor-ai-act-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2021/02682 opinion heading names the Committee.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "cor-ai-act-opinion-eur-lex",
+            "locator": "OJ C 97, 28.2.2022, pp. 60-85.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "cor-opinion-ai-omnibus-2026",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025AR4240"
+      ],
+      "findings": [
+        "Exact manifestation checked: COR 2025/04240; document 2026-05-07; publication 2026-07-24.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-omnibus-cor-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-cor-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-omnibus-cor-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-committee-of-the-regions",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-cor-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2025/04240 opinion heading names the Committee."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-cor-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 07/05/2026 for COR 2025/04240.",
+            "meaning": "Establishes retained document date 2026-05-07."
+          },
+          "publication_date": {
+            "source_id": "ai-omnibus-cor-eur-lex",
+            "locator": "OJ C, C/2026/3469, 24.7.2026.",
+            "meaning": "Establishes retained publication date 2026-07-24 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-cor-eur-lex",
+            "locator": "Official COR 2025/04240: General and Specific comments assess AI Act simplification for regional authorities, businesses and public services.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-cor-eur-lex",
+            "locator": "Official COR 2025/04240: General and Specific comments assess AI Act simplification for regional authorities, businesses and public services.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_agency_or_body_authored",
+            "source_id": "ai-omnibus-cor-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Committee of the Regions; COR 2025/04240 opinion heading names the Committee.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-omnibus-cor-eur-lex",
+            "locator": "OJ C, C/2026/3469, 24.7.2026.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ecb-opinion-con-2021-40",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AB0040"
+      ],
+      "findings": [
+        "Exact manifestation checked: CON/2021/40; document 2021-12-29; publication 2022-03-11.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ecb-ai-act-opinion-procedural-step (procedural_step_for, verified, ecb-ai-act-opinion-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ecb-ai-act-opinion-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-central-bank",
+            "role": "author",
+            "evidence_source_id": "ecb-ai-act-opinion-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Central Bank; CON/2021/40 opinion heading names the ECB."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "The ECB opinion is a formal procedure contribution addressing the proposal's application to central banking and prudential supervision.",
+          "researcher_notes": "Analytical selection; document and OJ dates follow EUR-Lex.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 29/12/2021 for CON/2021/40.",
+            "meaning": "Establishes retained document date 2021-12-29."
+          },
+          "publication_date": {
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "OJ C 115, 11.3.2022, pp. 5-11.",
+            "meaning": "Establishes retained publication date 2022-03-11 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "Official CON/2021/40: paragraphs 2.1 onward assess the horizontal AI proposal for credit institutions, prudential supervision and central-bank tasks.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "Official CON/2021/40: paragraphs 2.1 onward assess the horizontal AI proposal for credit institutions, prudential supervision and central-bank tasks.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "sector_tags",
+            "value": "financial_services",
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "ECB analysis of central-banking, prudential-supervision, credit-institution and financial-services implications.",
+            "rationale": "The text substantively addresses AI in banking, prudential supervision, or financial services."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Central Bank; CON/2021/40 opinion heading names the ECB.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ecb-ai-act-opinion-eur-lex",
+            "locator": "OJ C 115, 11.3.2022, pp. 5-11.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ecb-opinion-con-2026-10",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026AB0010"
+      ],
+      "findings": [
+        "Exact manifestation checked: CON/2026/10; document 2026-03-13; publication 2026-04-15.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-omnibus-ecb-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-ecb-eur-lex); ecb-technical-working-document-annex-to-opinion (annex_to, verified, ecb-technical-working-document-con-2026-10-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-omnibus-ecb-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-central-bank",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-ecb-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Central Bank; CON/2026/10 opinion heading names the ECB."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 13/03/2026 for CON/2026/10.",
+            "meaning": "Establishes retained document date 2026-03-13."
+          },
+          "publication_date": {
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "OJ C, C/2026/2285, 15.4.2026.",
+            "meaning": "Establishes retained publication date 2026-04-15 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "Official CON/2026/10: the opinion body assesses horizontal Digital Omnibus AI amendments and effects on supervised institutions and ECB tasks.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "Official CON/2026/10: the opinion body assesses horizontal Digital Omnibus AI amendments and effects on supervised institutions and ECB tasks.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "sector_tags",
+            "value": "financial_services",
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "ECB analysis of central-banking, prudential-supervision, credit-institution and financial-services implications.",
+            "rationale": "The text substantively addresses AI in banking, prudential supervision, or financial services."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Central Bank; CON/2026/10 opinion heading names the ECB.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-omnibus-ecb-eur-lex",
+            "locator": "OJ C, C/2026/2285, 15.4.2026.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=IMMC:TWD/2026/10"
+      ],
+      "findings": [
+        "Official identity, issue/adoption metadata, institutional authorship, substantive AI relevance, retained tags, and touching relationships were screened.",
+        "No partial extension is proposed; the record remains legacy_review_pending."
+      ],
+      "hold_reasons": [
+        "EUR-Lex verifies title, ECB authorship, date, and connection with CON/2026/10, but no OJ or separately labelled publication date."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "eesc-opinion-ai-act-2021",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AE2482"
+      ],
+      "findings": [
+        "Exact manifestation checked: EESC 2021/02482; document 2021-09-22; publication 2021-12-22.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: eesc-ai-act-opinion-procedural-step (procedural_step_for, verified, eesc-ai-act-opinion-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "eesc-ai-act-opinion-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-economic-and-social-committee",
+            "role": "author",
+            "evidence_source_id": "eesc-ai-act-opinion-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2021/02482 opinion heading names the Committee."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "The mandatory EESC opinion is a formal institutional contribution to procedure 2021/0106(COD).",
+          "researcher_notes": "EUR-Lex assigns this AI Act proposal opinion 2021/C 517/09, not 2021/C 517/08; the latter is the separate opinion on COM(2021) 205.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "eesc-ai-act-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 22/09/2021 for EESC 2021/02482.",
+            "meaning": "Establishes retained document date 2021-09-22."
+          },
+          "publication_date": {
+            "source_id": "eesc-ai-act-opinion-eur-lex",
+            "locator": "OJ C 517, 22.12.2021, pp. 61-66.",
+            "meaning": "Establishes retained publication date 2021-12-22 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "eesc-ai-act-opinion-eur-lex",
+            "locator": "Official EESC 2021/02482: sections 3-4 assess COM(2021) 206 for workers, consumers, enterprises, public services and fundamental-rights uses.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "eesc-ai-act-opinion-eur-lex",
+            "locator": "Official EESC 2021/02482: sections 3-4 assess COM(2021) 206 for workers, consumers, enterprises, public services and fundamental-rights uses.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_agency_or_body_authored",
+            "source_id": "eesc-ai-act-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2021/02482 opinion heading names the Committee.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "eesc-ai-act-opinion-eur-lex",
+            "locator": "OJ C 517, 22.12.2021, pp. 61-66.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "eesc-opinion-ai-omnibus-2026",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025AE3929"
+      ],
+      "findings": [
+        "Exact manifestation checked: EESC 2025/03929; document 2026-03-18; publication 2026-07-02.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-omnibus-eesc-opinion-procedural-step (procedural_step_for, verified, ai-omnibus-eesc-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-omnibus-eesc-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-economic-and-social-committee",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-eesc-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2025/03929 opinion heading names the Committee."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-eesc-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 18/03/2026 for EESC 2025/03929.",
+            "meaning": "Establishes retained document date 2026-03-18."
+          },
+          "publication_date": {
+            "source_id": "ai-omnibus-eesc-eur-lex",
+            "locator": "OJ C, C/2026/3225, 2.7.2026.",
+            "meaning": "Establishes retained publication date 2026-07-02 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-eesc-eur-lex",
+            "locator": "Official EESC 2025/03929: sections 3-4 assess Digital Omnibus AI measures for businesses, workers, consumers and public authorities.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-eesc-eur-lex",
+            "locator": "Official EESC 2025/03929: sections 3-4 assess Digital Omnibus AI measures for businesses, workers, consumers and public authorities.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_agency_or_body_authored",
+            "source_id": "ai-omnibus-eesc-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2025/03929 opinion heading names the Committee.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-omnibus-eesc-eur-lex",
+            "locator": "OJ C, C/2026/3225, 2.7.2026.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "eesc-opinion-coordinated-plan-2021",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021AE2456"
+      ],
+      "findings": [
+        "Exact manifestation checked: EESC 2021/02456; document 2021-09-22; publication 2021-12-22.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: eesc-coordinated-plan-opinion-based-on-communication (based_on, verified, eesc-coordinated-plan-opinion-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "eesc-coordinated-plan-opinion-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-economic-and-social-committee",
+            "role": "author",
+            "evidence_source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2021/02456 opinion heading names the Committee."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "coordination",
+          "inclusion_rationale": "The formal EESC response is a distinct institutional interpretation of COM(2021) 205 and its revised Coordinated Plan.",
+          "researcher_notes": "Included separately from the EESC opinion on COM(2021) 206; EUR-Lex assigns this record 2021/C 517/08 and CELEX 52021AE2456.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of vote: 22/09/2021 for EESC 2021/02456.",
+            "meaning": "Establishes retained document date 2021-09-22."
+          },
+          "publication_date": {
+            "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "locator": "OJ C 517, 22.12.2021, pp. 56-60.",
+            "meaning": "Establishes retained publication date 2021-12-22 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "locator": "Official EESC 2021/02456: sections 3-4 assess AI investment, skills, labour, public services and sectoral adoption.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "locator": "Official EESC 2021/02456: sections 3-4 assess AI investment, skills, labour, public services and sectoral adoption.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_agency_or_body_authored",
+            "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Economic and Social Committee; EESC 2021/02456 opinion heading names the Committee.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "eesc-coordinated-plan-opinion-eur-lex",
+            "locator": "OJ C 517, 22.12.2021, pp. 56-60.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "report-ai-safety-liability-2020",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0064",
+        "https://commission.europa.eu/publications/commission-report-safety-and-liability-implications-ai-internet-things-and-robotics_en"
+      ],
+      "findings": [
+        "Exact official Commission publication page and EUR-Lex manifestation checked: COM(2020) 64 final; document 2020-02-19; publication 2020-02-19.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional role evidenced; empty author/date arrays explicitly reviewed."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "ai-safety-liability-report-eur-lex",
+          "ai-safety-liability-report-commission-publication"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-safety-liability-report-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2020) 64 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Published alongside the AI White Paper, the report frames the safety and liability problems that inform subsequent regulatory choices.",
+          "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-safety-liability-report-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 19/02/2020; COM(2020) 64 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained issue date 2020-02-19."
+          },
+          "publication_date": {
+            "source_id": "ai-safety-liability-report-commission-publication",
+            "locator": "Exact report heading, field 'Publication date 19 February 2020', and dated English download.",
+            "meaning": "Establishes retained publication date 2020-02-19 separately from issue/dispatch."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-safety-liability-report-eur-lex",
+            "locator": "Official COM(2020) 64 final: sections 2-4 analyze safety and liability for AI, IoT and robotics across products, services, businesses, consumers and public uses.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-safety-liability-report-eur-lex",
+            "locator": "Official COM(2020) 64 final: sections 2-4 analyze safety and liability for AI, IoT and robotics across products, services, businesses, consumers and public uses.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-safety-liability-report-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2020) 64 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-safety-liability-report-commission-publication",
+            "locator": "Exact report heading, field 'Publication date 19 February 2020', and dated English download.",
+            "rationale": "The official Commission publication page independently dates and identifies the exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "scientific-panel-implementing-regulation-2025-454",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0454"
+      ],
+      "findings": [
+        "Exact manifestation checked: Commission Implementing Regulation (EU) 2025/454; document 2025-03-07; publication 2025-03-10.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: scientific-panel-regulation-implements-ai-act (implements, verified, scientific-panel-regulation-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "scientific-panel-regulation-eur-lex"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "scientific-panel-regulation-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; Commission Implementing Regulation (EU) 2025/454 masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "scientific-panel-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document: 07/03/2025; Commission Implementing Regulation (EU) 2025/454 enactment heading carries the same act date.",
+            "meaning": "Establishes retained document date 2025-03-07."
+          },
+          "publication_date": {
+            "source_id": "scientific-panel-regulation-eur-lex",
+            "locator": "OJ L, 2025/454, 10.3.2025.",
+            "meaning": "Establishes retained publication date 2025-03-10 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "scientific-panel-regulation-eur-lex",
+            "locator": "Official Commission Implementing Regulation (EU) 2025/454: Article 1 and following provisions establish selection, appointment and functioning of the AI Act scientific panel across system types and sectors.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "scientific-panel-regulation-eur-lex",
+            "locator": "Official Commission Implementing Regulation (EU) 2025/454: Article 1 and following provisions establish selection, appointment and functioning of the AI Act scientific panel across system types and sectors.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "scientific-panel-regulation-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; Commission Implementing Regulation (EU) 2025/454 masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "scientific-panel-regulation-eur-lex",
+            "locator": "OJ L, 2025/454, 10.3.2025.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    },
+    {
+      "document_id": "white-paper-on-artificial-intelligence",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0065",
+        "https://digital-strategy.ec.europa.eu/en/consultations/white-paper-artificial-intelligence-european-approach-excellence-and-trust"
+      ],
+      "findings": [
+        "Exact manifestation checked: COM(2020) 65 final; document 2020-02-19; publication 2020-02-19.",
+        "Retained direct-AI, sector, and provenance classifications checked; institutional roles evidenced; empty author/date arrays explicitly reviewed.",
+        "Touching relationships rechecked: ai-act-proposal-based-on-white-paper (based_on, verified, ai-act-proposal-eur-lex); white-paper-precedes-ai-act-proposal (precedes, verified, ai-act-proposal-eur-lex)"
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "source_ids": [
+          "white-paper-eur-lex",
+          "white-paper-ai-commission-consultation"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "white-paper-eur-lex",
+            "evidence_locator": "EUR-Lex Document information > Author: European Commission; COM(2020) 65 final masthead reads EUROPEAN COMMISSION."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Core consultation document connecting excellence, trust and a future regulatory framework.",
+          "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T18:06:34Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "white-paper-eur-lex",
+            "locator": "EUR-Lex Document information > Date of document and Date of dispatch: 19/02/2020; COM(2020) 65 final Brussels masthead carries the same date.",
+            "meaning": "Establishes retained document date 2020-02-19."
+          },
+          "publication_date": {
+            "source_id": "white-paper-ai-commission-consultation",
+            "locator": "Publication 19 February 2020 and exact White Paper heading.",
+            "meaning": "Establishes retained publication date 2020-02-19 separately from issue, vote, adoption, or signature."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "white-paper-eur-lex",
+            "locator": "Official COM(2020) 65 final: Chapters 4-5 set ecosystems of excellence and trust and a risk-based AI framework across public services, health, transport and industry.",
+            "rationale": "The cited provisions make AI the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "white-paper-eur-lex",
+            "locator": "Official COM(2020) 65 final: Chapters 4-5 set ecosystems of excellence and trust and a risk-based AI framework across public services, health, transport and industry.",
+            "rationale": "The cited provisions substantiate the retained cross-sector classification."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "white-paper-eur-lex",
+            "locator": "EUR-Lex Document information > Author: European Commission; COM(2020) 65 final masthead reads EUROPEAN COMMISSION.",
+            "rationale": "Exact official metadata identifies the responsible EU institution or body."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "white-paper-ai-commission-consultation",
+            "locator": "Publication 19 February 2020 and exact White Paper heading.",
+            "rationale": "The official EU manifestation independently establishes publication of this exact record."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified",
+        "updated_at": "2026-09-05T18:06:34Z"
+      }
+    }
+  ],
+  "proposed_sources": [
+    {
+      "id": "ai-act-proposal-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-laying-down-harmonised-rules-artificial-intelligence",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Publication 21 April 2021; exact COM(2021) 206 EUR-Lex link."
+    },
+    {
+      "id": "ai-continent-action-plan-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Publication 09 April 2025; exact CELEX 52025DC0165 link."
+    },
+    {
+      "id": "ai-liability-proposal-commission-release",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_5807",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "IP/22/5807 is dated 28 September 2022, states that the Commission adopted the targeted AI Liability Directive proposal, and links it."
+    },
+    {
+      "id": "apply-ai-strategy-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/commission-communication-apply-ai-strategy",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Publication 08 October 2025; link labelled Apply AI strategy including annexes in EurLex."
+    },
+    {
+      "id": "boosting-startups-ai-commission-release",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-launches-ai-innovation-package-support-artificial-intelligence-startups-and-smes",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Publication 24 January 2024; links the exact communication on boosting startups and trustworthy AI."
+    },
+    {
+      "id": "coordinated-plan-2021-review-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/coordinated-plan-artificial-intelligence-2021-review",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Publication 21 April 2021; exact Coordinated Plan 2021 Review PDF download."
+    },
+    {
+      "id": "white-paper-ai-commission-consultation",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/consultations/white-paper-artificial-intelligence-european-approach-excellence-and-trust",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Publication 19 February 2020; exact White Paper heading."
+    },
+    {
+      "id": "coordinated-plan-2021-cover-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/communication-fostering-european-approach-artificial-intelligence",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Official Commission library page gives 'Publication 21 April 2021', identifies the exact covering Communication on Fostering a European approach to Artificial Intelligence, and links COM:2021:205:FIN in all EU languages."
+    },
+    {
+      "id": "ai-safety-liability-report-commission-publication",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://commission.europa.eu/publications/commission-report-safety-and-liability-implications-ai-internet-things-and-robotics_en",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Official Commission publication page identifies the exact safety/liability report, gives publication date 19 February 2020, and supplies a dated English download."
+    },
+    {
+      "id": "ai-omnibus-proposal-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai-regulation-proposal",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Official Commission library page gives 'Publication 19 November 2025' for the Digital Omnibus on AI Regulation Proposal and links CELEX 52025PC0836."
+    },
+    {
+      "id": "ai-act-impact-assessment-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:43:48Z",
+      "updated_at": "2026-09-05T17:43:48Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T17:43:48Z",
+      "last_verified_at": "2026-09-05T17:43:48Z",
+      "verification_note": "Official page gives Publication 21 April 2021 and separately exposes impact assessment, annex, and executive summary downloads, corroborated against SWD(2021) 84/85 EUR-Lex identities."
+    },
+    {
+      "id": "digital-omnibus-regulation-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T18:06:34Z",
+      "updated_at": "2026-09-05T18:06:34Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T18:06:34Z",
+      "last_verified_at": "2026-09-05T18:06:34Z",
+      "verification_note": "Publication 19 November 2025; labelled Staff Working Document download; PDF cover identifies SWD(2025) 836 final and COM(2025) 836 final."
+    },
+    {
+      "id": "ai-act-article-112-review-commission-library",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T18:06:34Z",
+      "updated_at": "2026-09-05T18:06:34Z",
+      "source_type": "commission_webpage",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/report-review-prohibitions-and-high-risk-ai",
+      "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+      "retrieved_at": "2026-09-05T18:06:34Z",
+      "last_verified_at": "2026-09-05T18:06:34Z",
+      "verification_note": "Publication 22 May 2026; exact Article 112(1) report description and download."
+    }
+  ],
+  "source_updates": {},
+  "summary": {
+    "assigned": 34,
+    "evidence_ready": 31,
+    "hold": 3,
+    "canonical_writes": 0,
+    "preserved": "IDs, slugs, policy_ids, concept_ids, corpus_tier values and cutoff unchanged.",
+    "substantive_corrections": [
+      "AI Act and 2026 Omnibus signature dates are distinct from OJ publication dates.",
+      "SEC(2021) 167 cover is 22 March 2021; 23 April publication remains unverified.",
+      "Impact-annex Council cover is 23 April; attached Commission text is 21 April.",
+      "Joint-authored provenance for the final acts uses EUR-Lex Author metadata, not adoption inference.",
+      "Separate Commission pages distinguish the COM(2021) 205 covering communication from its Coordinated Plan annex and independently date both manifestations.",
+      "Correct impact-assessment annex publication_date from 2021-04-23 (Council cover) to 2021-04-21 (Commission publication package).",
+      "Proposal and AI Continent annexes are distinct second text components inside dated CELEX packages.",
+      "SWD(2025) 836 final accompanies both COM(2025) 837 and AI-specific COM(2025) 836.",
+      "Correct Article 112 report publication_date from issue 2026-05-20 to publication 2026-05-22.",
+      "Consolidated AI Act version date 2026-07-27 is not independent publication evidence.",
+      "C(2024) 390 uses document_date_kind official_act_date for document_type decision.",
+      "Proposal and AI Continent annexes are distinct second components inside dated CELEX packages.",
+      "SWD(2025) 836 final accompanies COM(2025) 837 and AI-specific COM(2025) 836."
+    ],
+    "unresolved_evidence": "Independent publication evidence remains missing for 3 held records."
+  }
+}

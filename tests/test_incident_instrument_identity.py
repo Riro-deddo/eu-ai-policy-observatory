@@ -10,6 +10,7 @@ from observatory.pipeline import run_pipeline
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json"
+EXPANDED_LEDGER = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
 TITLES = {
     "draft-guidance-serious-ai-incidents-2025": "DRAFT GUIDANCE ARTICLE 73 AI ACT- INCIDENT REPORTING (HIGH-RISK AI SYSTEMS)",
     "draft-serious-ai-incident-report-template-2025": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
@@ -80,6 +81,16 @@ def test_identity_ledger_accounts_for_every_changed_document_field():
         "Page 1: title; section 1 (BACKGROUND AND OBJECTIVES) and section 2 (DEFINITIONS); "
         "Article 73 high-risk scope."
     )
+    expanded = json.loads(EXPANDED_LEDGER.read_text(encoding="utf-8"))
+    expanded_audit = {
+        item["document_id"]: item
+        for item in expanded["record_audit"]
+        if item["decision"] == "upgrade"
+    }
+    handoffs = {
+        item["path"]: json.loads((ROOT / item["path"]).read_text(encoding="utf-8"))
+        for item in expanded["handoffs"]
+    }
     for item in ledger["documents"]:
         before = item["before"]
         expected = deepcopy(before)
@@ -93,11 +104,22 @@ def test_identity_ledger_accounts_for_every_changed_document_field():
                 target = target[part]
             target[parts[-1]] = value
         current = json.loads((ROOT / "data/documents" / f'{before["id"]}.json').read_text(encoding="utf-8"))
+        audit = expanded_audit[before["id"]]
+        reviewed = handoffs[audit["handoff_path"]]["records"][audit["handoff_record_index"]]
+        assert reviewed["document_id"] == before["id"]
+        patch = reviewed["proposed_patch"]
+        assert set(audit["changed_fields"]) <= set(patch)
+        for field in patch:
+            assert current[field] == patch[field]
+            if field in expected:
+                current[field] = deepcopy(expected[field])
+            else:
+                current.pop(field)
         assert current == expected
-        assert item["evidence"]["source_id"] in current["source_ids"]
+        assert item["evidence"]["source_id"] in expected["source_ids"]
         assert item["evidence"]["page_locators"]
-        assert current["snapshots"] == before["snapshots"]
-        assert current["corpus_assessment"]["reviewed_by"] == before["corpus_assessment"]["reviewed_by"]
+        assert expected["snapshots"] == before["snapshots"]
+        assert expected["corpus_assessment"]["reviewed_by"] == before["corpus_assessment"]["reviewed_by"]
     candidates = {item["id"]: item for item in json.loads(
         (ROOT / "research/corpus-inventory.json").read_text(encoding="utf-8")
     )["candidates"]}

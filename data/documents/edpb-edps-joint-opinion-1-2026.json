@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "edpb-edps-joint-opinion-1-2026",
   "official_title": "EDPB–EDPS Joint Opinion 1/2026 on the Proposal for a Regulation as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)",
   "short_title": "EDPB–EDPS Joint Opinion 1/2026",
@@ -17,7 +17,7 @@
   "document_date": "2026-01-20",
   "version_label": "Adopted opinion",
   "version_status": "final",
-  "publication_date": "2026-01-20",
+  "publication_date": "2026-01-21",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -26,11 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-data-protection-board",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-edpb-edps",
+      "evidence_locator": "Joint-opinion PDF cover: 'EDPB-EDPS Joint Opinion 1/2026' and 'Adopted on 20 January 2026'."
     },
     {
       "institution_id": "european-data-protection-supervisor",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-edpb-edps",
+      "evidence_locator": "Joint-opinion PDF cover: 'EDPB-EDPS Joint Opinion 1/2026' and 'Adopted on 20 January 2026'."
     }
   ],
   "policy_ids": [
@@ -43,7 +47,8 @@
     "accountability"
   ],
   "source_ids": [
-    "ai-omnibus-edpb-edps"
+    "ai-omnibus-edpb-edps",
+    "edpb-edps-joint-opinion-1-2026-landing"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -51,8 +56,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -61,5 +66,60 @@
     "eu_agency_or_body_authored",
     "joint_institutional",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-edpb-edps",
+      "locator": "Joint-opinion PDF cover: 'EDPB-EDPS Joint Opinion 1/2026' and 'Adopted on 20 January 2026'.",
+      "meaning": "Establishes 2026-01-20 as this exact record's institutional adoption date."
+    },
+    "publication_date": {
+      "source_id": "edpb-edps-joint-opinion-1-2026-landing",
+      "locator": "EDPB landing-page date '21 January 2026' for 'EDPB-EDPS Joint Opinion 1/2026 on the Proposal on the AI Omnibus'.",
+      "meaning": "Establishes 2026-01-21 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-omnibus-edpb-edps",
+      "locator": "Exact 'EDPB–EDPS Joint Opinion 1/2026 on the Proposal for a Regulation as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)': subject heading and analysis/recommendation sections addressing the proposed EU AI Regulation or AI Omnibus.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-omnibus-edpb-edps",
+      "locator": "Exact 'EDPB–EDPS Joint Opinion 1/2026 on the Proposal for a Regulation as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)': subject heading and analysis/recommendation sections addressing the proposed EU AI Regulation or AI Omnibus. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "ai-omnibus-edpb-edps",
+      "locator": "Exact PDF cover title 'EDPB-EDPS Joint Opinion 1/2026' names the European Data Protection Board and European Data Protection Supervisor as the joint issuing bodies.",
+      "rationale": "The exact opinion is issued by the named EU body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "ai-omnibus-edpb-edps",
+      "locator": "Exact PDF cover title 'EDPB-EDPS Joint Opinion 1/2026' jointly names EDPB and EDPS; the cover records adoption on 20 January 2026.",
+      "rationale": "The opinion is expressly a joint instrument of two EU supervisory bodies."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-omnibus-edpb-edps",
+      "locator": "EDPB landing-page date '21 January 2026' for 'EDPB-EDPS Joint Opinion 1/2026 on the Proposal on the AI Omnibus'.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

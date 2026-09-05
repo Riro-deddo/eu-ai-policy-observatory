@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "gpai-code-final-copyright",
   "official_title": "General-Purpose AI Code of Practice — Copyright Chapter",
   "short_title": "GPAI Code copyright chapter",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-ai-office",
-      "role": "publisher"
+      "role": "commissioner",
+      "evidence_source_id": "gpai-code-chairs-commission",
+      "evidence_locator": "Official Commission page expressly says the AI Office appointed the chairs and vice-chairs leading drafting."
     }
   ],
   "policy_ids": [
@@ -38,7 +40,8 @@
     "accountability"
   ],
   "source_ids": [
-    "gpai-code-final-commission"
+    "gpai-code-final-commission",
+    "gpai-code-chairs-commission"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -46,13 +49,67 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
   ],
   "provenance_tags": [
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "gpai-code-final-commission",
+      "locator": "Final-Code page states publication on 10 July 2025 beside 'Copyright Chapter' download 118115; its PDF cover identifies that exact chapter.",
+      "meaning": "Establishes 2025-07-10 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "gpai-code-final-commission",
+      "locator": "Final-Code page statement 'published on 10 July 2025' beside Copyright Chapter 118115.",
+      "meaning": "Establishes 2025-07-10 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "gpai-code-final-commission",
+      "locator": "Exact Copyright artifact 'General-Purpose AI Code of Practice — Copyright Chapter': named commitments, measures or form fields implementing GPAI transparency, copyright or systemic-risk obligations.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "gpai-code-final-commission",
+      "locator": "Exact Copyright artifact 'General-Purpose AI Code of Practice — Copyright Chapter': named commitments, measures or form fields implementing GPAI transparency, copyright or systemic-risk obligations. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "gpai-code-final-commission",
+      "locator": "Final-Code page statement 'published on 10 July 2025' beside Copyright Chapter 118115.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Alexander Peukert",
+      "affiliation": null,
+      "evidence_source_id": "gpai-code-final-commission",
+      "evidence_locator": "Exact linked Copyright chapter identifies the Copyright working-group chairs as authors."
+    },
+    {
+      "name": "Céline Castets-Renard",
+      "affiliation": null,
+      "evidence_source_id": "gpai-code-final-commission",
+      "evidence_locator": "Exact linked Copyright chapter identifies the Copyright working-group chairs as authors."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

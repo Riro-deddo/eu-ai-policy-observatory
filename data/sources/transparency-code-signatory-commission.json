@@ -3,11 +3,11 @@
   "entity_type": "source",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T07:35:00Z",
+  "updated_at": "2026-09-05T18:11:15Z",
   "source_type": "commission_webpage",
   "url": "https://digital-strategy.ec.europa.eu/en/library/how-sign-code-practice-transparency-ai-generated-content",
   "publisher": "European Commission",
   "retrieved_at": "2026-09-04T00:00:00Z",
-  "last_verified_at": "2026-09-05T07:35:00Z",
-  "verification_note": "Official page published 10 June 2026 provides the separately issued signatory form (newsroom document 129548). Narrow verification on 2026-09-05 checked the landing-page structure, stated purpose and download label recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; the linked binary file interior and retained bytes were not verified in this review, and no source snapshot was retained."
+  "last_verified_at": "2026-09-05T18:11:15Z",
+  "verification_note": "Official page published 10 June 2026 provides the separately issued signatory form (newsroom document 129548). Narrow verification on 2026-09-05 checked the landing-page structure, stated purpose and download label recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; the linked binary file interior and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained. Follow-up clarification: in this later expanded review, Codex opened and read DOCX 129548 and checked its signatory declarations. The earlier sentence about an uninspected binary is preserved as historical scope for the earlier narrow review, not a description of this later pass."
 }

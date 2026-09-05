@@ -1,0 +1,13 @@
+{
+  "id": "ai-safety-liability-report-commission-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:43:48Z",
+  "updated_at": "2026-09-05T17:43:48Z",
+  "source_type": "commission_webpage",
+  "url": "https://commission.europa.eu/publications/commission-report-safety-and-liability-implications-ai-internet-things-and-robotics_en",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T17:43:48Z",
+  "last_verified_at": "2026-09-05T17:43:48Z",
+  "verification_note": "Official Commission publication page identifies the exact safety/liability report, gives publication date 19 February 2020, and supplies a dated English download."
+}

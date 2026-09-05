@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "transparency-code-final-2026",
   "official_title": "Code of Practice on Transparency of AI-Generated Content",
   "short_title": "AI-generated-content transparency code",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-ai-office",
-      "role": "publisher"
+      "role": "commissioner",
+      "evidence_source_id": "transparency-code-faq-commission",
+      "evidence_locator": "Official FAQ expressly says the six independent experts were appointed by the AI Office to lead drafting."
     }
   ],
   "policy_ids": [
@@ -38,7 +40,8 @@
     "accountability"
   ],
   "source_ids": [
-    "transparency-code-final-commission"
+    "transparency-code-final-commission",
+    "transparency-code-faq-commission"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -46,13 +49,91 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
   ],
   "provenance_tags": [
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "transparency-code-final-commission",
+      "locator": "Policy-page heading 'Code of Practice on Transparency of AI-Generated Content', final-timeline date 10 June 2026, and final PDF 129555.",
+      "meaning": "Establishes 2026-06-10 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "transparency-code-final-commission",
+      "locator": "Commission policy-page final-timeline entry dated 10 June 2026 beside exact final PDF 129555.",
+      "meaning": "Establishes 2026-06-10 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "transparency-code-final-commission",
+      "locator": "Exact final artifact 'Code of Practice on Transparency of AI-Generated Content': commitments, measures or form declarations for Article 50 marking and labelling of AI-generated content.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "transparency-code-final-commission",
+      "locator": "Exact final artifact 'Code of Practice on Transparency of AI-Generated Content': commitments, measures or form declarations for Article 50 marking and labelling of AI-generated content. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "transparency-code-final-commission",
+      "locator": "Commission policy-page final-timeline entry dated 10 June 2026 beside exact final PDF 129555.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Kalina Bontcheva",
+      "affiliation": null,
+      "evidence_source_id": "transparency-code-final-commission",
+      "evidence_locator": "Cover of the exact linked Code version names all six independent expert authors."
+    },
+    {
+      "name": "Anja Bechmann",
+      "affiliation": null,
+      "evidence_source_id": "transparency-code-final-commission",
+      "evidence_locator": "Cover of the exact linked Code version names all six independent expert authors."
+    },
+    {
+      "name": "Dino Pedreschi",
+      "affiliation": null,
+      "evidence_source_id": "transparency-code-final-commission",
+      "evidence_locator": "Cover of the exact linked Code version names all six independent expert authors."
+    },
+    {
+      "name": "Giovanni De Gregorio",
+      "affiliation": null,
+      "evidence_source_id": "transparency-code-final-commission",
+      "evidence_locator": "Cover of the exact linked Code version names all six independent expert authors."
+    },
+    {
+      "name": "Christian Riess",
+      "affiliation": null,
+      "evidence_source_id": "transparency-code-final-commission",
+      "evidence_locator": "Cover of the exact linked Code version names all six independent expert authors."
+    },
+    {
+      "name": "Madalina Botan",
+      "affiliation": null,
+      "evidence_source_id": "transparency-code-final-commission",
+      "evidence_locator": "Cover of the exact linked Code version names all six independent expert authors."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

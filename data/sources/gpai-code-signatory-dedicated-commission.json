@@ -1,0 +1,13 @@
+{
+  "id": "gpai-code-signatory-dedicated-commission",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:58:09Z",
+  "updated_at": "2026-09-05T18:11:15Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/general-purpose-ai-code-practice-signatory-form",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T17:58:09Z",
+  "last_verified_at": "2026-09-05T18:11:15Z",
+  "verification_note": "Live official-page and linked-DOCX review on 5 September 2026. The dedicated Commission library page identifies the Signatory Form and records Publication 17 July 2025; the form binds signatories to the Code text published 10 July 2025. Follow-up clarification: exact DOCX 118312 was opened and read, including its binding statement and chapter/commitment selection fields."
+}

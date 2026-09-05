@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "gpai-serious-incident-reporting-template-2025",
   "official_title": "Report for Serious Incidents under the AI Act (General-Purpose AI Models with Systemic Risk)",
   "short_title": "GPAI serious-incident reporting template",
@@ -23,8 +23,10 @@
   "official_summary": null,
   "institution_roles": [
     {
-      "institution_id": "european-ai-office",
-      "role": "publisher"
+      "institution_id": "european-commission",
+      "role": "publisher",
+      "evidence_source_id": "gpai-incident-template-commission",
+      "evidence_locator": "Official Commission publication page issues the reporting template; no unsupported AI Office authorship is inferred."
     }
   ],
   "policy_ids": [
@@ -46,13 +48,54 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
   ],
   "provenance_tags": [
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "gpai-incident-template-commission",
+      "locator": "Commission page heading identifying the GPAI serious-incident template, field 'Publication 04 November 2025', and PDF 121268.",
+      "meaning": "Establishes 2025-11-04 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "gpai-incident-template-commission",
+      "locator": "Commission library page metadata field 'Publication 04 November 2025' for exact template 121268.",
+      "meaning": "Establishes 2025-11-04 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "gpai-incident-template-commission",
+      "locator": "Exact template 'Report for Serious Incidents under the AI Act (General-Purpose AI Models with Systemic Risk)': model/provider, incident, harm, corrective-action and submission fields for systemic-risk GPAI incidents.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "gpai-incident-template-commission",
+      "locator": "Exact template 'Report for Serious Incidents under the AI Act (General-Purpose AI Models with Systemic Risk)': model/provider, incident, harm, corrective-action and submission fields for systemic-risk GPAI incidents. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "gpai-incident-template-commission",
+      "locator": "Commission library page metadata field 'Publication 04 November 2025' for exact template 121268.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

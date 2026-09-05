@@ -1,0 +1,1818 @@
+{
+  "batch_id": "2026-09-05-expanded-review-legislative",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T18:12:42Z",
+  "records": [
+    {
+      "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 15 May 2024.",
+        "General Secretariat to Coreper/Council adoption note requesting approval of PE-CONS 24/24.",
+        "It points to PE-CONS 24/24 and its statements addendum, supporting stored procedural/attachment lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "The generic Council author role is not the evidenced General Secretariat cover-note-sender role."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 15 May 2024.",
+        "Exact addendum contains statements by France and Austria.",
+        "ADD-1-REV-2 and its opening identify attachment to ST 9645/24.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Council is official host/publisher, but France and Austria authored the statements; EU-institution-authored is unsupported."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-14336-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 11 November 2022.",
+        "General Secretariat note to Coreper presents the final compromise for a general approach.",
+        "It cites ST 13955/22 as predecessor, supporting revision lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author is less precise than the evidenced sender/addressee attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-13955-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 3 November 2022.",
+        "Presidency note to delegations encloses the final Presidency compromise.",
+        "It cites ST 13102/22 as predecessor, supporting revision lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture Presidency attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Access check; issue/document date 15 June 2022.",
+        "Exact official PDF returned HTTP 404; substantive text could not be reopened.",
+        "Stored version relationship was inspected but its official-text basis could not be reverified.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Exact current Council PDF returned HTTP 404, preventing complete full-text and relationship re-review."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-13102-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 19 October 2022.",
+        "Presidency note to delegations encloses the fourth Presidency compromise.",
+        "It cites ST 12549/22 as predecessor, supporting revision lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture Presidency attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-14954-2022-ADD-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 25 November 2022.",
+        "Exact addendum is Germany's statement attached to the general-approach file.",
+        "ADD-1 and opening text establish attachment to ST 14954/22.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Council is host/publisher, but Germany authored the statement; EU-institution-authored is unsupported."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-14954-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-14954-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 25 November 2022.",
+        "Coreper-to-Council note submits the AI Act general approach.",
+        "It cites ST 14336/22 as underlying compromise, supporting version lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not express the evidenced Coreper-to-Council action."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-15698-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-15698-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 6 December 2022.",
+        "Outcome of proceedings records Council approval of the general approach.",
+        "It identifies ST 14954/22 and addendum as submitted approach/statement.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Council adopter role and cross-sector scope are supported."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-11124-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 15 July 2022.",
+        "Presidency note to delegations encloses the second compromise.",
+        "It cites ST 10069/22 as predecessor, supporting revision lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture Presidency attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 16 September 2022.",
+        "Presidency note to delegations encloses part one of the third compromise.",
+        "It cites ST 11124/22 and describes changes, supporting version/revision lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture Presidency attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 16 September 2022.",
+        "REV-1 is the revised first part of the third Presidency compromise.",
+        "REV-1 and predecessor references support revision lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture Presidency attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 23 September 2022.",
+        "Presidency note to delegations encloses part two of the third compromise.",
+        "It cites ST 12206/1/22 REV 1 and is its companion second part.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture Presidency attribution."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-pe-cons-24-2024-rev-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-24-2024-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 13 June 2024.",
+        "REV-1 formal text identifies Parliament and Council and contains the 13 June act date.",
+        "REV-1 and PE-CONS 24/24 identity support revision/version lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Formal text needs separate adoption evidence; issue header alone does not prove both adopter roles."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-pe-cons-24-2024",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-24-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 14 May 2024.",
+        "INIT PDF is the initial PE-CONS 24/24 formal AI Act text.",
+        "PE-CONS identity supports version and INIT/REV-1 lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Draft/formal issue alone does not prove both retained adopter roles."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-provisional-agreement-st-5662-2024",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-5662-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 26 January 2024.",
+        "Presidency note to Coreper encloses the final compromise reflecting provisional agreement.",
+        "It identifies confirmation, proposal and procedure, supporting version/procedural lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Council-publisher/Parliament-contributor modeling needs more exact action evidence."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 22 June 2026.",
+        "General Secretariat note requests Council approval of Parliament's Omnibus position.",
+        "It identifies Parliament's first-reading position and PE-CONS file.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture General Secretariat cover-note sender."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 24 June 2026.",
+        "ADD-2 is Greece's statement on Omnibus adoption.",
+        "ADD-2 and opening text establish attachment to ST 10752/26.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Greece, not generic Council, authored the statement; role/provenance needs correction."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 22 June 2026.",
+        "ADD-1 contains statements by Belgium and the Commission.",
+        "ADD-1 and opening establish attachment to ST 10752/26.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Named authors differ from generic Council author role."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-information-note-st-10599-2026",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 17 June 2026.",
+        "General Secretariat note reproduces Parliament's 16 June first-reading position.",
+        "It identifies P10_TA(2026)0198 and the procedure, supporting lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Generic Council author does not capture General Secretariat cover-note sender."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-30-2026-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 8 July 2026.",
+        "REV-1 is the revised formal joint instrument dated at Strasbourg.",
+        "REV-1 identity supports revision/version lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Formal text supports joint identity, but separately evidenced adopter roles are missing."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-pe-cons-30-2026",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-30-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/"
+      ],
+      "findings": [
+        "Exact official PDF reviewed; issue/document date 18 June 2026.",
+        "INIT is the initial formal joint Omnibus legislative text.",
+        "INIT identity supports version and REV-1 lineage.",
+        "general_cross_sector is substantively consistent, but date/attribution evidence blocks readiness."
+      ],
+      "hold_reasons": [
+        "No official metadata independently establishes first official publication. Council mastheads/register results show document dates, not publication dates; retrieval timestamps are not substituted.",
+        "Draft/formal issue does not establish retained adopter roles."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ep-ai-act-cult-opinion-pe-719637",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/CULT-AD-719637_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion and justification address AI in education, culture, media, disinformation and deepfakes.",
+        "Dates separated: document_issue 2022-06-16; first publication 16 June 2022.",
+        "Roles/authors reviewed: Parliament author; Marcel Kolaja.",
+        "All retained sector/provenance tags supported. Procedure identity supports the stored procedural-step edge."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-ai-act-cult-opinion-pe-719637-source",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
+          "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "locator": "Cover: PE719.637v02-00, 16.6.2022; OPINION, procedure 2021/0106(COD).",
+            "meaning": "Official text establishes 2022-06-16 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion CULT PE719.637, 16/06/2022.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 16 June 2022."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "locator": "Cover: PE719.637v02-00, 16.6.2022; OPINION, procedure 2021/0106(COD).",
+            "rationale": "Opinion and justification address AI in education, culture, media, disinformation and deepfakes."
+          },
+          {
+            "field": "sector_tags",
+            "value": "education",
+            "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "locator": "Opinion and justification address AI in education, culture, media, disinformation and deepfakes.",
+            "rationale": "AI systems used in education and vocational training."
+          },
+          {
+            "field": "sector_tags",
+            "value": "media_and_culture",
+            "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "locator": "Opinion and justification address AI in education, culture, media, disinformation and deepfakes.",
+            "rationale": "Culture, media, journalism, disinformation and deepfakes."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion CULT PE719.637, 16/06/2022.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Marcel Kolaja",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2022-06-15",
+            "precision": "day",
+            "source_id": "ep-ai-act-cult-opinion-pe-719637-source",
+            "locator": "Procedure appendix: Date adopted 15.6.2022."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-act-draft-report-pe-731563",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/CJ40-PR-731563_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Draft report and amendments establish a horizontal AI Act spanning sectors and public functions.",
+        "Dates separated: document_issue 2022-04-20; first publication 20 April 2022.",
+        "Roles/authors reviewed: Parliament author; Brando Benifei, Ioan-Dragoş Tudorache.",
+        "All retained sector/provenance tags supported. PE731.563v01-00 and OEIL chronology support the incoming revision edge from A9-0188/2023."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-ai-act-draft-report-pe-731563-source",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Initial published joint-committee draft establishing Parliament's detailed negotiating amendments.",
+          "researcher_notes": "Draft status and identifier are official; corpus tier is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "locator": "Cover: PE731.563v01-00, 20.4.2022; DRAFT REPORT, procedure 2021/0106(COD).",
+            "meaning": "Official text establishes 2022-04-20 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee draft report PE731.563, 20/04/2022.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 20 April 2022."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "locator": "Cover: PE731.563v01-00, 20.4.2022; DRAFT REPORT, procedure 2021/0106(COD).",
+            "rationale": "Draft report and amendments establish a horizontal AI Act spanning sectors and public functions."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "locator": "Draft report and amendments establish a horizontal AI Act spanning sectors and public functions.",
+            "rationale": "Horizontal amendments cover providers, deployers, authorities and multiple use sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee draft report PE731.563, 20/04/2022.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Brando Benifei",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          },
+          {
+            "name": "Ioan-Dragoş Tudorache",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-draft-report-pe-731563-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-act-envi-opinion-pe-699056",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/ENVI-AD-699056_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion and justification address public/mental health and environmental effects.",
+        "Dates separated: document_issue 2022-04-22; first publication 22 April 2022.",
+        "Roles/authors reviewed: Parliament author; Susana Solís Pérez.",
+        "All retained sector/provenance tags supported. Procedure identity supports the stored procedural-step edge."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-ai-act-envi-opinion-pe-699056-source",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
+          "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "locator": "Cover: PE699.056v03-00, 22.4.2022; OPINION, procedure 2021/0106(COD).",
+            "meaning": "Official text establishes 2022-04-22 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion ENVI PE699.056, 22/04/2022.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 22 April 2022."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "locator": "Cover: PE699.056v03-00, 22.4.2022; OPINION, procedure 2021/0106(COD).",
+            "rationale": "Opinion and justification address public/mental health and environmental effects."
+          },
+          {
+            "field": "sector_tags",
+            "value": "health",
+            "source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "locator": "Opinion and justification address public/mental health and environmental effects.",
+            "rationale": "Healthcare, public health, mental-health implications and high-risk health uses."
+          },
+          {
+            "field": "sector_tags",
+            "value": "agriculture_and_environment",
+            "source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "locator": "Opinion and justification address public/mental health and environmental effects.",
+            "rationale": "Environmental impacts, protection and sustainability."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion ENVI PE699.056, 22/04/2022.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Susana Solís Pérez",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2022-03-15",
+            "precision": "day",
+            "source_id": "ep-ai-act-envi-opinion-pe-699056-source",
+            "locator": "Procedure appendix: Date adopted 15.3.2022."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-act-itre-opinion-pe-719801",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/ITRE-AD-719801_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion focuses on innovation, research, SMEs and industrial competitiveness.",
+        "Dates separated: document_issue 2022-06-14; first publication 14 June 2022.",
+        "Roles/authors reviewed: Parliament author; Eva Maydell.",
+        "All retained sector/provenance tags supported. Procedure identity supports the stored procedural-step edge."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-ai-act-itre-opinion-pe-719801-source",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
+          "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "locator": "Cover: PE719.801v02-00, 14.6.2022; OPINION, procedure 2021/0106(COD).",
+            "meaning": "Official text establishes 2022-06-14 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion ITRE PE719.801, 14/06/2022.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 14 June 2022."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "locator": "Cover: PE719.801v02-00, 14.6.2022; OPINION, procedure 2021/0106(COD).",
+            "rationale": "Opinion focuses on innovation, research, SMEs and industrial competitiveness."
+          },
+          {
+            "field": "sector_tags",
+            "value": "research_and_innovation",
+            "source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "locator": "Opinion focuses on innovation, research, SMEs and industrial competitiveness.",
+            "rationale": "Innovation, sandboxes, research and SMEs/start-ups."
+          },
+          {
+            "field": "sector_tags",
+            "value": "industry_and_manufacturing",
+            "source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "locator": "Opinion focuses on innovation, research, SMEs and industrial competitiveness.",
+            "rationale": "Industrial competitiveness, providers and product-related AI obligations."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion ITRE PE719.801, 14/06/2022.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Eva Maydell",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-itre-opinion-pe-719801-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-act-juri-opinion-pe-719827",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/JURI-AD-719827_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion addresses legal certainty, rights, liability, copyright and IP.",
+        "Dates separated: document_issue 2022-09-12; first publication 12 September 2022.",
+        "Roles/authors reviewed: Parliament author; Axel Voss.",
+        "All retained sector/provenance tags supported. Procedure identity supports the stored procedural-step edge."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-ai-act-juri-opinion-pe-719827-source",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
+          "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "locator": "Cover: PE719.827v02-00, 12.9.2022; OPINION, procedure 2021/0106(COD).",
+            "meaning": "Official text establishes 2022-09-12 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion JURI PE719.827, 12/09/2022.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 12 September 2022."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "locator": "Cover: PE719.827v02-00, 12.9.2022; OPINION, procedure 2021/0106(COD).",
+            "rationale": "Opinion addresses legal certainty, rights, liability, copyright and IP."
+          },
+          {
+            "field": "sector_tags",
+            "value": "justice",
+            "source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "locator": "Opinion addresses legal certainty, rights, liability, copyright and IP.",
+            "rationale": "Legal certainty, remedies, rights and administration."
+          },
+          {
+            "field": "sector_tags",
+            "value": "intellectual_property",
+            "source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "locator": "Opinion addresses legal certainty, rights, liability, copyright and IP.",
+            "rationale": "Copyright, protected works, trade secrets and IP rights."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion JURI PE719.827, 12/09/2022.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Axel Voss",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2022-09-05",
+            "precision": "day",
+            "source_id": "ep-ai-act-juri-opinion-pe-719827-source",
+            "locator": "Procedure appendix: Date adopted 5.9.2022."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-act-tran-opinion-pe-730085",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/TRAN-AD-730085_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion applies horizontal AI Act provisions to transport.",
+        "Dates separated: document_issue 2022-07-12; first publication 12 July 2022.",
+        "Roles/authors reviewed: Parliament author; Josianne Cutajar.",
+        "All retained sector/provenance tags supported. Procedure identity supports the stored procedural-step edge."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-ai-act-tran-opinion-pe-730085-source",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
+          "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "locator": "Cover: PE730.085v02-00, 12.7.2022; OPINION, procedure 2021/0106(COD).",
+            "meaning": "Official text establishes 2022-07-12 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion TRAN PE730.085, 12/07/2022.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 12 July 2022."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "locator": "Cover: PE730.085v02-00, 12.7.2022; OPINION, procedure 2021/0106(COD).",
+            "rationale": "Opinion applies horizontal AI Act provisions to transport."
+          },
+          {
+            "field": "sector_tags",
+            "value": "transport_and_mobility",
+            "source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "locator": "Opinion applies horizontal AI Act provisions to transport.",
+            "rationale": "Transport, mobility systems and transport safety."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: Committee opinion TRAN PE730.085, 12/07/2022.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Josianne Cutajar",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2022-07-12",
+            "precision": "day",
+            "source_id": "ep-ai-act-tran-opinion-pe-730085-source",
+            "locator": "Procedure appendix: Date adopted 12.7.2022."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/TA-10-2026-0098_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Adopted amendments revise horizontal AI Act timing, governance and compliance.",
+        "Dates separated: institutional_adoption 2026-03-26; first publication 26 March 2026.",
+        "Roles/authors reviewed: Parliament adopter; reviewed empty personal-author list.",
+        "All retained sector/provenance tags supported. Adopted-text identity and OEIL sequence support the stored edge to the later position."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ai-omnibus-ep-amendments",
+            "evidence_locator": "Official title and operative text identify adoption by the European Parliament."
+          }
+        ],
+        "source_ids": [
+          "ai-omnibus-ep-amendments",
+          "ep-oeil-ai-omnibus-procedure-2025-0359"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-ep-amendments",
+            "locator": "Title: Amendments adopted by Parliament on 26 March 2026; P10_TA(2026)0098; 2025/0359(COD).",
+            "meaning": "Official text establishes 2026-03-26 as the institutional adoption date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: partial first-reading text T10-0098/2026, 26/03/2026.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 26 March 2026."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-ep-amendments",
+            "locator": "Title: Amendments adopted by Parliament on 26 March 2026; P10_TA(2026)0098; 2025/0359(COD).",
+            "rationale": "Adopted amendments revise horizontal AI Act timing, governance and compliance."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-ep-amendments",
+            "locator": "Adopted amendments revise horizontal AI Act timing, governance and compliance.",
+            "rationale": "Horizontal AI Act obligations, governance, standards and implementation."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-ep-amendments",
+            "locator": "Official title and operative text identify adoption by the European Parliament.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: partial first-reading text T10-0098/2026, 26/03/2026.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/CULT-AD-784261_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion addresses AI literacy, education, culture, media and creators.",
+        "Dates separated: document_issue 2026-03-06; first publication 6 March 2026.",
+        "Roles/authors reviewed: Parliament author; Emma Rafowicz.",
+        "All retained sector/provenance tags supported. Procedure and opinion status support the stored procedural-step edge."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-ep-cult-opinion",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ai-omnibus-ep-cult-opinion",
+          "ep-oeil-ai-omnibus-procedure-2025-0359"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-ep-cult-opinion",
+            "locator": "Cover: PE784.261v02-00, 6.3.2026; CULT opinion, 2025/0359(COD).",
+            "meaning": "Official text establishes 2026-03-06 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: Committee opinion CULT PE784.261, 06/03/2026.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 6 March 2026."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-ep-cult-opinion",
+            "locator": "Cover: PE784.261v02-00, 6.3.2026; CULT opinion, 2025/0359(COD).",
+            "rationale": "Opinion addresses AI literacy, education, culture, media and creators."
+          },
+          {
+            "field": "sector_tags",
+            "value": "education",
+            "source_id": "ai-omnibus-ep-cult-opinion",
+            "locator": "Opinion addresses AI literacy, education, culture, media and creators.",
+            "rationale": "AI literacy, training and educational institutions."
+          },
+          {
+            "field": "sector_tags",
+            "value": "media_and_culture",
+            "source_id": "ai-omnibus-ep-cult-opinion",
+            "locator": "Opinion addresses AI literacy, education, culture, media and creators.",
+            "rationale": "Cultural/creative sectors, media, creators and transparency."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-ep-cult-opinion",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: Committee opinion CULT PE784.261, 06/03/2026.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Emma Rafowicz",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ai-omnibus-ep-cult-opinion",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-03-05",
+            "precision": "day",
+            "source_id": "ai-omnibus-ep-cult-opinion",
+            "locator": "Procedure appendix: Date adopted 5.3.2026."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/JURI-AD-784179_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Opinion addresses legal certainty, enforcement, copyright and trade secrets.",
+        "Dates separated: document_issue 2026-02-25; first publication 26 February 2026.",
+        "Roles/authors reviewed: Parliament author; Sergey Lagodinsky.",
+        "All retained sector/provenance tags supported. Procedure and opinion status support the stored procedural-step edge.",
+        "publication_date is corrected from PDF issue 2026-02-25 to OEIL catalogue date 2026-02-26."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-ep-juri-opinion",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ai-omnibus-ep-juri-opinion",
+          "ep-oeil-ai-omnibus-procedure-2025-0359"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-ep-juri-opinion",
+            "locator": "Cover: PE784.179v02-00, 25.2.2026; JURI opinion, 2025/0359(COD).",
+            "meaning": "Official text establishes 2026-02-25 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: Committee opinion JURI PE784.179, 26/02/2026.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 26 February 2026."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-ep-juri-opinion",
+            "locator": "Cover: PE784.179v02-00, 25.2.2026; JURI opinion, 2025/0359(COD).",
+            "rationale": "Opinion addresses legal certainty, enforcement, copyright and trade secrets."
+          },
+          {
+            "field": "sector_tags",
+            "value": "justice",
+            "source_id": "ai-omnibus-ep-juri-opinion",
+            "locator": "Opinion addresses legal certainty, enforcement, copyright and trade secrets.",
+            "rationale": "Legal certainty, supervision, enforcement and safeguards."
+          },
+          {
+            "field": "sector_tags",
+            "value": "intellectual_property",
+            "source_id": "ai-omnibus-ep-juri-opinion",
+            "locator": "Opinion addresses legal certainty, enforcement, copyright and trade secrets.",
+            "rationale": "Copyright, trade secrets, rights-holder information and protected content."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-ep-juri-opinion",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: Committee opinion JURI PE784.179, 26/02/2026.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Sergey Lagodinsky",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ai-omnibus-ep-juri-opinion",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-02-24",
+            "precision": "day",
+            "source_id": "ai-omnibus-ep-juri-opinion",
+            "locator": "Procedure appendix: Date adopted 24.2.2026."
+          }
+        ],
+        "historical_review_status": "verified",
+        "publication_date": "2026-02-26"
+      }
+    },
+    {
+      "document_id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/TA-10-2026-0198_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Resolution adopts Parliament's first-reading Omnibus AI position.",
+        "Dates separated: institutional_adoption 2026-06-16; first publication 16 June 2026.",
+        "Roles/authors reviewed: Parliament adopter; reviewed empty personal-author list.",
+        "All retained sector/provenance tags supported. Resolution says the position replaces 26 March amendments, supporting revision lineage."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ai-omnibus-ep-position",
+            "evidence_locator": "Official title and operative text identify adoption by the European Parliament."
+          }
+        ],
+        "source_ids": [
+          "ai-omnibus-ep-position",
+          "ep-oeil-ai-omnibus-procedure-2025-0359"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-ep-position",
+            "locator": "Title: Parliament legislative resolution of 16 June 2026; P10_TA(2026)0198; 2025/0359(COD).",
+            "meaning": "Official text establishes 2026-06-16 as the institutional adoption date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: first-reading text T10-0198/2026, 16/06/2026.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 16 June 2026."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-ep-position",
+            "locator": "Title: Parliament legislative resolution of 16 June 2026; P10_TA(2026)0198; 2025/0359(COD).",
+            "rationale": "Resolution adopts Parliament's first-reading Omnibus AI position."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-ep-position",
+            "locator": "Resolution adopts Parliament's first-reading Omnibus AI position.",
+            "rationale": "Horizontal AI Act dates, duties and governance across actors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-ep-position",
+            "locator": "Official title and operative text identify adoption by the European Parliament.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: first-reading text T10-0198/2026, 16/06/2026.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-ai-omnibus-report-a10-0073-2026",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/A-10-2026-0073_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Report proposes horizontal AI Act implementation, compliance, governance and standards amendments.",
+        "Dates separated: document_issue 2026-03-19; first publication 19 March 2026.",
+        "Roles/authors reviewed: Parliament author; Arba Kokalari, Michael McNamara.",
+        "All retained sector/provenance tags supported. Procedure identity and chronology support stored procedural lineage."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ai-omnibus-ep-report",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ai-omnibus-ep-report",
+          "ep-oeil-ai-omnibus-procedure-2025-0359"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-ep-report",
+            "locator": "Cover: A10-0073/2026, 19.3.2026; report, 2025/0359(COD).",
+            "meaning": "Official text establishes 2026-03-19 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: report A10-0073/2026, 19/03/2026.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 19 March 2026."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-omnibus-ep-report",
+            "locator": "Cover: A10-0073/2026, 19.3.2026; report, 2025/0359(COD).",
+            "rationale": "Report proposes horizontal AI Act implementation, compliance, governance and standards amendments."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-omnibus-ep-report",
+            "locator": "Report proposes horizontal AI Act implementation, compliance, governance and standards amendments.",
+            "rationale": "Horizontal AI Act rules across providers, deployers, authorities and sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-ep-report",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+            "locator": "OEIL Documentation gateway: report A10-0073/2026, 19/03/2026.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Arba Kokalari",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ai-omnibus-ep-report",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          },
+          {
+            "name": "Michael McNamara",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ai-omnibus-ep-report",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-03-18",
+            "precision": "day",
+            "source_id": "ai-omnibus-ep-report",
+            "locator": "Procedure appendix: committee responsible adopted 18.3.2026; tabled 19.3.2026."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-joint-committee-report-a9-0188-2023",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://www.europarl.europa.eu/doceo/document/A-9-2023-0188_EN.pdf",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29"
+      ],
+      "findings": [
+        "Full official text reviewed: Joint report contains horizontal AI Act amendments spanning public/private uses and sectors.",
+        "Dates separated: document_issue 2023-05-22; first publication 22 May 2023.",
+        "Roles/authors reviewed: Parliament author; Brando Benifei, Ioan-Dragoş Tudorache.",
+        "All retained sector/provenance tags supported. Final report follows PE731.563; identifiers and OEIL chronology support stored revision lineage."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "author",
+            "evidence_source_id": "ep-a9-0188-2023",
+            "evidence_locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution."
+          }
+        ],
+        "source_ids": [
+          "ep-a9-0188-2023",
+          "ep-oeil-ai-act-procedure-2021-0106"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Adopted joint-committee report forming the basis for Parliament's June 2023 amendments.",
+          "researcher_notes": "Report status and date are official; policy-stage classification is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-a9-0188-2023",
+            "locator": "Cover: A9-0188/2023, 22.5.2023; joint IMCO-LIBE report, 2021/0106(COD).",
+            "meaning": "Official text establishes 2023-05-22 as the issue date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: report A9-0188/2023, 22/05/2023.",
+            "meaning": "Official OEIL catalogue independently establishes first publication on 22 May 2023."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-a9-0188-2023",
+            "locator": "Cover: A9-0188/2023, 22.5.2023; joint IMCO-LIBE report, 2021/0106(COD).",
+            "rationale": "Joint report contains horizontal AI Act amendments spanning public/private uses and sectors."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ep-a9-0188-2023",
+            "locator": "Joint report contains horizontal AI Act amendments spanning public/private uses and sectors.",
+            "rationale": "Horizontal AI Act across providers, deployers, authorities and high-risk domains."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-a9-0188-2023",
+            "locator": "European Parliament masthead, responsible committee/report heading and exact reference identify the issuing institution.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-oeil-ai-act-procedure-2021-0106",
+            "locator": "OEIL Documentation gateway: report A9-0188/2023, 22/05/2023.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Brando Benifei",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-a9-0188-2023",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          },
+          {
+            "name": "Ioan-Dragoş Tudorache",
+            "affiliation": "European Parliament",
+            "evidence_source_id": "ep-a9-0188-2023",
+            "evidence_locator": "Cover/title block names rapporteur(s) below the responsible committee/procedure heading."
+          }
+        ],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2023-05-11",
+            "precision": "day",
+            "source_id": "ep-a9-0188-2023",
+            "locator": "Procedure appendix: committees responsible adopted 11.5.2023; tabled 22.5.2023."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ep-position-p9-ta-2023-0236",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236"
+      ],
+      "findings": [
+        "Official EUR-Lex full text and OEIL chronology verify the exact Parliament amendments and their adoption/first-reading decision on 14 June 2023.",
+        "EUR-Lex independently verifies later Official Journal publication on 23 January 2024.",
+        "Existing procedural and successor-revision relationships remain supported.",
+        "The retained exact document_type is institutional_position; the only evidence for document_date 2023-06-14 gives it institutional-adoption meaning, not a separate document-issue meaning."
+      ],
+      "hold_reasons": [
+        "The readiness compatibility rule does not permit document_date_kind institutional_adoption for the retained institutional_position type. No independent evidence establishes 14 June 2023 as a document-issue date, so relabelling the adoption date as document_issue would weaken the evidence gate; the record remains held pending a genuinely compatible evidenced date treatment."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ep-position-p9-ta-2024-0138",
+      "decision": "evidence_ready",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024AP0138"
+      ],
+      "findings": [
+        "Full official text reviewed: Resolution adopts Parliament's first-reading horizontal AI Act position.",
+        "Dates separated: institutional_adoption 2024-03-13; first publication 27 February 2025.",
+        "Roles/authors reviewed: Parliament adopter; reviewed empty personal-author list.",
+        "All retained sector/provenance tags supported. Resolution says it replaces 14 June 2023 amendments, supporting revision lineage."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T17:51:59Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ep-p9-ta-2024-0138",
+            "evidence_locator": "Official title and operative text identify adoption by the European Parliament."
+          }
+        ],
+        "source_ids": [
+          "ep-p9-ta-2024-0138"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Formal Parliament first-reading position embodying the interinstitutional compromise.",
+          "researcher_notes": "The 2024 adoption date and 2025 Official Journal publication date are separately recorded.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T17:51:59Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "institutional_adoption",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ep-p9-ta-2024-0138",
+            "locator": "EUR-Lex title: legislative resolution 13 March 2024; P9_TA(2024)0138; 2021/0106(COD).",
+            "meaning": "Official text establishes 2024-03-13 as the institutional adoption date of this manifestation."
+          },
+          "publication_date": {
+            "source_id": "ep-p9-ta-2024-0138",
+            "locator": "EUR-Lex metadata: OJ C, C/2025/1027, 27.2.2025 and its ELI.",
+            "meaning": "Official EUR-Lex/OJ metadata independently establishes first publication on 27 February 2025."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ep-p9-ta-2024-0138",
+            "locator": "EUR-Lex title: legislative resolution 13 March 2024; P9_TA(2024)0138; 2021/0106(COD).",
+            "rationale": "Resolution adopts Parliament's first-reading horizontal AI Act position."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ep-p9-ta-2024-0138",
+            "locator": "Resolution adopts Parliament's first-reading horizontal AI Act position.",
+            "rationale": "Full position governs providers, deployers and authorities across sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ep-p9-ta-2024-0138",
+            "locator": "Official title and operative text identify adoption by the European Parliament.",
+            "rationale": "Exact official text identifies Parliament as issuing/adopting EU institution."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ep-p9-ta-2024-0138",
+            "locator": "EUR-Lex metadata: OJ C, C/2025/1027, 27.2.2025 and its ELI.",
+            "rationale": "Official Parliament catalogue or EUR-Lex metadata identifies exact manifestation and publication date."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    }
+  ],
+  "proposed_sources": [
+    {
+      "id": "ep-oeil-ai-act-procedure-2021-0106",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:51:59Z",
+      "updated_at": "2026-09-05T17:51:59Z",
+      "source_type": "parliament_register",
+      "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2021%2F0106%28COD%29",
+      "publisher": "European Parliament",
+      "retrieved_at": "2026-09-05T17:51:59Z",
+      "last_verified_at": "2026-09-05T17:51:59Z",
+      "verification_note": "Official Legislative Observatory procedure file for 2021/0106(COD). Documentation gateway identifies the exact draft report, committee opinions and A9 report with dates; key events identify Parliament's adopted-text sequence."
+    },
+    {
+      "id": "ep-oeil-ai-omnibus-procedure-2025-0359",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T17:51:59Z",
+      "updated_at": "2026-09-05T17:51:59Z",
+      "source_type": "parliament_register",
+      "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29",
+      "publisher": "European Parliament",
+      "retrieved_at": "2026-09-05T17:51:59Z",
+      "last_verified_at": "2026-09-05T17:51:59Z",
+      "verification_note": "Official Legislative Observatory procedure file for 2025/0359(COD). Documentation gateway identifies PE784.179 (26 February 2026), PE784.261 (6 March), A10-0073/2026 (19 March), T10-0098/2026 (26 March), and T10-0198/2026 (16 June)."
+    }
+  ],
+  "source_updates": [],
+  "summary": {
+    "assigned": 36,
+    "evidence_ready": 13,
+    "hold": 23,
+    "in_progress": 0,
+    "substantive_corrections": [
+      "Correct ep-ai-omnibus-juri-opinion-pe-784179 publication_date from 2026-02-25 (PDF issue) to 2026-02-26 (official OEIL catalogue).",
+      "Correct plenary P10_TA(2026)0098 and P10_TA(2026)0198 institutional role from author to adopter.",
+      "Add named rapporteur credits for committee opinions/reports; retain reviewed empty lists for plenary adopted texts."
+    ],
+    "unresolved_evidence": [
+      "All 22 Council-family records lack independently established first official publication dates.",
+      "Several Council notes and Member State/Commission statement attachments need attribution/provenance corrections.",
+      "ST 10069/2022 exact current official PDF returned HTTP 404.",
+      "ep-position-p9-ta-2023-0236 is held because its evidenced 14 June 2023 date is institutional adoption, incompatible with the retained institutional_position type; it was not coerced into document_issue."
+    ],
+    "access_limitations": [
+      "Direct Parliament PDF requests triggered an automated-access challenge; an official browser session opened/downloaded the exact PDFs for full extraction and inspection.",
+      "ST 10069/2022 returned HTTP 404; all other assigned Council PDFs were retrieved and inspected.",
+      "Council register exposes document dates and metadata but no independently labeled first-publication date."
+    ]
+  }
+}

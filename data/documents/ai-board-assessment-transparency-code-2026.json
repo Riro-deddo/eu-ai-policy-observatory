@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "ai-board-assessment-transparency-code-2026",
   "official_title": "Assessment of the adequacy of the Code of Practice on Transparency of AI-Generated Content",
   "short_title": "AI Board assessment of the Transparency Code",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-artificial-intelligence-board",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "transparency-code-assessment-commission",
+      "evidence_locator": "Exact assessment title identifies the European AI Board; the page expressly states Board adoption on 9 July 2026."
     }
   ],
   "policy_ids": [
@@ -46,8 +48,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -55,5 +57,61 @@
   "provenance_tags": [
     "eu_agency_or_body_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Commission library page metadata field 'Publication 09 July 2026' beside the exact AI Board assessment download 'Assessment of the adequacy of the Code of Practice on Transparency of AI-Generated Content' (130916).",
+      "meaning": "Establishes 2026-07-09 as this exact record's publication-based document date."
+    },
+    "publication_date": {
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Commission library page metadata field 'Publication 09 July 2026' beside exact AI Board assessment download 130916.",
+      "meaning": "Establishes 2026-07-09 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Exact assessment 'Assessment of the adequacy of the Code of Practice on Transparency of AI-Generated Content': adequacy analysis and conclusions applying the relevant AI Act Code-of-Practice provisions.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Exact assessment 'Assessment of the adequacy of the Code of Practice on Transparency of AI-Generated Content': adequacy analysis and conclusions applying the relevant AI Act Code-of-Practice provisions. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Exact assessment title identifies the European AI Board and the Commission page says the Board adopted it on 9 July 2026.",
+      "rationale": "The exact opinion is issued by the named EU body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Commission library page metadata field 'Publication 09 July 2026' beside exact AI Board assessment download 130916.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2026-07-09",
+      "precision": "day",
+      "source_id": "transparency-code-assessment-commission",
+      "locator": "Commission library page text expressly states that the AI Board adopted its assessment on 9 July 2026."
+    }
+  ],
+  "historical_review_status": "verified"
 }

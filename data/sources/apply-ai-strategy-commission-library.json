@@ -1,0 +1,13 @@
+{
+  "id": "apply-ai-strategy-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:43:48Z",
+  "updated_at": "2026-09-05T17:43:48Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/commission-communication-apply-ai-strategy",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T17:43:48Z",
+  "last_verified_at": "2026-09-05T17:43:48Z",
+  "verification_note": "Publication 08 October 2025; link labelled Apply AI strategy including annexes in EurLex."
+}

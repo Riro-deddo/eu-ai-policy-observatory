@@ -3,11 +3,11 @@
   "entity_type": "source",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T17:58:09Z",
   "source_type": "commission_webpage",
   "url": "https://digital-strategy.ec.europa.eu/en/library/second-draft-general-purpose-ai-code-practice-published-written-independent-experts",
   "publisher": "European Commission",
   "retrieved_at": "2026-09-04T00:00:00Z",
-  "last_verified_at": "2026-09-04T00:00:00Z",
-  "verification_note": "Official library publication identifies the independently authored second draft of the GPAI Code, published 19 December 2024."
+  "last_verified_at": "2026-09-05T17:58:09Z",
+  "verification_note": "Official library publication identifies the independently authored second draft of the GPAI Code, published 19 December 2024. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
 }

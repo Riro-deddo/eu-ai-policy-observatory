@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "ecb-opinion-con-2026-10",
   "official_title": "Opinion of the European Central Bank of 13 March 2026 on a proposal for a regulation as regards the simplification of the implementation of harmonised rules on artificial intelligence (CON/2026/10)",
   "short_title": "ECB opinion CON/2026/10",
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-central-bank",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-ecb-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Central Bank; CON/2026/10 opinion heading names the ECB."
     }
   ],
   "policy_ids": [
@@ -47,8 +49,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector",
@@ -57,5 +59,60 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document and Date of vote: 13/03/2026 for CON/2026/10.",
+      "meaning": "Establishes retained document date 2026-03-13."
+    },
+    "publication_date": {
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "OJ C, C/2026/2285, 15.4.2026.",
+      "meaning": "Establishes retained publication date 2026-04-15 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "Official CON/2026/10: the opinion body assesses horizontal Digital Omnibus AI amendments and effects on supervised institutions and ECB tasks.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "Official CON/2026/10: the opinion body assesses horizontal Digital Omnibus AI amendments and effects on supervised institutions and ECB tasks.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "ECB analysis of central-banking, prudential-supervision, credit-institution and financial-services implications.",
+      "rationale": "The text substantively addresses AI in banking, prudential supervision, or financial services."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Central Bank; CON/2026/10 opinion heading names the ECB.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-omnibus-ecb-eur-lex",
+      "locator": "OJ C, C/2026/2285, 15.4.2026.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

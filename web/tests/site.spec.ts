@@ -510,8 +510,8 @@ test('methodology renders bounded source scopes and incomplete review semantics'
   await page.goto('methodology/');
 
   const review = page.getByRole('region', { name: 'Expanded evidence review' });
-  await expect(review).toContainText('17 published records');
-  await expect(review).toContainText('114 retained records');
+  await expect(review).toContainText('94 published records');
+  await expect(review).toContainText('37 retained records');
   const scopes = page.getByRole('region', { name: 'Bounded source scopes' });
   await expect(scopes.locator(':scope > ol > li')).toHaveCount(34);
   await expect(scopes).toContainText('Partial · in progress');

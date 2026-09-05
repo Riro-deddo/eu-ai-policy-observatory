@@ -1,0 +1,13 @@
+{
+  "id": "coordinated-plan-2021-cover-commission-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T17:43:48Z",
+  "updated_at": "2026-09-05T17:43:48Z",
+  "source_type": "commission_webpage",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/communication-fostering-european-approach-artificial-intelligence",
+  "publisher": "European Commission, Directorate-General for Communications Networks, Content and Technology",
+  "retrieved_at": "2026-09-05T17:43:48Z",
+  "last_verified_at": "2026-09-05T17:43:48Z",
+  "verification_note": "Official Commission library page gives 'Publication 21 April 2021', identifies the exact covering Communication on Fostering a European approach to Artificial Intelligence, and links COM:2021:205:FIN in all EU languages."
+}

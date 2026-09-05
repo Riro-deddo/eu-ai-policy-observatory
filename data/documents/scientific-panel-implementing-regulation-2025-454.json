@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:06:34Z",
   "slug": "scientific-panel-implementing-regulation-2025-454",
   "official_title": "Commission Implementing Regulation (EU) 2025/454 of 7 March 2025 laying down the rules for the application of Regulation (EU) 2024/1689 of the European Parliament and of the Council as regards the establishment of a scientific panel of independent experts in the field of artificial intelligence",
   "short_title": "Scientific panel implementing regulation",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "scientific-panel-regulation-eur-lex",
+      "evidence_locator": "EUR-Lex Document information > Author: European Commission; Commission Implementing Regulation (EU) 2025/454 masthead reads EUROPEAN COMMISSION."
     }
   ],
   "policy_ids": [
@@ -45,8 +47,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:06:34Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -54,5 +56,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "scientific-panel-regulation-eur-lex",
+      "locator": "EUR-Lex Document information > Date of document: 07/03/2025; Commission Implementing Regulation (EU) 2025/454 enactment heading carries the same act date.",
+      "meaning": "Establishes retained document date 2025-03-07."
+    },
+    "publication_date": {
+      "source_id": "scientific-panel-regulation-eur-lex",
+      "locator": "OJ L, 2025/454, 10.3.2025.",
+      "meaning": "Establishes retained publication date 2025-03-10 separately from issue, vote, adoption, or signature."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "scientific-panel-regulation-eur-lex",
+      "locator": "Official Commission Implementing Regulation (EU) 2025/454: Article 1 and following provisions establish selection, appointment and functioning of the AI Act scientific panel across system types and sectors.",
+      "rationale": "The cited provisions make AI the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "scientific-panel-regulation-eur-lex",
+      "locator": "Official Commission Implementing Regulation (EU) 2025/454: Article 1 and following provisions establish selection, appointment and functioning of the AI Act scientific panel across system types and sectors.",
+      "rationale": "The cited provisions substantiate the retained cross-sector classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "scientific-panel-regulation-eur-lex",
+      "locator": "EUR-Lex Document information > Author: European Commission; Commission Implementing Regulation (EU) 2025/454 masthead reads EUROPEAN COMMISSION.",
+      "rationale": "Exact official metadata identifies the responsible EU institution or body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "scientific-panel-regulation-eur-lex",
+      "locator": "OJ L, 2025/454, 10.3.2025.",
+      "rationale": "The official EU manifestation independently establishes publication of this exact record."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

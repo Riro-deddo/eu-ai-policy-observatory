@@ -3,13 +3,13 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T18:07:46Z",
   "slug": "transparency-guidelines-approval-communication-2026",
   "official_title": "Communication to the Commission — Approval of the content of the Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of the AI Act",
   "short_title": "Approval communication for Article 50 guidelines",
   "document_type": "communication",
   "record_level": "supporting",
-  "official_reference": null,
+  "official_reference": "C(2026) 5054 final",
   "procedure_references": [],
   "oj_reference": null,
   "document_date": "2026-07-20",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "transparency-guidelines-final-commission",
+      "evidence_locator": "Communication masthead: 'Brussels, 20.7.2026', 'C(2026) 5054 final', and title approving Article 50 guideline content."
     }
   ],
   "policy_ids": [
@@ -46,8 +48,8 @@
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
     "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T18:07:46Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -55,5 +57,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "transparency-guidelines-final-commission",
+      "locator": "Communication masthead: 'Brussels, 20.7.2026', 'C(2026) 5054 final', and title approving Article 50 guideline content.",
+      "meaning": "Establishes 2026-07-20 as this exact record's document issue date."
+    },
+    "publication_date": {
+      "source_id": "transparency-guidelines-final-commission",
+      "locator": "Commission page field 'Publication 20 July 2026' and separate approval-communication download 131214; guideline annex 131215 is a different file.",
+      "meaning": "Establishes 2026-07-20 as first official publication for this exact version or release."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "transparency-guidelines-final-commission",
+      "locator": "Exact communication 'Communication to the Commission — Approval of the content of the Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of the AI Act': opening approval paragraphs identify the named draft AI Act guidelines and distinguish content approval from later formal adoption.",
+      "rationale": "The artifact directly governs, interprets, evaluates or operationalises EU artificial-intelligence policy rather than merely mentioning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "transparency-guidelines-final-commission",
+      "locator": "Exact communication 'Communication to the Commission — Approval of the content of the Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of the AI Act': opening approval paragraphs identify the named draft AI Act guidelines and distinguish content approval from later formal adoption. The cited scope applies horizontally to AI systems, models, providers, deployers or affected persons rather than one economic sector.",
+      "rationale": "The retained general_cross_sector tag is supported by the artifact's horizontal AI-policy scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "transparency-guidelines-final-commission",
+      "locator": "Communication masthead: 'Brussels, 20.7.2026', 'C(2026) 5054 final', and title approving Article 50 guideline content.",
+      "rationale": "The exact institutional artifact supports the retained EU-institution provenance classification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "transparency-guidelines-final-commission",
+      "locator": "Commission page field 'Publication 20 July 2026' and separate approval-communication download 131214; guideline annex 131215 is a different file.",
+      "rationale": "The exact version is distributed through an official EU institutional endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }
