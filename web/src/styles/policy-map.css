@@ -1,4 +1,5 @@
 .policy-map { max-inline-size: 84rem; }
+.policy-map [hidden] { display: none !important; }
 .policy-map button, .policy-map input, .policy-map select { color: inherit; font: inherit; }
 .policy-map button { background: transparent; border: 1px solid var(--rule); cursor: pointer; min-block-size: 2.5rem; padding-inline: .75rem; }
 .policy-map__controls { border-block: 1px solid var(--rule); display: grid; gap: 1.5rem; grid-template-columns: minmax(14rem, 1fr) auto minmax(12rem, .8fr); margin-top: var(--space-4); padding-block: var(--space-3); }

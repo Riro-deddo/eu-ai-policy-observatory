@@ -9,17 +9,17 @@ const model = createPolicyMapModel(data, import.meta.env.BASE_URL);
 const nodes = new Map(model.nodes.map((node) => [node.id, node]));
 ---
 <section class="research-section policy-map" aria-labelledby="policy-map-heading" data-policy-map-root data-atlas-url={atlasUrl}>
-  <div class="section-heading"><p class="section-kicker">Published relationships</p><h1 id="policy-map-heading">Policy Map</h1><p>Follow a policy process. Select a document to trace its recorded relationships.</p><a href="#policy-map-relationship-list">Read the complete relationship list</a></div>
+  <div class="section-heading"><p class="section-kicker">Published relationships</p><h1 id="policy-map-heading">Policy Map</h1><p>Follow a policy process. Select a record to trace its recorded relationships.</p><a href="#policy-map-relationship-list">Read the complete relationship list</a></div>
   <div class="policy-map__controls" data-enhancement hidden>
     <label>Policy grouping<select data-policy-map-family disabled><option>Loading policy groups</option></select></label>
     <fieldset><legend>Record detail</legend><div class="policy-map__segmented"><button data-policy-map-mode="principal" type="button" aria-pressed="true">Principal documents</button><button data-policy-map-mode="all" type="button" aria-pressed="false">All records</button></div></fieldset>
-    <label class="policy-map__search">Find a document<input data-policy-map-search type="search" placeholder="Title or year" autocomplete="off" /><span data-policy-map-search-results hidden></span></label>
+    <label class="policy-map__search">Find a record<input data-policy-map-search type="search" placeholder="Title or year" autocomplete="off" /><span data-policy-map-search-results hidden></span></label>
   </div>
   <div class="policy-map__heading"><h2 data-policy-map-title>Preparing the map</h2><p data-policy-map-counts role="status">Loading the published dataset…</p></div>
   <p data-policy-map-failure hidden>The interactive map could not load. The complete relationship list remains available below.</p>
   <div class="policy-map__workspace" data-policy-map-workspace data-enhancement hidden>
     <section class="policy-map__panel" aria-label="Interactive policy relationship map">
-      <div class="policy-map__toolbar"><span data-policy-map-hint>Drag to pan · select a document</span><div><button data-policy-map-zoom-out aria-label="Zoom out" type="button">−</button><output data-policy-map-zoom aria-label="Map zoom">100%</output><button data-policy-map-zoom-in aria-label="Zoom in" type="button">+</button><button data-policy-map-fit type="button">Fit</button><button data-policy-map-actual type="button">100%</button><button data-policy-map-fullscreen type="button">Full screen</button></div></div>
+      <div class="policy-map__toolbar"><span data-policy-map-hint>Drag to pan · select a record</span><div><button data-policy-map-zoom-out aria-label="Zoom out" type="button">−</button><output data-policy-map-zoom aria-label="Map zoom">100%</output><button data-policy-map-zoom-in aria-label="Zoom in" type="button">+</button><button data-policy-map-fit type="button">Fit</button><button data-policy-map-actual type="button">100%</button><button data-policy-map-fullscreen type="button">Full screen</button></div></div>
       <div class="policy-map__viewport" data-policy-map-viewport tabindex="0" aria-label="Policy map canvas. Drag to pan; use arrow keys to pan, plus or minus to zoom."><svg xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Recorded document relationships"><defs><marker id="policy-map-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z"></path></marker></defs><g data-policy-map-scene></g></svg></div>
       <div class="policy-map__legend" aria-label="Relationship legend"><span><i class="policy-map__line"></i>Official relationship</span><span><i class="policy-map__line policy-map__line--analytical"></i>Analytical relationship</span><span><i class="policy-map__context-key"></i>Linked context</span></div>
     </section>

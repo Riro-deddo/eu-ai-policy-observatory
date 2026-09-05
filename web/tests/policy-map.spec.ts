@@ -24,7 +24,7 @@ test('selection exposes evidence, complete focus and back navigation', async ({ 
 
 test('search, keyboard selection and map controls are operable', async ({ page }) => {
   await page.goto('policy-map/');
-  await page.getByLabel('Find a document').fill('White Paper');
+  await page.getByLabel('Find a record').fill('White Paper');
   await page.getByRole('button', { name: /White Paper on Artificial Intelligence/ }).click();
   await expect(page.locator('[data-policy-map-node]')).toHaveCount(2);
   await expect(page.locator('[data-policy-map-edge]')).toHaveCount(2);
@@ -34,8 +34,16 @@ test('search, keyboard selection and map controls are operable', async ({ page }
   await page.getByRole('button', { name: 'Zoom in' }).click();
   await expect(page.getByLabel('Map zoom')).not.toHaveText('100%');
   await page.getByRole('button', { name: 'Fit' }).click();
-  await page.getByLabel('Find a document').fill('not a corpus title');
-  await expect(page.getByText('No matching linked documents. Try another title or year.')).toBeVisible();
+  await page.getByLabel('Find a record').fill('not a corpus title');
+  await expect(page.getByText('No matching linked records. Try another title or year.')).toBeVisible();
+});
+
+test('initial camera fit measures the visible canvas', async ({ page }) => {
+  await page.goto('policy-map/');
+  await expect(page.getByLabel('Policy grouping')).toBeVisible();
+  const camera = await page.locator('[data-policy-map-scene]').getAttribute('transform');
+  expect(camera).toMatch(/^translate\((?!NaN)[\d.-]+ (?!NaN)[\d.-]+\) scale\((?!0(?:\D|$)|NaN)[\d.]+\)$/);
+  await expect(page.getByLabel('Map zoom')).not.toHaveText('0%');
 });
 
 test('narrow map stays inside the document viewport', async ({ page }) => {
@@ -51,4 +59,14 @@ test('atlas failure leaves the relationship alternative available', async ({ pag
   await expect(page.getByText('The interactive map could not load.')).toBeVisible();
   await expect(page.getByLabel('Policy grouping')).toBeHidden();
   await expect(page.locator('[data-policy-map-relationship]')).toHaveCount(88);
+});
+
+test('no JavaScript hides enhancement UI and preserves the complete relationship list', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  await page.goto('policy-map/');
+  await expect(page.getByLabel('Policy grouping')).toBeHidden();
+  await expect(page.getByLabel('Interactive policy relationship map')).toBeHidden();
+  await expect(page.locator('[data-policy-map-relationship]')).toHaveCount(88);
+  await context.close();
 });
