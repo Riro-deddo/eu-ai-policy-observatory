@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
+import { loadPublicData } from '../src/lib/data.ts';
 import { buildPolicyMapAtlas, createPolicyMapModel, relationshipTypeLabel, selectPolicyMapView, wrapPolicyMapLabel } from '../src/lib/policy-map.ts';
 
-const data = JSON.parse(readFileSync(new URL('../../generated/public-data.json', import.meta.url), 'utf8'));
+const data = loadPublicData();
 const family = 'artificial-intelligence-act-legislative-process';
 
 test('relationship type compatibility label remains readable for record pages', () => {
@@ -14,8 +14,8 @@ test('relationship type compatibility label remains readable for record pages', 
 test('public projection retains every linked endpoint and relationship without mutation', () => {
   const before = JSON.stringify(data);
   const model = createPolicyMapModel(data, '/eu-ai-policy-observatory/');
-  assert.equal(model.nodes.length, 93);
-  assert.equal(model.edges.length, 88);
+  assert.equal(model.nodes.length, 100);
+  assert.equal(model.edges.length, 95);
   assert.equal(JSON.stringify(data), before);
   assert.ok(model.nodes.every((node) => node.href.startsWith('/eu-ai-policy-observatory/')));
   for (const edge of model.edges) {

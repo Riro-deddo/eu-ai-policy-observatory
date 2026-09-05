@@ -39,8 +39,10 @@ for (const { route, heading, pdfHref } of retainedRoutes) {
     await expect(notice).toContainText('Pages 1–2 (cover and first body page).');
 
     const officialMetadata = page.getByRole('region', { name: 'Official metadata' });
+    await expect(officialMetadata.getByText('Version status', { exact: true })).toHaveCount(0);
+    const classifications = page.getByRole('region', { name: 'Research classifications' });
     await expect(
-      officialMetadata.locator('dt').filter({ hasText: /^Version status$/ })
+      classifications.locator('dt').filter({ hasText: /^Version status$/ })
         .locator('xpath=following-sibling::dd[1]'),
     ).toHaveText('Draft');
     await expect.poll(() => page.evaluate(

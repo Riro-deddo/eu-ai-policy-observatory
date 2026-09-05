@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
+import { loadPublicData } from '../src/lib/data.ts';
+
 const config = readFileSync(new URL('../astro.config.mjs', import.meta.url), 'utf8');
 const playwrightConfig = readFileSync(new URL('../playwright.config.ts', import.meta.url), 'utf8');
 const explorer = readFileSync(new URL('../src/components/CorpusExplorer.astro', import.meta.url), 'utf8');
@@ -12,9 +14,7 @@ const about = readFileSync(new URL('../src/pages/about.astro', import.meta.url),
 const pathway = readFileSync(new URL('../src/components/PolicyPathway.astro', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
-const publicData = JSON.parse(
-  readFileSync(new URL('../../generated/public-data.json', import.meta.url), 'utf8'),
-);
+const publicData = loadPublicData();
 
 test('canonical browser assertions derive the deployment origin and base path from their environment', () => {
   assert.match(config, /trailingSlash:\s*'always'/);

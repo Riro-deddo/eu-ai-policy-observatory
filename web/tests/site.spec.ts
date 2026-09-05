@@ -230,14 +230,23 @@ test('version records expose version-aware official metadata without null placeh
   for (const value of [
     'Regulation (EU) 2024/1689',
     '2026-07-27',
-    'Version',
     'Consolidated text, 27 July 2026',
-    'Consolidated',
   ]) {
     await expect(officialMetadata.getByText(value, { exact: true }).first()).toBeVisible();
   }
   await expect(officialMetadata.getByText('Document date', { exact: true })).toBeVisible();
   await expect(officialMetadata.getByText('Publication date', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText('Record level', { exact: true })).toHaveCount(0);
+  await expect(officialMetadata.getByText('Version status', { exact: true })).toHaveCount(0);
+  const classifications = page.getByRole('region', { name: 'Research classifications' });
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Record level$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Version');
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Version status$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Consolidated');
   await expect(page.getByText('null', { exact: true })).toHaveCount(0);
   await expect(page.getByText('OJ reference', { exact: true })).toHaveCount(0);
 });
@@ -461,7 +470,17 @@ test('historical record pages render official date evidence and research classif
   const officialMetadata = page.getByRole('region', { name: 'Official metadata' });
   await expect(officialMetadata.getByText('Document date kind', { exact: true })).toBeVisible();
   await expect(officialMetadata.getByText('Publication-date evidence', { exact: true })).toBeVisible();
+  await expect(officialMetadata.getByText('Record level', { exact: true })).toHaveCount(0);
+  await expect(officialMetadata.getByText('Version status', { exact: true })).toHaveCount(0);
   const classifications = page.getByRole('region', { name: 'Research classifications' });
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Record level$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Principal');
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Version status$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Final');
   await expect(classifications.getByText('Historical lineage', { exact: true })).toBeVisible();
   await expect(classifications.getByText('AI-related precursor', { exact: true })).toBeVisible();
   await expect(classifications.getByRole('heading', { name: 'Classification evidence' })).toBeVisible();
@@ -474,6 +493,14 @@ test('pending legacy records show a separate expanded-review notice without infe
   await expect(notice).toBeVisible();
   await expect(notice).toContainText('no temporal collection or relevance class is inferred');
   const classifications = page.getByRole('region', { name: 'Research classifications' });
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Record level$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Principal');
+  await expect(
+    classifications.locator('dt').filter({ hasText: /^Version status$/ })
+      .locator('xpath=following-sibling::dd[1]'),
+  ).toHaveText('Final');
   await expect(classifications.getByText('Expanded evidence review pending', { exact: true })).toHaveCount(2);
   await expect(classifications.getByText('Historical lineage', { exact: true })).toHaveCount(0);
   await expect(classifications.getByText('Direct AI relevance', { exact: true })).toHaveCount(0);

@@ -107,9 +107,7 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
             return <li>{vocabularyLabel(date.kind)}: {date.value} ({date.precision}) · {evidenceSource === undefined ? date.source_id : <a href={evidenceSource.url}>{evidenceSource.publisher}</a>} · {date.locator}</li>;
           })}
         </ul></dd></>}
-        <dt>Record level</dt><dd>{vocabularyLabel(document.record_level)}</dd>
         {document.version_label !== null && <><dt>Version label</dt><dd>{document.version_label}</dd></>}
-        <dt>Version status</dt><dd>{vocabularyLabel(document.version_status)}</dd>
         <dt>Legal status</dt><dd>{vocabularyLabel(document.legal_status)}</dd>
         {document.legal_status_evidence !== null && (() => {
           const evidenceSource = sourceById.get(document.legal_status_evidence.source_id);
@@ -124,6 +122,8 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
       <h2 id="research-classifications">Research classifications</h2>
       <p>These are researcher classifications used to organise and analyse the corpus; they are not official EU metadata.</p>
       <dl>
+        <dt>Record level</dt><dd>{vocabularyLabel(document.record_level)}</dd>
+        <dt>Version status</dt><dd>{vocabularyLabel(document.version_status)}</dd>
         <dt>Temporal collection</dt><dd>{vocabularyLabel(document.temporal_collection ?? document.historical_review_status)}</dd>
         <dt>Relevance class</dt><dd>{vocabularyLabel(document.relevance_class ?? document.historical_review_status)}</dd>
         <dt>Policy stage</dt><dd>{assessment === null ? 'Not assigned' : vocabularyLabel(assessment.policy_stage)}</dd>

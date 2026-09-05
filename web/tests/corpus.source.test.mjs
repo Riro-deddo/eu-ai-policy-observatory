@@ -73,6 +73,22 @@ test('document records separate researcher classifications, production provenanc
   assert.match(documentRoute, /<h2 id="official-sources-and-identifiers">Official sources and identifiers<\/h2>/);
 });
 
+test('record level and editorial version status stay in research classifications', () => {
+  const officialMetadata = documentRoute.match(
+    /<section aria-labelledby="official-metadata">([\s\S]*?)<\/section>/,
+  )?.[1];
+  const researchClassifications = documentRoute.match(
+    /<section aria-labelledby="research-classifications">([\s\S]*?)<\/section>/,
+  )?.[1];
+
+  assert.ok(officialMetadata);
+  assert.ok(researchClassifications);
+  assert.doesNotMatch(officialMetadata, /<dt>Record level<\/dt>/);
+  assert.doesNotMatch(officialMetadata, /<dt>Version status<\/dt>/);
+  assert.match(researchClassifications, /<dt>Record level<\/dt>/);
+  assert.match(researchClassifications, /<dt>Version status<\/dt>/);
+});
+
 test('Methodology publishes the aggregate coverage statement and audit counts', () => {
   assert.match(methodology, /<p>\{data\.coverage\.coverage_statement\}<\/p>/);
   assert.match(methodology, /<dt>Publication cutoff<\/dt><dd>\{data\.coverage\.coverage_cutoff\}<\/dd>/);
