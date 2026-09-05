@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "sixth-framework-programme-decision-1513-2002-ec",
   "official_title": "Decision No 1513/2002/EC of the European Parliament and of the Council of 27 June 2002 concerning the sixth framework programme of the European Community for research, technological development and demonstration activities, contributing to the creation of the European Research Area and to innovation (2002 to 2006)",
   "short_title": "Sixth Framework Programme (FP6)",
@@ -46,13 +46,7 @@
       "institution_id": "commission-of-the-european-communities",
       "role": "proposer",
       "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
-      "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
-    },
-    {
-      "institution_id": "office-for-official-publications-of-the-european-communities",
-      "role": "publisher",
-      "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
-      "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
     }
   ],
   "policy_ids": [],

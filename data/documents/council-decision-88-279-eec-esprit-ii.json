@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "council-decision-88-279-eec-esprit-ii",
   "official_title": "88/279/EEC: Council Decision of 11 April 1988 concerning the European strategic programme for research and development in information technologies (Esprit)",
   "short_title": "ESPRIT II",
@@ -40,13 +40,7 @@
       "institution_id": "commission-of-the-european-communities",
       "role": "proposer",
       "evidence_source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
-      "evidence_locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41"
-    },
-    {
-      "institution_id": "office-for-official-publications-of-the-european-communities",
-      "role": "publisher",
-      "evidence_source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
-      "evidence_locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41"
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
     }
   ],
   "policy_ids": [],

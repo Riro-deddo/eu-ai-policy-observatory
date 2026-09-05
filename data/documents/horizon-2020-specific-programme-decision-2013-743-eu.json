@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "horizon-2020-specific-programme-decision-2013-743-eu",
   "official_title": "2013/743/EU: Council Decision of 3 December 2013 establishing the specific programme implementing Horizon 2020 - the Framework Programme for Research and Innovation (2014-2020) and repealing Decisions 2006/971/EC, 2006/972/EC, 2006/973/EC, 2006/974/EC and 2006/975/EC",
   "short_title": "Horizon 2020 specific programme",
@@ -40,13 +40,7 @@
       "institution_id": "european-commission",
       "role": "proposer",
       "evidence_source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
-      "evidence_locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
-    },
-    {
-      "institution_id": "publications-office-of-the-european-union",
-      "role": "publisher",
-      "evidence_source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
-      "evidence_locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the European Commission'"
     }
   ],
   "policy_ids": [],

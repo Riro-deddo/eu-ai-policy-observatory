@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "building-a-european-data-economy",
   "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Building a European data economy",
   "short_title": "Building a European data economy",
@@ -40,12 +40,6 @@
     {
       "institution_id": "directorate-general-for-communications-networks-content-and-technology",
       "role": "responsible_body",
-      "evidence_source_id": "building-a-european-data-economy-eur-lex-metadata",
-      "evidence_locator": "Document information"
-    },
-    {
-      "institution_id": "publications-office-of-the-european-union",
-      "role": "publisher",
       "evidence_source_id": "building-a-european-data-economy-eur-lex-metadata",
       "evidence_locator": "Document information"
     }

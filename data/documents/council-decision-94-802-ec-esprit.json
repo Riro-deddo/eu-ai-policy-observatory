@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "council-decision-94-802-ec-esprit",
   "official_title": "94/802/EC: Council Decision of 23 November 1994 adopting a specific programme for research and technological development, including demonstration, in the field of information technologies (1994 to 1998)",
   "short_title": "ESPRIT under the Fourth Framework Programme",
@@ -40,13 +40,7 @@
       "institution_id": "commission-of-the-european-communities",
       "role": "proposer",
       "evidence_source_id": "council-decision-94-802-ec-esprit-eur-lex",
-      "evidence_locator": "Identity panel; Articles 1 and 9; Annex I RTD activities"
-    },
-    {
-      "institution_id": "office-for-official-publications-of-the-european-communities",
-      "role": "publisher",
-      "evidence_source_id": "council-decision-94-802-ec-esprit-eur-lex",
-      "evidence_locator": "Identity panel; Articles 1 and 9; Annex I RTD activities"
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
     }
   ],
   "policy_ids": [],

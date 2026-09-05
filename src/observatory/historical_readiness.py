@@ -373,7 +373,9 @@ def validate_historical_readiness(
 
 def main(argv: list[str] | None = None) -> int:
     """Print deterministic JSON; 0 ready, 1 gaps, 2 invalid invocation/input."""
-    parser = argparse.ArgumentParser(description="Run the inactive historical readiness preflight.")
+    parser = argparse.ArgumentParser(
+        description="Run the historical evidence-readiness checks."
+    )
     parser.add_argument("--project-root", type=Path, required=True)
     parser.add_argument("--publication-cutoff", required=True)
     try:

@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "council-decision-89-415-eec-doses",
   "official_title": "89/415/EEC: Council Decision of 20 June 1989 instituting a specific programme for the research and development of statistical expert systems (Doses)",
   "short_title": "DOSES statistical expert systems programme",
@@ -40,13 +40,7 @@
       "institution_id": "commission-of-the-european-communities",
       "role": "proposer",
       "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
-      "evidence_locator": "Identity panel; heading; Articles 1 and 8; Annex I"
-    },
-    {
-      "institution_id": "office-for-official-publications-of-the-european-communities",
-      "role": "publisher",
-      "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
-      "evidence_locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
     }
   ],
   "policy_ids": [],

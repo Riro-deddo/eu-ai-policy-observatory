@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T11:54:18Z",
   "slug": "council-decision-88-417-eec-delta",
   "official_title": "88/417/EEC: Council Decision of 29 June 1988 on a Community action in the field of learning technologies - development of European learning through technological advance (Delta) exploratory action",
   "short_title": "DELTA exploratory action",
@@ -40,13 +40,7 @@
       "institution_id": "commission-of-the-european-communities",
       "role": "proposer",
       "evidence_source_id": "council-decision-88-417-eec-delta-eur-lex",
-      "evidence_locator": "Identity panel"
-    },
-    {
-      "institution_id": "office-for-official-publications-of-the-european-communities",
-      "role": "publisher",
-      "evidence_source_id": "council-decision-88-417-eec-delta-eur-lex",
-      "evidence_locator": "Identity panel"
+      "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
     }
   ],
   "policy_ids": [],

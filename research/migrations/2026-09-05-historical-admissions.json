@@ -8,6 +8,41 @@
     "research/staging/2026-09-05-historical-first-batch-mapping.md",
     "research/staging/2026-09-05-legacy-three-evidence.json"
   ],
+  "correction_history": [
+    {
+      "corrected_at": "2026-09-05T11:54:18Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_commit": "9ca3aea0b8ede22299df572d11be58d27fb17839",
+      "publisher_role_correction": {
+        "action": "Removed unsupported optional document-level publisher roles while retaining publisher/host facts on source records and the study's explicitly credited publisher role.",
+        "document_ids": [
+          "building-a-european-data-economy",
+          "civil-law-rules-on-robotics-resolution-2017",
+          "council-decision-84-130-eec-esprit",
+          "council-decision-88-279-eec-esprit-ii",
+          "council-decision-88-417-eec-delta",
+          "council-decision-89-415-eec-doses",
+          "council-decision-94-802-ec-esprit",
+          "digitising-european-industry",
+          "fundamental-rights-implications-of-big-data-resolution-2017",
+          "horizon-2020-specific-programme-decision-2013-743-eu",
+          "sixth-framework-programme-decision-1513-2002-ec"
+        ]
+      },
+      "proposer_locator_correction": {
+        "action": "Replaced generic identity/annex locators with the exact already-reviewed preamble proposition phrase.",
+        "document_ids": [
+          "council-decision-84-130-eec-esprit",
+          "council-decision-88-279-eec-esprit-ii",
+          "council-decision-88-417-eec-delta",
+          "council-decision-89-415-eec-doses",
+          "council-decision-94-802-ec-esprit",
+          "horizon-2020-specific-programme-decision-2013-743-eu",
+          "sixth-framework-programme-decision-1513-2002-ec"
+        ]
+      }
+    }
+  ],
   "counts": {
     "published_documents_before": 117,
     "historical_candidates_reviewed": 17,

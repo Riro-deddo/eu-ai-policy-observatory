@@ -1,10 +1,13 @@
+from copy import deepcopy
 import json
 from pathlib import Path
 import shutil
 import sqlite3
 
+import pytest
+
 from observatory.historical_publication import validate_historical_publication
-from observatory.io import load_records
+from observatory.io import LoadedRecord, load_records
 from observatory.pipeline import run_pipeline
 
 
@@ -119,4 +122,163 @@ def test_scalar_only_historical_extension_is_rejected_as_partial():
         issue.field == "historical_review_status"
         and "partial" in issue.message.lower()
         for issue in issues
+    )
+
+
+@pytest.mark.parametrize(
+    "publication_status",
+    [
+        pytest.param("pending_review", id="pending"),
+        pytest.param("draft", id="unverified"),
+    ],
+)
+def test_gate_rejects_pending_or_unverified_evidence_source(publication_status):
+    records = load_records(Path("data"))
+    document = _document(records, "council-decision-84-130-eec-esprit")
+    source_id = document.data["date_evidence"]["document_date"]["source_id"]
+    source = next(row for row in records["sources"] if row.data.get("id") == source_id)
+    source.data["publication_status"] = publication_status
+
+    issues = _publication_issues(records)
+
+    assert any(
+        issue.code == "historical_evidence"
+        and "must be published" in issue.message.lower()
+        for issue in issues
+    )
+
+
+def test_gate_rejects_undeclared_evidence_source():
+    records = load_records(Path("data"))
+    document = _document(records, "council-decision-84-130-eec-esprit")
+    source_id = document.data["date_evidence"]["document_date"]["source_id"]
+    document.data["source_ids"].remove(source_id)
+
+    issues = _publication_issues(records)
+
+    assert any(
+        issue.code == "historical_evidence"
+        and "not declared" in issue.message.lower()
+        for issue in issues
+    )
+
+
+@pytest.mark.parametrize(
+    ("missing_citation", "expected_code", "field_fragment"),
+    [
+        ("tag", "historical_classification", "classification_evidence"),
+        ("date", "historical_schema", "date_evidence.publication_date"),
+        ("role", "historical_schema", "institution_roles.0.evidence_locator"),
+    ],
+)
+def test_gate_rejects_missing_tag_date_or_role_citation(
+    missing_citation, expected_code, field_fragment
+):
+    records = load_records(Path("data"))
+    document = _document(records, "council-decision-84-130-eec-esprit")
+    if missing_citation == "tag":
+        document.data["classification_evidence"].pop(0)
+    elif missing_citation == "date":
+        document.data["date_evidence"].pop("publication_date")
+    else:
+        document.data["institution_roles"][0].pop("evidence_locator")
+
+    issues = _publication_issues(records)
+
+    assert any(
+        issue.code == expected_code and field_fragment in issue.field
+        for issue in issues
+    )
+
+
+def test_gate_rejects_publication_after_cutoff():
+    records = load_records(Path("data"))
+    document = _document(records, "council-decision-84-130-eec-esprit")
+    document.data["publication_date"] = "2026-09-05"
+
+    issues = _publication_issues(records)
+
+    assert any(
+        issue.code == "historical_date" and issue.field == "publication_date"
+        for issue in issues
+    )
+
+
+def test_gate_rejects_historical_identity_duplicate():
+    records = load_records(Path("data"))
+    original = _document(records, "council-decision-84-130-eec-esprit")
+    duplicate = deepcopy(original.data)
+    duplicate.update(
+        id="council-decision-84-130-eec-esprit-duplicate",
+        slug="council-decision-84-130-eec-esprit-duplicate",
+    )
+    records["documents"].append(
+        LoadedRecord(
+            duplicate,
+            Path("data/documents/council-decision-84-130-eec-esprit-duplicate.json"),
+        )
+    )
+
+    issues = _publication_issues(records)
+
+    assert any(issue.code == "historical_identity" for issue in issues)
+
+
+def test_gate_accepts_fully_evidenced_pre_1984_fixture():
+    records = load_records(Path("tests/fixtures/valid/data"))
+    document = _document(records, "example-document")
+    citation = {
+        "source_id": "example-source",
+        "locator": "Synthetic official fixture, title page",
+        "meaning": "The fixture supplies this historical publication date.",
+    }
+    document.data.update(
+        historical_review_status="verified",
+        temporal_collection="historical_lineage",
+        relevance_class="direct_ai_substantive",
+        document_date_kind="publication",
+        document_date="1975-01-15",
+        publication_date="1975-01-15",
+        date_evidence={
+            "document_date": deepcopy(citation),
+            "publication_date": deepcopy(citation),
+        },
+        classification_evidence=[
+            {
+                "field": field,
+                "value": value,
+                "source_id": "example-source",
+                "locator": "Synthetic official fixture, section 1",
+                "rationale": "The fixture supports this supplied classification.",
+            }
+            for field, values in (
+                ("relevance_class", ["direct_ai_substantive"]),
+                ("sector_tags", document.data["sector_tags"]),
+                ("provenance_tags", document.data["provenance_tags"]),
+            )
+            for value in values
+        ],
+        bibliographic_authors=[],
+        additional_dates=[],
+    )
+    document.data["institution_roles"][0].update(
+        evidence_source_id="example-source",
+        evidence_locator="Synthetic official fixture, title page",
+    )
+
+    assert _publication_issues(records) == []
+
+
+def _document(records, document_id):
+    return next(
+        row for row in records["documents"] if row.data.get("id") == document_id
+    )
+
+
+def _publication_issues(records):
+    return validate_historical_publication(
+        records,
+        Path("schema"),
+        "2026-09-04",
+        Path("research/migrations/2026-09-05-public-document-baseline.json"),
     )
