@@ -318,6 +318,30 @@ def test_scanner_still_rejects_embedded_or_query_unix_user_paths(
     assert any("local filesystem path" in error and "leak.txt" in error for error in errors)
 
 
+@pytest.mark.parametrize(
+    "content",
+    [
+        "a{background:url(https://official.example/page);src:url(/home/researcher/private)}",
+        "source=https://official.example/page;path=/home/researcher/private;",
+    ],
+)
+def test_scanner_does_not_bridge_a_previous_url_to_a_distinct_local_path(
+    tmp_path: Path, content: str
+):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "minified.txt").write_text(content, encoding="utf-8")
+    data = tmp_path / "public-data.json"
+    write_public_data(data, {"documents": []})
+
+    errors = check_public_build(site, data)
+
+    assert any(
+        "local filesystem path" in error and "minified.txt" in error
+        for error in errors
+    )
+
+
 def test_scanner_rejects_common_private_key_headers(tmp_path: Path):
     site = tmp_path / "site"
     site.mkdir()

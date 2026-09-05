@@ -18,6 +18,7 @@ _WINDOWS_USER_PATH = re.compile(
 )
 _UNIX_USER_PATH = re.compile(r"\\?/(?:Users|home)\\?/", re.IGNORECASE)
 _HTTPS_URL_PREFIX = re.compile(r"https?:\\*/\\*/[^\s\"'<>]*$", re.IGNORECASE)
+_URL_TOKEN_BOUNDARY = re.compile(r'''[\s"'<>()\[\]{};,]''')
 _LOCALHOST = re.compile(r"\blocalhost\b", re.IGNORECASE)
 _TOKEN_PREFIX = re.compile(
     r"(?:gh[oprsu]_|github_pat_|glpat-|(?<![A-Za-z0-9])sk-|AKIA|xox[abprs]-)"
@@ -85,8 +86,14 @@ def _looks_binary(content: bytes) -> bool:
 def _contains_unix_user_path(text: str) -> bool:
     """Distinguish local user paths from ordinary path segments in HTTPS URLs."""
     for match in _UNIX_USER_PATH.finditer(text):
-        url_prefix = _HTTPS_URL_PREFIX.search(text, 0, match.start())
-        if url_prefix is not None and "?" not in url_prefix.group() and "#" not in url_prefix.group():
+        token_start = max(
+            (boundary.end() for boundary in _URL_TOKEN_BOUNDARY.finditer(text, 0, match.start())),
+            default=0,
+        )
+        url_prefix = _HTTPS_URL_PREFIX.fullmatch(text[token_start : match.start()])
+        if url_prefix is not None and not any(
+            marker in url_prefix.group() for marker in "?#"
+        ):
             continue
         return True
     return False
