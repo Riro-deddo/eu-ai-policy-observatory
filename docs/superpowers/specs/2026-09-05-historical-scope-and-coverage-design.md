@@ -2,7 +2,7 @@
 
 **Date:** 5 September 2026
 
-**Status:** Scope direction approved; written specification awaiting final review
+**Status:** Approved; written specification confirmed on 5 September 2026
 
 **Project:** EU AI Policy Observatory
 
@@ -12,7 +12,7 @@
 
 Maintain one English-language database and one static research atlas, with explicitly distinguishable historical and contemporary collections. The year 2018 remains an important analytical boundary, but no longer excludes earlier eligible documents from the database.
 
-The user approved this direction on 5 September 2026 following the historical-scope and design audit. This specification records that direction and the detailed rules for review before implementation planning. It does not approve individual candidate records, certify a completed sweep, advance any verification cutoff or authorise a deployment.
+The user approved the direction and subsequently confirmed this written specification on 5 September 2026 following the historical-scope and design audit. This specification is the basis for implementation planning. It does not approve individual candidate records, certify a completed sweep, advance any verification cutoff or authorise a deployment.
 
 The amendment changes the temporal eligibility rule and coverage-claim requirements of the 4 September comprehensive-corpus design. Its other inclusion rules, English-only requirement, seven-entity structure, provenance requirements and stable public routes remain in place unless explicitly refined below.
 

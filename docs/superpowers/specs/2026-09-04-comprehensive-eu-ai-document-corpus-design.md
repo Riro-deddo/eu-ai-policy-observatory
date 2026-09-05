@@ -4,7 +4,7 @@
 **Status:** Approved
 **Project:** EU AI Policy Observatory
 
-**Scope amendment, 5 September 2026:** The user approved one corpus with historical and contemporary collections. The 2018 lower boundary now applies only to the contemporary collection, and the automatic comprehensive-coverage wording is withdrawn. See [Historical Scope and Evidence-Based Coverage Design](./2026-09-05-historical-scope-and-coverage-design.md) for the detailed amendment awaiting written review. This specification describes requirements, not a claim that the expansion has been implemented.
+**Scope amendment, 5 September 2026:** The user approved one corpus with historical and contemporary collections. The 2018 lower boundary now applies only to the contemporary collection, and the automatic comprehensive-coverage wording is withdrawn. See the approved [Historical Scope and Evidence-Based Coverage Design](./2026-09-05-historical-scope-and-coverage-design.md) for the detailed amendment. This specification describes requirements, not a claim that the expansion has been implemented.
 
 ## 1. Objective
 
