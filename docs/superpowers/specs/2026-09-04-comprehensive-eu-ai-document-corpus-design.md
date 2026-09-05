@@ -4,17 +4,19 @@
 **Status:** Approved
 **Project:** EU AI Policy Observatory
 
+**Scope amendment, 5 September 2026:** The user approved one corpus with historical and contemporary collections. The 2018 lower boundary now applies only to the contemporary collection, and the automatic comprehensive-coverage wording is withdrawn. See [Historical Scope and Evidence-Based Coverage Design](./2026-09-05-historical-scope-and-coverage-design.md) for the detailed amendment awaiting written review. This specification describes requirements, not a claim that the expansion has been implemented.
+
 ## 1. Objective
 
-Expand the EU AI Policy Observatory from an AI Act-centred corpus into a comprehensive, auditable, English-language corpus of official European Union documents that substantively concern artificial intelligence between 1 January 2018 and the latest verified date in 2026.
+Expand the EU AI Policy Observatory from an AI Act-centred corpus into an auditable, English-language corpus of official EU and predecessor European Communities documents that substantively concern artificial intelligence or meet the separately labelled precursor/context tests. The contemporary collection begins on 1 January 2018; the historical collection admits earlier evidence under the 5 September amendment. Official publication by the applicable cutoff must be evidenced in either collection, without treating an initial historical anchor as a permanent lower limit.
 
 The target is not merely a large collection. The project must be able to show which official source families were reviewed, which candidates were found, why each candidate was included, merged, excluded or left pending, and the date through which the claim was verified.
 
-At the date of this design, the public description must use the following formulation:
+The amended default public description is:
 
-> Comprehensive within the documented inclusion boundary, verified through 4 September 2026.
+> An expanding corpus of official EU and European Communities AI-related documents. Verification dates and known coverage gaps are documented.
 
-Later audit releases must replace that date with the exact value of the repository's `coverage_cutoff` field; they must never display a future or inferred date.
+Public coverage views must show the exact applicable cutoff, audited interval, scope and pending count. A cutoff date alone must never generate a comprehensive or completed-audit claim. The existing dataset cutoff remains 4 September 2026 until separately reverified; this amendment does not advance it.
 
 The project must not claim permanent or theoretical 100 per cent completeness.
 
@@ -28,10 +30,10 @@ All existing document IDs, public slugs and routes remain stable. Existing offic
 
 An item is eligible when all of the following conditions are satisfied:
 
-1. it was formally issued or published between 1 January 2018 and the current verified cutoff date in 2026;
+1. its official publication on or before the applicable cutoff has been verified, with an evidenced document date assigning it to the historical or contemporary collection under the 5 September amendment;
 2. it is publicly accessible and independently citable in English;
-3. it was authored, adopted or formally published by an EU institution, body, agency, board or recognised EU expert group, or it was commissioned by the EU and formally published through an official EU source; and
-4. artificial intelligence is a substantive subject, regulatory object or material sectoral issue in the document, rather than an incidental mention.
+3. it was authored, adopted or formally published by an EU or predecessor European Communities institution, body, agency, board or recognised expert group, or commissioned by such an institution and formally published through an eligible official source; and
+4. artificial intelligence is a substantive subject, regulatory object or material sectoral issue, or the document meets the separately evidenced precursor or indirect automated-decision legal-context test in the amendment. Incidental mentions remain insufficient.
 
 Formal publication, rather than final legal adoption, is the eligibility threshold. Official proposals, drafts, amendments, compromise texts, consultation documents and superseded versions therefore remain eligible when their status is explicit and verifiable.
 
@@ -69,7 +71,7 @@ Excluded candidates remain in the research inventory with an explicit reason. Th
 
 ## 4. Institutional Scope
 
-The source universe covers all relevant EU institutions, bodies, agencies, boards and recognised expert groups, rather than only the Commission, Parliament and Council. It includes, where relevant:
+The source universe covers all relevant EU institutions, bodies, agencies, boards and recognised expert groups, plus eligible predecessor European Communities institutions with historically correct issuing names, rather than only the Commission, Parliament and Council. It includes, where relevant:
 
 - European Commission and European AI Office;
 - European Parliament;
@@ -258,18 +260,18 @@ Unverified and pending candidates are excluded from generated public JSON, SQLit
 
 ## 9. Coverage Matrix and Completeness Claim
 
-Coverage is reported across source family, institution or body, date range, document type and sector. The matrix is generated from the source registry and candidate inventory rather than maintained as an unsupported percentage.
+Coverage is reported across source family, institution or body, date range, document type and sector, with temporal collection and relevance subset explicit. The matrix is generated from the source registry and candidate inventory rather than maintained as an unsupported percentage. Incomplete matrices must expose unstarted work, gaps and pending candidates; missing sources do not count as zero-result searches.
 
-An audit cycle may be described as reviewed through its cutoff only when:
+A bounded audit may be described as completed through its cutoff only when:
 
-- every in-scope source family has a completed documented query or review;
-- every discovered candidate has an inclusion, merge, exclusion or explicit pending decision;
-- pending candidates are counted and publicly disclosed;
+- its named source universe, date interval and reproducible method are published;
+- every required source family in that scope has a completed documented query or review;
+- every discovered candidate in that scope has a verified inclusion, merge or exclusion decision, with no pending candidate or known unresolved gap;
 - legislative procedures and cited document chains have been reconciled against their official registers;
 - cross-source duplicate and version checks have been run; and
 - reverse searches and citation-chain spot checks have not found unregistered eligible documents.
 
-The public coverage statement must include the exact cutoff date and unresolved-candidate count. A source-level status such as `30/30 reviewed` must not be presented as proof of record-level completeness.
+The public coverage statement must include the exact cutoff date and unresolved-candidate count. Outside a completed bounded audit, pending candidates and incomplete sources remain publicly disclosed in aggregate and the collection remains described as expanding. A source-level status such as `30/30 reviewed` must not be presented as proof of record-level completeness. A new relevant omission or source failure removes that scope's completed-audit claim until reverified.
 
 ## 10. Public Atlas Behaviour
 
@@ -336,10 +338,10 @@ Implementation is divided into three independently verifiable stages.
 ### Stage 3: EU-wide sweep
 
 - register and review all relevant EU institutions, bodies, agencies and expert groups;
-- sweep every year from 2018 through the cutoff;
+- sweep every contemporary year from 2018 through the cutoff, and separately register and review historical source/period scopes without implying a complete historical census;
 - sweep both cross-sector and sector-specific AI material;
 - resolve every discovered candidate; and
-- publish an updated coverage matrix only after the audit criteria are met.
+- publish the evolving coverage matrix with honest incomplete states; mark a bounded audit completed only after its audit criteria are met.
 
 ## 12. Verification Strategy
 
@@ -365,15 +367,15 @@ Before publication, verification includes the complete Python test suite, web un
 
 ## 13. Completion Criteria
 
-The expansion is complete for the stated coverage cutoff when:
+The implementation can be accepted for a documented release when the following controls hold. This is separate from completing any historical or EU-wide source sweep and does not itself support a comprehensive-coverage claim:
 
 - the schema, source registry, inventory, SQLite database and public JSON agree;
 - every published document has verified official evidence, sector tags, provenance tags and a verification date;
 - all existing corpus records have been migrated;
-- every registered official source family has been reviewed through the cutoff;
+- every registered official source family accurately states its reviewed interval and scan status, with unfinished or missing source coverage visible;
 - every discovered candidate has a recorded decision;
 - unresolved candidates are absent from public records and disclosed in coverage reporting;
 - duplicate identities and unexplained version gaps have been eliminated;
 - existing public routes remain valid;
 - all local and remote verification checks pass; and
-- the live GitHub Pages site shows the exact coverage cutoff and auditable scope statement.
+- the live GitHub Pages site shows the exact coverage cutoff and auditable scope statement, and any completed bounded-audit claim satisfies section 9 and the 5 September amendment.
