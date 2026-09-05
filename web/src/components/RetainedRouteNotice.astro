@@ -1,0 +1,35 @@
+---
+import type { RetainedRouteNotice, Source } from '../lib/types';
+
+interface Props {
+  notice: RetainedRouteNotice;
+  sources: Source[];
+}
+
+const { notice, sources }: Props = Astro.props;
+const sourcesById = new Map(sources.map((source) => [source.id, source]));
+---
+
+<section class="retained-route-notice" aria-labelledby="parent-relationship-under-review">
+  <h2 id="parent-relationship-under-review">Parent relationship under review</h2>
+  <p>This is an editorial notice, not official EU metadata.</p>
+  <p>{notice.reason}</p>
+  <dl>
+    <dt>Reviewed by</dt><dd>{notice.reviewed_by}</dd>
+    <dt>Reviewed at</dt><dd><time datetime={notice.reviewed_at}>{notice.reviewed_at}</time></dd>
+  </dl>
+  <h3>Evidence</h3>
+  <ul>
+    {notice.evidence.map((item) => {
+      const source = sourcesById.get(item.source_id);
+      return (
+        <li>
+          {source === undefined
+            ? <span>Evidence source: {item.source_id}</span>
+            : <a href={source.url}>Evidence source: {source.publisher}</a>}
+          <span> — Locator: {item.locator}</span>
+        </li>
+      );
+    })}
+  </ul>
+</section>

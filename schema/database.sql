@@ -130,6 +130,24 @@ CREATE TABLE corpus_assessments (
     reviewed_at TEXT NOT NULL
 );
 
+CREATE TABLE document_retained_route_notices (
+    document_id TEXT PRIMARY KEY REFERENCES documents(id),
+    status TEXT NOT NULL,
+    reason TEXT NOT NULL,
+    reviewed_by TEXT NOT NULL,
+    reviewed_at TEXT NOT NULL
+);
+
+CREATE TABLE document_retained_route_evidence (
+    document_id TEXT NOT NULL REFERENCES documents(id),
+    evidence_order INTEGER NOT NULL CHECK (evidence_order >= 0),
+    source_id TEXT NOT NULL REFERENCES sources(id),
+    locator TEXT NOT NULL,
+    PRIMARY KEY (document_id, evidence_order),
+    UNIQUE (document_id, source_id),
+    FOREIGN KEY (document_id) REFERENCES document_retained_route_notices(document_id)
+);
+
 CREATE TABLE document_institutions (
     document_id TEXT NOT NULL REFERENCES documents(id),
     institution_id TEXT NOT NULL REFERENCES institutions(id),

@@ -53,6 +53,32 @@
       "items": { "$ref": "#/$defs/id" },
       "uniqueItems": true
     },
+    "retained_route_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": { "$ref": "#/$defs/id" },
+        "locator": { "type": "string", "minLength": 1 }
+      },
+      "required": ["source_id", "locator"]
+    },
+    "retained_route_notice": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": { "const": "parent_relationship_under_review" },
+        "reason": { "type": "string", "minLength": 1 },
+        "reviewed_by": { "type": "string", "minLength": 1 },
+        "reviewed_at": { "$ref": "#/$defs/timestamp" },
+        "evidence": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/retained_route_evidence" }
+        }
+      },
+      "required": ["status", "reason", "reviewed_by", "reviewed_at", "evidence"]
+    },
     "policy": {
       "allOf": [
         { "$ref": "#/$defs/common_envelope" },
@@ -136,6 +162,7 @@
             "policy_ids": { "$ref": "#/$defs/id_list" },
             "concept_ids": { "$ref": "#/$defs/id_list" },
             "source_ids": { "$ref": "#/$defs/id_list" },
+            "retained_route_notice": { "$ref": "#/$defs/retained_route_notice" },
             "corpus_assessment": { "$ref": "#/$defs/corpus_assessment" },
             "snapshots": {
               "type": "array",

@@ -18,6 +18,7 @@ from observatory.pipeline import run_pipeline
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-05-official-pdf-evidence.json"
+RETAINED_LEDGER = ROOT / "research/migrations/2026-09-05-retained-section-notices.json"
 BASELINE = ROOT / "research/migrations/2026-09-05-public-document-baseline.json"
 # Hand-checked observations, not values derived by the exporter under test.
 FILES = [
@@ -110,9 +111,23 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
     identity_review = json.loads(
         (ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json").read_text(encoding="utf-8")
     )
+    retained_review = json.loads(RETAINED_LEDGER.read_text(encoding="utf-8"))
+    retained_changes = {
+        item["document_id"]: item for item in retained_review["documents"]
+    }
     later_changes = {item["before"]["id"]: item for item in identity_review["documents"]}
     for change in ledger["changes"]:
         record = json.loads((ROOT / change["path"]).read_text(encoding="utf-8"))
+        # Reverse only the subsequent retained-route correction in this local copy.
+        # Fields absent before the correction are removed, not replaced wholesale.
+        if record.get("entity_type") == "document" and record["id"] in retained_changes:
+            retained = retained_changes[record["id"]]
+            for field, expected in retained["after_changes"].items():
+                assert record[field] == expected
+                if field in retained["before"]:
+                    record[field] = retained["before"][field]
+                else:
+                    del record[field]
         # Reverse only the subsequent declared corrections in this local copy.
         # Keep real current snapshots/sources under the original B3 assertions.
         if record.get("entity_type") == "document" and record["id"] in later_changes:

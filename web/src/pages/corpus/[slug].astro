@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import RetainedRouteNotice from '../../components/RetainedRouteNotice.astro';
 import { loadPublicData } from '../../lib/data';
 import { documentTypeLabel, groupDocumentRelationships, vocabularyLabel } from '../../lib/filter';
 import { relationshipTypeLabel } from '../../lib/policy-map';
@@ -60,6 +61,12 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
   <article class="research-section document-record">
     <p class="section-kicker">Published document record</p>
     <h1>{document.short_title}</h1>
+    {document.retained_route_notice !== null && (
+      <RetainedRouteNotice
+        notice={document.retained_route_notice}
+        sources={document.sources}
+      />
+    )}
 
     <section aria-labelledby="official-metadata">
       <h2 id="official-metadata">Official metadata</h2>

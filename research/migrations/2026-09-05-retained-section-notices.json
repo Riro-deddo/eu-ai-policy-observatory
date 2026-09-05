@@ -1,0 +1,314 @@
+{
+  "migration_id": "2026-09-05-retained-section-notices",
+  "review": {
+    "reviewed_by": "Codex",
+    "reviewed_at": "2026-09-05T08:59:02Z",
+    "publication_cutoff": "2026-09-04",
+    "scope": "Editorial retained-route notices for three already-published draft guideline sections with unresolved whole-work parent relationships."
+  },
+  "review_scope": {
+    "document_ids": [
+      "draft-high-risk-classification-guidelines-2026",
+      "draft-high-risk-classification-guidelines-annex-i-2026",
+      "draft-high-risk-classification-guidelines-annex-iii-2026"
+    ],
+    "landing_source_id": "high-risk-guidelines-draft-commission",
+    "pdf_source_ids": [
+      "commission-newsroom-128559-pdf",
+      "commission-newsroom-128560-pdf",
+      "commission-newsroom-128561-pdf"
+    ],
+    "limits": "Uses already-canonical official sources and their recorded bounded locators. This review did not retrieve new bytes, admit a whole-guidelines parent, add a relationship, change draft status, or resolve historical lineage holds."
+  },
+  "existing_state": {
+    "published_documents": 117,
+    "published_relationships": 95,
+    "historical_relationship_holds": [
+      "draft-high-risk-classification-guidelines-2026",
+      "draft-high-risk-classification-guidelines-annex-i-2026",
+      "draft-high-risk-classification-guidelines-annex-iii-2026"
+    ]
+  },
+  "documents": [
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "path": "data/documents/draft-high-risk-classification-guidelines-2026.json",
+      "before": {
+        "id": "draft-high-risk-classification-guidelines-2026",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-05T08:20:53Z",
+        "slug": "draft-high-risk-classification-guidelines-2026",
+        "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — General principles",
+        "short_title": "Draft high-risk classification guidelines",
+        "document_type": "guidelines",
+        "record_level": "attachment",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2026-05-19",
+        "version_label": "Consultation draft — General principles",
+        "version_status": "draft",
+        "publication_date": "2026-05-19",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "high-risk-guidelines-draft-commission",
+          "commission-newsroom-128559-pdf"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "official_consultation_material",
+          "officially_published"
+        ],
+        "snapshots": [
+          {
+            "id": "snapshot-newsroom-128559-20260905",
+            "source_id": "commission-newsroom-128559-pdf",
+            "retrieved_at": "2026-09-05T08:08:53.264585Z",
+            "format": "pdf",
+            "content_hash": "b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42",
+            "archived_path": null
+          }
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-05T08:59:02Z",
+        "short_title": "Draft high-risk classification guidelines — General principles",
+        "retained_route_notice": {
+          "status": "parent_relationship_under_review",
+          "reason": "This record contains the General principles section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft.",
+          "reviewed_by": "Codex",
+          "reviewed_at": "2026-09-05T08:59:02Z",
+          "evidence": [
+            {
+              "source_id": "high-risk-guidelines-draft-commission",
+              "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
+            },
+            {
+              "source_id": "commission-newsroom-128559-pdf",
+              "locator": "Pages 1–2 (cover and first body page)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "path": "data/documents/draft-high-risk-classification-guidelines-annex-i-2026.json",
+      "before": {
+        "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-05T08:20:53Z",
+        "slug": "draft-high-risk-classification-guidelines-annex-i-2026",
+        "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — Annex I systems",
+        "short_title": "Draft Annex I high-risk classification guidelines",
+        "document_type": "guidelines",
+        "record_level": "attachment",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2026-05-19",
+        "version_label": "Consultation draft — Annex I",
+        "version_status": "draft",
+        "publication_date": "2026-05-19",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "high-risk-guidelines-draft-commission",
+          "commission-newsroom-128560-pdf"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "official_consultation_material",
+          "officially_published"
+        ],
+        "snapshots": [
+          {
+            "id": "snapshot-newsroom-128560-20260905",
+            "source_id": "commission-newsroom-128560-pdf",
+            "retrieved_at": "2026-09-05T08:08:53.458000Z",
+            "format": "pdf",
+            "content_hash": "10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50",
+            "archived_path": null
+          }
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-05T08:59:02Z",
+        "retained_route_notice": {
+          "status": "parent_relationship_under_review",
+          "reason": "This record contains the Article 6(1) and AI Act Annex I section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
+          "reviewed_by": "Codex",
+          "reviewed_at": "2026-09-05T08:59:02Z",
+          "evidence": [
+            {
+              "source_id": "high-risk-guidelines-draft-commission",
+              "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
+            },
+            {
+              "source_id": "commission-newsroom-128560-pdf",
+              "locator": "Pages 1–2 (cover and first body page)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "path": "data/documents/draft-high-risk-classification-guidelines-annex-iii-2026.json",
+      "before": {
+        "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-05T08:20:53Z",
+        "slug": "draft-high-risk-classification-guidelines-annex-iii-2026",
+        "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — Annex III systems",
+        "short_title": "Draft Annex III high-risk classification guidelines",
+        "document_type": "guidelines",
+        "record_level": "attachment",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2026-05-19",
+        "version_label": "Consultation draft — Annex III",
+        "version_status": "draft",
+        "publication_date": "2026-05-19",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "high-risk-guidelines-draft-commission",
+          "commission-newsroom-128561-pdf"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128561 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "official_consultation_material",
+          "officially_published"
+        ],
+        "snapshots": [
+          {
+            "id": "snapshot-newsroom-128561-20260905",
+            "source_id": "commission-newsroom-128561-pdf",
+            "retrieved_at": "2026-09-05T08:08:53.836269Z",
+            "format": "pdf",
+            "content_hash": "b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792",
+            "archived_path": null
+          }
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-05T08:59:02Z",
+        "retained_route_notice": {
+          "status": "parent_relationship_under_review",
+          "reason": "This record contains the Article 6(2) and AI Act Annex III section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
+          "reviewed_by": "Codex",
+          "reviewed_at": "2026-09-05T08:59:02Z",
+          "evidence": [
+            {
+              "source_id": "high-risk-guidelines-draft-commission",
+              "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
+            },
+            {
+              "source_id": "commission-newsroom-128561-pdf",
+              "locator": "Pages 1–2 (cover and first body page)."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
