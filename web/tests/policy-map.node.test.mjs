@@ -2,10 +2,14 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
-import { buildPolicyMapAtlas, createPolicyMapModel, selectPolicyMapView, wrapPolicyMapLabel } from '../src/lib/policy-map.ts';
+import { buildPolicyMapAtlas, createPolicyMapModel, relationshipTypeLabel, selectPolicyMapView, wrapPolicyMapLabel } from '../src/lib/policy-map.ts';
 
 const data = JSON.parse(readFileSync(new URL('../../generated/public-data.json', import.meta.url), 'utf8'));
 const family = 'artificial-intelligence-act-legislative-process';
+
+test('relationship type compatibility label remains readable for record pages', () => {
+  assert.equal(relationshipTypeLabel('procedural_step_for'), 'Procedural step for');
+});
 
 test('public projection retains every linked endpoint and relationship without mutation', () => {
   const before = JSON.stringify(data);

@@ -1,4 +1,4 @@
-import type { PolicyMapAtlas, PolicyMapLayout, PolicyMapNode } from '../lib/policy-map-types';
+import type { PolicyMapAtlas, PolicyMapLayout } from '../lib/policy-map-types';
 
 const root = document.querySelector<HTMLElement>('[data-policy-map-root]');
 if (root) void initialise(root);
@@ -113,7 +113,7 @@ async function initialise(host: HTMLElement): Promise<void> {
     for (const edge of edges) { const outgoing = edge.source === node.id; const other = nodeById.get(outgoing ? edge.target : edge.source); if (!other) continue; const item = element('li'); item.append(element('span', outgoing ? `${human(edge.type)} →` : `← ${human(edge.type)}`, 'policy-map__relation-caption'), makeButton(other.title, () => { focusId = other.id; selected = other.id; graph = atlas.neighborhoods[other.id]!; render(); }, 'policy-map__connection-title')); const disclosure = document.createElement('details'); disclosure.append(element('summary', `${edge.basis === 'official' ? 'Official' : 'Analytical'} relationship · Evidence`), element('p', `${nodeById.get(edge.source)?.title} — ${human(edge.type)} → ${nodeById.get(edge.target)?.title}`), element('p', edge.rationale ?? 'No rationale published.')); if (edge.evidence) disclosure.append(makeLink(edge.evidence.publisher, edge.evidence.url)); item.append(disclosure); list.append(item); }
     details.append(list);
   };
-  const render = (): void => {
+  const render = (fitAfterRender = true): void => {
     scene.replaceChildren();
     for (const edge of graph.edges) { const path = svgElement('path', { d: edge.points.map((point, index) => `${index ? 'L' : 'M'}${point.x},${point.y}`).join(' '), class: `policy-map__edge ${edge.basis}`, 'data-policy-map-edge': edge.id, 'data-source': edge.source, 'data-target': edge.target, 'marker-end': 'url(#policy-map-arrow)' }); const title = svgElement('title', {}); title.textContent = `${nodeById.get(edge.source)?.title} — ${human(edge.type)} → ${nodeById.get(edge.target)?.title}`; path.append(title); scene.append(path); }
     for (const node of graph.nodes) {
@@ -145,25 +145,61 @@ async function initialise(host: HTMLElement): Promise<void> {
       ? `${documentCount} documents`
       : `${documentCount} documents · ${policyCount} ${policyCount === 1 ? 'policy' : 'policies'}`;
     find<HTMLElement>('[data-policy-map-counts]').textContent = `${nodeCount} · ${graph.edges.length} relationships${graph.contextCount ? ` · ${graph.contextCount} linked context records` : ''}`;
-    find<HTMLElement>('[data-policy-map-scope]').textContent = focusId ? 'This focused view includes every direct recorded relationship for the selected document, including other policy groups.' : mode === 'principal' ? `${graph.hidden} supporting records, attachments and versions are not shown. Only recorded links between visible documents are drawn.` : 'This view includes every linked group record and directly linked context. Dashed node borders identify context.';
+    find<HTMLElement>('[data-policy-map-scope]').textContent = focusId
+      ? 'This focused view includes every direct recorded relationship for the selected record, including other policy groups.'
+      : mode === 'principal'
+        ? `${graph.hidden} supporting records, attachments and versions are not shown. Only recorded links between visible documents are drawn.`
+        : 'This view includes every linked group record and directly linked context. Dashed node borders identify context.';
     host.querySelectorAll<HTMLButtonElement>('[data-policy-map-mode]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.policyMapMode === mode && !focusId)));
-    updateSelection(); showDetails(); fit(.85);
+    updateSelection();
+    showDetails();
+    if (fitAfterRender) fit(.85);
   };
-  const changeView = (): void => { graph = atlas.views[`${family}:${mode}`]!; if (selected && !graph.nodes.some((node) => node.id === selected)) selected = null; render(); };
+  const changeView = (fitAfterRender = true): void => {
+    graph = atlas.views[`${family}:${mode}`]!;
+    if (selected && !graph.nodes.some((node) => node.id === selected)) selected = null;
+    render(fitAfterRender);
+  };
   familyControl.replaceChildren(...atlas.model.policies.map((policy) => { const option = document.createElement('option'); option.value = policy.id; option.textContent = policy.title; return option; })); familyControl.value = family; familyControl.disabled = false;
   familyControl.addEventListener('change', () => { family = familyControl.value; selected = null; focusId = null; changeView(); });
   host.querySelectorAll<HTMLButtonElement>('[data-policy-map-mode]').forEach((button) => button.addEventListener('click', () => { mode = button.dataset.policyMapMode as 'principal' | 'all'; focusId = null; changeView(); }));
   find<HTMLButtonElement>('[data-policy-map-clear]').addEventListener('click', () => { selected = null; focusId = null; changeView(); });
-  const search = find<HTMLInputElement>('[data-policy-map-search]'); const results = find<HTMLElement>('[data-policy-map-search-results]');
-  search.addEventListener('input', () => { const query = search.value.toLowerCase().trim(); results.replaceChildren(); results.hidden = !query; if (!query) return; const matches = atlas.model.nodes.filter((node) => `${node.title} ${node.date}`.toLowerCase().includes(query)); if (!matches.length) results.append(element('span', 'No matching linked documents. Try another title or year.')); else for (const node of matches.slice(0, 10)) results.append(makeButton(`${node.title} · ${node.date}`, () => { search.value = ''; results.hidden = true; focusId = node.id; selected = node.id; graph = atlas.neighborhoods[node.id]!; render(); })); });
+  const search = find<HTMLInputElement>('[data-policy-map-search]');
+  const results = find<HTMLElement>('[data-policy-map-search-results]');
+  search.addEventListener('input', () => {
+    const query = search.value.toLowerCase().trim();
+    results.replaceChildren();
+    results.hidden = !query;
+    if (!query) return;
+    const matches = atlas.model.nodes.filter((node) => (
+      `${node.title} ${node.date}`.toLowerCase().includes(query)
+    ));
+    if (!matches.length) {
+      results.append(element('span', 'No matching linked records. Try another title or year.'));
+      return;
+    }
+    for (const node of matches.slice(0, 10)) {
+      const label = node.kind === 'policy' ? node.title : `${node.title} · ${node.date}`;
+      results.append(makeButton(label, () => {
+        search.value = '';
+        results.hidden = true;
+        focusId = node.id;
+        selected = node.id;
+        graph = atlas.neighborhoods[node.id]!;
+        render();
+      }));
+    }
+  });
   find<HTMLButtonElement>('[data-policy-map-zoom-in]').addEventListener('click', () => zoom(1.2)); find<HTMLButtonElement>('[data-policy-map-zoom-out]').addEventListener('click', () => zoom(1 / 1.2)); find<HTMLButtonElement>('[data-policy-map-fit]').addEventListener('click', () => fit()); find<HTMLButtonElement>('[data-policy-map-actual]').addEventListener('click', () => zoom(1 / camera.scale));
   find<HTMLButtonElement>('[data-policy-map-fullscreen]').addEventListener('click', async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); else await workspace.requestFullscreen(); } catch { hint.textContent = 'Full screen is unavailable in this browser.'; } });
   viewport.addEventListener('pointerdown', (event) => { if ((event.target as Element).closest('[data-policy-map-node]') || event.button !== 0) return; drag = { x: event.clientX, y: event.clientY, camera: { ...camera } }; viewport.setPointerCapture(event.pointerId); }); viewport.addEventListener('pointermove', (event) => { if (drag) { camera.x = drag.camera.x + event.clientX - drag.x; camera.y = drag.camera.y + event.clientY - drag.y; applyCamera(); } }); for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) viewport.addEventListener(name, () => { drag = null; });
   viewport.addEventListener('keydown', (event) => { if ((event.target as Element).closest('[data-policy-map-node]')) return; const moves: Record<string, [number, number]> = { ArrowLeft: [60, 0], ArrowRight: [-60, 0], ArrowUp: [0, 60], ArrowDown: [0, -60] }; const move = moves[event.key]; if (move) { event.preventDefault(); camera.x += move[0]; camera.y += move[1]; applyCamera(); } else if (event.key === '+' || event.key === '=') zoom(1.2); else if (event.key === '-') zoom(1 / 1.2); });
   try {
-    changeView();
+    changeView(false);
     host.querySelectorAll<HTMLElement>('[data-enhancement]').forEach((node) => { node.hidden = false; });
+    fit(.85);
   } catch (error) {
+    host.querySelectorAll<HTMLElement>('[data-enhancement]').forEach((node) => { node.hidden = true; });
     find<HTMLElement>('[data-policy-map-failure]').hidden = false;
     find<HTMLElement>('[data-policy-map-counts]').textContent = 'Interactive map unavailable';
     console.warn(error);

@@ -20,6 +20,8 @@ export function readablePolicyMapLabel(value: string): string {
   return `${readable.charAt(0).toLocaleUpperCase('en-GB')}${readable.slice(1)}`;
 }
 
+export const relationshipTypeLabel = readablePolicyMapLabel;
+
 export function wrapPolicyMapLabel(label: string): string[] {
   const lines: string[] = [];
   for (const word of label.trim().split(/\s+/)) {
