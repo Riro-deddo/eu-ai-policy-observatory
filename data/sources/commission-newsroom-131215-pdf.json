@@ -1,0 +1,13 @@
+{
+  "id": "commission-newsroom-131215-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T20:37:18.537Z",
+  "updated_at": "2026-09-05T20:37:18.537Z",
+  "source_type": "official_pdf",
+  "url": "https://ec.europa.eu/newsroom/dae/redirection/document/131215",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T19:54:33Z",
+  "last_verified_at": "2026-09-05T19:57:42Z",
+  "verification_note": "Freshly retrieved exact 51-page official PDF (837,633 bytes; SHA-256 30861fc5de31205846f023068069c92fabc7271ebeac6af7bef68b97f0a33f66). The cover identifies the content-approved draft guidelines as the annex to C(2026) 5054; paragraphs 3-5 establish Article 50 scope and non-binding status. No archive or formal-adoption claim is made."
+}

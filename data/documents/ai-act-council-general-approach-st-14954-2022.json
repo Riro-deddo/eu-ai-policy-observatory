@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T19:47:08Z",
   "slug": "ai-act-council-general-approach-st-14954-2022",
   "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – General approach",
   "short_title": "Council general-approach text",
@@ -17,7 +17,7 @@
   "document_date": "2022-11-25",
   "version_label": "Text submitted to Council for general approach",
   "version_status": "revised",
-  "publication_date": "2022-11-25",
+  "publication_date": "2022-12-06",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -26,7 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "council-st-14954-2022",
+      "evidence_locator": "Cover: From Permanent Representatives Committee (Part 1) to Council; section III paragraph 2 states the Czech Presidency prepared the final text and Coreper agreed to submit it without changes."
+    },
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "council-ai-act-general-approach-release-2022-12-06",
+      "evidence_locator": "Release header and opening: on 6 December 2022 the Council adopted its common position ('general approach'); the resource list directly links ST 14954/22 as 'General approach'."
     }
   ],
   "policy_ids": [
@@ -40,16 +48,17 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-st-14954-2022"
+    "council-st-14954-2022",
+    "council-ai-act-general-approach-release-2022-12-06"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "negotiation",
-    "inclusion_rationale": "Text submitted by Coreper for adoption as Council's general approach.",
-    "researcher_notes": "The approved outcome is separately represented by ST 15698/22.",
+    "inclusion_rationale": "Final Coreper-submitted Council text subsequently adopted as the Council's common position on the AI Act.",
+    "researcher_notes": "The cover and body preserve the exact Coreper I/Czech Presidency preparation roles; the Council's 6 December adoption is separately evidenced. ST 15698/22 remains the distinct outcome-of-proceedings record.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T19:47:08Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +66,61 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-st-14954-2022",
+      "locator": "Cover: Brussels, 25 November 2022; ST 14954/22.",
+      "meaning": "The official PDF establishes 25 November 2022 as the issue date of this text."
+    },
+    "publication_date": {
+      "source_id": "council-ai-act-general-approach-release-2022-12-06",
+      "locator": "Release header: 6 December 2022 10:20; direct resource link 'General approach'.",
+      "meaning": "The dated official Council release directly publishes ST 14954/22 on 6 December 2022, establishing the primary manifestation publication date under scope specification section 5.1."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-st-14954-2022",
+      "locator": "Section IV headings and paragraphs 1-7; Annex title and Articles 1-85.",
+      "rationale": "The text directly defines and regulates AI systems, prohibited practices, high-risk systems, general-purpose AI, governance, enforcement and innovation."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-st-14954-2022",
+      "locator": "Section IV paragraphs 1-7 and Annex recital 5a on a horizontal framework applying across sectors.",
+      "rationale": "The proposed AI Act supplies a horizontal framework spanning product safety, data protection, financial services, law enforcement, public authorities and other sectors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-st-14954-2022",
+      "locator": "Cover From Coreper I to Council; section III paragraph 2 attributes preparation to the Czech Presidency and approval for submission to Coreper.",
+      "rationale": "The exact Council preparatory bodies and Presidency drafting responsibility are identified in the official document."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-ai-act-general-approach-release-2022-12-06",
+      "locator": "Dated Council release and direct 'General approach' link to ST 14954/22.",
+      "rationale": "An official dated Council publication directly links this exact manifestation."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2022-12-06",
+      "precision": "day",
+      "source_id": "council-ai-act-general-approach-release-2022-12-06",
+      "locator": "Opening sentence: the Council has adopted its common position ('general approach'); header 6 December 2022 10:20."
+    }
+  ],
+  "historical_review_status": "verified"
 }

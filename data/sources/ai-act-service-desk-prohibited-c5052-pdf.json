@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-service-desk-prohibited-c5052-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T20:53:39.898Z",
+  "updated_at": "2026-09-05T20:53:39.898Z",
+  "source_type": "official_pdf",
+  "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-prohibited_en.pdf",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T20:32:10Z",
+  "last_verified_at": "2026-09-05T20:53:39.898Z",
+  "verification_note": "Freshly retrieved and inspected exact 134-page official PDF (1,319,114 bytes; SHA-256 8b7cb759a821b70e19b5188c72aaf44c5978088777e3035ff9633dda5e9d4244). The rendered cover identifies EUROPEAN COMMISSION, Brussels 29.7.2025, C(2025) 5052 final and COMMUNICATION FROM THE COMMISSION. Complete whitespace-normalized extracted text equals the current official newsroom 112367 PDF (1,204,912 bytes; SHA-256 298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f). No archive or first-publication claim is made."
+}

@@ -1,4 +1,13 @@
 {
-  "id": "council-st-10069-2022", "entity_type": "source", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "source_type": "official_pdf", "url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/en/pdf", "publisher": "Council of the European Union", "retrieved_at": "2026-09-04T00:00:00Z", "last_verified_at": "2026-09-04T00:00:00Z", "verification_note": "Official English Council document ST 10069/22, dated 15 June 2022; its cover identifies it as the first consolidated Presidency compromise text for procedure 2021/0106(COD)."
+  "id": "council-st-10069-2022",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T19:47:08Z",
+  "source_type": "official_pdf",
+  "url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/x/pdf",
+  "publisher": "Council of the European Union",
+  "retrieved_at": "2026-09-05T19:47:08Z",
+  "last_verified_at": "2026-09-05T19:47:08Z",
+  "verification_note": "Second-pass correction: the Council register identifies ST 10069/22 INIT dated 15 June 2022 as a multilingual manifestation and links /ST-10069-2022-INIT/x/pdf. The 136-page FR/EN PDF confirms Presidency originator, procedure 2021/0106(COD), previous document 9029/22 and the first consolidated cross-sector AI Act compromise. The former English-only URL returned 404. This retrieval does not establish an exact historical publication date."
 }

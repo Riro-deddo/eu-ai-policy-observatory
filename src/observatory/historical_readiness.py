@@ -24,7 +24,7 @@ from observatory.validate import _is_official_source
 CONTRACT_VERSION = "historical-readiness-1"
 _HISTORICAL_BOUNDARY = date(2018, 1, 1)
 _ACT_TYPES = {"regulation", "directive", "decision", "implementing_regulation"}
-_ADOPTION_TYPES = {"resolution", "opinion", "conclusions"}
+_ADOPTION_TYPES = {"resolution", "opinion", "conclusions", "institutional_position"}
 _ISSUER_ROLES = {"author", "proposer", "adopter"}
 
 
@@ -203,6 +203,8 @@ def _validate_dates(record: LoadedRecord, cutoff: date, issues: list[ValidationI
         or (version_status == "consolidated" and kind != "consolidation")
     )
     if kind == "publication" and document_date != publication_date:
+        invalid_kind = True
+    if kind == "institutional_adoption" and document_type == "institutional_position" and data.get("legal_status") != "adopted":
         invalid_kind = True
     if invalid_kind:
         issues.append(_issue("historical_date", record, "document_date_kind", "Document date kind is incompatible with the supplied document record."))

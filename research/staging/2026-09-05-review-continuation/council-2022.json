@@ -1,0 +1,259 @@
+{
+  "batch_id": "2026-09-05-review-continuation-council-2022-third-pass",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T20:41:35Z",
+  "publication_cutoff": "2026-09-04",
+  "scope": "Third-pass audit of the nine Council 2022 documents that remained pending after the second-pass Council review.",
+  "method": {
+    "new_official_routes": [
+      "Council open-data documentation for the public register metadata model",
+      "Council requests-for-public-access dataset searched by exact document number",
+      "EUR-Lex exact CONSIL manifestation metadata",
+      "Bounded official-domain searches for exact-number dated pages or lists"
+    ],
+    "excluded_inferences": [
+      "The register issue date was not treated as a publication date.",
+      "Current Public status was not treated as a dated status change.",
+      "Search-engine crawl dates, retrieval timestamps, meeting dates and website last-review dates were not treated as publication evidence.",
+      "No access challenge or HTTP 403 response was bypassed."
+    ]
+  },
+  "shared_official_evidence": [
+    {
+      "url": "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "locator": "Section 3, pages 14-19: metadata list at lines 390-415; publication-status definition at lines 416-429; section 3.10 at lines 512-514",
+      "result": "The Council's own metadata guide says the public-register dataset contains current Publication status and a separate Issue Date. It enumerates no publication-date or first-made-public field, says status can vary over time, and defines Issue Date as the date the document is issued. This confirms that neither the visible date nor current Public status supplies the missing historical publication date."
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "locator": "Page introduction and exact-number search results",
+      "result": "The official page states that its dataset covers requests for access and links documents made public through replies. Exact-number searches produced no request records for any of the nine documents, so this route supplies no reply date or dated public-release event."
+    }
+  ],
+  "records": [
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 14336/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 14336/22",
+        "EUR-Lex exact URI CONSIL:ST_14336_2022_INIT"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=14336%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_14336_2022_INIT",
+        "https://data.consilium.europa.eu/doc/document/ST-14659-2022-INIT/en/pdf"
+      ],
+      "evidence_result": "The access-request dataset returned 'No results found'. EUR-Lex returned 'The requested document does not exist' for the exact CONSIL URI. The official Coreper agenda ST 14659/22 references ST 14336/22 as preparation for the 5-6 December Council meeting, but it neither directly republishes the full exact manifestation nor dates its public availability.",
+      "dates_and_locators": [
+        "2022-11-11 remains the document issue date. Council metadata guide section 3.10 identifies the register date field as Issue Date, not publication.",
+        "ST 14659/22, page 5, agenda item 17.1 names 14336/22 for the AI Act general approach; this is procedural reference evidence only."
+      ],
+      "next_missing_fact": "A dated official publication or access-status event that directly makes the exact ST 14336/22 manifestation available to the public, plus role wording that distinguishes the GSC sender from Czech Presidency drafting responsibility.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 13955/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 13955/22",
+        "EUR-Lex exact URI CONSIL:ST_13955_2022_INIT"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=13955%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_13955_2022_INIT"
+      ],
+      "evidence_result": "The access-request dataset returned no record and EUR-Lex has no exact CONSIL manifestation. The bounded official-domain search surfaced the Council PDF already reviewed, but no new dated Council page or list directly publishing ST 13955/22.",
+      "dates_and_locators": [
+        "2022-11-03 remains the issue date; Council metadata guide section 3.10 prevents relabelling it as publication.",
+        "Council metadata guide section 3.8 defines Originator as author and expressly lists Presidency, supporting the existing need to preserve that distinction."
+      ],
+      "next_missing_fact": "A dated official source establishing public release of exact ST 13955/22; the eventual role patch must identify Presidency origin rather than an undifferentiated Council author.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 10069/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 10069/22",
+        "EUR-Lex exact URI CONSIL:ST_10069_2022_INIT",
+        "site:europe2022.fr 10069/22 intelligence artificielle"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=10069%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_10069_2022_INIT"
+      ],
+      "evidence_result": "The access-request dataset returned no record, EUR-Lex has no exact CONSIL manifestation, and bounded searches of the Council and French Presidency domains found no dated exact-version release. The already-integrated /x/pdf URL correction remains valid but is not new publication-date evidence.",
+      "dates_and_locators": [
+        "2022-06-15 remains the issue date under Council metadata guide section 3.10.",
+        "Current Public status only describes accessibility at consultation time under guide section 3.1; it does not date when the multilingual /x/pdf became public."
+      ],
+      "next_missing_fact": "A dated official page, list or access decision directly publishing the exact multilingual ST 10069/22 INIT manifestation.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 13102/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 13102/22",
+        "EUR-Lex exact URI CONSIL:ST_13102_2022_INIT",
+        "site:eu2022.cz 13102/22 artificial intelligence"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=13102%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_13102_2022_INIT"
+      ],
+      "evidence_result": "The exact access-request search returned no record and EUR-Lex has no exact CONSIL manifestation. Bounded exact-number searches of Council and Czech Presidency official domains found no dated page directly publishing this version.",
+      "dates_and_locators": [
+        "2022-10-19 remains the issue date; guide section 3.10 labels the register field as Issue Date.",
+        "Guide section 3.8 expressly treats Presidency as an Originator/author category, so the record still requires precise Presidency role wording if publication is later resolved."
+      ],
+      "next_missing_fact": "A dated official publication manifestation for exact ST 13102/22 and role evidence recorded as Presidency origin.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-15698-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 15698/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 15698/22",
+        "EUR-Lex exact URI CONSIL:ST_15698_2022_INIT"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=15698%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_15698_2022_INIT",
+        "https://www.consilium.europa.eu/en/meetings/tte/2022/12/06/"
+      ],
+      "evidence_result": "This is the only one of the nine exact CONSIL identifiers represented in EUR-Lex. Its Document information gives Date of document 06/12/2022, Author Council of the European Union, responsible body TREE.2 and Form Note, but no publication-date field. The access-request dataset has no exact-number record. The dated TTE meeting page links 'Council's general approach' to ST 14954/22, not ST 15698/22, so it cannot date publication of this outcome note.",
+      "dates_and_locators": [
+        "EUR-Lex Document information > Dates: Date of document 06/12/2022.",
+        "EUR-Lex Document information > Miscellaneous information: Author Council of the European Union; Responsible body TREE.2; Form Note.",
+        "TTE Council meeting page, 6 December 2022, lines 26-42: adoption described and 'Council's general approach' link resolves to ST 14954/22.",
+        "Council guide section 3.10 confirms that the date remains a document date, not a publication date."
+      ],
+      "next_missing_fact": "A dated official manifestation that directly publishes exact ST 15698/22, or an official metadata field identifying when that exact EUR-Lex/Consilium manifestation became public. Adoption on 6 December and current hosting remain insufficient.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 11124/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 11124/22",
+        "EUR-Lex exact URI CONSIL:ST_11124_2022_INIT"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=11124%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_11124_2022_INIT"
+      ],
+      "evidence_result": "The access-request dataset returned no record and EUR-Lex has no exact CONSIL manifestation. Exact-number web results added citations and mirrors but no new primary official dated release; they were not used as publication evidence.",
+      "dates_and_locators": [
+        "2022-07-15 remains the issue date under Council guide section 3.10.",
+        "Council guide section 3.8 supports Presidency as the exact originator class; it does not supply a publication date."
+      ],
+      "next_missing_fact": "A dated Council or Presidency publication directly linking exact ST 11124/22, with Presidency origin preserved in the role model.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 12206/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 12206/22",
+        "EUR-Lex exact URI CONSIL:ST_12206_2022_INIT"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12206%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_12206_2022_INIT"
+      ],
+      "evidence_result": "The access-request search returned no record and EUR-Lex has no exact INIT manifestation. The second-pass correction to 7 September 2022 remains the issue-date fact; the third pass found no separate dated publication event.",
+      "dates_and_locators": [
+        "2022-09-07 is the corrected issue date already integrated from the live register result.",
+        "Council guide section 3.10 confirms that this register field means Issue Date and cannot establish publication."
+      ],
+      "next_missing_fact": "A dated official source directly publishing ST 12206/22 INIT; Presidency must remain the exact originator when the historical extension is completed.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 12206/1/22 REV 1 artificial intelligence",
+        "Council access-to-documents exact Document numbers: 12206/22 and 12206/1/22",
+        "EUR-Lex exact URI CONSIL:ST_12206_2022_REV_1"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12206%2F1%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12206%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_12206_2022_REV_1"
+      ],
+      "evidence_result": "Both exact-number forms returned no access-request record, and EUR-Lex has no exact REV 1 manifestation. No new official dated release was recovered.",
+      "dates_and_locators": [
+        "2022-09-16 remains the REV 1 issue date.",
+        "Council guide sections 3.4 and 3.10 distinguish the REV suffix from the Issue Date but provide no public-release date."
+      ],
+      "next_missing_fact": "A dated official source that directly publishes the exact ST 12206/1/22 REV 1 manifestation, with Presidency origin retained.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "decision": "hold",
+      "retrieved_at": "2026-09-05T20:41:35Z",
+      "new_queries": [
+        "site:consilium.europa.eu 12549/22 artificial intelligence",
+        "Council access-to-documents exact Document number: 12549/22",
+        "EUR-Lex exact URI CONSIL:ST_12549_2022_INIT"
+      ],
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12549%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_12549_2022_INIT"
+      ],
+      "evidence_result": "The exact access-request search returned no record, EUR-Lex has no exact CONSIL manifestation, and bounded official-domain searching found the Council PDF but no dated release or list that directly publishes this version.",
+      "dates_and_locators": [
+        "2022-09-23 remains the document issue date under Council guide section 3.10.",
+        "Council guide section 3.8 identifies Presidency as an author/originator class, preserving the outstanding role distinction."
+      ],
+      "next_missing_fact": "A dated official publication manifestation for exact ST 12549/22, with Presidency origin expressed precisely.",
+      "proposed_patch": null,
+      "proposed_sources": []
+    }
+  ],
+  "summary": {
+    "reviewed": 9,
+    "ready": 0,
+    "hold": 9,
+    "proposed_document_updates": 0,
+    "proposed_source_updates": 0,
+    "conclusion": "The third-pass sources materially clarify why the gap persists but do not provide a dated official publication manifestation for any of the nine exact versions."
+  }
+}

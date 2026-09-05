@@ -1,0 +1,683 @@
+{
+  "batch_id": "2026-09-05-review-continuation-commission",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T20:45:17Z",
+  "publication_cutoff": "2026-09-04",
+  "scope": "Third-pass review of the ten Commission records still held after the remaining-evidence review. The final-transparency-guidelines-2026 modeling hold is excluded for root review.",
+  "records": [
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ec.europa.eu/transparency/documents-register C(2023)3215",
+        "site:single-market-economy.ec.europa.eu C(2023) 3215",
+        "site:interoperable-europe.ec.europa.eu C(2023)3215 M/593"
+      ],
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
+        "https://ec.europa.eu/transparency/documents-register/?lang=EN",
+        "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/artificial-intelligence-rp2024",
+        "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/artificial-intelligence-rp2025"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
+          "locator": "Live exact Register detail: title; Document type; Reference; Date; Responsible service; Main document and Annex 1 download rows.",
+          "content": "The Register identifies the Commission implementing decision, reference C(2023)3215, Date 22/05/2023, DG CONNECT, and downloadable English main and annex files. It does not display a separately labelled publication date."
+        },
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/?lang=EN",
+          "locator": "Frequently asked questions > How do I search for documents on this portal? > Date.",
+          "content": "The official Register says Date most commonly refers to the date of adoption by the Commission. The exact detail's 22 May date therefore remains decision/adoption evidence rather than publication evidence."
+        },
+        {
+          "url": "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/artificial-intelligence-rp2024",
+          "locator": "Policy objectives and references for artificial intelligence standardisation.",
+          "content": "The Commission's Interoperable Europe page says the Commission issued the first standardisation request in May 2023 and identifies C(2023)3215 / M/593, but it supplies no exact day labelled as publication."
+        }
+      ],
+      "corrections": [
+        "Retain 2023-05-22 as the Commission decision/adoption date, not as a publication date.",
+        "The live Register's downloadable files prove official availability and exact identity, but not the missing publication-date field required by the historical contract."
+      ],
+      "hold_reasons": [
+        "No official source reviewed in this third pass supplied a separately evidenced publication date for exact C(2023)3215 / M/593."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "ai-system-definition-guidelines-2025",
+      "decision": "ready",
+      "checked_queries": [
+        "site:ai-act-service-desk.ec.europa.eu/en/resources Guidelines on the definition of an AI system",
+        "site:ec.europa.eu/transparency/documents-register C(2025)5053"
+      ],
+      "checked_urls": [
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-definition_en.pdf",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/112455",
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)5053&lang=en",
+        "https://digital-strategy.ec.europa.eu/en/library/commission-guidelines-definition-artificial-intelligence-system-facilitate-first-ai-act-rules-application"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+          "locator": "Resources index, Guidelines card dated 06/05/2026, 'Guidelines on the definition of an AI system', with its direct PDF download link.",
+          "content": "The official AI Act Service Desk separately manifests the guideline as a dated resource and directly serves the exact C(2025)5053 final text. This establishes 6 May 2026 as the publication represented by this later official source; it is not asserted to be the first-ever publication date."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-definition_en.pdf",
+          "locator": "Freshly retrieved 13-page official PDF (343,210 bytes; SHA-256 43202a8965f7f912987b3eef1d699fb6f201a7e984f41e91bc28674d48b4a501); rendered cover and complete normalized text comparison.",
+          "content": "The rendered cover says EUROPEAN COMMISSION, Brussels 29.7.2025, C(2025) 5053 final, COMMUNICATION FROM THE COMMISSION, and the exact definition-guidelines title. Its whitespace-normalized extracted text is identical to the current official newsroom 112455 PDF."
+        },
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)5053&lang=en",
+          "locator": "Live exact Register detail: title, Document type Communication, Reference C(2025)5053, Date 29/07/2025, Responsible service DG CONNECT.",
+          "content": "The Register confirms the formal document identity and issue/adoption date. It does not itself supply the publication date; that role is filled by the later dated Service Desk manifestation."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/112455",
+          "locator": "Freshly retrieved 13-page PDF (333,765 bytes; SHA-256 fe39f41d061184a913c32f1f92aaaa30a096858fa168c6053e22a19eef58910e); complete normalized text comparison.",
+          "content": "The current newsroom PDF and the direct Service Desk PDF have the same 13 pages and identical whitespace-normalized full text despite different PDF wrapper bytes."
+        }
+      ],
+      "corrections": [
+        "Keep the exact final-version identity C(2025) 5053 final and issue date 29 July 2025.",
+        "Change publication_date to 2026-05-06, the date attached to the exact direct-PDF resource card on the official AI Act Service Desk; do not reuse the older February landing-page publication date or treat the July issue date as publication.",
+        "No relationship change is needed: this exact final communication is a principal record, not the earlier approval annex."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T20:45:17Z",
+        "publication_date": "2026-05-06",
+        "source_ids": [
+          "definition-guidelines-commission",
+          "ai-act-service-desk-resources-page-1-2026",
+          "ai-act-service-desk-definition-c5053-pdf"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-service-desk-definition-c5053-pdf",
+            "evidence_locator": "Rendered exact cover: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION' above the exact C(2025) 5053 final guideline title."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Official Commission guidance directly interpreting the AI-system definition used throughout the AI Act.",
+          "researcher_notes": "Third-pass exact-version review retains the 29 July 2025 issue date and identifies a later official publication manifestation: the AI Act Service Desk resources index dates its direct link to the exact C(2025) 5053 final text 6 May 2026. This is the publication represented by the cited official source, not a claim that no earlier publication occurred.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T20:45:17Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-service-desk-definition-c5053-pdf",
+            "locator": "Rendered exact cover: 'Brussels, 29.7.2025' and 'C(2025) 5053 final'.",
+            "meaning": "Establishes 2025-07-29 as the exact final communication's document issue date."
+          },
+          "publication_date": {
+            "source_id": "ai-act-service-desk-resources-page-1-2026",
+            "locator": "Resources index card under Guidelines: date '06/05/2026', title 'Guidelines on the definition of an AI system', and direct Download (PDF, 0.3 MB) link to guide-definition_en.pdf.",
+            "meaning": "Establishes 2026-05-06 as the official publication represented by this dated Service Desk manifestation of the exact C(2025) 5053 final text."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-service-desk-definition-c5053-pdf",
+            "locator": "Exact title and paragraphs 1-7: guidelines under Article 96(1)(f) on applying the Article 3(1) AI-system definition.",
+            "rationale": "The communication directly interprets a central substantive definition in the AI Act."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-service-desk-definition-c5053-pdf",
+            "locator": "Paragraphs 2-6 address providers and other market and institutional stakeholders and describe an AI-system definition governing the Act's scope without sector limitation.",
+            "rationale": "The guideline applies horizontally across sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-service-desk-definition-c5053-pdf",
+            "locator": "Rendered cover names EUROPEAN COMMISSION and labels the artifact COMMUNICATION FROM THE COMMISSION.",
+            "rationale": "The exact institutional artifact supports Commission authorship."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-service-desk-resources-page-1-2026",
+            "locator": "Official AI Act Service Desk Resources card dated 06/05/2026 with a direct PDF link to the exact guideline text.",
+            "rationale": "The exact text has a dated official Commission resource manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      },
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ec.europa.eu/transparency/documents-register classification of high-risk AI systems 2026",
+        "site:ai-act-service-desk.ec.europa.eu/en/resources classification of high-risk AI systems",
+        "site:digital-strategy.ec.europa.eu draft commission guidelines classification high-risk AI systems"
+      ],
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128559",
+        "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+        "https://ai-act-service-desk.ec.europa.eu/en/guideline-explorer"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+          "locator": "Publication 19 May 2026; paragraphs explaining sections; Downloads 1-3.",
+          "content": "The page describes one draft work divided into separately downloadable sections: general principles, Annex I, and Annex III. It does not name or link a separately issued parent communication."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128559",
+          "locator": "Same-day prior exact binary inspection (6 pages; SHA-256 b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42), cover and sections I-II; third pass re-opened the official download relation.",
+          "content": "The file is substantively the general-principles sections, but its cover says Brussels XXX, [...](2026) XXX draft, ANNEX, and ANNEX to the COMMUNICATION FROM THE COMMISSION without identifying that parent."
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+          "locator": "Consultation status, extension notice, and statement that final guidelines will be adopted by the end of 2026.",
+          "content": "The official consultation confirms the files remain pre-adoption drafts; it does not supply the missing parent identity."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+          "locator": "Draft-guidelines resource description and consultation-before-formal-adoption statement.",
+          "content": "The Service Desk treats the three PDFs as the complete draft guidelines for consultation, but does not identify a separately issued communication or formal reference that can serve as an attachment parent."
+        }
+      ],
+      "corrections": [
+        "The landing-page representation establishes a coherent three-section draft and a 19 May 2026 release, but does not turn the six-page ANNEX file into a principal communication.",
+        "Do not replace the cover's placeholder parent reference or change record_level merely to satisfy the lineage gate."
+      ],
+      "hold_reasons": [
+        "The retained attachment record still lacks an evidenced parent document identity. Neither the Register search nor the official library, consultation, press release, or Service Desk surfaced a separately issued parent by the cutoff."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ec.europa.eu/transparency/documents-register classification of high-risk AI systems Annex I 2026",
+        "site:ai-act-service-desk.ec.europa.eu classification of high-risk AI systems formal adoption"
+      ],
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128560",
+        "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+        "https://ai-act-service-desk.ec.europa.eu/en/guideline-explorer"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+          "locator": "Publication 19 May 2026; explanation that Section III addresses Article 6(1)/Annex I; Download 2.",
+          "content": "The library confirms this is one separately downloadable section of the same draft work, not a separately identified parent communication."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128560",
+          "locator": "Same-day prior exact binary inspection (13 pages; SHA-256 10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50), cover and section III; third pass re-opened the official download relation.",
+          "content": "The file contains section III about Annex I systems, but its cover remains an ANNEX to an unidentified Commission communication with placeholder Brussels/reference fields."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+          "locator": "Statement that the draft Guidelines are available as PDFs and remain open for feedback before formal Commission adoption.",
+          "content": "The Service Desk confirms draft status and the work-level presentation, but no parent document identity."
+        }
+      ],
+      "corrections": [
+        "The artifact is section III on Annex I high-risk systems. Its subject matter does not make it the missing parent communication.",
+        "A sibling or online-explorer presentation cannot substitute for the attachment's required parent relationship."
+      ],
+      "hold_reasons": [
+        "The exact attachment still lacks an evidenced parent document identity."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ec.europa.eu/transparency/documents-register classification of high-risk AI systems Annex III 2026",
+        "site:ai-act-service-desk.ec.europa.eu classification of high-risk AI systems formal adoption"
+      ],
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128561",
+        "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+        "https://ai-act-service-desk.ec.europa.eu/en/guideline-explorer"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+          "locator": "Publication 19 May 2026; explanation that Section IV addresses Article 6(2)/Annex III; Download 3.",
+          "content": "The library confirms this is one separately downloadable section of the same draft work, not a separately identified parent communication."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128561",
+          "locator": "Same-day prior exact binary inspection (148 pages; SHA-256 b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792), cover and section IV; third pass re-opened the official download relation.",
+          "content": "The file contains section IV about Annex III use cases, but its cover remains an ANNEX to an unidentified Commission communication with placeholder Brussels/reference fields."
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+          "locator": "Statement that final guidelines will be adopted by the end of 2026.",
+          "content": "The official consultation continued to describe a future formal adoption and did not disclose a parent communication by the cutoff."
+        }
+      ],
+      "corrections": [
+        "The artifact is section IV on Annex III use cases, not the missing parent communication.",
+        "Do not infer a parent identifier from the shared title or invent the placeholder Commission reference."
+      ],
+      "hold_reasons": [
+        "The exact attachment still lacks an evidenced parent document identity."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ai-act-service-desk.ec.europa.eu C(2025) 7719",
+        "site:digital-strategy.ec.europa.eu C(2025) 7719",
+        "site:ec.europa.eu C(2025) 7719 final"
+      ],
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)7719&lang=en",
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
+        "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-ai-act",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/118340"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)7719&lang=en",
+          "locator": "Live exact Register detail: Communication title, Reference C(2025)7719, Date 19/11/2025, DG CONNECT, and Download document notice.",
+          "content": "The Register confirms the current final communication's identity and date, but says 'This document is not published' and offers an access request instead of a download."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+          "locator": "Resources index card dated 27/08/2025, 'Guidelines on the scope of the obligations for general-purpose AI models', and direct PDF link.",
+          "content": "A dated Service Desk manifestation exists, but its linked PDF is not the current final communication."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
+          "locator": "Freshly retrieved 36-page PDF (570,508 bytes; SHA-256 6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517); cover and complete normalized-text comparison.",
+          "content": "The cover identifies Brussels 18.7.2025, C(2025) 5045 final, ANNEX to the content-approval communication. Its normalized full text differs from the current newsroom 118340 PDF."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118340",
+          "locator": "Freshly retrieved 36-page current PDF (544,991 bytes; SHA-256 13481bd90108505c477165c8aefb13dbe7a83847bad0e983e09115f78aeefe78); cover.",
+          "content": "The current official file is the later principal COMMUNICATION FROM THE COMMISSION, C(2025) 7719 final, Brussels 19.11.2025."
+        }
+      ],
+      "corrections": [
+        "The dated 27 August Service Desk resource cannot be used for C(2025)7719 because its direct PDF is the earlier C(2025)5045 approval annex and differs in full text.",
+        "The stable record should ultimately describe the current C(2025)7719 principal communication, not retain C(2025)5045 metadata merely to clear the gate."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation of the exact current C(2025)7719 text was recovered; the Register itself marks that record not published."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ai-act-service-desk.ec.europa.eu C(2025) 8311",
+        "site:digital-strategy.ec.europa.eu C(2025) 8311",
+        "site:ec.europa.eu Explanatory Notice and Template 5 December 2025"
+      ],
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)8311&lang=en",
+        "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/118480",
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)8311&lang=en",
+          "locator": "Live exact Register detail: Communication title, Reference C(2025)8311, Date 05/12/2025, DG CONNECT, and Download document notice.",
+          "content": "The Register confirms the current notice identity and date, but says 'This document is not published' and exposes no publication date."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118480",
+          "locator": "Same-day prior exact binary inspection (15 pages; 321,595 bytes; SHA-256 be6cdf10131c3fd9eb9265e592b23609fd7df2d2c9692517017f739188d408be), cover.",
+          "content": "The current exact file is C(2025) 8311 final, Brussels 5.12.2025, and a COMMUNICATION FROM THE COMMISSION."
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+          "locator": "Publication 24 July 2025; English PDF and DOC download rows; Last update 26 March 2026.",
+          "content": "The publication field belongs to the earlier release context and predates exact C(2025)8311. A later generic page-update date does not date the changed PDF."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+          "locator": "Template card dated 20/10/2025 and absence of a C(2025)8311 explanatory-notice resource card.",
+          "content": "The Service Desk did not supply a dated direct manifestation for the later December explanatory notice."
+        }
+      ],
+      "corrections": [
+        "Current notice identity is C(2025) 8311 final dated 5 December 2025.",
+        "Neither the 24 July publication field, the 20 October template resource card, nor the 26 March page update can be transferred to the later notice PDF."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation for exact C(2025)8311 was recovered."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ai-act-service-desk.ec.europa.eu/en/resources Template General-Purpose AI providers summarise training content",
+        "site:digital-strategy.ec.europa.eu template training content 118578"
+      ],
+      "checked_urls": [
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-presents-template-general-purpose-ai-model-providers-summarise-data-used-train-their",
+        "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/118578"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+          "locator": "Resources index Template card dated 20/10/2025, title and descriptive paragraph, outbound link.",
+          "content": "The official card says the Commission has published a template, but its link goes to the 24 July Commission press release rather than directly to newsroom DOCX 118578. It therefore does not fix the current binary's identity at the card date."
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-presents-template-general-purpose-ai-model-providers-summarise-data-used-train-their",
+          "locator": "Publication 24 July 2025; paragraph saying the Commission published a template; link 'Download the Template'.",
+          "content": "The press release establishes a template release event and links onward to the mutable library page, but it does not independently identify the current DOCX version."
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+          "locator": "Publication 24 July 2025; Download 2 exact English DOC row; Last update 26 March 2026.",
+          "content": "The page currently links newsroom DOCX 118578, but its publication date precedes that file's internal creation/modified timestamp and its generic update date cannot be treated as version publication evidence."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118578",
+          "locator": "Same-day prior exact binary inspection (70,622-byte DOCX; SHA-256 ec803008a5263a485146b24497a3445e2ea32f8b73f818e67652ad70de40f09b), document body and docProps/core.xml.",
+          "content": "The body is the Article 53(1)(d) public-summary template with provider/model, data-modality/size, and source fields. Core metadata says created and modified 2025-07-28T14:55:00Z; those values are not publication dates and show that the current bytes cannot be the exact file published on 24 July."
+        }
+      ],
+      "corrections": [
+        "Do not treat DOCX creation/modified metadata as publication metadata.",
+        "The 20 October Service Desk catalog date is not attached by a direct link or immutable version identifier to current DOCX 118578, so it is insufficient for exact-version dating under the current contract."
+      ],
+      "hold_reasons": [
+        "The current DOCX's exact-version publication date remains unresolved after following the Service Desk card through the press release and current library download."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "prohibited-ai-practices-guidelines-2025",
+      "decision": "ready",
+      "checked_queries": [
+        "site:ai-act-service-desk.ec.europa.eu/en/resources Guidelines on prohibited AI practices",
+        "site:ec.europa.eu/transparency/documents-register C(2025)5052"
+      ],
+      "checked_urls": [
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-prohibited_en.pdf",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/112367",
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)5052&lang=en",
+        "https://digital-strategy.ec.europa.eu/en/library/commission-guidelines-prohibited-artificial-intelligence-practices-established-ai-act"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+          "locator": "Resources index, Guidelines card dated 06/05/2026, 'Guidelines on prohibited AI practices', with its direct PDF download link.",
+          "content": "The official AI Act Service Desk separately manifests the guideline as a dated resource and directly serves the exact C(2025)5052 final text. This establishes 6 May 2026 as the publication represented by this later official source; it is not asserted to be the first-ever publication date."
+        },
+        {
+          "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-prohibited_en.pdf",
+          "locator": "Freshly retrieved 134-page official PDF (1,319,114 bytes; SHA-256 8b7cb759a821b70e19b5188c72aaf44c5978088777e3035ff9633dda5e9d4244); rendered cover and complete normalized text comparison.",
+          "content": "The rendered cover says EUROPEAN COMMISSION, Brussels 29.7.2025, C(2025) 5052 final, COMMUNICATION FROM THE COMMISSION, and the exact prohibited-practices title. Its whitespace-normalized extracted text is identical to the current official newsroom 112367 PDF."
+        },
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)5052&lang=en",
+          "locator": "Live exact Register detail: title, Document type Communication, Reference C(2025)5052, Date 29/07/2025, Responsible service DG CONNECT.",
+          "content": "The Register confirms the formal document identity and issue/adoption date. It does not itself supply the publication date; that role is filled by the later dated Service Desk manifestation."
+        },
+        {
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/112367",
+          "locator": "Freshly retrieved 134-page PDF (1,204,912 bytes; SHA-256 298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f); complete normalized text comparison.",
+          "content": "The current newsroom PDF and direct Service Desk PDF have the same 134 pages and identical whitespace-normalized full text despite different PDF wrapper bytes."
+        }
+      ],
+      "corrections": [
+        "Keep the exact final-version identity C(2025) 5052 final and issue date 29 July 2025.",
+        "Change publication_date to 2026-05-06, the date attached to the exact direct-PDF resource card on the official AI Act Service Desk; do not reuse the older February landing-page publication date or treat the July issue date as publication.",
+        "No relationship change is needed: this exact final communication is a principal record, not the earlier approval annex."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T20:45:17Z",
+        "publication_date": "2026-05-06",
+        "source_ids": [
+          "prohibited-guidelines-commission",
+          "ai-act-service-desk-resources-page-1-2026",
+          "ai-act-service-desk-prohibited-c5052-pdf"
+        ],
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "ai-act-service-desk-prohibited-c5052-pdf",
+            "evidence_locator": "Rendered exact cover: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION' above the exact C(2025) 5052 final guideline title."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Official Commission guidance directly interpreting the AI Act's prohibited-practices rules.",
+          "researcher_notes": "Third-pass exact-version review retains the 29 July 2025 issue date and identifies a later official publication manifestation: the AI Act Service Desk resources index dates its direct link to the exact C(2025) 5052 final text 6 May 2026. This is the publication represented by the cited official source, not a claim that no earlier publication occurred.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T20:45:17Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-service-desk-prohibited-c5052-pdf",
+            "locator": "Rendered exact cover: 'Brussels, 29.7.2025' and 'C(2025) 5052 final'.",
+            "meaning": "Establishes 2025-07-29 as the exact final communication's document issue date."
+          },
+          "publication_date": {
+            "source_id": "ai-act-service-desk-resources-page-1-2026",
+            "locator": "Resources index card under Guidelines: date '06/05/2026', title 'Guidelines on prohibited AI practices', and direct Download (PDF, 1.2 MB) link to guide-prohibited_en.pdf.",
+            "meaning": "Establishes 2026-05-06 as the official publication represented by this dated Service Desk manifestation of the exact C(2025) 5052 final text."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "ai-act-service-desk-prohibited-c5052-pdf",
+            "locator": "Exact title and sections 1-12 interpret the prohibited artificial-intelligence practices in Article 5 of Regulation (EU) 2024/1689.",
+            "rationale": "The communication directly interprets substantive AI Act prohibitions."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "ai-act-service-desk-prohibited-c5052-pdf",
+            "locator": "Sections 2.3-2.4 address placing on the market, putting into service and use by providers and deployers across public and private actors without a single-sector limitation.",
+            "rationale": "The guideline applies horizontally across sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-service-desk-prohibited-c5052-pdf",
+            "locator": "Rendered cover names EUROPEAN COMMISSION and labels the artifact COMMUNICATION FROM THE COMMISSION.",
+            "rationale": "The exact institutional artifact supports Commission authorship."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-service-desk-resources-page-1-2026",
+            "locator": "Official AI Act Service Desk Resources card dated 06/05/2026 with a direct PDF link to the exact guideline text.",
+            "rationale": "The exact text has a dated official Commission resource manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      },
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    },
+    {
+      "document_id": "standardisation-request-c-2025-3871",
+      "decision": "hold",
+      "checked_queries": [
+        "site:ec.europa.eu/transparency/documents-register C(2025)3871",
+        "site:single-market-economy.ec.europa.eu C(2025) 3871",
+        "site:interoperable-europe.ec.europa.eu C(2025)3871 M/613"
+      ],
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
+        "https://ec.europa.eu/transparency/documents-register/?lang=EN",
+        "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/notification-system_en",
+        "https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2026-03/cnect_rollingplan_ict_2026_spr_pr1.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
+          "locator": "Live exact Register detail: full implementing-decision title; Reference C(2025)3871; Date 23/06/2025; DG CONNECT; Main document and Annex 1 download rows.",
+          "content": "The Register confirms the exact implementing decision, its repeal of C(2023)3215, the M/613 subject, Date 23 June 2025, and downloadable English main and annex files. It displays no separately labelled publication date."
+        },
+        {
+          "url": "https://ec.europa.eu/transparency/documents-register/?lang=EN",
+          "locator": "Frequently asked questions > How do I search for documents on this portal? > Date.",
+          "content": "The Register says Date most commonly refers to Commission adoption, so 23 June cannot be relabelled as publication."
+        },
+        {
+          "url": "https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2026-03/cnect_rollingplan_ict_2026_spr_pr1.pdf",
+          "locator": "Artificial intelligence policy-and-legislation discussion and references to C(2025)3871 / M/613.",
+          "content": "The official rolling plan says the Commission issued the amended request in June 2025 and identifies M/613, but does not supply a day labelled as publication."
+        },
+        {
+          "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/notification-system_en",
+          "locator": "Notification-system listing for the draft amendment dated 14/01/2025 (expired).",
+          "content": "This date belongs to the draft notification, not publication of final C(2025)3871."
+        }
+      ],
+      "corrections": [
+        "Treat 2025-06-23 as the Commission decision/adoption date, not publication.",
+        "Retain Commission as adopter/issuer; a responsible-service field and Commission hosting do not establish a different authorship role."
+      ],
+      "hold_reasons": [
+        "No official source reviewed in this third pass supplied a separately evidenced publication date for exact C(2025)3871 / M/613."
+      ],
+      "proposed_patch": null,
+      "proposed_relationship_changes": [],
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z"
+    }
+  ],
+  "proposed_sources": {
+    "ai-act-service-desk-resources-page-1-2026": {
+      "id": "ai-act-service-desk-resources-page-1-2026",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T20:45:17Z",
+      "updated_at": "2026-09-05T20:45:17Z",
+      "source_type": "commission_webpage",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T20:45:17Z",
+      "last_verified_at": "2026-09-05T20:45:17Z",
+      "verification_note": "Fresh official AI Act Service Desk review: the Resources index has separate Guidelines cards dated 06/05/2026 for 'Guidelines on prohibited AI practices' and 'Guidelines on the definition of an AI system', each with a direct PDF link. The directly linked PDFs were retrieved and matched by complete whitespace-normalized text to the current official newsroom C(2025)5052 and C(2025)5053 PDFs. The card dates are used only as the official publication manifestations represented by this source, not as first-ever-publication claims."
+    },
+    "ai-act-service-desk-definition-c5053-pdf": {
+      "id": "ai-act-service-desk-definition-c5053-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T20:45:17Z",
+      "updated_at": "2026-09-05T20:45:17Z",
+      "source_type": "official_pdf",
+      "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-definition_en.pdf",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T20:32:09Z",
+      "last_verified_at": "2026-09-05T20:45:17Z",
+      "verification_note": "Freshly retrieved and inspected exact 13-page official PDF (343,210 bytes; SHA-256 43202a8965f7f912987b3eef1d699fb6f201a7e984f41e91bc28674d48b4a501). The rendered cover identifies EUROPEAN COMMISSION, Brussels 29.7.2025, C(2025) 5053 final and COMMUNICATION FROM THE COMMISSION. Complete whitespace-normalized extracted text equals the current official newsroom 112455 PDF (333,765 bytes; SHA-256 fe39f41d061184a913c32f1f92aaaa30a096858fa168c6053e22a19eef58910e). No archive or first-publication claim is made."
+    },
+    "ai-act-service-desk-prohibited-c5052-pdf": {
+      "id": "ai-act-service-desk-prohibited-c5052-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T20:45:17Z",
+      "updated_at": "2026-09-05T20:45:17Z",
+      "source_type": "official_pdf",
+      "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-prohibited_en.pdf",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T20:32:10Z",
+      "last_verified_at": "2026-09-05T20:45:17Z",
+      "verification_note": "Freshly retrieved and inspected exact 134-page official PDF (1,319,114 bytes; SHA-256 8b7cb759a821b70e19b5188c72aaf44c5978088777e3035ff9633dda5e9d4244). The rendered cover identifies EUROPEAN COMMISSION, Brussels 29.7.2025, C(2025) 5052 final and COMMUNICATION FROM THE COMMISSION. Complete whitespace-normalized extracted text equals the current official newsroom 112367 PDF (1,204,912 bytes; SHA-256 298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f). No archive or first-publication claim is made."
+    }
+  },
+  "source_updates": {},
+  "relationship_decisions": [
+    {
+      "records": [
+        "draft-high-risk-classification-guidelines-2026",
+        "draft-high-risk-classification-guidelines-annex-i-2026",
+        "draft-high-risk-classification-guidelines-annex-iii-2026"
+      ],
+      "decision": "hold",
+      "finding": "Third-pass official search found a dated landing page, press release, consultation, a Service Desk work-level page and online explorer, but no separately issued parent communication. The three exact covers remain ANNEX files with placeholder Brussels/reference text. The official consultation says final adoption will occur later.",
+      "root_decision_if_scope_changes": "No schema change is proposed. A new parent candidate would need a real separately citable document identity or a deliberately approved model treating the landing-page composite as a document; neither exists under the current evidence contract."
+    }
+  ],
+  "summary": {
+    "starting_records": 10,
+    "ready": 2,
+    "hold": 8,
+    "proposed_source_count": 3,
+    "source_update_count": 0,
+    "proposed_relationship_change_count": 0,
+    "review_scope_note": "Research/staging only. No canonical document, source, relationship, schema, test, audit, generated export or Git state was changed. Temporary retrieved bytes and rendered cover images are not repository snapshots."
+  }
+}

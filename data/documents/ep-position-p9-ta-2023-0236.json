@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T20:37:18.537Z",
   "slug": "ep-position-p9-ta-2023-0236",
   "official_title": "Amendments adopted by the European Parliament on 14 June 2023 on the proposal for a regulation of the European Parliament and of the Council on laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts (COM(2021)0206 – C9-0146/2021 – 2021/0106(COD))",
   "short_title": "Parliament amendments on the AI Act, June 2023",
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "ep-p9-ta-2023-0236",
+      "evidence_locator": "Official title of P9_TA(2023)0236: amendments adopted by the European Parliament on 14 June 2023."
     }
   ],
   "policy_ids": [
@@ -46,10 +48,10 @@
     "corpus_tier": "core",
     "policy_stage": "negotiation",
     "inclusion_rationale": "Parliament's adopted June 2023 negotiating amendments.",
-    "researcher_notes": "Document date and later Official Journal publication date are deliberately separate.",
+    "researcher_notes": "Adoption on 14 June 2023 and the later OJ publication on 23 January 2024 are separately evidenced. The adopted institutional position remains distinct from the final AI Act. This review uses the user-approved date-type compatibility correction without changing either date.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T20:37:18.537Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -57,5 +59,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "historical_review_status": "verified",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-p9-ta-2023-0236",
+      "locator": "Official title and adopted-text identifier P9_TA(2023)0236.",
+      "meaning": "14 June 2023 is the adoption date of these Parliament amendments, not the date of the later OJ manifestation."
+    },
+    "publication_date": {
+      "source_id": "ep-p9-ta-2023-0236",
+      "locator": "Official Journal masthead: OJ C, C/2024/506, 23.1.2024.",
+      "meaning": "23 January 2024 is the publication date of the primary cited OJ manifestation of the adopted amendments."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-p9-ta-2023-0236",
+      "locator": "Amendment 3, recital 1: harmonised rules on artificial intelligence; amendment 12, recital 3.",
+      "rationale": "These adopted amendments directly shape the proposed EU AI regulatory framework."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ep-p9-ta-2023-0236",
+      "locator": "Amendments 3 and 12, recitals 1 and 3: horizontal AI rules and use across sectors.",
+      "rationale": "The adopted amendments address horizontal AI governance across economic and public-sector settings rather than a single sector."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-p9-ta-2023-0236",
+      "locator": "Official title identifies the text as amendments adopted by the European Parliament, P9_TA(2023)0236.",
+      "rationale": "This is an institutional Parliament text, not a separately commissioned external report; the recorded institutional role is adopter."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-p9-ta-2023-0236",
+      "locator": "OJ C, C/2024/506, 23.1.2024; official EUR-Lex English publication.",
+      "rationale": "The exact adopted text is publicly distributed in the Official Journal."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
 }

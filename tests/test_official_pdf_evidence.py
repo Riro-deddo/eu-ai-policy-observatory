@@ -64,7 +64,7 @@ def test_pipeline_retains_pdf_provenance_without_adding_documents(tmp_path):
         (item["id"], item["slug"]) for item in public["documents"]
     }
     assert outputs.record_counts["documents"] == 131
-    assert outputs.record_counts["relationships"] == 95
+    assert outputs.record_counts["relationships"] == 96
     with sqlite3.connect(outputs.database) as connection:
         for document_id, newsroom, digest, retrieved_at, _, _ in FILES:
             row = connection.execute(

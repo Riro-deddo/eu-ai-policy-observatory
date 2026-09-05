@@ -1,0 +1,497 @@
+{
+  "batch_id": "2026-09-05-remaining-review-council-2022",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T19:47:08Z",
+  "publication_cutoff": "2026-09-04",
+  "records": [
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=14336%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-14336-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=14336%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 14336 2022 INIT - NOTE, Public 14336/22",
+          "observation": "The live register identifies the 11 November 2022 document, procedure 2021/0106(COD), Originator General Secretariat of the Council, Addressee Permanent Representatives Committee, and meeting date 18 November 2022. It does not display a publication or first-made-public date."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-14336-2022-INIT/en/pdf",
+          "locator": "Cover; section III paragraphs 1-2; section V paragraph 2; section VI",
+          "observation": "The cover establishes the issue date and GSC-to-Coreper note role. Section III attributes preparation of the final compromise to the Czech Presidency; section V expressly compares the text with ST 13955/22; the Annex regulates AI across sectors."
+        }
+      ],
+      "hold_reasons": [
+        "The official register marks the record Public and displays its document date, but neither the result nor the PDF labels when this exact manifestation was officially published; no dated official release directly publishing ST 14336/22 was found in the fresh second-pass search.",
+        "Canonical Council-author attribution is less precise than the evidenced GSC cover-note sender and Czech Presidency drafting responsibility."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=13955%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-13955-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=13955%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 13955 2022 INIT - NOTE, Public 13955/22",
+          "observation": "The live register identifies the 3 November 2022 document, Presidency as Originator, Delegations as Addressee, and meeting date 8 November 2022, but gives no publication-date field."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-13955-2022-INIT/en/pdf",
+          "locator": "Cover; section I paragraphs 3-5; section II",
+          "observation": "The cover names Presidency and previous document ST 13102/22. Paragraphs 3-5 say the Czech Presidency prepared the final version and identify changes from ST 13102/22; section II and the Annex are directly AI-substantive and cross-sectoral."
+        }
+      ],
+      "hold_reasons": [
+        "The register's unlabelled date is the document date, not evidence of when the exact PDF was published, and no dated official release directly publishing ST 13955/22 was found.",
+        "The exact originator is the Presidency; a generic Council author role needs evidence wording that preserves that distinction."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10069%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/x/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10069%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 10069 2022 INIT - NOTE, Public 10069/22",
+          "observation": "The live register identifies a multilingual document dated 15 June 2022, Originator Presidency, Addressee Delegations, meeting date 17 June 2022, and links the exact /x/pdf resource."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/x/pdf",
+          "locator": "Cover; introduction paragraphs 1-5; Annex recitals 1-5a",
+          "observation": "The 136-page multilingual FR/EN PDF is the first consolidated Presidency compromise. The cover identifies procedure 2021/0106(COD), Commission document 8115/21 and previous document 9029/22; paragraph 4 says all first-compromise parts were consolidated, and the Annex contains a cross-sector AI regulatory text."
+        }
+      ],
+      "hold_reasons": [
+        "The live register and corrected PDF establish identity, issue date, public status, originator and content, but do not label an official publication date for this manifestation; no exact dated Council release was found.",
+        "The source URL and role description require factual correction, but those repairs do not complete the historical extension."
+      ],
+      "proposed_patch": null,
+      "proposed_partial_patch": null
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=13102%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-13102-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=13102%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 13102 2022 INIT - NOTE, Public 13102/22",
+          "observation": "The register gives 19 October 2022, Presidency as Originator, Delegations as Addressee, and meeting date 25 October 2022, with no publication-date field."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-13102-2022-INIT/en/pdf",
+          "locator": "Cover; section I paragraphs 3-5; section II and Annex",
+          "observation": "The Presidency note names ST 12549/22 as previous document. Paragraphs 3-5 attribute the fourth compromise to the Czech Presidency and identify the comparison with ST 12549/22; the full text is directly AI-substantive and cross-sectoral."
+        }
+      ],
+      "hold_reasons": [
+        "No official source checked labels the publication date of this exact manifestation; the register's visible 19 October value is the document date.",
+        "The exact originator is the Presidency rather than an undifferentiated Council author."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=14954%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-14954-2022-ADD-1/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-14954-2022-ADD-1/en/pdf",
+          "locator": "Cover lines From/To/Subject and attachment sentence; Annex heading and lines 37-46",
+          "observation": "The 25 November 2022 cover identifies an addendum to ST 14954/22 and says the attached statement is by Germany. The Annex calls it a statement to the minutes of the Government of the Federal Republic of Germany and records Germany's position on the AI Act general approach."
+        },
+        {
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/",
+          "locator": "Header '6 December 2022 10:20'; resource link 'General approach - Statement by Germany'",
+          "observation": "The dated official Council release directly publishes the exact ST 14954/22 ADD 1 PDF. Under scope specification section 5.1 this is the evidenced primary publication manifestation; it is not claimed to be the globally first release."
+        }
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:47:08Z",
+        "publication_date": "2022-12-06",
+        "institution_roles": [
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "publisher",
+            "evidence_source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "evidence_locator": "Official Council press release header and direct resource link 'General approach - Statement by Germany'; PDF cover is a Council document forwarding the attached German statement."
+          }
+        ],
+        "source_ids": [
+          "council-st-14954-2022-add-1",
+          "council-ai-act-general-approach-release-2022-12-06"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "directly_related",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Official national statement attached to the Council general approach and directly addressing Germany's position on the AI Act text.",
+          "researcher_notes": "The Government of the Federal Republic of Germany is the statement author; the Council is separately recorded as official publisher. The 6 December date is the dated primary Council release that directly links this manifestation, not a claim about its globally first availability.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:47:08Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "council-st-14954-2022-add-1",
+            "locator": "Cover: Brussels, 25 November 2022; ST 14954/22 ADD 1.",
+            "meaning": "The official PDF establishes 25 November 2022 as the issue date of the addendum."
+          },
+          "publication_date": {
+            "source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "locator": "Release header: 6 December 2022 10:20; direct link 'General approach - Statement by Germany'.",
+            "meaning": "The dated official Council release directly publishes this exact attachment on 6 December 2022, establishing the primary manifestation publication date under scope specification section 5.1."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-st-14954-2022-add-1",
+            "locator": "Annex: 'STATEMENT BY GERMANY', 'Regulation laying down harmonised rules on artificial intelligence (AI Act)', and statement lines 40-46.",
+            "rationale": "The national statement takes an express policy position on the AI Act general approach and forthcoming interinstitutional negotiations."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "locator": "Release sections on definition, prohibited practices, high-risk classification, value-chain duties, law enforcement, governance, transparency and innovation; direct statement link.",
+            "rationale": "The attached position concerns the horizontal AI Act framework across multiple policy and economic sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "locator": "Dated Council release resource link 'General approach - Statement by Germany'.",
+            "rationale": "The official Council publication directly links the exact attachment."
+          }
+        ],
+        "bibliographic_authors": [
+          {
+            "name": "Government of the Federal Republic of Germany",
+            "affiliation": null,
+            "evidence_source_id": "council-st-14954-2022-add-1",
+            "evidence_locator": "Annex lines 37-40: 'STATEMENT BY GERMANY' and 'Statement to the minutes of the Government of the Federal Republic of Germany'."
+          }
+        ],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-14954-2022",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=14954%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-14954-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-14954-2022-INIT/en/pdf",
+          "locator": "Cover; section III paragraphs 1-2; section IV; conclusion and Annex",
+          "observation": "The 25 November cover is From Coreper I to Council and names ST 14336/22 as previous document. Section III says the Czech Presidency prepared the final compromise and Coreper agreed to submit it without changes; section IV and the Annex cover the horizontal AI regime."
+        },
+        {
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/",
+          "locator": "Header '6 December 2022 10:20'; opening adoption statement; direct resource link 'General approach'",
+          "observation": "The dated official release says the Council adopted its common position and directly links ST 14954/22 INIT. This supports the 6 December primary publication manifestation and adoption date without treating the 25 November issue date as publication."
+        }
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:47:08Z",
+        "publication_date": "2022-12-06",
+        "institution_roles": [
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "author",
+            "evidence_source_id": "council-st-14954-2022",
+            "evidence_locator": "Cover: From Permanent Representatives Committee (Part 1) to Council; section III paragraph 2 states the Czech Presidency prepared the final text and Coreper agreed to submit it without changes."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "evidence_locator": "Release header and opening: on 6 December 2022 the Council adopted its common position ('general approach'); the resource list directly links ST 14954/22 as 'General approach'."
+          }
+        ],
+        "source_ids": [
+          "council-st-14954-2022",
+          "council-ai-act-general-approach-release-2022-12-06"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Final Coreper-submitted Council text subsequently adopted as the Council's common position on the AI Act.",
+          "researcher_notes": "The cover and body preserve the exact Coreper I/Czech Presidency preparation roles; the Council's 6 December adoption is separately evidenced. ST 15698/22 remains the distinct outcome-of-proceedings record.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:47:08Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "council-st-14954-2022",
+            "locator": "Cover: Brussels, 25 November 2022; ST 14954/22.",
+            "meaning": "The official PDF establishes 25 November 2022 as the issue date of this text."
+          },
+          "publication_date": {
+            "source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "locator": "Release header: 6 December 2022 10:20; direct resource link 'General approach'.",
+            "meaning": "The dated official Council release directly publishes ST 14954/22 on 6 December 2022, establishing the primary manifestation publication date under scope specification section 5.1."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-st-14954-2022",
+            "locator": "Section IV headings and paragraphs 1-7; Annex title and Articles 1-85.",
+            "rationale": "The text directly defines and regulates AI systems, prohibited practices, high-risk systems, general-purpose AI, governance, enforcement and innovation."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-st-14954-2022",
+            "locator": "Section IV paragraphs 1-7 and Annex recital 5a on a horizontal framework applying across sectors.",
+            "rationale": "The proposed AI Act supplies a horizontal framework spanning product safety, data protection, financial services, law enforcement, public authorities and other sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "council-st-14954-2022",
+            "locator": "Cover From Coreper I to Council; section III paragraph 2 attributes preparation to the Czech Presidency and approval for submission to Coreper.",
+            "rationale": "The exact Council preparatory bodies and Presidency drafting responsibility are identified in the official document."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "locator": "Dated Council release and direct 'General approach' link to ST 14954/22.",
+            "rationale": "An official dated Council publication directly links this exact manifestation."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2022-12-06",
+            "precision": "day",
+            "source_id": "council-ai-act-general-approach-release-2022-12-06",
+            "locator": "Opening sentence: the Council has adopted its common position ('general approach'); header 6 December 2022 10:20."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-15698-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=15698%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-15698-2022-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=15698%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 15698 2022 INIT - OUTCOME OF PROCEEDINGS, Public 15698/22",
+          "observation": "The register identifies the 6 December 2022 outcome document, Originator General Secretariat of the Council, Addressee Delegations, and the AI Act general approach."
+        },
+        {
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/",
+          "locator": "Opening adoption statement and resource list",
+          "observation": "The release proves Council adoption on 6 December and publishes ST 14954/22 plus ADD 1, but does not link or identify ST 15698/22 itself."
+        }
+      ],
+      "hold_reasons": [
+        "Adoption is established, but the dated press release is not a publication manifestation of ST 15698/22; the register and PDF do not label when that exact outcome document was published.",
+        "The GSC originator/cover-note role is distinct from the correctly evidenced Council adopter role and should be retained when the date gap is later resolved."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=11124%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-11124-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=11124%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 11124 2022 INIT - NOTE, Public 11124/22",
+          "observation": "The register shows 15 July 2022, Presidency as Originator, Delegations as Addressee, meeting date 20 July 2022, and no publication-date field."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-11124-2022-INIT/en/pdf",
+          "locator": "Cover; introduction paragraphs 3-6; section II and Annex",
+          "observation": "The cover names ST 10069/22 as previous document. The Czech Presidency explains the second compromise and comparisons with the French Presidency text; the document directly regulates cross-sector AI."
+        }
+      ],
+      "hold_reasons": [
+        "No checked official source labels an official publication date for this exact manifestation; the 15 July value is the document issue date.",
+        "The exact originator is the Presidency rather than an undifferentiated Council author."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12206%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12206%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search results for Public 12206/22: ST 12206 2022 INIT and REV 1",
+          "observation": "The register distinguishes INIT dated 7 September 2022 from REV 1 dated 16 September 2022. INIT's Originator is Presidency and Addressee Delegations."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf",
+          "locator": "Introduction paragraphs 5-7; section II; Annex",
+          "observation": "The INIT text says the Czech Presidency prepared the first part of the third compromise and identifies changes from ST 11124/22. It is directly AI-substantive and cross-sectoral."
+        }
+      ],
+      "hold_reasons": [
+        "Canonical document_date 2022-09-16 conflates INIT with REV 1; the exact register establishes INIT as 2022-09-07. This issue-date repair does not prove publication.",
+        "The live register labels the record Public but gives no publication-date field, and no dated official release directly publishing INIT was found.",
+        "The exact originator is the Presidency."
+      ],
+      "proposed_patch": null,
+      "proposed_partial_patch": {
+        "updated_at": "2026-09-05T19:47:08Z",
+        "document_date": "2022-09-07",
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Initial formally published version of the first part of the third Council Presidency compromise.",
+          "researcher_notes": "Kept distinct from ST 12206/1/22 REV 1 so the official revision history remains observable. Second-pass register review corrects the INIT issue date to 7 September 2022; 16 September belongs to REV 1. The retained publication_date has not yet been independently substantiated for INIT.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        }
+      }
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12206%2F1%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12206%2F1%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 12206 2022 REV 1 - NOTE, Public 12206/1/22",
+          "observation": "The register identifies REV 1 dated 16 September 2022, Presidency as Originator, Delegations as Addressee, meeting date 22 September 2022, and no publication-date field."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf",
+          "locator": "Cover; introduction paragraphs 5-7; section II; Annex",
+          "observation": "The explicit REV 1 identifier establishes revision identity. The text attributes preparation to the Czech Presidency, identifies changes against ST 11124/22, and substantively regulates AI across sectors."
+        }
+      ],
+      "hold_reasons": [
+        "The register and PDF establish the revision and issue date but not an official publication date for this manifestation; no exact dated release was found.",
+        "The exact originator is the Presidency."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12549%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12549%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+          "locator": "Search result ST 12549 2022 INIT - NOTE, Public 12549/22",
+          "observation": "The register gives 23 September 2022, Presidency as Originator, Delegations as Addressee, meeting date 29 September 2022, and no publication-date field."
+        },
+        {
+          "source_url": "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf",
+          "locator": "Cover; introduction paragraphs 5-7; section II; Annex",
+          "observation": "The cover names ST 12206/1/22 REV 1 as previous document. Paragraph 5 identifies this as the second and final part of the third compromise, covering Title IA, Articles 30-85, related recitals and Annexes V-IX; the content is directly AI-substantive and cross-sectoral."
+        }
+      ],
+      "hold_reasons": [
+        "No checked official source labels the publication date of this exact manifestation; the register's 23 September value is its document date.",
+        "The exact originator is the Presidency."
+      ],
+      "proposed_patch": null
+    }
+  ],
+  "proposed_sources": [
+    {
+      "id": "council-ai-act-general-approach-release-2022-12-06",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T19:47:08Z",
+      "updated_at": "2026-09-05T19:47:08Z",
+      "source_type": "council_register",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/",
+      "publisher": "General Secretariat of the Council",
+      "retrieved_at": "2026-09-05T19:47:08Z",
+      "last_verified_at": "2026-09-05T19:47:08Z",
+      "verification_note": "Official Council press release headed 6 December 2022 10:20. It states that the Council adopted its common position on the AI Act and directly links the exact resources ST 14954/22 INIT ('General approach') and ST 14954/22 ADD 1 ('General approach - Statement by Germany'). This is evidence of the primary dated Council publication manifestation under scope specification section 5.1, not a claim of globally first availability."
+    }
+  ],
+  "source_updates": [
+    {
+      "source_id": "council-st-10069-2022",
+      "before": {
+        "url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/en/pdf",
+        "verification_note": "Official English Council document ST 10069/22, dated 15 June 2022; its cover identifies it as the first consolidated Presidency compromise text for procedure 2021/0106(COD)."
+      },
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:47:08Z",
+        "url": "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/x/pdf",
+        "retrieved_at": "2026-09-05T19:47:08Z",
+        "last_verified_at": "2026-09-05T19:47:08Z",
+        "verification_note": "Prior verification note: Official English Council document ST 10069/22, dated 15 June 2022; its cover identifies it as the first consolidated Presidency compromise text for procedure 2021/0106(COD). Second-pass correction: the Council register identifies the exact official manifestation as multilingual, and its direct link is /ST-10069-2022-INIT/x/pdf. The 136-page FR/EN PDF was reopened and verifies Presidency originator, procedure 2021/0106(COD), Commission document 8115/21, previous document 9029/22 and the consolidated cross-sector AI Act text."
+      },
+      "evidence": {
+        "source_url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10069%2F22&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "locator": "ST 10069 2022 INIT result says only Multilingual and links https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/x/pdf; the old /en/pdf returns 404."
+      }
+    }
+  ],
+  "summary": {
+    "records_reviewed": 11,
+    "upgrade": 2,
+    "hold": 9,
+    "partial_document_corrections": 1,
+    "source_url_corrections": 1
+  },
+  "integration_note": "Partial corrections do not add any historical-extension field. ST 10069 changes only its source record. ST 12206 INIT changes its issue date, update timestamp and explanatory research note; the public pending state remains derived by the compatibility gate."
+}

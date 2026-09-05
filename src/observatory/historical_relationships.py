@@ -132,6 +132,14 @@ def validate_historical_relationships(
             and _official_evidence(data, sources)
         )
 
+    def has_direct_attachment_parent(document_id: str) -> bool:
+        return any(
+            isinstance(edge.data.get("relationship_type"), str)
+            and edge.data.get("relationship_type") in _ATTACHMENT_PARENT_RELATIONSHIPS
+            and valid_edge(edge, document_id, incoming_edge=False)
+            for edge in outgoing.get(document_id, ())
+        )
+
     for document in documents:
         data = document.data
         level, document_id = data.get("record_level"), data.get("id")
@@ -152,7 +160,11 @@ def validate_historical_relationships(
             ]
             valid = any(
                 valid_edge(edge, document_id, incoming_edge=is_incoming)
-                and all(peer.data.get("record_level") != "attachment" for peer in documents_by_id[edge.data.get("source_entity_id" if is_incoming else "target_entity_id")])
+                and all(
+                    peer.data.get("record_level") != "attachment"
+                    or has_direct_attachment_parent(peer.data["id"])
+                    for peer in documents_by_id[edge.data.get("source_entity_id" if is_incoming else "target_entity_id")]
+                )
                 for edge, is_incoming in candidates
             )
         else:

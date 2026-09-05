@@ -1,0 +1,2460 @@
+{
+  "schema_version": "review-continuation-1",
+  "created_at": "2026-09-05T20:55:06.363Z",
+  "prepared_by": "Codex (AI-assisted evidence review)",
+  "publication_cutoff": "2026-09-04",
+  "integration_status": "locally_integrated_and_validated",
+  "integration_verification": {
+    "focused_python": "21 passed for continuation and earlier-audit regressions.",
+    "full_python": "404 passed, 1 Windows-incompatible POSIX permission test skipped.",
+    "canonical_pipeline": "Success; 131 documents, 96 relationships, 160 sources; disposable SQLite and public JSON only.",
+    "historical_preflight": "131 checked; 105 ready; 398 field-level issues on 26 retained holds; expected exit 1.",
+    "astro_check": "0 errors, 0 warnings, 3 existing hints.",
+    "static_build": "144 pages; exit 0.",
+    "public_output_scan": "Passed; exit 0.",
+    "independent_review": "Two bounded independent admission reviews and final ledger audit found no critical or important issues. Final audit verified all 13 canonical after-hashes and all 30 partition decisions.",
+    "browser_interactions": "Not run; no frontend product code changed. Browser-test count expectations were updated, but no E2E passing claim is made.",
+    "remote_release": "Not requested or performed.",
+    "node_tests": "65 passed, including exact new graph endpoint/edge and deterministic non-overlapping atlas geometry.",
+    "vitest": "26 passed in 2 files with configLoader runner. Default bundled config load failed because esbuild attempted to read an inaccessible ancestor directory; the supported runner loader passed without changing project configuration.",
+    "english_gate": "Tracked repository script guard passed; new audit handoffs and ledger also scanned for non-Latin scripts and manually reviewed as English.",
+    "whitespace": "git diff --check passed.",
+    "preservation": "All 101 prior verified files and 26 retained pending files match their baseline LF hashes; 131 ID/slug routes preserved. Protected generated JSON and SQLite raw-byte hashes unchanged; prior two audit-ledger LF hashes unchanged."
+  },
+  "baseline": {
+    "git_commit": "5bbd3d7258f53ba04fc3c942d12a9857ded1b3de",
+    "published_documents": 131,
+    "historical_review": {
+      "verified": 101,
+      "legacy_review_pending": 30
+    },
+    "hash_text_encoding": "UTF-8 with LF line endings",
+    "prior_ledger_sha256_lf": "bca28661d171ab5af3b3669352c26d1de96dc7fa504aaafafb04c3fc39538985",
+    "protected_hashes": {
+      "generated/public-data.json": "067b839ba54da091d8b6ba7f743d660826865221f4587c647379d7c8f71fc4eb",
+      "generated/eu-ai-policy-observatory.sqlite": "71371783c8fc31aa57ef19a338feda699de9761a19f3c03ae26d500787bc6666",
+      "research/migrations/2026-09-05-expanded-evidence-review.json": "9376ded38fafa1ab33a98f5349336e746cd91803dddca69029bb8e96abe92437"
+    },
+    "documents": [
+      {
+        "id": "ai-act-consolidated-2026-07-27",
+        "slug": "ai-act-consolidated-2026-07-27",
+        "historical_review_status": null,
+        "sha256_lf": "f204212901e3c404cc7db669ab055e21127254f1fee3a77ed59c6e5796012942"
+      },
+      {
+        "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+        "slug": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+        "historical_review_status": null,
+        "sha256_lf": "464085f4175c8bddde2ef46a937e7b931d521c3b817f05ab702c92793eee78cd"
+      },
+      {
+        "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+        "slug": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+        "historical_review_status": null,
+        "sha256_lf": "18d81be05b875bc238402ca3df2132a4188cd2809a1bf930eaf9e1b57f396d5e"
+      },
+      {
+        "id": "ai-act-council-coreper-general-approach-st-14336-2022",
+        "slug": "ai-act-council-coreper-general-approach-st-14336-2022",
+        "historical_review_status": null,
+        "sha256_lf": "26a76bee8448434c4c4b89439f5b2efdfefb149fba2c750a1e991383ed7d0e3b"
+      },
+      {
+        "id": "ai-act-council-final-compromise-st-13955-2022",
+        "slug": "ai-act-council-final-compromise-st-13955-2022",
+        "historical_review_status": null,
+        "sha256_lf": "8af6a53b29003d4c1e0c08fc4c03eaac4b8321cb9c3ede7639e76bb70358539f"
+      },
+      {
+        "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+        "slug": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+        "historical_review_status": null,
+        "sha256_lf": "50fe9c60af74e2873185d7b43523be1b29572e0963c9643c15d440cdf5e1a331"
+      },
+      {
+        "id": "ai-act-council-fourth-compromise-st-13102-2022",
+        "slug": "ai-act-council-fourth-compromise-st-13102-2022",
+        "historical_review_status": null,
+        "sha256_lf": "41b3c8b2e12f641bd864767496b2c2b8a920472d93d8f628c3af9e6fe8a2dc29"
+      },
+      {
+        "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+        "slug": "ai-act-council-general-approach-german-statement-14954-add-1",
+        "historical_review_status": "verified",
+        "sha256_lf": "5f2c1a3e6e618f87ab7f5d0e41e60be60464d7c9172240e0ce47c91c3a8c1827"
+      },
+      {
+        "id": "ai-act-council-general-approach-st-14954-2022",
+        "slug": "ai-act-council-general-approach-st-14954-2022",
+        "historical_review_status": "verified",
+        "sha256_lf": "b3202f69f27756115ac87521d64d0d85f17055a939cce99be2eb7c8309e44884"
+      },
+      {
+        "id": "ai-act-council-general-approach-st-15698-2022",
+        "slug": "ai-act-council-general-approach-st-15698-2022",
+        "historical_review_status": null,
+        "sha256_lf": "b98dabf4368f596e8e8541429e25951bd9a808c42d8d0709b16b4308c73daf45"
+      },
+      {
+        "id": "ai-act-council-second-compromise-st-11124-2022",
+        "slug": "ai-act-council-second-compromise-st-11124-2022",
+        "historical_review_status": null,
+        "sha256_lf": "4becb9451bdc84fef2acf0666d24c32740a323e5d78c41e6f4cb7c410fd40890"
+      },
+      {
+        "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+        "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+        "historical_review_status": null,
+        "sha256_lf": "82310bd1b0e87d089881a0187e0a489ec332342dea1864fe51962201fbe0f907"
+      },
+      {
+        "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+        "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+        "historical_review_status": null,
+        "sha256_lf": "a1730cc369aa02ff411c1c011a00325e34a55a1819eabc50bb2f642630fe9c04"
+      },
+      {
+        "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+        "slug": "ai-act-council-third-compromise-part-two-st-12549-2022",
+        "historical_review_status": null,
+        "sha256_lf": "2d9703778e0bc3bca094fd2fe90a3fbe1abbf64b52571f61da465bdb607a36b7"
+      },
+      {
+        "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+        "slug": "ai-act-impact-assessment-annexes-swd-2021-84",
+        "historical_review_status": "verified",
+        "sha256_lf": "2adb0b24ced0c62a0d9c3f388068de011b4b8b4d9148d160a776f1bd4472c26c"
+      },
+      {
+        "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+        "slug": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+        "historical_review_status": "verified",
+        "sha256_lf": "92863974711484b0b820e14d6b4985222d7825602d8b8eea1c45a9ef80d50338"
+      },
+      {
+        "id": "ai-act-impact-assessment-swd-2021-84",
+        "slug": "ai-act-impact-assessment-swd-2021-84",
+        "historical_review_status": "verified",
+        "sha256_lf": "0b959df4f168ec68dfab5496b1d7985edc48afaeb0c4cc1200a0018121123570"
+      },
+      {
+        "id": "ai-act-pe-cons-24-2024-rev-1",
+        "slug": "ai-act-pe-cons-24-2024-rev-1",
+        "historical_review_status": "verified",
+        "sha256_lf": "76a57f04b255d7f25fe25b6c76a0fe00562676aa3a48c31fc1d0ef175ad35e7f"
+      },
+      {
+        "id": "ai-act-pe-cons-24-2024",
+        "slug": "ai-act-pe-cons-24-2024",
+        "historical_review_status": "verified",
+        "sha256_lf": "8300f6d8f4302b48df188b7a01391b2183a0a145e14b62d432a3ee38f9565f3b"
+      },
+      {
+        "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+        "slug": "ai-act-proceedings-implementing-regulation-2026-1755",
+        "historical_review_status": "verified",
+        "sha256_lf": "aa5cfe37e300ad1590593c5a0134e6890ce7ab276e02bfc3d967e2ffc7103b52"
+      },
+      {
+        "id": "ai-act-proposal-annexes",
+        "slug": "ai-act-proposal-annexes",
+        "historical_review_status": "verified",
+        "sha256_lf": "d2b843d2de33b2a968fad85700b465f5ea60ceebb457304a10a8d1ec249f6a94"
+      },
+      {
+        "id": "ai-act-proposal",
+        "slug": "ai-act-proposal",
+        "historical_review_status": "verified",
+        "sha256_lf": "fd1f1c429e12a3455c67201e14423713002a240889223be6ed8e6d1e9c479415"
+      },
+      {
+        "id": "ai-act-provisional-agreement-st-5662-2024",
+        "slug": "ai-act-provisional-agreement-st-5662-2024",
+        "historical_review_status": "verified",
+        "sha256_lf": "6f5f1477f6fbe89ea8159ef0c73549e711292e6216ee0e168bdee13ca37df2dd"
+      },
+      {
+        "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+        "slug": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+        "historical_review_status": null,
+        "sha256_lf": "4f7b4591d9b580b5b27455d6b2fa2853080fc1613defc1c0747e711f9497c7cb"
+      },
+      {
+        "id": "ai-board-assessment-gpai-code-2025",
+        "slug": "ai-board-assessment-gpai-code-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "cf2440f6991e449dfa5937863aaf3f4d16d10380224a4efb468168528d237ff3"
+      },
+      {
+        "id": "ai-board-assessment-transparency-code-2026",
+        "slug": "ai-board-assessment-transparency-code-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "540b063a8741a0b9412171aa9845bb4b29625f5d24912be227fe4e76d34a4d54"
+      },
+      {
+        "id": "ai-continent-action-plan-annex",
+        "slug": "ai-continent-action-plan-annex",
+        "historical_review_status": "verified",
+        "sha256_lf": "1b530e618c79c9b61f94b36b3ad0530ef408e3d199d3f0bf9cdfc4847f4c4e2b"
+      },
+      {
+        "id": "ai-continent-action-plan",
+        "slug": "ai-continent-action-plan",
+        "historical_review_status": "verified",
+        "sha256_lf": "18b4068666507c4b3f6db0ed8337543294a29edeea60213706b607ea15a8bc16"
+      },
+      {
+        "id": "ai-liability-directive-proposal",
+        "slug": "ai-liability-directive-proposal",
+        "historical_review_status": "verified",
+        "sha256_lf": "58ade22477374ca4b4a2114d12db84b93c337873d92b6919d685cf9620d3f706"
+      },
+      {
+        "id": "ai-omnibus-council-adoption-note-st-10752-2026",
+        "slug": "ai-omnibus-council-adoption-note-st-10752-2026",
+        "historical_review_status": null,
+        "sha256_lf": "9ba77d9207fc6c87bcd6220545e3e6fb01141195cbd7099c7d5de67d9604ba14"
+      },
+      {
+        "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+        "slug": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+        "historical_review_status": null,
+        "sha256_lf": "95b2f270975f2876b66e0aa1d14aa984dc42ddaaf384bca283ff11837f6a320e"
+      },
+      {
+        "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+        "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+        "historical_review_status": null,
+        "sha256_lf": "4a1eabe98b658c24198f51ef9c0465f8e7c5f100e86a1053cd3c6582992917d9"
+      },
+      {
+        "id": "ai-omnibus-council-information-note-st-10599-2026",
+        "slug": "ai-omnibus-council-information-note-st-10599-2026",
+        "historical_review_status": null,
+        "sha256_lf": "f35516839e17ecf2db38202855f05d5e296ea0108ba01f77dc16528929bade68"
+      },
+      {
+        "id": "ai-omnibus-pe-cons-30-2026-rev-1",
+        "slug": "ai-omnibus-pe-cons-30-2026-rev-1",
+        "historical_review_status": "verified",
+        "sha256_lf": "4cf558930572d6e77605774326b3f23d5b4be3fdf4b3fc246ef040b761dc5d5a"
+      },
+      {
+        "id": "ai-omnibus-pe-cons-30-2026",
+        "slug": "ai-omnibus-pe-cons-30-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "7a34753e7990fe1dc2eae6ac2dd65dab28b541cb973bec31fe77e077e1ee7c96"
+      },
+      {
+        "id": "ai-omnibus-proposal-2025",
+        "slug": "ai-omnibus-proposal-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "742d82e3c6aa4963871377de0e0387a747b2a7c1f6b03ffce4c3a6a1b6b1e4b4"
+      },
+      {
+        "id": "ai-omnibus-regulation-2026-1744",
+        "slug": "ai-omnibus-regulation-2026-1744",
+        "historical_review_status": "verified",
+        "sha256_lf": "074331b014b82960548583f5af5898f446c3cfc196abb0885c946029c62e4f67"
+      },
+      {
+        "id": "ai-omnibus-staff-working-document-2025",
+        "slug": "ai-omnibus-staff-working-document-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "78e8eea01840d71c5a351ca9d306eb0b9c9bdea09ccc1f522e3ee9110fad750a"
+      },
+      {
+        "id": "ai-standardisation-request-c-2023-3215",
+        "slug": "ai-standardisation-request-c-2023-3215",
+        "historical_review_status": null,
+        "sha256_lf": "21726ffda73507403dcd32756e9d082e244c612a4faa46f4ddb2ad5490a3bb7f"
+      },
+      {
+        "id": "ai-system-definition-guidelines-2025",
+        "slug": "ai-system-definition-guidelines-2025",
+        "historical_review_status": null,
+        "sha256_lf": "b0510c7a51b3d6b3a94641b6d0d752ccba66e13472975d4844ebc4f47905bcff"
+      },
+      {
+        "id": "ai-system-definition-guidelines-approval-communication-2025",
+        "slug": "ai-system-definition-guidelines-approval-communication-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "50c117fe10ed712ed944f4f6d362fd46f0fe671fc4f911af766dc149771a982b"
+      },
+      {
+        "id": "altai-assessment-list",
+        "slug": "altai-assessment-list",
+        "historical_review_status": "verified",
+        "sha256_lf": "aa91801a26d168eda91a3ac4673a18c059c8b73b892ae71d2013568c4fee8959"
+      },
+      {
+        "id": "apply-ai-strategy-annexes",
+        "slug": "apply-ai-strategy-annexes",
+        "historical_review_status": "verified",
+        "sha256_lf": "ebdc73b033079ca1dbcca32baf14f747d7886146aef4603d5244503cc06d53d3"
+      },
+      {
+        "id": "apply-ai-strategy",
+        "slug": "apply-ai-strategy",
+        "historical_review_status": "verified",
+        "sha256_lf": "f694cff9b858ef32804f4bc32947eb97fb967a38847735b5c1a05f0aec384658"
+      },
+      {
+        "id": "artificial-intelligence-act",
+        "slug": "artificial-intelligence-act",
+        "historical_review_status": "verified",
+        "sha256_lf": "0940bd759dbff9d8ed89840c9b4182e745d96e42d96e2b084ad9e2badc5acb6d"
+      },
+      {
+        "id": "artificial-intelligence-for-europe",
+        "slug": "artificial-intelligence-for-europe",
+        "historical_review_status": "verified",
+        "sha256_lf": "dac7c01e37e4ec28072bd37e1352a736ee6c5bd8c6166a7a201807c66fb249d8"
+      },
+      {
+        "id": "boosting-startups-innovation-trustworthy-ai",
+        "slug": "boosting-startups-innovation-trustworthy-ai",
+        "historical_review_status": "verified",
+        "sha256_lf": "b5047cc4c2367655105bf6245babc4d3efa2503b9a89e11770a6e292df4e1c7a"
+      },
+      {
+        "id": "building-a-european-data-economy",
+        "slug": "building-a-european-data-economy",
+        "historical_review_status": "verified",
+        "sha256_lf": "506497e265db1a32322c16c361e8d234108582ad13921a169b876c8a42406c8d"
+      },
+      {
+        "id": "building-trust-human-centric-ai",
+        "slug": "building-trust-human-centric-ai",
+        "historical_review_status": "verified",
+        "sha256_lf": "c2af92dcafa4b7e2844fccb906b4fde05b0d360f04564c06d74f340ff5e724d8"
+      },
+      {
+        "id": "civil-law-rules-on-robotics-resolution-2017",
+        "slug": "civil-law-rules-on-robotics-resolution-2017",
+        "historical_review_status": "verified",
+        "sha256_lf": "332f0c9ea14ff362cbafc7217c05034889cf70550b8e6309dbbc18f64dcf8557"
+      },
+      {
+        "id": "commission-ai-act-article-112-review-2026",
+        "slug": "commission-ai-act-article-112-review-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "dd1e6ba5c28863965da91dff1b204b964cf8aea7e0793528d2528c5b8653533b"
+      },
+      {
+        "id": "commission-decision-ai-office-2024",
+        "slug": "commission-decision-ai-office-2024",
+        "historical_review_status": "verified",
+        "sha256_lf": "cd7cfab0c93cf1732cb09aaedc67f8d87a9f57f3843d97fc0c6337a4c01b0e71"
+      },
+      {
+        "id": "commission-opinion-gpai-code-2025",
+        "slug": "commission-opinion-gpai-code-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "f1b63aba45c8da07f4f3d7846d8a0831acb14d36b5e8d6192a58172e54174135"
+      },
+      {
+        "id": "commission-opinion-transparency-code-2026",
+        "slug": "commission-opinion-transparency-code-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "7f66f4751eb2f01a18e7e237abe3f9b810c2730da48ce0979196fe96fbe8f114"
+      },
+      {
+        "id": "coordinated-plan-2018-annex",
+        "slug": "coordinated-plan-2018-annex",
+        "historical_review_status": "verified",
+        "sha256_lf": "5116c0d71e4a05ca08c96897b43c54466692a093cc4e5558c19bcf6e5554e7d6"
+      },
+      {
+        "id": "coordinated-plan-2021-annex",
+        "slug": "coordinated-plan-2021-annex",
+        "historical_review_status": "verified",
+        "sha256_lf": "91b5cf9bca5cb01ff1ce2617f6acf263b0cddd00117fdc20a12ec6c55c14d59c"
+      },
+      {
+        "id": "coordinated-plan-2021-review",
+        "slug": "coordinated-plan-2021-review",
+        "historical_review_status": "verified",
+        "sha256_lf": "e9e508fbf5dd2a8636e3ed20bd9324fda7bde293b8a8c5940258b84f1e6aa8ab"
+      },
+      {
+        "id": "coordinated-plan-on-artificial-intelligence",
+        "slug": "coordinated-plan-on-artificial-intelligence",
+        "historical_review_status": "verified",
+        "sha256_lf": "381a4b8a8c649f84880eccd725810ed50d3526e94751fe5e4b91a15ee71fd599"
+      },
+      {
+        "id": "cor-opinion-ai-act-2021",
+        "slug": "cor-opinion-ai-act-2021",
+        "historical_review_status": "verified",
+        "sha256_lf": "2e08dc402f0d26219d3180ab144964b02213c013a43bb2186bdd60570d61462d"
+      },
+      {
+        "id": "cor-opinion-ai-omnibus-2026",
+        "slug": "cor-opinion-ai-omnibus-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "a593c376f531340b24cef369bf283e382b3c1bb18b1009f3d67339bf58c374da"
+      },
+      {
+        "id": "council-decision-84-130-eec-esprit",
+        "slug": "council-decision-84-130-eec-esprit",
+        "historical_review_status": "verified",
+        "sha256_lf": "7b053375cde675f44f8a42f3eb22d131aa4cd97930c57ab965252244cf81961e"
+      },
+      {
+        "id": "council-decision-88-279-eec-esprit-ii",
+        "slug": "council-decision-88-279-eec-esprit-ii",
+        "historical_review_status": "verified",
+        "sha256_lf": "3136f3e3f8a9b0ce8d95499227ceb156325c212e383bcce2cb26a871bfcb83d6"
+      },
+      {
+        "id": "council-decision-88-417-eec-delta",
+        "slug": "council-decision-88-417-eec-delta",
+        "historical_review_status": "verified",
+        "sha256_lf": "c8575497dd08fa5c9fcfc2210bf95ef2985830841d7cef005233b8a232ccb287"
+      },
+      {
+        "id": "council-decision-89-415-eec-doses",
+        "slug": "council-decision-89-415-eec-doses",
+        "historical_review_status": "verified",
+        "sha256_lf": "e75c418325a5ee80bc7a445da2e10d160eb7c67f4656a93411e0f95fdd6bc7fa"
+      },
+      {
+        "id": "council-decision-94-802-ec-esprit",
+        "slug": "council-decision-94-802-ec-esprit",
+        "historical_review_status": "verified",
+        "sha256_lf": "cb14cb1260deb70b0986445ed27ad5e953ed1f193e4c75b8b84dad8c66c0fa47"
+      },
+      {
+        "id": "digitising-european-industry",
+        "slug": "digitising-european-industry",
+        "historical_review_status": "verified",
+        "sha256_lf": "5a31f6f6859d91850aa54be180ec91c63d073e87115abbc0de1397905f021abd"
+      },
+      {
+        "id": "draft-guidance-serious-ai-incidents-2025",
+        "slug": "draft-guidance-serious-ai-incidents-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "96b08655d0e954df4cb51a92075026002e51a341d37c72d94db1d05467c5916c"
+      },
+      {
+        "id": "draft-high-risk-classification-guidelines-2026",
+        "slug": "draft-high-risk-classification-guidelines-2026",
+        "historical_review_status": null,
+        "sha256_lf": "d0c53ef674a5e06da3bdf16ab931fe9590003a7811226c58fc2a74c1820ac9e5"
+      },
+      {
+        "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+        "slug": "draft-high-risk-classification-guidelines-annex-i-2026",
+        "historical_review_status": null,
+        "sha256_lf": "24c06bb90275b319f70e01147be40a163925dc01a3eacd6125f449d1055b9357"
+      },
+      {
+        "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+        "slug": "draft-high-risk-classification-guidelines-annex-iii-2026",
+        "historical_review_status": null,
+        "sha256_lf": "09266f3eac1541124fcdde4af28608f7449d60bd6a75dd50192a9bacd87e3654"
+      },
+      {
+        "id": "draft-serious-ai-incident-report-template-2025",
+        "slug": "draft-serious-ai-incident-report-template-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "c7c65fb8e2a579c66bffa715c30d5cf1f09838b81ec88c60087aa69519cee217"
+      },
+      {
+        "id": "draft-transparency-guidelines-2026",
+        "slug": "draft-transparency-guidelines-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "9ce8f33e081968ebb3cb9ea85f550d3ba664fb637661022631cc265b3c58a620"
+      },
+      {
+        "id": "ecb-opinion-con-2021-40",
+        "slug": "ecb-opinion-con-2021-40",
+        "historical_review_status": "verified",
+        "sha256_lf": "04ae381fef96553f22d5ec6d42eeeddab4affe4a95201aedd663b1aabbc0bcf5"
+      },
+      {
+        "id": "ecb-opinion-con-2026-10",
+        "slug": "ecb-opinion-con-2026-10",
+        "historical_review_status": "verified",
+        "sha256_lf": "aefe74bc501e849239803349c28deec047d3e39d66fe4a4aa98d3b4c7483f5d0"
+      },
+      {
+        "id": "ecb-technical-working-document-con-2026-10",
+        "slug": "ecb-technical-working-document-con-2026-10",
+        "historical_review_status": null,
+        "sha256_lf": "9f8ec161bc6f872a1a9c788b1fa85bd196dd83d5c20ea9df3ff0d236ab9dcaf3"
+      },
+      {
+        "id": "edpb-edps-joint-opinion-1-2026",
+        "slug": "edpb-edps-joint-opinion-1-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "82299caee4ec48e8767973be02083de4fb5a37b14242ff97adb96cd33b2a4b59"
+      },
+      {
+        "id": "edpb-edps-joint-opinion-5-2021",
+        "slug": "edpb-edps-joint-opinion-5-2021",
+        "historical_review_status": "verified",
+        "sha256_lf": "cacd425850602943e9a37d1f98b1aa0b661ff94dea275641a94b0a81de492e03"
+      },
+      {
+        "id": "eesc-opinion-ai-act-2021",
+        "slug": "eesc-opinion-ai-act-2021",
+        "historical_review_status": "verified",
+        "sha256_lf": "1f386f1df044d912780ffea8630acddd0afb04d10552eab9d7908b63c2032133"
+      },
+      {
+        "id": "eesc-opinion-ai-omnibus-2026",
+        "slug": "eesc-opinion-ai-omnibus-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "ec36917f2ceee9a3a02d8bf3adea6dfc0180624ff0510a70565ede0319c90130"
+      },
+      {
+        "id": "eesc-opinion-coordinated-plan-2021",
+        "slug": "eesc-opinion-coordinated-plan-2021",
+        "historical_review_status": "verified",
+        "sha256_lf": "d5eb480e2929b5baa363db810ef21893f824d50087ab3f243356b6b11c1c20f1"
+      },
+      {
+        "id": "ep-ai-act-cult-opinion-pe-719637",
+        "slug": "ep-ai-act-cult-opinion-pe-719637",
+        "historical_review_status": "verified",
+        "sha256_lf": "0f321023fb130c01eb6c0bb55a9ef7e2caf0551da05d85f7323206e6590b5335"
+      },
+      {
+        "id": "ep-ai-act-draft-report-pe-731563",
+        "slug": "ep-ai-act-draft-report-pe-731563",
+        "historical_review_status": "verified",
+        "sha256_lf": "286590658617d1027055e2b793403f1e38069cce14b638ce8657564b35ca0fbf"
+      },
+      {
+        "id": "ep-ai-act-envi-opinion-pe-699056",
+        "slug": "ep-ai-act-envi-opinion-pe-699056",
+        "historical_review_status": "verified",
+        "sha256_lf": "9a934ce147a0a2348a0fd2dea2506b75453c89bdecd1f6b9889850f588f21b21"
+      },
+      {
+        "id": "ep-ai-act-itre-opinion-pe-719801",
+        "slug": "ep-ai-act-itre-opinion-pe-719801",
+        "historical_review_status": "verified",
+        "sha256_lf": "a878a9a238d2509f64872aaad826284e7b4201605b96b256022aeb2f890df975"
+      },
+      {
+        "id": "ep-ai-act-juri-opinion-pe-719827",
+        "slug": "ep-ai-act-juri-opinion-pe-719827",
+        "historical_review_status": "verified",
+        "sha256_lf": "8260c78689f64b2378c380c8b1d779c530a7459bbd4267a291ce1d3d34df78f7"
+      },
+      {
+        "id": "ep-ai-act-tran-opinion-pe-730085",
+        "slug": "ep-ai-act-tran-opinion-pe-730085",
+        "historical_review_status": "verified",
+        "sha256_lf": "4c98bb8366e92e0dcdb0469af9654b237ad120d69c8cc35b007824867a0134ab"
+      },
+      {
+        "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+        "slug": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+        "historical_review_status": "verified",
+        "sha256_lf": "79cafac48811a34e16137849d3256e345bcf59fd09c8f5951e7efa772cffb69e"
+      },
+      {
+        "id": "ep-ai-omnibus-cult-opinion-pe-784261",
+        "slug": "ep-ai-omnibus-cult-opinion-pe-784261",
+        "historical_review_status": "verified",
+        "sha256_lf": "1ce13814ceba600c49f6535800017e1c8f5516370761292e18185c6c245fede0"
+      },
+      {
+        "id": "ep-ai-omnibus-juri-opinion-pe-784179",
+        "slug": "ep-ai-omnibus-juri-opinion-pe-784179",
+        "historical_review_status": "verified",
+        "sha256_lf": "b0c5c9eb7c3eb5d960d165cf57428e483f72610c9094e70104f75ff218c590bd"
+      },
+      {
+        "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+        "slug": "ep-ai-omnibus-position-p10-ta-2026-0198",
+        "historical_review_status": "verified",
+        "sha256_lf": "21713abfed4f2f95a5c65c2eea4b00c73189b0d95b7282135ae8e80c28586750"
+      },
+      {
+        "id": "ep-ai-omnibus-report-a10-0073-2026",
+        "slug": "ep-ai-omnibus-report-a10-0073-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "ed78b64596634b73388d81730eb56d150cad91b8feaa9fab64471a6cb9ee4cc4"
+      },
+      {
+        "id": "ep-joint-committee-report-a9-0188-2023",
+        "slug": "ep-joint-committee-report-a9-0188-2023",
+        "historical_review_status": "verified",
+        "sha256_lf": "d7e91860c914c9c82deb1936d8dc22b910954cd84da02685002cec57c18bba7c"
+      },
+      {
+        "id": "ep-position-p9-ta-2023-0236",
+        "slug": "ep-position-p9-ta-2023-0236",
+        "historical_review_status": null,
+        "sha256_lf": "bc3a207eb7469b75718fe04a8d5718ba109a1e686f7c39f4a24175cdb87f4a9c"
+      },
+      {
+        "id": "ep-position-p9-ta-2024-0138",
+        "slug": "ep-position-p9-ta-2024-0138",
+        "historical_review_status": "verified",
+        "sha256_lf": "6d7f676ae503f39ab673d206e061a923087bdd0b542d9b5c23ce2225776fa933"
+      },
+      {
+        "id": "ethics-guidelines-for-trustworthy-ai",
+        "slug": "ethics-guidelines-for-trustworthy-ai",
+        "historical_review_status": "verified",
+        "sha256_lf": "b597804b5e26528ccdfaeb5dab8bba765cf26ff7af9d36e36d8419102670fc0e"
+      },
+      {
+        "id": "european-civil-law-rules-in-robotics-study-2016",
+        "slug": "european-civil-law-rules-in-robotics-study-2016",
+        "historical_review_status": "verified",
+        "sha256_lf": "80bb0623f93eaa471e67c6fcda376e00260c84282342bbf5c7a27c5a0731d208"
+      },
+      {
+        "id": "european-council-conclusions-2017-10-19",
+        "slug": "european-council-conclusions-2017-10-19",
+        "historical_review_status": "verified",
+        "sha256_lf": "8c11724d7612ee5487eef40fe664e42c4d27a5dc5e26389b3d3a3b7e710cde97"
+      },
+      {
+        "id": "european-council-conclusions-2017-12-14",
+        "slug": "european-council-conclusions-2017-12-14",
+        "historical_review_status": "verified",
+        "sha256_lf": "46e5be59f922b7f0c243569d4c7b39ec6a0f62884595aaee98dd0098aa21fcb8"
+      },
+      {
+        "id": "final-transparency-guidelines-2026",
+        "slug": "final-transparency-guidelines-2026",
+        "historical_review_status": null,
+        "sha256_lf": "b3bf1b8b1ffba478965e4bab704c840dd8e90434115ab5118a01812ee796f8d6"
+      },
+      {
+        "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+        "slug": "fundamental-rights-implications-of-big-data-resolution-2017",
+        "historical_review_status": "verified",
+        "sha256_lf": "2190b14e3344c0a1030e1dcbce2346121add2ab15f15b44ccdac5eb86983e321"
+      },
+      {
+        "id": "gpai-code-final-copyright",
+        "slug": "gpai-code-final-copyright",
+        "historical_review_status": "verified",
+        "sha256_lf": "0b3735ef3d6c070a443fba64e855858ccd8934e33fc6cee4b675520302e760b2"
+      },
+      {
+        "id": "gpai-code-final-safety-security",
+        "slug": "gpai-code-final-safety-security",
+        "historical_review_status": "verified",
+        "sha256_lf": "e6c36d085063684df2c1d3f2a495910783a2577b3a3e55d9c0d9d45abadd2353"
+      },
+      {
+        "id": "gpai-code-final-transparency",
+        "slug": "gpai-code-final-transparency",
+        "historical_review_status": "verified",
+        "sha256_lf": "8055caddb0aa035fa7ef44dafab5786517017654a09355a27b855f547b87b805"
+      },
+      {
+        "id": "gpai-code-final",
+        "slug": "gpai-code-final",
+        "historical_review_status": "verified",
+        "sha256_lf": "c37c7f93bde55b83e3d5152ed96cf91599d6ab118df1d4f7663b89cca93d336c"
+      },
+      {
+        "id": "gpai-code-first-draft",
+        "slug": "gpai-code-first-draft",
+        "historical_review_status": "verified",
+        "sha256_lf": "aba3e2e3fa4dc26cba75fb37b5761705518708638a0db24380ee86fe8ce7baa5"
+      },
+      {
+        "id": "gpai-code-model-documentation-form-2025",
+        "slug": "gpai-code-model-documentation-form-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "9f8355c0ef7ce7d51081d0cf70c22e69734ffb5bb1ea65978d6c5e9b82f8b4c7"
+      },
+      {
+        "id": "gpai-code-second-draft",
+        "slug": "gpai-code-second-draft",
+        "historical_review_status": "verified",
+        "sha256_lf": "bcf2ff53d4856fafb2e50d3ea1c770ce8b034c672161a096963387b9285fcb84"
+      },
+      {
+        "id": "gpai-code-signatory-form-2025",
+        "slug": "gpai-code-signatory-form-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "2015f5e23b65913e94e7b555f28bae3aca6a935f1a01fc13f4cf1418674fc373"
+      },
+      {
+        "id": "gpai-code-third-draft-commitments",
+        "slug": "gpai-code-third-draft-commitments",
+        "historical_review_status": "verified",
+        "sha256_lf": "f35f4663bfce919f12586ba55155a92da05c5918c973cfeceb28cea7d5642626"
+      },
+      {
+        "id": "gpai-code-third-draft-copyright",
+        "slug": "gpai-code-third-draft-copyright",
+        "historical_review_status": "verified",
+        "sha256_lf": "791f9e16ad08cafca733ae5d64c12475a7c13f7968c2b577d97ca4a884da7e65"
+      },
+      {
+        "id": "gpai-code-third-draft-safety-security",
+        "slug": "gpai-code-third-draft-safety-security",
+        "historical_review_status": "verified",
+        "sha256_lf": "725bf940e57353175eb0e4f3ecfbfefef20832a0b64ae2debe46ed6ff27710de"
+      },
+      {
+        "id": "gpai-code-third-draft-transparency",
+        "slug": "gpai-code-third-draft-transparency",
+        "historical_review_status": "verified",
+        "sha256_lf": "0e0562b6b8915df7ffd9cd9a714165d5a34f40a831316ca7f88c43276e24b527"
+      },
+      {
+        "id": "gpai-code-third-draft",
+        "slug": "gpai-code-third-draft",
+        "historical_review_status": "verified",
+        "sha256_lf": "7c3e48e3ced73826fce6c9eb4f70162feb435d1e3653006ce02589fe51528de6"
+      },
+      {
+        "id": "gpai-provider-guidelines-2025",
+        "slug": "gpai-provider-guidelines-2025",
+        "historical_review_status": null,
+        "sha256_lf": "b2f48d9abf27f5613db9542e9e1bea2eab962410cd4ebebb7ee86cd8f7720e82"
+      },
+      {
+        "id": "gpai-provider-guidelines-approval-communication-2025",
+        "slug": "gpai-provider-guidelines-approval-communication-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "273154a81b8ac6b241a02b7835d643330717e7c74187c392c5015de6858e3ed7"
+      },
+      {
+        "id": "gpai-serious-incident-reporting-template-2025",
+        "slug": "gpai-serious-incident-reporting-template-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "46ba13f6839d44bc387695d18b06abfdc339b5a9013be38926bf924150183d23"
+      },
+      {
+        "id": "gpai-training-content-explanatory-notice-2025",
+        "slug": "gpai-training-content-explanatory-notice-2025",
+        "historical_review_status": null,
+        "sha256_lf": "de47b739353eed4486b5006fd92ad23bfa7247f932f7d6cc1b23d33db14997a7"
+      },
+      {
+        "id": "gpai-training-content-template-2025",
+        "slug": "gpai-training-content-template-2025",
+        "historical_review_status": null,
+        "sha256_lf": "474c97051ffeaca9bfbfa6851feaf32ffa236159a01d9c9ace6f2e01f861d18a"
+      },
+      {
+        "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+        "slug": "horizon-2020-specific-programme-decision-2013-743-eu",
+        "historical_review_status": "verified",
+        "sha256_lf": "b6d9e436fe4f151e45c119cae0ad2a881645d6f6d93ff443f4e190121aff8a3b"
+      },
+      {
+        "id": "prohibited-ai-practices-guidelines-2025",
+        "slug": "prohibited-ai-practices-guidelines-2025",
+        "historical_review_status": null,
+        "sha256_lf": "1bcda7a2bce55f518605c304cccea457a5a313db9c2805da82a63ad442ece879"
+      },
+      {
+        "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
+        "slug": "prohibited-ai-practices-guidelines-approval-communication-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "5af47f20b4c2bcd1e9e9416566cdac3cb905bc8cbb556eefaa37e46d309dbcad"
+      },
+      {
+        "id": "report-ai-safety-liability-2020",
+        "slug": "report-ai-safety-liability-2020",
+        "historical_review_status": "verified",
+        "sha256_lf": "b6be7c9ae62af7c4d922b65723f52d6e9e3c6a72b410933c5c87a739f782d25b"
+      },
+      {
+        "id": "scientific-panel-implementing-regulation-2025-454",
+        "slug": "scientific-panel-implementing-regulation-2025-454",
+        "historical_review_status": "verified",
+        "sha256_lf": "4d1c3f1c432a22d188af6e31016140de87f17658b4be49cf870b5245b3ee472f"
+      },
+      {
+        "id": "sixth-framework-programme-decision-1513-2002-ec",
+        "slug": "sixth-framework-programme-decision-1513-2002-ec",
+        "historical_review_status": "verified",
+        "sha256_lf": "a32b76bd98bba222aa0ee721b8e00f422b0a8a9776b40bd63d8cb3402ad9a5f7"
+      },
+      {
+        "id": "standardisation-request-c-2025-3871",
+        "slug": "standardisation-request-c-2025-3871",
+        "historical_review_status": null,
+        "sha256_lf": "f9250d8fb04f84c285bd4ec2cb28da181b4cd659c6a25cb93d73274782dfac43"
+      },
+      {
+        "id": "transparency-code-final-2026",
+        "slug": "transparency-code-final-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "e616af844ed9ba824d6727013e49aaeeece036e7f965abae746245a01f46ad55"
+      },
+      {
+        "id": "transparency-code-first-draft-2025",
+        "slug": "transparency-code-first-draft-2025",
+        "historical_review_status": "verified",
+        "sha256_lf": "5e128bf779cdcc1e94ebb4858aac562e5c87190404f33a881079a0cc7b50e93c"
+      },
+      {
+        "id": "transparency-code-second-draft-2026",
+        "slug": "transparency-code-second-draft-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "add24e10a1852a60153dd95517fb5be90cb0eb1cd850a210e63073b29dce50c0"
+      },
+      {
+        "id": "transparency-code-signatory-form-2026",
+        "slug": "transparency-code-signatory-form-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "25b73b2a02d087a8b9864319a357b3fa67b165169ebf2d70f66132d5d3b7c053"
+      },
+      {
+        "id": "transparency-guidelines-approval-communication-2026",
+        "slug": "transparency-guidelines-approval-communication-2026",
+        "historical_review_status": "verified",
+        "sha256_lf": "9bf85af9d3abd38fdc212109e1d2b2c846e0ef648d5a9ac7059b29875c7761bd"
+      },
+      {
+        "id": "white-paper-on-artificial-intelligence",
+        "slug": "white-paper-on-artificial-intelligence",
+        "historical_review_status": "verified",
+        "sha256_lf": "4a05d4ebef52ee2823c1869ef6bb331249589d112e1403f4bf42471f5dcde585"
+      }
+    ],
+    "protected_hash_encoding": {
+      "generated/public-data.json": "raw bytes",
+      "generated/eu-ai-policy-observatory.sqlite": "raw bytes",
+      "research/migrations/2026-09-05-expanded-evidence-review.json": "UTF-8 with LF line endings"
+    }
+  },
+  "authorizations": [
+    {
+      "scope": "Allow institutional_adoption for adopted institutional_position records only.",
+      "approval": "The user explicitly approved the two narrow compatibility corrections. Independent official date evidence remains required."
+    },
+    {
+      "scope": "Allow a version to reference an attachment manifestation only when that attachment has its own valid outgoing official parent relationship.",
+      "approval": "The user explicitly approved the two narrow compatibility corrections. Invalid, missing, unpublished and wrong-direction parents remain rejected."
+    }
+  ],
+  "starting_pending_ids": [
+    "ai-act-consolidated-2026-07-27",
+    "ai-act-council-adoption-note-st-9645-2024-rev-1",
+    "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+    "ai-act-council-coreper-general-approach-st-14336-2022",
+    "ai-act-council-final-compromise-st-13955-2022",
+    "ai-act-council-first-consolidated-compromise-st-10069-2022",
+    "ai-act-council-fourth-compromise-st-13102-2022",
+    "ai-act-council-general-approach-st-15698-2022",
+    "ai-act-council-second-compromise-st-11124-2022",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+    "ai-act-council-third-compromise-part-two-st-12549-2022",
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+    "ai-omnibus-council-adoption-note-st-10752-2026",
+    "ai-omnibus-council-adoption-statement-st-10752-add-2",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1",
+    "ai-omnibus-council-information-note-st-10599-2026",
+    "ai-standardisation-request-c-2023-3215",
+    "ai-system-definition-guidelines-2025",
+    "draft-high-risk-classification-guidelines-2026",
+    "draft-high-risk-classification-guidelines-annex-i-2026",
+    "draft-high-risk-classification-guidelines-annex-iii-2026",
+    "ecb-technical-working-document-con-2026-10",
+    "ep-position-p9-ta-2023-0236",
+    "final-transparency-guidelines-2026",
+    "gpai-provider-guidelines-2025",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025",
+    "prohibited-ai-practices-guidelines-2025",
+    "standardisation-request-c-2025-3871"
+  ],
+  "upgraded_ids": [
+    "ai-system-definition-guidelines-2025",
+    "ep-position-p9-ta-2023-0236",
+    "final-transparency-guidelines-2026",
+    "prohibited-ai-practices-guidelines-2025"
+  ],
+  "held_records": [
+    {
+      "document_id": "ai-act-consolidated-2026-07-27",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "The exact official publication day remains unestablished. Repository ingestion/creation and consolidation applicability dates have different meanings and cannot be substituted."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 9645/1/24 REV 1.",
+        "Current Public status, the 15 May issue date, the 17 May A-item package and the 21 May adoption event cannot substitute for publication_date."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 9645/24 ADD 1 REV 2.",
+        "The exact A-item citation and later adoption record corroborate identity and context only."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official publication or access-status event that directly makes the exact ST 14336/22 manifestation available to the public, plus role wording that distinguishes the GSC sender from Czech Presidency drafting responsibility."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official source establishing public release of exact ST 13955/22; the eventual role patch must identify Presidency origin rather than an undifferentiated Council author."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official page, list or access decision directly publishing the exact multilingual ST 10069/22 INIT manifestation."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official publication manifestation for exact ST 13102/22 and role evidence recorded as Presidency origin."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-15698-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official manifestation that directly publishes exact ST 15698/22, or an official metadata field identifying when that exact EUR-Lex/Consilium manifestation became public. Adoption on 6 December and current hosting remain insufficient."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated Council or Presidency publication directly linking exact ST 11124/22, with Presidency origin preserved in the role model."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official source directly publishing ST 12206/22 INIT; Presidency must remain the exact originator when the historical extension is completed."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official source that directly publishes the exact ST 12206/1/22 REV 1 manifestation, with Presidency origin retained."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "A dated official publication manifestation for exact ST 12549/22, with Presidency origin expressed precisely."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No exact dated official publication manifestation of the SEC package was recovered. The retained 23 April 2021 date is only evidenced as the Council cover-note date in the previous pass."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 INIT.",
+        "The 29 June adoption package and press release are adoption evidence for the legislative act, not publication evidence for this Council note."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 ADD 2.",
+        "The vote record and 29 June press release establish adoption context only."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 ADD 1.",
+        "The official mirror's Date of document and the A-item-list date are not publication dates."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-omnibus-council-information-note-st-10599-2026",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10599/26 INIT.",
+        "The 17 June cover date, 16 June Parliament adoption and 29 June Council adoption are distinct events and cannot establish publication_date for this information note."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No official source reviewed in this third pass supplied a separately evidenced publication date for exact C(2023)3215 / M/593."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "category": "missing_attachment_parent",
+      "reasons": [
+        "The retained attachment record still lacks an evidenced parent document identity. Neither the Register search nor the official library, consultation, press release, or Service Desk surfaced a separately issued parent by the cutoff."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "category": "missing_attachment_parent",
+      "reasons": [
+        "The exact attachment still lacks an evidenced parent document identity."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "category": "missing_attachment_parent",
+      "reasons": [
+        "The exact attachment still lacks an evidenced parent document identity."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "The exact attachment publication day remains unestablished. The March document date, April repository creation timestamp and parent opinion's OJ publication are not interchangeable."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No dated official publication manifestation of the exact current C(2025)7719 text was recovered; the Register itself marks that record not published."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No dated official publication manifestation for exact C(2025)8311 was recovered."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "The current DOCX's exact-version publication date remains unresolved after following the Service Desk card through the press release and current library download."
+      ],
+      "partial_correction": false
+    },
+    {
+      "document_id": "standardisation-request-c-2025-3871",
+      "category": "exact_publication_evidence",
+      "reasons": [
+        "No official source reviewed in this third pass supplied a separately evidenced publication date for exact C(2025)3871 / M/613."
+      ],
+      "partial_correction": false
+    }
+  ],
+  "record_audit": [
+    {
+      "document_id": "ai-act-consolidated-2026-07-27",
+      "partition": "eurlex-parliament",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/eurlex-parliament.json",
+      "handoff_record_index": 0,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:55:03.056Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/collection/eu-law/consleg.html?locale=en",
+        "https://publications.europa.eu/resource/celex/02024R1689-20260727?language=eng",
+        "https://op.europa.eu/en/web/cellar/cellar-data/metadata/metadata-notices",
+        "https://op.europa.eu/en/web/cellar/cellar-data/rss-and-atom-feeds"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-07-27",
+        "publication_date": "2026-07-27",
+        "record_level": "version",
+        "version_status": "consolidated",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-07-27",
+        "publication_date": "2026-07-27",
+        "record_level": "version",
+        "version_status": "consolidated",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "The exact official publication day remains unestablished. Repository ingestion/creation and consolidation applicability dates have different meanings and cannot be substituted."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "partition": "council-later",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-later.json",
+      "handoff_record_index": 0,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_9645_2024_REV_1",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=9645%2F24&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10036-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/CM-2909-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2024-05-15",
+        "publication_date": "2024-05-15",
+        "record_level": "supporting",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2024-05-15",
+        "publication_date": "2024-05-15",
+        "record_level": "supporting",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 9645/1/24 REV 1.",
+        "Current Public status, the 15 May issue date, the 17 May A-item package and the 21 May adoption event cannot substitute for publication_date."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "partition": "council-later",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-later.json",
+      "handoff_record_index": 1,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_9645_2024_ADD_1_REV_2",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=9645%2F24&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10036-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/CM-2909-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2024-05-15",
+        "publication_date": "2024-05-15",
+        "record_level": "attachment",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2024-05-15",
+        "publication_date": "2024-05-15",
+        "record_level": "attachment",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 9645/24 ADD 1 REV 2.",
+        "The exact A-item citation and later adoption record corroborate identity and context only."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 0,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=14336%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_14336_2022_INIT",
+        "https://data.consilium.europa.eu/doc/document/ST-14659-2022-INIT/en/pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-11-11",
+        "publication_date": "2022-11-11",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-11-11",
+        "publication_date": "2022-11-11",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official publication or access-status event that directly makes the exact ST 14336/22 manifestation available to the public, plus role wording that distinguishes the GSC sender from Czech Presidency drafting responsibility."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 1,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=13955%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_13955_2022_INIT"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-11-03",
+        "publication_date": "2022-11-03",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-11-03",
+        "publication_date": "2022-11-03",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official source establishing public release of exact ST 13955/22; the eventual role patch must identify Presidency origin rather than an undifferentiated Council author."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 2,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=10069%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_10069_2022_INIT"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-06-15",
+        "publication_date": "2022-06-15",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-06-15",
+        "publication_date": "2022-06-15",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official page, list or access decision directly publishing the exact multilingual ST 10069/22 INIT manifestation."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 3,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=13102%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_13102_2022_INIT"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-10-19",
+        "publication_date": "2022-10-19",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-10-19",
+        "publication_date": "2022-10-19",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official publication manifestation for exact ST 13102/22 and role evidence recorded as Presidency origin."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-general-approach-st-15698-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 4,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=15698%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_15698_2022_INIT",
+        "https://www.consilium.europa.eu/en/meetings/tte/2022/12/06/"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-12-06",
+        "publication_date": "2022-12-06",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-12-06",
+        "publication_date": "2022-12-06",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official manifestation that directly publishes exact ST 15698/22, or an official metadata field identifying when that exact EUR-Lex/Consilium manifestation became public. Adoption on 6 December and current hosting remain insufficient."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 5,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=11124%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_11124_2022_INIT"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-07-15",
+        "publication_date": "2022-07-15",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-07-15",
+        "publication_date": "2022-07-15",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated Council or Presidency publication directly linking exact ST 11124/22, with Presidency origin preserved in the role model."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 6,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12206%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_12206_2022_INIT"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-09-07",
+        "publication_date": "2022-09-16",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-09-07",
+        "publication_date": "2022-09-16",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official source directly publishing ST 12206/22 INIT; Presidency must remain the exact originator when the historical extension is completed."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 7,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12206%2F1%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12206%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_12206_2022_REV_1"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-09-16",
+        "publication_date": "2022-09-16",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-09-16",
+        "publication_date": "2022-09-16",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official source that directly publishes the exact ST 12206/1/22 REV 1 manifestation, with Presidency origin retained."
+      ]
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "partition": "council-2022",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-2022.json",
+      "handoff_record_index": 8,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:41:35Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?Title=&DocNumber=12549%2F22&ReplyStatus=0&PolicyArea=0&DateFrom=&DateTo=&RequestNumber=&RequestType=0&DeadlineExtended=-&ReplyDateFrom=&ReplyDateTo=&GeographicOrigin=0&ProfessionalActivity=0",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CONSIL:ST_12549_2022_INIT"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2022-09-23",
+        "publication_date": "2022-09-23",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2022-09-23",
+        "publication_date": "2022-09-23",
+        "record_level": "version",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "A dated official publication manifestation for exact ST 12549/22, with Presidency origin expressed precisely."
+      ]
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "partition": "eurlex-parliament",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/eurlex-parliament.json",
+      "handoff_record_index": 2,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:55:03.056Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=intcom%3ASEC%282021%29167",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=intcom%3ASEC%282021%29167",
+        "https://publications.europa.eu/resource/intcom/SEC(2021)167?language=eng",
+        "https://publications.europa.eu/resource/immc/SEC(2021)167",
+        "https://commission.europa.eu/law/law-making-process/regulatory-scrutiny-board_en",
+        "https://data.europa.eu/data/datasets/list-of-impact-assessments-and-the-accompanying-opinions-of-the-regulatory-scrutiny-board?locale=en"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2021-03-22",
+        "publication_date": "2021-04-23",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2021-03-22",
+        "publication_date": "2021-04-23",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No exact dated official publication manifestation of the SEC package was recovered. The retained 23 April 2021 date is only evidenced as the Council cover-note date in the previous pass."
+      ]
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "partition": "council-later",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-later.json",
+      "handoff_record_index": 2,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_INIT",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10752%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-11301-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-06-22",
+        "publication_date": "2026-06-22",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-06-22",
+        "publication_date": "2026-06-22",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 INIT.",
+        "The 29 June adoption package and press release are adoption evidence for the legislative act, not publication evidence for this Council note."
+      ]
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "partition": "council-later",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-later.json",
+      "handoff_record_index": 4,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_ADD_2",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10752%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-11301-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-06-24",
+        "publication_date": "2026-06-24",
+        "record_level": "attachment",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-06-24",
+        "publication_date": "2026-06-24",
+        "record_level": "attachment",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 ADD 2.",
+        "The vote record and 29 June press release establish adoption context only."
+      ]
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "partition": "council-later",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-later.json",
+      "handoff_record_index": 3,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_ADD_1",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10752%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-06-22",
+        "publication_date": "2026-06-22",
+        "record_level": "attachment",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-06-22",
+        "publication_date": "2026-06-22",
+        "record_level": "attachment",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 ADD 1.",
+        "The official mirror's Date of document and the A-item-list date are not publication dates."
+      ]
+    },
+    {
+      "document_id": "ai-omnibus-council-information-note-st-10599-2026",
+      "partition": "council-later",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/council-later.json",
+      "handoff_record_index": 5,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10599_2026_INIT",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10599%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-06-17",
+        "publication_date": "2026-06-17",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-06-17",
+        "publication_date": "2026-06-17",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10599/26 INIT.",
+        "The 17 June cover date, 16 June Parliament adoption and 29 June Council adoption are distinct events and cannot establish publication_date for this information note."
+      ]
+    },
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 0,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2023)3215&lang=en",
+        "https://ec.europa.eu/transparency/documents-register/?lang=EN",
+        "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/artificial-intelligence-rp2024",
+        "https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/artificial-intelligence-rp2025"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2023-05-22",
+        "publication_date": "2023-05-22",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2023-05-22",
+        "publication_date": "2023-05-22",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No official source reviewed in this third pass supplied a separately evidenced publication date for exact C(2023)3215 / M/593."
+      ]
+    },
+    {
+      "document_id": "ai-system-definition-guidelines-2025",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 1,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "ready",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-definition_en.pdf",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/112455",
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)5053&lang=en",
+        "https://digital-strategy.ec.europa.eu/en/library/commission-guidelines-definition-artificial-intelligence-system-facilitate-first-ai-act-rules-application"
+      ],
+      "changed_fields": [
+        "updated_at",
+        "publication_date",
+        "institution_roles",
+        "source_ids",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates",
+        "historical_review_status"
+      ],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2025-07-29",
+        "publication_date": "2025-07-29",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": "verified",
+        "document_date": "2025-07-29",
+        "publication_date": "2026-05-06",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Codex (AI-assisted evidence review)"
+      },
+      "hold_category": null,
+      "hold_reasons": []
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 2,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128559",
+        "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+        "https://ai-act-service-desk.ec.europa.eu/en/guideline-explorer"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-05-19",
+        "publication_date": "2026-05-19",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-05-19",
+        "publication_date": "2026-05-19",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "missing_attachment_parent",
+      "hold_reasons": [
+        "The retained attachment record still lacks an evidenced parent document identity. Neither the Register search nor the official library, consultation, press release, or Service Desk surfaced a separately issued parent by the cutoff."
+      ]
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 3,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128560",
+        "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+        "https://ai-act-service-desk.ec.europa.eu/en/guideline-explorer"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-05-19",
+        "publication_date": "2026-05-19",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-05-19",
+        "publication_date": "2026-05-19",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "missing_attachment_parent",
+      "hold_reasons": [
+        "The exact attachment still lacks an evidenced parent document identity."
+      ]
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 4,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+        "https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/128561",
+        "https://ai-act-service-desk.ec.europa.eu/de/node/1003",
+        "https://ai-act-service-desk.ec.europa.eu/en/guideline-explorer"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-05-19",
+        "publication_date": "2026-05-19",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-05-19",
+        "publication_date": "2026-05-19",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "missing_attachment_parent",
+      "hold_reasons": [
+        "The exact attachment still lacks an evidenced parent document identity."
+      ]
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "partition": "eurlex-parliament",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/eurlex-parliament.json",
+      "handoff_record_index": 1,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:55:03.056Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=ecb%3ATWD-2026-0010",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=ecb%3ATWD-2026-0010",
+        "https://publications.europa.eu/resource/ecb/TWD-2026-0010?language=eng",
+        "https://eur-lex.europa.eu/eli/C/2026/2285/oj/eng/pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-03-13",
+        "publication_date": "2026-03-13",
+        "record_level": "attachment",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2026-03-13",
+        "publication_date": "2026-03-13",
+        "record_level": "attachment",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "The exact attachment publication day remains unestablished. The March document date, April repository creation timestamp and parent opinion's OJ publication are not interchangeable."
+      ]
+    },
+    {
+      "document_id": "ep-position-p9-ta-2023-0236",
+      "partition": "eurlex-parliament",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/eurlex-parliament.json",
+      "handoff_record_index": 3,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:55:03.056Z",
+      "proposed_decision": "upgrade",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236"
+      ],
+      "changed_fields": [
+        "updated_at",
+        "institution_roles",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "historical_review_status",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates"
+      ],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2023-06-14",
+        "publication_date": "2024-01-23",
+        "record_level": "principal",
+        "version_status": "revised",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": "verified",
+        "document_date": "2023-06-14",
+        "publication_date": "2024-01-23",
+        "record_level": "principal",
+        "version_status": "revised",
+        "reviewed_by": "Codex (AI-assisted evidence review)"
+      },
+      "hold_category": null,
+      "hold_reasons": []
+    },
+    {
+      "document_id": "final-transparency-guidelines-2026",
+      "partition": "eurlex-parliament",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/eurlex-parliament.json",
+      "handoff_record_index": 4,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:55:03.056Z",
+      "proposed_decision": "upgrade",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/131214",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/131215"
+      ],
+      "changed_fields": [
+        "updated_at",
+        "record_level",
+        "official_reference",
+        "version_label",
+        "version_status",
+        "institution_roles",
+        "source_ids",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates",
+        "historical_review_status"
+      ],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2026-07-20",
+        "publication_date": "2026-07-20",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": "verified",
+        "document_date": "2026-07-20",
+        "publication_date": "2026-07-20",
+        "record_level": "attachment",
+        "version_status": "draft",
+        "reviewed_by": "Codex (AI-assisted evidence review)"
+      },
+      "hold_category": null,
+      "hold_reasons": []
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 5,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)7719&lang=en",
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
+        "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-ai-act",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/118340"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2025-07-18",
+        "publication_date": "2025-07-18",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2025-07-18",
+        "publication_date": "2025-07-18",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No dated official publication manifestation of the exact current C(2025)7719 text was recovered; the Register itself marks that record not published."
+      ]
+    },
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 6,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)8311&lang=en",
+        "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/118480",
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2025-07-24",
+        "publication_date": "2025-07-24",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2025-07-24",
+        "publication_date": "2025-07-24",
+        "record_level": "supporting",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No dated official publication manifestation for exact C(2025)8311 was recovered."
+      ]
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 7,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-presents-template-general-purpose-ai-model-providers-summarise-data-used-train-their",
+        "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/118578"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2025-07-24",
+        "publication_date": "2025-07-24",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2025-07-24",
+        "publication_date": "2025-07-24",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "The current DOCX's exact-version publication date remains unresolved after following the Service Desk card through the press release and current library download."
+      ]
+    },
+    {
+      "document_id": "prohibited-ai-practices-guidelines-2025",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 8,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "ready",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+        "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-prohibited_en.pdf",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/112367",
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)5052&lang=en",
+        "https://digital-strategy.ec.europa.eu/en/library/commission-guidelines-prohibited-artificial-intelligence-practices-established-ai-act"
+      ],
+      "changed_fields": [
+        "updated_at",
+        "publication_date",
+        "institution_roles",
+        "source_ids",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates",
+        "historical_review_status"
+      ],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2025-07-29",
+        "publication_date": "2025-07-29",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": "verified",
+        "document_date": "2025-07-29",
+        "publication_date": "2026-05-06",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Codex (AI-assisted evidence review)"
+      },
+      "hold_category": null,
+      "hold_reasons": []
+    },
+    {
+      "document_id": "standardisation-request-c-2025-3871",
+      "partition": "commission",
+      "handoff_path": "research/staging/2026-09-05-review-continuation/commission.json",
+      "handoff_record_index": 9,
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:45:17Z",
+      "proposed_decision": "hold",
+      "decision": "hold",
+      "checked_urls": [
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)3871&lang=en",
+        "https://ec.europa.eu/transparency/documents-register/?lang=EN",
+        "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/notification-system_en",
+        "https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2026-03/cnect_rollingplan_ict_2026_spr_pr1.pdf"
+      ],
+      "changed_fields": [],
+      "before": {
+        "historical_review_status": null,
+        "document_date": "2025-06-23",
+        "publication_date": "2025-06-23",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "after": {
+        "historical_review_status": null,
+        "document_date": "2025-06-23",
+        "publication_date": "2025-06-23",
+        "record_level": "principal",
+        "version_status": "final",
+        "reviewed_by": "Yichen Hao"
+      },
+      "hold_category": "exact_publication_evidence",
+      "hold_reasons": [
+        "No official source reviewed in this third pass supplied a separately evidenced publication date for exact C(2025)3871 / M/613."
+      ]
+    }
+  ],
+  "document_changes": [
+    {
+      "path": "data/documents/final-transparency-guidelines-2026.json",
+      "before_sha256_lf": "b3bf1b8b1ffba478965e4bab704c840dd8e90434115ab5118a01812ee796f8d6",
+      "after_sha256_lf": "88edf44a882fac05414dca9edef62b3f841f10193e929f4338ab7f99cc8b8884",
+      "changed_fields": [
+        "updated_at",
+        "record_level",
+        "official_reference",
+        "version_label",
+        "version_status",
+        "institution_roles",
+        "source_ids",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates",
+        "historical_review_status"
+      ]
+    },
+    {
+      "path": "data/documents/ep-position-p9-ta-2023-0236.json",
+      "before_sha256_lf": "bc3a207eb7469b75718fe04a8d5718ba109a1e686f7c39f4a24175cdb87f4a9c",
+      "after_sha256_lf": "b94257fa19f77c8fc69e135af01430cdac2e8cb80275641d3b2c4e2b029ddf1d",
+      "changed_fields": [
+        "updated_at",
+        "institution_roles",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "historical_review_status",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates"
+      ]
+    },
+    {
+      "path": "data/documents/ai-system-definition-guidelines-2025.json",
+      "before_sha256_lf": "b0510c7a51b3d6b3a94641b6d0d752ccba66e13472975d4844ebc4f47905bcff",
+      "after_sha256_lf": "b760e58f440372b894271d2788bd441ef2a05bede532fcadf26c20863b0b6bff",
+      "changed_fields": [
+        "updated_at",
+        "publication_date",
+        "institution_roles",
+        "source_ids",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates",
+        "historical_review_status"
+      ]
+    },
+    {
+      "path": "data/documents/prohibited-ai-practices-guidelines-2025.json",
+      "before_sha256_lf": "1bcda7a2bce55f518605c304cccea457a5a313db9c2805da82a63ad442ece879",
+      "after_sha256_lf": "3acdcf2fc7502042f3de6130d1d6e70686cbc3927db9af11740e16de1be5285c",
+      "changed_fields": [
+        "updated_at",
+        "publication_date",
+        "institution_roles",
+        "source_ids",
+        "corpus_assessment",
+        "temporal_collection",
+        "relevance_class",
+        "document_date_kind",
+        "date_evidence",
+        "classification_evidence",
+        "bibliographic_authors",
+        "additional_dates",
+        "historical_review_status"
+      ]
+    }
+  ],
+  "source_changes": [
+    {
+      "source_id": "commission-newsroom-131214-pdf",
+      "path": "data/sources/commission-newsroom-131214-pdf.json",
+      "operation": "add",
+      "before_sha256_lf": null,
+      "after_sha256_lf": "9bcad73231c575a4c4213f2b4ce9c599fb41ff94d03479c5d8c5de8f91ec7904"
+    },
+    {
+      "source_id": "commission-newsroom-131215-pdf",
+      "path": "data/sources/commission-newsroom-131215-pdf.json",
+      "operation": "add",
+      "before_sha256_lf": null,
+      "after_sha256_lf": "a7a25cd2aa5e9ccdfde5f125fa1fa201fdb59bf5c064fdd39de16a2f3d1ad715"
+    },
+    {
+      "source_id": "transparency-guidelines-final-commission",
+      "path": "data/sources/transparency-guidelines-final-commission.json",
+      "operation": "update",
+      "before_sha256_lf": "a4fa958fc2ec74e6911e678b484d873dc0f99c3625bae1c7c23a435f40761d2c",
+      "after_sha256_lf": "182968cf7cf28adee79a5d2791dcc0c8bdf251d64f7f61b9eeaee2fb48d47fbc"
+    },
+    {
+      "source_id": "ep-p9-ta-2023-0236",
+      "path": "data/sources/ep-p9-ta-2023-0236.json",
+      "operation": "update",
+      "before_sha256_lf": "d1a81b0676c2369e2de4f2792527964c434abf9a792798dce424252055fa77f5",
+      "after_sha256_lf": "92953585b21a73d9de5d7cabe749cfe19fe36495d09f97c81e5e1c2729c8b7de"
+    },
+    {
+      "source_id": "ai-act-service-desk-resources-page-1-2026",
+      "path": "data/sources/ai-act-service-desk-resources-page-1-2026.json",
+      "operation": "add",
+      "before_sha256_lf": null,
+      "after_sha256_lf": "6ab9420fd0e411dc20e875a5b32c91affb3b0f054701a2be589f5cbb4725f528"
+    },
+    {
+      "source_id": "ai-act-service-desk-definition-c5053-pdf",
+      "path": "data/sources/ai-act-service-desk-definition-c5053-pdf.json",
+      "operation": "add",
+      "before_sha256_lf": null,
+      "after_sha256_lf": "b6fdb51992f18e8188ba2d7f167eeb197dd05c2fb134422f3a1c4d519ce187d7"
+    },
+    {
+      "source_id": "ai-act-service-desk-prohibited-c5052-pdf",
+      "path": "data/sources/ai-act-service-desk-prohibited-c5052-pdf.json",
+      "operation": "add",
+      "before_sha256_lf": null,
+      "after_sha256_lf": "4195e864b2d7f9183d06c2e2dd0022f34f450e3aef5da5795a6fb7c3d9974c11"
+    }
+  ],
+  "relationship_changes": [
+    {
+      "path": "data/relationships/final-transparency-guidelines-annex-to-approval-communication.json",
+      "operation": "add",
+      "before_sha256_lf": null,
+      "after_sha256_lf": "d652ef3d3cf06ddbaf051c65d8c3dbfaba4276000c219e4e2cd1e3fe50db9ec2"
+    },
+    {
+      "path": "data/relationships/final-transparency-guidelines-revise-draft.json",
+      "operation": "update",
+      "before_sha256_lf": "fce1ddfbbf54ea48c511cb973bf3115253540f444a8f3fba81f4e6fe414cdc45",
+      "after_sha256_lf": "e1fd71b1c60cd5d1f18a351b0dd7d684df2b9ffcb96c923135cc490ab5aca444"
+    }
+  ],
+  "controller_adjustments": [
+    "Integrated only four evidence-ready records. All 101 previously verified document files and all 131 ID/slug pairs remain unchanged.",
+    "Added exact card-level HTML datetime locators to the Service Desk date evidence and clarified that later manifestation dates are not first-ever publication claims.",
+    "Used actual controller review timestamps for newly integrated data; source download timestamps remain the observed retrieval times.",
+    "The Council-later handoff describes its own unchanged baseline projection of 101/30, not the combined third-pass result.",
+    "The non-binding transparency artifact remains a content-approved draft annex; its legacy final-prefixed stable slug does not assert formal adoption.",
+    "Independent review suggested explicitly regression-testing non_binding status and absence of an adopter for the transparency annex; those assertions were added and passed.",
+    "Adjusted current corpus assertions from 95 to 96 relationships, 49 to 48 principal documents, and 100 to 101 linked map nodes because the transparency annex now has its explicitly evidenced approval-communication parent. Added assertions for that exact new graph node and edge. Historical ledger totals were not rewritten."
+  ],
+  "tdd": {
+    "compatibility_red": "3 tests failed for the existing adoption/version rules; 6 passed in the focused initial run.",
+    "compatibility_green": "86 passed after narrow corrections, including missing/unofficial/incoming-only parent and selected-subset checks.",
+    "admission_red": "Both initial admissions failed as legacy_review_pending before data integration; both Service Desk admissions likewise failed before data integration.",
+    "admission_green": "4 passed after the four evidence admissions.",
+    "ledger_red": "Both chronological ledger tests failed with FileNotFoundError before the continuation ledger existed.",
+    "ledger_green": "21 passed for all continuation and earlier-audit tests.",
+    "full_suite_red": "The first full run had five stale corpus-fixture failures: four old relationship totals and one outdated final-status expectation. A later Node run exposed old graph totals. Only evidence-supported current fixture values were updated; historical ledger counts were preserved."
+  },
+  "expected_after": {
+    "published_documents": 131,
+    "historical_review": {
+      "verified": 105,
+      "legacy_review_pending": 26
+    },
+    "upgraded": 4,
+    "held": 26,
+    "hold_categories": {
+      "exact_publication_evidence": 23,
+      "missing_attachment_parent": 3
+    }
+  },
+  "release_status": "Local only. No commit, push, PR, merge or deployment was requested or performed during this continuation.",
+  "scope_note": "All 30 starting holds received an additional bounded official-source review, but 26 unresolved evidence holds remain. Completion of search work is not completion of metadata verification or evidence of EU-wide completeness.",
+  "updated_at": "2026-09-05T21:06:11.807Z"
+}

@@ -67,7 +67,7 @@ Formal official publication remains the eligibility threshold, not final legal a
 Retain separate `document_date` and `publication_date` fields. Add an explicit `document_date_kind` with one of these meanings:
 
 - `official_act_date`: the date identified in the official legal act's heading or document metadata; supporting evidence explains whether this is a signature or adoption date;
-- `institutional_adoption`: the evidenced adoption date of a resolution, opinion or conclusions;
+- `institutional_adoption`: the evidenced adoption date of a resolution, opinion, conclusions or an adopted institutional position;
 - `document_issue`: the issue date on a communication, report, study, draft or other independently citable version;
 - `publication`: an evidenced official publication date used when no more specific document/issue date is available; or
 - `consolidation`: the officially identified date of a consolidated version.
@@ -85,6 +85,8 @@ Application, entry into force, withdrawal and comparable regulatory milestones r
 A resolution adopted in 2017 and reproduced in the OJ in 2018 remains one historical document when both publications represent the same version. Record the distinct dates and source manifestations; do not manufacture a contemporary duplicate. A substantively revised, independently citable version issued after 2018 is a separate contemporary document with an evidenced version relationship to its predecessor.
 
 An annex must be independently citable or contain materially distinct research content to justify its own document record. Public versions and attachments require an appropriate, evidenced parent/version relationship. Where identity or the necessary relationship cannot be established, the unresolved candidate remains pending rather than acquiring a guessed link.
+
+**Narrow compatibility amendment approved on 5 September 2026:** An `institutional_position` may use `institutional_adoption` only with `legal_status: adopted` and the existing independent official date evidence. A published version may have an evidenced incoming or outgoing `revises`/`version_of` relationship to an attachment manifestation when that attachment has its own valid outgoing `annex_to`/`part_of` relationship to a uniquely resolved published document. A revision relationship alone does not supply an attachment parent. Unofficial evidence, missing or unpublished endpoints, self-links and generic incoming child links remain invalid. These refinements represent adopted Parliament amendments and changes in a guideline's publication form without relabelling factual dates or weakening publication evidence requirements. The user expressly approved both compatibility corrections during the remaining-record review.
 
 ## 6. Institutional scope and provenance
 

@@ -1,0 +1,917 @@
+{
+  "batch_id": "2026-09-05-remaining-review-council-later",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T19:52:01Z",
+  "cutoff": "2026-09-04",
+  "records": [
+    {
+      "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=9645%2F24&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://www.consilium.europa.eu/en/meetings/mpo/2024/5/coreper-i-%28337335%29/",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf"
+      ],
+      "observed_locators": [
+        "ST 9645/1/24 REV 1, p. 1 masthead: Brussels, 15 May 2024; 'I/A' item note; From General Secretariat of the Council; To Permanent Representatives Committee/Council.",
+        "ST 9645/1/24 REV 1, p. 2, points 7-9: Coreper is asked to confirm agreement and suggest that the Council approve; publication in the Official Journal is conditional on later Council approval.",
+        "Official Public Register result: Public; ST 9645 2024 REV 1; 15/05/2024; Originator General Secretariat of the Council; direct PDF link.",
+        "Coreper I related-documents page is dynamic and includes later-dated documents, so its displayed 15/05/2024 label cannot be treated as an archived release timestamp."
+      ],
+      "evidence": [
+        "The exact document is an adoption cover note issued by the General Secretariat, not the adopted regulation and not a Council-authored policy position.",
+        "The 15 May date is independently corroborated as the document date and meeting date, but no checked official field labels it as the publication date of this exact manifestation.",
+        "ST 10172/24 proves the Council later adopted PE-CONS 24/24 on 21 May and identifies this note, but it does not document when ST 9645/1/24 REV 1 itself was first published."
+      ],
+      "corrections": [
+        "Replace the generic Council author role with council-of-the-european-union / cover_note_sender, evidenced by the General Secretariat masthead.",
+        "Retain document_date 2024-05-15 only as document_issue, not as a publication date or adoption date."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation or explicit register publication field was found for this exact REV 1 note. Current public availability, document date and meeting date cannot substitute for publication_date."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=9645%2F24&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://www.consilium.europa.eu/en/meetings/mpo/2024/5/coreper-i-%28337335%29/",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf"
+      ],
+      "observed_locators": [
+        "ST 9645/24 ADD 1 REV 2, p. 1 masthead: Brussels, 15 May 2024; Statements; From General Secretariat of the Council.",
+        "ST 9645/24 ADD 1 REV 2, pp. 1-4: separately headed Statement by France and Statement by Austria.",
+        "Official Public Register result: Public; ST 9645 2024 ADD 1 REV 2; 15/05/2024; Originator General Secretariat of the Council; direct PDF link.",
+        "ST 10172/24, AI Act adoption item: 9645/1/24 REV 1 + ADD 1 REV 2 and PE-CONS 24/24; statements are set out in the annex."
+      ],
+      "evidence": [
+        "The exact addendum is attached to the adoption note and contains national statements authored by France and Austria.",
+        "The Council/General Secretariat distributes the wrapper; it is not the substantive author of the two statements.",
+        "The register corroborates the issue date and present public status but supplies no independently labelled publication date."
+      ],
+      "corrections": [
+        "Remove any generic Council author attribution; France and Austria are the identified statement authors, while the Council is at most official host/publisher of the wrapper.",
+        "Retain no eu_institution_authored provenance tag for the national statements; officially_published remains supportable only after an exact publication date is established."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation or explicit register publication field was found for this exact ADD 1 REV 2 manifestation."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-pe-cons-24-2024",
+      "decision": "upgrade",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-24-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/voting-results/?meetingid=4024",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf"
+      ],
+      "observed_locators": [
+        "PE-CONS 24/24, cover and pp. 1-3: issue date 14 May 2024; European Parliament and Council; procedure 2021/0106(COD); Parliament position of 13 March 2024 and Council decision placeholder.",
+        "Council press release header: 21 May 2024 10:17; Today the Council approved the AI act; related-document link 'Regulation laying down harmonised rules on artificial intelligence ... 21 May 2024' resolves exactly to PE-24-2024-INIT/en/pdf.",
+        "Council voting-results record meeting 4024: document no. 24/24, date 21/05/2024, action Adoption of the legislative act, approved.",
+        "ST 10172/24, p. 2: Council approved Parliament's first-reading position and the proposed act was adopted under Article 294(4) TFEU."
+      ],
+      "evidence": [
+        "The dated official Council release directly publishes the exact PE-CONS 24/24 INIT PDF and separately establishes public release on 21 May 2024.",
+        "The voting result and Council draft minutes establish Council adoption of this PE-CONS version on 21 May; the exact PDF identifies Parliament's 13 March position.",
+        "The full text makes AI the central subject and applies horizontally, supporting direct_ai_substantive and general_cross_sector.",
+        "Existing version_of lineage to the final AI Act and incoming REV 1 revision are supported by the exact identifiers."
+      ],
+      "corrections": [
+        "Retain the 14 May cover date as document_issue; record the 21 May Council adoption separately as an additional institutional_adoption date.",
+        "Change publication_date from unsupported 14 May to the dated 21 May official Council release that directly links this exact PDF.",
+        "Add evidence to both adopter roles and every retained provenance/sector classification."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:52:01Z",
+        "document_date": "2024-05-14",
+        "publication_date": "2024-05-21",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "council-tte-draft-minutes-2024-ai-act",
+            "evidence_locator": "ST 10172/24, p. 2, AI Act item: Council approved the European Parliament's position at first reading and the proposed act was adopted under Article 294(4) TFEU."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "council-ai-act-adoption-release-2024",
+            "evidence_locator": "Official release, 21 May 2024 10:17: 'Today the Council approved' the AI act; its dated related-document link resolves to the exact PE-CONS 24/24 INIT PDF."
+          }
+        ],
+        "source_ids": [
+          "council-pe-cons-24-2024",
+          "council-ai-act-adoption-release-2024",
+          "council-tte-draft-minutes-2024-ai-act"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Formal legislative-act version prepared after Parliament's first reading and adopted by the Council before signature.",
+          "researcher_notes": "The primary official Council release directly linked PE-CONS 24/24 on 21 May 2024. The 14 May cover date remains the exact version's document-issue date; the 21 May Council adoption is recorded separately.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:52:01Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "council-pe-cons-24-2024",
+            "locator": "PE-CONS 24/24 cover: Brussels, 14 May 2024.",
+            "meaning": "Establishes 2024-05-14 as the issue date of this exact INIT version; the later Council adoption remains a separate event."
+          },
+          "publication_date": {
+            "source_id": "council-ai-act-adoption-release-2024",
+            "locator": "Dated official release, related documents: 'Regulation laying down harmonised rules on artificial intelligence (artificial intelligence act), 21 May 2024'; link target is PE-24-2024-INIT/en/pdf.",
+            "meaning": "Establishes 2024-05-21 as an official dated publication manifestation of this exact version, separately from its 14 May issue date."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-pe-cons-24-2024",
+            "locator": "PE-CONS 24/24, Articles 1, 5 and 6 and Annex III: horizontal rules, prohibited AI practices and high-risk AI systems.",
+            "rationale": "Artificial intelligence regulation is the document's central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-pe-cons-24-2024",
+            "locator": "PE-CONS 24/24, Article 1 and Annex III apply across public and private uses and multiple named domains.",
+            "rationale": "The act is a horizontal cross-sector AI framework."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "council-tte-draft-minutes-2024-ai-act",
+            "locator": "ST 10172/24, p. 2 identifies Parliament's first-reading position, Council approval and adoption under Article 294(4) TFEU.",
+            "rationale": "The exact act version is a product of EU co-legislators."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "joint_institutional",
+            "source_id": "council-tte-draft-minutes-2024-ai-act",
+            "locator": "ST 10172/24, p. 2 identifies both Parliament's position and Council approval in the ordinary legislative procedure.",
+            "rationale": "Parliament and Council jointly adopted the legislative act."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "council-ai-act-adoption-release-2024",
+            "locator": "Official Council release dated 21 May 2024 directly links the exact PE-CONS 24/24 INIT PDF.",
+            "rationale": "A dated official institution page publishes the exact version."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2024-05-21",
+            "precision": "day",
+            "source_id": "council-ai-act-adoption-release-2024",
+            "locator": "Official Council release dated 21 May 2024 states that the Council approved the AI act that day and directly links this INIT version."
+          },
+          {
+            "kind": "institutional_adoption",
+            "value": "2024-03-13",
+            "precision": "day",
+            "source_id": "council-pe-cons-24-2024",
+            "locator": "PE-CONS 24/24, printed p. 2 (PDF p. 3), ordinary-legislative-procedure footnote: Position of the European Parliament of 13 March 2024."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ai-act-pe-cons-24-2024-rev-1",
+      "decision": "upgrade",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-24-2024-REV-1/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/voting-results/?meetingid=4024"
+      ],
+      "observed_locators": [
+        "PE-CONS 24/1/24 REV 1 cover and enactment text: Brussels, 13 June 2024; Regulation of the European Parliament and of the Council; p. 375 joint signature block.",
+        "EUR-Lex 32024R1689 heading and identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024; act of 13 June 2024.",
+        "EUR-Lex official metadata and OJ text identify Parliament and Council as the authors/co-legislators."
+      ],
+      "evidence": [
+        "EUR-Lex explicitly identifies this exact REV 1 reference as the OJ act, curing both exact-manifestation publication and adopter attribution gaps.",
+        "The full text directly regulates AI across sectors and the existing revises/version_of lineage is exact and coherent."
+      ],
+      "corrections": [
+        "Change publication_date from unsupported 13 June to OJ publication on 12 July 2024.",
+        "Retain 13 June as official_act_date and add evidence to both adopter roles and all retained classifications."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:52:01Z",
+        "publication_date": "2024-07-12",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ai-act-eur-lex",
+            "evidence_locator": "EUR-Lex identity block names PE/24/2024/REV/1 and the OJ text is Regulation (EU) 2024/1689 of the European Parliament and of the Council."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "ai-act-eur-lex",
+            "evidence_locator": "EUR-Lex identity block names PE/24/2024/REV/1 and the OJ text is Regulation (EU) 2024/1689 of the European Parliament and of the Council."
+          }
+        ],
+        "source_ids": [
+          "council-pe-cons-24-2024-rev-1",
+          "ai-act-eur-lex",
+          "council-ai-act-adoption-release-2024"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Revised signed legislative-act text dated 13 June 2024 and explicitly identified by EUR-Lex as PE/24/2024/REV/1.",
+          "researcher_notes": "Kept as the exact REV 1 version while using the independently evidenced OJ publication date of the same exact PE identifier.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:52:01Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex identity block names PE/24/2024/REV/1; OJ heading states Regulation (EU) 2024/1689 of 13 June 2024.",
+            "meaning": "Establishes 2024-06-13 as the official act/signature date for this exact REV 1 identity."
+          },
+          "publication_date": {
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024.",
+            "meaning": "Establishes OJ publication of the exact REV 1 identity on 2024-07-12."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-pe-cons-24-2024-rev-1",
+            "locator": "PE-CONS 24/1/24 REV 1, Articles 1, 5 and 6 and Annex III: horizontal rules, prohibited AI practices and high-risk AI systems.",
+            "rationale": "Artificial intelligence regulation is the document's central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-pe-cons-24-2024-rev-1",
+            "locator": "PE-CONS 24/1/24 REV 1, Article 1 and Annex III apply across public and private uses and multiple named domains.",
+            "rationale": "The act is a horizontal cross-sector AI framework."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex exact identity PE/24/2024/REV/1 and OJ heading identify the European Parliament and Council.",
+            "rationale": "The exact act is authored by EU co-legislators."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "joint_institutional",
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex exact identity PE/24/2024/REV/1 and OJ heading identify both Parliament and Council.",
+            "rationale": "The act is jointly institutional."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex exact identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024.",
+            "rationale": "The exact REV 1 identity is officially published in the OJ."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2024-05-21",
+            "precision": "day",
+            "source_id": "council-ai-act-adoption-release-2024",
+            "locator": "Official Council release dated 21 May 2024 states that the Council approved the AI act that day."
+          },
+          {
+            "kind": "oj_publication",
+            "value": "2024-07-12",
+            "precision": "day",
+            "source_id": "ai-act-eur-lex",
+            "locator": "EUR-Lex identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ai-act-provisional-agreement-st-5662-2024",
+      "decision": "upgrade",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-5662-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2023/12/09/artificial-intelligence-act-council-and-parliament-strike-a-deal-on-the-first-worldwide-rules-for-ai/",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=5662%2F24&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC"
+      ],
+      "observed_locators": [
+        "ST 5662/24, p. 1: Brussels, 26 January 2024; note From Presidency To Permanent Representatives Committee; analysis of final compromise text with a view to agreement.",
+        "Official Public Register result: Public; ST 5662 2024 INIT; 26/01/2024; Originator Presidency; Addressee Permanent Representatives Committee; meeting date 02/02/2024; direct PDF link.",
+        "Council press release: 'This press release was updated on 2 February 2024 to add the final compromise text with a view to agreement'; related-document link labelled 2 February 2024 resolves exactly to ST-5662-2024-INIT/en/pdf."
+      ],
+      "evidence": [
+        "The exact PDF's issue date, Presidency originator and full AI compromise substance were independently checked.",
+        "The Council's explicit update note and exact direct link establish a dated official publication manifestation on 2 February 2024.",
+        "The record's version_of relationship to the AI Act proposal is supported by the procedure number, subject and attached final compromise text."
+      ],
+      "corrections": [
+        "Change publication_date from the 26 January issue date to the explicitly evidenced 2 February 2024 release.",
+        "Replace Council publisher plus Parliament contributor with Council author, representing the officially recorded Presidency originator; no evidence attributes authorship of this Council-prepared manifestation to Parliament."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:52:01Z",
+        "publication_date": "2024-02-02",
+        "institution_roles": [
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "author",
+            "evidence_source_id": "council-st-5662-2024-register",
+            "evidence_locator": "Official Public Register exact result for ST 5662 2024 INIT lists Originator: Presidency and Addressee: Permanent Representatives Committee."
+          }
+        ],
+        "source_ids": [
+          "council-st-5662-2024",
+          "council-st-5662-2024-register",
+          "council-ai-act-provisional-agreement-release-2024"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "negotiation",
+          "inclusion_rationale": "Official Presidency text of the final interinstitutional compromise before formal first-reading adoption.",
+          "researcher_notes": "The PDF was issued 26 January; the Council release explicitly records that it added the exact compromise text on 2 February 2024. Institutional attribution follows the register's Presidency originator field rather than treating negotiated content as Parliament authorship.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:52:01Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "council-st-5662-2024",
+            "locator": "ST 5662/24 cover: Brussels, 26 January 2024; final compromise text with a view to agreement.",
+            "meaning": "Establishes 2024-01-26 as the issue date of this exact version."
+          },
+          "publication_date": {
+            "source_id": "council-ai-act-provisional-agreement-release-2024",
+            "locator": "Official release notice says it was updated on 2 February 2024 to add the final compromise text; the dated link resolves to ST-5662-2024-INIT/en/pdf.",
+            "meaning": "Establishes 2024-02-02 as the dated official publication manifestation of the exact ST 5662/24 version."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-st-5662-2024",
+            "locator": "ST 5662/24, note subject and annex: final compromise text for the Artificial Intelligence Act, including AI-system scope, prohibited practices and high-risk rules.",
+            "rationale": "AI regulation is the document's central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-st-5662-2024",
+            "locator": "ST 5662/24 annex applies horizontal AI rules across the Union market and multiple public/private domains.",
+            "rationale": "The compromise is cross-sector rather than confined to one economic sector."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "council-st-5662-2024-register",
+            "locator": "Official Public Register exact result lists Originator: Presidency for ST 5662 2024 INIT.",
+            "rationale": "The Council Presidency is the documented originator of this manifestation."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "council-ai-act-provisional-agreement-release-2024",
+            "locator": "Official Council release explicitly says it was updated on 2 February 2024 to add the exact final compromise PDF.",
+            "rationale": "A dated official institution release publishes the exact version."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=10752%2F26&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://www.consilium.europa.eu/en/meetings/mpo/2026/6/coreper-ii-%28360798%29/",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
+      ],
+      "observed_locators": [
+        "ST 10752/26, p. 1: Brussels, 22 June 2026; 'I/A' item note; From General Secretariat of the Council; To Permanent Representatives Committee/Council.",
+        "ST 10752/26, p. 2: asks Coreper to confirm agreement and suggest that Council approve; OJ publication is conditional on later Council approval.",
+        "Official Public Register exact result: Public; ST 10752 2026 INIT; 22/06/2026; Originator General Secretariat; meeting date 24/06/2026.",
+        "Coreper II page directly links the document under 22/06/2026 but is a dynamic related-documents page that also contains later July documents; the label is not an archived publication field."
+      ],
+      "evidence": [
+        "This is a General Secretariat adoption cover note, not the adopted regulation and not evidence that Council had already adopted the act on 22 June.",
+        "The 29 June press release publishes PE-CONS 30/26, not this ST 10752/26 note."
+      ],
+      "corrections": [
+        "Replace generic Council author with council-of-the-european-union / cover_note_sender.",
+        "Retain 22 June solely as document_issue."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation or explicit register publication field was found for this exact ST 10752/26 note."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=10752%2F26&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://www.consilium.europa.eu/en/meetings/mpo/2026/6/coreper-ii-%28360798%29/"
+      ],
+      "observed_locators": [
+        "ST 10752/26 ADD 2, p. 1: Brussels, 24 June 2026; General Secretariat wrapper; Greece requested that the following statement be entered in the minutes.",
+        "ST 10752/26 ADD 2, pp. 1-2: Statement by Greece.",
+        "Official Public Register exact result: Public; ST 10752 2026 ADD 2; 24/06/2026; Originator General Secretariat; meeting date 24/06/2026.",
+        "Coreper II related-documents page directly links the exact statement under 24/06/2026 but is dynamically updated and does not label that date as publication."
+      ],
+      "evidence": [
+        "Greece is the substantive author of the statement; the General Secretariat supplies the cover wrapper.",
+        "The annex_to relationship to ST 10752/26 is exact and supported."
+      ],
+      "corrections": [
+        "Remove generic Council author attribution and the eu_institution_authored provenance tag; Greece authored the statement.",
+        "If an institutional role is retained for the Council, it should be official_host or cover_note_sender, not author."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation or explicit register publication field was found for this exact ADD 2 manifestation."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=10752%2F26&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://www.consilium.europa.eu/en/meetings/mpo/2026/6/coreper-ii-%28360798%29/"
+      ],
+      "observed_locators": [
+        "ST 10752/26 ADD 1, p. 1: Brussels, 22 June 2026; Belgium requested that its statement be entered in the minutes.",
+        "ST 10752/26 ADD 1, pp. 1-2: Statement by Belgium; p. 3: Statement by the Commission.",
+        "Official Public Register exact result: Public; ST 10752 2026 ADD 1; 22/06/2026; Originator General Secretariat; meeting date 24/06/2026.",
+        "Coreper II related-documents page directly links the exact statements under 22/06/2026 but is dynamically updated and does not label that date as publication."
+      ],
+      "evidence": [
+        "Belgium and the European Commission are the two substantive statement authors; the Council/General Secretariat hosts the wrapper.",
+        "The annex_to relationship to ST 10752/26 is exact and supported."
+      ],
+      "corrections": [
+        "Replace generic Council author attribution with European Commission / author for the Commission statement plus Council / official_host or cover_note_sender for the wrapper; Belgium is the other named author but is not a canonical EU institution.",
+        "The eu_institution_authored tag is supportable only because one of the two statements is explicitly authored by the European Commission, not because the Council hosts the file."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation or explicit register publication field was found for this exact ADD 1 manifestation."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-council-information-note-st-10599-2026",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=10599%2F26&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://www.consilium.europa.eu/en/meetings/mpo/2026/6/coreper-ii-%28360798%29/"
+      ],
+      "observed_locators": [
+        "ST 10599/26, p. 1: Brussels, 17 June 2026; Information note; From General Secretariat of the Council; outcome of Parliament's first reading.",
+        "ST 10599/26, pp. 1-2: describes the 16 June Parliament vote and attaches the adopted resolution/text; the remainder reproduces that Parliament position.",
+        "Official Public Register exact result: Public; ST 10599 2026 INIT; 17/06/2026; Originator General Secretariat; direct PDF link.",
+        "Coreper II page lists the exact document under 17/06/2026 but is dynamically updated and supplies no publication label."
+      ],
+      "evidence": [
+        "The exact manifestation is a General Secretariat information/cover note transmitting a Parliament outcome, not a Council-authored institutional position.",
+        "Its procedure and attached Parliament text support the stored procedural lineage and direct AI relevance."
+      ],
+      "corrections": [
+        "Replace generic Council author with council-of-the-european-union / cover_note_sender; do not attribute the reproduced Parliament text to the Council.",
+        "Retain 17 June solely as document_issue; Parliament's 16 June adoption is an additional institutional date, not this Council note's issue or publication date."
+      ],
+      "hold_reasons": [
+        "No dated official publication manifestation or explicit register publication field was found for this exact information-note manifestation."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-omnibus-pe-cons-30-2026",
+      "decision": "upgrade",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-30-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/voting-results/"
+      ],
+      "observed_locators": [
+        "PE-CONS 30/26, cover and pp. 1-3: issue date 18 June 2026; European Parliament and Council; procedure 2025/0359(COD); Parliament position of 16 June 2026 and Council decision placeholder.",
+        "Council press release header: 29 June 2026 14:30; Council gave final green light; related link 'Regulation ... Digital omnibus on AI, 29 June 2026' resolves exactly to PE-30-2026-INIT/en/pdf.",
+        "Council voting-results page: document no. 30/26; date 29/06/2026; action Adoption of the legislative act; approved."
+      ],
+      "evidence": [
+        "The dated official Council release directly publishes the exact PE-CONS 30/26 INIT PDF and independently establishes public release on 29 June 2026.",
+        "The release/vote record establish Council adoption on 29 June; the exact PDF identifies Parliament's 16 June position.",
+        "The full text directly amends horizontal AI Act rules, supporting direct_ai_substantive and general_cross_sector.",
+        "Incoming REV 1 revision establishes this version's lineage."
+      ],
+      "corrections": [
+        "Retain the 18 June cover date as document_issue; record the 29 June Council adoption separately as an additional institutional_adoption date.",
+        "Change publication_date from unsupported 18 June to the dated 29 June official release directly linking the exact PDF.",
+        "Add exact evidence to both adopter roles and all retained classifications."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:52:01Z",
+        "document_date": "2026-06-18",
+        "publication_date": "2026-06-29",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "council-pe-30-2026-init",
+            "evidence_locator": "PE-CONS 30/26, printed p. 2 (PDF p. 3), ordinary-legislative-procedure footnote identifies the Position of the European Parliament of 16 June 2026."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "council-ai-omnibus-adoption-release-2026",
+            "evidence_locator": "Official release, 29 June 2026 14:30: the Council gave its final green light; its related-document link resolves to exact PE-CONS 30/26 INIT."
+          }
+        ],
+        "source_ids": [
+          "council-pe-30-2026-init",
+          "council-ai-omnibus-adoption-release-2026"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Formal Digital Omnibus legislative-act version adopted by the Council after Parliament's first reading.",
+          "researcher_notes": "The primary official Council release directly linked PE-CONS 30/26 on 29 June 2026. The 18 June cover date remains the exact version's document-issue date; the 29 June Council adoption is recorded separately.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:52:01Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "document_issue",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "council-pe-30-2026-init",
+            "locator": "PE-CONS 30/26 cover: Brussels, 18 June 2026.",
+            "meaning": "Establishes 2026-06-18 as the issue date of this exact INIT version; the later Council adoption remains a separate event."
+          },
+          "publication_date": {
+            "source_id": "council-ai-omnibus-adoption-release-2026",
+            "locator": "Dated official release, related documents: 'Regulation on the simplification ... Digital omnibus on AI, 29 June 2026'; link target is PE-30-2026-INIT/en/pdf.",
+            "meaning": "Establishes 2026-06-29 as an official dated publication manifestation of this exact version, separately from its 18 June issue date."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-pe-30-2026-init",
+            "locator": "PE-CONS 30/26, Article 1 directly amends Regulation (EU) 2024/1689, including prohibited practices, high-risk systems, literacy, transparency and governance.",
+            "rationale": "Artificial-intelligence regulation is the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-pe-30-2026-init",
+            "locator": "PE-CONS 30/26, Article 1 amends horizontal AI Act obligations applying to providers, deployers, authorities and sectoral products.",
+            "rationale": "The amendments operate across sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "council-pe-30-2026-init",
+            "locator": "PE-CONS 30/26 cover and heading identify the European Parliament and the Council; printed p. 2 (PDF p. 3) records Parliament's position.",
+            "rationale": "The exact act version is a product of EU co-legislators."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "joint_institutional",
+            "source_id": "council-ai-omnibus-adoption-release-2026",
+            "locator": "Official release states Council final approval and describes co-legislator agreement; linked PE-CONS 30/26 identifies Parliament and Council.",
+            "rationale": "Parliament and Council jointly adopted the legislative act."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "council-ai-omnibus-adoption-release-2026",
+            "locator": "Official Council release dated 29 June 2026 directly links the exact PE-CONS 30/26 INIT PDF.",
+            "rationale": "A dated official institution page publishes the exact version."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-06-29",
+            "precision": "day",
+            "source_id": "council-ai-omnibus-adoption-release-2026",
+            "locator": "Official Council release dated 29 June 2026 states that the Council gave final green light and directly links this INIT version."
+          },
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-06-16",
+            "precision": "day",
+            "source_id": "council-pe-30-2026-init",
+            "locator": "PE-CONS 30/26, printed p. 2 (PDF p. 3): Position of the European Parliament of 16 June 2026."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    },
+    {
+      "document_id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "decision": "upgrade",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T19:52:01Z",
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/PE-30-2026-REV-1/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744",
+        "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/voting-results/"
+      ],
+      "observed_locators": [
+        "PE-CONS 30/1/26 REV 1 cover and printed p. 2 (PDF p. 3): Brussels, 8 July 2026; Regulation of the European Parliament and Council; Parliament position 16 June and Council decision 29 June.",
+        "EUR-Lex 32026R1744 identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026; regulation of 8 July 2026.",
+        "EUR-Lex official OJ text identifies Parliament and Council as the two co-legislators."
+      ],
+      "evidence": [
+        "EUR-Lex explicitly identifies the exact REV 1 reference as the OJ act, curing exact publication and institutional attribution gaps.",
+        "The full text directly amends AI Act rules across sectors; the existing revises relationship to INIT is exact and coherent."
+      ],
+      "corrections": [
+        "Change publication_date from unsupported 8 July to OJ publication on 24 July 2026.",
+        "Retain 8 July as official_act_date and add evidence to both adopter roles and all retained classifications."
+      ],
+      "hold_reasons": [],
+      "proposed_patch": {
+        "updated_at": "2026-09-05T19:52:01Z",
+        "publication_date": "2026-07-24",
+        "institution_roles": [
+          {
+            "institution_id": "european-parliament",
+            "role": "adopter",
+            "evidence_source_id": "ai-omnibus-regulation-eur-lex",
+            "evidence_locator": "EUR-Lex identity block names PE/30/2026/REV/1 and the OJ text is Regulation (EU) 2026/1744 of the European Parliament and of the Council."
+          },
+          {
+            "institution_id": "council-of-the-european-union",
+            "role": "adopter",
+            "evidence_source_id": "ai-omnibus-regulation-eur-lex",
+            "evidence_locator": "EUR-Lex identity block names PE/30/2026/REV/1 and the OJ text is Regulation (EU) 2026/1744 of the European Parliament and of the Council."
+          }
+        ],
+        "source_ids": [
+          "council-pe-30-2026-rev-1",
+          "ai-omnibus-regulation-eur-lex"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "adoption",
+          "inclusion_rationale": "Revised signed Digital Omnibus legislative-act text explicitly identified by EUR-Lex as PE/30/2026/REV/1.",
+          "researcher_notes": "Kept as the exact REV 1 version while using the independently evidenced OJ publication date of the same exact PE identifier.",
+          "review_status": "verified",
+          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_at": "2026-09-05T19:52:01Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "official_act_date",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex identity block names PE/30/2026/REV/1; OJ heading states Regulation (EU) 2026/1744 of 8 July 2026.",
+            "meaning": "Establishes 2026-07-08 as the official act/signature date for this exact REV 1 identity."
+          },
+          "publication_date": {
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026.",
+            "meaning": "Establishes OJ publication of the exact REV 1 identity on 2026-07-24."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "council-pe-30-2026-rev-1",
+            "locator": "PE-CONS 30/1/26 REV 1, Article 1 directly amends Regulation (EU) 2024/1689, including prohibited practices, high-risk systems, literacy, transparency and governance.",
+            "rationale": "Artificial-intelligence regulation is the central subject."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "council-pe-30-2026-rev-1",
+            "locator": "PE-CONS 30/1/26 REV 1, Article 1 amends horizontal AI Act obligations applying to providers, deployers, authorities and sectoral products.",
+            "rationale": "The amendments operate across sectors."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex exact identity PE/30/2026/REV/1 and OJ heading identify the European Parliament and Council.",
+            "rationale": "The exact act is authored by EU co-legislators."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "joint_institutional",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex exact identity PE/30/2026/REV/1 and OJ heading identify both Parliament and Council.",
+            "rationale": "The act is jointly institutional."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex exact identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026.",
+            "rationale": "The exact REV 1 identity is officially published in the OJ."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-06-16",
+            "precision": "day",
+            "source_id": "council-pe-30-2026-rev-1",
+            "locator": "PE-CONS 30/1/26 REV 1, printed p. 2 (PDF p. 3): Position of the European Parliament of 16 June 2026."
+          },
+          {
+            "kind": "institutional_adoption",
+            "value": "2026-06-29",
+            "precision": "day",
+            "source_id": "council-pe-30-2026-rev-1",
+            "locator": "PE-CONS 30/1/26 REV 1, printed p. 2 (PDF p. 3): decision of the Council of 29 June 2026."
+          },
+          {
+            "kind": "oj_publication",
+            "value": "2026-07-24",
+            "precision": "day",
+            "source_id": "ai-omnibus-regulation-eur-lex",
+            "locator": "EUR-Lex identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026."
+          }
+        ],
+        "historical_review_status": "verified"
+      }
+    }
+  ],
+  "proposed_sources": [
+    {
+      "id": "council-ai-act-adoption-release-2024",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T19:52:01Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "council_register",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/",
+      "publisher": "General Secretariat of the Council",
+      "retrieved_at": "2026-09-05T19:52:01Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "Official release dated 21 May 2024 10:17 states that the Council approved the AI Act that day and directly links 'Regulation laying down harmonised rules on artificial intelligence ..., 21 May 2024' to the exact PE-24-2024-INIT English PDF."
+    },
+    {
+      "id": "council-tte-draft-minutes-2024-ai-act",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T19:52:01Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "official_pdf",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf",
+      "publisher": "Council of the European Union",
+      "retrieved_at": "2026-09-05T19:52:01Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "Official draft minutes of the 21 May 2024 TTE Council, issued 28 May 2024. The AI Act item identifies 9645/1/24 REV 1 + ADD 1 REV 2 and PE-CONS 24/24, and states that the Council approved Parliament's first-reading position and the act was adopted under Article 294(4) TFEU."
+    },
+    {
+      "id": "council-st-5662-2024-register",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T19:52:01Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "council_register",
+      "url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&WordsInSubject=&WordsInText=&DocumentNumber=5662%2F24&InterinstitutionalFiles=&DocumentTypes=&DateFrom=&DateTo=&MeetingDateFrom=&MeetingDateTo=&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+      "publisher": "General Secretariat of the Council",
+      "retrieved_at": "2026-09-05T19:52:01Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "Exact official Public Register result for ST 5662 2024 INIT: Public, document date 26 January 2024, Originator Presidency, Addressee Permanent Representatives Committee, meeting date 2 February 2024, and direct English PDF link. The result does not label a publication date."
+    },
+    {
+      "id": "council-ai-act-provisional-agreement-release-2024",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T19:52:01Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "council_register",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/12/09/artificial-intelligence-act-council-and-parliament-strike-a-deal-on-the-first-worldwide-rules-for-ai/",
+      "publisher": "General Secretariat of the Council",
+      "retrieved_at": "2026-09-05T19:52:01Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "Official Council release explicitly states that it was updated on 2 February 2024 to add the final compromise text with a view to agreement; the dated related-document link resolves to the exact ST-5662-2024-INIT English PDF."
+    },
+    {
+      "id": "council-ai-omnibus-adoption-release-2026",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T19:52:01Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "council_register",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+      "publisher": "General Secretariat of the Council",
+      "retrieved_at": "2026-09-05T19:52:01Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "Official release dated 29 June 2026 14:30 states that the Council gave final green light to the Digital Omnibus on AI and directly links the exact PE-30-2026-INIT English PDF as the regulation dated 29 June 2026."
+    }
+  ],
+  "source_updates": [
+    {
+      "id": "ai-act-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-03T00:00:00Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "publisher": "Publications Office of the European Union / EUR-Lex",
+      "retrieved_at": "2026-09-03T00:00:00Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "EUR-Lex confirms Regulation (EU) 2024/1689, CELEX 32024R1689, the 13 June 2024 signature date, publication in OJ L 2024/1689 on 12 July 2024, its ELI and in-force status. Second-pass verification additionally confirmed that the identity block explicitly names PE/24/2024/REV/1."
+    },
+    {
+      "id": "ai-omnibus-regulation-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-04T00:00:00Z",
+      "updated_at": "2026-09-05T19:52:01Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744",
+      "publisher": "Publications Office of the European Union / EUR-Lex",
+      "retrieved_at": "2026-09-04T00:00:00Z",
+      "last_verified_at": "2026-09-05T19:52:01Z",
+      "verification_note": "EUR-Lex confirms Regulation (EU) 2026/1744, CELEX 32026R1744, signed 8 July, published 24 July and in force 27 July 2026. Second-pass verification additionally confirmed that the identity block explicitly names PE/30/2026/REV/1."
+    }
+  ],
+  "summary": {
+    "assigned_count": 11,
+    "upgrade_count": 5,
+    "hold_count": 6,
+    "new_source_count": 5,
+    "updated_source_count": 2,
+    "access_limitations": [
+      "The current Council Public Register search results expose current Public status, a document date, originator/addressee and sometimes meeting date, but no explicit publication-date field.",
+      "Council Coreper related-document pages are dynamically updated and include later documents; their displayed dates were not treated as historical release timestamps.",
+      "No official dated release directly publishing the exact ST 9645/1/24 REV 1, ST 9645/24 ADD 1 REV 2, ST 10752/26 family or ST 10599/26 manifestation was found in this bounded second pass."
+    ]
+  }
+}

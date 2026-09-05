@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T19:52:01Z",
   "slug": "ai-act-pe-cons-24-2024-rev-1",
   "official_title": "Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence and amending certain Union legislative acts (Artificial Intelligence Act)",
   "short_title": "AI Act signed legislative-act text",
@@ -17,7 +17,7 @@
   "document_date": "2024-06-13",
   "version_label": "REV 1 signed text",
   "version_status": "revised",
-  "publication_date": "2024-06-13",
+  "publication_date": "2024-07-12",
   "legal_status": "adopted",
   "celex": null,
   "eli": null,
@@ -26,11 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "ai-act-eur-lex",
+      "evidence_locator": "EUR-Lex identity block names PE/24/2024/REV/1 and the OJ text is Regulation (EU) 2024/1689 of the European Parliament and of the Council."
     },
     {
       "institution_id": "council-of-the-european-union",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "ai-act-eur-lex",
+      "evidence_locator": "EUR-Lex identity block names PE/24/2024/REV/1 and the OJ text is Regulation (EU) 2024/1689 of the European Parliament and of the Council."
     }
   ],
   "policy_ids": [
@@ -44,16 +48,18 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-pe-cons-24-2024-rev-1"
+    "council-pe-cons-24-2024-rev-1",
+    "ai-act-eur-lex",
+    "council-ai-act-adoption-release-2024"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "adoption",
-    "inclusion_rationale": "Revised signed legislative-act text dated 13 June 2024.",
-    "researcher_notes": "Kept distinct from the 12 July 2024 Official Journal publication record.",
+    "inclusion_rationale": "Revised signed legislative-act text dated 13 June 2024 and explicitly identified by EUR-Lex as PE/24/2024/REV/1.",
+    "researcher_notes": "Kept as the exact REV 1 version while using the independently evidenced OJ publication date of the same exact PE identifier.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T19:52:01Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -62,5 +68,75 @@
     "eu_institution_authored",
     "joint_institutional",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-act-eur-lex",
+      "locator": "EUR-Lex identity block names PE/24/2024/REV/1; OJ heading states Regulation (EU) 2024/1689 of 13 June 2024.",
+      "meaning": "Establishes 2024-06-13 as the official act/signature date for this exact REV 1 identity."
+    },
+    "publication_date": {
+      "source_id": "ai-act-eur-lex",
+      "locator": "EUR-Lex identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024.",
+      "meaning": "Establishes OJ publication of the exact REV 1 identity on 2024-07-12."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-pe-cons-24-2024-rev-1",
+      "locator": "PE-CONS 24/1/24 REV 1, Articles 1, 5 and 6 and Annex III: horizontal rules, prohibited AI practices and high-risk AI systems.",
+      "rationale": "Artificial intelligence regulation is the document's central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-pe-cons-24-2024-rev-1",
+      "locator": "PE-CONS 24/1/24 REV 1, Article 1 and Annex III apply across public and private uses and multiple named domains.",
+      "rationale": "The act is a horizontal cross-sector AI framework."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-act-eur-lex",
+      "locator": "EUR-Lex exact identity PE/24/2024/REV/1 and OJ heading identify the European Parliament and Council.",
+      "rationale": "The exact act is authored by EU co-legislators."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "ai-act-eur-lex",
+      "locator": "EUR-Lex exact identity PE/24/2024/REV/1 and OJ heading identify both Parliament and Council.",
+      "rationale": "The act is jointly institutional."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-act-eur-lex",
+      "locator": "EUR-Lex exact identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024.",
+      "rationale": "The exact REV 1 identity is officially published in the OJ."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2024-05-21",
+      "precision": "day",
+      "source_id": "council-ai-act-adoption-release-2024",
+      "locator": "Official Council release dated 21 May 2024 states that the Council approved the AI act that day."
+    },
+    {
+      "kind": "oj_publication",
+      "value": "2024-07-12",
+      "precision": "day",
+      "source_id": "ai-act-eur-lex",
+      "locator": "EUR-Lex identity block: PE/24/2024/REV/1; OJ L, 2024/1689, 12.7.2024."
+    }
+  ],
+  "historical_review_status": "verified"
 }

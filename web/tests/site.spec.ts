@@ -44,6 +44,18 @@ test('home presents the four research lenses from data', async ({ page }) => {
   }
 });
 
+test('public pages describe the database as research infrastructure', async ({ page }) => {
+  const description = 'The database serves as research infrastructure; this atlas presents its published records. The expanding collection brings together a bounded, verified historical lineage with contemporary EU AI policy, the AI Act pathway, and related implementation records.';
+  for (const route of ['./', 'about/']) {
+    await page.goto(route);
+    await expect(page.locator('main')).toContainText(description);
+    await expect(page.locator('main')).not.toContainText('primary research output');
+  }
+  await page.goto('methodology/');
+  await expect(page.locator('main')).toContainText('The Observatory treats the database as research infrastructure');
+  await expect(page.locator('main')).not.toContainText('database as the research output');
+});
+
 test('methodology states the publication boundary', async ({ page }) => {
   await page.goto('methodology/');
   await expect(page.getByText('Only published records appear in the public interface.')).toBeVisible();
@@ -510,8 +522,8 @@ test('methodology renders bounded source scopes and incomplete review semantics'
   await page.goto('methodology/');
 
   const review = page.getByRole('region', { name: 'Expanded evidence review' });
-  await expect(review).toContainText('94 published records');
-  await expect(review).toContainText('37 retained records');
+  await expect(review).toContainText('105 published records');
+  await expect(review).toContainText('26 retained records');
   const scopes = page.getByRole('region', { name: 'Bounded source scopes' });
   await expect(scopes.locator(':scope > ol > li')).toHaveCount(34);
   await expect(scopes).toContainText('Partial · in progress');

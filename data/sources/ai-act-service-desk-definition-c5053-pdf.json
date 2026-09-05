@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-service-desk-definition-c5053-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T20:53:39.898Z",
+  "updated_at": "2026-09-05T20:53:39.898Z",
+  "source_type": "official_pdf",
+  "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-01/guide-definition_en.pdf",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T20:32:09Z",
+  "last_verified_at": "2026-09-05T20:53:39.898Z",
+  "verification_note": "Freshly retrieved and inspected exact 13-page official PDF (343,210 bytes; SHA-256 43202a8965f7f912987b3eef1d699fb6f201a7e984f41e91bc28674d48b4a501). The rendered cover identifies EUROPEAN COMMISSION, Brussels 29.7.2025, C(2025) 5053 final and COMMUNICATION FROM THE COMMISSION. Complete whitespace-normalized extracted text equals the current official newsroom 112455 PDF (333,765 bytes; SHA-256 fe39f41d061184a913c32f1f92aaaa30a096858fa168c6053e22a19eef58910e). No archive or first-publication claim is made."
+}

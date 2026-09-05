@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-service-desk-resources-page-1-2026",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T20:53:39.898Z",
+  "updated_at": "2026-09-05T20:53:39.898Z",
+  "source_type": "commission_webpage",
+  "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T20:45:17Z",
+  "last_verified_at": "2026-09-05T20:53:39.898Z",
+  "verification_note": "Fresh official AI Act Service Desk review: the Resources index has separate Guidelines cards dated 06/05/2026 for 'Guidelines on prohibited AI practices' and 'Guidelines on the definition of an AI system', each with a direct PDF link. The directly linked PDFs were retrieved and matched by complete whitespace-normalized text to the current official newsroom C(2025)5052 and C(2025)5053 PDFs. The card dates are used only as the official publication manifestations represented by this source, not as first-ever-publication claims. The card-specific time datetime values are 2026-05-06T16:20:21+02:00 (prohibited practices) and 2026-05-06T16:22:32+02:00 (AI-system definition), not a generic index modification timestamp."
+}
