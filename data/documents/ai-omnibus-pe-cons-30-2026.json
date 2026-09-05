@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T19:52:01Z",
   "slug": "ai-omnibus-pe-cons-30-2026",
   "official_title": "Regulation amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards simplification of the implementation of harmonised rules on artificial intelligence",
   "short_title": "Digital Omnibus legislative-act text",
@@ -17,7 +17,7 @@
   "document_date": "2026-06-18",
   "version_label": "INIT",
   "version_status": "revised",
-  "publication_date": "2026-06-18",
+  "publication_date": "2026-06-29",
   "legal_status": "adopted",
   "celex": null,
   "eli": null,
@@ -26,11 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "council-pe-30-2026-init",
+      "evidence_locator": "PE-CONS 30/26, printed p. 2 (PDF p. 3), ordinary-legislative-procedure footnote identifies the Position of the European Parliament of 16 June 2026."
     },
     {
       "institution_id": "council-of-the-european-union",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "council-ai-omnibus-adoption-release-2026",
+      "evidence_locator": "Official release, 29 June 2026 14:30: the Council gave its final green light; its related-document link resolves to exact PE-CONS 30/26 INIT."
     }
   ],
   "policy_ids": [
@@ -43,16 +47,17 @@
     "accountability"
   ],
   "source_ids": [
-    "council-pe-30-2026-init"
+    "council-pe-30-2026-init",
+    "council-ai-omnibus-adoption-release-2026"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "adoption",
-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "inclusion_rationale": "Formal Digital Omnibus legislative-act version adopted by the Council after Parliament's first reading.",
+    "researcher_notes": "The primary official Council release directly linked PE-CONS 30/26 on 29 June 2026. The 18 June cover date remains the exact version's document-issue date; the 29 June Council adoption is recorded separately.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T19:52:01Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -61,5 +66,75 @@
     "eu_institution_authored",
     "joint_institutional",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-pe-30-2026-init",
+      "locator": "PE-CONS 30/26 cover: Brussels, 18 June 2026.",
+      "meaning": "Establishes 2026-06-18 as the issue date of this exact INIT version; the later Council adoption remains a separate event."
+    },
+    "publication_date": {
+      "source_id": "council-ai-omnibus-adoption-release-2026",
+      "locator": "Dated official release, related documents: 'Regulation on the simplification ... Digital omnibus on AI, 29 June 2026'; link target is PE-30-2026-INIT/en/pdf.",
+      "meaning": "Establishes 2026-06-29 as an official dated publication manifestation of this exact version, separately from its 18 June issue date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-pe-30-2026-init",
+      "locator": "PE-CONS 30/26, Article 1 directly amends Regulation (EU) 2024/1689, including prohibited practices, high-risk systems, literacy, transparency and governance.",
+      "rationale": "Artificial-intelligence regulation is the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-pe-30-2026-init",
+      "locator": "PE-CONS 30/26, Article 1 amends horizontal AI Act obligations applying to providers, deployers, authorities and sectoral products.",
+      "rationale": "The amendments operate across sectors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-pe-30-2026-init",
+      "locator": "PE-CONS 30/26 cover and heading identify the European Parliament and the Council; printed p. 2 (PDF p. 3) records Parliament's position.",
+      "rationale": "The exact act version is a product of EU co-legislators."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "council-ai-omnibus-adoption-release-2026",
+      "locator": "Official release states Council final approval and describes co-legislator agreement; linked PE-CONS 30/26 identifies Parliament and Council.",
+      "rationale": "Parliament and Council jointly adopted the legislative act."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-ai-omnibus-adoption-release-2026",
+      "locator": "Official Council release dated 29 June 2026 directly links the exact PE-CONS 30/26 INIT PDF.",
+      "rationale": "A dated official institution page publishes the exact version."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2026-06-29",
+      "precision": "day",
+      "source_id": "council-ai-omnibus-adoption-release-2026",
+      "locator": "Official Council release dated 29 June 2026 states that the Council gave final green light and directly links this INIT version."
+    },
+    {
+      "kind": "institutional_adoption",
+      "value": "2026-06-16",
+      "precision": "day",
+      "source_id": "council-pe-30-2026-init",
+      "locator": "PE-CONS 30/26, printed p. 2 (PDF p. 3): Position of the European Parliament of 16 June 2026."
+    }
+  ],
+  "historical_review_status": "verified"
 }

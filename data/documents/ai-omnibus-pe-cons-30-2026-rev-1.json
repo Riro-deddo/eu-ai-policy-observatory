@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T19:52:01Z",
   "slug": "ai-omnibus-pe-cons-30-2026-rev-1",
   "official_title": "Regulation amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards simplification of the implementation of harmonised rules on artificial intelligence",
   "short_title": "Signed Digital Omnibus legislative-act text",
@@ -17,7 +17,7 @@
   "document_date": "2026-07-08",
   "version_label": "REV 1",
   "version_status": "final",
-  "publication_date": "2026-07-08",
+  "publication_date": "2026-07-24",
   "legal_status": "adopted",
   "celex": null,
   "eli": null,
@@ -26,11 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "ai-omnibus-regulation-eur-lex",
+      "evidence_locator": "EUR-Lex identity block names PE/30/2026/REV/1 and the OJ text is Regulation (EU) 2026/1744 of the European Parliament and of the Council."
     },
     {
       "institution_id": "council-of-the-european-union",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "ai-omnibus-regulation-eur-lex",
+      "evidence_locator": "EUR-Lex identity block names PE/30/2026/REV/1 and the OJ text is Regulation (EU) 2026/1744 of the European Parliament and of the Council."
     }
   ],
   "policy_ids": [
@@ -43,16 +47,17 @@
     "accountability"
   ],
   "source_ids": [
-    "council-pe-30-2026-rev-1"
+    "council-pe-30-2026-rev-1",
+    "ai-omnibus-regulation-eur-lex"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "adoption",
-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "inclusion_rationale": "Revised signed Digital Omnibus legislative-act text explicitly identified by EUR-Lex as PE/30/2026/REV/1.",
+    "researcher_notes": "Kept as the exact REV 1 version while using the independently evidenced OJ publication date of the same exact PE identifier.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T19:52:01Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -61,5 +66,82 @@
     "eu_institution_authored",
     "joint_institutional",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-regulation-eur-lex",
+      "locator": "EUR-Lex identity block names PE/30/2026/REV/1; OJ heading states Regulation (EU) 2026/1744 of 8 July 2026.",
+      "meaning": "Establishes 2026-07-08 as the official act/signature date for this exact REV 1 identity."
+    },
+    "publication_date": {
+      "source_id": "ai-omnibus-regulation-eur-lex",
+      "locator": "EUR-Lex identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026.",
+      "meaning": "Establishes OJ publication of the exact REV 1 identity on 2026-07-24."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-pe-30-2026-rev-1",
+      "locator": "PE-CONS 30/1/26 REV 1, Article 1 directly amends Regulation (EU) 2024/1689, including prohibited practices, high-risk systems, literacy, transparency and governance.",
+      "rationale": "Artificial-intelligence regulation is the central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-pe-30-2026-rev-1",
+      "locator": "PE-CONS 30/1/26 REV 1, Article 1 amends horizontal AI Act obligations applying to providers, deployers, authorities and sectoral products.",
+      "rationale": "The amendments operate across sectors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-omnibus-regulation-eur-lex",
+      "locator": "EUR-Lex exact identity PE/30/2026/REV/1 and OJ heading identify the European Parliament and Council.",
+      "rationale": "The exact act is authored by EU co-legislators."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "ai-omnibus-regulation-eur-lex",
+      "locator": "EUR-Lex exact identity PE/30/2026/REV/1 and OJ heading identify both Parliament and Council.",
+      "rationale": "The act is jointly institutional."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-omnibus-regulation-eur-lex",
+      "locator": "EUR-Lex exact identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026.",
+      "rationale": "The exact REV 1 identity is officially published in the OJ."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2026-06-16",
+      "precision": "day",
+      "source_id": "council-pe-30-2026-rev-1",
+      "locator": "PE-CONS 30/1/26 REV 1, printed p. 2 (PDF p. 3): Position of the European Parliament of 16 June 2026."
+    },
+    {
+      "kind": "institutional_adoption",
+      "value": "2026-06-29",
+      "precision": "day",
+      "source_id": "council-pe-30-2026-rev-1",
+      "locator": "PE-CONS 30/1/26 REV 1, printed p. 2 (PDF p. 3): decision of the Council of 29 June 2026."
+    },
+    {
+      "kind": "oj_publication",
+      "value": "2026-07-24",
+      "precision": "day",
+      "source_id": "ai-omnibus-regulation-eur-lex",
+      "locator": "EUR-Lex identity block: PE/30/2026/REV/1; OJ L, 2026/1744, 24.7.2026."
+    }
+  ],
+  "historical_review_status": "verified"
 }

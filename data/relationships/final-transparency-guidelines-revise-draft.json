@@ -3,14 +3,14 @@
   "entity_type": "relationship",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T20:37:18.537Z",
   "source_entity_type": "document",
   "source_entity_id": "final-transparency-guidelines-2026",
   "target_entity_type": "document",
   "target_entity_id": "draft-transparency-guidelines-2026",
   "relationship_type": "revises",
   "basis": "official",
-  "rationale": "The final Article 50 guidelines follow the May consultation draft.",
-  "evidence_source_id": "transparency-guidelines-final-commission",
+  "rationale": "Paragraph 4 of the 20 July 2026 C(2026) 5054 annex states that drafting was informed by stakeholder input on the guidelines published for consultation. The target is the Commission's 8 May 2026 consultation draft of the same Article 50 guidelines; the source is the later content-approved draft annex, not a claim of formal adoption.",
+  "evidence_source_id": "commission-newsroom-131215-pdf",
   "verification_status": "verified"
 }

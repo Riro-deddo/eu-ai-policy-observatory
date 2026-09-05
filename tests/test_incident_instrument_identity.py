@@ -31,8 +31,8 @@ def test_pipeline_presents_two_standalone_instruments_without_new_records(tmp_pa
         (item["id"], item["slug"]) for item in documents.values()
     }
     assert len(documents) == 131
-    assert len(public["relationships"]) == 95
-    assert public["coverage"]["principal_documents"] == 49
+    assert len(public["relationships"]) == 96
+    assert public["coverage"]["principal_documents"] == 48
     with sqlite3.connect(outputs.database) as connection:
         for doc_id, title in TITLES.items():
             document = documents[doc_id]

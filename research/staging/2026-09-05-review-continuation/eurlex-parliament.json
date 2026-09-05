@@ -1,0 +1,130 @@
+{
+  "batch_id": "review-continuation-eurlex-parliament-2026-09-05",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T20:55:03.056Z",
+  "publication_cutoff": "2026-09-04",
+  "method": "Targeted official search, EUR-Lex procedure and document views, documented Cellar RDF tree and XML object notices, and direct examination of previously retrieved exact Commission PDFs. Repository creation/modification timestamps were not treated as publication dates.",
+  "records": [
+    {
+      "document_id": "ai-act-consolidated-2026-07-27",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/collection/eu-law/consleg.html?locale=en",
+        "https://publications.europa.eu/resource/celex/02024R1689-20260727?language=eng",
+        "https://op.europa.eu/en/web/cellar/cellar-data/metadata/metadata-notices",
+        "https://op.europa.eu/en/web/cellar/cellar-data/rss-and-atom-feeds"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "EUR-Lex Consolidated texts, explanation of the header date",
+          "finding": "The header date denotes applicability of the latest included amendment, not the date the consolidation was published."
+        },
+        {
+          "locator": "Cellar XML object notice, Accept: application/xml;notice=object; retrieved 2026-09-05T20:38:53.386Z, HTTP 200",
+          "finding": "ACT_CONSOLIDATED_DATE and WORK_DATE_DOCUMENT are 2026-07-27; DATE_CREATION_LEGACY is 2026-08-03; CREATIONDATE is 2026-08-03T11:21:17.028+02:00 and LASTMODIFICATIONDATE is 2026-08-11T22:42:17.608+02:00. None is a separately labelled official publication date."
+        }
+      ],
+      "hold_reasons": [
+        "The exact official publication day remains unestablished. Repository ingestion/creation and consolidation applicability dates have different meanings and cannot be substituted."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=ecb%3ATWD-2026-0010",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=ecb%3ATWD-2026-0010",
+        "https://publications.europa.eu/resource/ecb/TWD-2026-0010?language=eng",
+        "https://eur-lex.europa.eu/eli/C/2026/2285/oj/eng/pdf"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "Cellar XML object notice, Accept: application/xml;notice=object; retrieved 2026-09-05T20:38:53.587Z, HTTP 200",
+          "finding": "WORK_DATE_DOCUMENT is 2026-03-13; DATE_CREATION_LEGACY is 2026-04-10 and repository creation/modification is 2026-04-10T12:55:16.526+02:00. This independently supports the retained document date, but not its use as publication date."
+        },
+        {
+          "locator": "Exact working-document footnote 1, compared with the parent opinion's OJ masthead",
+          "finding": "The working document is described as published on EUR-Lex alongside the opinion. The opinion's OJ date is 15 April 2026. 'Alongside' does not independently date the separate working-document manifestation."
+        }
+      ],
+      "hold_reasons": [
+        "The exact attachment publication day remains unestablished. The March document date, April repository creation timestamp and parent opinion's OJ publication are not interchangeable."
+      ],
+      "access_limitations": [
+        "The direct EUR-Lex text view presented a JavaScript verification challenge and the ALL view returned no readable metadata; no challenge was bypassed. The independently documented public Cellar API was used for its own metadata."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=intcom%3ASEC%282021%29167",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=intcom%3ASEC%282021%29167",
+        "https://publications.europa.eu/resource/intcom/SEC(2021)167?language=eng",
+        "https://publications.europa.eu/resource/immc/SEC(2021)167",
+        "https://commission.europa.eu/law/law-making-process/regulatory-scrutiny-board_en",
+        "https://data.europa.eu/data/datasets/list-of-impact-assessments-and-the-accompanying-opinions-of-the-regulatory-scrutiny-board?locale=en"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "EUR-Lex procedure view for SEC(2021)167, headings for adoption/transmission and OJ publication",
+          "finding": "This is the whole AI Act procedure, not a dated publication record for the SEC package. The final Act's 12 July 2024 OJ date is unrelated to publication of this supporting opinion."
+        },
+        {
+          "locator": "Commission Regulatory Scrutiny Board page, How it works",
+          "finding": "The general policy publishes impact assessments and opinions once the related proposal is adopted. It does not prove the exact day this particular SEC package was released."
+        }
+      ],
+      "hold_reasons": [
+        "No exact dated official publication manifestation of the SEC package was recovered. The retained 23 April 2021 date is only evidenced as the Council cover-note date in the previous pass."
+      ],
+      "access_limitations": [
+        "Both probed Cellar identifier notices returned HTTP 404; this is an identifier-access result, not evidence that the SEC document does not exist. EUR-Lex ALL returned cache miss and the data-portal dataset page exposed no readable content."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ep-position-p9-ta-2023-0236",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "Official title; OJ C/2024/506 masthead; amendments 3 and 12",
+          "finding": "The Parliament adopted the amendments on 14 June 2023; the primary cited OJ manifestation was published on 23 January 2024. The amendments substantively regulate cross-sector AI."
+        }
+      ],
+      "authorization": "The user explicitly approved the narrow compatibility correction for institutional adoption of adopted institutional positions. Independent date evidence and legal_status adopted remain required.",
+      "hold_reasons": []
+    },
+    {
+      "document_id": "final-transparency-guidelines-2026",
+      "decision": "upgrade",
+      "checked_urls": [
+        "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/131214",
+        "https://ec.europa.eu/newsroom/dae/redirection/document/131215"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "Commission library Publication 20 July 2026; exact PDF covers; approval communication's final paragraphs; annex paragraphs 3-5",
+          "finding": "The exact artifact is the content-approved draft annex to C(2026)5054, with a separately existing approval communication. Formal adoption is expressly deferred. Paragraph 4 identifies input on the consultation draft, supporting the recorded revision relationship."
+        }
+      ],
+      "authorization": "The user explicitly approved version relationships across independently evidenced principal/attachment manifestations. A linked attachment must still have its own valid direct parent; the prior verified consultation draft is unchanged.",
+      "evidence_handoff": "research/staging/2026-09-05-remaining-review/commission.json",
+      "hold_reasons": []
+    }
+  ],
+  "search_queries": [
+    "site:ecb.europa.eu \"CON/2026/10\" \"technical\"",
+    "site:eur-lex.europa.eu \"TWD/2026/10\"",
+    "site:op.europa.eu \"02024R1689-20260727\"",
+    "site:op.europa.eu \"SEC/2021/167\"",
+    "site:eur-lex.europa.eu \"SEC(2021)167\" \"Date\"",
+    "site:commission.europa.eu regulatory scrutiny board opinions published once initiative adopted"
+  ]
+}

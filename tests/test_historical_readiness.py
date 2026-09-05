@@ -136,6 +136,25 @@ def test_2017_adoption_with_2018_oj_stays_historical(complete_records):
     assert _issues(complete_records) == []
 
 
+def test_adopted_institutional_position_accepts_evidenced_adoption(complete_records):
+    document = complete_records["documents"][0].data
+    document.update(document_type="institutional_position", legal_status="adopted")
+    assert _issues(complete_records) == []
+
+
+def test_proposed_institutional_position_cannot_claim_adoption(complete_records):
+    document = complete_records["documents"][0].data
+    document.update(document_type="institutional_position", legal_status="proposed")
+    assert any(issue.field == "document_date_kind" for issue in _issues(complete_records))
+
+
+def test_adopted_position_still_requires_independent_publication_evidence(complete_records):
+    document = complete_records["documents"][0].data
+    document.update(document_type="institutional_position", legal_status="adopted")
+    del document["date_evidence"]["publication_date"]
+    assert any("date_evidence" in issue.field for issue in _issues(complete_records))
+
+
 def test_publication_cannot_be_inferred_from_issue_date(complete_records):
     del complete_records["documents"][0].data["date_evidence"]["publication_date"]
     assert any("date_evidence" in issue.field for issue in _issues(complete_records))
@@ -365,6 +384,43 @@ def test_version_lineage_peer_must_be_a_document_endpoint(complete_records):
     complete_records["relationships"][0].data["source_entity_type"] = "institution"
     issues = _issues(complete_records)
     assert any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
+
+
+@pytest.mark.parametrize("incoming", [True, False])
+def test_version_can_link_to_a_parented_attachment_manifestation(complete_records, incoming):
+    complete_records["documents"][0].data["record_level"] = "version"
+    annex = deepcopy(complete_records["documents"][0].data)
+    annex.update(id="annex", slug="annex", record_level="attachment", official_reference="ANNEX")
+    _add_document(complete_records, annex, "annex")
+    parent = deepcopy(annex)
+    parent.update(id="parent", slug="parent", record_level="principal", official_reference="PARENT")
+    _add_document(complete_records, parent, "parent")
+    _add_relationship(complete_records, "annex", "parent", "annex_to")
+    source, target = ("annex", "example-document") if incoming else ("example-document", "annex")
+    _add_relationship(complete_records, source, target, "revises")
+    assert _issues(complete_records) == []
+
+
+@pytest.mark.parametrize("invalid_parent", ["missing", "unofficial", "incoming_only"])
+def test_cross_manifestation_version_link_does_not_excuse_an_orphan_attachment(complete_records, invalid_parent):
+    complete_records["documents"][0].data["record_level"] = "version"
+    annex = deepcopy(complete_records["documents"][0].data)
+    annex.update(id="annex", slug="annex", record_level="attachment", official_reference="ANNEX")
+    _add_document(complete_records, annex, "annex")
+    parent = deepcopy(annex)
+    parent.update(id="parent", slug="parent", record_level="principal", official_reference="PARENT")
+    _add_document(complete_records, parent, "parent")
+    _add_relationship(complete_records, "annex", "example-document", "revises")
+    if invalid_parent == "unofficial":
+        _add_relationship(complete_records, "annex", "parent", "annex_to", evidence="missing-source")
+    elif invalid_parent == "incoming_only":
+        _add_relationship(complete_records, "parent", "annex", "part_of")
+    issues = _issues(complete_records)
+    assert any(issue.record_path.endswith("annex.json") and issue.field == "record_level" for issue in issues)
+    selected = validate_historical_readiness(
+        complete_records, SCHEMA_ROOT, "2026-09-04", document_ids={"example-document"}
+    )
+    assert any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in selected)
 
 
 def test_relationship_endpoint_type_and_unique_published_resolution_are_checked(complete_records):

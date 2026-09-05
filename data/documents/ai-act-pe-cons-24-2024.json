@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T19:52:01Z",
   "slug": "ai-act-pe-cons-24-2024",
   "official_title": "Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence and amending certain Union legislative acts (Artificial Intelligence Act)",
   "short_title": "AI Act legislative-act text",
@@ -17,7 +17,7 @@
   "document_date": "2024-05-14",
   "version_label": "Legislative acts and other instruments",
   "version_status": "final",
-  "publication_date": "2024-05-14",
+  "publication_date": "2024-05-21",
   "legal_status": "adopted",
   "celex": null,
   "eli": null,
@@ -26,11 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "council-tte-draft-minutes-2024-ai-act",
+      "evidence_locator": "ST 10172/24, p. 2, AI Act item: Council approved the European Parliament's position at first reading and the proposed act was adopted under Article 294(4) TFEU."
     },
     {
       "institution_id": "council-of-the-european-union",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "council-ai-act-adoption-release-2024",
+      "evidence_locator": "Official release, 21 May 2024 10:17: 'Today the Council approved' the AI act; its dated related-document link resolves to the exact PE-CONS 24/24 INIT PDF."
     }
   ],
   "policy_ids": [
@@ -44,16 +48,18 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-pe-cons-24-2024"
+    "council-pe-cons-24-2024",
+    "council-ai-act-adoption-release-2024",
+    "council-tte-draft-minutes-2024-ai-act"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "adoption",
-    "inclusion_rationale": "Formal legislative-act version prepared after Parliament's first reading and before signature.",
-    "researcher_notes": "This historical state precedes the 13 June REV 1 text and the Official Journal manifestation.",
+    "inclusion_rationale": "Formal legislative-act version prepared after Parliament's first reading and adopted by the Council before signature.",
+    "researcher_notes": "The primary official Council release directly linked PE-CONS 24/24 on 21 May 2024. The 14 May cover date remains the exact version's document-issue date; the 21 May Council adoption is recorded separately.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T19:52:01Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -62,5 +68,75 @@
     "eu_institution_authored",
     "joint_institutional",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-pe-cons-24-2024",
+      "locator": "PE-CONS 24/24 cover: Brussels, 14 May 2024.",
+      "meaning": "Establishes 2024-05-14 as the issue date of this exact INIT version; the later Council adoption remains a separate event."
+    },
+    "publication_date": {
+      "source_id": "council-ai-act-adoption-release-2024",
+      "locator": "Dated official release, related documents: 'Regulation laying down harmonised rules on artificial intelligence (artificial intelligence act), 21 May 2024'; link target is PE-24-2024-INIT/en/pdf.",
+      "meaning": "Establishes 2024-05-21 as an official dated publication manifestation of this exact version, separately from its 14 May issue date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-pe-cons-24-2024",
+      "locator": "PE-CONS 24/24, Articles 1, 5 and 6 and Annex III: horizontal rules, prohibited AI practices and high-risk AI systems.",
+      "rationale": "Artificial intelligence regulation is the document's central subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-pe-cons-24-2024",
+      "locator": "PE-CONS 24/24, Article 1 and Annex III apply across public and private uses and multiple named domains.",
+      "rationale": "The act is a horizontal cross-sector AI framework."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-tte-draft-minutes-2024-ai-act",
+      "locator": "ST 10172/24, p. 2 identifies Parliament's first-reading position, Council approval and adoption under Article 294(4) TFEU.",
+      "rationale": "The exact act version is a product of EU co-legislators."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "council-tte-draft-minutes-2024-ai-act",
+      "locator": "ST 10172/24, p. 2 identifies both Parliament's position and Council approval in the ordinary legislative procedure.",
+      "rationale": "Parliament and Council jointly adopted the legislative act."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-ai-act-adoption-release-2024",
+      "locator": "Official Council release dated 21 May 2024 directly links the exact PE-CONS 24/24 INIT PDF.",
+      "rationale": "A dated official institution page publishes the exact version."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2024-05-21",
+      "precision": "day",
+      "source_id": "council-ai-act-adoption-release-2024",
+      "locator": "Official Council release dated 21 May 2024 states that the Council approved the AI act that day and directly links this INIT version."
+    },
+    {
+      "kind": "institutional_adoption",
+      "value": "2024-03-13",
+      "precision": "day",
+      "source_id": "council-pe-cons-24-2024",
+      "locator": "PE-CONS 24/24, printed p. 2 (PDF p. 3), ordinary-legislative-procedure footnote: Position of the European Parliament of 13 March 2024."
+    }
+  ],
+  "historical_review_status": "verified"
 }

@@ -1,0 +1,161 @@
+{
+  "batch_id": "remaining-review-eurlex-parliament-2026-09-05",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T19:46:55Z",
+  "publication_cutoff": "2026-09-04",
+  "records": [
+    {
+      "document_id": "ai-act-consolidated-2026-07-27",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:02024R1689-20260727"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "EUR-Lex exact CELEX heading, current-version selector and opening text",
+          "finding": "The exact 27 July 2026 consolidated version exists. The selector establishes a consolidation date; the text identifies the original act and amending Regulation (EU) 2026/1744. The consolidation is informational, not a separately adopted legal act."
+        },
+        {
+          "locator": "Consolidated text opening amendment table",
+          "finding": "The OJ dates of the original and amending acts are dates of those instruments, not an independently labelled publication date of this consolidated manifestation."
+        }
+      ],
+      "hold_reasons": [
+        "No exact publication date for the cited consolidated manifestation was established. The existing 2026-07-27 publication_date must not be certified merely because it equals the consolidation date. The metadata-view attempt returned a JavaScript challenge; no challenge was solved or bypassed."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=PI_COM:SEC(2021)167",
+        "https://data.consilium.europa.eu/doc/document/ST-8115-2021-ADD-5/en/pdf",
+        "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-laying-down-harmonised-rules-artificial-intelligence",
+        "https://ec.europa.eu/transparency/documents-register/detail?ref=SEC(2021)167&lang=en"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "EUR-Lex PDF page 1; Council package PDF page 2, visually inspected",
+          "finding": "The Commission cover identifies SEC(2021) 167 and 22 March 2021. This is the package cover date, not an independently established publication date."
+        },
+        {
+          "locator": "EUR-Lex PDF pages 2-7; Council package PDF pages 3 and 6, visually inspected",
+          "finding": "The file includes the positive second RSB opinion, its quantification annex and the earlier negative opinion. The record's second-opinion label should not imply that the downloadable package contains only that opinion."
+        },
+        {
+          "locator": "Council ST 8115/21 ADD 5 cover note, page 1",
+          "finding": "23 April 2021 dates the Council cover note and 22 April dates receipt. Neither field says that the file was publicly published on 23 April."
+        },
+        {
+          "locator": "Commission proposal library page, Publication and download link",
+          "finding": "The page is dated 21 April 2021 but links the regulation proposal, not an independently identified dated publication of SEC(2021) 167. That page cannot silently supply the opinion's publication date."
+        }
+      ],
+      "retrieved_files": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=PI_COM:SEC(2021)167",
+          "retrieved_at": "2026-09-05T19:45:52.421Z",
+          "http_status": 200,
+          "bytes": 654605,
+          "pages": 7,
+          "sha256": "80210a79981bc91903834c182e0a1f9d3936c545bbcd1d5c5d71ee1ffa46c126",
+          "archived_path": null
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-8115-2021-ADD-5/en/pdf",
+          "retrieved_at": "2026-09-05T19:43:11.341Z",
+          "http_status": 200,
+          "bytes": 1281641,
+          "pages": 8,
+          "sha256": "d7cd025ae5b6ab0ab806f40973e68aecc3e3159a17cfd7f61d81e51f4d7c729f",
+          "archived_path": null
+        }
+      ],
+      "hold_reasons": [
+        "The existing 23 April publication date is supported only as a Council cover-note date. No exact dated public manifestation of the opinion package was independently established. The Commission Register attempt failed to return readable record metadata."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "decision": "hold",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=IMMC:TWD/2026/10",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=IMMC:TWD/2026/10",
+        "https://www.ecb.europa.eu/pub/pdf/legal/ecb.leg_con_2026_10.en.pdf",
+        "https://www.ecb.europa.eu/press/govcdec/otherdec/2026/html/ecb.gc260320~5dfc6af626.en.html"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "Exact TWD PDF page 1 title, amendment 1, and footnote 1; all five pages text-inspected and page 1 visually inspected",
+          "finding": "The ECB-authored five-page drafting document explicitly relates to CON/2026/10 and contains AI Act amendments addressing prudential supervision, information sharing and creditworthiness. Its financial-services relevance and connection to the opinion are established."
+        },
+        {
+          "locator": "Exact TWD PDF page 1 footnote 1",
+          "finding": "The note says the working document is communicated after adoption and published on EUR-Lex alongside the opinion. It does not state an exact publication day for this file."
+        },
+        {
+          "locator": "ECB Governing Council decisions announcement dated 20 March 2026, AI opinion section",
+          "finding": "The announcement identifies adoption of CON/2026/10 on 13 March and says EUR-Lex publication will follow. It dates the opinion's adoption, not this attachment's publication."
+        },
+        {
+          "locator": "PDF metadata, diagnostic only",
+          "finding": "The retrieved PDF has creation/modification metadata dated 10 April 2026. This is not used as a publication date and does not prove that an earlier manifestation never existed; it reinforces the need not to conflate the currently linked file with the opinion adoption date."
+        }
+      ],
+      "retrieved_files": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=IMMC:TWD/2026/10",
+          "retrieved_at": "2026-09-05T19:45:51.911Z",
+          "http_status": 200,
+          "bytes": 177223,
+          "pages": 5,
+          "sha256": "70f66dea621bef6ba5c8840b06db56d5e3cb30d37bb59ff89f2c8580d0ccd4ab",
+          "archived_path": null
+        }
+      ],
+      "hold_reasons": [
+        "The canonical 13 March 2026 publication date remains unsupported for this exact attachment. Neither the opinion's adoption date, its later OJ publication date, nor the TWD's PDF creation metadata independently dates this manifestation's public release."
+      ],
+      "proposed_patch": null
+    },
+    {
+      "document_id": "ep-position-p9-ta-2023-0236",
+      "decision": "hold",
+      "hold_category": "contract_compatibility",
+      "checked_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0236_EN.html"
+      ],
+      "observed_evidence": [
+        {
+          "locator": "EUR-Lex official title, P9_TA(2023)0236 and OJ C/2024/506 masthead",
+          "finding": "Parliament adopted these amendments on 14 June 2023; the cited Official Journal manifestation was published on 23 January 2024. Both retained dates and the adopter role have direct official evidence."
+        },
+        {
+          "locator": "Amendments 3 and 12, replacing recitals 1 and 3",
+          "finding": "The text establishes substantive, cross-sector AI regulation and relevance to health, safety, fundamental rights and multiple economic sectors. The existing general_cross_sector classification is supported."
+        },
+        {
+          "locator": "src/observatory/historical_readiness.py, _ADOPTION_TYPES and _validate_dates",
+          "finding": "The active validator accepts institutional_adoption only for resolution, opinion and conclusions. It rejects the accurately retained institutional_position type for this adopted-amendment record. Changing the actual adoption date into a document_issue date merely to pass would be misleading."
+        }
+      ],
+      "hold_reasons": [
+        "Source evidence is adequate for the date distinction, but the publication gate does not represent institutional adoption of this document type. A narrowly scoped rule correction has been presented to the user; no schema or validator change is authorized or implemented in this staging finding."
+      ],
+      "proposed_patch": null,
+      "proposed_contract_correction": "Permit institutional_adoption for officially adopted institutional_position records, retaining independent evidence, legal-status checks and all current date precision and cutoff requirements."
+    }
+  ],
+  "summary": {
+    "reviewed": 4,
+    "upgrades_proposed": 0,
+    "held": 4,
+    "evidence_date_holds": 3,
+    "contract_compatibility_holds": 1
+  },
+  "scope_note": "Fresh, bounded official-source review. Download receipts describe actual retrieved bytes; no binary archive is committed. Unsuccessful metadata requests remain explicit access limitations. Canonical records and prior audit ledgers are unchanged. Publication means the identified primary official manifestation, not necessarily globally first-ever publication."
+}

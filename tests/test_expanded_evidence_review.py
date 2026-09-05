@@ -6,6 +6,8 @@ from observatory.pipeline import run_pipeline
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
+FOLLOWUP_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.json"
+CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
 DOCUMENT_ROOT = ROOT / "data/documents"
 SOURCE_ROOT = ROOT / "data/sources"
 BUILD_TIMESTAMP = "2026-09-05T18:30:00Z"
@@ -69,8 +71,15 @@ def test_canonical_records_apply_only_upgrades_and_preserve_holds_and_routes():
     assert expected_routes.items() <= actual_routes.items()
     for identifier in ledger["upgraded_ids"]:
         assert documents[identifier]["historical_review_status"] == "verified"
+    followup_upgrades = set(_read_json(FOLLOWUP_LEDGER_PATH)["upgraded_ids"]) | set(
+        _read_json(CONTINUATION_LEDGER_PATH)["upgraded_ids"]
+    )
     for held in ledger["held_records"]:
-        assert HISTORICAL_EXTENSION_FIELDS.isdisjoint(documents[held["document_id"]])
+        identifier = held["document_id"]
+        if identifier in followup_upgrades:
+            assert documents[identifier]["historical_review_status"] == "verified"
+        else:
+            assert HISTORICAL_EXTENSION_FIELDS.isdisjoint(documents[identifier])
 
     for row in ledger["baseline"]["preexisting_verified_records"]:
         assert documents[row["id"]]["historical_review_status"] == "verified"
@@ -85,15 +94,13 @@ def test_canonical_records_apply_only_upgrades_and_preserve_holds_and_routes():
 def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
     """The public pipeline must expose the reviewed split, not the old 17/114 split."""
     ledger = _read_json(LEDGER_PATH)
+    followup = _read_json(CONTINUATION_LEDGER_PATH)
     outputs = run_pipeline(ROOT, BUILD_TIMESTAMP, output_root=tmp_path / "output")
     payload = _read_json(outputs.public_json)
     documents = {row["id"]: row for row in payload["documents"]}
 
     assert len(documents) >= 131
-    assert payload["coverage"]["historical_review"] == {
-        "verified": 94,
-        "legacy_review_pending": 37,
-    }
+    assert payload["coverage"]["historical_review"] == followup["expected_after"]["historical_review"]
     assert all(
         documents[identifier]["historical_review_status"] == "verified"
         for identifier in ledger["upgraded_ids"]
@@ -101,7 +108,7 @@ def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
     assert all(
         documents[row["document_id"]]["historical_review_status"]
         == "legacy_review_pending"
-        for row in ledger["held_records"]
+        for row in followup["held_records"]
     )
     assert {
         row["id"]: row["slug"] for row in ledger["baseline"]["documents"]

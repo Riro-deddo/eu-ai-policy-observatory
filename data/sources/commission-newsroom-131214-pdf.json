@@ -1,0 +1,13 @@
+{
+  "id": "commission-newsroom-131214-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T20:37:18.537Z",
+  "updated_at": "2026-09-05T20:37:18.537Z",
+  "source_type": "official_pdf",
+  "url": "https://ec.europa.eu/newsroom/dae/redirection/document/131214",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T19:54:33Z",
+  "last_verified_at": "2026-09-05T19:57:42Z",
+  "verification_note": "Freshly retrieved exact 2-page official PDF (178,569 bytes; SHA-256 ea1a6d960a52d8532a068b8338622d1868616ce6b5bf2540dfef7a2378eb7c8c). Cover and approval paragraphs state C(2026) 5054 final, content approval on 20 July 2026, and formal adoption of the guidelines later. No archive or first-ever-publication claim is made."
+}

@@ -1,0 +1,351 @@
+{
+  "batch_id": "2026-09-05-review-continuation-council-later",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_at": "2026-09-05T20:34:24Z",
+  "publication_cutoff": "2026-09-04",
+  "scope": {
+    "partition": "Council later documents",
+    "record_count": 6,
+    "purpose": "Third-pass search for a dated official publication manifestation of each exact Council document version.",
+    "governing_rule": "Historical-readiness specification section 5.1: publication_date is the date of the official publication represented by the primary cited source for that exact version; issue, adoption, meeting, retrieval and current-public-status dates are not interchangeable with publication."
+  },
+  "common_evidence": [
+    {
+      "url": "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+      "locator": "Public-register metadata guide, PDF pages 14-15 and 18: the register is updated daily; Publication status is a separate field whose value can vary over time; Issue Date means the date on which the document is issued.",
+      "finding": "The official guide confirms that a current Public status plus an Issue Date cannot establish when an exact document became publicly available."
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/",
+      "locator": "Public-register search interface and exact-number searches for 9645/24, 10752/26 and 10599/26.",
+      "finding": "The register exposed exact versions as currently public and displayed document dates, but no independently dated publication event was available in the returned metadata."
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/",
+      "locator": "Council public-access request search and exact-number queries.",
+      "finding": "No dated access-request record tied to any of the six exact manifestations was located."
+    }
+  ],
+  "records": [
+    {
+      "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "exact_manifestation": "ST 9645/1/24 REV 1",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "queries": [
+        "site:consilium.europa.eu \"ST 9645/1/24 REV 1\"",
+        "site:eur-lex.europa.eu \"ST_9645_2024_REV_1\"",
+        "site:data.consilium.europa.eu/doc/document \"9645/1/24 REV 1 + ADD 1 REV 2\"",
+        "site:consilium.europa.eu public access request \"9645/24\""
+      ],
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_9645_2024_REV_1",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=9645%2F24&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10036-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/CM-2909-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
+          "locator": "Cover identifier and masthead.",
+          "finding": "The exact REV 1 manifestation carries the Council issue date 15 May 2024; this is document_issue evidence, not publication evidence."
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_9645_2024_REV_1",
+          "locator": "Document information: Document ST_9645_2024_REV_1; Date of document 15/05/2024; Author Council of the European Union; Form I/A item note.",
+          "finding": "The official mirror confirms identity, issue date and Council authorship, but does not expose a publication-date field."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10036-2024-INIT/en/pdf",
+          "locator": "A-item list issued 17 May 2024, item citing 9645/1/24 REV 1 + ADD 1 REV 2.",
+          "finding": "This later package proves the exact document was scheduled for adoption; it does not state when REV 1 itself was published."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf",
+          "locator": "Draft minutes issued 28 May 2024, AI Act item citing 9645/1/24 REV 1 and recording adoption on 21 May 2024.",
+          "finding": "The minutes establish the Council adoption event, not the publication date of REV 1."
+        }
+      ],
+      "corrections": [
+        "Keep 2024-05-15 only as the exact document issue date; do not relabel it as publication.",
+        "Council/General Secretariat cover-note attribution remains distinct from the Council adoption event."
+      ],
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 9645/1/24 REV 1.",
+        "Current Public status, the 15 May issue date, the 17 May A-item package and the 21 May adoption event cannot substitute for publication_date."
+      ],
+      "proposed_patch": null,
+      "proposed_source_updates": []
+    },
+    {
+      "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "exact_manifestation": "ST 9645/24 ADD 1 REV 2",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "queries": [
+        "site:consilium.europa.eu \"9645/24 ADD 1 REV 2\"",
+        "site:eur-lex.europa.eu \"ST_9645_2024_ADD_1_REV_2\"",
+        "site:data.consilium.europa.eu/doc/document \"9645/1/24 REV 1 + ADD 1 REV 2\"",
+        "site:consilium.europa.eu public access request \"9645/24\""
+      ],
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_9645_2024_ADD_1_REV_2",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=9645%2F24&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10036-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10172-2024-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/CM-2909-2024-INIT/en/pdf",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
+          "locator": "Cover identifier and masthead; statement headings and bodies.",
+          "finding": "The exact ADD 1 REV 2 manifestation is issued 15 May 2024. France and Austria are the statement authors; the Council is the host/wrapper, not the substantive author of the national statements."
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_9645_2024_ADD_1_REV_2",
+          "locator": "Exact Council-document identifier and title; direct open returned the EUR-Lex JavaScript verification page during this review.",
+          "finding": "Official mirror identity/current availability was found, but no readable dated publication field was obtained; the challenge was not bypassed."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10036-2024-INIT/en/pdf",
+          "locator": "A-item list issued 17 May 2024, exact citation 9645/1/24 REV 1 + ADD 1 REV 2 and note that the statements are set out in ADD 1 REV 2.",
+          "finding": "This independently corroborates version identity and the France/Austria statement package, not its publication date."
+        }
+      ],
+      "corrections": [
+        "Keep 2024-05-15 only as document_issue.",
+        "Attribute the substantive statements to France and Austria; retain the Council only as institutional host/wrapper."
+      ],
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 9645/24 ADD 1 REV 2.",
+        "The exact A-item citation and later adoption record corroborate identity and context only."
+      ],
+      "proposed_patch": null,
+      "proposed_source_updates": []
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "exact_manifestation": "ST 10752/26 INIT",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "queries": [
+        "site:consilium.europa.eu \"ST 10752/26\"",
+        "site:eur-lex.europa.eu \"ST_10752_2026_INIT\"",
+        "site:data.consilium.europa.eu/doc/document \"10752/26 + ADD 1 + ADD 2\"",
+        "site:data.consilium.europa.eu/doc/document \"10752/26 + ADD 1\" \"29 June 2026\"",
+        "site:consilium.europa.eu public access request \"10752/26\""
+      ],
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_INIT",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10752%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-11301-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+          "locator": "Cover and paragraphs 6-8.",
+          "finding": "The exact INIT note is issued 22 June 2026 by the General Secretariat to the Council and recommends adoption subject to legal-linguistic finalisation; the cover date is document_issue only."
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_INIT",
+          "locator": "Document information: exact identifier ST_10752_2026_INIT; Date of document 22/06/2026; Author Council of the European Union; procedure 2025/0359/COD.",
+          "finding": "The official mirror confirms identity, issue date and procedure, but exposes no publication-date field."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+          "locator": "A-item list for the 29 June 2026 Council meeting, citing 10752/26 + ADD 1 and PE-CONS 30/26.",
+          "finding": "The package supports agenda/adoption context only; its date is not a publication date for ST 10752/26 INIT."
+        },
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+          "locator": "Dated 29 June 2026 release and document links.",
+          "finding": "The release establishes final Council approval and links the PE-CONS text; it does not publish or identify ST 10752/26 INIT as the represented primary manifestation."
+        }
+      ],
+      "corrections": [
+        "Keep 2026-06-22 only as document_issue.",
+        "Treat the General Secretariat as cover-note sender and the Council as intended adopter; do not infer adoption from the draft recommendation itself."
+      ],
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 INIT.",
+        "The 29 June adoption package and press release are adoption evidence for the legislative act, not publication evidence for this Council note."
+      ],
+      "proposed_patch": null,
+      "proposed_source_updates": []
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "exact_manifestation": "ST 10752/26 ADD 1",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "queries": [
+        "site:consilium.europa.eu \"ST 10752/26 ADD 1\"",
+        "site:eur-lex.europa.eu \"ST_10752_2026_ADD_1\"",
+        "site:data.consilium.europa.eu/doc/document \"10752/26 + ADD 1\" \"29 June 2026\"",
+        "site:consilium.europa.eu public access request \"10752/26\""
+      ],
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_ADD_1",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10752%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+          "locator": "Cover identifier and masthead; statement headings and bodies.",
+          "finding": "The exact ADD 1 manifestation is issued 22 June 2026. Belgium and the European Commission are the substantive statement authors; the Council is the host/wrapper."
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_ADD_1",
+          "locator": "Document information: exact identifier ST_10752_2026_ADD_1; Date of document 22/06/2026; Author Council of the European Union.",
+          "finding": "The official mirror confirms identity/current availability and the document date, but does not supply a publication date."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+          "locator": "A-item list citation 10752/26 + ADD 1.",
+          "finding": "The later package corroborates the exact addendum's adoption context, not the date the addendum was published."
+        }
+      ],
+      "corrections": [
+        "Keep 2026-06-22 only as document_issue.",
+        "Attribute the statements to Belgium and the European Commission; retain the Council only as institutional host/wrapper."
+      ],
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 ADD 1.",
+        "The official mirror's Date of document and the A-item-list date are not publication dates."
+      ],
+      "proposed_patch": null,
+      "proposed_source_updates": []
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "exact_manifestation": "ST 10752/26 ADD 2",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "queries": [
+        "site:consilium.europa.eu \"ST 10752/26 ADD 2\"",
+        "site:eur-lex.europa.eu \"ST_10752_2026_ADD_2\"",
+        "site:data.consilium.europa.eu/doc/document \"10752/26 + ADD 1 + ADD 2\"",
+        "site:consilium.europa.eu public access request \"10752/26\""
+      ],
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_ADD_2",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10752%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-11301-2026-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
+          "locator": "Cover identifier and masthead; statement heading and body.",
+          "finding": "The exact ADD 2 manifestation is issued 24 June 2026 and contains Greece's statement; the Council is the host/wrapper rather than the statement author."
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10752_2026_ADD_2",
+          "locator": "Exact identifier/title was returned by official EUR-Lex results; the English ALL page could not be fetched reliably in this session.",
+          "finding": "Exact identity/current availability is corroborated, but no readable official publication-date field was obtained; search-result age labels were not treated as evidence."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-11301-2026-INIT/en/pdf",
+          "locator": "Public vote record dated 29 June 2026.",
+          "finding": "This establishes the Council vote/adoption event, not publication of exact ADD 2."
+        }
+      ],
+      "corrections": [
+        "Keep 2026-06-24 only as document_issue.",
+        "Attribute the statement to Greece; retain the Council only as institutional host/wrapper."
+      ],
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10752/26 ADD 2.",
+        "The vote record and 29 June press release establish adoption context only."
+      ],
+      "proposed_patch": null,
+      "proposed_source_updates": []
+    },
+    {
+      "document_id": "ai-omnibus-council-information-note-st-10599-2026",
+      "exact_manifestation": "ST 10599/26 INIT",
+      "decision": "hold",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_at": "2026-09-05T20:34:24Z",
+      "queries": [
+        "site:consilium.europa.eu \"ST 10599/26\"",
+        "site:eur-lex.europa.eu \"ST_10599_2026_INIT\"",
+        "site:data.consilium.europa.eu/doc/document \"10599/26\" \"10752/26\"",
+        "site:consilium.europa.eu public access request \"10599/26\""
+      ],
+      "checked_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10599_2026_INIT",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=10599%2F26&DocumentLanguage=EN&OrderBy=DOCUMENT_DATE+DESC",
+        "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+        "https://data.consilium.europa.eu/doc/document/ST-10932-2026-REV-1/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+        "https://www.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf"
+      ],
+      "observed_evidence": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
+          "locator": "Cover identifier and masthead; note body and annex title P10_TA(2026)0198.",
+          "finding": "The exact Council information note is issued 17 June 2026 by the General Secretariat. It transmits the Parliament text adopted 16 June 2026; the annex is Parliament-authored, not Council-authored."
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=consil:ST_10599_2026_INIT",
+          "locator": "Exact Council-document mirror; direct fetch returned a cache miss in this session.",
+          "finding": "No independently readable publication-date metadata was obtained; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
+          "locator": "Footnote/reference to the Parliament text in ST 10599/26 and recommendation for Council adoption.",
+          "finding": "This later Council note confirms lineage and adoption context, but does not date publication of ST 10599/26."
+        }
+      ],
+      "corrections": [
+        "Keep 2026-06-17 only as document_issue.",
+        "Treat the General Secretariat as cover-note sender and the European Parliament as author/adopter of the annexed P10_TA(2026)0198 text."
+      ],
+      "hold_reasons": [
+        "No newly located official source supplies a dated publication manifestation or historical public-release timestamp for exact ST 10599/26 INIT.",
+        "The 17 June cover date, 16 June Parliament adoption and 29 June Council adoption are distinct events and cannot establish publication_date for this information note."
+      ],
+      "proposed_patch": null,
+      "proposed_source_updates": []
+    }
+  ],
+  "proposed_sources": [],
+  "source_updates": [],
+  "summary": {
+    "ready": 0,
+    "hold": 6,
+    "resulting_corpus_counts_if_accepted": {
+      "verified": 101,
+      "pending": 30
+    },
+    "principal_gap": "No exact manifestation has a newly evidenced dated official publication event distinct from its issue/adoption/meeting dates.",
+    "access_limitations": [
+      "Council register search exposed current availability and document dates, but not a historical publication timestamp.",
+      "Some EUR-Lex exact-document opens returned JavaScript verification or cache/safe-URL errors. These were not bypassed, and search snippets were not used as readiness evidence.",
+      "The Council latest-documents feed is dynamic and its item dates repeat document issue dates; it cannot establish historical public release.",
+      "No exact-number public-access request record was located for the six manifestations."
+    ]
+  }
+}

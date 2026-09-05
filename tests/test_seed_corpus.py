@@ -472,7 +472,8 @@ def test_2025_to_2026_codes_guidelines_and_templates_keep_component_versions():
     )
     assert documents["gpai-code-first-draft"]["version_status"] == "draft"
     assert documents["transparency-code-second-draft-2026"]["version_status"] == "draft"
-    assert documents["final-transparency-guidelines-2026"]["version_status"] == "final"
+    assert documents["final-transparency-guidelines-2026"]["version_status"] == "draft"
+    assert documents["final-transparency-guidelines-2026"]["record_level"] == "attachment"
 
 
 def test_2025_to_2026_relationships_and_dates_preserve_official_sequence():

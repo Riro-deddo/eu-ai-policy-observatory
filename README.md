@@ -1,6 +1,6 @@
 # EU AI Policy Observatory
 
-The EU AI Policy Observatory is a verified research database of European Union artificial intelligence policy. The database is the primary output; the accompanying website is a read-only research atlas over generated public data. It makes a bounded, inspectable corpus easier to browse, cite and interrogate without replacing the official sources on which individual records rely.
+The EU AI Policy Observatory is a verified research database of European Union artificial intelligence policy. The database serves as research infrastructure; the accompanying website is a read-only research atlas over generated public data. It makes a bounded, inspectable corpus easier to browse, cite and interrogate without replacing the official sources on which individual records rely.
 
 ## Version 0.1 release
 

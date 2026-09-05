@@ -267,7 +267,7 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
     relationships = {relationship["id"]: relationship for relationship in public_data["relationships"]}
 
     assert outputs.record_counts["documents"] == 131
-    assert outputs.record_counts["relationships"] == 95
+    assert outputs.record_counts["relationships"] == 96
     assert {(item["id"], item["slug"]) for item in baseline["documents"]} <= {
         (item["id"], item["slug"]) for item in public_data["documents"]
     }
@@ -282,7 +282,7 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
 
     with sqlite3.connect(outputs.database) as connection:
         assert connection.execute("SELECT COUNT(*) FROM documents").fetchone()[0] == 131
-        assert connection.execute("SELECT COUNT(*) FROM relationships").fetchone()[0] == 95
+        assert connection.execute("SELECT COUNT(*) FROM relationships").fetchone()[0] == 96
         sqlite_routes = set(connection.execute("SELECT id, slug FROM documents"))
         sqlite_levels = dict(
             connection.execute(

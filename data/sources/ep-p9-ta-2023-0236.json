@@ -1,4 +1,13 @@
 {
-  "id": "ep-p9-ta-2023-0236", "entity_type": "source", "publication_status": "published", "created_at": "2026-09-04T00:00:00Z", "updated_at": "2026-09-04T00:00:00Z",
-  "source_type": "eur_lex", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236", "publisher": "Publications Office of the European Union / EUR-Lex", "retrieved_at": "2026-09-04T00:00:00Z", "last_verified_at": "2026-09-04T00:00:00Z", "verification_note": "EUR-Lex confirms the Parliament amendments adopted on 14 June 2023, CELEX 52023AP0236, P9_TA(2023)0236 and the later OJ C publication reference."
+  "id": "ep-p9-ta-2023-0236",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T20:37:18.537Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023AP0236",
+  "publisher": "Publications Office of the European Union / EUR-Lex",
+  "retrieved_at": "2026-09-04T00:00:00Z",
+  "last_verified_at": "2026-09-05T20:37:18.537Z",
+  "verification_note": "Rechecked the official EUR-Lex title, P9_TA(2023)0236, OJ C/2024/506 masthead and amendments 3 and 12. The Parliament adopted the amendments on 14 June 2023; this OJ manifestation was published on 23 January 2024. No retrieval or later web-update date is used as publication evidence."
 }
