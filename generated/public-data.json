@@ -47,7 +47,7 @@
   ],
   "coverage": {
     "coverage_cutoff": "2026-09-04",
-    "coverage_statement": "Comprehensive within the documented inclusion boundary, verified through 4 September 2026.",
+    "coverage_statement": "An expanding corpus of official EU and European Communities AI-related documents. Verification dates and known coverage gaps are documented.",
     "from_year": 2018,
     "inventory": {
       "excluded": 22,
@@ -16314,7 +16314,7 @@
       "updated_at": "2026-09-03T00:00:00Z"
     }
   ],
-  "generated_at": "2026-09-04T00:00:00Z",
+  "generated_at": "1970-01-01T00:00:00Z",
   "institutions": [
     {
       "created_at": "2026-09-03T00:00:00Z",
