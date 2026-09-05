@@ -44,13 +44,13 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     assert payload["coverage"]["inventory"] == {
         key: decisions[key] for key in ("included", "merged", "excluded", "pending")
     }
-    assert sum(decisions.values()) == 157
+    assert sum(decisions.values()) == 171
     assert decisions["pending"] == 12
     assert payload["coverage"]["source_families"] == {
-        "total": 13,
+        "total": 17,
         "by_status": {
             "not_started": 0,
-            "in_progress": 0,
+            "in_progress": 4,
             "reviewed": 11,
             "gap_found": 0,
             "recheck_due": 2,
@@ -72,6 +72,25 @@ def test_pipeline_excludes_unpublished_canonical_records_from_every_public_outpu
     shutil.copytree(Path("schema"), project_root / "schema")
     research_root = project_root / "research"
     research_root.mkdir()
+    migrations_root = research_root / "migrations"
+    migrations_root.mkdir()
+    (migrations_root / "2026-09-05-public-document-baseline.json").write_text(
+        json.dumps(
+            {
+                "baseline_date": "2026-09-05",
+                "publication_cutoff": "2026-09-04",
+                "baseline_head": "fixture",
+                "documents": [
+                    {
+                        "id": "example-document",
+                        "slug": "example-document",
+                        "record_sha256": "fixture",
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
     source_id = json.loads(
         (Path("research/source-sweep.json")).read_text(encoding="utf-8")
     )["sources"][0]["id"]
@@ -254,6 +273,7 @@ def test_malformed_timestamp_does_not_touch_outputs_and_cli_reports_it(tmp_path_
             "--timestamp",
             "not-a-timestamp",
         ],
+        env={**os.environ, "PYTHONPATH": str(Path.cwd() / "src")},
         text=True,
         capture_output=True,
         check=False,

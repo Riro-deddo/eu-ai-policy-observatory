@@ -58,10 +58,10 @@ def test_pipeline_retains_pdf_provenance_without_adding_documents(tmp_path):
     public = json.loads(outputs.public_json.read_text(encoding="utf-8"))
     documents = {item["id"]: item for item in public["documents"]}
     frozen = json.loads(BASELINE.read_text(encoding="utf-8"))["documents"]
-    assert {(item["id"], item["slug"]) for item in public["documents"]} == {
-        (item["id"], item["slug"]) for item in frozen
+    assert {(item["id"], item["slug"]) for item in frozen} <= {
+        (item["id"], item["slug"]) for item in public["documents"]
     }
-    assert outputs.record_counts["documents"] == 117
+    assert outputs.record_counts["documents"] == 131
     assert outputs.record_counts["relationships"] == 95
     with sqlite3.connect(outputs.database) as connection:
         for document_id, newsroom, digest, retrieved_at, _, _ in FILES:

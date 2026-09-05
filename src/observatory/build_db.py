@@ -1,5 +1,6 @@
 """Transactional generation of the Observatory's normalised SQLite database."""
 
+import json
 import os
 from pathlib import Path
 import sqlite3
@@ -8,6 +9,15 @@ from typing import Mapping
 
 from observatory.io import LoadedRecord
 
+DATABASE_SEED_V1 = (
+    "ai-act-proposal",
+    "ai-liability-directive-proposal",
+    "artificial-intelligence-act",
+    "artificial-intelligence-for-europe",
+    "coordinated-plan-on-artificial-intelligence",
+    "ethics-guidelines-for-trustworthy-ai",
+    "white-paper-on-artificial-intelligence",
+)
 
 def build_database(
     records: dict[str, list[LoadedRecord]], schema_path: Path, output_path: Path
@@ -83,9 +93,33 @@ def _insert_records(
     _insert_sources(connection, _ordered_records(records, "sources"))
     documents = _ordered_records(records, "documents")
     _insert_documents(connection, documents)
+    _insert_database_seed_subset(connection)
     _insert_events(connection, _ordered_records(records, "events"))
     _insert_relationships(connection, _ordered_records(records, "relationships"))
     _insert_document_supporting_rows(connection, documents)
+
+
+def _insert_database_seed_subset(connection: sqlite3.Connection) -> None:
+    """Retain the original database seed, not a claimed PhD analytical sample."""
+    connection.execute(
+        "INSERT INTO research_subsets (id, version, purpose) VALUES (?, ?, ?)",
+        (
+            "database-seed-v1",
+            1,
+            "Original seven-document database seed; not a researcher-approved PhD sample.",
+        ),
+    )
+    present_document_ids = {
+        row[0] for row in connection.execute("SELECT id FROM documents").fetchall()
+    }
+    connection.executemany(
+        "INSERT INTO research_subset_documents (subset_id, document_id) VALUES (?, ?)",
+        [
+            ("database-seed-v1", document_id)
+            for document_id in DATABASE_SEED_V1
+            if document_id in present_document_ids
+        ],
+    )
 
 
 def _insert_policies(connection: sqlite3.Connection, records: list[LoadedRecord]) -> None:
@@ -125,17 +159,41 @@ def _insert_sources(connection: sqlite3.Connection, records: list[LoadedRecord])
 
 
 def _insert_documents(connection: sqlite3.Connection, records: list[LoadedRecord]) -> None:
-    _insert_entity_rows(
-        connection,
-        "documents",
-        (
-            "id", "publication_status", "created_at", "updated_at", "slug",
-            "official_title", "short_title", "document_type", "record_level",
-            "official_reference", "oj_reference", "document_date", "version_label",
-            "version_status", "publication_date", "legal_status", "celex", "eli",
-            "language", "official_summary",
-        ),
-        records,
+    fields = (
+        "id", "publication_status", "created_at", "updated_at", "slug",
+        "official_title", "short_title", "document_type", "record_level",
+        "official_reference", "oj_reference", "document_date", "version_label",
+        "version_status", "publication_date", "legal_status", "celex", "eli",
+        "language", "official_summary", "historical_review_status",
+        "temporal_collection", "relevance_class", "document_date_kind",
+        "date_evidence", "legal_status_evidence", "classification_evidence",
+        "bibliographic_authors", "additional_dates",
+    )
+    placeholders = ", ".join("?" for _ in fields)
+    rows = []
+    for record in records:
+        values = []
+        for field in fields:
+            value = record.data.get(field)
+            if field == "historical_review_status" and value is None:
+                value = "legacy_review_pending"
+            if field in {
+                "date_evidence", "legal_status_evidence", "classification_evidence",
+                "bibliographic_authors", "additional_dates",
+            }:
+                if value is None and field in {
+                    "classification_evidence", "bibliographic_authors", "additional_dates",
+                }:
+                    value = []
+                value = (
+                    json.dumps(value, ensure_ascii=False, sort_keys=True)
+                    if value is not None
+                    else None
+                )
+            values.append(value)
+        rows.append(tuple(values))
+    connection.executemany(
+        f"INSERT INTO documents ({', '.join(fields)}) VALUES ({placeholders})", rows
     )
 
 
@@ -210,8 +268,16 @@ def _insert_document_supporting_rows(
             )
         for role in _mappings(data, "institution_roles"):
             connection.execute(
-                "INSERT INTO document_institutions (document_id, institution_id, role) VALUES (?, ?, ?)",
-                (document_id, role.get("institution_id"), role.get("role")),
+                "INSERT INTO document_institutions "
+                "(document_id, institution_id, role, evidence_source_id, evidence_locator) "
+                "VALUES (?, ?, ?, ?, ?)",
+                (
+                    document_id,
+                    role.get("institution_id"),
+                    role.get("role"),
+                    role.get("evidence_source_id"),
+                    role.get("evidence_locator"),
+                ),
             )
         for snapshot in _mappings(data, "snapshots"):
             connection.execute(

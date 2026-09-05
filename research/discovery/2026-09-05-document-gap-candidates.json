@@ -1,0 +1,3099 @@
+{
+  "schema_version": "private-discovery-notes-v1",
+  "purpose": "A bounded gap-discovery handoff, not a canonical dataset, publication decision or completeness audit.",
+  "reviewed_at": "2026-09-05T06:20:31Z",
+  "reviewer": "Codex (AI-assisted research and consolidation); no human approval recorded",
+  "publication_cutoff": "2026-09-04",
+  "baseline": {
+    "git_commit": "e74b4a9c65a1c86edb01ecfd34f24423efd7fd16",
+    "public_document_count": 117,
+    "public_data_sha256": "067b839ba54da091d8b6ba7f743d660826865221f4587c647379d7c8f71fc4eb"
+  },
+  "counts": {
+    "distinct_pending_candidates": 34,
+    "by_temporal_collection": {
+      "historical_lineage": 17,
+      "contemporary_eu_ai_policy": 17
+    },
+    "by_proposed_relevance": {
+      "ai_related_precursor": 7,
+      "direct_ai_substantive": 27
+    },
+    "by_evidence_level": {
+      "primary_text_reviewed": 26,
+      "official_indexed_text_only": 5,
+      "official_supporting_text_only": 1,
+      "official_summary_only": 1,
+      "official_catalogue_only": 1
+    },
+    "primary_text_reviewed_by_temporal_collection": {
+      "historical_lineage": 12,
+      "contemporary_eu_ai_policy": 14
+    },
+    "existing_corpus_matches": 0,
+    "canonical_imports": 0,
+    "previously_named_design_anchors": 4,
+    "sector_tag_counts_non_additive": {
+      "research_and_innovation": 15,
+      "industry_and_manufacturing": 10,
+      "education": 2,
+      "public_administration": 3,
+      "health": 7,
+      "transport_and_mobility": 7,
+      "agriculture_and_environment": 1,
+      "critical_infrastructure": 1,
+      "justice": 6,
+      "intellectual_property": 1,
+      "consumer_protection": 4,
+      "general_cross_sector": 7,
+      "competition_and_markets": 3,
+      "employment_and_labour": 4,
+      "law_enforcement": 2,
+      "media_and_culture": 1,
+      "financial_services": 7,
+      "defence_and_security": 2,
+      "migration_asylum_and_border_management": 2
+    }
+  },
+  "evidence_level_definitions": {
+    "primary_text_reviewed": "Relevant passages were read in an opened official HTML document or primary PDF. This is not a claim that every page, metadata field or sector tag has been verified.",
+    "official_indexed_text_only": "Substantive passages were available through official-domain search extraction, but direct primary-text retrieval was unsuccessful.",
+    "official_supporting_text_only": "Official annex/briefing text supports discovery, but the main study was not retrieved.",
+    "official_summary_only": "An official substantive summary supports discovery; the underlying full opinion was not retrieved.",
+    "official_catalogue_only": "The official catalogue identifies the document; primary contents, credits and exact version remain unverified."
+  },
+  "conventions": [
+    "All candidates are pending; canonical_record_id is null. No inventory disposition, public record or source-family coverage status is changed.",
+    "Titles, references, dates and roles are reported evidence, with remaining ambiguities explicit. Relevance, temporal collection and tags are editorial proposals, not official metadata.",
+    "Counts refer to distinct document/version candidates, not unique legal instruments, attachments, URLs or languages. EASA Roadmaps 1.0 and 2.0 are separately citable versions.",
+    "Document dates and publication dates are distinct. A 2017 resolution republished in the 2018 OJ remains historical. Date precision is retained; unknown days are never replaced with 1 January.",
+    "A published workplan may discuss activities after the cutoff. Such future activities are not treated as already completed events.",
+    "No local full-text archive or verified file checksum of an official PDF was created. Source text was retrieved through search/open tools.",
+    "Historical research programmes are not asserted to be legal predecessors of the AI Act. There is no fixed earliest eligible year.",
+    "A query-based first pass cannot establish completeness. No catalogue pagination was exhausted, and inaccessible sources are unresolved rather than presumed empty.",
+    "No indirect_adm_legal_context candidate was verified in this pass. This does not mean that subset is empty; known data-protection and automated-decision anchors remain to be audited.",
+    "The source cut-off remains 4 September 2026 even though research was performed on 5 September. Exact manifestation availability still requires confirmation where publication_date is null."
+  ],
+  "candidates": [
+    {
+      "candidate_id": "historical-84-130-eec-esprit",
+      "batch": "historical_programmes",
+      "short_title": "ESPRIT I",
+      "official_title": "84/130/EEC: Council Decision of 28 February 1984 concerning a European programme for research and development in information technologies (ESPRIT)",
+      "official_references": [
+        "84/130/EEC"
+      ],
+      "celex": "31984D0130",
+      "eli": "http://data.europa.eu/eli/dec/1984/130/oj",
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "1984-02-28",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "1984-03-09",
+        "publication_date_precision": "day",
+        "note": "OJ L 67, 9.3.1984, pp. 54-59",
+        "additional_dates": []
+      },
+      "issuer_label": "Council of the European Communities",
+      "institution_roles": [
+        {
+          "name": "Council of the European Communities",
+          "role": "adopter"
+        },
+        {
+          "name": "Commission of the European Communities",
+          "role": "proposer"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/eli/dec/1984/130/oj/eng",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Annex, section 3 'Advanced information processing (AIP)', EUR-Lex HTML lines 467-480; related manufacturing use at lines 494-509.",
+        "paraphrase": "The programme funds a shift from data to knowledge processing, including expert systems, representation, inference, learning and intelligent sensors."
+      },
+      "remaining_checks": [
+        "Editorial classification approval and canonical vocabulary/status mapping.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": true,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-88-279-eec-esprit-ii",
+      "batch": "historical_programmes",
+      "short_title": "ESPRIT II",
+      "official_title": "88/279/EEC: Council Decision of 11 April 1988 concerning the European strategic programme for research and development in information technologies (Esprit)",
+      "official_references": [
+        "88/279/EEC"
+      ],
+      "celex": "31988D0279",
+      "eli": "http://data.europa.eu/eli/dec/1988/279/oj",
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "1988-04-11",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "1988-05-06",
+        "publication_date_precision": "day",
+        "note": "OJ L 118, 6.5.1988, pp. 32-41",
+        "additional_dates": []
+      },
+      "issuer_label": "Council of the European Communities",
+      "institution_roles": [
+        {
+          "name": "Council of the European Communities",
+          "role": "adopter"
+        },
+        {
+          "name": "Commission of the European Communities",
+          "role": "proposer"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A31988D0279",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Annex II, B 'Actions in basic research', OJ L 118/41, PDF page 10, extracted lines 546-557; knowledge engineering and robotics also appear on OJ pp. 39-40.",
+        "paraphrase": "The basic-research work areas expressly include AI and cognitive science, alongside knowledge engineering and robotics projects."
+      },
+      "remaining_checks": [
+        "Confirm exact end-of-validity date if an expired status is later encoded.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": true,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-88-417-eec-delta",
+      "batch": "historical_programmes",
+      "short_title": "DELTA exploratory action",
+      "official_title": "88/417/EEC: Council Decision of 29 June 1988 on a Community action in the field of learning technologies - development of European learning through technological advance (Delta) exploratory action",
+      "official_references": [
+        "88/417/EEC"
+      ],
+      "celex": "31988D0417",
+      "eli": "http://data.europa.eu/eli/dec/1988/417/oj",
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "1988-06-29",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "1988-07-30",
+        "publication_date_precision": "day",
+        "note": "OJ L 206, 30.7.1988, pp. 20-28",
+        "additional_dates": []
+      },
+      "issuer_label": "Council of the European Communities",
+      "institution_roles": [
+        {
+          "name": "Council of the European Communities",
+          "role": "adopter"
+        },
+        {
+          "name": "Commission of the European Communities",
+          "role": "proposer"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A31988D0417",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "education"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Annex II, section 2 'Objectives and deliverables', OJ L 206/26-27, PDF pages 7-8, extracted lines 421-456.",
+        "paraphrase": "DELTA treats AI computing as a technological milestone for structuring and accessing learning information and specifies advanced knowledge bases."
+      },
+      "remaining_checks": [
+        "Confirm exact end-of-validity date before assigning expired in canonical data.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-89-415-eec-doses",
+      "batch": "historical_programmes",
+      "short_title": "DOSES statistical expert systems programme",
+      "official_title": "89/415/EEC: Council Decision of 20 June 1989 instituting a specific programme for the research and development of statistical expert systems (Doses)",
+      "official_references": [
+        "89/415/EEC"
+      ],
+      "celex": "31989D0415",
+      "eli": "http://data.europa.eu/eli/dec/1989/415/oj",
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "1989-06-20",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "1989-07-13",
+        "publication_date_precision": "day",
+        "note": "OJ L 200, 13.7.1989, pp. 46-49",
+        "additional_dates": []
+      },
+      "issuer_label": "Council of the European Communities",
+      "institution_roles": [
+        {
+          "name": "Council of the European Communities",
+          "role": "adopter"
+        },
+        {
+          "name": "Commission of the European Communities",
+          "role": "proposer"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/eli/dec/1989/415/oj/eng/pdf",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "public_administration"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_indexed_text_only",
+        "locator": "Article 1 and Annex I 'Programme objectives and summary of the work programme'; official search text and OJ PDF result identify the annex's opening sentence.",
+        "paraphrase": "The entire specific programme concerns statistical expert systems across the statistical processing chain."
+      },
+      "remaining_checks": [
+        "Reopen the full official text rather than only the official indexed PDF/search extraction.",
+        "Confirm exact end-of-validity date.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-94-802-ec-esprit",
+      "batch": "historical_programmes",
+      "short_title": "ESPRIT under the Fourth Framework Programme",
+      "official_title": "94/802/EC: Council Decision of 23 November 1994 adopting a specific programme for research and technological development, including demonstration, in the field of information technologies (1994 to 1998)",
+      "official_references": [
+        "94/802/EC"
+      ],
+      "celex": "31994D0802",
+      "eli": "http://data.europa.eu/eli/dec/1994/802/oj",
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "1994-11-23",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "1994-12-22",
+        "publication_date_precision": "day",
+        "note": "OJ L 334, 22.12.1994, pp. 24-46",
+        "additional_dates": []
+      },
+      "issuer_label": "Council of the European Union",
+      "institution_roles": [
+        {
+          "name": "Council of the European Union",
+          "role": "adopter"
+        },
+        {
+          "name": "Commission of the European Communities",
+          "role": "proposer"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31994D0802",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_indexed_text_only",
+        "locator": "Annex I, information-processing and software technologies, paragraph beginning 'A third area will aim to develop'; official EUR-Lex indexed text.",
+        "paraphrase": "The programme funds reasoning, adaptation, knowledge sharing and cooperating distributed intelligent systems, with cognitive behaviour research."
+      },
+      "remaining_checks": [
+        "Reopen the full official page/PDF and record an OJ page-level locator.",
+        "Confirm exact end-of-validity date.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-decision-1513-2002-ec-fp6",
+      "batch": "historical_programmes",
+      "short_title": "Sixth Framework Programme (FP6)",
+      "official_title": "Decision No 1513/2002/EC of the European Parliament and of the Council of 27 June 2002 concerning the sixth framework programme of the European Community for research, technological development and demonstration activities, contributing to the creation of the European Research Area and to innovation (2002 to 2006)",
+      "official_references": [
+        "Decision No 1513/2002/EC"
+      ],
+      "celex": "32002D1513",
+      "eli": null,
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "2002-06-27",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "2002-08-29",
+        "publication_date_precision": "day",
+        "note": "OJ L 232, 29.8.2002, pp. 1-33",
+        "additional_dates": []
+      },
+      "issuer_label": "European Parliament and Council of the European Union",
+      "institution_roles": [
+        {
+          "name": "European Parliament",
+          "role": "adopter"
+        },
+        {
+          "name": "Council of the European Union",
+          "role": "adopter"
+        },
+        {
+          "name": "Commission of the European Communities",
+          "role": "proposer"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32002D1513",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "proposed_provenance_tags": [
+        "joint_institutional",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Annex I, section 1.1.2 'Information society technologies', OJ L 232/8-10, extracted PDF lines 477-536 and 573-576.",
+        "paraphrase": "FP6 defines ambient intelligence, cognitive knowledge-management systems, natural multimodal interfaces, intelligent manufacturing and innovative robotics as priorities."
+      },
+      "remaining_checks": [
+        "Resolve present legal status separately from programme completion.",
+        "Confirm whether a corresponding specific-programme decision should be represented instead or related as a distinct act.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-2013-743-eu-horizon-2020-specific-programme",
+      "batch": "historical_programmes",
+      "short_title": "Horizon 2020 specific programme",
+      "official_title": "2013/743/EU: Council Decision of 3 December 2013 establishing the specific programme implementing Horizon 2020 - the Framework Programme for Research and Innovation (2014-2020) and repealing Decisions 2006/971/EC, 2006/972/EC, 2006/973/EC, 2006/974/EC and 2006/975/EC",
+      "official_references": [
+        "2013/743/EU"
+      ],
+      "celex": "32013D0743",
+      "eli": "http://data.europa.eu/eli/dec/2013/743/oj",
+      "descriptive_document_type": "decision",
+      "dates": {
+        "document_date": "2013-12-03",
+        "document_date_kind": "official_act_date",
+        "document_date_precision": "day",
+        "publication_date": "2013-12-20",
+        "publication_date_precision": "day",
+        "note": "OJ L 347, 20.12.2013, pp. 965-1041",
+        "additional_dates": []
+      },
+      "issuer_label": "Council of the European Union",
+      "institution_roles": [
+        {
+          "name": "Council of the European Union",
+          "role": "adopter"
+        },
+        {
+          "name": "European Commission",
+          "role": "proposer"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32013D0743",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Annex I, Part II, sections 1.1.4-1.1.5, EUR-Lex HTML lines 1315-1320.",
+        "paraphrase": "The specific programme funds machine-learning information management and robots, cognitive systems, sentient machines and adaptive learning systems."
+      },
+      "remaining_checks": [
+        "Reconcile current legal status with the successor act before canonical mapping.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import.",
+        "Review whether the dedicated machine-learning provisions meet direct_ai_substantive under the priority rule; the precursor label remains provisional."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-com-2016-180-digitising-european-industry",
+      "batch": "historical_programmes",
+      "short_title": "Digitising European Industry",
+      "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Digitising European Industry - Reaping the full benefits of a Digital Single Market",
+      "official_references": [
+        "COM(2016) 180 final"
+      ],
+      "celex": "52016DC0180",
+      "eli": null,
+      "descriptive_document_type": "communication",
+      "dates": {
+        "document_date": "2016-04-19",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": null,
+        "publication_date_precision": null,
+        "note": "EUR-Lex preparatory document COM(2016) 180 final",
+        "additional_dates": []
+      },
+      "issuer_label": "European Commission",
+      "institution_roles": [
+        {
+          "name": "European Commission",
+          "role": "author"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016DC0180",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "industry_and_manufacturing",
+        "research_and_innovation"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_indexed_text_only",
+        "locator": "Body paragraph beginning 'The convergence of a number of technologies is driving the digital change'; official EUR-Lex indexed text.",
+        "paraphrase": "The Commission's industrial strategy identifies AI and robotics as drivers of digital industrial change and coordinates investment and innovation infrastructure."
+      },
+      "remaining_checks": [
+        "Reopen full EUR-Lex text and record a stable section/line locator.",
+        "Confirm official same-day publication evidence distinct from issue date.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import.",
+        "Verify that the complete industrial strategy contains a substantive AI policy passage, not only AI in a list of enabling technologies."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ep-ethical-cyber-physical-systems-2016",
+      "batch": "historical_institutional",
+      "short_title": "Ethical Aspects of Cyber-Physical Systems",
+      "official_title": "Ethical Aspects of Cyber-Physical Systems",
+      "official_references": [
+        "PE 563.501",
+        "EPRS_STU(2016)563501"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "study",
+      "dates": {
+        "document_date": "2016-06-28",
+        "document_date_kind": "publication",
+        "document_date_precision": "day",
+        "publication_date": "2016-06-28",
+        "publication_date_precision": "day",
+        "note": null,
+        "additional_dates": []
+      },
+      "issuer_label": "European Parliament / European Parliamentary Research Service",
+      "institution_roles": [
+        {
+          "name": "Technopolis Group with Maastricht University",
+          "role": "author"
+        },
+        {
+          "name": "Science and Technology Options Assessment Panel (STOA), European Parliament",
+          "role": "commissioner"
+        },
+        {
+          "name": "Scientific Foresight Unit (STOA), Directorate-General for Parliamentary Research Services",
+          "role": "manager"
+        },
+        {
+          "name": "European Parliament / European Parliamentary Research Service",
+          "role": "publisher"
+        },
+        {
+          "name": "European Parliament Think Tank / RegData",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU(2016)563501",
+      "supporting_urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501(ANN)_EN.pdf",
+        "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501(ANN1)_EN.pdf"
+      ],
+      "version_note": "One separately citable study; annexes and briefing relationships require review.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "research_and_innovation",
+        "health",
+        "transport_and_mobility",
+        "agriculture_and_environment",
+        "industry_and_manufacturing",
+        "critical_infrastructure",
+        "justice"
+      ],
+      "proposed_provenance_tags": [
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_supporting_text_only",
+        "locator": "STOA policy briefing page 1 and pages 2-4; Annex 1 pages 3 and 6-7.",
+        "paraphrase": "The foresight project treats CPS as intelligent robotics combining networked computers, robots and AI and maps legal and ethical implications across seven sectors."
+      },
+      "remaining_checks": [
+        "The main-study PDF returned an anti-bot page in direct open, although the official catalogue result and both substantive annex PDFs were accessible.",
+        "Verify the complete main-study bibliographic author line before canonical import and model the policy briefing and annexes as supporting manifestations rather than automatic separate principals.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import.",
+        "Apply the direct-AI-first priority rule after reviewing the main study; the current precursor classification is provisional."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ep-european-civil-law-robotics-study-2016",
+      "batch": "historical_institutional",
+      "short_title": "European Civil Law Rules in Robotics",
+      "official_title": "European Civil Law Rules in Robotics",
+      "official_references": [
+        "PE 571.379",
+        "IPOL_STU(2016)571379"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "study",
+      "dates": {
+        "document_date": "2016-10-12",
+        "document_date_kind": "publication",
+        "document_date_precision": "day",
+        "publication_date": "2016-10-12",
+        "publication_date_precision": "day",
+        "note": "The Think Tank catalogue labels the item 'Study 12-10-2016'; the PDF states that the manuscript was completed in October 2016.",
+        "additional_dates": []
+      },
+      "issuer_label": "Policy Department C: Citizens' Rights and Constitutional Affairs, European Parliament",
+      "institution_roles": [
+        {
+          "name": "Nathalie Nevejans, Universite d'Artois",
+          "role": "author"
+        },
+        {
+          "name": "European Parliament Committee on Legal Affairs",
+          "role": "commissioner"
+        },
+        {
+          "name": "Policy Department C: Citizens' Rights and Constitutional Affairs, European Parliament",
+          "role": "publisher"
+        },
+        {
+          "name": "European Parliament RegData / Think Tank",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/571379/IPOL_STU(2016)571379_EN.pdf",
+      "supporting_urls": [],
+      "version_note": "The Think Tank catalogue labels the item 'Study 12-10-2016'; the PDF states that the manuscript was completed in October 2016.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "justice",
+        "intellectual_property",
+        "consumer_protection",
+        "health",
+        "transport_and_mobility",
+        "research_and_innovation"
+      ],
+      "proposed_provenance_tags": [
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF pages 2-6 and section 2.1, pages 8-10.",
+        "paraphrase": "The commissioned study evaluates future EU civil-law and ethics rules for robotics and AI, including autonomy, liability, privacy and data governance."
+      },
+      "remaining_checks": [
+        "Confirm whether the catalogue day should be treated as the issue date or only the first official publication date; retain October 2016 manuscript completion as separate supporting metadata.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-com-2017-9-building-european-data-economy",
+      "batch": "historical_programmes",
+      "short_title": "Building a European data economy",
+      "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Building a European data economy",
+      "official_references": [
+        "COM(2017) 9 final"
+      ],
+      "celex": "52017DC0009",
+      "eli": null,
+      "descriptive_document_type": "communication",
+      "dates": {
+        "document_date": "2017-01-10",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": null,
+        "publication_date_precision": null,
+        "note": "EUR-Lex preparatory document COM(2017) 9 final",
+        "additional_dates": []
+      },
+      "issuer_label": "European Commission",
+      "institution_roles": [
+        {
+          "name": "European Commission",
+          "role": "author"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0009",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "ai_related_precursor",
+      "proposed_sector_tags": [
+        "general_cross_sector",
+        "competition_and_markets",
+        "transport_and_mobility"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Sections 1 and 4 'Liability', EUR-Lex HTML lines 318-325 and 420-438.",
+        "paraphrase": "The Commission evaluates safety and liability rules for robots and autonomous connected systems and consults on risk, insurance and responsibility models."
+      },
+      "remaining_checks": [
+        "Confirm official same-day publication evidence distinct from issue date.",
+        "Editorially confirm precursor rather than indirect legal-context classification because this is policy analysis, not an automated-decision legal instrument.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ep-civil-law-robotics-2017",
+      "batch": "historical_institutional",
+      "short_title": "Civil Law Rules on Robotics",
+      "official_title": "European Parliament resolution of 16 February 2017 with recommendations to the Commission on Civil Law Rules on Robotics (2015/2103(INL))",
+      "official_references": [
+        "P8_TA(2017)0051",
+        "2015/2103(INL)",
+        "CELEX 52017IP0051",
+        "2018/C 252/25"
+      ],
+      "celex": "52017IP0051",
+      "eli": null,
+      "descriptive_document_type": "resolution",
+      "dates": {
+        "document_date": "2017-02-16",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2018-07-18",
+        "publication_date_precision": "day",
+        "note": "The resolution was adopted in 2017 and reproduced in OJ C 252 on 18 July 2018. This is one historical document, not a 2018 duplicate.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Parliament",
+      "institution_roles": [
+        {
+          "name": "European Parliament",
+          "role": "author"
+        },
+        {
+          "name": "European Parliament",
+          "role": "adopter"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52017IP0051",
+      "supporting_urls": [],
+      "version_note": "The resolution was adopted in 2017 and reproduced in OJ C 252 on 18 July 2018. This is one historical document, not a 2018 duplicate.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "general_cross_sector",
+        "justice",
+        "consumer_protection",
+        "transport_and_mobility",
+        "employment_and_labour",
+        "health",
+        "research_and_innovation"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "EUR-Lex text, paragraphs 1-15 and especially paragraph 13; liability paragraphs 49-59; OJ identity block.",
+        "paraphrase": "Parliament calls for Union definitions, human control, explainable AI decisions, ethics rules and a legislative liability framework for robotics and AI."
+      },
+      "remaining_checks": [
+        "Confirm the earliest official public availability of the adopted-text manifestation separately from the later OJ publication date.",
+        "Decide whether the attached Charter on Robotics remains part of this principal record or needs a supporting attachment record under the annex rule.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": true,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ep-big-data-fundamental-rights-2017",
+      "batch": "historical_institutional",
+      "short_title": "Fundamental rights implications of big data",
+      "official_title": "European Parliament resolution of 14 March 2017 on fundamental rights implications of big data: privacy, data protection, non-discrimination, security and law-enforcement (2016/2225(INI))",
+      "official_references": [
+        "P8_TA(2017)0076",
+        "2016/2225(INI)",
+        "CELEX 52017IP0076",
+        "2018/C 263/10"
+      ],
+      "celex": "52017IP0076",
+      "eli": null,
+      "descriptive_document_type": "resolution",
+      "dates": {
+        "document_date": "2017-03-14",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2018-07-25",
+        "publication_date_precision": "day",
+        "note": "The resolution was adopted in 2017 and reproduced in OJ C 263 on 25 July 2018; the OJ manifestation does not create a contemporary duplicate.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Parliament",
+      "institution_roles": [
+        {
+          "name": "European Parliament",
+          "role": "author"
+        },
+        {
+          "name": "European Parliament",
+          "role": "adopter"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52017IP0076",
+      "supporting_urls": [],
+      "version_note": "The resolution was adopted in 2017 and reproduced in OJ C 263 on 25 July 2018; the OJ manifestation does not create a contemporary duplicate.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "general_cross_sector",
+        "justice",
+        "law_enforcement",
+        "consumer_protection",
+        "competition_and_markets",
+        "public_administration",
+        "media_and_culture"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "EUR-Lex recital B; recitals M-N; paragraphs 8, 20 and 32.",
+        "paraphrase": "The resolution explicitly addresses AI training, biased algorithms, automated decisions, transparency, non-discrimination and meaningful human accountability."
+      },
+      "remaining_checks": [
+        "Confirm the earliest official public availability of the adopted-text manifestation separately from the 2018 OJ date.",
+        "Editorially confirm direct_ai_substantive rather than ai_related_precursor; recital B and the dedicated automated-decision provisions support the direct classification.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "historical-com-2017-228-dsm-mid-term-review",
+      "batch": "historical_programmes",
+      "short_title": "Digital Single Market Strategy mid-term review",
+      "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions on the Mid-Term Review on the implementation of the Digital Single Market Strategy: A Connected Digital Single Market for All",
+      "official_references": [
+        "COM(2017) 228 final"
+      ],
+      "celex": "52017DC0228",
+      "eli": null,
+      "descriptive_document_type": "communication",
+      "dates": {
+        "document_date": "2017-05-10",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": null,
+        "publication_date_precision": null,
+        "note": "EUR-Lex preparatory document COM(2017) 228 final",
+        "additional_dates": []
+      },
+      "issuer_label": "European Commission",
+      "institution_roles": [
+        {
+          "name": "European Commission",
+          "role": "author"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+      "supporting_urls": [],
+      "version_note": "One independently citable act or communication; official publication formats are manifestations, not extra documents.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "industry_and_manufacturing",
+        "transport_and_mobility"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Section 4.2 'Startups and digitisation of industry and service sectors', EUR-Lex HTML lines 469-480; later liability commitment appears in the same communication.",
+        "paraphrase": "The review plans multibillion-euro investment in AI and robotics, industrial testbeds and work on liability rules for those technologies."
+      },
+      "remaining_checks": [
+        "Confirm official same-day publication evidence distinct from issue date.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eesc-ai-consequences-2017",
+      "batch": "historical_institutional",
+      "short_title": "Opinion of the European Economic and Social Committee on 'Artificial intelligence — The consequences of artificial intelligence on the (digital) single market, production, consumption, employment and society' (own-initiative opinion)",
+      "official_title": "Opinion of the European Economic and Social Committee on 'Artificial intelligence — The consequences of artificial intelligence on the (digital) single market, production, consumption, employment and society' (own-initiative opinion)",
+      "official_references": [
+        "INT/806-EESC-2016-05369-00-00-AC-TRA",
+        "AVIS-SECTION 2016/5369 FIN",
+        "CELEX 52016IE5369",
+        "2017/C 288/01"
+      ],
+      "celex": "52016IE5369",
+      "eli": null,
+      "descriptive_document_type": "opinion",
+      "dates": {
+        "document_date": "2017-05-31",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2017-08-31",
+        "publication_date_precision": "day",
+        "note": "EESC adopted the opinion on 31 May 2017; the cited OJ publication is 31 August 2017.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Economic and Social Committee",
+      "institution_roles": [
+        {
+          "name": "European Economic and Social Committee",
+          "role": "author"
+        },
+        {
+          "name": "European Economic and Social Committee",
+          "role": "adopter"
+        },
+        {
+          "name": "Catelijne Muller",
+          "role": "rapporteur"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EESC website and EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://www.eesc.europa.eu/en/our-work/opinions-information-reports/opinions/artificial-intelligence-consequences-artificial-intelligence-digital-single-market-production-consumption-employment-and",
+      "supporting_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016IE5369"
+      ],
+      "version_note": "EESC adopted the opinion on 31 May 2017; the cited OJ publication is 31 August 2017.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "general_cross_sector",
+        "employment_and_labour",
+        "consumer_protection",
+        "industry_and_manufacturing",
+        "health",
+        "research_and_innovation",
+        "justice"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_summary_only",
+        "locator": "Official EESC English opinion page: adoption date, reference, OJ metadata and substantive summary.",
+        "paraphrase": "The opinion evaluates AI's opportunities and risks across safety, privacy, ethics, skills, work, production, consumption and society and calls for a broad policy approach."
+      },
+      "remaining_checks": [
+        "Resolve whether the full internal reference or shorter INT/806 should be canonical while preserving both as source metadata.",
+        "Full opinion text not retrieved in this pass; the official EESC summary supports discovery, not primary-text verification.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import.",
+        "EESC is an EU advisory body, not one of the seven EU institutions; the proposed author-origin tag is eu_agency_or_body_authored."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "euco-ai-approach-2017",
+      "batch": "historical_institutional",
+      "short_title": "European Council conclusions, 19 October 2017",
+      "official_title": "European Council meeting (19 October 2017) — Conclusions",
+      "official_references": [
+        "EUCO 14/17",
+        "CO EUR 17",
+        "CONCL 5"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "conclusions",
+      "dates": {
+        "document_date": "2017-10-19",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2017-10-19",
+        "publication_date_precision": "day",
+        "note": null,
+        "additional_dates": []
+      },
+      "issuer_label": "European Council",
+      "institution_roles": [
+        {
+          "name": "European Council",
+          "role": "author"
+        },
+        {
+          "name": "European Council",
+          "role": "adopter"
+        },
+        {
+          "name": "General Secretariat of the Council",
+          "role": "publisher"
+        },
+        {
+          "name": "Consilium",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://www.consilium.europa.eu/media/21620/19-euco-final-conclusions-en.pdf",
+      "supporting_urls": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2017/10/19/euco-conclusions-migration-digital-defence/"
+      ],
+      "version_note": "One separately citable study; annexes and briefing relationships require review.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "industry_and_manufacturing",
+        "justice",
+        "competition_and_markets"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF section II 'Digital Europe', paragraph 11, page 7.",
+        "paraphrase": "The European Council asks the Commission to present a European AI approach by early 2018, tied to data protection, digital rights and ethics."
+      },
+      "remaining_checks": [
+        "Verify the canonical institution-role convention for General Secretariat cover notes without misattributing the adopted conclusions to the Secretariat.",
+        "The controlled vocabulary currently omits conclusions, although the historical-scope design explicitly says to add that document type later.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": true,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "euco-ai-skills-2017",
+      "batch": "historical_institutional",
+      "short_title": "European Council conclusions, 14 December 2017",
+      "official_title": "European Council meeting (14 December 2017) — Conclusions",
+      "official_references": [
+        "EUCO 19/17",
+        "CO EUR 24",
+        "CONCL 7"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "conclusions",
+      "dates": {
+        "document_date": "2017-12-14",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2017-12-14",
+        "publication_date_precision": "day",
+        "note": null,
+        "additional_dates": []
+      },
+      "issuer_label": "European Council",
+      "institution_roles": [
+        {
+          "name": "European Council",
+          "role": "author"
+        },
+        {
+          "name": "European Council",
+          "role": "adopter"
+        },
+        {
+          "name": "General Secretariat of the Council",
+          "role": "publisher"
+        },
+        {
+          "name": "Consilium",
+          "role": "official_host"
+        }
+      ],
+      "primary_url": "https://www.consilium.europa.eu/media/32179/14-final-conclusions-en.pdf",
+      "supporting_urls": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2017/12/14/european-council-conclusions/"
+      ],
+      "version_note": "One separately citable study; annexes and briefing relationships require review.",
+      "temporal_collection_proposal": "historical_lineage",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "education",
+        "employment_and_labour",
+        "general_cross_sector"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF section II 'Education and Culture', page 4, first bullet under possible measures.",
+        "paraphrase": "The European Council asks EU and national actors to examine measures addressing skills challenges linked to digitalisation and artificial intelligence."
+      },
+      "remaining_checks": [
+        "Editorially confirm that the single dedicated AI-skills bullet is substantive enough for direct_ai_substantive; otherwise retain as ai_related_precursor rather than exclude.",
+        "The controlled vocabulary currently omits conclusions, although the historical-scope design explicitly says to add that document type later.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import.",
+        "If the single AI-skills bullet is insufficiently substantive, leave unresolved or exclude with a reason; do not use precursor as a catch-all for weak direct-AI evidence."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eba-report-big-data-advanced-analytics-2020",
+      "batch": "health_finance",
+      "short_title": "EBA report on Big Data and Advanced Analytics",
+      "official_title": "EBA Report on Big Data and Advanced Analytics",
+      "official_references": [
+        "EBA/REP/2020/01"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2020-01-13",
+        "document_date_kind": "publication",
+        "document_date_precision": "day",
+        "publication_date": "2020-01-13",
+        "publication_date_precision": "day",
+        "additional_dates": [
+          {
+            "kind": "cover_issue",
+            "date": "2020-01",
+            "precision": "month"
+          }
+        ],
+        "note": null
+      },
+      "issuer_label": "European Banking Authority",
+      "institution_roles": [
+        {
+          "name": "European Banking Authority",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Banking Authority",
+          "role": "publisher"
+        },
+        {
+          "name": "European Banking Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The report is institutionally authored and issued by EBA. The reviewed sources did not establish a separate adopter or commissioner.",
+      "primary_url": "https://www.eba.europa.eu/sites/default/files/document_library/Final%20Report%20on%20Big%20Data%20and%20Advanced%20Analytics.pdf",
+      "supporting_urls": [
+        "https://www.eba.europa.eu/publications-and-media/press-releases/eba-report-identifies-key-challenges-roll-out-big-data-and"
+      ],
+      "version_note": "The official page labels the linked document Final Report. No later revised edition with the same reference was found in the bounded search.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_indexed_text_only",
+        "locator": "PDF cover and official EBA publication record; PDF section 1, Introduction, around p.11; official EBA report summary",
+        "paraphrase": "Machine learning is treated as a core advanced-analytics technique and the report develops governance pillars and trust elements for its use in regulated banking and financial services."
+      },
+      "remaining_checks": [
+        "The cover gives only month precision, so the exact official publication date is used as the document-date fallback. Preserve that fallback rationale during ingestion.",
+        "Full-page and PDF access was blocked on direct retrieval; reopen primary text rather than relying on official indexed passages.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "easa-ai-roadmap-1-2020",
+      "batch": "other_sectors",
+      "short_title": "EASA AI Roadmap 1.0",
+      "official_title": "EASA Artificial Intelligence Roadmap 1.0: A human-centric approach to AI in aviation",
+      "official_references": [
+        "EASA AI Roadmap 1.0"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": null,
+        "document_date_kind": "not_established",
+        "document_date_precision": null,
+        "publication_date": "2020-02-07",
+        "publication_date_precision": "day",
+        "note": "Official publication page provides the exact release date; no separate issue/adoption date established.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Union Aviation Safety Agency",
+      "institution_roles": [
+        {
+          "name": "European Union Aviation Safety Agency",
+          "role": "author"
+        },
+        {
+          "name": "European Union Aviation Safety Agency",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://www.easa.europa.eu/sites/default/files/dfu/EASA-AI-Roadmap-v1.0.pdf",
+      "supporting_urls": [
+        "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-roadmap-10",
+        "https://www.easa.europa.eu/en/newsroom-and-events/news/easa-artificial-intelligence-roadmap-10-published"
+      ],
+      "version_note": "Version 1.0; separately citable predecessor of version 2.0, not a duplicate language manifestation.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "transport_and_mobility"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Sections G-H, printed pp.14-17; section L, printed p.25.",
+        "paraphrase": "Defines aviation-specific AI trustworthiness, learning assurance, human oversight and a regulatory action programme."
+      },
+      "remaining_checks": [
+        "Confirm citation title punctuation and exact document-date fallback during record review.",
+        "Record an evidenced version relationship to Roadmap 2.0.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ep-ai-international-military-2021",
+      "batch": "other_sectors",
+      "short_title": "EP resolution on civil and military uses of AI",
+      "official_title": "European Parliament resolution of 20 January 2021 on artificial intelligence: questions of interpretation and application of international law in so far as the EU is affected in the areas of civil and military uses and of state authority outside the scope of criminal justice (2020/2013(INI))",
+      "official_references": [
+        "P9_TA(2021)0009; 2021/C456/04"
+      ],
+      "celex": "52021IP0009",
+      "eli": null,
+      "descriptive_document_type": "resolution",
+      "dates": {
+        "document_date": "2021-01-20",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2021-11-10",
+        "publication_date_precision": "day",
+        "note": "Adopted on 20 January 2021; cited OJ manifestation published on 10 November 2021, OJ C 456, pp.34-46. First online publication date is not independently established.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Parliament",
+      "institution_roles": [
+        {
+          "name": "European Parliament",
+          "role": "adopter"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009",
+      "supporting_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009"
+      ],
+      "version_note": "Adopted resolution P9_TA(2021)0009; OJ manifestation is the same resolution, not another version.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "defence_and_security",
+        "public_administration"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "OJ heading and dates; paragraphs 3 and 8-15; section on international public law and military uses of artificial intelligence.",
+        "paraphrase": "Sets Parliament's position on meaningful human control, responsibility and oversight of military AI and AI exercised through state authority."
+      },
+      "remaining_checks": [
+        "Confirm institutional author/adopter-role representation.",
+        "Keep resolution status separate from binding legislation; do not infer current legal effects.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "frontex-ai-capabilities-2021",
+      "batch": "other_sectors",
+      "short_title": "AI-based capabilities for the European Border and Coast Guard",
+      "official_title": "Artificial Intelligence-based capabilities for the European Border and Coast Guard - Final Report",
+      "official_references": [],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": null,
+        "document_date_kind": "not_established",
+        "document_date_precision": null,
+        "publication_date": "2021-03-31",
+        "publication_date_precision": "day",
+        "note": "Frontex publication catalogue dates the item 31 March 2021; an EPRS footnote cites 17 March as report date, not yet confirmed against the primary report.",
+        "additional_dates": []
+      },
+      "issuer_label": "Frontex, European Border and Coast Guard Agency",
+      "institution_roles": [
+        {
+          "name": "Frontex",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe",
+      "supporting_urls": [
+        "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe",
+        "https://www.frontex.europa.eu/publications/?c=training"
+      ],
+      "version_note": "Final report title found in official catalogue; exact bibliographic identity and credits require the report.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "migration_asylum_and_border_management"
+      ],
+      "proposed_provenance_tags": [
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_catalogue_only",
+        "locator": "Frontex catalogue entry dated 31 March 2021; corroborating EPRS PE 690.706, printed p.20, footnote104.",
+        "paraphrase": "Official catalogue identifies a final report devoted to border-guard AI capabilities; report landing page returned403, so no primary-text content or external-author attribution is claimed."
+      },
+      "remaining_checks": [
+        "Retrieve the official English report.",
+        "Verify issue date, commissioning relationship, authors, substantive passages and stable file URL before admission.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eiopa-ai-governance-principles-2021",
+      "batch": "health_finance",
+      "short_title": "EIOPA expert-group AI governance principles",
+      "official_title": "Artificial Intelligence governance principles: towards ethical and trustworthy Artificial Intelligence in the European insurance sector",
+      "official_references": [
+        "ISBN 978-92-9473-303-0; DOI 10.2854/49874; EI-08-21-137-EN-N"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2021-06-17",
+        "document_date_kind": "publication",
+        "document_date_precision": "day",
+        "publication_date": "2021-06-17",
+        "publication_date_precision": "day",
+        "additional_dates": [
+          {
+            "kind": "current_hosted_file_label",
+            "date": "2023-01-31",
+            "precision": "day"
+          }
+        ],
+        "note": null
+      },
+      "issuer_label": "European Insurance and Occupational Pensions Authority",
+      "institution_roles": [
+        {
+          "name": "EIOPA Consultative Expert Group on Digital Ethics in insurance",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "European Insurance and Occupational Pensions Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The PDF expressly says the views are the expert-group members' and do not necessarily represent EIOPA. EIOPA created and supported the group and hosts the file; the PDF identifies the Publications Office as publisher.",
+      "primary_url": "https://www.eiopa.europa.eu/document/download/30f4502b-3fe9-4fad-b2a3-aa66ea41e863_en?filename=Artificial+intelligence+governance+principles.pdf",
+      "supporting_urls": [
+        "https://www.eiopa.europa.eu/publications/artificial-intelligence-governance-principles-towards-ethical-and-trustworthy-artificial_en"
+      ],
+      "version_note": "The report is the 2021 expert-group edition. The EIOPA page's 31 January 2023 file label is treated as a later hosted manifestation, not evidence of a substantively revised 2023 document.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_expert_group_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF pp.1-2, attribution and publication metadata; PDF pp.7-9, Executive summary and principles",
+        "paraphrase": "The report develops six AI governance principles and an insurance-specific impact-assessment framework addressing fairness, explainability, oversight, data governance, robustness, and performance."
+      },
+      "remaining_checks": [
+        "Confirm during ingestion whether the 31 January 2023 attachment is byte-identical to the 2021 publication or a silent replacement; absent evidence of revision, do not create a 2023 document record.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eprs-ai-eu-borders-2021",
+      "batch": "other_sectors",
+      "short_title": "Artificial intelligence at EU borders",
+      "official_title": "Artificial intelligence at EU borders: Overview of applications and key issues",
+      "official_references": [
+        "PE 690.706; DOI 10.2861/91831"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "study",
+      "dates": {
+        "document_date": "2021-07",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "month",
+        "publication_date": "2021-07-07",
+        "publication_date_precision": "day",
+        "note": "Cover issue month is July 2021; manuscript completion is June 2021; catalogue gives 7 July 2021 publication. Issue day remains unknown.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Parliamentary Research Service, European Parliament",
+      "institution_roles": [
+        {
+          "name": "Costica Dumbrava, Members' Research Service",
+          "role": "author"
+        },
+        {
+          "name": "European Parliament",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://www.europarl.europa.eu/RegData/etudes/IDAN/2021/690706/EPRS_IDA(2021)690706_EN.pdf",
+      "supporting_urls": [
+        "https://www.europarl.europa.eu/thinktank/en/document/EPRS_IDA(2021)690706"
+      ],
+      "version_note": "One English in-depth analysis, PE 690.706; translated manifestations are not additional documents.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "migration_asylum_and_border_management",
+        "law_enforcement"
+      ],
+      "proposed_provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.2, author/abstract/disclaimer; executive summary, printed pp.I-II.",
+        "paraphrase": "Reviews border biometrics, emotion detection, algorithmic risk assessment and migration monitoring. Credits EPRS staff authorship and disclaims an official Parliament position."
+      },
+      "remaining_checks": [
+        "Resolve document-date kind using the publication fallback without inventing an issue day.",
+        "Keep research-service analysis distinct from Parliament-adopted resolutions.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "osha-ai-worker-management-2022",
+      "batch": "other_sectors",
+      "short_title": "AI for worker management: occupational safety and health",
+      "official_title": "Artificial intelligence for worker management: implications for occupational safety and health",
+      "official_references": [
+        "ISBN 978-92-9479-679-0; DOI 10.2802/76354"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": null,
+        "document_date_kind": "not_established",
+        "document_date_precision": null,
+        "publication_date": "2022-08-10",
+        "publication_date_precision": "day",
+        "note": "Official catalogue publication date; the 2022 copyright year is not an exact issue date.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Agency for Safety and Health at Work (EU-OSHA)",
+      "institution_roles": [
+        {
+          "name": "Karin Reinhold",
+          "role": "author"
+        },
+        {
+          "name": "Marina Järvis",
+          "role": "author"
+        },
+        {
+          "name": "Aleksandr Christenko",
+          "role": "author"
+        },
+        {
+          "name": "Vaida Jankauskaitė",
+          "role": "author"
+        },
+        {
+          "name": "Agnė Paliokaitė",
+          "role": "author"
+        },
+        {
+          "name": "Arnold Riedmann",
+          "role": "author"
+        },
+        {
+          "name": "European Agency for Safety and Health at Work",
+          "role": "commissioner"
+        },
+        {
+          "name": "European Agency for Safety and Health at Work",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://osha.europa.eu/sites/default/files/artificial-intelligence-worker-management_en.pdf",
+      "supporting_urls": [
+        "https://osha.europa.eu/en/publications/artificial-intelligence-worker-management-implications-occupational-safety-and-health"
+      ],
+      "version_note": "55-page full report, not the separately hosted summary or policy brief.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "employment_and_labour"
+      ],
+      "proposed_provenance_tags": [
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Printed p.2, author/commissioner disclaimer; p.5 section1.1; pp.24-26 recommendations.",
+        "paraphrase": "Examines AI-based workforce management risks and prevention. External named authors and EU-OSHA commissioning are explicit; agency hosting does not establish agency authorship."
+      },
+      "remaining_checks": [
+        "Retain all bibliographic credits when schema supports external authors.",
+        "Do not separately count summary manifestations without distinct-content review.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "esma-ai-eu-securities-markets-2023",
+      "batch": "health_finance",
+      "short_title": "ESMA AI in EU securities markets",
+      "official_title": "Artificial intelligence in EU securities markets",
+      "official_references": [
+        "ESMA50-164-6247"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2023-02-01",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": "2023-02-01",
+        "publication_date_precision": "day",
+        "additional_dates": [],
+        "note": null
+      },
+      "issuer_label": "European Securities and Markets Authority",
+      "institution_roles": [
+        {
+          "name": "Giulio Bagattini",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Zeno Benetti",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Claudia Guagliano",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Securities and Markets Authority",
+          "role": "publisher"
+        },
+        {
+          "name": "European Securities and Markets Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The PDF footnote names the individual authors; ESMA is the issuing institution and official publisher/host. Research assistance and acknowledged reviewers are not converted into co-authorship.",
+      "primary_url": "https://www.esma.europa.eu/sites/default/files/library/ESMA50-164-6247-AI_in_securities_markets.pdf",
+      "supporting_urls": [
+        "https://www.esma.europa.eu/document/trv-article-artificial-intelligence-eu-securities-markets"
+      ],
+      "version_note": "This 2023 general securities-markets analysis is distinct from the 2025 investment-funds study and 2026 EU survey report, which have different references, data, scope, and titles.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.3, Summary and author footnote; PDF p.4, Introduction",
+        "paraphrase": "AI use cases, adoption, concentration, and supervisory risk in EU securities markets are the report's sole substantive subject."
+      },
+      "remaining_checks": [
+        "None identified for title, reference, issue date, authorship, or primary text; ingestion still requires normal editorial approval and controlled-vocabulary validation.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "easa-ai-roadmap-2-2023",
+      "batch": "other_sectors",
+      "short_title": "EASA AI Roadmap 2.0",
+      "official_title": "EASA Artificial Intelligence Roadmap 2.0: A human-centric approach to AI in aviation",
+      "official_references": [
+        "EASA AI Roadmap 2.0"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": null,
+        "document_date_kind": "not_established",
+        "document_date_precision": null,
+        "publication_date": "2023-05-10",
+        "publication_date_precision": "day",
+        "note": "Exact publication date on official record; separate issue date not established.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Union Aviation Safety Agency",
+      "institution_roles": [
+        {
+          "name": "European Union Aviation Safety Agency",
+          "role": "author"
+        },
+        {
+          "name": "European Union Aviation Safety Agency",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://www.easa.europa.eu/sites/default/files/dfu/easa_ai_roadmap_2_0_2023.pdf",
+      "supporting_urls": [
+        "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-roadmap-20"
+      ],
+      "version_note": "Revised Roadmap 2.0; introduction explicitly describes updating Roadmap 1.0.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "transport_and_mobility"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "Foreword, printed p.4; introduction, printed p.5.",
+        "paraphrase": "Updates the aviation AI programme with certification, oversight and trustworthiness objectives; identifies the earlier roadmap and concept papers."
+      },
+      "remaining_checks": [
+        "Record version relationship and release-date evidence.",
+        "Do not convert projected roadmap milestones into events already completed.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eba-follow-up-machine-learning-irb-models-2023",
+      "batch": "health_finance",
+      "short_title": "EBA follow-up report on machine learning for IRB models",
+      "official_title": "Machine Learning for IRB Models: Follow-up report from the consultation on the Discussion Paper on machine learning for IRB models",
+      "official_references": [
+        "EBA/REP/2023/28"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2023-08-04",
+        "document_date_kind": "publication",
+        "document_date_precision": "day",
+        "publication_date": "2023-08-04",
+        "publication_date_precision": "day",
+        "additional_dates": [
+          {
+            "kind": "cover_issue",
+            "date": "2023-08",
+            "precision": "month"
+          }
+        ],
+        "note": null
+      },
+      "issuer_label": "European Banking Authority",
+      "institution_roles": [
+        {
+          "name": "European Banking Authority",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Banking Authority",
+          "role": "publisher"
+        },
+        {
+          "name": "European Banking Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The final follow-up report is institutionally authored, published, and hosted by EBA; no separate commissioner or adopter is evidenced in the reviewed material.",
+      "primary_url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Reports/2023/1061483/Follow-up%20report%20on%20machine%20learning%20for%20IRB%20models.pdf",
+      "supporting_urls": [
+        "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-follow-report-use-machine-learning-internal"
+      ],
+      "version_note": "This final 2023 report follows the 2021 consultation discussion paper, summarises consultation feedback, and reiterates recommendations. It is a distinct final follow-up document, not the 2021 draft under a new URL.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "official_indexed_text_only",
+        "locator": "PDF cover; official EBA publication page; PDF contents and sections 4.3, 5.2, and Annex I, pp.10, 15-20",
+        "paraphrase": "Machine learning is the report's central regulatory object, including explainability, supervisory compliance, GDPR interaction, AI Act scope, and principle-based recommendations."
+      },
+      "remaining_checks": [
+        "The cover supplies month precision only; retain the exact official publication date as the document-date fallback rather than inventing an issue day.",
+        "Full-page and PDF access was blocked on direct retrieval; reopen primary text rather than relying on official indexed passages.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "batch": "health_finance",
+      "short_title": "EMA AI medicinal-product lifecycle reflection paper",
+      "official_title": "Reflection paper on the use of Artificial Intelligence (AI) in the medicinal product lifecycle",
+      "official_references": [
+        "EMA/CHMP/CVMP/83833/2023"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "guidelines",
+      "dates": {
+        "document_date": "2024-09-09",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": "2024-09-30",
+        "publication_date_precision": "day",
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "institution": "Committee for Medicinal Products for Veterinary Use (CVMP)",
+            "date": "2024-09-11",
+            "precision": "day"
+          },
+          {
+            "kind": "final_version_agreed",
+            "institution": "CHMP Methodology Working Party",
+            "date": "2024-09-06",
+            "precision": "day"
+          }
+        ],
+        "note": null
+      },
+      "issuer_label": "European Medicines Agency",
+      "institution_roles": [
+        {
+          "name": "Committee for Medicinal Products for Human Use (CHMP) Methodology Working Party",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Committee for Medicinal Products for Human Use (CHMP)",
+          "role": "adopter"
+        },
+        {
+          "name": "Committee for Medicinal Products for Veterinary Use (CVMP)",
+          "role": "adopter"
+        },
+        {
+          "name": "European Medicines Agency",
+          "role": "publisher"
+        },
+        {
+          "name": "European Medicines Agency",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "EMA's topical page says the Methodology Working Party developed the paper and that CHMP and CVMP adopted it; the PDF supplies the separate exact adoption dates.",
+      "primary_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf",
+      "supporting_urls": [
+        "https://www.ema.europa.eu/en/use-artificial-intelligence-ai-medicinal-product-lifecycle-scientific-guideline"
+      ],
+      "version_note": "The landing page labels this as the current adopted version. The consultation draft with the same reference was first published 19 July 2023 and is document history, not a second current record.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "health"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.1, date/reference/adoption table; PDF pp.3-4, sections 1 and 2.1",
+        "paraphrase": "AI and machine learning are the document's regulatory subject, with lifecycle-wide principles for evaluation, risk mitigation, governance, data, explainability, and trustworthy use in medicines."
+      },
+      "remaining_checks": [
+        "Before corpus ingestion, decide whether the primary document date should privilege CHMP adoption (9 September) or represent the later CVMP adoption (11 September) in a multi-adopter date model; both dates are verified and must be preserved.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eda-card-public-report-2024",
+      "batch": "other_sectors",
+      "short_title": "2024 CARD public report",
+      "official_title": "2024 Coordinated Annual Review on Defence (CARD) report",
+      "official_references": [
+        "2024 CARD report"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2024-11-19",
+        "document_date_kind": "institutional_adoption",
+        "document_date_precision": "day",
+        "publication_date": null,
+        "publication_date_precision": null,
+        "note": "EDA's announcement records approval on 19 November 2024 and links a 14-page public PDF. First publication of that exact public manifestation is not independently established.",
+        "additional_dates": []
+      },
+      "issuer_label": "European Defence Agency",
+      "institution_roles": [
+        {
+          "name": "European Defence Agency",
+          "role": "author"
+        },
+        {
+          "name": "European External Action Service",
+          "role": "contributor"
+        },
+        {
+          "name": "EU Military Staff",
+          "role": "contributor"
+        },
+        {
+          "name": "EDA Steering Board in Defence Ministers formation",
+          "role": "adopter"
+        },
+        {
+          "name": "European Defence Agency",
+          "role": "publisher"
+        }
+      ],
+      "role_note": null,
+      "primary_url": "https://eda.europa.eu/docs/default-source/documents/card-report-2024.pdf",
+      "supporting_urls": [
+        "https://eda.europa.eu/news-and-events/press-office/latest-press-releases/2024/11/19/2024-defence-review-paves-way-for-joint-military-projects"
+      ],
+      "version_note": "Only the accessible 14-page official public document was reviewed; no claim to possess non-public supporting material.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "defence_and_security",
+        "research_and_innovation"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.9, Research & Technology: Artificial Intelligence (AI); official announcement lead and report credit.",
+        "paraphrase": "A dedicated AI section addresses defence data spaces, testing, validation and certification. Coordination with EEAS and EUMS is stated; joint authorship is not assumed."
+      },
+      "remaining_checks": [
+        "Verify first public availability of this exact PDF and its relationship to approved CARD report.",
+        "Confirm cover/title and version evidence before admission.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "esma-ai-eu-investment-funds-2025",
+      "batch": "health_finance",
+      "short_title": "ESMA AI in EU investment funds",
+      "official_title": "Artificial intelligence in EU investment funds: adoption, strategies and portfolio exposures",
+      "official_references": [
+        "ESMA50-43599798-9923"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2025-02-25",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": "2025-02-25",
+        "publication_date_precision": "day",
+        "additional_dates": [],
+        "note": null
+      },
+      "issuer_label": "European Securities and Markets Authority",
+      "institution_roles": [
+        {
+          "name": "Giulio Bagattini",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Federico Piazza",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Securities and Markets Authority",
+          "role": "publisher"
+        },
+        {
+          "name": "European Securities and Markets Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The PDF footnote names the two authors; acknowledged commenters are not authors. ESMA is the issuing institution and official publisher/host.",
+      "primary_url": "https://www.esma.europa.eu/sites/default/files/2025-02/ESMA50-43599798-9923_TRV_Article_Artificial_intelligence_in_EU_investment_funds.pdf",
+      "supporting_urls": [
+        "https://www.esma.europa.eu/document/trv-article-artificial-intelligence-eu-investment-funds-adoption-strategies-and-portfolio"
+      ],
+      "version_note": "This sector-specific 2025 analysis is not an update under the 2023 report's identity: it has a new reference and examines fund-manager adoption, AI-labelled investment strategies, and portfolio exposure to AI-related companies.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.3, Summary; PDF pp.4-6, Introduction and operational-use section",
+        "paraphrase": "The report directly evaluates operational AI use by fund managers, AI-based strategies, AI-washing risk, and market-risk implications of portfolio exposure to AI firms."
+      },
+      "remaining_checks": [
+        "None identified for title, reference, issue date, authorship, or primary text; normal editorial approval remains necessary before inclusion.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "batch": "health_finance",
+      "short_title": "EIOPA Opinion on AI governance and risk management",
+      "official_title": "Opinion on Artificial Intelligence governance and risk management",
+      "official_references": [
+        "EIOPA-BoS-25-360"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "opinion",
+      "dates": {
+        "document_date": "2025-08-06",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": "2025-08-06",
+        "publication_date_precision": "day",
+        "additional_dates": [],
+        "note": null
+      },
+      "issuer_label": "European Insurance and Occupational Pensions Authority",
+      "institution_roles": [
+        {
+          "name": "European Insurance and Occupational Pensions Authority",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Insurance and Occupational Pensions Authority",
+          "role": "publisher"
+        },
+        {
+          "name": "European Insurance and Occupational Pensions Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The official publication page and opinion identify EIOPA as issuing authority. The reference contains 'BoS', but this screen does not expand that into a separate Board-of-Supervisors adopter claim without an explicit adoption statement.",
+      "primary_url": "https://www.eiopa.europa.eu/document/download/88342342-a17f-4f88-842f-bf62c93012d6_en?filename=Opinion+on+Artificial+Intelligence+governance+and+risk+management.pdf",
+      "supporting_urls": [
+        "https://www.eiopa.europa.eu/publications/opinion-artificial-intelligence-governance-and-risk-management_en"
+      ],
+      "version_note": "This is the final Opinion issued after the February-May 2025 consultation. The consultation paper and impact assessment are separate preparatory materials, not duplicate current versions. The Opinion draws on, but does not replace as the same identity, the 2021 expert-group report.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.1 and paragraphs 1.1-1.3; PDF pp.3-7, paragraphs 2.3-2.10 and 3.7-3.11",
+        "paraphrase": "The opinion interprets insurance-sector legislation for AI systems and sets risk-based supervisory expectations on fairness, data governance, records, explainability, oversight, accuracy, robustness, and cybersecurity."
+      },
+      "remaining_checks": [
+        "If the data model requires a separate institutional adoption event, locate an explicit Board of Supervisors adoption record rather than inferring the adopter solely from the reference code.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "esma-ai-adoption-trends-securities-markets-2026",
+      "batch": "health_finance",
+      "short_title": "ESMA AI adoption and trends in securities markets",
+      "official_title": "AI adoption and trends in securities markets: EU evidence",
+      "official_references": [
+        "ESMA50-481369926-30599"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2026-02-20",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": "2026-02-20",
+        "publication_date_precision": "day",
+        "additional_dates": [],
+        "note": null
+      },
+      "issuer_label": "European Securities and Markets Authority",
+      "institution_roles": [
+        {
+          "name": "Giulio Bagattini",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Nassim Khelifi",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Valentina Mejdahl",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Securities and Markets Authority",
+          "role": "publisher"
+        },
+        {
+          "name": "European Securities and Markets Authority",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The PDF footnote names the three authors and separately acknowledges commenters. ESMA is the issuing institution and official publisher/host.",
+      "primary_url": "https://www.esma.europa.eu/sites/default/files/2026-02/ESMA50-481369926-30599_TRV_Risk_Analysis_AI_adoption_and_trends_in_securities_markets.pdf",
+      "supporting_urls": [
+        "https://www.esma.europa.eu/esmas-activities/risk-analysis/topical-analysis"
+      ],
+      "version_note": "The report is a distinct 2026 empirical survey study, not a corrected manifestation of the 2023 general overview or 2025 investment-funds analysis. It has a new reference, author team, methodology, and title.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "financial_services"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.1, cover metadata; PDF pp.3-4, Summary and Introduction",
+        "paraphrase": "The report directly measures AI adoption and regulatory implications across securities markets, including use cases, model and data vulnerabilities, cybersecurity, cloud reliance, and third-party concentration."
+      },
+      "remaining_checks": [
+        "The topical-analysis page was used as the landing catalogue because an exact standalone document page was not surfaced in the bounded search; the primary PDF itself fully verifies title, date, reference, authorship, and substance.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "batch": "health_finance",
+      "short_title": "NDSG workplan 2026-2028",
+      "official_title": "Network Data Steering Group workplan 2026-2028: Data and artificial intelligence in medicines regulation",
+      "official_references": [
+        "Version 2.0 – February 2026"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "work_programme",
+      "dates": {
+        "document_date": "2026-03-09",
+        "document_date_kind": "publication",
+        "document_date_precision": "day",
+        "publication_date": "2026-03-09",
+        "publication_date_precision": "day",
+        "additional_dates": [
+          {
+            "kind": "institutional_adoption",
+            "institution": "Joint HMA/EMA Network Data Steering Group",
+            "date": "2026-02",
+            "precision": "month"
+          }
+        ],
+        "note": null
+      },
+      "issuer_label": "European Medicines Agency",
+      "institution_roles": [
+        {
+          "name": "Joint HMA/EMA Network Data Steering Group",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "Joint HMA/EMA Network Data Steering Group",
+          "role": "adopter"
+        },
+        {
+          "name": "European Medicines Agency",
+          "role": "publisher"
+        },
+        {
+          "name": "Heads of Medicines Agencies",
+          "role": "publisher"
+        },
+        {
+          "name": "European Medicines Agency",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The PDF identifies the joint NDSG and says it adopted the revision in February 2026; EMA's landing page states that EMA and HMA publish the workplan and gives the exact first-publication date.",
+      "primary_url": "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2026-2028-data-artificial-intelligence-medicines-regulation_en.pdf",
+      "supporting_urls": [
+        "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/network-data-steering-group-ndsg"
+      ],
+      "version_note": "The PDF calls itself Version 2.0 and the first annual revision. It replaces the 2025-2028 workplan for current use; the older version should be a predecessor/version relation, not a duplicate manifestation.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "health"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.4, Introduction; PDF pp.5-6, Workstreams and workplan structure",
+        "paraphrase": "AI is a named workstream with planned regulatory guidance, tools, innovation, collaboration, change-management, and governance activities through 2028."
+      },
+      "remaining_checks": [
+        "The exact day of February 2026 adoption is not exposed in the reviewed text. The candidate therefore uses the verified 9 March publication date as document_date and preserves adoption only at month precision.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import.",
+        "A published 2026 workplan may describe future 2027-2028 activities; those activities are not completed events."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    },
+    {
+      "candidate_id": "ema-2025-ai-observatory-report-2026",
+      "batch": "health_finance",
+      "short_title": "2025 AI Observatory report",
+      "official_title": "2025 AI Observatory report",
+      "official_references": [
+        "EMA/67888/2026"
+      ],
+      "celex": null,
+      "eli": null,
+      "descriptive_document_type": "report",
+      "dates": {
+        "document_date": "2026-05-12",
+        "document_date_kind": "document_issue",
+        "document_date_precision": "day",
+        "publication_date": "2026-06-04",
+        "publication_date_precision": "day",
+        "additional_dates": [],
+        "note": null
+      },
+      "issuer_label": "European Medicines Agency",
+      "institution_roles": [
+        {
+          "name": "European Medicines Agency",
+          "role": "author_or_developer"
+        },
+        {
+          "name": "European Medicines Agency",
+          "role": "publisher"
+        },
+        {
+          "name": "Heads of Medicines Agencies",
+          "role": "publisher"
+        },
+        {
+          "name": "European Medicines Agency",
+          "role": "official_host"
+        }
+      ],
+      "role_note": "The PDF cover credits EMA; the EMA topical page states that EMA and HMA publish the observatory reports annually and that the NDSG monitors and publishes the network observatory. No separate institutional adoption was identified.",
+      "primary_url": "https://www.ema.europa.eu/en/documents/report/2025-ai-observatory-report_en.pdf",
+      "supporting_urls": [
+        "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence"
+      ],
+      "version_note": "This is the annual report for activity year 2025 and expressly builds on the separately citable 2024 Observatory report; it is not a revision of the 2024 edition.",
+      "temporal_collection_proposal": "contemporary_eu_ai_policy",
+      "relevance_class_proposal": "direct_ai_substantive",
+      "proposed_sector_tags": [
+        "health"
+      ],
+      "proposed_provenance_tags": [
+        "eu_agency_or_body_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "evidence": {
+        "level": "primary_text_reviewed",
+        "locator": "PDF p.1, cover metadata; PDF pp.4-6, Executive summary and sections 2-4",
+        "paraphrase": "The entire report surveys AI guidance and policy, regulated-product applications, regulator tooling, collaborations, and research priorities for medicines regulation."
+      },
+      "remaining_checks": [
+        "If ingested, model NDSG as the responsible network body without converting its monitoring/publication role into unsupported corporate authorship or adoption.",
+        "Editorially approve identity, dates, relevance and passage-specific sector/provenance tags before any canonical import."
+      ],
+      "previously_named_in_approved_design": false,
+      "screening_status": "pending",
+      "canonical_record_id": null,
+      "existing_corpus_check": {
+        "compared_document_count": 117,
+        "matched_records": [],
+        "method": "Exact CELEX, ID, normalized official/short titles, official references and normalized official URL equality; version-aware manual screening remains necessary."
+      }
+    }
+  ],
+  "unresolved_leads_not_in_candidate_count": [
+    {
+      "official_reference": "82/878/EEC",
+      "reason": "Cited by the 1984 ESPRIT act, but the official full text could not be opened and no substantive expert-system/cognitive/learning/robotics clause was verified. It is not treated as a candidate.",
+      "batch": "historical_programmes"
+    },
+    {
+      "official_reference": "90/221/Euratom, EEC",
+      "celex": "31990D0221",
+      "reason": "The framework programme expressly names cognitive sciences, but the single broad clause may not meet the substantial-provision threshold without stronger linked annex or work-programme evidence.",
+      "batch": "historical_programmes"
+    },
+    {
+      "official_reference": "91/394/EEC",
+      "celex": "31991D0394",
+      "reason": "ESPRIT III identity and publication metadata were found, but the official text could not be opened and search results did not expose a sufficiently specific AI-precursor passage.",
+      "batch": "historical_programmes"
+    },
+    {
+      "official_reference": "2006/971/EC",
+      "celex": "32006D0971",
+      "reason": "FP7 Cooperation is a strong likely candidate, but the primary act text did not open successfully in this pass; later official documents confirm cognitive-systems/robotics implementation but do not replace verification of the act itself.",
+      "batch": "historical_programmes"
+    },
+    {
+      "title": "Guidelines on Automated individual decision-making and Profiling for the purposes of Regulation 2016/679",
+      "reference": "WP251 / WP251 rev.01",
+      "issue": "The current official EDPB page exposes the revised text last revised and adopted on 6 February 2018 and endorsed on 25 May 2018. The initial 3 October 2017 text was not recovered as an independently citable official manifestation, so version identity and substantive revision must be resolved before a historical candidate is created.",
+      "official_url": "https://www.edpb.europa.eu/documents/guideline/automated-decision-making-and-profiling_en",
+      "batch": "historical_institutional"
+    },
+    {
+      "title": "Towards a new digital ethics: Data, Dignity and Technology",
+      "reference": "EDPS Opinion 4/2015",
+      "issue": "The official EDPS page and contemporaneous press release confirm the 11 September 2015 opinion and explicitly connect it to a big-data and AI-driven world, but the opinion PDF returned HTTP 403. Direct inspection of the opinion's AI/self-learning passages is still needed before assigning relevance.",
+      "official_url": "https://www.edps.europa.eu/data-protection/our-work/publications/opinions/towards-new-digital-ethics-data-dignity-and_en",
+      "batch": "historical_institutional"
+    },
+    {
+      "title": "Meeting the challenges of big data: A call for transparency, user control, data protection by design and accountability",
+      "reference": "EDPS Opinion 7/2015",
+      "issue": "The official EDPS page and OJ executive summary confirm title/date and the EP 2017 big-data resolution cites it, but the full PDF returned HTTP 403 and the present pass did not establish that the opinion itself crosses the AI/automated-decision relevance boundary.",
+      "official_url": "https://www.edps.europa.eu/data-protection/our-work/publications/opinions/meeting-challenges-big-data_en",
+      "batch": "historical_institutional"
+    },
+    {
+      "title": "EDPS Opinion on coherent enforcement of fundamental rights in the age of Big Data",
+      "reference": "EDPS Opinion 8/2016",
+      "issue": "The official EDPS page confirms the 23 September 2016 opinion and the EP 2017 big-data resolution cites it, but the full PDF returned HTTP 403 and substantive qualification under the historical relevance boundary remains unverified.",
+      "official_url": "https://www.edps.europa.eu/data-protection/our-work/publications/opinions/big-data_en",
+      "batch": "historical_institutional"
+    },
+    {
+      "title": "The ethics of Big Data: Balancing economic benefits and ethical questions of Big Data in the EU policy context",
+      "reference": "DOI 10.2864/97426; catalogue QE-04-17-306-EN-N",
+      "issue": "The Publications Office result confirms a 2017 EESC-supported study and release date, but opening the publication-detail page returned HTTP 403 and the direct download handler could not be opened safely. A second 2017 edition with DOI 10.2864/18937 also appeared, so edition identity and relevance require resolution.",
+      "official_url": "https://op.europa.eu/en/publication-detail/-/publication/a4c18982-150b-11e7-808e-01aa75ed71a1",
+      "batch": "historical_institutional"
+    },
+    {
+      "title": "European Parliament resolution on AI in criminal law and its use by police and judicial authorities in criminal matters",
+      "reference": "P9_TA(2021)0405; CELEX 52021IP0405",
+      "official_url": "https://www.europarl.europa.eu/doceo/document/TA-9-2021-0405_EN.html",
+      "issue": "Primary endpoints were blocked or failed during this pass; full-text evidence remains outstanding.",
+      "batch": "other_sectors"
+    },
+    {
+      "title": "EDA AI action plan and strategic research agenda",
+      "official_url": "https://eda.europa.eu/",
+      "issue": "Announcements identify activity, but the underlying public documents were not retrieved; no separate document identities or counts are assigned.",
+      "batch": "other_sectors"
+    },
+    {
+      "title": "Additional EU-OSHA worker-management briefs and EASA AI concept papers",
+      "issue": "Version, summary and standalone-document relationships have not been screened. Not added merely to increase document counts.",
+      "batch": "other_sectors"
+    }
+  ],
+  "search_logs": {
+    "historical_programmes": {
+      "reviewer": "Codex",
+      "language": "English",
+      "session_started_at": "2026-09-05T06:11:50Z",
+      "session_logged_at": "2026-09-05T06:15:11Z",
+      "scope": {
+        "period": "1984-01-01 through 2017-12-31, with a limited reverse-citation check before 1984",
+        "institutions_and_sources": [
+          "Council of the European Communities / Council of the European Union",
+          "European Commission",
+          "EUR-Lex and Official Journal manifestations",
+          "CORDIS programme catalogue as a supplementary official discovery source"
+        ],
+        "document_types": [
+          "decision",
+          "communication",
+          "framework programme",
+          "specific research programme"
+        ],
+        "sector_scope": [
+          "research_and_innovation",
+          "industry_and_manufacturing",
+          "education",
+          "public_administration",
+          "transport_and_mobility"
+        ],
+        "boundary": "Only explicit AI or substantial expert-system, cognitive/learning-system, intelligent-robotics or autonomous-system provisions were retained. Generic computing and digitisation were not enough."
+      },
+      "deduplication": {
+        "checked_file": "generated/public-data.json",
+        "checked_at": "2026-09-05T06:11:50Z",
+        "public_document_count": 117,
+        "pre_2018_document_count": 0,
+        "result": "No title/reference collision with a pre-2018 public record. The two design-spec anchors, 84/130/EEC and 88/279/EEC, are reverified leads and are not claimed as new discoveries."
+      },
+      "queries": [
+        {
+          "sequence": 1,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu ESPRIT artificial intelligence expert systems Council Decision 1990 1994 information technologies",
+          "purpose": "Identify and verify ESPRIT and framework-programme acts with substantive AI-precursor annex text."
+        },
+        {
+          "sequence": 2,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu \"artificial intelligence\" \"specific programme\" research Council Decision",
+          "purpose": "Find explicit AI research-programme decisions."
+        },
+        {
+          "sequence": 3,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu \"cognitive systems\" robotics Council Decision research programme",
+          "purpose": "Trace cognitive-systems and intelligent-robotics programme language across FP6, FP7 and Horizon 2020."
+        },
+        {
+          "sequence": 4,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu \"89/415/EEC\" Council Decision official statistics",
+          "purpose": "Verify the DOSES statistical expert-systems programme."
+        },
+        {
+          "sequence": 5,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu/legal-content/EN/TXT 52016DC0180 artificial intelligence robotics",
+          "purpose": "Verify the AI/robotics provisions of the Commission's 2016 industrial digitisation strategy."
+        },
+        {
+          "sequence": 6,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu/legal-content/EN/TXT \"Building a European data economy\" autonomous systems liability",
+          "purpose": "Verify the Commission's 2017 treatment of autonomous systems, robots, safety and liability."
+        },
+        {
+          "sequence": 7,
+          "source": "EUR-Lex web search",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "site:eur-lex.europa.eu/legal-content/EN/TXT 52017DC0228 robotics artificial intelligence",
+          "purpose": "Verify the 2017 Digital Single Market mid-term review's AI investment and legal-framework commitments."
+        },
+        {
+          "sequence": 8,
+          "source": "EUR-Lex reverse-citation check",
+          "executed_during_utc": "2026-09-05T06:11:50Z/2026-09-05T06:15:11Z",
+          "query": "82/878/EEC information technology pilot projects expert systems",
+          "purpose": "Test the 1984 ESPRIT act's cited predecessor for substantive AI-precursor content; not verified."
+        }
+      ],
+      "source_access": {
+        "opened_full_texts": [
+          "31984D0130 EUR-Lex HTML",
+          "31988D0279 EUR-Lex Official Journal PDF",
+          "31988D0417 EUR-Lex Official Journal PDF",
+          "32002D1513 EUR-Lex Official Journal PDF",
+          "32013D0743 EUR-Lex HTML",
+          "52017DC0009 EUR-Lex HTML",
+          "52017DC0228 EUR-Lex HTML"
+        ],
+        "official_search_text_verified_but_full_page_open_failed": [
+          "31989D0415",
+          "31994D0802",
+          "52016DC0180"
+        ],
+        "pagination_and_result_limits": "Search calls were limited to four queries each. Result totals and all later result pages were not available consistently, so this is a bounded first pass, not a completed source-family audit."
+      }
+    },
+    "historical_institutional": {
+      "reviewer": "Codex",
+      "review_date": "2026-09-05",
+      "language": "English",
+      "period_scope": "2010-01-01 through 2017-12-31",
+      "publication_cutoff_held_constant": "2026-09-04",
+      "purpose": "Private first-pass discovery notes for historical institutional documents; screening only, not a completeness claim or canonical import.",
+      "sources_scoped": [
+        "EUR-Lex / Official Journal",
+        "European Parliament adopted texts, Think Tank, EPRS and STOA",
+        "European Economic and Social Committee",
+        "Council of the European Union / European Council public register and Consilium",
+        "European Data Protection Supervisor",
+        "Article 29 Working Party archive / European Data Protection Board"
+      ],
+      "dedup_check": {
+        "local_file": "generated/public-data.json",
+        "records_checked": 117,
+        "fields_checked": [
+          "id",
+          "official_title",
+          "official_reference",
+          "celex",
+          "document_date"
+        ],
+        "result": "No record dated before 2018 and no exact ID, title, official-reference or CELEX match for any candidate below. The earliest existing record is COM(2018) 237 final dated 2018-04-25.",
+        "limits": "This was a metadata equality and normalized-title screening pass, not a semantic duplicate audit of every attachment or relationship."
+      },
+      "query_groups": [
+        {
+          "source": "web search restricted to official European Parliament and Council/EESC domains",
+          "queries": [
+            "site:europarl.europa.eu 2017 artificial intelligence robotics resolution official P8_TA",
+            "site:europarl.europa.eu/thinktank/en/document 2010..2017 artificial intelligence robotics study",
+            "site:eesc.europa.eu/en/our-work/opinions-information-reports/opinions 2017 artificial intelligence EESC",
+            "site:consilium.europa.eu/media 2017 European Council conclusions artificial intelligence EUCO 14/17"
+          ]
+        },
+        {
+          "source": "EUR-Lex and European Parliament",
+          "queries": [
+            "site:eur-lex.europa.eu 52017IP0051 Civil Law Rules on Robotics",
+            "site:eur-lex.europa.eu 2017 European Parliament resolution big data fundamental rights 2016/2225",
+            "site:europarl.europa.eu/RegData/etudes/STUD/2016/571379 IPOL_STU 571379 PDF",
+            "site:europarl.europa.eu/RegData/etudes/STUD/2016/563501 EPRS_STU 563501 PDF"
+          ]
+        },
+        {
+          "source": "European Parliament EPRS/STOA",
+          "queries": [
+            "site:europarl.europa.eu/RegData/etudes/STUD/2016/563501 \"Ethical aspects of cyber-physical systems\" PDF",
+            "site:europarl.europa.eu/RegData/etudes/STUD/2016/563501 EPRS_STU(2016)563501(ANN)_EN.pdf",
+            "site:europarl.europa.eu \"EPRS_STU(2016)563501\" author",
+            "site:europarl.europa.eu/RegData/etudes/STUD/2016/563501 \"AUTHOR\" \"Ethical Aspects\"",
+            "site:europarl.europa.eu \"PE 563.501\" \"Ethical Aspects of Cyber-Physical Systems\""
+          ]
+        },
+        {
+          "source": "EESC and EUR-Lex",
+          "queries": [
+            "site:eesc.europa.eu/en/our-work/opinions-information-reports/opinions 2017 \"artificial intelligence\" adopted",
+            "site:eesc.europa.eu/en/our-work/opinions-information-reports/opinions 2017 robotics autonomous systems",
+            "site:eur-lex.europa.eu 52016IE5369 artificial intelligence EESC",
+            "site:eur-lex.europa.eu 2017 EESC \"robotisation\" \"artificial intelligence\"",
+            "site:eesc.europa.eu \"The ethics of Big Data\" EESC 2017",
+            "site:eur-lex.europa.eu \"Ethics of Big Data\" EESC opinion",
+            "site:eesc.europa.eu 2017 \"algorithm\" opinion Big Data ethics",
+            "site:eesc.europa.eu/sites/default/files \"The ethics of Big Data\" PDF",
+            "site:eesc.europa.eu \"Balancing economic benefits and ethical questions\"",
+            "site:op.europa.eu \"The ethics of Big Data\" EESC"
+          ]
+        },
+        {
+          "source": "EDPS and Article 29 Working Party / EDPB",
+          "queries": [
+            "site:edps.europa.eu \"Opinion 4/2015\" \"digital ethics\" PDF",
+            "site:edps.europa.eu \"Opinion 7/2015\" \"big data\" PDF",
+            "site:ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2017 wp251 automated individual decision-making profiling PDF",
+            "site:edpb.europa.eu \"wp251\" 3 October 2017 automated individual decision-making",
+            "site:edps.europa.eu/data-protection/our-work/publications/opinions \"Meeting the challenges of big data\"",
+            "site:edps.europa.eu/data-protection/our-work/publications/opinions \"Towards a new digital ethics\"",
+            "site:edps.europa.eu/data-protection/our-work/publications/opinions \"Coherent enforcement\" \"Big Data\"",
+            "site:edps.europa.eu/sites/default/files/publication/15-11-19_big_data_en.pdf \"machine learning\"",
+            "site:edps.europa.eu/sites/default/files/publication/15-11-19_big_data_en.pdf algorithmic automated decisions",
+            "site:edps.europa.eu/sites/default/files/publication/15-09-11_data_ethics_en.pdf \"artificial intelligence\"",
+            "site:edps.europa.eu/sites/default/files/publication/16-09-23_bigdata_opinion_en.pdf \"machine learning\"",
+            "site:edps.europa.eu/sites/default/files/publication/15-09-11_data_ethics_en.pdf \"artificial intelligence driven world\"",
+            "site:edps.europa.eu/sites/default/files/publication/15-09-11_data_ethics_en.pdf \"artificial intelligence\" -2020",
+            "site:edps.europa.eu/sites/default/files/publication/15-09-11_data_ethics_en.pdf \"algorithms\"",
+            "site:edpb.europa.eu/news/news/2017 \"automated individual decision-making\" WP251",
+            "site:edpb.europa.eu/system/files/2023-09 wp251rev01 2017 pdf",
+            "site:ec.europa.eu/newsroom/article29/items/612053 \"WP251\"",
+            "site:ec.europa.eu/newsroom/article29/document.cfm?action=display wp251",
+            "site:edps.europa.eu/sites/default/files/publication/15-11-19_big_data_en.pdf profiling algorithm decisions transparency",
+            "site:edps.europa.eu/sites/default/files/publication/15-11-19_big_data_en.pdf \"automated decisions\"",
+            "site:edps.europa.eu/sites/default/files/publication/15-11-19_big_data_en.pdf \"algorithms\" \"profiling\""
+          ]
+        },
+        {
+          "source": "Council / European Council",
+          "queries": [
+            "site:consilium.europa.eu/media 2017 Tallinn Digital Summit conclusions artificial intelligence",
+            "site:consilium.europa.eu/en/press/press-releases/2017 artificial intelligence Council conclusions",
+            "site:data.consilium.europa.eu/doc/document/ST- 2017 \"artificial intelligence\" conclusions"
+          ]
+        }
+      ],
+      "navigation_and_pagination": [
+        "Opened the full EUR-Lex HTML texts for CELEX 52017IP0051 and 52017IP0076 and inspected the cited paragraphs, not search snippets alone.",
+        "Opened the full European Parliament RegData PDF for PE 571.379 and the full PE 563.501 policy briefing and Annex 1 PDFs.",
+        "Opened the EESC English opinion page for INT/806 and inspected its date, reference, OJ link and substantive summary.",
+        "Opened full Consilium PDFs EUCO 14/17 and EUCO 19/17 and inspected the relevant pages and paragraphs.",
+        "Search results were bounded to the result pages returned by the search service. No claim is made that all official catalogues, all result pages or every document type for 2010-2017 were exhausted.",
+        "The Consilium Council-conclusions list did not reliably honor the year/page query in rendered results, so it was treated as an access/navigation limitation rather than a zero-result search."
+      ]
+    },
+    "health_finance": [
+      {
+        "institution_source": "European Medicines Agency website and EMA/HMA document pages",
+        "period_scope": "2018-01-01 through 2026-09-04",
+        "language_scope": "English",
+        "document_type_scope": [
+          "report",
+          "scientific guideline/reflection paper",
+          "workplan"
+        ],
+        "sector_scope": [
+          "health"
+        ],
+        "exact_queries_or_navigation": [
+          "site:ema.europa.eu/en/documents artificial intelligence medicines regulation PDF EMA HMA",
+          "site:ema.europa.eu/en/documents \"2025 AI Observatory report\" EMA/67888/2026",
+          "site:ema.europa.eu/en/documents \"Network Data Steering Group workplan 2026-2028\"",
+          "EMA Artificial intelligence page -> scientific guideline, AI Observatory, and NDSG workplan links"
+        ],
+        "searched_at": "2026-09-05T06:13:52.370Z",
+        "reviewer": "OpenAI Codex",
+        "status": "bounded_pass_logged_not_source_complete",
+        "candidate_decisions": {
+          "strong_pending_candidates": 3,
+          "merged_with_existing_117": 0,
+          "excluded_webpage_announcements_as_documents": true
+        },
+        "result_and_pagination_evidence": "EMA's topical pages expose linked current versions and document histories but do not expose a stable total-result count or bounded pagination. This was a targeted document-level screen, not a complete EMA catalogue audit.",
+        "access_limitations": "One repeat request to the NDSG landing page returned HTTP 429; the official indexed landing-page text and the linked official PDF remained available. The search did not enumerate every EMA committee catalogue or every HMA national-agency site."
+      },
+      {
+        "institution_source": "European Banking Authority website, publication search, press-release document links, and official PDF endpoints",
+        "period_scope": "2018-01-01 through 2026-09-04",
+        "language_scope": "English",
+        "document_type_scope": [
+          "report"
+        ],
+        "sector_scope": [
+          "financial_services"
+        ],
+        "exact_queries_or_navigation": [
+          "site:eba.europa.eu/publications-and-media/publications \"Report on Big Data and Advanced Analytics\"",
+          "site:eba.europa.eu \"EBA/REP/2020\" \"Big Data and Advanced Analytics\"",
+          "site:eba.europa.eu/publications-and-media/publications \"Follow-up report on the use of machine learning\"",
+          "site:eba.europa.eu/sites/default/files/document_library \"EBA/REP/2023/28\""
+        ],
+        "searched_at": "2026-09-05T06:13:52.370Z",
+        "reviewer": "OpenAI Codex",
+        "status": "bounded_pass_logged_not_source_complete",
+        "candidate_decisions": {
+          "strong_pending_candidates": 2,
+          "merged_with_existing_117": 0,
+          "excluded_press_releases_as_documents": 2
+        },
+        "result_and_pagination_evidence": "The EBA faceted search exposed four document results for January 2020, including the 13 January report, and four model-validation results for August 2023, including the 4 August follow-up report. Broader EBA searches are heavily paginated and were not exhausted.",
+        "access_limitations": "Direct opens of some EBA landing pages/PDF endpoints returned HTTP 403 to the retrieval tool, although official-domain search extraction exposed the PDF headings, reference numbers, tables of contents, and substantive passages. This is a bounded targeted screen rather than a certification of all EBA publications."
+      },
+      {
+        "institution_source": "European Insurance and Occupational Pensions Authority publication pages and linked official PDFs",
+        "period_scope": "2018-01-01 through 2026-09-04",
+        "language_scope": "English",
+        "document_type_scope": [
+          "report",
+          "opinion"
+        ],
+        "sector_scope": [
+          "financial_services"
+        ],
+        "exact_queries_or_navigation": [
+          "site:eiopa.europa.eu/document-library artificial intelligence report opinion PDF",
+          "site:eiopa.europa.eu \"Opinion on Artificial Intelligence governance\"",
+          "site:eiopa.europa.eu \"Artificial intelligence governance principles\""
+        ],
+        "searched_at": "2026-09-05T06:13:52.370Z",
+        "reviewer": "OpenAI Codex",
+        "status": "bounded_pass_logged_not_source_complete",
+        "candidate_decisions": {
+          "strong_pending_candidates": 2,
+          "merged_with_existing_117": 0,
+          "draft_consultation_not_counted_separately": 1
+        },
+        "result_and_pagination_evidence": "Both exact-title EIOPA publication pages and their English PDFs were reviewed. EIOPA did not expose a stable result total on those publication pages, and its whole document library was not paginated to exhaustion.",
+        "access_limitations": "The 2021 publication page labels the currently hosted file 31 January 2023 while the page publication date, PDF copyright, ISBN and Publications Office statement identify the report as the 2021 edition. No separately titled revised edition was found; a future ingestion pass should retain the manifestation-date ambiguity."
+      },
+      {
+        "institution_source": "European Securities and Markets Authority document library, topical-analysis page, and linked official PDFs",
+        "period_scope": "2018-01-01 through 2026-09-04",
+        "language_scope": "English",
+        "document_type_scope": [
+          "report"
+        ],
+        "sector_scope": [
+          "financial_services"
+        ],
+        "exact_queries_or_navigation": [
+          "site:esma.europa.eu/sites/default/files artificial intelligence report statement PDF",
+          "site:esma.europa.eu \"Artificial intelligence in EU securities markets\"",
+          "site:esma.europa.eu/document \"Artificial intelligence in EU investment funds\"",
+          "ESMA Topical Analysis -> exact AI report entries"
+        ],
+        "searched_at": "2026-09-05T06:13:52.370Z",
+        "reviewer": "OpenAI Codex",
+        "status": "bounded_pass_logged_not_source_complete",
+        "candidate_decisions": {
+          "strong_pending_candidates": 3,
+          "merged_with_existing_117": 0,
+          "excluded_webinars_or_newsletters_as_documents": true
+        },
+        "result_and_pagination_evidence": "The ESMA library exposed exact document records and references for the 2023 and 2025 reports; a broad filtered library view displayed 679 documents and deep page numbers, demonstrating that the catalogue is paginated. The three exact report PDFs were reviewed, but the 679-record universe was not exhausted.",
+        "access_limitations": "The screen is deliberately bounded to exact AI-titled reports and therefore does not establish zero omissions among broader TRV, supervisory-convergence, investor-protection, or joint-ESA reports with only embedded AI sections."
+      },
+      {
+        "institution_source": "Existing generated public corpus",
+        "period_scope": "All 117 generated document records",
+        "language_scope": "English corpus metadata",
+        "document_type_scope": [
+          "all existing document types"
+        ],
+        "sector_scope": [
+          "health",
+          "financial_services"
+        ],
+        "exact_queries_or_navigation": [
+          "Exact case-insensitive search of generated/public-data.json for every candidate title fragment and official reference",
+          "Inspected generated/public-data.json documents array count and metadata"
+        ],
+        "searched_at": "2026-09-05T06:13:52.370Z",
+        "reviewer": "OpenAI Codex",
+        "status": "bounded_pass_logged_not_source_complete",
+        "candidate_decisions": {
+          "actual_existing_document_count": 117,
+          "exact_reference_or_title_matches": 0,
+          "all_candidates_remain_outside_public_corpus": true
+        },
+        "result_and_pagination_evidence": "The generated documents array contains 117 records. Exact searches for EMA/CHMP/CVMP/83833/2023, EMA/67888/2026, EBA/REP/2020/01, EBA/REP/2023/28, EIOPA-BoS-25-360, the 2021 EIOPA title, all three ESMA references, NDSG workplan, medicinal product lifecycle, and AI Observatory returned no matches.",
+        "access_limitations": "This deduplication is against generated/public-data.json metadata, not hidden drafts, branch history, or ungenerated research notes."
+      }
+    ],
+    "other_sectors": {
+      "queries_as_recorded": [
+        "site.frontex.europa.eu artificial intelligence based capabilities border management 2021 report",
+        "site.osha.europa.eu artificial intelligence worker management 2022 report",
+        "site.easa.europa.eu artificial intelligence roadmap 2.0 2023",
+        "site.eda.europa.eu artificial intelligence defence 2020 strategic research agenda",
+        "site.europarl.europa.eu 2021 artificial intelligence criminal law military authority P9_TA 0009",
+        "site.europarl.europa.eu artificial intelligence border management 2021 study 690706",
+        "site.easa.europa.eu artificial intelligence roadmap 2020 7 February",
+        "site.osha.europa.eu \"Artificial intelligence for worker management\" \"2022\" \"report\"",
+        "\"Artificial Intelligence-based capabilities\" \"Final Report\" Frontex RAND 2021 (Frontex/OP domains)",
+        "\"EASA AI Roadmap\" \"2020\" filetype:pdf (EASA domain)",
+        "\"Artificial Intelligence-based capabilities\" Frontex \"pdf\" (Frontex/OP domains)",
+        "\"artificial intelligence for worker management\" \"mapping\" \"23/06/2022\" (EU-OSHA domain)",
+        "\"2024\" \"CARD\" \"report\" \"19 November\" artificial intelligence (EDA domain)"
+      ],
+      "reviewed_at": "2026-09-05 06:14:14 UTC",
+      "scope": "Bounded contemporary sector spot-check; not an exhaustive catalogue scan.",
+      "result_count_available": false,
+      "pagination_exhausted": false
+    },
+    "parent_spot_checks": [
+      "84/130/EEC official HTML annex",
+      "52017IP0051 official HTML and OJ identity",
+      "EUCO 14/17 official PDF AI passage",
+      "EMA/CHMP/CVMP/83833/2023 primary PDF adoption table and introduction",
+      "2021 EIOPA expert-group report primary PDF attribution and disclaimer"
+    ]
+  },
+  "access_limitations": {
+    "historical_programmes": [
+      "Several EUR-Lex ELI/CELEX pages returned JavaScript bot checks, cache misses, safe-URL errors or internal errors.",
+      "For 31989D0415, 31994D0802 and 52016DC0180, official indexed EUR-Lex text supported the passages, but a stable full-page open was not obtained; those records explicitly retain that verification task.",
+      "No exhaustive pagination or result-count evidence was available for the web search interface."
+    ],
+    "historical_institutional": [
+      "European Parliament Think Tank HTML pages sometimes returned a JavaScript/robot-verification page. Full RegData PDFs were used where available; the PE 563.501 main PDF remained blocked while its policy briefing and Annex 1 were accessible.",
+      "The European Parliament Doceo adopted-text page for P8_TA(2017)0051 returned a JavaScript challenge; the complete EUR-Lex English text was opened instead.",
+      "EDPS direct PDFs for Opinions 4/2015, 7/2015 and 8/2016 returned HTTP 403 to the open tool even though official catalogue pages/search records were discoverable.",
+      "The Publications Office detail page for the EESC big-data study returned HTTP 403, and the download-handler URL was rejected as unsafe by the open tool.",
+      "The Consilium Council-conclusions list rendered current results despite year=2017 pagination parameters, preventing a dependable bounded Council-only inventory in this pass."
+    ],
+    "health_finance": [
+      "The screen targeted exact AI/ML-titled final reports, guidelines/reflection papers, opinions, and current workplans from EMA/HMA, EBA, EIOPA, and ESMA; it is not an exhaustive audit of every publication with an embedded AI passage.",
+      "EMA and HMA do not expose one stable, paginated cross-institution catalogue. National HMA member-agency catalogues were outside this bounded pass.",
+      "EBA direct PDF and landing-page requests sometimes returned HTTP 403 to the retrieval tool; official-domain indexed PDF text and official publication records were sufficient for candidate screening but this access issue remains documented.",
+      "EIOPA's 2021 report page presents a 2023 hosted-file label for a text whose bibliographic identity is 2021; this was not treated as a second version without evidence of substantive revision.",
+      "ESMA's document library is deeply paginated. Exact AI report entries and PDFs were reviewed, but the full catalogue was not exhausted.",
+      "No press release, news item, event page, webinar, newsletter, or project webpage is counted as a document candidate; such pages appear only as discovery or publication evidence.",
+      "The existing-match check covers the actual 117 records in generated/public-data.json and not ungenerated drafts or historical Git states.",
+      "Controlled-vocabulary proposals use only observed existing sector values (health, financial_services) and provenance values (eu_agency_or_body_authored, eu_expert_group_authored, joint_institutional, officially_published). The proposed workplan type will require schema review because workplan is not among the currently observed generated document_type values.",
+      "Named authors, adopters, commissioners, publishers, and hosts are kept separate. Empty role arrays mean that the reviewed official evidence did not establish that role, not that no such role exists."
+    ],
+    "other_sectors": [
+      "Search-engine discovery and selected official pages, not a paginated source-universe census.",
+      "Frontex report landing returned403; EASA download gateway returned429, but direct official PDF manifests were readable.",
+      "Parliament P9_TA(2021)0405 is an additional uncounted follow-up lead: several direct endpoints returned browser-verification or internal-fetch errors.",
+      "EDA AI action plan and strategic agenda mentioned in news are not counted as retrieved publications; some EDA repositories require registration.",
+      "No files are represented as locally retained full-text snapshots. Search/open text is evidence, not a saved PDF archive.",
+      "All proposed tags and relevance classes are editorial screening judgments."
+    ]
+  }
+}

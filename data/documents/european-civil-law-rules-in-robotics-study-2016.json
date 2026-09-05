@@ -1,0 +1,167 @@
+{
+  "id": "european-civil-law-rules-in-robotics-study-2016",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "european-civil-law-rules-in-robotics-study-2016",
+  "official_title": "European Civil Law Rules in Robotics",
+  "short_title": "European Civil Law Rules in Robotics",
+  "document_type": "study",
+  "sector_tags": [
+    "health",
+    "transport_and_mobility",
+    "justice",
+    "intellectual_property",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_commissioned_external",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "PE 571.379",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2016-10-12",
+  "version_label": "Official English translation",
+  "version_status": "final",
+  "publication_date": "2016-10-12",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament-committee-on-legal-affairs",
+      "role": "requester",
+      "evidence_source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "evidence_locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9."
+    },
+    {
+      "institution_id": "european-parliament-policy-department-c",
+      "role": "commissioner",
+      "evidence_source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "evidence_locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9."
+    },
+    {
+      "institution_id": "european-parliament-policy-department-c",
+      "role": "supervisor",
+      "evidence_source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "evidence_locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9."
+    },
+    {
+      "institution_id": "european-parliament-policy-department-c",
+      "role": "publisher",
+      "evidence_source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "evidence_locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+    "european-civil-law-rules-in-robotics-study-2016-think-tank"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The official study text verifies its identity, external author, commissioning chain and direct, sustained treatment of robotics and artificial intelligence. The exact issue day is not printed in the study, so the Parliament catalogue publication date is used as the permitted publication fallback and the October manuscript-completion statement is retained separately.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:28:17.769Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-think-tank",
+      "locator": "Official Think Tank catalogue record: Study, 12-10-2016",
+      "meaning": "The official Parliament Think Tank catalogue dates the study to 12 October 2016; this publication fallback is used because the study text gives only month precision for manuscript completion."
+    },
+    "publication_date": {
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-think-tank",
+      "locator": "Official Think Tank catalogue record: Study, 12-10-2016",
+      "meaning": "The cited official manifestation establishes official publication on 2016-10-12."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "The executive summary and core analysis repeatedly treat robotics and AI as the intended objects of proposed EU civil-law, liability and ethics rules, satisfying the first applicable relevance class."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "The executive summary and sections 1-4 are a sustained civil-law, liability and ethics analysis of robotics and AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "intellectual_property",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "Section 1, printed p.6 (PDF p.8), discusses autonomous-robot creations and literary/artistic property."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "Section 2.1, printed p.9 (PDF p.11), addresses surgical robots, safety and surgeon training."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "Section 2.1, printed p.9 (PDF p.11), addresses autonomous/remotely piloted drones and safety/privacy."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "Section 1, printed pp.6-7 (PDF pp.8-9), addresses a legal instrument responsive to robotics and AI research."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_commissioned_external",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9.",
+      "rationale": "The publication credits Nathalie Nevejans as AUTHOR and states that Policy Department C commissioned, supervised and published the study at JURI's request."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-think-tank",
+      "locator": "Official Think Tank catalogue record: Study, 12-10-2016",
+      "rationale": "The Parliament-hosted RegData PDF carries PE 571.379 and identifies the responsible Parliament policy department as publisher."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Nathalie Nevejans",
+      "affiliation": "Université d'Artois, Centre de Recherche en Droit Ethique et Procédures",
+      "evidence_source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "evidence_locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "manuscript_completion",
+      "value": "2016-10",
+      "precision": "month",
+      "source_id": "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+      "locator": "PDF pp.3-4 credits; executive summary printed p.5 (PDF p.7); section 1 printed pp.6-7; section 2.1 printed p.9."
+    }
+  ]
+}

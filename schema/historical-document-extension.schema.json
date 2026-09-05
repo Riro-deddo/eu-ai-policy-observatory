@@ -1,9 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://eu-ai-policy-observatory.example/schema/historical-document-extension.schema.json",
-  "title": "Inactive prospective historical document extension",
+  "title": "Verified historical document evidence extension",
   "type": "object",
   "properties": {
+    "historical_review_status": {
+      "const": "verified"
+    },
     "temporal_collection": {
       "enum": ["historical_lineage", "contemporary_eu_ai_policy"]
     },
@@ -42,6 +45,7 @@
     }
   },
   "required": [
+    "historical_review_status",
     "temporal_collection",
     "relevance_class",
     "document_date_kind",
@@ -91,7 +95,7 @@
     "additional_date": {
       "type": "object",
       "properties": {
-        "kind": {"enum": ["document_issue", "institutional_adoption", "first_official_publication", "oj_publication", "manuscript_completion", "cover_issue", "consolidation"]},
+        "kind": {"enum": ["document_issue", "institutional_adoption", "first_official_publication", "oj_publication", "manuscript_completion", "cover_issue", "consolidation", "official_end_of_validity", "official_dispatch", "parliament_adopted_text_manifestation"]},
         "value": {"type": "string", "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
         "precision": {"enum": ["day", "month", "year"]},
         "source_id": {"$ref": "#/$defs/id"},
@@ -104,7 +108,7 @@
       "type": "object",
       "properties": {
         "institution_id": {"$ref": "#/$defs/id"},
-        "role": {"enum": ["author", "proposer", "adopter", "publisher", "contributor", "commissioner", "official_host"]},
+        "role": {"enum": ["author", "proposer", "adopter", "publisher", "contributor", "commissioner", "official_host", "responsible_body", "requester", "supervisor", "cover_note_sender"]},
         "evidence_source_id": {"$ref": "#/$defs/id"},
         "evidence_locator": {"type": "string", "pattern": "\\S"}
       },

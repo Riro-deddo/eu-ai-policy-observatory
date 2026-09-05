@@ -320,10 +320,10 @@ def test_real_pipeline_round_trips_notices_without_changing_routes_or_holds(tmp_
     public = json.loads(first.public_json.read_text(encoding="utf-8"))
     documents = {document["id"]: document for document in public["documents"]}
     frozen = json.loads(BASELINE.read_text(encoding="utf-8"))["documents"]
-    assert len(documents) == 117
+    assert len(documents) == 131
     assert len(public["relationships"]) == 95
-    assert {(row["id"], row["slug"]) for row in public["documents"]} == {
-        (row["id"], row["slug"]) for row in frozen
+    assert {(row["id"], row["slug"]) for row in frozen} <= {
+        (row["id"], row["slug"]) for row in public["documents"]
     }
     assert {
         key

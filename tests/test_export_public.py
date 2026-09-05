@@ -194,7 +194,9 @@ def test_export_filters_unpublished_dependencies_and_embeds_document_page_data(
     assert document["institutions"] == [
         {
             "id": "european-commission",
-            "role": "author",
+                "role": "author",
+                "evidence_source_id": None,
+                "evidence_locator": None,
             "publication_status": "published",
             "official_name": "European Commission",
             "short_name": "Commission",
@@ -303,8 +305,9 @@ def test_export_embeds_sorted_procedures_and_deterministic_coverage(
         "last_verified_date": "2026-09-03",
         "published_documents": 1,
         "principal_documents": 1,
-        "supporting_files_and_versions": 0,
-        **AUDIT_SUMMARY,
+            "supporting_files_and_versions": 0,
+            "historical_review": {"verified": 0, "legacy_review_pending": 1},
+            **AUDIT_SUMMARY,
     }
 
 

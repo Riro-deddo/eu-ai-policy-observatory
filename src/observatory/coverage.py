@@ -45,6 +45,15 @@ def build_public_coverage_summary(research_root: Path) -> dict[str, object]:
         cast(str, candidate["decision"])
         for candidate in cast(list[Mapping[str, object]], inventory["candidates"])
     )
+    candidates = cast(list[Mapping[str, object]], inventory["candidates"])
+    pending_by_source = Counter(
+        source_id
+        for candidate in candidates
+        if candidate.get("decision") == "pending"
+        and isinstance(candidate.get("source_ids"), list)
+        for source_id in cast(list[object], candidate["source_ids"])
+        if isinstance(source_id, str)
+    )
     cutoff_text = cast(str, source_sweep["coverage_cutoff"])
     date.fromisoformat(cutoff_text)
 
@@ -61,6 +70,25 @@ def build_public_coverage_summary(research_root: Path) -> dict[str, object]:
             decision: decision_counts[decision] for decision in INVENTORY_DECISIONS
         },
         "unresolved_candidates": decision_counts["pending"],
+        "source_scopes": [
+            {
+                key: source.get(key)
+                for key in (
+                    "id",
+                    "name",
+                    "source_family",
+                    "institution",
+                    "covered_from",
+                    "covered_through",
+                    "covered_document_types",
+                    "covered_sector_tags",
+                    "scan_status",
+                    "coverage_cutoff",
+                )
+            }
+            | {"pending_candidate_count": pending_by_source[cast(str, source["id"])]}
+            for source in cast(list[Mapping[str, object]], source_sweep["sources"])
+        ],
     }
 
 

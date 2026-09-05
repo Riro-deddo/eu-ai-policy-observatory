@@ -50,7 +50,7 @@
         },
         "official_reference": { "$ref": "#/$defs/nullable_string" },
         "official_title": { "type": "string", "minLength": 1 },
-        "year": { "type": "integer", "minimum": 2018, "maximum": 2026 },
+        "year": { "type": "integer", "minimum": 1, "maximum": 9999 },
         "issuing_institution": { "type": "string", "minLength": 1 },
         "record_level": {
           "enum": ["principal", "supporting", "version", "attachment"]

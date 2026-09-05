@@ -39,7 +39,7 @@ def test_coverage_summary_counts_source_families_and_inventory_decisions(tmp_pat
 
     summary = build_public_coverage_summary(research_root)
 
-    assert summary == {
+    assert {key: value for key, value in summary.items() if key != "source_scopes"} == {
         "coverage_cutoff": "2026-09-04",
         "coverage_statement": (
             "An expanding corpus of official EU and European Communities AI-related "
@@ -58,14 +58,27 @@ def test_coverage_summary_counts_source_families_and_inventory_decisions(tmp_pat
         "inventory": {"included": 1, "merged": 1, "excluded": 1, "pending": 1},
         "unresolved_candidates": 1,
     }
+    assert summary["source_scopes"][0] == {
+        "id": "reviewed-family-a",
+        "name": "Source reviewed-family-a",
+        "source_family": "Reviewed family",
+        "institution": "Test institution",
+        "covered_from": "2018-01-01",
+        "covered_through": "2026-09-04",
+        "covered_document_types": [],
+        "covered_sector_tags": [],
+        "scan_status": "reviewed",
+        "coverage_cutoff": "2026-09-04",
+        "pending_candidate_count": 0,
+    }
     public_text = json.dumps(summary)
     for candidate in candidates:
         assert candidate["official_title"] not in public_text
         assert candidate["official_source_url"] not in public_text
         assert candidate["decision_reason"] not in public_text
     assert "Scope for reviewed-family-a only" not in public_text
-    assert "covered_document_types" not in public_text
-    assert "covered_sector_tags" not in public_text
+    assert '"covered_document_types": []' in public_text
+    assert '"covered_sector_tags": []' in public_text
 
 
 @pytest.mark.parametrize(
@@ -96,8 +109,11 @@ def test_cutoff_never_implies_completeness(tmp_path, status, decision):
 def _source(identifier: str, source_family: str, scan_status: str) -> dict[str, object]:
     return {
         "id": identifier,
+        "name": f"Source {identifier}",
+        "institution": "Test institution",
         "source_family": source_family,
         "scope_note": f"Scope for {identifier} only",
+        "covered_from": "2018-01-01",
         "covered_through": "2026-09-04",
         "coverage_cutoff": "2026-09-04",
         "covered_document_types": [],

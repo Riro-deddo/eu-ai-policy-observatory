@@ -26,12 +26,12 @@ def test_pipeline_presents_two_standalone_instruments_without_new_records(tmp_pa
     public = json.loads(outputs.public_json.read_text(encoding="utf-8"))
     documents = {item["id"]: item for item in public["documents"]}
     frozen = json.loads((ROOT / "research/migrations/2026-09-05-public-document-baseline.json").read_text(encoding="utf-8"))
-    assert {(item["id"], item["slug"]) for item in documents.values()} == {
-        (item["id"], item["slug"]) for item in frozen["documents"]
+    assert {(item["id"], item["slug"]) for item in frozen["documents"]} <= {
+        (item["id"], item["slug"]) for item in documents.values()
     }
-    assert len(documents) == 117
+    assert len(documents) == 131
     assert len(public["relationships"]) == 95
-    assert public["coverage"]["principal_documents"] == 35
+    assert public["coverage"]["principal_documents"] == 49
     with sqlite3.connect(outputs.database) as connection:
         for doc_id, title in TITLES.items():
             document = documents[doc_id]

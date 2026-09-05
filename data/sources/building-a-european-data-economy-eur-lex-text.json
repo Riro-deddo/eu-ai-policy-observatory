@@ -1,0 +1,13 @@
+{
+  "id": "building-a-european-data-economy-eur-lex-text",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52017DC0009",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-05T06:27:41.6613488Z",
+  "last_verified_at": "2026-09-05T06:27:41.6613488Z",
+  "verification_note": "Sections 1 and 4, Liability: The text analyses data and liability questions for connected robots and autonomous machines, including changing behaviour through operation."
+}

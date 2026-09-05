@@ -179,8 +179,8 @@ def test_record_levels_statuses_and_published_identity_routes_are_preserved():
         if record.data["publication_status"] == "published"
     }
     baseline_routes = {(document["id"], document["slug"]) for document in baseline["documents"]}
-    assert len(published_routes) == 117
-    assert published_routes == baseline_routes
+    assert len(published_routes) == 131
+    assert baseline_routes <= published_routes
 
 
 def test_general_principles_and_siblings_remain_explicit_relationship_holds():
@@ -256,10 +256,10 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
     documents = {document["id"]: document for document in public_data["documents"]}
     relationships = {relationship["id"]: relationship for relationship in public_data["relationships"]}
 
-    assert outputs.record_counts["documents"] == 117
+    assert outputs.record_counts["documents"] == 131
     assert outputs.record_counts["relationships"] == 95
-    assert {(item["id"], item["slug"]) for item in public_data["documents"]} == {
-        (item["id"], item["slug"]) for item in baseline["documents"]
+    assert {(item["id"], item["slug"]) for item in baseline["documents"]} <= {
+        (item["id"], item["slug"]) for item in public_data["documents"]
     }
     assert documents["gpai-code-model-documentation-form-2025"]["record_level"] == "supporting"
     assert documents["gpai-code-signatory-form-2025"]["record_level"] == "supporting"
@@ -271,7 +271,7 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
         assert _edge_tuple(relationships[relationship_id]) == expected
 
     with sqlite3.connect(outputs.database) as connection:
-        assert connection.execute("SELECT COUNT(*) FROM documents").fetchone()[0] == 117
+        assert connection.execute("SELECT COUNT(*) FROM documents").fetchone()[0] == 131
         assert connection.execute("SELECT COUNT(*) FROM relationships").fetchone()[0] == 95
         sqlite_routes = set(connection.execute("SELECT id, slug FROM documents"))
         sqlite_levels = dict(
@@ -295,7 +295,10 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
             )
         }
 
-    assert sqlite_routes == {(item["id"], item["slug"]) for item in baseline["documents"]}
+    assert sqlite_routes == {
+        (item["id"], item["slug"]) for item in public_data["documents"]
+    }
+    assert {(item["id"], item["slug"]) for item in baseline["documents"]} <= sqlite_routes
     assert sqlite_levels == {
         "draft-high-risk-classification-guidelines-2026": "attachment",
         "gpai-code-model-documentation-form-2025": "supporting",

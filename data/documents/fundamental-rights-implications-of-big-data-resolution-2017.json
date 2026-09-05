@@ -1,0 +1,170 @@
+{
+  "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "fundamental-rights-implications-of-big-data-resolution-2017",
+  "official_title": "European Parliament resolution of 14 March 2017 on fundamental rights implications of big data: privacy, data protection, non-discrimination, security and law-enforcement (2016/2225(INI))",
+  "short_title": "Fundamental rights implications of big data",
+  "document_type": "resolution",
+  "sector_tags": [
+    "general_cross_sector",
+    "law_enforcement",
+    "justice",
+    "public_administration",
+    "consumer_protection",
+    "media_and_culture",
+    "competition_and_markets"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "P8_TA(2017)0076",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2017-03-14",
+  "version_label": "Adopted text and Official Journal manifestation",
+  "version_status": "final",
+  "publication_date": "2018-07-25",
+  "legal_status": "non_binding",
+  "celex": "52017IP0076",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author",
+      "evidence_source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "evidence_locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32"
+    },
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "evidence_locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "evidence_locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+    "fundamental-rights-implications-of-big-data-resolution-2017-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "The official adopted text and EUR-Lex OJ manifestation verify identity, dates and material AI/algorithmic policy passages. Although the title is broader than AI, the dedicated provisions on AI training, algorithmic bias, automated decisions and human accountability satisfy the direct-AI-first rule. The 2018 OJ reproduction is not a new contemporary document.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:28:17.769Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "meaning": "The cited official manifestation establishes the document date 2017-03-14 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-eur-lex",
+      "locator": "Identity block and OJ C 263, 25.7.2018, pages 82-89",
+      "meaning": "The cited official manifestation establishes official publication on 2018-07-25."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Recital B identifies AI training, and paragraphs 8, 19-21 and 25-32 make substantive policy requests on algorithmic transparency, bias, automated decision-making, profiling and human intervention. Direct AI substance therefore applies before indirect legal context."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Recitals F-G and the general considerations address horizontal effects of big-data and algorithmic systems across public and private sectors."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "The resolution is framed around enforceable fundamental rights, data-protection safeguards and judicial redress for automated processing."
+    },
+    {
+      "field": "sector_tags",
+      "value": "law_enforcement",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Paragraphs 25-32 are a dedicated law-enforcement section covering profiling, automated decisions, predictive policing, discrimination and human accountability."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Recitals K and R and paragraph 9 connect algorithmic processing with consumer rights and consumer-protection regulators."
+    },
+    {
+      "field": "sector_tags",
+      "value": "competition_and_markets",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Recitals K and R address market concentration, mergers, fair competition and cooperation with competition regulators."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Paragraphs 8 and 15 apply algorithmic accountability and system security requirements to the public sector and e-government."
+    },
+    {
+      "field": "sector_tags",
+      "value": "media_and_culture",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "Recital O and paragraph 13 address algorithmic effects on information access, media freedom and pluralism."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32",
+      "rationale": "The official text is expressly a European Parliament resolution and names Parliament as the acting body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-eur-lex",
+      "locator": "Identity block and OJ C 263, 25.7.2018, pages 82-89",
+      "rationale": "EUR-Lex identifies CELEX 52017IP0076 and OJ C 263, 25 July 2018, pages 82-89."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "parliament_adopted_text_manifestation",
+      "value": "2017-03-14",
+      "precision": "day",
+      "source_id": "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+      "locator": "Header, recitals B and M-N, paragraphs 8, 19-21 and 25-32"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "building-a-european-data-economy",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "building-a-european-data-economy",
+  "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions: Building a European data economy",
+  "short_title": "Building a European data economy",
+  "document_type": "communication",
+  "sector_tags": [
+    "general_cross_sector",
+    "transport_and_mobility",
+    "competition_and_markets"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "COM(2017) 9 final",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2017-01-10",
+  "version_label": "Final",
+  "version_status": "final",
+  "publication_date": "2017-01-10",
+  "legal_status": "non_binding",
+  "celex": "52017DC0009",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author",
+      "evidence_source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "evidence_locator": "Document information"
+    },
+    {
+      "institution_id": "directorate-general-for-communications-networks-content-and-technology",
+      "role": "responsible_body",
+      "evidence_source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "evidence_locator": "Document information"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "evidence_locator": "Document information"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "building-a-european-data-economy-eur-lex-metadata",
+    "building-a-european-data-economy-eur-lex-text",
+    "building-a-european-data-economy-commission-press-release-ip-17-5"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Identity, issue/dispatch date, authorship and substantive autonomous-system relevance are resolved, and the dated Commission IP/17/5 press release independently states that the data-economy communication was presented on 10 January 2017.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information",
+      "meaning": "The cited official manifestation establishes the document date 2017-01-10 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "building-a-european-data-economy-commission-press-release-ip-17-5",
+      "locator": "IP/17/5, Brussels, 10 January 2017; opening description of the communication presented today",
+      "meaning": "The cited official manifestation establishes official publication on 2017-01-10."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "The communication develops safety, liability, data-access and insurance policy for autonomous machines and connected robots; it is policy analysis, not an automated-decision legal instrument."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "It addresses cross-sector data and liability rules for connected/autonomous systems."
+    },
+    {
+      "field": "sector_tags",
+      "value": "competition_and_markets",
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "It examines data access, ownership, portability and market conditions."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "Its autonomous-system analysis includes self-driving vehicles."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information",
+      "rationale": "EUR-Lex names the European Commission and DG CNECT as author/responsible body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "building-a-european-data-economy-commission-press-release-ip-17-5",
+      "locator": "IP/17/5, Brussels, 10 January 2017; opening description of the communication presented today",
+      "rationale": "The dated official Commission IP/17/5 release states that the data-economy communication was presented on 10 January 2017."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_dispatch",
+      "value": "2017-01-10",
+      "precision": "day",
+      "source_id": "building-a-european-data-economy-eur-lex-metadata",
+      "locator": "Document information"
+    }
+  ]
+}

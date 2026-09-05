@@ -49,6 +49,7 @@ def validate_historical_relationships(
     records: Mapping[str, Sequence[LoadedRecord]],
     documents: Sequence[LoadedRecord],
     sources: Mapping[str, Sequence[LoadedRecord]],
+    target_document_ids: set[str] | None = None,
 ) -> list[ValidationIssue]:
     """Validate published evidence edges and each document's lineage shape."""
     issues: list[ValidationIssue] = []
@@ -134,6 +135,8 @@ def validate_historical_relationships(
     for document in documents:
         data = document.data
         level, document_id = data.get("record_level"), data.get("id")
+        if target_document_ids is not None and document_id not in target_document_ids:
+            continue
         if not isinstance(document_id, str) or not isinstance(level, str) or level not in {"version", "attachment"}:
             continue
         valid = False

@@ -1,0 +1,114 @@
+{
+  "migration_id": "2026-09-05-historical-admissions",
+  "applied_at": "2026-09-05T10:53:00Z",
+  "publication_cutoff": "2026-09-04",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "inputs": [
+    "research/admission/2026-09-05-document-admission-review.json",
+    "research/staging/2026-09-05-historical-first-batch-mapping.md",
+    "research/staging/2026-09-05-legacy-three-evidence.json"
+  ],
+  "counts": {
+    "published_documents_before": 117,
+    "historical_candidates_reviewed": 17,
+    "historical_admissions_added": 14,
+    "historical_holds_not_added": 3,
+    "legacy_documents_upgraded": 3,
+    "published_documents_after": 131,
+    "historical_review_verified_after": 17,
+    "legacy_review_pending_after": 114,
+    "sources_added": 27,
+    "institutions_added": 9
+  },
+  "added_document_ids": [
+    "building-a-european-data-economy",
+    "civil-law-rules-on-robotics-resolution-2017",
+    "council-decision-84-130-eec-esprit",
+    "council-decision-88-279-eec-esprit-ii",
+    "council-decision-88-417-eec-delta",
+    "council-decision-89-415-eec-doses",
+    "council-decision-94-802-ec-esprit",
+    "digitising-european-industry",
+    "european-civil-law-rules-in-robotics-study-2016",
+    "european-council-conclusions-2017-10-19",
+    "european-council-conclusions-2017-12-14",
+    "fundamental-rights-implications-of-big-data-resolution-2017",
+    "horizon-2020-specific-programme-decision-2013-743-eu",
+    "sixth-framework-programme-decision-1513-2002-ec"
+  ],
+  "upgraded_document_ids": [
+    "artificial-intelligence-for-europe",
+    "building-trust-human-centric-ai",
+    "coordinated-plan-on-artificial-intelligence"
+  ],
+  "held_candidates": [
+    {
+      "candidate_id": "ep-ethical-cyber-physical-systems-2016",
+      "disposition": "evidence_hold",
+      "reason": "Complete main-study issue-date, author-credit and manifestation evidence remains unresolved."
+    },
+    {
+      "candidate_id": "historical-com-2017-228-dsm-mid-term-review",
+      "disposition": "evidence_hold",
+      "reason": "A distinct exact official publication date remains unresolved."
+    },
+    {
+      "candidate_id": "eesc-ai-consequences-2017",
+      "disposition": "evidence_hold",
+      "reason": "Additional official English primary evidence was located after the immutable admission review; consolidated passage and metadata admission review is outside this 14-document batch."
+    }
+  ],
+  "added_source_ids": [
+    "artificial-intelligence-for-europe-commission-library",
+    "building-a-european-data-economy-commission-press-release-ip-17-5",
+    "building-a-european-data-economy-eur-lex-metadata",
+    "building-a-european-data-economy-eur-lex-text",
+    "building-trust-human-centric-ai-commission-library",
+    "civil-law-rules-on-robotics-resolution-2017-eur-lex",
+    "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+    "coordinated-plan-on-artificial-intelligence-commission-library",
+    "council-decision-84-130-eec-esprit-eur-lex",
+    "council-decision-88-279-eec-esprit-ii-eur-lex",
+    "council-decision-88-417-eec-delta-eur-lex",
+    "council-decision-88-417-eec-delta-official-pdf",
+    "council-decision-89-415-eec-doses-eur-lex",
+    "council-decision-94-802-ec-esprit-eur-lex",
+    "digitising-european-industry-commission-press-release-ip-16-1407",
+    "digitising-european-industry-eur-lex-metadata",
+    "digitising-european-industry-eur-lex-text",
+    "european-civil-law-rules-in-robotics-study-2016-official-pdf",
+    "european-civil-law-rules-in-robotics-study-2016-think-tank",
+    "european-council-conclusions-2017-10-19-consilium-release",
+    "european-council-conclusions-2017-10-19-official-pdf",
+    "european-council-conclusions-2017-12-14-consilium-release",
+    "european-council-conclusions-2017-12-14-official-pdf",
+    "fundamental-rights-implications-of-big-data-resolution-2017-eur-lex",
+    "fundamental-rights-implications-of-big-data-resolution-2017-parliament-adopted-text",
+    "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+    "sixth-framework-programme-decision-1513-2002-ec-eur-lex"
+  ],
+  "added_institution_ids": [
+    "commission-of-the-european-communities",
+    "council-of-the-european-communities",
+    "directorate-general-for-communications-networks-content-and-technology",
+    "european-council",
+    "european-parliament-committee-on-legal-affairs",
+    "european-parliament-policy-department-c",
+    "general-secretariat-of-the-council",
+    "office-for-official-publications-of-the-european-communities",
+    "publications-office-of-the-european-union"
+  ],
+  "database_seed_subset": {
+    "purpose": "Original operational seed subset; not a researcher-approved PhD analytical sample.",
+    "document_ids": [
+      "ai-act-proposal",
+      "ai-liability-directive-proposal",
+      "artificial-intelligence-act",
+      "artificial-intelligence-for-europe",
+      "coordinated-plan-on-artificial-intelligence",
+      "ethics-guidelines-for-trustworthy-ai",
+      "white-paper-on-artificial-intelligence"
+    ]
+  },
+  "coverage_statement": "This bounded migration does not establish historical source-family completeness; four registered historical scopes remain in_progress."
+}

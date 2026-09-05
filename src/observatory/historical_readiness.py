@@ -1,4 +1,4 @@
-"""Inactive, read-only historical document readiness preflight."""
+"""Read-only evidence-readiness checks reused by the publication gate."""
 
 from __future__ import annotations
 
@@ -40,8 +40,13 @@ def prospective_document_schema(schema_root: Path) -> dict:
     document = result["$defs"]["document"]["allOf"][1]
     document["properties"].update(deepcopy(extension["properties"]))
     document["required"].extend(deepcopy(extension["required"]))
-    document["properties"]["document_type"]["enum"].extend(["directive", "conclusions"])
-    document["properties"]["legal_status"]["enum"].extend(["repealed", "expired"])
+    document["properties"]["document_type"]["enum"] = sorted(
+        set(document["properties"]["document_type"]["enum"]) | {"directive", "conclusions"}
+    )
+    document["properties"]["legal_status"]["enum"] = sorted(
+        set(document["properties"]["legal_status"]["enum"])
+        | {"no_longer_in_force", "repealed", "expired"}
+    )
     return result
 
 
@@ -318,6 +323,7 @@ def validate_historical_readiness(
     records: Mapping[str, Sequence[LoadedRecord]],
     schema_root: Path,
     publication_cutoff: str,
+    document_ids: set[str] | None = None,
 ) -> list[ValidationIssue]:
     """Assess published documents and their evidence; never infer or modify fields."""
     cutoff = _exact_date(publication_cutoff)
@@ -340,7 +346,12 @@ def validate_historical_readiness(
     for institution in records.get("institutions", ()):
         if isinstance(institution.data, Mapping) and isinstance(institution.data.get("id"), str):
             institution_counts[institution.data["id"]] += 1
-    for record in documents:
+    target_documents = [
+        record
+        for record in documents
+        if document_ids is None or record.data.get("id") in document_ids
+    ]
+    for record in target_documents:
         issues.extend(_schema_issues(record, validator))
         _validate_dates(record, cutoff, issues)
         _validate_classification(record, issues)
@@ -349,10 +360,14 @@ def validate_historical_readiness(
         for field, source_id in _document_evidence_references(record.data):
             _check_evidence_source(source_id, declared, sources, record, field, issues)
         legal_status = record.data.get("legal_status")
-        if isinstance(legal_status, str) and legal_status in {"repealed", "expired"} and not isinstance(record.data.get("legal_status_evidence"), Mapping):
-            issues.append(_issue("historical_evidence", record, "legal_status_evidence", "Repealed or expired status requires its own official citation."))
+        if isinstance(legal_status, str) and legal_status in {"no_longer_in_force", "repealed", "expired"} and not isinstance(record.data.get("legal_status_evidence"), Mapping):
+            issues.append(_issue("historical_evidence", record, "legal_status_evidence", "Historical validity status requires its own official citation."))
     issues.extend(_identity_issues(documents))
-    issues.extend(validate_historical_relationships(records, documents, sources))
+    issues.extend(
+        validate_historical_relationships(
+            records, documents, sources, target_document_ids=document_ids
+        )
+    )
     return sorted(issues, key=lambda item: (item.record_path, item.field, item.code, item.message))
 
 

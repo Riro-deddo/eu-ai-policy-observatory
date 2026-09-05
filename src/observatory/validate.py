@@ -916,6 +916,9 @@ def _validate_document_status_combination(
         "adopted",
         "in_force",
         "superseded",
+        "no_longer_in_force",
+        "repealed",
+        "expired",
     }:
         invalid = True
     else:

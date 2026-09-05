@@ -1,0 +1,170 @@
+{
+  "id": "civil-law-rules-on-robotics-resolution-2017",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "civil-law-rules-on-robotics-resolution-2017",
+  "official_title": "European Parliament resolution of 16 February 2017 with recommendations to the Commission on Civil Law Rules on Robotics (2015/2103(INL))",
+  "short_title": "Civil Law Rules on Robotics",
+  "document_type": "resolution",
+  "sector_tags": [
+    "general_cross_sector",
+    "health",
+    "employment_and_labour",
+    "transport_and_mobility",
+    "justice",
+    "consumer_protection",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "P8_TA(2017)0051",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2017-02-16",
+  "version_label": "Adopted text and Official Journal manifestation",
+  "version_status": "final",
+  "publication_date": "2018-07-18",
+  "legal_status": "non_binding",
+  "celex": "52017IP0051",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author",
+      "evidence_source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "evidence_locator": "Header and adopted text, 16 February 2017; recitals B-V"
+    },
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "evidence_locator": "Header and adopted text, 16 February 2017; recitals B-V"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "evidence_locator": "Header and adopted text, 16 February 2017; recitals B-V"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+    "civil-law-rules-on-robotics-resolution-2017-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "The Parliament adopted text and EUR-Lex OJ manifestation verify identity, adoption, official publication and extensive direct AI substance. The 2018 OJ reproduction is the same 2017 resolution and must not create a contemporary duplicate.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:28:17.769Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "meaning": "The cited official manifestation establishes the document date 2017-02-16 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-eur-lex",
+      "locator": "Identity block; OJ C 252, 18.7.2018; paragraphs 1-59 and Charter on Robotics",
+      "meaning": "The cited official manifestation establishes official publication on 2018-07-18."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "The resolution expressly proposes Union definitions, governance, ethics and liability measures for robotics and AI, so direct AI substance is the first applicable category."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "Recitals B-V and the general-principles section establish an EU-wide regulatory and ethical approach spanning society and the internal market."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "The liability section and annex recommend legal rules, insurance and redress for harms caused by robots and AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "The text addresses consumer decisions, product safety, liability and insurance for autonomous systems."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "Paragraphs 24-30 contain dedicated provisions on autonomous vehicles and drones."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "Paragraphs 41-43 address digital skills and the creation, displacement and loss of jobs caused by robots."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "Paragraphs 31-34 contain dedicated provisions on care and medical robots, surgeon competence and patient protection."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "The resolution addresses research ethics, real-world testing and innovation throughout the general-principles and Charter sections."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V",
+      "rationale": "The official text is expressly a European Parliament resolution and begins with the Parliament as the acting authoring body."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-eur-lex",
+      "locator": "Identity block; OJ C 252, 18.7.2018; paragraphs 1-59 and Charter on Robotics",
+      "rationale": "EUR-Lex identifies CELEX 52017IP0051 and OJ C 252, 18 July 2018, pages 239-257."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "parliament_adopted_text_manifestation",
+      "value": "2017-02-16",
+      "precision": "day",
+      "source_id": "civil-law-rules-on-robotics-resolution-2017-parliament-adopted-text",
+      "locator": "Header and adopted text, 16 February 2017; recitals B-V"
+    }
+  ]
+}

@@ -236,3 +236,14 @@ def test_migration_is_idempotent(tmp_path):
     before = copied.read_bytes()
     assert migrate_document(copied) is False
     assert copied.read_bytes() == before
+
+
+def test_migration_never_rewrites_verified_evidence_bearing_document(tmp_path):
+    copied = tmp_path / "historical-document.json"
+    copied.write_bytes(
+        Path("data/documents/council-decision-84-130-eec-esprit.json").read_bytes()
+    )
+    before = copied.read_bytes()
+
+    assert migrate_document(copied) is False
+    assert copied.read_bytes() == before

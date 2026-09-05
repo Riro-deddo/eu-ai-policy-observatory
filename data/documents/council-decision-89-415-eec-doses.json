@@ -1,0 +1,134 @@
+{
+  "id": "council-decision-89-415-eec-doses",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "council-decision-89-415-eec-doses",
+  "official_title": "89/415/EEC: Council Decision of 20 June 1989 instituting a specific programme for the research and development of statistical expert systems (Doses)",
+  "short_title": "DOSES statistical expert systems programme",
+  "document_type": "decision",
+  "sector_tags": [
+    "public_administration",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "89/415/EEC",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "1989-06-20",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "1989-07-13",
+  "legal_status": "no_longer_in_force",
+  "celex": "31989D0415",
+  "eli": "http://data.europa.eu/eli/dec/1989/415/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-communities",
+      "role": "adopter",
+      "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "evidence_locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+    },
+    {
+      "institution_id": "commission-of-the-european-communities",
+      "role": "proposer",
+      "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "evidence_locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+    },
+    {
+      "institution_id": "office-for-official-publications-of-the-european-communities",
+      "role": "publisher",
+      "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "evidence_locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "council-decision-89-415-eec-doses-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "The formerly blocked full official text now resolves exact identity, dates, roles, validity and programme-wide expert-systems relevance.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "meaning": "The cited official manifestation establishes the document date 1989-06-20 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "meaning": "The cited official manifestation establishes official publication on 1989-07-13."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "rationale": "The whole programme concerns statistical expert systems and knowledge rules across the statistical-processing chain, not generic computing."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "rationale": "Article 1 and Annex I establish a specific R&D programme."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "rationale": "Annex I applies expert systems to official statistics and Member State statistical needs."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. The historical heading remains Council of the European Communities, and the Commission proposal stays a separate role."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+      "rationale": "EUR-Lex identifies OJ L 200, 13 July 1989, pp. 46-49."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_end_of_validity",
+      "value": "1993-06-20",
+      "precision": "day",
+      "source_id": "council-decision-89-415-eec-doses-eur-lex",
+      "locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "council-decision-89-415-eec-doses-eur-lex",
+    "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+    "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+  }
+}

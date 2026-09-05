@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-03T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-05T10:34:49Z",
   "slug": "artificial-intelligence-for-europe",
   "official_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Artificial Intelligence for Europe",
   "short_title": "Artificial Intelligence for Europe",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-communication-eur-lex",
+      "evidence_locator": "Document masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'."
     }
   ],
   "policy_ids": [
@@ -36,7 +38,8 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "ai-communication-eur-lex"
+    "ai-communication-eur-lex",
+    "artificial-intelligence-for-europe-commission-library"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
@@ -44,8 +47,8 @@
     "inclusion_rationale": "Foundational Commission communication in the selected 2018–2024 pathway.",
     "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.",
     "review_status": "verified",
-    "reviewed_by": "Yichen Hao",
-    "reviewed_at": "2026-09-04T00:00:00Z"
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T10:34:49Z"
   },
   "sector_tags": [
     "general_cross_sector"
@@ -53,5 +56,53 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-communication-eur-lex",
+      "locator": "Document masthead immediately above the title: 'EUROPEAN COMMISSION'; 'Brussels, 25.4.2018'; 'COM(2018) 237 final'.",
+      "meaning": "The dated Commission masthead establishes 25 April 2018 as the issue date of the final communication."
+    },
+    "publication_date": {
+      "source_id": "artificial-intelligence-for-europe-commission-library",
+      "locator": "Page heading 'Communication Artificial Intelligence for Europe', metadata line 'Publication 25 April 2018', followed by the description and official-text link.",
+      "meaning": "The Commission publication page independently establishes first official publication on 25 April 2018."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-communication-eur-lex",
+      "locator": "Title and section 1, especially the paragraphs beginning 'What is artificial intelligence?' and 'This Communication sets out a European initiative on AI'.",
+      "rationale": "The communication defines AI and sets out the EU's substantive AI initiative, objectives, investment, socioeconomic, ethical, and legal actions."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-communication-eur-lex",
+      "locator": "Section 1 paragraph beginning 'These are some of the many examples of what we know AI can do across all sectors', and the objectives immediately below 'This Communication sets out a European initiative on AI'.",
+      "rationale": "The text expressly frames AI across all sectors and across the economy, private and public sectors, rather than limiting the communication to one domain."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-communication-eur-lex",
+      "locator": "Document masthead and title block: 'EUROPEAN COMMISSION' and 'COMMUNICATION FROM THE COMMISSION'.",
+      "rationale": "The official text identifies the European Commission as the issuing authoring institution."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "artificial-intelligence-for-europe-commission-library",
+      "locator": "Metadata line 'Publication 25 April 2018' and link 'Access the text of the Communication in all languages'.",
+      "rationale": "An official Commission publication page identifies the publication date and links the official text."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

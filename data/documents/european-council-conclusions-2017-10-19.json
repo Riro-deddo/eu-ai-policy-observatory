@@ -1,0 +1,130 @@
+{
+  "id": "european-council-conclusions-2017-10-19",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "european-council-conclusions-2017-10-19",
+  "official_title": "European Council meeting (19 October 2017) - Conclusions",
+  "short_title": "European Council conclusions, 19 October 2017",
+  "document_type": "conclusions",
+  "sector_tags": [
+    "general_cross_sector",
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EUCO 14/17",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2017-10-19",
+  "version_label": "Adopted conclusions",
+  "version_status": "final",
+  "publication_date": "2017-10-19",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-council",
+      "role": "author",
+      "evidence_source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "evidence_locator": "Cover page and section II, paragraph 11, PDF pages 6-8"
+    },
+    {
+      "institution_id": "european-council",
+      "role": "adopter",
+      "evidence_source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "evidence_locator": "Cover page and section II, paragraph 11, PDF pages 6-8"
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council",
+      "role": "cover_note_sender",
+      "evidence_source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "evidence_locator": "Cover page and section II, paragraph 11, PDF pages 6-8"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "european-council-conclusions-2017-10-19-official-pdf",
+    "european-council-conclusions-2017-10-19-consilium-release"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "The official conclusions PDF and same-day Consilium release verify title, references, adoption/publication and a dedicated request for a European AI approach. The cover note distinguishes the General Secretariat as sender/host manager from the European Council as adopter and authoring body.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:28:17.769Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "locator": "Cover page and section II, paragraph 11, PDF pages 6-8",
+      "meaning": "The cited official manifestation establishes the document date 2017-10-19 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "european-council-conclusions-2017-10-19-consilium-release",
+      "locator": "Release header, 19 October 2017 21:15",
+      "meaning": "The cited official manifestation establishes official publication on 2017-10-19."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "locator": "Cover page and section II, paragraph 11, PDF pages 6-8",
+      "rationale": "Paragraph 11 expressly asks the Commission to present a European approach to AI, with data-protection, rights and ethics conditions. That dedicated policy instruction is direct AI substance."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "locator": "Cover page and section II, paragraph 11, PDF pages 6-8",
+      "rationale": "Paragraph 11 calls for a European approach to AI rather than a measure limited to one application sector."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "locator": "Cover page and section II, paragraph 11, PDF pages 6-8",
+      "rationale": "The AI instruction appears in the Digital Europe measures following the call for R&D, investment and breakthrough innovation."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "locator": "Cover page and section II, paragraph 11, PDF pages 6-8",
+      "rationale": "The same AI passage calls for framework conditions enabling new markets and reaffirming the leading role of EU industry."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "european-council-conclusions-2017-10-19-official-pdf",
+      "locator": "Cover page and section II, paragraph 11, PDF pages 6-8",
+      "rationale": "The cover note says the attached conclusions were adopted by the European Council; the General Secretariat is separately identified only as sender."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "european-council-conclusions-2017-10-19-consilium-release",
+      "locator": "Release header, 19 October 2017 21:15",
+      "rationale": "The PDF and dated conclusions release are hosted on Consilium, the official website managed by the General Secretariat."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
+}

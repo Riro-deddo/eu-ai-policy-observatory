@@ -101,6 +101,16 @@ def _export_documents(
     source_ids: set[str] = set()
     for document in documents:
         document_id = document["id"]
+        for field in (
+            "date_evidence",
+            "legal_status_evidence",
+            "classification_evidence",
+            "bibliographic_authors",
+            "additional_dates",
+        ):
+            document[field] = (
+                json.loads(document[field]) if document[field] is not None else None
+            )
         policies = _document_dependencies(connection, "policy_documents", "policy_id", "policies", document_id)
         concepts = _document_dependencies(connection, "document_concepts", "concept_id", "concepts", document_id)
         institutions = _document_institutions(connection, document_id)
@@ -172,6 +182,16 @@ def _coverage(
         "published_documents": len(documents),
         "principal_documents": principal_documents,
         "supporting_files_and_versions": len(documents) - principal_documents,
+        "historical_review": {
+            "verified": sum(
+                document["historical_review_status"] == "verified"
+                for document in documents
+            ),
+            "legacy_review_pending": sum(
+                document["historical_review_status"] == "legacy_review_pending"
+                for document in documents
+            ),
+        },
         **audit_summary,
     }
 
@@ -203,7 +223,8 @@ def _document_institutions(
     return [
         dict(row)
         for row in connection.execute(
-            "SELECT institution.*, junction.role FROM document_institutions AS junction "
+            "SELECT institution.*, junction.role, junction.evidence_source_id, "
+            "junction.evidence_locator FROM document_institutions AS junction "
             "JOIN institutions AS institution ON institution.id = junction.institution_id "
             "WHERE junction.document_id = ? "
             "AND institution.publication_status = 'published' "

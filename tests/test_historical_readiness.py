@@ -42,6 +42,7 @@ def complete_records() -> dict[str, list[LoadedRecord]]:
     document.update(
         {
             "document_type": "resolution",
+            "historical_review_status": "verified",
             "document_date": "2017-02-16",
             "publication_date": "2018-07-18",
             "document_date_kind": "institutional_adoption",
@@ -503,19 +504,25 @@ def test_prospective_schema_is_document_only_and_does_not_mutate_active_schema()
     prospective = prospective_document_schema(SCHEMA_ROOT)
     complete = deepcopy(_json(FIXTURE_ROOT / "documents" / "example-document.json"))
     complete.update({
+        "historical_review_status": "verified",
         "temporal_collection": "historical_lineage", "relevance_class": "direct_ai_substantive", "document_date_kind": "publication",
         "date_evidence": {"document_date": _citation(), "publication_date": _citation()}, "classification_evidence": [{"field": "relevance_class", "value": "direct_ai_substantive", "source_id": "example-source", "locator": "x", "rationale": "x"}],
         "bibliographic_authors": [], "additional_dates": [],
     })
+    complete["institution_roles"][0].update(
+        evidence_source_id="example-source", evidence_locator="title page"
+    )
     assert len(prospective["$defs"]) >= 7
     assert list(prospective["oneOf"]) == [{"$ref": "#/$defs/document"}]
-    assert not Draft202012Validator(active, format_checker=FormatChecker()).is_valid(complete)
+    assert Draft202012Validator(active, format_checker=FormatChecker()).is_valid(complete)
+    assert Draft202012Validator(prospective, format_checker=FormatChecker()).is_valid(complete)
     assert schema_path.read_bytes() == before
 
 
 def test_extension_schema_resolves_its_local_references():
     extension = _json(SCHEMA_ROOT / "historical-document-extension.schema.json")
     candidate = {
+        "historical_review_status": "verified",
         "temporal_collection": "historical_lineage",
         "relevance_class": "direct_ai_substantive",
         "document_date_kind": "publication",

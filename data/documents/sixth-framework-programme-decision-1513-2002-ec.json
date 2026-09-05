@@ -1,0 +1,147 @@
+{
+  "id": "sixth-framework-programme-decision-1513-2002-ec",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T10:53:00Z",
+  "updated_at": "2026-09-05T10:53:00Z",
+  "slug": "sixth-framework-programme-decision-1513-2002-ec",
+  "official_title": "Decision No 1513/2002/EC of the European Parliament and of the Council of 27 June 2002 concerning the sixth framework programme of the European Community for research, technological development and demonstration activities, contributing to the creation of the European Research Area and to innovation (2002 to 2006)",
+  "short_title": "Sixth Framework Programme (FP6)",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "joint_institutional",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Decision No 1513/2002/EC",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2002-06-27",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "2002-08-29",
+  "legal_status": "no_longer_in_force",
+  "celex": "32002D1513",
+  "eli": "http://data.europa.eu/eli/dec/2002/1513/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+    },
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+    },
+    {
+      "institution_id": "commission-of-the-european-communities",
+      "role": "proposer",
+      "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+    },
+    {
+      "institution_id": "office-for-official-publications-of-the-european-communities",
+      "role": "publisher",
+      "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "sixth-framework-programme-decision-1513-2002-ec-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "The official act resolves identity, separate dates, joint adopters, validity and substantive ambient-intelligence, cognitive-systems and robotics passages.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "meaning": "The cited official manifestation establishes the document date 2002-06-27 and its stated meaning."
+    },
+    "publication_date": {
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "meaning": "The cited official manifestation establishes official publication on 2002-08-29."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "rationale": "FP6 materially prioritises ambient intelligence, cognitive systems, knowledge management, intelligent manufacturing and innovative robotics. The cited provisions do not explicitly use the term artificial intelligence, so the named precursor technologies satisfy the first applicable precursor class."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "rationale": "The act is the Community RTD framework programme."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "rationale": "The annex supports intelligent manufacturing, decision aids and innovative robotics."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "rationale": "EUR-Lex Document information explicitly lists European Parliament and Council of the European Union together as Author; the act heading independently identifies them as joint adopters."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+      "rationale": "EUR-Lex identifies OJ L 232, 29 August 2002, pp. 1-33."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "consolidation",
+      "value": "2004-04-30",
+      "precision": "day",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+    },
+    {
+      "kind": "official_end_of_validity",
+      "value": "2006-12-31",
+      "precision": "day",
+      "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+      "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+    "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+    "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+  }
+}
