@@ -16,8 +16,10 @@ test('public projection retains every linked endpoint and relationship without m
   assert.ok(model.nodes.every((node) => node.href.startsWith('/eu-ai-policy-observatory/')));
   for (const edge of model.edges) {
     const original = data.relationships.find((relationship) => relationship.id === edge.id);
-    assert.equal(edge.source, original.source_entity_id);
-    assert.equal(edge.target, original.target_entity_id);
+    assert.equal(edge.source, `${original.source_entity_type}:${original.source_entity_id}`);
+    assert.equal(edge.target, `${original.target_entity_type}:${original.target_entity_id}`);
+    assert.equal(edge.sourceEntityId, original.source_entity_id);
+    assert.equal(edge.targetEntityId, original.target_entity_id);
   }
 });
 
@@ -40,6 +42,19 @@ test('projection supports root and subpath routes plus document and policy endpo
   assert.throws(() => createPolicyMapModel({ ...fixture, relationships: [{ ...fixture.relationships[0], target_entity_id: 'missing' }] }, '/'), /Unresolved policy map endpoint/);
   assert.throws(() => createPolicyMapModel({ ...fixture, relationships: [{ ...fixture.relationships[0], target_entity_type: 'event' }] }, '/'), /Unsupported policy map endpoint type/);
   assert.deepEqual(createPolicyMapModel({ ...fixture, relationships: [] }, '/').nodes, []);
+});
+
+test('policy and document endpoints with the same entity ID remain distinct graph nodes', () => {
+  const fixture = {
+    generated_at: '2026-01-01', sources: [], events: [], concepts: [], institutions: [], coverage: {},
+    policies: [{ id: 'shared', short_name: 'Shared policy', scope_note: 'Scope' }],
+    documents: [{ id: 'shared', slug: 'shared-document', short_title: 'Shared document', document_date: '2025-01-01', document_type: 'proposal', record_level: 'principal', corpus_assessment: null, policies: [{ id: 'shared' }] }],
+    relationships: [{ id: 'edge', source_entity_type: 'policy', source_entity_id: 'shared', target_entity_type: 'document', target_entity_id: 'shared', relationship_type: 'contains', basis: 'official', rationale: 'Recorded', evidence_source_id: null }],
+  };
+  const model = createPolicyMapModel(fixture, '/');
+  assert.deepEqual(model.nodes.map((node) => node.id), ['policy:shared', 'document:shared']);
+  assert.deepEqual(model.nodes.map((node) => node.entityId), ['shared', 'shared']);
+  assert.deepEqual(model.edges.map((edge) => [edge.source, edge.target]), [['policy:shared', 'document:shared']]);
 });
 
 test('label wrapping retains every word', () => {

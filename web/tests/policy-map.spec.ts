@@ -12,7 +12,7 @@ test('default group and expanded view render recorded graph scopes', async ({ pa
 
 test('selection exposes evidence, complete focus and back navigation', async ({ page }) => {
   await page.goto('policy-map/');
-  await page.locator('[data-policy-map-node="artificial-intelligence-act"]').click();
+  await page.locator('[data-policy-map-node="document:artificial-intelligence-act"]').click();
   await expect(page.getByLabel('Selected document')).toBeVisible();
   await expect(page.getByLabel('Selected document').getByRole('link')).not.toHaveCount(0);
   await page.getByRole('button', { name: 'Focus connections' }).click();
@@ -46,8 +46,9 @@ test('narrow map stays inside the document viewport', async ({ page }) => {
 });
 
 test('atlas failure leaves the relationship alternative available', async ({ page }) => {
-  await page.route('**/policy-map/atlas.json', (route) => route.abort());
+  await page.route('**/policy-map/atlas.json', (route) => route.fulfill({ json: { model: { nodes: [], edges: [], policies: [] }, views: {}, neighborhoods: {} } }));
   await page.goto('policy-map/');
   await expect(page.getByText('The interactive map could not load.')).toBeVisible();
+  await expect(page.getByLabel('Policy grouping')).toBeHidden();
   await expect(page.locator('[data-policy-map-relationship]')).toHaveCount(88);
 });

@@ -3,6 +3,53 @@ import type { PolicyMapAtlas, PolicyMapLayout, PolicyMapNode } from '../lib/poli
 const root = document.querySelector<HTMLElement>('[data-policy-map-root]');
 if (root) void initialise(root);
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function assertLayout(value: unknown, name: string): asserts value is PolicyMapLayout {
+  if (!isRecord(value) || !Array.isArray(value.nodes) || !Array.isArray(value.edges)
+    || typeof value.width !== 'number' || typeof value.height !== 'number') {
+    throw new Error(`Invalid policy map layout: ${name}`);
+  }
+  for (const node of value.nodes) {
+    if (!isRecord(node) || typeof node.id !== 'string' || typeof node.x !== 'number'
+      || typeof node.y !== 'number' || typeof node.width !== 'number'
+      || typeof node.height !== 'number' || !Array.isArray(node.lines)) {
+      throw new Error(`Invalid policy map node geometry: ${name}`);
+    }
+  }
+  for (const edge of value.edges) {
+    if (!isRecord(edge) || typeof edge.id !== 'string' || !Array.isArray(edge.points)
+      || edge.points.length < 2 || edge.points.some((point) => (
+        !isRecord(point) || typeof point.x !== 'number' || typeof point.y !== 'number'
+      ))) {
+      throw new Error(`Invalid policy map edge geometry: ${name}`);
+    }
+  }
+}
+
+function assertAtlas(value: unknown): asserts value is PolicyMapAtlas {
+  if (!isRecord(value) || !isRecord(value.model) || !Array.isArray(value.model.nodes)
+    || !Array.isArray(value.model.edges) || !Array.isArray(value.model.policies)
+    || !isRecord(value.views) || !isRecord(value.neighborhoods)) {
+    throw new Error('Invalid policy map atlas');
+  }
+  for (const policy of value.model.policies) {
+    if (!isRecord(policy) || typeof policy.id !== 'string') throw new Error('Invalid policy map policy');
+    for (const mode of ['principal', 'all']) {
+      assertLayout(value.views[`${policy.id}:${mode}`], `${policy.id}:${mode}`);
+    }
+  }
+  for (const node of value.model.nodes) {
+    if (!isRecord(node) || typeof node.id !== 'string') throw new Error('Invalid policy map node');
+    assertLayout(value.neighborhoods[node.id], `neighborhood:${node.id}`);
+  }
+  if (!value.views['artificial-intelligence-act-legislative-process:principal']) {
+    throw new Error('Missing default policy map view');
+  }
+}
+
 async function initialise(host: HTMLElement): Promise<void> {
   const find = <T extends Element>(selector: string): T => { const node = host.querySelector<T>(selector); if (!node) throw new Error(`Missing policy map element: ${selector}`); return node; };
   const svgNamespace = 'http://www.w3.org/2000/svg';
@@ -27,7 +74,9 @@ async function initialise(host: HTMLElement): Promise<void> {
   try {
     const response = await fetch(host.dataset.atlasUrl ?? '');
     if (!response.ok) throw new Error(`Policy map atlas returned ${response.status}`);
-    atlas = await response.json() as PolicyMapAtlas;
+    const payload: unknown = await response.json();
+    assertAtlas(payload);
+    atlas = payload;
   } catch (error) {
     find<HTMLElement>('[data-policy-map-failure]').hidden = false;
     find<HTMLElement>('[data-policy-map-counts]').textContent = 'Interactive map unavailable';
@@ -42,6 +91,10 @@ async function initialise(host: HTMLElement): Promise<void> {
   const makeLink = (text: string, url: string): HTMLAnchorElement => { const link = element('a', text) as HTMLAnchorElement; link.href = url; return link; };
   const updateSelection = (): void => {
     inspector.hidden = !selected;
+    const selectedNode = selected ? nodeById.get(selected) : undefined;
+    inspector.setAttribute('aria-label', selectedNode?.kind === 'policy' ? 'Selected policy' : 'Selected document');
+    const inspectorKind = inspector.querySelector<HTMLElement>('.policy-map__inspector-top span');
+    if (inspectorKind) inspectorKind.textContent = selectedNode?.kind === 'policy' ? 'POLICY & EVIDENCE' : 'DOCUMENT & EVIDENCE';
     workspace.classList.toggle('has-selection', Boolean(selected));
     const touching = new Set(selected ? atlas.model.edges.filter((edge) => edge.source === selected || edge.target === selected).flatMap((edge) => [edge.source, edge.target]) : []);
     scene.querySelectorAll<SVGElement>('[data-policy-map-node]').forEach((node) => { const active = node.dataset.policyMapNode === selected; node.classList.toggle('selected', active); node.classList.toggle('dim', Boolean(selected) && !active && !touching.has(node.dataset.policyMapNode ?? '')); node.setAttribute('aria-pressed', String(active)); });
@@ -51,7 +104,8 @@ async function initialise(host: HTMLElement): Promise<void> {
     details.replaceChildren(); if (!selected) return;
     const node = nodeById.get(selected); if (!node) return;
     const edges = atlas.model.edges.filter((edge) => edge.source === selected || edge.target === selected);
-    details.append(element('p', `${node.date} · ${human(node.level)}`, 'policy-map__detail-meta'), element('h2', node.title), element('p', `${human(node.kind)} · ${human(node.stage)}`));
+    const meta = node.kind === 'policy' ? 'Policy record' : `${node.date} · ${human(node.level)}`;
+    details.append(element('p', meta, 'policy-map__detail-meta'), element('h2', node.title), element('p', `${human(node.kind)} · ${human(node.stage)}`));
     const actions = element('div', undefined, 'policy-map__detail-actions');
     actions.append(makeButton(focusId ? 'Back to group' : 'Focus connections', () => { if (focusId) { focusId = null; changeView(); } else { focusId = node.id; selected = node.id; graph = atlas.neighborhoods[node.id]!; render(); } }), makeLink('Open record', node.href));
     details.append(actions, element('p', `${edges.length} recorded relationships across all policy groups.`));
@@ -62,9 +116,35 @@ async function initialise(host: HTMLElement): Promise<void> {
   const render = (): void => {
     scene.replaceChildren();
     for (const edge of graph.edges) { const path = svgElement('path', { d: edge.points.map((point, index) => `${index ? 'L' : 'M'}${point.x},${point.y}`).join(' '), class: `policy-map__edge ${edge.basis}`, 'data-policy-map-edge': edge.id, 'data-source': edge.source, 'data-target': edge.target, 'marker-end': 'url(#policy-map-arrow)' }); const title = svgElement('title', {}); title.textContent = `${nodeById.get(edge.source)?.title} — ${human(edge.type)} → ${nodeById.get(edge.target)?.title}`; path.append(title); scene.append(path); }
-    for (const node of graph.nodes) { const group = svgElement('g', { transform: `translate(${node.x} ${node.y})`, class: `policy-map__node${node.context ? ' context' : ''}`, 'data-policy-map-node': node.id, role: 'button', tabindex: '0', 'aria-label': `${node.title}, ${node.date}. Show relationships.`, 'aria-pressed': 'false' }); group.append(svgElement('rect', { width: String(node.width), height: String(node.height), rx: '4' })); const meta = svgElement('text', { x: '16', y: '23', class: 'policy-map__node-date' }); meta.textContent = `${node.date} · ${human(node.level)}`; group.append(meta); const title = svgElement('text', { x: '16', y: '47', class: 'policy-map__node-title' }); node.lines.forEach((line, index) => { const span = svgElement('tspan', { x: '16', dy: index ? '20' : '0' }); span.textContent = line; title.append(span); }); group.append(title); const stage = svgElement('text', { x: '16', y: String(node.height - 13), class: 'policy-map__node-stage' }); const connected = graph.edges.some((edge) => edge.source === node.id || edge.target === node.id); stage.textContent = connected ? `${node.context ? 'Linked context · ' : ''}${human(node.stage)}` : 'Links in expanded view'; group.append(stage); const select = (): void => { selected = node.id; updateSelection(); showDetails(); }; group.addEventListener('click', select); group.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); } }); scene.append(group); }
+    for (const node of graph.nodes) {
+      const nodeMeta = node.kind === 'policy' ? 'Policy record' : `${node.date} · ${human(node.level)}`;
+      const announcement = node.kind === 'policy'
+        ? `${node.title}, policy record. Show relationships.`
+        : `${node.title}, ${node.date}. Show relationships.`;
+      const group = svgElement('g', { transform: `translate(${node.x} ${node.y})`, class: `policy-map__node${node.context ? ' context' : ''}`, 'data-policy-map-node': node.id, role: 'button', tabindex: '0', 'aria-label': announcement, 'aria-pressed': 'false' });
+      group.append(svgElement('rect', { width: String(node.width), height: String(node.height), rx: '4' }));
+      const meta = svgElement('text', { x: '16', y: '23', class: 'policy-map__node-date' });
+      meta.textContent = nodeMeta;
+      group.append(meta);
+      const title = svgElement('text', { x: '16', y: '47', class: 'policy-map__node-title' });
+      node.lines.forEach((line, index) => { const span = svgElement('tspan', { x: '16', dy: index ? '20' : '0' }); span.textContent = line; title.append(span); });
+      group.append(title);
+      const stage = svgElement('text', { x: '16', y: String(node.height - 13), class: 'policy-map__node-stage' });
+      const connected = graph.edges.some((edge) => edge.source === node.id || edge.target === node.id);
+      stage.textContent = connected ? `${node.context ? 'Linked context · ' : ''}${human(node.stage)}` : 'Links in expanded view';
+      group.append(stage);
+      const select = (): void => { selected = node.id; updateSelection(); showDetails(); };
+      group.addEventListener('click', select);
+      group.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); } });
+      scene.append(group);
+    }
     find<HTMLElement>('[data-policy-map-title]').textContent = focusId ? `Connections: ${nodeById.get(focusId)?.title}` : atlas.model.policies.find((policy) => policy.id === family)?.title ?? '';
-    find<HTMLElement>('[data-policy-map-counts]').textContent = `${graph.nodes.length} documents · ${graph.edges.length} relationships${graph.contextCount ? ` · ${graph.contextCount} linked context documents` : ''}`;
+    const documentCount = graph.nodes.filter((node) => node.kind === 'document').length;
+    const policyCount = graph.nodes.length - documentCount;
+    const nodeCount = policyCount === 0
+      ? `${documentCount} documents`
+      : `${documentCount} documents · ${policyCount} ${policyCount === 1 ? 'policy' : 'policies'}`;
+    find<HTMLElement>('[data-policy-map-counts]').textContent = `${nodeCount} · ${graph.edges.length} relationships${graph.contextCount ? ` · ${graph.contextCount} linked context records` : ''}`;
     find<HTMLElement>('[data-policy-map-scope]').textContent = focusId ? 'This focused view includes every direct recorded relationship for the selected document, including other policy groups.' : mode === 'principal' ? `${graph.hidden} supporting records, attachments and versions are not shown. Only recorded links between visible documents are drawn.` : 'This view includes every linked group record and directly linked context. Dashed node borders identify context.';
     host.querySelectorAll<HTMLButtonElement>('[data-policy-map-mode]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.policyMapMode === mode && !focusId)));
     updateSelection(); showDetails(); fit(.85);
@@ -80,6 +160,12 @@ async function initialise(host: HTMLElement): Promise<void> {
   find<HTMLButtonElement>('[data-policy-map-fullscreen]').addEventListener('click', async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); else await workspace.requestFullscreen(); } catch { hint.textContent = 'Full screen is unavailable in this browser.'; } });
   viewport.addEventListener('pointerdown', (event) => { if ((event.target as Element).closest('[data-policy-map-node]') || event.button !== 0) return; drag = { x: event.clientX, y: event.clientY, camera: { ...camera } }; viewport.setPointerCapture(event.pointerId); }); viewport.addEventListener('pointermove', (event) => { if (drag) { camera.x = drag.camera.x + event.clientX - drag.x; camera.y = drag.camera.y + event.clientY - drag.y; applyCamera(); } }); for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) viewport.addEventListener(name, () => { drag = null; });
   viewport.addEventListener('keydown', (event) => { if ((event.target as Element).closest('[data-policy-map-node]')) return; const moves: Record<string, [number, number]> = { ArrowLeft: [60, 0], ArrowRight: [-60, 0], ArrowUp: [0, 60], ArrowDown: [0, -60] }; const move = moves[event.key]; if (move) { event.preventDefault(); camera.x += move[0]; camera.y += move[1]; applyCamera(); } else if (event.key === '+' || event.key === '=') zoom(1.2); else if (event.key === '-') zoom(1 / 1.2); });
-  host.querySelectorAll<HTMLElement>('[data-enhancement]').forEach((node) => { node.hidden = false; });
-  changeView();
+  try {
+    changeView();
+    host.querySelectorAll<HTMLElement>('[data-enhancement]').forEach((node) => { node.hidden = false; });
+  } catch (error) {
+    find<HTMLElement>('[data-policy-map-failure]').hidden = false;
+    find<HTMLElement>('[data-policy-map-counts]').textContent = 'Interactive map unavailable';
+    console.warn(error);
+  }
 }
