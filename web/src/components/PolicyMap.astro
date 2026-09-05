@@ -1,161 +1,34 @@
 ---
-import type { DocumentRecord, Policy, PublicData, Relationship, Source } from '../lib/types';
-import {
-  layoutPolicyMapNodes,
-  policyMapNodeLabelBaseline,
-  policyMapNodeLabelLineHeight,
-  policyMapNodeTypeBaseline,
-  policyMapNodeWidth,
-  policyMapStageX,
-  policyMapStageLabel,
-  relationshipTypeLabel,
-} from '../lib/policy-map';
-import type { PolicyMapGeometry } from '../lib/policy-map';
+import type { PublicData } from '../lib/types';
+import { createPolicyMapModel, readablePolicyMapLabel } from '../lib/policy-map';
+import '../styles/policy-map.css';
 
-interface Props {
-  data: PublicData;
-}
-
-interface MapNode {
-  id: string;
-  type: 'policy' | 'document';
-  label: string;
-  href: string;
-  stage: string;
-}
-
-type PositionedMapNode = MapNode & PolicyMapGeometry;
-
-interface MapRelationship {
-  relationship: Relationship;
-  source: PositionedMapNode;
-  target: PositionedMapNode;
-  evidence: Source | undefined;
-}
-
-const { data }: Props = Astro.props;
-const base = import.meta.env.BASE_URL;
-const documents = new Map(data.documents.map((document) => [document.id, document]));
-const policies = new Map(data.policies.map((policy) => [policy.id, policy]));
-const sources = new Map(data.sources.map((source) => [source.id, source]));
-const stageLabel = policyMapStageLabel;
-
-const createNode = (type: string, id: string): MapNode | undefined => {
-  if (type === 'document') {
-    const document: DocumentRecord | undefined = documents.get(id);
-    return document === undefined ? undefined : {
-      id,
-      type: 'document',
-      label: document.short_title,
-      href: `${base}corpus/${document.slug}/`,
-      stage: document.corpus_assessment?.policy_stage ?? 'unclassified',
-    };
-  }
-  if (type === 'policy') {
-    const policy: Policy | undefined = policies.get(id);
-    return policy === undefined ? undefined : {
-      id,
-      type: 'policy',
-      label: policy.short_name,
-      href: `${base}policies/${policy.id}/`,
-      stage: 'policy',
-    };
-  }
-  return undefined;
-};
-
-const relationshipPairs = data.relationships.flatMap((relationship) => {
-  const source = createNode(relationship.source_entity_type, relationship.source_entity_id);
-  const target = createNode(relationship.target_entity_type, relationship.target_entity_id);
-  return source === undefined || target === undefined ? [] : [{ relationship, source, target }];
-});
-const nodeDefinitions = new Map<string, MapNode>();
-for (const pair of relationshipPairs) {
-  nodeDefinitions.set(`${pair.source.type}:${pair.source.id}`, pair.source);
-  nodeDefinitions.set(`${pair.target.type}:${pair.target.id}`, pair.target);
-}
-const layout = layoutPolicyMapNodes([...nodeDefinitions.values()]);
-const mapNodes = layout.nodes;
-const positionedNodes = new Map(mapNodes.map((node) => [`${node.type}:${node.id}`, node]));
-const mapRelationships: MapRelationship[] = relationshipPairs.map((pair) => {
-  const source = positionedNodes.get(`${pair.source.type}:${pair.source.id}`);
-  const target = positionedNodes.get(`${pair.target.type}:${pair.target.id}`);
-  if (source === undefined || target === undefined) {
-    throw new Error(`Policy Map node placement failed for ${pair.relationship.id}`);
-  }
-  return {
-    relationship: pair.relationship,
-    source,
-    target,
-    evidence: pair.relationship.evidence_source_id === null
-      ? undefined
-      : sources.get(pair.relationship.evidence_source_id),
-  };
-});
+interface Props { data: PublicData; atlasUrl: string }
+const { data, atlasUrl }: Props = Astro.props;
+const model = createPolicyMapModel(data, import.meta.env.BASE_URL);
+const nodes = new Map(model.nodes.map((node) => [node.id, node]));
 ---
-
-<section class="research-section policy-map" aria-labelledby="policy-map-heading">
-  <div class="section-heading">
-    <p class="section-kicker">Published relationships</p>
-    <h1 id="policy-map-heading">Policy Map</h1>
-    <p>Relationships shown here are recorded research data. The text list following the diagram is the equivalent citation-friendly account.</p>
+<section class="research-section policy-map" aria-labelledby="policy-map-heading" data-policy-map-root data-atlas-url={atlasUrl}>
+  <div class="section-heading"><p class="section-kicker">Published relationships</p><h1 id="policy-map-heading">Policy Map</h1><p>Follow a policy process. Select a record to trace its recorded relationships.</p><a href="#policy-map-relationship-list">Read the complete relationship list</a></div>
+  <div class="policy-map__controls" data-enhancement hidden>
+    <label>Policy grouping<select data-policy-map-family disabled><option>Loading policy groups</option></select></label>
+    <fieldset><legend>Record detail</legend><div class="policy-map__segmented"><button data-policy-map-mode="principal" type="button" aria-pressed="true">Principal documents</button><button data-policy-map-mode="all" type="button" aria-pressed="false">All records</button></div></fieldset>
+    <label class="policy-map__search">Find a record<input data-policy-map-search type="search" placeholder="Title or year" autocomplete="off" /><span data-policy-map-search-results hidden></span></label>
   </div>
-
-  <div class="policy-map__legend" aria-label="Relationship legend">
-    <p><span class="policy-map__line policy-map__line--official"></span>Official relationship</p>
-    <p><span class="policy-map__line policy-map__line--analytical"></span>Analytical relationship</p>
+  <div class="policy-map__heading"><h2 data-policy-map-title>Preparing the map</h2><p data-policy-map-counts role="status">Loading the published dataset…</p></div>
+  <p data-policy-map-failure hidden>The interactive map could not load. The complete relationship list remains available below.</p>
+  <div class="policy-map__workspace" data-policy-map-workspace data-enhancement hidden>
+    <section class="policy-map__panel" aria-label="Interactive policy relationship map">
+      <div class="policy-map__toolbar"><span data-policy-map-hint>Drag to pan · select a record</span><div><button data-policy-map-zoom-out aria-label="Zoom out" type="button">−</button><output data-policy-map-zoom aria-label="Map zoom">100%</output><button data-policy-map-zoom-in aria-label="Zoom in" type="button">+</button><button data-policy-map-fit type="button">Fit</button><button data-policy-map-actual type="button">100%</button><button data-policy-map-fullscreen type="button">Full screen</button></div></div>
+      <div class="policy-map__viewport" data-policy-map-viewport tabindex="0" aria-label="Policy map canvas. Drag to pan; use arrow keys to pan, plus or minus to zoom."><svg xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Recorded document relationships"><defs><marker id="policy-map-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z"></path></marker></defs><g data-policy-map-scene></g></svg></div>
+      <div class="policy-map__legend" aria-label="Relationship legend"><span><i class="policy-map__line"></i>Official relationship</span><span><i class="policy-map__line policy-map__line--analytical"></i>Analytical relationship</span><span><i class="policy-map__context-key"></i>Linked context</span></div>
+    </section>
+    <aside class="policy-map__inspector" aria-label="Selected document" hidden><div class="policy-map__inspector-top"><span>DOCUMENT &amp; EVIDENCE</span><button data-policy-map-clear type="button">Clear</button></div><div data-policy-map-details aria-live="polite"></div></aside>
   </div>
-
-  <div class="policy-map__graphic" tabindex="0">
-    <svg width={layout.width} height={layout.height} viewBox={`0 0 ${layout.width} ${layout.height}`} role="group" aria-labelledby="policy-map-svg-title" aria-describedby="policy-map-svg-description">
-      <title id="policy-map-svg-title">Published policy and document relationships</title>
-      <desc id="policy-map-svg-description">A deterministic diagram of the published official and analytical relationships listed immediately below.</desc>
-      <g class="policy-map__stages">
-        {layout.stages.map((stage, index) => (
-          <text data-policy-map-stage={stage} x={policyMapStageX(index)} y="32" text-anchor="middle">{policyMapStageLabel(stage)}</text>
-        ))}
-      </g>
-      <g class="policy-map__edges">
-        {mapRelationships.map(({ relationship, source, target }) => (
-          <line
-            data-policy-map-edge={relationship.id}
-            x1={source.x}
-            y1={source.y}
-            x2={target.x}
-            y2={target.y}
-            class:list={['policy-map__edge', relationship.basis === 'analytical' && 'policy-map__edge--analytical']}
-          />
-        ))}
-      </g>
-      <g class="policy-map__nodes">
-        {mapNodes.map((node) => (
-          <a data-policy-map-node={node.id} href={node.href} aria-label={`${node.label} (${stageLabel(node.stage)})`}>
-            <rect x={node.x - policyMapNodeWidth / 2} y={node.y - node.height / 2} width={policyMapNodeWidth} height={node.height} rx="0" />
-            <text x={node.x} y={node.y - node.height / 2 + policyMapNodeTypeBaseline} text-anchor="middle">{node.type}</text>
-            <text x={node.x} y={node.y - node.height / 2 + policyMapNodeLabelBaseline} text-anchor="middle">
-              {node.labelLines.map((line, index) => (
-                <tspan x={node.x} dy={index === 0 ? 0 : policyMapNodeLabelLineHeight}>{line}</tspan>
-              ))}
-            </text>
-          </a>
-        ))}
-      </g>
-    </svg>
-  </div>
-
-  <section class="policy-map__relationships" aria-labelledby="policy-map-relationships-heading">
-    <h2 id="policy-map-relationships-heading">Relationship list</h2>
-    {mapRelationships.length === 0 ? <p>No published relationships can be shown with stable policy or document routes.</p> : (
-      <ol data-policy-map-relationships>
-        {mapRelationships.map(({ relationship, source, target, evidence }) => (
-          <li data-policy-map-relationship={relationship.id}>
-            <p><a href={source.href}>{source.label}</a> · {relationshipTypeLabel(relationship.relationship_type)} · <a href={target.href}>{target.label}</a></p>
-            <p>{relationship.basis === 'official' ? 'Official relationship' : 'Analytical relationship'} · Basis: {relationship.basis}</p>
-            {relationship.rationale === null ? <p>No rationale has been published.</p> : <p>Rationale: {relationship.rationale}</p>}
-            {evidence === undefined ? <p>No evidence link has been published.</p> : <p><a href={evidence.url}>Evidence source: {evidence.publisher}</a></p>}
-          </li>
-        ))}
-      </ol>
-    )}
+  <div class="policy-map__notes"><p data-policy-map-scope>Policy groupings are research classifications. They are not legal relationships.</p><p>Dates guide placement; this is not a proportional timeline. Arrow direction and relationship types come from the dataset. No relationship is inferred from proximity.</p></div>
+  <section id="policy-map-relationship-list" class="policy-map__relationships" aria-labelledby="policy-map-relationships-heading">
+    <h2 id="policy-map-relationships-heading">Relationship list</h2><p>Complete published relationship list, independent of map filters.</p>
+    <ol data-policy-map-relationships>{model.edges.map((edge) => { const source = nodes.get(edge.source); const target = nodes.get(edge.target); if (!source || !target) throw new Error(`Missing relationship endpoint: ${edge.id}`); return <li data-policy-map-relationship={edge.id}><p><a href={source.href}>{source.title}</a> · {readablePolicyMapLabel(edge.type)} → <a href={target.href}>{target.title}</a></p><p>{edge.basis === 'official' ? 'Official relationship' : 'Analytical relationship'}. {edge.rationale ?? 'No rationale has been published.'}</p>{edge.evidence ? <p><a href={edge.evidence.url}>Evidence source: {edge.evidence.publisher}</a></p> : <p>No evidence link has been published.</p>}</li>; })}</ol>
   </section>
 </section>
+<script src="../scripts/policy-map-client.ts"></script>

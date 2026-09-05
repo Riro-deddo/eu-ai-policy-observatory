@@ -70,6 +70,14 @@ Published records retain official source links plus retrieval and verification i
 
 Official metadata, provenance links and evidenced official relationships are kept distinct from researcher analysis. Researcher-authored concepts, corpus assessments and analytical relationships are clearly identified as such. Where an official record changes, earlier retrieved snapshots may be retained only when they reflect actually retrieved bytes and a real SHA-256 hash.
 
+### Policy Map
+
+The Policy Map opens on principal documents in the AI Act legislative-process grouping. Choose another research-defined policy grouping, expand to all linked records, or search by title or year. Selecting a document opens its evidence-bearing relationships; **Focus connections** shows every recorded immediate relationship across group boundaries, and **Back to group** restores the selected group. The citation-friendly relationship list remains complete and readable when JavaScript is unavailable.
+
+Group membership is an analytical classification, not a legal relationship. Expanded views mark directly linked records from outside the selected group as context. Dates guide the layout but do not form a proportional timeline, and the map neither infers shortcut edges nor claims that an isolated node has no relationships elsewhere in the corpus.
+
+Graph geometry is generated at build time with pinned [ELK.js 0.12.0](https://github.com/kieler/elkjs), licensed under [EPL-2.0](https://www.eclipse.org/legal/epl-2.0/). ELK is not shipped to or executed in the browser; the client loads the precomputed, base-relative `policy-map/atlas.json` route.
+
 ## Local development
 
 Use Python 3.11 or later, Node.js and pnpm. Install the Python test dependencies and web dependencies once per checkout.
