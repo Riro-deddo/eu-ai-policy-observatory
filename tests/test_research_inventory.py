@@ -84,6 +84,22 @@ def _write_research_files(tmp_path, sweep=None, inventory=None):
     return research_root
 
 
+def test_decision_history_is_private_validated_audit_metadata(tmp_path):
+    inventory = _valid_inventory()
+    candidate = inventory["candidates"][0]
+    snapshot = {key: candidate[key] for key in (
+        "decision", "decision_reason", "document_id",
+        "merged_into_document_id", "reviewed_at", "reviewed_by",
+    )}
+    candidate["decision_history"] = [snapshot]
+    root = _write_research_files(tmp_path, inventory=inventory)
+    assert validate_research_inventory(root, SCHEMA_ROOT, Path("tests/fixtures/valid/data")) == []
+    candidate["decision_history"][0]["reviewed_at"] = "not-a-date"
+    (root / "corpus-inventory.json").write_text(json.dumps(inventory), encoding="utf-8")
+    issues = validate_research_inventory(root, SCHEMA_ROOT, Path("tests/fixtures/valid/data"))
+    assert any("decision_history" in issue.field for issue in issues)
+
+
 def test_repository_source_sweep_and_inventory_are_valid_and_auditable():
     assert validate_research_inventory(Path("research"), SCHEMA_ROOT, Path("data")) == []
 
