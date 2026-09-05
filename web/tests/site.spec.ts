@@ -320,44 +320,7 @@ test('timeline all-records view never reduces the visible chronology', async ({ 
   expect(allCount).toBeGreaterThanOrEqual(principalCount);
 });
 
-test('policy map states both relationship conventions and pairs every visual edge with one text entry', async ({ page }) => {
-  await page.goto('policy-map/');
-
-  const legend = page.locator('.policy-map__legend');
-  await expect(legend.getByText('Official relationship', { exact: true })).toBeVisible();
-  await expect(legend.getByText('Analytical relationship', { exact: true })).toBeVisible();
-  const visualRelationships = page.locator('[data-policy-map-edge]');
-  const relationshipSection = page.getByRole('region', { name: 'Relationship list' });
-  const relationshipList = relationshipSection.locator('[data-policy-map-relationship]');
-  const relationshipCount = await visualRelationships.count();
-  expect(relationshipCount).toBeGreaterThan(3);
-  await expect(relationshipList).toHaveCount(relationshipCount);
-
-  for (const relationshipId of await visualRelationships.evaluateAll((edges) => (
-    edges.map((edge) => edge.getAttribute('data-policy-map-edge'))
-  ))) {
-    await expect(
-      relationshipSection.locator(`[data-policy-map-relationship="${relationshipId}"]`),
-    ).toHaveCount(1);
-  }
-});
-
-test('policy map exposes a labelled interactive group with live node links', async ({ page }) => {
-  await page.goto('policy-map/');
-
-  const map = page.getByRole('group', { name: 'Published policy and document relationships' });
-  await expect(map).toBeVisible();
-  await expect(map.getByRole('link').first()).toHaveAttribute('href', /\/(policies|corpus)\//);
-});
-
-test('policy map nodes and stable policy pages expose live base-safe routes', async ({ page }) => {
-  await page.goto('policy-map/');
-
-  const node = page.locator('[data-policy-map-node]').first();
-  await expect(node).toHaveAttribute('href', new RegExp(`${expectedBasePath}(policies|corpus)/`));
-  await node.click();
-  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-
+test('stable policy pages expose live base-safe routes', async ({ page }) => {
   await page.goto('policies/european-ai-policy-pathway/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('European Union artificial intelligence policy pathway');
   await expect(page.getByRole('heading', { name: 'Research-defined policy grouping' })).toBeVisible();

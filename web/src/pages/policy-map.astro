@@ -11,5 +11,5 @@ const data = loadPublicData();
   description="Published relationships between EU AI policy documents and policy records."
   canonicalPath="/policy-map/"
 >
-  <PolicyMap data={data} />
+  <PolicyMap data={data} atlasUrl={`${import.meta.env.BASE_URL}policy-map/atlas.json`} />
 </BaseLayout>

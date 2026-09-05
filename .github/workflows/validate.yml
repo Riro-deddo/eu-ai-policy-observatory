@@ -47,6 +47,13 @@ jobs:
           pnpm test
           pnpm build
           pnpm test:e2e
+      - name: Upload website preview
+        uses: actions/upload-artifact@v7
+        with:
+          name: site-preview
+          path: web/dist
+          if-no-files-found: error
+          retention-days: 7
       - name: Check public output
         run: python scripts/check_public_build.py --site web/dist --data generated/public-data.json
       - name: Upload generated database build

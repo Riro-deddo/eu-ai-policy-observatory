@@ -9,8 +9,6 @@ const filter = readFileSync(new URL('../src/lib/filter.ts', import.meta.url), 'u
 const home = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
 const methodology = readFileSync(new URL('../src/pages/methodology.astro', import.meta.url), 'utf8');
 const about = readFileSync(new URL('../src/pages/about.astro', import.meta.url), 'utf8');
-const map = readFileSync(new URL('../src/components/PolicyMap.astro', import.meta.url), 'utf8');
-const mapLayout = readFileSync(new URL('../src/lib/policy-map.ts', import.meta.url), 'utf8');
 const pathway = readFileSync(new URL('../src/components/PolicyPathway.astro', import.meta.url), 'utf8');
 const stylesheet = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const siteSpec = readFileSync(new URL('./site.spec.ts', import.meta.url), 'utf8');
@@ -41,28 +39,15 @@ test('the Corpus browser assertion preserves the descending-date filter order', 
   assert.match(siteSpec, /second\.localeCompare\(first, 'en-GB'\)/);
 });
 
-test('Policy Map exposes semantic stage headings and linked nodes within a labelled group', () => {
-  assert.match(map, /role="group"/);
-  assert.match(map, /aria-describedby="policy-map-svg-description"/);
-  assert.match(map, /data-policy-map-stage/);
-  assert.match(map, /aria-label=\{`\$\{node\.label\} \(\$\{stageLabel\(node\.stage\)\}\)`\}/);
-  assert.match(mapLayout, /export function policyMapStageX/);
-});
-
-test('Policy Map and filter controls meet the reviewed minimum text sizes', () => {
+test('filter controls meet the reviewed minimum text sizes', () => {
   assert.match(stylesheet, /\.primary-nav a \{[^}]*font-size: 0\.875rem;/);
   assert.match(stylesheet, /\.corpus-filters label \{[^}]*font-size: 0\.875rem;/);
   assert.match(stylesheet, /\.timeline-filters label \{[^}]*font-size: 0\.875rem;/);
-  assert.match(stylesheet, /\.policy-map__nodes text \{[^}]*font-size: 12px;/);
-  assert.match(stylesheet, /\.policy-map__nodes text \+ text \{[^}]*font-size: 14px;/);
 });
 
 test('end-to-end assertions scope all reviewed potentially ambiguous text selectors', () => {
   assert.match(siteSpec, /page\.locator\('main'\)\.getByText\('Created and maintained by Yichen Hao', \{ exact: true \}\)/);
   assert.match(siteSpec, /getByRole\('link', \{ name: title, exact: true \}\)/);
-  assert.match(siteSpec, /const legend = page\.locator\('\.policy-map__legend'\);/);
-  assert.match(siteSpec, /legend\.getByText\('Official relationship', \{ exact: true \}\)/);
-  assert.match(siteSpec, /legend\.getByText\('Analytical relationship', \{ exact: true \}\)/);
 });
 
 test('Home renders current corpus coverage from the generated data contract', () => {

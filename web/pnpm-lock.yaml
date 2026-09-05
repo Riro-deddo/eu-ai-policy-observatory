@@ -21,6 +21,9 @@ importers:
       '@types/node':
         specifier: 24.10.1
         version: 24.10.1
+      elkjs:
+        specifier: 0.12.0
+        version: 0.12.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -29,6 +32,9 @@ importers:
         version: 3.2.4(@types/debug@4.1.13)(@types/node@24.10.1)(yaml@2.9.0)
 
 packages:
+
+  elkjs@0.12.0:
+    resolution: {integrity: sha512-YZcKynxVxYoKIOEpywEPwCFdg+BTbxQRNf3pbwdDCvc8O3kQD8bmIwSxKU1eOTVc4Xo+VG9Te+575mlfvOrhEQ==}
 
   '@astrojs/check@0.9.10':
     resolution: {integrity: sha512-zgx/UQMozdjOa3bOxjgeCFdtpE3c9rRX6xHwa+2QXvy8z8Akifu2AtubHyv/zzC2znO8dl8fFWL4K+Ba9kS8HQ==}
@@ -2015,6 +2021,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  elkjs@0.12.0: {}
 
   '@astrojs/check@0.9.10(prettier@3.9.6)(typescript@5.9.3)':
     dependencies:
