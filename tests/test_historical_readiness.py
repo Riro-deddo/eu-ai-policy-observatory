@@ -333,6 +333,17 @@ def test_version_accepts_incoming_revises_from_nonattachment_peer(complete_recor
     assert not any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
 
 
+def test_version_lineage_peer_must_be_a_document_endpoint(complete_records):
+    complete_records["documents"][0].data["record_level"] = "version"
+    later = deepcopy(complete_records["documents"][0].data)
+    later.update(id="later-document", slug="later-document", record_level="principal", official_reference="LATER", version_label=None)
+    _add_document(complete_records, later, "later-document")
+    _add_relationship(complete_records, "later-document", "example-document", "revises")
+    complete_records["relationships"][0].data["source_entity_type"] = "institution"
+    issues = _issues(complete_records)
+    assert any(issue.record_path.endswith("example-document.json") and issue.field == "record_level" for issue in issues)
+
+
 def test_attachment_accepts_outgoing_part_of_parent(complete_records):
     complete_records["documents"][0].data["record_level"] = "attachment"
     parent = deepcopy(complete_records["documents"][0].data)

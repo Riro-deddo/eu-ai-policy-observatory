@@ -72,8 +72,10 @@ def validate_historical_relationships(
     def valid_edge(relationship: LoadedRecord, document_id: str, *, incoming_edge: bool) -> bool:
         data = relationship.data
         other_id = data.get("source_entity_id" if incoming_edge else "target_entity_id")
+        other_type = data.get("source_entity_type" if incoming_edge else "target_entity_type")
         return (
             isinstance(other_id, str)
+            and other_type == "document"
             and other_id != document_id
             and other_id in documents_by_id
             and _official_evidence(data, sources)
