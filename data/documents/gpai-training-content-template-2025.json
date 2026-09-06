@@ -1,9 +1,14 @@
 {
   "id": "gpai-training-content-template-2025",
   "entity_type": "document",
+  "review_qualification": {
+    "kind": "parent_evidence_pending",
+    "confirmed": "Original July 2025 template and publication on 24 July 2025 confirmed. The template appears at PDF pages 9-14 of the original C(2025)5235 ANNEX.",
+    "unresolved": "Parent approval evidence pending: the template's containing notice is identified, but the separate MAIN approval lacks established public-release evidence. This is a parent-chain gap, not a missing original template."
+  },
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-06T17:05:16Z",
+  "updated_at": "2026-09-06T19:11:39Z",
   "slug": "gpai-training-content-template-2025",
   "official_title": "Template for the public summary of training content of general-purpose AI models",
   "short_title": "GPAI training-content summary template",
@@ -39,13 +44,14 @@
   ],
   "source_ids": [
     "gpai-training-summary-commission",
-    "gpai-training-summary-july-publication-oj-2026"
+    "gpai-training-summary-july-publication-oj-2026",
+    "gpai-training-summary-july-original-annex"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. 2026-09-06 evidence update — Limited work-level evidence only: OJ C/2026/4006 PDF page 2 corroborates Commission publication of the notice/template work on 24 July 2025. The original template is an internal annex; this does not prove that today's editable DOCX is the historical July version. The work, formal version and downloadable format remain distinct, and parent/source requirements remain unresolved. The Parliament resolution's attributed 'in force' wording is not an independent legal-status assertion. Existing record-level, version and date fields remain legacy-review-pending rather than newly verified.",
+    "researcher_notes": "Expanded evidence review update, 6 September 2026: the original internal template is recovered in the official July C(2025)5235 ANNEX, PDF pages 9-14 / printed pages 8-13. Notice paragraph 4 identifies the template as annexed to the notice. This resolves exact original text and immediate structural identity; an original editable DOCX is not required for that internal-part scope and is not claimed. Work publication on 24 July 2025 is corroborated by OJ C/2026/4006. The notice's distinct main approval parent still lacks independent publication evidence, so the full parent chain remains held. Existing record-level, version and date fields remain legacy-review-pending rather than newly verified. The Parliament resolution's attributed in-force wording is not an independent legal-status assertion.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"

@@ -1,0 +1,13 @@
+{
+  "id": "council-access-dataset-semantics",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T19:11:39Z",
+  "updated_at": "2026-09-06T19:11:39Z",
+  "source_type": "official_pdf",
+  "url": "https://skribi.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+  "publisher": "Council of the European Union",
+  "retrieved_at": "2026-09-06T19:05:52.675850+00:00",
+  "last_verified_at": "2026-09-06T19:11:39Z",
+  "verification_note": "Understanding the Council's open data datasets, 21 March 2016. Section 2.2.6 p. 9 defines reply date; section 2.3.1 p. 11 defines status at request; section 2.3.2 p. 12 defines reply outcome and consequences. Contrast section 3.1 p. 16: public-register status is at consultation. Current PUBLIC/REFUSED form controls corroborate historical outcome semantics; no undocumented numeric-to-string code mapping is asserted. SHA-256: b6c7d84abf228e3a24f574cad3450637f29b78bf3c3d03c4f2d0c42b567005ea."
+}

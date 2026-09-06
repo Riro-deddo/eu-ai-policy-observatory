@@ -1,0 +1,13 @@
+{
+  "id": "council-access-request-22-1313",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T19:11:39Z",
+  "updated_at": "2026-09-06T19:11:39Z",
+  "source_type": "official_register",
+  "url": "https://skribi.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?RequestNumber=22%2F1313",
+  "publisher": "Council of the European Union",
+  "retrieved_at": "2026-09-06T19:05:09.204578+00:00",
+  "last_verified_at": "2026-09-06T19:11:39Z",
+  "verification_note": "The sole requested document is 10069/2022 INIT, consolidated Presidency compromise. Request 16 June 2022; reply 20 June 2022; Type of reply: Public in Register. The official dataset guide sections 2.2.6 and 2.3.2 establish historical reply-date/outcome semantics, distinct from today's public-register availability. Supports documented public access, not first-ever publication. Captured HTML SHA-256: 9590ae3aa7760d9bcc24db83fffc8799ef7a34e4b698ebbc35f2878994c1e188."
+}

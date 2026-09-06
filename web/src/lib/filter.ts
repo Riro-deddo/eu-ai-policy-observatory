@@ -248,7 +248,7 @@ export function filterDocuments(
         && queryMatches
         && collectionMatches
         && relevanceMatches
-        && (criteria.year === undefined || document.publication_date.startsWith(criteria.year))
+        && (criteria.year === undefined || (document.publication_date?.startsWith(criteria.year) ?? false))
         && hasMatchingId(document.institutions, criteria.institution)
         && matchesValue(document.document_type, criteria.documentType)
         && matchesValue(document.legal_status, criteria.legalStatus)
@@ -268,7 +268,7 @@ export function filterDocuments(
             && matchesValue(assessment.corpus_tier, criteria.corpusTier));
     })
     .sort((first, second) => (
-      second.publication_date.localeCompare(first.publication_date, 'en-GB')
+      (second.publication_date ?? '').localeCompare(first.publication_date ?? '', 'en-GB')
       || first.short_title.localeCompare(second.short_title, 'en-GB')
       || first.id.localeCompare(second.id, 'en-GB')
     ));

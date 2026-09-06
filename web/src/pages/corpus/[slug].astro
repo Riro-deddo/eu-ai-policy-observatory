@@ -36,6 +36,12 @@ const sourceById = new Map(data.sources.map((source) => [source.id, source]));
 const officialSources = document.sources.filter((source) => source.source_type !== 'institutional_archive');
 const supplementarySources = document.sources.filter((source) => source.source_type === 'institutional_archive');
 const assessment = document.corpus_assessment;
+const qualification = document.review_qualification;
+const qualificationLabels = {
+  parent_evidence_pending: 'Original text and publication confirmed; parent evidence pending',
+  publication_date_pending: 'Official text and adoption confirmed; publication date pending',
+  official_version_conflict: 'Official version information conflicts',
+};
 const relationshipBasisLabel = (relationship: Relationship) => (
   relationship.basis === 'analytical' ? 'Analytical relationship' : 'Official relationship'
 );
@@ -69,7 +75,13 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
         sources={document.sources}
       />
     )}
-    {document.historical_review_status === 'legacy_review_pending' && (
+    {qualification && <aside aria-labelledby="qualified-evidence-review">
+      <h2 id="qualified-evidence-review">{qualificationLabels[qualification.kind]}</h2>
+      <p>{qualification.confirmed}</p>
+      <p>{qualification.unresolved}</p>
+      <p>This is a qualified evidence assessment, not a completed expanded verification.</p>
+    </aside>}
+    {!qualification && document.historical_review_status === 'legacy_review_pending' && (
       <aside aria-labelledby="expanded-evidence-review-pending">
         <h2 id="expanded-evidence-review-pending">Expanded evidence review pending</h2>
         <p>
@@ -95,7 +107,7 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
             {' · '}{document.date_evidence.document_date.locator} — {document.date_evidence.document_date.meaning}
           </dd></>;
         })()}
-        <dt>Publication date</dt><dd>{document.publication_date}</dd>
+        <dt>Publication date</dt><dd>{document.publication_date ?? 'Publication date not yet confirmed'}</dd>
         {document.date_evidence !== null && (() => {
           const evidenceSource = sourceById.get(document.date_evidence.publication_date.source_id);
           return <><dt>Publication-date evidence</dt><dd>
@@ -308,6 +320,10 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
       <h2 id="verification">Verification</h2>
       <dl>
         <dt>Expanded evidence review</dt><dd>{vocabularyLabel(document.historical_review_status)}</dd>
+        {qualification && <>
+          <dt>Confirmed evidence</dt><dd>{qualification.confirmed}</dd>
+          <dt>Remaining qualification</dt><dd>{qualification.unresolved}</dd>
+        </>}
       </dl>
       {assessment === null ? <p>Research assessment verification has not been assigned.</p> : (
         <dl>

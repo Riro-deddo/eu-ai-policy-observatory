@@ -1,0 +1,124 @@
+{
+  "migration_date": "2026-09-06",
+  "reviewed_at": "2026-09-06T19:11:39Z",
+  "scope": "One evidence-backed ST 10069 admission and four narrowed retained-review notes",
+  "publication_cutoff": "2026-09-04",
+  "before_counts": {
+    "total": 187,
+    "verified": 182,
+    "legacy_review_pending": 5
+  },
+  "after_counts": {
+    "total": 187,
+    "verified": 183,
+    "legacy_review_pending": 4
+  },
+  "upgraded_ids": [
+    "ai-act-council-first-consolidated-compromise-st-10069-2022"
+  ],
+  "retained_ids": [
+    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025",
+    "standardisation-request-c-2025-3871"
+  ],
+  "baseline": {
+    "path": "../evidence-st10069-admission-20260906/before.zip",
+    "sha256": "4c8ccbae54f13655b2159e5dae04cbc405c7bbf5c192a2b3202e83a3ce034c1d",
+    "files": 926,
+    "meaning": "Approved current checkout bytes, not old Git HEAD."
+  },
+  "decision": {
+    "document_date": "2022-06-15",
+    "publication_date": "2022-06-20",
+    "meaning": "Documented Council public-access reply, not first-ever publication.",
+    "publication_sources": [
+      "council-access-request-22-1313",
+      "council-access-request-22-1307"
+    ],
+    "semantics_source": "council-access-dataset-semantics",
+    "role_source": "council-st-10069-2022",
+    "lineage": "Existing official outgoing proposal-version edge and incoming ST 11124 revision edge preserved.",
+    "review_credit": "Existing Yichen Hao attribution and historical review timestamp preserved; this migration records the new technical evidence review."
+  },
+  "remaining_conditions": {
+    "st12206": "Registered 7 September second-compromise INIT conflicts with current 16 September third-compromise PDF; dated access does not reconcile identity.",
+    "gpai_notice": "Original July ANNEX recovered; distinct main approval publication evidence still missing.",
+    "gpai_template": "Original internal template recovered on PDF pp. 9-14; same approval-parent eligibility chain remains unresolved.",
+    "c20253871": "Authentic final texts confirmed; adoption, transmission and standards-body decisions are not exact public-release evidence."
+  },
+  "new_source_ids": [
+    "council-access-request-22-1313",
+    "council-access-request-22-1307",
+    "council-access-dataset-semantics",
+    "gpai-training-summary-july-original-annex"
+  ],
+  "preservation": {
+    "old_ledger_edits": false,
+    "schema_changes": false,
+    "production_code_changes": false,
+    "relationship_changes": false,
+    "new_document_routes": 0,
+    "previously_verified_documents": 182
+  },
+  "release": {
+    "pushed": false,
+    "deployed": false
+  },
+  "source_receipts": [
+    {
+      "source_id": "council-access-request-22-1313",
+      "url": "https://skribi.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?RequestNumber=22%2F1313",
+      "retrieved_at": "2026-09-06T19:05:09.204578+00:00",
+      "sha256": "9590ae3aa7760d9bcc24db83fffc8799ef7a34e4b698ebbc35f2878994c1e188",
+      "compression": "gzip",
+      "local_path": "research/evidence/2026-09-06-st10069-admission/request-22-1313.html.gz"
+    },
+    {
+      "source_id": "council-access-request-22-1307",
+      "url": "https://skribi.consilium.europa.eu/en/general-secretariat/corporate-policies/transparency/access-to-documents/?RequestNumber=22%2F1307",
+      "retrieved_at": "2026-09-06T19:05:09.205581+00:00",
+      "sha256": "6388f29e302aa51235e7476ed113dc57ebd4db957650fd6cf6df492a8a8042a5",
+      "compression": "gzip",
+      "local_path": "research/evidence/2026-09-06-st10069-admission/request-22-1307.html.gz"
+    },
+    {
+      "source_id": "council-access-dataset-semantics",
+      "url": "https://skribi.consilium.europa.eu/media/29364/understanding-open-data-datasets.pdf",
+      "retrieved_at": "2026-09-06T19:05:52.675850+00:00",
+      "sha256": "b6c7d84abf228e3a24f574cad3450637f29b78bf3c3d03c4f2d0c42b567005ea",
+      "compression": "gzip",
+      "local_path": "research/evidence/2026-09-06-st10069-admission/understanding-open-data.pdf.gz"
+    },
+    {
+      "source_id": "gpai-training-summary-july-original-annex",
+      "url": "https://ec.europa.eu/newsroom/repository/document/2025-30/Explanatory_Notice_and_Template_for_the_Public_Summary_of_Training_Content_for_generalpurpose_AI_models_f6PjGTwoDHpCrDAudq005aQeMg_118480.pdf",
+      "retrieved_at": "2026-09-06T19:03:39.901044+00:00",
+      "sha256": "3245f6efbf00694a71bce67ea0b0c66a766428d1f631f9fcbfba9cb76f87dbc3",
+      "compression": "gzip",
+      "local_path": "research/evidence/2026-09-06-st10069-admission/july-annex-official.pdf.gz"
+    }
+  ],
+  "validation": {
+    "baseline": "10 passed",
+    "focused_red": "4 failed, 2 passed before admission data edits",
+    "focused_green": "21 passed",
+    "historical_cohort_regressions": "32 passed after including this admission in chronological expectations",
+    "full_python": "464 passed, 1 skipped in 67.01s",
+    "candidate_readiness_issues": 0,
+    "production_pipeline": "Passed using isolated output directory",
+    "sqlite_integrity": "ok",
+    "foreign_key_issues": 0,
+    "public_json_sqlite_match": true,
+    "corpus_counts": {
+      "documents": 187,
+      "verified": 183,
+      "legacy_review_pending": 4,
+      "published_relationships": 114
+    },
+    "preservation": "182 previously verified document bytes, all 187 routes and existing reviewer attribution envelopes unchanged; no schema, production code, relationship or old ledger edits.",
+    "website_build": "Blocked by EPERM creating web/.astro/collections after scoped write permission grant; no rendering or release success claimed.",
+    "default_generated": "Repository generated/public-data.json remains at 182/5. The fresh 183/4 pair is in ../evidence-st10069-admission-20260906/generated/; the interrupted default-output build is not a completed build.",
+    "english_guard": "Git-tracked script guard passed; new authored source records, ledger, tests and notes manually checked as English."
+  }
+}

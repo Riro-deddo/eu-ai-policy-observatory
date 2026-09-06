@@ -32,7 +32,7 @@ CREATE TABLE documents (
     ),
     version_label TEXT,
     version_status TEXT NOT NULL,
-    publication_date TEXT NOT NULL CHECK (
+    publication_date TEXT CHECK (
         length(publication_date) = 10
         AND publication_date GLOB '????-??-??'
         AND date(publication_date, '+0 days') = publication_date
@@ -50,7 +50,15 @@ CREATE TABLE documents (
     legal_status_evidence TEXT,
     classification_evidence TEXT NOT NULL,
     bibliographic_authors TEXT NOT NULL,
-    additional_dates TEXT NOT NULL
+    additional_dates TEXT NOT NULL,
+    review_qualification TEXT CHECK (review_qualification IS NULL OR json_valid(review_qualification)),
+    CHECK (review_qualification IS NULL OR historical_review_status = 'legacy_review_pending'),
+    CHECK (publication_date IS NOT NULL OR (
+        historical_review_status = 'legacy_review_pending'
+        AND review_qualification IS NOT NULL
+        AND COALESCE(json_extract(review_qualification, '$.kind'), '') = 'publication_date_pending'
+    )),
+    CHECK (COALESCE(json_extract(review_qualification, '$.kind'), '') != 'publication_date_pending' OR publication_date IS NULL)
 );
 
 CREATE UNIQUE INDEX documents_celex_unique

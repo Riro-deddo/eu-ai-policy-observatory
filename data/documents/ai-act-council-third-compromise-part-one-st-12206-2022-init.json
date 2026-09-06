@@ -1,9 +1,14 @@
 {
   "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
   "entity_type": "document",
+  "review_qualification": {
+    "kind": "official_version_conflict",
+    "confirmed": "The official INIT download and a matching historical archive capture have been recovered and compared with REV 1.",
+    "unresolved": "Official version information conflicts: the register identifies a 7 September 2022 second compromise, while the INIT download has a 16 September third-compromise cover. Neither source is silently substituted for the other; an original manifestation or official correction is still needed."
+  },
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T19:47:08Z",
+  "updated_at": "2026-09-06T19:11:39Z",
   "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
   "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – Presidency third compromise text (Articles 1–29, Annexes I–IV)",
   "short_title": "Third Council compromise, part one — initial version",
@@ -46,7 +51,7 @@
     "corpus_tier": "core",
     "policy_stage": "negotiation",
     "inclusion_rationale": "Initial formally published version of the first part of the third Council Presidency compromise.",
-    "researcher_notes": "Kept distinct from ST 12206/1/22 REV 1 so the official revision history remains observable. Second-pass register review corrects the INIT issue date to 7 September 2022; 16 September belongs to REV 1. The retained publication_date has not yet been independently substantiated for INIT.",
+    "researcher_notes": "Expanded evidence review update, 6 September 2026: the official register identifies INIT as the 7 September 2022 second compromise, distinct from REV 1 of 16 September. The current INIT PDF and legacy download instead return a 16 September third-compromise text. French and Czech register interfaces preserve the same separation. Council request 22/1954 records public-access replies on 26 September 2022 for separately listed INIT and REV 1; the later 28 October 2024 disclosure is also documented. Access evidence does not resolve the exact-version identity conflict. Retain the stable INIT route and pending correction status until original 7 September bytes or an explicit official correction is recovered. Do not substitute REV 1 or silently overwrite unresolved dates.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"

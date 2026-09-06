@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 import { loadPublicData } from '../src/lib/data.ts';
+import { filterDocuments } from '../src/lib/filter.ts';
 
 const config = readFileSync(new URL('../astro.config.mjs', import.meta.url), 'utf8');
 const playwrightConfig = readFileSync(new URL('../playwright.config.ts', import.meta.url), 'utf8');
@@ -34,7 +35,10 @@ test('Corpus enhancement hydrates a whitelisted query before applying filters', 
 });
 
 test('the Corpus browser assertion preserves the descending-date filter order', () => {
-  assert.match(filter, /second\.publication_date\.localeCompare\(first\.publication_date, 'en-GB'\)/);
+  const example = publicData.documents[0];
+  const dates = ['2025-01-01', null, '2026-01-01'];
+  const records = dates.map((publication_date, i) => ({ ...example, id: `order-${i}`, publication_date }));
+  assert.deepEqual(filterDocuments(records, { view: 'all' }).map(d => d.publication_date), ['2026-01-01', '2025-01-01', null]);
   assert.match(siteSpec, /const visibleDates = await visibleRecords\.locator\('span'\)\.evaluateAll/);
   assert.match(siteSpec, /second\.localeCompare\(first, 'en-GB'\)/);
 });

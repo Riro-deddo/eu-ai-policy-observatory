@@ -167,7 +167,7 @@ def _insert_documents(connection: sqlite3.Connection, records: list[LoadedRecord
         "language", "official_summary", "historical_review_status",
         "temporal_collection", "relevance_class", "document_date_kind",
         "date_evidence", "legal_status_evidence", "classification_evidence",
-        "bibliographic_authors", "additional_dates",
+        "bibliographic_authors", "additional_dates", "review_qualification",
     )
     placeholders = ", ".join("?" for _ in fields)
     rows = []
@@ -179,7 +179,7 @@ def _insert_documents(connection: sqlite3.Connection, records: list[LoadedRecord
                 value = "legacy_review_pending"
             if field in {
                 "date_evidence", "legal_status_evidence", "classification_evidence",
-                "bibliographic_authors", "additional_dates",
+                "bibliographic_authors", "additional_dates", "review_qualification",
             }:
                 if value is None and field in {
                     "classification_evidence", "bibliographic_authors", "additional_dates",

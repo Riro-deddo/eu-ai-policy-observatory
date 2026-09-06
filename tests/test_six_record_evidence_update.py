@@ -59,8 +59,8 @@ def test_pipeline_publishes_real_complete_guidelines_work_and_original_routes(pa
     parent = documents[PARENT_ID]
     assert len(documents) == 187
     assert payload["coverage"]["historical_review"] == {
-        "verified": 182,
-        "legacy_review_pending": 5,
+        "verified": 183,
+        "legacy_review_pending": 4,
     }
     assert parent["slug"] == PARENT_ID
     assert parent["official_title"] == "Draft Commission Guidelines on the classification of high-risk AI systems"
@@ -187,7 +187,7 @@ def test_evidence_only_notes_lead_with_their_decisive_limits(payload):
     notice = documents["gpai-training-content-explanatory-notice-2025"]["corpus_assessment"]["researcher_notes"].lower()
     template = documents["gpai-training-content-template-2025"]["corpus_assessment"]["researcher_notes"].lower()
     standards = documents["ai-standardisation-request-c-2023-3215"]["corpus_assessment"]["researcher_notes"].lower()
-    assert "work-level" in notice and "does not" in notice and "approval" in notice and "december" in notice
-    assert "internal annex" in template and "does not" in template and "docx" in template and "in force" in template
+    assert "work-level" in notice and "parent" in notice and "lacks" in notice and "december" in notice
+    assert "internal template" in template and "parent" in template and "docx" in template and "in-force" in template
     assert "22 may 2023" in standards and "corrective" in standards
     assert "repeal" in standards and "no exact operative repeal date" in standards
