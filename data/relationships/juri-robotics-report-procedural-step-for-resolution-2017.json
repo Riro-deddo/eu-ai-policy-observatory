@@ -1,0 +1,16 @@
+{
+  "id": "juri-robotics-report-procedural-step-for-resolution-2017",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T01:28:20Z",
+  "updated_at": "2026-09-06T01:28:20Z",
+  "source_entity_type": "document",
+  "source_entity_id": "historical-juri-robotics-report-2017",
+  "target_entity_type": "document",
+  "target_entity_id": "civil-law-rules-on-robotics-resolution-2017",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "OEIL 2015/2103(INL), key events and documentation gateway, list report A8-0005/2017 tabled 27 January 2017 before the resolution adopted 16 February 2017. The resolution preamble explicitly cites A8-0005/2017. They are distinct procedural texts; the report includes an explanatory statement and six embedded opinions.",
+  "evidence_source_id": "ep-oeil-robotics-procedure-2015-2103",
+  "verification_status": "verified"
+}

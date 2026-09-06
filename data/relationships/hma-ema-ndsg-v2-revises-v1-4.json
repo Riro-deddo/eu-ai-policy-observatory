@@ -1,0 +1,16 @@
+{
+  "id": "hma-ema-ndsg-v2-revises-v1-4",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T01:28:20Z",
+  "updated_at": "2026-09-06T01:28:20Z",
+  "source_entity_type": "document",
+  "source_entity_id": "hma-ema-ndsg-workplan-2026-2028-v2",
+  "target_entity_type": "document",
+  "target_entity_id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "EMA NDSG catalogue Workplan/Previous versions panels link the 2026-2028 v2.0 workplan to the hosted previous 2025-2028 v1.4 manifestation. The v2.0 Introduction p.4 explicitly calls it the first annual revision. This evidences the revision relationship to the hosted previous version, without asserting recovery of earlier v1.0-v1.3 manifestations.",
+  "evidence_source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-page",
+  "verification_status": "verified"
+}

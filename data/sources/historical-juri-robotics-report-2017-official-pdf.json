@@ -1,0 +1,13 @@
+{
+  "id": "historical-juri-robotics-report-2017-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T01:28:20Z",
+  "updated_at": "2026-09-06T01:28:20Z",
+  "source_type": "official_pdf",
+  "url": "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf",
+  "publisher": "European Parliament",
+  "retrieved_at": "2026-09-06T01:10:27Z",
+  "last_verified_at": "2026-09-06T01:28:20Z",
+  "verification_note": "Recovered through normal browser download; 64 pages, 587245 bytes, SHA-256 b28361a4a6dfdda93c0bb24facb7ca9f9fe20dc227a4640596b1cd8647e26d95. Cover, substantive AI passages and final vote checked in full extracted text and visually; evidence memo research/verification/2026-09-06-remaining-three/juri.md. Retrieval facts describe the September snapshot, not historical byte identity or first server upload."
+}

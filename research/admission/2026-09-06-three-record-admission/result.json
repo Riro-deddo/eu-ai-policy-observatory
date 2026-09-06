@@ -1,0 +1,108 @@
+{
+  "admission_id": "2026-09-06-three-record-admission",
+  "reviewed_at": "2026-09-06T01:28:20Z",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "status": "local_admission_complete_with_environment_limited_frontend_test",
+  "coverage_cutoff": "2026-09-04",
+  "scope": "Two resolved candidates from the former three-candidate remainder plus one newly identified NDSG v1.4 dependency. The scientific opinion remains pending; the earlier frozen 53-candidate scope and historical ledger are unchanged.",
+  "admitted_document_ids": [
+    "historical-juri-robotics-report-2017",
+    "hma-ema-ndsg-workplan-2025-2028-v1-4",
+    "hma-ema-ndsg-workplan-2026-2028-v2"
+  ],
+  "resolved_prior_candidate_ids": [
+    "historical-juri-robotics-report-2017",
+    "hma-ema-ndsg-workplan-2026-2028-v2"
+  ],
+  "new_dependency_candidate_ids": [
+    "hma-ema-ndsg-workplan-2025-2028-v1-4"
+  ],
+  "retained_pending_candidate_ids": [
+    "chief-scientific-advisors-ai-science-opinion-2024"
+  ],
+  "canonical_published_document_count": 184,
+  "inventory_decision_counts": {
+    "included": 184,
+    "merged": 18,
+    "pending": 13,
+    "excluded": 10
+  },
+  "changed_file_manifest": [
+    "data/documents/historical-juri-robotics-report-2017.json",
+    "data/documents/hma-ema-ndsg-workplan-2025-2028-v1-4.json",
+    "data/documents/hma-ema-ndsg-workplan-2026-2028-v2.json",
+    "data/institutions/hma-ema-network-data-steering-group.json",
+    "data/sources/historical-juri-robotics-report-2017-official-pdf.json",
+    "data/sources/ep-oeil-robotics-procedure-2015-2103.json",
+    "data/sources/hma-ema-ndsg-workplan-2025-2028-v1-4-official-pdf.json",
+    "data/sources/hma-ema-ndsg-workplan-2026-2028-v2-official-pdf.json",
+    "data/sources/hma-ema-ndsg-workplan-2026-2028-v2-official-page.json",
+    "data/relationships/juri-robotics-report-procedural-step-for-resolution-2017.json",
+    "data/relationships/hma-ema-ndsg-v2-revises-v1-4.json",
+    "research/corpus-inventory.json",
+    "research/source-sweep.json",
+    "research/admission/2026-09-06-three-record-admission/result.json",
+    "research/admission/2026-09-06-three-record-admission/report.md"
+  ],
+  "unchanged_baseline": "All 181 previous document bytes and review states are preserved; the before-state snapshots include canonical data, inventory, sweep, old admission bundles and the three verification memos.",
+  "decisions": {
+    "juri": "Report/principal A8-0005/2017; procedure 2015/2103(INL); version PE582.443v03-00; issue and official plenary-tabling publication 2017-01-27; committee adoption 2017-01-12; procedural_step_for the existing distinct resolution. No resolution CELEX/OJ copied, no embedded opinion records created.",
+    "ndsg_v1_4": "Work programme/version, non-binding; cover July 2025 at month precision; 2025-07-22 publication/update fallback specific to hosted v1.4. March adoption and May first-publication facts belong to the original lineage.",
+    "ndsg_v2": "Work programme/version, non-binding; cover and NDSG adoption February 2026 at month precision; publication fallback 2026-03-09; evidenced revises v1.4. The 11 February meeting is not treated as final adoption.",
+    "scientific_opinion": "Corrected official 102-page opinion reverified in the earlier 6 September memo; original DOI 10.2777/08845 and April release are corroborated but original full text and authoritative correction schedule remain unrecovered. Candidate decision is unchanged, no canonical document/source/relationship is added."
+  },
+  "limitations": [
+    "No exhaustive source-family or version-history coverage is claimed; all existing sweep statuses and cutoffs remain unchanged, with one new in_progress v1.4 dependency row.",
+    "JURI first server-upload timestamp is unestablished; publication explicitly means official tabling.",
+    "Earlier NDSG v1.0-v1.3 manifestations are unrecovered; no invented canonical originals.",
+    "Snapshot checksums identify bytes retrieved in September 2026, not historical byte identity.",
+    "No human manual review is newly claimed; raw reviewer convention is retained.",
+    "Local admission only; no commit, push, merge, deployment, Git-state changes, UI, schema or runtime edits.",
+    "Vitest could not start because of local directory-access errors; no Vitest pass is claimed. Python full suite, Node source tests and all data-output QA passed. Frontend build/deployment checks are outside this local admission."
+  ],
+  "validation": {
+    "focused_gate": "PASS structural, references, research inventory and historical publication (184 documents).",
+    "first_attempt": "Existing inventory validator rejected candidate provenance inconsistent with the canonical priority rule; corrected three candidate fields and reran successfully without modifying validation code.",
+    "independent_generation_and_suites": {
+      "generation": "PASS",
+      "generated_at": "2026-09-06T01:37:03Z",
+      "published_ids_exactly_match_canonical": 184,
+      "unchanged_previous_documents": 181,
+      "previous_admission_bundles_and_memos": "byte-identical",
+      "unchanged_unrelated_candidates": true,
+      "previous_decision_history": "preserved",
+      "scientific_opinion": "unchanged pending candidate; absent from public JSON and SQLite",
+      "sqlite_integrity": "ok",
+      "sqlite_foreign_key_violations": 0,
+      "determinism": "Two pairs generated at the same timestamp; matching checksums for each artifact",
+      "sha256": {
+        "eu-ai-policy-observatory.sqlite": "2027b4394d9afa48f89f4f820d872d7753679ec304b249b44313ce1180d4b680",
+        "public-data.json": "f4b91033943f2a9263544e929ad8cad247ed6d1489c622adc9250ddd87541723"
+      },
+      "output_directory": "work/three-record-admission-20260906/output",
+      "node_source_tests": "65 passed, 0 failed, against the fresh JSON",
+      "python_full_suite": {
+        "result": "passed",
+        "passed": 404,
+        "skipped": 1,
+        "failed": 0,
+        "duration_seconds": 53.93,
+        "exit_code": 0,
+        "environment": "Task-local PYTHONUSERBASE references existing ../.euai-pydeps via .pth; no installation, source-code change or assertion change."
+      },
+      "vitest": {
+        "result": "blocked_before_tests",
+        "reason": "esbuild Cannot read directory ../../../../../..: Access is denied; failed to resolve/load vitest.config.ts.",
+        "assertions_executed": false
+      },
+      "output_freshness": "Root explicitly confirmed generated v2 PDF verification note equals current canonical text, including the final prior-review clarification."
+    },
+    "final_corrected_gate": "PASS after canonical JURI sector ordering and explicit prior-review source-note corrections; focused validation returned no issues.",
+    "independent_review": "Reviewer checked the evidence/constraints diff; preliminary tag-order and old-note clarity issues were corrected. Final review is coordinated by root.",
+    "english_guard": "PASS: existing repository text/JSON language guards over the exact 15-file working-file manifest; zero findings."
+  },
+  "review_partition": {
+    "verified": 158,
+    "legacy_holds": 26
+  }
+}
