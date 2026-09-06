@@ -1,0 +1,13 @@
+{
+  "id": "council-register-st-12206-2022-versions",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T18:08:02Z",
+  "updated_at": "2026-09-06T18:08:02Z",
+  "source_type": "official_register",
+  "url": "https://skribi.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12206%2F22",
+  "publisher": "Council of the European Union",
+  "retrieved_at": "2026-09-06T17:16:31.012522+01:00",
+  "last_verified_at": "2026-09-06T18:08:02Z",
+  "verification_note": "The official register result contains separate rows for ST 12206 2022 INIT and ST 12206 2022 REV 1. It identifies the latter as Public 12206/1/22, REV 1, dated 16 September 2022. This register evidence supports the REV 1-to-INIT version edge while preserving the unresolved conflict between the INIT row and the bytes currently served from the INIT PDF URL. Retained HTML SHA-256: 99d365e2f183b1f49a88c8887a893e6603d07f2faaffa0f3cb4482c061905fca."
+}

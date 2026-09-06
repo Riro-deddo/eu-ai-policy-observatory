@@ -13,6 +13,7 @@ CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continu
 EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 SIX_RECORD_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
+SEVEN_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-seven-evidence-admissions.json"
 DOCUMENT_ROOT = ROOT / "data/documents"
 SOURCE_ROOT = ROOT / "data/sources"
 BUILD_TIMESTAMP = "2026-09-05T18:30:00Z"
@@ -80,7 +81,9 @@ def test_canonical_records_apply_only_upgrades_and_preserve_holds_and_routes():
         _read_json(CONTINUATION_LEDGER_PATH)["upgraded_ids"]
     ) | set(_read_json(EVIDENCE_CORRECTIONS_LEDGER_PATH)["upgraded_ids"]) | set(
         _read_json(FOUR_ADMISSIONS_LEDGER_PATH)["upgraded_ids"]
-    ) | set(_read_json(SIX_RECORD_LEDGER_PATH)["upgraded_existing_ids"])
+    ) | set(_read_json(SIX_RECORD_LEDGER_PATH)["upgraded_existing_ids"]) | set(
+        _read_json(SEVEN_ADMISSIONS_LEDGER_PATH)["upgraded_ids"]
+    )
     for held in ledger["held_records"]:
         identifier = held["document_id"]
         if identifier in followup_upgrades:
@@ -105,6 +108,7 @@ def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
     corrections = _read_json(EVIDENCE_CORRECTIONS_LEDGER_PATH)
     four_admissions = _read_json(FOUR_ADMISSIONS_LEDGER_PATH)
     six_record_update = _read_json(SIX_RECORD_LEDGER_PATH)
+    seven_admissions = _read_json(SEVEN_ADMISSIONS_LEDGER_PATH)
     outputs = run_pipeline(ROOT, BUILD_TIMESTAMP, output_root=tmp_path / "output")
     payload = _read_json(outputs.public_json)
     documents = {row["id"]: row for row in payload["documents"]}
@@ -116,8 +120,8 @@ def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
         for row in ledger["baseline"]["documents"]
     )
     assert cohort_status == {
-        "verified": followup["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]) + len(six_record_update["upgraded_existing_ids"]),
-        "legacy_review_pending": followup["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]) - len(six_record_update["upgraded_existing_ids"]),
+        "verified": followup["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]) + len(six_record_update["upgraded_existing_ids"]) + len(seven_admissions["upgraded_ids"]),
+        "legacy_review_pending": followup["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]) - len(six_record_update["upgraded_existing_ids"]) - len(seven_admissions["upgraded_ids"]),
     }
     assert payload["coverage"]["historical_review"] == Counter(
         record.data.get("historical_review_status") or "legacy_review_pending"
@@ -128,7 +132,7 @@ def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
         documents[identifier]["historical_review_status"] == "verified"
         for identifier in ledger["upgraded_ids"]
     )
-    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"]) | set(six_record_update["upgraded_existing_ids"])
+    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"]) | set(six_record_update["upgraded_existing_ids"]) | set(seven_admissions["upgraded_ids"])
     for row in followup["held_records"]:
         expected = "verified" if row["document_id"] in later_upgrades else "legacy_review_pending"
         assert documents[row["document_id"]]["historical_review_status"] == expected

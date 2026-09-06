@@ -59,8 +59,8 @@ def test_pipeline_publishes_real_complete_guidelines_work_and_original_routes(pa
     parent = documents[PARENT_ID]
     assert len(documents) == 187
     assert payload["coverage"]["historical_review"] == {
-        "verified": 175,
-        "legacy_review_pending": 12,
+        "verified": 182,
+        "legacy_review_pending": 5,
     }
     assert parent["slug"] == PARENT_ID
     assert parent["official_title"] == "Draft Commission Guidelines on the classification of high-risk AI systems"
@@ -146,12 +146,6 @@ def test_sections_have_three_official_part_of_edges_without_replacing_sibling_ed
             "https://eur-lex.europa.eu/eli/C/2026/4006/oj/eng/pdf",
             ("principal", "Final template", "final", "2025-07-24", "2025-07-24", "non_binding", None),
         ),
-        (
-            "ai-standardisation-request-c-2023-3215",
-            "ai-standardisation-request-c-2023-3215-jrc-publication-month",
-            "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC134461/JRC134461_01.pdf",
-            ("principal", "Final", "final", "2023-05-22", "2023-05-22", "adopted", "C(2023) 3215 final"),
-        ),
     ],
 )
 def test_evidence_only_records_remain_pending_without_partial_extensions(
@@ -195,4 +189,5 @@ def test_evidence_only_notes_lead_with_their_decisive_limits(payload):
     standards = documents["ai-standardisation-request-c-2023-3215"]["corpus_assessment"]["researcher_notes"].lower()
     assert "work-level" in notice and "does not" in notice and "approval" in notice and "december" in notice
     assert "internal annex" in template and "does not" in template and "docx" in template and "in force" in template
-    assert "may 2023" in standards and "not an exact day" in standards and "adoption" in standards and "repeal" in standards
+    assert "22 may 2023" in standards and "corrective" in standards
+    assert "repeal" in standards and "no exact operative repeal date" in standards

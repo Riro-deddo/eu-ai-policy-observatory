@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T18:29:19Z",
   "slug": "ai-act-council-fourth-compromise-st-13102-2022",
   "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – Fourth Presidency compromise text",
   "short_title": "Fourth Council Presidency compromise",
@@ -17,7 +17,7 @@
   "document_date": "2022-10-19",
   "version_label": "Fourth Presidency compromise",
   "version_status": "revised",
-  "publication_date": "2022-10-19",
+  "publication_date": "2024-10-28",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "council-st-13102-2022",
+      "evidence_locator": "PDF p. 1 From Presidency to Delegations; section I paragraphs 3-5 attribute substantive preparation to the Czech Presidency. The Council association represents the Presidency acting within the Council, without implying Council adoption."
     }
   ],
   "policy_ids": [
@@ -40,13 +42,14 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-st-13102-2022"
+    "council-st-13102-2022",
+    "council-st-15322-2024-annex-6-disclosure"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "negotiation",
     "inclusion_rationale": "Fourth formally published Council Presidency compromise.",
-    "researcher_notes": "The official text identifies its changes against the third compromise.",
+    "researcher_notes": "The Czech Presidency, acting within the Council, is the substantive drafter and originator, and Delegations are the recipient. The Council author association represents that Presidency origin and does not imply Council adoption. The document remains the fourth non-binding Presidency compromise and names ST 12549/22 as its predecessor; the planned 25 October working-party presentation is not a publication date. The issue date remains 19 October 2022. Annex 6 of ST 15322/24 documents later disclosure on 28 October 2024, not first-ever publication.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -57,5 +60,60 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-st-13102-2022",
+      "locator": "PDF p. 1 cover: Brussels, 19 October 2022; ST 13102/22.",
+      "meaning": "The official PDF establishes the issue date of this exact fourth-compromise note."
+    },
+    "publication_date": {
+      "source_id": "council-st-15322-2024-annex-6-disclosure",
+      "locator": "Annex 6 reply dated 28 October 2024; PDF p. 9 lists ST 13102/22 and p. 11 states that all listed documents are available in the public register and enclosed.",
+      "meaning": "The Council reply establishes documented later disclosure/public access on 2024-10-28, not first-ever publication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-st-13102-2022",
+      "locator": "PDF section I paragraphs 3-5, section II and Annex.",
+      "rationale": "The fourth Presidency compromise directly revises the proposed Artificial Intelligence Act."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-st-13102-2022",
+      "locator": "PDF subject, section II and Annex setting out harmonised AI rules.",
+      "rationale": "The compromise concerns the horizontal AI Act framework rather than one sector."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-st-13102-2022",
+      "locator": "PDF p. 1 From Presidency to Delegations; section I paragraphs 3-5 attributes the fourth compromise to the Czech Presidency.",
+      "rationale": "The official note attributes substantive preparation to the Council Presidency."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-st-15322-2024-annex-6-disclosure",
+      "locator": "Annex 6, PDF pp. 9 and 11: exact identifier listing and public-register/enclosure statement.",
+      "rationale": "The Council's dated access reply documents official public access to the exact record."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Presidency of the Council of the European Union",
+      "affiliation": "Czech Presidency",
+      "evidence_source_id": "council-st-13102-2022",
+      "evidence_locator": "PDF p. 1 and section I paragraphs 3-5 identify the Presidency origin and Czech Presidency preparation."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }
