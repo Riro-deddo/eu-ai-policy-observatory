@@ -1,0 +1,13 @@
+{
+  "id": "gcsa-ai-science-2024-original-knaw-archive",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T02:24:52Z",
+  "updated_at": "2026-09-06T02:24:52Z",
+  "source_type": "institutional_archive",
+  "url": "https://storage.knaw.nl/2024-04/Successful-and-timely-uptake-of-artificial-intelligence.pdf",
+  "publisher": "Royal Netherlands Academy of Arts and Sciences (KNAW)",
+  "retrieved_at": "2026-09-06T02:11:26.654360+00:00",
+  "last_verified_at": "2026-09-06T02:11:26.654360+00:00",
+  "verification_note": "Institutional archive supplement, not an official EU host. Retrieved complete original first edition: HTTP 200, application/pdf, 2,898,243 bytes, 102 PDF pages. PDF pp.2-3 independently corroborate original imprint and issue date. Every page's extracted text equals the ALLEA copy, although PDF bytes differ. This establishes extracted-text equality only, not identical graphics, annotations, links or accessibility tags. Used with independent Commission release evidence under the approved bounded supplement allowance; retained hash is recorded in the document snapshot."
+}

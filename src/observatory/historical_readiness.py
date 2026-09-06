@@ -16,6 +16,7 @@ from typing import Iterable, Mapping, Sequence
 from jsonschema import Draft202012Validator, FormatChecker
 
 from observatory.io import LoadedRecord, load_records
+from observatory.supplementary_sources import is_reviewed_document_supplement
 from observatory.historical_relationships import validate_historical_relationships
 from observatory.types import ValidationIssue
 from observatory.validate import _is_official_source
@@ -144,8 +145,11 @@ def _check_evidence_source(
         issues.append(_issue("historical_evidence", record, field, "Evidence source must resolve to exactly one source record."))
         return
     source = matches[0].data
-    if source.get("publication_status") != "published" or not _is_official_source(source):
-        issues.append(_issue("historical_evidence", record, field, "Evidence source must be published and use an official HTTPS source."))
+    if source.get("publication_status") != "published" or not (
+        _is_official_source(source)
+        or is_reviewed_document_supplement(record.data, source, sources, field)
+    ):
+        issues.append(_issue("historical_evidence", record, field, "Evidence must be published and official, or the reviewed preserved-original supplement permitted for this field with its official release."))
 
 
 def _document_evidence_references(data: Mapping[str, object]) -> Iterable[tuple[str, object]]:

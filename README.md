@@ -70,6 +70,8 @@ Stage completion is evidence-based. A registered source count is not proof that 
 
 Published records retain official source links plus retrieval and verification information, so readers can trace displayed claims to their stated evidence. Verified or published documents require at least one existing source record; events require an existing source; and relationships require an evidence source. Official relationships must be supported by an official HTTPS source. Verification supports transparent, reviewable research records; it does not claim that the corpus is complete, exhaustive or legally authoritative.
 
+The original first edition of Scientific Opinion No. 15 additionally uses two clearly identified academy-preserved PDFs under a [bounded supplementary-source approval](docs/data-dictionary.md#approved-opinion-15-preserved-original-supplement), with independent official release evidence. These archive hosts are not classified as EU official sources; the corrected edition remains a separate version record.
+
 Official metadata, provenance links and evidenced official relationships are kept distinct from researcher analysis. Researcher-authored concepts, corpus assessments and analytical relationships are clearly identified as such. Where an official record changes, earlier retrieved snapshots may be retained only when they reflect actually retrieved bytes and a real SHA-256 hash.
 
 ### Policy Map

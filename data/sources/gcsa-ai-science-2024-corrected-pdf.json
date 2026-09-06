@@ -1,0 +1,13 @@
+{
+  "id": "gcsa-ai-science-2024-corrected-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T02:24:52Z",
+  "updated_at": "2026-09-06T02:24:52Z",
+  "source_type": "official_pdf",
+  "url": "https://publications.europa.eu/resource/cellar/d6d8ed54-32a8-11ef-a61b-01aa75ed71a1.0001.01/DOC_1",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T02:11:26.654360+00:00",
+  "last_verified_at": "2026-09-06T02:11:26.654360+00:00",
+  "verification_note": "Official English corrected first edition retrieved: HTTP 200, application/pdf;charset=UTF-8, 14,846,309 bytes, 102 PDF pages. Cover and PDF p.2 explicitly label the corrected version; p.3 states Brussels, 27 March 2024. Imprint, authorship, recommendations and relevant sections inspected; all pages text-extracted. Researcher comparison against preserved original academy copies found non-whitespace text changes on 22 page pairs, including wording changes on PDF pp.13,27,34. This is not an official errata schedule or a complete visual audit. Retained hash is recorded in the document snapshot."
+}

@@ -33,6 +33,8 @@ for (const source of data.sources) labels.set(`source:${source.id}`, source.publ
 
 const readableLabel = (entityType: string, entityId: string) => labels.get(`${entityType}:${entityId}`) ?? entityId;
 const sourceById = new Map(data.sources.map((source) => [source.id, source]));
+const officialSources = document.sources.filter((source) => source.source_type !== 'institutional_archive');
+const supplementarySources = document.sources.filter((source) => source.source_type === 'institutional_archive');
 const assessment = document.corpus_assessment;
 const relationshipBasisLabel = (relationship: Relationship) => (
   relationship.basis === 'analytical' ? 'Analytical relationship' : 'Official relationship'
@@ -187,11 +189,26 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
         </dl>
       )}
       <ul>
-        {document.sources.map((source) => (
+        {officialSources.map((source) => (
           <li><a href={source.url}>Official source</a> · Publisher/host: {source.publisher}</li>
         ))}
       </ul>
     </section>
+
+    {supplementarySources.length > 0 && (
+      <section aria-labelledby="supplementary-preserved-originals">
+        <h2 id="supplementary-preserved-originals">Supplementary preserved originals</h2>
+        <p>These academy-hosted copies preserve the original edition. They are supplementary evidence, not official EU hosts, and are used together with the official release record above.</p>
+        <ul>
+          {supplementarySources.map((source) => (
+            <li>
+              <a href={source.url}>Preserved original: {source.publisher}</a>
+              <p>{source.verification_note}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     {document.procedure_references.length > 0 && (
       <section aria-labelledby="formal-procedure">

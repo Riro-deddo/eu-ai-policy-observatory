@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T01:28:20Z",
+  "generated_at": "2026-09-06T02:24:52Z",
   "coverage_cutoff": "2026-09-04",
   "sources": [
     {
@@ -1138,7 +1138,8 @@
       "covered_from": "2019-11-27",
       "covered_through": "2024-06-21",
       "covered_document_types": [
-        "report"
+        "report",
+        "opinion"
       ],
       "covered_sector_tags": [
         "consumer_protection",
@@ -1147,10 +1148,10 @@
       ],
       "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
       "scan_status": "in_progress",
-      "checked_at": "2026-09-06T00:03:45Z",
+      "checked_at": "2026-09-06T02:24:52Z",
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Codex (AI-assisted evidence review)",
-      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+      "verification_note": "Record-level inclusion decisions are retained individually. The Scientific Opinion No. 15 corrected-edition hold was resolved on 6 September through the approved bounded institutional archive supplements for the independently published original parent, plus official release/catalogue evidence and a researcher comparison. Original recovery is separately recorded at gcsa-original-dependency-follow-up-20260906. Wider source-family completeness remains unassessed; the coverage cutoff is unchanged."
     },
     {
       "id": "ndsg-v1-4-dependency-follow-up-20260906",
@@ -1175,6 +1176,28 @@
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Codex (AI-assisted evidence review)",
       "verification_note": "v1.4 is included as one new dependency with an evidenced incoming v2.0 revises v1.4 relationship. Unrecovered earlier v1.0-v1.3 manifestations and wider source-family coverage remain gaps; no source completeness upgrade follows from admission."
+    },
+    {
+      "id": "gcsa-original-dependency-follow-up-20260906",
+      "name": "Scientific Opinion No. 15 original-edition dependency follow-up",
+      "institution": "European Commission",
+      "source_family": "GCSA Scientific Opinion No. 15 publication and preserved original (bounded dependency)",
+      "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-receives-scientific-advice-artificial-intelligence-uptake-research-and-innovation-2024-04-15_en",
+      "scope_note": "Only the original first edition independently verified while resolving the already known corrected-edition candidate. Separate from the earlier frozen 53-candidate scope. The official Commission release is the registry entrance; ALLEA and KNAW full-text copies are explicitly non-EU institutional archive supplements recorded as such in canonical sources.",
+      "covered_from": "2024-03-27",
+      "covered_through": "2024-06-21",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [
+        "research_and_innovation"
+      ],
+      "discovery_method": "Inspected Commission release of 15 April 2024 and corrected Publications Office catalogue/PDF. Retrieved complete original first-edition copies from ALLEA and KNAW, compared all 102 extracted pages and inspected original/corrected imprints and wording changes. Admitted under the user-approved bounded institutional archive allowance, with hashes and separate official publication evidence.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T02:24:52Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Original dependency and corrected candidate included with one analytical corrected-to-original revises relationship. No original EU-hosted PDF or official correction schedule was recovered in this bounded search. Academy text equality does not establish byte or visual identity. This resolves the identified dependency without asserting source-family or EU-wide completeness or advancing the publication cutoff."
     }
   ]
 }

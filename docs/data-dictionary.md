@@ -49,10 +49,10 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | `institution_roles` | array of `institution_role` | Yes | Official | Unique items; nested fields below. |
 | `policy_ids` | array of string IDs | Yes | Analytical | Unique existing policy IDs. |
 | `concept_ids` | array of string IDs | Yes | Analytical | Unique existing concept IDs. |
-| `source_ids` | array of string IDs | Yes | Official | Unique existing source IDs; source evidence is required for published/verified documents. |
+| `source_ids` | array of string IDs | Yes | Evidence | Unique existing source IDs; official evidence is required for published/verified documents. The bounded Opinion 15 supplement below is explicitly non-official. |
 | `retained_route_notice` | object | No | System | Non-null editorial notice for the three reviewed draft-guideline section routes whose whole-work parent relationship remains unresolved. Public document records always expose this property, using `null` when absent. |
 | `corpus_assessment` | `corpus_assessment` object | Yes | Analytical | Explicitly separate from official metadata; nested fields below. |
-| `snapshots` | array of `snapshot` | No | Official | Add only for an actually retrieved official file with a real hash. |
+| `snapshots` | array of `snapshot` | No | Evidence | Add only for an actually retrieved file with a real hash; non-official preserved copies require the bounded supplement approval below. |
 
 ### Document levels, versions and identity
 
@@ -195,9 +195,9 @@ Production provenance identifies how a document came into being. It remains sepa
 | Relationship `rationale` | string or `null` | Yes | Analytical | Non-empty when `basis` is `analytical`. |
 | Relationship `evidence_source_id` | string or `null` | Yes | Official | Existing official source; analytical links require one. |
 | Relationship `verification_status` | string | Yes | System | `unverified`, `pending`, `verified`. |
-| Source `source_type` | string | Yes | System | `eur_lex`, `eli`, `commission_webpage`, `official_pdf`, `publications_office`, `council_register`, `parliament_register`, `official_register`, `official_consultation`. |
-| Source `url` | HTTP(S) URI string | Yes | Official | Official HTTP or HTTPS source location. |
-| Source `publisher` | string | Yes | Official | Non-empty issuing organisation. |
+| Source `source_type` | string | Yes | System | `eur_lex`, `eli`, `commission_webpage`, `official_pdf`, `publications_office`, `council_register`, `parliament_register`, `official_register`, `official_consultation`, `institutional_archive`. The last value is not an official EU source type. |
+| Source `url` | HTTP(S) URI string | Yes | Evidence | Source location; published evidence requires approved HTTPS sources. |
+| Source `publisher` | string | Yes | Evidence | Non-empty publisher or hosting organisation; an academy archive host must not be represented as an EU publisher. |
 | Source `retrieved_at` | offset ISO-8601 timestamp | Yes | System | Actual retrieval time. |
 | Source `last_verified_at` | offset ISO-8601 timestamp | Yes | System | Last metadata-verification time. |
 | Source `verification_note` | string | Yes | System | Human-readable verification record. |
@@ -205,6 +205,14 @@ Production provenance identifies how a document came into being. It remains sepa
 References are validated before SQLite generation. Published records may refer only to published records; published documents, events and relationships require source evidence. SQLite and public JSON are generated outputs, not canonical editing surfaces.
 
 Official metadata, identifiers, document dates, institutional roles and official relationships must be transcribed from an inspectable official English source. Use an official HTTPS EUR-Lex, ELI, EU institution, Publications Office or official register/consultation URL with the matching controlled `source_type`. Record actual retrieval and verification timestamps and a useful verification note. `official_summary` remains `null` unless the cited institution supplies the summary. An analytical relationship still requires an official evidence source plus a researcher-written rationale, but its `basis` remains `analytical`.
+
+### Approved Opinion 15 preserved-original supplement
+
+On 6 September 2026 the maintainer approved one bounded exception to the source-location rule above: the original first edition of Scientific Opinion No. 15 may use the inspected ALLEA and KNAW preserved PDFs together with the independent Commission release announcement. The original and corrected editions remain separate records. This is not a general relaxation for academy-hosted documents.
+
+The `institutional_archive` type remains non-official. The gate pins the original document ID, both permitted archive source IDs and URLs, their recorded PDF hashes, and the exact, uniquely resolved, published Commission companion. The preserved originals may support the original issue date, imprint, authorship, non-binding status and substantive classifications. They cannot support a publication-kind primary date, publication dates, `officially_published` provenance, an `official_host` role, events or relationship evidence. The corrected edition's official PDF supports an explicitly analytical `revises` relationship; no official correction schedule is claimed.
+
+Snapshot `archived_path` may be `null`: the offline build checks recorded metadata, not live remote bytes. The hashes describe the files inspected in the dated evidence review. Academy copies are labelled as supplementary preserved originals in the public record. The earlier [research-only memo](../research/verification/2026-09-06-science-opinion-followup.md) remains a historical account of the pre-approval evidence pass; the subsequent [admission record](../research/admission/2026-09-06-science-opinion-admission/report.md) records implementation and verification.
 
 ## Source sweep and corpus inventory
 
@@ -273,7 +281,7 @@ The public JSON also contains a generated `coverage` object:
 | `published_documents` | All published canonical document records. |
 | `principal_documents` | Published documents whose `record_level` is `principal`. |
 | `supporting_files_and_versions` | Published documents whose `record_level` is `supporting`, `version` or `attachment`. |
-| `last_verified_date` | Most recent calendar date among exported official sources’ `last_verified_at` values; `null` when no source is exported. |
+| `last_verified_date` | Most recent calendar date among exported evidence sources’ `last_verified_at` values; `null` when no source is exported. |
 | `coverage_cutoff` | Exact audit cutoff copied from `research/source-sweep.json`; never computed from the current clock. |
 | `coverage_statement` | Human-readable statement of expanding scope and documented verification limits. |
 | `source_families.total` / `source_families.by_status` | Aggregate registered family count and zero-filled counts for the five source-review states. These counts do not prove record-level completeness. |

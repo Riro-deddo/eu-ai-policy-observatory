@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T01:28:20Z",
+  "generated_at": "2026-09-06T02:24:52Z",
   "candidates": [
     {
       "id": "artificial-intelligence-for-europe",
@@ -5988,25 +5988,35 @@
       "source_ids": [
         "gap-admission-20260906-op-europa-eu"
       ],
-      "official_reference": "DOI 10.2777/46863; KI-09-24-456-EN-N",
-      "official_title": "Successful and timely uptake of artificial intelligence in science in the EU",
+      "official_reference": "Scientific Opinion No. 15; DOI 10.2777/46863; ISBN 978-92-68-17917-8; KI-09-24-456-EN-N",
+      "official_title": "Successful and timely uptake of Artificial Intelligence in science in the EU",
       "year": 2024,
-      "issuing_institution": "Catalogue credits DG Research and Innovation and Group of Chief Scientific Advisors. Preserve distinct institutional roles.",
+      "issuing_institution": "Group of Chief Scientific Advisors; DG Research and Innovation provides support; Publications Office of the European Union publishes the opinion.",
       "record_level": "version",
-      "version_label": null,
+      "version_label": "First edition - corrected version",
       "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/d6d8ed54-32a8-11ef-a61b-01aa75ed71a1/language-en",
-      "commissioning_body": null,
-      "candidate_provenance": "officially_published",
+      "commissioning_body": "European Commission",
+      "candidate_provenance": "eu_expert_group_authored",
       "provisional_sector_tags": [
         "research_and_innovation"
       ],
       "discovered_at": "2026-09-05T23:13:48Z",
-      "decision": "pending",
-      "decision_reason": "Official102-page PDF is explicitly First edition–corrected version with distinct DOI/ISBN. Issue27March2024, release21June2024, authorship and recommendations verified, but independently citable original first edition (DOI10.2777/08845) is currently evidenced only by external academy mirrors. Required verified version parent is unresolved; SAPEA ERR13 is supporting research, not that parent.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Corrected first edition admitted with its separately published original parent under the user-approved bounded institutional-archive supplement rule. The corrected official PDF verifies the correction label, own identifiers, 27 March 2024 issue date and advisory authorship; official catalogue confirms release on 21 June. Researcher comparison against complete ALLEA and KNAW original copies supports an analytical revises relationship; no official errata schedule or typography-only correction is claimed.",
+      "document_id": "chief-scientific-advisors-ai-science-opinion-2024",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T00:03:45Z",
-      "reviewed_by": "Codex (AI-assisted evidence review)"
+      "reviewed_at": "2026-09-06T02:24:52Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official102-page PDF is explicitly First edition–corrected version with distinct DOI/ISBN. Issue27March2024, release21June2024, authorship and recommendations verified, but independently citable original first edition (DOI10.2777/08845) is currently evidenced only by external academy mirrors. Required verified version parent is unresolved; SAPEA ERR13 is supporting research, not that parent.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T00:03:45Z",
+          "reviewed_by": "Codex (AI-assisted evidence review)"
+        }
+      ]
     },
     {
       "id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
@@ -6033,6 +6043,31 @@
       "document_id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
       "merged_into_document_id": null,
       "reviewed_at": "2026-09-06T01:28:20Z",
+      "reviewed_by": "Codex (AI-assisted evidence review)"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+      "source_ids": [
+        "gcsa-original-dependency-follow-up-20260906"
+      ],
+      "official_reference": "Scientific Opinion No. 15; DOI 10.2777/08845; ISBN 978-92-68-10084-4; KI-05-23-478-EN-N",
+      "official_title": "Successful and timely uptake of Artificial Intelligence in science in the EU",
+      "year": 2024,
+      "issuing_institution": "Group of Chief Scientific Advisors; DG Research and Innovation provides support; Publications Office of the European Union publishes the opinion.",
+      "record_level": "principal",
+      "version_label": "First edition",
+      "official_source_url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-receives-scientific-advice-artificial-intelligence-uptake-research-and-innovation-2024-04-15_en",
+      "commissioning_body": "European Commission",
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-06T02:11:26.654360+00:00",
+      "decision": "included",
+      "decision_reason": "New independently verified original-edition dependency, outside the earlier frozen 53-candidate scope. User-approved admission pairs the Commission's 15 April 2024 original-release announcement with clearly labelled ALLEA and KNAW institutional archive supplements. Complete 102-page copies establish the original 27 March issue date and first-edition identifiers and have equal page-by-page extracted text despite different hashes. Official original full text was not newly recovered; a researcher-supported incoming corrected-edition revises relationship is published.",
+      "document_id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T02:24:52Z",
       "reviewed_by": "Codex (AI-assisted evidence review)"
     }
   ]
