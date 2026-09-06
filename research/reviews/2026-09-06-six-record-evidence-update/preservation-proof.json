@@ -1,0 +1,64 @@
+{
+  "evidence_receipts": [
+    {
+      "original_path": "../evidence-review-15-20260906/high-risk/library.html",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/high-risk-library.html.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T16:08:38.959871+00:00",
+      "original_sha256": "292ca5cf66a7c9c7b58fbbdda599ef3ae54f0a30f32d00c0918dc0c3e231e096",
+      "original_bytes": 53081,
+      "archive_sha256": "6d659d19b8d5b6f22a39739c4645895e3ec07332224aaf39a1180bf4e990e6b1",
+      "decompressed_sha256": "292ca5cf66a7c9c7b58fbbdda599ef3ae54f0a30f32d00c0918dc0c3e231e096"
+    },
+    {
+      "original_path": "../evidence-review-15-20260906/high-risk/general.pdf",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/high-risk-general.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T16:08:38.960872+00:00",
+      "original_sha256": "b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42",
+      "original_bytes": 260362,
+      "archive_sha256": "a87c49f2319e99d6d4de4db3cb6539d5c10a53fd7f30a8e42a8c4c035c855abf",
+      "decompressed_sha256": "b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42"
+    },
+    {
+      "original_path": "../evidence-review-15-20260906/high-risk/annex-i.pdf",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/high-risk-annex-i.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T16:08:39.07515+00:00",
+      "original_sha256": "10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50",
+      "original_bytes": 337928,
+      "archive_sha256": "ed70e11dd499f9de4136b663fb1f0c7a75c32723c22b740f41d34a062d0a7bd5",
+      "decompressed_sha256": "10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50"
+    },
+    {
+      "original_path": "../evidence-review-15-20260906/high-risk/annex-iii.pdf",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/high-risk-annex-iii.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T16:08:39.10253+00:00",
+      "original_sha256": "b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792",
+      "original_bytes": 1547742,
+      "archive_sha256": "42eaca28c83e2c82011495ba6aca6a7fd57c166313f022eb06daa82fff26becd",
+      "decompressed_sha256": "b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792"
+    },
+    {
+      "original_path": "../evidence-review-12-20260906/training/eur-lex-52026ip0066.pdf",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/gpai-oj-c-2026-4006.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T16:29:59.155975+00:00",
+      "original_sha256": "3ca0c0d30e55db5d50dfc02cc614ba74ac1a305b6cbfc12aa82eb7d27ff0134f",
+      "original_bytes": 586475,
+      "archive_sha256": "1de512e0077a4bcdf2bc5ac3a0604aeaaeb1cddbbe67565f04584c9567d12d01",
+      "decompressed_sha256": "3ca0c0d30e55db5d50dfc02cc614ba74ac1a305b6cbfc12aa82eb7d27ff0134f"
+    },
+    {
+      "original_path": "../evidence-review-12-20260906/standards/jrc134461.pdf",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/jrc134461.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T17:29:52.50302+01:00",
+      "original_sha256": "3e322888198bf1c22b69cee815ac67d2ac27ea65724603b394b6d5a900006a67",
+      "original_bytes": 1083810,
+      "archive_sha256": "a875fa7e0a9fda7318994c4a226dd2e3c5d5c6e944b60990b53c9f05f6ba50e4",
+      "decompressed_sha256": "3e322888198bf1c22b69cee815ac67d2ac27ea65724603b394b6d5a900006a67"
+    }
+  ]
+}

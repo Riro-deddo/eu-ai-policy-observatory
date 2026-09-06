@@ -1,0 +1,13 @@
+{
+  "id": "ai-standardisation-request-c-2023-3215-jrc-publication-month",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T17:29:52.50302+01:00",
+  "updated_at": "2026-09-06T17:29:52.50302+01:00",
+  "source_type": "official_pdf",
+  "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC134461/JRC134461_01.pdf",
+  "publisher": "European Commission, Joint Research Centre",
+  "retrieved_at": "2026-09-06T17:29:52.50302+01:00",
+  "last_verified_at": "2026-09-06T17:29:52.50302+01:00",
+  "verification_note": "Limited publication-month evidence only: JRC134461 PDF page 8 / printed page 5 says the Commission standardisation request was published in May 2023, and PDF page 16 / printed page 13 identifies the referenced work as C(2023) 3215 final. It does not establish an exact publication day, make the 22 May adoption date a publication date, or establish the operative repeal day. The JRC report is retrospective evidence about the decision, not a republication of its complete text; retrieval time is not the decision's publication time. Retained PDF SHA-256: 3e322888198bf1c22b69cee815ac67d2ac27ea65724603b394b6d5a900006a67."
+}

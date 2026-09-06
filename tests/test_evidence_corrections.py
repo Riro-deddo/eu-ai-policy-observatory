@@ -13,6 +13,7 @@ from observatory.pipeline import run_pipeline
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+SIX_RECORD_LEDGER = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
 
 EXPECTED_PUBLICATIONS = {
     "ai-act-council-general-approach-st-15698-2022": ("2022-12-06", "fd86e2b0-758c-11ed-9887-01aa75ed71a1"),
@@ -83,7 +84,10 @@ def test_ledger_preserves_routes_and_retains_unadmitted_holds(payload):
     baseline = json.loads((ROOT / ledger["route_identity_baseline"]["path"]).read_text(encoding="utf-8"))
     routes = {row["id"]: row["slug"] for row in baseline["documents"]}
     routes.update({row["id"]: row["slug"] for row in ledger["route_identity_baseline"]["subsequent_preserved_routes"]})
-    assert routes == {row["id"]: row["slug"] for row in documents.values()}
+    current_routes = {row["id"]: row["slug"] for row in documents.values()}
+    six_record_update = json.loads(SIX_RECORD_LEDGER.read_text(encoding="utf-8"))
+    assert routes.items() <= current_routes.items()
+    assert set(current_routes) - set(routes) == set(six_record_update["new_document_ids"])
     receipts = {row["document_id"]: row for row in ledger["evidence_receipts"]}
     assert set(receipts) == set(ledger["upgraded_ids"])
     for receipt in receipts.values():
@@ -101,6 +105,7 @@ def test_ledger_preserves_routes_and_retains_unadmitted_holds(payload):
     proof_lf_bytes = proof_path.read_text(encoding="utf-8").encode("utf-8")
     assert hashlib.sha256(proof_lf_bytes).hexdigest() == preservation["comparison_artifact_sha256_lf"]
     later_upgrades = set(json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
+    later_upgrades.update(six_record_update["upgraded_existing_ids"])
     for row in ledger["dispositions"]:
         expected = (
             "verified"

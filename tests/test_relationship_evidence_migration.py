@@ -16,6 +16,7 @@ SCHEMA_ROOT = PROJECT_ROOT / "schema"
 LEDGER_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-05-relationship-evidence-migration.json"
 FROZEN_BASELINE_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-05-public-document-baseline.json"
 EXPANDED_LEDGER_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-05-expanded-evidence-review.json"
+SIX_RECORD_LEDGER_PATH = PROJECT_ROOT / "research" / "migrations" / "2026-09-06-six-record-evidence-update.json"
 REVIEW_TIMESTAMP = "2026-09-05T07:35:00Z"
 
 RESOLVED_TARGETS = {
@@ -196,7 +197,7 @@ def test_record_levels_statuses_and_published_identity_routes_are_preserved():
     assert baseline_routes <= published_routes
 
 
-def test_general_principles_and_siblings_remain_explicit_relationship_holds():
+def test_general_principles_and_siblings_preserve_old_hold_then_gain_real_parent():
     records = load_records(DATA_ROOT)
     documents = _records_by_id(records, "documents")
     relationships = _records_by_id(records, "relationships")
@@ -217,13 +218,19 @@ def test_general_principles_and_siblings_remain_explicit_relationship_holds():
         for issue in issues
         if issue.code == "historical_relationship" and issue.field == "record_level"
     }
-    # B2 held five records at that review; B4 independently resolved the two
-    # standalone incident instruments without rewriting the historical ledger.
-    assert relationship_holds & (RESOLVED_TARGETS | HELD_TARGETS) == {
-        "draft-high-risk-classification-guidelines-2026",
-        "draft-high-risk-classification-guidelines-annex-i-2026",
-        "draft-high-risk-classification-guidelines-annex-iii-2026",
-    }
+    # The 5 September ledger remains an immutable hold decision. The later
+    # chronological ledger resolves the three section holds through a real parent.
+    old_ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    old_held = {row["document_id"] for row in old_ledger["targets"] if row["status"] == "held"}
+    upgraded = set(json.loads(SIX_RECORD_LEDGER_PATH.read_text(encoding="utf-8"))["upgraded_existing_ids"])
+    assert upgraded <= old_held
+    assert relationship_holds & upgraded == set()
+    for document_id in upgraded:
+        edge_id = f"{document_id}-part-of-consultation-work"
+        edge = relationships[edge_id]
+        assert edge["target_entity_id"] == "draft-high-risk-classification-guidelines-consultation-work-2026"
+        assert edge["relationship_type"] == "part_of"
+        assert edge["basis"] == "official"
 
 
 def test_evidence_ledger_covers_exact_review_scope_with_concrete_sources():

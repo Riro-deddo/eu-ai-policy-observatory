@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T08:59:02Z",
+  "updated_at": "2026-09-06T17:05:16Z",
   "slug": "draft-high-risk-classification-guidelines-2026",
   "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — General principles",
   "short_title": "Draft high-risk classification guidelines — General principles",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "commission-newsroom-128559-pdf",
+      "evidence_locator": "PDF page 1 cover carries the European Commission masthead for this General principles section."
     }
   ],
   "policy_ids": [
@@ -40,27 +42,11 @@
     "high-risk-guidelines-draft-commission",
     "commission-newsroom-128559-pdf"
   ],
-  "retained_route_notice": {
-    "status": "parent_relationship_under_review",
-    "reason": "This record contains the General principles section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft.",
-    "reviewed_by": "Codex",
-    "reviewed_at": "2026-09-05T08:59:02Z",
-    "evidence": [
-      {
-        "source_id": "high-risk-guidelines-draft-commission",
-        "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
-      },
-      {
-        "source_id": "commission-newsroom-128559-pdf",
-        "locator": "Pages 1–2 (cover and first body page)."
-      }
-    ]
-  },
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "consultation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. 2026-09-06 expanded-evidence update: the independently evidenced whole consultation-work parent, official part_of edge, publication-date citations, complete classification/role evidence and retained official receipts now complete this section's historical-readiness review without inferring a numbered communication or altering the prior personal review credit.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -82,5 +68,65 @@
       "content_hash": "b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42",
       "archived_path": null
     }
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+      "meaning": "Establishes 2026-05-19 as the dated publication of the shared draft consultation work and this separately supplied section, not a formal adoption date."
+    },
+    "publication_date": {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+      "meaning": "Establishes an official Commission publication date for this section within the jointly published consultation work."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "commission-newsroom-128559-pdf",
+      "locator": "PDF page 3 / printed page 2, paragraphs 3-7 describe the draft guidelines' interpretation of Article 6 of the AI Act.",
+      "rationale": "This section directly interprets the AI Act's high-risk classification rules."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "commission-newsroom-128559-pdf",
+      "locator": "PDF page 3 / printed page 2, paragraphs 3-7 introduce horizontal Article 6 classification principles and the two separately supplied sector-spanning sections.",
+      "rationale": "The General principles section applies across the high-risk categories rather than to one sector."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "commission-newsroom-128559-pdf",
+      "locator": "PDF page 1 cover carries the European Commission masthead.",
+      "rationale": "The exact section is authored by the European Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Official library publication dated 19 May 2026 presents the three section downloads as draft guidelines for consultation.",
+      "rationale": "The Commission issued the section as material for the targeted consultation."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Official library Publication 19 May 2026 and Downloads 1-3.",
+      "rationale": "The Commission library officially publishes this section as part of the consultation work."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "commission-newsroom-128559-pdf",
+    "locator": "PDF page 3 / printed page 2, paragraphs 3-7 identify draft guidelines for consultation and explain their non-binding interpretive character.",
+    "meaning": "Supports the retained draft version and non-binding legal status; the placeholder cover supplies no adopted communication reference."
+  },
+  "historical_review_status": "verified"
 }

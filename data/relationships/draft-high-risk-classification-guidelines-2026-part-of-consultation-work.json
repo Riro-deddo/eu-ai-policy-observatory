@@ -1,0 +1,16 @@
+{
+  "id": "draft-high-risk-classification-guidelines-2026-part-of-consultation-work",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T17:05:16Z",
+  "updated_at": "2026-09-06T17:05:16Z",
+  "source_entity_type": "document",
+  "source_entity_id": "draft-high-risk-classification-guidelines-2026",
+  "target_entity_type": "document",
+  "target_entity_id": "draft-high-risk-classification-guidelines-consultation-work-2026",
+  "relationship_type": "part_of",
+  "basis": "official",
+  "rationale": "The Commission library expressly publishes this download as one separately supplied section of the complete consultation work. The parent is the real jointly published draft-guidelines work, not the prospective numbered Commission communication shown only as a placeholder on the section covers.",
+  "evidence_source_id": "high-risk-guidelines-draft-commission",
+  "verification_status": "verified"
+}

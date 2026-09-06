@@ -3267,7 +3267,10 @@
       "commissioning_body": null,
       "candidate_provenance": "official_consultation_material",
       "provisional_sector_tags": [
-        "general_cross_sector"
+        "general_cross_sector",
+        "health",
+        "transport_and_mobility",
+        "industry_and_manufacturing"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",
@@ -3292,7 +3295,17 @@
       "commissioning_body": null,
       "candidate_provenance": "official_consultation_material",
       "provisional_sector_tags": [
-        "general_cross_sector"
+        "general_cross_sector",
+        "health",
+        "employment_and_labour",
+        "migration_asylum_and_border_management",
+        "financial_services",
+        "transport_and_mobility",
+        "law_enforcement",
+        "justice",
+        "education",
+        "public_administration",
+        "critical_infrastructure"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "included",

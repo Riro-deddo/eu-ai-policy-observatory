@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-05T08:59:02Z",
+  "updated_at": "2026-09-06T17:05:16Z",
   "slug": "draft-high-risk-classification-guidelines-annex-i-2026",
   "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — Annex I systems",
   "short_title": "Draft Annex I high-risk classification guidelines",
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "commission-newsroom-128560-pdf",
+      "evidence_locator": "PDF page 1 cover carries the European Commission masthead for this Annex I systems section."
     }
   ],
   "policy_ids": [
@@ -40,33 +42,20 @@
     "high-risk-guidelines-draft-commission",
     "commission-newsroom-128560-pdf"
   ],
-  "retained_route_notice": {
-    "status": "parent_relationship_under_review",
-    "reason": "This record contains the Article 6(1) and AI Act Annex I section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
-    "reviewed_by": "Codex",
-    "reviewed_at": "2026-09-05T08:59:02Z",
-    "evidence": [
-      {
-        "source_id": "high-risk-guidelines-draft-commission",
-        "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
-      },
-      {
-        "source_id": "commission-newsroom-128560-pdf",
-        "locator": "Pages 1–2 (cover and first body page)."
-      }
-    ]
-  },
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "consultation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. 2026-09-06 expanded-evidence update: the independently evidenced whole consultation-work parent, official part_of edge, publication-date citations, complete classification/role evidence, paragraph 23 sector evidence and retained official receipts now complete this section's historical-readiness review without inferring a numbered communication or altering the prior personal review credit.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
   },
   "sector_tags": [
-    "general_cross_sector"
+    "general_cross_sector",
+    "health",
+    "transport_and_mobility",
+    "industry_and_manufacturing"
   ],
   "provenance_tags": [
     "eu_institution_authored",
@@ -82,5 +71,86 @@
       "content_hash": "10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50",
       "archived_path": null
     }
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+      "meaning": "Establishes 2026-05-19 as the publication date of the shared consultation work and this separately supplied Annex I systems section."
+    },
+    "publication_date": {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+      "meaning": "Establishes official Commission publication of this section on 2026-05-19, not formal adoption of a numbered communication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF pages 2-4, including printed page 3 paragraph 23, address Article 6(1) and AI Act Annex I high-risk systems.",
+      "rationale": "The section directly interprets AI Act high-risk classification."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF page 4 / printed page 3, paragraph 23 lists regulated product categories spanning multiple sectors.",
+      "rationale": "The Article 6(1) framework applies horizontally across multiple product sectors."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF page 4 / printed page 3, paragraph 23: medical devices and in vitro diagnostic medical devices.",
+      "rationale": "The body expressly covers regulated medical products."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF page 4 / printed page 3, paragraph 23: automotive and aviation products.",
+      "rationale": "The body expressly covers transport product categories."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF page 4 / printed page 3, paragraph 23: machinery and industrial equipment.",
+      "rationale": "The body expressly covers machinery and industrial equipment."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF page 1 cover carries the European Commission masthead.",
+      "rationale": "The exact section is authored by the European Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Official library publication dated 19 May 2026 presents the Annex I systems download as a section of the draft consultation guidelines.",
+      "rationale": "The Commission issued the section for the targeted consultation."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Official library Publication 19 May 2026 and Downloads 1-3.",
+      "rationale": "The Commission library officially publishes this section."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "commission-newsroom-128560-pdf",
+    "locator": "PDF pages 1-2 identify the section as draft guidelines and include the consultation draft disclaimer.",
+    "meaning": "Supports the retained draft version and non-binding status without inferring a reference or adoption from cover placeholders."
+  },
+  "historical_review_status": "verified"
 }
