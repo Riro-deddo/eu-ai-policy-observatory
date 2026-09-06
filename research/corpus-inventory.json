@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-09-06T02:24:52Z",
+  "generated_at": "2026-09-06T21:03:47Z",
   "candidates": [
+    {
+      "id": "draft-high-risk-classification-guidelines-consultation-work-2026",
+      "source_ids": ["commission-consultation-high-risk"],
+      "official_reference": null,
+      "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems",
+      "year": 2026,
+      "issuing_institution": "European Commission",
+      "record_level": "principal",
+      "version_label": "Consultation draft — Complete work",
+      "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": ["general_cross_sector", "health", "employment_and_labour", "migration_asylum_and_border_management", "financial_services", "transport_and_mobility", "law_enforcement", "justice", "education", "public_administration", "industry_and_manufacturing", "critical_infrastructure"],
+      "discovered_at": "2026-09-06T21:03:47Z",
+      "decision": "included",
+      "decision_reason": "Retrospective inventory reconciliation, not a new document admission or a reconstructed search. The complete consultation work was admitted and reviewed at 2026-09-06T17:05:16Z in research/migrations/2026-09-06-six-record-evidence-update.json. That ledger and the existing canonical record establish the work identity, three official sections and publication on 19 May 2026. The discovered_at and reviewed_at values here date the identification and reconciliation of the missing inventory entry, not the original source retrieval or admission. No prior candidate decision is invented and the publication cutoff is unchanged.",
+      "document_id": "draft-high-risk-classification-guidelines-consultation-work-2026",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:03:47Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
     {
       "id": "artificial-intelligence-for-europe",
       "source_ids": [

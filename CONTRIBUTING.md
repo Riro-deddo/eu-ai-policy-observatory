@@ -20,7 +20,11 @@ Use official, evidenced sources for official metadata, dates, identifiers, insti
 
 Keep official metadata separate from researcher analysis. Corpus assessments, concepts and policy classifications are analytical and must not be written as though an EU institution supplied them. Every analytical relationship requires a clear English rationale, an official evidence source and an explicit analytical basis. Official relationships also require their supporting official evidence source.
 
-Add a document snapshot only for bytes actually retrieved from an official source. Its SHA-256 must be calculated from those bytes. Do not fabricate hashes, commit full policy text or use snapshots to conflate distinct legal documents.
+Add a document snapshot only for bytes actually retrieved from an official source, except for the explicitly approved [Opinion 15 institutional-archive supplement](docs/data-dictionary.md#approved-opinion-15-preserved-original-supplement). Its SHA-256 must be calculated from those bytes. Follow the existing evidence-retention policy; do not introduce unrelated full-text copies, fabricate hashes or use snapshots to conflate distinct legal documents.
+
+Every published document must have an `included` candidate decision linking to its canonical ID. An admission discovered to be missing from the inventory is reconciled explicitly at the actual reconciliation time, citing its existing admission evidence; do not invent an earlier discovery or review event. The repository-level admission test enforces this traceability requirement in CI.
+
+Record human review or release approval only when it actually occurs, with its scope and real timestamp. Public reviewer credit must not overwrite the recorded evidence-review actor or be treated as a separately timestamped personal sign-off. Missing search logs and unknown annotation states must remain explicit; do not infer completed searches or negative concept/sector findings from missing values.
 
 ## Schema and vocabulary changes
 

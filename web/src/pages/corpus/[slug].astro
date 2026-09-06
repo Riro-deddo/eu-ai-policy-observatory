@@ -328,9 +328,13 @@ const hasOfficialIdentifiers = [document.celex, document.eli, document.oj_refere
       {assessment === null ? <p>Research assessment verification has not been assigned.</p> : (
         <dl>
           <dt>Reviewed by</dt><dd>Yichen Hao</dd>
-          <dt>Verification date</dt><dd>{assessment.reviewed_at}</dd>
+          <dt>Evidence review date</dt><dd>{assessment.reviewed_at}</dd>
         </dl>
       )}
+      <p>
+        The evidence review date is not a separate human sign-off date.
+        <a href={`${base}methodology/#review-attribution`}>Review credit and evidence-review actions</a>
+      </p>
       <ul>
         {document.sources.map((source) => <li>Last verified: {source.last_verified_at} · {source.verification_note}</li>)}
       </ul>

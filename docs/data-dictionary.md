@@ -40,8 +40,8 @@ Canonical records are UTF-8 JSON objects, one record per file. `Required` means 
 | `document_date` | ISO calendar date | Yes | Official | Date of the particular document text or formal version. Generated coverage and chronology use this date. |
 | `version_label` | string or `null` | Yes | Official | Human-readable official version or stage label where one exists. Used in the composite identity after whitespace normalisation and case-folding. |
 | `version_status` | string | Yes | Analytical | `draft`, `revised`, `final`, `consolidated`, `not_applicable`. This describes the represented text, not its editorial publication state. |
-| `publication_date` | ISO calendar date | Yes | Official | Official publication or release date. It may differ from `document_date`; retained for source fidelity and compatibility. |
-| `legal_status` | string | Yes | Official | `non_binding`, `proposed`, `adopted`, `in_force`, `withdrawn`, `superseded`. |
+| `publication_date` | ISO calendar date or qualified `null` | Yes | Official | Official publication or release date, distinct from `document_date`. An explicitly qualified retained record may use `null` when public-release evidence is unresolved; see Methodology. Fully verified records still require exact dates. |
+| `legal_status` | string | Yes | Official | `non_binding`, `proposed`, `adopted`, `in_force`, `withdrawn`, `superseded`, `no_longer_in_force`, `repealed`, `expired`. |
 | `celex` | string or `null` | No | Official | Unique when non-null; only where assigned. |
 | `eli` | string or `null` | No | Official | Unique when non-null; only where assigned. |
 | `language` | string | Yes | Official | Exactly `en`. |
@@ -84,13 +84,15 @@ The three status fields answer different questions and must not be treated as sy
 | --- | --- | --- |
 | `publication_status` | May this repository entity enter generated public outputs? | Editorial state: `draft`, `pending_review`, `verified` or `published`. Only `published` is exported. |
 | `version_status` | What kind of text or manifestation does this document record represent? | `draft`, `revised`, `final`, `consolidated` or `not_applicable`. A formally published draft can therefore have `publication_status: published` and `version_status: draft`. |
-| `legal_status` | What is the instrument’s legal or procedural standing? | `non_binding`, `proposed`, `adopted`, `in_force`, `withdrawn` or `superseded`. Adoption or entry into force is not the corpus inclusion threshold. |
+| `legal_status` | What is the instrument’s legal or procedural standing? | `non_binding`, `proposed`, `adopted`, `in_force`, `withdrawn`, `superseded`, `no_longer_in_force`, `repealed` or `expired`. Adoption or entry into force is not the corpus inclusion threshold. |
 
 Formal publication by an official EU source, rather than adoption or entry into force, is the inclusion threshold. This permits officially published proposals, consultations, drafts and non-binding instruments when they otherwise satisfy the documented scope and evidence requirements.
 
 ### Sector tags
 
 Sector tags are researcher classifications of substantive subject matter, not official EU metadata. Every canonical document has at least one value.
+
+Tags record positive classifications, not an exhaustive assessment of every possible sector. `general_cross_sector` does not automatically assign other sector tags. Empty concept or policy lists mean no assignment is recorded; they do not establish that a concept or policy connection is absent. No concept-coding completion or inter-coder reliability claim follows from `historical_review_status: verified`.
 
 | Value | Meaning |
 | --- | --- |

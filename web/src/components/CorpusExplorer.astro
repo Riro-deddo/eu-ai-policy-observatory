@@ -51,6 +51,10 @@ const policies = [...new Map(
     <p class="section-kicker">Published corpus</p>
     <h1 id="corpus-heading">Browse policy documents</h1>
     <p>Search official records and apply research classifications without leaving the page.</p>
+    <p role="note" aria-label="Annotation coverage">
+      Filters show recorded classifications, not a completed coding study. An unassigned tag is not evidence of absence.
+      <a href={`${base}methodology/#annotation-coverage`}>Annotation coverage and limits</a>
+    </p>
   </div>
 
   <form class="corpus-filters" data-corpus-filters method="get" action={`${base}corpus/`}>

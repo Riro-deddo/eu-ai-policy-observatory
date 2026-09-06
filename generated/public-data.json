@@ -55,7 +55,7 @@
     },
     "inventory": {
       "excluded": 10,
-      "included": 186,
+      "included": 187,
       "merged": 18,
       "pending": 12
     },
@@ -14247,7 +14247,7 @@
       "official_reference": "84/130/EEC",
       "official_summary": null,
       "official_title": "84/130/EEC: Council Decision of 28 February 1984 concerning a European programme for research and development in information technologies (ESPRIT)",
-      "oj_reference": null,
+      "oj_reference": "OJ L 67, 9.3.1984, pp. 54–59",
       "policies": [],
       "procedure_references": [],
       "provenance_tags": [
@@ -14281,7 +14281,7 @@
         }
       ],
       "temporal_collection": "historical_lineage",
-      "updated_at": "2026-09-05T11:54:18Z",
+      "updated_at": "2026-09-06T21:03:47Z",
       "version_label": "Official Journal text",
       "version_status": "final"
     },
@@ -39217,7 +39217,7 @@
       "updated_at": "2026-09-03T00:00:00Z"
     }
   ],
-  "generated_at": "2026-09-06T20:00:00Z",
+  "generated_at": "2026-09-06T21:03:47Z",
   "institutions": [
     {
       "created_at": "2026-09-05T10:53:00Z",
