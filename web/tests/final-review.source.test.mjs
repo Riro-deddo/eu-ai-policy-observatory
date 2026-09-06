@@ -70,9 +70,9 @@ test('public pages no longer describe the active corpus as the seven-document 20
   assert.doesNotMatch(publicCopy, /seven (?:reviewed, published )?documents/i);
 });
 
-test('Methodology separates implemented corpus work from the planned LLM protocol', () => {
+test('Methodology documents corpus work without publishing the future research protocol', () => {
   assert.match(methodology, /Current corpus method/);
-  assert.match(methodology, /Planned LLM comparison protocol/);
+  assert.doesNotMatch(methodology, /Planned LLM comparison protocol|future-research|A future study will compare/);
   assert.match(methodology, /not all EU digital law/);
   assert.match(methodology, /included[\s\S]*merged[\s\S]*excluded[\s\S]*pending/);
 });
