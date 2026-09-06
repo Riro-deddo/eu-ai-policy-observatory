@@ -1,0 +1,13 @@
+{
+  "id": "ai-standardisation-request-c-2023-3215-repeal-decision",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T18:08:02Z",
+  "updated_at": "2026-09-06T18:08:02Z",
+  "source_type": "official_pdf",
+  "url": "https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-06T17:09:28.281612+01:00",
+  "last_verified_at": "2026-09-06T18:08:02Z",
+  "verification_note": "C(2025) 3871 final PDF p. 7, Article 4 expressly repeals C(2023) 3215. It does not establish an exact notification or operative repeal date. Article 5 literally refers to C(2019) 4281 in its version of 22 May 2023; that anomaly is preserved and is not silently corrected. Retained PDF SHA-256: 617f68127736552ac968804dc2e7dd2293b0bb569fa38ab65cb5b3a0c5178384."
+}

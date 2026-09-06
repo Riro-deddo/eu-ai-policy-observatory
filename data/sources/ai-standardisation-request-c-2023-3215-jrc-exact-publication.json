@@ -1,0 +1,13 @@
+{
+  "id": "ai-standardisation-request-c-2023-3215-jrc-exact-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T18:08:02Z",
+  "updated_at": "2026-09-06T18:08:02Z",
+  "source_type": "official_pdf",
+  "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC134461/JRC134461_01.pdf",
+  "publisher": "European Commission, Joint Research Centre",
+  "retrieved_at": "2026-09-06T17:29:52.50302+01:00",
+  "last_verified_at": "2026-09-06T18:08:02Z",
+  "verification_note": "Corrective exact-date evidence: JRC134461 PDF p. 6 / printed p. 3 states that the European Commission standardisation request was published on 22 May 2023. PDF pp. 8 and 16 / printed pp. 5 and 13 identify the request as C(2023) 3215 final. This corrects, without rewriting, the retained earlier month-only source assessment. Retained PDF SHA-256: 3e322888198bf1c22b69cee815ac67d2ac27ea65724603b394b6d5a900006a67."
+}

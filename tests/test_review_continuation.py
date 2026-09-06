@@ -15,6 +15,7 @@ LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
 EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 SIX_RECORD_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
+SEVEN_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-seven-evidence-admissions.json"
 
 
 @pytest.fixture(scope="module")
@@ -62,14 +63,6 @@ def test_later_official_guideline_manifestations_keep_issue_and_publication_dist
 
 def test_transparency_route_represents_the_evidenced_draft_annex(public_payload):
     documents = {d["id"]: d for d in public_payload["documents"]}
-    corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
-    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
-    six_record_update = json.loads(SIX_RECORD_LEDGER_PATH.read_text(encoding="utf-8"))
-    later_upgrades = (
-        set(corrections["upgraded_ids"])
-        | set(four_admissions["upgraded_ids"])
-        | set(six_record_update["upgraded_existing_ids"])
-    )
     annex = documents["final-transparency-guidelines-2026"]
     assert annex["historical_review_status"] == "verified"
     assert annex["record_level"] == "attachment"
@@ -117,10 +110,12 @@ def test_continuation_accounts_for_every_starting_record_once(public_payload):
     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     six_record_update = json.loads(SIX_RECORD_LEDGER_PATH.read_text(encoding="utf-8"))
+    seven_admissions = json.loads(SEVEN_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     later_upgrades = (
         set(corrections["upgraded_ids"])
         | set(four_admissions["upgraded_ids"])
         | set(six_record_update["upgraded_existing_ids"])
+        | set(seven_admissions["upgraded_ids"])
     )
     for document_id in upgraded:
         assert documents[document_id]["historical_review_status"] == "verified"

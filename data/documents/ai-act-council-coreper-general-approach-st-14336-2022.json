@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T18:29:19Z",
   "slug": "ai-act-council-coreper-general-approach-st-14336-2022",
   "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – General approach",
   "short_title": "Coreper general-approach text",
@@ -17,7 +17,7 @@
   "document_date": "2022-11-11",
   "version_label": "Coreper general-approach text",
   "version_status": "revised",
-  "publication_date": "2022-11-11",
+  "publication_date": "2024-10-28",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -26,7 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "council-st-14336-2022",
+      "evidence_locator": "PDF p. 1 Council masthead; section III paragraphs 1-2 attribute substantive preparation to the Czech Presidency. The Council association represents the Presidency acting within the Council, without implying Council adoption."
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council",
+      "role": "cover_note_sender",
+      "evidence_source_id": "council-st-14336-2022",
+      "evidence_locator": "PDF p. 1 cover: From General Secretariat of the Council to Permanent Representatives Committee."
     }
   ],
   "policy_ids": [
@@ -40,13 +48,14 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-st-14336-2022"
+    "council-st-14336-2022",
+    "council-st-15322-2024-annex-6-disclosure"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "negotiation",
     "inclusion_rationale": "Coreper text forming the immediate basis for Council's general approach.",
-    "researcher_notes": "Official cover metadata identifies changes against ST 13955/22.",
+    "researcher_notes": "The Czech Presidency, acting within the Council, is the substantive drafter; the Council author association represents that Presidency origin and does not imply Council adoption. The General Secretariat is separately recorded as cover-note sender and Coreper is the recipient. Section VI invites Coreper agreement and a recommendation that the Council reach a general approach; this is not an already adopted Council position. The issue date remains 11 November 2022. Annex 6 of ST 15322/24 documents later disclosure on 28 October 2024, not first-ever publication.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -57,5 +66,60 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-st-14336-2022",
+      "locator": "PDF p. 1 cover: Brussels, 11 November 2022; ST 14336/22.",
+      "meaning": "The official PDF establishes the issue date of this exact Council note."
+    },
+    "publication_date": {
+      "source_id": "council-st-15322-2024-annex-6-disclosure",
+      "locator": "Annex 6 reply dated 28 October 2024; PDF p. 9 lists ST 14336/22 and p. 11 states that all listed documents are available in the public register and enclosed.",
+      "meaning": "The Council reply establishes documented later disclosure/public access on 2024-10-28, not first-ever publication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-st-14336-2022",
+      "locator": "PDF section III paragraphs 1-2, section V paragraph 2, section VI and Annex.",
+      "rationale": "The note and annex directly revise the proposed Artificial Intelligence Act for consideration by Coreper."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-st-14336-2022",
+      "locator": "PDF subject and Annex setting out harmonised rules on artificial intelligence.",
+      "rationale": "The proposal is a horizontal AI framework rather than a single-sector instrument."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-st-14336-2022",
+      "locator": "PDF p. 1 Council masthead and section III attributing preparation to the Czech Presidency.",
+      "rationale": "The official Council note identifies the Presidency's substantive preparation and the Secretariat transmission separately."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-st-15322-2024-annex-6-disclosure",
+      "locator": "Annex 6, PDF pp. 9 and 11: exact identifier listing and public-register/enclosure statement.",
+      "rationale": "The Council's dated access reply documents official public access to the exact record."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Presidency of the Council of the European Union",
+      "affiliation": "Czech Presidency",
+      "evidence_source_id": "council-st-14336-2022",
+      "evidence_locator": "PDF section III paragraphs 1-2 attributes preparation of the final compromise to the Czech Presidency."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

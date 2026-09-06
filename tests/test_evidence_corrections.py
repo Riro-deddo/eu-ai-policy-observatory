@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 SIX_RECORD_LEDGER = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
+SEVEN_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-seven-evidence-admissions.json"
 
 EXPECTED_PUBLICATIONS = {
     "ai-act-council-general-approach-st-15698-2022": ("2022-12-06", "fd86e2b0-758c-11ed-9887-01aa75ed71a1"),
@@ -106,6 +107,7 @@ def test_ledger_preserves_routes_and_retains_unadmitted_holds(payload):
     assert hashlib.sha256(proof_lf_bytes).hexdigest() == preservation["comparison_artifact_sha256_lf"]
     later_upgrades = set(json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
     later_upgrades.update(six_record_update["upgraded_existing_ids"])
+    later_upgrades.update(json.loads(SEVEN_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
     for row in ledger["dispositions"]:
         expected = (
             "verified"

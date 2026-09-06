@@ -1,0 +1,231 @@
+{
+  "migration_date": "2026-09-06",
+  "reviewed_at": "2026-09-06T18:08:02Z",
+  "amended_at": "2026-09-06T18:29:19Z",
+  "scope": "Seven evidence-complete corrections and admissions from the twelve-record final review",
+  "publication_cutoff": "2026-09-04",
+  "before_counts": {
+    "total": 187,
+    "verified": 175,
+    "legacy_review_pending": 12
+  },
+  "after_counts": {
+    "total": 187,
+    "verified": 182,
+    "legacy_review_pending": 5
+  },
+  "published_relationship_counts": {
+    "before": 114,
+    "after": 114,
+    "explanation": "One unsupported INIT-to-ST 11124 edge was retained as pending and therefore left the public export; one separately evidenced REV 1-to-ST 11124 edge entered it."
+  },
+  "approved_snapshot": {
+    "path": "../evidence-seven-admissions-20260906/before.zip",
+    "sha256": "3695a591e20bdbde72d5c985bed6eeb3298197c698092119dcf578be89032faa",
+    "file_count": 919,
+    "document_count": 187,
+    "meaning": "The controller-created byte archive of the approved dirty checkout, not old Git HEAD, is the preservation baseline for this batch."
+  },
+  "prior_ledgers": [
+    {
+      "path": "research/migrations/2026-09-05-expanded-evidence-review.json",
+      "sha256": "9376ded38fafa1ab33a98f5349336e746cd91803dddca69029bb8e96abe92437"
+    },
+    {
+      "path": "research/migrations/2026-09-05-remaining-evidence-review.json",
+      "sha256": "bca28661d171ab5af3b3669352c26d1de96dc7fa504aaafafb04c3fc39538985"
+    },
+    {
+      "path": "research/migrations/2026-09-05-review-continuation.json",
+      "sha256": "8ae74d6013f4e1909d1db8ce30bd0417f221dc490520189e0edb5bb8efcb5713"
+    },
+    {
+      "path": "research/migrations/2026-09-06-evidence-corrections.json",
+      "sha256": "9e4bbfdcff004b23aefcefbe6e680e8e5bd6408bb28c255443d32043899dd20e"
+    },
+    {
+      "path": "research/migrations/2026-09-06-four-evidence-admissions.json",
+      "sha256": "28e4485a7abafb478e77aff11236711f504491081cdfd609bb0e6eb2efa23f69"
+    },
+    {
+      "path": "research/migrations/2026-09-06-six-record-evidence-update.json",
+      "sha256": "7191f8670ad149e1cb1902885a08a45e0e82a9a684a3289c9d7f588da71271f0"
+    }
+  ],
+  "upgraded_ids": [
+    "ai-act-council-coreper-general-approach-st-14336-2022",
+    "ai-act-council-final-compromise-st-13955-2022",
+    "ai-act-council-fourth-compromise-st-13102-2022",
+    "ai-act-council-second-compromise-st-11124-2022",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+    "ai-act-council-third-compromise-part-two-st-12549-2022",
+    "ai-standardisation-request-c-2023-3215"
+  ],
+  "retained_ids": [
+    "ai-act-council-first-consolidated-compromise-st-10069-2022",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025",
+    "standardisation-request-c-2025-3871"
+  ],
+  "source_receipts": [
+    {
+      "source_id": "council-st-15322-2024-annex-6-disclosure",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-15322-2024-INIT/en/pdf",
+      "retrieved_at": "2026-09-06T17:55:02.474265+00:00",
+      "sha256": "26ddbc6149f85bd12fa956fd9dafa2d0e5bc6bccfea3a64423a52a07ce88d17a",
+      "locator": "Annex 6, PDF pp. 9 and 11",
+      "meaning": "The reply dated 28 October 2024 individually lists the six admitted Council versions and states that all listed documents are available in the public register and enclosed; this is later disclosure, not first-ever publication."
+    },
+    {
+      "source_id": "council-register-st-12206-2022-versions",
+      "url": "https://skribi.consilium.europa.eu/en/documents/public-register/public-register-search/?OnlyPublicDocuments=true&DocumentNumber=12206%2F22",
+      "retrieved_at": "2026-09-06T17:16:31.012522+01:00",
+      "sha256": "99d365e2f183b1f49a88c8887a893e6603d07f2faaffa0f3cb4482c061905fca",
+      "locator": "Separate ST 12206 2022 INIT and ST 12206 2022 REV 1 result rows",
+      "meaning": "Supports the REV 1-to-INIT version edge but does not resolve the held INIT manifestation conflict."
+    },
+    {
+      "source_id": "ai-standardisation-request-c-2023-3215-jrc-exact-publication",
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC134461/JRC134461_01.pdf",
+      "retrieved_at": "2026-09-06T17:29:52.50302+01:00",
+      "sha256": "3e322888198bf1c22b69cee815ac67d2ac27ea65724603b394b6d5a900006a67",
+      "locator": "PDF p. 6 / printed p. 3; identity cross-check at PDF pp. 8 and 16 / printed pp. 5 and 13",
+      "meaning": "Explicitly dates publication to 22 May 2023 and links the request to C(2023) 3215 final; this corrects but does not overwrite the retained month-only assessment."
+    },
+    {
+      "source_id": "ai-standardisation-request-c-2023-3215-repeal-decision",
+      "url": "https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818",
+      "retrieved_at": "2026-09-06T17:09:28.281612+01:00",
+      "sha256": "617f68127736552ac968804dc2e7dd2293b0bb569fa38ab65cb5b3a0c5178384",
+      "locator": "PDF p. 7, Article 4",
+      "meaning": "Expressly repeals C(2023) 3215 without establishing an exact operative repeal day; Article 5's literal C(2019) 4281 anomaly remains uncorrected."
+    }
+  ],
+  "admissions": [
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "document_date": "2022-07-15",
+      "publication_date": "2024-10-28",
+      "role_evidence": "Original PDF cover and introduction: Czech Presidency substantive preparation and Presidency-to-Delegations transmission.",
+      "relationship_evidence": "Original PDF identifies ST 10069/22 as predecessor; REV 1 introduction paragraph 7 separately supports the later REV 1-to-ST 11124 edge.",
+      "corrected_fields": ["publication_date", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "historical_review_status"]
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "document_date": "2022-09-16",
+      "publication_date": "2024-10-28",
+      "role_evidence": "Original PDF cover and introduction paragraphs 5-7: Czech Presidency substantive preparation and Presidency-to-Delegations transmission.",
+      "relationship_evidence": "The official register supports the REV 1-to-INIT designation; original PDF paragraph 7 identifies changes from ST 11124/22.",
+      "corrected_fields": ["publication_date", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "historical_review_status"]
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "document_date": "2022-09-23",
+      "publication_date": "2024-10-28",
+      "role_evidence": "Original PDF cover and introduction: Czech Presidency substantive preparation and Presidency-to-Delegations transmission.",
+      "relationship_evidence": "The original cover names ST 12206/1/22 REV 1 as predecessor; its inconsistency with the held INIT history is retained rather than inferred away.",
+      "corrected_fields": ["publication_date", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "historical_review_status"]
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "document_date": "2022-10-19",
+      "publication_date": "2024-10-28",
+      "role_evidence": "Original PDF cover and section I paragraphs 3-5: Czech Presidency substantive preparation and Presidency-to-Delegations transmission.",
+      "relationship_evidence": "The original note names ST 12549/22 as predecessor; the planned working-party presentation is not a publication event.",
+      "corrected_fields": ["publication_date", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "historical_review_status"]
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "document_date": "2022-11-03",
+      "publication_date": "2024-10-28",
+      "role_evidence": "Original PDF cover and section I paragraphs 3-5: Czech Presidency substantive preparation and Presidency-to-Delegations transmission.",
+      "relationship_evidence": "The original note identifies changes from ST 13102/22; 'final version' remains a non-binding negotiation label.",
+      "corrected_fields": ["publication_date", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "historical_review_status"]
+    },
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "document_date": "2022-11-11",
+      "publication_date": "2024-10-28",
+      "role_evidence": "Original PDF cover and section III: Czech Presidency substantive preparation, General Secretariat cover-note sender and Coreper recipient.",
+      "relationship_evidence": "The original note identifies changes from ST 13955/22 and invites approval; it is not an already adopted Council position.",
+      "corrected_fields": ["publication_date", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "historical_review_status"]
+    },
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "document_date": "2023-05-22",
+      "publication_date": "2023-05-22",
+      "legal_status": "repealed",
+      "role_evidence": "Commission register identifies the final Commission Implementing Decision and its date; Commission author and adopter roles are separately recorded, while CEN and CENELEC remain described as addressees.",
+      "corrected_fields": ["legal_status", "institution_roles", "source_ids", "corpus_assessment.researcher_notes", "temporal_collection", "relevance_class", "document_date_kind", "date_evidence", "classification_evidence", "bibliographic_authors", "additional_dates", "legal_status_evidence", "historical_review_status"]
+    }
+  ],
+  "relationship_corrections": [
+    {
+      "relationship_id": "ai-act-council-third-part-one-revises-second",
+      "disposition": "retained_pending",
+      "reason": "The current INIT PDF bytes cannot support the claimed historical 7 September INIT identity or INIT-to-ST 11124 edge."
+    },
+    {
+      "relationship_id": "ai-act-council-third-part-one-rev-1-revises-second",
+      "disposition": "published_new",
+      "reason": "REV 1 introduction paragraph 7 explicitly identifies changes from the second compromise ST 11124/22."
+    },
+    {
+      "relationship_id": "ai-act-council-third-part-one-rev-1-revises-init",
+      "disposition": "citation_corrected",
+      "reason": "The evidence citation now resolves to the official register's separate INIT and REV 1 rows rather than relying on the REV 1 content PDF for a register-derived claim."
+    }
+  ],
+  "review_corrections": [
+    {
+      "review_round": 1,
+      "corrected_at": "2026-09-06T18:29:19Z",
+      "trigger": "Task review found that public institutional facets omitted the Council association for the six Presidency texts.",
+      "affected_document_ids": [
+        "ai-act-council-coreper-general-approach-st-14336-2022",
+        "ai-act-council-final-compromise-st-13955-2022",
+        "ai-act-council-fourth-compromise-st-13102-2022",
+        "ai-act-council-second-compromise-st-11124-2022",
+        "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+        "ai-act-council-third-compromise-part-two-st-12549-2022"
+      ],
+      "correction": "Added the schema-existing council-of-the-european-union author association under the established Presidency-originator convention, using each original document's Presidency preparation evidence. The association represents the Presidency acting within the Council and does not imply Council adoption.",
+      "preserved_distinctions": "The corporate Presidency remains the precise bibliographic author; ST 14336 alone retains the General Secretariat as cover-note sender; delegations and Coreper remain prose-described recipients and are not mislabelled as institutional authors or senders."
+    }
+  ],
+  "limitations": [
+    "The Council publication dates are qualified later-disclosure dates, not claims of first-ever release.",
+    "ST 10069/22 remains held because the disclosure reply's July-December 2022 scope excludes its June issue and no qualifying dated manifestation was recovered.",
+    "ST 12206/22 INIT remains held because the official register identity conflicts with the current INIT URL bytes; no historical INIT manifestation is inferred.",
+    "C(2025) 3871 remains held because adoption, transmission, eNorm ingestion and later references do not establish an exact publication day.",
+    "The two July 2025 GPAI training records remain held because their original manifestations and required approval-parent chain are unresolved.",
+    "No exact operative repeal day for C(2023) 3215 is recorded; eNorm expiration is not substituted.",
+    "Reviewer attribution on all existing records remains unchanged."
+  ],
+  "validation": {
+    "focused_red": "9 failed in 1.46s before canonical data changes",
+    "focused_green": "9 passed in 1.39s",
+    "focused_compatibility": "14 passed in 3.04s",
+    "candidate_readiness_issues": 0,
+    "publication_issues": 0,
+    "full_python": "Pre-review batch run: 457 passed, 1 skipped in 89.37s; controller will rerun after review corrections as instructed",
+    "round_one_review_fix": {
+      "focused_red": "1 failed, 9 passed in 1.47s before the institutional-role correction",
+      "focused_green": "10 passed in 1.74s",
+      "focused_compatibility": "15 passed in 2.73s"
+    },
+    "english_guard": "Passed; no non-Latin-script letters in Git-tracked text or path names; manual English review remains required",
+    "isolated_pipeline": {
+      "output_root": "C:/Users/ROG/AppData/Local/Temp/q7-pipe-b406098b",
+      "documents": 187,
+      "verified": 182,
+      "legacy_review_pending": 5,
+      "published_relationships": 114,
+      "canonical_relationship_records": 115,
+      "sqlite_integrity": "ok",
+      "foreign_key_issues": 0
+    },
+    "independent_snapshot_review": "Controller comparison passed: exact seven upgrades, 187/182/5 totals, all 180 other document bytes and reviewer credits unchanged, routes unchanged, prior sources/ledgers/code/schema preserved, and changed/new text passed the English script guard."
+  }
+}

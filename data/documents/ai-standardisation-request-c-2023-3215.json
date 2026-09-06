@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-06T17:05:16Z",
+  "updated_at": "2026-09-06T18:08:02Z",
   "slug": "ai-standardisation-request-c-2023-3215",
   "official_title": "Commission Implementing Decision of 22.5.2023 on a standardisation request to the European Committee for Standardisation and the European Committee for Electrotechnical Standardisation in support of Union policy on artificial intelligence",
   "short_title": "AI standardisation request M/593",
@@ -16,7 +16,7 @@
   "version_label": "Final",
   "version_status": "final",
   "publication_date": "2023-05-22",
-  "legal_status": "adopted",
+  "legal_status": "repealed",
   "celex": null,
   "eli": null,
   "language": "en",
@@ -24,7 +24,15 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "adopter"
+      "role": "author",
+      "evidence_source_id": "ai-standardisation-request-c-2023-3215-register",
+      "evidence_locator": "Register detail for C(2023) 3215 final: Commission Implementing Decision on a standardisation request in support of Union policy on artificial intelligence."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "adopter",
+      "evidence_source_id": "ai-standardisation-request-c-2023-3215-register",
+      "evidence_locator": "Register detail identifies the final Commission Implementing Decision dated 22 May 2023."
     }
   ],
   "policy_ids": [
@@ -39,13 +47,15 @@
   ],
   "source_ids": [
     "ai-standardisation-request-c-2023-3215-register",
-    "ai-standardisation-request-c-2023-3215-jrc-publication-month"
+    "ai-standardisation-request-c-2023-3215-jrc-publication-month",
+    "ai-standardisation-request-c-2023-3215-jrc-exact-publication",
+    "ai-standardisation-request-c-2023-3215-repeal-decision"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Original Commission standardisation request supporting technical standards for the emerging AI Act framework.",
-    "researcher_notes": "The register identifies the decision and annexed request as M/593; implementation-stage classification is analytical. 2026-09-06 evidence update — Limited publication-month evidence only: JRC134461 PDF page 8 / printed page 5 says the request was published in May 2023, and PDF page 16 / printed page 13 identifies C(2023) 3215 final. This is not an exact day and does not verify the existing 22 May adoption date as publication. Article 4 of C(2025) 3871 supplies the previously evidenced repeal finding, but the operative repeal date and complete admission remain unresolved. The legacy record stays pending; no partial month-precision or legal-status extension is added.",
+    "researcher_notes": "The Commission register establishes the decision's 22 May 2023 issue date and identifies the attached request as M/593. The corrective JRC134461 locator at PDF p. 6 / printed p. 3 explicitly says the request was published on 22 May 2023; PDF pp. 8 and 16 link that account to C(2023) 3215 final. This corrects the retained prior month-only assessment without rewriting it. Article 4 of C(2025) 3871 expressly repeals C(2023) 3215, so the current status is repealed; no exact operative repeal date is inferred from eNorm expiration or the later decision's adoption date. Article 5's literal C(2019) 4281 reference is preserved as an anomaly, not silently corrected. CEN and CENELEC are addressees, while Commission authorship and adoption are recorded separately.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -56,5 +66,58 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-standardisation-request-c-2023-3215-register",
+      "locator": "Commission register detail: C(2023) 3215 final, Date 22/05/2023.",
+      "meaning": "The official register establishes 2023-05-22 as the date of this final Commission Implementing Decision."
+    },
+    "publication_date": {
+      "source_id": "ai-standardisation-request-c-2023-3215-jrc-exact-publication",
+      "locator": "JRC134461 PDF p. 6 / printed p. 3; exact-reference cross-check at PDF pp. 8 and 16 / printed pp. 5 and 13.",
+      "meaning": "The JRC report explicitly states that the Commission standardisation request was published on 2023-05-22 and links the account to C(2023) 3215 final."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-standardisation-request-c-2023-3215-register",
+      "locator": "Register title and attached request M/593: standardisation in support of Union policy on artificial intelligence.",
+      "rationale": "The decision directly requests standards for the emerging AI regulatory framework."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-standardisation-request-c-2023-3215-register",
+      "locator": "Register title and attached M/593 request address Union policy on artificial intelligence without a single-sector limitation.",
+      "rationale": "The requested standards support the horizontal AI framework across sectors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-standardisation-request-c-2023-3215-register",
+      "locator": "Register detail identifies a final European Commission Implementing Decision.",
+      "rationale": "The request is adopted and issued by the European Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-standardisation-request-c-2023-3215-jrc-exact-publication",
+      "locator": "JRC134461 PDF p. 6 / printed p. 3 states publication on 22 May 2023; PDF pp. 8 and 16 identify C(2023) 3215 final.",
+      "rationale": "The official JRC report explicitly dates publication of the exact identified request."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ai-standardisation-request-c-2023-3215-repeal-decision",
+    "locator": "C(2025) 3871 final, PDF p. 7, Article 4.",
+    "meaning": "Article 4 expressly repeals C(2023) 3215 and establishes its current repealed status, but it does not establish an exact repeal date."
+  },
+  "historical_review_status": "verified"
 }
