@@ -1,0 +1,16 @@
+{
+  "id": "hleg-sectoral-considerations-based-on-policy-investment-recommendations",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "source_entity_type": "document",
+  "source_entity_id": "hleg-sectoral-considerations-2020",
+  "target_entity_type": "document",
+  "target_entity_id": "hleg-policy-investment-recommendations-2019",
+  "relationship_type": "based_on",
+  "basis": "official",
+  "rationale": "Printed pp.3-4 explicitly describe applying the 2019 recommendations in sector workshops; this is a separate deliverable, not a replacement version.",
+  "evidence_source_id": "hleg-sectoral-considerations-2020-pdf",
+  "verification_status": "verified"
+}

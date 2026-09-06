@@ -1,0 +1,135 @@
+{
+  "id": "historical-com-2017-228-dsm-mid-term-review",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "slug": "historical-com-2017-228-dsm-mid-term-review",
+  "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions on the Mid-Term Review on the implementation of the Digital Single Market Strategy: A Connected Digital Single Market for All",
+  "short_title": "Digital Single Market Strategy mid-term review",
+  "document_type": "communication",
+  "sector_tags": [
+    "general_cross_sector",
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "COM(2017) 228 final",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2017-05-10",
+  "document_date_kind": "document_issue",
+  "version_label": "Final published text",
+  "version_status": "final",
+  "publication_date": "2017-05-10",
+  "legal_status": "non_binding",
+  "celex": "52017DC0228",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author",
+      "evidence_source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "evidence_locator": "Commission title block"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "publisher",
+      "evidence_source_id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+      "evidence_locator": "Publication record and opening announcement"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "evidence_locator": "EUR-Lex English manifestation"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+    "historical-com-2017-228-dsm-mid-term-review-publication-evidence"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Substantive AI policy content verified in the cited primary English text.",
+    "researcher_notes": "Editorial classifications are AI-assisted assessments, separate from official metadata. Publication corroboration is official indexed English text; the Commission page directly returned 429. This limitation is recorded, not represented as a full-page retrieval.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:45:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "locator": "Title block: Brussels, 10.5.2017",
+      "meaning": "Communication issue date."
+    },
+    "publication_date": {
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+      "locator": "Publication 10 May 2017; opening paragraph",
+      "meaning": "Same-day announcement explicitly says review has been published."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+      "rationale": "Dedicated AI investment and capacity policy."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+      "rationale": "AI impacts across several fields are materially considered."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+      "rationale": "AI research funding and scientific capacity are addressed."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+      "rationale": "Industrial AI capabilities and manufacturing competitiveness are addressed."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "locator": "Commission title block",
+      "rationale": "Communication expressly issued by the Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+      "locator": "Publication label and opening paragraph",
+      "rationale": "Explicit publication announcement for this review."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+    "locator": "Communication heading and concluding policy commitments",
+    "meaning": "Non-binding strategy review, with legislative proposals separately identified."
+  }
+}

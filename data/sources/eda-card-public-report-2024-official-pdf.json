@@ -1,0 +1,13 @@
+{
+  "id": "eda-card-public-report-2024-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://eda.europa.eu/docs/default-source/documents/card-report-2024.pdf",
+  "publisher": "European Defence Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF p.9 (PDF index 8), Research & Technology: Artificial Intelligence; dedicated defence AI research and assurance passage. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

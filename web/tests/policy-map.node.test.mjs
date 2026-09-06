@@ -14,8 +14,12 @@ test('relationship type compatibility label remains readable for record pages', 
 test('public projection retains every linked endpoint and relationship without mutation', () => {
   const before = JSON.stringify(data);
   const model = createPolicyMapModel(data, '/eu-ai-policy-observatory/');
-  assert.equal(model.nodes.length, 101);
-  assert.equal(model.edges.length, 96);
+  const expectedEndpoints = new Set(data.relationships.flatMap((relationship) => [
+    `${relationship.source_entity_type}:${relationship.source_entity_id}`,
+    `${relationship.target_entity_type}:${relationship.target_entity_id}`,
+  ]));
+  assert.deepEqual(model.nodes.map((node) => node.id).sort(), [...expectedEndpoints].sort());
+  assert.deepEqual(model.edges.map((edge) => edge.id).sort(), data.relationships.map((relationship) => relationship.id).sort());
   assert.ok(model.nodes.some((node) => node.entityId === 'transparency-guidelines-approval-communication-2026'));
   assert.ok(model.edges.some((edge) => edge.id === 'final-transparency-guidelines-annex-to-approval-communication'));
   assert.equal(JSON.stringify(data), before);

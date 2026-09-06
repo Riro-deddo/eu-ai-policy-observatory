@@ -1,0 +1,144 @@
+{
+  "id": "eurohpc-ai-factories-regulation-2024-1732",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "slug": "eurohpc-ai-factories-regulation-2024-1732",
+  "official_title": "Council Regulation (EU) 2024/1732 of 17 June 2024 amending Regulation (EU) 2021/1173 as regards a EuroHPC initiative for start-ups in order to boost European leadership in trustworthy artificial intelligence",
+  "short_title": "EuroHPC AI Factories Regulation",
+  "document_type": "regulation",
+  "sector_tags": [
+    "health",
+    "transport_and_mobility",
+    "research_and_innovation",
+    "industry_and_manufacturing",
+    "agriculture_and_environment"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Council Regulation (EU) 2024/1732",
+  "procedure_references": [],
+  "oj_reference": "OJ L, 2024/1732, 19.6.2024",
+  "document_date": "2024-06-17",
+  "version_label": "Original Official Journal text",
+  "version_status": "final",
+  "publication_date": "2024-06-19",
+  "legal_status": "in_force",
+  "celex": "32024R1732",
+  "eli": "http://data.europa.eu/eli/reg/2024/1732/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "evidence_locator": "Heading and concluding adoption formula"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "proposer",
+      "evidence_source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "evidence_locator": "Preamble"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eurohpc-ai-factories-regulation-2024-1732-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "The act creates a dedicated AI factory pillar and AI-optimised supercomputing infrastructure.",
+    "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04. Regulation (EU) 2021/1173 is the explicitly identified amended instrument, but is outside this 53-candidate batch and not yet a canonical endpoint; no dangling amends edge is created.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:49:16Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "OJ heading; Article 1(1)-(3)",
+      "meaning": "Exact date and date meaning stated by the cited official manifestation."
+    },
+    "publication_date": {
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "OJ heading; Article 1(1)-(3)",
+      "meaning": "Official publication on 2024-06-19."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "OJ heading; Article 1(1)-(3)",
+      "rationale": "The act creates a dedicated AI factory pillar and AI-optimised supercomputing infrastructure."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "Article 1(3), inserted Article 4(1)(h)",
+      "rationale": "The AI factory pillar supports research and AI innovation."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+      "rationale": "Health is an explicit strategic AI application."
+    },
+    {
+      "field": "sector_tags",
+      "value": "agriculture_and_environment",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+      "rationale": "Climate change is a named strategic AI application."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+      "rationale": "Autonomous driving is an explicit strategic AI application."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+      "rationale": "Robotics is an explicit strategic AI application."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "Document information, Author",
+      "rationale": "EUR-Lex expressly names the Council as author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "locator": "OJ L, 2024/1732, 19 June 2024",
+      "rationale": "This is the English original Official Journal act."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+    "locator": "Legal-status panel; Dates; Article 2",
+    "meaning": "The official record states in force and no end date; Article 2 sets entry into force on the twentieth day following publication."
+  }
+}

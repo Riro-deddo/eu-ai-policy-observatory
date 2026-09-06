@@ -1,0 +1,139 @@
+{
+  "id": "expert-group-liability-ai-report-2019",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:51:12Z",
+  "updated_at": "2026-09-05T23:51:12Z",
+  "slug": "expert-group-liability-ai-report-2019",
+  "official_title": "Liability for Artificial Intelligence and other emerging digital technologies",
+  "short_title": "Expert report on liability for AI and emerging technologies",
+  "document_type": "report",
+  "sector_tags": [
+    "justice",
+    "consumer_protection"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "DOI 10.2838/573689; ISBN 978-92-76-12959-2",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2019-11-27",
+  "version_label": "Published expert-group report (2019)",
+  "version_status": "final",
+  "publication_date": "2019-11-27",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "expert-group-liability-new-technologies-formation",
+      "role": "author",
+      "evidence_source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "evidence_locator": "PDF p.2, explicit written-by statement"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "commissioner",
+      "evidence_source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "evidence_locator": "PDF pp.14–15 (printed12–13), group mandate"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "responsible_body",
+      "evidence_source_id": "expert-group-liability-ai-report-2019-catalogue",
+      "evidence_locator": "Corporate author(s): Directorate-General for Justice and Consumers"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "evidence_locator": "PDF p.2, Luxembourg imprint"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "expert-group-liability-ai-report-2019-catalogue",
+      "evidence_locator": "OP catalogue and linked PDF viewer"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "expert-group-liability-ai-report-2019-official-pdf",
+    "expert-group-liability-ai-report-2019-catalogue"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Detailed independent expert recommendations address civil liability for AI systems, harms, burden of proof and victim compensation.",
+    "researcher_notes": "The full report supplies no exact issue day, so the verified catalogue release date supplies the explicit publication fallback. Catalogue code DS-03-19-742-EN-N and PDF code DS-03-19-853-EN-N are retained as a source discrepancy; matching title, DOI and ISBN resolve document identity. DG JUST catalogue attribution is not substituted for the expert-group written-by credit. Annex printedp.65 lists group members: Ryan Abbott, Georg Borges, Eugenia Dacoronia, Nathalie Devillier, Marlena Jankowska-Augustyn, Ernst Karner, Bernhard Alexander Koch, Alžběta Krausova, Piotr Machnikowski, Maria Lillà Montagnani, Marie Motzfeldt, Finbarr Murphy, Ugo Pagallo, Teresa Rodriguez de las Heras Ballell, Gerald Spindler and Christiane Wendehorst. Cooley(UK) LLP and Universidad Carlos III de Madrid are institutional observers, not report authors. Membership is preserved in notes rather than converted to an unsupported named-author list.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:51:12Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "expert-group-liability-ai-report-2019-catalogue",
+      "locator": "Released on EU publications website; datePublished",
+      "meaning": "27 November2019 publication fallback; full report only states2019."
+    },
+    "publication_date": {
+      "source_id": "expert-group-liability-ai-report-2019-catalogue",
+      "locator": "Released on EU publications website; datePublished",
+      "meaning": "Publication of the cited report catalogue manifestation on27November2019."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "locator": "Printed pp.3–10, executive summary and key findings",
+      "rationale": "AI liability is a substantive policy subject throughout the recommendations."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "locator": "Printed pp.3–10; Key Findings[3], [25]–[27]",
+      "rationale": "Civil-liability remedies and evidential burdens are central."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "locator": "Printed pp.3–4 and Key Findings[13]–[15]",
+      "rationale": "Addresses compensation and producer liability for defective AI-enabled products."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+      "locator": "PDF p.2, written-by statement and independent-group designation",
+      "rationale": "Explicitly written by the Commission-appointed independent expert formation."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "expert-group-liability-ai-report-2019-catalogue",
+      "locator": "Release-date field and PDF link",
+      "rationale": "Formally released via the Publications Office."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+    "locator": "PDF p.2, authors' views disclaimer; printedp.13, mandate",
+    "meaning": "Independent advisory report; recommendations do not constitute Commission law or an adopted Commission position."
+  }
+}

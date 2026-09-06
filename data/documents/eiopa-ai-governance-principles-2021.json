@@ -1,0 +1,126 @@
+{
+  "id": "eiopa-ai-governance-principles-2021",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eiopa-ai-governance-principles-2021",
+  "official_title": "Artificial Intelligence governance principles: towards ethical and trustworthy Artificial Intelligence in the European insurance sector",
+  "short_title": "Artificial Intelligence governance principles: towards ethical and trustworthy Artificial Intelligence in the European insurance sector",
+  "document_type": "report",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ISBN 978-92-9473-303-0; DOI 10.2854/49874; EI-08-21-137-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2021-06-17",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2021-06-17",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "eiopa-consultative-expert-group-on-digital-ethics-in-insurance",
+      "role": "author",
+      "evidence_source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+      "evidence_locator": "PDF cover and p.2 responsibility disclaimer."
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+      "evidence_locator": "PDF p.2: Luxembourg, Publications Office of the European Union, 2021."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "official_host",
+      "evidence_source_id": "eiopa-ai-governance-principles-2021-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eiopa-ai-governance-principles-2021-official-pdf",
+    "eiopa-ai-governance-principles-2021-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The report develops six AI governance principles and an insurance-specific impact-assessment framework addressing fairness, explainability, oversight, data governance, robustness, and performance.",
+    "researcher_notes": "2021 edition identified by ISBN, DOI and Publications Office imprint. Website file label 31 January 2023 is a later hosted manifestation, not evidence of a new edition; byte identity with the original is not claimed. Views belong to the expert group, not necessarily EIOPA.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eiopa-ai-governance-principles-2021-official-page",
+      "locator": "Official publication page: Publication date 17 June 2021.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "eiopa-ai-governance-principles-2021-official-page",
+      "locator": "Publication date field and English file link.",
+      "meaning": "Establishes official publication of this version on 2021-06-17, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+      "locator": "PDF pp.1-2 attribution and disclaimer; printed pp.6-8, executive summary and AI governance principles.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+      "locator": "PDF pp.1-2 attribution and disclaimer; printed pp.6-8, executive summary and AI governance principles.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+      "locator": "PDF cover and p.2 expert-group responsibility statement.",
+      "rationale": "Authorship belongs to the identified expert group."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eiopa-ai-governance-principles-2021-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "EIOPA Consultative Expert Group on Digital Ethics in insurance",
+      "affiliation": null,
+      "evidence_source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+      "evidence_locator": "PDF cover and p.2."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eiopa-ai-governance-principles-2021-official-pdf",
+    "locator": "PDF p.2 responsibility disclaimer: expert-group views do not necessarily represent EIOPA.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

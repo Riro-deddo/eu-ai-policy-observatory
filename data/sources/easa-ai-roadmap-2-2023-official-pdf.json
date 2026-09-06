@@ -1,0 +1,13 @@
+{
+  "id": "easa-ai-roadmap-2-2023-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.easa.europa.eu/sites/default/files/dfu/easa_ai_roadmap_2_0_2023.pdf",
+  "publisher": "European Union Aviation Safety Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF pp.5-7, updated AI scope; pp.24-29, timeline and action plan; p.34 reference [1]. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

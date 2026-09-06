@@ -1,0 +1,349 @@
+{
+  "schema_version": "private-sectoral-gap-scan-v1",
+  "purpose": "Bounded read-only omission discovery for selected EU sectoral regulators and agencies; this is not an import decision or a completeness claim.",
+  "reviewed_at": "2026-09-05T23:08:00Z",
+  "reviewer": "Codex (AI-assisted research); no human approval recorded",
+  "research_date": "2026-09-06",
+  "publication_cutoff": "2026-09-04",
+  "baseline": {
+    "canonical_document_count": 131,
+    "corpus_inventory_count": 171,
+    "prior_gap_candidate_count": 34,
+    "dedup_sources": [
+      "data/documents",
+      "research/corpus-inventory.json",
+      "research/discovery/2026-09-05-document-gap-candidates.json"
+    ]
+  },
+  "counts": {
+    "records": 12,
+    "new_candidate": 8,
+    "known_backlog": 4,
+    "already_present": 0
+  },
+  "queries": [
+    "site:easa.europa.eu EASA Artificial Intelligence Concept Paper Issue 2",
+    "site:easa.europa.eu Artificial Intelligence concept paper proposed Issue 2",
+    "site:easa.europa.eu Artificial Intelligence Roadmap 2.0 publication date PDF",
+    "site:ema.europa.eu draft reflection paper use artificial intelligence medicinal product lifecycle",
+    "site:ema.europa.eu Multi-annual AI workplan 2023-2028",
+    "site:eba.europa.eu Discussion paper machine learning IRB models 2021 PDF",
+    "site:eba.europa.eu Follow-up report machine learning internal ratings-based models 2023",
+    "site:esma.europa.eu 2024 artificial intelligence retail investment services statement",
+    "site:eiopa.europa.eu publications artificial intelligence report 2024 insurance PDF",
+    "site:eiopa.europa.eu factsheet regulatory framework AI systems insurance sector",
+    "site:eda.europa.eu CARD report 2024 artificial intelligence PDF",
+    "site:eda.europa.eu Action Plan on Artificial Intelligence for Defence PDF"
+  ],
+  "limitations": [
+    "This was a query-led scan of the four named institutional clusters, not exhaustive pagination of every agency catalogue or every document containing an embedded AI passage.",
+    "EASA download gateways returned HTTP 429 during this pass. Exact official download targets and publication landing pages were recorded, but the two Issue 2 PDFs should be re-opened before canonical admission to verify cover-level identifiers and dates.",
+    "EBA landing pages and one report PDF intermittently returned HTTP 403. The 2021 discussion-paper PDF itself was opened and read; the 2023 follow-up remains a known-backlog verification based on official publication/search metadata and previously recorded official indexed text.",
+    "The EMA English news extractor omitted the date header for the multi-annual AI workplan, while an exact-page search result and an archived print of that official page showed 18 December 2023. Re-capture the English page's visible metadata before admission.",
+    "The EDA AI Action Plan and Strategic Research Agenda are mentioned by official EDA material, but no independently citable public full text was found; neither is promoted as a candidate here.",
+    "Press/news pages are used only as release, role, or date evidence when they link or identify a standalone document; they are not counted as document substitutes.",
+    "The earlier gap work signposted EASA concept papers generically while itemising Roadmaps 1.0 and 2.0. The two Issue 2 rows here are newly itemised version records, not a claim that the EASA concept-paper thematic direction was wholly unseen.",
+    "Dates retain their meanings. Null document_date values are not filled from a publication-page timestamp, and the EDA CARD adoption date is not silently converted into a publication date.",
+    "Sector and provenance values are editorial proposals using the existing controlled vocabulary; they still require normal canonical review."
+  ],
+  "records": [
+    {
+      "key": "easa-ai-concept-paper-issue-2-2024",
+      "title": "EASA Artificial Intelligence Concept Paper Issue 2: Guidance for Level 1 & 2 machine-learning applications",
+      "reference": "EASA AI Concept Paper Issue 2",
+      "document_date": null,
+      "publication_date": "2024-03-06",
+      "official_url": "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-issue-2",
+      "content_url": "https://www.easa.europa.eu/en/downloads/139504/en",
+      "evidence_locator": "Official general-publication page: title/subtitle; Publication Date 06/03/2024; description paragraphs 1-2; quoting-this-report block. The page identifies the linked PDF as Issue 2 and describes Level 1 learning assurance, explainability and ethics-based assessment plus Level 2 human-AI teaming and automated decisions under human oversight.",
+      "relevance_note": "Direct aviation AI assurance and oversight guidance, and a distinct final version following the 2023 proposed Issue 2 consultation text.",
+      "sectors": [
+        "transport_and_mobility"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Re-open the official download after rate limiting clears and verify the cover date, exact issue notation, page count and any formal document identifier.",
+        "Model an explicit successor/final-version relationship to the proposed Issue 2 document and an implementation relationship to EASA AI Roadmap 2.0."
+      ]
+    },
+    {
+      "key": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "title": "EASA Artificial Intelligence Concept Paper: Guidance for Level 1 & 2 machine learning applications — Proposed Issue 02",
+      "reference": "Proposed Issue 02",
+      "document_date": null,
+      "publication_date": "2023-02-24",
+      "official_url": "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-proposed-issue-2",
+      "content_url": "https://www.easa.europa.eu/en/downloads/137631/en",
+      "evidence_locator": "Official general-publication page: exact proposed-version title and Publication Date 24/02/2023; linked consultation news describes a ten-week consultation and says the revision provides guidance for Level 1 and Level 2 safety-related AI systems, including human-AI teaming, human oversight, learning assurance, explainability and ethics-based assessment. EASA Roadmap 2.0 references this exact Proposed Issue 02 on printed p.34.",
+      "relevance_note": "Independently citable consultation version in the aviation AI policy lineage; it must not be collapsed into the March 2024 final Issue 2.",
+      "sectors": [
+        "transport_and_mobility"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Re-open the official PDF after rate limiting clears and verify its cover date, page count and formal identifier.",
+        "Record consultation-to-final and Roadmap 2.0 implementation relationships without treating the versions as duplicate manifestations."
+      ]
+    },
+    {
+      "key": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "title": "Draft reflection paper on the use of Artificial Intelligence (AI) in the medicinal product lifecycle",
+      "reference": "EMA/CHMP/CVMP/83833/2023",
+      "document_date": "2023-07-10",
+      "publication_date": "2023-07-19",
+      "official_url": "https://www.ema.europa.eu/en/use-artificial-intelligence-ai-medicinal-product-lifecycle-scientific-guideline",
+      "content_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/draft-reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf",
+      "evidence_locator": "EMA guideline page, Document history: exact draft title and reference, consultation dates 19/07/2023-31/12/2023, First published 19/07/2023 and separate English PDF. Draft cover/adoption table identifies CHMP adoption for consultation on 10 July 2023 and CVMP adoption on 13 July 2023. Contents and sections 1-2 cover drug discovery, clinical trials, precision medicine, manufacturing, post-authorisation, model performance, interpretability, deployment, governance, data protection and trustworthy AI.",
+      "relevance_note": "Substantive health-sector AI consultation text and a distinct predecessor version to the known September 2024 final reflection paper.",
+      "sectors": [
+        "health"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Represent the later CVMP adoption on 13 July 2023 as an additional institutional date and preserve both committee roles.",
+        "Create an explicit draft-to-final version relationship to ema-ai-medicinal-product-lifecycle-reflection-paper-2024 if admitted."
+      ]
+    },
+    {
+      "key": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "title": "Multi-annual AI workplan 2023-2028",
+      "reference": "HMA-EMA BDSG multi-annual AI workplan 2023-2028",
+      "document_date": null,
+      "publication_date": "2023-12-18",
+      "document_date_note": "The planned 14 December adoption meeting is not enough to establish the exact actual adoption date. Only December 2023 final adoption was confirmed in the evidence described here; document_date remains null.",
+      "official_url": "https://www.ema.europa.eu/en/news/artificial-intelligence-workplan-guide-use-ai-medicines-regulation",
+      "content_url": "https://www.ema.europa.eu/system/files/documents/work-programme/2023-12_ai-multiannual-workplan_a4_en.pdf",
+      "evidence_locator": "Official PDF, four workstreams: Guidance, policy and product support; Tools and technologies; Collaboration and change management; Experimentation. Printed p.8 identifies AI guidance for the medicines lifecycle, LLM guidance, preparation for the AI Act and creation of an AI Observatory. EMA news identifies joint HMA-EMA BDSG preparation and Management Board adoption; 30 October 2023 BDSG minutes state HMA endorsement was scheduled for 1 December and EMA Management Board adoption for 14 December 2023; later minutes confirm adoption by HMA and EMA in December 2023.",
+      "relevance_note": "Joint multi-year operational AI policy for the European medicines regulatory network, distinct from the later NDSG 2026-2028 workplan already in the known backlog.",
+      "sectors": [
+        "health",
+        "public_administration"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Re-capture the English official news page's visible 18 December 2023 date header; the current English extractor omitted it although exact-page indexing and a saved render showed that date.",
+        "Verify the HMA endorsement date from final minutes before recording 1 December 2023 as an additional institutional date, and decide whether 14 December is adoption or endorsement in the canonical vocabulary.",
+        "Confirm no formal EMA reference appears in PDF metadata."
+      ]
+    },
+    {
+      "key": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "title": "EBA Discussion Paper on machine learning for IRB models",
+      "reference": "EBA/DP/2021/04",
+      "document_date": "2021-11-11",
+      "publication_date": "2021-11-11",
+      "official_url": "https://www.eba.europa.eu/discussion-paper-machine-learning-irb-models",
+      "content_url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Discussions/2022/Discussion%2520on%2520machine%2520learning%2520for%2520IRB%2520models/1023883/Discussion%2520paper%2520on%2520machine%2520learning%2520for%2520IRB%2520models.pdf",
+      "evidence_locator": "PDF cover: EBA/DP/2021/04 and 11 November 2021. Contents and executive summary, printed pp.5 and 9-24, address ML definitions, current use in credit-risk modelling, challenges/benefits, explainability and prudent use in IRB models. Official EBA publication/search record dates the document 11 November 2021 and the release text says EBA published it that day.",
+      "relevance_note": "Direct banking-supervision AI/ML consultation document and the explicit precursor to the known 2023 follow-up report.",
+      "sectors": [
+        "financial_services"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Normalize the historically double-encoded official PDF URL without changing its identity, if the canonical source model requires a clean URL.",
+        "Record a consultation/predecessor relationship to eba-follow-up-machine-learning-irb-models-2023."
+      ]
+    },
+    {
+      "key": "esma-public-statement-ai-retail-investment-services-2024",
+      "title": "Public Statement: On the use of Artificial Intelligence (AI) in the provision of retail investment services",
+      "reference": "ESMA35-335435667-5924",
+      "document_date": "2024-05-30",
+      "publication_date": "2024-05-30",
+      "official_url": "https://www.esma.europa.eu/document/public-statement-ai-and-investment-services",
+      "content_url": "https://www.esma.europa.eu/sites/default/files/2024-05/ESMA35-335435667-5924__Public_Statement_on_AI_and_investment_services.pdf",
+      "evidence_locator": "PDF cover and paras 1-3: 30 May 2024, ESMA35-335435667-5924, initial MiFID II guidance for firms using AI in retail investment services. Paras 5-24 cover hallucination, opacity, bias, data quality, human/management oversight, governance, testing, client disclosure, record keeping and staff competence. Official document record identifies type Statement and the same reference; release page dates and links it on 30/05/2024.",
+      "relevance_note": "Direct, operative sectoral guidance on AI use by investment firms, not merely an AI market-monitoring study or press announcement.",
+      "sectors": [
+        "financial_services",
+        "consumer_protection"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Editorially classify the Statement's policy tier and its relationship to the AI Act and MiFID II without implying that ESMA adopted the AI Act."
+      ]
+    },
+    {
+      "key": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "title": "EIOPA's Report on the digitalisation of the European insurance sector",
+      "reference": "EIOPA-BoS-24/139",
+      "document_date": "2024-04-30",
+      "publication_date": "2024-04-30",
+      "official_url": "https://www.eiopa.europa.eu/publications/eiopas-report-digitalisation-european-insurance-sector_en",
+      "content_url": "https://www.eiopa.europa.eu/document/download/6ca9e171-42b9-44d7-a2e6-beaf0134ecb8_en?filename=Report+on+the+digitalisation+of+the+European+insurance+sector.pdf",
+      "evidence_locator": "PDF cover: EIOPA-BoS-24/139 and 30 April 2024; contents, section 3.1 Artificial Intelligence and section 3.1.2 AI Governance. Printed pp.3-4 and 22-29 report AI adoption rates, human oversight, high-impact approval, explainability, fairness, accountability, robustness and record keeping. Official publication page labels Publication date 30 April 2024 and links the English report.",
+      "relevance_note": "Empirical EIOPA market-monitoring report with a substantial dedicated AI and AI-governance chapter; distinct from the known 2021 governance principles and 2025 opinion.",
+      "sectors": [
+        "financial_services",
+        "consumer_protection"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Editorially decide whether the document's broader digitalisation scope satisfies the corpus centrality threshold; the dedicated AI/AI-governance chapter is substantive, not incidental.",
+        "Record contextual relationships to the 2019 thematic review and 2021 AI governance principles only if the canonical relationship vocabulary supports cited antecedents."
+      ]
+    },
+    {
+      "key": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "title": "Factsheet on the regulatory framework applicable to AI systems in the insurance sector",
+      "reference": null,
+      "document_date": "2024-07-15",
+      "publication_date": "2024-07-15",
+      "official_url": "https://www.eiopa.europa.eu/publications/factsheet-regulatory-framework-applicable-ai-systems-insurance-sector_en",
+      "content_url": "https://www.eiopa.europa.eu/document/download/b53a3b92-08cc-4079-a4f7-606cf309a34a_en?filename=Factsheet-on-the-regulatory-framework-applicable-to-AI-systems-in-the-insurance-sector-july-2024.pdf",
+      "evidence_locator": "Official publication page labels Publication date 15 July 2024 and links the English two-page factsheet. PDF p.1 identifies life/health insurance pricing and risk-assessment AI as high-risk and summarises providers', deployers' and GPAI obligations; p.2 addresses market-surveillance authorities, sector-law overlap, governance, data, conformity assessment, transparency, incident response and outsourcing. Footer states EIOPA 2024 and that it is a preliminary informational overview.",
+      "relevance_note": "Compact but directly substantive EIOPA mapping of the AI Act to insurance-sector regulation and supervision; distinct from the later governance opinion.",
+      "sectors": [
+        "financial_services",
+        "health",
+        "consumer_protection"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "remaining_checks": [
+        "Confirm whether the corpus admits short explanatory factsheets at the proposed policy tier; the document itself says it has no legal value.",
+        "Do not infer a formal document reference where none is visible."
+      ]
+    },
+    {
+      "key": "easa-ai-roadmap-2-2023",
+      "title": "EASA Artificial Intelligence Roadmap 2.0: A human-centric approach to AI in aviation",
+      "reference": "EASA AI Roadmap 2.0",
+      "document_date": null,
+      "publication_date": "2023-05-10",
+      "official_url": "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-roadmap-20",
+      "content_url": "https://www.easa.europa.eu/sites/default/files/dfu/easa_ai_roadmap_2_0_2023.pdf",
+      "evidence_locator": "Known-backlog recheck. Official publication listing labels Publication Date 10/05/2023. PDF cover says May 2023, Version 2.0. Printed pp.6-7 define the expanded AI scope; pp.24-29 set the certification/guidance timeline, trustworthiness objectives and consolidated action plan; p.34 cites the proposed Issue 02 concept paper.",
+      "relevance_note": "Confirmed substantive aviation AI roadmap and version identity; no match in the 131 canonical documents or corpus inventory, but already recorded in the 2026-09-05 gap backlog.",
+      "sectors": [
+        "transport_and_mobility"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "easa-ai-roadmap-2-2023",
+      "remaining_checks": [
+        "Retain null document_date unless a distinct issue/adoption date is found; the cover month and official publication date do not establish a separate act date.",
+        "Record revision/successor relation to Roadmap 1.0 and implementation links to the proposed and final Issue 2 concept papers."
+      ]
+    },
+    {
+      "key": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "title": "Reflection paper on the use of Artificial Intelligence (AI) in the medicinal product lifecycle",
+      "reference": "EMA/CHMP/CVMP/83833/2023",
+      "document_date": "2024-09-09",
+      "publication_date": "2024-09-30",
+      "official_url": "https://www.ema.europa.eu/en/use-artificial-intelligence-ai-medicinal-product-lifecycle-scientific-guideline",
+      "content_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf",
+      "evidence_locator": "Known-backlog recheck. EMA page identifies the adopted current version, reference and First published 30/09/2024. PDF cover/adoption table gives MWP agreement 6 September, CHMP adoption 9 September and CVMP adoption 11 September 2024. Sections 1-2 and the detailed lifecycle/technical/governance sections make AI/ML the central regulatory subject.",
+      "relevance_note": "Confirmed substantive final health-sector AI reflection paper and exact version/date distinction from its 2023 consultation draft.",
+      "sectors": [
+        "health"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "remaining_checks": [
+        "Preserve CHMP and CVMP as distinct adopter roles and dates; do not use the first committee date to erase the second.",
+        "Link explicitly to the 2023 draft version if both are admitted."
+      ]
+    },
+    {
+      "key": "eba-follow-up-machine-learning-irb-models-2023",
+      "title": "Machine Learning for IRB Models: Follow-up report from the consultation on the Discussion Paper on machine learning for IRB models",
+      "reference": "EBA/REP/2023/28",
+      "document_date": "2023-08-04",
+      "publication_date": "2023-08-04",
+      "official_url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-follow-report-use-machine-learning-internal",
+      "content_url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Reports/2023/1061483/Follow-up%20report%20on%20machine%20learning%20for%20IRB%20models.pdf",
+      "evidence_locator": "Known-backlog recheck. Official EBA release is dated 4 August 2023, says EBA published the linked follow-up report that day, and describes feedback, current ML use cases, prudent IRB use, GDPR and AI Act interaction. Official search/library record dates the exact document 4 August 2023. Prior indexed PDF review recorded cover reference EBA/REP/2023/28 and substantive sections 4.3, 5.2 and Annex I.",
+      "relevance_note": "Confirmed distinct follow-up/final report in the banking ML policy lineage, not a duplicate of the 2021 discussion paper.",
+      "sectors": [
+        "financial_services"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "eba-follow-up-machine-learning-irb-models-2023",
+      "remaining_checks": [
+        "Re-open and locally verify the exact PDF cover and page locators when EBA's intermittent 403 response clears.",
+        "Record its response/successor relationship to EBA/DP/2021/04."
+      ]
+    },
+    {
+      "key": "eda-card-public-report-2024",
+      "title": "2024 Coordinated Annual Review on Defence (CARD) report",
+      "reference": "2024 CARD report",
+      "document_date": "2024-11-19",
+      "publication_date": null,
+      "official_url": "https://www.eda.europa.eu/what-we-do/EU-defence-initiatives/coordinated-annual-review-on-defence-%28card%29",
+      "content_url": "https://eda.europa.eu/docs/default-source/documents/card-report-2024.pdf",
+      "evidence_locator": "Known-backlog recheck. EDA CARD page says Ministers approved the report on 19 November 2024 and links the 14-page report; same-day EDA release identifies EDA as producer in coordination with EEAS and EUMS. PDF printed p.9, Research & Technology, has a dedicated Artificial Intelligence section on defence data spaces, testing, validation, certification and collaboration.",
+      "relevance_note": "Confirmed substantive defence AI passage and institutional provenance, but this broader defence review was already in the 2026-09-05 backlog.",
+      "sectors": [
+        "defence_and_security",
+        "research_and_innovation"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "eda-card-public-report-2024",
+      "remaining_checks": [
+        "Keep 19 November 2024 as adoption unless canonical review accepts the same-day official release linking the exact report as publication-manifestation evidence under section 5.1.",
+        "Do not infer joint authorship from EDA's statement that production was in coordination with EEAS and EUMS."
+      ]
+    }
+  ]
+}

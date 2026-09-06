@@ -1,0 +1,132 @@
+{
+  "id": "eesc-ai-consequences-2017",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "slug": "eesc-ai-consequences-2017",
+  "official_title": "Opinion of the European Economic and Social Committee on Artificial intelligence — The consequences of artificial intelligence on the (digital) single market, production, consumption, employment and society (own-initiative opinion)",
+  "short_title": "EESC opinion on AI consequences",
+  "document_type": "opinion",
+  "sector_tags": [
+    "general_cross_sector",
+    "employment_and_labour"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "2017/C 288/01",
+  "procedure_references": [],
+  "oj_reference": "OJ C 288, 31.8.2017, pp. 1–9",
+  "document_date": "2017-05-31",
+  "document_date_kind": "institutional_adoption",
+  "version_label": "Final published text",
+  "version_status": "final",
+  "publication_date": "2017-08-31",
+  "legal_status": "non_binding",
+  "celex": "52016IE5369",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-economic-and-social-committee",
+      "role": "author",
+      "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+      "evidence_locator": "Title: Opinion of the EESC"
+    },
+    {
+      "institution_id": "european-economic-and-social-committee",
+      "role": "adopter",
+      "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+      "evidence_locator": "Adopted at plenary: 31/05/2017"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+      "evidence_locator": "Official Journal citation"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+      "evidence_locator": "EUR-Lex manifestation"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eesc-ai-consequences-2017-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Substantive AI policy content verified in the cited primary English text.",
+    "researcher_notes": "Editorial classifications are AI-assisted assessments, separate from official metadata. Rapporteur: Catelijne Muller (adoption table), not substituted for institutional author. Canonical reference follows the cited OJ manifestation; internal tracking identifiers retained here from prior handoff: INT/806; INT/806-EESC-2016-05369-00-00-AC-TRA (not independently reverified in this pass).",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:45:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "direct_ai_substantive",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "Adoption table: Adopted at plenary",
+      "meaning": "EESC plenary adoption, distinct from section adoption."
+    },
+    "publication_date": {
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "OJ C 288/1 running header and citation",
+      "meaning": "Original OJ publication date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "Paragraphs 1.1–1.14",
+      "rationale": "AI governance is the opinion's substantive subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "Paragraphs 1.2–1.5",
+      "rationale": "The opinion addresses cross-sector AI policy."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "Paragraphs 1.10–1.11",
+      "rationale": "Specific workplace and employment recommendations."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "Title and adoption table",
+      "rationale": "EESC advisory-body opinion."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eesc-ai-consequences-2017-eur-lex",
+      "locator": "OJ C 288 citation",
+      "rationale": "Formally published OJ opinion."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eesc-ai-consequences-2017-eur-lex",
+    "locator": "Heading and legal-basis table",
+    "meaning": "Own-initiative advisory opinion; non-binding."
+  }
+}

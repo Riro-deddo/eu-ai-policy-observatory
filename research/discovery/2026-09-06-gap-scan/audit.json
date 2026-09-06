@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "purpose": "Consolidated bounded omission-discovery audit; no admission or completeness decision.",
+  "research_date_local": "2026-09-06",
+  "checked_at_utc": "2026-09-05T23:13:48Z",
+  "timezone": "Europe/London",
+  "publication_cutoff": "2026-09-04",
+  "baseline": {
+    "canonical_documents": 131,
+    "expanded_review_verified": 105,
+    "expanded_review_not_yet_verified": 26,
+    "inventory_candidates": 171,
+    "inventory_decisions": {
+      "included": 131,
+      "merged": 18,
+      "pending": 12,
+      "excluded": 10
+    }
+  },
+  "counts": {
+    "newly_itemised_main_candidates": 33,
+    "prior_discovery_candidates": 34,
+    "prior_candidates_already_admitted": 14,
+    "prior_candidates_still_outside": 20,
+    "rechecked_prior_candidates": 7,
+    "combined_main_backlog": 53,
+    "scope_boundary_cases_in_new_count": 1,
+    "unresolved_inventory_items_not_added_to_main_count": 12
+  },
+  "new_main_candidates": [
+    {
+      "key": "historical-esprit-1984-work-programme",
+      "handoff": "historical.json",
+      "reference": "84/157/EEC; CELEX 31984D0157",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "historical-esprit-1985-work-programme",
+      "handoff": "historical.json",
+      "reference": "85/141/EEC; CELEX 31985D0141",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "historical-fp5-ist-specific-programme",
+      "handoff": "historical.json",
+      "reference": "1999/168/EC; CELEX 31999D0168",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "historical-fp6-integrating-strengthening-programme",
+      "handoff": "historical.json",
+      "reference": "2002/834/EC; CELEX 32002D0834",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "historical-fp7-framework-1982-2006",
+      "handoff": "historical.json",
+      "reference": "Decision No 1982/2006/EC; CELEX 32006D1982",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "historical-juri-robotics-report-2017",
+      "handoff": "historical.json",
+      "reference": "A8-0005/2017; 2015/2103(INL)",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "ep-ethical-framework-ai-2020",
+      "handoff": "rights.json",
+      "reference": "P9_TA(2020)0275; 2020/2012(INL); CELEX 52020IP0275; 2021/C 404/04",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "ep-ai-civil-liability-2020",
+      "handoff": "rights.json",
+      "reference": "P9_TA(2020)0276; 2020/2014(INL); CELEX 52020IP0276; 2021/C 404/05",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "ep-ai-intellectual-property-2020",
+      "handoff": "rights.json",
+      "reference": "P9_TA(2020)0277; 2020/2015(INI); CELEX 52020IP0277; 2021/C 404/06",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "ep-ai-education-culture-audiovisual-2021",
+      "handoff": "rights.json",
+      "reference": "P9_TA(2021)0238; 2020/2017(INI); CELEX 52021IP0238; 2022/C 15/04",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "ep-ai-digital-age-2022",
+      "handoff": "rights.json",
+      "reference": "P9_TA(2022)0140; 2020/2266(INI); CELEX 52022IP0140; 2022/C 465/06",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "edpb-ai-models-opinion-28-2024",
+      "handoff": "rights.json",
+      "reference": "EDPB Opinion 28/2024",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "fra-getting-future-right-ai-2020",
+      "handoff": "rights.json",
+      "reference": "ISBN 978-92-9474-860-7; DOI 10.2811/774118; TK-03-20-119-EN-N",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "fra-bias-algorithms-2022",
+      "handoff": "rights.json",
+      "reference": "ISBN 978-92-9461-935-8; DOI 10.2811/25847; TK0922347ENN",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "fra-assessing-high-risk-ai-2025",
+      "handoff": "rights.json",
+      "reference": "ISBN 978-92-9489-677-3; DOI 10.2811/3952332; TK-01-25-028-EN-N",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "enisa-frontier-ai-cybersecurity-2026",
+      "handoff": "rights.json",
+      "reference": "ISBN 978-92-9204-801-3; DOI 10.2824/9549088; TP-01-26-015-EN-N",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "europol-chatgpt-llm-law-enforcement-2023",
+      "handoff": "rights.json",
+      "reference": "ISBN 978-92-95220-57-7; ISSN 2811-7719; DOI 10.2813/255453; QL-AW-23-001-EN-N",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "hleg-policy-investment-recommendations-2019",
+      "handoff": "commission.json",
+      "reference": null,
+      "scope_boundary_case": false
+    },
+    {
+      "key": "hleg-sectoral-considerations-2020",
+      "handoff": "commission.json",
+      "reference": null,
+      "scope_boundary_case": false
+    },
+    {
+      "key": "expert-group-liability-ai-report-2019",
+      "handoff": "commission.json",
+      "reference": "DOI 10.2838/573689; DS-03-19-742-EN-N",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "digital-europe-regulation-2021-694",
+      "handoff": "commission.json",
+      "reference": "CELEX 32021R0694; Regulation (EU) 2021/694",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "eurohpc-ai-factories-regulation-2024-1732",
+      "handoff": "commission.json",
+      "reference": "CELEX 32024R1732; Regulation (EU) 2024/1732",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "chief-scientific-advisors-ai-science-opinion-2024",
+      "handoff": "commission.json",
+      "reference": "DOI 10.2777/46863; KI-09-24-456-EN-N",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "council-ai-science-conclusions-2025",
+      "handoff": "commission.json",
+      "reference": "ST 9292/25",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "commission-ai-science-strategy-2025",
+      "handoff": "commission.json",
+      "reference": "COM(2025) 724 final; CELEX 52025DC0724",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "easa-ai-concept-paper-issue-2-2024",
+      "handoff": "sectoral.json",
+      "reference": "EASA AI Concept Paper Issue 2",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "handoff": "sectoral.json",
+      "reference": "Proposed Issue 02",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "handoff": "sectoral.json",
+      "reference": "EMA/CHMP/CVMP/83833/2023",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "handoff": "sectoral.json",
+      "reference": "HMA-EMA BDSG multi-annual AI workplan 2023-2028",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "handoff": "sectoral.json",
+      "reference": "EBA/DP/2021/04",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "esma-public-statement-ai-retail-investment-services-2024",
+      "handoff": "sectoral.json",
+      "reference": "ESMA35-335435667-5924",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "handoff": "sectoral.json",
+      "reference": "EIOPA-BoS-24/139",
+      "scope_boundary_case": false
+    },
+    {
+      "key": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "handoff": "sectoral.json",
+      "reference": null,
+      "scope_boundary_case": true
+    }
+  ],
+  "prior_candidate_admission_mapping": {
+    "historical-84-130-eec-esprit": "council-decision-84-130-eec-esprit",
+    "historical-88-279-eec-esprit-ii": "council-decision-88-279-eec-esprit-ii",
+    "historical-88-417-eec-delta": "council-decision-88-417-eec-delta",
+    "historical-89-415-eec-doses": "council-decision-89-415-eec-doses",
+    "historical-94-802-ec-esprit": "council-decision-94-802-ec-esprit",
+    "historical-decision-1513-2002-ec-fp6": "sixth-framework-programme-decision-1513-2002-ec",
+    "historical-2013-743-eu-horizon-2020-specific-programme": "horizon-2020-specific-programme-decision-2013-743-eu",
+    "historical-com-2016-180-digitising-european-industry": "digitising-european-industry",
+    "ep-european-civil-law-robotics-study-2016": "european-civil-law-rules-in-robotics-study-2016",
+    "historical-com-2017-9-building-european-data-economy": "building-a-european-data-economy",
+    "ep-civil-law-robotics-2017": "civil-law-rules-on-robotics-resolution-2017",
+    "ep-big-data-fundamental-rights-2017": "fundamental-rights-implications-of-big-data-resolution-2017",
+    "euco-ai-approach-2017": "european-council-conclusions-2017-10-19",
+    "euco-ai-skills-2017": "european-council-conclusions-2017-12-14"
+  },
+  "prior_candidates_still_outside": [
+    {
+      "key": "ep-ethical-cyber-physical-systems-2016",
+      "title": "Ethical Aspects of Cyber-Physical Systems",
+      "celex": null
+    },
+    {
+      "key": "historical-com-2017-228-dsm-mid-term-review",
+      "title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions on the Mid-Term Review on the implementation of the Digital Single Market Strategy: A Connected Digital Single Market for All",
+      "celex": "52017DC0228"
+    },
+    {
+      "key": "eesc-ai-consequences-2017",
+      "title": "Opinion of the European Economic and Social Committee on 'Artificial intelligence — The consequences of artificial intelligence on the (digital) single market, production, consumption, employment and society' (own-initiative opinion)",
+      "celex": "52016IE5369"
+    },
+    {
+      "key": "eba-report-big-data-advanced-analytics-2020",
+      "title": "EBA Report on Big Data and Advanced Analytics",
+      "celex": null
+    },
+    {
+      "key": "easa-ai-roadmap-1-2020",
+      "title": "EASA Artificial Intelligence Roadmap 1.0: A human-centric approach to AI in aviation",
+      "celex": null
+    },
+    {
+      "key": "ep-ai-international-military-2021",
+      "title": "European Parliament resolution of 20 January 2021 on artificial intelligence: questions of interpretation and application of international law in so far as the EU is affected in the areas of civil and military uses and of state authority outside the scope of criminal justice (2020/2013(INI))",
+      "celex": "52021IP0009"
+    },
+    {
+      "key": "frontex-ai-capabilities-2021",
+      "title": "Artificial Intelligence-based capabilities for the European Border and Coast Guard - Final Report",
+      "celex": null
+    },
+    {
+      "key": "eiopa-ai-governance-principles-2021",
+      "title": "Artificial Intelligence governance principles: towards ethical and trustworthy Artificial Intelligence in the European insurance sector",
+      "celex": null
+    },
+    {
+      "key": "eprs-ai-eu-borders-2021",
+      "title": "Artificial intelligence at EU borders: Overview of applications and key issues",
+      "celex": null
+    },
+    {
+      "key": "osha-ai-worker-management-2022",
+      "title": "Artificial intelligence for worker management: implications for occupational safety and health",
+      "celex": null
+    },
+    {
+      "key": "esma-ai-eu-securities-markets-2023",
+      "title": "Artificial intelligence in EU securities markets",
+      "celex": null
+    },
+    {
+      "key": "easa-ai-roadmap-2-2023",
+      "title": "EASA Artificial Intelligence Roadmap 2.0: A human-centric approach to AI in aviation",
+      "celex": null
+    },
+    {
+      "key": "eba-follow-up-machine-learning-irb-models-2023",
+      "title": "Machine Learning for IRB Models: Follow-up report from the consultation on the Discussion Paper on machine learning for IRB models",
+      "celex": null
+    },
+    {
+      "key": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "title": "Reflection paper on the use of Artificial Intelligence (AI) in the medicinal product lifecycle",
+      "celex": null
+    },
+    {
+      "key": "eda-card-public-report-2024",
+      "title": "2024 Coordinated Annual Review on Defence (CARD) report",
+      "celex": null
+    },
+    {
+      "key": "esma-ai-eu-investment-funds-2025",
+      "title": "Artificial intelligence in EU investment funds: adoption, strategies and portfolio exposures",
+      "celex": null
+    },
+    {
+      "key": "eiopa-opinion-ai-governance-risk-management-2025",
+      "title": "Opinion on Artificial Intelligence governance and risk management",
+      "celex": null
+    },
+    {
+      "key": "esma-ai-adoption-trends-securities-markets-2026",
+      "title": "AI adoption and trends in securities markets: EU evidence",
+      "celex": null
+    },
+    {
+      "key": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "title": "Network Data Steering Group workplan 2026-2028: Data and artificial intelligence in medicines regulation",
+      "celex": null
+    },
+    {
+      "key": "ema-2025-ai-observatory-report-2026",
+      "title": "2025 AI Observatory report",
+      "celex": null
+    }
+  ],
+  "unresolved_inventory_items_not_counted": [
+    {
+      "key": "ai-board-harmonised-standards-report-2026",
+      "title": "Harmonised Standards for High-Risk AI Systems under the AI Act: Progress and Availability"
+    },
+    {
+      "key": "ai-board-article-40-standardisation-report-2026",
+      "title": "Report on the possible elements of forthcoming standardisation requests, to comply with Article 40 of the AI Act"
+    },
+    {
+      "key": "ai-board-international-standardisation-report-2026",
+      "title": "Report on the ongoing AI standardisation activities in other international fora"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732802",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732836",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732837",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732838",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732839",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732840",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732841",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732843",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    },
+    {
+      "key": "ep-ai-act-committee-amendments-pe-732844",
+      "title": "Amendments to the draft report on the Artificial Intelligence Act"
+    }
+  ],
+  "method": [
+    "Reviewed existing approved inclusion specifications, 131 canonical document identities, the 171-item inventory and the preceding 34-candidate discovery handoff.",
+    "Four bounded official-source scans: historical lineage; Parliament/rights; Commission/research/infrastructure; sector agencies.",
+    "Identity checks used CELEX, official reference, title and content URL, with manual version adjudication; independent agent cross-check found no cross-handoff duplicate main identities.",
+    "Main count excludes all handoff follow-up arrays, prior uncounted leads, news pages and unrelated language/format manifestations."
+  ],
+  "cautions": [
+    "53 is a screened candidate queue, not 53 approved admissions and not the number of all possible omissions.",
+    "One EIOPA factsheet is explicitly held for inclusion-boundary review.",
+    "EASA concept papers were previously signposted generically; the exact proposed/final Issue 2 versions are newly itemised here.",
+    "EMA draft and final share a reference/landing page but have different version PDFs; shared procedure/reference is not itself duplication.",
+    "The HMA/EMA 2023 workplan exact adoption date was cleared to null because described evidence confirmed only the month, not the planned day.",
+    "Provenance and sector labels in handoffs are provisional. Commission eu_recognised_expert_group requires evidence-based mapping to eu_expert_group_authored; EMA committee roles do not automatically justify joint_institutional.",
+    "A document's official existence does not establish all of its metadata, publication eligibility or date/version assertions.",
+    "No source catalogue was exhausted. Court judgments, EESC/CoR output, historical programme series, JRC/science publications, EDPS material and other sector series remain incompletely screened.",
+    "26 expanded-review holds concern existing canonical records and are separate from the discovery queue."
+  ],
+  "canonical_imports": 0,
+  "publication_or_deployment_changes": 0
+}

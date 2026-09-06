@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -106,10 +107,13 @@ def test_continuation_accounts_for_every_starting_record_once(public_payload):
         assert documents[document_id]["historical_review_status"] == "verified"
     for document_id in held:
         assert documents[document_id]["historical_review_status"] == "legacy_review_pending"
-    assert public_payload["coverage"]["historical_review"] == ledger["expected_after"]["historical_review"]
-    assert {d["id"]: d["slug"] for d in documents.values()} == {
-        d["id"]: d["slug"] for d in ledger["baseline"]["documents"]
-    }
+    assert Counter(
+        documents[row["id"]]["historical_review_status"]
+        for row in ledger["baseline"]["documents"]
+    ) == ledger["expected_after"]["historical_review"]
+    assert {d["id"]: d["slug"] for d in ledger["baseline"]["documents"]}.items() <= {
+        d["id"]: d["slug"] for d in documents.values()
+    }.items()
     for row in ledger["record_audit"]:
         handoff = json.loads((ROOT / row["handoff_path"]).read_text(encoding="utf-8"))
         assert handoff["records"][row["handoff_record_index"]]["document_id"] == row["document_id"]

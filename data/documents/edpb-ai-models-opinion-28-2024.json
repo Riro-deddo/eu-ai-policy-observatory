@@ -1,0 +1,121 @@
+{
+  "id": "edpb-ai-models-opinion-28-2024",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:41:49.332+01:00",
+  "updated_at": "2026-09-06T00:41:49.332+01:00",
+  "slug": "edpb-ai-models-opinion-28-2024",
+  "official_title": "Opinion 28/2024 on certain data protection aspects related to the processing of personal data in the context of AI models",
+  "short_title": "EDPB Opinion 28/2024 on AI models",
+  "document_type": "opinion",
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EDPB Opinion 28/2024",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-12-17",
+  "version_label": "Adopted opinion",
+  "version_status": "final",
+  "publication_date": "2024-12-18",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-data-protection-board",
+      "role": "author",
+      "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "evidence_locator": "Cover and introduction: EDPB opinion adopted 17 December 2024"
+    },
+    {
+      "institution_id": "european-data-protection-board",
+      "role": "adopter",
+      "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "evidence_locator": "PDF page 1 adoption statement"
+    },
+    {
+      "institution_id": "european-data-protection-board",
+      "role": "official_host",
+      "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-page",
+      "evidence_locator": "Official agency/body document page and English download"
+    },
+    {
+      "institution_id": "european-data-protection-board",
+      "role": "publisher",
+      "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-page",
+      "evidence_locator": "Official agency/body publication page"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "edpb-ai-models-opinion-28-2024-official-pdf",
+    "edpb-ai-models-opinion-28-2024-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "Addresses anonymity of trained models, legitimate interests for development/deployment, and consequences of unlawful personal-data processing during model development.",
+    "researcher_notes": "Adoption on 17 December is distinct from publication on 18 December 2024. One adopted opinion; its Irish-authority request is a separate input.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "locator": "PDF page 1, adopted on 17 December 2024",
+      "meaning": "Institutional adoption date of this text."
+    },
+    "publication_date": {
+      "source_id": "edpb-ai-models-opinion-28-2024-official-page",
+      "locator": "Official publication date field",
+      "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "locator": "Executive summary, pages 2–4",
+      "rationale": "AI is the substantive policy subject of this document."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "locator": "Executive summary, pages 2–4",
+      "rationale": "General data-protection analysis of AI model development and deployment."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "locator": "Cover and introduction: EDPB opinion adopted 17 December 2024",
+      "rationale": "The report or opinion identifies its EU body as author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "edpb-ai-models-opinion-28-2024-official-page",
+      "locator": "Official document page and English download",
+      "rationale": "Official publication and this English manifestation are evidenced."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "snapshots": []
+}

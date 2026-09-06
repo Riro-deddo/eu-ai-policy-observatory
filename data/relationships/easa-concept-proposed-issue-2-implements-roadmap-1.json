@@ -1,0 +1,16 @@
+{
+  "id": "easa-concept-proposed-issue-2-implements-roadmap-1",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_entity_type": "document",
+  "source_entity_id": "easa-ai-concept-paper-proposed-issue-2-2023",
+  "target_entity_type": "document",
+  "target_entity_id": "easa-ai-roadmap-1-2020",
+  "relationship_type": "implements",
+  "basis": "official",
+  "rationale": "Proposed concept paper, printed p.4 Foreword, expressly implements the first two Phase I milestones of Roadmap 1.0.",
+  "evidence_source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+  "verification_status": "verified"
+}

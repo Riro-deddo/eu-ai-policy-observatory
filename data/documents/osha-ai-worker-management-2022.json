@@ -1,0 +1,152 @@
+{
+  "id": "osha-ai-worker-management-2022",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:41:49.332+01:00",
+  "updated_at": "2026-09-06T00:41:49.332+01:00",
+  "slug": "osha-ai-worker-management-2022",
+  "official_title": "Artificial intelligence for worker management: implications for occupational safety and health",
+  "short_title": "AI for worker management: occupational safety and health",
+  "document_type": "report",
+  "sector_tags": [
+    "employment_and_labour"
+  ],
+  "provenance_tags": [
+    "eu_commissioned_external",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ISBN 978-92-9479-679-0; DOI 10.2802/76354",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2022-08-10",
+  "version_label": "Full English report, 55 pages",
+  "version_status": "final",
+  "publication_date": "2022-08-10",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-agency-for-safety-and-health-at-work",
+      "role": "commissioner",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, explicit commissioning statement"
+    },
+    {
+      "institution_id": "european-agency-for-safety-and-health-at-work",
+      "role": "publisher",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-page",
+      "evidence_locator": "Official report catalogue entry"
+    },
+    {
+      "institution_id": "european-agency-for-safety-and-health-at-work",
+      "role": "official_host",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-page",
+      "evidence_locator": "Official report page and English PDF"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "osha-ai-worker-management-2022-official-pdf",
+    "osha-ai-worker-management-2022-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Examines AI-based workforce management risks and prevention. External named authors and EU-OSHA commissioning are explicit; agency hosting does not establish agency authorship.",
+    "researcher_notes": "External authorship and EU-OSHA commissioning are explicit. Full report identity is distinguished from separately hosted summaries or policy briefs. Exact official publication date is used because the report gives only 2022.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "osha-ai-worker-management-2022-official-page",
+      "locator": "Catalogue publication date",
+      "meaning": "Official exact-day publication fallback; no precise issue day is stated."
+    },
+    "publication_date": {
+      "source_id": "osha-ai-worker-management-2022-official-page",
+      "locator": "Official catalogue date field",
+      "meaning": "Official publication of this English document."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "osha-ai-worker-management-2022-official-pdf",
+      "locator": "Printed page 2 credits; section 1.1 and recommendations, printed pages 24–26",
+      "rationale": "Dedicated substantive analysis or recommendations concerning AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "osha-ai-worker-management-2022-official-pdf",
+      "locator": "Section 1.1 and recommendations, printed pages 24–26",
+      "rationale": "Examines AI worker-management effects on occupational safety."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_commissioned_external",
+      "source_id": "osha-ai-worker-management-2022-official-pdf",
+      "locator": "Printed page 2, Authors and commissioning statement",
+      "rationale": "Named external authors wrote this EU-OSHA-commissioned report."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "osha-ai-worker-management-2022-official-page",
+      "locator": "Official catalogue entry and English download",
+      "rationale": "Official dated publication is evidenced."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Karin Reinhold",
+      "affiliation": "Tallin University of Technology",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+    },
+    {
+      "name": "Marina Järvis",
+      "affiliation": "Tallin University of Technology",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+    },
+    {
+      "name": "Aleksandr Christenko",
+      "affiliation": "Visionary Analytics",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+    },
+    {
+      "name": "Vaida Jankauskaitė",
+      "affiliation": "Visionary Analytics",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+    },
+    {
+      "name": "Agnė Paliokaitė",
+      "affiliation": "Visionary Analytics",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+    },
+    {
+      "name": "Arnold Riedmann",
+      "affiliation": "Kantar",
+      "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+      "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+    }
+  ],
+  "additional_dates": [],
+  "snapshots": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "hleg-policy-investment-recommendations-2019-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "source_type": "official_pdf",
+  "url": "https://ec.europa.eu/futurium/en/system/files/ged/ai_hleg_policy_and_investment_recommendations.pdf",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T23:49:16Z",
+  "last_verified_at": "2026-09-05T23:49:16Z",
+  "verification_note": "Official English report opened. Printed p.2 (PDF page 3) names AI HLEG and states made public 26 June 2019. No snapshot or checksum claimed."
+}

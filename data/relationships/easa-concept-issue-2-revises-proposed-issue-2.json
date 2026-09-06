@@ -1,0 +1,16 @@
+{
+  "id": "easa-concept-issue-2-revises-proposed-issue-2",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_entity_type": "document",
+  "source_entity_id": "easa-ai-concept-paper-issue-2-2024",
+  "target_entity_type": "document",
+  "target_entity_id": "easa-ai-concept-paper-proposed-issue-2-2023",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "Published Issue 02 follows the public consultation on Proposed Issue 02. Final release acknowledges that consultation; exact issue identity is corroborated by both document headers.",
+  "evidence_source_id": "easa-ai-concept-issue-2-final-release",
+  "verification_status": "verified"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eiopa-digitalisation-european-insurance-sector-report-2024",
+  "official_title": "EIOPA's Report on the digitalisation of the European insurance sector",
+  "short_title": "EIOPA's Report on the digitalisation of the European insurance sector",
+  "document_type": "report",
+  "sector_tags": [
+    "financial_services",
+    "consumer_protection"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EIOPA-BoS-24/139",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-04-30",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2024-04-30",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "author",
+      "evidence_source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "official_host",
+      "evidence_source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+    "eiopa-digitalisation-european-insurance-sector-report-2024-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Empirical EIOPA market-monitoring report with a substantial dedicated AI and AI-governance chapter; distinct from the known 2021 governance principles and 2025 opinion.",
+    "researcher_notes": "Dedicated AI chapter qualifies under the material sectoral issue boundary despite the broader digitalisation title.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "locator": "PDF cover: EIOPA-BoS-24/139, 30 April 2024.",
+      "meaning": "Exact issue date printed on this version."
+    },
+    "publication_date": {
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-page",
+      "locator": "Publication date field and English file link.",
+      "meaning": "Establishes official publication of this version on 2024-04-30, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "locator": "PDF pp.22-29, sections 3.1 and 3.1.2: AI market developments and AI governance.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "locator": "PDF pp.22-29, sections 3.1 and 3.1.2: AI market developments and AI governance.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "locator": "PDF pp.22-29, sections 3.1 and 3.1.2: AI market developments and AI governance.",
+      "rationale": "Addresses safeguards for retail clients or insurance customers."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "locator": "PDF pp.22-29, sections 3.1 and 3.1.2: AI market developments and AI governance.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Insurance and Occupational Pensions Authority",
+      "affiliation": null,
+      "evidence_source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+    "locator": "PDF pp.22-29, sections 3.1 and 3.1.2: AI market developments and AI governance.",
+    "meaning": "Non-legislative report, scientific guidance, strategic workplan or consultation text; not an act creating binding law."
+  }
+}

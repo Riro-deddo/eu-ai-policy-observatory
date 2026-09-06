@@ -1,0 +1,13 @@
+{
+  "id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Reports/2023/1061483/Follow-up%20report%20on%20machine%20learning%20for%20IRB%20models.pdf",
+  "publisher": "European Banking Authority",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF pp.3-5, summary and consultation history; section 5.2 and Annex I. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

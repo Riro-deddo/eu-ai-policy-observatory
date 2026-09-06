@@ -1,0 +1,130 @@
+{
+  "id": "ep-ai-digital-age-2022",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:41:49.332+01:00",
+  "updated_at": "2026-09-06T00:41:49.332+01:00",
+  "slug": "ep-ai-digital-age-2022",
+  "official_title": "European Parliament resolution of 3 May 2022 on artificial intelligence in a digital age (2020/2266(INI))",
+  "short_title": "Artificial intelligence in a digital age",
+  "document_type": "resolution",
+  "sector_tags": [
+    "general_cross_sector",
+    "employment_and_labour"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "P9_TA(2022)0140",
+  "procedure_references": [
+    "2020/2266(INI)"
+  ],
+  "oj_reference": "2022/C 465/06",
+  "document_date": "2022-05-03",
+  "version_label": "Adopted resolution, Official Journal manifestation",
+  "version_status": "final",
+  "publication_date": "2022-12-06",
+  "legal_status": "non_binding",
+  "celex": "52022IP0140",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author",
+      "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+      "evidence_locator": "Resolution heading and acting body: The European Parliament"
+    },
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+      "evidence_locator": "Resolution heading"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+      "evidence_locator": "Official Journal masthead"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+      "evidence_locator": "EUR-Lex official English manifestation"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ep-ai-digital-age-2022-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "A broad AI policy resolution outside the AI Act legislative procedure; the reviewed labour-market passage identifies ethical, legal and employment implications of workplace AI and supporting training needs.",
+    "researcher_notes": "Adopted resolution P9_TA(2022)0140; A9-0088/2022 is its distinct committee report and is not counted here.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Resolution heading",
+      "meaning": "Institutional adoption date of this text."
+    },
+    "publication_date": {
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Official Journal identity block and masthead",
+      "meaning": "OJ C 465, p. 65, opened official text."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Resolution general recommendations and paragraphs 77–78",
+      "rationale": "AI is the substantive policy subject of this document."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Resolution sections on opportunities, risks and a European AI road map",
+      "rationale": "Contains a cross-sector European AI policy programme."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Paragraphs 77–78",
+      "rationale": "Addresses workplace change, employment and algorithmic management."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Resolution heading and acting body",
+      "rationale": "The Parliament is the acting institution in its resolution."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-ai-digital-age-2022-eur-lex",
+      "locator": "Official Journal identity block",
+      "rationale": "Official publication and this English manifestation are evidenced."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "snapshots": []
+}

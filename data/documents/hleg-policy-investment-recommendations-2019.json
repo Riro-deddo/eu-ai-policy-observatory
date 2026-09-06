@@ -1,0 +1,139 @@
+{
+  "id": "hleg-policy-investment-recommendations-2019",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "slug": "hleg-policy-investment-recommendations-2019",
+  "official_title": "Policy and Investment Recommendations for Trustworthy AI",
+  "short_title": "HLEG policy and investment recommendations",
+  "document_type": "recommendation",
+  "sector_tags": [
+    "general_cross_sector",
+    "employment_and_labour",
+    "education",
+    "public_administration",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2019-06-26",
+  "version_label": "Final report",
+  "version_status": "final",
+  "publication_date": "2019-06-26",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "high-level-expert-group-on-ai",
+      "role": "author",
+      "evidence_source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "evidence_locator": "Printed p.2 (PDF page 3), authorship statement"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "official_host",
+      "evidence_source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "evidence_locator": "Official Commission Futurium PDF and printed p.2 contact block"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "hleg-policy-investment-recommendations-2019-pdf"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The report develops 33 policy and investment recommendations for trustworthy AI.",
+    "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:49:16Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.2,6: public release and introduction",
+      "meaning": "Exact official publication date used as an explicit fallback; no separate exact issue date established."
+    },
+    "publication_date": {
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.2,6: public release and introduction",
+      "meaning": "Official publication on 2019-06-26."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.2,6: public release and introduction",
+      "rationale": "The report develops 33 policy and investment recommendations for trustworthy AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed p.6, introduction",
+      "rationale": "Recommendations address AI policy across society and economic sectors."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.6,12; Chapter I.A.3, human-centric AI at work",
+      "rationale": "Workplace impacts and protection form an explicit policy priority."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.6,17-20; Chapter I.C",
+      "rationale": "Public-sector AI adoption is a distinct policy strand."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.6,21-23; Chapter I.D",
+      "rationale": "The recommendations address European AI research capabilities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed pp.6,31-36; Chapter II.F, skills and education",
+      "rationale": "AI skills and education are explicit enabling policies."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed p.2 (PDF page 3), attribution and disclaimer",
+      "rationale": "The report expressly credits the independent AI HLEG, not the Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+      "locator": "Printed p.2 (PDF page 3), public-release statement",
+      "rationale": "The Commission-hosted report explicitly gives its public-release date."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
+}

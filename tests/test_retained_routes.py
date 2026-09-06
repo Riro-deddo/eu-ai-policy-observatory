@@ -320,8 +320,12 @@ def test_real_pipeline_round_trips_notices_without_changing_routes_or_holds(tmp_
     public = json.loads(first.public_json.read_text(encoding="utf-8"))
     documents = {document["id"]: document for document in public["documents"]}
     frozen = json.loads(BASELINE.read_text(encoding="utf-8"))["documents"]
-    assert len(documents) == 131
-    assert len(public["relationships"]) == 96
+    canonical = load_records(ROOT / "data")
+    for entity in ("documents", "relationships"):
+        assert sorted(item["id"] for item in public[entity]) == sorted(
+            record.data["id"] for record in canonical[entity]
+            if record.data["publication_status"] == "published"
+        )
     assert {(row["id"], row["slug"]) for row in frozen} <= {
         (row["id"], row["slug"]) for row in public["documents"]
     }

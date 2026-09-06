@@ -1,0 +1,160 @@
+{
+  "id": "eda-card-public-report-2024",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eda-card-public-report-2024",
+  "official_title": "2024 Coordinated Annual Review on Defence (CARD) report",
+  "short_title": "2024 Coordinated Annual Review on Defence (CARD) report",
+  "document_type": "report",
+  "sector_tags": [
+    "defence_and_security",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-11-19",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2024-11-19",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-defence-agency",
+      "role": "author",
+      "evidence_source_id": "eda-card-public-report-2024-official-page",
+      "evidence_locator": "Release paragraph 3: report produced by EDA."
+    },
+    {
+      "institution_id": "european-external-action-service",
+      "role": "contributor",
+      "evidence_source_id": "eda-card-public-report-2024-official-page",
+      "evidence_locator": "Release paragraph 3: in coordination with EEAS."
+    },
+    {
+      "institution_id": "european-union-military-staff",
+      "role": "contributor",
+      "evidence_source_id": "eda-card-public-report-2024-official-page",
+      "evidence_locator": "Release paragraph 3: in coordination with EUMS."
+    },
+    {
+      "institution_id": "eda-steering-board",
+      "role": "adopter",
+      "evidence_source_id": "eda-card-public-report-2024-official-page",
+      "evidence_locator": "Release lead and paragraph 3: Defence Ministers approved report during EDA Steering Board, 19 November 2024."
+    },
+    {
+      "institution_id": "european-defence-agency",
+      "role": "publisher",
+      "evidence_source_id": "eda-card-public-report-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-defence-agency",
+      "role": "official_host",
+      "evidence_source_id": "eda-card-public-report-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eda-card-public-report-2024-official-pdf",
+    "eda-card-public-report-2024-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "A dedicated AI section addresses defence data spaces, testing, validation and certification. Coordination with EEAS and EUMS is stated; joint authorship is not assumed.",
+    "researcher_notes": "Only the 14-page public CARD report is represented. EDA authorship; EEAS and EUMS coordination is contributor provenance, not co-authorship. Adoption preserved separately; report has no distinct evidenced exact issue date.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eda-card-public-report-2024-official-page",
+      "locator": "EDA release dated 19 November 2024 links the exact public CARD report and reports same-day ministerial approval.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "eda-card-public-report-2024-official-page",
+      "locator": "Official release dated 19 November 2024, paragraph 3 links the exact 2024 CARD public report.",
+      "meaning": "Establishes official publication of this version on 2024-11-19, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eda-card-public-report-2024-official-pdf",
+      "locator": "PDF p.9 (PDF index 8), Research & Technology: Artificial Intelligence; dedicated defence AI research and assurance passage.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "defence_and_security",
+      "source_id": "eda-card-public-report-2024-official-pdf",
+      "locator": "PDF p.9 (PDF index 8), Research & Technology: Artificial Intelligence; dedicated defence AI research and assurance passage.",
+      "rationale": "Addresses defence AI capabilities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "eda-card-public-report-2024-official-pdf",
+      "locator": "PDF p.9 (PDF index 8), Research & Technology: Artificial Intelligence; dedicated defence AI research and assurance passage.",
+      "rationale": "Specifies collaborative AI research, testing and validation."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eda-card-public-report-2024-official-pdf",
+      "locator": "PDF p.9 (PDF index 8), Research & Technology: Artificial Intelligence; dedicated defence AI research and assurance passage.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eda-card-public-report-2024-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Defence Agency",
+      "affiliation": null,
+      "evidence_source_id": "eda-card-public-report-2024-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "institutional_adoption",
+      "value": "2024-11-19",
+      "precision": "day",
+      "source_id": "eda-card-public-report-2024-official-page",
+      "locator": "Release lead and paragraph 3: Ministers of Defence approved during EDA Steering Board."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "eda-card-public-report-2024-official-pdf",
+    "locator": "PDF p.9 (PDF index 8), Research & Technology: Artificial Intelligence; dedicated defence AI research and assurance passage.",
+    "meaning": "Non-legislative report, scientific guidance, strategic workplan or consultation text; not an act creating binding law."
+  }
+}

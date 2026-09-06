@@ -1,0 +1,142 @@
+{
+  "id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+  "official_title": "Factsheet on the regulatory framework applicable to AI systems in the insurance sector",
+  "short_title": "Factsheet on the regulatory framework applicable to AI systems in the insurance sector",
+  "document_type": "briefing",
+  "sector_tags": [
+    "health",
+    "financial_services",
+    "consumer_protection"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-07-15",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2024-07-15",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "author",
+      "evidence_source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "official_host",
+      "evidence_source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+    "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Compact but directly substantive EIOPA mapping of the AI Act to insurance-sector regulation and supervision; distinct from the later governance opinion.",
+    "researcher_notes": "Independently citable two-page explanatory PDF qualifies as briefing. Its disclaimer expressly states that it has no legal value; no formal reference is invented.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-page",
+      "locator": "Official publication page: Publication date 15 July 2024.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-page",
+      "locator": "Publication date field and English file link.",
+      "meaning": "Establishes official publication of this version on 2024-07-15, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "locator": "PDF pp.1-2: insurance AI risk categories, governance, sector-law overlaps and consumer protection.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "locator": "PDF pp.1-2: insurance AI risk categories, governance, sector-law overlaps and consumer protection.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "locator": "PDF pp.1-2: insurance AI risk categories, governance, sector-law overlaps and consumer protection.",
+      "rationale": "Addresses medicines or health-insurance AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "locator": "PDF pp.1-2: insurance AI risk categories, governance, sector-law overlaps and consumer protection.",
+      "rationale": "Addresses safeguards for retail clients or insurance customers."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "locator": "PDF pp.1-2: insurance AI risk categories, governance, sector-law overlaps and consumer protection.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Insurance and Occupational Pensions Authority",
+      "affiliation": null,
+      "evidence_source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024-official-pdf",
+    "locator": "PDF p.2 final disclaimer: informational overview without legal value.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

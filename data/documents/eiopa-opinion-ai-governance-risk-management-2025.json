@@ -1,0 +1,126 @@
+{
+  "id": "eiopa-opinion-ai-governance-risk-management-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eiopa-opinion-ai-governance-risk-management-2025",
+  "official_title": "Opinion on Artificial Intelligence governance and risk management",
+  "short_title": "Opinion on Artificial Intelligence governance and risk management",
+  "document_type": "opinion",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EIOPA-BoS-25-360",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-08-06",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2025-08-06",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "author",
+      "evidence_source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "official_host",
+      "evidence_source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+    "eiopa-opinion-ai-governance-risk-management-2025-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "The opinion interprets insurance-sector legislation for AI systems and sets risk-based supervisory expectations on fairness, data governance, records, explainability, oversight, accuracy, robustness, and cybersecurity.",
+    "researcher_notes": "Final interpretative opinion; paragraph 2.8 expressly disclaims new requirements. The BoS reference is not alone treated as an adoption-date record.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+      "locator": "PDF cover: EIOPA-BoS-25-360, 06 August 2025.",
+      "meaning": "Exact issue date printed on this version."
+    },
+    "publication_date": {
+      "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-page",
+      "locator": "Publication date field and English file link.",
+      "meaning": "Establishes official publication of this version on 2025-08-06, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+      "locator": "PDF paragraphs 1.1-1.3, 2.6-2.8 and 3.1-3.11: legal basis and AI supervisory expectations.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+      "locator": "PDF paragraphs 1.1-1.3, 2.6-2.8 and 3.1-3.11: legal basis and AI supervisory expectations.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+      "locator": "PDF paragraphs 1.1-1.3, 2.6-2.8 and 3.1-3.11: legal basis and AI supervisory expectations.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Insurance and Occupational Pensions Authority",
+      "affiliation": null,
+      "evidence_source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eiopa-opinion-ai-governance-risk-management-2025-official-pdf",
+    "locator": "PDF paragraph 2.8: opinion sets no new requirements.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

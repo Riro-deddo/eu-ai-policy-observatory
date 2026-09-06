@@ -1,0 +1,144 @@
+{
+  "id": "historical-fp5-ist-specific-programme",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:51:04.811+01:00",
+  "updated_at": "2026-09-06T00:51:04.811+01:00",
+  "record_level": "principal",
+  "procedure_references": [],
+  "version_status": "final",
+  "language": "en",
+  "official_summary": null,
+  "policy_ids": [],
+  "concept_ids": [],
+  "historical_review_status": "verified",
+  "snapshots": [],
+  "slug": "historical-fp5-ist-specific-programme",
+  "official_title": "1999/168/EC: Council Decision of 25 January 1999 adopting a specific programme for research, technological development and demonstration on a user-friendly information society (1998 to 2002)",
+  "short_title": "FP5 user-friendly information society programme",
+  "document_type": "decision",
+  "sector_tags": [
+    "health",
+    "education",
+    "media_and_culture",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "official_reference": "1999/168/EC",
+  "oj_reference": "OJ L 64, 12.3.1999, pp. 20–39",
+  "document_date": "1999-01-25",
+  "document_date_kind": "official_act_date",
+  "publication_date": "1999-03-12",
+  "version_label": "Original Official Journal act",
+  "legal_status": "in_force",
+  "celex": "31999D0168",
+  "eli": "http://data.europa.eu/eli/dec/1999/168(1)/oj",
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "evidence_locator": "Act heading, adoption clause and signature, PDF pages 1–4"
+    },
+    {
+      "institution_id": "office-for-official-publications-of-the-european-communities",
+      "role": "publisher",
+      "evidence_source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "evidence_locator": "Original Official Journal of the European Communities masthead"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "historical-fp5-ist-specific-programme-eur-lex",
+      "evidence_locator": "EUR-Lex official English manifestation"
+    }
+  ],
+  "source_ids": [
+    "historical-fp5-ist-specific-programme-official-pdf",
+    "historical-fp5-ist-specific-programme-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Dedicated research priorities fund intelligent medical systems, language understanding, knowledge extraction, intelligent assistants and learner modelling. These substantial precursor provisions document the transition from earlier European information-technology programmes toward later AI research priorities.",
+    "researcher_notes": "Original specific-programme decision, separate from the FP5 framework. EUR-Lex currently labels it In force; the programme's 2002 completion does not establish legal expiry or repeal. Relevance and sector tags are editorial classifications supported by Annex II.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:51:04.811+01:00"
+  },
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Act heading and Done at Brussels clause, PDF pages 1 and 4",
+      "meaning": "Official act date 25 January 1999."
+    },
+    "publication_date": {
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "OJ mastheads, L 64/20–39, 12.3.1999",
+      "meaning": "Official Journal publication on 12 March 1999."
+    }
+  },
+  "legal_status_evidence": {
+    "source_id": "historical-fp5-ist-specific-programme-eur-lex",
+    "locator": "Current document information/status block: In force",
+    "meaning": "Current official status is retained without interpreting programme completion as expiry."
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Annex II(a)(iii), Human language technologies and Information access, PDF pages 13–14",
+      "rationale": "Language understanding, knowledge extraction and intelligent assistants substantively connect this research programme to the corpus's AI lineage."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Annex II(a)(iii), RTD priorities, PDF pages 13–14",
+      "rationale": "Funds research into language, knowledge and intelligent interaction technologies."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Annex II(a)(i), Health, PDF page 9",
+      "rationale": "Specifies intelligent diagnostic systems and medical assistants."
+    },
+    {
+      "field": "sector_tags",
+      "value": "media_and_culture",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Annex II(a)(iii), Multimedia content and Human language technologies, PDF pages 12–14",
+      "rationale": "Applies language technologies to media content and cultural heritage."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Annex II(a)(iii), Education and training, PDF page 13",
+      "rationale": "Specifies learner modelling and knowledge-transfer models."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "Heading, adoption clause and Council signature, PDF pages 1–4",
+      "rationale": "The Council is the acting institution in the official decision."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+      "locator": "OJ masthead on the original English act",
+      "rationale": "Official Journal publication establishes public issuance."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
+}

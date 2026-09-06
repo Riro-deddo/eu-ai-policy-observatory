@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "purpose": "Final identity-level disposition of the frozen 53-candidate admission queue; not a claim of exhaustive EU AI coverage.",
+  "research_date_local": "2026-09-06",
+  "timezone": "Europe/London",
+  "publication_cutoff": "2026-09-04",
+  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "baseline": {
+    "documents": 131,
+    "expanded_verified": 105,
+    "legacy_review_pending": 26,
+    "inventory_candidates": 171
+  },
+  "counts": {
+    "candidates": 53,
+    "included": 50,
+    "pending": 3,
+    "excluded": 0,
+    "merged": 0,
+    "new_sources": 97,
+    "new_institutions": 21,
+    "new_relationships": 11
+  },
+  "after": {
+    "documents": 181,
+    "expanded_verified": 155,
+    "legacy_review_pending": 26,
+    "inventory_candidates": 224,
+    "inventory_decisions": {
+      "included": 181,
+      "merged": 18,
+      "pending": 15,
+      "excluded": 10
+    }
+  },
+  "admitted_document_ids": [
+    "commission-ai-science-strategy-2025",
+    "council-ai-science-conclusions-2025",
+    "digital-europe-regulation-2021-694",
+    "easa-ai-concept-paper-issue-2-2024",
+    "easa-ai-concept-paper-proposed-issue-2-2023",
+    "easa-ai-roadmap-1-2020",
+    "easa-ai-roadmap-2-2023",
+    "eba-discussion-paper-machine-learning-irb-models-2021",
+    "eba-follow-up-machine-learning-irb-models-2023",
+    "eba-report-big-data-advanced-analytics-2020",
+    "eda-card-public-report-2024",
+    "edpb-ai-models-opinion-28-2024",
+    "eesc-ai-consequences-2017",
+    "eiopa-ai-governance-principles-2021",
+    "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+    "eiopa-digitalisation-european-insurance-sector-report-2024",
+    "eiopa-opinion-ai-governance-risk-management-2025",
+    "ema-2025-ai-observatory-report-2026",
+    "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+    "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+    "enisa-frontier-ai-cybersecurity-2026",
+    "ep-ai-civil-liability-2020",
+    "ep-ai-digital-age-2022",
+    "ep-ai-education-culture-audiovisual-2021",
+    "ep-ai-intellectual-property-2020",
+    "ep-ai-international-military-2021",
+    "ep-ethical-cyber-physical-systems-2016",
+    "ep-ethical-framework-ai-2020",
+    "eprs-ai-eu-borders-2021",
+    "esma-ai-adoption-trends-securities-markets-2026",
+    "esma-ai-eu-investment-funds-2025",
+    "esma-ai-eu-securities-markets-2023",
+    "esma-public-statement-ai-retail-investment-services-2024",
+    "eurohpc-ai-factories-regulation-2024-1732",
+    "europol-chatgpt-llm-law-enforcement-2023",
+    "expert-group-liability-ai-report-2019",
+    "fra-assessing-high-risk-ai-2025",
+    "fra-bias-algorithms-2022",
+    "fra-getting-future-right-ai-2020",
+    "frontex-ai-capabilities-2021",
+    "historical-com-2017-228-dsm-mid-term-review",
+    "historical-esprit-1984-work-programme",
+    "historical-esprit-1985-work-programme",
+    "historical-fp5-ist-specific-programme",
+    "historical-fp6-integrating-strengthening-programme",
+    "historical-fp7-framework-1982-2006",
+    "hleg-policy-investment-recommendations-2019",
+    "hleg-sectoral-considerations-2020",
+    "hma-ema-multi-annual-ai-workplan-2023-2028",
+    "osha-ai-worker-management-2022"
+  ],
+  "decisions": [
+    {
+      "candidate_id": "historical-esprit-1984-work-programme",
+      "decision": "included",
+      "document_id": "historical-esprit-1984-work-programme",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+        "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "historical-esprit-1985-work-programme",
+      "decision": "included",
+      "document_id": "historical-esprit-1985-work-programme",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN-SL/TXT/?from=EN&uri=CELEX%3A31985D0141",
+        "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "historical-fp6-integrating-strengthening-programme",
+      "decision": "included",
+      "document_id": "historical-fp6-integrating-strengthening-programme",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/eli/dec/2002/834/oj/eng",
+        "https://eur-lex.europa.eu/search.html?DC_CODED=2795&DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&FM_CODED=DEC_ENTSCHEID&SUBDOM_INIT=ALL_ALL&lang=en&page=10&qid=1746291753607&type=advanced"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "historical-fp7-framework-1982-2006",
+      "decision": "included",
+      "document_id": "historical-fp7-framework-1982-2006",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006D1982",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32006D1982"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "ep-ethical-cyber-physical-systems-2016",
+      "decision": "included",
+      "document_id": "ep-ethical-cyber-physical-systems-2016",
+      "reason": "Main study retrieved; compiler/expert roles corrected and exact catalogue publication fallback verified.",
+      "evidence_urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501_EN.pdf",
+        "https://www.europarl.europa.eu/thinktank/en/research/advanced-search/pdf?keywords=003740"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "historical-com-2017-228-dsm-mid-term-review",
+      "decision": "included",
+      "document_id": "historical-com-2017-228-dsm-mid-term-review",
+      "reason": "Full primary text and separate same-day official publication announcement establish required facts.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+        "https://digital-strategy.ec.europa.eu/en/news/digital-single-market-mid-term-review-commission-calls-swift-adoption-key-proposals-and-maps-out"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "eesc-ai-consequences-2017",
+      "decision": "included",
+      "document_id": "eesc-ai-consequences-2017",
+      "reason": "Full OJ text, plenary adoption and publication dates verified; cited OJ identifier selected as canonical reference.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016IE5369"
+      ],
+      "remaining_checks": [],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "historical-fp5-ist-specific-programme",
+      "decision": "included",
+      "document_id": "historical-fp5-ist-specific-programme",
+      "reason": "Recovered complete official English text and verified all pending identity, dates, classification and attribution fields. Original specific-programme decision, separate from the FP5 framework. EUR-Lex currently labels it In force; the programme's 2002 completion does not establish legal expiry or repeal. Relevance and sector tags are editorial classifications supported by Annex II.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31999D0168",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31999D0168"
+      ],
+      "remaining_checks": [],
+      "bundle": "recovered.json"
+    },
+    {
+      "candidate_id": "historical-juri-robotics-report-2017",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Official OEIL corroborates public tabling on 27 January 2017 and the report-to-resolution procedure, but repeated official report endpoints still returned empty HTTP 202 or robot challenges. The full original English report and detailed attribution remain unverified.",
+      "evidence_urls": [
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.html",
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf"
+      ],
+      "remaining_checks": [
+        "Retrieve the complete original English report and verify title, substantive passages and attribution.",
+        "Confirm that the recovered manifestation matches the report tabled on 27 January 2017, then record the evidenced procedural relationship."
+      ],
+      "bundle": "historical.json"
+    },
+    {
+      "candidate_id": "ep-ethical-framework-ai-2020",
+      "decision": "included",
+      "document_id": "ep-ethical-framework-ai-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Principal adopted resolution, including its recommendations annex within this manifestation. The requested regulation is not an enacted act. Committee report A9-0186/2020 is a separate preparatory document, not this identity.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0275",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0275_EN.html"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "ep-ai-civil-liability-2020",
+      "decision": "included",
+      "document_id": "ep-ai-civil-liability-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. One non-binding adopted resolution includes its proposed-regulation annex. The annex is a recommendation and has no independent enacted status; the 2022 Commission proposal is not a version of this resolution.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0276",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0276_EN.html"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "ep-ai-intellectual-property-2020",
+      "decision": "included",
+      "document_id": "ep-ai-intellectual-property-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Principal adopted resolution; committee-stage materials are not merged with the adopted text.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0277",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0277_EN.html"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "ep-ai-education-culture-audiovisual-2021",
+      "decision": "included",
+      "document_id": "ep-ai-education-culture-audiovisual-2021",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. The OJ-addressed manifestation expressly identifies P9_TA(2021)0238 and CELEX 52021IP0238. It is the same adopted resolution, not another version.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj:JOC_2022_015_R_0005"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "ep-ai-digital-age-2022",
+      "decision": "included",
+      "document_id": "ep-ai-digital-age-2022",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Adopted resolution P9_TA(2022)0140; A9-0088/2022 is its distinct committee report and is not counted here.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022IP0140"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "edpb-ai-models-opinion-28-2024",
+      "decision": "included",
+      "document_id": "edpb-ai-models-opinion-28-2024",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Adoption on 17 December is distinct from publication on 18 December 2024. One adopted opinion; its Irish-authority request is a separate input.",
+      "evidence_urls": [
+        "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+        "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-282024-on-certain-data-protection-aspects-related-to_en"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "fra-getting-future-right-ai-2020",
+      "decision": "included",
+      "document_id": "fra-getting-future-right-ai-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. FRA report with fieldwork outsourced to Ecorys; FRA staff designed and supervised research (printed page 18 / PDF page 20). This is not evidence that Ecorys authored the report. The 2024 webpage notice adds Slovenian availability; English report identity remains 2020. Separately listed annexes and summary are not counted here.",
+      "evidence_urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2020-artificial-intelligence_en.pdf",
+        "https://fra.europa.eu/en/publication/2020/artificial-intelligence-and-fundamental-rights"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "fra-bias-algorithms-2022",
+      "decision": "included",
+      "document_id": "fra-bias-algorithms-2022",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. FRA designed the research and drafted this report after research by a consortium led by Rania Wazir (printed page 21). The consortium credit is retained as a research contribution, not substituted for report authorship.",
+      "evidence_urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2022-bias-in-algorithms_en.pdf",
+        "https://fra.europa.eu/en/publication/2022/bias-algorithm"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "fra-assessing-high-risk-ai-2025",
+      "decision": "included",
+      "document_id": "fra-assessing-high-risk-ai-2025",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. FRA's 2025 report. Title/imprint and methodology identify the publication; no named personal author is credited in the reviewed front matter. Publication-day fallback preserves the year-only issue information without inventing an issue day.",
+      "evidence_urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2025-assessing-high-risk-ai-fundamental-rights-risks_en.pdf",
+        "https://fra.europa.eu/en/publication/2025/assessing-high-risk-ai"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "enisa-frontier-ai-cybersecurity-2026",
+      "decision": "included",
+      "document_id": "enisa-frontier-ai-cybersecurity-2026",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Public July 2026 report linked by the official 7 July catalogue and report page to the current _0 PDF. Page 3 lists internal and embargoed drafting history, not separately established public versions. Publication date is the exact-day fallback; cover month is preserved. No local bytes or checksum retained.",
+      "evidence_urls": [
+        "https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf",
+        "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "europol-chatgpt-llm-law-enforcement-2023",
+      "decision": "included",
+      "document_id": "europol-chatgpt-llm-law-enforcement-2023",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Identity is the 2023 Tech Watch Flash report, ISBN 978-92-95220-57-7. Official metadata still cites Europol (2023), despite a 25 November 2025 webpage update; no revised report identity is claimed. A longer law-enforcement-only version mentioned by the launch notice is not this public report. No historical byte-comparison claim is made.",
+      "evidence_urls": [
+        "https://www.europol.europa.eu/cms/sites/default/files/documents/Tech%20Watch%20Flash%20-%20The%20Impact%20of%20Large%20Language%20Models%20on%20Law%20Enforcement.pdf",
+        "https://www.europol.europa.eu/publications-events/publications/chatgpt-impact-of-large-language-models-law-enforcement"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "ep-ai-international-military-2021",
+      "decision": "included",
+      "document_id": "ep-ai-international-military-2021",
+      "reason": "Official English identity, publication, relevance and author/issuer roles verified. One non-binding adopted resolution; the OJ appearance is the same text.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "frontex-ai-capabilities-2021",
+      "decision": "included",
+      "document_id": "frontex-ai-capabilities-2021",
+      "reason": "Recovered complete official English text and verified all pending identity, dates, classification and attribution fields. Externally authored RAND Europe report commissioned by Frontex. Five named authors are retained separately from the agency. The 17 March issue date differs from official publication on 31 March 2021. Current PDF metadata has a 2025 modification timestamp, but the public cover and imprint identify the same 2021 final report; no new version is inferred from file metadata. Embedded annexes remain part of this principal report.",
+      "evidence_urls": [
+        "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+        "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe"
+      ],
+      "remaining_checks": [],
+      "bundle": "recovered.json"
+    },
+    {
+      "candidate_id": "eprs-ai-eu-borders-2021",
+      "decision": "included",
+      "document_id": "eprs-ai-eu-borders-2021",
+      "reason": "Official English identity, publication, relevance and author/issuer roles verified. Staff-authored parliamentary research, not an adopted Parliament position. Exact catalogue publication date is used as fallback for month-only July issue date. The 26 July Publications Office release is a later manifestation of this analysis.",
+      "evidence_urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/IDAN/2021/690706/EPRS_IDA(2021)690706_EN.pdf",
+        "https://www.europarl.europa.eu/thinktank/en/document/EPRS_IDA(2021)690706"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "osha-ai-worker-management-2022",
+      "decision": "included",
+      "document_id": "osha-ai-worker-management-2022",
+      "reason": "Official English identity, publication, relevance and author/issuer roles verified. External authorship and EU-OSHA commissioning are explicit. Full report identity is distinguished from separately hosted summaries or policy briefs. Exact official publication date is used because the report gives only 2022.",
+      "evidence_urls": [
+        "https://osha.europa.eu/sites/default/files/artificial-intelligence-worker-management_en.pdf",
+        "https://osha.europa.eu/en/publications/artificial-intelligence-worker-management-implications-occupational-safety-and-health"
+      ],
+      "remaining_checks": [],
+      "bundle": "rights.json"
+    },
+    {
+      "candidate_id": "easa-ai-concept-paper-issue-2-2024",
+      "decision": "included",
+      "document_id": "easa-ai-concept-paper-issue-2-2024",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Named author Guillaume Soudain; reviewer and approver are not co-authors. Final Issue 02 follows the separately published proposed Issue 02. Publication date used because no independent exact issue day is printed in the extracted text.",
+      "evidence_urls": [
+        "https://www.easa.europa.eu/en/downloads/139504/en",
+        "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-issue-2"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "decision": "included",
+      "document_id": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Separately citable consultation version; named author Guillaume Soudain. Its foreword implements Roadmap 1.0, not the later Roadmap 2.0.",
+      "evidence_urls": [
+        "https://www.easa.europa.eu/en/downloads/137631/en",
+        "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-concept-paper-proposed-issue-2"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "decision": "included",
+      "document_id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Corrects screened 10 July document date to the actual 13 July cover issue. CHMP adopted for consultation on 10 July and CVMP on 13 July; these are committees within EMA.",
+      "evidence_urls": [
+        "https://www.ema.europa.eu/en/documents/scientific-guideline/draft-reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf",
+        "https://www.ema.europa.eu/en/use-artificial-intelligence-ai-medicinal-product-lifecycle-scientific-guideline"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "decision": "included",
+      "document_id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Cover issue has month precision. December 2023 adoption is preserved at month precision; a planned 14 December meeting is not proof of an actual adoption day. Hosted file updated 25 January 2024 still identifies Version 1, November 2023. HMA is a national-authorities network.",
+      "evidence_urls": [
+        "https://www.ema.europa.eu/system/files/documents/work-programme/2023-12_ai-multiannual-workplan_a4_en.pdf",
+        "https://www.ema.europa.eu/en/news/artificial-intelligence-workplan-guide-use-ai-medicines-regulation"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "decision": "included",
+      "document_id": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Consultation document with expressly preliminary, non-binding views. The follow-up report independently confirms publication on 11 November 2021.",
+      "evidence_urls": [
+        "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Discussions/2022/Discussion%2520on%2520machine%2520learning%2520for%2520IRB%2520models/1023883/Discussion%2520paper%2520on%2520machine%2520learning%2520for%2520IRB%2520models.pdf",
+        "https://www.eba.europa.eu/discussion-paper-machine-learning-irb-models"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "esma-public-statement-ai-retail-investment-services-2024",
+      "decision": "included",
+      "document_id": "esma-public-statement-ai-retail-investment-services-2024",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Officially titled Public Statement; mapped to guidelines because it supplies initial supervisory guidance. Existing MiFID II obligations are distinguished from the statement's non-binding guidance.",
+      "evidence_urls": [
+        "https://www.esma.europa.eu/sites/default/files/2024-05/ESMA35-335435667-5924__Public_Statement_on_AI_and_investment_services.pdf",
+        "https://www.esma.europa.eu/document/public-statement-ai-and-investment-services"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "decision": "included",
+      "document_id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Dedicated AI chapter qualifies under the material sectoral issue boundary despite the broader digitalisation title.",
+      "evidence_urls": [
+        "https://www.eiopa.europa.eu/document/download/6ca9e171-42b9-44d7-a2e6-beaf0134ecb8_en?filename=Report+on+the+digitalisation+of+the+European+insurance+sector.pdf",
+        "https://www.eiopa.europa.eu/publications/eiopas-report-digitalisation-european-insurance-sector_en"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "decision": "included",
+      "document_id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Independently citable two-page explanatory PDF qualifies as briefing. Its disclaimer expressly states that it has no legal value; no formal reference is invented.",
+      "evidence_urls": [
+        "https://www.eiopa.europa.eu/document/download/b53a3b92-08cc-4079-a4f7-606cf309a34a_en?filename=Factsheet-on-the-regulatory-framework-applicable-to-AI-systems-in-the-insurance-sector-july-2024.pdf",
+        "https://www.eiopa.europa.eu/publications/factsheet-regulatory-framework-applicable-ai-systems-insurance-sector_en"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eba-report-big-data-advanced-analytics-2020",
+      "decision": "included",
+      "document_id": "eba-report-big-data-advanced-analytics-2020",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Cover gives January 2020 only; exact publication is the document-date fallback. PDF software author metadata is not treated as bibliographic authorship.",
+      "evidence_urls": [
+        "https://www.eba.europa.eu/sites/default/files/document_library/Final%20Report%20on%20Big%20Data%20and%20Advanced%20Analytics.pdf",
+        "https://www.eba.europa.eu/publications-and-media/press-releases/eba-report-identifies-key-challenges-roll-out-big-data-and"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "easa-ai-roadmap-1-2020",
+      "decision": "included",
+      "document_id": "easa-ai-roadmap-1-2020",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Published initial roadmap; a living strategic document, not binding aviation rules. Month-only cover date retained separately.",
+      "evidence_urls": [
+        "https://www.easa.europa.eu/sites/default/files/dfu/EASA-AI-Roadmap-v1.0.pdf",
+        "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-roadmap-10"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eiopa-ai-governance-principles-2021",
+      "decision": "included",
+      "document_id": "eiopa-ai-governance-principles-2021",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. 2021 edition identified by ISBN, DOI and Publications Office imprint. Website file label 31 January 2023 is a later hosted manifestation, not evidence of a new edition; byte identity with the original is not claimed. Views belong to the expert group, not necessarily EIOPA.",
+      "evidence_urls": [
+        "https://www.eiopa.europa.eu/document/download/30f4502b-3fe9-4fad-b2a3-aa66ea41e863_en?filename=Artificial+intelligence+governance+principles.pdf",
+        "https://www.eiopa.europa.eu/publications/artificial-intelligence-governance-principles-towards-ethical-and-trustworthy-artificial_en"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "esma-ai-eu-securities-markets-2023",
+      "decision": "included",
+      "document_id": "esma-ai-eu-securities-markets-2023",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Distinct report identity ESMA50-164-6247. Named authors retained; acknowledgments are not co-authors.",
+      "evidence_urls": [
+        "https://www.esma.europa.eu/sites/default/files/library/ESMA50-164-6247-AI_in_securities_markets.pdf",
+        "https://www.esma.europa.eu/document/trv-article-artificial-intelligence-eu-securities-markets"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "easa-ai-roadmap-2-2023",
+      "decision": "included",
+      "document_id": "easa-ai-roadmap-2-2023",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Explicit update of Roadmap 1.0. Future roadmap milestones are projections, not completed events.",
+      "evidence_urls": [
+        "https://www.easa.europa.eu/sites/default/files/dfu/easa_ai_roadmap_2_0_2023.pdf",
+        "https://www.easa.europa.eu/en/document-library/general-publications/easa-artificial-intelligence-roadmap-20"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eba-follow-up-machine-learning-irb-models-2023",
+      "decision": "included",
+      "document_id": "eba-follow-up-machine-learning-irb-models-2023",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Cover has August 2023 only; publication supplies exact fallback date. Distinct follow-up report, not a revised manifestation of the discussion paper.",
+      "evidence_urls": [
+        "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Reports/2023/1061483/Follow-up%20report%20on%20machine%20learning%20for%20IRB%20models.pdf",
+        "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-follow-report-use-machine-learning-internal"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "decision": "included",
+      "document_id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Cover issue differs from the later CVMP adoption on 11 September 2024. CHMP and CVMP are both EMA committees, not separate institutions for joint-authorship tagging.",
+      "evidence_urls": [
+        "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf",
+        "https://www.ema.europa.eu/en/use-artificial-intelligence-ai-medicinal-product-lifecycle-scientific-guideline"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eda-card-public-report-2024",
+      "decision": "included",
+      "document_id": "eda-card-public-report-2024",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Only the 14-page public CARD report is represented. EDA authorship; EEAS and EUMS coordination is contributor provenance, not co-authorship. Adoption preserved separately; report has no distinct evidenced exact issue date.",
+      "evidence_urls": [
+        "https://eda.europa.eu/docs/default-source/documents/card-report-2024.pdf",
+        "https://eda.europa.eu/news-and-events/press-office/latest-press-releases/2024/11/19/2024-defence-review-paves-way-for-joint-military-projects"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "esma-ai-eu-investment-funds-2025",
+      "decision": "included",
+      "document_id": "esma-ai-eu-investment-funds-2025",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Distinct investment-funds analysis with its own reference and author team; not a revision of the 2023 report.",
+      "evidence_urls": [
+        "https://www.esma.europa.eu/sites/default/files/2025-02/ESMA50-43599798-9923_TRV_Article_Artificial_intelligence_in_EU_investment_funds.pdf",
+        "https://www.esma.europa.eu/document/trv-article-artificial-intelligence-eu-investment-funds-adoption-strategies-and-portfolio"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "decision": "included",
+      "document_id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Final interpretative opinion; paragraph 2.8 expressly disclaims new requirements. The BoS reference is not alone treated as an adoption-date record.",
+      "evidence_urls": [
+        "https://www.eiopa.europa.eu/document/download/88342342-a17f-4f88-842f-bf62c93012d6_en?filename=Opinion+on+Artificial+Intelligence+governance+and+risk+management.pdf",
+        "https://www.eiopa.europa.eu/publications/opinion-artificial-intelligence-governance-and-risk-management_en"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "esma-ai-adoption-trends-securities-markets-2026",
+      "decision": "included",
+      "document_id": "esma-ai-adoption-trends-securities-markets-2026",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. Distinct empirical survey report; 2025 is the survey year, not its publication year.",
+      "evidence_urls": [
+        "https://www.esma.europa.eu/sites/default/files/2026-02/ESMA50-481369926-30599_TRV_Risk_Analysis_AI_adoption_and_trends_in_securities_markets.pdf",
+        "https://www.esma.europa.eu/esmas-activities/risk-analysis/topical-analysis"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Version 2.0 is explicitly the first annual revision of the 2025-2028 workplan. Exact publication (9 March 2026), February adoption, identity, joint-network provenance and AI substance are verified; required canonical predecessor/version relationship remains unresolved.",
+      "evidence_urls": [
+        "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2026-2028-data-artificial-intelligence-medicines-regulation_en.pdf",
+        "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/network-data-steering-group-ndsg",
+        "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2025-2028_en.pdf"
+      ],
+      "remaining_checks": [
+        "Independently review and admit the predecessor Network Data Steering Group workplan 2025-2028 (first published 7 May 2025, updated 22 July 2025), outside this 53-candidate batch; then link this version with an evidenced revises/version_of relationship."
+      ],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "ema-2025-ai-observatory-report-2026",
+      "decision": "included",
+      "document_id": "ema-2025-ai-observatory-report-2026",
+      "reason": "Verified independently citable English official document, exact date meanings, attribution and substantive AI relevance. 2025 is the activity year. EMA is credited on the cover; EMA and HMA are joint publishers. NDSG's monitoring role does not establish authorship.",
+      "evidence_urls": [
+        "https://www.ema.europa.eu/en/documents/report/2025-ai-observatory-report_en.pdf",
+        "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence"
+      ],
+      "remaining_checks": [],
+      "bundle": "sectoral.json"
+    },
+    {
+      "candidate_id": "hleg-policy-investment-recommendations-2019",
+      "decision": "included",
+      "document_id": "hleg-policy-investment-recommendations-2019",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://ec.europa.eu/futurium/en/system/files/ged/ai_hleg_policy_and_investment_recommendations.pdf"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-base.json"
+    },
+    {
+      "candidate_id": "hleg-sectoral-considerations-2020",
+      "decision": "included",
+      "document_id": "hleg-sectoral-considerations-2020",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://futurium.ec.europa.eu/sites/default/files/2020-07/Sectoral%20Considerations%20On%20The%20Policy%20And%20Investment%20Recommendations%20For%20Trustworthy%20Artificial%20Intelligence.pdf"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-base.json"
+    },
+    {
+      "candidate_id": "digital-europe-regulation-2021-694",
+      "decision": "included",
+      "document_id": "digital-europe-regulation-2021-694",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-base.json"
+    },
+    {
+      "candidate_id": "eurohpc-ai-factories-regulation-2024-1732",
+      "decision": "included",
+      "document_id": "eurohpc-ai-factories-regulation-2024-1732",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1732"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-base.json"
+    },
+    {
+      "candidate_id": "council-ai-science-conclusions-2025",
+      "decision": "included",
+      "document_id": "council-ai-science-conclusions-2025",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2025/05/23/council-calls-for-an-inclusive-ethical-sustainable-and-human-centric-strategy-for-the-uptake-of-ai-in-science/"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-base.json"
+    },
+    {
+      "candidate_id": "commission-ai-science-strategy-2025",
+      "decision": "included",
+      "document_id": "commission-ai-science-strategy-2025",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52025DC0724",
+        "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-base.json"
+    },
+    {
+      "candidate_id": "expert-group-liability-ai-report-2019",
+      "decision": "included",
+      "document_id": "expert-group-liability-ai-report-2019",
+      "reason": "Full official report, distinct expert authorship, substantive findings and exact official publication fallback verified. Catalogue-number discrepancy documented; matching DOI/ISBN resolve identity.",
+      "evidence_urls": [
+        "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en",
+        "https://op.europa.eu/flexpaper/view?doc=1c5e30be-1197-11ea-8c1f-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]"
+      ],
+      "remaining_checks": [],
+      "bundle": "commission-experts.json"
+    },
+    {
+      "candidate_id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Official102-page PDF is explicitly First edition–corrected version with distinct DOI/ISBN. Issue27March2024, release21June2024, authorship and recommendations verified, but independently citable original first edition (DOI10.2777/08845) is currently evidenced only by external academy mirrors. Required verified version parent is unresolved; SAPEA ERR13 is supporting research, not that parent.",
+      "evidence_urls": [
+        "https://op.europa.eu/en/publication-detail/-/publication/d6d8ed54-32a8-11ef-a61b-01aa75ed71a1/language-en",
+        "https://op.europa.eu/flexpaper/view?doc=d6d8ed54-32a8-11ef-a61b-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]",
+        "https://data.europa.eu/doi/10.2777/08845"
+      ],
+      "remaining_checks": [
+        "Retrieve first edition from eligible official source and establish its canonical identity/publication.",
+        "Create validated revises/version_of relationship before admitting corrected edition.",
+        "Do not replace the corrected edition issue date with its June catalogue release or confuse it with SAPEA Evidence Review Report13."
+      ],
+      "bundle": "commission-experts.json"
+    }
+  ],
+  "normalizations": [
+    "Only recovered.json inclusions for FP5 and Frontex override their earlier pending bundle decisions. Other historical discovery notes remain unchanged.",
+    "Canonical sector and provenance arrays are ordered according to the existing controlled vocabulary; underlying classification evidence is unchanged.",
+    "Digital Europe Regulation status note explicitly records the official metadata/Article 34 entry-into-force discrepancy without adjudicating it.",
+    "No original canonical document, source, institution, relationship, schema, policy membership or legacy review state was rewritten."
+  ],
+  "independent_review": {
+    "scope": "All 179 new entities: schema, identities, cutoff, evidence references, classification coverage and required relationships; selected official-text checks across Commission, EIOPA, Parliament, FRA and EU-OSHA.",
+    "critical_findings": 0,
+    "important_findings": 0,
+    "minor_findings_resolved": [
+      "Digital Europe metadata/Article 34 discrepancy documented."
+    ],
+    "test_diff_review": "All nine changed test files reviewed; original 131-record cohort, retained routes, review partitions, pending gates and provenance hashes remain asserted. No critical or important findings.",
+    "limitation": "Not every primary source was independently retrieved a second time. Retrieval limits are disclosed in individual evidence bundles."
+  },
+  "outputs": {
+    "directory": "work/gap-admission-20260906/final",
+    "database": "work/gap-admission-20260906/final/eu-ai-policy-observatory.sqlite",
+    "public_json": "work/gap-admission-20260906/final/public-data.json",
+    "generated_at": "2026-09-06T00:09:00Z",
+    "sha256": {
+      "public_json": "6402d4accdb2d5e4296d5fa3e75300f97e85346ac607b90fc141ed98bed358df",
+      "database": "67262ec435e48d532f7568eb6b5a31fecf5c6fa11a9e7be299a30d9d5886cf08"
+    }
+  },
+  "verification": {
+    "canonical_pipeline": "passed",
+    "database_integrity": "passed on final pair: integrity_check ok; foreign_key_check empty; exact 181 exported document identities",
+    "deterministic_export": "passed: final and final-repeat JSON/SQLite pairs are byte-identical at the same generated_at timestamp",
+    "python_suite": "Independent worker full rerun: 404 passed, 1 skipped. Root full rerun: 402 passed, 1 skipped, 2 failed solely with PermissionError reading the protected generated/public-data.json; these two test functions did not reach their assertions in the root context.",
+    "node_source_suite": "passed: 65 tests, 0 failures against the final expanded public JSON; not browser end-to-end testing",
+    "vitest": "blocked: esbuild cannot read ancestor directory/resolve config under this Windows permission context",
+    "astro_build": "blocked: EPERM creating web/.astro/collections, unchanged after specific filesystem grant",
+    "public_build_scanner": "not run against a fresh build because Astro is blocked",
+    "repository_english_guard": "passed; final delivery text recheck recorded in progress.md",
+    "deployment": "not attempted or authorized in this request"
+  },
+  "limitations": [
+    "Three candidates are not canonical records and will not appear in the public export until their stated evidence or version dependencies are resolved.",
+    "The prior 26 canonical expanded-review holds and 12 unrelated pending inventory candidates remain separate and unchanged.",
+    "No complete official-source catalogue census is claimed. Source registry additions remain in progress.",
+    "No archived-byte, snapshot or checksum verification of remote primary sources is claimed unless a source record explicitly supplies it."
+  ]
+}

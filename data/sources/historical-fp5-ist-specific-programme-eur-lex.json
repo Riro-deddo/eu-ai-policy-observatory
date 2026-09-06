@@ -1,0 +1,13 @@
+{
+  "id": "historical-fp5-ist-specific-programme-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:51:04.811+01:00",
+  "updated_at": "2026-09-06T00:51:04.811+01:00",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31999D0168",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+  "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+  "verification_note": "Complete official English HTML retrieved with public unauthenticated Node fetch (HTTP 200). Identity block confirms CELEX 31999D0168, ELI, OJ L 64 of 12 March 1999, pages 20–39 and current status In force. Programme duration is not interpreted as repeal."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "esma-ai-adoption-trends-securities-markets-2026-dated-library",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_register",
+  "url": "https://www.esma.europa.eu/databases-library/esma-library?search_api_fulltext_1=ESMA50-481369926-30599",
+  "publisher": "European Securities and Markets Authority",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "Exact-reference filtered library row confirms publication date, reference, English document title and report download. Retrieved through Node fetch; table text inspected."
+}

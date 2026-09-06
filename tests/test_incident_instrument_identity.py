@@ -30,9 +30,20 @@ def test_pipeline_presents_two_standalone_instruments_without_new_records(tmp_pa
     assert {(item["id"], item["slug"]) for item in frozen["documents"]} <= {
         (item["id"], item["slug"]) for item in documents.values()
     }
-    assert len(documents) == 131
-    assert len(public["relationships"]) == 96
-    assert public["coverage"]["principal_documents"] == 48
+    canonical = load_records(ROOT / "data")
+    for entity in ("documents", "relationships"):
+        assert sorted(item["id"] for item in public[entity]) == sorted(
+            record.data["id"] for record in canonical[entity]
+            if record.data["publication_status"] == "published"
+        )
+    assert public["coverage"]["principal_documents"] == sum(
+        record.data["record_level"] == "principal"
+        for record in canonical["documents"]
+        if record.data["publication_status"] == "published"
+    )
+    reviewed_baseline = json.loads(EXPANDED_LEDGER.read_text(encoding="utf-8"))["baseline"]["documents"]
+    assert sum(documents[item["id"]]["record_level"] == "principal"
+               for item in reviewed_baseline) == 48
     with sqlite3.connect(outputs.database) as connection:
         for doc_id, title in TITLES.items():
             document = documents[doc_id]

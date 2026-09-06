@@ -1,6 +1,8 @@
 import json
+from collections import Counter
 from pathlib import Path
 
+from observatory.io import load_records
 from observatory.pipeline import run_pipeline
 
 
@@ -100,7 +102,16 @@ def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
     documents = {row["id"]: row for row in payload["documents"]}
 
     assert len(documents) >= 131
-    assert payload["coverage"]["historical_review"] == followup["expected_after"]["historical_review"]
+    # The historical split applies to the original cohort, not later admissions.
+    assert Counter(
+        documents[row["id"]]["historical_review_status"]
+        for row in ledger["baseline"]["documents"]
+    ) == followup["expected_after"]["historical_review"]
+    assert payload["coverage"]["historical_review"] == Counter(
+        record.data.get("historical_review_status") or "legacy_review_pending"
+        for record in load_records(ROOT / "data")["documents"]
+        if record.data["publication_status"] == "published"
+    )
     assert all(
         documents[identifier]["historical_review_status"] == "verified"
         for identifier in ledger["upgraded_ids"]

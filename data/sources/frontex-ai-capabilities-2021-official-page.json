@@ -1,0 +1,13 @@
+{
+  "id": "frontex-ai-capabilities-2021-official-page",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:51:04.811+01:00",
+  "updated_at": "2026-09-06T00:51:04.811+01:00",
+  "source_type": "official_register",
+  "url": "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe",
+  "publisher": "European Border and Coast Guard Agency",
+  "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+  "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+  "verification_note": "Official catalogue retrieved successfully (HTTP 200): exact final-report title, publication date 2021-03-31 and English PDF download verified."
+}

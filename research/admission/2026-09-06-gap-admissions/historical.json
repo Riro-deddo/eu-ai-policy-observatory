@@ -1,0 +1,1594 @@
+{
+  "records": [
+    {
+      "id": "historical-esprit-1984-work-programme",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "historical-esprit-1984-work-programme",
+      "official_title": "84/157/EEC: Council Decision of 28 February 1984 adopting the 1984 work programme for a European programme for research and development in information technologies (ESPRIT)",
+      "short_title": "ESPRIT 1984 work programme",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "84/157/EEC",
+      "procedure_references": [],
+      "oj_reference": "OJ L 81, 24.3.1984, pp. 1–67",
+      "document_date": "1984-02-28",
+      "version_label": "Original Official Journal text",
+      "version_status": "final",
+      "publication_date": "1984-03-24",
+      "legal_status": "no_longer_in_force",
+      "celex": "31984D0157",
+      "eli": "http://data.europa.eu/eli/dec/1984/157/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-communities",
+          "role": "adopter",
+          "evidence_source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "evidence_locator": "Act heading and operative adoption clause"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "evidence_locator": "Preamble: Commission proposal or submitted draft work programme"
+        },
+        {
+          "institution_id": "office-for-official-publications-of-the-european-communities",
+          "role": "publisher",
+          "evidence_source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "evidence_locator": "Original Official Journal citation"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "evidence_locator": "EUR-Lex hosting of original act"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "historical-esprit-1984-work-programme-eur-lex",
+        "historical-esprit-official-register-metadata"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "implementation",
+        "inclusion_rationale": "A dedicated research theme develops AI for computer-aided engineering.",
+        "researcher_notes": "Independent original act. Analytical classifications are separate from official facts. Programme completion is not used to infer repeal.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "Act heading; signed closing formula",
+          "meaning": "Official act date."
+        },
+        "publication_date": {
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "Official Journal reference",
+          "meaning": "Date of the cited original OJ publication."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "Annex, section 5.2.2, Type B research theme; section 3.1",
+          "rationale": "A dedicated research theme develops AI for computer-aided engineering."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "Annex, section 5.2.2",
+          "rationale": "Funded research priorities."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "Annex, section 5.2.2",
+          "rationale": "AI research supports manufacturing design and processes."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "historical-esprit-official-register-metadata",
+          "locator": "Record for 31984D0157, Author field",
+          "rationale": "Explicit official author metadata; historical issuing name preserved."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "Official Journal citation",
+          "rationale": "Original act formally published."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "1984-12-31",
+          "precision": "day",
+          "source_id": "historical-esprit-1984-work-programme-eur-lex",
+          "locator": "EUR-Lex legal-status panel"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "historical-esprit-1984-work-programme-eur-lex",
+        "locator": "EUR-Lex legal-status panel",
+        "meaning": "Officially recorded as no longer in force."
+      }
+    },
+    {
+      "id": "historical-esprit-1985-work-programme",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "historical-esprit-1985-work-programme",
+      "official_title": "85/141/EEC: Council Decision of 11 February 1985 adopting the 1985 work programme for the European Strategic Programme for Research and Development in Information Technologies: ESPRIT",
+      "short_title": "ESPRIT 1985 work programme",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "85/141/EEC",
+      "procedure_references": [],
+      "oj_reference": "OJ L 55, 23.2.1985, pp. 1–101",
+      "document_date": "1985-02-11",
+      "version_label": "Original Official Journal text",
+      "version_status": "final",
+      "publication_date": "1985-02-23",
+      "legal_status": "no_longer_in_force",
+      "celex": "31985D0141",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-communities",
+          "role": "adopter",
+          "evidence_source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "evidence_locator": "Act heading and operative adoption clause"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "evidence_locator": "Preamble: Commission proposal or submitted draft work programme"
+        },
+        {
+          "institution_id": "office-for-official-publications-of-the-european-communities",
+          "role": "publisher",
+          "evidence_source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "evidence_locator": "Original Official Journal citation"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "evidence_locator": "EUR-Lex hosting of original act"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "historical-esprit-1985-work-programme-eur-lex",
+        "historical-esprit-official-register-metadata"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "implementation",
+        "inclusion_rationale": "Dedicated provisions develop AI and expert-system applications.",
+        "researcher_notes": "Independent original act. Analytical classifications are separate from official facts. Programme completion is not used to infer repeal.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "locator": "Act heading; signed closing formula",
+          "meaning": "Official act date."
+        },
+        "publication_date": {
+          "source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "locator": "Official Journal reference",
+          "meaning": "Date of the cited original OJ publication."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "locator": "Annex, sections 3.1.1.1 and 5.2.2–5.2.2.1",
+          "rationale": "Dedicated provisions develop AI and expert-system applications."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "locator": "Annex, section 5.2.2.1, material handling",
+          "rationale": "Funded research priorities."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "locator": "Annex, section 5.2.2.1, material handling",
+          "rationale": "AI research supports manufacturing design and processes."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "historical-esprit-official-register-metadata",
+          "locator": "Record for 31985D0141, Author field",
+          "rationale": "Explicit official author metadata; historical issuing name preserved."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "historical-esprit-1985-work-programme-eur-lex",
+          "locator": "Official Journal citation",
+          "rationale": "Original act formally published."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "legal_status_evidence": {
+        "source_id": "historical-esprit-official-register-metadata",
+        "locator": "Result 31985D0141, legal-status label",
+        "meaning": "Officially recorded as no longer in force."
+      }
+    },
+    {
+      "id": "historical-fp6-integrating-strengthening-programme",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "historical-fp6-integrating-strengthening-programme",
+      "official_title": "2002/834/EC: Council Decision of 30 September 2002 adopting a specific programme for research, technological development and demonstration: Integrating and strengthening the European Research Area (2002-2006)",
+      "short_title": "FP6 Integrating and strengthening the European Research Area",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "media_and_culture"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "2002/834/EC",
+      "procedure_references": [],
+      "oj_reference": "OJ L 294, 29.10.2002, pp. 1–43",
+      "document_date": "2002-09-30",
+      "version_label": "Original Official Journal text",
+      "version_status": "final",
+      "publication_date": "2002-10-29",
+      "legal_status": "no_longer_in_force",
+      "celex": "32002D0834",
+      "eli": "http://data.europa.eu/eli/dec/2002/834/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "evidence_locator": "Act heading and operative adoption clause"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "proposer",
+          "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "evidence_locator": "Preamble: Commission proposal or submitted draft work programme"
+        },
+        {
+          "institution_id": "office-for-official-publications-of-the-european-communities",
+          "role": "publisher",
+          "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "evidence_locator": "Original Official Journal citation"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "evidence_locator": "EUR-Lex hosting of original act"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "historical-fp6-integrating-strengthening-programme-eur-lex",
+        "historical-fp6-specific-programme-register-metadata"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "implementation",
+        "inclusion_rationale": "Cognitive and agent-based knowledge systems provide a substantive precursor connection.",
+        "researcher_notes": "Independent original act. Analytical classifications are separate from official facts. Programme completion is not used to infer repeal.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "Act heading; signed closing formula",
+          "meaning": "Official act date."
+        },
+        "publication_date": {
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "Official Journal reference",
+          "meaning": "Date of the cited original OJ publication."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "Annex I, IST, (iv) Knowledge and interface technologies",
+          "rationale": "Cognitive and agent-based knowledge systems provide a substantive precursor connection."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "Annex I, IST, (iv), digital content",
+          "rationale": "Funded research priorities."
+        },
+        {
+          "field": "sector_tags",
+          "value": "media_and_culture",
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "Annex I, IST, (iv), digital content",
+          "rationale": "Cognitive knowledge tools support digital content and media."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "historical-fp6-specific-programme-register-metadata",
+          "locator": "Record for 32002D0834, Author field",
+          "rationale": "Explicit official author metadata; historical issuing name preserved."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "Official Journal citation",
+          "rationale": "Original act formally published."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "2006-12-31",
+          "precision": "day",
+          "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+          "locator": "EUR-Lex legal-status panel"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+        "locator": "EUR-Lex legal-status panel",
+        "meaning": "Officially recorded as no longer in force."
+      }
+    },
+    {
+      "id": "historical-fp7-framework-1982-2006",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "historical-fp7-framework-1982-2006",
+      "official_title": "Decision No 1982/2006/EC of the European Parliament and of the Council of 18 December 2006 concerning the Seventh Framework Programme of the European Community for research, technological development and demonstration activities (2007-2013)",
+      "short_title": "Seventh Framework Programme (FP7)",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "Decision No 1982/2006/EC",
+      "procedure_references": [
+        "2005/0043(COD)"
+      ],
+      "oj_reference": "OJ L 412, 30.12.2006, pp. 1–43",
+      "document_date": "2006-12-18",
+      "version_label": "Original Official Journal text",
+      "version_status": "final",
+      "publication_date": "2006-12-30",
+      "legal_status": "repealed",
+      "celex": "32006D1982",
+      "eli": "http://data.europa.eu/eli/dec/2006/1982/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "evidence_locator": "Act heading and joint adoption clause"
+        },
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "evidence_locator": "Act heading and operative adoption clause"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "proposer",
+          "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "evidence_locator": "Preamble: Commission proposal or submitted draft work programme"
+        },
+        {
+          "institution_id": "office-for-official-publications-of-the-european-communities",
+          "role": "publisher",
+          "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "evidence_locator": "Original Official Journal citation"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "evidence_locator": "EUR-Lex hosting of original act"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "historical-fp7-framework-1982-2006-eur-lex",
+        "historical-fp7-framework-1982-2006-metadata"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "The programme funds autonomous learning systems, a substantive precursor priority.",
+        "researcher_notes": "Independent original act. Analytical classifications are separate from official facts. Programme completion is not used to infer repeal.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "locator": "Act heading; signed closing formula",
+          "meaning": "Official act date."
+        },
+        "publication_date": {
+          "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "locator": "Official Journal reference",
+          "meaning": "Date of the cited original OJ publication."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "locator": "Annex I, Cooperation, ICT Technology Pillars, Knowledge, cognitive and learning systems",
+          "rationale": "The programme funds autonomous learning systems, a substantive precursor priority."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "locator": "Annex I, Cooperation, ICT Activities",
+          "rationale": "Funded research priorities."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "historical-fp7-framework-1982-2006-metadata",
+          "locator": "Record for 32006D1982, Author field",
+          "rationale": "Explicit official author metadata; historical issuing name preserved."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "joint_institutional",
+          "source_id": "historical-fp7-framework-1982-2006-metadata",
+          "locator": "Author field",
+          "rationale": "Parliament and Council are jointly credited."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "locator": "Official Journal citation",
+          "rationale": "Original act formally published."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "2013-12-31",
+          "precision": "day",
+          "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+          "locator": "EUR-Lex legal-status panel"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+        "locator": "EUR-Lex legal-status panel",
+        "meaning": "Explicitly repealed by Regulation 1291/2013."
+      }
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "ep-ethical-cyber-physical-systems-2016",
+      "official_title": "Ethical Aspects of Cyber-Physical Systems",
+      "short_title": "Ethical Aspects of Cyber-Physical Systems",
+      "document_type": "study",
+      "sector_tags": [
+        "research_and_innovation",
+        "justice"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "PE 563.501; EPRS_STU(2016)563501",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2016-06-28",
+      "document_date_kind": "publication",
+      "version_label": "Final published text",
+      "version_status": "final",
+      "publication_date": "2016-06-28",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "Printed p. 2: three DG EPRS compilers"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "commissioner",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "Printed p. 2: requested by Parliament's STOA Panel"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "publisher",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "Cover: EPRS; printed p. 2, editor and copyright"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "official_host",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "European Parliament RegData English publication"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ethical-cyber-physical-systems-2016-official-pdf",
+        "ep-ethical-cyber-physical-systems-2016-catalogue",
+        "ep-ethical-cyber-physical-systems-2016-catalogue-pdf"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Substantive AI policy content verified in the cited primary English text.",
+        "researcher_notes": "Main compilation is distinct from its Annex and Annex 1; no separate annex records admitted. Printed p. 2 also credits assistance by Brian Kelly, Philip Boucher, Sarah McCormack and Rachel Manirambona (DG EPRS). External phase coordination: Christien Enzing, Chiel Scholten and Joost van Barneveld (Technopolis Group). Phase 1 experts: Adriana Tapus (ENSTA-ParisTech), Michael Henshaw (Loughborough University), Bram Vanderborght (Vrije Universiteit Brussel), Eldert J. van Henten (Wageningen University), Fred van Houten (University of Twente), Stamatis Karnouskos (SAP), Haydn Thompson (Haydn Consulting). Phase 2 experts: Tsjalling Swierstra, Tamar Sharon, Ike Kamphof (Maastricht University). Phase 3: Mihalis Kritikos (DG EPRS). These are project contribution credits, not an undifferentiated main-author list.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ethical-cyber-physical-systems-2016-catalogue-pdf",
+          "locator": "PDF page 8, Ethical Aspects of Cyber-Physical Systems entry, Date 28-06-2016",
+          "meaning": "Exact official publication used because the study states only June 2016."
+        },
+        "publication_date": {
+          "source_id": "ep-ethical-cyber-physical-systems-2016-catalogue-pdf",
+          "locator": "PDF page 8, Ethical Aspects of Cyber-Physical Systems entry, Date 28-06-2016",
+          "meaning": "Official catalogue identifies publication on 28 June 2016."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "locator": "Printed p. 3, Abstract; pp. 27–42",
+          "rationale": "Explicit AI impacts and anticipatory legal analysis satisfy the direct-first rule."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "locator": "Printed pp. 3–6",
+          "rationale": "Scientific foresight evaluates emerging AI systems."
+        },
+        {
+          "field": "sector_tags",
+          "value": "justice",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "locator": "Printed pp. 27–42, legal backcasting",
+          "rationale": "Analyses prospective legal responsibilities and protections."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "locator": "Printed p. 2, compilation credit",
+          "rationale": "The main synthesis credits named Parliament research-service compilers."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_commissioned_external",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "locator": "Printed p. 2, project and expert credits",
+          "rationale": "STOA requested the project; Technopolis conducted its main research phases."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-catalogue-pdf",
+          "locator": "Matching study catalogue entry",
+          "rationale": "Official dated publication record."
+        }
+      ],
+      "bibliographic_authors": [
+        {
+          "name": "Lieve Van Woensel",
+          "affiliation": "Scientific Foresight Unit, DG EPRS, European Parliament",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "Printed p. 2: document compilers"
+        },
+        {
+          "name": "Christian Kurrer",
+          "affiliation": "Scientific Foresight Unit, DG EPRS, European Parliament",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "Printed p. 2: document compilers"
+        },
+        {
+          "name": "Mihalis Kritikos",
+          "affiliation": "Scientific Foresight Unit, DG EPRS, European Parliament",
+          "evidence_source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "evidence_locator": "Printed p. 2: document compilers"
+        }
+      ],
+      "additional_dates": [
+        {
+          "kind": "manuscript_completion",
+          "value": "2016-06",
+          "precision": "month",
+          "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+          "locator": "Printed p. 2, manuscript completion"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+        "locator": "Printed p. 2, disclaimer",
+        "meaning": "Research study; opinions need not represent Parliament's official position."
+      }
+    },
+    {
+      "id": "historical-com-2017-228-dsm-mid-term-review",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "historical-com-2017-228-dsm-mid-term-review",
+      "official_title": "Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions on the Mid-Term Review on the implementation of the Digital Single Market Strategy: A Connected Digital Single Market for All",
+      "short_title": "Digital Single Market Strategy mid-term review",
+      "document_type": "communication",
+      "sector_tags": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "COM(2017) 228 final",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2017-05-10",
+      "document_date_kind": "document_issue",
+      "version_label": "Final published text",
+      "version_status": "final",
+      "publication_date": "2017-05-10",
+      "legal_status": "non_binding",
+      "celex": "52017DC0228",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-commission",
+          "role": "author",
+          "evidence_source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "evidence_locator": "Commission title block"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "publisher",
+          "evidence_source_id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+          "evidence_locator": "Publication record and opening announcement"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "evidence_locator": "EUR-Lex English manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+        "historical-com-2017-228-dsm-mid-term-review-publication-evidence"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Substantive AI policy content verified in the cited primary English text.",
+        "researcher_notes": "Editorial classifications are AI-assisted assessments, separate from official metadata. Publication corroboration is official indexed English text; the Commission page directly returned 429. This limitation is recorded, not represented as a full-page retrieval.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "locator": "Title block: Brussels, 10.5.2017",
+          "meaning": "Communication issue date."
+        },
+        "publication_date": {
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+          "locator": "Publication 10 May 2017; opening paragraph",
+          "meaning": "Same-day announcement explicitly says review has been published."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+          "rationale": "Dedicated AI investment and capacity policy."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+          "rationale": "AI impacts across several fields are materially considered."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+          "rationale": "AI research funding and scientific capacity are addressed."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "locator": "Building artificial intelligence capacities, paragraphs 1–5",
+          "rationale": "Industrial AI capabilities and manufacturing competitiveness are addressed."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+          "locator": "Commission title block",
+          "rationale": "Communication expressly issued by the Commission."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+          "locator": "Publication label and opening paragraph",
+          "rationale": "Explicit publication announcement for this review."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "legal_status_evidence": {
+        "source_id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+        "locator": "Communication heading and concluding policy commitments",
+        "meaning": "Non-binding strategy review, with legislative proposals separately identified."
+      }
+    },
+    {
+      "id": "eesc-ai-consequences-2017",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "slug": "eesc-ai-consequences-2017",
+      "official_title": "Opinion of the European Economic and Social Committee on Artificial intelligence — The consequences of artificial intelligence on the (digital) single market, production, consumption, employment and society (own-initiative opinion)",
+      "short_title": "EESC opinion on AI consequences",
+      "document_type": "opinion",
+      "sector_tags": [
+        "general_cross_sector",
+        "employment_and_labour"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "2017/C 288/01",
+      "procedure_references": [],
+      "oj_reference": "OJ C 288, 31.8.2017, pp. 1–9",
+      "document_date": "2017-05-31",
+      "document_date_kind": "institutional_adoption",
+      "version_label": "Final published text",
+      "version_status": "final",
+      "publication_date": "2017-08-31",
+      "legal_status": "non_binding",
+      "celex": "52016IE5369",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-economic-and-social-committee",
+          "role": "author",
+          "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+          "evidence_locator": "Title: Opinion of the EESC"
+        },
+        {
+          "institution_id": "european-economic-and-social-committee",
+          "role": "adopter",
+          "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+          "evidence_locator": "Adopted at plenary: 31/05/2017"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+          "evidence_locator": "Official Journal citation"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "eesc-ai-consequences-2017-eur-lex",
+          "evidence_locator": "EUR-Lex manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "eesc-ai-consequences-2017-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Substantive AI policy content verified in the cited primary English text.",
+        "researcher_notes": "Editorial classifications are AI-assisted assessments, separate from official metadata. Rapporteur: Catelijne Muller (adoption table), not substituted for institutional author. Canonical reference follows the cited OJ manifestation; internal tracking identifiers retained here from prior handoff: INT/806; INT/806-EESC-2016-05369-00-00-AC-TRA (not independently reverified in this pass).",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:45:09Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "Adoption table: Adopted at plenary",
+          "meaning": "EESC plenary adoption, distinct from section adoption."
+        },
+        "publication_date": {
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "OJ C 288/1 running header and citation",
+          "meaning": "Original OJ publication date."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "Paragraphs 1.1–1.14",
+          "rationale": "AI governance is the opinion's substantive subject."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "Paragraphs 1.2–1.5",
+          "rationale": "The opinion addresses cross-sector AI policy."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "Paragraphs 1.10–1.11",
+          "rationale": "Specific workplace and employment recommendations."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "Title and adoption table",
+          "rationale": "EESC advisory-body opinion."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "eesc-ai-consequences-2017-eur-lex",
+          "locator": "OJ C 288 citation",
+          "rationale": "Formally published OJ opinion."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "legal_status_evidence": {
+        "source_id": "eesc-ai-consequences-2017-eur-lex",
+        "locator": "Heading and legal-basis table",
+        "meaning": "Own-initiative advisory opinion; non-binding."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "historical-esprit-official-register-metadata",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Official EUR-Lex indexed result records 31984D0157 and 31985D0141: Author Council of the European Union; both no longer in force. This is auxiliary metadata evidence; direct open failed. Full English acts were separately opened."
+    },
+    {
+      "id": "historical-fp6-specific-programme-register-metadata",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/search.html?DC_CODED=2795&DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&FM_CODED=DEC_ENTSCHEID&SUBDOM_INIT=ALL_ALL&lang=en&page=10&qid=1746291753607&type=advanced",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Official indexed EUR-Lex result for 32002D0834 explicitly identifies Council authorship. Direct open challenged; full English act separately opened."
+    },
+    {
+      "id": "historical-esprit-1984-work-programme-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+      "publisher": "Office for Official Publications of the European Communities",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Full English original act opened; heading, OJ reference, operative text and cited annex reviewed."
+    },
+    {
+      "id": "historical-esprit-1985-work-programme-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN-SL/TXT/?from=EN&uri=CELEX%3A31985D0141",
+      "publisher": "Office for Official Publications of the European Communities",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Full English original act opened; heading, OJ reference, operative text and cited annex reviewed. English text reviewed in multilingual wrapper; unavailable Slovenian column is not used."
+    },
+    {
+      "id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/eli/dec/2002/834/oj/eng",
+      "publisher": "Office for Official Publications of the European Communities",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Full English original act opened; heading, OJ reference, operative text and cited annex reviewed."
+    },
+    {
+      "id": "historical-fp7-framework-1982-2006-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006D1982",
+      "publisher": "Office for Official Publications of the European Communities",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Full English original act opened; heading, OJ reference, operative text and cited annex reviewed."
+    },
+    {
+      "id": "historical-fp7-framework-1982-2006-metadata",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32006D1982",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z",
+      "verification_note": "Document-information panel opened: authors, date, procedure and repeal verified."
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501_EN.pdf",
+      "publisher": "European Parliament / European Parliamentary Research Service",
+      "verification_note": "Full 48-page English study opened. Printed pp. 2–3 establish credits, issue month, disclaimer and scope; pp. 27–42 provide legal analysis.",
+      "source_type": "official_pdf",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z"
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016-catalogue",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU%282016%29563501",
+      "publisher": "European Parliament",
+      "verification_note": "Official indexed Think Tank catalogue: Study, 28-06-2016; main Study distinguished from Annex and Annex 1. Direct HTML open failed; date independently checked in official PDF catalogue.",
+      "source_type": "official_register",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z"
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016-catalogue-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "url": "https://www.europarl.europa.eu/thinktank/en/research/advanced-search/pdf?keywords=003740",
+      "publisher": "European Parliament",
+      "verification_note": "Official catalogue PDF opened, PDF page 8: matching study title, linked study manifestation, summary, and publication date 28-06-2016; Annex and Annex 1 listed separately.",
+      "source_type": "official_pdf",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z"
+    },
+    {
+      "id": "historical-com-2017-228-dsm-mid-term-review-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+      "publisher": "European Commission",
+      "verification_note": "Full English communication opened: dated title block, section 4.2 and Building artificial intelligence capacities verified.",
+      "source_type": "eur_lex",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z"
+    },
+    {
+      "id": "historical-com-2017-228-dsm-mid-term-review-publication-evidence",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/digital-single-market-mid-term-review-commission-calls-swift-adoption-key-proposals-and-maps-out",
+      "publisher": "European Commission",
+      "verification_note": "Official indexed English publication record dated 10 May 2017 states Commission has published its mid-term review. Used only as publication evidence, not a corpus document. Direct open returned HTTP 429.",
+      "source_type": "official_register",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z"
+    },
+    {
+      "id": "eesc-ai-consequences-2017-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016IE5369",
+      "publisher": "Publications Office of the European Union",
+      "verification_note": "Full original English OJ opinion opened. Title/adoption table, rapporteur and paragraphs 1.1–1.14 reviewed.",
+      "source_type": "eur_lex",
+      "retrieved_at": "2026-09-05T23:45:09Z",
+      "last_verified_at": "2026-09-05T23:45:09Z"
+    }
+  ],
+  "institutions": [],
+  "relationships": [
+    {
+      "id": "historical-esprit-1984-work-programme-implements-council-decision-84-130-eec-esprit",
+      "entity_type": "relationship",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_entity_type": "document",
+      "source_entity_id": "historical-esprit-1984-work-programme",
+      "target_entity_type": "document",
+      "target_entity_id": "council-decision-84-130-eec-esprit",
+      "relationship_type": "implements",
+      "basis": "official",
+      "rationale": "Preamble cites Article 3(2) of Decision 84/130/EEC; Article 1 adopts the annual programme.",
+      "evidence_source_id": "historical-esprit-1984-work-programme-eur-lex",
+      "verification_status": "verified"
+    },
+    {
+      "id": "historical-esprit-1985-work-programme-implements-council-decision-84-130-eec-esprit",
+      "entity_type": "relationship",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_entity_type": "document",
+      "source_entity_id": "historical-esprit-1985-work-programme",
+      "target_entity_type": "document",
+      "target_entity_id": "council-decision-84-130-eec-esprit",
+      "relationship_type": "implements",
+      "basis": "official",
+      "rationale": "Preamble cites Article 3(2) of Decision 84/130/EEC; Article 1 adopts the annual programme.",
+      "evidence_source_id": "historical-esprit-1985-work-programme-eur-lex",
+      "verification_status": "verified"
+    },
+    {
+      "id": "historical-fp6-integrating-strengthening-programme-implements-sixth-framework-programme-decision-1513-2002-ec",
+      "entity_type": "relationship",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:45:09Z",
+      "updated_at": "2026-09-05T23:45:09Z",
+      "source_entity_type": "document",
+      "source_entity_id": "historical-fp6-integrating-strengthening-programme",
+      "target_entity_type": "document",
+      "target_entity_id": "sixth-framework-programme-decision-1513-2002-ec",
+      "relationship_type": "implements",
+      "basis": "official",
+      "rationale": "Recitals 1–2 identify implementation of Decision 1513/2002/EC.",
+      "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "verification_status": "verified"
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_id": "historical-esprit-1984-work-programme",
+      "decision": "included",
+      "document_id": "historical-esprit-1984-work-programme",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+        "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "historical-esprit-1985-work-programme",
+      "decision": "included",
+      "document_id": "historical-esprit-1985-work-programme",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN-SL/TXT/?from=EN&uri=CELEX%3A31985D0141",
+        "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "historical-fp6-integrating-strengthening-programme",
+      "decision": "included",
+      "document_id": "historical-fp6-integrating-strengthening-programme",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/eli/dec/2002/834/oj/eng",
+        "https://eur-lex.europa.eu/search.html?DC_CODED=2795&DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&FM_CODED=DEC_ENTSCHEID&SUBDOM_INIT=ALL_ALL&lang=en&page=10&qid=1746291753607&type=advanced"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "historical-fp7-framework-1982-2006",
+      "decision": "included",
+      "document_id": "historical-fp7-framework-1982-2006",
+      "reason": "Identity, separate act/OJ dates, attribution, status and substantive passages verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006D1982",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32006D1982"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "ep-ethical-cyber-physical-systems-2016",
+      "decision": "included",
+      "document_id": "ep-ethical-cyber-physical-systems-2016",
+      "reason": "Main study retrieved; compiler/expert roles corrected and exact catalogue publication fallback verified.",
+      "evidence_urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501_EN.pdf",
+        "https://www.europarl.europa.eu/thinktank/en/research/advanced-search/pdf?keywords=003740"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "historical-com-2017-228-dsm-mid-term-review",
+      "decision": "included",
+      "document_id": "historical-com-2017-228-dsm-mid-term-review",
+      "reason": "Full primary text and separate same-day official publication announcement establish required facts.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+        "https://digital-strategy.ec.europa.eu/en/news/digital-single-market-mid-term-review-commission-calls-swift-adoption-key-proposals-and-maps-out"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "eesc-ai-consequences-2017",
+      "decision": "included",
+      "document_id": "eesc-ai-consequences-2017",
+      "reason": "Full OJ text, plenary adoption and publication dates verified; cited OJ identifier selected as canonical reference.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016IE5369"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "historical-fp5-ist-specific-programme",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Multiple primary English EUR-Lex HTML/ELI/PDF manifestations failed or challenged. Indexed passages support candidacy but do not complete full-text verification. Official indexed status is in force; programme end alone cannot justify expiry.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1772211175029&uri=CELEX%3A31999D0168",
+        "https://eur-lex.europa.eu/eli/dec/1999/168%281%29/oj/eng"
+      ],
+      "remaining_checks": [
+        "Open complete English original act and verify all substantive classifications.",
+        "Confirm current official legal-status panel against indexed in-force record."
+      ]
+    },
+    {
+      "candidate_id": "historical-juri-robotics-report-2017",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Official English report HTML/PDF repeatedly returned robot verification; alternative RegData endpoint failed. Indexed text establishes strong candidacy but exact public-availability date remains distinct from the 27 January issue date.",
+      "evidence_urls": [
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.html",
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf"
+      ],
+      "remaining_checks": [
+        "Retrieve full original English report.",
+        "Establish exact official publication date independently of issue and committee-adoption dates.",
+        "Verify report-to-resolution procedural relationship and precise contribution credits."
+      ]
+    }
+  ],
+  "evidence_log": [
+    {
+      "candidate_id": "historical-esprit-1984-work-programme",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections.",
+        "site:eur-lex.europa.eu \"31984D0157\" \"Author\"",
+        "site:eur-lex.europa.eu \"31984D0157\" \"No longer in force\""
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+        "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced"
+      ],
+      "locators": [
+        "Act heading; signed closing formula",
+        "Official Journal reference",
+        "Annex, section 5.2.2, Type B research theme; section 3.1",
+        "Annex, section 5.2.2",
+        "Annex, section 5.2.2",
+        "Record for 31984D0157, Author field",
+        "Official Journal citation",
+        "EUR-Lex legal-status panel"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": [
+        "Official EUR-Lex indexed result records 31984D0157 and 31985D0141: Author Council of the European Union; both no longer in force. This is auxiliary metadata evidence; direct open failed. Full English acts were separately opened."
+      ]
+    },
+    {
+      "candidate_id": "historical-esprit-1985-work-programme",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections.",
+        "site:eur-lex.europa.eu \"31985D0141\" \"Author\"",
+        "site:eur-lex.europa.eu \"31985D0141\" \"No longer in force\""
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN-SL/TXT/?from=EN&uri=CELEX%3A31985D0141",
+        "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced"
+      ],
+      "locators": [
+        "Act heading; signed closing formula",
+        "Official Journal reference",
+        "Annex, sections 3.1.1.1 and 5.2.2–5.2.2.1",
+        "Annex, section 5.2.2.1, material handling",
+        "Annex, section 5.2.2.1, material handling",
+        "Record for 31985D0141, Author field",
+        "Official Journal citation",
+        "Result 31985D0141, legal-status label"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": [
+        "Official EUR-Lex indexed result records 31984D0157 and 31985D0141: Author Council of the European Union; both no longer in force. This is auxiliary metadata evidence; direct open failed. Full English acts were separately opened."
+      ]
+    },
+    {
+      "candidate_id": "historical-fp6-integrating-strengthening-programme",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections."
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/eli/dec/2002/834/oj/eng",
+        "https://eur-lex.europa.eu/search.html?DC_CODED=2795&DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&FM_CODED=DEC_ENTSCHEID&SUBDOM_INIT=ALL_ALL&lang=en&page=10&qid=1746291753607&type=advanced"
+      ],
+      "locators": [
+        "Act heading; signed closing formula",
+        "Official Journal reference",
+        "Annex I, IST, (iv) Knowledge and interface technologies",
+        "Annex I, IST, (iv), digital content",
+        "Annex I, IST, (iv), digital content",
+        "Record for 32002D0834, Author field",
+        "Official Journal citation",
+        "EUR-Lex legal-status panel"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": [
+        "Official indexed EUR-Lex result for 32002D0834 explicitly identifies Council authorship. Direct open challenged; full English act separately opened."
+      ]
+    },
+    {
+      "candidate_id": "historical-fp7-framework-1982-2006",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections."
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006D1982",
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32006D1982"
+      ],
+      "locators": [
+        "Act heading; signed closing formula",
+        "Official Journal reference",
+        "Annex I, Cooperation, ICT Technology Pillars, Knowledge, cognitive and learning systems",
+        "Annex I, Cooperation, ICT Activities",
+        "Record for 32006D1982, Author field",
+        "Author field",
+        "Official Journal citation",
+        "EUR-Lex legal-status panel"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": []
+    },
+    {
+      "candidate_id": "ep-ethical-cyber-physical-systems-2016",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections.",
+        "site:europarl.europa.eu \"Ethical Aspects of Cyber-Physical Systems\" \"28-06-2016\""
+      ],
+      "urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501_EN.pdf",
+        "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU%282016%29563501",
+        "https://www.europarl.europa.eu/thinktank/en/research/advanced-search/pdf?keywords=003740"
+      ],
+      "locators": [
+        "PDF page 8, Ethical Aspects of Cyber-Physical Systems entry, Date 28-06-2016",
+        "PDF page 8, Ethical Aspects of Cyber-Physical Systems entry, Date 28-06-2016",
+        "Printed p. 3, Abstract; pp. 27–42",
+        "Printed pp. 3–6",
+        "Printed pp. 27–42, legal backcasting",
+        "Printed p. 2, compilation credit",
+        "Printed p. 2, project and expert credits",
+        "Matching study catalogue entry",
+        "Printed p. 2, disclaimer"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": [
+        "Official indexed Think Tank catalogue: Study, 28-06-2016; main Study distinguished from Annex and Annex 1. Direct HTML open failed; date independently checked in official PDF catalogue."
+      ]
+    },
+    {
+      "candidate_id": "historical-com-2017-228-dsm-mid-term-review",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections.",
+        "site:digital-strategy.ec.europa.eu \"Mid-Term Review\" \"10 May 2017\""
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+        "https://digital-strategy.ec.europa.eu/en/news/digital-single-market-mid-term-review-commission-calls-swift-adoption-key-proposals-and-maps-out"
+      ],
+      "locators": [
+        "Title block: Brussels, 10.5.2017",
+        "Publication 10 May 2017; opening paragraph",
+        "Building artificial intelligence capacities, paragraphs 1–5",
+        "Building artificial intelligence capacities, paragraphs 1–5",
+        "Building artificial intelligence capacities, paragraphs 1–5",
+        "Building artificial intelligence capacities, paragraphs 1–5",
+        "Commission title block",
+        "Publication label and opening paragraph",
+        "Communication heading and concluding policy commitments"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": [
+        "Official indexed English publication record dated 10 May 2017 states Commission has published its mid-term review. Used only as publication evidence, not a corpus document. Direct open returned HTTP 429."
+      ]
+    },
+    {
+      "candidate_id": "eesc-ai-consequences-2017",
+      "queries": [
+        "Direct open of handoff official English source; inspect identity/date/attribution/status and cited substantive sections."
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016IE5369"
+      ],
+      "locators": [
+        "Adoption table: Adopted at plenary",
+        "OJ C 288/1 running header and citation",
+        "Paragraphs 1.1–1.14",
+        "Paragraphs 1.2–1.5",
+        "Paragraphs 1.10–1.11",
+        "Title and adoption table",
+        "OJ C 288 citation",
+        "Heading and legal-basis table"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "included",
+      "limitations": []
+    },
+    {
+      "candidate_id": "historical-fp5-ist-specific-programme",
+      "queries": [
+        "Direct official English HTML, PDF and alternative manifestation opens; targeted exact-reference official search."
+      ],
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1772211175029&uri=CELEX%3A31999D0168",
+        "https://eur-lex.europa.eu/eli/dec/1999/168%281%29/oj/eng"
+      ],
+      "locators": [
+        "Open complete English original act and verify all substantive classifications.",
+        "Confirm current official legal-status panel against indexed in-force record."
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "pending",
+      "limitations": [
+        "Multiple primary English EUR-Lex HTML/ELI/PDF manifestations failed or challenged. Indexed passages support candidacy but do not complete full-text verification. Official indexed status is in force; programme end alone cannot justify expiry."
+      ]
+    },
+    {
+      "candidate_id": "historical-juri-robotics-report-2017",
+      "queries": [
+        "Direct official English HTML, PDF and alternative manifestation opens; targeted exact-reference official search."
+      ],
+      "urls": [
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.html",
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf"
+      ],
+      "locators": [
+        "Retrieve full original English report.",
+        "Establish exact official publication date independently of issue and committee-adoption dates.",
+        "Verify report-to-resolution procedural relationship and precise contribution credits."
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "pending",
+      "limitations": [
+        "Official English report HTML/PDF repeatedly returned robot verification; alternative RegData endpoint failed. Indexed text establishes strong candidacy but exact public-availability date remains distinct from the 27 January issue date."
+      ]
+    },
+    {
+      "queries": [
+        "No further discovery: read and reconcile the nine fixed handoff records with prior three candidate IDs; no canonical files changed."
+      ],
+      "urls": [],
+      "locators": [
+        "research/discovery/2026-09-06-gap-scan/historical.json",
+        "research/discovery/2026-09-05-document-gap-candidates.json"
+      ],
+      "time": "2026-09-05T23:45:09Z",
+      "research_date": "2026-09-06",
+      "publication_cutoff": "2026-09-04",
+      "note": "UTC is 5 September while local research date is 6 September BST. Verification timestamps are actual review time and do not advance publication cutoff. No full-text snapshots retained."
+    }
+  ]
+}

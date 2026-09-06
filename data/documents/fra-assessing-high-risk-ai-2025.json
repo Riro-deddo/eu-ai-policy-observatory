@@ -1,0 +1,131 @@
+{
+  "id": "fra-assessing-high-risk-ai-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:41:49.332+01:00",
+  "updated_at": "2026-09-06T00:41:49.332+01:00",
+  "slug": "fra-assessing-high-risk-ai-2025",
+  "official_title": "Assessing High-risk Artificial Intelligence – Fundamental rights risks",
+  "short_title": "Assessing high-risk AI: Fundamental rights risks",
+  "document_type": "report",
+  "sector_tags": [
+    "employment_and_labour",
+    "migration_asylum_and_border_management",
+    "education"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ISBN 978-92-9489-677-3; DOI 10.2811/3952332; TK-01-25-028-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-12-04",
+  "version_label": "Published English report",
+  "version_status": "final",
+  "publication_date": "2025-12-04",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-union-agency-for-fundamental-rights",
+      "role": "author",
+      "evidence_source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "evidence_locator": "Foreword and Annex, Table 8 source: FRA interviews and research, 2025"
+    },
+    {
+      "institution_id": "european-union-agency-for-fundamental-rights",
+      "role": "official_host",
+      "evidence_source_id": "fra-assessing-high-risk-ai-2025-official-page",
+      "evidence_locator": "Official agency/body document page and English download"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "evidence_locator": "PDF page 4, Luxembourg imprint"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "fra-assessing-high-risk-ai-2025-official-pdf",
+    "fra-assessing-high-risk-ai-2025-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Analyses high-risk AI classification and fundamental-rights impact assessment, including migration/asylum systems. The official report page also identifies education and employment as examined domains.",
+    "researcher_notes": "FRA's 2025 report. Title/imprint and methodology identify the publication; no named personal author is credited in the reviewed front matter. Publication-day fallback preserves the year-only issue information without inventing an issue day.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "fra-assessing-high-risk-ai-2025-official-page",
+      "locator": "Official publication date field",
+      "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+    },
+    "publication_date": {
+      "source_id": "fra-assessing-high-risk-ai-2025-official-page",
+      "locator": "Official publication date field",
+      "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "locator": "FRA Opinions 2 and 4; section 2.3 and Tables 3–5",
+      "rationale": "AI is the substantive policy subject of this document."
+    },
+    {
+      "field": "sector_tags",
+      "value": "migration_asylum_and_border_management",
+      "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "locator": "Section 2.3.1, Table 3, PDF pages 40–42",
+      "rationale": "Examines asylum-system impacts and relevant fundamental rights."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "locator": "Section 2.3.2, PDF pages 42–44",
+      "rationale": "Examines educational assessment, oversight and risks to children's rights."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "locator": "Section 2.3.3, Table 5, PDF pages 44–46",
+      "rationale": "Examines recruitment systems and worker rights."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "locator": "Foreword and Annex, Table 8 source: FRA interviews and research, 2025",
+      "rationale": "The report or opinion identifies its EU body as author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "fra-assessing-high-risk-ai-2025-official-page",
+      "locator": "Official document page and English download",
+      "rationale": "Official publication and this English manifestation are evidenced."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "snapshots": []
+}

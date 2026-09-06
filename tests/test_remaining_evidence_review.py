@@ -1,5 +1,6 @@
 import json
 import hashlib
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -101,10 +102,14 @@ def test_second_pass_accounts_for_every_hold_and_only_the_reviewed_upgrades(publ
     assert set(audited) == set(starting)
     assert all(row["reasons"] for row in ledger["held_records"])
     continuation = json.loads(CONTINUATION_LEDGER_PATH.read_text(encoding="utf-8"))
-    assert public_payload["coverage"]["historical_review"] == continuation["expected_after"]["historical_review"]
-    assert {row["id"]: row["slug"] for row in public_payload["documents"]} == {
-        row["id"]: row["slug"] for row in ledger["baseline"]["documents"]
-    }
+    documents = {row["id"]: row for row in public_payload["documents"]}
+    assert Counter(
+        documents[row["id"]]["historical_review_status"]
+        for row in ledger["baseline"]["documents"]
+    ) == continuation["expected_after"]["historical_review"]
+    assert {row["id"]: row["slug"] for row in ledger["baseline"]["documents"]}.items() <= {
+        row["id"]: row["slug"] for row in public_payload["documents"]
+    }.items()
 
 
 def test_previous_verified_documents_and_previous_audit_remain_unchanged():

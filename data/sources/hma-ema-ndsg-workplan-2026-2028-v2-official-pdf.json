@@ -1,0 +1,13 @@
+{
+  "id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2026-2028-data-artificial-intelligence-medicines-regulation_en.pdf",
+  "publisher": "European Medicines Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "Cover and pp.4-6 reviewed; Version 2.0, February 2026. Pending only because canonical predecessor endpoint is missing."
+}

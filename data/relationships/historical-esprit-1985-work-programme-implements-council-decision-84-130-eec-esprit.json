@@ -1,0 +1,16 @@
+{
+  "id": "historical-esprit-1985-work-programme-implements-council-decision-84-130-eec-esprit",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "source_entity_type": "document",
+  "source_entity_id": "historical-esprit-1985-work-programme",
+  "target_entity_type": "document",
+  "target_entity_id": "council-decision-84-130-eec-esprit",
+  "relationship_type": "implements",
+  "basis": "official",
+  "rationale": "Preamble cites Article 3(2) of Decision 84/130/EEC; Article 1 adopts the annual programme.",
+  "evidence_source_id": "historical-esprit-1985-work-programme-eur-lex",
+  "verification_status": "verified"
+}

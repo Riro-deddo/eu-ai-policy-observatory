@@ -1,0 +1,134 @@
+{
+  "id": "eba-follow-up-machine-learning-irb-models-2023",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eba-follow-up-machine-learning-irb-models-2023",
+  "official_title": "Machine Learning for IRB Models: Follow-up report from the consultation on the Discussion Paper on machine learning for IRB models",
+  "short_title": "Machine Learning for IRB Models: Follow-up report from the consultation on the Discussion Paper on machine learning for IRB models",
+  "document_type": "report",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EBA/REP/2023/28",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2023-08-04",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2023-08-04",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-banking-authority",
+      "role": "author",
+      "evidence_source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-banking-authority",
+      "role": "publisher",
+      "evidence_source_id": "eba-follow-up-machine-learning-irb-models-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-banking-authority",
+      "role": "official_host",
+      "evidence_source_id": "eba-follow-up-machine-learning-irb-models-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+    "eba-follow-up-machine-learning-irb-models-2023-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Machine learning is the report's central regulatory object, including explainability, supervisory compliance, GDPR interaction, AI Act scope, and principle-based recommendations.",
+    "researcher_notes": "Cover has August 2023 only; publication supplies exact fallback date. Distinct follow-up report, not a revised manifestation of the discussion paper.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-page",
+      "locator": "EBA release: 4 August 2023, published today; linked report last update 4 August 2023.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-page",
+      "locator": "Release dated 4 August 2023: EBA published today; matching follow-up report download.",
+      "meaning": "Establishes official publication of this version on 2023-08-04, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "locator": "PDF pp.3-5, summary and consultation history; section 5.2 and Annex I.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "locator": "PDF pp.3-5, summary and consultation history; section 5.2 and Annex I.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "locator": "PDF pp.3-5, summary and consultation history; section 5.2 and Annex I.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Banking Authority",
+      "affiliation": null,
+      "evidence_source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2023-08",
+      "precision": "month",
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "locator": "Cover issue month (or official citation recommendation for EASA Issue 02)."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+    "locator": "PDF pp.3-5, summary and consultation history; section 5.2 and Annex I.",
+    "meaning": "Non-legislative report, scientific guidance, strategic workplan or consultation text; not an act creating binding law."
+  }
+}

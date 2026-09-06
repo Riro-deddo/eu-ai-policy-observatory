@@ -1,0 +1,453 @@
+{
+  "records": [
+    {
+      "id": "frontex-ai-capabilities-2021",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "record_level": "principal",
+      "procedure_references": [],
+      "version_status": "final",
+      "language": "en",
+      "official_summary": null,
+      "policy_ids": [],
+      "concept_ids": [],
+      "historical_review_status": "verified",
+      "snapshots": [],
+      "slug": "frontex-ai-capabilities-2021",
+      "official_title": "Artificial Intelligence-based capabilities for the European Border and Coast Guard - Final Report",
+      "short_title": "AI-based capabilities for the European Border and Coast Guard",
+      "document_type": "report",
+      "sector_tags": [
+        "migration_asylum_and_border_management"
+      ],
+      "provenance_tags": [
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "official_reference": null,
+      "oj_reference": null,
+      "document_date": "2021-03-17",
+      "document_date_kind": "document_issue",
+      "publication_date": "2021-03-31",
+      "version_label": "Final report, Warsaw 17 March 2021",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-border-and-coast-guard-agency",
+          "role": "commissioner",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "PDF page 3 / printed ii, preface: study commissioned to RAND Europe"
+        },
+        {
+          "institution_id": "european-border-and-coast-guard-agency",
+          "role": "publisher",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "PDF page 2 legal notice and Frontex imprint"
+        },
+        {
+          "institution_id": "european-border-and-coast-guard-agency",
+          "role": "official_host",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-page",
+          "evidence_locator": "Official catalogue and final-report download"
+        }
+      ],
+      "source_ids": [
+        "frontex-ai-capabilities-2021-official-pdf",
+        "frontex-ai-capabilities-2021-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Substantive assessment of AI capabilities, adoption pathways and barriers for European border management.",
+        "researcher_notes": "Externally authored RAND Europe report commissioned by Frontex. Five named authors are retained separately from the agency. The 17 March issue date differs from official publication on 31 March 2021. Current PDF metadata has a 2025 modification timestamp, but the public cover and imprint identify the same 2021 final report; no new version is inferred from file metadata. Embedded annexes remain part of this principal report.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:51:04.811+01:00"
+      },
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "locator": "Cover, vertically typeset Warsaw, 17/03/2021",
+          "meaning": "The date printed on the final report is its issue date."
+        },
+        "publication_date": {
+          "source_id": "frontex-ai-capabilities-2021-official-page",
+          "locator": "Date below final-report title: 2021-03-31",
+          "meaning": "Official catalogue publication, independent of the earlier issue date."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "locator": "Preface and sections 1.1–1.3, PDF pages 3 and 14–17",
+          "rationale": "AI capabilities are the central subject."
+        },
+        {
+          "field": "sector_tags",
+          "value": "migration_asylum_and_border_management",
+          "source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "locator": "Sections 1.1–1.3, PDF pages 14–17",
+          "rationale": "Examines border surveillance, traveller processing and migration-management applications."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_commissioned_external",
+          "source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "locator": "Preface, PDF page 3; acknowledgements, PDF page 11",
+          "rationale": "Frontex commissioned RAND Europe; five external report authors are named."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "frontex-ai-capabilities-2021-official-page",
+          "locator": "Catalogue publication date and linked final report",
+          "rationale": "Official agency publication provides the English report."
+        }
+      ],
+      "bibliographic_authors": [
+        {
+          "name": "Erik Silfversten",
+          "affiliation": "RAND Europe",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "Acknowledgements, printed x / PDF page 11: report prepared by RAND Europe team"
+        },
+        {
+          "name": "Luke Huxtable",
+          "affiliation": "RAND Europe",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "Acknowledgements, printed x / PDF page 11: report prepared by RAND Europe team"
+        },
+        {
+          "name": "Linda Slapakova",
+          "affiliation": "RAND Europe",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "Acknowledgements, printed x / PDF page 11: report prepared by RAND Europe team"
+        },
+        {
+          "name": "Pauline Paille",
+          "affiliation": "RAND Europe",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "Acknowledgements, printed x / PDF page 11: report prepared by RAND Europe team"
+        },
+        {
+          "name": "Kevin Martin",
+          "affiliation": "RAND Europe",
+          "evidence_source_id": "frontex-ai-capabilities-2021-official-pdf",
+          "evidence_locator": "Acknowledgements, printed x / PDF page 11: report prepared by RAND Europe team"
+        }
+      ],
+      "additional_dates": []
+    },
+    {
+      "id": "historical-fp5-ist-specific-programme",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "record_level": "principal",
+      "procedure_references": [],
+      "version_status": "final",
+      "language": "en",
+      "official_summary": null,
+      "policy_ids": [],
+      "concept_ids": [],
+      "historical_review_status": "verified",
+      "snapshots": [],
+      "slug": "historical-fp5-ist-specific-programme",
+      "official_title": "1999/168/EC: Council Decision of 25 January 1999 adopting a specific programme for research, technological development and demonstration on a user-friendly information society (1998 to 2002)",
+      "short_title": "FP5 user-friendly information society programme",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "health",
+        "media_and_culture",
+        "education"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "official_reference": "1999/168/EC",
+      "oj_reference": "OJ L 64, 12.3.1999, pp. 20–39",
+      "document_date": "1999-01-25",
+      "document_date_kind": "official_act_date",
+      "publication_date": "1999-03-12",
+      "version_label": "Original Official Journal act",
+      "legal_status": "in_force",
+      "celex": "31999D0168",
+      "eli": "http://data.europa.eu/eli/dec/1999/168(1)/oj",
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "evidence_locator": "Act heading, adoption clause and signature, PDF pages 1–4"
+        },
+        {
+          "institution_id": "office-for-official-publications-of-the-european-communities",
+          "role": "publisher",
+          "evidence_source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "evidence_locator": "Original Official Journal of the European Communities masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "historical-fp5-ist-specific-programme-eur-lex",
+          "evidence_locator": "EUR-Lex official English manifestation"
+        }
+      ],
+      "source_ids": [
+        "historical-fp5-ist-specific-programme-official-pdf",
+        "historical-fp5-ist-specific-programme-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "implementation",
+        "inclusion_rationale": "Dedicated research priorities fund intelligent medical systems, language understanding, knowledge extraction, intelligent assistants and learner modelling. These substantial precursor provisions document the transition from earlier European information-technology programmes toward later AI research priorities.",
+        "researcher_notes": "Original specific-programme decision, separate from the FP5 framework. EUR-Lex currently labels it In force; the programme's 2002 completion does not establish legal expiry or repeal. Relevance and sector tags are editorial classifications supported by Annex II.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:51:04.811+01:00"
+      },
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Act heading and Done at Brussels clause, PDF pages 1 and 4",
+          "meaning": "Official act date 25 January 1999."
+        },
+        "publication_date": {
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "OJ mastheads, L 64/20–39, 12.3.1999",
+          "meaning": "Official Journal publication on 12 March 1999."
+        }
+      },
+      "legal_status_evidence": {
+        "source_id": "historical-fp5-ist-specific-programme-eur-lex",
+        "locator": "Current document information/status block: In force",
+        "meaning": "Current official status is retained without interpreting programme completion as expiry."
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Annex II(a)(iii), Human language technologies and Information access, PDF pages 13–14",
+          "rationale": "Language understanding, knowledge extraction and intelligent assistants substantively connect this research programme to the corpus's AI lineage."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Annex II(a)(iii), RTD priorities, PDF pages 13–14",
+          "rationale": "Funds research into language, knowledge and intelligent interaction technologies."
+        },
+        {
+          "field": "sector_tags",
+          "value": "health",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Annex II(a)(i), Health, PDF page 9",
+          "rationale": "Specifies intelligent diagnostic systems and medical assistants."
+        },
+        {
+          "field": "sector_tags",
+          "value": "media_and_culture",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Annex II(a)(iii), Multimedia content and Human language technologies, PDF pages 12–14",
+          "rationale": "Applies language technologies to media content and cultural heritage."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Annex II(a)(iii), Education and training, PDF page 13",
+          "rationale": "Specifies learner modelling and knowledge-transfer models."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "Heading, adoption clause and Council signature, PDF pages 1–4",
+          "rationale": "The Council is the acting institution in the official decision."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "historical-fp5-ist-specific-programme-official-pdf",
+          "locator": "OJ masthead on the original English act",
+          "rationale": "Official Journal publication establishes public issuance."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "frontex-ai-capabilities-2021-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "source_type": "official_pdf",
+      "url": "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+      "publisher": "European Border and Coast Guard Agency",
+      "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+      "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+      "verification_note": "Full 167-page official English PDF successfully retrieved by public unauthenticated Node fetch (HTTP 200) and parsed in memory with pypdf. Cover: Warsaw, 17/03/2021. Legal notice/preface: commissioned to RAND Europe; page 11 lists five report authors. Sections 1.1–1.3 and report identity reviewed. PDF modification metadata of January 2025 does not itself establish a revised report; cover/title/imprint identify the 2021 final report. Bytes hashed but not archived."
+    },
+    {
+      "id": "frontex-ai-capabilities-2021-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "source_type": "official_register",
+      "url": "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe",
+      "publisher": "European Border and Coast Guard Agency",
+      "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+      "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+      "verification_note": "Official catalogue retrieved successfully (HTTP 200): exact final-report title, publication date 2021-03-31 and English PDF download verified."
+    },
+    {
+      "id": "historical-fp5-ist-specific-programme-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "source_type": "official_pdf",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31999D0168",
+      "publisher": "Office for Official Publications of the European Communities",
+      "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+      "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+      "verification_note": "Complete 20-page English original OJ act retrieved successfully (HTTP 200) and parsed in memory. OJ masthead and heading establish 12 March publication and 25 January 1999 act date. Annex II health, language, media and learner-modelling provisions reviewed. Bytes hashed but not archived."
+    },
+    {
+      "id": "historical-fp5-ist-specific-programme-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31999D0168",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+      "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+      "verification_note": "Complete official English HTML retrieved with public unauthenticated Node fetch (HTTP 200). Identity block confirms CELEX 31999D0168, ELI, OJ L 64 of 12 March 1999, pages 20–39 and current status In force. Programme duration is not interpreted as repeal."
+    }
+  ],
+  "institutions": [
+    {
+      "id": "european-border-and-coast-guard-agency",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:51:04.811+01:00",
+      "updated_at": "2026-09-06T00:51:04.811+01:00",
+      "official_name": "European Border and Coast Guard Agency",
+      "short_name": "Frontex",
+      "institution_type": "EU agency",
+      "official_url": "https://www.frontex.europa.eu/"
+    }
+  ],
+  "relationships": [],
+  "decisions": [
+    {
+      "candidate_id": "frontex-ai-capabilities-2021",
+      "decision": "included",
+      "document_id": "frontex-ai-capabilities-2021",
+      "reason": "Recovered complete official English text and verified all pending identity, dates, classification and attribution fields. Externally authored RAND Europe report commissioned by Frontex. Five named authors are retained separately from the agency. The 17 March issue date differs from official publication on 31 March 2021. Current PDF metadata has a 2025 modification timestamp, but the public cover and imprint identify the same 2021 final report; no new version is inferred from file metadata. Embedded annexes remain part of this principal report.",
+      "evidence_urls": [
+        "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+        "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "historical-fp5-ist-specific-programme",
+      "decision": "included",
+      "document_id": "historical-fp5-ist-specific-programme",
+      "reason": "Recovered complete official English text and verified all pending identity, dates, classification and attribution fields. Original specific-programme decision, separate from the FP5 framework. EUR-Lex currently labels it In force; the programme's 2002 completion does not establish legal expiry or repeal. Relevance and sector tags are editorial classifications supported by Annex II.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31999D0168",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31999D0168"
+      ],
+      "remaining_checks": []
+    }
+  ],
+  "evidence_log": [
+    {
+      "candidate_id": "frontex-ai-capabilities-2021",
+      "reviewed_at": "2026-09-06T00:51:04.811+01:00",
+      "method": "Public unauthenticated Node fetch; full PDF parsed with bundled Python pypdf from an in-memory BytesIO buffer; official catalogue HTML parsed separately.",
+      "urls": [
+        "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+        "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe"
+      ],
+      "locators": [
+        "Cover issue date",
+        "PDF pages 2–3 commissioning and imprint",
+        "PDF page 11 five named RAND Europe authors",
+        "PDF pages 14–17 substantive border-AI research",
+        "Catalogue: 2021-03-31"
+      ],
+      "http_status": 200,
+      "pdf_pages": 167,
+      "pdf_bytes": 11404499,
+      "sha256": "17db38265430e2b1550d1b81251548d509d6773bdc0db5ebb84990b685587a56",
+      "bytes_archived": false,
+      "result": "included"
+    },
+    {
+      "candidate_id": "historical-fp5-ist-specific-programme",
+      "reviewed_at": "2026-09-06T00:51:04.811+01:00",
+      "method": "Public unauthenticated Node fetch; full English OJ PDF parsed from BytesIO with pypdf; complete EUR-Lex HTML status block checked.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31999D0168",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31999D0168"
+      ],
+      "locators": [
+        "PDF pages 1–4 act/adoption/publication metadata",
+        "Annex II(a)(i), page 9",
+        "Annex II(a)(iii), pages 12–14",
+        "EUR-Lex status: In force"
+      ],
+      "http_status": 200,
+      "pdf_pages": 20,
+      "pdf_bytes": 106623,
+      "sha256": "a938dfbf512bff776bb1c94216ba794466aa194f0d03614c2b6fe28aa7dfff3b",
+      "bytes_archived": false,
+      "result": "included"
+    },
+    {
+      "candidate_id": "historical-juri-robotics-report-2017",
+      "reviewed_at": "2026-09-06T00:51:04.811+01:00",
+      "method": "Bounded Node fetch recovery of original HTML/PDF, non-www PDF and RegData manifestation; reopened official OEIL procedure PDF and searched exact report reference.",
+      "urls": [
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.html",
+        "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf",
+        "https://www.europarl.europa.eu/RegData/seance_pleniere/textes_deposes/rapports/2017/0005/P8_A(2017)0005_EN.pdf",
+        "https://europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf",
+        "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2015%2F2103%28INL%29"
+      ],
+      "queries": [
+        "\"A8-0005/2017\" \"publication\" 2017 [domain europarl.europa.eu]",
+        "\"A8-0005\" \"27/01/2017\" [domain europarl.europa.eu]",
+        "\"PE582.443v03-00\" pdf [domain europarl.europa.eu]"
+      ],
+      "locators": [
+        "OEIL PDF pages 2–3: report tabled 27 January 2017; P8_TA(2017)0051 adopted 16 February"
+      ],
+      "result": "still_pending",
+      "limitation": "Original report endpoints all returned HTTP 202 with zero-byte text/html bodies. OEIL verifies public tabling and procedural relationship, but full report and complete contribution credits remain unavailable. No included decision or canonical record created."
+    }
+  ]
+}

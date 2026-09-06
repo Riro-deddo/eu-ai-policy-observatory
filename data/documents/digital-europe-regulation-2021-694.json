@@ -1,0 +1,200 @@
+{
+  "id": "digital-europe-regulation-2021-694",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "slug": "digital-europe-regulation-2021-694",
+  "official_title": "Regulation (EU) 2021/694 of the European Parliament and of the Council of 29 April 2021 establishing the Digital Europe Programme and repealing Decision (EU) 2015/2240",
+  "short_title": "Digital Europe Programme Regulation",
+  "document_type": "regulation",
+  "sector_tags": [
+    "general_cross_sector",
+    "health",
+    "employment_and_labour",
+    "financial_services",
+    "transport_and_mobility",
+    "education",
+    "public_administration",
+    "research_and_innovation",
+    "industry_and_manufacturing",
+    "agriculture_and_environment"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "joint_institutional",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Regulation (EU) 2021/694",
+  "procedure_references": [
+    "2018/0227/COD"
+  ],
+  "oj_reference": "OJ L 166, 11.5.2021, pp. 1-34",
+  "document_date": "2021-04-29",
+  "version_label": "Original Official Journal text",
+  "version_status": "final",
+  "publication_date": "2021-05-11",
+  "legal_status": "in_force",
+  "celex": "32021R0694",
+  "eli": "http://data.europa.eu/eli/reg/2021/694/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "evidence_locator": "Heading and signature block"
+    },
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "evidence_locator": "Heading and signature block"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "proposer",
+      "evidence_source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "evidence_locator": "Preamble"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "digital-europe-regulation-2021-694-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Article 5 establishes a dedicated AI objective with funding, experimentation and ethical requirements.",
+    "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:49:16Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Document information Dates; OJ header; Article 5",
+      "meaning": "Exact date and date meaning stated by the cited official manifestation."
+    },
+    "publication_date": {
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Document information Dates; OJ header; Article 5",
+      "meaning": "Official publication on 2021-05-11."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Document information Dates; OJ header; Article 5",
+      "rationale": "Article 5 establishes a dedicated AI objective with funding, experimentation and ethical requirements."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Article 5(1)(a)-(d)",
+      "rationale": "AI capabilities are funded across private and public users."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Article 5(1)(b)-(c)",
+      "rationale": "Research institutions and AI experimentation facilities receive explicit support."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Article 5(1)(b)",
+      "rationale": "Public administrations are expressly eligible users of AI capacities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Article 5(1)(d); Annex I, AI action 3",
+      "rationale": "AI production systems and manufacturing test facilities are supported."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Annex I, Specific Objective 2, action 3",
+      "rationale": "Health is an explicit AI experimentation sector."
+    },
+    {
+      "field": "sector_tags",
+      "value": "agriculture_and_environment",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Annex I, Specific Objective 2, action 3",
+      "rationale": "Earth and environment monitoring are explicit AI experimentation fields."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Annex I, Specific Objective 2, action 3",
+      "rationale": "Transport and mobility are explicit AI experimentation fields."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Annex I, Specific Objective 2, action 3",
+      "rationale": "Finance is an explicit AI experimentation field."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Article 7(1)(a)-(c)",
+      "rationale": "AI training and courses for students and workers are funded."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Article 7(1)(b)-(c)",
+      "rationale": "Workforce training and placements include AI skills."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Document information, Author",
+      "rationale": "EUR-Lex expressly names Parliament and Council as authors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "Document information, Author",
+      "rationale": "The act jointly credits Parliament and Council."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "digital-europe-regulation-2021-694-eur-lex",
+      "locator": "OJ L 166, 11 May 2021, pp.1-34",
+      "rationale": "The original English act is published in the Official Journal."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "digital-europe-regulation-2021-694-eur-lex",
+    "locator": "Document information, legal-status panel, Dates; Article 34",
+    "meaning": "EUR-Lex labels the act in force with no end date. Its metadata gives entry into force as 12 May 2021, whereas Article 34 states publication day (11 May 2021). This official-source discrepancy is retained without adjudication. The record describes the original act, not a later consolidation."
+  }
+}

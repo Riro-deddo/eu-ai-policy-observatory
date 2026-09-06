@@ -1,0 +1,169 @@
+{
+  "id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "hma-ema-multi-annual-ai-workplan-2023-2028",
+  "official_title": "Multi-annual AI workplan 2023-2028",
+  "short_title": "Multi-annual AI workplan 2023-2028",
+  "document_type": "work_programme",
+  "sector_tags": [
+    "health",
+    "public_administration"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "joint_institutional",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2023-12-18",
+  "version_label": "Version 1 - November 2023",
+  "version_status": "final",
+  "publication_date": "2023-12-18",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "hma-ema-big-data-steering-group",
+      "role": "author",
+      "evidence_source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "evidence_locator": "PDF cover credits HMA-EMA Big Data Steering Group."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "adopter",
+      "evidence_source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "evidence_locator": "News states EMA Management Board adopted workplan at its December meeting."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "publisher",
+      "evidence_source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "heads-of-medicines-agencies",
+      "role": "publisher",
+      "evidence_source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "evidence_locator": "News introduction states EMA and HMA published the workplan."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "official_host",
+      "evidence_source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+    "hma-ema-multi-annual-ai-workplan-2023-2028-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "Joint multi-year operational AI policy for the European medicines regulatory network, distinct from the later NDSG 2026-2028 workplan already in the known backlog.",
+    "researcher_notes": "Cover issue has month precision. December 2023 adoption is preserved at month precision; a planned 14 December meeting is not proof of an actual adoption day. Hosted file updated 25 January 2024 still identifies Version 1, November 2023. HMA is a national-authorities network.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "locator": "EMA news HTML: document First published 18/12/2023; article published_time 2023-12-18T13:59:00+0100; visible heading 18 December 2023.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "locator": "Live English HTML: workplan First published 18/12/2023; news published_time 2023-12-18; summary jointly credits EMA and HMA.",
+      "meaning": "Establishes official publication of this version on 2023-12-18, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "locator": "PDF cover and p.3 Introduction; pp.5-8 workstreams on AI policy, regulatory tools, training and experimentation.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "locator": "PDF cover and p.3 Introduction; pp.5-8 workstreams on AI policy, regulatory tools, training and experimentation.",
+      "rationale": "Addresses medicines or health-insurance AI."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "locator": "PDF cover and p.3 Introduction; pp.5-8 workstreams on AI policy, regulatory tools, training and experimentation.",
+      "rationale": "Addresses regulators' own use and governance of AI tools."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "locator": "PDF cover and p.3 Introduction; pp.5-8 workstreams on AI policy, regulatory tools, training and experimentation.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "locator": "Publication credits: HMA-EMA joint network or EMA and HMA joint publication.",
+      "rationale": "Evidence identifies joint network preparation or publication; HMA is a national-authorities network."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "HMA-EMA Big Data Steering Group",
+      "affiliation": null,
+      "evidence_source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "evidence_locator": "PDF cover."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2023-11",
+      "precision": "month",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+      "locator": "Cover issue month (or official citation recommendation for EASA Issue 02)."
+    },
+    {
+      "kind": "institutional_adoption",
+      "value": "2023-12",
+      "precision": "month",
+      "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-page",
+      "locator": "News body: EMA Management Board adopted at December meeting."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+    "locator": "PDF cover and p.3 Introduction; pp.5-8 workstreams on AI policy, regulatory tools, training and experimentation.",
+    "meaning": "Non-legislative report, scientific guidance, strategic workplan or consultation text; not an act creating binding law."
+  }
+}

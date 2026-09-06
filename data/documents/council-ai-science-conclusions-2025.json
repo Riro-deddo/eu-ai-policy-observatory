@@ -1,0 +1,108 @@
+{
+  "id": "council-ai-science-conclusions-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "slug": "council-ai-science-conclusions-2025",
+  "official_title": "Towards an EU Strategy on Artificial Intelligence in Science - Council conclusions",
+  "short_title": "Council conclusions on AI in science",
+  "document_type": "conclusions",
+  "sector_tags": [
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ST 9292/25",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-05-23",
+  "version_label": "Adopted Council conclusions",
+  "version_status": "final",
+  "publication_date": "2025-05-23",
+  "legal_status": "adopted",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "council-ai-science-conclusions-2025-pdf",
+      "evidence_locator": "Cover: conclusions approved 23 May 2025"
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council",
+      "role": "cover_note_sender",
+      "evidence_source_id": "council-ai-science-conclusions-2025-pdf",
+      "evidence_locator": "Cover: From General Secretariat of the Council"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "council-ai-science-conclusions-2025-pdf",
+    "council-ai-science-conclusions-2025-release"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The conclusions set policy expectations for responsible AI use, research infrastructure and scientific integrity.",
+    "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:49:16Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-ai-science-conclusions-2025-pdf",
+      "locator": "Cover adoption statement; annex paragraphs 5-9,19-26",
+      "meaning": "Exact date and date meaning stated by the cited official manifestation."
+    },
+    "publication_date": {
+      "source_id": "council-ai-science-conclusions-2025-release",
+      "locator": "Release date 23 May 2025 12:15 and link to ST 9292/25",
+      "meaning": "Same-day official release explicitly provides this adopted PDF; this records official publication, not an independently measured register-upload timestamp."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-ai-science-conclusions-2025-pdf",
+      "locator": "Cover adoption statement; annex paragraphs 5-9,19-26",
+      "rationale": "The conclusions set policy expectations for responsible AI use, research infrastructure and scientific integrity."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "council-ai-science-conclusions-2025-pdf",
+      "locator": "Annex paragraphs 5-9,19-26",
+      "rationale": "The conclusions directly address AI uptake and governance in science."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-ai-science-conclusions-2025-pdf",
+      "locator": "Cover and annex: Council conclusions approved at its meeting",
+      "rationale": "The annex is expressly the Council's adopted conclusions; the Secretariat only transmits them."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-ai-science-conclusions-2025-pdf",
+      "locator": "Official ST 9292/25 PDF and same-day Council release",
+      "rationale": "Council publishes the adopted English text."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
+}

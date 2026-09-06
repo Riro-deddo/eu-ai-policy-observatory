@@ -1,0 +1,13 @@
+{
+  "id": "hma-ema-multi-annual-ai-workplan-2023-2028-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.ema.europa.eu/system/files/documents/work-programme/2023-12_ai-multiannual-workplan_a4_en.pdf",
+  "publisher": "European Medicines Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF cover and p.3 Introduction; pp.5-8 workstreams on AI policy, regulatory tools, training and experimentation. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

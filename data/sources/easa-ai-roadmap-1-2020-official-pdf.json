@@ -1,0 +1,13 @@
+{
+  "id": "easa-ai-roadmap-1-2020-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.easa.europa.eu/sites/default/files/dfu/EASA-AI-Roadmap-v1.0.pdf",
+  "publisher": "European Union Aviation Safety Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "Printed pp.14-20, sections G-H: AI trustworthiness; p.25 action plan. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}
