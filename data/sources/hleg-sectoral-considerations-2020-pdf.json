@@ -1,0 +1,13 @@
+{
+  "id": "hleg-sectoral-considerations-2020-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "source_type": "official_pdf",
+  "url": "https://futurium.ec.europa.eu/sites/default/files/2020-07/Sectoral%20Considerations%20On%20The%20Policy%20And%20Investment%20Recommendations%20For%20Trustworthy%20Artificial%20Intelligence.pdf",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-05T23:49:16Z",
+  "last_verified_at": "2026-09-05T23:49:16Z",
+  "verification_note": "Public unauthenticated official PDF returned HTTP 200. Text extracted in memory; pp.1-8,11-13 read. P.2 states AI HLEG authorship and made public 23 July 2020. No restricted community login used; no snapshot claimed."
+}

@@ -1,4 +1,7 @@
 import { expect, test } from '@playwright/test';
+import { loadPublicData } from '../src/lib/data';
+
+const publicData = loadPublicData();
 
 const siteOrigin = process.env.SITE_ORIGIN ?? 'https://eu-ai-policy-observatory.test';
 const basePath = process.env.BASE_PATH ?? '/eu-ai-policy-observatory';
@@ -522,10 +525,10 @@ test('methodology renders bounded source scopes and incomplete review semantics'
   await page.goto('methodology/');
 
   const review = page.getByRole('region', { name: 'Expanded evidence review' });
-  await expect(review).toContainText('105 published records');
+  await expect(review).toContainText(`${publicData.coverage.historical_review.verified} published records`);
   await expect(review).toContainText('26 retained records');
   const scopes = page.getByRole('region', { name: 'Bounded source scopes' });
-  await expect(scopes.locator(':scope > ol > li')).toHaveCount(34);
+  await expect(scopes.locator(':scope > ol > li')).toHaveCount(publicData.coverage.source_scopes.length);
   await expect(scopes).toContainText('Partial · in progress');
   await expect(scopes).toContainText('Unspecified');
   await expect(scopes).toContainText('2026-09-04');

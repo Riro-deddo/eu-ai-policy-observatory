@@ -11,6 +11,7 @@ import sys
 import pytest
 
 import observatory.pipeline as pipeline
+from observatory.io import load_records
 from observatory.pipeline import run_pipeline
 from observatory.validate import RecordValidationError
 
@@ -44,17 +45,28 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     assert payload["coverage"]["inventory"] == {
         key: decisions[key] for key in ("included", "merged", "excluded", "pending")
     }
-    assert sum(decisions.values()) == 171
-    assert decisions["pending"] == 12
+    candidate_ids = [row["id"] for row in inventory["candidates"]]
+    assert len(candidate_ids) == len(set(candidate_ids))
+    assert {
+        row["document_id"] for row in inventory["candidates"]
+        if row["decision"] == "included"
+    } == {
+        record.data["id"] for record in load_records(Path("data"))["documents"]
+        if record.data["publication_status"] == "published"
+    }
+    source_sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
+    family_statuses = {}
+    for source in source_sweep["sources"]:
+        family_statuses.setdefault(source["source_family"], set()).add(source["scan_status"])
+    # A family reports its least-complete/highest-priority entrance status.
+    status_priority = {"gap_found": 0, "recheck_due": 1, "in_progress": 2,
+                       "not_started": 3, "reviewed": 4}
+    family_counts = Counter(
+        min(statuses, key=status_priority.__getitem__) for statuses in family_statuses.values()
+    )
     assert payload["coverage"]["source_families"] == {
-        "total": 17,
-        "by_status": {
-            "not_started": 0,
-            "in_progress": 4,
-            "reviewed": 11,
-            "gap_found": 0,
-            "recheck_due": 2,
-        },
+        "total": len(family_statuses),
+        "by_status": {status: family_counts[status] for status in status_priority},
     }
     public_text = json.dumps(payload)
     assert "decision_history" not in public_text

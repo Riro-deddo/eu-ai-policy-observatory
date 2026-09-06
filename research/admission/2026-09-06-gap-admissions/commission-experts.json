@@ -1,0 +1,283 @@
+{
+  "records": [
+    {
+      "id": "expert-group-liability-ai-report-2019",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:51:12Z",
+      "updated_at": "2026-09-05T23:51:12Z",
+      "slug": "expert-group-liability-ai-report-2019",
+      "official_title": "Liability for Artificial Intelligence and other emerging digital technologies",
+      "short_title": "Expert report on liability for AI and emerging technologies",
+      "document_type": "report",
+      "sector_tags": [
+        "justice",
+        "consumer_protection"
+      ],
+      "provenance_tags": [
+        "eu_expert_group_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "DOI 10.2838/573689; ISBN 978-92-76-12959-2",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2019-11-27",
+      "version_label": "Published expert-group report (2019)",
+      "version_status": "final",
+      "publication_date": "2019-11-27",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "expert-group-liability-new-technologies-formation",
+          "role": "author",
+          "evidence_source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "evidence_locator": "PDF p.2, explicit written-by statement"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "commissioner",
+          "evidence_source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "evidence_locator": "PDF pp.14–15 (printed12–13), group mandate"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "responsible_body",
+          "evidence_source_id": "expert-group-liability-ai-report-2019-catalogue",
+          "evidence_locator": "Corporate author(s): Directorate-General for Justice and Consumers"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "evidence_locator": "PDF p.2, Luxembourg imprint"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "expert-group-liability-ai-report-2019-catalogue",
+          "evidence_locator": "OP catalogue and linked PDF viewer"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "expert-group-liability-ai-report-2019-official-pdf",
+        "expert-group-liability-ai-report-2019-catalogue"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Detailed independent expert recommendations address civil liability for AI systems, harms, burden of proof and victim compensation.",
+        "researcher_notes": "The full report supplies no exact issue day, so the verified catalogue release date supplies the explicit publication fallback. Catalogue code DS-03-19-742-EN-N and PDF code DS-03-19-853-EN-N are retained as a source discrepancy; matching title, DOI and ISBN resolve document identity. DG JUST catalogue attribution is not substituted for the expert-group written-by credit. Annex printedp.65 lists group members: Ryan Abbott, Georg Borges, Eugenia Dacoronia, Nathalie Devillier, Marlena Jankowska-Augustyn, Ernst Karner, Bernhard Alexander Koch, Alžběta Krausova, Piotr Machnikowski, Maria Lillà Montagnani, Marie Motzfeldt, Finbarr Murphy, Ugo Pagallo, Teresa Rodriguez de las Heras Ballell, Gerald Spindler and Christiane Wendehorst. Cooley(UK) LLP and Universidad Carlos III de Madrid are institutional observers, not report authors. Membership is preserved in notes rather than converted to an unsupported named-author list.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:51:12Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "expert-group-liability-ai-report-2019-catalogue",
+          "locator": "Released on EU publications website; datePublished",
+          "meaning": "27 November2019 publication fallback; full report only states2019."
+        },
+        "publication_date": {
+          "source_id": "expert-group-liability-ai-report-2019-catalogue",
+          "locator": "Released on EU publications website; datePublished",
+          "meaning": "Publication of the cited report catalogue manifestation on27November2019."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "locator": "Printed pp.3–10, executive summary and key findings",
+          "rationale": "AI liability is a substantive policy subject throughout the recommendations."
+        },
+        {
+          "field": "sector_tags",
+          "value": "justice",
+          "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "locator": "Printed pp.3–10; Key Findings[3], [25]–[27]",
+          "rationale": "Civil-liability remedies and evidential burdens are central."
+        },
+        {
+          "field": "sector_tags",
+          "value": "consumer_protection",
+          "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "locator": "Printed pp.3–4 and Key Findings[13]–[15]",
+          "rationale": "Addresses compensation and producer liability for defective AI-enabled products."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_expert_group_authored",
+          "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+          "locator": "PDF p.2, written-by statement and independent-group designation",
+          "rationale": "Explicitly written by the Commission-appointed independent expert formation."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "expert-group-liability-ai-report-2019-catalogue",
+          "locator": "Release-date field and PDF link",
+          "rationale": "Formally released via the Publications Office."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "legal_status_evidence": {
+        "source_id": "expert-group-liability-ai-report-2019-official-pdf",
+        "locator": "PDF p.2, authors' views disclaimer; printedp.13, mandate",
+        "meaning": "Independent advisory report; recommendations do not constitute Commission law or an adopted Commission position."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "expert-group-liability-ai-report-2019-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:51:12Z",
+      "updated_at": "2026-09-05T23:51:12Z",
+      "source_type": "official_pdf",
+      "url": "https://op.europa.eu/flexpaper/view?doc=1c5e30be-1197-11ea-8c1f-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:51:12Z",
+      "last_verified_at": "2026-09-05T23:51:12Z",
+      "verification_note": "Official OP viewer endpoint returned HTTP200 application/pdf, 910954 bytes and 70 pages. In-memory pypdf review of cover/credits, executive summary, key findings, background and member annex. PDF code DS-03-19-853-EN-N differs from catalogue DS-03-19-742-EN-N, but title, PDF DOI10.2838/573689 and ISBN978-92-76-12959-2 match; no separate edition/revision statement found."
+    },
+    {
+      "id": "expert-group-liability-ai-report-2019-catalogue",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:51:12Z",
+      "updated_at": "2026-09-05T23:51:12Z",
+      "source_type": "official_register",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:51:12Z",
+      "last_verified_at": "2026-09-05T23:51:12Z",
+      "verification_note": "Official OP HTML directly fetched. Release date2019-11-27 confirmed in visible time/datePublished and book:release_date metadata. Catalogue DOI/ISBN match full report. DG Justice and Consumers corporate catalogue credit is preserved separately from report's explicit expert-group authorship."
+    }
+  ],
+  "institutions": [
+    {
+      "id": "expert-group-liability-new-technologies-formation",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:51:12Z",
+      "updated_at": "2026-09-05T23:51:12Z",
+      "official_name": "Expert Group on Liability and New Technologies – New Technologies Formation",
+      "short_name": "Liability and New Technologies Expert Group (NTF)",
+      "institution_type": "European Commission independent expert group formation",
+      "official_url": "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en"
+    }
+  ],
+  "relationships": [],
+  "decisions": [
+    {
+      "candidate_id": "expert-group-liability-ai-report-2019",
+      "decision": "included",
+      "document_id": "expert-group-liability-ai-report-2019",
+      "reason": "Full official report, distinct expert authorship, substantive findings and exact official publication fallback verified. Catalogue-number discrepancy documented; matching DOI/ISBN resolve identity.",
+      "evidence_urls": [
+        "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en",
+        "https://op.europa.eu/flexpaper/view?doc=1c5e30be-1197-11ea-8c1f-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Official102-page PDF is explicitly First edition–corrected version with distinct DOI/ISBN. Issue27March2024, release21June2024, authorship and recommendations verified, but independently citable original first edition (DOI10.2777/08845) is currently evidenced only by external academy mirrors. Required verified version parent is unresolved; SAPEA ERR13 is supporting research, not that parent.",
+      "evidence_urls": [
+        "https://op.europa.eu/en/publication-detail/-/publication/d6d8ed54-32a8-11ef-a61b-01aa75ed71a1/language-en",
+        "https://op.europa.eu/flexpaper/view?doc=d6d8ed54-32a8-11ef-a61b-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]",
+        "https://data.europa.eu/doi/10.2777/08845"
+      ],
+      "remaining_checks": [
+        "Retrieve first edition from eligible official source and establish its canonical identity/publication.",
+        "Create validated revises/version_of relationship before admitting corrected edition.",
+        "Do not replace the corrected edition issue date with its June catalogue release or confuse it with SAPEA Evidence Review Report13."
+      ]
+    }
+  ],
+  "evidence_log": [
+    {
+      "candidate_id": "expert-group-liability-ai-report-2019",
+      "queries": [
+        "Direct OP catalogue HTML and linked Flexpaper full-PDF fetch; inspect PDF pp.1–15 and67; exact DOI canonical deduplication."
+      ],
+      "urls": [
+        "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en",
+        "https://op.europa.eu/flexpaper/view?doc=1c5e30be-1197-11ea-8c1f-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]"
+      ],
+      "locators": [
+        "PDFp.2 credits/ISBN/DOI",
+        "Printedpp.3–10 key findings",
+        "Printedpp.12–13 mandate",
+        "Printedp.65 membership",
+        "Catalogue datePublished"
+      ],
+      "time": "2026-09-05T23:51:12Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "method": "Node fetch HTTP200; PDF bytes passed in-memory to bundled Python/pypdf; no full-text snapshots retained.",
+      "outcome": "included"
+    },
+    {
+      "candidate_id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "queries": [
+        "Direct OP catalogue and Flexpaper PDF fetch",
+        "Official catalogue other-editions action inspected",
+        "Exact-title/DOI searches; original DOI resolution attempted"
+      ],
+      "urls": [
+        "https://op.europa.eu/en/publication-detail/-/publication/d6d8ed54-32a8-11ef-a61b-01aa75ed71a1/language-en",
+        "https://op.europa.eu/flexpaper/view?doc=d6d8ed54-32a8-11ef-a61b-01aa75ed71a1.en.PDF.pdf&user=&format=pdf&page=[*,0]",
+        "https://data.europa.eu/doi/10.2777/08845"
+      ],
+      "locators": [
+        "PDFp.1 corrected-version cover",
+        "PDFp.2 First edition–corrected version, March manuscript completion, ISBN978-92-68-17917-8, DOI10.2777/46863",
+        "PDFp.3 Scientific Opinion15, Brussels27March2024, supported by SAPEA ERR13",
+        "PDFpp.6–7 group members and acknowledgments",
+        "Printedpp.8–10 and33–44 recommendations"
+      ],
+      "time": "2026-09-05T23:51:12Z",
+      "research_date": "2026-09-06",
+      "timezone": "Europe/London",
+      "publication_cutoff": "2026-09-04",
+      "outcome": "pending",
+      "verified_metadata": {
+        "document_date": "2024-03-27",
+        "document_date_kind": "document_issue",
+        "publication_date": "2024-06-21",
+        "version_label": "First edition - corrected version",
+        "document_type": "opinion",
+        "legal_status": "non_binding",
+        "author": "Group of Chief Scientific Advisors",
+        "commissioner": "European Commission (request by Margrethe Vestager and Iliana Ivanova)",
+        "named_preparation_leads": [
+          "Nicole Grobert (co-lead)",
+          "Alberto Melloni (co-lead)",
+          "Maarja Kruusmaa"
+        ],
+        "endorsement": "All seven Scientific Advisors; PDFp.7",
+        "publisher": "Publications Office of the European Union",
+        "recommendations": "Dedicated AI research funding/institute, fair access and quality, infrastructure coordination and human-centred researcher skills."
+      },
+      "limitations": "The original first-edition ISBN978-92-68-10084-4 and DOI10.2777/08845 surfaced via academy mirrors, which are discovery evidence only. OP other-editions panel returned only21June2024 item. DOI resolver redirected to generic OP DOI help page."
+    }
+  ]
+}

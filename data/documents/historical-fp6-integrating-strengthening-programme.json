@@ -1,0 +1,141 @@
+{
+  "id": "historical-fp6-integrating-strengthening-programme",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "slug": "historical-fp6-integrating-strengthening-programme",
+  "official_title": "2002/834/EC: Council Decision of 30 September 2002 adopting a specific programme for research, technological development and demonstration: Integrating and strengthening the European Research Area (2002-2006)",
+  "short_title": "FP6 Integrating and strengthening the European Research Area",
+  "document_type": "decision",
+  "sector_tags": [
+    "media_and_culture",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "2002/834/EC",
+  "procedure_references": [],
+  "oj_reference": "OJ L 294, 29.10.2002, pp. 1–43",
+  "document_date": "2002-09-30",
+  "version_label": "Original Official Journal text",
+  "version_status": "final",
+  "publication_date": "2002-10-29",
+  "legal_status": "no_longer_in_force",
+  "celex": "32002D0834",
+  "eli": "http://data.europa.eu/eli/dec/2002/834/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "evidence_locator": "Act heading and operative adoption clause"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "proposer",
+      "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "evidence_locator": "Preamble: Commission proposal or submitted draft work programme"
+    },
+    {
+      "institution_id": "office-for-official-publications-of-the-european-communities",
+      "role": "publisher",
+      "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "evidence_locator": "Original Official Journal citation"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "evidence_locator": "EUR-Lex hosting of original act"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "historical-fp6-integrating-strengthening-programme-eur-lex",
+    "historical-fp6-specific-programme-register-metadata"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Cognitive and agent-based knowledge systems provide a substantive precursor connection.",
+    "researcher_notes": "Independent original act. Analytical classifications are separate from official facts. Programme completion is not used to infer repeal.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:45:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "Act heading; signed closing formula",
+      "meaning": "Official act date."
+    },
+    "publication_date": {
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "Official Journal reference",
+      "meaning": "Date of the cited original OJ publication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "Annex I, IST, (iv) Knowledge and interface technologies",
+      "rationale": "Cognitive and agent-based knowledge systems provide a substantive precursor connection."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "Annex I, IST, (iv), digital content",
+      "rationale": "Funded research priorities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "media_and_culture",
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "Annex I, IST, (iv), digital content",
+      "rationale": "Cognitive knowledge tools support digital content and media."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "historical-fp6-specific-programme-register-metadata",
+      "locator": "Record for 32002D0834, Author field",
+      "rationale": "Explicit official author metadata; historical issuing name preserved."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "Official Journal citation",
+      "rationale": "Original act formally published."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_end_of_validity",
+      "value": "2006-12-31",
+      "precision": "day",
+      "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+      "locator": "EUR-Lex legal-status panel"
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+    "locator": "EUR-Lex legal-status panel",
+    "meaning": "Officially recorded as no longer in force."
+  }
+}

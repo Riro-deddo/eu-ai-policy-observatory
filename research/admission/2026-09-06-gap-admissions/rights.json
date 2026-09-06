@@ -1,0 +1,2650 @@
+{
+  "records": [
+    {
+      "id": "ep-ethical-framework-ai-2020",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "ep-ethical-framework-ai-2020",
+      "official_title": "European Parliament resolution of 20 October 2020 with recommendations to the Commission on a framework of ethical aspects of artificial intelligence, robotics and related technologies (2020/2012(INL))",
+      "short_title": "Framework of ethical aspects of AI, robotics and related technologies",
+      "document_type": "resolution",
+      "sector_tags": [
+        "general_cross_sector",
+        "employment_and_labour"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "P9_TA(2020)0275",
+      "procedure_references": [
+        "2020/2012(INL)"
+      ],
+      "oj_reference": "2021/C 404/04",
+      "document_date": "2020-10-20",
+      "version_label": "Adopted resolution, Official Journal manifestation",
+      "version_status": "final",
+      "publication_date": "2021-10-06",
+      "legal_status": "non_binding",
+      "celex": "52020IP0275",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "evidence_locator": "Resolution heading and acting body: The European Parliament"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "evidence_locator": "Resolution heading"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "evidence_locator": "Official Journal masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "evidence_locator": "EUR-Lex official English manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ethical-framework-ai-2020-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "Dedicated ethical framework recommendations; paragraphs 109–110 address AI worker monitoring and recruitment, written notice and human review of automated human-resource decisions.",
+        "researcher_notes": "Principal adopted resolution, including its recommendations annex within this manifestation. The requested regulation is not an enacted act. Committee report A9-0186/2020 is a separate preparatory document, not this identity.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Resolution heading",
+          "meaning": "Institutional adoption date of this text."
+        },
+        "publication_date": {
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Official Journal identity block and masthead",
+          "meaning": "OJ C 404, p. 63; date visible in the opened EUR-Lex text."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Resolution heading and paragraphs 1–3, 109–114",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Paragraphs 1–3",
+          "rationale": "Union-wide ethics framework for AI development and use."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Paragraphs 109–114",
+          "rationale": "Worker monitoring, recruitment and human review of personnel decisions."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Resolution heading and acting body",
+          "rationale": "The Parliament is the acting institution in its resolution."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ethical-framework-ai-2020-eur-lex",
+          "locator": "Official Journal identity block",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "ep-ai-civil-liability-2020",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "ep-ai-civil-liability-2020",
+      "official_title": "European Parliament resolution of 20 October 2020 with recommendations to the Commission on a civil liability regime for artificial intelligence (2020/2014(INL))",
+      "short_title": "Civil liability regime for artificial intelligence",
+      "document_type": "resolution",
+      "sector_tags": [
+        "justice",
+        "consumer_protection"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "P9_TA(2020)0276",
+      "procedure_references": [
+        "2020/2014(INL)"
+      ],
+      "oj_reference": "2021/C 404/05",
+      "document_date": "2020-10-20",
+      "version_label": "Adopted resolution, Official Journal manifestation",
+      "version_status": "final",
+      "publication_date": "2021-10-06",
+      "legal_status": "non_binding",
+      "celex": "52020IP0276",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "evidence_locator": "Resolution heading and acting body: The European Parliament"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "evidence_locator": "Resolution heading"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "evidence_locator": "Official Journal masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "evidence_locator": "EUR-Lex official English manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ai-civil-liability-2020-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "Recommends civil-liability rules and compensation for AI harms, including strict liability for operators of high-risk AI systems. The annex is a legislative recommendation, not a law in force.",
+        "researcher_notes": "One non-binding adopted resolution includes its proposed-regulation annex. The annex is a recommendation and has no independent enacted status; the 2022 Commission proposal is not a version of this resolution.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Resolution heading",
+          "meaning": "Institutional adoption date of this text."
+        },
+        "publication_date": {
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Official Journal identity block and masthead",
+          "meaning": "OJ C 404, p. 107, opened official text."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Resolution and recommendations annex, Articles 2, 4 and 12",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "justice",
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Annex, Articles 4 and 12",
+          "rationale": "Liability, compensation and recourse for AI harm."
+        },
+        {
+          "field": "sector_tags",
+          "value": "consumer_protection",
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Annex, Article 2(3) and recitals 23–24",
+          "rationale": "Preserves consumer protections while proposing a harmonised AI liability framework."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Resolution heading and acting body",
+          "rationale": "The Parliament is the acting institution in its resolution."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ai-civil-liability-2020-eur-lex",
+          "locator": "Official Journal identity block",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "ep-ai-intellectual-property-2020",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "ep-ai-intellectual-property-2020",
+      "official_title": "European Parliament resolution of 20 October 2020 on intellectual property rights for the development of artificial intelligence technologies (2020/2015(INI))",
+      "short_title": "Intellectual property rights and AI technologies",
+      "document_type": "resolution",
+      "sector_tags": [
+        "intellectual_property",
+        "media_and_culture"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "P9_TA(2020)0277",
+      "procedure_references": [
+        "2020/2015(INI)"
+      ],
+      "oj_reference": "2021/C 404/06",
+      "document_date": "2020-10-20",
+      "version_label": "Adopted resolution, Official Journal manifestation",
+      "version_status": "final",
+      "publication_date": "2021-10-06",
+      "legal_status": "non_binding",
+      "celex": "52020IP0277",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "evidence_locator": "Resolution heading and acting body: The European Parliament"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "evidence_locator": "Resolution heading"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "evidence_locator": "Official Journal masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "evidence_locator": "EUR-Lex official English manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ai-intellectual-property-2020-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "Distinguishes AI-assisted and AI-generated creations and considers ownership, originality, remuneration and human review in intellectual-property administration.",
+        "researcher_notes": "Principal adopted resolution; committee-stage materials are not merged with the adopted text.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Resolution heading",
+          "meaning": "Institutional adoption date of this text."
+        },
+        "publication_date": {
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Official Journal identity block and masthead",
+          "meaning": "OJ C 404, p. 129, opened official text."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Paragraphs 10 and 13–16",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "intellectual_property",
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Paragraphs 10 and 13–16",
+          "rationale": "Addresses ownership and legal protection of AI-related creations."
+        },
+        {
+          "field": "sector_tags",
+          "value": "media_and_culture",
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Paragraphs 13–15",
+          "rationale": "Examines artistic AI output and human creators' rights."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Resolution heading and acting body",
+          "rationale": "The Parliament is the acting institution in its resolution."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ai-intellectual-property-2020-eur-lex",
+          "locator": "Official Journal identity block",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "ep-ai-education-culture-audiovisual-2021",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "ep-ai-education-culture-audiovisual-2021",
+      "official_title": "European Parliament resolution of 19 May 2021 on artificial intelligence in education, culture and the audiovisual sector (2020/2017(INI))",
+      "short_title": "AI in education, culture and the audiovisual sector",
+      "document_type": "resolution",
+      "sector_tags": [
+        "education",
+        "media_and_culture",
+        "intellectual_property"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "P9_TA(2021)0238",
+      "procedure_references": [
+        "2020/2017(INI)"
+      ],
+      "oj_reference": "2022/C 15/04",
+      "document_date": "2021-05-19",
+      "version_label": "Adopted resolution, Official Journal manifestation",
+      "version_status": "final",
+      "publication_date": "2022-01-12",
+      "legal_status": "non_binding",
+      "celex": "52021IP0238",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "evidence_locator": "Resolution heading and acting body: The European Parliament"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "evidence_locator": "Resolution heading"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "evidence_locator": "Official Journal masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "evidence_locator": "EUR-Lex official English manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ai-education-culture-audiovisual-2021-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "Dedicated sectoral AI resolution requiring fundamental-rights, cultural-diversity and intellectual-property safeguards and addressing dataset bias.",
+        "researcher_notes": "The OJ-addressed manifestation expressly identifies P9_TA(2021)0238 and CELEX 52021IP0238. It is the same adopted resolution, not another version.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Resolution heading",
+          "meaning": "Institutional adoption date of this text."
+        },
+        "publication_date": {
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Official Journal identity block and masthead",
+          "meaning": "OJ C 15, p. 28, opened OJ-addressed EUR-Lex text."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Paragraphs 1–7 and 73–74",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Recitals Q–R and paragraphs 1–7",
+          "rationale": "Sets education-specific AI safeguards."
+        },
+        {
+          "field": "sector_tags",
+          "value": "media_and_culture",
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Paragraphs 73–74",
+          "rationale": "Addresses AI-generated cultural content and creative-sector impacts."
+        },
+        {
+          "field": "sector_tags",
+          "value": "intellectual_property",
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Paragraphs 73–74",
+          "rationale": "Requests assessment of authorship and remuneration under IPR."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Resolution heading and acting body",
+          "rationale": "The Parliament is the acting institution in its resolution."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+          "locator": "Official Journal identity block",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "ep-ai-digital-age-2022",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "ep-ai-digital-age-2022",
+      "official_title": "European Parliament resolution of 3 May 2022 on artificial intelligence in a digital age (2020/2266(INI))",
+      "short_title": "Artificial intelligence in a digital age",
+      "document_type": "resolution",
+      "sector_tags": [
+        "general_cross_sector",
+        "employment_and_labour"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "P9_TA(2022)0140",
+      "procedure_references": [
+        "2020/2266(INI)"
+      ],
+      "oj_reference": "2022/C 465/06",
+      "document_date": "2022-05-03",
+      "version_label": "Adopted resolution, Official Journal manifestation",
+      "version_status": "final",
+      "publication_date": "2022-12-06",
+      "legal_status": "non_binding",
+      "celex": "52022IP0140",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+          "evidence_locator": "Resolution heading and acting body: The European Parliament"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+          "evidence_locator": "Resolution heading"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+          "evidence_locator": "Official Journal masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "ep-ai-digital-age-2022-eur-lex",
+          "evidence_locator": "EUR-Lex official English manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ai-digital-age-2022-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "A broad AI policy resolution outside the AI Act legislative procedure; the reviewed labour-market passage identifies ethical, legal and employment implications of workplace AI and supporting training needs.",
+        "researcher_notes": "Adopted resolution P9_TA(2022)0140; A9-0088/2022 is its distinct committee report and is not counted here.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Resolution heading",
+          "meaning": "Institutional adoption date of this text."
+        },
+        "publication_date": {
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Official Journal identity block and masthead",
+          "meaning": "OJ C 465, p. 65, opened official text."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Resolution general recommendations and paragraphs 77–78",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Resolution sections on opportunities, risks and a European AI road map",
+          "rationale": "Contains a cross-sector European AI policy programme."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Paragraphs 77–78",
+          "rationale": "Addresses workplace change, employment and algorithmic management."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Resolution heading and acting body",
+          "rationale": "The Parliament is the acting institution in its resolution."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ai-digital-age-2022-eur-lex",
+          "locator": "Official Journal identity block",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "edpb-ai-models-opinion-28-2024",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "edpb-ai-models-opinion-28-2024",
+      "official_title": "Opinion 28/2024 on certain data protection aspects related to the processing of personal data in the context of AI models",
+      "short_title": "EDPB Opinion 28/2024 on AI models",
+      "document_type": "opinion",
+      "sector_tags": [
+        "general_cross_sector"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "EDPB Opinion 28/2024",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2024-12-17",
+      "version_label": "Adopted opinion",
+      "version_status": "final",
+      "publication_date": "2024-12-18",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-data-protection-board",
+          "role": "author",
+          "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+          "evidence_locator": "Cover and introduction: EDPB opinion adopted 17 December 2024"
+        },
+        {
+          "institution_id": "european-data-protection-board",
+          "role": "adopter",
+          "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+          "evidence_locator": "PDF page 1 adoption statement"
+        },
+        {
+          "institution_id": "european-data-protection-board",
+          "role": "official_host",
+          "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-page",
+          "evidence_locator": "Official agency/body document page and English download"
+        },
+        {
+          "institution_id": "european-data-protection-board",
+          "role": "publisher",
+          "evidence_source_id": "edpb-ai-models-opinion-28-2024-official-page",
+          "evidence_locator": "Official agency/body publication page"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "edpb-ai-models-opinion-28-2024-official-pdf",
+        "edpb-ai-models-opinion-28-2024-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "Addresses anonymity of trained models, legitimate interests for development/deployment, and consequences of unlawful personal-data processing during model development.",
+        "researcher_notes": "Adoption on 17 December is distinct from publication on 18 December 2024. One adopted opinion; its Irish-authority request is a separate input.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+          "locator": "PDF page 1, adopted on 17 December 2024",
+          "meaning": "Institutional adoption date of this text."
+        },
+        "publication_date": {
+          "source_id": "edpb-ai-models-opinion-28-2024-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+          "locator": "Executive summary, pages 2–4",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+          "locator": "Executive summary, pages 2–4",
+          "rationale": "General data-protection analysis of AI model development and deployment."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "edpb-ai-models-opinion-28-2024-official-pdf",
+          "locator": "Cover and introduction: EDPB opinion adopted 17 December 2024",
+          "rationale": "The report or opinion identifies its EU body as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "edpb-ai-models-opinion-28-2024-official-page",
+          "locator": "Official document page and English download",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "fra-getting-future-right-ai-2020",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "fra-getting-future-right-ai-2020",
+      "official_title": "Getting the future right – Artificial intelligence and fundamental rights",
+      "short_title": "Getting the future right: AI and fundamental rights",
+      "document_type": "report",
+      "sector_tags": [
+        "public_administration",
+        "law_enforcement",
+        "health",
+        "consumer_protection"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ISBN 978-92-9474-860-7; DOI 10.2811/774118; TK-03-20-119-EN-N",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2020-12-14",
+      "version_label": "Published English report",
+      "version_status": "final",
+      "publication_date": "2020-12-14",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-union-agency-for-fundamental-rights",
+          "role": "author",
+          "evidence_source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "evidence_locator": "Foreword, printed pages 1–2; bibliographic page 2 of PDF"
+        },
+        {
+          "institution_id": "european-union-agency-for-fundamental-rights",
+          "role": "official_host",
+          "evidence_source_id": "fra-getting-future-right-ai-2020-official-page",
+          "evidence_locator": "Official agency/body document page and English download"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "evidence_locator": "PDF page 2, Luxembourg imprint"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "fra-getting-future-right-ai-2020-official-pdf",
+        "fra-getting-future-right-ai-2020-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Empirical rights analysis of AI used for social benefits, predictive policing, health services and targeted advertising in five Member States.",
+        "researcher_notes": "FRA report with fieldwork outsourced to Ecorys; FRA staff designed and supervised research (printed page 18 / PDF page 20). This is not evidence that Ecorys authored the report. The 2024 webpage notice adds Slovenian availability; English report identity remains 2020. Separately listed annexes and summary are not counted here.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "fra-getting-future-right-ai-2020-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+        },
+        "publication_date": {
+          "source_id": "fra-getting-future-right-ai-2020-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "locator": "Foreword, printed page 1; Chapter 2; section 4.8",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "public_administration",
+          "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "locator": "Chapter 2.1, printed pages 30–36",
+          "rationale": "Analyses social-benefits and other public-sector AI applications."
+        },
+        {
+          "field": "sector_tags",
+          "value": "law_enforcement",
+          "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "locator": "Chapter 2.1, predictive policing; foreword, printed page 1",
+          "rationale": "Examines predictive policing and its rights implications."
+        },
+        {
+          "field": "sector_tags",
+          "value": "health",
+          "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "locator": "Foreword, printed page 1; Chapter 2 selected use cases",
+          "rationale": "Health services are a substantive empirical use-case domain."
+        },
+        {
+          "field": "sector_tags",
+          "value": "consumer_protection",
+          "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "locator": "Section 4.8, printed pages 79–81",
+          "rationale": "Examines consumer rights and targeted advertising."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+          "locator": "Foreword, printed pages 1–2; bibliographic page 2 of PDF",
+          "rationale": "The report or opinion identifies its EU body as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "fra-getting-future-right-ai-2020-official-page",
+          "locator": "Official document page and English download",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "fra-bias-algorithms-2022",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "fra-bias-algorithms-2022",
+      "official_title": "Bias in algorithms – Artificial intelligence and discrimination",
+      "short_title": "Bias in algorithms: AI and discrimination",
+      "document_type": "report",
+      "sector_tags": [
+        "law_enforcement",
+        "media_and_culture"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ISBN 978-92-9461-935-8; DOI 10.2811/25847; TK0922347ENN",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2022-12-08",
+      "version_label": "Published English report",
+      "version_status": "final",
+      "publication_date": "2022-12-08",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-union-agency-for-fundamental-rights",
+          "role": "author",
+          "evidence_source_id": "fra-bias-algorithms-2022-official-pdf",
+          "evidence_locator": "Printed page 21 expressly states FRA carried out further analysis and drafted this report"
+        },
+        {
+          "institution_id": "european-union-agency-for-fundamental-rights",
+          "role": "official_host",
+          "evidence_source_id": "fra-bias-algorithms-2022-official-page",
+          "evidence_locator": "Official agency/body document page and English download"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "fra-bias-algorithms-2022-official-pdf",
+          "evidence_locator": "PDF page 4, Luxembourg imprint"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "fra-bias-algorithms-2022-official-pdf",
+        "fra-bias-algorithms-2022-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Tests bias in predictive policing and offensive-speech detection and recommends assessment of training data, discrimination and appropriate safeguards.",
+        "researcher_notes": "FRA designed the research and drafted this report after research by a consortium led by Rania Wazir (printed page 21). The consortium credit is retained as a research contribution, not substituted for report authorship.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "fra-bias-algorithms-2022-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+        },
+        "publication_date": {
+          "source_id": "fra-bias-algorithms-2022-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "fra-bias-algorithms-2022-official-pdf",
+          "locator": "Printed page 21, 'What does this report cover?'; Chapters 2–3",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "law_enforcement",
+          "source_id": "fra-bias-algorithms-2022-official-pdf",
+          "locator": "Chapter 2; printed page 21",
+          "rationale": "Tests predictive-policing feedback and discriminatory effects."
+        },
+        {
+          "field": "sector_tags",
+          "value": "media_and_culture",
+          "source_id": "fra-bias-algorithms-2022-official-pdf",
+          "locator": "Chapter 3; printed page 21",
+          "rationale": "Tests bias in automated detection of offensive online speech."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "fra-bias-algorithms-2022-official-pdf",
+          "locator": "Printed page 21 expressly states FRA carried out further analysis and drafted this report",
+          "rationale": "The report or opinion identifies its EU body as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "fra-bias-algorithms-2022-official-page",
+          "locator": "Official document page and English download",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "fra-assessing-high-risk-ai-2025",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "fra-assessing-high-risk-ai-2025",
+      "official_title": "Assessing High-risk Artificial Intelligence – Fundamental rights risks",
+      "short_title": "Assessing high-risk AI: Fundamental rights risks",
+      "document_type": "report",
+      "sector_tags": [
+        "migration_asylum_and_border_management",
+        "education",
+        "employment_and_labour"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ISBN 978-92-9489-677-3; DOI 10.2811/3952332; TK-01-25-028-EN-N",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2025-12-04",
+      "version_label": "Published English report",
+      "version_status": "final",
+      "publication_date": "2025-12-04",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-union-agency-for-fundamental-rights",
+          "role": "author",
+          "evidence_source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "evidence_locator": "Foreword and Annex, Table 8 source: FRA interviews and research, 2025"
+        },
+        {
+          "institution_id": "european-union-agency-for-fundamental-rights",
+          "role": "official_host",
+          "evidence_source_id": "fra-assessing-high-risk-ai-2025-official-page",
+          "evidence_locator": "Official agency/body document page and English download"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "evidence_locator": "PDF page 4, Luxembourg imprint"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "fra-assessing-high-risk-ai-2025-official-pdf",
+        "fra-assessing-high-risk-ai-2025-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Analyses high-risk AI classification and fundamental-rights impact assessment, including migration/asylum systems. The official report page also identifies education and employment as examined domains.",
+        "researcher_notes": "FRA's 2025 report. Title/imprint and methodology identify the publication; no named personal author is credited in the reviewed front matter. Publication-day fallback preserves the year-only issue information without inventing an issue day.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "fra-assessing-high-risk-ai-2025-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+        },
+        "publication_date": {
+          "source_id": "fra-assessing-high-risk-ai-2025-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "locator": "FRA Opinions 2 and 4; section 2.3 and Tables 3–5",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "migration_asylum_and_border_management",
+          "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "locator": "Section 2.3.1, Table 3, PDF pages 40–42",
+          "rationale": "Examines asylum-system impacts and relevant fundamental rights."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "locator": "Section 2.3.2, PDF pages 42–44",
+          "rationale": "Examines educational assessment, oversight and risks to children's rights."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "locator": "Section 2.3.3, Table 5, PDF pages 44–46",
+          "rationale": "Examines recruitment systems and worker rights."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "fra-assessing-high-risk-ai-2025-official-pdf",
+          "locator": "Foreword and Annex, Table 8 source: FRA interviews and research, 2025",
+          "rationale": "The report or opinion identifies its EU body as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "fra-assessing-high-risk-ai-2025-official-page",
+          "locator": "Official document page and English download",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "enisa-frontier-ai-cybersecurity-2026",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "enisa-frontier-ai-cybersecurity-2026",
+      "official_title": "ENISA’s view on Cybersecurity in the Frontier AI Era",
+      "short_title": "Cybersecurity in the frontier AI era",
+      "document_type": "report",
+      "sector_tags": [
+        "cybersecurity"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ISBN 978-92-9204-801-3; DOI 10.2824/9549088; TP-01-26-015-EN-N",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2026-07-07",
+      "version_label": "Published English report",
+      "version_status": "final",
+      "publication_date": "2026-07-07",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-union-agency-for-cybersecurity",
+          "role": "author",
+          "evidence_source_id": "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+          "evidence_locator": "PDF page 2, AUTHORS: ENISA and legal notice"
+        },
+        {
+          "institution_id": "european-union-agency-for-cybersecurity",
+          "role": "official_host",
+          "evidence_source_id": "enisa-frontier-ai-cybersecurity-2026-official-page",
+          "evidence_locator": "Official agency/body document page and English download"
+        },
+        {
+          "institution_id": "european-union-agency-for-cybersecurity",
+          "role": "publisher",
+          "evidence_source_id": "enisa-frontier-ai-cybersecurity-2026-official-page",
+          "evidence_locator": "Official agency/body publication page"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+        "enisa-frontier-ai-cybersecurity-2026-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Substantive AI cybersecurity policy recommendations for competent authorities, service providers and defenders responding to frontier models and accelerated vulnerability exploitation.",
+        "researcher_notes": "Public July 2026 report linked by the official 7 July catalogue and report page to the current _0 PDF. Page 3 lists internal and embargoed drafting history, not separately established public versions. Publication date is the exact-day fallback; cover month is preserved. No local bytes or checksum retained.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+        },
+        "publication_date": {
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+          "locator": "Executive summary, PDF pages 5–6",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "cybersecurity",
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+          "locator": "Executive summary, PDF pages 5–6",
+          "rationale": "Recommends defences against AI-accelerated cyber threats."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+          "locator": "PDF page 2, AUTHORS: ENISA and legal notice",
+          "rationale": "The report or opinion identifies its EU body as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-page",
+          "locator": "Official document page and English download",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "cover_issue",
+          "value": "2026-07",
+          "precision": "month",
+          "source_id": "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+          "locator": "PDF cover, July 2026"
+        }
+      ],
+      "snapshots": []
+    },
+    {
+      "id": "europol-chatgpt-llm-law-enforcement-2023",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "europol-chatgpt-llm-law-enforcement-2023",
+      "official_title": "ChatGPT – The impact of Large Language Models on Law Enforcement",
+      "short_title": "ChatGPT and law enforcement",
+      "document_type": "report",
+      "sector_tags": [
+        "law_enforcement",
+        "cybersecurity"
+      ],
+      "provenance_tags": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ISBN 978-92-95220-57-7; ISSN 2811-7719; DOI 10.2813/255453; QL-AW-23-001-EN-N",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2023-03-27",
+      "version_label": "Published English report",
+      "version_status": "final",
+      "publication_date": "2023-03-27",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-union-agency-for-law-enforcement-cooperation",
+          "role": "author",
+          "evidence_source_id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+          "evidence_locator": "PDF page 15, Tech Watch Flash Report from Europol Innovation Lab"
+        },
+        {
+          "institution_id": "european-union-agency-for-law-enforcement-cooperation",
+          "role": "official_host",
+          "evidence_source_id": "europol-chatgpt-llm-law-enforcement-2023-official-page",
+          "evidence_locator": "Official agency/body document page and English download"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+          "evidence_locator": "PDF page 15, Luxembourg imprint"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+        "europol-chatgpt-llm-law-enforcement-2023-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Europol Innovation Lab report on criminal misuse and law-enforcement implications of large language models; discusses how generated tools lower technical barriers to malicious activity.",
+        "researcher_notes": "Identity is the 2023 Tech Watch Flash report, ISBN 978-92-95220-57-7. Official metadata still cites Europol (2023), despite a 25 November 2025 webpage update; no revised report identity is claimed. A longer law-enforcement-only version mentioned by the launch notice is not this public report. No historical byte-comparison claim is made.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+        },
+        "publication_date": {
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-page",
+          "locator": "Official publication date field",
+          "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+          "locator": "PDF pages 8–9 and 12–14",
+          "rationale": "AI is the substantive policy subject of this document."
+        },
+        {
+          "field": "sector_tags",
+          "value": "law_enforcement",
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+          "locator": "PDF pages 12–14",
+          "rationale": "Analyses investigators' uses of and responses to LLMs."
+        },
+        {
+          "field": "sector_tags",
+          "value": "cybersecurity",
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+          "locator": "PDF page 9, cybercrime subsection",
+          "rationale": "Explains malicious-code and cybercrime implications."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_agency_or_body_authored",
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+          "locator": "PDF page 15, Tech Watch Flash Report from Europol Innovation Lab",
+          "rationale": "The report or opinion identifies its EU body as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "europol-chatgpt-llm-law-enforcement-2023-official-page",
+          "locator": "Official document page and English download",
+          "rationale": "Official publication and this English manifestation are evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "ep-ai-international-military-2021",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "ep-ai-international-military-2021",
+      "official_title": "European Parliament resolution of 20 January 2021 on artificial intelligence: questions of interpretation and application of international law in so far as the EU is affected in the areas of civil and military uses and of state authority outside the scope of criminal justice (2020/2013(INI))",
+      "short_title": "EP resolution on civil and military uses of AI",
+      "document_type": "resolution",
+      "sector_tags": [
+        "defence_and_security",
+        "public_administration"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "P9_TA(2021)0009",
+      "procedure_references": [
+        "2020/2013(INI)"
+      ],
+      "oj_reference": "2021/C 456/04",
+      "document_date": "2021-01-20",
+      "version_label": "Adopted resolution, Official Journal manifestation",
+      "version_status": "final",
+      "publication_date": "2021-11-10",
+      "legal_status": "non_binding",
+      "celex": "52021IP0009",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "author",
+          "evidence_source_id": "ep-ai-international-military-2021-eur-lex",
+          "evidence_locator": "Heading and acting body, The European Parliament"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "ep-ai-international-military-2021-eur-lex",
+          "evidence_locator": "Resolution heading, 20 January 2021"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "publisher",
+          "evidence_source_id": "ep-ai-international-military-2021-eur-lex",
+          "evidence_locator": "Official Journal masthead"
+        },
+        {
+          "institution_id": "publications-office-of-the-european-union",
+          "role": "official_host",
+          "evidence_source_id": "ep-ai-international-military-2021-eur-lex",
+          "evidence_locator": "EUR-Lex official manifestation"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "ep-ai-international-military-2021-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "adoption",
+        "inclusion_rationale": "Sets Parliament's position on meaningful human control, responsibility and oversight of military AI and AI exercised through state authority.",
+        "researcher_notes": "One non-binding adopted resolution; the OJ appearance is the same text.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "Resolution heading",
+          "meaning": "Institutional adoption on 20 January 2021."
+        },
+        "publication_date": {
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "OJ C 456, 10 November 2021, pages 34–46",
+          "meaning": "Publication date of the cited OJ manifestation."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "Paragraphs 3–15 and 52–54",
+          "rationale": "Dedicated substantive analysis or recommendations concerning AI."
+        },
+        {
+          "field": "sector_tags",
+          "value": "defence_and_security",
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "Paragraphs 3–15 and 49",
+          "rationale": "Addresses military AI and meaningful human control."
+        },
+        {
+          "field": "sector_tags",
+          "value": "public_administration",
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "Paragraphs 52–54",
+          "rationale": "Requires safeguards for public-authority AI decisions."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "Heading and acting body",
+          "rationale": "Parliament authors the institutional resolution."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "ep-ai-international-military-2021-eur-lex",
+          "locator": "OJ masthead",
+          "rationale": "Official dated publication is evidenced."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "snapshots": []
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "eprs-ai-eu-borders-2021",
+      "official_title": "Artificial intelligence at EU borders: Overview of applications and key issues",
+      "short_title": "Artificial intelligence at EU borders",
+      "document_type": "study",
+      "sector_tags": [
+        "migration_asylum_and_border_management",
+        "law_enforcement"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "PE 690.706; ISBN 978-92-846-8363-5; DOI 10.2861/91831; QA-08-21-191-EN-N",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2021-07-07",
+      "version_label": "English in-depth analysis, July 2021",
+      "version_status": "final",
+      "publication_date": "2021-07-07",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "directorate-general-for-parliamentary-research-services",
+          "role": "author",
+          "evidence_source_id": "eprs-ai-eu-borders-2021-publications-office",
+          "evidence_locator": "Publication details: corporate author"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "publisher",
+          "evidence_source_id": "eprs-ai-eu-borders-2021-official-page",
+          "evidence_locator": "Parliament Think Tank catalogue"
+        },
+        {
+          "institution_id": "european-parliament",
+          "role": "official_host",
+          "evidence_source_id": "eprs-ai-eu-borders-2021-official-page",
+          "evidence_locator": "Official English publication page"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "eprs-ai-eu-borders-2021-official-pdf",
+        "eprs-ai-eu-borders-2021-official-page",
+        "eprs-ai-eu-borders-2021-publications-office"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Reviews border biometrics, emotion detection, algorithmic risk assessment and migration monitoring. Credits EPRS staff authorship and disclaims an official Parliament position.",
+        "researcher_notes": "Staff-authored parliamentary research, not an adopted Parliament position. Exact catalogue publication date is used as fallback for month-only July issue date. The 26 July Publications Office release is a later manifestation of this analysis.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "eprs-ai-eu-borders-2021-official-page",
+          "locator": "Catalogue publication date",
+          "meaning": "Official exact-day publication fallback; no precise issue day is stated."
+        },
+        "publication_date": {
+          "source_id": "eprs-ai-eu-borders-2021-official-page",
+          "locator": "Official catalogue date field",
+          "meaning": "Official publication of this English document."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "eprs-ai-eu-borders-2021-official-pdf",
+          "locator": "PDF page 2, author and abstract; executive summary, printed pages I–II",
+          "rationale": "Dedicated substantive analysis or recommendations concerning AI."
+        },
+        {
+          "field": "sector_tags",
+          "value": "migration_asylum_and_border_management",
+          "source_id": "eprs-ai-eu-borders-2021-official-pdf",
+          "locator": "Executive summary, printed pages I–II",
+          "rationale": "Examines border biometrics, risk assessment and migration monitoring."
+        },
+        {
+          "field": "sector_tags",
+          "value": "law_enforcement",
+          "source_id": "eprs-ai-eu-borders-2021-official-pdf",
+          "locator": "Executive summary, EU centralised information systems for borders and security",
+          "rationale": "Examines security information exchange and border-control applications."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "eprs-ai-eu-borders-2021-publications-office",
+          "locator": "Publication details: corporate and personal authors",
+          "rationale": "Parliamentary Research Services staff authored this analysis."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "eprs-ai-eu-borders-2021-official-page",
+          "locator": "Official catalogue entry and English download",
+          "rationale": "Official dated publication is evidenced."
+        }
+      ],
+      "bibliographic_authors": [
+        {
+          "name": "Costica Dumbrava",
+          "affiliation": "Members' Research Service, Directorate-General for Parliamentary Research Services, European Parliament",
+          "evidence_source_id": "eprs-ai-eu-borders-2021-official-pdf",
+          "evidence_locator": "PDF page 2, AUTHOR block; corroborated by both official catalogues"
+        }
+      ],
+      "additional_dates": [
+        {
+          "kind": "cover_issue",
+          "value": "2021-07",
+          "precision": "month",
+          "source_id": "eprs-ai-eu-borders-2021-official-pdf",
+          "locator": "Cover, July 2021"
+        },
+        {
+          "kind": "manuscript_completion",
+          "value": "2021-06",
+          "precision": "month",
+          "source_id": "eprs-ai-eu-borders-2021-official-pdf",
+          "locator": "PDF page 2, manuscript completed in June 2021"
+        }
+      ],
+      "snapshots": []
+    },
+    {
+      "id": "osha-ai-worker-management-2022",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "slug": "osha-ai-worker-management-2022",
+      "official_title": "Artificial intelligence for worker management: implications for occupational safety and health",
+      "short_title": "AI for worker management: occupational safety and health",
+      "document_type": "report",
+      "sector_tags": [
+        "employment_and_labour"
+      ],
+      "provenance_tags": [
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ISBN 978-92-9479-679-0; DOI 10.2802/76354",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2022-08-10",
+      "version_label": "Full English report, 55 pages",
+      "version_status": "final",
+      "publication_date": "2022-08-10",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-agency-for-safety-and-health-at-work",
+          "role": "commissioner",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, explicit commissioning statement"
+        },
+        {
+          "institution_id": "european-agency-for-safety-and-health-at-work",
+          "role": "publisher",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-page",
+          "evidence_locator": "Official report catalogue entry"
+        },
+        {
+          "institution_id": "european-agency-for-safety-and-health-at-work",
+          "role": "official_host",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-page",
+          "evidence_locator": "Official report page and English PDF"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "osha-ai-worker-management-2022-official-pdf",
+        "osha-ai-worker-management-2022-official-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "Examines AI-based workforce management risks and prevention. External named authors and EU-OSHA commissioning are explicit; agency hosting does not establish agency authorship.",
+        "researcher_notes": "External authorship and EU-OSHA commissioning are explicit. Full report identity is distinguished from separately hosted summaries or policy briefs. Exact official publication date is used because the report gives only 2022.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "osha-ai-worker-management-2022-official-page",
+          "locator": "Catalogue publication date",
+          "meaning": "Official exact-day publication fallback; no precise issue day is stated."
+        },
+        "publication_date": {
+          "source_id": "osha-ai-worker-management-2022-official-page",
+          "locator": "Official catalogue date field",
+          "meaning": "Official publication of this English document."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "osha-ai-worker-management-2022-official-pdf",
+          "locator": "Printed page 2 credits; section 1.1 and recommendations, printed pages 24–26",
+          "rationale": "Dedicated substantive analysis or recommendations concerning AI."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "osha-ai-worker-management-2022-official-pdf",
+          "locator": "Section 1.1 and recommendations, printed pages 24–26",
+          "rationale": "Examines AI worker-management effects on occupational safety."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_commissioned_external",
+          "source_id": "osha-ai-worker-management-2022-official-pdf",
+          "locator": "Printed page 2, Authors and commissioning statement",
+          "rationale": "Named external authors wrote this EU-OSHA-commissioned report."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "osha-ai-worker-management-2022-official-page",
+          "locator": "Official catalogue entry and English download",
+          "rationale": "Official dated publication is evidenced."
+        }
+      ],
+      "bibliographic_authors": [
+        {
+          "name": "Karin Reinhold",
+          "affiliation": "Tallin University of Technology",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+        },
+        {
+          "name": "Marina Järvis",
+          "affiliation": "Tallin University of Technology",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+        },
+        {
+          "name": "Aleksandr Christenko",
+          "affiliation": "Visionary Analytics",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+        },
+        {
+          "name": "Vaida Jankauskaitė",
+          "affiliation": "Visionary Analytics",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+        },
+        {
+          "name": "Agnė Paliokaitė",
+          "affiliation": "Visionary Analytics",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+        },
+        {
+          "name": "Arnold Riedmann",
+          "affiliation": "Kantar",
+          "evidence_source_id": "osha-ai-worker-management-2022-official-pdf",
+          "evidence_locator": "Printed page 2, Authors block; affiliation spelling follows the report"
+        }
+      ],
+      "additional_dates": [],
+      "snapshots": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "ep-ethical-framework-ai-2020-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0275",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Resolution heading and paragraphs 1–3, 109–114; identity and attribution checked. Principal adopted resolution, including its recommendations annex within this manifestation. The requested regulation is not an enacted act. Committee report A9-0186/2020 is a separate preparatory document, not this identity."
+    },
+    {
+      "id": "ep-ai-civil-liability-2020-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0276",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Resolution and recommendations annex, Articles 2, 4 and 12; identity and attribution checked. One non-binding adopted resolution includes its proposed-regulation annex. The annex is a recommendation and has no independent enacted status; the 2022 Commission proposal is not a version of this resolution."
+    },
+    {
+      "id": "ep-ai-intellectual-property-2020-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0277",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Paragraphs 10 and 13–16; identity and attribution checked. Principal adopted resolution; committee-stage materials are not merged with the adopted text."
+    },
+    {
+      "id": "ep-ai-education-culture-audiovisual-2021-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj:JOC_2022_015_R_0005",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Paragraphs 1–7 and 73–74; identity and attribution checked. The OJ-addressed manifestation expressly identifies P9_TA(2021)0238 and CELEX 52021IP0238. It is the same adopted resolution, not another version."
+    },
+    {
+      "id": "ep-ai-digital-age-2022-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022IP0140",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Resolution general recommendations and paragraphs 77–78; identity and attribution checked. Adopted resolution P9_TA(2022)0140; A9-0088/2022 is its distinct committee report and is not counted here."
+    },
+    {
+      "id": "edpb-ai-models-opinion-28-2024-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+      "publisher": "European Data Protection Board",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Executive summary, pages 2–4; identity and attribution checked. Adoption on 17 December is distinct from publication on 18 December 2024. One adopted opinion; its Irish-authority request is a separate input."
+    },
+    {
+      "id": "edpb-ai-models-opinion-28-2024-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-282024-on-certain-data-protection-aspects-related-to_en",
+      "publisher": "European Data Protection Board",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English publication page reopened; title, publication date and link to this English report checked. ENISA initially failed but the catalogue link subsequently opened the report page successfully."
+    },
+    {
+      "id": "fra-getting-future-right-ai-2020-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2020-artificial-intelligence_en.pdf",
+      "publisher": "European Union Agency for Fundamental Rights",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Foreword, printed page 1; Chapter 2; section 4.8; identity and attribution checked. FRA report with fieldwork outsourced to Ecorys; FRA staff designed and supervised research (printed page 18 / PDF page 20). This is not evidence that Ecorys authored the report. The 2024 webpage notice adds Slovenian availability; English report identity remains 2020. Separately listed annexes and summary are not counted here."
+    },
+    {
+      "id": "fra-getting-future-right-ai-2020-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://fra.europa.eu/en/publication/2020/artificial-intelligence-and-fundamental-rights",
+      "publisher": "European Union Agency for Fundamental Rights",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English publication page reopened; title, publication date and link to this English report checked. ENISA initially failed but the catalogue link subsequently opened the report page successfully."
+    },
+    {
+      "id": "fra-bias-algorithms-2022-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2022-bias-in-algorithms_en.pdf",
+      "publisher": "European Union Agency for Fundamental Rights",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Printed page 21, 'What does this report cover?'; Chapters 2–3; identity and attribution checked. FRA designed the research and drafted this report after research by a consortium led by Rania Wazir (printed page 21). The consortium credit is retained as a research contribution, not substituted for report authorship."
+    },
+    {
+      "id": "fra-bias-algorithms-2022-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://fra.europa.eu/en/publication/2022/bias-algorithm",
+      "publisher": "European Union Agency for Fundamental Rights",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English publication page reopened; title, publication date and link to this English report checked. ENISA initially failed but the catalogue link subsequently opened the report page successfully."
+    },
+    {
+      "id": "fra-assessing-high-risk-ai-2025-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2025-assessing-high-risk-ai-fundamental-rights-risks_en.pdf",
+      "publisher": "European Union Agency for Fundamental Rights",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed FRA Opinions 2 and 4; section 2.3 and Tables 3–5; identity and attribution checked. FRA's 2025 report. Title/imprint and methodology identify the publication; no named personal author is credited in the reviewed front matter. Publication-day fallback preserves the year-only issue information without inventing an issue day."
+    },
+    {
+      "id": "fra-assessing-high-risk-ai-2025-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://fra.europa.eu/en/publication/2025/assessing-high-risk-ai",
+      "publisher": "European Union Agency for Fundamental Rights",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English publication page reopened; title, publication date and link to this English report checked. ENISA initially failed but the catalogue link subsequently opened the report page successfully."
+    },
+    {
+      "id": "enisa-frontier-ai-cybersecurity-2026-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf",
+      "publisher": "European Union Agency for Cybersecurity",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed Executive summary, PDF pages 5–6; identity and attribution checked. Public July 2026 report linked by the official 7 July catalogue and report page to the current _0 PDF. Page 3 lists internal and embargoed drafting history, not separately established public versions. Publication date is the exact-day fallback; cover month is preserved. No local bytes or checksum retained."
+    },
+    {
+      "id": "enisa-frontier-ai-cybersecurity-2026-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era",
+      "publisher": "European Union Agency for Cybersecurity",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English publication page reopened; title, publication date and link to this English report checked. ENISA initially failed but the catalogue link subsequently opened the report page successfully."
+    },
+    {
+      "id": "europol-chatgpt-llm-law-enforcement-2023-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://www.europol.europa.eu/cms/sites/default/files/documents/Tech%20Watch%20Flash%20-%20The%20Impact%20of%20Large%20Language%20Models%20on%20Law%20Enforcement.pdf",
+      "publisher": "European Union Agency for Law Enforcement Cooperation",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "English primary text reopened on 6 September 2026 (Europe/London). Reviewed PDF pages 8–9 and 12–14; identity and attribution checked. Identity is the 2023 Tech Watch Flash report, ISBN 978-92-95220-57-7. Official metadata still cites Europol (2023), despite a 25 November 2025 webpage update; no revised report identity is claimed. A longer law-enforcement-only version mentioned by the launch notice is not this public report. No historical byte-comparison claim is made."
+    },
+    {
+      "id": "europol-chatgpt-llm-law-enforcement-2023-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://www.europol.europa.eu/publications-events/publications/chatgpt-impact-of-large-language-models-law-enforcement",
+      "publisher": "European Union Agency for Law Enforcement Cooperation",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official indexed metadata retrieved on 6 September 2026 confirms Publish date 27 March 2023, Update date 25 November 2025 and explicit Europol (2023) citation. Direct open returned an application shell; primary report PDF opened successfully. Earlier direct page review is retained in discovery/2026-09-06-gap-scan/rights.json."
+    },
+    {
+      "id": "ep-ai-international-military-2021-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Primary official English text reopened on 6 September 2026; Paragraphs 3–15 and 52–54 checked for identity, authorship, publication and substantive relevance."
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://www.europarl.europa.eu/RegData/etudes/IDAN/2021/690706/EPRS_IDA(2021)690706_EN.pdf",
+      "publisher": "Directorate-General for Parliamentary Research Services (European Parliament)",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Primary English PDF reviewed in the 5 September discovery pass at page 2 and executive summary. Direct reopen on 6 September returned a robot check; official indexed full bibliographic block, Parliament catalogue and Publications Office catalogue independently re-confirmed the identity and author. This timestamp records this verification/retrieval attempt, not a new successful PDF-byte retrieval."
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "parliament_register",
+      "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_IDA(2021)690706",
+      "publisher": "European Parliament",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English catalogue reopened; title, exact publication date, author/English download and document identity verified."
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021-publications-office",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "publications_office",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/a4c1940f-ef4a-11eb-a71c-01aa75ed71a1/language-en",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English catalogue reopened. Corporate author DG Parliamentary Research Services, personal author Costica Dumbrava, PDF ISBN/DOI/catalogue identifiers and later release on 26 July 2021 verified."
+    },
+    {
+      "id": "osha-ai-worker-management-2022-official-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_pdf",
+      "url": "https://osha.europa.eu/sites/default/files/artificial-intelligence-worker-management_en.pdf",
+      "publisher": "European Agency for Safety and Health at Work",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Primary official English text reopened on 6 September 2026; Printed page 2 credits; section 1.1 and recommendations, printed pages 24–26 checked for identity, authorship, publication and substantive relevance."
+    },
+    {
+      "id": "osha-ai-worker-management-2022-official-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "source_type": "official_register",
+      "url": "https://osha.europa.eu/en/publications/artificial-intelligence-worker-management-implications-occupational-safety-and-health",
+      "publisher": "European Agency for Safety and Health at Work",
+      "retrieved_at": "2026-09-06T00:41:49.332+01:00",
+      "last_verified_at": "2026-09-06T00:41:49.332+01:00",
+      "verification_note": "Official English catalogue reopened; title, exact publication date, author/English download and document identity verified."
+    }
+  ],
+  "institutions": [
+    {
+      "id": "european-union-agency-for-fundamental-rights",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "official_name": "European Union Agency for Fundamental Rights",
+      "short_name": "FRA",
+      "institution_type": "EU agency",
+      "official_url": "https://fra.europa.eu/"
+    },
+    {
+      "id": "european-union-agency-for-cybersecurity",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "official_name": "European Union Agency for Cybersecurity",
+      "short_name": "ENISA",
+      "institution_type": "EU agency",
+      "official_url": "https://www.enisa.europa.eu/"
+    },
+    {
+      "id": "european-union-agency-for-law-enforcement-cooperation",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "official_name": "European Union Agency for Law Enforcement Cooperation",
+      "short_name": "Europol",
+      "institution_type": "EU agency",
+      "official_url": "https://www.europol.europa.eu/"
+    },
+    {
+      "id": "european-agency-for-safety-and-health-at-work",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "official_name": "European Agency for Safety and Health at Work",
+      "short_name": "EU-OSHA",
+      "institution_type": "EU agency",
+      "official_url": "https://osha.europa.eu/"
+    },
+    {
+      "id": "directorate-general-for-parliamentary-research-services",
+      "entity_type": "institution",
+      "publication_status": "published",
+      "created_at": "2026-09-06T00:41:49.332+01:00",
+      "updated_at": "2026-09-06T00:41:49.332+01:00",
+      "official_name": "Directorate-General for Parliamentary Research Services",
+      "short_name": "EPRS",
+      "institution_type": "European Parliament directorate-general",
+      "official_url": "https://www.europarl.europa.eu/thinktank/"
+    }
+  ],
+  "relationships": [],
+  "decisions": [
+    {
+      "candidate_id": "ep-ethical-framework-ai-2020",
+      "decision": "included",
+      "document_id": "ep-ethical-framework-ai-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Principal adopted resolution, including its recommendations annex within this manifestation. The requested regulation is not an enacted act. Committee report A9-0186/2020 is a separate preparatory document, not this identity.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0275",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0275_EN.html"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "ep-ai-civil-liability-2020",
+      "decision": "included",
+      "document_id": "ep-ai-civil-liability-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. One non-binding adopted resolution includes its proposed-regulation annex. The annex is a recommendation and has no independent enacted status; the 2022 Commission proposal is not a version of this resolution.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0276",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0276_EN.html"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "ep-ai-intellectual-property-2020",
+      "decision": "included",
+      "document_id": "ep-ai-intellectual-property-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Principal adopted resolution; committee-stage materials are not merged with the adopted text.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0277",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0277_EN.html"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "ep-ai-education-culture-audiovisual-2021",
+      "decision": "included",
+      "document_id": "ep-ai-education-culture-audiovisual-2021",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. The OJ-addressed manifestation expressly identifies P9_TA(2021)0238 and CELEX 52021IP0238. It is the same adopted resolution, not another version.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj:JOC_2022_015_R_0005"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "ep-ai-digital-age-2022",
+      "decision": "included",
+      "document_id": "ep-ai-digital-age-2022",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Adopted resolution P9_TA(2022)0140; A9-0088/2022 is its distinct committee report and is not counted here.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022IP0140"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "edpb-ai-models-opinion-28-2024",
+      "decision": "included",
+      "document_id": "edpb-ai-models-opinion-28-2024",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Adoption on 17 December is distinct from publication on 18 December 2024. One adopted opinion; its Irish-authority request is a separate input.",
+      "evidence_urls": [
+        "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+        "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-282024-on-certain-data-protection-aspects-related-to_en"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "fra-getting-future-right-ai-2020",
+      "decision": "included",
+      "document_id": "fra-getting-future-right-ai-2020",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. FRA report with fieldwork outsourced to Ecorys; FRA staff designed and supervised research (printed page 18 / PDF page 20). This is not evidence that Ecorys authored the report. The 2024 webpage notice adds Slovenian availability; English report identity remains 2020. Separately listed annexes and summary are not counted here.",
+      "evidence_urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2020-artificial-intelligence_en.pdf",
+        "https://fra.europa.eu/en/publication/2020/artificial-intelligence-and-fundamental-rights"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "fra-bias-algorithms-2022",
+      "decision": "included",
+      "document_id": "fra-bias-algorithms-2022",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. FRA designed the research and drafted this report after research by a consortium led by Rania Wazir (printed page 21). The consortium credit is retained as a research contribution, not substituted for report authorship.",
+      "evidence_urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2022-bias-in-algorithms_en.pdf",
+        "https://fra.europa.eu/en/publication/2022/bias-algorithm"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "fra-assessing-high-risk-ai-2025",
+      "decision": "included",
+      "document_id": "fra-assessing-high-risk-ai-2025",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. FRA's 2025 report. Title/imprint and methodology identify the publication; no named personal author is credited in the reviewed front matter. Publication-day fallback preserves the year-only issue information without inventing an issue day.",
+      "evidence_urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2025-assessing-high-risk-ai-fundamental-rights-risks_en.pdf",
+        "https://fra.europa.eu/en/publication/2025/assessing-high-risk-ai"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "enisa-frontier-ai-cybersecurity-2026",
+      "decision": "included",
+      "document_id": "enisa-frontier-ai-cybersecurity-2026",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Public July 2026 report linked by the official 7 July catalogue and report page to the current _0 PDF. Page 3 lists internal and embargoed drafting history, not separately established public versions. Publication date is the exact-day fallback; cover month is preserved. No local bytes or checksum retained.",
+      "evidence_urls": [
+        "https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf",
+        "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "europol-chatgpt-llm-law-enforcement-2023",
+      "decision": "included",
+      "document_id": "europol-chatgpt-llm-law-enforcement-2023",
+      "reason": "Official English identity, dated publication, relevance and attribution verified. Identity is the 2023 Tech Watch Flash report, ISBN 978-92-95220-57-7. Official metadata still cites Europol (2023), despite a 25 November 2025 webpage update; no revised report identity is claimed. A longer law-enforcement-only version mentioned by the launch notice is not this public report. No historical byte-comparison claim is made.",
+      "evidence_urls": [
+        "https://www.europol.europa.eu/cms/sites/default/files/documents/Tech%20Watch%20Flash%20-%20The%20Impact%20of%20Large%20Language%20Models%20on%20Law%20Enforcement.pdf",
+        "https://www.europol.europa.eu/publications-events/publications/chatgpt-impact-of-large-language-models-law-enforcement"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "ep-ai-international-military-2021",
+      "decision": "included",
+      "document_id": "ep-ai-international-military-2021",
+      "reason": "Official English identity, publication, relevance and author/issuer roles verified. One non-binding adopted resolution; the OJ appearance is the same text.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "frontex-ai-capabilities-2021",
+      "decision": "pending",
+      "document_id": null,
+      "reason": "Official catalogue identifies the report, but the landing page and www/non-www official PDF URLs failed to yield primary text. Exact issue date, report authors and commissioning credits remain unverified; this is an access limitation, not exclusion.",
+      "evidence_urls": [
+        "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe",
+        "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+        "https://frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf"
+      ],
+      "remaining_checks": [
+        "Retrieve the official English report and verify exact title/reference and issue date or justified publication fallback.",
+        "Read author and commissioning credits and substantive AI-border passages; distinguish report issue from catalogue publication on 31 March 2021."
+      ]
+    },
+    {
+      "candidate_id": "eprs-ai-eu-borders-2021",
+      "decision": "included",
+      "document_id": "eprs-ai-eu-borders-2021",
+      "reason": "Official English identity, publication, relevance and author/issuer roles verified. Staff-authored parliamentary research, not an adopted Parliament position. Exact catalogue publication date is used as fallback for month-only July issue date. The 26 July Publications Office release is a later manifestation of this analysis.",
+      "evidence_urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/IDAN/2021/690706/EPRS_IDA(2021)690706_EN.pdf",
+        "https://www.europarl.europa.eu/thinktank/en/document/EPRS_IDA(2021)690706"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "osha-ai-worker-management-2022",
+      "decision": "included",
+      "document_id": "osha-ai-worker-management-2022",
+      "reason": "Official English identity, publication, relevance and author/issuer roles verified. External authorship and EU-OSHA commissioning are explicit. Full report identity is distinguished from separately hosted summaries or policy briefs. Exact official publication date is used because the report gives only 2022.",
+      "evidence_urls": [
+        "https://osha.europa.eu/sites/default/files/artificial-intelligence-worker-management_en.pdf",
+        "https://osha.europa.eu/en/publications/artificial-intelligence-worker-management-implications-occupational-safety-and-health"
+      ],
+      "remaining_checks": []
+    }
+  ],
+  "evidence_log": [
+    {
+      "candidate_id": "ep-ethical-framework-ai-2020",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0275",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0275_EN.html"
+      ],
+      "locators": [
+        "Resolution heading and paragraphs 1–3, 109–114",
+        "Resolution heading and OJ identity block",
+        "Paragraphs 1–3",
+        "Paragraphs 109–114"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "ep-ai-civil-liability-2020",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0276",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0276_EN.html"
+      ],
+      "locators": [
+        "Resolution and recommendations annex, Articles 2, 4 and 12",
+        "Resolution heading and OJ identity block",
+        "Annex, Articles 4 and 12",
+        "Annex, Article 2(3) and recitals 23–24"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "ep-ai-intellectual-property-2020",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020IP0277",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2020-0277_EN.html"
+      ],
+      "locators": [
+        "Paragraphs 10 and 13–16",
+        "Resolution heading and OJ identity block",
+        "Paragraphs 10 and 13–16",
+        "Paragraphs 13–15"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "ep-ai-education-culture-audiovisual-2021",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj:JOC_2022_015_R_0005",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj:JOC_2022_015_R_0005"
+      ],
+      "locators": [
+        "Paragraphs 1–7 and 73–74",
+        "Resolution heading and OJ identity block",
+        "Recitals Q–R and paragraphs 1–7",
+        "Paragraphs 73–74",
+        "Paragraphs 73–74"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "ep-ai-digital-age-2022",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022IP0140",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022IP0140"
+      ],
+      "locators": [
+        "Resolution general recommendations and paragraphs 77–78",
+        "Resolution heading and OJ identity block",
+        "Resolution sections on opportunities, risks and a European AI road map",
+        "Paragraphs 77–78"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "edpb-ai-models-opinion-28-2024",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+        "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-282024-on-certain-data-protection-aspects-related-to_en"
+      ],
+      "locators": [
+        "Executive summary, pages 2–4",
+        "Cover and introduction: EDPB opinion adopted 17 December 2024",
+        "Executive summary, pages 2–4"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "fra-getting-future-right-ai-2020",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2020-artificial-intelligence_en.pdf",
+        "https://fra.europa.eu/en/publication/2020/artificial-intelligence-and-fundamental-rights"
+      ],
+      "locators": [
+        "Foreword, printed page 1; Chapter 2; section 4.8",
+        "Foreword, printed pages 1–2; bibliographic page 2 of PDF",
+        "Chapter 2.1, printed pages 30–36",
+        "Chapter 2.1, predictive policing; foreword, printed page 1",
+        "Foreword, printed page 1; Chapter 2 selected use cases",
+        "Section 4.8, printed pages 79–81"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "fra-bias-algorithms-2022",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2022-bias-in-algorithms_en.pdf",
+        "https://fra.europa.eu/en/publication/2022/bias-algorithm"
+      ],
+      "locators": [
+        "Printed page 21, 'What does this report cover?'; Chapters 2–3",
+        "Printed page 21 expressly states FRA carried out further analysis and drafted this report",
+        "Chapter 2; printed page 21",
+        "Chapter 3; printed page 21"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "fra-assessing-high-risk-ai-2025",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2025-assessing-high-risk-ai-fundamental-rights-risks_en.pdf",
+        "https://fra.europa.eu/en/publication/2025/assessing-high-risk-ai"
+      ],
+      "locators": [
+        "FRA Opinions 2 and 4; section 2.3 and Tables 3–5",
+        "Foreword and Annex, Table 8 source: FRA interviews and research, 2025",
+        "Section 2.3.1, Table 3, PDF pages 40–42",
+        "Section 2.3.2, PDF pages 42–44",
+        "Section 2.3.3, Table 5, PDF pages 44–46"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "enisa-frontier-ai-cybersecurity-2026",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf",
+        "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era"
+      ],
+      "locators": [
+        "Executive summary, PDF pages 5–6",
+        "PDF page 2, AUTHORS: ENISA and legal notice",
+        "Executive summary, PDF pages 5–6"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "europol-chatgpt-llm-law-enforcement-2023",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened primary official English text and checked identity, dates, role and classification passages against discovery handoff; publication cutoff unchanged.",
+      "urls": [
+        "https://www.europol.europa.eu/cms/sites/default/files/documents/Tech%20Watch%20Flash%20-%20The%20Impact%20of%20Large%20Language%20Models%20on%20Law%20Enforcement.pdf",
+        "https://www.europol.europa.eu/publications-events/publications/chatgpt-impact-of-large-language-models-law-enforcement"
+      ],
+      "locators": [
+        "PDF pages 8–9 and 12–14",
+        "PDF page 15, Tech Watch Flash Report from Europol Innovation Lab",
+        "PDF pages 12–14",
+        "PDF page 9, cybercrime subsection"
+      ],
+      "result": "included",
+      "limitation": "Direct page was an application shell; exact official indexed metadata corroborates the previously opened page. Current PDF identity is 2023; historical byte equality is not asserted."
+    },
+    {
+      "candidate_id": "ep-ai-international-military-2021",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened official English text and publication metadata.",
+      "urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021IP0009"
+      ],
+      "locators": [
+        "Paragraphs 3–15 and 52–54"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "candidate_id": "frontex-ai-capabilities-2021",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened official landing page and attempted both official PDF host variants; searched for an official PDF using the exact report title.",
+      "queries": [
+        "site.frontex.europa.eu \"Artificial Intelligence-based capabilities\" filetype:pdf"
+      ],
+      "urls": [
+        "https://www.frontex.europa.eu/publications/artificial-intelligence-based-capabilities-for-the-european-border-and-coast-guard-final-report-CYyjoe",
+        "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+        "https://frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf"
+      ],
+      "locators": [
+        "Official catalogue entry retained from previous discovery; no primary report text newly obtained"
+      ],
+      "result": "pending",
+      "limitation": "Internal fetch errors for landing page and PDFs; secondary references supplied a locator only and do not verify content."
+    },
+    {
+      "candidate_id": "eprs-ai-eu-borders-2021",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened Parliament and Publications Office catalogues and official indexed bibliographic text; reconciled against previously opened PDF.",
+      "urls": [
+        "https://www.europarl.europa.eu/RegData/etudes/IDAN/2021/690706/EPRS_IDA(2021)690706_EN.pdf",
+        "https://www.europarl.europa.eu/thinktank/en/document/EPRS_IDA(2021)690706",
+        "https://op.europa.eu/en/publication-detail/-/publication/a4c1940f-ef4a-11eb-a71c-01aa75ed71a1/language-en"
+      ],
+      "locators": [
+        "PDF page 2, author and abstract; executive summary, printed pages I–II"
+      ],
+      "result": "included",
+      "limitation": "Direct PDF reopen returned JavaScript robot check. Prior primary-text evidence and two newly opened official catalogues agree; no fresh PDF-byte retrieval is claimed."
+    },
+    {
+      "candidate_id": "osha-ai-worker-management-2022",
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Reopened official English text and publication metadata.",
+      "urls": [
+        "https://osha.europa.eu/sites/default/files/artificial-intelligence-worker-management_en.pdf",
+        "https://osha.europa.eu/en/publications/artificial-intelligence-worker-management-implications-occupational-safety-and-health"
+      ],
+      "locators": [
+        "Printed page 2 credits; section 1.1 and recommendations, printed pages 24–26"
+      ],
+      "result": "included",
+      "limitation": null
+    },
+    {
+      "reviewed_at": "2026-09-06T00:41:49.332+01:00",
+      "method": "Targeted official-domain search and alternate official catalogue navigation; bounded identity and metadata checks, not a catalogue census.",
+      "queries": [
+        "\"ENISA’s view on Cybersecurity in the Frontier AI Era\" \"7 July\" [domain enisa.europa.eu]",
+        "\"ChatGPT\" \"25 Nov 2025\" \"27 Mar 2023\" [domain europol.europa.eu]",
+        "\"10.2861/91831\" [domains op.europa.eu, europarl.europa.eu]",
+        "\"EPRS_IDA(2021)690706\" \"June 2021\" [domain europarl.europa.eu]"
+      ],
+      "urls": [
+        "https://www.enisa.europa.eu/audience/national-eu-authorities",
+        "https://www.enisa.europa.eu/publications",
+        "https://www.europol.europa.eu/media-press/newsroom/news/criminal-use-of-chatgpt-cautionary-tale-about-large-language-models"
+      ],
+      "locators": [
+        "ENISA catalogue: Frontier AI Era, 7 July 2026, download resolves to _0 PDF",
+        "Europol launch notice: Tech Watch Flash published today, 27 March 2023; longer law-enforcement-only report is separate"
+      ],
+      "result": "Publication dates and manifestation identity corroborated; no full-text snapshots retained."
+    }
+  ]
+}

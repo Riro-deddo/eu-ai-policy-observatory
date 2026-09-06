@@ -1,0 +1,16 @@
+{
+  "id": "eba-ml-follow-up-based-on-discussion-paper",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_entity_type": "document",
+  "source_entity_id": "eba-follow-up-machine-learning-irb-models-2023",
+  "target_entity_type": "document",
+  "target_entity_id": "eba-discussion-paper-machine-learning-irb-models-2021",
+  "relationship_type": "based_on",
+  "basis": "official",
+  "rationale": "Follow-up report pp.3-5 summarises consultation on the 11 November 2021 discussion paper and retains/refines its recommendations.",
+  "evidence_source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+  "verification_status": "verified"
+}

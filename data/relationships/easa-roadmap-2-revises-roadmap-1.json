@@ -1,0 +1,16 @@
+{
+  "id": "easa-roadmap-2-revises-roadmap-1",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_entity_type": "document",
+  "source_entity_id": "easa-ai-roadmap-2-2023",
+  "target_entity_type": "document",
+  "target_entity_id": "easa-ai-roadmap-1-2020",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "Roadmap 2.0 p.5 explicitly updates the earlier Roadmap 1.0; p.34 reference [1] identifies it.",
+  "evidence_source_id": "easa-ai-roadmap-2-2023-official-pdf",
+  "verification_status": "verified"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T10:34:49Z",
+  "generated_at": "2026-09-06T00:03:45Z",
   "coverage_cutoff": "2026-09-04",
   "sources": [
     {
@@ -695,6 +695,462 @@
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Codex (AI-assisted evidence review)",
       "verification_note": "The two admitted conclusions are covered; no complete search of all 2017 conclusions is claimed."
+    },
+    {
+      "id": "gap-admission-20260906-eur-lex-europa-eu",
+      "name": "Bounded 53-candidate admission review: eur-lex.europa.eu",
+      "institution": "Office for Official Publications of the European Communities",
+      "source_family": "Official eur-lex.europa.eu publications (exact candidate set)",
+      "url": "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "1984-02-28",
+      "covered_through": "2025-10-08",
+      "covered_document_types": [
+        "communication",
+        "decision",
+        "opinion",
+        "regulation",
+        "resolution"
+      ],
+      "covered_sector_tags": [
+        "agriculture_and_environment",
+        "consumer_protection",
+        "defence_and_security",
+        "education",
+        "employment_and_labour",
+        "financial_services",
+        "general_cross_sector",
+        "health",
+        "industry_and_manufacturing",
+        "intellectual_property",
+        "justice",
+        "media_and_culture",
+        "public_administration",
+        "research_and_innovation",
+        "transport_and_mobility"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-europarl-europa-eu",
+      "name": "Bounded 53-candidate admission review: europarl.europa.eu",
+      "institution": "European Parliament / European Parliamentary Research Service",
+      "source_family": "Official europarl.europa.eu publications (exact candidate set)",
+      "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2016/563501/EPRS_STU(2016)563501_EN.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2016-06-28",
+      "covered_through": "2021-07-07",
+      "covered_document_types": [
+        "study"
+      ],
+      "covered_sector_tags": [
+        "employment_and_labour",
+        "general_cross_sector",
+        "industry_and_manufacturing",
+        "justice",
+        "law_enforcement",
+        "migration_asylum_and_border_management",
+        "research_and_innovation",
+        "transport_and_mobility"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-edpb-europa-eu",
+      "name": "Bounded 53-candidate admission review: edpb.europa.eu",
+      "institution": "European Data Protection Board",
+      "source_family": "Official edpb.europa.eu publications (exact candidate set)",
+      "url": "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2024-12-17",
+      "covered_through": "2024-12-18",
+      "covered_document_types": [
+        "opinion"
+      ],
+      "covered_sector_tags": [
+        "general_cross_sector"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-fra-europa-eu",
+      "name": "Bounded 53-candidate admission review: fra.europa.eu",
+      "institution": "European Union Agency for Fundamental Rights",
+      "source_family": "Official fra.europa.eu publications (exact candidate set)",
+      "url": "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2020-artificial-intelligence_en.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2020-12-14",
+      "covered_through": "2025-12-04",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "consumer_protection",
+        "education",
+        "employment_and_labour",
+        "health",
+        "law_enforcement",
+        "media_and_culture",
+        "migration_asylum_and_border_management",
+        "public_administration"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-enisa-europa-eu",
+      "name": "Bounded 53-candidate admission review: enisa.europa.eu",
+      "institution": "European Union Agency for Cybersecurity",
+      "source_family": "Official enisa.europa.eu publications (exact candidate set)",
+      "url": "https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2026-07-07",
+      "covered_through": "2026-07-07",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "cybersecurity"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-europol-europa-eu",
+      "name": "Bounded 53-candidate admission review: europol.europa.eu",
+      "institution": "European Union Agency for Law Enforcement Cooperation",
+      "source_family": "Official europol.europa.eu publications (exact candidate set)",
+      "url": "https://www.europol.europa.eu/cms/sites/default/files/documents/Tech%20Watch%20Flash%20-%20The%20Impact%20of%20Large%20Language%20Models%20on%20Law%20Enforcement.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2023-03-27",
+      "covered_through": "2023-03-27",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "cybersecurity",
+        "law_enforcement"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-frontex-europa-eu",
+      "name": "Bounded 53-candidate admission review: frontex.europa.eu",
+      "institution": "European Border and Coast Guard Agency",
+      "source_family": "Official frontex.europa.eu publications (exact candidate set)",
+      "url": "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2021-03-17",
+      "covered_through": "2021-03-31",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "migration_asylum_and_border_management"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-osha-europa-eu",
+      "name": "Bounded 53-candidate admission review: osha.europa.eu",
+      "institution": "European Agency for Safety and Health at Work",
+      "source_family": "Official osha.europa.eu publications (exact candidate set)",
+      "url": "https://osha.europa.eu/sites/default/files/artificial-intelligence-worker-management_en.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2022-08-10",
+      "covered_through": "2022-08-10",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "employment_and_labour"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-easa-europa-eu",
+      "name": "Bounded 53-candidate admission review: easa.europa.eu",
+      "institution": "European Union Aviation Safety Agency",
+      "source_family": "Official easa.europa.eu publications (exact candidate set)",
+      "url": "https://www.easa.europa.eu/en/downloads/139504/en",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2020-02-07",
+      "covered_through": "2024-03-06",
+      "covered_document_types": [
+        "consultation_document",
+        "guidelines",
+        "report"
+      ],
+      "covered_sector_tags": [
+        "transport_and_mobility"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-ema-europa-eu",
+      "name": "Bounded 53-candidate admission review: ema.europa.eu",
+      "institution": "European Medicines Agency",
+      "source_family": "Official ema.europa.eu publications (exact candidate set)",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/draft-reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2023-07-13",
+      "covered_through": "2026-06-04",
+      "covered_document_types": [
+        "consultation_document",
+        "guidelines",
+        "report",
+        "work_programme"
+      ],
+      "covered_sector_tags": [
+        "health",
+        "public_administration"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-eba-europa-eu",
+      "name": "Bounded 53-candidate admission review: eba.europa.eu",
+      "institution": "European Banking Authority",
+      "source_family": "Official eba.europa.eu publications (exact candidate set)",
+      "url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Discussions/2022/Discussion%2520on%2520machine%2520learning%2520for%2520IRB%2520models/1023883/Discussion%2520paper%2520on%2520machine%2520learning%2520for%2520IRB%2520models.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2020-01-13",
+      "covered_through": "2023-08-04",
+      "covered_document_types": [
+        "consultation_document",
+        "report"
+      ],
+      "covered_sector_tags": [
+        "financial_services"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-esma-europa-eu",
+      "name": "Bounded 53-candidate admission review: esma.europa.eu",
+      "institution": "European Securities and Markets Authority",
+      "source_family": "Official esma.europa.eu publications (exact candidate set)",
+      "url": "https://www.esma.europa.eu/sites/default/files/2024-05/ESMA35-335435667-5924__Public_Statement_on_AI_and_investment_services.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2023-02-01",
+      "covered_through": "2026-02-20",
+      "covered_document_types": [
+        "guidelines",
+        "report"
+      ],
+      "covered_sector_tags": [
+        "consumer_protection",
+        "financial_services"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-eiopa-europa-eu",
+      "name": "Bounded 53-candidate admission review: eiopa.europa.eu",
+      "institution": "European Insurance and Occupational Pensions Authority",
+      "source_family": "Official eiopa.europa.eu publications (exact candidate set)",
+      "url": "https://www.eiopa.europa.eu/document/download/6ca9e171-42b9-44d7-a2e6-beaf0134ecb8_en?filename=Report+on+the+digitalisation+of+the+European+insurance+sector.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2021-06-17",
+      "covered_through": "2025-08-06",
+      "covered_document_types": [
+        "briefing",
+        "opinion",
+        "report"
+      ],
+      "covered_sector_tags": [
+        "consumer_protection",
+        "financial_services",
+        "health"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-eda-europa-eu",
+      "name": "Bounded 53-candidate admission review: eda.europa.eu",
+      "institution": "European Defence Agency",
+      "source_family": "Official eda.europa.eu publications (exact candidate set)",
+      "url": "https://eda.europa.eu/docs/default-source/documents/card-report-2024.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2024-11-19",
+      "covered_through": "2024-11-19",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "defence_and_security",
+        "research_and_innovation"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-ec-europa-eu",
+      "name": "Bounded 53-candidate admission review: ec.europa.eu",
+      "institution": "European Commission",
+      "source_family": "Official ec.europa.eu publications (exact candidate set)",
+      "url": "https://ec.europa.eu/futurium/en/system/files/ged/ai_hleg_policy_and_investment_recommendations.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2019-06-26",
+      "covered_through": "2019-06-26",
+      "covered_document_types": [
+        "recommendation"
+      ],
+      "covered_sector_tags": [
+        "education",
+        "employment_and_labour",
+        "general_cross_sector",
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-futurium-ec-europa-eu",
+      "name": "Bounded 53-candidate admission review: futurium.ec.europa.eu",
+      "institution": "European Commission",
+      "source_family": "Official futurium.ec.europa.eu publications (exact candidate set)",
+      "url": "https://futurium.ec.europa.eu/sites/default/files/2020-07/Sectoral%20Considerations%20On%20The%20Policy%20And%20Investment%20Recommendations%20For%20Trustworthy%20Artificial%20Intelligence.pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2020-07-23",
+      "covered_through": "2020-07-23",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "education",
+        "employment_and_labour",
+        "health",
+        "industry_and_manufacturing",
+        "justice",
+        "law_enforcement",
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-data-consilium-europa-eu",
+      "name": "Bounded 53-candidate admission review: data.consilium.europa.eu",
+      "institution": "Council of the European Union",
+      "source_family": "Official data.consilium.europa.eu publications (exact candidate set)",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2025-05-23",
+      "covered_through": "2025-05-23",
+      "covered_document_types": [
+        "conclusions"
+      ],
+      "covered_sector_tags": [
+        "research_and_innovation"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "gap-admission-20260906-op-europa-eu",
+      "name": "Bounded 53-candidate admission review: op.europa.eu",
+      "institution": "Publications Office of the European Union",
+      "source_family": "Official op.europa.eu publications (exact candidate set)",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en",
+      "scope_note": "Only the exact candidates assigned to this registry row in the inventory and 2026-09-06 admission ledger were reviewed; this is not an exhaustive institution or date-interval search.",
+      "covered_from": "2019-11-27",
+      "covered_through": "2024-06-21",
+      "covered_document_types": [
+        "report"
+      ],
+      "covered_sector_tags": [
+        "consumer_protection",
+        "justice",
+        "research_and_innovation"
+      ],
+      "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T00:03:45Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     }
   ]
 }

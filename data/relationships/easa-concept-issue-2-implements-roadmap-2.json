@@ -1,0 +1,16 @@
+{
+  "id": "easa-concept-issue-2-implements-roadmap-2",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_entity_type": "document",
+  "source_entity_id": "easa-ai-concept-paper-issue-2-2024",
+  "target_entity_type": "document",
+  "target_entity_id": "easa-ai-roadmap-2-2023",
+  "relationship_type": "implements",
+  "basis": "official",
+  "rationale": "Final concept paper, printed pp.4-6, identifies itself as a deliverable under Roadmap 2.0.",
+  "evidence_source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+  "verification_status": "verified"
+}

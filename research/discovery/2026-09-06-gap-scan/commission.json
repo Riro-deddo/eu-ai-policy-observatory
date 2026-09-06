@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded omission-discovery notes, not an admission decision or a completeness claim.",
+  "research_date": "2026-09-06",
+  "timezone": "Europe/London",
+  "publication_cutoff": "2026-09-04",
+  "reviewer": "Codex (AI-assisted discovery); no human approval recorded",
+  "baseline": {
+    "canonical_document_count": 131,
+    "inventory_candidate_count": 171,
+    "prior_discovery_candidate_count": 34
+  },
+  "counts": {
+    "new_candidates": 8,
+    "known_backlog_rechecked": 0
+  },
+  "conventions": [
+    "Sector and provenance labels are editorial proposals, not official metadata; all require mapping to the approved vocabulary before import.",
+    "Full-text-opened means relevant English passages were read, not that every field or page was verified.",
+    "Document dates, website releases and adoption dates are distinguished; null dates are unresolved.",
+    "No canonical records, verification statuses, source coverage statuses, website code or public deployments changed."
+  ],
+  "records": [
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "hleg-policy-investment-recommendations-2019",
+      "title": "Policy and investment recommendations for trustworthy Artificial Intelligence",
+      "reference": null,
+      "document_date": null,
+      "publication_date": "2019-06-26",
+      "publication_date_kind": "Commission library Publication field",
+      "official_url": "https://digital-strategy.ec.europa.eu/en/library/policy-and-investment-recommendations-trustworthy-artificial-intelligence",
+      "content_url": null,
+      "evidence_level": "official_summary_only",
+      "evidence_locator": "Library heading, Publication date and description of the AI HLEG's second deliverable.",
+      "relevance_note": "Expert recommendations on AI policy and investment, distinct from the already admitted Ethics Guidelines and ALTAI.",
+      "sectors": [
+        "general_cross_sector"
+      ],
+      "provenance": [
+        "eu_recognised_expert_group"
+      ],
+      "authorship_note": "Independent High-Level Expert Group on Artificial Intelligence; Commission hosts the report.",
+      "remaining_checks": [
+        "Retrieve English report and read recommendations; download tool returned InternalError.",
+        "Verify title-page date, credits and appropriate relationship to the Ethics Guidelines."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "hleg-sectoral-considerations-2020",
+      "title": "AI HLEG - Sectoral Considerations on Policy and Investment Recommendations for Trustworthy AI",
+      "reference": null,
+      "document_date": null,
+      "publication_date": "2020-07-23",
+      "publication_date_kind": "Futurium report-post date, not independently checked title-page date",
+      "official_url": "https://futurium.ec.europa.eu/en/european-ai-alliance/community-content/ai-hleg-sectoral-considerations-policy-and-investment-recommendations-trustworthy-ai",
+      "content_url": null,
+      "evidence_level": "official_summary_only",
+      "evidence_locator": "Report introduction and sector list: public sector, healthcare, and manufacturing/Internet of Things.",
+      "relevance_note": "Separate HLEG report applying the earlier recommendations to three sectors, not a duplicate URL for the 2019 report.",
+      "sectors": [
+        "public_administration",
+        "health",
+        "industry_and_manufacturing"
+      ],
+      "provenance": [
+        "eu_recognised_expert_group"
+      ],
+      "authorship_note": "AI HLEG report identified on Commission Futurium; named page poster is not automatically the report's author.",
+      "remaining_checks": [
+        "Retrieve a publicly accessible official English report and verify its credits and date.",
+        "Futurium says membership is needed for download; do not bypass that restriction.",
+        "Confirm institutional report attribution independently of generic community-platform hosting."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "expert-group-liability-ai-report-2019",
+      "title": "Liability for artificial intelligence and other emerging digital technologies",
+      "reference": "DOI 10.2838/573689; DS-03-19-742-EN-N",
+      "document_date": null,
+      "publication_date": "2019-11-27",
+      "publication_date_kind": "Released on EU publications website; report publication year is 2019",
+      "official_url": "https://op.europa.eu/en/publication-detail/-/publication/1c5e30be-1197-11ea-8c1f-01aa75ed71a1/language-en",
+      "content_url": null,
+      "evidence_level": "official_indexed_catalogue_only",
+      "evidence_locator": "Official catalogue indexed summary and publication details, DOI, ISBN and release date.",
+      "relevance_note": "AI-specific assessment of liability gaps arising from technological complexity, updates and self-learning; distinct from later liability legislation.",
+      "sectors": [
+        "justice",
+        "consumer_protection"
+      ],
+      "provenance": [
+        "eu_recognised_expert_group"
+      ],
+      "authorship_note": "Catalogue lists DG Justice and Consumers; narrative credits New Technologies Formation of the Expert Group. Verify separate author and commissioning roles from the report.",
+      "remaining_checks": [
+        "Direct catalogue open returned InternalError; retrieve full English report and confirm title-page credits.",
+        "Do not count print DOI 10.2838/25362 or alternate-language catalogue URLs as additional documents."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "digital-europe-regulation-2021-694",
+      "title": "Regulation (EU) 2021/694 of the European Parliament and of the Council of 29 April 2021 establishing the Digital Europe Programme and repealing Decision (EU) 2015/2240",
+      "reference": "CELEX 32021R0694; Regulation (EU) 2021/694",
+      "document_date": "2021-04-29",
+      "publication_date": "2021-05-11",
+      "publication_date_kind": "OJ L 166, 11.5.2021, pp. 1-34",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0694",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0694",
+      "evidence_level": "official_English_full_text_opened",
+      "evidence_locator": "Article 5, Specific Objective 2 - Artificial Intelligence; original OJ header and signature block.",
+      "relevance_note": "The programme contains a dedicated operational and funding objective for AI, not an incidental mention.",
+      "sectors": [
+        "research_and_innovation",
+        "general_cross_sector"
+      ],
+      "provenance": [
+        "eu_institution_authored"
+      ],
+      "authorship_note": "European Parliament and Council, adopters; EUR-Lex official host.",
+      "remaining_checks": [
+        "Review precise sector passages and original versus amended/consolidated version relationships.",
+        "The currently displayed legal-status label must not substitute for an as-of-cutoff status audit."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "eurohpc-ai-factories-regulation-2024-1732",
+      "title": "Council Regulation (EU) 2024/1732 of 17 June 2024 amending Regulation (EU) 2021/1173 as regards a EuroHPC initiative for start-ups in order to boost European leadership in trustworthy artificial intelligence",
+      "reference": "CELEX 32024R1732; Regulation (EU) 2024/1732",
+      "document_date": "2024-06-17",
+      "publication_date": "2024-06-19",
+      "publication_date_kind": "OJ L, 2024/1732, 19.6.2024",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1732",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1732",
+      "evidence_level": "official_English_full_text_opened",
+      "evidence_locator": "Article 1(1)-(3): AI-optimised supercomputers, AI factory definition and AI factory pillar; Article 1(3)(iv) names health, climate, robotics and automated driving.",
+      "relevance_note": "Enacts a dedicated AI computing infrastructure pillar. Not the already recorded Commission communication on boosting AI startups.",
+      "sectors": [
+        "research_and_innovation",
+        "health",
+        "agriculture_and_environment",
+        "transport_and_mobility"
+      ],
+      "provenance": [
+        "eu_institution_authored"
+      ],
+      "authorship_note": "Council of the European Union, adopter; EUR-Lex official host.",
+      "remaining_checks": [
+        "Verify parent/amends relationship and exact classification evidence before admission.",
+        "Do not treat the prerequisite Regulation 2021/1173 or each proposal-stage citation as automatically admitted candidates."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "chief-scientific-advisors-ai-science-opinion-2024",
+      "title": "Successful and timely uptake of artificial intelligence in science in the EU",
+      "reference": "DOI 10.2777/46863; KI-09-24-456-EN-N",
+      "document_date": null,
+      "publication_date": "2024-06-21",
+      "publication_date_kind": "Released on EU publications website; publication year 2024",
+      "official_url": "https://op.europa.eu/en/publication-detail/-/publication/d6d8ed54-32a8-11ef-a61b-01aa75ed71a1/language-en",
+      "content_url": null,
+      "evidence_level": "official_catalogue_only",
+      "evidence_locator": "Publication metadata: Scientific Opinion by the Group of Chief Scientific Advisors; responsible adoption of AI in science; corporate authors and release date.",
+      "relevance_note": "An independently citable scientific-policy advisory report about responsible AI uptake in research.",
+      "sectors": [
+        "research_and_innovation"
+      ],
+      "provenance": [
+        "eu_recognised_expert_group"
+      ],
+      "authorship_note": "Catalogue credits DG Research and Innovation and Group of Chief Scientific Advisors. Preserve distinct institutional roles.",
+      "remaining_checks": [
+        "Retrieve English report and verify cover date, recommendation passages and attribution.",
+        "Print DOI 10.2777/065364 is a format manifestation, not a second record."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "council-ai-science-conclusions-2025",
+      "title": "Towards an EU Strategy on Artificial Intelligence in Science - Council conclusions",
+      "reference": "ST 9292/25",
+      "document_date": "2025-05-23",
+      "publication_date": null,
+      "publication_date_kind": "Exact registry publication timestamp not established; dated outcome is linked from same-day official announcement",
+      "official_url": "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+      "content_url": "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+      "evidence_level": "official_English_full_text_opened",
+      "evidence_locator": "Cover: conclusions approved on 23 May 2025; annex paragraphs 5-9, 19-26 on ethical AI use, research infrastructure, risk and responsible publishing.",
+      "relevance_note": "Substantive Council policy on AI adoption in science. The press release is discovery evidence, not an additional corpus document.",
+      "sectors": [
+        "research_and_innovation"
+      ],
+      "provenance": [
+        "eu_institution_authored"
+      ],
+      "authorship_note": "Council conclusions; General Secretariat transmits the adopted text.",
+      "remaining_checks": [
+        "Verify publication-date semantics and official metadata before admission.",
+        "Link to the later Commission strategy without conflating Council and Commission documents."
+      ]
+    },
+    {
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "key": "commission-ai-science-strategy-2025",
+      "title": "European Strategy for Artificial Intelligence (AI) in Science",
+      "reference": "COM(2025) 724 final; CELEX 52025DC0724",
+      "document_date": "2025-10-08",
+      "publication_date": "2025-10-08",
+      "publication_date_kind": "Official strategy portal lists Communication, 8 October 2025; primary header still to verify",
+      "official_url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0724",
+      "evidence_level": "official_summary_only",
+      "evidence_locator": "Documents section labels Communication 8 October 2025; formal download redirects to CELEX 52025DC0724. Strategy description identifies RAISE, responsible AI uptake and research resources.",
+      "relevance_note": "A separate Commission communication from the already admitted Apply AI Strategy COM(2025) 723.",
+      "sectors": [
+        "research_and_innovation"
+      ],
+      "provenance": [
+        "eu_institution_authored"
+      ],
+      "authorship_note": "European Commission; official portal managed by DG Research and Innovation.",
+      "remaining_checks": [
+        "Retrieve the English communication; direct EUR-Lex request returned a JavaScript challenge and portal redirect could not be fetched.",
+        "Verify exact official title/header dates and annex identity; do not count portal, factsheet and Q&A as extra documents."
+      ]
+    }
+  ],
+  "search_log": [
+    {
+      "method": "official_domain_search",
+      "queries": [
+        "site:ec.europa.eu \"A definition of AI\" \"2019\"",
+        "site:ec.europa.eu \"Policy and investment recommendations\" filetype:pdf",
+        "site:ec.europa.eu \"Sectoral Considerations\" \"Trustworthy\" filetype:pdf",
+        "site:op.europa.eu \"Liability for artificial intelligence\" \"2019-11-27\""
+      ],
+      "note": "Title-focused web search, not exhaustive catalogue pagination."
+    },
+    {
+      "method": "official_page_link_following",
+      "start_url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en",
+      "paths": [
+        "Communication download -> CELEX 52025DC0724",
+        "Scientific Advice Mechanism opinion -> Publications Office catalogue",
+        "Council conclusions -> official announcement -> ST 9292/25 PDF"
+      ],
+      "note": "Official announcement is used only to locate the adopted document."
+    },
+    {
+      "method": "direct_identifier_lookup",
+      "identifiers": [
+        "32021R0694",
+        "32024R1732",
+        "52025DC0724"
+      ],
+      "note": "Opened original English EUR-Lex text where accessible and checked AI-specific provisions."
+    },
+    {
+      "method": "local_duplicate_screening",
+      "corpora": [
+        "data/documents/*.json",
+        "research/corpus-inventory.json",
+        "research/discovery/2026-09-05-document-gap-candidates.json"
+      ],
+      "terms": [
+        "policy and investment",
+        "sectoral considerations",
+        "definition of ai",
+        "52025DC0724",
+        "32024R1732",
+        "32021R0694",
+        "liability for artificial",
+        "uptake of artificial",
+        "9292",
+        "46863",
+        "573689"
+      ],
+      "result": "No matching document/version found for these eight candidates; a mention of science in Apply AI Strategy is not identity equivalence."
+    }
+  ],
+  "uncounted_followups": [
+    {
+      "title": "AI HLEG definition of AI working/revised paper",
+      "reason": "Version identity and primary English text not resolved in this pass; not counted."
+    },
+    {
+      "title": "JRC report on AI in scientific research and associated DG RTD AI-in-science working papers/policy briefs",
+      "source_url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en",
+      "reason": "Portal names these publications, but item-level identity, evidence, dates and deduplication have not been completed; not counted."
+    },
+    {
+      "title": "ERA living guidelines on responsible use of generative AI in research",
+      "source_url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en",
+      "reason": "Portal links a May 2026 update; original and later versions require independent screening and are not counted."
+    }
+  ],
+  "limitations": [
+    "No official publication catalogue was paginated to exhaustion.",
+    "Commission, JRC, EuroHPC and DG RTD publication families have further unreviewed candidates.",
+    "Official page/catalogue existence alone is not full evidence verification.",
+    "The corpus cutoff remains 4 September 2026 despite research on 6 September local time."
+  ]
+}

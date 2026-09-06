@@ -1,0 +1,135 @@
+{
+  "id": "easa-ai-concept-paper-issue-2-2024",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "easa-ai-concept-paper-issue-2-2024",
+  "official_title": "EASA Artificial Intelligence Concept Paper Issue 2: Guidance for Level 1 & 2 machine-learning applications",
+  "short_title": "EASA Artificial Intelligence Concept Paper Issue 2: Guidance for Level 1 & 2 machine-learning applications",
+  "document_type": "guidelines",
+  "sector_tags": [
+    "transport_and_mobility"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-03-06",
+  "version_label": "Issue 02",
+  "version_status": "final",
+  "publication_date": "2024-03-06",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "author",
+      "evidence_source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "publisher",
+      "evidence_source_id": "easa-ai-concept-paper-issue-2-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "official_host",
+      "evidence_source_id": "easa-ai-concept-paper-issue-2-2024-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "easa-ai-concept-paper-issue-2-2024-official-pdf",
+    "easa-ai-concept-paper-issue-2-2024-official-page",
+    "easa-ai-concept-issue-2-final-release"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Direct aviation AI assurance and oversight guidance, and a distinct final version following the 2023 proposed Issue 2 consultation text.",
+    "researcher_notes": "Named author Guillaume Soudain; reviewer and approver are not co-authors. Final Issue 02 follows the separately published proposed Issue 02. Publication date used because no independent exact issue day is printed in the extracted text.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-page",
+      "locator": "Official publication page: Publication Date 06/03/2024; Quoting this report specifies March 2024.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-page",
+      "locator": "Publication Date field and exact issue/version download.",
+      "meaning": "Establishes official publication of this version on 2024-03-06, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+      "locator": "Printed pp.3-6: author credit, foreword and introduction; chapter C, AI trustworthiness guidelines.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+      "locator": "Printed pp.3-6: author credit, foreword and introduction; chapter C, AI trustworthiness guidelines.",
+      "rationale": "Addresses aviation AI safety and certification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+      "locator": "Printed pp.3-6: author credit, foreword and introduction; chapter C, AI trustworthiness guidelines.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Guillaume Soudain",
+      "affiliation": "European Union Aviation Safety Agency",
+      "evidence_source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+      "evidence_locator": "Printed p.3: Author - EASA AI Programme Manager."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2024-03",
+      "precision": "month",
+      "source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+      "locator": "Cover issue month (or official citation recommendation for EASA Issue 02)."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "easa-ai-concept-paper-issue-2-2024-official-pdf",
+    "locator": "Printed pp.4-6 Foreword and Introduction: anticipates future rules; guidance does not guarantee final approval.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

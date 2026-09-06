@@ -1,0 +1,16 @@
+{
+  "id": "historical-fp6-integrating-strengthening-programme-implements-sixth-framework-programme-decision-1513-2002-ec",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "source_entity_type": "document",
+  "source_entity_id": "historical-fp6-integrating-strengthening-programme",
+  "target_entity_type": "document",
+  "target_entity_id": "sixth-framework-programme-decision-1513-2002-ec",
+  "relationship_type": "implements",
+  "basis": "official",
+  "rationale": "Recitals 1–2 identify implementation of Decision 1513/2002/EC.",
+  "evidence_source_id": "historical-fp6-integrating-strengthening-programme-eur-lex",
+  "verification_status": "verified"
+}

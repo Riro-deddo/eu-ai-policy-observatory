@@ -1,0 +1,130 @@
+{
+  "id": "ep-ai-civil-liability-2020",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:41:49.332+01:00",
+  "updated_at": "2026-09-06T00:41:49.332+01:00",
+  "slug": "ep-ai-civil-liability-2020",
+  "official_title": "European Parliament resolution of 20 October 2020 with recommendations to the Commission on a civil liability regime for artificial intelligence (2020/2014(INL))",
+  "short_title": "Civil liability regime for artificial intelligence",
+  "document_type": "resolution",
+  "sector_tags": [
+    "justice",
+    "consumer_protection"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "P9_TA(2020)0276",
+  "procedure_references": [
+    "2020/2014(INL)"
+  ],
+  "oj_reference": "2021/C 404/05",
+  "document_date": "2020-10-20",
+  "version_label": "Adopted resolution, Official Journal manifestation",
+  "version_status": "final",
+  "publication_date": "2021-10-06",
+  "legal_status": "non_binding",
+  "celex": "52020IP0276",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author",
+      "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "evidence_locator": "Resolution heading and acting body: The European Parliament"
+    },
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "evidence_locator": "Resolution heading"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "evidence_locator": "Official Journal masthead"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "evidence_locator": "EUR-Lex official English manifestation"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ep-ai-civil-liability-2020-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "Recommends civil-liability rules and compensation for AI harms, including strict liability for operators of high-risk AI systems. The annex is a legislative recommendation, not a law in force.",
+    "researcher_notes": "One non-binding adopted resolution includes its proposed-regulation annex. The annex is a recommendation and has no independent enacted status; the 2022 Commission proposal is not a version of this resolution.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Resolution heading",
+      "meaning": "Institutional adoption date of this text."
+    },
+    "publication_date": {
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Official Journal identity block and masthead",
+      "meaning": "OJ C 404, p. 107, opened official text."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Resolution and recommendations annex, Articles 2, 4 and 12",
+      "rationale": "AI is the substantive policy subject of this document."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Annex, Articles 4 and 12",
+      "rationale": "Liability, compensation and recourse for AI harm."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Annex, Article 2(3) and recitals 23–24",
+      "rationale": "Preserves consumer protections while proposing a harmonised AI liability framework."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Resolution heading and acting body",
+      "rationale": "The Parliament is the acting institution in its resolution."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-ai-civil-liability-2020-eur-lex",
+      "locator": "Official Journal identity block",
+      "rationale": "Official publication and this English manifestation are evidenced."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "snapshots": []
+}

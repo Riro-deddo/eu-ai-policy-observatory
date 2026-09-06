@@ -1,0 +1,535 @@
+{
+  "schema_version": 1,
+  "purpose": "Read-only historical omission-discovery handoff; candidate screening does not authorize admission.",
+  "research_date": "2026-09-06",
+  "timezone": "Europe/London",
+  "checked_at_utc": "2026-09-05T23:04:06Z",
+  "timestamp_note": "UTC time is previous calendar day; local research date is 6 September 2026 (BST).",
+  "publication_cutoff": "2026-09-04",
+  "reviewer": "OpenAI Codex historical-gap-scan subagent",
+  "baseline": {
+    "canonical_document_count": 131,
+    "inventory_candidate_count": 171,
+    "prior_discovery_candidate_count": 34,
+    "prior_discovery_file": "research/discovery/2026-09-05-document-gap-candidates.json",
+    "dedup_method": "Read all prior historical candidate objects and unresolved leads; exact CELEX/reference and URL-fragment rg checks against canonical document JSONs, corpus-inventory.json and prior discovery; no broader branch-history check."
+  },
+  "counts": {
+    "new_candidates": 6,
+    "known_backlog_rechecked": 3,
+    "already_present_records_added_to_this_handoff": 0
+  },
+  "records": [
+    {
+      "key": "historical-esprit-1984-work-programme",
+      "title": "84/157/EEC: Council Decision of 28 February 1984 adopting the 1984 work programme for a European programme for research and development in information technologies (ESPRIT)",
+      "reference": "84/157/EEC; CELEX 31984D0157",
+      "document_date": "1984-02-28",
+      "document_date_kind": "official_act_date",
+      "publication_date": "1984-03-24",
+      "publication_date_kind": "Official Journal publication of the cited original act",
+      "official_url": "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+      "content_url": "https://eur-lex.europa.eu/eli/dec/1984/157/oj/eng",
+      "evidence_locator": "Annex, sections 3.1.1 (knowledge-based systems and metrics), 3.1.3 (knowledge representation/inference), 3.1.4.4-3.1.4.5 (advanced KBS and learning); section 5.2.2 (AI in CAD/CAE).",
+      "relevance_note": "The annual programme specifies expert-system demonstrators, inference methods and machines that learn. It operationalises the already included ESPRIT Decision 84/130/EEC and is an independently enacted annual work programme.",
+      "sectors": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "relevance_class": "direct_ai_substantive",
+      "temporal_collection": "historical_lineage",
+      "authorship_roles": [
+        {
+          "name": "Council of the European Communities",
+          "role": "adopter"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "dedup_result": "No exact identifier/reference match in 131 canonical document JSONs, 171-candidate inventory, or the 2026-09-05 discovery handoff, including its unresolved leads.",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff."
+      ],
+      "evidence_level": "official_English_full_text_opened"
+    },
+    {
+      "key": "historical-esprit-1985-work-programme",
+      "title": "85/141/EEC: Council Decision of 11 February 1985 adopting the 1985 work programme for the European Strategic Programme for Research and Development in Information Technologies: ESPRIT",
+      "reference": "85/141/EEC; CELEX 31985D0141",
+      "document_date": "1985-02-11",
+      "document_date_kind": "official_act_date",
+      "publication_date": "1985-02-23",
+      "publication_date_kind": "Official Journal publication of the cited original act",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN-SL/TXT/?from=EN&uri=CELEX%3A31985D0141",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN-SL/TXT/?from=EN&uri=CELEX%3A31985D0141",
+      "evidence_locator": "Annex, subprogramme 3, sections 3.1.1.1 (Expert System Builder) and 3.1.1.2 (Knowledge Integration and Management Systems); section 5.2.2 (AI techniques in CAD/CAE).",
+      "relevance_note": "The annual programme gives concrete AI/expert-system development objectives and industrial applications. The 1985 act is distinct from the 1984 programme and the broad ESPRIT legal basis.",
+      "sectors": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "relevance_class": "direct_ai_substantive",
+      "temporal_collection": "historical_lineage",
+      "authorship_roles": [
+        {
+          "name": "Council of the European Communities",
+          "role": "adopter"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "dedup_result": "No exact identifier/reference match in 131 canonical document JSONs, 171-candidate inventory, or the 2026-09-05 discovery handoff, including its unresolved leads.",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff.",
+        "Resolve preferred single-language English source manifestation. Date of entry into force (1 January 1985) is not the document date."
+      ],
+      "evidence_level": "official_English_full_text_opened_in_multilingual_wrapper"
+    },
+    {
+      "key": "historical-fp5-ist-specific-programme",
+      "title": "1999/168/EC: Council Decision of 25 January 1999 adopting a specific programme for research, technological development and demonstration on a user-friendly information society (1998 to 2002)",
+      "reference": "1999/168/EC; CELEX 31999D0168",
+      "document_date": "1999-01-25",
+      "document_date_kind": "official_act_date",
+      "publication_date": "1999-03-12",
+      "publication_date_kind": "Official Journal publication of the cited original act",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1772211175029&uri=CELEX%3A31999D0168",
+      "content_url": "https://eur-lex.europa.eu/eli/dec/1999/168%281%29/oj/eng",
+      "evidence_locator": "Annex II, key action (iii), Human language technologies, RTD priorities; key action (i), Health and Persons with special needs.",
+      "relevance_note": "Substantial priorities cover language understanding, automated translation, knowledge extraction and intelligent language assistants, alongside intelligent medical assistants and adaptive robotics. This is a substantive precursor bridge from ESPRIT to the included FP6 programme.",
+      "sectors": [
+        "research_and_innovation",
+        "health",
+        "media_and_culture",
+        "education"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "relevance_class": "ai_related_precursor",
+      "temporal_collection": "historical_lineage",
+      "authorship_roles": [
+        {
+          "name": "Council of the European Union",
+          "role": "adopter"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "dedup_result": "No exact identifier/reference match in 131 canonical document JSONs, 171-candidate inventory, or the 2026-09-05 discovery handoff, including its unresolved leads.",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff.",
+        "Direct opens returned internal errors; independently retrieve and check the complete English act before admission."
+      ],
+      "evidence_level": "official_domain_indexed_English_full_passages"
+    },
+    {
+      "key": "historical-fp6-integrating-strengthening-programme",
+      "title": "2002/834/EC: Council Decision of 30 September 2002 adopting a specific programme for research, technological development and demonstration: Integrating and strengthening the European Research Area (2002-2006)",
+      "reference": "2002/834/EC; CELEX 32002D0834",
+      "document_date": "2002-09-30",
+      "document_date_kind": "official_act_date",
+      "publication_date": "2002-10-29",
+      "publication_date_kind": "Official Journal publication of the cited original act",
+      "official_url": "https://eur-lex.europa.eu/eli/dec/2002/834/oj/eng",
+      "content_url": "https://eur-lex.europa.eu/eli/dec/2002/834/oj/eng",
+      "evidence_locator": "Annex I, information society technologies, part (iv) Knowledge and interface technologies; Knowledge technologies and digital content; Intelligent interfaces and surfaces.",
+      "relevance_note": "Dedicated research provisions address semantic/context-aware systems, cognitive and agent-based tools, and adaptive knowledge services. This implements the already included FP6 framework Decision 1513/2002/EC.",
+      "sectors": [
+        "research_and_innovation",
+        "media_and_culture"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "relevance_class": "ai_related_precursor",
+      "temporal_collection": "historical_lineage",
+      "authorship_roles": [
+        {
+          "name": "Council of the European Union",
+          "role": "adopter"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "dedup_result": "No exact identifier/reference match in 131 canonical document JSONs, 171-candidate inventory, or the 2026-09-05 discovery handoff, including its unresolved leads.",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff."
+      ],
+      "evidence_level": "official_English_full_text_opened"
+    },
+    {
+      "key": "historical-fp7-framework-1982-2006",
+      "title": "Decision No 1982/2006/EC of the European Parliament and of the Council of 18 December 2006 concerning the Seventh Framework Programme of the European Community for research, technological development and demonstration activities (2007-2013)",
+      "reference": "Decision No 1982/2006/EC; CELEX 32006D1982",
+      "document_date": "2006-12-18",
+      "document_date_kind": "official_act_date",
+      "publication_date": "2006-12-30",
+      "publication_date_kind": "Official Journal publication of the cited original act",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006D1982",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006D1982",
+      "evidence_locator": "Annex I, I. Cooperation, Information and Communication Technologies, Activities, ICT Technology Pillars: Knowledge, cognitive and learning systems (HTML line 978).",
+      "relevance_note": "A dedicated technology pillar supports artificial systems that perceive, learn, evolve and act autonomously. This supplies a substantive FP7 bridge between the included FP6 and Horizon 2020 instruments.",
+      "sectors": [
+        "research_and_innovation"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "relevance_class": "ai_related_precursor",
+      "temporal_collection": "historical_lineage",
+      "authorship_roles": [
+        {
+          "name": "European Parliament",
+          "role": "adopter"
+        },
+        {
+          "name": "Council of the European Union",
+          "role": "adopter"
+        },
+        {
+          "name": "Office for Official Publications of the European Communities",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "dedup_result": "No exact identifier/reference match in 131 canonical document JSONs, 171-candidate inventory, or the 2026-09-05 discovery handoff, including its unresolved leads.",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff."
+      ],
+      "evidence_level": "official_English_full_text_opened"
+    },
+    {
+      "key": "historical-juri-robotics-report-2017",
+      "title": "Report with recommendations to the Commission on Civil Law Rules on Robotics",
+      "reference": "A8-0005/2017; 2015/2103(INL)",
+      "document_date": "2017-01-27",
+      "document_date_kind": "document_issue",
+      "publication_date": null,
+      "publication_date_note": "Dated tabled report on official Parliament page; verify publication date independently from its issue date.",
+      "official_url": "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.html",
+      "content_url": "https://www.europarl.europa.eu/doceo/document/A-8-2017-0005_EN.pdf",
+      "evidence_locator": "Motion, introduction recital B; explanatory statement; ITRE committee opinion of 15 November 2016, suggestion 1; official page's Document stages in plenary table.",
+      "relevance_note": "A distinct tabled committee report containing AI policy proposals, explanatory rationale and committee opinions, preceding the already included P8_TA(2017)0051 resolution. The report must not be merged merely because the resolution adopts part of its content.",
+      "relevance_class": "direct_ai_substantive",
+      "temporal_collection": "historical_lineage",
+      "sectors": [
+        "general_cross_sector",
+        "justice",
+        "industry_and_manufacturing",
+        "transport_and_mobility",
+        "employment_and_labour"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "authorship_roles": [
+        {
+          "name": "European Parliament, Committee on Legal Affairs",
+          "role": "author"
+        },
+        {
+          "name": "Mady Delvaux",
+          "role": "rapporteur"
+        },
+        {
+          "name": "European Parliament",
+          "role": "publisher"
+        },
+        {
+          "name": "European Parliament Doceo",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "new_candidate",
+      "matched_id": null,
+      "dedup_result": "No exact reference/URL match in canonical documents, inventory, or prior discovery; same procedure as existing resolution is a relationship, not document identity.",
+      "evidence_level": "official_domain_indexed_English_full_passages",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff.",
+        "Direct HTML/PDF opens returned a robot-verification page. Retrieve original English text and verify exact publication date.",
+        "Retain distinct issue date (27 January 2017), committee adoption (12 January 2017) and plenary adoption (16 February 2017).",
+        "Verify relation to civil-law-rules-on-robotics-resolution-2017. Do not split embedded committee opinions without separate identity review."
+      ]
+    },
+    {
+      "key": "ep-ethical-cyber-physical-systems-2016",
+      "title": "Ethical Aspects of Cyber-Physical Systems",
+      "reference": "PE 563.501; EPRS_STU(2016)563501",
+      "document_date": "2016-06-28",
+      "document_date_kind": "publication",
+      "publication_date": "2016-06-28",
+      "official_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_STU%282016%29563501",
+      "content_url": null,
+      "evidence_locator": "Official English Think Tank catalogue summary and publication date; prior handoff records supporting briefing pages 1-4 and Annex 1 pages 3, 6-7.",
+      "relevance_note": "Official catalogue explicitly describes networked robotics and AI and a foresight assessment of ethical consequences. This is a known pending candidate, not a new omission.",
+      "relevance_class": "direct_ai_substantive",
+      "temporal_collection": "historical_lineage",
+      "sectors": [
+        "research_and_innovation",
+        "justice"
+      ],
+      "provenance": [
+        "eu_commissioned_external",
+        "officially_published"
+      ],
+      "authorship_roles": [
+        {
+          "name": "Technopolis Group with Maastricht University",
+          "role": "author",
+          "evidence_note": "Prior handoff attribution; complete named credits still require direct check."
+        },
+        {
+          "name": "European Parliament STOA Panel",
+          "role": "commissioner"
+        },
+        {
+          "name": "European Parliamentary Research Service",
+          "role": "publisher"
+        }
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "ep-ethical-cyber-physical-systems-2016 (prior discovery candidate)",
+      "evidence_level": "official_catalogue_indexed_summary_rechecked",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff.",
+        "Retrieve main study; establish complete named author credits and parent/annex identities.",
+        "Resolve direct-AI-first relevance priority using the complete study; prior precursor classification was provisional."
+      ]
+    },
+    {
+      "key": "historical-com-2017-228-dsm-mid-term-review",
+      "title": "Communication on the Mid-Term Review on the implementation of the Digital Single Market Strategy: A Connected Digital Single Market for All",
+      "reference": "COM(2017) 228 final; CELEX 52017DC0228",
+      "document_date": "2017-05-10",
+      "document_date_kind": "document_issue",
+      "publication_date": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017DC0228",
+      "evidence_locator": "Section 4.2 and dedicated subsection Building artificial intelligence capacities, HTML lines 547 onward.",
+      "relevance_note": "Dedicated AI capacities discussion and research/investment measures; official full text reopened. Known pending candidate, not new.",
+      "relevance_class": "direct_ai_substantive",
+      "temporal_collection": "historical_lineage",
+      "sectors": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "authorship_roles": [
+        {
+          "name": "European Commission",
+          "role": "author"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "historical-com-2017-228-dsm-mid-term-review (prior discovery candidate)",
+      "evidence_level": "official_English_full_text_opened",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff.",
+        "Confirm official publication date separately from issue date."
+      ]
+    },
+    {
+      "key": "eesc-ai-consequences-2017",
+      "title": "Opinion of the European Economic and Social Committee on Artificial intelligence — The consequences of artificial intelligence on the (digital) single market, production, consumption, employment and society",
+      "reference": "INT/806; CELEX 52016IE5369; 2017/C 288/01",
+      "document_date": "2017-05-31",
+      "document_date_kind": "institutional_adoption",
+      "publication_date": "2017-08-31",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016IE5369",
+      "content_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52016IE5369",
+      "evidence_locator": "OJ C 288/1 heading/adoption table; sections 1.1-1.3 and subsequent recommendations.",
+      "relevance_note": "Substantive opinion on AI policy and social consequences. Full English primary text and adoption/OJ dates now retrieved, improving the prior official-summary-only evidence; remains known backlog.",
+      "relevance_class": "direct_ai_substantive",
+      "temporal_collection": "historical_lineage",
+      "sectors": [
+        "general_cross_sector",
+        "employment_and_labour",
+        "consumer_protection"
+      ],
+      "provenance": [
+        "eu_agency_or_body_authored",
+        "officially_published"
+      ],
+      "authorship_roles": [
+        {
+          "name": "European Economic and Social Committee",
+          "role": "author"
+        },
+        {
+          "name": "European Economic and Social Committee",
+          "role": "adopter"
+        },
+        {
+          "name": "Catelijne Muller",
+          "role": "rapporteur"
+        },
+        {
+          "name": "Publications Office of the European Union",
+          "role": "publisher"
+        },
+        {
+          "name": "EUR-Lex",
+          "role": "official_host"
+        }
+      ],
+      "discovery_status": "known_backlog",
+      "matched_id": "eesc-ai-consequences-2017 (prior discovery candidate)",
+      "evidence_level": "official_English_full_text_opened",
+      "remaining_checks": [
+        "Editorial review of identity, dates, relevance and passage-specific sector/provenance tags before any admission.",
+        "Verify any required relationships and distinguish principal/version/attachment identity; no admission or coverage-status change is authorized by this handoff.",
+        "Resolve preferred official reference while retaining INT/806, full internal identifier and CELEX."
+      ]
+    }
+  ],
+  "unresolved_leads_not_in_candidate_count": [
+    {
+      "reference": "2006/971/EC; CELEX 32006D0971",
+      "discovery_status": "known_backlog",
+      "note": "Nominal EN CELEX and ELI HTML pages opened but body text was French. English PDF open failed. Do not count successful URL retrieval as English full-text verification.",
+      "official_url": "https://eur-lex.europa.eu/eli/dec/2006/971/oj/eng"
+    },
+    {
+      "reference": "91/394/EEC; CELEX 31991D0394",
+      "discovery_status": "known_backlog",
+      "note": "Prior unresolved ESPRIT III lead; direct English open failed and no new substantive English passage was verified.",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31991D0394"
+    },
+    {
+      "reference": "85/558/EEC; CELEX 31985D0558",
+      "discovery_status": "new_unresolved_lead",
+      "note": "Official Council decision listing confirms 10 December 1985 act and OJ L365, 31 December 1985, pp1-64, adopting 1986 ESPRIT work programme. Direct text failed; substantive text not yet verified.",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31985D0558"
+    },
+    {
+      "reference": "COM(1983)258 final; CELEX 51983PC0258",
+      "discovery_status": "new_unresolved_lead",
+      "note": "Official indexed register identifies 2 June 1983 proposal for first ESPRIT programme. No substantive passage opened; do not count as a strong candidate.",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A51983PC0258"
+    },
+    {
+      "reference": "COM(1982)287 final; COM(1982)486 final",
+      "discovery_status": "new_unresolved_lead",
+      "note": "Official register indexes communications on ESPRIT strategy (28 May 1982) and pilot phase (17 August 1982). No substantive English passages reviewed; not strong candidates."
+    }
+  ],
+  "search_log": {
+    "institution_source": "EUR-Lex original legal acts/ELI and Parliament Doceo/Think Tank/RegData official sources",
+    "period_scope": "Pre-2018; targeted 1982-2017 reverse-citation and programme/procedural-chain checks",
+    "language_scope": "English; multilingual wrapper accepted only where actual English body inspected",
+    "document_types": [
+      "legal programme decisions",
+      "work programmes",
+      "committee reports",
+      "communications",
+      "opinions",
+      "commissioned studies"
+    ],
+    "sectors": [
+      "research_and_innovation",
+      "industry_and_manufacturing",
+      "general_cross_sector"
+    ],
+    "queries": [
+      "site:eur-lex.europa.eu \"1991\" \"expert systems\" \"Esprit\"",
+      "site:eur-lex.europa.eu \"2006\" \"cognitive systems\" \"Decision\"",
+      "site:eur-lex.europa.eu \"1983\" \"artificial intelligence\" ESPRIT",
+      "site:eur-lex.europa.eu \"1985\" \"work programme\" \"ESPRIT\" \"artificial intelligence\"",
+      "site:eur-lex.europa.eu \"1999/168/EC\" \"intelligent\"",
+      "site:eur-lex.europa.eu \"2002/834/EC\" \"cognitive\"",
+      "site:eur-lex.europa.eu \"1985 work programme\" \"ESPRIT\"",
+      "site:eur-lex.europa.eu \"2002/834/EC\" \"cognitive systems\"",
+      "site:eur-lex.europa.eu \"91/394/EEC\" \"artificial intelligence\"",
+      "site:eur-lex.europa.eu \"32002D0834\" \"knowledge\"",
+      "site:eur-lex.europa.eu \"31991D0394\" \"knowledge\"",
+      "site:eur-lex.europa.eu \"2006/971\" \"Cognitive systems\"",
+      "site:eur-lex.europa.eu \"ESPRIT\" \"1986 work programme\"",
+      "site:eur-lex.europa.eu \"1984\" \"84/157/EEC\" \"KNOWLEDGE ENGINEERING\"",
+      "site:europarl.europa.eu \"2015\" \"robotics\" \"ethical\" study",
+      "site:eur-lex.europa.eu \"85/558/EEC\" \"learning\"",
+      "site:eur-lex.europa.eu \"1999/168/EC\" \"Language technologies\"",
+      "site:europarl.europa.eu/doceo/document/A-8-2017-0005 \"27.1.2017\"",
+      "site:europarl.europa.eu/doceo/document/A-8-2017-0005_EN.html \"Rapporteur\" \"27.1.2017\"",
+      "site:eur-lex.europa.eu/legal-content/EN/TXT/ \"85/558/EEC\" \"EXPERT\"",
+      "site:eur-lex.europa.eu \"91/394/EEC\" \"intelligent\"",
+      "site:europarl.europa.eu \"Ethical Aspects of Cyber-Physical Systems\" \"28-06-2016\""
+    ],
+    "navigation": "Opened candidate CELEX/ELI/Doceo links; used within-document find for cognitive/knowledge/AI and inspected adjacent passages. Rechecked three older candidate identities against local canonical/inventory and official sources.",
+    "pagination_exhausted": false,
+    "stable_result_count_available": false,
+    "scope_status": "bounded_discovery_pass_only",
+    "access_limitations": [
+      "EUR-Lex intermittently returned internal-fetch failures and cached mismatched language text.",
+      "Parliament Doceo/RegData pages frequently returned robot verification; indexed official-domain full passages support candidate screening only.",
+      "No full-text files retained; URL/text retrieval does not mean a local archival copy exists.",
+      "This is not an exhaustive historical catalogue, source-family, sector or yearly sweep."
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ema-2025-ai-observatory-report-2026-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.ema.europa.eu/en/documents/report/2025-ai-observatory-report_en.pdf",
+  "publisher": "European Medicines Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF cover and pp.4-6, executive summary and AI policy/regulatory activities; official AI page, AI Observatory reports. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

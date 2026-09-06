@@ -1,0 +1,11 @@
+{
+  "id": "european-medicines-agency",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "official_name": "European Medicines Agency",
+  "short_name": "EMA",
+  "institution_type": "eu_agency",
+  "official_url": "https://www.ema.europa.eu/"
+}

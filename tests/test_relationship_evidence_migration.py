@@ -189,7 +189,10 @@ def test_record_levels_statuses_and_published_identity_routes_are_preserved():
         if record.data["publication_status"] == "published"
     }
     baseline_routes = {(document["id"], document["slug"]) for document in baseline["documents"]}
-    assert len(published_routes) == 131
+    reviewed_routes = {(document["id"], document["slug"])
+                       for document in expanded["baseline"]["documents"]}
+    assert len(reviewed_routes) == 131
+    assert reviewed_routes <= published_routes
     assert baseline_routes <= published_routes
 
 
@@ -266,8 +269,15 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
     documents = {document["id"]: document for document in public_data["documents"]}
     relationships = {relationship["id"]: relationship for relationship in public_data["relationships"]}
 
-    assert outputs.record_counts["documents"] == 131
-    assert outputs.record_counts["relationships"] == 96
+    canonical = load_records(DATA_ROOT)
+    published_ids = {
+        entity: {record.data["id"] for record in canonical[entity]
+                 if record.data["publication_status"] == "published"}
+        for entity in ("documents", "relationships")
+    }
+    for entity in ("documents", "relationships"):
+        assert outputs.record_counts[entity] == len(canonical[entity])
+        assert sorted(item["id"] for item in public_data[entity]) == sorted(published_ids[entity])
     assert {(item["id"], item["slug"]) for item in baseline["documents"]} <= {
         (item["id"], item["slug"]) for item in public_data["documents"]
     }
@@ -281,8 +291,8 @@ def test_pipeline_exports_migration_to_json_and_sqlite_without_identity_drift(tm
         assert _edge_tuple(relationships[relationship_id]) == expected
 
     with sqlite3.connect(outputs.database) as connection:
-        assert connection.execute("SELECT COUNT(*) FROM documents").fetchone()[0] == 131
-        assert connection.execute("SELECT COUNT(*) FROM relationships").fetchone()[0] == 96
+        assert {row[0] for row in connection.execute("SELECT id FROM documents")} == published_ids["documents"]
+        assert {row[0] for row in connection.execute("SELECT id FROM relationships")} == published_ids["relationships"]
         sqlite_routes = set(connection.execute("SELECT id, slug FROM documents"))
         sqlite_levels = dict(
             connection.execute(

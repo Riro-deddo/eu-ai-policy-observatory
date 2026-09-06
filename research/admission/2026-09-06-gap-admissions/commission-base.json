@@ -1,0 +1,1091 @@
+{
+  "records": [
+    {
+      "id": "hleg-policy-investment-recommendations-2019",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "slug": "hleg-policy-investment-recommendations-2019",
+      "official_title": "Policy and Investment Recommendations for Trustworthy AI",
+      "short_title": "HLEG policy and investment recommendations",
+      "document_type": "recommendation",
+      "sector_tags": [
+        "general_cross_sector",
+        "employment_and_labour",
+        "public_administration",
+        "research_and_innovation",
+        "education"
+      ],
+      "provenance_tags": [
+        "eu_expert_group_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": null,
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2019-06-26",
+      "version_label": "Final report",
+      "version_status": "final",
+      "publication_date": "2019-06-26",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "high-level-expert-group-on-ai",
+          "role": "author",
+          "evidence_source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "evidence_locator": "Printed p.2 (PDF page 3), authorship statement"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "official_host",
+          "evidence_source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "evidence_locator": "Official Commission Futurium PDF and printed p.2 contact block"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "hleg-policy-investment-recommendations-2019-pdf"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "The report develops 33 policy and investment recommendations for trustworthy AI.",
+        "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:49:16Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.2,6: public release and introduction",
+          "meaning": "Exact official publication date used as an explicit fallback; no separate exact issue date established."
+        },
+        "publication_date": {
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.2,6: public release and introduction",
+          "meaning": "Official publication on 2019-06-26."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.2,6: public release and introduction",
+          "rationale": "The report develops 33 policy and investment recommendations for trustworthy AI."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed p.6, introduction",
+          "rationale": "Recommendations address AI policy across society and economic sectors."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.6,12; Chapter I.A.3, human-centric AI at work",
+          "rationale": "Workplace impacts and protection form an explicit policy priority."
+        },
+        {
+          "field": "sector_tags",
+          "value": "public_administration",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.6,17-20; Chapter I.C",
+          "rationale": "Public-sector AI adoption is a distinct policy strand."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.6,21-23; Chapter I.D",
+          "rationale": "The recommendations address European AI research capabilities."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed pp.6,31-36; Chapter II.F, skills and education",
+          "rationale": "AI skills and education are explicit enabling policies."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_expert_group_authored",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed p.2 (PDF page 3), attribution and disclaimer",
+          "rationale": "The report expressly credits the independent AI HLEG, not the Commission."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "hleg-policy-investment-recommendations-2019-pdf",
+          "locator": "Printed p.2 (PDF page 3), public-release statement",
+          "rationale": "The Commission-hosted report explicitly gives its public-release date."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": []
+    },
+    {
+      "id": "hleg-sectoral-considerations-2020",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "slug": "hleg-sectoral-considerations-2020",
+      "official_title": "Sectoral Considerations on the Policy and Investment Recommendations for Trustworthy Artificial Intelligence",
+      "short_title": "HLEG sectoral considerations",
+      "document_type": "report",
+      "sector_tags": [
+        "industry_and_manufacturing",
+        "public_administration",
+        "justice",
+        "law_enforcement",
+        "health",
+        "education",
+        "employment_and_labour",
+        "research_and_innovation"
+      ],
+      "provenance_tags": [
+        "eu_expert_group_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "DOI 10.2759/733662; KK-02-20-527-EN-N",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2020-07-23",
+      "version_label": "Final report",
+      "version_status": "final",
+      "publication_date": "2020-07-23",
+      "legal_status": "non_binding",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "high-level-expert-group-on-ai",
+          "role": "author",
+          "evidence_source_id": "hleg-sectoral-considerations-2020-pdf",
+          "evidence_locator": "PDF p.2, authorship statement"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "official_host",
+          "evidence_source_id": "hleg-sectoral-considerations-2020-pdf",
+          "evidence_locator": "Official Futurium PDF and p.2 publication contact"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "hleg-sectoral-considerations-2020-pdf"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "The fourth HLEG deliverable applies AI recommendations to manufacturing, public services and healthcare.",
+        "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:49:16Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "publication",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "PDF pp.1-2 and printed p.3",
+          "meaning": "Exact official publication date used as an explicit fallback; no separate exact issue date established."
+        },
+        "publication_date": {
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "PDF pp.1-2 and printed p.3",
+          "meaning": "Official publication on 2020-07-23."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "PDF pp.1-2 and printed p.3",
+          "rationale": "The fourth HLEG deliverable applies AI recommendations to manufacturing, public services and healthcare."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed pp.6-7, manufacturing and industrial IoT",
+          "rationale": "Dedicated workshops produce manufacturing-specific AI recommendations."
+        },
+        {
+          "field": "sector_tags",
+          "value": "public_administration",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed p.10, public administration recommendations",
+          "rationale": "The report addresses public-sector algorithmic literacy and accountable decisions."
+        },
+        {
+          "field": "sector_tags",
+          "value": "justice",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed pp.10-11, Justice and law-enforcement",
+          "rationale": "A dedicated section assesses AI-assisted judicial decisions and safeguards."
+        },
+        {
+          "field": "sector_tags",
+          "value": "law_enforcement",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed pp.10-11, Justice and law-enforcement",
+          "rationale": "The same section calls for scrutiny of police AI deployment."
+        },
+        {
+          "field": "sector_tags",
+          "value": "health",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed pp.11-12, Healthcare Sector",
+          "rationale": "Dedicated recommendations cover clinical AI, medical devices and health data."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed p.7, skills and lifelong learning",
+          "rationale": "Specific AI education and research training policies are recommended."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed p.7, skills and lifelong learning",
+          "rationale": "Workforce reskilling and employment policies are explicit recommendations."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "Printed pp.5,7",
+          "rationale": "AI research facilities, research training and industrial research are addressed."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_expert_group_authored",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "PDF p.2, attribution and disclaimer",
+          "rationale": "The report expressly credits the independent AI HLEG, not the Commission."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "hleg-sectoral-considerations-2020-pdf",
+          "locator": "PDF p.2, public-release statement",
+          "rationale": "The Commission-hosted report explicitly gives its public-release date."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": []
+    },
+    {
+      "id": "digital-europe-regulation-2021-694",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "slug": "digital-europe-regulation-2021-694",
+      "official_title": "Regulation (EU) 2021/694 of the European Parliament and of the Council of 29 April 2021 establishing the Digital Europe Programme and repealing Decision (EU) 2015/2240",
+      "short_title": "Digital Europe Programme Regulation",
+      "document_type": "regulation",
+      "sector_tags": [
+        "general_cross_sector",
+        "research_and_innovation",
+        "public_administration",
+        "industry_and_manufacturing",
+        "health",
+        "agriculture_and_environment",
+        "transport_and_mobility",
+        "financial_services",
+        "education",
+        "employment_and_labour"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "joint_institutional",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "Regulation (EU) 2021/694",
+      "procedure_references": [
+        "2018/0227/COD"
+      ],
+      "oj_reference": "OJ L 166, 11.5.2021, pp. 1-34",
+      "document_date": "2021-04-29",
+      "version_label": "Original Official Journal text",
+      "version_status": "final",
+      "publication_date": "2021-05-11",
+      "legal_status": "in_force",
+      "celex": "32021R0694",
+      "eli": "http://data.europa.eu/eli/reg/2021/694/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "evidence_locator": "Heading and signature block"
+        },
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "evidence_locator": "Heading and signature block"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "proposer",
+          "evidence_source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "evidence_locator": "Preamble"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "digital-europe-regulation-2021-694-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "implementation",
+        "inclusion_rationale": "Article 5 establishes a dedicated AI objective with funding, experimentation and ethical requirements.",
+        "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:49:16Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Document information Dates; OJ header; Article 5",
+          "meaning": "Exact date and date meaning stated by the cited official manifestation."
+        },
+        "publication_date": {
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Document information Dates; OJ header; Article 5",
+          "meaning": "Official publication on 2021-05-11."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Document information Dates; OJ header; Article 5",
+          "rationale": "Article 5 establishes a dedicated AI objective with funding, experimentation and ethical requirements."
+        },
+        {
+          "field": "sector_tags",
+          "value": "general_cross_sector",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Article 5(1)(a)-(d)",
+          "rationale": "AI capabilities are funded across private and public users."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Article 5(1)(b)-(c)",
+          "rationale": "Research institutions and AI experimentation facilities receive explicit support."
+        },
+        {
+          "field": "sector_tags",
+          "value": "public_administration",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Article 5(1)(b)",
+          "rationale": "Public administrations are expressly eligible users of AI capacities."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Article 5(1)(d); Annex I, AI action 3",
+          "rationale": "AI production systems and manufacturing test facilities are supported."
+        },
+        {
+          "field": "sector_tags",
+          "value": "health",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Annex I, Specific Objective 2, action 3",
+          "rationale": "Health is an explicit AI experimentation sector."
+        },
+        {
+          "field": "sector_tags",
+          "value": "agriculture_and_environment",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Annex I, Specific Objective 2, action 3",
+          "rationale": "Earth and environment monitoring are explicit AI experimentation fields."
+        },
+        {
+          "field": "sector_tags",
+          "value": "transport_and_mobility",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Annex I, Specific Objective 2, action 3",
+          "rationale": "Transport and mobility are explicit AI experimentation fields."
+        },
+        {
+          "field": "sector_tags",
+          "value": "financial_services",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Annex I, Specific Objective 2, action 3",
+          "rationale": "Finance is an explicit AI experimentation field."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Article 7(1)(a)-(c)",
+          "rationale": "AI training and courses for students and workers are funded."
+        },
+        {
+          "field": "sector_tags",
+          "value": "employment_and_labour",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Article 7(1)(b)-(c)",
+          "rationale": "Workforce training and placements include AI skills."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Document information, Author",
+          "rationale": "EUR-Lex expressly names Parliament and Council as authors."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "joint_institutional",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "Document information, Author",
+          "rationale": "The act jointly credits Parliament and Council."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "digital-europe-regulation-2021-694-eur-lex",
+          "locator": "OJ L 166, 11 May 2021, pp.1-34",
+          "rationale": "The original English act is published in the Official Journal."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "legal_status_evidence": {
+        "source_id": "digital-europe-regulation-2021-694-eur-lex",
+        "locator": "Document information, legal-status panel, Dates; Article 34",
+        "meaning": "EUR-Lex labels the act in force with no end date. Its metadata gives entry into force as 12 May 2021, whereas Article 34 states publication day (11 May 2021). This official-source discrepancy is retained without adjudication. The record describes the original act, not a later consolidation."
+      }
+    },
+    {
+      "id": "eurohpc-ai-factories-regulation-2024-1732",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "slug": "eurohpc-ai-factories-regulation-2024-1732",
+      "official_title": "Council Regulation (EU) 2024/1732 of 17 June 2024 amending Regulation (EU) 2021/1173 as regards a EuroHPC initiative for start-ups in order to boost European leadership in trustworthy artificial intelligence",
+      "short_title": "EuroHPC AI Factories Regulation",
+      "document_type": "regulation",
+      "sector_tags": [
+        "research_and_innovation",
+        "health",
+        "agriculture_and_environment",
+        "transport_and_mobility",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "Council Regulation (EU) 2024/1732",
+      "procedure_references": [],
+      "oj_reference": "OJ L, 2024/1732, 19.6.2024",
+      "document_date": "2024-06-17",
+      "version_label": "Original Official Journal text",
+      "version_status": "final",
+      "publication_date": "2024-06-19",
+      "legal_status": "in_force",
+      "celex": "32024R1732",
+      "eli": "http://data.europa.eu/eli/reg/2024/1732/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "evidence_locator": "Heading and concluding adoption formula"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "proposer",
+          "evidence_source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "evidence_locator": "Preamble"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "eurohpc-ai-factories-regulation-2024-1732-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "implementation",
+        "inclusion_rationale": "The act creates a dedicated AI factory pillar and AI-optimised supercomputing infrastructure.",
+        "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04. Regulation (EU) 2021/1173 is the explicitly identified amended instrument, but is outside this 53-candidate batch and not yet a canonical endpoint; no dangling amends edge is created.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:49:16Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "OJ heading; Article 1(1)-(3)",
+          "meaning": "Exact date and date meaning stated by the cited official manifestation."
+        },
+        "publication_date": {
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "OJ heading; Article 1(1)-(3)",
+          "meaning": "Official publication on 2024-06-19."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "OJ heading; Article 1(1)-(3)",
+          "rationale": "The act creates a dedicated AI factory pillar and AI-optimised supercomputing infrastructure."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "Article 1(3), inserted Article 4(1)(h)",
+          "rationale": "The AI factory pillar supports research and AI innovation."
+        },
+        {
+          "field": "sector_tags",
+          "value": "health",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+          "rationale": "Health is an explicit strategic AI application."
+        },
+        {
+          "field": "sector_tags",
+          "value": "agriculture_and_environment",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+          "rationale": "Climate change is a named strategic AI application."
+        },
+        {
+          "field": "sector_tags",
+          "value": "transport_and_mobility",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+          "rationale": "Autonomous driving is an explicit strategic AI application."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "Article 1(3), inserted Article 4(1)(h)(iv)",
+          "rationale": "Robotics is an explicit strategic AI application."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "Document information, Author",
+          "rationale": "EUR-Lex expressly names the Council as author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+          "locator": "OJ L, 2024/1732, 19 June 2024",
+          "rationale": "This is the English original Official Journal act."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [],
+      "legal_status_evidence": {
+        "source_id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+        "locator": "Legal-status panel; Dates; Article 2",
+        "meaning": "The official record states in force and no end date; Article 2 sets entry into force on the twentieth day following publication."
+      }
+    },
+    {
+      "id": "council-ai-science-conclusions-2025",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "slug": "council-ai-science-conclusions-2025",
+      "official_title": "Towards an EU Strategy on Artificial Intelligence in Science - Council conclusions",
+      "short_title": "Council conclusions on AI in science",
+      "document_type": "conclusions",
+      "sector_tags": [
+        "research_and_innovation"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "ST 9292/25",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2025-05-23",
+      "version_label": "Adopted Council conclusions",
+      "version_status": "final",
+      "publication_date": "2025-05-23",
+      "legal_status": "adopted",
+      "celex": null,
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "council-ai-science-conclusions-2025-pdf",
+          "evidence_locator": "Cover: conclusions approved 23 May 2025"
+        },
+        {
+          "institution_id": "general-secretariat-of-the-council",
+          "role": "cover_note_sender",
+          "evidence_source_id": "council-ai-science-conclusions-2025-pdf",
+          "evidence_locator": "Cover: From General Secretariat of the Council"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "council-ai-science-conclusions-2025-pdf",
+        "council-ai-science-conclusions-2025-release"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "The conclusions set policy expectations for responsible AI use, research infrastructure and scientific integrity.",
+        "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:49:16Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "institutional_adoption",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "council-ai-science-conclusions-2025-pdf",
+          "locator": "Cover adoption statement; annex paragraphs 5-9,19-26",
+          "meaning": "Exact date and date meaning stated by the cited official manifestation."
+        },
+        "publication_date": {
+          "source_id": "council-ai-science-conclusions-2025-release",
+          "locator": "Release date 23 May 2025 12:15 and link to ST 9292/25",
+          "meaning": "Same-day official release explicitly provides this adopted PDF; this records official publication, not an independently measured register-upload timestamp."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "council-ai-science-conclusions-2025-pdf",
+          "locator": "Cover adoption statement; annex paragraphs 5-9,19-26",
+          "rationale": "The conclusions set policy expectations for responsible AI use, research infrastructure and scientific integrity."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "council-ai-science-conclusions-2025-pdf",
+          "locator": "Annex paragraphs 5-9,19-26",
+          "rationale": "The conclusions directly address AI uptake and governance in science."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "council-ai-science-conclusions-2025-pdf",
+          "locator": "Cover and annex: Council conclusions approved at its meeting",
+          "rationale": "The annex is expressly the Council's adopted conclusions; the Secretariat only transmits them."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "council-ai-science-conclusions-2025-pdf",
+          "locator": "Official ST 9292/25 PDF and same-day Council release",
+          "rationale": "Council publishes the adopted English text."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": []
+    },
+    {
+      "id": "commission-ai-science-strategy-2025",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "slug": "commission-ai-science-strategy-2025",
+      "official_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL A European Strategy for Artificial Intelligence in Science Paving the way for the Resource for AI Science in Europe (RAISE)",
+      "short_title": "European AI in Science Strategy",
+      "document_type": "communication",
+      "sector_tags": [
+        "research_and_innovation"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "COM(2025) 724 final",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2025-10-08",
+      "version_label": "COM(2025) 724 final",
+      "version_status": "final",
+      "publication_date": "2025-10-08",
+      "legal_status": "non_binding",
+      "celex": "52025DC0724",
+      "eli": null,
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-commission",
+          "role": "author",
+          "evidence_source_id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+          "evidence_locator": "PDF cover"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "commission-ai-science-strategy-2025-eur-lex-pdf",
+        "commission-ai-science-strategy-2025-publication-page"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "agenda_setting",
+        "inclusion_rationale": "The communication establishes an AI-in-science strategy and RAISE research-resource initiative.",
+        "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+        "review_status": "verified",
+        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_at": "2026-09-05T23:49:16Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "contemporary_eu_ai_policy",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "document_issue",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+          "locator": "PDF cover; printed pp.1-3",
+          "meaning": "Exact date and date meaning stated by the cited official manifestation."
+        },
+        "publication_date": {
+          "source_id": "commission-ai-science-strategy-2025-publication-page",
+          "locator": "Documents: Communication 8 October 2025; download points to CELEX 52025DC0724",
+          "meaning": "The official publication listing separately dates this communication 8 October 2025."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+          "locator": "PDF cover; printed pp.1-3",
+          "rationale": "The communication establishes an AI-in-science strategy and RAISE research-resource initiative."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+          "locator": "Printed pp.1-3, strategy and RAISE",
+          "rationale": "AI research uptake, infrastructure and responsible scientific practice are the core subject."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+          "locator": "PDF cover, European Commission communication",
+          "rationale": "The formal header identifies the Commission as the issuing author."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+          "locator": "EUR-Lex English COM(2025)724 final PDF",
+          "rationale": "The primary communication is published through EUR-Lex."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "hleg-policy-investment-recommendations-2019-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "official_pdf",
+      "url": "https://ec.europa.eu/futurium/en/system/files/ged/ai_hleg_policy_and_investment_recommendations.pdf",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Official English report opened. Printed p.2 (PDF page 3) names AI HLEG and states made public 26 June 2019. No snapshot or checksum claimed."
+    },
+    {
+      "id": "hleg-sectoral-considerations-2020-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "official_pdf",
+      "url": "https://futurium.ec.europa.eu/sites/default/files/2020-07/Sectoral%20Considerations%20On%20The%20Policy%20And%20Investment%20Recommendations%20For%20Trustworthy%20Artificial%20Intelligence.pdf",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Public unauthenticated official PDF returned HTTP 200. Text extracted in memory; pp.1-8,11-13 read. P.2 states AI HLEG authorship and made public 23 July 2020. No restricted community login used; no snapshot claimed."
+    },
+    {
+      "id": "digital-europe-regulation-2021-694-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Original English OJ text and Document information reviewed: author, signature date, OJ date, entry into force and no end date. Original act is distinct from later consolidations."
+    },
+    {
+      "id": "eurohpc-ai-factories-regulation-2024-1732-eur-lex",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1732",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "English text and official Document information reviewed. Node public fetch confirmed author Council, in force and no end date. This is the amending act itself, not a consolidated parent."
+    },
+    {
+      "id": "council-ai-science-conclusions-2025-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "official_pdf",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+      "publisher": "Council of the European Union",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Official English ST 9292/25 outcome cover and substantive annex read; adopted 23 May 2025."
+    },
+    {
+      "id": "council-ai-science-conclusions-2025-release",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "council_register",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/05/23/council-calls-for-an-inclusive-ethical-sustainable-and-human-centric-strategy-for-the-uptake-of-ai-in-science/",
+      "publisher": "Council of the European Union",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Official release dated 23 May 2025 12:15 explicitly links this conclusions PDF. Publication evidence, not a second document or a registry upload timestamp."
+    },
+    {
+      "id": "commission-ai-science-strategy-2025-eur-lex-pdf",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "eur_lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52025DC0724",
+      "publisher": "Publications Office of the European Union",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Primary English COM(2025)724 final PDF retrieved and relevant cover/introduction/research-resource sections read."
+    },
+    {
+      "id": "commission-ai-science-strategy-2025-publication-page",
+      "entity_type": "source",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_type": "commission_webpage",
+      "url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en",
+      "publisher": "European Commission",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "last_verified_at": "2026-09-05T23:49:16Z",
+      "verification_note": "Documents section labels the Communication 8 October 2025 and links CELEX 52025DC0724. Not confused with the separately listed factsheet."
+    }
+  ],
+  "institutions": [],
+  "relationships": [
+    {
+      "id": "hleg-sectoral-considerations-based-on-policy-investment-recommendations",
+      "entity_type": "relationship",
+      "publication_status": "published",
+      "created_at": "2026-09-05T23:49:16Z",
+      "updated_at": "2026-09-05T23:49:16Z",
+      "source_entity_type": "document",
+      "source_entity_id": "hleg-sectoral-considerations-2020",
+      "target_entity_type": "document",
+      "target_entity_id": "hleg-policy-investment-recommendations-2019",
+      "relationship_type": "based_on",
+      "basis": "official",
+      "rationale": "Printed pp.3-4 explicitly describe applying the 2019 recommendations in sector workshops; this is a separate deliverable, not a replacement version.",
+      "evidence_source_id": "hleg-sectoral-considerations-2020-pdf",
+      "verification_status": "verified"
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_id": "hleg-policy-investment-recommendations-2019",
+      "decision": "included",
+      "document_id": "hleg-policy-investment-recommendations-2019",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://ec.europa.eu/futurium/en/system/files/ged/ai_hleg_policy_and_investment_recommendations.pdf"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "hleg-sectoral-considerations-2020",
+      "decision": "included",
+      "document_id": "hleg-sectoral-considerations-2020",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://futurium.ec.europa.eu/sites/default/files/2020-07/Sectoral%20Considerations%20On%20The%20Policy%20And%20Investment%20Recommendations%20For%20Trustworthy%20Artificial%20Intelligence.pdf"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "digital-europe-regulation-2021-694",
+      "decision": "included",
+      "document_id": "digital-europe-regulation-2021-694",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "eurohpc-ai-factories-regulation-2024-1732",
+      "decision": "included",
+      "document_id": "eurohpc-ai-factories-regulation-2024-1732",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1732"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "council-ai-science-conclusions-2025",
+      "decision": "included",
+      "document_id": "council-ai-science-conclusions-2025",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+        "https://www.consilium.europa.eu/en/press/press-releases/2025/05/23/council-calls-for-an-inclusive-ethical-sustainable-and-human-centric-strategy-for-the-uptake-of-ai-in-science/"
+      ],
+      "remaining_checks": []
+    },
+    {
+      "candidate_id": "commission-ai-science-strategy-2025",
+      "decision": "included",
+      "document_id": "commission-ai-science-strategy-2025",
+      "reason": "Official English content, version identity, attribution, separate date meanings and classification evidence verified.",
+      "evidence_urls": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52025DC0724",
+        "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en"
+      ],
+      "remaining_checks": []
+    }
+  ],
+  "evidence_log": [
+    {
+      "url": "https://ec.europa.eu/futurium/en/system/files/ged/ai_hleg_policy_and_investment_recommendations.pdf",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Official English report opened. Printed p.2 (PDF page 3) names AI HLEG and states made public 26 June 2019. No snapshot or checksum claimed."
+    },
+    {
+      "url": "https://futurium.ec.europa.eu/sites/default/files/2020-07/Sectoral%20Considerations%20On%20The%20Policy%20And%20Investment%20Recommendations%20For%20Trustworthy%20Artificial%20Intelligence.pdf",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Public unauthenticated official PDF returned HTTP 200. Text extracted in memory; pp.1-8,11-13 read. P.2 states AI HLEG authorship and made public 23 July 2020. No restricted community login used; no snapshot claimed."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R0694",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Original English OJ text and Document information reviewed: author, signature date, OJ date, entry into force and no end date. Original act is distinct from later consolidations."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1732",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "English text and official Document information reviewed. Node public fetch confirmed author Council, in force and no end date. This is the amending act itself, not a consolidated parent."
+    },
+    {
+      "url": "https://data.consilium.europa.eu/doc/document/ST-9292-2025-INIT/en/pdf",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Official English ST 9292/25 outcome cover and substantive annex read; adopted 23 May 2025."
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/05/23/council-calls-for-an-inclusive-ethical-sustainable-and-human-centric-strategy-for-the-uptake-of-ai-in-science/",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Official release dated 23 May 2025 12:15 explicitly links this conclusions PDF. Publication evidence, not a second document or a registry upload timestamp."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52025DC0724",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Primary English COM(2025)724 final PDF retrieved and relevant cover/introduction/research-resource sections read."
+    },
+    {
+      "url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy_en",
+      "retrieved_at": "2026-09-05T23:49:16Z",
+      "note": "Documents section labels the Communication 8 October 2025 and links CELEX 52025DC0724. Not confused with the separately listed factsheet."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "easa-ai-roadmap-2-2023",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "easa-ai-roadmap-2-2023",
+  "official_title": "EASA Artificial Intelligence Roadmap 2.0: A human-centric approach to AI in aviation",
+  "short_title": "EASA Artificial Intelligence Roadmap 2.0: A human-centric approach to AI in aviation",
+  "document_type": "report",
+  "sector_tags": [
+    "transport_and_mobility"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "version",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2023-05-10",
+  "version_label": "Version 2.0",
+  "version_status": "revised",
+  "publication_date": "2023-05-10",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "author",
+      "evidence_source_id": "easa-ai-roadmap-2-2023-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "publisher",
+      "evidence_source_id": "easa-ai-roadmap-2-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "official_host",
+      "evidence_source_id": "easa-ai-roadmap-2-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "easa-ai-roadmap-2-2023-official-pdf",
+    "easa-ai-roadmap-2-2023-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "Updates the aviation AI programme with certification, oversight and trustworthiness objectives; identifies the earlier roadmap and concept papers.",
+    "researcher_notes": "Explicit update of Roadmap 1.0. Future roadmap milestones are projections, not completed events.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "easa-ai-roadmap-2-2023-official-page",
+      "locator": "Official publication page: Publication Date 10/05/2023.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "easa-ai-roadmap-2-2023-official-page",
+      "locator": "Publication Date field and exact issue/version download.",
+      "meaning": "Establishes official publication of this version on 2023-05-10, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "easa-ai-roadmap-2-2023-official-pdf",
+      "locator": "PDF pp.5-7, updated AI scope; pp.24-29, timeline and action plan; p.34 reference [1].",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "easa-ai-roadmap-2-2023-official-pdf",
+      "locator": "PDF pp.5-7, updated AI scope; pp.24-29, timeline and action plan; p.34 reference [1].",
+      "rationale": "Addresses aviation AI safety and certification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "easa-ai-roadmap-2-2023-official-pdf",
+      "locator": "PDF pp.5-7, updated AI scope; pp.24-29, timeline and action plan; p.34 reference [1].",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "easa-ai-roadmap-2-2023-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Union Aviation Safety Agency",
+      "affiliation": null,
+      "evidence_source_id": "easa-ai-roadmap-2-2023-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2023-05",
+      "precision": "month",
+      "source_id": "easa-ai-roadmap-2-2023-official-pdf",
+      "locator": "Cover issue month (or official citation recommendation for EASA Issue 02)."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "easa-ai-roadmap-2-2023-official-pdf",
+    "locator": "PDF p.5 Introduction: dynamic roadmap for stakeholder discussion and future updates.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

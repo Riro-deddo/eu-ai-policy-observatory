@@ -1,0 +1,13 @@
+{
+  "id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Discussions/2022/Discussion%2520on%2520machine%2520learning%2520for%2520IRB%2520models/1023883/Discussion%2520paper%2520on%2520machine%2520learning%2520for%2520IRB%2520models.pdf",
+  "publisher": "European Banking Authority",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF pp.4-7: consultation disclaimer, Executive summary and Introduction. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

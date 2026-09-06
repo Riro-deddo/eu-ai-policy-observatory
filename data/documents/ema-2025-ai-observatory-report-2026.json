@@ -1,0 +1,140 @@
+{
+  "id": "ema-2025-ai-observatory-report-2026",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "ema-2025-ai-observatory-report-2026",
+  "official_title": "2025 AI Observatory report",
+  "short_title": "2025 AI Observatory report",
+  "document_type": "report",
+  "sector_tags": [
+    "health"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "joint_institutional",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EMA/67888/2026",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2026-05-12",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2026-06-04",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "author",
+      "evidence_source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "publisher",
+      "evidence_source_id": "ema-2025-ai-observatory-report-2026-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "official_host",
+      "evidence_source_id": "ema-2025-ai-observatory-report-2026-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "heads-of-medicines-agencies",
+      "role": "publisher",
+      "evidence_source_id": "ema-2025-ai-observatory-report-2026-official-page",
+      "evidence_locator": "AI Observatory reports section: EMA and HMA publish annually."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ema-2025-ai-observatory-report-2026-official-pdf",
+    "ema-2025-ai-observatory-report-2026-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The entire report surveys AI guidance and policy, regulated-product applications, regulator tooling, collaborations, and research priorities for medicines regulation.",
+    "researcher_notes": "2025 is the activity year. EMA is credited on the cover; EMA and HMA are joint publishers. NDSG's monitoring role does not establish authorship.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+      "locator": "PDF cover: 12 May 2026, EMA/67888/2026.",
+      "meaning": "Exact issue date printed on this version."
+    },
+    "publication_date": {
+      "source_id": "ema-2025-ai-observatory-report-2026-official-page",
+      "locator": "AI Observatory reports: exact report First published 04/06/2026.",
+      "meaning": "Establishes official publication of this version on 2026-06-04, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+      "locator": "PDF cover and pp.4-6, executive summary and AI policy/regulatory activities; official AI page, AI Observatory reports.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+      "locator": "PDF cover and pp.4-6, executive summary and AI policy/regulatory activities; official AI page, AI Observatory reports.",
+      "rationale": "Addresses medicines or health-insurance AI."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+      "locator": "PDF cover and pp.4-6, executive summary and AI policy/regulatory activities; official AI page, AI Observatory reports.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "ema-2025-ai-observatory-report-2026-official-page",
+      "locator": "Publication credits: HMA-EMA joint network or EMA and HMA joint publication.",
+      "rationale": "Evidence identifies joint network preparation or publication; HMA is a national-authorities network."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ema-2025-ai-observatory-report-2026-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Medicines Agency",
+      "affiliation": null,
+      "evidence_source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ema-2025-ai-observatory-report-2026-official-pdf",
+    "locator": "PDF cover and pp.4-6, executive summary and AI policy/regulatory activities; official AI page, AI Observatory reports.",
+    "meaning": "Non-legislative report, scientific guidance, strategic workplan or consultation text; not an act creating binding law."
+  }
+}

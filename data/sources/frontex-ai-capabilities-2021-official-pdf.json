@@ -1,0 +1,13 @@
+{
+  "id": "frontex-ai-capabilities-2021-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:51:04.811+01:00",
+  "updated_at": "2026-09-06T00:51:04.811+01:00",
+  "source_type": "official_pdf",
+  "url": "https://www.frontex.europa.eu/assets/Publications/Research/Frontex_AI_Research_Study_2020_final_report.pdf",
+  "publisher": "European Border and Coast Guard Agency",
+  "retrieved_at": "2026-09-06T00:51:04.811+01:00",
+  "last_verified_at": "2026-09-06T00:51:04.811+01:00",
+  "verification_note": "Full 167-page official English PDF successfully retrieved by public unauthenticated Node fetch (HTTP 200) and parsed in memory with pypdf. Cover: Warsaw, 17/03/2021. Legal notice/preface: commissioned to RAND Europe; page 11 lists five report authors. Sections 1.1–1.3 and report identity reviewed. PDF modification metadata of January 2025 does not itself establish a revised report; cover/title/imprint identify the 2021 final report. Bytes hashed but not archived."
+}

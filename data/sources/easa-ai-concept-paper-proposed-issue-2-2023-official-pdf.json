@@ -1,0 +1,13 @@
+{
+  "id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.easa.europa.eu/en/downloads/137631/en",
+  "publisher": "European Union Aviation Safety Agency",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "Printed pp.3-4: author credit and foreword; chapter C, proposed AI trustworthiness guidance. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

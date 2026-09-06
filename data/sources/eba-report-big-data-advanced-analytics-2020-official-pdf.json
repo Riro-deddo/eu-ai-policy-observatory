@@ -1,0 +1,13 @@
+{
+  "id": "eba-report-big-data-advanced-analytics-2020-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.eba.europa.eu/sites/default/files/document_library/Final%20Report%20on%20Big%20Data%20and%20Advanced%20Analytics.pdf",
+  "publisher": "European Banking Authority",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF pp.4-6, Executive summary: ML focus, four governance pillars and trust elements. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

@@ -1,0 +1,139 @@
+{
+  "id": "fra-getting-future-right-ai-2020",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T00:41:49.332+01:00",
+  "updated_at": "2026-09-06T00:41:49.332+01:00",
+  "slug": "fra-getting-future-right-ai-2020",
+  "official_title": "Getting the future right – Artificial intelligence and fundamental rights",
+  "short_title": "Getting the future right: AI and fundamental rights",
+  "document_type": "report",
+  "sector_tags": [
+    "health",
+    "law_enforcement",
+    "public_administration",
+    "consumer_protection"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ISBN 978-92-9474-860-7; DOI 10.2811/774118; TK-03-20-119-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2020-12-14",
+  "version_label": "Published English report",
+  "version_status": "final",
+  "publication_date": "2020-12-14",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-union-agency-for-fundamental-rights",
+      "role": "author",
+      "evidence_source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "evidence_locator": "Foreword, printed pages 1–2; bibliographic page 2 of PDF"
+    },
+    {
+      "institution_id": "european-union-agency-for-fundamental-rights",
+      "role": "official_host",
+      "evidence_source_id": "fra-getting-future-right-ai-2020-official-page",
+      "evidence_locator": "Official agency/body document page and English download"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "evidence_locator": "PDF page 2, Luxembourg imprint"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "fra-getting-future-right-ai-2020-official-pdf",
+    "fra-getting-future-right-ai-2020-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Empirical rights analysis of AI used for social benefits, predictive policing, health services and targeted advertising in five Member States.",
+    "researcher_notes": "FRA report with fieldwork outsourced to Ecorys; FRA staff designed and supervised research (printed page 18 / PDF page 20). This is not evidence that Ecorys authored the report. The 2024 webpage notice adds Slovenian availability; English report identity remains 2020. Separately listed annexes and summary are not counted here.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T00:41:49.332+01:00"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "fra-getting-future-right-ai-2020-official-page",
+      "locator": "Official publication date field",
+      "meaning": "Exact official publication date used because no exact issue day is stated in the reviewed report."
+    },
+    "publication_date": {
+      "source_id": "fra-getting-future-right-ai-2020-official-page",
+      "locator": "Official publication date field",
+      "meaning": "Official publication of this English document, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "locator": "Foreword, printed page 1; Chapter 2; section 4.8",
+      "rationale": "AI is the substantive policy subject of this document."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "locator": "Chapter 2.1, printed pages 30–36",
+      "rationale": "Analyses social-benefits and other public-sector AI applications."
+    },
+    {
+      "field": "sector_tags",
+      "value": "law_enforcement",
+      "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "locator": "Chapter 2.1, predictive policing; foreword, printed page 1",
+      "rationale": "Examines predictive policing and its rights implications."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "locator": "Foreword, printed page 1; Chapter 2 selected use cases",
+      "rationale": "Health services are a substantive empirical use-case domain."
+    },
+    {
+      "field": "sector_tags",
+      "value": "consumer_protection",
+      "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "locator": "Section 4.8, printed pages 79–81",
+      "rationale": "Examines consumer rights and targeted advertising."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "fra-getting-future-right-ai-2020-official-pdf",
+      "locator": "Foreword, printed pages 1–2; bibliographic page 2 of PDF",
+      "rationale": "The report or opinion identifies its EU body as author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "fra-getting-future-right-ai-2020-official-page",
+      "locator": "Official document page and English download",
+      "rationale": "Official publication and this English manifestation are evidenced."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "snapshots": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eiopa-digitalisation-european-insurance-sector-report-2024-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_type": "official_pdf",
+  "url": "https://www.eiopa.europa.eu/document/download/6ca9e171-42b9-44d7-a2e6-beaf0134ecb8_en?filename=Report+on+the+digitalisation+of+the+European+insurance+sector.pdf",
+  "publisher": "European Insurance and Occupational Pensions Authority",
+  "retrieved_at": "2026-09-05T23:48:11Z",
+  "last_verified_at": "2026-09-05T23:48:11Z",
+  "verification_note": "PDF pp.22-29, sections 3.1 and 3.1.2: AI market developments and AI governance. English text inspected in web extraction or Node fetch plus pypdf; no retained file snapshot claimed."
+}

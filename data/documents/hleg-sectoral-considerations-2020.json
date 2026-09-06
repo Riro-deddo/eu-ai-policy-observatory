@@ -1,0 +1,163 @@
+{
+  "id": "hleg-sectoral-considerations-2020",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:49:16Z",
+  "updated_at": "2026-09-05T23:49:16Z",
+  "slug": "hleg-sectoral-considerations-2020",
+  "official_title": "Sectoral Considerations on the Policy and Investment Recommendations for Trustworthy Artificial Intelligence",
+  "short_title": "HLEG sectoral considerations",
+  "document_type": "report",
+  "sector_tags": [
+    "health",
+    "employment_and_labour",
+    "law_enforcement",
+    "justice",
+    "education",
+    "public_administration",
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "DOI 10.2759/733662; KK-02-20-527-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2020-07-23",
+  "version_label": "Final report",
+  "version_status": "final",
+  "publication_date": "2020-07-23",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "high-level-expert-group-on-ai",
+      "role": "author",
+      "evidence_source_id": "hleg-sectoral-considerations-2020-pdf",
+      "evidence_locator": "PDF p.2, authorship statement"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "official_host",
+      "evidence_source_id": "hleg-sectoral-considerations-2020-pdf",
+      "evidence_locator": "Official Futurium PDF and p.2 publication contact"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "hleg-sectoral-considerations-2020-pdf"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The fourth HLEG deliverable applies AI recommendations to manufacturing, public services and healthcare.",
+    "researcher_notes": "Sector and provenance classifications are AI-assisted research assessments, separate from official metadata. Publication cutoff: 2026-09-04.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:49:16Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "PDF pp.1-2 and printed p.3",
+      "meaning": "Exact official publication date used as an explicit fallback; no separate exact issue date established."
+    },
+    "publication_date": {
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "PDF pp.1-2 and printed p.3",
+      "meaning": "Official publication on 2020-07-23."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "PDF pp.1-2 and printed p.3",
+      "rationale": "The fourth HLEG deliverable applies AI recommendations to manufacturing, public services and healthcare."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed pp.6-7, manufacturing and industrial IoT",
+      "rationale": "Dedicated workshops produce manufacturing-specific AI recommendations."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed p.10, public administration recommendations",
+      "rationale": "The report addresses public-sector algorithmic literacy and accountable decisions."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed pp.10-11, Justice and law-enforcement",
+      "rationale": "A dedicated section assesses AI-assisted judicial decisions and safeguards."
+    },
+    {
+      "field": "sector_tags",
+      "value": "law_enforcement",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed pp.10-11, Justice and law-enforcement",
+      "rationale": "The same section calls for scrutiny of police AI deployment."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed pp.11-12, Healthcare Sector",
+      "rationale": "Dedicated recommendations cover clinical AI, medical devices and health data."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed p.7, skills and lifelong learning",
+      "rationale": "Specific AI education and research training policies are recommended."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed p.7, skills and lifelong learning",
+      "rationale": "Workforce reskilling and employment policies are explicit recommendations."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "Printed pp.5,7",
+      "rationale": "AI research facilities, research training and industrial research are addressed."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "PDF p.2, attribution and disclaimer",
+      "rationale": "The report expressly credits the independent AI HLEG, not the Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "hleg-sectoral-considerations-2020-pdf",
+      "locator": "PDF p.2, public-release statement",
+      "rationale": "The Commission-hosted report explicitly gives its public-release date."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": []
+}

@@ -1,0 +1,135 @@
+{
+  "id": "eba-discussion-paper-machine-learning-irb-models-2021",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "eba-discussion-paper-machine-learning-irb-models-2021",
+  "official_title": "EBA Discussion Paper on machine learning for IRB models",
+  "short_title": "EBA Discussion Paper on machine learning for IRB models",
+  "document_type": "consultation_document",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "official_consultation_material",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EBA/DP/2021/04",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2021-11-11",
+  "version_label": "Discussion paper for consultation",
+  "version_status": "draft",
+  "publication_date": "2021-11-11",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-banking-authority",
+      "role": "author",
+      "evidence_source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-banking-authority",
+      "role": "publisher",
+      "evidence_source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-banking-authority",
+      "role": "official_host",
+      "evidence_source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+    "eba-discussion-paper-machine-learning-irb-models-2021-official-page",
+    "eba-follow-up-machine-learning-irb-models-2023-official-pdf"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "Direct banking-supervision AI/ML consultation document and the explicit precursor to the known 2023 follow-up report.",
+    "researcher_notes": "Consultation document with expressly preliminary, non-binding views. The follow-up report independently confirms publication on 11 November 2021.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+      "locator": "PDF cover: EBA/DP/2021/04, 11 November 2021.",
+      "meaning": "Exact issue date printed on this version."
+    },
+    "publication_date": {
+      "source_id": "eba-follow-up-machine-learning-irb-models-2023-official-pdf",
+      "locator": "Follow-up report p.4 paragraph 3: EBA published and consulted on the discussion paper on 11 November 2021.",
+      "meaning": "Establishes official publication of this version on 2021-11-11, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+      "locator": "PDF pp.4-7: consultation disclaimer, Executive summary and Introduction.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+      "locator": "PDF pp.4-7: consultation disclaimer, Executive summary and Introduction.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+      "locator": "PDF pp.4-7: consultation disclaimer, Executive summary and Introduction.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-page",
+      "locator": "Official consultation status and linked draft/discussion paper.",
+      "rationale": "Formally published consultation material."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Banking Authority",
+      "affiliation": null,
+      "evidence_source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+      "evidence_locator": "PDF institutional title and imprint."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eba-discussion-paper-machine-learning-irb-models-2021-official-pdf",
+    "locator": "PDF p.4 Disclaimer: preliminary views do not bind EBA.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

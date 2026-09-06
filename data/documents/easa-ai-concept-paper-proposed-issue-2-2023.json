@@ -1,0 +1,134 @@
+{
+  "id": "easa-ai-concept-paper-proposed-issue-2-2023",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "easa-ai-concept-paper-proposed-issue-2-2023",
+  "official_title": "EASA Artificial Intelligence Concept Paper: Guidance for Level 1 & 2 machine learning applications — Proposed Issue 02",
+  "short_title": "EASA Artificial Intelligence Concept Paper: Guidance for Level 1 & 2 machine learning applications — Proposed Issue 02",
+  "document_type": "consultation_document",
+  "sector_tags": [
+    "transport_and_mobility"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "official_consultation_material",
+    "officially_published"
+  ],
+  "record_level": "version",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2023-02-24",
+  "version_label": "Proposed Issue 02",
+  "version_status": "draft",
+  "publication_date": "2023-02-24",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "author",
+      "evidence_source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+      "evidence_locator": "PDF institutional title/imprint and substantive text."
+    },
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "publisher",
+      "evidence_source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-union-aviation-safety-agency",
+      "role": "official_host",
+      "evidence_source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+    "easa-ai-concept-paper-proposed-issue-2-2023-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "Independently citable consultation version in the aviation AI policy lineage; it must not be collapsed into the March 2024 final Issue 2.",
+    "researcher_notes": "Separately citable consultation version; named author Guillaume Soudain. Its foreword implements Roadmap 1.0, not the later Roadmap 2.0.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-page",
+      "locator": "Official publication page: Publication Date 24/02/2023; download title identifies Proposed Issue 02.",
+      "meaning": "Exact official publication is the fallback document date; no exact independent issue day established."
+    },
+    "publication_date": {
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-page",
+      "locator": "Publication Date field and exact issue/version download.",
+      "meaning": "Establishes official publication of this version on 2023-02-24, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+      "locator": "Printed pp.3-4: author credit and foreword; chapter C, proposed AI trustworthiness guidance.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+      "locator": "Printed pp.3-4: author credit and foreword; chapter C, proposed AI trustworthiness guidance.",
+      "rationale": "Addresses aviation AI safety and certification."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+      "locator": "Printed pp.3-4: author credit and foreword; chapter C, proposed AI trustworthiness guidance.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-page",
+      "locator": "Official consultation status and linked draft/discussion paper.",
+      "rationale": "Formally published consultation material."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Guillaume Soudain",
+      "affiliation": "European Union Aviation Safety Agency",
+      "evidence_source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+      "evidence_locator": "Printed p.3: Author - EASA AI Programme Manager."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "easa-ai-concept-paper-proposed-issue-2-2023-official-pdf",
+    "locator": "Printed p.4 Foreword: proposed objectives do not constitute definitive or detailed guidance.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

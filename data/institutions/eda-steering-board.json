@@ -1,0 +1,11 @@
+{
+  "id": "eda-steering-board",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "official_name": "European Defence Agency Steering Board",
+  "short_name": "EDA Steering Board",
+  "institution_type": "board_of_eu_agency",
+  "official_url": "https://eda.europa.eu/"
+}

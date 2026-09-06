@@ -1,0 +1,16 @@
+{
+  "id": "ema-ai-final-revises-consultation-draft",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+  "target_entity_type": "document",
+  "target_entity_id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "EMA guideline page separates adopted Current version and 2023 consultation draft under Document history, sharing reference EMA/CHMP/CVMP/83833/2023.",
+  "evidence_source_id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024-official-page",
+  "verification_status": "verified"
+}

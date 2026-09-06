@@ -1,0 +1,133 @@
+{
+  "id": "esma-ai-eu-securities-markets-2023",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-05T23:48:11Z",
+  "slug": "esma-ai-eu-securities-markets-2023",
+  "official_title": "Artificial intelligence in EU securities markets",
+  "short_title": "Artificial intelligence in EU securities markets",
+  "document_type": "report",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ESMA50-164-6247",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2023-02-01",
+  "version_label": null,
+  "version_status": "final",
+  "publication_date": "2023-02-01",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-securities-and-markets-authority",
+      "role": "publisher",
+      "evidence_source_id": "esma-ai-eu-securities-markets-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    },
+    {
+      "institution_id": "european-securities-and-markets-authority",
+      "role": "official_host",
+      "evidence_source_id": "esma-ai-eu-securities-markets-2023-official-page",
+      "evidence_locator": "Official publication record and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "esma-ai-eu-securities-markets-2023-official-pdf",
+    "esma-ai-eu-securities-markets-2023-official-page",
+    "esma-ai-eu-securities-markets-2023-dated-library"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "AI use cases, adoption, concentration, and supervisory risk in EU securities markets are the report's sole substantive subject.",
+    "researcher_notes": "Distinct report identity ESMA50-164-6247. Named authors retained; acknowledgments are not co-authors.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:48:11Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "locator": "PDF cover and running header: 1 February 2023.",
+      "meaning": "Exact issue date printed on this version."
+    },
+    "publication_date": {
+      "source_id": "esma-ai-eu-securities-markets-2023-dated-library",
+      "locator": "Exact-reference library row, Date column for ESMA50-164-6247.",
+      "meaning": "Establishes official publication of this version on 2023-02-01, before the 4 September 2026 cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "locator": "PDF pp.2-4: disclaimer, Summary and Introduction; p.3 author footnote.",
+      "rationale": "AI/ML is a substantive regulatory or sectoral subject."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "locator": "PDF pp.2-4: disclaimer, Summary and Introduction; p.3 author footnote.",
+      "rationale": "Addresses regulated banking, insurance or securities activities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "locator": "PDF pp.2-4: disclaimer, Summary and Introduction; p.3 author footnote.",
+      "rationale": "Produced within the named EU agency/body; named personal author credits remain separate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "esma-ai-eu-securities-markets-2023-official-page",
+      "locator": "Official record with linked English document.",
+      "rationale": "Official EU endpoint distributes this independently citable English text."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Giulio Bagattini",
+      "affiliation": null,
+      "evidence_source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "evidence_locator": "PDF p.3, author footnote 1."
+    },
+    {
+      "name": "Zeno Benetti",
+      "affiliation": null,
+      "evidence_source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "evidence_locator": "PDF p.3, author footnote 1."
+    },
+    {
+      "name": "Claudia Guagliano",
+      "affiliation": null,
+      "evidence_source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+      "evidence_locator": "PDF p.3, author footnote 1."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "esma-ai-eu-securities-markets-2023-official-pdf",
+    "locator": "PDF p.2: publication serves analytical purposes and does not affect regulatory obligations.",
+    "meaning": "Supports classification as non-binding rather than binding legislation."
+  }
+}

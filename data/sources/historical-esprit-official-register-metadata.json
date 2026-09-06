@@ -1,0 +1,13 @@
+{
+  "id": "historical-esprit-official-register-metadata",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/search.html?DTS_DOM=ALL&DTS_SUBDOM=LEGISLATION&SUBDOM_INIT=ALL_ALL&andText0=%22artificial+intelligence%22&lang=en&page=30&qid=1768998399293&sortOne=DD&sortOneOrder=desc&textScope0=ti-te&type=advanced",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-05T23:45:09Z",
+  "last_verified_at": "2026-09-05T23:45:09Z",
+  "verification_note": "Official EUR-Lex indexed result records 31984D0157 and 31985D0141: Author Council of the European Union; both no longer in force. This is auxiliary metadata evidence; direct open failed. Full English acts were separately opened."
+}

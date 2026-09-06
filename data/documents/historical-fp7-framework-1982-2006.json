@@ -1,0 +1,149 @@
+{
+  "id": "historical-fp7-framework-1982-2006",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-05T23:45:09Z",
+  "updated_at": "2026-09-05T23:45:09Z",
+  "slug": "historical-fp7-framework-1982-2006",
+  "official_title": "Decision No 1982/2006/EC of the European Parliament and of the Council of 18 December 2006 concerning the Seventh Framework Programme of the European Community for research, technological development and demonstration activities (2007-2013)",
+  "short_title": "Seventh Framework Programme (FP7)",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "joint_institutional",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Decision No 1982/2006/EC",
+  "procedure_references": [
+    "2005/0043(COD)"
+  ],
+  "oj_reference": "OJ L 412, 30.12.2006, pp. 1–43",
+  "document_date": "2006-12-18",
+  "version_label": "Original Official Journal text",
+  "version_status": "final",
+  "publication_date": "2006-12-30",
+  "legal_status": "repealed",
+  "celex": "32006D1982",
+  "eli": "http://data.europa.eu/eli/dec/2006/1982/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "evidence_locator": "Act heading and joint adoption clause"
+    },
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "evidence_locator": "Act heading and operative adoption clause"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "proposer",
+      "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "evidence_locator": "Preamble: Commission proposal or submitted draft work programme"
+    },
+    {
+      "institution_id": "office-for-official-publications-of-the-european-communities",
+      "role": "publisher",
+      "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "evidence_locator": "Original Official Journal citation"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "evidence_locator": "EUR-Lex hosting of original act"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "historical-fp7-framework-1982-2006-eur-lex",
+    "historical-fp7-framework-1982-2006-metadata"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "adoption",
+    "inclusion_rationale": "The programme funds autonomous learning systems, a substantive precursor priority.",
+    "researcher_notes": "Independent original act. Analytical classifications are separate from official facts. Programme completion is not used to infer repeal.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-05T23:45:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "locator": "Act heading; signed closing formula",
+      "meaning": "Official act date."
+    },
+    "publication_date": {
+      "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "locator": "Official Journal reference",
+      "meaning": "Date of the cited original OJ publication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "locator": "Annex I, Cooperation, ICT Technology Pillars, Knowledge, cognitive and learning systems",
+      "rationale": "The programme funds autonomous learning systems, a substantive precursor priority."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "locator": "Annex I, Cooperation, ICT Activities",
+      "rationale": "Funded research priorities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "historical-fp7-framework-1982-2006-metadata",
+      "locator": "Record for 32006D1982, Author field",
+      "rationale": "Explicit official author metadata; historical issuing name preserved."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "historical-fp7-framework-1982-2006-metadata",
+      "locator": "Author field",
+      "rationale": "Parliament and Council are jointly credited."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "locator": "Official Journal citation",
+      "rationale": "Original act formally published."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {
+      "kind": "official_end_of_validity",
+      "value": "2013-12-31",
+      "precision": "day",
+      "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+      "locator": "EUR-Lex legal-status panel"
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "historical-fp7-framework-1982-2006-eur-lex",
+    "locator": "EUR-Lex legal-status panel",
+    "meaning": "Explicitly repealed by Regulation 1291/2013."
+  }
+}

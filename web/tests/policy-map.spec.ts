@@ -1,4 +1,15 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
+import { loadPublicData } from '../src/lib/data';
+
+const expectedRelationshipIds = loadPublicData().relationships.map((relationship) => relationship.id).sort();
+
+async function expectCompleteRelationshipList(page: Page) {
+  const relationships = page.locator('[data-policy-map-relationship]');
+  await expect(relationships).toHaveCount(expectedRelationshipIds.length);
+  expect(await relationships.evaluateAll((elements) => elements
+    .map((element) => element.getAttribute('data-policy-map-relationship')).sort()))
+    .toEqual(expectedRelationshipIds);
+}
 
 test('default group and expanded view render recorded graph scopes', async ({ page }) => {
   await page.goto('policy-map/');
@@ -7,7 +18,7 @@ test('default group and expanded view render recorded graph scopes', async ({ pa
   await expect(page.locator('[data-policy-map-edge]')).toHaveCount(7);
   await page.getByRole('button', { name: 'All records', exact: true }).click();
   await expect(page.locator('[data-policy-map-node]')).toHaveCount(49);
-  await expect(page.locator('[data-policy-map-relationship]')).toHaveCount(96);
+  await expectCompleteRelationshipList(page);
 });
 
 test('selection exposes evidence, complete focus and back navigation', async ({ page }) => {
@@ -92,7 +103,7 @@ test('atlas failure leaves the relationship alternative available', async ({ pag
   await page.goto('policy-map/');
   await expect(page.getByText('The interactive map could not load.')).toBeVisible();
   await expect(page.getByLabel('Policy grouping')).toBeHidden();
-  await expect(page.locator('[data-policy-map-relationship]')).toHaveCount(96);
+  await expectCompleteRelationshipList(page);
 });
 
 test('no JavaScript hides enhancement UI and preserves the complete relationship list', async ({ browser }) => {
@@ -101,6 +112,6 @@ test('no JavaScript hides enhancement UI and preserves the complete relationship
   await page.goto('policy-map/');
   await expect(page.getByLabel('Policy grouping')).toBeHidden();
   await expect(page.getByLabel('Interactive policy relationship map')).toBeHidden();
-  await expect(page.locator('[data-policy-map-relationship]')).toHaveCount(96);
+  await expectCompleteRelationshipList(page);
   await context.close();
 });
