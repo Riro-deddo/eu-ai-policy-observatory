@@ -54,9 +54,9 @@ def payload():
 def test_seven_admissions_remain_verified_after_st10069_admission(payload):
     """Catch an omitted upgrade, an unauthorized hold upgrade, or a route-count change."""
     documents = {row["id"]: row for row in payload["documents"]}
-    assert len(documents) == 192
+    assert len(documents) == 218
     assert payload["coverage"]["historical_review"] == {
-        "verified": 188,
+        "verified": 214,
         "legacy_review_pending": 4,
     }
     assert {identifier for identifier, row in documents.items() if row["historical_review_status"] == "legacy_review_pending"} == HOLDS
@@ -168,7 +168,7 @@ def test_c2023_request_uses_exact_jrc_locator_and_explicit_repeal(payload):
 def test_rev1_edges_use_exact_evidence_and_unsupported_init_edge_is_quarantined(payload):
     """Catch restoration of the mismatched INIT assertion or loss of REV1 lineage."""
     relationships = {row["id"]: row for row in payload["relationships"]}
-    assert len(relationships) == 115
+    assert len(relationships) == 125
     assert "ai-act-council-third-part-one-revises-second" not in relationships
 
     predecessor = relationships["ai-act-council-third-part-one-rev-1-revises-second"]

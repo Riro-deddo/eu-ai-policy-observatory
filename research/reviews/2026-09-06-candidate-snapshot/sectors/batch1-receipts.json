@@ -1,0 +1,130 @@
+[
+  {
+    "name": "drones.pdf",
+    "url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET%282013%29410220_EN.pdf",
+    "retrieved_at": "2026-09-06T22:50:31.925442+00:00",
+    "status": 202,
+    "final_url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET%282013%29410220_EN.pdf",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "cedefop.pdf",
+    "url": "https://www.cedefop.europa.eu/files/9121_en.pdf",
+    "retrieved_at": "2026-09-06T22:50:31.925442+00:00",
+    "status": 200,
+    "final_url": "https://www.cedefop.europa.eu/files/9121_en.pdf",
+    "content_type": "application/pdf",
+    "bytes": 637285,
+    "sha256": "10baf74561554053c5d381bd5951303a6a0e7098c713e2628597c18cb61de38d",
+    "pdf_pages": 4,
+    "pdf_metadata": {
+      "/Author": "Marena Zoppi",
+      "/Client": "4.6.0.1",
+      "/Company": "DIaLOGIKa",
+      "/Created using": "EL 4.6Build 22234",
+      "/CreationDate": "D:20170809165122+03'00'",
+      "/Creator": "Acrobat PDFMaker 15 for Word",
+      "/ELDocType": "pub.dot",
+      "/EL_Author": "Marena Zoppi",
+      "/EL_Language": "EN",
+      "/EurolookVersion": "4.6",
+      "/Formatting": "4.1",
+      "/Keywords": "EL4",
+      "/Language": "EN",
+      "/Last edited using": "EL 4.6Build 22234",
+      "/ModDate": "D:20170809165210+03'00'",
+      "/Producer": "Adobe PDF Library 15.0",
+      "/SourceModified": "D:20170809134735",
+      "/TemplateVersion": "4.6.0.1",
+      "/Title": "",
+      "/Type": "Eurolook Publication"
+    }
+  },
+  {
+    "name": "cedefop-page.html",
+    "url": "https://www.cedefop.europa.eu/en/publications/9121",
+    "retrieved_at": "2026-09-06T22:50:31.926441+00:00",
+    "status": 200,
+    "final_url": "https://www.cedefop.europa.eu/challenge?return=%2Fen%2Fpublications%2F9121",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 10316,
+    "sha256": "a5712e626ef44b203f514da1697f520e985e11782204aea586fb20ddb416d847"
+  },
+  {
+    "name": "osha.pdf",
+    "url": "https://osha.europa.eu/sites/default/files/2022-04/Advanced%20robotics_AI_based%20systems.pdf",
+    "retrieved_at": "2026-09-06T22:50:31.926441+00:00",
+    "status": 200,
+    "final_url": "https://osha.europa.eu/sites/default/files/2022-04/Advanced%20robotics_AI_based%20systems.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1788875,
+    "sha256": "e98a5e22a7143e63262531fa44db97bd1fe6b82e19d83d4d7879101b0d2a098a",
+    "pdf_pages": 71,
+    "pdf_metadata": {
+      "/Author": "Rosen, Patricia Helen",
+      "/Comments": "",
+      "/Company": "",
+      "/ContentTypeId": "0x010100FBB7D71BE66A6C40ACCF24D197A44235",
+      "/CreationDate": "D:20220408122715+02'00'",
+      "/Creator": "Acrobat PDFMaker 20 for Word",
+      "/Keywords": "",
+      "/ModDate": "D:20220408123108+02'00'",
+      "/Producer": "Adobe PDF Library 20.5.106",
+      "/SourceModified": "D:20220408102622",
+      "/Subject": "",
+      "/Title": ""
+    }
+  },
+  {
+    "name": "osha-page.html",
+    "url": "https://osha.europa.eu/en/publications/advanced-robotics-artificial-intelligence-and-automation-tasks-definitions-uses-policies-and-strategies-and-occupational-safety-and-health",
+    "retrieved_at": "2026-09-06T22:50:32.030647+00:00",
+    "status": 200,
+    "final_url": "https://osha.europa.eu/en/publications/advanced-robotics-artificial-intelligence-and-automation-tasks-definitions-uses-policies-and-strategies-and-occupational-safety-and-health",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 131693,
+    "sha256": "b8daa783264c714b7207077963b07a7a2e92aaca2a36137634d2887c3e55792a"
+  },
+  {
+    "name": "jrc.pdf",
+    "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC126302/jrc126302_ai_uptake_in_smart_mobility_2021_final.pdf",
+    "retrieved_at": "2026-09-06T22:50:32.341976+00:00",
+    "status": 200,
+    "final_url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC126302/jrc126302_ai_uptake_in_smart_mobility_2021_final.pdf",
+    "content_type": "text/html",
+    "bytes": 244,
+    "sha256": "aa3291372c76bed0d43c13abcf9bc65163cb040f7abd42fe0b08b53e9742030a"
+  },
+  {
+    "name": "jrc-page.html",
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC126302",
+    "retrieved_at": "2026-09-06T22:50:32.557829+00:00",
+    "status": 200,
+    "final_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC126302",
+    "content_type": "text/html",
+    "bytes": 244,
+    "sha256": "e87da2b805478db7ee4be8b500864467ef48c31e9becd0644ba0aa0b27e60999"
+  },
+  {
+    "name": "ethics-page.html",
+    "url": "https://op.europa.eu/en/publication-detail/-/publication/89624e2c-f98c-11ea-b44f-01aa75ed71a1/language-en/",
+    "retrieved_at": "2026-09-06T22:50:32.806348+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/en/publication-detail/-/publication/89624e2c-f98c-11ea-b44f-01aa75ed71a1/language-en/",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 441502,
+    "sha256": "f8165dde155d182eb47d7dccf83a7fcc79bbcd5f4920c7683cea145a2802a28d"
+  },
+  {
+    "name": "border-page.html",
+    "url": "https://op.europa.eu/en/publication-detail/-/publication/c8823cd1-a152-11ea-9d2d-01aa75ed71a1/language-en",
+    "retrieved_at": "2026-09-06T22:50:32.833347+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/en/publication-detail/-/publication/c8823cd1-a152-11ea-9d2d-01aa75ed71a1/language-en",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 455841,
+    "sha256": "d88ad325f26ac9f2eba97aa71c8fbf82ecb53d06b6764ddf072654344268d033"
+  }
+]

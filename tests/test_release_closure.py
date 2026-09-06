@@ -28,8 +28,14 @@ def test_release_review_ledgers_resolve_to_preserved_records_and_sources():
         assert row["unresolved"] and row["reopen_when"]
     for row in candidates["decisions"]:
         candidate = inventory[row["candidate_id"]]
-        assert candidate["decision"] == row["decision"] == "pending"
-        assert candidate["document_id"] is None
+        assert row["decision"] == "pending"
+        assert any(previous["decision"] == "pending" for previous in candidate["decision_history"])
+        if row["candidate_id"].startswith("ep-ai-act-committee-amendments-"):
+            assert candidate["decision"] == "included"
+            assert candidate["document_id"] == row["candidate_id"]
+        else:
+            assert candidate["decision"] == "pending"
+            assert candidate["document_id"] is None
         assert (row["official_source_url"], row["pdf_sha256"]) in source_pairs
         assert re.fullmatch(r"[0-9a-f]{64}", row["pdf_sha256"])
         assert candidate["decision_history"][0]["decision"] == "excluded"

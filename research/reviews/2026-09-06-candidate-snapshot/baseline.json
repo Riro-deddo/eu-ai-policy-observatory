@@ -1,0 +1,1274 @@
+{
+  "pending_before": [
+    {
+      "id": "hma-ema-llm-guiding-principles-2024",
+      "decision": "pending",
+      "decision_reason": "Reconciliation of the bounded omission search, not an assertion of nonexistence. Full official 10-page PDF was retrieved and its cover establishes issue on 29 August 2024. Publication on 5 September 2024 is corroborated by indexed official EMA catalogue/announcement evidence, but direct release-page retrieval returned 429. Parent-level source preservation, publication evidence review and canonical admission remain incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 2, for exact official URLs, locators and retrieval limitations. Timestamps here record inventory reconciliation, not reconstructed first discovery.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "ema-fda-good-ai-practice-drug-development-2026",
+      "decision": "pending",
+      "decision_reason": "Reconciliation of an identified joint EMA/FDA work. The official FDA co-author's complete two-page PDF and official release bulletin were retrieved, establishing January 2026 issue precision and release on 14 January 2026; EMA's document-specific indexed catalogue agrees. Direct EMA PDF retrieval returned 429. Parent review of the EU manifestation, institutional roles and permitted official co-author corroboration is incomplete; byte equivalence was not tested and the agency manifestations differ in spelling. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 3, including https://www.fda.gov/media/189581/download and https://content.govdelivery.com/accounts/USFDA/bulletins/4045c84. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "draft-gmp-annex-22-artificial-intelligence-2025",
+      "decision": "pending",
+      "decision_reason": "The complete official six-page consultation draft and its Commission consultation page were retrieved. The page establishes consultation opening on 7 July 2025, while no exact printed document issue day was found; 1 July dates a separate privacy statement and must not be reused. This is a draft, with no final adoption verified. Parent review of the consultation-release fallback, precise drafting/publishing roles and canonical admission remains incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 4, and its linked official consultation/date locators. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "eiopa-big-data-motor-health-insurance-2019",
+      "decision": "pending",
+      "decision_reason": "Complete official 68-page report was retrieved; identifiers and substantive AI/ML analysis are verified. Imprint establishes 2019 but not an exact issue day. Official indexed contemporaneous announcement and press release establish publication on 8 May 2019, while a later catalogue displays 19 June 2019; direct announcement/press-release requests returned 429/403. Parent review of publication evidence and its distinction from later catalogue metadata remains incomplete. Filename April2019 is not independent issue-date proof. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 6, for exact official release URLs and printed/PDF page locators. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "eba-ai-act-mapping-letter-2025",
+      "decision": "pending",
+      "decision_reason": "Complete official nine-page letter and substantive mapping annex were retrieved. Cover gives reference EBA/2025/D/5384 and issue on 21 November 2025; signature identifies the EBA Chairperson. Publication metadata remain discrepant: indexed correspondence archive lists 21 November, whereas general EBA result lists display 20 November. Direct archive retrieval failed. Parent review must preserve or resolve that discrepancy and distinguish this letter-plus-annex from the separate summarising factsheet; neither Commission recipient is a co-author. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 7. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "ecb-ai-financial-stability-special-feature-2024",
+      "decision": "pending",
+      "decision_reason": "Complete official HTML article, ECB release announcement and Governing Council publication-authorisation record were successfully retrieved. The article identifies the May 2024 FSR; actual volume release on 16 May 2024 is independently established. The 8 May authorisation is not substantive adoption, and 10 May dates the authorisation webpage. Parent review of article-level dating, named authorship, work/part treatment and canonical admission remains incomplete; this pending decision is not a missing-full-text finding. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 8, for exact primary date URLs and locators. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "ema-2024-ai-observatory-report-2025",
+      "decision": "pending",
+      "decision_reason": "Official indexed PDF cover identifies EMA/76534/2025 and issue on 8 May 2025; the document-specific EMA catalogue entry gives first publication on 10 July 2025. Direct full-PDF retrieval returned 429, so full primary text, exact institutional roles and independent admission remain unverified. Activity year 2024 is not publication year. The already included 2025 AI Observatory report is a different annual work; related 2024 compilation and horizon-scanning attachments require separate work/part assessment. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 9. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "decision": "pending",
+      "decision_reason": "Official indexed PDF first-page text and the document-specific EBA result list both give 25 September 2025 and identify the AI-adoption factsheet. Direct full-PDF requests returned 403. Full primary text, pagination, any further identifiers and parent canonical admission remain incomplete. The official Factsheet category should not be overridden by the listing description's generic use of report. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 10, for the exact one-result official catalogue URL and retrieval limitations. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "human-rights-drones-unmanned-robots-warfare-2013",
+      "decision": "pending",
+      "decision_reason": "Official Parliament identity, May 2013 issue month, 3 May 2013 publication record, external authorship by Nils Melzer and defence/autonomous-weapons substance are resolved. Direct parent capture of the official PDF returned HTTP 202 with an empty body, so no independently retained document bytes, media-type validation, byte length or SHA-256 exists. Pending until a non-empty official English artifact is captured and hashed; not approved for publication.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-border-control-migration-security-main-report-2020",
+      "decision": "pending",
+      "decision_reason": "Official Publications Office metadata resolves the title, references, May 2020 report month and 28 May 2020 release; the report identifies Deloitte as writer and DG HOME as commissioner/publisher. Repeated HTTP 429 responses prevented capture of independently retained English report bytes and a SHA-256. Pending source capture and hash; the exact canonical day must remain an explicit publication-date fallback rather than an invented internal issue day.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "people-machines-robots-skills-2017",
+      "decision": "pending",
+      "decision_reason": "Official Cedefop material resolves the July 2017 issue month, institutional authorship and employment/skills automation substance; Publications Office gives a 6 March 2018 release. No retained official English bytes or SHA-256 were captured in this bounded audit. Pending byte capture and an explicit decision to use the exact publication date as canonical fallback while preserving the month-only internal issue date.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "advanced-robotics-ai-task-automation-osh-2022",
+      "decision": "pending",
+      "decision_reason": "The official page resolves publication on 26 April 2022, the report references and substantive workplace/OSH AI scope. The credited external authors are Patricia Helen Rosen, Eva Heinold, Elena Fries-Tersch, Phoebe Moore and Sascha Wischniewski; EU-OSHA project managers are not bibliographic authors. The official PDF retrieval failed in the browsing layer, leaving no retained bytes or SHA-256. Pending successful official English capture and hash.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-watch-ai-uptake-smart-mobility-2021",
+      "decision": "pending",
+      "decision_reason": "AI Watch and Publications Office resolve publication on 15 September 2021, JRC references, authors S. De Nigris, J. Hradec, M. Craglia and D. Nepelski, and substantive AI-in-mobility coverage. No official English file was retained or hashed during the bounded audit. Pending byte capture, media-type validation and SHA-256 before admission.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ethics-connected-automated-vehicles-2020",
+      "decision": "pending",
+      "decision_reason": "Publications Office resolves the title, references and 17 September 2020 release, and the report is substantively about AI ethics in connected and automated vehicles. Admission remains blocked on two evidence items: retained official English bytes with SHA-256, and inspection of the PDF credit page to distinguish the independent expert group as substantive author from DG Research and Innovation as commissioner/publisher. Pending; no canonical document identifier assigned.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-defining-ai-2020",
+      "decision": "pending",
+      "decision_reason": "Official catalogue inspected; full English PDF, personal credits and publication correspondence require completion.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-defining-ai-2-2021",
+      "decision": "pending",
+      "decision_reason": "Official OP release29October2021 and second-edition description inspected; full text and version lineage review incomplete.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-public-services-2020",
+      "decision": "pending",
+      "decision_reason": "Catalogue inspected; full credit and exact-publication correspondence review incomplete.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-public-sector-workshop-2020",
+      "decision": "pending",
+      "decision_reason": "Workshop report lead; full manifestation/date review incomplete. Meeting11-12February2020 is not a publication date.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "council-decision-82-878-eec-esprit-pilot",
+      "decision": "pending",
+      "decision_reason": "Pre-1984 lead; full-text access failed and substantive AI/precursor connection remains unestablished. Generic information technology is insufficient.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "council-decision-2022-2269-responsible-ai",
+      "decision": "pending",
+      "decision_reason": "Incidental responsible-AI peace/security lead. Full title, dates and operative evidence review incomplete.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "eurohpc-ai-gigafactories-regulation-2026-150",
+      "decision": "pending",
+      "decision_reason": "Incidental AI gigafactories lead. Full title, institutional roles, publication and substantive review incomplete.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "gpai-provider-guidelines-c-2025-7719",
+      "decision": "pending",
+      "decision_reason": "Active-queue reconciliation, not new discovery/fresh publication verification. research/staging/2026-09-05-review-continuation/commission.json records19November2025 issue and unresolved exact publication. Distinct from JulyC(2025)5045ANNEX; do not copy July release date.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-board-harmonised-standards-report-2026",
+      "decision": "pending",
+      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-board-article-40-standardisation-report-2026",
+      "decision": "pending",
+      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-board-international-standardisation-report-2026",
+      "decision": "pending",
+      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732802",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.802v01-00 PDF recovered; amendments 310 - 538 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732836",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.836v01-00 PDF recovered; amendments 539 - 773 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732837",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.837v01-00 PDF recovered; amendments 774 - 1189 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732838",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.838v01-00 PDF recovered; amendments 1190 - 1580 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732839",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.839v01-00 PDF recovered; amendments 1581 - 2005 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732840",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.840v01-00 PDF recovered; amendments 2006 - 2355 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732841",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.841v01-00 PDF recovered; amendments 2356 - 2726 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732843",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.843v01-00 PDF recovered; amendments 2727 - 3019 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732844",
+      "decision": "pending",
+      "decision_reason": "Exact English PE732.844v01-00 PDF recovered; amendments 3020 - 3312 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review"
+    }
+  ],
+  "base_commit": "39c715948ee67d7071383c02b813d85c13b64c12",
+  "document_hashes": [
+    {
+      "sha256": "e6b620868d48da89f06b007abb4d3bb3587785058700ee69d736e679fdcbf1b8",
+      "id": "ai-act-consolidated-2026-07-27",
+      "lf_sha256": "a0756e3db4d1ab60bf48336ea505ab2b21d0d802fcfb72f4108ae317e6470535"
+    },
+    {
+      "sha256": "4748a860c50ba007f6ace5785e7e639b834a3e5ea2c0e2e0d4175bced08554b0",
+      "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "lf_sha256": "e8a3907bf0f6d85583b50060ac3a6f176508b3c6c01eb47a7142b394aaddc6a0"
+    },
+    {
+      "sha256": "132e9faff8d086fde369637bbc3731e4615619f7198ae85283c384d02c31cf55",
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "lf_sha256": "22207c9d0a2f569f8f28be3838256fc3550ba3d61e078c84291a65f3d7234f6d"
+    },
+    {
+      "sha256": "1dff41fc3162bbe35ee77463c8bc51f6d8085ba746c69dc27cea23f3c093356e",
+      "id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "lf_sha256": "2bc74c929ec5b8725be49d36f310619593f931e903942a9d57aaedfe829de622"
+    },
+    {
+      "sha256": "6320cdae0a84e6c7b5cdc1ae5ca555d03856a4ad055f9f50754aadc97b6ed8fe",
+      "id": "ai-act-council-final-compromise-st-13955-2022",
+      "lf_sha256": "d9d63da7f10549ef369e26f22668c9bdfd4c6b3214e8248a96e41605c259f1ef"
+    },
+    {
+      "sha256": "c93322207d8764939a3b07a1efd1c4e2cd9d476d1262f0803276cca95bd3e89f",
+      "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "lf_sha256": "2ea0c365e57d3f2cbed15bc006b6060dd6870cafec7d1150d08e73f7e944c2c3"
+    },
+    {
+      "sha256": "90b30e31b364fe83272375d5b067399c0456bd795019b03bd7f029d3b9beee6d",
+      "id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "lf_sha256": "77be8a76037e8ac479cf8cd0a701e32a40d1d5022ceabb5a2dd21dc9988ff624"
+    },
+    {
+      "sha256": "0d09160d9d7396459da6c9d7b301d39369411fa16e1297d2cc07028c5cbd0734",
+      "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "lf_sha256": "c242e9994232b785f06bf810f9567131d0696661835e63b76335b501da31a7d6"
+    },
+    {
+      "sha256": "09bec73db65b48e70309e1f35794cd4a75e2991583afe50e7f4b941881a56f5e",
+      "id": "ai-act-council-general-approach-st-14954-2022",
+      "lf_sha256": "29f8dabf29273f896119bce0283779c43d02a4451683688520ee0b51740b266d"
+    },
+    {
+      "sha256": "90b3f3c2e64ab1025e4d34db29f2fa54a09bae1b8fd3efe4540755508e900d40",
+      "id": "ai-act-council-general-approach-st-15698-2022",
+      "lf_sha256": "99994201b6232c2a13ed7ad1907be00f7a88b333c499c7f951988c44f325dbfa"
+    },
+    {
+      "sha256": "094ea87614c2831c729016837dd6b1d784d4d7ac1964c2c763592209de91db3f",
+      "id": "ai-act-council-second-compromise-st-11124-2022",
+      "lf_sha256": "9c2743b1e42233204d80408c38668710a8d022028984cfcce84b74c0cc570141"
+    },
+    {
+      "sha256": "06e71b06b9745b22833807e79189601405aef2dc00ab2a290e77eddd5b667fcd",
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "lf_sha256": "0b75733d0e304810e1549c2aa4a6fca3c55894c423fad8347603ef973f059aa3"
+    },
+    {
+      "sha256": "14b55431f790005ffe5a81e24cdafdfceaef9024d372741c2465a7f2981b7b36",
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "lf_sha256": "f66ae1a043a8fb779d0ba0df07e065172a210d81c3af0c30bf05a2c8dd9238d5"
+    },
+    {
+      "sha256": "fe41d0194b4ff651b10730279fece3347b2a50b2e486ac8f80285c4268e1db16",
+      "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "lf_sha256": "ed59b2287658508b23a28c164e3854f3e36725091e6c148ec5aee670c3942123"
+    },
+    {
+      "sha256": "36154e55b50d429ea34f6f85944856726100319067c6d8a3f9797eb6f7ff2426",
+      "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "lf_sha256": "90e0b444140e7de35dc516410c6dcdee86f9b31fcd9a5d85a7ccac90480201e8"
+    },
+    {
+      "sha256": "8cca58adf420dcf5d09fa4af9ad4e9da4de71bda3d7f19b6add4e69d1d3962f4",
+      "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "lf_sha256": "274ba0a498e250e7cbd86b82199d6204b803bb571f0e075998c72ec7afe25008"
+    },
+    {
+      "sha256": "0f6aee378c08c87ac27bd1d9f0358e62fe36d98411a10205fae74a082c26e2f7",
+      "id": "ai-act-impact-assessment-swd-2021-84",
+      "lf_sha256": "9ba4348b7847c60562b4371e79cb33de2e3e2b1960b5029af4cbc8f0291b5af7"
+    },
+    {
+      "sha256": "ea5b2d829205760174c8d927ee7c28281cffd2090c77de4ad88e182649fe0c01",
+      "id": "ai-act-pe-cons-24-2024-rev-1",
+      "lf_sha256": "e7fd641087f257abe2d140ed05a24cf909f2e9d6f3f9ba0b4467f44ce0c3a826"
+    },
+    {
+      "sha256": "98938fc9333fe3e1dc1e70620520de2dc86871ab045e3b87f752d362e380c06e",
+      "id": "ai-act-pe-cons-24-2024",
+      "lf_sha256": "fd936f9da0466dcc7e2eea1849dca37a308c1377a8d35761cfaeb97e3087c351"
+    },
+    {
+      "sha256": "11f60789ba2a6f069c3322a6cf8cfeb5d51aee4197de5676e7f479b06294dedb",
+      "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "lf_sha256": "a5892202b2ea7d403b5c7606f660cf5b5a41c0323bbd139643448d71e4f47c15"
+    },
+    {
+      "sha256": "b546c5c5f30cf678a0a45fb370b1460c5e3e81b64542cd4fe7a6ff962839459c",
+      "id": "ai-act-proposal-annexes",
+      "lf_sha256": "36d29497af9dc44782bdebc41cb1ef52cae81ac935e81ac36326f0be6d96584a"
+    },
+    {
+      "sha256": "288afe45a74fa8a6f42a7a42d0f152f44ce9dfc60983ad6f3857e89cc676a90b",
+      "id": "ai-act-proposal",
+      "lf_sha256": "f4762afaa392dc38bf32ddf965f0ae7e620c453a5930d25c20cd02314609478b"
+    },
+    {
+      "sha256": "50cccc039da75a4eed68b4a16d73a2d3d2612f04182cb5381e8b14db7b2c211d",
+      "id": "ai-act-provisional-agreement-st-5662-2024",
+      "lf_sha256": "e2a97eb97c5d4ba5d553010ed89b94b3022ede5c4cc23abac14b014e00c807b1"
+    },
+    {
+      "sha256": "36fcf6a4e7b688616396cbd1c3d423d298cd336086d670069d8947f31bc6e056",
+      "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "lf_sha256": "14082408e72eca89114395c8de69e9d43c50532b0bc35b44f05301e02012f64d"
+    },
+    {
+      "sha256": "f8bcec6ef596c7fe2e5496afd1a96108a93813fca7150ce03356b315af572d25",
+      "id": "ai-board-assessment-gpai-code-2025",
+      "lf_sha256": "1bfd826f37ab54c09a7947087c17ccb92f03fc69be34c3be31199ec3520a4b14"
+    },
+    {
+      "sha256": "64bf896df7a93ebd9944a64b3f97fedf793e8b20547ed63a87960bd8cac22410",
+      "id": "ai-board-assessment-transparency-code-2026",
+      "lf_sha256": "40c0ebe1058a24758d69e6351973e26c579b2c03dd5749728067dc9f5e9c2669"
+    },
+    {
+      "sha256": "793eb699d982c76f28d4e21bc8b8df12f92e05d09df3c0baf9c3d6bdcb95727b",
+      "id": "ai-continent-action-plan-annex",
+      "lf_sha256": "4bb0e6ce21b4fd94bb2a73d39d4e65754178e278450cb2c8fa306d71b0842cfc"
+    },
+    {
+      "sha256": "e13d48c7b466a64f09d40f5a6e26e0addd68d925fd42af88ed56afabe918298b",
+      "id": "ai-continent-action-plan",
+      "lf_sha256": "e2db507ac16bb3b7916617be666c498dfe54ed01f56d0629db7a3580944c245b"
+    },
+    {
+      "sha256": "1084bad61e05dfff8fa01fc3540df3790baa13aca8a28f6b596e0d55d2bcda0c",
+      "id": "ai-liability-directive-proposal",
+      "lf_sha256": "b1944c5f2f3a30442ba063fb626fe4979d023777059293eccdf2731b8ea9da9b"
+    },
+    {
+      "sha256": "37f30eeda2ec4cb6a89ad3bc02bfb5c1deb49edda65f2d292ce329f519a2c134",
+      "id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "lf_sha256": "c77df317641aacd21ac05efb7d54c35fb6fb1106d02f87d7605b66af9cc977b2"
+    },
+    {
+      "sha256": "7009f434ff2e8ba26ef3840f4f44bcfa418f69b048fcfe22def62018b1ab58f2",
+      "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "lf_sha256": "43d85f5cba7e17e7a6f55f0479bd550c1932356e9e907e3c683e4855fa5529ed"
+    },
+    {
+      "sha256": "6ba351bed2a7327534527d18ef26976174f42f194e58f5acb03ca903cbba7a54",
+      "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "lf_sha256": "2f4cbcb82a835914aad56fe9196a17a8260f5db4922bb3edb89af1011bd28821"
+    },
+    {
+      "sha256": "421770c5b9f9238f3621f0c6d29998cda09c878f000496862fee2be5fac182c0",
+      "id": "ai-omnibus-council-information-note-st-10599-2026",
+      "lf_sha256": "61b45a203c473e020cf625a6071ac3331bd251cd65b2dde24a4bbb681d3e49b3"
+    },
+    {
+      "sha256": "e23a2ec7860808cf9bd32438f7cbf212cf0bdcabe1a3b6694f218eb70e4ef082",
+      "id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "lf_sha256": "c1ae6f3512b61466bd2def5d0d982e645974c844ef4768e4d60f7e069af5ef62"
+    },
+    {
+      "sha256": "2c7a7111c595303dc6b4c0dc88ce3ed7de749596fc3ffc508a3162dd7afd8681",
+      "id": "ai-omnibus-pe-cons-30-2026",
+      "lf_sha256": "cf79d03793e081690b6d2614bbc46f6dd0ac960aca174e59b5f101679bd81ae6"
+    },
+    {
+      "sha256": "22ce94ce5f7e9f58f59ffb714f08453a2ef5bbb8de463b507f6215f456e4e7c1",
+      "id": "ai-omnibus-proposal-2025",
+      "lf_sha256": "849aff854f9bb8ca57a2f7996a7c394a045bd791f3c7044d5ee3c002a81103d4"
+    },
+    {
+      "sha256": "b04cf910c333b31649cfa9e80a46d2969061733a41a0589fadf5f2ef7db4e73c",
+      "id": "ai-omnibus-regulation-2026-1744",
+      "lf_sha256": "b08ee3c6ddce20a903ac4d308801d55cf4aad63a68f87672f3b45af7d30ae7e0"
+    },
+    {
+      "sha256": "30e91fab34131bc3b98db04029259ba879c81aa5617eac22b7c528833f10c181",
+      "id": "ai-omnibus-staff-working-document-2025",
+      "lf_sha256": "e0e3c73d76486e8a67809b2f0400eef5d66a1e7347ed38a0bc7f1b5a45af997e"
+    },
+    {
+      "sha256": "df41ae0079870b94d96533bfd69e9b899b0bbd3bfadf5ef14dfee1ab1ea552f3",
+      "id": "ai-standardisation-request-c-2023-3215",
+      "lf_sha256": "d78015bd3eaf5552a6072460069cab4bd2ab1905010dda322b5b8c417fc42c32"
+    },
+    {
+      "sha256": "23ce2d1c105415529cd327657aa832846a2480ad603a21e13694daf54aec9243",
+      "id": "ai-system-definition-guidelines-2025",
+      "lf_sha256": "e027a0d8ef80fc0d9c3d2a87656b5625de2c501c07d242008ffa0d350512a46d"
+    },
+    {
+      "sha256": "724cae1700f614337140b020b78281069fdba04b82755d5e69df06cdd04cbb98",
+      "id": "ai-system-definition-guidelines-approval-communication-2025",
+      "lf_sha256": "73547076432b373bf4ec7d2aff3f1778920e6f0c9731eb80d67b0865adb9b932"
+    },
+    {
+      "sha256": "6521749cc7edab6e99a30f987661886420d80a5af7e8aeeb41370f8698800de0",
+      "id": "altai-assessment-list",
+      "lf_sha256": "aa2a102b728b92f99336e837b58ac4e14da1923b33e346d521c6aa947a8539be"
+    },
+    {
+      "sha256": "e3e64c96722d0b1bca5e2fac8ed3f6686980d8ff3bfea8840216cf0b717abb86",
+      "id": "apply-ai-strategy-annexes",
+      "lf_sha256": "b88e45fc0ab8a6ce6eb445f577195b3c9da716dbb3ecd605bf0f052a5456a675"
+    },
+    {
+      "sha256": "5875136c1627a4516e651a5af5840b96a670aa0d2be92c4d20f7d299192ee848",
+      "id": "apply-ai-strategy",
+      "lf_sha256": "a77119c57f2a6bbe298e1e1643a310d0d63c1d4eeeee01f8377cb3c43a40894e"
+    },
+    {
+      "sha256": "76b0025277c7b5259f62079df6cb13d1098b25ab93d836e6b14fdba5c56e8174",
+      "id": "artificial-intelligence-act",
+      "lf_sha256": "cbb98dc176f64058368cd800457e0e571078826eaf7f37d9910bcb6061840412"
+    },
+    {
+      "sha256": "ff466541f758b1a340f38443abcc59f42cfa83982389f78ee2662ae422c981a4",
+      "id": "artificial-intelligence-for-europe",
+      "lf_sha256": "bcd14e15dadfd54cf03243957992e4881bbf277f9e52380025a5a4fc69044f1a"
+    },
+    {
+      "sha256": "6dafdb1f0e5b7104728a87145e2ca120b5100cc30678ab63b851219ce63ee206",
+      "id": "boosting-startups-innovation-trustworthy-ai",
+      "lf_sha256": "a25e1034f2772ec19068cfe2bcfd9559649b47ae121f1ea8225493890ccaeda7"
+    },
+    {
+      "sha256": "5a384a89643696310c3c1cbf9e933dd943bb06a236712e204d8885905295faba",
+      "id": "building-a-european-data-economy",
+      "lf_sha256": "dafc9696855148cffa50630076382603d220c3f513f71d08b87b628da3903952"
+    },
+    {
+      "sha256": "6f76360b2def701aa70651ebf24998f2942b501c63c9fe97af9acdc2cfd8b54c",
+      "id": "building-trust-human-centric-ai",
+      "lf_sha256": "efe5fb00acedfcd34df6282db18fcfaaf95a8faf86b698599599e90f9a9ac31e"
+    },
+    {
+      "sha256": "fecb5bf02df614ed7db6c4ef2012b12bcc3a06454ae0a64dc1c5725dcf21eb8b",
+      "id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+      "lf_sha256": "7b48f6922b3b44f0c708973802f1e96a72de26698165d5e129f6668d98c21d19"
+    },
+    {
+      "sha256": "9c2f7464c0c173d1d3e13da525c3ef4d0639644f6dd11df2100ddf7119ba1fa2",
+      "id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "lf_sha256": "2df1775c57f56c83a09b884e215ec44f7224ded0098888ba056f3c6daacd8de3"
+    },
+    {
+      "sha256": "f4da192f00b72682339e1d4400bb4d12de63284aa0ad2363db35c22513464360",
+      "id": "civil-law-rules-on-robotics-resolution-2017",
+      "lf_sha256": "8f6f37de10f8bff554622987ea6934e3dc4998916fdc430486e62ea73517c5f3"
+    },
+    {
+      "sha256": "17c5d8027ae0d1d91e980f4dfe2378c46c29b982057a5c5a70b442165be163a7",
+      "id": "commission-ai-act-article-112-review-2026",
+      "lf_sha256": "3ca444e2361b34872ad1e271a66e2dc8b197173c2984f988a2a2ce6bcb449ff1"
+    },
+    {
+      "sha256": "2d3594f64a5ddcc06c3786f6fa6c16e633395c3be9b05a81297cc009d62d3e32",
+      "id": "commission-ai-science-strategy-2025",
+      "lf_sha256": "638180258a11e2f3ce1fa7861446c714e7818a6c4c826503b61338ad26dd7940"
+    },
+    {
+      "sha256": "67505059e092556e6bec91d837c3c85bc101e9a3b4de15095a3e67868d11e2fe",
+      "id": "commission-decision-ai-office-2024",
+      "lf_sha256": "796bacd7397441a7e976955b604a3264e506f580eb2939c62f7096dcd71e2a71"
+    },
+    {
+      "sha256": "1af8b6696d861931ab2696d53b6be69bc05a58ed5cfa19aa18c765cbece19184",
+      "id": "commission-opinion-gpai-code-2025",
+      "lf_sha256": "56f37f7a5081b27cabfde804acd2233bacc2c594eb3e7d0c48a2271ec0930f4b"
+    },
+    {
+      "sha256": "06b9d7c8d9b5f21aaf7ccc8396710dacbc513b7434f36b782b324296a1cc235d",
+      "id": "commission-opinion-transparency-code-2026",
+      "lf_sha256": "27dda085d96ada11553fea7b2957969c41ab5f5bb65488b967818bbab6076a97"
+    },
+    {
+      "sha256": "3775662b31256ce724f08c05123d76c6d80d18b67ce3a82e9ff0bf3cb87a2a12",
+      "id": "coordinated-plan-2018-annex",
+      "lf_sha256": "a7fa10a8089128115bbe83956ef3f773c130e26f09149c98249ca939d2ee3eba"
+    },
+    {
+      "sha256": "33555cb2935df3c376adca95e05038904615d82f1b98700071f038fc917770be",
+      "id": "coordinated-plan-2021-annex",
+      "lf_sha256": "39d69fab730e79bd8b1be08d641edc71a7000ebcda639057f304789dde2147b3"
+    },
+    {
+      "sha256": "f71ddbc9d5e9adc7cbbf7bfdf0b35566643a63933907aeadb09b478ed04e974d",
+      "id": "coordinated-plan-2021-review",
+      "lf_sha256": "b766582691c947a1783581ce3369235736b9485e8fc476af02d1422b8d0584c6"
+    },
+    {
+      "sha256": "12a6ef00a70097014e9e3961f471947379807323fa98e642e29b003e166c6a30",
+      "id": "coordinated-plan-on-artificial-intelligence",
+      "lf_sha256": "6369060cb71107a421a49ab92412be6c82dfe39529697d028948e0fb22b61ad9"
+    },
+    {
+      "sha256": "f739930115c455838c8c0c3d29c74b1b940a65532d8988509d7dd69acd0a82a1",
+      "id": "cor-opinion-ai-act-2021",
+      "lf_sha256": "bbb5731e383c4af8937f7b112adf9d37b89ff146dd5e6377ef551a2940920c34"
+    },
+    {
+      "sha256": "890fd276eb097674f5927cc412802ff10e55b23869a5145beca1bd4913c3c9db",
+      "id": "cor-opinion-ai-omnibus-2026",
+      "lf_sha256": "a8af67d6290cbdd5882e1d66104c1a21d96c83c96c8e6f47b7e5ab2b9481fa0c"
+    },
+    {
+      "sha256": "3717ee021de1ac1865ba908fc75757fde3452060984a0fecef14891e5ca0836f",
+      "id": "council-ai-science-conclusions-2025",
+      "lf_sha256": "916733e77304bb964d602c1203de25697f73b28be16fb3aff0186567710c2fc0"
+    },
+    {
+      "sha256": "a2b434cf1405ea8b8b108f280bb76017f6d17cbdb6554f2200555b9743464700",
+      "id": "council-decision-84-130-eec-esprit",
+      "lf_sha256": "067b2b8167bed87526d3000a6474029315234557e0bc6955e3544322347622b8"
+    },
+    {
+      "sha256": "8345cf20dfdd350fb3c253b90541a3b7af6cae811762d49c0dfb9579f474683c",
+      "id": "council-decision-88-279-eec-esprit-ii",
+      "lf_sha256": "ab80d93ba55f79ee9f495c78a7b020ad4c5b21dbad611ecbd2d4068720438c7c"
+    },
+    {
+      "sha256": "2d2ac09c4c13ce93f20503d1c77363de9d7d52f0153a456c70caaeeba16f3475",
+      "id": "council-decision-88-417-eec-delta",
+      "lf_sha256": "a5485febdba92d7d69b0072ebd0b88a6a8fecc1c8d3f848ef5f6651cc1b9e66f"
+    },
+    {
+      "sha256": "9d1ab0a08a2767da7ac1ccc31f133d3873064555874177653094acec67eaacc7",
+      "id": "council-decision-89-415-eec-doses",
+      "lf_sha256": "5b8823b691ed78a6e64c634a406214a6c89144e6f2282d47127f310826d04ea8"
+    },
+    {
+      "sha256": "9680d9adcd4d2502f1a42c7a1920bffa154eda18c383d92ba73d26c1f3a1a446",
+      "id": "council-decision-94-802-ec-esprit",
+      "lf_sha256": "4bda653e596011f8eb3281259d7bda3ea090bd45538467b0b8b649207bbc2058"
+    },
+    {
+      "sha256": "965538aca1f3f7b0c056d6c5c95de105b8035840d05ed5459ed719b2da182fd4",
+      "id": "digital-europe-regulation-2021-694",
+      "lf_sha256": "44f6febf3727ff398415dd877793fd102a3d93d55d6b695f459f66748e15572e"
+    },
+    {
+      "sha256": "7fc7d584f1d3239f799e426b14eb74a8462bcb643231919a714a3b061b0684b0",
+      "id": "digitising-european-industry",
+      "lf_sha256": "b8318f6d80abcc5777bfb2a5128556160c9ddae5c2f622279b12fe03781ce18e"
+    },
+    {
+      "sha256": "241567df1effcb0c12a0967199275bdcbf19d14dfc1d6a3c74e9e3ba3dd327ea",
+      "id": "draft-guidance-serious-ai-incidents-2025",
+      "lf_sha256": "3a83352102825b636b5013a4b5f67223528b74b2cca915671bc7c4a11b9348b2"
+    },
+    {
+      "sha256": "7299ed13586a471d2cd3dccd93d6b22ef2445143be168a55d455ea97c5a62cdc",
+      "id": "draft-high-risk-classification-guidelines-2026",
+      "lf_sha256": "9a86dffaee4fe05a262777246fc0b47cc2301aa52f6a60a03fdb0e18037aa169"
+    },
+    {
+      "sha256": "67d78b8df863ba0ed40fb881efd522fcb0387a4fc649a45a8ddd42b96abb4781",
+      "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "lf_sha256": "4b206e88ff97b4143dde06de0f2697b4556d84ab156061212ac5c8df05195b09"
+    },
+    {
+      "sha256": "e34a03a9d1ed015a1fd9ce6bd6dca57b10cc7f01090e7a428410f5a251a3ab30",
+      "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "lf_sha256": "427c21f91da01eea4dc3191fc1f5e51756358dbf16b9a8eb3c43d39e3fd1ad2b"
+    },
+    {
+      "sha256": "5b352057e9f6c2e8f43acc83b4210e4ad739bfd9a4da7d54f6427e19365c1dfd",
+      "id": "draft-high-risk-classification-guidelines-consultation-work-2026",
+      "lf_sha256": "f684392cd1ea95bad023adf48f68b0f91cff12eaea30813c4178f45256c05097"
+    },
+    {
+      "sha256": "f1ce090497cbd71c7e00bee38396400335dda1b7a1735ffc8c9fa4195e0f0b41",
+      "id": "draft-serious-ai-incident-report-template-2025",
+      "lf_sha256": "19c018c798af6af3447ccbd9dd265df9f12cdc011064e2c7da43421d995ed853"
+    },
+    {
+      "sha256": "9c32e4b693d7863b70f36e2264f2dbf2e56cb04648cf348d6abfd529ccd71f1f",
+      "id": "draft-transparency-guidelines-2026",
+      "lf_sha256": "e5a1adf7dc254711dd536b354fc5fde8963b213ae4092a9e3c022407265426bc"
+    },
+    {
+      "sha256": "68af8acd268b6344caa1904e4e0229749440611de266a95dc8e0276263ca38b5",
+      "id": "easa-ai-concept-paper-issue-2-2024",
+      "lf_sha256": "86d108a29cfa19e92fa3fa0887881f8a4d4f641b93ae0661c09950f50c032717"
+    },
+    {
+      "sha256": "0699c18030035108484129b6f2b8bfdbd5e9bed9652e11108a90b4198537a1c7",
+      "id": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "lf_sha256": "ba4fafbdf34b2e5ba7b5a206d50167e5a431ca38844f7e2fcac4a860b10968ac"
+    },
+    {
+      "sha256": "90b17f443823c8574e5581d9127b560251d2bd3c9a7914a66731596467a2b7ba",
+      "id": "easa-ai-roadmap-1-2020",
+      "lf_sha256": "fcc85fdea37ebd216ddd160ab0e91715dc6ccf5b01c8c4ecbf0f8a65421997c2"
+    },
+    {
+      "sha256": "944eabd7d01f8b66ba21cec713f364297832e6295a2bc8260c1effcafd922793",
+      "id": "easa-ai-roadmap-2-2023",
+      "lf_sha256": "22bf13a081f63b9d272b44f3940700f13cf1f169797b51cc145fbf62958ad2e4"
+    },
+    {
+      "sha256": "1703e809690f74f060d96b373fe8e55428b0b8b10025f1cd8f518d79eaa74061",
+      "id": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "lf_sha256": "159f11ef8a696a6554872bc72b1043bf792694626bb2427482b15800650cfb31"
+    },
+    {
+      "sha256": "9958128edce79850a2421653f2af098401a4a7b71dd4956e1d7f06873149a101",
+      "id": "eba-follow-up-machine-learning-irb-models-2023",
+      "lf_sha256": "e69050b0bf8608235674cc336041b1068bd050e2bc1a9b96f6e409f64c68ee26"
+    },
+    {
+      "sha256": "ac7009def45f8a3a03b2fc2e37b9435f44df22c84c7749b6961b7d01be2719cc",
+      "id": "eba-report-big-data-advanced-analytics-2020",
+      "lf_sha256": "d97e812846260aafe6a1657f2e5d8663a22d24f457f7096943edec0e52668064"
+    },
+    {
+      "sha256": "fdb95a4b91867e50f16de7d3f067adf321f5841f094efa6b81067dbe59463aee",
+      "id": "ecb-opinion-con-2021-40",
+      "lf_sha256": "5b5b7f23587434fa25b6998cd593dc03007bb8636104977c221f5e9b05c60197"
+    },
+    {
+      "sha256": "2c229300939a9fee5d308dbd1e273a184c4c95506e06be974ba8fe56344792e3",
+      "id": "ecb-opinion-con-2026-10",
+      "lf_sha256": "a7634e851788e000c51460741b8c520ea04a108aa500bf95e9b4240a1d3a779e"
+    },
+    {
+      "sha256": "fe98a8a9fcbdba367fc9bf955446da7d9521f09bca8c9752b51834073a65f380",
+      "id": "ecb-technical-working-document-con-2026-10",
+      "lf_sha256": "fbae17fb9af1c953e8913dfa1d03a90f9ffbc3c302746f743a7c57e5de4fc9e6"
+    },
+    {
+      "sha256": "3311f3fa227e675b07ccf194fedc23c66bc181165d0af3f4d0418a22e7762284",
+      "id": "eda-card-public-report-2024",
+      "lf_sha256": "d6b37c09dddde53607d510f21de81468637d9fd1fe30a9d628d81365abe0fd79"
+    },
+    {
+      "sha256": "751373b10224edaf7851e6327423d2de56da516dc27b1934891e7b4a29d85033",
+      "id": "eda-trustworthiness-ai-defence-white-paper-2025",
+      "lf_sha256": "fe62d589c90995068f0c3e9f09d9796fd7622380a252f02eccb9ad89277b1c26"
+    },
+    {
+      "sha256": "17c120c1766c1922740564afc954065fe6a7cd6dbb4d8d3060b2290574eb7a40",
+      "id": "edpb-ai-models-opinion-28-2024",
+      "lf_sha256": "623d2533179cb98feefbee699fe9b2fa5ccf6748afa51cb1f081d9523d2e3432"
+    },
+    {
+      "sha256": "4cf964a3a976c4cd63ca0fd62df50fc9edd81f3228e083bac0e17993641e3747",
+      "id": "edpb-edps-joint-opinion-1-2026",
+      "lf_sha256": "3c5bdd5cc7f6e0b4976bd2497aa5359d9cc976e785253dfd740d5bc971c43ed4"
+    },
+    {
+      "sha256": "9177fa0f0987f615fc9586e6372607882c49e75f28347ab9d9ae073e15392ce2",
+      "id": "edpb-edps-joint-opinion-5-2021",
+      "lf_sha256": "f15f0e1da5d0c71a082c547eaee5215f3dc28e65f2bdcf8c3c075fc03989785e"
+    },
+    {
+      "sha256": "45f7cf04a46a0953b3124dc803a4ad127f64c24c1aa67989567f63dc530c5a49",
+      "id": "eesc-ai-consequences-2017",
+      "lf_sha256": "6859688f5826da5640724ca44b924b2dfc168a3be326cc6131fd4196b177e406"
+    },
+    {
+      "sha256": "abdebc7fabd5d13ea4e48abbb92b864c29006cf66820f5327a8782a0619ec204",
+      "id": "eesc-opinion-ai-act-2021",
+      "lf_sha256": "0f5481351952b17c724edcbbb9631c6bf17a689385b9ba2c0a4d7abd00481eb4"
+    },
+    {
+      "sha256": "9e369f3b73b4f5751c0e4375f6f45a93433646e551ce5cf33d3f4bbdac7e576c",
+      "id": "eesc-opinion-ai-omnibus-2026",
+      "lf_sha256": "0264ea125793dc4a0c71445a36fcdd82fe7859b10f34be98ca32af53643f96ae"
+    },
+    {
+      "sha256": "a134e22afd81eea5921f3c980c9aa4603150d8abe4df01171f105b581f4feebd",
+      "id": "eesc-opinion-coordinated-plan-2021",
+      "lf_sha256": "4107123f37e8c79d391d0836d312ae3d93db9cbab0e4ada6bf3ae7b2c65e3d86"
+    },
+    {
+      "sha256": "64f44b3f9522bd76ac6a07790e4adf39130e04e59c0755efbefb15c9aa05de09",
+      "id": "eiopa-ai-governance-consultation-2025",
+      "lf_sha256": "b924b6b142b01564f47b18b5391a6400bf254a666391c0db94500994a5ad93b1"
+    },
+    {
+      "sha256": "a24dd0b66c85cb83e1bd7f1943d4f503cdc0db32dfb4183e5695e7e9436b28b5",
+      "id": "eiopa-ai-governance-principles-2021",
+      "lf_sha256": "795a7ab6e6b59cc5927ab5cf7a63becc92606443c0e80f37326f93c89708d13d"
+    },
+    {
+      "sha256": "91247b26ff02893af5e8bf38810f91b4c4fa00ce3fb07377c213388089a9f5cc",
+      "id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "lf_sha256": "5f80873b475eba46383cb01d13b770f7f484a7efcdaa9d8fba0a98d397447d3c"
+    },
+    {
+      "sha256": "3c7a4073fc75b88b0e38d59183486c2aa1a1f0a5a5d641002641e36c70df3398",
+      "id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "lf_sha256": "dd716d6c966670979d7addee090b30ec19f9696b25908f7ae250caaaf22cdabe"
+    },
+    {
+      "sha256": "eff0d82de8347c2dac38012cb1f1e099bd8179bff570d80d8faecb9d27ece788",
+      "id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "lf_sha256": "28acfa22b321feeabea2bf4b2f4a06540947c855aa90fd85be630c78e58c919a"
+    },
+    {
+      "sha256": "9a7f492f5075ed4fbf73703e079c141d6d7cd9b63505e50bf16c79e2befc7dc0",
+      "id": "ema-2025-ai-observatory-report-2026",
+      "lf_sha256": "66ee00ded089decb48c0dbab4a988d23c78f6d4764e25427f12962020f9177e6"
+    },
+    {
+      "sha256": "26cf51521046260a80c7936d41fd0805be0e22e1d9adeb7535aaac25a129af7b",
+      "id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "lf_sha256": "626441f85f51d83db5733d4437a75fd4f540e0152d8f52c09dcb3fa8b4be97fd"
+    },
+    {
+      "sha256": "48386849ede3ef06baf57254ca1cb606673daeae3c45b8d5d0ecb69fb925caf7",
+      "id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "lf_sha256": "fec0041918a736085d512018f30f7ea2d4972dc9704a71ff87735fcf815510e6"
+    },
+    {
+      "sha256": "babc2d70e2b6a1e0e69224627a5b8a8c23d5b0b2a6141f06f547cd4969619008",
+      "id": "enisa-frontier-ai-cybersecurity-2026",
+      "lf_sha256": "bf08887a65e7b33116622e3133f2b0edf68f81b06cba1005e1741f39d5d1d252"
+    },
+    {
+      "sha256": "1a52e05c2f42ec0e4a2a44eb78a1e905cd462c2fd14243f295dc4cb95d2a3db9",
+      "id": "ep-ai-act-cult-opinion-pe-719637",
+      "lf_sha256": "dd944f7b9b9a3bcf69404a1b4d2282d23da7eb65a7a2ca89db6702d9f6149709"
+    },
+    {
+      "sha256": "a7c747f5321c9b42eae63ae80c4caf9b4aaacbbce9d530107c60d4fe9f0789f4",
+      "id": "ep-ai-act-draft-report-pe-731563",
+      "lf_sha256": "8d6d0c87540ceca9ad8c991556f2d98e94e10088c42e1bc0099c6d88052d3c0b"
+    },
+    {
+      "sha256": "5efb7ca52a8d8e7fd23ad31b1d69bfe4879e90e162c28d02f92bb3ca47ee8b04",
+      "id": "ep-ai-act-envi-opinion-pe-699056",
+      "lf_sha256": "fd8d0868d949b53fe7a144a53e1b897cda16afddc5dc0000941e5e1b18765620"
+    },
+    {
+      "sha256": "2757e6da8cde2a78387ba908fad6e1c1c709b6d43d14b3605930beaedc365317",
+      "id": "ep-ai-act-itre-opinion-pe-719801",
+      "lf_sha256": "9dac7160c6b143c101743b4934f626442641d31b2cf7688c9c33836c5b607f72"
+    },
+    {
+      "sha256": "46c7bfae8e5ecc31489861d99a29a5e20a941044f65a26dcacef741128564ee5",
+      "id": "ep-ai-act-juri-opinion-pe-719827",
+      "lf_sha256": "cf4e9b7ca7cf6873cf558fbb4673d23f92340671d9bc13c2cabfb791407a3f89"
+    },
+    {
+      "sha256": "278251cf84d22be8d2539df129c544776e061cd0ba4f3286d92a637a1c2131dc",
+      "id": "ep-ai-act-tran-opinion-pe-730085",
+      "lf_sha256": "7d2692394b200b83bb09a73fb0f9cc450c34c9862a3d5759a9399f59748d55f9"
+    },
+    {
+      "sha256": "dd8ee094b7a17884121593f62a4601757a44148d9e25b67b81f1456c21e08609",
+      "id": "ep-ai-civil-liability-2020",
+      "lf_sha256": "fdaf4aa68041d5839915dceb211005fc5552243ab10da99a172fa041812f5997"
+    },
+    {
+      "sha256": "5cbce35a9930854247c38731e4d4a4bb4ff43d52d5aa68864ce367bdbbad9cf6",
+      "id": "ep-ai-digital-age-2022",
+      "lf_sha256": "c487b8d6d06299c64e4ed49477ca1e485bdc17e86d075c569c458d0fc7f2fed8"
+    },
+    {
+      "sha256": "1d71548a85f2f5209f5385d123fc7c16a6ba0fc931e691dbd391e0ae9df13a14",
+      "id": "ep-ai-education-culture-audiovisual-2021",
+      "lf_sha256": "9fcdbb6b9d0a072a1e66d0afc2b173d0f010d8126187dd608e712c318e3d1fa4"
+    },
+    {
+      "sha256": "f50e6892a3035ecb8f3fb7fe21de2615fa6cc1e56d75a781c45588da894c4c10",
+      "id": "ep-ai-intellectual-property-2020",
+      "lf_sha256": "28599d5a16a2b1286a7b26755c9e863e4f25e232e2d094d718b89345c4bdb635"
+    },
+    {
+      "sha256": "84cae325940b672f2b0e69fa9b1780f36cd24409f876456ec2cc7c4489d9621a",
+      "id": "ep-ai-international-military-2021",
+      "lf_sha256": "5e3a55fc41e96f3d812139f24ba2e0d8461a3510e50a3e9d28a72c551d402f85"
+    },
+    {
+      "sha256": "36925bd44004a5fb03c6c6e8edd8c61df38f21da42868fe71b9cd3e3a096dac6",
+      "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "lf_sha256": "f29f80633f62ae4dd2006782582ff6e40343a9d82623c12f882e8bf704492592"
+    },
+    {
+      "sha256": "3a926d8776e04b9c071bc367b371558efa422852ad28ee8596aff43319c39b9a",
+      "id": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "lf_sha256": "464b4762f252dde88a01573ed2b30609c04b912c9ef8f4107a060203151a6c91"
+    },
+    {
+      "sha256": "c11251c2b13b7f6ce602a3557f82fff82f3beaec0ffe2a7f031e02e854451437",
+      "id": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "lf_sha256": "f8c37da39fc16109e9579e61e5d756a1b50a01b8a843f622d3d95d6f4c0a7e27"
+    },
+    {
+      "sha256": "bc9cad3aaedb8a25cc31179aa75fabe1a645bd88bc0dfff1cfa5e8d7de7e7055",
+      "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "lf_sha256": "9c7ee16b760744dbb4e519e3d702910efb8d22107405e4178f0b17881bb1c073"
+    },
+    {
+      "sha256": "c561bd6a5f6cb150060f2790a129cdde8e122cc2ecb061c1c651105d875c6528",
+      "id": "ep-ai-omnibus-report-a10-0073-2026",
+      "lf_sha256": "484c489a318c003f5d1d9cd42103aa99a85785c83804f631eae36fd412b4575e"
+    },
+    {
+      "sha256": "09a5b3257547d649a97fc9ad493de8e26c253381b1bd8d10d4e4a1c83eb74741",
+      "id": "ep-autonomous-weapon-systems-resolution-2018",
+      "lf_sha256": "22149ec88a1a7fdbe56d07c045c59b88e32a4f4b68469eccbb92faf87455c9a9"
+    },
+    {
+      "sha256": "41e9dfbcf9b9bf9d6feac7f436603f602250fbc38dad82ed19231a9491b4754e",
+      "id": "ep-ethical-cyber-physical-systems-2016",
+      "lf_sha256": "0bccdda3ac576faba21711b776e2f62e26c3027ce3daf710b580d9e32f8384a0"
+    },
+    {
+      "sha256": "050383c7c50b1393feec7ff9ae83188e56ad4abc4d70b40c5bef182641daa75f",
+      "id": "ep-ethical-framework-ai-2020",
+      "lf_sha256": "dcc430901bb7251be7c4dc186d7853d17fdbc7de25b045883c40f5813f4ada64"
+    },
+    {
+      "sha256": "495539807d22890d168336919acbd5a956918446c26fefa0404f10738d6d210f",
+      "id": "ep-joint-committee-report-a9-0188-2023",
+      "lf_sha256": "b9e83d5c44c09281e4434a4718c768826ac5043295a4a8290a9d5183dc25d51a"
+    },
+    {
+      "sha256": "cf078bd517d3faa93226ea8d3e2e4ed8ce1b21809d94cb4fdd70d57d25ea0ccb",
+      "id": "ep-position-p9-ta-2023-0236",
+      "lf_sha256": "482f16d0a6c35eb889caa108f45c7ea7ed59872c0724685395b45ae1faead702"
+    },
+    {
+      "sha256": "b0f1666729e9e6d1463843e711cabf7a7c5c1006a3ffcefc03f7c3ad20524af5",
+      "id": "ep-position-p9-ta-2024-0138",
+      "lf_sha256": "8c2226f4bba9904660f91d048e997f2ed5c409d556e849134c2e275df57c2ef3"
+    },
+    {
+      "sha256": "7a868f4fa2b2ac56725b30c4b232c165b18d4b88f6445e8dfad24d1081842c3d",
+      "id": "eprs-ai-eu-borders-2021",
+      "lf_sha256": "d245dcb61c8f42e4b2f610e9ea9502bb0bc219d87f781b0304199c7039608321"
+    },
+    {
+      "sha256": "27dff0deea981c63d586cf1a56436b6ef818697b923094827dd9feda74cdff80",
+      "id": "esma-ai-adoption-trends-securities-markets-2026",
+      "lf_sha256": "db75587bbd190c2b5477a58fb1f0364efc6bc90f8657a1ca081a657e21e49fdf"
+    },
+    {
+      "sha256": "60c5bbbfa8b181c7a22fa59fe55c0e856a96ffbbcd8cdd3f93fd40b23f9ea90e",
+      "id": "esma-ai-eu-investment-funds-2025",
+      "lf_sha256": "9538aef12d6be2bd4f14f9c2ecf0a46a558c2c707400c5b174485f7643d61edd"
+    },
+    {
+      "sha256": "127158bd58af091d36fa1ffd0399f92a49ccbe92cdfde6b8f8be1c9d9fe82579",
+      "id": "esma-ai-eu-securities-markets-2023",
+      "lf_sha256": "e38c80dd336ea43b71439692d9b6a20edcc0e9b2dfdfc125132675e9287f1bce"
+    },
+    {
+      "sha256": "61d5bd9b718b1e493757c6b75cb79e3ed41b3f5ad36f2e4eb1672f8a11ac81e4",
+      "id": "esma-public-statement-ai-retail-investment-services-2024",
+      "lf_sha256": "6f520fc24501bb08bcbf3f8e1d9b82450c0acaec298bc904dc0b4727aa3f2181"
+    },
+    {
+      "sha256": "231ec5882545766f6126abd0cb1c5f6aaafa2b271dab9fbecbb114056a6191b3",
+      "id": "ethics-guidelines-for-trustworthy-ai",
+      "lf_sha256": "e28bbad823086dce084e6467c76c642aeac6a7e54ba54219a0f2e2690c571aa0"
+    },
+    {
+      "sha256": "e29f16ab93591020dc382a319ad62f82263158c72ae2d9f2c451cd8572b3a95a",
+      "id": "eurohpc-ai-factories-regulation-2024-1732",
+      "lf_sha256": "f58b80b9d795aeb7c3b6672935d8934924c1822f862125647a50244eb272c04a"
+    },
+    {
+      "sha256": "6fb82f595ee752e1bc0272314642323fd7638e0f95ac22b322fd9c101cc8a9d5",
+      "id": "european-civil-law-rules-in-robotics-study-2016",
+      "lf_sha256": "b3cab0692065a4cf054770a4a337b116ec3d748088253e175445a59478bcca69"
+    },
+    {
+      "sha256": "7d40297ca94e79abad5c35413a43785c896704edb2e05ba52c49c99ef9ccba9f",
+      "id": "european-council-conclusions-2017-10-19",
+      "lf_sha256": "13f1d35b0a3707c8c00fe7d5e38d58e1ccc1569f0b0c81ff607b695bd1f709d8"
+    },
+    {
+      "sha256": "ae86d6b6445576118ddf80538a7fcaf258ea2150661a80aa86df9408109bb72e",
+      "id": "european-council-conclusions-2017-12-14",
+      "lf_sha256": "35841b463e848f1dce4c36f226812ea43d8ae8f009078c17527c4e3513b837eb"
+    },
+    {
+      "sha256": "9ce5898539edcf20e1dda05ea9bc67eb7c0fef5de049f0a6a35839931df9f9cf",
+      "id": "europol-chatgpt-llm-law-enforcement-2023",
+      "lf_sha256": "7938bc33545913d163326ae089173cd262a51e6017cb27e9f483f0e1b7255868"
+    },
+    {
+      "sha256": "ec2832c3d1e066a4704527f5fc3e0bafc909f3dc53d9be53cc1f4c667732ce93",
+      "id": "expert-group-liability-ai-report-2019",
+      "lf_sha256": "0390c45d5dfa9d648d158a746f92f1a912d85d29d1c0711f055aad0160ab4511"
+    },
+    {
+      "sha256": "ed84272b0576e81558732dab00d9831c196c20093022180361bd645cd0d57bd0",
+      "id": "final-transparency-guidelines-2026",
+      "lf_sha256": "3f017df766e2471e529ba6d670e5236e1c0a081a3f23f19a881a6a20db7851aa"
+    },
+    {
+      "sha256": "f41791332c18b6a10562b26f1978de23d3879455f74d882d1283afae378579a6",
+      "id": "fra-assessing-high-risk-ai-2025",
+      "lf_sha256": "b0db71ea11fa5975b2adbf6da9a556b2e27acb276c47c9587023d1848f403ed9"
+    },
+    {
+      "sha256": "66c5c9d27a025b693ebfaa3e7c43061cc07b6ce2b9c914ed830c7fbdfeaafb19",
+      "id": "fra-bias-algorithms-2022",
+      "lf_sha256": "a0cf75c8e5cb0c1a64d025786fb9d2acbbb15a42b793f743bc4feb8ea2d9fd0e"
+    },
+    {
+      "sha256": "46a4b938b92aa88c7201bee76a5dd33855f70db3b007fa8f2775c6502f320a97",
+      "id": "fra-getting-future-right-ai-2020",
+      "lf_sha256": "f1828d3f900fb917839ae40e0ffd6377b61402459298cc23546ef031c0b360d1"
+    },
+    {
+      "sha256": "288f6bdee9dcf76db9c255a9bccc9f2f066e46226c5572852c7cc64d9db4b7eb",
+      "id": "frontex-ai-capabilities-2021",
+      "lf_sha256": "963b25c7fc435d9895f4f65d3f12290efaf7f0faa445ebe8377c784fd29b9801"
+    },
+    {
+      "sha256": "c45acfd3f7e8603e404fa7e9e2248593d8216ec0133b4f1bb05048f725ed87dc",
+      "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+      "lf_sha256": "2086307ccd9746b6f5e8bcc25012b2895829064bac5bf791fabd4996874633a3"
+    },
+    {
+      "sha256": "8d57060f921a43457ebf6382a8b34a6d295d29e59b963f78ffbc7076953d1bcf",
+      "id": "gpai-code-final-copyright",
+      "lf_sha256": "37bff242cfdc17a191af3c22c1d718df5120cc4ab920c67e20ab8215745f0c85"
+    },
+    {
+      "sha256": "d3aa8a64159b689be1692db0d4b9355fcb1277123a6bd9df003e8068f2aadd6c",
+      "id": "gpai-code-final-safety-security",
+      "lf_sha256": "b9a5ea12e5e6c1b00e7d6253764539d672c8f21423c1bca690997dad7c4ba172"
+    },
+    {
+      "sha256": "0b2cee2be523e2ec3e006812d6136aec1d311637ba493eb00fbc4b464da21cde",
+      "id": "gpai-code-final-transparency",
+      "lf_sha256": "35328e2937ab91b65fc22e7b09bf8c3cbf23ff02ba44831c42bdfdb3be2570ce"
+    },
+    {
+      "sha256": "11c2565baec3155d9231e8cd151d2601241acad6d6c9acce1726dd932a9c4553",
+      "id": "gpai-code-final",
+      "lf_sha256": "8e67a09c1d1cccb7ef2dd240fa4fac8a9dcf81fb2de4fb0be8710c380f7402e1"
+    },
+    {
+      "sha256": "9e7997308109ab767ab244d85f99e6b5f3fb1193583aef4ff0f71787a520909e",
+      "id": "gpai-code-first-draft",
+      "lf_sha256": "9506bfb5542285c59466042cb5146d54dcc0beb1585e7e1cf0d2b22a1147b80e"
+    },
+    {
+      "sha256": "4e376ac73bd0ce5906ac99770ff3666129f4eca190b0444ee93bf6d4dc2c890b",
+      "id": "gpai-code-model-documentation-form-2025",
+      "lf_sha256": "edf1ce7499087738f9fa0f40f27d2509a630dbe28567716e36ae3e687ec30a27"
+    },
+    {
+      "sha256": "8d1903e54cc38b31c0692b5a0cccb2de558e3364acf7dde45eabc9afe82eb131",
+      "id": "gpai-code-second-draft",
+      "lf_sha256": "9685580c526fa51ba0a296c3f1572b950684f11edc874bada275738970eda1b5"
+    },
+    {
+      "sha256": "0c60b86bcbe3c2fca2c9f4ad1f33d3064eb4bc8cd4f5ca1dbf065263de26590e",
+      "id": "gpai-code-signatory-form-2025",
+      "lf_sha256": "1ee05e47f9e0df876d395a0a49cbc5adf69d2e8e803de20602f1ea802061527d"
+    },
+    {
+      "sha256": "87fb25801a6a96c99e07cffca3dfd3e3441f828e7352a694554d72cb2bba7a18",
+      "id": "gpai-code-third-draft-commitments",
+      "lf_sha256": "59cc654f7f35b665211f0ee3706af7916bd5af3720e55891171c02cd25030de0"
+    },
+    {
+      "sha256": "2b96948b57bbe657dd5faf68520590b41f90516543997dec33a469770a6482dd",
+      "id": "gpai-code-third-draft-copyright",
+      "lf_sha256": "6d71e1e6200c45e7be58145df57e00184645aa49725c41be9e50a4d69cdc8130"
+    },
+    {
+      "sha256": "ccf2c6c0d908a8484d11ee98c0ae708bd5bca8ac4a96a5b9379f1d1a550490d0",
+      "id": "gpai-code-third-draft-safety-security",
+      "lf_sha256": "b992919d35e0a542307fa6c52c88fcbab77c2e140a0eb0bb2025ff5604fdf8d1"
+    },
+    {
+      "sha256": "7daea4cd64e167759eb61df6bfe8cf9eb3c176a9c07863ef58a05dfb49f4f08e",
+      "id": "gpai-code-third-draft-transparency",
+      "lf_sha256": "90fa4997143dfbf33b61c273e023e33ef963ac8dc77b69be70ddbe4a9843656b"
+    },
+    {
+      "sha256": "1bdf5dc440c81babfd137560df955cb8342bfebf105b8c2f74a6d26fdb46ab7e",
+      "id": "gpai-code-third-draft",
+      "lf_sha256": "b5341c7fbe3a18df594df0b543ada093e48d08ad7f27415de6eb5a5b4195c289"
+    },
+    {
+      "sha256": "38aa60ab2f9213b695ebf245bb02d0e7a4093e8eef5fa305e31a8fa67cac7cac",
+      "id": "gpai-provider-guidelines-2025",
+      "lf_sha256": "30492d7be6e68f956db9127b0d29c4399236cd58d32e2248d1fe76ce29d15c82"
+    },
+    {
+      "sha256": "a86d5c37287d865947aa7aca446a27fca7b04e3798568d7e4b691ee420fb7dfb",
+      "id": "gpai-provider-guidelines-approval-communication-2025",
+      "lf_sha256": "ada20bcc9fad5411993833e973059f969c97059e2e0aa65865c021f0afb3e490"
+    },
+    {
+      "sha256": "826f6d5d4f2509f165a7639b232429bb1c03885aa707602fc1542fe99d90960a",
+      "id": "gpai-serious-incident-reporting-template-2025",
+      "lf_sha256": "ace1ff1831cdd6064a677c189c05a85ed3682e9047f51f9b1c4a0a1b92ab2b09"
+    },
+    {
+      "sha256": "0512af1ce1c7c360e6c06122a01e10711d84dba5ddfae95599bbdd7a4fba9693",
+      "id": "gpai-training-content-explanatory-notice-2025",
+      "lf_sha256": "169def304b6d6b8306cc85493a4c54c01a4022f127ac7cffc3e294e68192782b"
+    },
+    {
+      "sha256": "61ab7699c1a896d17603117e4b77699c0ca87c1bbe5dcab57b6c1c3b4bcc3bd5",
+      "id": "gpai-training-content-template-2025",
+      "lf_sha256": "c70915ba0eea27afeadeed8bb89413bf3182aeb405b2f69144dd4a319b275760"
+    },
+    {
+      "sha256": "1365dee8021103a2de657cc95959ba989802b2996f2c02e97018c6e634fdb774",
+      "id": "historical-com-2017-228-dsm-mid-term-review",
+      "lf_sha256": "73480db7fa4952239b4ab33573a0382d8d630acffd5a14f93daacaa86c265d2b"
+    },
+    {
+      "sha256": "0abc54bc127854eccb5b3fec01667e52c557ede3cf0e3f2168df9e36e41b5845",
+      "id": "historical-esprit-1984-work-programme",
+      "lf_sha256": "a312b151e370791910e424608ce71766e26ae7cc9e3b38e9284463fa3d75c6d6"
+    },
+    {
+      "sha256": "472e6ba2adb90bdc48763671590271cc828be4bac4fed4ed4e0cc923aea3eb19",
+      "id": "historical-esprit-1985-work-programme",
+      "lf_sha256": "1fa2d333cd24de1b2dcbf5c0a34b8faba29342870b1c20e1e8009ae1e6d13d15"
+    },
+    {
+      "sha256": "66ba6c3e1b338e9efd19d886ac11792d97ff47a73e25c8dccfedf47d135362df",
+      "id": "historical-fp5-ist-specific-programme",
+      "lf_sha256": "bb01c8ac6ee5d6ad166945841d2792d70894e6a6fcfdf62b293243d1dc246b78"
+    },
+    {
+      "sha256": "0b9e1a61d0c7df02968af01a9d8fb838d13c12584998a08ffb88e8e491f53be7",
+      "id": "historical-fp6-integrating-strengthening-programme",
+      "lf_sha256": "cd8fe314b1836778c5f78bb7d50151ff8634a3f660530dc81b7acff1dd5052a4"
+    },
+    {
+      "sha256": "99bf357f66c522b404c03a7d1c524acef8c7d03064d2628d79166d085a98ca9b",
+      "id": "historical-fp7-framework-1982-2006",
+      "lf_sha256": "8db2bc1546cd700b1a2dff193af0314690f2956d3e95b037289351cedeff7475"
+    },
+    {
+      "sha256": "d13d350b70edbdc0d5021b99507fe3f1eca1af8c3777b65eb28c29edc86bbad9",
+      "id": "historical-juri-robotics-report-2017",
+      "lf_sha256": "d1587aa9bad8f9fa4c5aeacfa564c6ce4061698de9df64fe1ee85380a262fac4"
+    },
+    {
+      "sha256": "8cb56c7330af3a03862c5c244ba497c4d217e4589d0940d88a153e31138f7ea6",
+      "id": "hleg-policy-investment-recommendations-2019",
+      "lf_sha256": "a615e8927a65196cc7e19f74478cdbc5503b123f46c0da8c2a24899ad7b829b2"
+    },
+    {
+      "sha256": "6c439018e8ae6986e7b8ec5af1b25f238624018756b6b40b0e4634b0b5cdadf4",
+      "id": "hleg-sectoral-considerations-2020",
+      "lf_sha256": "eb000f9527d2d2d030121b8d65600fc0dabe0a0074250d3504100f224ce940cc"
+    },
+    {
+      "sha256": "2cce296759c403786c3ed12a80d137c6e66aa2020bf48ee2e0746da09b9f4554",
+      "id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "lf_sha256": "e63063661e96fc43d18b4891c59e7b32b1a0787afd64882d0611e5627d4a6f13"
+    },
+    {
+      "sha256": "6cd1b3de00ff2d4805491fe8680a901056d31cf3f380ab0b782e3a90869ccad8",
+      "id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
+      "lf_sha256": "044dbc9bc32467da98013b5c9d70801eea64e67850341b4f9d0b5a3969974599"
+    },
+    {
+      "sha256": "f43d2fa70aa3d2069ca443d175c4a69ba870ac229aa5580d3f04b3c83f7118f6",
+      "id": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "lf_sha256": "0b54ce3a893ed3040d4baadd1eb67fa0d1fa68e2449287e2e93b287332daa89f"
+    },
+    {
+      "sha256": "767c9a182a17b64587945e2f03867be3c549cbe026be6a2b8186cbba5f971b87",
+      "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "lf_sha256": "c733dc7b682e6f210b0dc5a5b3e374e207f9a5aba624d040352801aaef2ece2f"
+    },
+    {
+      "sha256": "cacb52bc273d38b4952c9ef35c62e30bda2c80eea120a27e428897f86787538e",
+      "id": "horizon-europe-specific-programme-decision-2021-764",
+      "lf_sha256": "0a5de3b5e67298285b296e89884d24fff7f2cc086e5771036ec05bdcc0d882b9"
+    },
+    {
+      "sha256": "2dd6e6b073cceb8171db724eb2e437efee57b0994530ca2a45e05886eb55fb19",
+      "id": "medical-device-ai-interplay-mdcg-2025-6",
+      "lf_sha256": "572a182bea52f9164e9a8aeb03f79fbb3940b717b05eaa8316dbc2db7442cb21"
+    },
+    {
+      "sha256": "d5c30bf7f6f4536150047dd9c6ce86cb9604ea272e778d74624c634bdcb8f548",
+      "id": "osha-ai-worker-management-2022",
+      "lf_sha256": "e52e331bdb0910a66a26e457c496c991305d71b41aee81587069f72253cbbb0a"
+    },
+    {
+      "sha256": "0e93161ebff3f01e6de877fa3cd6380869cf064fe20db03af56f7b48dc2aa453",
+      "id": "prohibited-ai-practices-guidelines-2025",
+      "lf_sha256": "56f4300f7b9a3349dc6e2ee195b979b6a68e0c1cc946dc7667071c5909c8d3dd"
+    },
+    {
+      "sha256": "3fa64d93979ab8b4aceb6d61036547d84746c1abaaec9be0a62ce39e14e71818",
+      "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
+      "lf_sha256": "86e8fd2693e20df19401d1a53e852e7651e8c7f65145c9d467723ef3139bf832"
+    },
+    {
+      "sha256": "0ccaeef51af2798f743ad3ecc5f10f3e818da727f29bd3573cafa447df56570e",
+      "id": "report-ai-safety-liability-2020",
+      "lf_sha256": "5196aca756e52df0843c9f7b86c9d2a42def6c607e4b69b8cd446b5cd0f4f85a"
+    },
+    {
+      "sha256": "fa60b86ba7c7411ea742ef5189d5fadcea9e248e48a8ecaa19f18ec6a8555633",
+      "id": "scientific-panel-implementing-regulation-2025-454",
+      "lf_sha256": "41851ec478bc644b5caf3be7c50dbd14f78b703760c7473dd578917bafab11a6"
+    },
+    {
+      "sha256": "0f8a3c142bd0efe6b2332de5b0345cd93e4a84f2715f197172fbf6e01bf17a66",
+      "id": "sixth-framework-programme-decision-1513-2002-ec",
+      "lf_sha256": "bfb321e5c5f9eb2fd382f55371f917b0a62e48df55c7703257f406baec3a7ffd"
+    },
+    {
+      "sha256": "5196b00485d8bc3ae9f3eca484d0e8dbb233fca706ac161d30e08028f7e1d2a8",
+      "id": "standardisation-request-c-2025-3871",
+      "lf_sha256": "b9bcfcbf4ca4efe579342ee69425cac1a29187601ef52dea4e6e18d2796f2f96"
+    },
+    {
+      "sha256": "a1f91464b79335b8aee52abb4a865e60b4e71035fc4aa89e3da180782ecab937",
+      "id": "transparency-code-final-2026",
+      "lf_sha256": "fc122f9c7759457a32dabef17d14de4ab5bb2244eb2f65005f70bbde88bbf452"
+    },
+    {
+      "sha256": "afdbdc2d63a66824ec226ca6285690c06b499029a6e80a016ba8e504582fadf6",
+      "id": "transparency-code-first-draft-2025",
+      "lf_sha256": "962c20e5e4dbd44f4609de21df813b379eb62106c72e663c6e202ceae8180e18"
+    },
+    {
+      "sha256": "5a575188bc74b417de7d0b28846f11bc981723efd10f2bc4582b9a6fc5d2547d",
+      "id": "transparency-code-second-draft-2026",
+      "lf_sha256": "b6a4e8e35184d11d93ccb3c4065c6e7f8542fbb10f0debf370e7f9db6450d0b5"
+    },
+    {
+      "sha256": "9b1d0ee76593b51e8cae68f70d7f8f508ffc9ae3c79bbeb08b6fba8e3355c8bb",
+      "id": "transparency-code-signatory-form-2026",
+      "lf_sha256": "124623f5e3bca7c2086a865a2a1fec2eff65865ebbfb67073e70680e395d4ed4"
+    },
+    {
+      "sha256": "4a6adf278d9de5b705012a279c988b25b6eb9e2feb3ef692b393d64bdd810302",
+      "id": "transparency-guidelines-approval-communication-2026",
+      "lf_sha256": "2b2364e35092ae923741b7d1006b6f227e8ebcb58dfb1a0621b0daff821940e7"
+    },
+    {
+      "sha256": "bfbd84935d2b71ef1576a762442a389f3485bf1ad94fdbb7d16306f1d5a7705c",
+      "id": "white-paper-on-artificial-intelligence",
+      "lf_sha256": "9aca0bafe1cd4d1419c8a703a933497f10e88879482770d3f2f7b8f2eddd7646"
+    }
+  ],
+  "hash_semantics": "sha256 retains actual Windows working-file bytes before review; lf_sha256 normalises CRLF to LF solely for cross-platform Git checkout comparison. All192 raw working-file hashes were rechecked unchanged before deriving LF hashes."
+}

@@ -1,0 +1,53 @@
+{
+  "reviewed_at": "2026-09-06T23:11:41.808007+00:00",
+  "review_cutoff": "2026-09-04",
+  "review_actor": "AI-assisted bounded evidence review",
+  "scope": "Four already qualified published records, separate from the 34-candidate snapshot.",
+  "counts": {
+    "retain_qualified_pending": 4,
+    "changed": 0
+  },
+  "decisions": [
+    {
+      "document_id": "standardisation-request-c-2025-3871",
+      "disposition": "retain_qualified_pending",
+      "qualification_kind": "publication_date_pending",
+      "decision_changed": false,
+      "confirmed": "Exact final text and adoption on 2025-06-23. Fresh Commission register and PDF hashes match retained captures.",
+      "new_evidence": "Official eNorm exact 613_en metadata identifies C(2025)3871, adoptionDate 2025-06-23T12:00:00.000+0000, esDA_FirstIngestDate 2025-06-27T15:21:27.320+0200 and esDA_IngestDate 2026-06-15T12:17:03.961+0200. These are adoption and technical ingestion fields, not an explicit publication event. The application maps adoptionDate as adoption.",
+      "unresolved": "Exact public-release day for this final manifestation remains unestablished. Commission transmission 2025-06-27T13:50:51 is not public release.",
+      "reopen_when": "Recover an official dated public manifestation or an explicit publication record identifying this exact decision; technical ingestion alone is insufficient."
+    },
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "disposition": "retain_qualified_pending",
+      "qualification_kind": "parent_evidence_pending",
+      "decision_changed": false,
+      "confirmed": "Original July C(2025)5235 ANNEX remains available with the same SHA-256. The Commission library labels publication 2025-07-24.",
+      "new_evidence": "Fresh register response is byte-identical to prior evidence: distinct MAIN and ANNEX entries, both with null ersId; the library again links the ANNEX PDF/template files, not the distinct MAIN.",
+      "unresolved": "MAIN approval public manifestation and independently established public release remain absent from the recovered evidence. ANNEX publication, transmission and later December/OJ manifestations do not establish this ancestor's release.",
+      "reopen_when": "Recover the official C(2025)5235 MAIN manifestation with qualifying public-release evidence. Any parent-admission rule change would require a separate owner-approved review, not an exception in this recheck."
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "disposition": "retain_qualified_pending",
+      "qualification_kind": "parent_evidence_pending",
+      "decision_changed": false,
+      "confirmed": "Original template remains at PDF pages 9-14 of the July ANNEX; its own text is not missing.",
+      "new_evidence": "Byte-identical ANNEX and fresh library/register checks preserve the exact template/notice identity and the same unresolved MAIN ancestor.",
+      "unresolved": "The containing notice's distinct MAIN approval still lacks qualifying public-release evidence; the chain remains incomplete under the unchanged admission rule.",
+      "reopen_when": "Resolve the same C(2025)5235 MAIN ancestor evidence gap. No independent editable DOCX requirement is introduced."
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "disposition": "retain_qualified_pending",
+      "qualification_kind": "official_version_conflict",
+      "decision_changed": false,
+      "confirmed": "Current official INIT and REV 1 PDFs match retained hashes. INIT retains a 16 September 2022 third-compromise cover, while previously evidenced register identity is 7 September 2022 second compromise.",
+      "new_evidence": "Fresh official ST12549/22 INIT (23 September 2022), page 1, identifies predecessor 12206/1/22 REV 1; page 3 paragraph 7 separately refers to second compromise doc. 12206/22. This reinforces the need to distinguish identities, but is not an official correction or the missing original.",
+      "unresolved": "No original 7 September INIT manifestation or explicit Council correction reconciles the official identity conflict. Current retrieval, later cross-reference and public-access timing do not resolve it.",
+      "reopen_when": "Recover the original 7 September 2022 INIT bytes or an explicit Council correction reconciling the precise version conflict; never substitute REV 1 silently."
+    }
+  ],
+  "preservation": "No canonical, schema, status, source or historical review timestamp changed by this subtask. No publication, repository validation or human sign-off claim."
+}

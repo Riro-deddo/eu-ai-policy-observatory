@@ -1,0 +1,152 @@
+{
+  "id": "ema-2024-ai-observatory-report-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "slug": "ema-2024-ai-observatory-report-2025",
+  "official_title": "2024 AI Observatory report",
+  "short_title": "EMA 2024 AI Observatory report",
+  "document_type": "report",
+  "record_level": "principal",
+  "sector_tags": [
+    "health",
+    "public_administration",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "official_reference": "EMA/76534/2025",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-05-08",
+  "publication_date": "2025-07-10",
+  "version_label": "Annual report covering 2024",
+  "version_status": "final",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "author",
+      "evidence_source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "evidence_locator": "PDF p.1 corporate author European Medicines Agency."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "publisher",
+      "evidence_source_id": "ema-2024-ai-observatory-report-2025-release-evidence",
+      "evidence_locator": "Document-specific first-publication entry."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "official_host",
+      "evidence_source_id": "ema-2024-ai-observatory-report-2025-release-evidence",
+      "evidence_locator": "EMA catalogue and exact official PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ema-2024-ai-observatory-report-2025-official-text",
+    "ema-2024-ai-observatory-report-2025-release-evidence"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "PDF pp.1-2: medicines-lifecycle AI horizon scanning, scientific advice and trials; regulatory knowledge mining, EMRN administrative tools and AI Act implementation.",
+    "researcher_notes": "Activity year 2024 is distinct from 2025 issue/publication. The complete three-page annual summary is independently citable and identifies two annexes on p.3; this admission does not include those annexes or infer their relationships. HMA/EMA workplan context and EMRN contributions do not override EMA corporate authorship on the cover. Annual report is distinct from the admitted 2025 report and is not a revision of it. Concept coding and policy-group assignment remain uncompleted; empty arrays do not establish absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:52:47Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "locator": "PDF p.1: 8 May 2025; EMA/76534/2025.",
+      "meaning": "Exact printed document issue date, distinct from publication."
+    },
+    "publication_date": {
+      "source_id": "ema-2024-ai-observatory-report-2025-release-evidence",
+      "locator": "AI Observatory reports, 2024 AI Observatory report, reference EMA/76534/2025: First published 10/07/2025.",
+      "meaning": "Official release evidence for this independently citable text."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "locator": "PDF pp.1-2: medicines-lifecycle AI horizon scanning, scientific advice and trials; regulatory knowledge mining, EMRN administrative tools and AI Act implementation.",
+      "rationale": "AI is a substantive policy or sectoral subject throughout the cited passages."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "locator": "PDF pp.1-2: medicines-lifecycle AI horizon scanning, scientific advice and trials; regulatory knowledge mining, EMRN administrative tools and AI Act implementation.",
+      "rationale": "Positive researcher classification based on the stated substantive scope."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "locator": "PDF pp.1-2: medicines-lifecycle AI horizon scanning, scientific advice and trials; regulatory knowledge mining, EMRN administrative tools and AI Act implementation.",
+      "rationale": "Positive researcher classification based on the stated substantive scope."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "locator": "PDF pp.1-2: medicines-lifecycle AI horizon scanning, scientific advice and trials; regulatory knowledge mining, EMRN administrative tools and AI Act implementation.",
+      "rationale": "Positive researcher classification based on the stated substantive scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "locator": "Corporate attribution and substantive institutional account.",
+      "rationale": "Provenance reflects evidenced production or official publication; hosting is not itself authorship."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ema-2024-ai-observatory-report-2025-release-evidence",
+      "locator": "AI Observatory reports, 2024 AI Observatory report, reference EMA/76534/2025: First published 10/07/2025.",
+      "rationale": "Provenance reflects evidenced production or official publication; hosting is not itself authorship."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Medicines Agency",
+      "affiliation": null,
+      "evidence_source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "evidence_locator": "PDF p.1 corporate author."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+    "locator": "Document title and substantive institutional report/factsheet content.",
+    "meaning": "Institutional research or high-level guidance, not a binding legal instrument."
+  },
+  "snapshots": [
+    {
+      "id": "ema-2024-ai-observatory-report-2025-capture-20260906",
+      "source_id": "ema-2024-ai-observatory-report-2025-official-text",
+      "retrieved_at": "2026-09-06T23:49:37.033388+01:00",
+      "format": "pdf",
+      "content_hash": "9d4b2fbd28d0ca96a8388c12405f04b79f337a189ff7da43b7daeb0c56117665",
+      "archived_path": null
+    }
+  ]
+}

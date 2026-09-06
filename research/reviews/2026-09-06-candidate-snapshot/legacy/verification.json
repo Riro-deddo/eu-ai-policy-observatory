@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-09-06T22:58:19Z",
+  "command": "Bundled Python research/reviews/2026-09-06-candidate-snapshot/legacy/verify_package.py",
+  "exit_code": 0,
+  "result": {
+    "draft_files_validated": 37,
+    "candidate_decisions": 12,
+    "matching_english_pdf_manifests": 9,
+    "board_pending": 3,
+    "capture_hashes_verified": 15,
+    "errors": []
+  },
+  "scope": "Draft schemas, exact twelve ledger, retained English PDF identity, official metadata body hashes. No repo integration or production build performed."
+}

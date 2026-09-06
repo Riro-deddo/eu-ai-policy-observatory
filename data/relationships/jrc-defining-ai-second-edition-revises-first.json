@@ -1,0 +1,16 @@
+{
+  "id": "jrc-defining-ai-second-edition-revises-first",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_entity_type": "document",
+  "source_entity_id": "jrc-ai-watch-defining-ai-2-2021",
+  "target_entity_type": "document",
+  "target_entity_id": "jrc-ai-watch-defining-ai-2020",
+  "relationship_type": "revises",
+  "basis": "official",
+  "rationale": "Second-edition PDF p.8 explicitly builds on the February 2020 first report and extends the definition and taxonomy, including the AI Act proposal.",
+  "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+  "verification_status": "verified"
+}

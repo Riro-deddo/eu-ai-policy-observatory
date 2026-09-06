@@ -1,0 +1,16 @@
+{
+  "id": "ep-ai-act-committee-amendments-pe-732843-procedural-step",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:39Z",
+  "updated_at": "2026-09-06T22:54:39Z",
+  "source_entity_type": "document",
+  "source_entity_id": "ep-ai-act-committee-amendments-pe-732843",
+  "target_entity_type": "document",
+  "target_entity_id": "ep-ai-act-draft-report-pe-731563",
+  "relationship_type": "procedural_step_for",
+  "basis": "official",
+  "rationale": "The cover identifies amendments 2727 - 3019 - to draft report PE731.563v01-00; API foresees_change_of points to CJ40-PR-731563. This relationship records the proposed procedural step, not an enacted amendment or adoption.",
+  "evidence_source_id": "ep-ai-act-committee-amendments-pe-732843-metadata-source",
+  "verification_status": "verified"
+}

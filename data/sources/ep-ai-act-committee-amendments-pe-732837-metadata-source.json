@@ -1,0 +1,13 @@
+{
+  "id": "ep-ai-act-committee-amendments-pe-732837-metadata-source",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:39Z",
+  "updated_at": "2026-09-06T22:54:39Z",
+  "source_type": "parliament_register",
+  "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732837?format=application%2Fld%2Bjson",
+  "publisher": "European Parliament",
+  "retrieved_at": "2026-09-06T23:51:08.672651+01:00",
+  "last_verified_at": "2026-09-06T22:54:39Z",
+  "verification_note": "Official work CJ40-AM-732837, epNumberVersion 0100, foresees_change_of CJ40-PR-731563. Work document_date=2022-06-10 is distinct from English PDF issued=2022-06-21T13:16:23+02:00; the latter is dcterms:issued per official API context. English PDF byteSize 568230; retrieved bytes checksum-match the retained cover dated 13 June. No claim of publication on 10 June."
+}

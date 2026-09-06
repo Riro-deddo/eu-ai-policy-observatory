@@ -1,0 +1,75 @@
+[
+  {
+    "name": "ethics.pdf",
+    "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=89624e2c-f98c-11ea-b44f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "retrieved_at": "2026-09-06T22:51:08.702179+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=89624e2c-f98c-11ea-b44f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "content_type": "application/pdf",
+    "bytes": 585782,
+    "sha256": "50ba357a334e31ae6a98c2b8de9ebeb3a8073eae7456542e41462ac8d9e95694",
+    "pdf_pages": 82,
+    "pdf_metadata": {
+      "/CreationDate": "D:20200828160733+02'00'",
+      "/Creator": "Adobe InDesign CC 13.0 (Macintosh)",
+      "/ModDate": "D:20200929102324+02'00'",
+      "/Producer": "Adobe PDF Library 15.0",
+      "/Trapped": "/False"
+    }
+  },
+  {
+    "name": "border.pdf",
+    "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=c8823cd1-a152-11ea-9d2d-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "retrieved_at": "2026-09-06T22:51:08.703684+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=c8823cd1-a152-11ea-9d2d-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "content_type": "application/pdf",
+    "bytes": 4332135,
+    "sha256": "8822bf9f409c5f3e6af06bc6e63afd108ae0b5cfd242be5063f8ca69b496f37b",
+    "pdf_pages": 128,
+    "pdf_metadata": {
+      "/Title": "Proposal_A4",
+      "/Author": "Deloitte",
+      "/Subject": "Study on Opportunities and Challenges for the use of Artificial Intelligence in Border control, Migration and Security",
+      "/Creator": "Microsoft® Word 2016",
+      "/CreationDate": "D:20200526173033+02'00'",
+      "/ModDate": "D:20200526173033+02'00'",
+      "/Producer": "Microsoft® Word 2016"
+    }
+  },
+  {
+    "name": "jrc-op.pdf",
+    "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=3b2bb4f5-1699-11ec-b4fe-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "retrieved_at": "2026-09-06T22:51:08.703684+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=3b2bb4f5-1699-11ec-b4fe-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "content_type": "application/pdf",
+    "bytes": 2611241,
+    "sha256": "840b536aaecec060638d2a5bbef09a7ca447f890c03599bca502faf3568ecd01",
+    "pdf_pages": 58,
+    "pdf_metadata": {
+      "/CreationDate": "D:20210914175121+02'00'",
+      "/ModDate": "D:20210915120807+02'00'"
+    }
+  },
+  {
+    "name": "jrc-aiwatch.html",
+    "url": "https://ai-watch.ec.europa.eu/publications/ai-watch-ai-uptake-smart-mobility_en",
+    "retrieved_at": "2026-09-06T22:51:08.704690+00:00",
+    "status": 200,
+    "final_url": "https://ai-watch.ec.europa.eu/publications/ai-watch-ai-uptake-smart-mobility_en",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 65356,
+    "sha256": "5dddfca1592735b74ddaef9f7f8f76753cfa20aba5bcd88f31090d21d7a30193"
+  },
+  {
+    "name": "drones-unencoded.pdf",
+    "url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET(2013)410220_EN.pdf",
+    "retrieved_at": "2026-09-06T22:51:08.894746+00:00",
+    "status": 202,
+    "final_url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET(2013)410220_EN.pdf",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

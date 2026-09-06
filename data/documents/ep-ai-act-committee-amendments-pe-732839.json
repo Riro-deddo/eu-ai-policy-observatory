@@ -1,0 +1,129 @@
+{
+  "id": "ep-ai-act-committee-amendments-pe-732839",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:39Z",
+  "updated_at": "2026-09-06T22:54:39Z",
+  "slug": "ep-ai-act-committee-amendments-pe-732839",
+  "official_title": "AMENDMENTS 1581 - 2005 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+  "short_title": "AI Act committee amendments 1581 - 2005 - (PE732.839)",
+  "document_type": "report",
+  "record_level": "supporting",
+  "official_reference": "PE732.839v01-00",
+  "procedure_references": [
+    "2021/0106(COD)"
+  ],
+  "oj_reference": null,
+  "document_date": "2022-06-13",
+  "version_label": "Proposed committee amendments 1581 - 2005 -; v01-00",
+  "version_status": "draft",
+  "publication_date": "2022-06-21",
+  "legal_status": "proposed",
+  "celex": null,
+  "eli": "https://data.europarl.europa.eu/eli/dl/doc/CJ40-AM-732839",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author",
+      "evidence_source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+      "evidence_locator": "Cover: European Parliament and joint IMCO-LIBE committees; individual sponsors credited under each proposed amendment."
+    },
+    {
+      "institution_id": "european-parliament",
+      "role": "publisher",
+      "evidence_source_id": "ep-ai-act-committee-amendments-pe-732839-metadata-source",
+      "evidence_locator": "API Work.publisher = org/EU_PARLIAMENT; English Expression/PDF Manifestation."
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "artificial-intelligence-act-legislative-process"
+  ],
+  "concept_ids": [],
+  "source_ids": [
+    "ep-ai-act-committee-amendments-pe-732839-source",
+    "ep-ai-act-committee-amendments-pe-732839-metadata-source",
+    "ep-open-data-context-issued-source"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "negotiation",
+    "inclusion_rationale": "Official proposed committee amendments in procedure 2021/0106(COD). Risk management across the AI lifecycle and risks to rights, access to services and society. The compilation records a distinct part of the AI Act negotiating process.",
+    "researcher_notes": "This is an independently citable compilation of proposed committee amendments 1581 - 2005 -, not an adopted Parliament position or enacted amendment. The cover date is 13 June 2022. Official work/catalogue date 10 June 2022 is preserved as work-level metadata; it is not used as publication of the English PDF. The English PDF manifestation was formally issued 2022-06-21T13:16:24+02:00. Individual amendment sponsors are named in the PDF; the cover names rapporteurs for the underlying draft report, not authors of every amendment. The sponsor roster and concept annotations have not been exhaustively indexed; empty author/concept lists do not mean none.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:39Z"
+  },
+  "sector_tags": [
+    "general_cross_sector"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+      "locator": "Cover: PE732.839v01-00, 13.6.2022, amendments 1581 - 2005 -.",
+      "meaning": "Exact cover issue date of the English compilation."
+    },
+    "publication_date": {
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-metadata-source",
+      "locator": "Work.is_realized_by[id=eli/dl/doc/CJ40-AM-732839/en].is_embodied_by[id=eli/dl/doc/CJ40-AM-732839/en/pdf].issued = 2022-06-21T13:16:24+02:00; byteSize = 570221.",
+      "meaning": "Official formal issuance of this English PDF manifestation, mapped to dcterms:issued by the official API context. Download SHA-256 ad1cf00b54405d1d8b394e85827b6b90b8e6d365fd51cedaa2a54e395b0ebdad equals the retained cover-verified PDF; work-level 10 June is a different date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+      "locator": "PDF p. 3: amendments 1581-1582, Article 9",
+      "rationale": "Risk management across the AI lifecycle and risks to rights, access to services and society."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+      "locator": "PDF p. 3: amendments 1581-1582, Article 9",
+      "rationale": "These horizontal AI regulatory provisions apply across use sectors; this classification does not claim exhaustive sector annotation."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+      "locator": "European Parliament cover, committee headings, and named amendment sponsors throughout the compilation.",
+      "rationale": "Parliamentary committee amendment compilation with member sponsors; the Commission's proposed text is a comparison column, not authorship of these amendments."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-metadata-source",
+      "locator": "English PDF Manifestation eli/dl/doc/CJ40-AM-732839/en/pdf, issued 2022-06-21T13:16:24+02:00.",
+      "rationale": "The official Parliament API identifies a formal issuance date for the exact English manifestation downloaded and checksum-matched."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "historical_review_status": "verified",
+  "legal_status_evidence": {
+    "source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+    "locator": "Cover AMENDMENTS; body comparison columns Text proposed by the Commission / Amendment and individual sponsor headings.",
+    "meaning": "Proposed negotiating amendments; no claim that the compilation was adopted or amended law."
+  },
+  "snapshots": [
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732839-pdf-snapshot",
+      "source_id": "ep-ai-act-committee-amendments-pe-732839-source",
+      "retrieved_at": "2026-09-06T23:51:17.846565+01:00",
+      "format": "application/pdf",
+      "content_hash": "ad1cf00b54405d1d8b394e85827b6b90b8e6d365fd51cedaa2a54e395b0ebdad",
+      "archived_path": null
+    }
+  ]
+}

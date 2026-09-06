@@ -1,0 +1,158 @@
+{
+  "id": "eiopa-big-data-motor-health-insurance-2019",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "slug": "eiopa-big-data-motor-health-insurance-2019",
+  "official_title": "Big Data Analytics in motor and health insurance: A thematic review",
+  "short_title": "EIOPA Big Data Analytics thematic review",
+  "document_type": "report",
+  "record_level": "principal",
+  "sector_tags": [
+    "health",
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "official_reference": "ISBN 978-92-9473-142-5; DOI 10.2854/54208; EI-02-19-220-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2019-05-08",
+  "publication_date": "2019-05-08",
+  "version_label": "Published thematic review",
+  "version_status": "final",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "author",
+      "evidence_source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "evidence_locator": "PDF pp.2 and 8-9: EIOPA imprint, launch and conduct of the thematic review."
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "evidence_locator": "PDF p.2: Luxembourg: Publications Office of the European Union, 2019."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-big-data-motor-health-insurance-2019-release-evidence",
+      "evidence_locator": "Release opening paragraph: EIOPA published its report today."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "official_host",
+      "evidence_source_id": "eiopa-big-data-motor-health-insurance-2019-release-evidence",
+      "evidence_locator": "Official release and related-resource report link."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eiopa-big-data-motor-health-insurance-2019-official-text",
+    "eiopa-big-data-motor-health-insurance-2019-release-evidence"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Printed pp.6-7 executive summary, pp.14-16 section 2.2.1 and pp.42-44 chapter 5: AI/ML in motor and health insurance, fairness, explainability and governance. Health-insurance data and pricing scope is explicit.",
+    "researcher_notes": "PDF imprint supplies year 2019 only; April2019 in its filename is not issue-date evidence. The contemporaneous release establishes exact publication despite a later catalogue date of 19 June 2019. Publications Office is the printed publisher, while EIOPA is author and official host/releasing authority. Cover photograph credit: istock.com/SusanneB (PDF p.2), not a report author. Empirical sample is 222 insurers/intermediaries from 28 jurisdictions, not a census of the entire EU insurance industry. Concept coding and policy-group assignment remain uncompleted; empty arrays do not establish absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:52:47Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-release-evidence",
+      "locator": "Release header and publication field 8 May 2019; opening paragraph explicitly states that the report was published today.",
+      "meaning": "Exact official publication used because no precise issue day is evidenced."
+    },
+    "publication_date": {
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-release-evidence",
+      "locator": "8 May 2019 release, opening paragraph and related-resource link to this thematic review.",
+      "meaning": "Official release evidence for this independently citable text."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "locator": "Printed pp.6-7 executive summary, pp.14-16 section 2.2.1 and pp.42-44 chapter 5: AI/ML in motor and health insurance, fairness, explainability and governance. Health-insurance data and pricing scope is explicit.",
+      "rationale": "AI is a substantive policy or sectoral subject throughout the cited passages."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "locator": "Printed pp.6-7 executive summary, pp.14-16 section 2.2.1 and pp.42-44 chapter 5: AI/ML in motor and health insurance, fairness, explainability and governance. Health-insurance data and pricing scope is explicit.",
+      "rationale": "Positive researcher classification based on the stated substantive scope."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "locator": "Printed pp.6-7 executive summary, pp.14-16 section 2.2.1 and pp.42-44 chapter 5: AI/ML in motor and health insurance, fairness, explainability and governance. Health-insurance data and pricing scope is explicit.",
+      "rationale": "Positive researcher classification based on the stated substantive scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "locator": "Corporate attribution and substantive institutional account.",
+      "rationale": "Provenance reflects evidenced production or official publication; hosting is not itself authorship."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-release-evidence",
+      "locator": "8 May 2019 release, opening paragraph and related-resource link to this thematic review.",
+      "rationale": "Provenance reflects evidenced production or official publication; hosting is not itself authorship."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Insurance and Occupational Pensions Authority",
+      "affiliation": null,
+      "evidence_source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "evidence_locator": "PDF pp.2, 8-9 corporate attribution and account of EIOPA review."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2019",
+      "precision": "year",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "locator": "PDF p.2 imprint: Publications Office, 2019."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+    "locator": "Document title and substantive institutional report/factsheet content.",
+    "meaning": "Institutional research or high-level guidance, not a binding legal instrument."
+  },
+  "snapshots": [
+    {
+      "id": "eiopa-big-data-motor-health-insurance-2019-capture-20260906",
+      "source_id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+      "retrieved_at": "2026-09-06T23:49:36.666641+01:00",
+      "format": "pdf",
+      "content_hash": "6b30027da9863aea7b1e6b229a4ceb205193d67ad37bdfbc70f223108bb20ba8",
+      "archived_path": null
+    }
+  ]
+}

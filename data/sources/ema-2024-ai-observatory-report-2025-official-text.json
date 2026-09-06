@@ -1,0 +1,13 @@
+{
+  "id": "ema-2024-ai-observatory-report-2025-official-text",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "source_type": "official_pdf",
+  "url": "https://www.ema.europa.eu/en/documents/report/2024-ai-observatory-report_en.pdf",
+  "publisher": "European Medicines Agency",
+  "retrieved_at": "2026-09-06T23:49:37.033388+01:00",
+  "last_verified_at": "2026-09-06T22:52:47Z",
+  "verification_note": "AI-assisted evidence review. Fresh HTTP 200 capture, 170997 bytes, SHA-256 9d4b2fbd28d0ca96a8388c12405f04b79f337a189ff7da43b7daeb0c56117665. PDF pp.1-2: medicines-lifecycle AI horizon scanning, scientific advice and trials; regulatory knowledge mining, EMRN administrative tools and AI Act implementation. Capture retained outside canonical data; no public archive guarantee. Exact receipt in candidate-health-finance-20260906 audit. PDF extraction recovered with pypdf after optional fitz module was unavailable."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "us-food-and-drug-administration",
+  "entity_type": "institution",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "official_name": "U.S. Food and Drug Administration",
+  "short_name": "FDA",
+  "institution_type": "non_eu_medicines_regulator",
+  "official_url": "https://www.fda.gov/"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "jrc-ai-watch-public-services-2020-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_type": "official_pdf",
+  "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC120399/jrc120399_misuraca-ai-watch_public-services_30062020_def.pdf",
+  "publisher": "European Commission, Joint Research Centre",
+  "retrieved_at": "2026-09-06T23:50:39.620759+01:00",
+  "last_verified_at": "2026-09-06T22:54:17Z",
+  "verification_note": "English PDF cover, imprint, author credits and cited substantive sections inspected. Captured bytes SHA-256 8af19a56b0965661c8ff84e75d4a56f8b3ddbc67752817404ec626360317c5a1; receipt in research/reviews/2026-09-06-candidate-snapshot/root-source-checks.json. Local capture, not a permanent public archive."
+}

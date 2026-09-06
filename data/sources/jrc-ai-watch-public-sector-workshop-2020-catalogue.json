@@ -1,0 +1,13 @@
+{
+  "id": "jrc-ai-watch-public-sector-workshop-2020-catalogue",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_type": "publications_office",
+  "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC120315",
+  "publisher": "European Commission, Joint Research Centre",
+  "retrieved_at": "2026-09-06T23:50:04.763852+01:00",
+  "last_verified_at": "2026-09-06T22:54:17Z",
+  "verification_note": "JRC title, identity, Date available, embedded dc.date.available, author list and linked PDF inspected. Captured bytes SHA-256 c8957b7a8c426c9fb12f7f44297219df9fac85175b9d119751ca77bfabb9c9cc; receipt in research/reviews/2026-09-06-candidate-snapshot/root-source-checks.json. Local capture, not a permanent public archive."
+}

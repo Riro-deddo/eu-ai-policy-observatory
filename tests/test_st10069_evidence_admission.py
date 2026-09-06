@@ -17,10 +17,10 @@ def payload():
         return json.loads(result.public_json.read_text(encoding='utf-8'))
 
 def test_st10069_and_later_backfill_preserve_the_four_qualified_holds(payload):
-    assert len(payload['documents']) == 192
-    assert payload['coverage']['historical_review'] == {'verified':188,'legacy_review_pending':4}
+    assert len(payload['documents']) == 218
+    assert payload['coverage']['historical_review'] == {'verified':214,'legacy_review_pending':4}
     assert {d['id'] for d in payload['documents'] if d['historical_review_status']!='verified'} == HOLDS
-    assert len(payload['relationships']) == 115
+    assert len(payload['relationships']) == 125
 
 def test_st10069_preserves_issue_and_records_documented_access(payload):
     d = next(d for d in payload['documents'] if d['id']==TARGET)

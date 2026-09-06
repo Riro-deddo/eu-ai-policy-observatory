@@ -1,0 +1,312 @@
+{
+  "reviewed_at": "2026-09-06T23:01:39Z",
+  "coverage_cutoff": "2026-09-04",
+  "decisions": [
+    {
+      "id": "hma-ema-llm-guiding-principles-2024",
+      "decision": "included",
+      "document_id": "hma-ema-llm-guiding-principles-2024",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ema-fda-good-ai-practice-drug-development-2026",
+      "decision": "included",
+      "document_id": "ema-fda-good-ai-practice-drug-development-2026",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "draft-gmp-annex-22-artificial-intelligence-2025",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "Official draft text, release date and drafting roles established. Independent review identified unresolved annex/parent boundary: the text is Annex22 to EudraLex Volume4, while independently linked publication alone does not justify principal classification under the existing dictionary. No admission or schema exception applied.",
+      "reopen_when": "Establish and evidence the containing text and required annex_to relationship under the existing rules, or obtain an explicitly approved scope/model decision; preserve the exact consultation draft identity.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "eiopa-big-data-motor-health-insurance-2019",
+      "decision": "included",
+      "document_id": "eiopa-big-data-motor-health-insurance-2019",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "eba-ai-act-mapping-letter-2025",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "The nine-page EBA/2025/D/5384 letter prints 21 November 2025 and the directly retrieved correspondence archive associates it with 21/11/2025. The directly retrieved publication catalogue associates the same work with 20 November 2025. Neither date can be silently promoted to a settled publication date.",
+      "reopen_when": "Obtain document-specific EBA release/register evidence explaining whether 20 November is catalogue metadata, initial publication or an error and whether 21 November is dispatch/issue alone; alternatively a dated official correction resolves the discrepancy.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ecb-ai-financial-stability-special-feature-2024",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "Fresh complete HTML reveals article-specific meta name citation_online_date content 15 May 2024 (HTML line29), absent from the prior discovery memo. The official FSR launch announcement states volume publication on 16 May2024. This could reflect an online article manifestation preceding the volume or inconsistent metadata; neither explanation is verified. The HTML also contains a placeholder citation_doi, so its metadata cannot be assumed infallible.",
+      "reopen_when": "Obtain a document-specific ECB release record or corroborated manifestation schedule distinguishing the article's 15 May online date from the 16 May volume launch. Then use the exact primary-manifestation publication date and retain the separate volume date explicitly.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ema-2024-ai-observatory-report-2025",
+      "decision": "included",
+      "document_id": "ema-2024-ai-observatory-report-2025",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "decision": "included",
+      "document_id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "human-rights-drones-unmanned-robots-warfare-2013",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "Fresh official indexed Think Tank metadata confirms Study 03-05-2013, Nils Melzer as external author and PE 410.220 / EXPO/B/DROI/2012/12 identity. Indexed official PDF cover gives May 2013 and substantial autonomous-weapons/human-rights policy recommendations. Three actual official English PDF requests returned HTTP 202, text/html and zero bytes; the page request did likewise. The web opener returned a JavaScript robot-check page. No valid primary English PDF bytes were captured; empty-body hashes in receipts are failed-response hashes, not document snapshots. No exclusion or merge is warranted.",
+      "reopen_when": "Capture a non-empty official English manifestation of PE 410.220, validate PDF/text identity and English language, calculate its SHA-256, inspect credit and date pages, then complete the canonical record using 2013-05-03 as publication fallback and preserving May 2013 issue precision.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-border-control-migration-security-main-report-2020",
+      "decision": "included",
+      "document_id": "ai-border-control-migration-security-main-report-2020",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The main report develops AI applications and a roadmap for border control and migration, including their ethical, legal and organisational implications. PDF cover issue month is May 2020. PDF p.5 retains a February 2020 internal deliverable cover (D04.01 & D07.01); neither provides an exact day. The dated official May release is used as publication fallback. The main report is independently citable; Volume 2 is a separate addendum outside this review. Only the positively reviewed migration/border sector is assigned.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "people-machines-robots-skills-2017",
+      "decision": "included",
+      "document_id": "people-machines-robots-skills-2017",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The briefing examines employment and skills consequences of robotics performing non-routine cognitive work and self-driving vehicles, then develops workforce adaptation and training responses. This is a substantive intelligent-robotics/autonomous-systems precursor, while the wider digital-skills discussion alone would not meet the boundary. The PDF masthead supplies July 2017 only. Cedefop's English download entry independently dates this manifestation to 31 July 2017, supporting a historical publication fallback. The later OP catalogue release of 6 March 2018 does not create a contemporary duplicate. PDF software metadata naming an editor and an August creation timestamp is not treated as bibliographic author or issue-date evidence. Personal bibliographic authors are not credited in the report.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "advanced-robotics-ai-task-automation-osh-2022",
+      "decision": "included",
+      "document_id": "advanced-robotics-ai-task-automation-osh-2022",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The report analyses AI-based systems and advanced robotics for workplace task automation, with a taxonomy, sectoral uses and occupational-safety-and-health policies. The PDF provides the year 2022 but no exact internal issue day. The official report release of 26 April 2022 is the publication fallback. Project managers Ioannis Anyfantis, Annick Starren and Emmanuelle Brun are not represented as authors. This full report is distinct from the already included AI worker-management report.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-watch-ai-uptake-smart-mobility-2021",
+      "decision": "included",
+      "document_id": "ai-watch-ai-uptake-smart-mobility-2021",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The JRC report analyses AI uptake in smart mobility, including traffic, access to transport, road safety, data governance and algorithmic fairness. Year 2021 is the report's internal precision; the exact official publication date supplies the canonical fallback. PDF p.5 calls this the first edition. Acknowledged reviewers and contributors are not bibliographic authors. The JRC endpoint returned a rejection HTML body, so the equivalent official Publications Office English PDF was captured and inspected.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ethics-connected-automated-vehicles-2020",
+      "decision": "included",
+      "document_id": "ethics-connected-automated-vehicles-2020",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The report proposes twenty ethical recommendations for connected and automated vehicles, with sustained treatment of AI, data protection, fairness and explainability in road mobility. PDF p.2 says manuscript completed in June 2020 and first edition; it does not state an exact internal day. The official OP release of 17 September 2020 is used as publication fallback. The PDF credits the expert group as bibliographic author. PDF p.4 lists members Jean-François Bonnefon (Chairman), David Černý, John Danaher, Nathalie Devillier, Veronica Johansson, Tatiana Kovacikova, Marieke Martens, Milos N. Mladenovic, Paula Palade, Nick Reed, Filippo Santoni de Sio (Rapporteur), Stavroula Tsinorema, Sandra Wachter and Karolina Zawieska. Their membership is preserved without converting each member into an individually credited author. DG RTD's OP corporate-metadata entry does not supersede the report's explicit authorship citation.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-defining-ai-2020",
+      "decision": "included",
+      "document_id": "jrc-ai-watch-defining-ai-2020",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-defining-ai-2-2021",
+      "decision": "included",
+      "document_id": "jrc-ai-watch-defining-ai-2-2021",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-public-services-2020",
+      "decision": "included",
+      "document_id": "jrc-ai-watch-public-services-2020",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "jrc-ai-watch-public-sector-workshop-2020",
+      "decision": "included",
+      "document_id": "jrc-ai-watch-public-sector-workshop-2020",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "council-decision-82-878-eec-esprit-pilot",
+      "decision": "included",
+      "document_id": "council-decision-82-878-eec-esprit-pilot",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "council-decision-2022-2269-responsible-ai",
+      "decision": "included",
+      "document_id": "council-decision-2022-2269-responsible-ai",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "eurohpc-ai-gigafactories-regulation-2026-150",
+      "decision": "included",
+      "document_id": "eurohpc-ai-gigafactories-regulation-2026-150",
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "gpai-provider-guidelines-c-2025-7719",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "Exact36-page C(2025)7719 final PDF and November19 issue confirmed; official register transmission on November19 is not public release. July18 library publication predates this exact version; current library updateApril20,2026 is not its first publication. November24 search result concerns whistleblowing, not these guidelines.",
+      "reopen_when": "Recover an official dated public release for exact C(2025)7719 final English manifestation; do not reuse the July predecessor date.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-board-harmonised-standards-report-2026",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "New evidence strengthens separation of endorsement from public release and corroborates seventh meeting; it still does not establish exact version-specific issue/adoption and public-release dates. Keep pending.",
+      "reopen_when": "Official evidence ties this precise version to exact issue/adoption and public-release dates. Do not substitute meeting or Ares dates without that link.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-board-article-40-standardisation-report-2026",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "New evidence strengthens separation of endorsement from public release and corroborates seventh meeting; it still does not establish exact version-specific issue/adoption and public-release dates. Keep pending.",
+      "reopen_when": "Official evidence ties this precise version to exact issue/adoption and public-release dates. Do not substitute meeting or Ares dates without that link.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-board-international-standardisation-report-2026",
+      "decision": "pending",
+      "document_id": null,
+      "decision_reason": "New evidence strengthens separation of endorsement from public release and corroborates seventh meeting; it still does not establish exact version-specific issue/adoption and public-release dates. Keep pending.",
+      "reopen_when": "Official evidence ties this precise version to exact issue/adoption and public-release dates. Do not substitute meeting or Ares dates without that link.",
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732802",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732802",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732836",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732836",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732837",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732837",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732838",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732838",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732839",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732839",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732840",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732840",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732841",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732841",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732843",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732843",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ep-ai-act-committee-amendments-pe-732844",
+      "decision": "included",
+      "document_id": "ep-ai-act-committee-amendments-pe-732844",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication.",
+      "reopen_when": null,
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "cedefop-op.html",
+    "url": "https://op.europa.eu/en/publication-detail/-/publication/973495f4-ad64-11e7-837e-01aa75ed71a1/language-en",
+    "retrieved_at": "2026-09-06T22:52:07.437269+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/en/publication-detail/-/publication/973495f4-ad64-11e7-837e-01aa75ed71a1/language-en",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 466730,
+    "sha256": "1c25d7d7d63db6caeee1944a4f2e473702264a932c7947097b5890f1d6e24161"
+  },
+  {
+    "name": "cedefop-page-slash.html",
+    "url": "https://www.cedefop.europa.eu/en/publications/9121/",
+    "retrieved_at": "2026-09-06T22:52:07.437269+00:00",
+    "status": 200,
+    "final_url": "https://www.cedefop.europa.eu/challenge?return=%2Fen%2Fpublications%2F9121%2F",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 10314,
+    "sha256": "7ff63070c8fbdc833dce083ae9768859a7cff0bc757b4253b0ff4c1c9a194b85"
+  },
+  {
+    "name": "drones-download.pdf",
+    "url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET%282013%29410220_EN.pdf?download=1",
+    "retrieved_at": "2026-09-06T22:52:07.438269+00:00",
+    "status": 202,
+    "final_url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET%282013%29410220_EN.pdf?download=1",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "drones-page.html",
+    "url": "https://www.europarl.europa.eu/thinktank/en/document/EXPO-DROI_ET%282013%29410220",
+    "retrieved_at": "2026-09-06T22:52:07.439268+00:00",
+    "status": 202,
+    "final_url": "https://www.europarl.europa.eu/thinktank/en/document/EXPO-DROI_ET%282013%29410220",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "jrc-op-page.html",
+    "url": "https://op.europa.eu/en/publication-detail/-/publication/3b2bb4f5-1699-11ec-b4fe-01aa75ed71a1/language-en",
+    "retrieved_at": "2026-09-06T22:52:07.526704+00:00",
+    "status": 200,
+    "final_url": "https://op.europa.eu/en/publication-detail/-/publication/3b2bb4f5-1699-11ec-b4fe-01aa75ed71a1/language-en",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 441244,
+    "sha256": "52c0bde7cde9a0c076f4d9cbe8f05ac20726013d44ffe5d6bddaee02783b7dc8"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:09Z",
+  "updated_at": "2026-09-06T22:54:09Z",
+  "source_type": "official_pdf",
+  "url": "https://osha.europa.eu/sites/default/files/2022-04/Advanced%20robotics_AI_based%20systems.pdf",
+  "publisher": "European Agency for Safety and Health at Work",
+  "retrieved_at": "2026-09-06T23:50:31.926441+01:00",
+  "last_verified_at": "2026-09-06T22:54:09Z",
+  "verification_note": "Actual official English PDF bytes captured and validated, with SHA-256 in the document snapshot. Identity, credits, dates and substantive passages inspected: PDF p.2 (printed p.1), Authors block; PDF p.5 (printed p.4), section 1 Introduction and objectives; chapters 3-5. Source bytes and receipts retained in the external evidence audit; archived_path is null because no PDF is proposed for repository retention."
+}

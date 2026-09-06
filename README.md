@@ -2,9 +2,9 @@
 
 The EU AI Policy Observatory is a verified research database of European Union artificial intelligence policy. The database serves as research infrastructure; the accompanying website is a read-only research atlas over generated public data. It makes a bounded, inspectable corpus easier to browse, cite and interrogate without replacing the official sources on which individual records rely.
 
-## Version 0.1 release
+## Version 0.2 research snapshot
 
-For a fixed research citation and downloadable snapshot, use [dataset release v0.1.0](https://github.com/Riro-deddo/eu-ai-policy-observatory/releases/tag/v0.1.0), [citation metadata](CITATION.cff) and the [release boundaries and limitations](docs/releases/v0.1.0.md). The website remains a changing view of the database.
+For a fixed research citation and downloadable snapshot, use [dataset release v0.2.0](https://github.com/Riro-deddo/eu-ai-policy-observatory/releases/tag/v0.2.0), [citation metadata](CITATION.cff) and the [release boundaries and limitations](docs/releases/v0.2.0.md). Version0.1.0 remains unchanged. The website remains a changing view of the database.
 
 - [Browse the public research atlas](https://riro-deddo.github.io/eu-ai-policy-observatory/)
 - [View the GitHub repository](https://github.com/Riro-deddo/eu-ai-policy-observatory)
@@ -22,7 +22,7 @@ The approved research boundary admits official European Communities and EU docum
 
 An expanding corpus of official EU and European Communities AI-related documents. Verification dates and known coverage gaps are documented.
 
-Implemented coverage is currently concentrated on the AI Act pathway and related implementation. The published records span 1984–2026, with a publication cutoff of 4 September 2026; historical backfill and the wider institutional and sectoral sweep remain incomplete. The cutoff records the last date admitted by the audit revision. It is distinct from the actual retrieval, verification and decision-review timestamps recorded when research actions occur.
+Implemented coverage is currently concentrated on the AI Act pathway and related implementation. The published records span 1982–2026, with a publication cutoff of 4 September 2026; historical backfill and the wider institutional and sectoral sweep remain incomplete. The cutoff records the last date admitted by the audit revision. It is distinct from the actual retrieval, verification and decision-review timestamps recorded when research actions occur.
 
 Stage 1 establishes the schema and interface over the existing reviewed corpus, controlled classifications, source registry and candidate inventory. It is not the completed EU-wide source sweep. The canonical repository may contain records in editorial states such as `draft`, `pending_review` or `verified`; only records whose `publication_status` is `published` enter the generated public JSON, static site and SQLite output. Pending candidates are included in aggregate audit summaries but excluded from public document records, published record counts and downloads.
 

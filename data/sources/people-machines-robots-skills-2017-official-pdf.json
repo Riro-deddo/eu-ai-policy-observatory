@@ -1,0 +1,13 @@
+{
+  "id": "people-machines-robots-skills-2017-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:09Z",
+  "updated_at": "2026-09-06T22:54:09Z",
+  "source_type": "official_pdf",
+  "url": "https://www.cedefop.europa.eu/files/9121_en.pdf",
+  "publisher": "European Centre for the Development of Vocational Training",
+  "retrieved_at": "2026-09-06T23:50:31.925442+01:00",
+  "last_verified_at": "2026-09-06T22:54:09Z",
+  "verification_note": "Actual official English PDF bytes captured and validated, with SHA-256 in the document snapshot. Identity, credits, dates and substantive passages inspected: PDF p.4 institutional imprint and OP corporate-author field; PDF p.2, Job substitution, creation and transformation; pp.3-4, skills implications and policy response. Source bytes and receipts retained in the external evidence audit; archived_path is null because no PDF is proposed for repository retention."
+}

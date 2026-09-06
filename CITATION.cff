@@ -9,10 +9,16 @@
       "given-names": "Yichen"
     }
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "date-released": "2026-09-06",
   "repository-code": "https://github.com/Riro-deddo/eu-ai-policy-observatory",
-  "url": "https://github.com/Riro-deddo/eu-ai-policy-observatory/releases/tag/v0.1.0",
-  "abstract": "Research infrastructure presenting a bounded English-language corpus of EU artificial intelligence policy documents and their evidence-bearing metadata. Version 0.1.0 contains 187 published records, including four explicitly qualified records pending expanded evidence review. Twelve additional candidates remain unpublished. The coverage cutoff is 4 September 2026; the release-time evidence review is dated 6 September 2026. This dataset does not claim exhaustive coverage or legal authority.",
-  "keywords": ["European Union", "artificial intelligence", "policy", "research infrastructure", "provenance"]
+  "url": "https://github.com/Riro-deddo/eu-ai-policy-observatory/releases/tag/v0.2.0",
+  "abstract": "Research infrastructure presenting a bounded English-language corpus of EU artificial intelligence policy documents and evidence-bearing metadata. Version0.2.0 contains218 published records,214 expanded-evidence verified and4 explicitly qualified. Eight additional candidates remain unpublished. Coverage cutoff4 September2026; review6 September2026 UTC. No exhaustive coverage or legal authority is claimed.",
+  "keywords": [
+    "European Union",
+    "artificial intelligence",
+    "policy",
+    "research infrastructure",
+    "provenance"
+  ]
 }

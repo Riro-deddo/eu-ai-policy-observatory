@@ -1,0 +1,42 @@
+[
+  {
+    "id": "eba-factsheet-catalogue",
+    "url": "https://www.eba.europa.eu/search?f%5B0%5D=date%3A2025-09&f%5B1%5D=document_type%3A5606&f%5B2%5D=type%3ADocuments",
+    "retrieved_at": "2026-09-06T22:51:15.819410+00:00",
+    "status": 200,
+    "final_url": "https://www.eba.europa.eu/search?f%5B0%5D=date%3A2025-09&f%5B1%5D=document_type%3A5606&f%5B2%5D=type%3ADocuments",
+    "bytes": 53945,
+    "sha256": "566515e89ee2e8e6108aaa2062510eedf07740554bee6d9811dfcc08a2e0dd57",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "id": "eba-mapping-catalogue",
+    "url": "https://www.eba.europa.eu/publications-and-media/publications?page=46",
+    "retrieved_at": "2026-09-06T22:51:15.819410+00:00",
+    "status": 200,
+    "final_url": "https://www.eba.europa.eu/publications-and-media/publications?page=46",
+    "bytes": 77891,
+    "sha256": "b729bee41dda0bac9ce1868a565b4bb0bf35a329d5631290d90bc8ba8e47502c",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "id": "gmdp-profile",
+    "url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/compliance-research-development/good-manufacturing-practice/good-manufacturing-practice-gmp-good-distribution-practice-gdp-inspectors-working-group",
+    "retrieved_at": "2026-09-06T22:51:15.819410+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/compliance-research-development/good-manufacturing-practice/good-manufacturing-practice-gmp-good-distribution-practice-gdp-inspectors-working-group",
+    "bytes": 112853,
+    "sha256": "e714ffc27e2479769cb900a435ee13a4821565229c91358fd547b85c580553e3",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "id": "pics-profile",
+    "url": "https://www.ema.europa.eu/en/partners-networks/international-activities/multilateral-coalitions-and-initiatives/pharmaceutical-inspection-co-operation-scheme",
+    "retrieved_at": "2026-09-06T22:51:15.820408+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/multilateral-coalitions-and-initiatives/pharmaceutical-inspection-co-operation-scheme",
+    "bytes": 63098,
+    "sha256": "e8ffc0fc1fcc013e8697d8d066265f071dc7e52009d6fa4eb54908fde895254c",
+    "content_type": "text/html; charset=UTF-8"
+  }
+]

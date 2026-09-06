@@ -1,0 +1,151 @@
+{
+  "id": "ethics-connected-automated-vehicles-2020",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:09Z",
+  "updated_at": "2026-09-06T22:54:09Z",
+  "slug": "ethics-connected-automated-vehicles-2020",
+  "official_title": "Ethics of connected and automated vehicles: Recommendations on road safety, privacy, fairness, explainability and responsibility",
+  "short_title": "Ethics of connected and automated vehicles",
+  "document_type": "report",
+  "sector_tags": [
+    "transport_and_mobility"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "E03659; DOI 10.2777/035239; ISBN 978-92-76-17867-5; KI-03-20-238-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2020-09-17",
+  "version_label": "1st edition",
+  "version_status": "final",
+  "publication_date": "2020-09-17",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "expert-group-ethics-connected-automated-vehicles",
+      "role": "author",
+      "evidence_source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "evidence_locator": "PDF p.2, explicit citation; p.4 members; p.17 mandate"
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "commissioner",
+      "evidence_source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "evidence_locator": "PDF p.17, Commission established the expert group and its report mandate"
+    },
+    {
+      "institution_id": "directorate-general-for-research-and-innovation",
+      "role": "responsible_body",
+      "evidence_source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "evidence_locator": "PDF pp.2-3, Directorate D and Unit D.2 publication responsibility"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "evidence_locator": "PDF p.2 imprint"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "ethics-connected-automated-vehicles-2020-official-page",
+      "evidence_locator": "Official OP catalogue and English PDF"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ethics-connected-automated-vehicles-2020-official-pdf",
+    "ethics-connected-automated-vehicles-2020-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The report proposes twenty ethical recommendations for connected and automated vehicles, with sustained treatment of AI, data protection, fairness and explainability in road mobility.",
+    "researcher_notes": "PDF p.2 says manuscript completed in June 2020 and first edition; it does not state an exact internal day. The official OP release of 17 September 2020 is used as publication fallback. The PDF credits the expert group as bibliographic author. PDF p.4 lists members Jean-François Bonnefon (Chairman), David Černý, John Danaher, Nathalie Devillier, Veronica Johansson, Tatiana Kovacikova, Marieke Martens, Milos N. Mladenovic, Paula Palade, Nick Reed, Filippo Santoni de Sio (Rapporteur), Stavroula Tsinorema, Sandra Wachter and Karolina Zawieska. Their membership is preserved without converting each member into an individually credited author. DG RTD's OP corporate-metadata entry does not supersede the report's explicit authorship citation.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ethics-connected-automated-vehicles-2020-official-page",
+      "locator": "Publication details: Released on EU publications website: 2020-09-17",
+      "meaning": "Exact official publication fallback; month/year internal precision is preserved separately."
+    },
+    "publication_date": {
+      "source_id": "ethics-connected-automated-vehicles-2020-official-page",
+      "locator": "Publication details: Released on EU publications website: 2020-09-17",
+      "meaning": "Official release of the cited English manifestation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "locator": "PDF pp.6-7 executive abstract; PDF pp.37-53, chapter 2 Data and algorithm ethics",
+      "rationale": "The report proposes twenty ethical recommendations for connected and automated vehicles, with sustained treatment of AI, data protection, fairness and explainability in road mobility."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "locator": "PDF pp.6-7 executive abstract; PDF pp.37-53, chapter 2 Data and algorithm ethics",
+      "rationale": "The report proposes twenty ethical recommendations for connected and automated vehicles, with sustained treatment of AI, data protection, fairness and explainability in road mobility."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "locator": "PDF p.2, Please cite as",
+      "rationale": "The PDF p.2 required citation names the Horizon 2020 Commission Expert Group (E03659); pp.4 and 17 identify its fourteen independent members and mandate."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ethics-connected-automated-vehicles-2020-official-page",
+      "locator": "Publication details: Released on EU publications website: 2020-09-17",
+      "rationale": "Dated official publication and English report availability are evidenced."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Horizon 2020 Commission Expert Group to advise on specific ethical issues raised by driverless mobility (E03659)",
+      "affiliation": null,
+      "evidence_source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "evidence_locator": "PDF p.2, Please cite as"
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "manuscript_completion",
+      "value": "2020-06",
+      "precision": "month",
+      "source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "locator": "PDF p.2, manuscript completed in June 2020"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "ethics-connected-automated-vehicles-2020-english-snapshot-20260906",
+      "source_id": "ethics-connected-automated-vehicles-2020-official-pdf",
+      "retrieved_at": "2026-09-06T23:51:08.702179+01:00",
+      "format": "pdf",
+      "content_hash": "50ba357a334e31ae6a98c2b8de9ebeb3a8073eae7456542e41462ac8d9e95694",
+      "archived_path": null
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "council-decision-82-878-eec-esprit-pilot",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "slug": "council-decision-82-878-eec-esprit-pilot",
+  "official_title": "Council Decision of 21 December 1982 on a preparatory phase for a Community research and development programme in the field of information technologies (82/878/EEC)",
+  "short_title": "ESPRIT preparatory phase",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "82/878/EEC",
+  "procedure_references": [],
+  "oj_reference": "OJ L 369, 29.12.1982, pp. 37-40",
+  "document_date": "1982-12-21",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "1982-12-29",
+  "legal_status": "expired",
+  "celex": "31982D0878",
+  "eli": "http://data.europa.eu/eli/dec/1982/878/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-communities",
+      "role": "adopter",
+      "evidence_source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "evidence_locator": "Enacting body, heading and signature."
+    },
+    {
+      "institution_id": "commission-of-the-european-communities",
+      "role": "proposer",
+      "evidence_source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "evidence_locator": "Preamble: Having regard to the proposal from the named proposing institution."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "council-decision-82-878-eec-esprit-pilot-eur-lex",
+    "council-decision-82-878-eec-esprit-pilot-status-evidence"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Annex III, Advanced information processing: knowledge-based systems and inference techniques; Annex V: image-driven pattern-directed control.",
+    "researcher_notes": "The exact title is preparatory phase, not the provisional inventory wording experimental phase. Its substantive knowledge processing and inference provisions meet the precursor boundary; generic information technology alone would not. This is not an early version of the AI Act. Concept/policy annotations are not yet completed.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:17Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "historical_lineage",
+  "relevance_class": "ai_related_precursor",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "Act heading and signature: 1982-12-21.",
+      "meaning": "Date of the adopted act, separate from publication."
+    },
+    "publication_date": {
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "OJ L 369, 29.12.1982, pp. 37-40",
+      "meaning": "Publication of the cited original English OJ manifestation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "ai_related_precursor",
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "Annex III, Advanced information processing: knowledge-based systems and inference techniques; Annex V: image-driven pattern-directed control.",
+      "rationale": "Substantive knowledge-based systems and inference research connected to the collected ESPRIT policy lineage."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "Annex III, Advanced information processing: knowledge-based systems and inference techniques; Annex V: image-driven pattern-directed control.",
+      "rationale": "Researcher sector classification grounded in operative substantive provisions."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "Annex III, Advanced information processing: knowledge-based systems and inference techniques; Annex V: image-driven pattern-directed control.",
+      "rationale": "Researcher sector classification grounded in operative substantive provisions."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "Enacting institution and signature.",
+      "rationale": "Official EU or European Communities act; exact historical adopter retained."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+      "locator": "OJ L 369, 29.12.1982, pp. 37-40",
+      "rationale": "Published original Official Journal text."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "council-decision-82-878-eec-esprit-pilot-status-evidence",
+    "locator": "EUR-Lex document-information panel: end of validity 31/12/1983, See Art.1; operative Article 1 maximum one-year activity.",
+    "meaning": "Explicit official end-of-validity metadata, not an inferred repeal from a programme title."
+  }
+}

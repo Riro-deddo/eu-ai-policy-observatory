@@ -1,0 +1,164 @@
+{
+  "id": "jrc-ai-watch-defining-ai-2-2021",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "slug": "jrc-ai-watch-defining-ai-2-2021",
+  "official_title": "AI Watch. Defining Artificial Intelligence 2.0: Towards an operational definition and taxonomy for the AI landscape",
+  "short_title": "AI Watch: defining artificial intelligence 2.0",
+  "document_type": "report",
+  "sector_tags": [
+    "general_cross_sector",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "version",
+  "official_reference": "JRC126426; EUR 30873 EN; DOI 10.2760/019901",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2021-10-29",
+  "version_label": "Second edition",
+  "version_status": "revised",
+  "publication_date": "2021-10-29",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "joint-research-centre",
+      "role": "author",
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.2: report by the Joint Research Centre; personal author credits retained separately."
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.2 imprint: Publications Office of the European Union."
+    },
+    {
+      "institution_id": "joint-research-centre",
+      "role": "official_host",
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-catalogue",
+      "evidence_locator": "JRC Publications Repository and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "jrc-ai-watch-defining-ai-2-2021-pdf",
+    "jrc-ai-watch-defining-ai-2-2021-catalogue"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "PDF p.8 (printed p.3), Abstract: second edition incorporates the AI Act proposal and extends the AI taxonomy across policy, research, industry and applications.",
+    "researcher_notes": "Independently citable second edition with its own DOI and authorship order; linked to the first edition by an evidenced revises relationship. The AI Watch page truncates the DOI to 10.2760/01990; the complete PDF and JRC catalogue identify 10.2760/019901. Concept and policy annotations remain uncompleted; empty arrays are not negative findings.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:17Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-catalogue",
+      "locator": "Date available panel and embedded dc.date.available = 2021-10-29; linked English PDF and matching JRC identifier.",
+      "meaning": "Official repository publication availability used as document-date fallback; no exact independent issue day is asserted."
+    },
+    "publication_date": {
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-catalogue",
+      "locator": "Date available / dc.date.available = 2021-10-29.",
+      "meaning": "Release of the cited official repository manifestation; not asserted to be first publication on every EU host."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "locator": "PDF p.8 (printed p.3), Abstract: second edition incorporates the AI Act proposal and extends the AI taxonomy across policy, research, industry and applications.",
+      "rationale": "AI is the substantive object of this policy-support report."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "locator": "PDF p.8 (printed p.3), Abstract: second edition incorporates the AI Act proposal and extends the AI taxonomy across policy, research, industry and applications.",
+      "rationale": "Researcher sector classification based on the report's substantive scope."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "locator": "PDF p.8 (printed p.3), Abstract: second edition incorporates the AI Act proposal and extends the AI taxonomy across policy, research, industry and applications.",
+      "rationale": "Researcher sector classification based on the report's substantive scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "locator": "PDF p.2 report-by-JRC statement; named author credits.",
+      "rationale": "JRC institutional report, with named personal authors retained; hosting alone is not authorship."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "jrc-ai-watch-defining-ai-2-2021-catalogue",
+      "locator": "Public repository availability and linked English manifestation.",
+      "rationale": "Official institutional publication record."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Sofia Samoili",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.7, Authors; catalogue author list."
+    },
+    {
+      "name": "Montserrat López Cobo",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.7, Authors; catalogue author list."
+    },
+    {
+      "name": "Blagoj Delipetrev",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.7, Authors; catalogue author list."
+    },
+    {
+      "name": "Fernando Martínez-Plumed",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.7, Authors; catalogue author list."
+    },
+    {
+      "name": "Emilia Gómez",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.7, Authors; catalogue author list."
+    },
+    {
+      "name": "Giuditta De Prato",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+      "evidence_locator": "PDF p.7, Authors; catalogue author list."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "jrc-ai-watch-defining-ai-2-2021-pdf",
+    "locator": "PDF p.2, scientific-report disclaimer.",
+    "meaning": "Evidence-based scientific support report, expressly not a Commission policy position or binding legal act."
+  }
+}

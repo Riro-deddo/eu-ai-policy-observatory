@@ -240,8 +240,13 @@ def test_known_unresolved_exclusions_are_reopened_with_history():
     candidates = {row["id"]: row for row in inventory["candidates"]}
     for identifier in REOPEN_IDS:
         row = candidates[identifier]
-        assert row["decision"] == "pending"
-        assert row["document_id"] is None and row["merged_into_document_id"] is None
+        if identifier.startswith("ep-ai-act-committee-amendments-"):
+            assert row["decision"] == "included"
+            assert row["document_id"] == identifier
+        else:
+            assert row["decision"] == "pending"
+            assert row["document_id"] is None
+        assert row["merged_into_document_id"] is None
         # Rechecks append history: the original exclusion must remain first,
         # not necessarily last after a later evidence review.
         assert row["decision_history"][0]["decision"] == "excluded"
@@ -554,7 +559,10 @@ def test_2021_0106_procedure_sweep_exposes_reopened_parliament_candidates():
         for candidate in procedure_candidates
         if candidate["decision"] == "pending"
     }
-    assert actual_pending == expected_pending
+    assert actual_pending == set()
+    assert expected_pending == {candidate["id"] for candidate in procedure_candidates
+                                if candidate["id"].startswith("ep-ai-act-committee-amendments-")
+                                and candidate["decision"] == "included"}
 
 
 def test_2022_to_2024_inventory_reconciles_required_official_records():

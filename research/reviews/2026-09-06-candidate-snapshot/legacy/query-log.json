@@ -1,0 +1,670 @@
+{
+  "created_at": "2026-09-06T22:57:29Z",
+  "review_actor": "AI-assisted evidence review",
+  "scope": {
+    "institutions": [
+      "European Parliament",
+      "European Artificial Intelligence Board / Commission register host"
+    ],
+    "language": "English manifestations",
+    "periods": [
+      "2022-06-10/2022-06-28 for PE work/manifestation reconciliation",
+      "2026-03/2026-07 for Board endorsement, registration and release metadata"
+    ],
+    "document_types": [
+      "proposed committee amendment compilations",
+      "Board standards subgroup reports"
+    ],
+    "sector_scope": "Horizontal AI governance and regulation",
+    "candidate_count": 12,
+    "cutoff": "2026-09-04"
+  },
+  "method": "Bounded fresh recheck of fixed twelve identities using alternative official work/expression/manifestation metadata and group/news records. Each Parliament API result was followed to its English PDF distribution; bytes were SHA-256 compared to previously retained PDFs. Capture content stores decoded UTF-8 response body and original byte hash, not a claim that the wrapper JSON equals original bytes. Response cookies were omitted.",
+  "web_searches": [
+    {
+      "search_date": "2026-09-06",
+      "date_precision": "day",
+      "queries": [
+        "site.europarl.europa.eu \"732.802\" \"2022\"",
+        "site.ec.europa.eu \"AIB2025-doc2\"",
+        "site.digital-strategy.ec.europa.eu \"Standards Subgroup\" \"2026\""
+      ],
+      "result": "Located official Board page; other returned hits were irrelevant and not evidence. No version-specific dates obtained."
+    },
+    {
+      "search_date": "2026-09-06",
+      "date_precision": "day",
+      "queries": [
+        "\"CJ40-AM-732802\" \"date\" [europarl.europa.eu]",
+        "\"732.836\" \"13.6.2022\" [europarl.europa.eu]",
+        "\"Harmonised Standards for High-Risk AI Systems\" \"2026\" [europa.eu]"
+      ],
+      "result": "Board page reappeared. No independently useful PE publication metadata found through indexed search."
+    },
+    {
+      "search_date": "2026-09-06",
+      "date_precision": "day",
+      "queries": [
+        "site.digital-strategy.ec.europa.eu/en/news/seventh-ai-board-meeting",
+        "site.europarl.europa.eu \"732802\"",
+        "site.europarl.europa.eu \"732836\"",
+        "site.data.europarl.europa.eu \"documents\" \"API\""
+      ],
+      "result": "Located March Board news and official EP API documentation. Followed API endpoint through Python urllib after web-tool access failures."
+    }
+  ],
+  "web_navigation_failures": [
+    {
+      "url": "https://www.europarl.europa.eu/RegData/commissions/imco/amendments/2022/732802/IMCO_AM(2022)732802_EN.pdf",
+      "result": "Web tool internal error; exploratory alias not used as evidence."
+    },
+    {
+      "url": "https://data.europarl.europa.eu/en/datasets/documents",
+      "result": "Web tool internal error."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/RegistreWeb/search/simple.htm?reference=PE732.802",
+      "result": "Web tool safe-open failure."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/RegistreWeb/home/welcome.htm?language=EN",
+      "result": "JavaScript anti-bot page; no register record obtained."
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732802?format=application%2Fld%2Bjson",
+      "result": "Web tool safe-open failure, subsequently recovered through normal urllib request, see exact capture."
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/committee-documents/CJ40-AM-732802",
+      "result": "Web tool safe-open failure; no data used."
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/news/seventh-ai-board-meeting",
+      "result": "Initial web open 429; indexed result and then direct urllib returned official text."
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-board-convenes-its-eight-meeting",
+      "result": "Initial web open 429; direct urllib returned official text."
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134542",
+      "result": "PowerShell SSL failure; urllib returned HTTP 404 for this exploratory metadata path. Download path already known and preserved."
+    }
+  ],
+  "official_context_semantics": {
+    "url": "https://data.europarl.europa.eu/api/v2/context.jsonld",
+    "capture": "captures/capture-21.json",
+    "issued": "dcterms:issued with xsd:dateTime",
+    "document_date": "eli:date_document with xsd:date",
+    "dcmi_definition": {
+      "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/issued/",
+      "access": "Web tool page read on 2026-09-06; direct urllib returned 403. Web source provided the term definition.",
+      "definition": "Date of formal issuance of the resource."
+    }
+  },
+  "requests": [
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/committee-documents?format=application%2Fld%2Bjson&limit=1",
+      "retrieved_at": "2026-09-06T22:50:41.188436+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/committee-documents?format=application%2Fld%2Bjson&limit=1",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:50:41 GMT",
+        "Content-Type": "application/ld+json",
+        "Content-Length": "310",
+        "Connection": "close",
+        "Server": "nginx",
+        "X-Total-Count": "1",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 310,
+      "sha256": "85841e873594e08bf513a0b0aea3e8fe9c276b5bcf454efe07fdb4432f570267",
+      "capture_file": "captures/capture-01.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732802?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:50:41.188436+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732802?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:50:41 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 41126,
+      "sha256": "cf7f6025ab96cc29f63b30c954c4203ee78fda3c78d5552aa35251cc47ac6467",
+      "capture_file": "captures/CJ40-AM-732802-api.json"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/groups/3966",
+      "retrieved_at": "2026-09-06T22:50:41.188436+00:00",
+      "error": "HTTP Error 404: ",
+      "capture_file": "captures/capture-03.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732836?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:08.540612+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732836?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:08 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 41154,
+      "sha256": "4df4042566772a32dda91d76b48712ec32c1398d063c8140dccd0ecdc49edeb5",
+      "capture_file": "captures/CJ40-AM-732836-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732837?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:08.672651+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732837?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:08 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 40933,
+      "sha256": "ef0a0de5037b50515658db018e0edacccaae3fddad5d63bb107273af796150f5",
+      "capture_file": "captures/CJ40-AM-732837-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732838?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:08.866235+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732838?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:08 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 40959,
+      "sha256": "5fb22a9f283ebf7b28db9da2622eb7e5844d5f4e0dff35431995af609108a49f",
+      "capture_file": "captures/CJ40-AM-732838-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732839?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:09.012582+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732839?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:09 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 41325,
+      "sha256": "90932f43f20bde33660022200f13970754a9166f1dd20e01b78e4cd8b2c14883",
+      "capture_file": "captures/CJ40-AM-732839-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732840?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:09.185801+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732840?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:09 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 41613,
+      "sha256": "ec14074fcfc86b66c6d1d88ba6dbf3a102e98fa5cdb0843345e5098d8f501ef1",
+      "capture_file": "captures/CJ40-AM-732840-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732841?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:09.353946+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732841?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:09 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 41108,
+      "sha256": "096119ca3ea177bf1567632db2c697d6fb25bf86f2b7dddd436908167211a7f0",
+      "capture_file": "captures/CJ40-AM-732841-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732843?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:09.489451+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732843?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:09 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 41138,
+      "sha256": "17907bf6a50501355d07cac335cd739ff95f318209c75b730da94a445702cd2f",
+      "capture_file": "captures/CJ40-AM-732843-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732844?format=application%2Fld%2Bjson",
+      "retrieved_at": "2026-09-06T22:51:09.643457+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/documents/CJ40-AM-732844?format=application%2Fld%2Bjson",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:09 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 40865,
+      "sha256": "08b079a84b6249e8b431a2a3b683f5fa3c1abf437c2aadff54f3f9af8ee17224",
+      "capture_file": "captures/CJ40-AM-732844-api.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732802/CJ40-AM-732802_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:17.188237+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732802/CJ40-AM-732802_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:17 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "626876",
+        "Last-Modified": "Mon, 20 Jun 2022 14:12:57 GMT",
+        "ETag": "\"62b08069-990bc\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 626876,
+      "sha256": "f7cf97016ac53eb6c2ba94ce353efecb5b57a0d415b3b836bca278999e05db10",
+      "capture_file": "captures/capture-12.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732836/CJ40-AM-732836_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:17.339952+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732836/CJ40-AM-732836_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:17 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "634476",
+        "Last-Modified": "Tue, 21 Jun 2022 09:06:28 GMT",
+        "ETag": "\"62b18a14-9ae6c\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 634476,
+      "sha256": "0303e12f5f55477055c749ae19c748ef3973db105c24c9d9b4f59bdfb1bd9693",
+      "capture_file": "captures/capture-13.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732837/CJ40-AM-732837_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:17.517241+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732837/CJ40-AM-732837_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:17 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "568230",
+        "Last-Modified": "Tue, 21 Jun 2022 10:35:55 GMT",
+        "ETag": "\"62b19f0b-8aba6\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 568230,
+      "sha256": "b51afd43ba3c1f18c79206df47f4cac41cd99a88a2e7cea38961abc626a2fe2c",
+      "capture_file": "captures/capture-14.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732838/CJ40-AM-732838_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:17.689347+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732838/CJ40-AM-732838_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:17 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "560499",
+        "Last-Modified": "Tue, 21 Jun 2022 11:47:15 GMT",
+        "ETag": "\"62b1afc3-88d73\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 560499,
+      "sha256": "2b4cd58b5e69c34c46041f924e2f781039e1d6e0985324ea1a0432cee1a17b56",
+      "capture_file": "captures/capture-15.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732839/CJ40-AM-732839_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:17.846565+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732839/CJ40-AM-732839_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:17 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "570221",
+        "Last-Modified": "Tue, 21 Jun 2022 10:44:17 GMT",
+        "ETag": "\"62b1a101-8b36d\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 570221,
+      "sha256": "ad1cf00b54405d1d8b394e85827b6b90b8e6d365fd51cedaa2a54e395b0ebdad",
+      "capture_file": "captures/capture-16.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732840/CJ40-AM-732840_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:17.983071+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732840/CJ40-AM-732840_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:17 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "584324",
+        "Last-Modified": "Tue, 21 Jun 2022 10:24:38 GMT",
+        "ETag": "\"62b19c66-8ea84\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 584324,
+      "sha256": "b7d6e717bc1cb4e78dceea967ed4714f3497c0af2519b5a28cadfdca28232d59",
+      "capture_file": "captures/capture-17.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732841/CJ40-AM-732841_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:18.147443+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732841/CJ40-AM-732841_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:18 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "574114",
+        "Last-Modified": "Tue, 21 Jun 2022 10:34:19 GMT",
+        "ETag": "\"62b19eab-8c2a2\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 574114,
+      "sha256": "2d5c26ef57fc2936471d82c7d6fa130f371048776b9514a34367960d10b491cd",
+      "capture_file": "captures/capture-18.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732843/CJ40-AM-732843_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:18.328313+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732843/CJ40-AM-732843_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:18 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "479860",
+        "Last-Modified": "Tue, 21 Jun 2022 11:47:24 GMT",
+        "ETag": "\"62b1afcc-75274\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 479860,
+      "sha256": "d52156ba0e959bd2a50e3b7e74fa2b06cf92178a2ba2ee01dd35e7baa198b4ff",
+      "capture_file": "captures/capture-19.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/distribution/reds_iCmDoc_Amd/CJ40-AM-732844/CJ40-AM-732844_en.pdf",
+      "retrieved_at": "2026-09-06T22:51:18.460822+00:00",
+      "status": 200,
+      "final_url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iCmDoc_Amd/CJ40-AM-732844/CJ40-AM-732844_en.pdf",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sun, 06 Sep 2026 22:51:18 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "430763",
+        "Last-Modified": "Mon, 20 Jun 2022 14:07:59 GMT",
+        "ETag": "\"62b07f3f-692ab\"",
+        "Accept-Ranges": "bytes",
+        "Connection": "close"
+      },
+      "bytes": 430763,
+      "sha256": "d4e1383ee5675799a270d299b7715a5a150a8b05676d59c3a073ea264f42bdad",
+      "capture_file": "captures/capture-20.json"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/context.jsonld",
+      "retrieved_at": "2026-09-06T22:51:18.613715+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/context.jsonld",
+      "headers": {
+        "Date": "Sun, 06 Sep 2026 22:51:18 GMT",
+        "Content-Type": "application/ld+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "Last-Modified": "2026-08-07T07:28:39Z",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1 ; mode=block",
+        "Referrer-Policy": "no-referrer"
+      },
+      "bytes": 27982,
+      "sha256": "c2aaed5e7fd9aa50f2ea3f4a48eba3540534cf713994c315a37b42d6faa08df7",
+      "capture_file": "captures/capture-21.json"
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/news/seventh-ai-board-meeting",
+      "retrieved_at": "2026-09-06T22:51:29.238997+00:00",
+      "status": 200,
+      "final_url": "https://digital-strategy.ec.europa.eu/en/news/seventh-ai-board-meeting",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Date": "Sun, 06 Sep 2026 22:51:29 GMT",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "X-Age": "0",
+        "Content-Language": "en",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "Last-Modified": "Sun, 06 Sep 2026 22:51:29 GMT",
+        "ETag": "W/\"1788735089-gzip\"",
+        "Accept-Ranges": "bytes",
+        "X-FPFIS": "4763138896",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload;",
+        "Vary": "Cookie,Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 59810889c405fc37279794ae78c8fae4.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "LHR95-P2",
+        "X-Amz-Cf-Id": "9Lc7fToSWYgOUPtNoOu6vHfPpu_hq_RGUev_Vjc9EP92Md8MiY50UQ=="
+      },
+      "bytes": 47098,
+      "sha256": "dbfc4f04892721899b5c5782c7f510487a275daa75dd2314f7a2492d713073bb",
+      "capture_file": "captures/capture-22.json"
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-board-convenes-its-eight-meeting",
+      "retrieved_at": "2026-09-06T22:51:29.238997+00:00",
+      "status": 200,
+      "final_url": "https://digital-strategy.ec.europa.eu/en/news/ai-board-convenes-its-eighth-meeting",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Date": "Sun, 06 Sep 2026 22:51:29 GMT",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "X-Age": "0",
+        "Content-Language": "en",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "Last-Modified": "Sun, 06 Sep 2026 22:51:29 GMT",
+        "ETag": "W/\"1788735089-gzip\"",
+        "Accept-Ranges": "bytes",
+        "X-FPFIS": "4747940178",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload;",
+        "Vary": "Cookie,Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 e6f39f35ae1e078dadba1dff54322776.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "LHR95-P2",
+        "X-Amz-Cf-Id": "HaiubqIKKgei3k_xHhvob542pN2vAl3uHHnqaziESYfBuXDJ1Er_Mg=="
+      },
+      "bytes": 47826,
+      "sha256": "1ce0f29685fa6e8016e0426c0ecbad60c21df19f896c0ce42abfde940bb0e5f3",
+      "capture_file": "captures/capture-23.json"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/meetings/67904",
+      "retrieved_at": "2026-09-06T22:51:29.238997+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/meetings/67904",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "0",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Frame-Options": "DENY",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Sun, 06 Sep 2026 22:51:29 GMT",
+        "Server": "Europa",
+        "Connection": "close"
+      },
+      "bytes": 1869,
+      "sha256": "4f4233ddd9177169f6ceba651d91a91967ee63852dcca32b920637c37a2bec32",
+      "capture_file": "captures/capture-24.json"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/expertGroups/3966",
+      "retrieved_at": "2026-09-06T22:51:59.383530+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/expertGroups/3966",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "0",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Frame-Options": "DENY",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Sun, 06 Sep 2026 22:51:59 GMT",
+        "Server": "Europa",
+        "Connection": "close"
+      },
+      "bytes": 2277,
+      "sha256": "7998946ea365121d22a57a46709c98d6cf648ce24827dcf26d6f81164a9f4998",
+      "capture_file": "captures/capture-25.json"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/expert-groups/3966",
+      "retrieved_at": "2026-09-06T22:51:59.383530+00:00",
+      "error": "HTTP Error 404: ",
+      "capture_file": "captures/capture-26.json"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134542/metadata",
+      "retrieved_at": "2026-09-06T22:51:59.383530+00:00",
+      "error": "HTTP Error 404: ",
+      "capture_file": "captures/capture-27.json"
+    },
+    {
+      "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/issued/",
+      "retrieved_at": "2026-09-06T22:51:59.384529+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "capture_file": "captures/capture-28.json"
+    }
+  ],
+  "limitations": [
+    "Search is bounded to twelve known candidate identities, not an institutional completeness sweep.",
+    "Failed exploratory aliases are not evidence that a document or metadata is absent.",
+    "Three Board reports remain pending because no exact version-specific release dates were found.",
+    "Work-level 10 June 2022 is not the publication date of the English PDFs.",
+    "No request was sent to institutional contacts; no metadata or corpus changes were made in the repository."
+  ]
+}

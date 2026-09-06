@@ -1,0 +1,229 @@
+{
+  "review_cutoff": "2026-09-04",
+  "retrieval_date_utc": "2026-09-06",
+  "local_date": "2026-09-07",
+  "timezone": "Europe/London",
+  "scope": "Four retained qualified published records; fresh public-source recheck. Query timestamps absent from the web interface are not invented.",
+  "search_groups": [
+    {
+      "queries": [
+        "\"C(2025) 3871\" publication [europa.eu]",
+        "\"C(2025)5235\" \"MAIN\" [europa.eu]",
+        "\"12206/22\" \"7 September\" Council",
+        "\"M/613\" \"2025\" [europa.eu]"
+      ],
+      "result_file": "captures/search-group-1.txt"
+    },
+    {
+      "queries": [
+        "European Commission standardisation requests database M 613 artificial intelligence",
+        "site.ec.europa.eu/growth/tools-databases \"3871\"",
+        "\"C(2025)5235\" \"Approval\"",
+        "site.consilium.europa.eu \"12206\" \"2022\" \"second\""
+      ],
+      "result_file": "captures/search-group-2.txt"
+    }
+  ],
+  "direct_requests": [
+    {
+      "capture_index": 0,
+      "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)3871?lang=en",
+      "retrieved_at": "2026-09-06T23:07:37.761978+00:00",
+      "status": 200,
+      "bytes": 3241,
+      "sha256": "314996c619a475617593d93011d40375e5c95301739f6ab99e7055f7588157c2"
+    },
+    {
+      "capture_index": 1,
+      "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)5235?lang=en",
+      "retrieved_at": "2026-09-06T23:07:37.813979+00:00",
+      "status": 200,
+      "bytes": 1358,
+      "sha256": "355200fe38623bf22780e889d3571c6461c851f155f20467cbe26c7e08fcaab0"
+    },
+    {
+      "capture_index": 2,
+      "url": "https://data.europarl.europa.eu/api/v2/external-documents?format=application%2Fld%2Bjson&limit=1",
+      "retrieved_at": "2026-09-06T23:07:37.879485+00:00",
+      "status": 200,
+      "bytes": 2942,
+      "sha256": "15536665085e68cd507a867b43a1a936344d35c6d24f4068f8492b66c0319496"
+    },
+    {
+      "capture_index": 3,
+      "url": "https://www.consilium.europa.eu/en/documents-publications/public-register/public-register-search/?AllLanguagesSearch=false&OnlyPublicDocuments=false&DocumentNumber=12206%2F22&DocumentLanguage=EN",
+      "retrieved_at": "2026-09-06T23:07:37.943722+00:00",
+      "status": null,
+      "bytes": null,
+      "sha256": null
+    },
+    {
+      "capture_index": 4,
+      "url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf",
+      "retrieved_at": "2026-09-06T23:08:09.338355+00:00",
+      "status": 200,
+      "bytes": 1158961,
+      "sha256": "cf7c067d715123cf19e8838443efbb427a64bc812334357635332615fa50e6d9"
+    },
+    {
+      "capture_index": 5,
+      "url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf",
+      "retrieved_at": "2026-09-06T23:08:09.495945+00:00",
+      "status": 200,
+      "bytes": 1152370,
+      "sha256": "5d36d0418dc6fd4fc99ec8e1ad064bad3879d829f5c5b04414b083d8ec5b60f0"
+    },
+    {
+      "capture_index": 6,
+      "url": "https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818",
+      "retrieved_at": "2026-09-06T23:08:09.666416+00:00",
+      "status": 200,
+      "bytes": 115998,
+      "sha256": "617f68127736552ac968804dc2e7dd2293b0bb569fa38ab65cb5b3a0c5178384"
+    },
+    {
+      "capture_index": 7,
+      "url": "https://ec.europa.eu/newsroom/repository/document/2025-30/Explanatory_Notice_and_Template_for_the_Public_Summary_of_Training_Content_for_generalpurpose_AI_models_f6PjGTwoDHpCrDAudq005aQeMg_118480.pdf",
+      "retrieved_at": "2026-09-06T23:08:09.865434+00:00",
+      "status": 200,
+      "bytes": 363262,
+      "sha256": "3245f6efbf00694a71bce67ea0b0c66a766428d1f631f9fcbfba9cb76f87dbc3"
+    },
+    {
+      "capture_index": 8,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/",
+      "retrieved_at": "2026-09-06T23:08:41.729117+00:00",
+      "status": 200,
+      "bytes": 83898,
+      "sha256": "e68d2d0261957ffac2ed1dc21a4e28037d9b38dceca54e6250af4a5c4ef05ebc"
+    },
+    {
+      "capture_index": 9,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/assets/env-json-config.js",
+      "retrieved_at": "2026-09-06T23:09:15.069179+00:00",
+      "status": 200,
+      "bytes": 83898,
+      "sha256": "e68d2d0261957ffac2ed1dc21a4e28037d9b38dceca54e6250af4a5c4ef05ebc"
+    },
+    {
+      "capture_index": 10,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JAYI55LM.js",
+      "retrieved_at": "2026-09-06T23:09:15.908105+00:00",
+      "status": 200,
+      "bytes": 20213,
+      "sha256": "d64d0f8fddfdd32574832cc9ef3f96e63e03a2d345aa7355d0d9a53171316d7b"
+    },
+    {
+      "capture_index": 11,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-UPEJCAVI.js",
+      "retrieved_at": "2026-09-06T23:09:16.697408+00:00",
+      "status": 200,
+      "bytes": 49452,
+      "sha256": "3a5aa3f7e7c9f6d3afca1c9b2d0095b9a4f94ce3f4694d4d2d0a200d4a7ca1cf"
+    },
+    {
+      "capture_index": 12,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "retrieved_at": "2026-09-06T23:08:46.906232+00:00",
+      "status": 200,
+      "bytes": 251505,
+      "sha256": "b168c05ae3aaa7b793e645fbbf6feec722f88495a76ed03a10309c222445b42c"
+    },
+    {
+      "capture_index": 13,
+      "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+      "retrieved_at": "2026-09-06T23:08:47.699394+00:00",
+      "status": 200,
+      "bytes": 71698,
+      "sha256": "995b02308283de3186d261db12737fd81be00b8bda826196c646319dee2b4a2f"
+    },
+    {
+      "capture_index": 14,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "retrieved_at": "2026-09-06T23:09:06.584416+00:00",
+      "status": 200,
+      "bytes": 251505,
+      "sha256": "b168c05ae3aaa7b793e645fbbf6feec722f88495a76ed03a10309c222445b42c"
+    },
+    {
+      "capture_index": 15,
+      "url": "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf",
+      "retrieved_at": "2026-09-06T23:10:53.694485+00:00",
+      "status": 200,
+      "bytes": 1149349,
+      "sha256": "9b0157bc2518d82debd575cc10d6ae41d9ee2a3296a4b6987170fd0d25e65179"
+    },
+    {
+      "capture_index": 16,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-LOGMXGPT.js",
+      "retrieved_at": "2026-09-06T23:10:59.963243+00:00",
+      "status": 200,
+      "bytes": 60885,
+      "sha256": "5a86ae540a9e0cc0017b8924fad24393f766c8661cc83dc6d21ce191105c0dd1"
+    },
+    {
+      "capture_index": 17,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/rest/document/613",
+      "retrieved_at": "2026-09-06T23:11:00.261765+00:00",
+      "status": 200,
+      "bytes": 83898,
+      "sha256": "e68d2d0261957ffac2ed1dc21a4e28037d9b38dceca54e6250af4a5c4ef05ebc"
+    },
+    {
+      "capture_index": 18,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "retrieved_at": "2026-09-06T23:11:09.195071+00:00",
+      "status": 200,
+      "bytes": 251505,
+      "sha256": "b168c05ae3aaa7b793e645fbbf6feec722f88495a76ed03a10309c222445b42c"
+    },
+    {
+      "capture_index": 19,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/assets/env-json-config.json",
+      "retrieved_at": "2026-09-06T23:11:14.396988+00:00",
+      "status": 200,
+      "bytes": 2466,
+      "sha256": "d8e5fa550e29dadb1c04cf5c50a3dbc415c0f78ff54e4d9ddb908281dc89e386"
+    },
+    {
+      "capture_index": 20,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JAYI55LM.js",
+      "retrieved_at": "2026-09-06T23:11:21.768296+00:00",
+      "status": 200,
+      "bytes": 20213,
+      "sha256": "d64d0f8fddfdd32574832cc9ef3f96e63e03a2d345aa7355d0d9a53171316d7b"
+    },
+    {
+      "capture_index": 21,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JCBGV4GW.js",
+      "retrieved_at": "2026-09-06T23:11:28.357854+00:00",
+      "status": 200,
+      "bytes": 656516,
+      "sha256": "72a2af10dd86dd8f18bb52389c17c636f5369772a16b45f6177b013b0e24faf9"
+    },
+    {
+      "capture_index": 22,
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JCBGV4GW.js",
+      "retrieved_at": "2026-09-06T23:11:36.750167+00:00",
+      "status": 200,
+      "bytes": 656516,
+      "sha256": "72a2af10dd86dd8f18bb52389c17c636f5369772a16b45f6177b013b0e24faf9"
+    },
+    {
+      "capture_index": 23,
+      "url": "https://webgate.ec.europa.eu/es/search-api/rest/document/613_en?apiKey=ENORM_PROD",
+      "retrieved_at": "2026-09-06T23:11:41.808007+00:00",
+      "status": 200,
+      "bytes": 2505,
+      "sha256": "7a1d5ea1fc226646670b8b6c224708b53bf9481124a3501234f5e8233cd31bf8"
+    }
+  ],
+  "limitations": [
+    "Council public-register HTML returned HTTP 403; current INIT and REV 1 PDF downloads remained available.",
+    "The eNorm /rest/document/613 path on the SPA host and assets/env-json-config.js returned the SPA shell, not metadata. Public application configuration then identified the actual corporate-search API, and exact 613_en metadata was recovered.",
+    "An EP external-documents first-page check returned a contemporary unrelated record only; this was not an exhaustive lookup and provides no negative evidence for the Commission MAIN.",
+    "Some exploratory large HTML/JavaScript tool output was truncated and discarded as a full capture. Complete metadata responses or explicitly selected excerpts retained here are identified per receipt.",
+    "Technical Date, Last-Modified, transmission and ingestion timestamps are not promoted to document publication dates.",
+    "Exact C(2025)3871 is not OJ C/2025/3871, an unrelated notice."
+  ]
+}

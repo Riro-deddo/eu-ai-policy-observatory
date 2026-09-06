@@ -1,0 +1,13 @@
+{
+  "id": "eiopa-big-data-motor-health-insurance-2019-official-text",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "source_type": "official_pdf",
+  "url": "https://register.eiopa.europa.eu/Publications/EIOPA_BigDataAnalytics_ThematicReview_April2019.pdf",
+  "publisher": "European Insurance and Occupational Pensions Authority",
+  "retrieved_at": "2026-09-06T23:49:36.666641+01:00",
+  "last_verified_at": "2026-09-06T22:52:47Z",
+  "verification_note": "AI-assisted evidence review. Fresh HTTP 200 capture, 3037963 bytes, SHA-256 6b30027da9863aea7b1e6b229a4ceb205193d67ad37bdfbc70f223108bb20ba8. Printed pp.6-7 executive summary, pp.14-16 section 2.2.1 and pp.42-44 chapter 5: AI/ML in motor and health insurance, fairness, explainability and governance. Health-insurance data and pricing scope is explicit. Capture retained outside canonical data; no public archive guarantee. Exact receipt in candidate-health-finance-20260906 audit. PDF extraction recovered with pypdf after optional fitz module was unavailable."
+}

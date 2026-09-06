@@ -1,0 +1,67 @@
+{
+  "reviewed_at": "2026-09-06T22:54:09Z",
+  "coverage_cutoff": "2026-09-04",
+  "scope": "Exactly six named pending sector reports; recommendations only, no repository admission performed",
+  "candidates": [
+    {
+      "candidate_id": "human-rights-drones-unmanned-robots-warfare-2013",
+      "recommended_decision": "pending",
+      "recommended_document_id": null,
+      "reviewed_at": "2026-09-06T22:54:09Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_reason": "Fresh official indexed Think Tank metadata confirms Study 03-05-2013, Nils Melzer as external author and PE 410.220 / EXPO/B/DROI/2012/12 identity. Indexed official PDF cover gives May 2013 and substantial autonomous-weapons/human-rights policy recommendations. Three actual official English PDF requests returned HTTP 202, text/html and zero bytes; the page request did likewise. The web opener returned a JavaScript robot-check page. No valid primary English PDF bytes were captured; empty-body hashes in receipts are failed-response hashes, not document snapshots. No exclusion or merge is warranted.",
+      "canonical_draft": null,
+      "reopening_condition": "Capture a non-empty official English manifestation of PE 410.220, validate PDF/text identity and English language, calculate its SHA-256, inspect credit and date pages, then complete the canonical record using 2013-05-03 as publication fallback and preserving May 2013 issue precision."
+    },
+    {
+      "candidate_id": "ai-border-control-migration-security-main-report-2020",
+      "recommended_decision": "included",
+      "recommended_document_id": "ai-border-control-migration-security-main-report-2020",
+      "reviewed_at": "2026-09-06T22:54:09Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The main report develops AI applications and a roadmap for border control and migration, including their ethical, legal and organisational implications. PDF cover issue month is May 2020. PDF p.5 retains a February 2020 internal deliverable cover (D04.01 & D07.01); neither provides an exact day. The dated official May release is used as publication fallback. The main report is independently citable; Volume 2 is a separate addendum outside this review. Only the positively reviewed migration/border sector is assigned.",
+      "canonical_draft": "../../../../../data/documents/ai-border-control-migration-security-main-report-2020.json",
+      "reopening_condition": null
+    },
+    {
+      "candidate_id": "people-machines-robots-skills-2017",
+      "recommended_decision": "included",
+      "recommended_document_id": "people-machines-robots-skills-2017",
+      "reviewed_at": "2026-09-06T22:54:09Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The briefing examines employment and skills consequences of robotics performing non-routine cognitive work and self-driving vehicles, then develops workforce adaptation and training responses. This is a substantive intelligent-robotics/autonomous-systems precursor, while the wider digital-skills discussion alone would not meet the boundary. The PDF masthead supplies July 2017 only. Cedefop's English download entry independently dates this manifestation to 31 July 2017, supporting a historical publication fallback. The later OP catalogue release of 6 March 2018 does not create a contemporary duplicate. PDF software metadata naming an editor and an August creation timestamp is not treated as bibliographic author or issue-date evidence. Personal bibliographic authors are not credited in the report.",
+      "canonical_draft": "../../../../../data/documents/people-machines-robots-skills-2017.json",
+      "reopening_condition": null
+    },
+    {
+      "candidate_id": "advanced-robotics-ai-task-automation-osh-2022",
+      "recommended_decision": "included",
+      "recommended_document_id": "advanced-robotics-ai-task-automation-osh-2022",
+      "reviewed_at": "2026-09-06T22:54:09Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The report analyses AI-based systems and advanced robotics for workplace task automation, with a taxonomy, sectoral uses and occupational-safety-and-health policies. The PDF provides the year 2022 but no exact internal issue day. The official report release of 26 April 2022 is the publication fallback. Project managers Ioannis Anyfantis, Annick Starren and Emmanuelle Brun are not represented as authors. This full report is distinct from the already included AI worker-management report.",
+      "canonical_draft": "../../../../../data/documents/advanced-robotics-ai-task-automation-osh-2022.json",
+      "reopening_condition": null
+    },
+    {
+      "candidate_id": "ai-watch-ai-uptake-smart-mobility-2021",
+      "recommended_decision": "included",
+      "recommended_document_id": "ai-watch-ai-uptake-smart-mobility-2021",
+      "reviewed_at": "2026-09-06T22:54:09Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The JRC report analyses AI uptake in smart mobility, including traffic, access to transport, road safety, data governance and algorithmic fairness. Year 2021 is the report's internal precision; the exact official publication date supplies the canonical fallback. PDF p.5 calls this the first edition. Acknowledged reviewers and contributors are not bibliographic authors. The JRC endpoint returned a rejection HTML body, so the equivalent official Publications Office English PDF was captured and inspected.",
+      "canonical_draft": "../../../../../data/documents/ai-watch-ai-uptake-smart-mobility-2021.json",
+      "reopening_condition": null
+    },
+    {
+      "candidate_id": "ethics-connected-automated-vehicles-2020",
+      "recommended_decision": "included",
+      "recommended_document_id": "ethics-connected-automated-vehicles-2020",
+      "reviewed_at": "2026-09-06T22:54:09Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The report proposes twenty ethical recommendations for connected and automated vehicles, with sustained treatment of AI, data protection, fairness and explainability in road mobility. PDF p.2 says manuscript completed in June 2020 and first edition; it does not state an exact internal day. The official OP release of 17 September 2020 is used as publication fallback. The PDF credits the expert group as bibliographic author. PDF p.4 lists members Jean-François Bonnefon (Chairman), David Černý, John Danaher, Nathalie Devillier, Veronica Johansson, Tatiana Kovacikova, Marieke Martens, Milos N. Mladenovic, Paula Palade, Nick Reed, Filippo Santoni de Sio (Rapporteur), Stavroula Tsinorema, Sandra Wachter and Karolina Zawieska. Their membership is preserved without converting each member into an individually credited author. DG RTD's OP corporate-metadata entry does not supersede the report's explicit authorship citation.",
+      "canonical_draft": "../../../../../data/documents/ethics-connected-automated-vehicles-2020.json",
+      "reopening_condition": null
+    }
+  ]
+}

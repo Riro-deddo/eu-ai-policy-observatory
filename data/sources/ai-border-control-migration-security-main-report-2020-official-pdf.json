@@ -1,0 +1,13 @@
+{
+  "id": "ai-border-control-migration-security-main-report-2020-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:09Z",
+  "updated_at": "2026-09-06T22:54:09Z",
+  "source_type": "official_pdf",
+  "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=c8823cd1-a152-11ea-9d2d-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T23:51:08.703684+01:00",
+  "last_verified_at": "2026-09-06T22:54:09Z",
+  "verification_note": "Actual official English PDF bytes captured and validated, with SHA-256 in the document snapshot. Identity, credits, dates and substantive passages inspected: PDF p.1, Written by Deloitte; PDF pp.12-16 executive summary; p.18 (printed p.7), section 1 Context. Source bytes and receipts retained in the external evidence audit; archived_path is null because no PDF is proposed for repository retention."
+}
