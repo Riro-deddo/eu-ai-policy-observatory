@@ -502,7 +502,13 @@ test('historical record pages render official date evidence and research classif
 });
 
 test('pending legacy records show a separate expanded-review notice without inferred classes', async ({ page }) => {
-  await page.goto('corpus/ai-act-council-general-approach-st-15698-2022/');
+  const pending = publicData.documents.find(
+    (document) => document.historical_review_status === 'legacy_review_pending'
+      && document.publication_status === 'published'
+      && document.record_level === 'principal'
+      && document.version_status === 'final',
+  )!;
+  await page.goto(`corpus/${pending.slug}/`);
 
   const notice = page.getByRole('complementary', { name: 'Expanded evidence review pending' });
   await expect(notice).toBeVisible();
@@ -526,7 +532,7 @@ test('methodology renders bounded source scopes and incomplete review semantics'
 
   const review = page.getByRole('region', { name: 'Expanded evidence review' });
   await expect(review).toContainText(`${publicData.coverage.historical_review.verified} published records`);
-  await expect(review).toContainText('26 retained records');
+  await expect(review).toContainText(`${publicData.coverage.historical_review.legacy_review_pending} retained records`);
   const scopes = page.getByRole('region', { name: 'Bounded source scopes' });
   await expect(scopes.locator(':scope > ol > li')).toHaveCount(publicData.coverage.source_scopes.length);
   await expect(scopes).toContainText('Partial · in progress');

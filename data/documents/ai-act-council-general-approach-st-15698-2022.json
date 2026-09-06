@@ -3,9 +3,9 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T04:30:00Z",
   "slug": "ai-act-council-general-approach-st-15698-2022",
-  "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – General approach – Outcome of proceedings",
+  "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – General approach (6 December 2022)",
   "short_title": "Council General Approach on the AI Act",
   "document_type": "institutional_position",
   "record_level": "principal",
@@ -26,7 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "adopter"
+      "role": "adopter",
+      "evidence_source_id": "council-st-15698-2022",
+      "evidence_locator": "PDF p. 1 cover and subject; the outcome records approval of the general approach at the 3917th TTE Council meeting on 6 December 2022."
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council",
+      "role": "cover_note_sender",
+      "evidence_source_id": "council-st-15698-2022",
+      "evidence_locator": "PDF p. 1 cover: From General Secretariat of the Council to Delegations."
     }
   ],
   "policy_ids": [
@@ -40,13 +48,14 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-st-15698-2022"
+    "council-st-15698-2022",
+    "ai-act-council-general-approach-st-15698-2022-op-publication"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "negotiation",
-    "inclusion_rationale": "Definitive official record of the Council's general approach adopted on 6 December 2022.",
-    "researcher_notes": "The status is tied to the Council outcome-of-proceedings record, distinct from adoption of the final regulation.",
+    "inclusion_rationale": "Definitive official outcome-of-proceedings record for the Council general approach approved on 6 December 2022.",
+    "researcher_notes": "The document issue, Council approval and exact OP publication assertion all fall on 6 December 2022 but remain separately evidenced. This is adoption of the Council institutional position, not adoption of the final regulation.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -57,5 +66,23 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {"source_id": "council-st-15698-2022", "locator": "PDF p. 1 cover: Brussels, 6 December 2022; ST 15698/22.", "meaning": "The official PDF establishes 2022-12-06 as the issue date of this exact INIT outcome-of-proceedings manifestation."},
+    "publication_date": {"source_id": "ai-act-council-general-approach-st-15698-2022-op-publication", "locator": "Publication details: Published 2022-12-06; IMMC ST 15698 2022 INIT; English PDF option.", "meaning": "The official catalogue supplies an explicit publication date for the exact English manifestation; it does not claim first-ever availability."}
+  },
+  "classification_evidence": [
+    {"field": "relevance_class", "value": "direct_ai_substantive", "source_id": "council-st-15698-2022", "locator": "PDF p. 1 subject and outcome text; p. 3 recital 2.", "rationale": "The record is the Council outcome for its general approach on the proposed Artificial Intelligence Act."},
+    {"field": "sector_tags", "value": "general_cross_sector", "source_id": "council-st-15698-2022", "locator": "PDF p. 1 subject and p. 3 recital 2 describing harmonised AI rules.", "rationale": "The Council position concerns the horizontal AI Act framework rather than a single sector."},
+    {"field": "provenance_tags", "value": "eu_institution_authored", "source_id": "council-st-15698-2022", "locator": "PDF p. 1 Council masthead, General Secretariat sender line and Council outcome subject.", "rationale": "This is an official Council outcome document; the Secretariat sender is recorded separately from the adopter."},
+    {"field": "provenance_tags", "value": "officially_published", "source_id": "ai-act-council-general-approach-st-15698-2022-op-publication", "locator": "Publication details: Published 2022-12-06; IMMC ST 15698 2022 INIT; English PDF option.", "rationale": "The Publications Office card identifies and dates the exact official English manifestation."}
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [
+    {"kind": "institutional_adoption", "value": "2022-12-06", "precision": "day", "source_id": "council-st-15698-2022", "locator": "Outcome text records Council approval at the 3917th TTE Council meeting on 6 December 2022."}
+  ],
+  "historical_review_status": "verified"
 }
