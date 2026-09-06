@@ -3,9 +3,9 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T04:30:00Z",
   "slug": "ai-act-council-adoption-note-st-9645-2024-rev-1",
-  "official_title": "Draft Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence and amending certain Union legislative acts (Artificial Intelligence Act) (first reading) – Adoption of the legislative act",
+  "official_title": "Draft Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (first reading) – Adoption of the legislative act",
   "short_title": "Council AI Act adoption note",
   "document_type": "institutional_position",
   "record_level": "supporting",
@@ -26,7 +26,10 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "author"
+      "role": "author", "evidence_source_id": "ai-act-council-adoption-note-st-9645-2024-rev-1-op-publication", "evidence_locator": "Publication details identify Council of the European Union as corporate author of IMMC ST 9645 2024 REV 1."
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council", "role": "cover_note_sender", "evidence_source_id": "council-st-9645-2024-rev-1", "evidence_locator": "PDF p. 1 cover: From General Secretariat of the Council to Permanent Representatives Committee/Council."
     }
   ],
   "policy_ids": [
@@ -38,7 +41,7 @@
     "accountability"
   ],
   "source_ids": [
-    "council-st-9645-2024-rev-1"
+    "council-st-9645-2024-rev-1", "ai-act-council-adoption-note-st-9645-2024-rev-1-op-publication"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
@@ -55,5 +58,17 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy", "relevance_class": "direct_ai_substantive", "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {"source_id": "council-st-9645-2024-rev-1", "locator": "PDF p. 1 cover: Brussels, 15 May 2024; ST 9645/1/24 REV 1.", "meaning": "The official PDF establishes the issue date of this exact revised I/A item note."},
+    "publication_date": {"source_id": "ai-act-council-adoption-note-st-9645-2024-rev-1-op-publication", "locator": "Publication details: Published 2024-05-15; IMMC ST 9645 2024 REV 1; English PDF option.", "meaning": "The official catalogue supplies an explicit publication date for the exact English revision, without asserting first-ever availability."}
+  },
+  "classification_evidence": [
+    {"field":"relevance_class","value":"direct_ai_substantive","source_id":"council-st-9645-2024-rev-1","locator":"Cover subject and operative recommendation concerning Council approval of Parliament's first-reading position.","rationale":"The note is a formal procedural step for adoption of the Artificial Intelligence Act."},
+    {"field":"sector_tags","value":"general_cross_sector","source_id":"council-st-9645-2024-rev-1","locator":"Cover subject identifies the horizontal AI Act and enumerates amended cross-sector legislation.","rationale":"The adoption note concerns the horizontal AI Act rather than a single-sector measure."},
+    {"field":"provenance_tags","value":"eu_institution_authored","source_id":"ai-act-council-adoption-note-st-9645-2024-rev-1-op-publication","locator":"Publication details identify Council corporate authorship and exact IMMC.","rationale":"The exact note is corporately attributed to the Council; the GSC is separately recorded as cover sender."},
+    {"field":"provenance_tags","value":"officially_published","source_id":"ai-act-council-adoption-note-st-9645-2024-rev-1-op-publication","locator":"Publication details: Published 2024-05-15; exact IMMC; English PDF option.","rationale":"The Publications Office card identifies and dates the exact English revision."}
+  ],
+  "bibliographic_authors": [], "additional_dates": [], "historical_review_status": "verified"
 }

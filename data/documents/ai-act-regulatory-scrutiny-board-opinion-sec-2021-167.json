@@ -45,7 +45,7 @@
     "corpus_tier": "directly_related",
     "policy_stage": "proposal",
     "inclusion_rationale": "The opinion is part of the published Commission proposal package and evaluates the supporting impact assessment.",
-    "researcher_notes": "The document date is the date printed on the official SEC PDF; the publication date records its Council transmission manifestation.",
+    "researcher_notes": "The SEC(2021) 167 package contains the positive second opinion and its quantification annex together with the earlier negative opinion. The 22 March date is printed on the signed package; the retained publication date records the Council transmission wrapper and remains an evidence hold, not a date inferred from proposal adoption.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"

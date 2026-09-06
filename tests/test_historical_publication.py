@@ -12,6 +12,11 @@ from observatory.pipeline import run_pipeline
 
 
 LEGACY_PENDING_DOCUMENT = "ai-act-council-general-approach-st-15698-2022"
+HISTORICAL_EXTENSION_FIELDS = {
+    "historical_review_status", "temporal_collection", "relevance_class",
+    "document_date_kind", "date_evidence", "classification_evidence",
+    "bibliographic_authors", "additional_dates",
+}
 
 
 def test_historical_batch_round_trips_without_losing_old_routes(tmp_path):
@@ -58,7 +63,7 @@ def test_legacy_role_evidence_cannot_bypass_complete_extension_gate(tmp_path):
     data_root = tmp_path / "data"
     shutil.copytree(Path("data"), data_root)
     document_path = data_root / "documents" / f"{LEGACY_PENDING_DOCUMENT}.json"
-    document = json.loads(document_path.read_text(encoding="utf-8"))
+    document = _incomplete_legacy_document(json.loads(document_path.read_text(encoding="utf-8")))
     document["institution_roles"][0].update(
         {
             "evidence_source_id": document["source_ids"][0],
@@ -88,6 +93,9 @@ def test_unknown_new_legacy_like_document_is_rejected():
         for record in records["documents"]
         if record.data.get("id") == LEGACY_PENDING_DOCUMENT
     )
+    incomplete = _incomplete_legacy_document(legacy.data)
+    legacy.data.clear()
+    legacy.data.update(incomplete)
     legacy.data["id"] = "unlisted-new-document"
     legacy.data["slug"] = "unlisted-new-document"
 
@@ -112,6 +120,9 @@ def test_scalar_only_historical_extension_is_rejected_as_partial():
         for record in records["documents"]
         if record.data.get("id") == LEGACY_PENDING_DOCUMENT
     )
+    incomplete = _incomplete_legacy_document(legacy.data)
+    legacy.data.clear()
+    legacy.data.update(incomplete)
     legacy.data["historical_review_status"] = "verified"
 
     issues = validate_historical_publication(
@@ -276,6 +287,17 @@ def _document(records, document_id):
     return next(
         row for row in records["documents"] if row.data.get("id") == document_id
     )
+
+
+def _incomplete_legacy_document(document):
+    """Build a stable negative fixture independent of later live admissions."""
+    document = deepcopy(document)
+    for field in HISTORICAL_EXTENSION_FIELDS:
+        document.pop(field, None)
+    for role in document["institution_roles"]:
+        role.pop("evidence_source_id", None)
+        role.pop("evidence_locator", None)
+    return document
 
 
 def _publication_issues(records):

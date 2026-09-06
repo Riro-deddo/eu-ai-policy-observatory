@@ -11,6 +11,7 @@ from observatory.pipeline import run_pipeline
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.json"
 CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
+EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 COUNCIL_UPGRADES = (
     "ai-act-council-general-approach-st-14954-2022",
     "ai-act-council-general-approach-german-statement-14954-add-1",
@@ -102,11 +103,16 @@ def test_second_pass_accounts_for_every_hold_and_only_the_reviewed_upgrades(publ
     assert set(audited) == set(starting)
     assert all(row["reasons"] for row in ledger["held_records"])
     continuation = json.loads(CONTINUATION_LEDGER_PATH.read_text(encoding="utf-8"))
+    corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     documents = {row["id"]: row for row in public_payload["documents"]}
-    assert Counter(
+    current = Counter(
         documents[row["id"]]["historical_review_status"]
         for row in ledger["baseline"]["documents"]
-    ) == continuation["expected_after"]["historical_review"]
+    )
+    assert current == {
+        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]),
+        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]),
+    }
     assert {row["id"]: row["slug"] for row in ledger["baseline"]["documents"]}.items() <= {
         row["id"]: row["slug"] for row in public_payload["documents"]
     }.items()

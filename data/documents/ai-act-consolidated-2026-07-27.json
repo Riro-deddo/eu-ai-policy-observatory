@@ -3,9 +3,9 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T04:30:00Z",
   "slug": "ai-act-consolidated-2026-07-27",
-  "official_title": "Consolidated text: Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence",
+  "official_title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA relevance)",
   "short_title": "AI Act consolidated text, 27 July 2026",
   "document_type": "regulation",
   "record_level": "version",
@@ -24,11 +24,14 @@
   "institution_roles": [
     {
       "institution_id": "european-parliament",
-      "role": "adopter"
+      "role":"adopter","evidence_source_id":"ai-act-consolidated-2026-eur-lex","evidence_locator":"The consolidated ELI heading identifies Parliament as adopter of the underlying Regulation; this is not authorship of a new consolidation."
     },
     {
       "institution_id": "council-of-the-european-union",
-      "role": "adopter"
+      "role":"adopter","evidence_source_id":"ai-act-consolidated-2026-eur-lex","evidence_locator":"The consolidated ELI heading identifies Council as adopter of the underlying Regulation; this is not authorship of a new consolidation."
+    },
+    {
+      "institution_id":"publications-office-of-the-european-union","role":"publisher","evidence_source_id":"ai-act-consolidated-2026-07-27-op-publication","evidence_locator":"Exact Publications Office catalogue card for CELEX 02024R1689-20260727 states Published 2026-07-27 and offers the English manifestation."
     }
   ],
   "policy_ids": [
@@ -42,13 +45,13 @@
     "accountability"
   ],
   "source_ids": [
-    "ai-act-consolidated-2026-eur-lex"
+    "ai-act-consolidated-2026-eur-lex", "ai-act-consolidated-2026-07-27-op-publication"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "implementation",
-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "inclusion_rationale": "Official English consolidated manifestation of Regulation (EU) 2024/1689 at 27 July 2026.",
+    "researcher_notes": "The in-force indicator concerns the underlying Regulation. The consolidation is a documentary aid with no independent legal effect; Parliament and Council roles refer only to adoption of the underlying act, while Publications Office publication is recorded separately.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -56,9 +59,13 @@
   "sector_tags": [
     "general_cross_sector"
   ],
-  "provenance_tags": [
-    "eu_institution_authored",
-    "joint_institutional",
-    "officially_published"
-  ]
+  "provenance_tags":["officially_published"],
+  "temporal_collection":"contemporary_eu_ai_policy","relevance_class":"direct_ai_substantive","document_date_kind":"consolidation",
+  "date_evidence":{"document_date":{"source_id":"ai-act-consolidated-2026-eur-lex","locator":"ELI consolidated version selector and heading: 27 July 2026; CELEX 02024R1689-20260727.","meaning":"The ELI establishes 2026-07-27 as the consolidation date of this exact documentary version."},"publication_date":{"source_id":"ai-act-consolidated-2026-07-27-op-publication","locator":"Publication details: Published 2026-07-27; CELEX 02024R1689-20260727; English format.","meaning":"The official catalogue supplies an explicit publication date for the exact consolidated manifestation; repository creation dates are not substituted."}},
+  "classification_evidence":[
+    {"field":"relevance_class","value":"direct_ai_substantive","source_id":"ai-act-consolidated-2026-eur-lex","locator":"Consolidated Regulation heading and Articles 1, 5 and 6.","rationale":"The consolidated text directly regulates artificial intelligence."},
+    {"field":"sector_tags","value":"general_cross_sector","source_id":"ai-act-consolidated-2026-eur-lex","locator":"Articles 1, 5 and 6 and Annex III span the horizontal framework and multiple domains.","rationale":"The underlying AI Act is cross-sectoral."},
+    {"field":"provenance_tags","value":"officially_published","source_id":"ai-act-consolidated-2026-07-27-op-publication","locator":"Publication details: Published 2026-07-27; exact CELEX; English format.","rationale":"The Publications Office card identifies and dates the exact official English consolidation."}
+  ],
+  "bibliographic_authors":[],"additional_dates":[],"historical_review_status":"verified"
 }
