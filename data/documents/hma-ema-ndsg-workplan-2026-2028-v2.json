@@ -1,0 +1,171 @@
+{
+  "id": "hma-ema-ndsg-workplan-2026-2028-v2",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T01:28:20Z",
+  "updated_at": "2026-09-06T01:28:20Z",
+  "slug": "hma-ema-ndsg-workplan-2026-2028-v2",
+  "official_title": "NDSG workplan 2026-2028: Data and AI in medicines regulation",
+  "short_title": "NDSG workplan 2026-2028 (v2.0)",
+  "document_type": "work_programme",
+  "record_level": "version",
+  "official_reference": "Version 2.0",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2026-03-09",
+  "version_label": "Version 2.0 - February 2026",
+  "version_status": "revised",
+  "publication_date": "2026-03-09",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "hma-ema-network-data-steering-group",
+      "role": "author",
+      "evidence_source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "evidence_locator": "PDF cover credits Joint HMA/EMA Network Data Steering Group; p.4 Introduction describes the joint strategic advisory group."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "publisher",
+      "evidence_source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-page",
+      "evidence_locator": "EMA NDSG catalogue, Workplan section, document entry and official English download."
+    },
+    {
+      "institution_id": "european-medicines-agency",
+      "role": "official_host",
+      "evidence_source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "evidence_locator": "EMA official documents repository hosts this English PDF."
+    },
+    {
+      "institution_id": "hma-ema-network-data-steering-group",
+      "role": "adopter",
+      "evidence_source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "evidence_locator": "PDF p.4 Introduction: current first annual revision was adopted by NDSG in February 2026."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+    "hma-ema-ndsg-workplan-2026-2028-v2-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "coordination",
+    "inclusion_rationale": "Joint HMA/EMA NDSG institutional workplan with an extensive dedicated AI workstream for the European medicines regulatory network, including AI guidance, regulatory tools and research.",
+    "researcher_notes": "The cover issue and NDSG adoption are February 2026 at month precision. The 11 February meeting endorsed the plan in principle pending written adoption; it does not establish a final adoption day. EMA's official catalogue links v1.4 as the previous version; v2.0 is the first annual revision. Earlier v1.0-v1.3 manifestations have not been recovered and no complete version history or canonical parent is invented. Future deliverables remain plans. Reviewer attribution denotes AI-assisted evidence review.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T01:28:20Z"
+  },
+  "sector_tags": [
+    "health",
+    "public_administration",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "joint_institutional",
+    "officially_published"
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-page",
+      "locator": "EMA NDSG catalogue Workplan section: 2026-2028 workplan First published 09/03/2026; page update history records publication of the revised workplan that day.",
+      "meaning": "Exact official publication/update fallback for this hosted revision; the cover supplies only an issue month."
+    },
+    "publication_date": {
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-page",
+      "locator": "EMA NDSG catalogue Workplan section: 2026-2028 workplan First published 09/03/2026; page update history records publication of the revised workplan that day.",
+      "meaning": "Official publication of the v2.0 workplan on 9 March 2026, before the fixed cutoff."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF pp.17-21: Artificial Intelligence workstream; p.18 overview; p.19 Guidance, policy and product support.",
+      "rationale": "Dedicated substantive AI governance, guidance and tools workstream."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF p.4 Introduction and pp.18-19 AI overview and guidance: human and veterinary medicines, public and animal health.",
+      "rationale": "AI evaluation and safe use throughout the medicines lifecycle."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF p.20 Tools and Innovation; p.21 Collaboration and change management.",
+      "rationale": "AI tools, regulatory staff capacity and network governance for medicines authorities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF p.20 Tools and Innovation: AI research priorities, tools development and innovation; p.21 sandbox simulation hackathon.",
+      "rationale": "Explicit AI research priorities, experimentation and collaborative innovation."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF cover and p.4 Introduction: Joint HMA/EMA Network Data Steering Group.",
+      "rationale": "Workplan authored by the joint regulatory steering group involving EMA; HMA is a network of national authorities."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF cover credits Joint HMA/EMA Network Data Steering Group.",
+      "rationale": "Explicit joint network authorship, distinct from EMA hosting and publication."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-page",
+      "locator": "EMA NDSG catalogue Workplan section: 2026-2028 workplan First published 09/03/2026; page update history records publication of the revised workplan that day.",
+      "rationale": "EMA officially distributes this independently citable English workplan version."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Joint HMA/EMA Network Data Steering Group",
+      "affiliation": null,
+      "evidence_source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "evidence_locator": "PDF cover; p.4 Introduction."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2026-02",
+      "precision": "month",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF cover: VERSION 2.0, February 2026."
+    },
+    {
+      "kind": "institutional_adoption",
+      "value": "2026-02",
+      "precision": "month",
+      "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+      "locator": "PDF p.4 Introduction explicitly states that the current workplan was adopted by NDSG in February 2026; no exact adoption day established."
+    }
+  ],
+  "historical_review_status": "verified",
+  "legal_status_evidence": {
+    "source_id": "hma-ema-ndsg-workplan-2026-2028-v2-official-pdf",
+    "locator": "PDF cover identifies workplan; p.4 Introduction describes advisory-group activities and annual updating; AI workstream lists planned deliverables.",
+    "meaning": "Non-binding institutional work programme, not a legislative act."
+  }
+}

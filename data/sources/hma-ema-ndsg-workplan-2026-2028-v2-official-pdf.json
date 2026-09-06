@@ -3,11 +3,11 @@
   "entity_type": "source",
   "publication_status": "published",
   "created_at": "2026-09-05T23:48:11Z",
-  "updated_at": "2026-09-05T23:48:11Z",
+  "updated_at": "2026-09-06T01:28:20Z",
   "source_type": "official_pdf",
   "url": "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2026-2028-data-artificial-intelligence-medicines-regulation_en.pdf",
   "publisher": "European Medicines Agency",
   "retrieved_at": "2026-09-05T23:48:11Z",
-  "last_verified_at": "2026-09-05T23:48:11Z",
-  "verification_note": "Cover and pp.4-6 reviewed; Version 2.0, February 2026. Pending only because canonical predecessor endpoint is missing."
+  "last_verified_at": "2026-09-06T01:28:20Z",
+  "verification_note": "Prior review (5 September 2026, before this admission): Cover and pp.4-6 reviewed; Version 2.0, February 2026. Pending only because canonical predecessor endpoint is missing. Follow-up 6 September 2026: Full 36-page v2.0 inspected; cover February 2026 and p.4 adoption month/first annual revision verified; AI pp.17-21 checked. New retrieval 2026-09-06T01:12:53.554849+00:00, 640017 bytes, SHA-256 9a71bb191807f899f1a63867c4a30aec366b35d15bf1189413ea4f2ff793b101; local snapshot work/remaining-three-20260906/ndsg-2026-v2-0.pdf. The prior predecessor hold is resolved by admitting v1.4 and the evidenced revision edge."
 }

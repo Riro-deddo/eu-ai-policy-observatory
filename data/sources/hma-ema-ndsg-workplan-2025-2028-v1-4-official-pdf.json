@@ -1,0 +1,13 @@
+{
+  "id": "hma-ema-ndsg-workplan-2025-2028-v1-4-official-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T01:28:20Z",
+  "updated_at": "2026-09-06T01:28:20Z",
+  "source_type": "official_pdf",
+  "url": "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2025-2028_en.pdf",
+  "publisher": "European Medicines Agency",
+  "retrieved_at": "2026-09-06T01:12:53.024135+00:00",
+  "last_verified_at": "2026-09-06T01:28:20Z",
+  "verification_note": "Official previous-version PDF: Version 1.4, July 2025; all 37 pages extracted, cover, introduction and AI workstream pp.17-22 checked. 829312 bytes; SHA-256 c4218dcd0f9a55c1e4d04d92be2866e7f36aa3ea451a1d85691d3fcaa44ff52c. Local snapshot work/remaining-three-20260906/ndsg-2025-v1-4.pdf records September retrieval bytes, not historical byte identity. Catalogue last update 22 July 2025 is the version-specific publication fallback; the May first publication belongs to the lineage."
+}

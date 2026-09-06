@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T00:03:45Z",
+  "generated_at": "2026-09-06T01:28:20Z",
   "coverage_cutoff": "2026-09-04",
   "sources": [
     {
@@ -760,10 +760,10 @@
       ],
       "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
       "scan_status": "in_progress",
-      "checked_at": "2026-09-06T00:03:45Z",
+      "checked_at": "2026-09-06T01:28:20Z",
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Codex (AI-assisted evidence review)",
-      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed. Bounded follow-up 6 September 2026: historical-juri-robotics-report-2017 admitted after recovery of the 64-page English report, distinct committee-adoption and official-tabling dates, full AI text and resolution relationship. Original frozen 53-candidate scope is unchanged; see research/admission/2026-09-06-three-record-admission/report.md."
     },
     {
       "id": "gap-admission-20260906-edpb-europa-eu",
@@ -950,10 +950,10 @@
       ],
       "discovery_method": "Followed exact identifiers, official publication pages and English full-text manifestations from the frozen 53-candidate omission queue.",
       "scan_status": "in_progress",
-      "checked_at": "2026-09-06T00:03:45Z",
+      "checked_at": "2026-09-06T01:28:20Z",
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Codex (AI-assisted evidence review)",
-      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+      "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed. Bounded follow-up 6 September 2026: hma-ema-ndsg-workplan-2026-2028-v2 admitted with verified v1.4 predecessor and revision edge. Newly identified v1.4 belongs to separate ndsg-v1-4-dependency-follow-up-20260906 scope; it is not retroactively part of the frozen 53-candidate set. Earlier manifestations and wider catalogue completeness remain unverified; see research/admission/2026-09-06-three-record-admission/report.md."
     },
     {
       "id": "gap-admission-20260906-eba-europa-eu",
@@ -1151,6 +1151,30 @@
       "coverage_cutoff": "2026-09-04",
       "reviewer": "Codex (AI-assisted evidence review)",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
+    },
+    {
+      "id": "ndsg-v1-4-dependency-follow-up-20260906",
+      "name": "NDSG v1.4 predecessor dependency follow-up",
+      "institution": "European Medicines Agency",
+      "source_family": "EMA NDSG workplan version catalogue (bounded dependency)",
+      "url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/network-data-steering-group-ndsg",
+      "scope_note": "Only independently identified hma-ema-ndsg-workplan-2025-2028-v1-4, recovered through the official NDSG Previous versions link while resolving the already known v2.0 candidate. Separate from the earlier frozen 53-candidate scope; no exhaustive version or institutional search is claimed.",
+      "covered_from": "2025-07-22",
+      "covered_through": "2025-07-22",
+      "covered_document_types": [
+        "work_programme"
+      ],
+      "covered_sector_tags": [
+        "health",
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "discovery_method": "Followed EMA NDSG catalogue Workplan and Previous versions panels, matched cover/version to the linked English 37-page PDF and its 22 July 2025 last-update entry; compared v2.0 Introduction p.4 and AI workstreams. Evidence review recorded in research/verification/2026-09-06-remaining-three/ema-workplan.md.",
+      "scan_status": "in_progress",
+      "checked_at": "2026-09-06T01:28:20Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "Codex (AI-assisted evidence review)",
+      "verification_note": "v1.4 is included as one new dependency with an evidenced incoming v2.0 revises v1.4 relationship. Unrecovered earlier v1.0-v1.3 manifestations and wider source-family coverage remain gaps; no source completeness upgrade follows from admission."
     }
   ]
 }
