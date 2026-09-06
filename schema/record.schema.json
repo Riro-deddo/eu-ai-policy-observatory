@@ -285,7 +285,7 @@
           "type": "object",
           "properties": {
             "entity_type": { "const": "source" },
-            "source_type": { "enum": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office", "council_register", "parliament_register", "official_register", "official_consultation"] },
+            "source_type": { "enum": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office", "council_register", "parliament_register", "official_register", "official_consultation", "institutional_archive"] },
             "url": { "$ref": "#/$defs/http_url" },
             "publisher": { "type": "string", "minLength": 1 },
             "retrieved_at": { "$ref": "#/$defs/timestamp" },

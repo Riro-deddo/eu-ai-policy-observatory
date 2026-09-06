@@ -1,0 +1,165 @@
+{
+  "id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T02:24:52Z",
+  "updated_at": "2026-09-06T02:24:52Z",
+  "slug": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+  "official_title": "Successful and timely uptake of Artificial Intelligence in science in the EU",
+  "short_title": "AI in science — Scientific Opinion No. 15 (first edition)",
+  "document_type": "opinion",
+  "sector_tags": [
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Scientific Opinion No. 15; DOI 10.2777/08845; ISBN 978-92-68-10084-4; KI-05-23-478-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2024-03-27",
+  "version_label": "First edition",
+  "version_status": "final",
+  "publication_date": "2024-04-15",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "group-of-chief-scientific-advisors",
+      "role": "author",
+      "evidence_source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "evidence_locator": "PDF pp.2-3, imprint and title page; PDF p.49 / printed p.47, methodology: prepared on behalf of the Group of Chief Scientific Advisors."
+    },
+    {
+      "institution_id": "group-of-chief-scientific-advisors",
+      "role": "adopter",
+      "evidence_source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "evidence_locator": "PDF p.7 / printed p.5, acknowledgments: adopted by the group and endorsed by all seven advisors; no separate exact adoption day is stated here."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "requester",
+      "evidence_source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "evidence_locator": "PDF p.7 / printed p.5, acknowledgments: request from Commissioners Margrethe Vestager and Iliana Ivanova."
+    },
+    {
+      "institution_id": "directorate-general-for-research-and-innovation",
+      "role": "contributor",
+      "evidence_source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "evidence_locator": "PDF p.2, DG RTD / Unit 02 imprint; PDF p.7 / printed p.5 thanks the Commission support team in Unit RTD.02."
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "evidence_locator": "PDF p.2, Luxembourg: Publications Office of the European Union, 2024."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "gcsa-ai-science-2024-release",
+    "gcsa-ai-science-2024-original-allea-archive",
+    "gcsa-ai-science-2024-original-knaw-archive"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Independent scientific advice substantively addresses responsible AI uptake in science, research infrastructure, data and models, funding, researcher skills and research assessment.",
+    "researcher_notes": "Original first edition admitted using the independently verified Commission release of 15 April 2024 plus clearly labelled ALLEA and KNAW institutional archive supplements. Original issue date, imprint, identifiers and text are read from those preserved copies, not a newly recovered EU-hosted original PDF. Both are 102 PDF pages; their extracted text agrees page by page although their bytes differ. The opinion is non-binding independent advice, not an adopted Commission strategy. DG RTD support and Publications Office publication are distinct from GCSA authorship. SAPEA Evidence Review Report No. 13 supports this opinion but is a separate work, not its original edition or an official correction notice. Classification is an AI-assisted research assessment. Publication cutoff remains 2026-09-04.",
+    "review_status": "verified",
+    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_at": "2026-09-06T02:24:52Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "locator": "PDF p.3, title page: Brussels, 27 March 2024.",
+      "meaning": "The original first edition's printed issue date, inspected in the preserved ALLEA copy and independently corroborated by KNAW p.3; admitted as institutional archive evidence with separate official release corroboration."
+    },
+    "publication_date": {
+      "source_id": "gcsa-ai-science-2024-release",
+      "locator": "Commission announcement dated 15 April 2024, opening release statement and handover description.",
+      "meaning": "Official announcement establishes the original Scientific Opinion No. 15 public release on 15 April 2024, separately from its March issue date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "locator": "Section 1.2, PDF pp.14-15 / printed pp.12-13; recommendations 1-4, PDF pp.35-48 / printed pp.33-46.",
+      "rationale": "The mandate and recommendations directly address responsible AI use in science, funding, infrastructure, research data and researcher capabilities."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "locator": "Recommendations 1-4, PDF pp.35-48 / printed pp.33-46, including research governance, AI resources, infrastructures, training and research assessment.",
+      "rationale": "Research and innovation is the opinion's central substantive sector."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "locator": "PDF pp.2-3, group author attribution; PDF p.7 / printed p.5, adoption and endorsement.",
+      "rationale": "The Group of Chief Scientific Advisors authored and adopted this independent opinion; Commission support does not establish Commission strategy authorship."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "gcsa-ai-science-2024-release",
+      "locator": "Commission announcement of 15 April 2024, opening release statement and Scientific Opinion No. 15 identification.",
+      "rationale": "The Commission confirms the original opinion's release; original full-text metadata is separately supported by the labelled institutional archive copies."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Group of Chief Scientific Advisors",
+      "affiliation": null,
+      "evidence_source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "evidence_locator": "PDF pp.2-3, group attribution; PDF p.49 / printed p.47, methodology."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "manuscript_completion",
+      "value": "2024-03",
+      "precision": "month",
+      "source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "locator": "PDF p.2, manuscript completed in March 2024."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "gcsa-ai-science-2024-release",
+    "locator": "Commission announcement, opening paragraph: independent and non-binding recommendations; advice may inform a future strategy.",
+    "meaning": "Scientific advice carries no binding legal force and is not an adopted Commission strategy. The edition-specific PDF p.2 additionally disclaims representation of the Commission's official position."
+  },
+  "snapshots": [
+    {
+      "id": "gcsa-ai-science-original-allea-20260906",
+      "source_id": "gcsa-ai-science-2024-original-allea-archive",
+      "retrieved_at": "2026-09-06T02:11:26.654360+00:00",
+      "format": "pdf",
+      "content_hash": "fc260a451bed2cee18f438c8ec92badc6f7d48c8c3a563b1d97785fb7e235327",
+      "archived_path": null
+    },
+    {
+      "id": "gcsa-ai-science-original-knaw-20260906",
+      "source_id": "gcsa-ai-science-2024-original-knaw-archive",
+      "retrieved_at": "2026-09-06T02:11:26.654360+00:00",
+      "format": "pdf",
+      "content_hash": "21833b9e7be4a0cf5ffb23b9d0eb2f55c342271fb4c994f6c4c8d7facf9d7705",
+      "archived_path": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "gcsa-ai-science-2024-original-allea-archive",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T02:24:52Z",
+  "updated_at": "2026-09-06T02:24:52Z",
+  "source_type": "institutional_archive",
+  "url": "https://allea.org/wp-content/uploads/2024/04/successful-and-timely-uptake-of-artificial-intelligence-KI0523478ENN.pdf",
+  "publisher": "ALLEA (All European Academies)",
+  "retrieved_at": "2026-09-06T02:11:26.654360+00:00",
+  "last_verified_at": "2026-09-06T02:11:26.654360+00:00",
+  "verification_note": "Institutional archive supplement, not an official EU host. Retrieved complete original first edition: HTTP 200, application/pdf, 14,379,324 bytes, 102 PDF pages. PDF pp.2-3 establish first-edition imprint and issue date. Every page's extracted text equals the independently retrieved KNAW copy; the files are not byte-identical. Used under the approved bounded supplement allowance with independent Commission release evidence. Comparison is researcher-produced, not an official correction schedule; retained hash is recorded in the document snapshot."
+}

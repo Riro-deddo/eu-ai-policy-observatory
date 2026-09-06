@@ -14,5 +14,5 @@
   "event_type": ["proposal", "publication", "adoption", "entry_into_force", "application", "amendment", "withdrawal", "implementation"],
   "relationship_type": ["part_of", "precedes", "adopted_as", "replaces", "amends", "implements", "based_on", "related_to", "supersedes", "version_of", "annex_to", "revises", "endorses", "procedural_step_for"],
   "verification_status": ["unverified", "pending", "verified"],
-  "source_type": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office", "council_register", "parliament_register", "official_register", "official_consultation"]
+  "source_type": ["eur_lex", "eli", "commission_webpage", "official_pdf", "publications_office", "council_register", "parliament_register", "official_register", "official_consultation", "institutional_archive"]
 }

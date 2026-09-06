@@ -1,0 +1,16 @@
+{
+  "id": "gcsa-ai-science-2024-corrected-revises-original",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T02:24:52Z",
+  "updated_at": "2026-09-06T02:24:52Z",
+  "source_entity_type": "document",
+  "source_entity_id": "chief-scientific-advisors-ai-science-opinion-2024",
+  "target_entity_type": "document",
+  "target_entity_id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+  "relationship_type": "revises",
+  "basis": "analytical",
+  "rationale": "The official corrected PDF cover and p.2 explicitly label a corrected first edition, with the same Scientific Opinion No. 15 identity and 27 March 2024 issue date. Researcher comparison against the two preserved original first-edition copies (ALLEA and KNAW, linked from the parent record) establishes an original-to-corrected relationship: all 102 corresponding pages were text-extracted, with non-whitespace differences on 22 page pairs and inspected wording changes on PDF pp.13,27,34. This is an analytical inference from the official correction label plus original-content comparison, not a publisher-issued errata schedule, an assertion of typography-only changes, or an explanation of why each edit was made.",
+  "evidence_source_id": "gcsa-ai-science-2024-corrected-pdf",
+  "verification_status": "verified"
+}

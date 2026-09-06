@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 from jsonschema import Draft202012Validator, FormatChecker
 
 from observatory.io import LoadedRecord, load_records
+from observatory.supplementary_sources import is_reviewed_document_supplement
 from observatory.types import ValidationIssue
 
 
@@ -1395,14 +1396,18 @@ def _validate_source_evidence(
             for index, identifier in enumerate(valid_source_ids):
                 matched_sources = records_by_type.get("source", {}).get(identifier, [])
                 if matched_sources and any(
-                    not _is_official_source(source.data) for source in matched_sources
+                    not _is_official_source(source.data)
+                    and not is_reviewed_document_supplement(
+                        record.data, source.data, records_by_type.get("source", {})
+                    )
+                    for source in matched_sources
                 ):
                     issues.append(
                         _issue(
                             "official_evidence",
                             path,
                             f"source_ids.{index}",
-                            "Published or verified documents require evidence from official EU HTTPS sources.",
+                            "Published or verified documents require official EU HTTPS evidence or the reviewed preserved-original supplement with its official release.",
                         )
                     )
     elif entity_type == "event":
