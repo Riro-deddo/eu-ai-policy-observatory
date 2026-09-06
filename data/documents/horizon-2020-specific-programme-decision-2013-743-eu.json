@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-05T10:53:00Z",
-  "updated_at": "2026-09-05T11:54:18Z",
+  "updated_at": "2026-09-06T22:16:06Z",
   "slug": "horizon-2020-specific-programme-decision-2013-743-eu",
   "official_title": "2013/743/EU: Council Decision of 3 December 2013 establishing the specific programme implementing Horizon 2020 - the Framework Programme for Research and Innovation (2014-2020) and repealing Decisions 2006/971/EC, 2006/972/EC, 2006/973/EC, 2006/974/EC and 2006/975/EC",
   "short_title": "Horizon 2020 specific programme",
@@ -19,12 +19,12 @@
   "record_level": "principal",
   "official_reference": "2013/743/EU",
   "procedure_references": [],
-  "oj_reference": null,
+  "oj_reference": "OJ L 347, 20.12.2013, pp. 965-1041",
   "document_date": "2013-12-03",
   "version_label": "Official Journal text",
   "version_status": "final",
   "publication_date": "2013-12-20",
-  "legal_status": "in_force",
+  "legal_status": "repealed",
   "celex": "32013D0743",
   "eli": "http://data.europa.eu/eli/dec/2013/743/oj",
   "language": "en",
@@ -46,13 +46,14 @@
   "policy_ids": [],
   "concept_ids": [],
   "source_ids": [
-    "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex"
+    "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+    "horizon-europe-specific-programme-decision-2021-764-eur-lex"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
     "policy_stage": "coordination",
-    "inclusion_rationale": "The official record resolves identity, dates, roles, current status and dedicated machine-learning, robotics and adaptive-system provisions.",
-    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+    "inclusion_rationale": "Annex I Part II sections1.1.4-1.1.5 fund machine learning, cognitive and adaptive systems and industrial/service robotics. Retained as historical AI precursor evidence.",
+    "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata. Correction on6September2026: original EUR-Lex indicator was insufficient for current legal status. Decision2021/764 Article15 expressly repeals this act from1January2021; Article16 preserves existing actions until closure. Historical assessment is retained; current status correction is recorded in the academic-backfill ledger.",
     "review_status": "verified",
     "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-05T06:37:06.8601555Z"
@@ -119,5 +120,10 @@
       "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
       "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
     }
-  ]
+  ],
+  "legal_status_evidence": {
+    "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+    "locator": "Council Decision (EU)2021/764, Articles15 and16(1).",
+    "meaning": "Express repeal from1January2021, subject to continued application to existing actions until closure. The operative repeal and savings provisions take precedence over the conflicting legacy EUR-Lex In force indicator."
+  }
 }

@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-09-06T22:21:51Z",
+  "cutoff": "2026-09-04",
+  "language": "English manifestations",
+  "method": "Bounded purposive gap search and selected official-source navigation; not complete SERP preservation or exhaustive institutional pagination.",
+  "baseline": "5ed89e1ba71f476f9ca14814e97d8f5f8043cc16",
+  "independent_tracks": [
+    {
+      "scope": "Health and finance",
+      "log": "health-finance.md",
+      "candidate_count": 10
+    },
+    {
+      "scope": "Employment, migration, transport, defence and history",
+      "log": "sectors-history.md",
+      "candidate_count": 8
+    },
+    {
+      "scope": "Whole-corpus structural census and substantive risk sample",
+      "log": "baseline-audit.md",
+      "sample": "11 named records; selected metadata/operative passages, not every page"
+    }
+  ],
+  "controller_queries": [
+    "site.publications.jrc.ec.europa.eu \"AI Watch\" \"Defining Artificial Intelligence\"",
+    "site:eur-lex.europa.eu \"82/878/EEC\" artificial intelligence",
+    "site:publications.jrc.ec.europa.eu \"AI Watch\" \"public sector\" 2020",
+    "site:op.europa.eu \"AI WATCH. Defining Artificial Intelligence\" \"2020\"",
+    "site:op.europa.eu \"Artificial intelligence in public services\" \"Released\"",
+    "site:eur-lex.europa.eu \"1982\" \"878\" \"artificial\"",
+    "site:eur-lex.europa.eu \"52018IP0341\" \"artificial\"",
+    "site:eur-lex.europa.eu \"52018IP0341\" \"433\""
+  ],
+  "query_limitations": "First JRC query used site. rather than site:, preserved as actually issued. No reliable full-universe result counts were returned. Independent logs preserve their own malformed/overquoted queries rather than rewriting history.",
+  "selected_navigation": [
+    {
+      "urls": [
+        "https://publications.jrc.ec.europa.eu/repository/handle/JRC118163",
+        "https://publications.jrc.ec.europa.eu/repository/handle/JRC126426",
+        "https://publications.jrc.ec.europa.eu/repository/handle/JRC120399",
+        "https://publications.jrc.ec.europa.eu/repository/handle/JRC120315"
+      ],
+      "outcome": "Catalogue descriptions/identity; metadata views lacked usable full records. JRC page extraction contained conflicting hidden-template visibility messages; not treated as an instruction or as proof of restricted access. Full-text admission not completed."
+    },
+    {
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/83838dbc-3d1f-11ec-89db-01aa75ed71a1",
+      "outcome": "Explicit release29October2021; full-text authorship and version review still pending."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31982D0878",
+      "outcome": "HTML open failed; PDF attempt gave robot-check HTML. No substantive AI relevance inferred."
+    },
+    {
+      "manifest": "../../migrations/2026-09-06-academic-backfill.json",
+      "outcome": "Controller captured10official URLs. Eight successful substantive200responses, two202emptyresponses for Melzer. Successful HTML/PDF identities checked. Empty-body hashes document failure only."
+    }
+  ],
+  "stopping_rule": "Stop this integration batch at five primary-manifestation-checked admissions plus six targeted canonical corrections. Register other identified candidates without admission; source sweep remains gap_found. No claim of completed pre-2018, sector-wide, or EU-wide coverage.",
+  "new_candidates": 27,
+  "admissions": 5,
+  "new_or_reconciled_pending": 22,
+  "main_review": "Primary medical/EIOPA PDF cover and relevant scope; EDA PDF front matter, author table, introduction, taxonomy; full short EP2018resolution; Horizon identity, enactment, Arts15-17 and AI annex. PDF page count does not imply every page substantively reviewed."
+}

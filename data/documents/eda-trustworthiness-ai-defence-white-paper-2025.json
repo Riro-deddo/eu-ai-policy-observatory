@@ -1,0 +1,224 @@
+{
+  "id": "eda-trustworthiness-ai-defence-white-paper-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "slug": "eda-trustworthiness-ai-defence-white-paper-2025",
+  "official_title": "Trustworthiness for AI in Defence: Developing Responsible, Ethical, and Trustworthy AI Systems for European Defence",
+  "short_title": "Trustworthiness for AI in Defence",
+  "document_type": "white_paper",
+  "sector_tags": [
+    "defence_and_security"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-05-12",
+  "version_label": "Published white paper; front-matter version 1.0 (history also lists 1.1)",
+  "version_status": "final",
+  "publication_date": "2025-05-12",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "eda-trustworthiness-ai-defence-working-group",
+      "role": "author",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF pp.10-11: combined expert view; voluntary TAID WG work."
+    },
+    {
+      "institution_id": "european-defence-agency",
+      "role": "publisher",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8, Conditions of release: delivered by EDA to EU Defence Community."
+    },
+    {
+      "institution_id": "european-defence-agency",
+      "role": "official_host",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-publication",
+      "evidence_locator": "EDA official catalogue and download."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+    "eda-trustworthiness-ai-defence-white-paper-2025-publication"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "PDF pp.10-12 (printed pp.9-11), Introduction and AI-system definition: defence AI trustworthiness, law, human factors and recommendations.",
+    "researcher_notes": "PDF p.2 expressly prints Publication date 09/05/2025; EDA catalogue gives12May2025. These are retained separately, not derived from filename. Front matter says version1.0; history on PDF p.8 includes1.1 submitted31March2025, so this record identifies the captured published manifestation without inventing another version. Volunteer working-group authorship is distinct from EDA hosting; contributors are not authors. Concept coding and policy grouping have not been completed; empty arrays do not mean absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:16:06Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-publication",
+      "locator": "EDA thematic and policy reports entry:12May2025.",
+      "meaning": "Primary official catalogue publication fallback. PDF p.2 separately prints9May2025; no exact independent issue day is supplied."
+    },
+    "publication_date": {
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-publication",
+      "locator": "Thematic and policy reports:12May2025, matching whitepaper link.",
+      "meaning": "Exact publication of the primary cited EDA catalogue manifestation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "locator": "PDF pp.10-12 (printed pp.9-11), Introduction and AI-system definition: defence AI trustworthiness, law, human factors and recommendations.",
+      "rationale": "Substantive AI policy content, not a keyword-only mention."
+    },
+    {
+      "field": "sector_tags",
+      "value": "defence_and_security",
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "locator": "PDF pp.10-12 (printed pp.9-11), Introduction and AI-system definition: defence AI trustworthiness, law, human factors and recommendations.",
+      "rationale": "Researcher classification grounded in the cited substantive sector scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-publication",
+      "locator": "Official publication record and matching manifestation.",
+      "rationale": "Published through the named official EU endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Isidoros Monogioudis",
+      "affiliation": "EDA",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Luis Javier Costa Giraldo",
+      "affiliation": "INDRA",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Dr. Andreas De Jonge",
+      "affiliation": "DE JONGE GmbH",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Bruno Carron",
+      "affiliation": "AIRBUS DE",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Marcilli Gianluca",
+      "affiliation": "IT MOD",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Alison M. Kay",
+      "affiliation": "TCD IE",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Daniele Bet",
+      "affiliation": "IT MOD",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Janaina Ribas De Amaral",
+      "affiliation": "AIRBUS DE",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Gabriel Pedroza",
+      "affiliation": "ANSYS",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Fateh Kaakai",
+      "affiliation": "THALES",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Michel Barreteau",
+      "affiliation": "THALES",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Andreas Tollkühn",
+      "affiliation": "MBDA DE",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Luciana Morogan",
+      "affiliation": "RO MOD",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Liisa Janssens",
+      "affiliation": "TU DELFT",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Yvonne Hofstetter",
+      "affiliation": "21 STRATEGIES",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    },
+    {
+      "name": "Chrystèle Johnson",
+      "affiliation": "MDBA FR",
+      "evidence_source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "evidence_locator": "PDF p.8 (printed p.7), Document Authors table; spelling retained as printed."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2025-05-09",
+      "precision": "day",
+      "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+      "locator": "PDF p.2 expressly labelled Publication date:09/05/2025. Preserved as front-matter date, distinct from catalogue release; not claimed as independently proved first public availability."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+    "locator": "PDF p.10 (printed p.9), concluding paragraph.",
+    "meaning": "Recommendations explicitly raise no commitment or obligation for Member States."
+  }
+}

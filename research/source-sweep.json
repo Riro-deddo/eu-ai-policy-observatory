@@ -1,7 +1,43 @@
 {
-  "generated_at": "2026-09-06T02:24:52Z",
+  "generated_at": "2026-09-06T22:21:51Z",
   "coverage_cutoff": "2026-09-04",
   "sources": [
+    {
+      "id": "academic-coverage-backfill-20260906",
+      "name": "6 September academic coverage backfill: bounded sector and historical probes",
+      "institution": "Multiple EU institutions, bodies and agencies",
+      "source_family": "Bounded official-source audit",
+      "url": "https://eur-lex.europa.eu/advanced-search-form.html?lang=en",
+      "scope_note": "Selected official EUR-Lex, Commission, agency, Parliament and JRC routes. The1982 lower edge is a candidate probe, not verified inclusion or continuous coverage. Logs: research/discovery/2026-09-06-academic-backfill/.",
+      "covered_from": "1982-01-01",
+      "covered_through": "2026-09-04",
+      "covered_document_types": [
+        "decision",
+        "resolution",
+        "guidelines",
+        "consultation_document",
+        "white_paper",
+        "report",
+        "study",
+        "briefing"
+      ],
+      "covered_sector_tags": [
+        "health",
+        "financial_services",
+        "defence_and_security",
+        "employment_and_labour",
+        "migration_asylum_and_border_management",
+        "transport_and_mobility",
+        "research_and_innovation",
+        "public_administration"
+      ],
+      "discovery_method": "Purposive official-source queries, exact-title/reference duplicate checks and targeted reverse citation. Complete pagination not exhausted; no search-universe total available.",
+      "scan_status": "gap_found",
+      "checked_at": "2026-09-06T22:16:06Z",
+      "coverage_cutoff": "2026-09-04",
+      "reviewer": "AI-assisted evidence review",
+      "verification_note": "Five admissions;22 additional/reconciled candidates pending. No claim of exhaustive coverage or independent full-source review of all187 baseline records."
+    },
     {
       "id": "eur-lex-procedure-2021-0106",
       "name": "EUR-Lex procedure 2021/0106/COD",

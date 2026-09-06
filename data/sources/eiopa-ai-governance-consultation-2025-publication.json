@@ -1,0 +1,13 @@
+{
+  "id": "eiopa-ai-governance-consultation-2025-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "official_consultation",
+  "url": "https://www.eiopa.europa.eu/consultations/consultation-paper-and-impact-assessment-eiopas-opinion-ai-governance-and-risk-management_en",
+  "publisher": "European Insurance and Occupational Pensions Authority",
+  "retrieved_at": "2026-09-06T22:13:27.508732+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "Reference document stamp 11 February 2025; consultation opened 12 February 2025. Inspected capture SHA-256 c0fffb575fc5a980fe5f69beb58edc41687c04735b7095e1aab79f945ee8b836; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

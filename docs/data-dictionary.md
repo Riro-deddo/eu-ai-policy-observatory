@@ -138,7 +138,11 @@ Production provenance identifies how a document came into being. It remains sepa
 | Field | Type | Required | Provenance | Vocabulary / constraint |
 | --- | --- | --- | --- | --- |
 | `institution_id` | string | Yes | Official | Existing institution ID. |
-| `role` | string | Yes | Official | `author`, `proposer`, `adopter`, `publisher`, `contributor`. |
+| `role` | string | Yes | Official | `author`, `proposer`, `adopter`, `publisher`, `contributor`, `commissioner`, `official_host`, `responsible_body`, `requester`, `supervisor`, `cover_note_sender`. |
+| `evidence_source_id` | string | For expanded verified records | Official | Source supporting this particular role, not just institutional association. |
+| `evidence_locator` | string | For expanded verified records | Official | Specific cover, credits, preamble, signature or register statement. |
+
+Authorship concerns producing the text; commissioning concerns requesting or funding it. A publisher releases it and an official host supplies access, neither of which by itself establishes authorship. A proposer submits a measure; an adopter formally approves it. `responsible_body`, `requester`, `supervisor` and `contributor` preserve the narrower role evidenced by the source. `cover_note_sender` identifies the sender of a transmission note, not automatically the author of its attachment. Named personal authors and affiliations remain in `bibliographic_authors`; acknowledgements and contributors must not silently become authors.
 
 ### `corpus_assessment`
 

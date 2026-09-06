@@ -1,0 +1,154 @@
+{
+  "id": "medical-device-ai-interplay-mdcg-2025-6",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "slug": "medical-device-ai-interplay-mdcg-2025-6",
+  "official_title": "Interplay between the Medical Devices Regulation (MDR) & In vitro Diagnostic Medical Devices Regulation (IVDR) and the Artificial Intelligence Act (AIA)",
+  "short_title": "Medical-device AI: joint AIB/MDCG guidance",
+  "document_type": "guidelines",
+  "sector_tags": [
+    "health"
+  ],
+  "provenance_tags": [
+    "eu_expert_group_authored",
+    "joint_institutional",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "AIB 2025-1; MDCG 2025-6",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-06-19",
+  "version_label": "June 2025 endorsed guidance",
+  "version_status": "final",
+  "publication_date": "2025-06-19",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-artificial-intelligence-board",
+      "role": "author",
+      "evidence_source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "evidence_locator": "PDF p.1: Joint Artificial Intelligence Board and Medical Device Coordination Group Document."
+    },
+    {
+      "institution_id": "medical-device-coordination-group",
+      "role": "author",
+      "evidence_source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "evidence_locator": "PDF p.1: Joint Artificial Intelligence Board and Medical Device Coordination Group Document."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "publisher",
+      "evidence_source_id": "medical-device-ai-interplay-mdcg-2025-6-publication",
+      "evidence_locator": "DG SANTE publication announcement and linked official English file."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "official_host",
+      "evidence_source_id": "medical-device-ai-interplay-mdcg-2025-6-publication",
+      "evidence_locator": "DG SANTE official publication endpoint; no author role inferred."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "medical-device-ai-interplay-mdcg-2025-6-pdf",
+    "medical-device-ai-interplay-mdcg-2025-6-publication"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "PDF pp.2-5: joint application of AI Act, MDR and IVDR; medical-device AI scope, risks and high-risk qualification.",
+    "researcher_notes": "Cover gives June 2025 only. Exact official publication is the document-date fallback. The Commission hosts the text but its cover explicitly disclaims Commission authorship or position. Concept coding and policy grouping have not been completed; empty arrays do not mean absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:16:06Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-publication",
+      "locator": "Publication date and linked mdcg_2025-6_en.pdf: 19 June 2025.",
+      "meaning": "Publication fallback; the PDF supplies no exact independent issue day."
+    },
+    "publication_date": {
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-publication",
+      "locator": "Publication date; matching English download dated 19 June 2025.",
+      "meaning": "Official release of this exact joint guidance."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "locator": "PDF pp.2-5: joint application of AI Act, MDR and IVDR; medical-device AI scope, risks and high-risk qualification.",
+      "rationale": "Substantive AI policy content, not a keyword-only mention."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "locator": "PDF pp.2-5: joint application of AI Act, MDR and IVDR; medical-device AI scope, risks and high-risk qualification.",
+      "rationale": "Researcher classification grounded in the cited substantive sector scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "joint_institutional",
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_expert_group_authored",
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-publication",
+      "locator": "Official publication record and matching manifestation.",
+      "rationale": "Published through the named official EU endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Artificial Intelligence Board",
+      "affiliation": null,
+      "evidence_source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "evidence_locator": "PDF p.1 joint corporate attribution and endorsement statement."
+    },
+    {
+      "name": "Medical Device Coordination Group",
+      "affiliation": null,
+      "evidence_source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "evidence_locator": "PDF p.1 joint corporate attribution and endorsement statement."
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "cover_issue",
+      "value": "2025-06",
+      "precision": "month",
+      "source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+      "locator": "PDF p.1: June 2025."
+    }
+  ],
+  "legal_status_evidence": {
+    "source_id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+    "locator": "PDF p.1, disclaimer.",
+    "meaning": "Expressly non-binding; endorsed by AIB and MDCG, not a Commission document."
+  }
+}

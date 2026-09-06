@@ -16,6 +16,8 @@ Version 0.1 establishes the policy, document, event, concept, institution, relat
 
 ## Current scope
 
+The [6 September academic coverage review](research/audits/2026-09-06-academic-coverage-review.md) adds five evidence-backed documents, corrects the Horizon 2020 status and six OJ citations, and records further discoveries without claiming full coverage. The fixed v0.1.0 release remains unchanged.
+
 The approved research boundary admits official European Communities and EU documents substantively concerning artificial intelligence, including formally published drafts and sector-specific materials as well as adopted instruments. Formal official publication, not adoption or entry into force, is the eligibility threshold. The four research lenses remain risk, trustworthiness, accountability and compliance.
 
 An expanding corpus of official EU and European Communities AI-related documents. Verification dates and known coverage gaps are documented.

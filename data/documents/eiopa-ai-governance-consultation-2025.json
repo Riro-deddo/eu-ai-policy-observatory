@@ -1,0 +1,134 @@
+{
+  "id": "eiopa-ai-governance-consultation-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "slug": "eiopa-ai-governance-consultation-2025",
+  "official_title": "Consultation Paper on Opinion on Artificial Intelligence Governance and Risk Management",
+  "short_title": "EIOPA AI governance consultation",
+  "document_type": "consultation_document",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "official_consultation_material",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "EIOPA-BoS-25-007",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-02-10",
+  "version_label": "Consultation draft",
+  "version_status": "draft",
+  "publication_date": "2025-02-11",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "author",
+      "evidence_source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "evidence_locator": "PDF cover and p.2 EIOPA institutional imprint."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "publisher",
+      "evidence_source_id": "eiopa-ai-governance-consultation-2025-publication",
+      "evidence_locator": "Official consultation and linked English draft."
+    },
+    {
+      "institution_id": "european-insurance-and-occupational-pensions-authority",
+      "role": "official_host",
+      "evidence_source_id": "eiopa-ai-governance-consultation-2025-publication",
+      "evidence_locator": "Official consultation and linked English draft."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eiopa-ai-governance-consultation-2025-pdf",
+    "eiopa-ai-governance-consultation-2025-publication"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "PDF pp.3-5, sections 1-3: insurance AI governance and risk management, scope and proportionality.",
+    "researcher_notes": "Cover issue 10 February, linked-file publication 11 February and consultation opening 12 February 2025 are distinct. The legacy internal 2023 header is not the issue year. This draft does not impose new binding requirements. Concept coding and policy grouping have not been completed; empty arrays do not mean absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:16:06Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "locator": "PDF p.1: EIOPA-BoS-25-007, 10 FEBRUARY 2025.",
+      "meaning": "Exact printed issue date, not adoption."
+    },
+    "publication_date": {
+      "source_id": "eiopa-ai-governance-consultation-2025-publication",
+      "locator": "Reference documents: consultation paper, 11 FEBRUARY 2025.",
+      "meaning": "Document-specific publication stamp, separate from the 12 February opening."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "locator": "PDF pp.3-5, sections 1-3: insurance AI governance and risk management, scope and proportionality.",
+      "rationale": "Substantive AI policy content, not a keyword-only mention."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "locator": "PDF pp.3-5, sections 1-3: insurance AI governance and risk management, scope and proportionality.",
+      "rationale": "Researcher classification grounded in the cited substantive sector scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eiopa-ai-governance-consultation-2025-publication",
+      "locator": "Official publication record and matching manifestation.",
+      "rationale": "Published through the named official EU endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Insurance and Occupational Pensions Authority",
+      "affiliation": null,
+      "evidence_source_id": "eiopa-ai-governance-consultation-2025-pdf",
+      "evidence_locator": "PDF cover and p.2 institutional imprint."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eiopa-ai-governance-consultation-2025-pdf",
+    "locator": "PDF p.2 Next steps; pp.4-5 section 2.7.",
+    "meaning": "Consultation draft subject to revision; does not set new requirements."
+  }
+}

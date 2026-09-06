@@ -1,0 +1,13 @@
+{
+  "id": "eiopa-ai-governance-consultation-2025-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "official_pdf",
+  "url": "https://www.eiopa.europa.eu/document/download/8953a482-e587-429c-b416-1e24765ab250_en?filename=EIOPA-BoS-25-007-AI+Opinion.pdf",
+  "publisher": "European Insurance and Occupational Pensions Authority",
+  "retrieved_at": "2026-09-06T22:13:27.353752+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "22-page consultation paper; cover, pp.2-5 inspected; not the August final opinion. Inspected capture SHA-256 9752b7b4e04937df60667407f8f6f2801bab63e98eb03f2e39d61141bddd16b5; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

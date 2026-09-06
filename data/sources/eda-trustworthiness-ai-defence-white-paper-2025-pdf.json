@@ -1,0 +1,13 @@
+{
+  "id": "eda-trustworthiness-ai-defence-white-paper-2025-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "official_pdf",
+  "url": "https://eda.europa.eu/docs/default-source/brochures/taid-white-paper-final-09052025.pdf",
+  "publisher": "European Defence Agency",
+  "retrieved_at": "2026-09-06T22:15:02.917422+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "107-page white paper. PDF pp.2,8,10-12 inspected; printed publication9May; sixteen author credits; coverversion1.0 differs from history1.1. Inspected capture SHA-256 728f955de6f63b2e8f95dcf3e1bc035cd6e59a1557b5f01b78d36fc8ea799ad0; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}
