@@ -17,7 +17,7 @@ test('default group and expanded view render recorded graph scopes', async ({ pa
   await expect(page.locator('[data-policy-map-node]')).toHaveCount(9);
   await expect(page.locator('[data-policy-map-edge]')).toHaveCount(7);
   await page.getByRole('button', { name: 'All records', exact: true }).click();
-  await expect(page.locator('[data-policy-map-node]')).toHaveCount(49);
+  await expect(page.locator('[data-policy-map-node]')).toHaveCount(58);
   await expectCompleteRelationshipList(page);
 });
 

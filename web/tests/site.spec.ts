@@ -328,7 +328,8 @@ test('timeline separates document dates from distinct policy events across the p
   await page.goto('timeline/');
 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Timeline');
-  await expect(page.getByText('1984–2026')).toBeVisible();
+  await expect(page.getByText('1982–2026')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 2, name: '1982' })).toBeVisible();
   await expect(page.getByRole('heading', { level: 2, name: '1984' })).toBeVisible();
   for (const document of [
     'Artificial Intelligence for Europe',
