@@ -4,6 +4,13 @@ import { loadPublicData } from '../lib/data';
 import { vocabularyLabel } from '../lib/filter';
 
 const data = loadPublicData();
+const unassignedConcepts = data.documents.filter((document) => document.concepts.length === 0).length;
+const unassignedPolicies = data.documents.filter((document) => document.policies.length === 0).length;
+const linkedDocuments = new Set(data.relationships.flatMap((relationship) => [
+  ...(relationship.source_entity_type === 'document' ? [relationship.source_entity_id] : []),
+  ...(relationship.target_entity_type === 'document' ? [relationship.target_entity_id] : []),
+]));
+const unlinkedDocuments = data.documents.filter((document) => !linkedDocuments.has(document.id)).length;
 ---
 
 <BaseLayout
@@ -32,6 +39,7 @@ const data = loadPublicData();
         but historical backfill and the wider institutional and sectoral sweep remain incomplete.
         Formally published drafts can qualify; all additions still require record-level official-source verification.
         The research boundary concerns AI-related material, not all EU digital law.
+        The current corpus represents English-language manifestations; it is not a completed multilingual search.
       </p>
     </section>
 
@@ -69,12 +77,65 @@ const data = loadPublicData();
       </p>
     </section>
 
+    <section id="review-queues" aria-labelledby="review-queues-heading">
+      <h2 id="review-queues-heading">Separate review queues</h2>
+      <dl>
+        <dt>Unpublished candidates awaiting a decision</dt><dd>{data.coverage.unresolved_candidates}</dd>
+        <dt>Published records awaiting expanded evidence review</dt><dd>{data.coverage.historical_review.legacy_review_pending}</dd>
+      </dl>
+      <p>
+        These are different populations. Candidates are not in the public document corpus;
+        retained published records carry explicit evidence qualifications. Neither count measures
+        all documents still undiscovered. Completed expanded review means the required evidence
+        fields passed review, not exhaustive factual accuracy or independent human double-review.
+      </p>
+    </section>
+
+    <section id="annotation-coverage" aria-labelledby="annotation-coverage-heading">
+      <h2 id="annotation-coverage-heading">Annotation coverage and limits</h2>
+      <p>These counts cover all {data.documents.length} published records, independently of Corpus filters.</p>
+      <dl>
+        <dt>Without assigned research concepts</dt><dd>{unassignedConcepts}</dd>
+        <dt>Without assigned policy groupings</dt><dd>{unassignedPolicies}</dd>
+        <dt>Without a recorded relationship endpoint</dt><dd>{unlinkedDocuments}</dd>
+      </dl>
+      <p>
+        An empty annotation list is not evidence of absence. It does not distinguish unreviewed,
+        inapplicable and reviewed-negative findings. Concept labels are browsing lenses, not a completed
+        passage-level coding study. Sector tags record positive assignments: a cross-sector tag does
+        not automatically match every sector filter. The map contains recorded relationship endpoints
+        only; a missing node or link is not evidence of policy isolation.
+      </p>
+      <p>
+        Before using these fields as research variables, define the analytical sample, coding units,
+        inclusion and exclusion examples, missing-value treatment, version handling and review protocol.
+        Counts of principal works, supporting records, versions and attachments are not interchangeable
+        with counts of unique laws or independent analytical observations.
+      </p>
+    </section>
+
+    <section id="review-attribution" aria-labelledby="review-attribution-heading">
+      <h2 id="review-attribution-heading">Review credit and evidence-review actions</h2>
+      <p>
+        Public review credit identifies Yichen Hao as the project reviewer. The evidence-review date
+        comes from the recorded assessment; its actor remains in canonical and downloadable data.
+        This display is not a separately timestamped personal sign-off. Human review or release approval
+        must be recorded with its actual scope and date; no historical actor or date is replaced by display credit.
+      </p>
+    </section>
+
     <section aria-labelledby="bounded-source-scopes">
       <h2 id="bounded-source-scopes">Bounded source scopes</h2>
       <p>
         Each entry records an actual bounded scan, not comprehensive EU coverage. An in-progress scope is partial;
         empty document-type or sector fields are shown as unspecified. A zero pending count means no candidate is
         pending within that admitted-set scan, not that no historical leads remain.
+      </p>
+      <p>
+        A reproducible search retains its actual query or navigation sequence, filters, result list,
+        pagination or stopping rule, timestamp, access limitations and candidate decisions.
+        Some legacy search narratives lack those details; they are not fully reproducible searches,
+        and missing historical evidence is not reconstructed as if it had been recorded at the time.
       </p>
       <ol>
         {data.coverage.source_scopes.map((scope) => (

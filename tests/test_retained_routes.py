@@ -109,6 +109,14 @@ def _copy_missing_parent_project(tmp_path: Path) -> Path:
     # recreate those three historical entries alongside their section records.
     inventory_path = project / "research/corpus-inventory.json"
     inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    # The current inventory also includes the later parent admission. Remove
+    # that decision only in this pre-admission fixture, alongside its document.
+    admission = json.loads(ADMISSION_LEDGER.read_text(encoding="utf-8"))
+    parent_id = admission["guidelines_admission"]["parent_id"]
+    inventory["candidates"] = [
+        candidate for candidate in inventory["candidates"]
+        if candidate.get("document_id") != parent_id
+    ]
     for candidate in inventory["candidates"]:
         if candidate.get("document_id") in HELD:
             _, document = _document(project / "data", candidate["document_id"])

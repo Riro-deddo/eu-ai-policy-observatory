@@ -235,7 +235,7 @@ test('the final AI Act detail page separates official and research content', asy
     page.getByRole('region', { name: 'Official sources and identifiers' })
       .getByRole('link', { name: 'Official source' }).first(),
   ).toBeVisible();
-  await expect(page.getByText('Verification date')).toBeVisible();
+  await expect(page.getByText('Evidence review date', { exact: true })).toBeVisible();
 });
 
 test('version records expose version-aware official metadata without null placeholders', async ({ page }) => {

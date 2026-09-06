@@ -57,15 +57,7 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
         record.data["id"] for record in load_records(Path("data"))["documents"]
         if record.data["publication_status"] == "published"
     }
-    six_record_update = json.loads(
-        (ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json").read_text(
-            encoding="utf-8"
-        )
-    )
-    assert included_document_ids <= published_document_ids
-    assert published_document_ids - included_document_ids == set(
-        six_record_update["new_document_ids"]
-    )
+    assert included_document_ids == published_document_ids
     source_sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
     family_statuses = {}
     for source in source_sweep["sources"]:

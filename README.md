@@ -18,7 +18,7 @@ The approved research boundary admits official European Communities and EU docum
 
 An expanding corpus of official EU and European Communities AI-related documents. Verification dates and known coverage gaps are documented.
 
-Implemented coverage is currently concentrated on the AI Act pathway and related implementation. The published records span 2018–2026, with a publication cutoff of 4 September 2026; historical backfill and the wider institutional and sectoral sweep remain incomplete. The cutoff records the last date admitted by the audit revision. It is distinct from the actual retrieval, verification and decision-review timestamps recorded when research actions occur.
+Implemented coverage is currently concentrated on the AI Act pathway and related implementation. The published records span 1984–2026, with a publication cutoff of 4 September 2026; historical backfill and the wider institutional and sectoral sweep remain incomplete. The cutoff records the last date admitted by the audit revision. It is distinct from the actual retrieval, verification and decision-review timestamps recorded when research actions occur.
 
 Stage 1 establishes the schema and interface over the existing reviewed corpus, controlled classifications, source registry and candidate inventory. It is not the completed EU-wide source sweep. The canonical repository may contain records in editorial states such as `draft`, `pending_review` or `verified`; only records whose `publication_status` is `published` enter the generated public JSON, static site and SQLite output. Pending candidates are included in aggregate audit summaries but excluded from public document records, published record counts and downloads.
 
@@ -65,6 +65,16 @@ The approved research scope is broader than the coverage currently implemented. 
 3. **Stage 3 — wider source sweep:** execute and document bounded searches across registered official source families, add needed entrances, review each discovered candidate and publish only verified eligible records.
 
 Stage completion is evidence-based. A registered source count is not proof that every eligible record has been found.
+
+## Research use and annotation limits
+
+The corpus currently represents English-language manifestations, not a completed search across all EU languages. This acquisition boundary is distinct from the English interface. Counts of records, principal works, versions and attachments are not interchangeable with counts of unique laws or independent analytical observations.
+
+Unassigned concept or policy links are not evidence of substantive absence. The current records do not distinguish all reasons for an empty annotation list, and concept labels are browsing lenses rather than a completed passage-level coding study. Sector tags are positive, researcher-assigned classifications; a cross-sector tag does not automatically match every sector filter. The Policy Map contains recorded relationship endpoints only, not every document. See [Methodology](https://riro-deddo.github.io/eu-ai-policy-observatory/methodology/#annotation-coverage) for generated annotation-coverage counts and the separate published-record and unpublished-candidate review queues.
+
+Public review credit identifies Yichen Hao as the project reviewer. The displayed evidence-review date comes from the recorded evidence assessment, whose actor is preserved in canonical and downloadable data; it is not a separately recorded human sign-off date. A personal review or release approval must be recorded with its actual scope and date before being claimed as such. Historical actors and timestamps are not replaced by display credit.
+
+For an independently reproducible search, retain the actual query or navigation steps, language/date/type filters, result list, pagination or stopping rule, access limitations and candidate decisions. Some legacy search narratives do not retain this detail and must not be described as fully reproducible. Missing past search evidence must not be invented. Before using concepts or relationships as research variables, define a separate coding protocol and analytical sample.
 
 ## Verification and provenance
 

@@ -21,7 +21,7 @@ for (const slug of sampleSlugs) {
 
     expect(html).toContain(`<h1>${sample.short_title}</h1>`);
     expect(html).toContain('<dt>Reviewed by</dt><dd>Yichen Hao</dd>');
-    expect(html).toContain(`<dt>Verification date</dt><dd>${assessment.reviewed_at}</dd>`);
+    expect(html).toContain(`<dt>Evidence review date</dt><dd>${assessment.reviewed_at}</dd>`);
     const reviewStatus = sample.historical_review_status === 'verified'
       ? 'Verified'
       : 'Expanded evidence review pending';
