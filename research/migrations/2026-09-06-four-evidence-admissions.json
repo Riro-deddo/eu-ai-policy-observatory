@@ -1,0 +1,328 @@
+{
+  "migration_date": "2026-09-06",
+  "scope": "Four exact-manifestation evidence admissions from the 19-record pending queue",
+  "publication_cutoff": "2026-09-04",
+  "before_counts": {
+    "verified": 167,
+    "legacy_review_pending": 19,
+    "total": 186
+  },
+  "after_counts": {
+    "verified": 171,
+    "legacy_review_pending": 15,
+    "total": 186
+  },
+  "approved_snapshot": {
+    "state_path": "../evidence-four-corrections-20260906/before-state.json",
+    "state_sha256": "6905b098c62d931e5bc6a80ccb572ea55f9851bb6d150ca34732764d21ec1bcc",
+    "zip_path": "../evidence-four-corrections-20260906/before.zip",
+    "zip_sha256": "281c9dd1f4cb7c53b93b404047ebc8c9f1a2f9af78c6b0c850cbd038128dcfed",
+    "document_count": 186,
+    "meaning": "The immutable byte snapshot, rather than old Git HEAD, is the preservation baseline for this batch."
+  },
+  "prior_ledgers": [
+    {
+      "path": "research/migrations/2026-09-05-expanded-evidence-review.json",
+      "sha256": "9376ded38fafa1ab33a98f5349336e746cd91803dddca69029bb8e96abe92437"
+    },
+    {
+      "path": "research/migrations/2026-09-05-remaining-evidence-review.json",
+      "sha256": "bca28661d171ab5af3b3669352c26d1de96dc7fa504aaafafb04c3fc39538985"
+    },
+    {
+      "path": "research/migrations/2026-09-05-review-continuation.json",
+      "sha256": "8ae74d6013f4e1909d1db8ce30bd0417f221dc490520189e0edb5bb8efcb5713"
+    },
+    {
+      "path": "research/migrations/2026-09-06-evidence-corrections.json",
+      "sha256": "9e4bbfdcff004b23aefcefbe6e680e8e5bd6408bb28c255443d32043899dd20e"
+    }
+  ],
+  "starting_pending_ids": [
+    "ai-act-council-coreper-general-approach-st-14336-2022",
+    "ai-act-council-final-compromise-st-13955-2022",
+    "ai-act-council-first-consolidated-compromise-st-10069-2022",
+    "ai-act-council-fourth-compromise-st-13102-2022",
+    "ai-act-council-second-compromise-st-11124-2022",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+    "ai-act-council-third-compromise-part-two-st-12549-2022",
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1",
+    "ai-standardisation-request-c-2023-3215",
+    "draft-high-risk-classification-guidelines-2026",
+    "draft-high-risk-classification-guidelines-annex-i-2026",
+    "draft-high-risk-classification-guidelines-annex-iii-2026",
+    "ecb-technical-working-document-con-2026-10",
+    "gpai-provider-guidelines-2025",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025",
+    "standardisation-request-c-2025-3871"
+  ],
+  "upgraded_ids": [
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1",
+    "ecb-technical-working-document-con-2026-10",
+    "gpai-provider-guidelines-2025"
+  ],
+  "held_ids": [
+    "ai-act-council-coreper-general-approach-st-14336-2022",
+    "ai-act-council-final-compromise-st-13955-2022",
+    "ai-act-council-first-consolidated-compromise-st-10069-2022",
+    "ai-act-council-fourth-compromise-st-13102-2022",
+    "ai-act-council-second-compromise-st-11124-2022",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+    "ai-act-council-third-compromise-part-two-st-12549-2022",
+    "ai-standardisation-request-c-2023-3215",
+    "draft-high-risk-classification-guidelines-2026",
+    "draft-high-risk-classification-guidelines-annex-i-2026",
+    "draft-high-risk-classification-guidelines-annex-iii-2026",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025",
+    "standardisation-request-c-2025-3871"
+  ],
+  "dispositions": [
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "disposition": "admitted",
+      "publication_date": "2021-04-23",
+      "publication_scope": "Exact Council-hosted ST 8115/21 ADD 5 manifestation; not first-ever SEC publication",
+      "primary_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication"
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "disposition": "admitted",
+      "publication_date": "2026-03-13",
+      "publication_scope": "Qualified exact-TWD OP catalogue assertion; not first EUR-Lex availability or opinion OJ publication",
+      "primary_source_id": "ecb-technical-working-document-con-2026-10-op-publication"
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "disposition": "admitted",
+      "publication_date": "2026-06-22",
+      "publication_scope": "Exact mixed EN/FR OP ADD 1 manifestation; not a date for the current fully English translation",
+      "primary_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication"
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "disposition": "admitted",
+      "publication_date": "2025-08-27",
+      "publication_scope": "Dated Service Desk resource card directly linking the original July draft annex; not C(2025) 7719",
+      "primary_source_id": "gpai-provider-guidelines-2025-service-desk-publication"
+    },
+    {
+      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-final-compromise-st-13955-2022",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-second-compromise-st-11124-2022",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "disposition": "held"
+    },
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "disposition": "held"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "disposition": "held"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "disposition": "held"
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "disposition": "held"
+    },
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "disposition": "held"
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "disposition": "held"
+    },
+    {
+      "document_id": "standardisation-request-c-2025-3871",
+      "disposition": "held"
+    }
+  ],
+  "evidence_receipts": [
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-op-card.html.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:10:42.442634+01:00",
+      "sha256": "e4eb594cb998fbb767ca6a704b90ce22b2e7ed48d9cf350b08c688db62176652"
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-council-package.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:09:28.10865+01:00",
+      "sha256": "d7cd025ae5b6ab0ab806f40973e68aecc3e3159a17cfd7f61d81e51f4d7c729f"
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-direct-sec.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:10:42.443634+01:00",
+      "sha256": "80210a79981bc91903834c182e0a1f9d3936c545bbcd1d5c5d71ee1ffa46c126"
+    },
+    {
+      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-cellar.xml.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
+      "sha256": "9c8575a4073f234e1e94b1309a7841847788aaffa91dd554dd15232ce4012c3a"
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "source_id": "ecb-technical-working-document-con-2026-10-op-publication",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-op-card.html.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
+      "sha256": "cbc98f1c49dd0c34561587615c9f65ccba3d2e60139afc62eee52eacc1f6d6a9"
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-cellar.xml.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
+      "sha256": "a7bab2e60d25a310b681f58ebd032d4f6d4ab0bde6ad883dee44f99fdbdb8ec8"
+    },
+    {
+      "document_id": "ecb-technical-working-document-con-2026-10",
+      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-twd.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
+      "sha256": "70f66dea621bef6ba5c8840b06db56d5e3cb30d37bb59ff89f2c8580d0ccd4ab"
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-card.html.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:12:33.377338+01:00",
+      "sha256": "3a15a0c1e0cbaf54cc0ebb4314424b7e3c3111e53677973610ffae5968167c88"
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-mixed.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:13:04.534481+01:00",
+      "sha256": "da1b100be59c6aeddffca11af3b46b6cbb25fa1f37ff9a6f8390c6a746d00a5d"
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-council-en.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:09:26.315097+01:00",
+      "sha256": "109c4356040349a5c5592eae265925bfd5b0ea6c9906c5a29c3582923c9d221f"
+    },
+    {
+      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-cellar.rdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:12:24.423821+01:00",
+      "sha256": "219199d652a9307fd6dc53a1471ce7aceaacfdb7eff98c5784d6e1faad0cdd9a"
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "source_id": "gpai-provider-guidelines-2025-service-desk-publication",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-service-card.html.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:09:59.429248+01:00",
+      "sha256": "941bddc80071ddeeebb540d3a5e1f1563a15804e3e89163c41de0d58745ee505"
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-july-annex.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:09:58.51766+01:00",
+      "sha256": "6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517"
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "source_id": "gpai-provider-guidelines-2025-approval-pdf",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-approval.pdf.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:10:25.682+01:00",
+      "sha256": "e33d18eefc4dfceaa9d6b1a38ec10bac8775605d1bc49c42461dabcc1f520824"
+    },
+    {
+      "document_id": "gpai-provider-guidelines-2025",
+      "source_id": "gpai-provider-guidelines-2025-register-metadata",
+      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-register.json.gz",
+      "compression": "gzip-mtime-0",
+      "retrieved_at": "2026-09-06T06:11:42.458563+01:00",
+      "sha256": "d05f04c58574b133ce5280da59d9244278b5bde6243b72f45c03d164e001e6bd"
+    }
+  ],
+  "inventory_alignment": {
+    "before_sha256": "10f7c690bfdcbb462cea0562cbdbdae170e67128249d461d8aa38e0831fb1992",
+    "changed_candidate_ids": [
+      "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "gpai-provider-guidelines-2025"
+    ],
+    "unchanged_review_credit": true,
+    "reason": "Only the ADD 1 full title/mixed substantive attribution and GPAI original-annex identity fields required canonical alignment."
+  },
+  "readiness_gate": {
+    "validator": "validate_historical_readiness",
+    "document_ids": [
+      "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "ecb-technical-working-document-con-2026-10",
+      "gpai-provider-guidelines-2025"
+    ],
+    "issues": 0,
+    "status_persisted_only_after_gate": true
+  },
+  "preservation": {
+    "comparison_helper": "../evidence-four-corrections-20260906/workspace_check.py",
+    "comparison_artifact": "research/reviews/2026-09-06-four-evidence-admissions/preservation-proof.json",
+    "delta_artifact": "research/reviews/2026-09-06-four-evidence-admissions/delta-checks.json",
+    "review_diff": "research/reviews/2026-09-06-four-evidence-admissions/review.diff",
+    "preserved_non_target_documents": 182,
+    "routes_identical": true,
+    "prior_sources_and_ledgers_byte_identical": true,
+    "review_attribution_changes": []
+  },
+  "preservation_note": "All reviewed_by and reviewed_at fields are unchanged. This automated evidence correction is recorded only in this chronological ledger."
+}

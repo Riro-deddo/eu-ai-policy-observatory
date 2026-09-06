@@ -12,6 +12,7 @@ from observatory.pipeline import run_pipeline
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
+FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 
 EXPECTED_PUBLICATIONS = {
     "ai-act-council-general-approach-st-15698-2022": ("2022-12-06", "fd86e2b0-758c-11ed-9887-01aa75ed71a1"),
@@ -99,6 +100,11 @@ def test_ledger_preserves_routes_and_retains_unadmitted_holds(payload):
     assert proof_path.is_relative_to(ROOT)
     proof_lf_bytes = proof_path.read_text(encoding="utf-8").encode("utf-8")
     assert hashlib.sha256(proof_lf_bytes).hexdigest() == preservation["comparison_artifact_sha256_lf"]
+    later_upgrades = set(json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
     for row in ledger["dispositions"]:
-        expected = "verified" if row["disposition"] == "admitted" else "legacy_review_pending"
+        expected = (
+            "verified"
+            if row["disposition"] == "admitted" or row["document_id"] in later_upgrades
+            else "legacy_review_pending"
+        )
         assert documents[row["document_id"]]["historical_review_status"] == expected

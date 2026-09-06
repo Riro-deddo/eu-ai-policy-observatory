@@ -1,0 +1,296 @@
+{
+  "checked_at": "2026-09-06T07:02:04.248663+01:00",
+  "document_count": 186,
+  "upgraded_ids": [
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1",
+    "ecb-technical-working-document-con-2026-10",
+    "gpai-provider-guidelines-2025"
+  ],
+  "pending_ids": [
+    "ai-act-council-coreper-general-approach-st-14336-2022",
+    "ai-act-council-final-compromise-st-13955-2022",
+    "ai-act-council-first-consolidated-compromise-st-10069-2022",
+    "ai-act-council-fourth-compromise-st-13102-2022",
+    "ai-act-council-second-compromise-st-11124-2022",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+    "ai-act-council-third-compromise-part-two-st-12549-2022",
+    "ai-standardisation-request-c-2023-3215",
+    "draft-high-risk-classification-guidelines-2026",
+    "draft-high-risk-classification-guidelines-annex-i-2026",
+    "draft-high-risk-classification-guidelines-annex-iii-2026",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025",
+    "standardisation-request-c-2025-3871"
+  ],
+  "routes_identical": true,
+  "unchanged_prior_verified": 167,
+  "unrelated_document_changes": [],
+  "protected_changes": [],
+  "attribution_changes": [],
+  "removed_files": [],
+  "changed_files": [
+    {
+      "path": "data/documents/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167.json",
+      "before_sha256": "b68c90396d8d1a7286174659c2adc89f2f77fb42dcdcaca3128ebb6bbbc07993",
+      "after_sha256": "14082408e72eca89114395c8de69e9d43c50532b0bc35b44f05301e02012f64d"
+    },
+    {
+      "path": "data/documents/ai-omnibus-council-adoption-statements-st-10752-add-1.json",
+      "before_sha256": "21fcbe17e19b0d8106a6823803b348ecea8db07e5d5acf61cbe7aa10289a94b9",
+      "after_sha256": "2f4cbcb82a835914aad56fe9196a17a8260f5db4922bb3edb89af1011bd28821"
+    },
+    {
+      "path": "data/documents/ecb-technical-working-document-con-2026-10.json",
+      "before_sha256": "9f8ec161bc6f872a1a9c788b1fa85bd196dd83d5c20ea9df3ff0d236ab9dcaf3",
+      "after_sha256": "fbae17fb9af1c953e8913dfa1d03a90f9ffbc3c302746f743a7c57e5de4fc9e6"
+    },
+    {
+      "path": "data/documents/gpai-provider-guidelines-2025.json",
+      "before_sha256": "b2f48d9abf27f5613db9542e9e1bea2eab962410cd4ebebb7ee86cd8f7720e82",
+      "after_sha256": "30492d7be6e68f956db9127b0d29c4399236cd58d32e2248d1fe76ce29d15c82"
+    },
+    {
+      "path": "data/relationships/ai-act-rsb-opinion-procedural-step.json",
+      "before_sha256": "7df7fd882a15dd8fcbebf0a3d83bb371d05ff3ec03a9161995c64fe1b0afee5d",
+      "after_sha256": "e079c4dd2248b2c3b56928179edae3cf952752acc8d9fc8cdb4809e57165d8c9"
+    },
+    {
+      "path": "data/relationships/ai-omnibus-add-1-annex-to-adoption-note.json",
+      "before_sha256": "79d1261d9da1333666c87bda2e690a1ed9bdc751e066870b6cdce0b0e7ef86be",
+      "after_sha256": "e139fc1f147f32e0099e169d31a5c5eccc731ce5d4b598fc2ddd71185c3ef845"
+    },
+    {
+      "path": "data/relationships/ecb-technical-working-document-annex-to-opinion.json",
+      "before_sha256": "8c6b09305c81dfc5c35a9595e658022fa2d1f1599bd59a96229d6d4b5a2bd5b0",
+      "after_sha256": "4451863b00ec4707b73a27976f64e9a348df2e5a11099a91713502f1f8c58b39"
+    },
+    {
+      "path": "data/relationships/gpai-provider-guidelines-annex-to-approval-communication.json",
+      "before_sha256": null,
+      "after_sha256": "56b5b1ea2b8ae3e78395524b01aeee365842a8f2e7da5121a35a87f47ca96949"
+    },
+    {
+      "path": "data/relationships/gpai-provider-guidelines-implements-ai-act.json",
+      "before_sha256": "85b2988d3ed08fd34c572dbdf888520428b8c560d039ff216d04ee6e9311aed8",
+      "after_sha256": "c1f68909e7f6516dff40c10f1b864c1a115f47a94756fe3bc283f7ecaa9fa762"
+    },
+    {
+      "path": "data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata.json",
+      "before_sha256": null,
+      "after_sha256": "08fc95c518b429f74f3f59495ab120bcd160ce1e381344d40f62252e9d6ee9b0"
+    },
+    {
+      "path": "data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package.json",
+      "before_sha256": null,
+      "after_sha256": "c7623ae7acfa9655b84f1b2ef9788e9e2a9d71a350c89342b784e7d6013a5a23"
+    },
+    {
+      "path": "data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec.json",
+      "before_sha256": null,
+      "after_sha256": "344d736e8ffd63ee23bc6a77d42557b6761fd9e1178837d561a72f1f7294611c"
+    },
+    {
+      "path": "data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication.json",
+      "before_sha256": null,
+      "after_sha256": "f9d3120d672f75ed00f8a5bf920e104784c2e20b66f57cf846be9d7a31c6d87a"
+    },
+    {
+      "path": "data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata.json",
+      "before_sha256": null,
+      "after_sha256": "bc828d4f322202fcb012f5e4575fa4e4e39b2427ad7d293a7a7281e3eaf0fba4"
+    },
+    {
+      "path": "data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf.json",
+      "before_sha256": null,
+      "after_sha256": "3765390ba4deb63ca36f5ec6a4feed6173cae448484a90dddb82e15fa6086a30"
+    },
+    {
+      "path": "data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf.json",
+      "before_sha256": null,
+      "after_sha256": "bf2bb6ffac8fecffde2758cd2bb9e36959bea1f30afba6dee0db4269d5b7f3ce"
+    },
+    {
+      "path": "data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication.json",
+      "before_sha256": null,
+      "after_sha256": "aca43b7739c40cfa869d41e2b0f5140e1c5843f10f9106266c355ec78e913a48"
+    },
+    {
+      "path": "data/sources/ecb-technical-working-document-con-2026-10-cellar-metadata.json",
+      "before_sha256": null,
+      "after_sha256": "da02b9c0fabd6e88744a88f818cc40bd5ff829925ed0913dabd17e8167b1a630"
+    },
+    {
+      "path": "data/sources/ecb-technical-working-document-con-2026-10-official-companion.json",
+      "before_sha256": null,
+      "after_sha256": "1e6b3b83dafdaf7000d1a42ae9130b8cfd3dcd86a71e279c7d652a1bedab86fb"
+    },
+    {
+      "path": "data/sources/ecb-technical-working-document-con-2026-10-op-publication.json",
+      "before_sha256": null,
+      "after_sha256": "a12f3f6affc9c1cb5e0075041d10a8705dd7db3d2a9d31c03833c318ab470e08"
+    },
+    {
+      "path": "data/sources/gpai-provider-guidelines-2025-approval-pdf.json",
+      "before_sha256": null,
+      "after_sha256": "eed6403c7fd5809c03a4c445dd6aa9e3f1f947bf0d10f0d30d9a52d03de342bb"
+    },
+    {
+      "path": "data/sources/gpai-provider-guidelines-2025-july-annex-pdf.json",
+      "before_sha256": null,
+      "after_sha256": "6eeabf9a7b25f7444147934c452c1e072d7b173cc76aa3d00cf2dc5d50f68719"
+    },
+    {
+      "path": "data/sources/gpai-provider-guidelines-2025-register-metadata.json",
+      "before_sha256": null,
+      "after_sha256": "fe51a14a019bc2a044c92366f7131600add354ff73f223220f74aeb5925bb405"
+    },
+    {
+      "path": "data/sources/gpai-provider-guidelines-2025-service-desk-publication.json",
+      "before_sha256": null,
+      "after_sha256": "1c6c0c1f6a03cbaa20fd0148032b6fb6e4017f3ea1bba77cf186c2acd3759470"
+    },
+    {
+      "path": "docs/historical-readiness.md",
+      "before_sha256": "7def8920f249848970ee6f941472cc910b52360d2d853a7b0e08f717bb5f9f86",
+      "after_sha256": "639361a8e8af20a33524255b3be898ae0a22a31eb011dc9577dd4441becc08a3"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-06-four-evidence-admissions.md",
+      "before_sha256": "d14979b0358beb4e2ad428d355f5b085129ef8a7f7192a23e9ddf053100fd4ba",
+      "after_sha256": "e62cc3b4d4488183d3c551970ce12d84066e60723a8249aba401a5fed0da0102"
+    },
+    {
+      "path": "research/corpus-inventory.json",
+      "before_sha256": "10f7c690bfdcbb462cea0562cbdbdae170e67128249d461d8aa38e0831fb1992",
+      "after_sha256": "7effde69a0aa60654030c00c936e9038676cddc46d599103dd19b27ce46cbe98"
+    },
+    {
+      "path": "research/migrations/2026-09-06-four-evidence-admissions.json",
+      "before_sha256": null,
+      "after_sha256": "28e4485a7abafb478e77aff11236711f504491081cdfd609bb0e6eb2efa23f69"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/README.md",
+      "before_sha256": null,
+      "after_sha256": "9acc62a4a29426efaea102592304d415b58cdbac369a3d848b57ecf6960faed9"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-cellar.rdf.gz",
+      "before_sha256": null,
+      "after_sha256": "9dc174e9f4144e2707af71204525b71c7364f56163f3a1329689f692e6d889e0"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-council-en.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "163289f4d00358318d615a284cd22e41d244763501141c9276ddf9451293c4af"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-card.html.gz",
+      "before_sha256": null,
+      "after_sha256": "59424e368a656b986527adccd3b3f1f6e7f739a04833c9e2d79e54b54c825b84"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-mixed.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "5d72a8c69be1b2b3f4e2fd1a2f117726e97a50c7537c05a0f44770512ddb8707"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-cellar.xml.gz",
+      "before_sha256": null,
+      "after_sha256": "e49b521e98b23c45cc70239a768b15f894a597cfdc3bf792f62831b1dfaff676"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-op-card.html.gz",
+      "before_sha256": null,
+      "after_sha256": "b28387507ca68318b4187a503fe5b21154bee8e813944314e4b4c48fdac7125c"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-twd.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "f0ec2ed90021ab8271a97487bf02f62535f5baf2633f60f14e55710e299b76e8"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-approval.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "7c2300f9e0969553b85fcdf8be47983bb727cc5f34e0001dd1a4ef3af6593abb"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-july-annex.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "a2a877bd822f5d96241f99170550c84aa523595b605bb6da5a2349f1aba129d0"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-register.json.gz",
+      "before_sha256": null,
+      "after_sha256": "8d9d41b88121006ce5aae26731ac30ecccc70dcf2f4be5a449fb58282a0b11b9"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-service-card.html.gz",
+      "before_sha256": null,
+      "after_sha256": "673da199540cd41eb81ffa668762a8c4074809b7ab78740a80e528dcad1cb88a"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-cellar.xml.gz",
+      "before_sha256": null,
+      "after_sha256": "647529069446f53c50a224a71ee02acb515de0940dbf734c8047f7f05a8e0adf"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-council-package.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "0a79ad73d58eef5aab1154237585d4b16c3ce5fad708587604b4c8c0d796f8de"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-direct-sec.pdf.gz",
+      "before_sha256": null,
+      "after_sha256": "1a4d260f68339287de392fc8296d03a08697cd275a936d7d065830c01b56d782"
+    },
+    {
+      "path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-op-card.html.gz",
+      "before_sha256": null,
+      "after_sha256": "075bc9ff96729fba932f4c92a70a7b0e79442ddfb71ef39f2bbe9e57af43c936"
+    },
+    {
+      "path": "tests/test_evidence_corrections.py",
+      "before_sha256": "0952bb717b0aa1f0c9e7db72ba6bcfad8ce26bff86142915a23e53ae6d797860",
+      "after_sha256": "41fefe18b85f2c6c104e0705935bba9611e91785c4ea3812db37aac0fb712953"
+    },
+    {
+      "path": "tests/test_expanded_evidence_review.py",
+      "before_sha256": "53f8979bdb2e14ab37bdd30f2918e07f85a14bb6a5c5710e13c1ae507029159f",
+      "after_sha256": "132ec538875e1f843ca9494ea2b6439365c4c094d297ae0d8c51b1c46ab0e086"
+    },
+    {
+      "path": "tests/test_four_evidence_admissions.py",
+      "before_sha256": null,
+      "after_sha256": "b61ba75ea5fd7e95371e1e8d3f88d77868adbee0b3e09d7e4d1d7d95288edca9"
+    },
+    {
+      "path": "tests/test_incident_instrument_identity.py",
+      "before_sha256": "f7d7a74081f6f0c7e2cef9368a084b09c89692bb8c1bd6c305ff5642c083f454",
+      "after_sha256": "c3ebf30f27302d566c93b7b2a783903bf4a211df013f6b9e5651f2fc1ff6eaa4"
+    },
+    {
+      "path": "tests/test_remaining_evidence_review.py",
+      "before_sha256": "0000542035ff1ffa00cb353fc30725855ace446424b5a606f159a766d27d2c16",
+      "after_sha256": "d3caa3eb15d8fb8843e0d4948281379cac5f984d57f5badbbe81dd0928a309d8"
+    },
+    {
+      "path": "tests/test_review_continuation.py",
+      "before_sha256": "e24a3c2f1ad0a328dbf076a0a2b8258f8ef4ea15bcf6d0285c595cf132566f4b",
+      "after_sha256": "130ab14a7901b61031e95e1e0b4f70294b2386c215e8994c13c7b5deda0c0790"
+    },
+    {
+      "path": "tests/test_seed_corpus.py",
+      "before_sha256": "4953169124840c387645557de4bbfc9adac3a8d35ddb7c85deb73073e67c3b74",
+      "after_sha256": "8890246f65301f5fdcbeb0b26a02ee2f20a0b5430c9a40a40f0077ce9cf23f78"
+    }
+  ],
+  "generated_diagnostics_excluded_from_self_hashes": [
+    "research/reviews/2026-09-06-four-evidence-admissions/delta-checks.json",
+    "research/reviews/2026-09-06-four-evidence-admissions/review.diff",
+    "research/reviews/2026-09-06-four-evidence-admissions/preservation-proof.json"
+  ],
+  "manifest_note": "These three generated diagnostics are excluded only from this portable self-hash manifest to avoid circularity. Canonical data, tests, migration ledger and evidence archives remain covered."
+}

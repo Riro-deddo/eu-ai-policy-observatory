@@ -1,0 +1,13 @@
+{
+  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:12:24.423821+01:00",
+  "updated_at": "2026-09-06T06:12:24.423821+01:00",
+  "source_type": "publications_office",
+  "url": "https://publications.europa.eu/resource/consil/ST_10752_2026_ADD_1",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T06:12:24.423821+01:00",
+  "last_verified_at": "2026-09-06T06:12:24.423821+01:00",
+  "verification_note": "Cellar metadata resolves exact ST 10752 2026 ADD 1 to UUID e69a1045-6fa1-11f1-ae88-01aa75ed71a1 and records the work date; generic creation and transmission fields are not publication evidence. Preserved source SHA-256 219199d652a9307fd6dc53a1471ce7aceaacfdb7eff98c5784d6e1faad0cdd9a."
+}

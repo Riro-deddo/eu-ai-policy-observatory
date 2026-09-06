@@ -1,0 +1,13 @@
+{
+  "id": "gpai-provider-guidelines-2025-service-desk-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:09:59.429248+01:00",
+  "updated_at": "2026-09-06T06:09:59.429248+01:00",
+  "source_type": "commission_webpage",
+  "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-06T06:09:59.429248+01:00",
+  "last_verified_at": "2026-09-06T06:09:59.429248+01:00",
+  "verification_note": "Official Service Desk resources card dated 27/08/2025 directly links the preserved original July C(2025) 5045 ANNEX PDF. This dates that manifestation, not first-ever publication or C(2025) 7719. Preserved source SHA-256 941bddc80071ddeeebb540d3a5e1f1563a15804e3e89163c41de0d58745ee505."
+}

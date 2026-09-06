@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:10:21.901179+01:00",
+  "updated_at": "2026-09-06T06:10:21.901179+01:00",
+  "source_type": "publications_office",
+  "url": "https://publications.europa.eu/resource/intcom/SEC%282021%29167",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
+  "last_verified_at": "2026-09-06T06:10:21.901179+01:00",
+  "verification_note": "Cellar object metadata for SEC(2021) 167 records DATE_DOCUMENT 2021-04-21 and the exact English expression. That catalogue field is retained as a disclosed conflict and is not treated as publication or as overriding the artifact's 22 March cover/signature. Preserved source SHA-256 9c8575a4073f234e1e94b1309a7841847788aaffa91dd554dd15232ce4012c3a."
+}

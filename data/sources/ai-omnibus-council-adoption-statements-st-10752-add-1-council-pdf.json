@@ -1,0 +1,13 @@
+{
+  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:09:26.315097+01:00",
+  "updated_at": "2026-09-06T06:09:26.315097+01:00",
+  "source_type": "official_pdf",
+  "url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+  "publisher": "Council of the European Union",
+  "retrieved_at": "2026-09-06T06:09:26.315097+01:00",
+  "last_verified_at": "2026-09-06T06:09:26.315097+01:00",
+  "verification_note": "Current fully English Council PDF: cover establishes ST 10752/26 ADD 1, 22 June 2026, procedure and General Secretariat sender; headings separately identify Belgium and the Commission as statement authors. It does not establish when this translation appeared. Preserved source SHA-256 109c4356040349a5c5592eae265925bfd5b0ea6c9906c5a29c3582923c9d221f."
+}

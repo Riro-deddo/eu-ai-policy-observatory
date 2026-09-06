@@ -3,9 +3,9 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T05:53:33Z",
   "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1",
-  "official_title": "Digital Omnibus AI proposal — Statements",
+  "official_title": "Draft Regulation of the European Parliament and of the Council amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (first reading) – Adoption of the legislative act – Statements",
   "short_title": "Council Digital Omnibus adoption statements",
   "document_type": "institutional_position",
   "record_level": "attachment",
@@ -26,7 +26,21 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "author"
+      "role": "publisher",
+      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
+      "evidence_locator": "Publication details identify the Council as corporate body for exact IMMC ST 10752 2026 ADD 1; this describes the wrapper/host and not sole substantive authorship."
+    },
+    {
+      "institution_id": "general-secretariat-of-the-council",
+      "role": "cover_note_sender",
+      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "evidence_locator": "PDF p. 1 cover: From General Secretariat of the Council to Permanent Representatives Committee/Council."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "author",
+      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "evidence_locator": "PDF p. 2 heading: 'The Commission has requested that the following statement be entered in the Council minutes'."
     }
   ],
   "policy_ids": [
@@ -39,13 +53,17 @@
     "accountability"
   ],
   "source_ids": [
-    "council-st-10752-2026-add-1"
+    "council-st-10752-2026-add-1",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+    "ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "adoption",
-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Belgium and the European Commission are the substantive authors of their respective statements; the General Secretariat transmits the Council wrapper. The exact-version publication date remains unresolved, so the record stays pending without a partial extension.",
+    "inclusion_rationale": "Officially published ADD 1 containing the separately attributed Belgian and European Commission statements attached to the Council Digital Omnibus adoption note.",
+    "researcher_notes": "Belgium and the European Commission are the substantive authors of their respective statements; the General Secretariat sends the wrapper and the Council is publisher, not sole substantive author. The OP English-labelled manifestation is mixed EN/FR, whereas the current Council /en/pdf is a fully English translation. Publication on 22 June 2026 is tied to the exact OP ADD 1 manifestation and is not a claim that the English translation first appeared that day.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -56,5 +74,71 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "locator": "PDF p. 1 cover: Brussels, 22 June 2026; ST 10752/26 ADD 1; interinstitutional file 2025/0359(COD).",
+      "meaning": "Establishes the issue date of this exact ADD 1 wrapper and statements package."
+    },
+    "publication_date": {
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
+      "locator": "Publication details: Published 2026-06-22; exact IMMC ST 10752 2026 ADD 1; linked English-labelled PDF.",
+      "meaning": "Establishes publication of the exact OP ADD 1 manifestation without claiming first-ever release or dating the current fully English translation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "locator": "PDF pp. 1-3 address deepfake labelling, bias detection, AI Act deadlines and sectoral-law interaction in the Digital Omnibus on AI.",
+      "rationale": "The statements take substantive positions on amendments and implementation of the AI Act."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "locator": "PDF cover subject and pp. 1-3 concern horizontal AI Act transparency, bias and sectoral product-law coordination.",
+      "rationale": "The statements address regulation-wide AI policy across sectors."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "locator": "PDF p. 2 expressly attributes one statement to the European Commission; p. 1 separately attributes the other to Belgium.",
+      "rationale": "The package includes a substantive Commission-authored contribution, with mixed authorship expressly disclosed."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
+      "locator": "Publication details identify exact IMMC ST 10752 2026 ADD 1 and explicitly date its publication.",
+      "rationale": "The exact ADD 1 manifestation is catalogued and distributed through an official EU endpoint."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Belgium",
+      "affiliation": null,
+      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "evidence_locator": "PDF p. 1 heading: 'Belgium has requested that the following statement be entered in the Council minutes'."
+    },
+    {
+      "name": "European Commission",
+      "affiliation": null,
+      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+      "evidence_locator": "PDF p. 2 heading: 'The Commission has requested that the following statement be entered in the Council minutes'."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+    "locator": "PDF pp. 1-3 label the contents as statements requested for entry in Council minutes and do not enact operative rules.",
+    "meaning": "Supports retained non-binding statement status."
+  },
+  "historical_review_status": "verified"
 }

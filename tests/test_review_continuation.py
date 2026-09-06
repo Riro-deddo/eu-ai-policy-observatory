@@ -13,6 +13,7 @@ from observatory.pipeline import run_pipeline
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
 EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
+FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 
 
 @pytest.fixture(scope="module")
@@ -61,7 +62,8 @@ def test_later_official_guideline_manifestations_keep_issue_and_publication_dist
 def test_transparency_route_represents_the_evidenced_draft_annex(public_payload):
     documents = {d["id"]: d for d in public_payload["documents"]}
     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
-    later_upgrades = set(corrections["upgraded_ids"])
+    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"])
     annex = documents["final-transparency-guidelines-2026"]
     assert annex["historical_review_status"] == "verified"
     assert annex["record_level"] == "attachment"
@@ -107,7 +109,8 @@ def test_continuation_accounts_for_every_starting_record_once(public_payload):
     assert all(row["reasons"] for row in ledger["held_records"])
     documents = {d["id"]: d for d in public_payload["documents"]}
     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
-    later_upgrades = set(corrections["upgraded_ids"])
+    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"])
     for document_id in upgraded:
         assert documents[document_id]["historical_review_status"] == "verified"
     for document_id in held:

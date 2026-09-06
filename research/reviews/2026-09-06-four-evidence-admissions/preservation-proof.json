@@ -1,0 +1,2406 @@
+{
+  "before_routes": [
+    {
+      "id": "ai-act-consolidated-2026-07-27",
+      "slug": "ai-act-consolidated-2026-07-27"
+    },
+    {
+      "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "slug": "ai-act-council-adoption-note-st-9645-2024-rev-1"
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "slug": "ai-act-council-adoption-statements-st-9645-add-1-rev-2"
+    },
+    {
+      "id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "slug": "ai-act-council-coreper-general-approach-st-14336-2022"
+    },
+    {
+      "id": "ai-act-council-final-compromise-st-13955-2022",
+      "slug": "ai-act-council-final-compromise-st-13955-2022"
+    },
+    {
+      "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "slug": "ai-act-council-first-consolidated-compromise-st-10069-2022"
+    },
+    {
+      "id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "slug": "ai-act-council-fourth-compromise-st-13102-2022"
+    },
+    {
+      "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "slug": "ai-act-council-general-approach-german-statement-14954-add-1"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-14954-2022",
+      "slug": "ai-act-council-general-approach-st-14954-2022"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-15698-2022",
+      "slug": "ai-act-council-general-approach-st-15698-2022"
+    },
+    {
+      "id": "ai-act-council-second-compromise-st-11124-2022",
+      "slug": "ai-act-council-second-compromise-st-11124-2022"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-init"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "slug": "ai-act-council-third-compromise-part-two-st-12549-2022"
+    },
+    {
+      "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "slug": "ai-act-impact-assessment-annexes-swd-2021-84"
+    },
+    {
+      "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "slug": "ai-act-impact-assessment-executive-summary-swd-2021-85"
+    },
+    {
+      "id": "ai-act-impact-assessment-swd-2021-84",
+      "slug": "ai-act-impact-assessment-swd-2021-84"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024",
+      "slug": "ai-act-pe-cons-24-2024"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024-rev-1",
+      "slug": "ai-act-pe-cons-24-2024-rev-1"
+    },
+    {
+      "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "slug": "ai-act-proceedings-implementing-regulation-2026-1755"
+    },
+    {
+      "id": "ai-act-proposal",
+      "slug": "ai-act-proposal"
+    },
+    {
+      "id": "ai-act-proposal-annexes",
+      "slug": "ai-act-proposal-annexes"
+    },
+    {
+      "id": "ai-act-provisional-agreement-st-5662-2024",
+      "slug": "ai-act-provisional-agreement-st-5662-2024"
+    },
+    {
+      "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "slug": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167"
+    },
+    {
+      "id": "ai-board-assessment-gpai-code-2025",
+      "slug": "ai-board-assessment-gpai-code-2025"
+    },
+    {
+      "id": "ai-board-assessment-transparency-code-2026",
+      "slug": "ai-board-assessment-transparency-code-2026"
+    },
+    {
+      "id": "ai-continent-action-plan",
+      "slug": "ai-continent-action-plan"
+    },
+    {
+      "id": "ai-continent-action-plan-annex",
+      "slug": "ai-continent-action-plan-annex"
+    },
+    {
+      "id": "ai-liability-directive-proposal",
+      "slug": "ai-liability-directive-proposal"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "slug": "ai-omnibus-council-adoption-note-st-10752-2026"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "slug": "ai-omnibus-council-adoption-statement-st-10752-add-2"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1"
+    },
+    {
+      "id": "ai-omnibus-council-information-note-st-10599-2026",
+      "slug": "ai-omnibus-council-information-note-st-10599-2026"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026",
+      "slug": "ai-omnibus-pe-cons-30-2026"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "slug": "ai-omnibus-pe-cons-30-2026-rev-1"
+    },
+    {
+      "id": "ai-omnibus-proposal-2025",
+      "slug": "ai-omnibus-proposal-2025"
+    },
+    {
+      "id": "ai-omnibus-regulation-2026-1744",
+      "slug": "ai-omnibus-regulation-2026-1744"
+    },
+    {
+      "id": "ai-omnibus-staff-working-document-2025",
+      "slug": "ai-omnibus-staff-working-document-2025"
+    },
+    {
+      "id": "ai-standardisation-request-c-2023-3215",
+      "slug": "ai-standardisation-request-c-2023-3215"
+    },
+    {
+      "id": "ai-system-definition-guidelines-2025",
+      "slug": "ai-system-definition-guidelines-2025"
+    },
+    {
+      "id": "ai-system-definition-guidelines-approval-communication-2025",
+      "slug": "ai-system-definition-guidelines-approval-communication-2025"
+    },
+    {
+      "id": "altai-assessment-list",
+      "slug": "altai-assessment-list"
+    },
+    {
+      "id": "apply-ai-strategy",
+      "slug": "apply-ai-strategy"
+    },
+    {
+      "id": "apply-ai-strategy-annexes",
+      "slug": "apply-ai-strategy-annexes"
+    },
+    {
+      "id": "artificial-intelligence-act",
+      "slug": "artificial-intelligence-act"
+    },
+    {
+      "id": "artificial-intelligence-for-europe",
+      "slug": "artificial-intelligence-for-europe"
+    },
+    {
+      "id": "boosting-startups-innovation-trustworthy-ai",
+      "slug": "boosting-startups-innovation-trustworthy-ai"
+    },
+    {
+      "id": "building-a-european-data-economy",
+      "slug": "building-a-european-data-economy"
+    },
+    {
+      "id": "building-trust-human-centric-ai",
+      "slug": "building-trust-human-centric-ai"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "slug": "chief-scientific-advisors-ai-science-opinion-2024"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+      "slug": "chief-scientific-advisors-ai-science-opinion-2024-first-edition"
+    },
+    {
+      "id": "civil-law-rules-on-robotics-resolution-2017",
+      "slug": "civil-law-rules-on-robotics-resolution-2017"
+    },
+    {
+      "id": "commission-ai-act-article-112-review-2026",
+      "slug": "commission-ai-act-article-112-review-2026"
+    },
+    {
+      "id": "commission-ai-science-strategy-2025",
+      "slug": "commission-ai-science-strategy-2025"
+    },
+    {
+      "id": "commission-decision-ai-office-2024",
+      "slug": "commission-decision-ai-office-2024"
+    },
+    {
+      "id": "commission-opinion-gpai-code-2025",
+      "slug": "commission-opinion-gpai-code-2025"
+    },
+    {
+      "id": "commission-opinion-transparency-code-2026",
+      "slug": "commission-opinion-transparency-code-2026"
+    },
+    {
+      "id": "coordinated-plan-2018-annex",
+      "slug": "coordinated-plan-2018-annex"
+    },
+    {
+      "id": "coordinated-plan-2021-annex",
+      "slug": "coordinated-plan-2021-annex"
+    },
+    {
+      "id": "coordinated-plan-2021-review",
+      "slug": "coordinated-plan-2021-review"
+    },
+    {
+      "id": "coordinated-plan-on-artificial-intelligence",
+      "slug": "coordinated-plan-on-artificial-intelligence"
+    },
+    {
+      "id": "cor-opinion-ai-act-2021",
+      "slug": "cor-opinion-ai-act-2021"
+    },
+    {
+      "id": "cor-opinion-ai-omnibus-2026",
+      "slug": "cor-opinion-ai-omnibus-2026"
+    },
+    {
+      "id": "council-ai-science-conclusions-2025",
+      "slug": "council-ai-science-conclusions-2025"
+    },
+    {
+      "id": "council-decision-84-130-eec-esprit",
+      "slug": "council-decision-84-130-eec-esprit"
+    },
+    {
+      "id": "council-decision-88-279-eec-esprit-ii",
+      "slug": "council-decision-88-279-eec-esprit-ii"
+    },
+    {
+      "id": "council-decision-88-417-eec-delta",
+      "slug": "council-decision-88-417-eec-delta"
+    },
+    {
+      "id": "council-decision-89-415-eec-doses",
+      "slug": "council-decision-89-415-eec-doses"
+    },
+    {
+      "id": "council-decision-94-802-ec-esprit",
+      "slug": "council-decision-94-802-ec-esprit"
+    },
+    {
+      "id": "digital-europe-regulation-2021-694",
+      "slug": "digital-europe-regulation-2021-694"
+    },
+    {
+      "id": "digitising-european-industry",
+      "slug": "digitising-european-industry"
+    },
+    {
+      "id": "draft-guidance-serious-ai-incidents-2025",
+      "slug": "draft-guidance-serious-ai-incidents-2025"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-2026",
+      "slug": "draft-high-risk-classification-guidelines-2026"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "slug": "draft-high-risk-classification-guidelines-annex-i-2026"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "slug": "draft-high-risk-classification-guidelines-annex-iii-2026"
+    },
+    {
+      "id": "draft-serious-ai-incident-report-template-2025",
+      "slug": "draft-serious-ai-incident-report-template-2025"
+    },
+    {
+      "id": "draft-transparency-guidelines-2026",
+      "slug": "draft-transparency-guidelines-2026"
+    },
+    {
+      "id": "easa-ai-concept-paper-issue-2-2024",
+      "slug": "easa-ai-concept-paper-issue-2-2024"
+    },
+    {
+      "id": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "slug": "easa-ai-concept-paper-proposed-issue-2-2023"
+    },
+    {
+      "id": "easa-ai-roadmap-1-2020",
+      "slug": "easa-ai-roadmap-1-2020"
+    },
+    {
+      "id": "easa-ai-roadmap-2-2023",
+      "slug": "easa-ai-roadmap-2-2023"
+    },
+    {
+      "id": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "slug": "eba-discussion-paper-machine-learning-irb-models-2021"
+    },
+    {
+      "id": "eba-follow-up-machine-learning-irb-models-2023",
+      "slug": "eba-follow-up-machine-learning-irb-models-2023"
+    },
+    {
+      "id": "eba-report-big-data-advanced-analytics-2020",
+      "slug": "eba-report-big-data-advanced-analytics-2020"
+    },
+    {
+      "id": "ecb-opinion-con-2021-40",
+      "slug": "ecb-opinion-con-2021-40"
+    },
+    {
+      "id": "ecb-opinion-con-2026-10",
+      "slug": "ecb-opinion-con-2026-10"
+    },
+    {
+      "id": "ecb-technical-working-document-con-2026-10",
+      "slug": "ecb-technical-working-document-con-2026-10"
+    },
+    {
+      "id": "eda-card-public-report-2024",
+      "slug": "eda-card-public-report-2024"
+    },
+    {
+      "id": "edpb-ai-models-opinion-28-2024",
+      "slug": "edpb-ai-models-opinion-28-2024"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-1-2026",
+      "slug": "edpb-edps-joint-opinion-1-2026"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-5-2021",
+      "slug": "edpb-edps-joint-opinion-5-2021"
+    },
+    {
+      "id": "eesc-ai-consequences-2017",
+      "slug": "eesc-ai-consequences-2017"
+    },
+    {
+      "id": "eesc-opinion-ai-act-2021",
+      "slug": "eesc-opinion-ai-act-2021"
+    },
+    {
+      "id": "eesc-opinion-ai-omnibus-2026",
+      "slug": "eesc-opinion-ai-omnibus-2026"
+    },
+    {
+      "id": "eesc-opinion-coordinated-plan-2021",
+      "slug": "eesc-opinion-coordinated-plan-2021"
+    },
+    {
+      "id": "eiopa-ai-governance-principles-2021",
+      "slug": "eiopa-ai-governance-principles-2021"
+    },
+    {
+      "id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "slug": "eiopa-ai-insurance-regulatory-framework-factsheet-2024"
+    },
+    {
+      "id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "slug": "eiopa-digitalisation-european-insurance-sector-report-2024"
+    },
+    {
+      "id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "slug": "eiopa-opinion-ai-governance-risk-management-2025"
+    },
+    {
+      "id": "ema-2025-ai-observatory-report-2026",
+      "slug": "ema-2025-ai-observatory-report-2026"
+    },
+    {
+      "id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "slug": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024"
+    },
+    {
+      "id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "slug": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023"
+    },
+    {
+      "id": "enisa-frontier-ai-cybersecurity-2026",
+      "slug": "enisa-frontier-ai-cybersecurity-2026"
+    },
+    {
+      "id": "ep-ai-act-cult-opinion-pe-719637",
+      "slug": "ep-ai-act-cult-opinion-pe-719637"
+    },
+    {
+      "id": "ep-ai-act-draft-report-pe-731563",
+      "slug": "ep-ai-act-draft-report-pe-731563"
+    },
+    {
+      "id": "ep-ai-act-envi-opinion-pe-699056",
+      "slug": "ep-ai-act-envi-opinion-pe-699056"
+    },
+    {
+      "id": "ep-ai-act-itre-opinion-pe-719801",
+      "slug": "ep-ai-act-itre-opinion-pe-719801"
+    },
+    {
+      "id": "ep-ai-act-juri-opinion-pe-719827",
+      "slug": "ep-ai-act-juri-opinion-pe-719827"
+    },
+    {
+      "id": "ep-ai-act-tran-opinion-pe-730085",
+      "slug": "ep-ai-act-tran-opinion-pe-730085"
+    },
+    {
+      "id": "ep-ai-civil-liability-2020",
+      "slug": "ep-ai-civil-liability-2020"
+    },
+    {
+      "id": "ep-ai-digital-age-2022",
+      "slug": "ep-ai-digital-age-2022"
+    },
+    {
+      "id": "ep-ai-education-culture-audiovisual-2021",
+      "slug": "ep-ai-education-culture-audiovisual-2021"
+    },
+    {
+      "id": "ep-ai-intellectual-property-2020",
+      "slug": "ep-ai-intellectual-property-2020"
+    },
+    {
+      "id": "ep-ai-international-military-2021",
+      "slug": "ep-ai-international-military-2021"
+    },
+    {
+      "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "slug": "ep-ai-omnibus-amendments-p10-ta-2026-0098"
+    },
+    {
+      "id": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "slug": "ep-ai-omnibus-cult-opinion-pe-784261"
+    },
+    {
+      "id": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "slug": "ep-ai-omnibus-juri-opinion-pe-784179"
+    },
+    {
+      "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "slug": "ep-ai-omnibus-position-p10-ta-2026-0198"
+    },
+    {
+      "id": "ep-ai-omnibus-report-a10-0073-2026",
+      "slug": "ep-ai-omnibus-report-a10-0073-2026"
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016",
+      "slug": "ep-ethical-cyber-physical-systems-2016"
+    },
+    {
+      "id": "ep-ethical-framework-ai-2020",
+      "slug": "ep-ethical-framework-ai-2020"
+    },
+    {
+      "id": "ep-joint-committee-report-a9-0188-2023",
+      "slug": "ep-joint-committee-report-a9-0188-2023"
+    },
+    {
+      "id": "ep-position-p9-ta-2023-0236",
+      "slug": "ep-position-p9-ta-2023-0236"
+    },
+    {
+      "id": "ep-position-p9-ta-2024-0138",
+      "slug": "ep-position-p9-ta-2024-0138"
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021",
+      "slug": "eprs-ai-eu-borders-2021"
+    },
+    {
+      "id": "esma-ai-adoption-trends-securities-markets-2026",
+      "slug": "esma-ai-adoption-trends-securities-markets-2026"
+    },
+    {
+      "id": "esma-ai-eu-investment-funds-2025",
+      "slug": "esma-ai-eu-investment-funds-2025"
+    },
+    {
+      "id": "esma-ai-eu-securities-markets-2023",
+      "slug": "esma-ai-eu-securities-markets-2023"
+    },
+    {
+      "id": "esma-public-statement-ai-retail-investment-services-2024",
+      "slug": "esma-public-statement-ai-retail-investment-services-2024"
+    },
+    {
+      "id": "ethics-guidelines-for-trustworthy-ai",
+      "slug": "ethics-guidelines-for-trustworthy-ai"
+    },
+    {
+      "id": "eurohpc-ai-factories-regulation-2024-1732",
+      "slug": "eurohpc-ai-factories-regulation-2024-1732"
+    },
+    {
+      "id": "european-civil-law-rules-in-robotics-study-2016",
+      "slug": "european-civil-law-rules-in-robotics-study-2016"
+    },
+    {
+      "id": "european-council-conclusions-2017-10-19",
+      "slug": "european-council-conclusions-2017-10-19"
+    },
+    {
+      "id": "european-council-conclusions-2017-12-14",
+      "slug": "european-council-conclusions-2017-12-14"
+    },
+    {
+      "id": "europol-chatgpt-llm-law-enforcement-2023",
+      "slug": "europol-chatgpt-llm-law-enforcement-2023"
+    },
+    {
+      "id": "expert-group-liability-ai-report-2019",
+      "slug": "expert-group-liability-ai-report-2019"
+    },
+    {
+      "id": "final-transparency-guidelines-2026",
+      "slug": "final-transparency-guidelines-2026"
+    },
+    {
+      "id": "fra-assessing-high-risk-ai-2025",
+      "slug": "fra-assessing-high-risk-ai-2025"
+    },
+    {
+      "id": "fra-bias-algorithms-2022",
+      "slug": "fra-bias-algorithms-2022"
+    },
+    {
+      "id": "fra-getting-future-right-ai-2020",
+      "slug": "fra-getting-future-right-ai-2020"
+    },
+    {
+      "id": "frontex-ai-capabilities-2021",
+      "slug": "frontex-ai-capabilities-2021"
+    },
+    {
+      "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+      "slug": "fundamental-rights-implications-of-big-data-resolution-2017"
+    },
+    {
+      "id": "gpai-code-final",
+      "slug": "gpai-code-final"
+    },
+    {
+      "id": "gpai-code-final-copyright",
+      "slug": "gpai-code-final-copyright"
+    },
+    {
+      "id": "gpai-code-final-safety-security",
+      "slug": "gpai-code-final-safety-security"
+    },
+    {
+      "id": "gpai-code-final-transparency",
+      "slug": "gpai-code-final-transparency"
+    },
+    {
+      "id": "gpai-code-first-draft",
+      "slug": "gpai-code-first-draft"
+    },
+    {
+      "id": "gpai-code-model-documentation-form-2025",
+      "slug": "gpai-code-model-documentation-form-2025"
+    },
+    {
+      "id": "gpai-code-second-draft",
+      "slug": "gpai-code-second-draft"
+    },
+    {
+      "id": "gpai-code-signatory-form-2025",
+      "slug": "gpai-code-signatory-form-2025"
+    },
+    {
+      "id": "gpai-code-third-draft",
+      "slug": "gpai-code-third-draft"
+    },
+    {
+      "id": "gpai-code-third-draft-commitments",
+      "slug": "gpai-code-third-draft-commitments"
+    },
+    {
+      "id": "gpai-code-third-draft-copyright",
+      "slug": "gpai-code-third-draft-copyright"
+    },
+    {
+      "id": "gpai-code-third-draft-safety-security",
+      "slug": "gpai-code-third-draft-safety-security"
+    },
+    {
+      "id": "gpai-code-third-draft-transparency",
+      "slug": "gpai-code-third-draft-transparency"
+    },
+    {
+      "id": "gpai-provider-guidelines-2025",
+      "slug": "gpai-provider-guidelines-2025"
+    },
+    {
+      "id": "gpai-provider-guidelines-approval-communication-2025",
+      "slug": "gpai-provider-guidelines-approval-communication-2025"
+    },
+    {
+      "id": "gpai-serious-incident-reporting-template-2025",
+      "slug": "gpai-serious-incident-reporting-template-2025"
+    },
+    {
+      "id": "gpai-training-content-explanatory-notice-2025",
+      "slug": "gpai-training-content-explanatory-notice-2025"
+    },
+    {
+      "id": "gpai-training-content-template-2025",
+      "slug": "gpai-training-content-template-2025"
+    },
+    {
+      "id": "historical-com-2017-228-dsm-mid-term-review",
+      "slug": "historical-com-2017-228-dsm-mid-term-review"
+    },
+    {
+      "id": "historical-esprit-1984-work-programme",
+      "slug": "historical-esprit-1984-work-programme"
+    },
+    {
+      "id": "historical-esprit-1985-work-programme",
+      "slug": "historical-esprit-1985-work-programme"
+    },
+    {
+      "id": "historical-fp5-ist-specific-programme",
+      "slug": "historical-fp5-ist-specific-programme"
+    },
+    {
+      "id": "historical-fp6-integrating-strengthening-programme",
+      "slug": "historical-fp6-integrating-strengthening-programme"
+    },
+    {
+      "id": "historical-fp7-framework-1982-2006",
+      "slug": "historical-fp7-framework-1982-2006"
+    },
+    {
+      "id": "historical-juri-robotics-report-2017",
+      "slug": "historical-juri-robotics-report-2017"
+    },
+    {
+      "id": "hleg-policy-investment-recommendations-2019",
+      "slug": "hleg-policy-investment-recommendations-2019"
+    },
+    {
+      "id": "hleg-sectoral-considerations-2020",
+      "slug": "hleg-sectoral-considerations-2020"
+    },
+    {
+      "id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "slug": "hma-ema-multi-annual-ai-workplan-2023-2028"
+    },
+    {
+      "id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
+      "slug": "hma-ema-ndsg-workplan-2025-2028-v1-4"
+    },
+    {
+      "id": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "slug": "hma-ema-ndsg-workplan-2026-2028-v2"
+    },
+    {
+      "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "slug": "horizon-2020-specific-programme-decision-2013-743-eu"
+    },
+    {
+      "id": "osha-ai-worker-management-2022",
+      "slug": "osha-ai-worker-management-2022"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-2025",
+      "slug": "prohibited-ai-practices-guidelines-2025"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
+      "slug": "prohibited-ai-practices-guidelines-approval-communication-2025"
+    },
+    {
+      "id": "report-ai-safety-liability-2020",
+      "slug": "report-ai-safety-liability-2020"
+    },
+    {
+      "id": "scientific-panel-implementing-regulation-2025-454",
+      "slug": "scientific-panel-implementing-regulation-2025-454"
+    },
+    {
+      "id": "sixth-framework-programme-decision-1513-2002-ec",
+      "slug": "sixth-framework-programme-decision-1513-2002-ec"
+    },
+    {
+      "id": "standardisation-request-c-2025-3871",
+      "slug": "standardisation-request-c-2025-3871"
+    },
+    {
+      "id": "transparency-code-final-2026",
+      "slug": "transparency-code-final-2026"
+    },
+    {
+      "id": "transparency-code-first-draft-2025",
+      "slug": "transparency-code-first-draft-2025"
+    },
+    {
+      "id": "transparency-code-second-draft-2026",
+      "slug": "transparency-code-second-draft-2026"
+    },
+    {
+      "id": "transparency-code-signatory-form-2026",
+      "slug": "transparency-code-signatory-form-2026"
+    },
+    {
+      "id": "transparency-guidelines-approval-communication-2026",
+      "slug": "transparency-guidelines-approval-communication-2026"
+    },
+    {
+      "id": "white-paper-on-artificial-intelligence",
+      "slug": "white-paper-on-artificial-intelligence"
+    }
+  ],
+  "after_routes": [
+    {
+      "id": "ai-act-consolidated-2026-07-27",
+      "slug": "ai-act-consolidated-2026-07-27"
+    },
+    {
+      "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "slug": "ai-act-council-adoption-note-st-9645-2024-rev-1"
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "slug": "ai-act-council-adoption-statements-st-9645-add-1-rev-2"
+    },
+    {
+      "id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "slug": "ai-act-council-coreper-general-approach-st-14336-2022"
+    },
+    {
+      "id": "ai-act-council-final-compromise-st-13955-2022",
+      "slug": "ai-act-council-final-compromise-st-13955-2022"
+    },
+    {
+      "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "slug": "ai-act-council-first-consolidated-compromise-st-10069-2022"
+    },
+    {
+      "id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "slug": "ai-act-council-fourth-compromise-st-13102-2022"
+    },
+    {
+      "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "slug": "ai-act-council-general-approach-german-statement-14954-add-1"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-14954-2022",
+      "slug": "ai-act-council-general-approach-st-14954-2022"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-15698-2022",
+      "slug": "ai-act-council-general-approach-st-15698-2022"
+    },
+    {
+      "id": "ai-act-council-second-compromise-st-11124-2022",
+      "slug": "ai-act-council-second-compromise-st-11124-2022"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-init"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "slug": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "slug": "ai-act-council-third-compromise-part-two-st-12549-2022"
+    },
+    {
+      "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "slug": "ai-act-impact-assessment-annexes-swd-2021-84"
+    },
+    {
+      "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "slug": "ai-act-impact-assessment-executive-summary-swd-2021-85"
+    },
+    {
+      "id": "ai-act-impact-assessment-swd-2021-84",
+      "slug": "ai-act-impact-assessment-swd-2021-84"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024",
+      "slug": "ai-act-pe-cons-24-2024"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024-rev-1",
+      "slug": "ai-act-pe-cons-24-2024-rev-1"
+    },
+    {
+      "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "slug": "ai-act-proceedings-implementing-regulation-2026-1755"
+    },
+    {
+      "id": "ai-act-proposal",
+      "slug": "ai-act-proposal"
+    },
+    {
+      "id": "ai-act-proposal-annexes",
+      "slug": "ai-act-proposal-annexes"
+    },
+    {
+      "id": "ai-act-provisional-agreement-st-5662-2024",
+      "slug": "ai-act-provisional-agreement-st-5662-2024"
+    },
+    {
+      "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+      "slug": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167"
+    },
+    {
+      "id": "ai-board-assessment-gpai-code-2025",
+      "slug": "ai-board-assessment-gpai-code-2025"
+    },
+    {
+      "id": "ai-board-assessment-transparency-code-2026",
+      "slug": "ai-board-assessment-transparency-code-2026"
+    },
+    {
+      "id": "ai-continent-action-plan",
+      "slug": "ai-continent-action-plan"
+    },
+    {
+      "id": "ai-continent-action-plan-annex",
+      "slug": "ai-continent-action-plan-annex"
+    },
+    {
+      "id": "ai-liability-directive-proposal",
+      "slug": "ai-liability-directive-proposal"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "slug": "ai-omnibus-council-adoption-note-st-10752-2026"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "slug": "ai-omnibus-council-adoption-statement-st-10752-add-2"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+      "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1"
+    },
+    {
+      "id": "ai-omnibus-council-information-note-st-10599-2026",
+      "slug": "ai-omnibus-council-information-note-st-10599-2026"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026",
+      "slug": "ai-omnibus-pe-cons-30-2026"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "slug": "ai-omnibus-pe-cons-30-2026-rev-1"
+    },
+    {
+      "id": "ai-omnibus-proposal-2025",
+      "slug": "ai-omnibus-proposal-2025"
+    },
+    {
+      "id": "ai-omnibus-regulation-2026-1744",
+      "slug": "ai-omnibus-regulation-2026-1744"
+    },
+    {
+      "id": "ai-omnibus-staff-working-document-2025",
+      "slug": "ai-omnibus-staff-working-document-2025"
+    },
+    {
+      "id": "ai-standardisation-request-c-2023-3215",
+      "slug": "ai-standardisation-request-c-2023-3215"
+    },
+    {
+      "id": "ai-system-definition-guidelines-2025",
+      "slug": "ai-system-definition-guidelines-2025"
+    },
+    {
+      "id": "ai-system-definition-guidelines-approval-communication-2025",
+      "slug": "ai-system-definition-guidelines-approval-communication-2025"
+    },
+    {
+      "id": "altai-assessment-list",
+      "slug": "altai-assessment-list"
+    },
+    {
+      "id": "apply-ai-strategy",
+      "slug": "apply-ai-strategy"
+    },
+    {
+      "id": "apply-ai-strategy-annexes",
+      "slug": "apply-ai-strategy-annexes"
+    },
+    {
+      "id": "artificial-intelligence-act",
+      "slug": "artificial-intelligence-act"
+    },
+    {
+      "id": "artificial-intelligence-for-europe",
+      "slug": "artificial-intelligence-for-europe"
+    },
+    {
+      "id": "boosting-startups-innovation-trustworthy-ai",
+      "slug": "boosting-startups-innovation-trustworthy-ai"
+    },
+    {
+      "id": "building-a-european-data-economy",
+      "slug": "building-a-european-data-economy"
+    },
+    {
+      "id": "building-trust-human-centric-ai",
+      "slug": "building-trust-human-centric-ai"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "slug": "chief-scientific-advisors-ai-science-opinion-2024"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+      "slug": "chief-scientific-advisors-ai-science-opinion-2024-first-edition"
+    },
+    {
+      "id": "civil-law-rules-on-robotics-resolution-2017",
+      "slug": "civil-law-rules-on-robotics-resolution-2017"
+    },
+    {
+      "id": "commission-ai-act-article-112-review-2026",
+      "slug": "commission-ai-act-article-112-review-2026"
+    },
+    {
+      "id": "commission-ai-science-strategy-2025",
+      "slug": "commission-ai-science-strategy-2025"
+    },
+    {
+      "id": "commission-decision-ai-office-2024",
+      "slug": "commission-decision-ai-office-2024"
+    },
+    {
+      "id": "commission-opinion-gpai-code-2025",
+      "slug": "commission-opinion-gpai-code-2025"
+    },
+    {
+      "id": "commission-opinion-transparency-code-2026",
+      "slug": "commission-opinion-transparency-code-2026"
+    },
+    {
+      "id": "coordinated-plan-2018-annex",
+      "slug": "coordinated-plan-2018-annex"
+    },
+    {
+      "id": "coordinated-plan-2021-annex",
+      "slug": "coordinated-plan-2021-annex"
+    },
+    {
+      "id": "coordinated-plan-2021-review",
+      "slug": "coordinated-plan-2021-review"
+    },
+    {
+      "id": "coordinated-plan-on-artificial-intelligence",
+      "slug": "coordinated-plan-on-artificial-intelligence"
+    },
+    {
+      "id": "cor-opinion-ai-act-2021",
+      "slug": "cor-opinion-ai-act-2021"
+    },
+    {
+      "id": "cor-opinion-ai-omnibus-2026",
+      "slug": "cor-opinion-ai-omnibus-2026"
+    },
+    {
+      "id": "council-ai-science-conclusions-2025",
+      "slug": "council-ai-science-conclusions-2025"
+    },
+    {
+      "id": "council-decision-84-130-eec-esprit",
+      "slug": "council-decision-84-130-eec-esprit"
+    },
+    {
+      "id": "council-decision-88-279-eec-esprit-ii",
+      "slug": "council-decision-88-279-eec-esprit-ii"
+    },
+    {
+      "id": "council-decision-88-417-eec-delta",
+      "slug": "council-decision-88-417-eec-delta"
+    },
+    {
+      "id": "council-decision-89-415-eec-doses",
+      "slug": "council-decision-89-415-eec-doses"
+    },
+    {
+      "id": "council-decision-94-802-ec-esprit",
+      "slug": "council-decision-94-802-ec-esprit"
+    },
+    {
+      "id": "digital-europe-regulation-2021-694",
+      "slug": "digital-europe-regulation-2021-694"
+    },
+    {
+      "id": "digitising-european-industry",
+      "slug": "digitising-european-industry"
+    },
+    {
+      "id": "draft-guidance-serious-ai-incidents-2025",
+      "slug": "draft-guidance-serious-ai-incidents-2025"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-2026",
+      "slug": "draft-high-risk-classification-guidelines-2026"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "slug": "draft-high-risk-classification-guidelines-annex-i-2026"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "slug": "draft-high-risk-classification-guidelines-annex-iii-2026"
+    },
+    {
+      "id": "draft-serious-ai-incident-report-template-2025",
+      "slug": "draft-serious-ai-incident-report-template-2025"
+    },
+    {
+      "id": "draft-transparency-guidelines-2026",
+      "slug": "draft-transparency-guidelines-2026"
+    },
+    {
+      "id": "easa-ai-concept-paper-issue-2-2024",
+      "slug": "easa-ai-concept-paper-issue-2-2024"
+    },
+    {
+      "id": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "slug": "easa-ai-concept-paper-proposed-issue-2-2023"
+    },
+    {
+      "id": "easa-ai-roadmap-1-2020",
+      "slug": "easa-ai-roadmap-1-2020"
+    },
+    {
+      "id": "easa-ai-roadmap-2-2023",
+      "slug": "easa-ai-roadmap-2-2023"
+    },
+    {
+      "id": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "slug": "eba-discussion-paper-machine-learning-irb-models-2021"
+    },
+    {
+      "id": "eba-follow-up-machine-learning-irb-models-2023",
+      "slug": "eba-follow-up-machine-learning-irb-models-2023"
+    },
+    {
+      "id": "eba-report-big-data-advanced-analytics-2020",
+      "slug": "eba-report-big-data-advanced-analytics-2020"
+    },
+    {
+      "id": "ecb-opinion-con-2021-40",
+      "slug": "ecb-opinion-con-2021-40"
+    },
+    {
+      "id": "ecb-opinion-con-2026-10",
+      "slug": "ecb-opinion-con-2026-10"
+    },
+    {
+      "id": "ecb-technical-working-document-con-2026-10",
+      "slug": "ecb-technical-working-document-con-2026-10"
+    },
+    {
+      "id": "eda-card-public-report-2024",
+      "slug": "eda-card-public-report-2024"
+    },
+    {
+      "id": "edpb-ai-models-opinion-28-2024",
+      "slug": "edpb-ai-models-opinion-28-2024"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-1-2026",
+      "slug": "edpb-edps-joint-opinion-1-2026"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-5-2021",
+      "slug": "edpb-edps-joint-opinion-5-2021"
+    },
+    {
+      "id": "eesc-ai-consequences-2017",
+      "slug": "eesc-ai-consequences-2017"
+    },
+    {
+      "id": "eesc-opinion-ai-act-2021",
+      "slug": "eesc-opinion-ai-act-2021"
+    },
+    {
+      "id": "eesc-opinion-ai-omnibus-2026",
+      "slug": "eesc-opinion-ai-omnibus-2026"
+    },
+    {
+      "id": "eesc-opinion-coordinated-plan-2021",
+      "slug": "eesc-opinion-coordinated-plan-2021"
+    },
+    {
+      "id": "eiopa-ai-governance-principles-2021",
+      "slug": "eiopa-ai-governance-principles-2021"
+    },
+    {
+      "id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "slug": "eiopa-ai-insurance-regulatory-framework-factsheet-2024"
+    },
+    {
+      "id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "slug": "eiopa-digitalisation-european-insurance-sector-report-2024"
+    },
+    {
+      "id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "slug": "eiopa-opinion-ai-governance-risk-management-2025"
+    },
+    {
+      "id": "ema-2025-ai-observatory-report-2026",
+      "slug": "ema-2025-ai-observatory-report-2026"
+    },
+    {
+      "id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "slug": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024"
+    },
+    {
+      "id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "slug": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023"
+    },
+    {
+      "id": "enisa-frontier-ai-cybersecurity-2026",
+      "slug": "enisa-frontier-ai-cybersecurity-2026"
+    },
+    {
+      "id": "ep-ai-act-cult-opinion-pe-719637",
+      "slug": "ep-ai-act-cult-opinion-pe-719637"
+    },
+    {
+      "id": "ep-ai-act-draft-report-pe-731563",
+      "slug": "ep-ai-act-draft-report-pe-731563"
+    },
+    {
+      "id": "ep-ai-act-envi-opinion-pe-699056",
+      "slug": "ep-ai-act-envi-opinion-pe-699056"
+    },
+    {
+      "id": "ep-ai-act-itre-opinion-pe-719801",
+      "slug": "ep-ai-act-itre-opinion-pe-719801"
+    },
+    {
+      "id": "ep-ai-act-juri-opinion-pe-719827",
+      "slug": "ep-ai-act-juri-opinion-pe-719827"
+    },
+    {
+      "id": "ep-ai-act-tran-opinion-pe-730085",
+      "slug": "ep-ai-act-tran-opinion-pe-730085"
+    },
+    {
+      "id": "ep-ai-civil-liability-2020",
+      "slug": "ep-ai-civil-liability-2020"
+    },
+    {
+      "id": "ep-ai-digital-age-2022",
+      "slug": "ep-ai-digital-age-2022"
+    },
+    {
+      "id": "ep-ai-education-culture-audiovisual-2021",
+      "slug": "ep-ai-education-culture-audiovisual-2021"
+    },
+    {
+      "id": "ep-ai-intellectual-property-2020",
+      "slug": "ep-ai-intellectual-property-2020"
+    },
+    {
+      "id": "ep-ai-international-military-2021",
+      "slug": "ep-ai-international-military-2021"
+    },
+    {
+      "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "slug": "ep-ai-omnibus-amendments-p10-ta-2026-0098"
+    },
+    {
+      "id": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "slug": "ep-ai-omnibus-cult-opinion-pe-784261"
+    },
+    {
+      "id": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "slug": "ep-ai-omnibus-juri-opinion-pe-784179"
+    },
+    {
+      "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "slug": "ep-ai-omnibus-position-p10-ta-2026-0198"
+    },
+    {
+      "id": "ep-ai-omnibus-report-a10-0073-2026",
+      "slug": "ep-ai-omnibus-report-a10-0073-2026"
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016",
+      "slug": "ep-ethical-cyber-physical-systems-2016"
+    },
+    {
+      "id": "ep-ethical-framework-ai-2020",
+      "slug": "ep-ethical-framework-ai-2020"
+    },
+    {
+      "id": "ep-joint-committee-report-a9-0188-2023",
+      "slug": "ep-joint-committee-report-a9-0188-2023"
+    },
+    {
+      "id": "ep-position-p9-ta-2023-0236",
+      "slug": "ep-position-p9-ta-2023-0236"
+    },
+    {
+      "id": "ep-position-p9-ta-2024-0138",
+      "slug": "ep-position-p9-ta-2024-0138"
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021",
+      "slug": "eprs-ai-eu-borders-2021"
+    },
+    {
+      "id": "esma-ai-adoption-trends-securities-markets-2026",
+      "slug": "esma-ai-adoption-trends-securities-markets-2026"
+    },
+    {
+      "id": "esma-ai-eu-investment-funds-2025",
+      "slug": "esma-ai-eu-investment-funds-2025"
+    },
+    {
+      "id": "esma-ai-eu-securities-markets-2023",
+      "slug": "esma-ai-eu-securities-markets-2023"
+    },
+    {
+      "id": "esma-public-statement-ai-retail-investment-services-2024",
+      "slug": "esma-public-statement-ai-retail-investment-services-2024"
+    },
+    {
+      "id": "ethics-guidelines-for-trustworthy-ai",
+      "slug": "ethics-guidelines-for-trustworthy-ai"
+    },
+    {
+      "id": "eurohpc-ai-factories-regulation-2024-1732",
+      "slug": "eurohpc-ai-factories-regulation-2024-1732"
+    },
+    {
+      "id": "european-civil-law-rules-in-robotics-study-2016",
+      "slug": "european-civil-law-rules-in-robotics-study-2016"
+    },
+    {
+      "id": "european-council-conclusions-2017-10-19",
+      "slug": "european-council-conclusions-2017-10-19"
+    },
+    {
+      "id": "european-council-conclusions-2017-12-14",
+      "slug": "european-council-conclusions-2017-12-14"
+    },
+    {
+      "id": "europol-chatgpt-llm-law-enforcement-2023",
+      "slug": "europol-chatgpt-llm-law-enforcement-2023"
+    },
+    {
+      "id": "expert-group-liability-ai-report-2019",
+      "slug": "expert-group-liability-ai-report-2019"
+    },
+    {
+      "id": "final-transparency-guidelines-2026",
+      "slug": "final-transparency-guidelines-2026"
+    },
+    {
+      "id": "fra-assessing-high-risk-ai-2025",
+      "slug": "fra-assessing-high-risk-ai-2025"
+    },
+    {
+      "id": "fra-bias-algorithms-2022",
+      "slug": "fra-bias-algorithms-2022"
+    },
+    {
+      "id": "fra-getting-future-right-ai-2020",
+      "slug": "fra-getting-future-right-ai-2020"
+    },
+    {
+      "id": "frontex-ai-capabilities-2021",
+      "slug": "frontex-ai-capabilities-2021"
+    },
+    {
+      "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+      "slug": "fundamental-rights-implications-of-big-data-resolution-2017"
+    },
+    {
+      "id": "gpai-code-final",
+      "slug": "gpai-code-final"
+    },
+    {
+      "id": "gpai-code-final-copyright",
+      "slug": "gpai-code-final-copyright"
+    },
+    {
+      "id": "gpai-code-final-safety-security",
+      "slug": "gpai-code-final-safety-security"
+    },
+    {
+      "id": "gpai-code-final-transparency",
+      "slug": "gpai-code-final-transparency"
+    },
+    {
+      "id": "gpai-code-first-draft",
+      "slug": "gpai-code-first-draft"
+    },
+    {
+      "id": "gpai-code-model-documentation-form-2025",
+      "slug": "gpai-code-model-documentation-form-2025"
+    },
+    {
+      "id": "gpai-code-second-draft",
+      "slug": "gpai-code-second-draft"
+    },
+    {
+      "id": "gpai-code-signatory-form-2025",
+      "slug": "gpai-code-signatory-form-2025"
+    },
+    {
+      "id": "gpai-code-third-draft",
+      "slug": "gpai-code-third-draft"
+    },
+    {
+      "id": "gpai-code-third-draft-commitments",
+      "slug": "gpai-code-third-draft-commitments"
+    },
+    {
+      "id": "gpai-code-third-draft-copyright",
+      "slug": "gpai-code-third-draft-copyright"
+    },
+    {
+      "id": "gpai-code-third-draft-safety-security",
+      "slug": "gpai-code-third-draft-safety-security"
+    },
+    {
+      "id": "gpai-code-third-draft-transparency",
+      "slug": "gpai-code-third-draft-transparency"
+    },
+    {
+      "id": "gpai-provider-guidelines-2025",
+      "slug": "gpai-provider-guidelines-2025"
+    },
+    {
+      "id": "gpai-provider-guidelines-approval-communication-2025",
+      "slug": "gpai-provider-guidelines-approval-communication-2025"
+    },
+    {
+      "id": "gpai-serious-incident-reporting-template-2025",
+      "slug": "gpai-serious-incident-reporting-template-2025"
+    },
+    {
+      "id": "gpai-training-content-explanatory-notice-2025",
+      "slug": "gpai-training-content-explanatory-notice-2025"
+    },
+    {
+      "id": "gpai-training-content-template-2025",
+      "slug": "gpai-training-content-template-2025"
+    },
+    {
+      "id": "historical-com-2017-228-dsm-mid-term-review",
+      "slug": "historical-com-2017-228-dsm-mid-term-review"
+    },
+    {
+      "id": "historical-esprit-1984-work-programme",
+      "slug": "historical-esprit-1984-work-programme"
+    },
+    {
+      "id": "historical-esprit-1985-work-programme",
+      "slug": "historical-esprit-1985-work-programme"
+    },
+    {
+      "id": "historical-fp5-ist-specific-programme",
+      "slug": "historical-fp5-ist-specific-programme"
+    },
+    {
+      "id": "historical-fp6-integrating-strengthening-programme",
+      "slug": "historical-fp6-integrating-strengthening-programme"
+    },
+    {
+      "id": "historical-fp7-framework-1982-2006",
+      "slug": "historical-fp7-framework-1982-2006"
+    },
+    {
+      "id": "historical-juri-robotics-report-2017",
+      "slug": "historical-juri-robotics-report-2017"
+    },
+    {
+      "id": "hleg-policy-investment-recommendations-2019",
+      "slug": "hleg-policy-investment-recommendations-2019"
+    },
+    {
+      "id": "hleg-sectoral-considerations-2020",
+      "slug": "hleg-sectoral-considerations-2020"
+    },
+    {
+      "id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "slug": "hma-ema-multi-annual-ai-workplan-2023-2028"
+    },
+    {
+      "id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
+      "slug": "hma-ema-ndsg-workplan-2025-2028-v1-4"
+    },
+    {
+      "id": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "slug": "hma-ema-ndsg-workplan-2026-2028-v2"
+    },
+    {
+      "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "slug": "horizon-2020-specific-programme-decision-2013-743-eu"
+    },
+    {
+      "id": "osha-ai-worker-management-2022",
+      "slug": "osha-ai-worker-management-2022"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-2025",
+      "slug": "prohibited-ai-practices-guidelines-2025"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
+      "slug": "prohibited-ai-practices-guidelines-approval-communication-2025"
+    },
+    {
+      "id": "report-ai-safety-liability-2020",
+      "slug": "report-ai-safety-liability-2020"
+    },
+    {
+      "id": "scientific-panel-implementing-regulation-2025-454",
+      "slug": "scientific-panel-implementing-regulation-2025-454"
+    },
+    {
+      "id": "sixth-framework-programme-decision-1513-2002-ec",
+      "slug": "sixth-framework-programme-decision-1513-2002-ec"
+    },
+    {
+      "id": "standardisation-request-c-2025-3871",
+      "slug": "standardisation-request-c-2025-3871"
+    },
+    {
+      "id": "transparency-code-final-2026",
+      "slug": "transparency-code-final-2026"
+    },
+    {
+      "id": "transparency-code-first-draft-2025",
+      "slug": "transparency-code-first-draft-2025"
+    },
+    {
+      "id": "transparency-code-second-draft-2026",
+      "slug": "transparency-code-second-draft-2026"
+    },
+    {
+      "id": "transparency-code-signatory-form-2026",
+      "slug": "transparency-code-signatory-form-2026"
+    },
+    {
+      "id": "transparency-guidelines-approval-communication-2026",
+      "slug": "transparency-guidelines-approval-communication-2026"
+    },
+    {
+      "id": "white-paper-on-artificial-intelligence",
+      "slug": "white-paper-on-artificial-intelligence"
+    }
+  ],
+  "preserved_documents": [
+    {
+      "id": "ai-act-consolidated-2026-07-27",
+      "before_sha256": "a0756e3db4d1ab60bf48336ea505ab2b21d0d802fcfb72f4108ae317e6470535",
+      "after_sha256": "a0756e3db4d1ab60bf48336ea505ab2b21d0d802fcfb72f4108ae317e6470535"
+    },
+    {
+      "id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
+      "before_sha256": "e8a3907bf0f6d85583b50060ac3a6f176508b3c6c01eb47a7142b394aaddc6a0",
+      "after_sha256": "e8a3907bf0f6d85583b50060ac3a6f176508b3c6c01eb47a7142b394aaddc6a0"
+    },
+    {
+      "id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
+      "before_sha256": "22207c9d0a2f569f8f28be3838256fc3550ba3d61e078c84291a65f3d7234f6d",
+      "after_sha256": "22207c9d0a2f569f8f28be3838256fc3550ba3d61e078c84291a65f3d7234f6d"
+    },
+    {
+      "id": "ai-act-council-coreper-general-approach-st-14336-2022",
+      "before_sha256": "26a76bee8448434c4c4b89439f5b2efdfefb149fba2c750a1e991383ed7d0e3b",
+      "after_sha256": "26a76bee8448434c4c4b89439f5b2efdfefb149fba2c750a1e991383ed7d0e3b"
+    },
+    {
+      "id": "ai-act-council-final-compromise-st-13955-2022",
+      "before_sha256": "5de8968c2eea010f1ef6493ff29ac7342840680495b2e4c7c953c7b823d8230d",
+      "after_sha256": "5de8968c2eea010f1ef6493ff29ac7342840680495b2e4c7c953c7b823d8230d"
+    },
+    {
+      "id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
+      "before_sha256": "7a28d4c133bd1adbc78c0952a6131ea815db867ea681c0134ec48b3ae19cbe60",
+      "after_sha256": "7a28d4c133bd1adbc78c0952a6131ea815db867ea681c0134ec48b3ae19cbe60"
+    },
+    {
+      "id": "ai-act-council-fourth-compromise-st-13102-2022",
+      "before_sha256": "e2fdf4f8f2914d91de0acc2d82e8e0370d35494bad6356567a56d1862d4e433b",
+      "after_sha256": "e2fdf4f8f2914d91de0acc2d82e8e0370d35494bad6356567a56d1862d4e433b"
+    },
+    {
+      "id": "ai-act-council-general-approach-german-statement-14954-add-1",
+      "before_sha256": "5f2c1a3e6e618f87ab7f5d0e41e60be60464d7c9172240e0ce47c91c3a8c1827",
+      "after_sha256": "5f2c1a3e6e618f87ab7f5d0e41e60be60464d7c9172240e0ce47c91c3a8c1827"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-14954-2022",
+      "before_sha256": "b3202f69f27756115ac87521d64d0d85f17055a939cce99be2eb7c8309e44884",
+      "after_sha256": "b3202f69f27756115ac87521d64d0d85f17055a939cce99be2eb7c8309e44884"
+    },
+    {
+      "id": "ai-act-council-general-approach-st-15698-2022",
+      "before_sha256": "99994201b6232c2a13ed7ad1907be00f7a88b333c499c7f951988c44f325dbfa",
+      "after_sha256": "99994201b6232c2a13ed7ad1907be00f7a88b333c499c7f951988c44f325dbfa"
+    },
+    {
+      "id": "ai-act-council-second-compromise-st-11124-2022",
+      "before_sha256": "e3ef834d0967553660b591ecf5e3ce472d6bc8bea01e7e1d2d90acf5a169bb64",
+      "after_sha256": "e3ef834d0967553660b591ecf5e3ce472d6bc8bea01e7e1d2d90acf5a169bb64"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
+      "before_sha256": "82310bd1b0e87d089881a0187e0a489ec332342dea1864fe51962201fbe0f907",
+      "after_sha256": "82310bd1b0e87d089881a0187e0a489ec332342dea1864fe51962201fbe0f907"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
+      "before_sha256": "faf19c7b628c4ea716e455a2580786f8a377502a44bc118a5b145c2ab74e8160",
+      "after_sha256": "faf19c7b628c4ea716e455a2580786f8a377502a44bc118a5b145c2ab74e8160"
+    },
+    {
+      "id": "ai-act-council-third-compromise-part-two-st-12549-2022",
+      "before_sha256": "6a0cc2ea9d37aa2759d354d98000cf0f1aa4c67ff2abd921d4e04b2c97dd4c2e",
+      "after_sha256": "6a0cc2ea9d37aa2759d354d98000cf0f1aa4c67ff2abd921d4e04b2c97dd4c2e"
+    },
+    {
+      "id": "ai-act-impact-assessment-annexes-swd-2021-84",
+      "before_sha256": "2adb0b24ced0c62a0d9c3f388068de011b4b8b4d9148d160a776f1bd4472c26c",
+      "after_sha256": "2adb0b24ced0c62a0d9c3f388068de011b4b8b4d9148d160a776f1bd4472c26c"
+    },
+    {
+      "id": "ai-act-impact-assessment-executive-summary-swd-2021-85",
+      "before_sha256": "92863974711484b0b820e14d6b4985222d7825602d8b8eea1c45a9ef80d50338",
+      "after_sha256": "92863974711484b0b820e14d6b4985222d7825602d8b8eea1c45a9ef80d50338"
+    },
+    {
+      "id": "ai-act-impact-assessment-swd-2021-84",
+      "before_sha256": "0b959df4f168ec68dfab5496b1d7985edc48afaeb0c4cc1200a0018121123570",
+      "after_sha256": "0b959df4f168ec68dfab5496b1d7985edc48afaeb0c4cc1200a0018121123570"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024",
+      "before_sha256": "8300f6d8f4302b48df188b7a01391b2183a0a145e14b62d432a3ee38f9565f3b",
+      "after_sha256": "8300f6d8f4302b48df188b7a01391b2183a0a145e14b62d432a3ee38f9565f3b"
+    },
+    {
+      "id": "ai-act-pe-cons-24-2024-rev-1",
+      "before_sha256": "76a57f04b255d7f25fe25b6c76a0fe00562676aa3a48c31fc1d0ef175ad35e7f",
+      "after_sha256": "76a57f04b255d7f25fe25b6c76a0fe00562676aa3a48c31fc1d0ef175ad35e7f"
+    },
+    {
+      "id": "ai-act-proceedings-implementing-regulation-2026-1755",
+      "before_sha256": "aa5cfe37e300ad1590593c5a0134e6890ce7ab276e02bfc3d967e2ffc7103b52",
+      "after_sha256": "aa5cfe37e300ad1590593c5a0134e6890ce7ab276e02bfc3d967e2ffc7103b52"
+    },
+    {
+      "id": "ai-act-proposal",
+      "before_sha256": "fd1f1c429e12a3455c67201e14423713002a240889223be6ed8e6d1e9c479415",
+      "after_sha256": "fd1f1c429e12a3455c67201e14423713002a240889223be6ed8e6d1e9c479415"
+    },
+    {
+      "id": "ai-act-proposal-annexes",
+      "before_sha256": "d2b843d2de33b2a968fad85700b465f5ea60ceebb457304a10a8d1ec249f6a94",
+      "after_sha256": "d2b843d2de33b2a968fad85700b465f5ea60ceebb457304a10a8d1ec249f6a94"
+    },
+    {
+      "id": "ai-act-provisional-agreement-st-5662-2024",
+      "before_sha256": "6f5f1477f6fbe89ea8159ef0c73549e711292e6216ee0e168bdee13ca37df2dd",
+      "after_sha256": "6f5f1477f6fbe89ea8159ef0c73549e711292e6216ee0e168bdee13ca37df2dd"
+    },
+    {
+      "id": "ai-board-assessment-gpai-code-2025",
+      "before_sha256": "cf2440f6991e449dfa5937863aaf3f4d16d10380224a4efb468168528d237ff3",
+      "after_sha256": "cf2440f6991e449dfa5937863aaf3f4d16d10380224a4efb468168528d237ff3"
+    },
+    {
+      "id": "ai-board-assessment-transparency-code-2026",
+      "before_sha256": "540b063a8741a0b9412171aa9845bb4b29625f5d24912be227fe4e76d34a4d54",
+      "after_sha256": "540b063a8741a0b9412171aa9845bb4b29625f5d24912be227fe4e76d34a4d54"
+    },
+    {
+      "id": "ai-continent-action-plan",
+      "before_sha256": "18b4068666507c4b3f6db0ed8337543294a29edeea60213706b607ea15a8bc16",
+      "after_sha256": "18b4068666507c4b3f6db0ed8337543294a29edeea60213706b607ea15a8bc16"
+    },
+    {
+      "id": "ai-continent-action-plan-annex",
+      "before_sha256": "1b530e618c79c9b61f94b36b3ad0530ef408e3d199d3f0bf9cdfc4847f4c4e2b",
+      "after_sha256": "1b530e618c79c9b61f94b36b3ad0530ef408e3d199d3f0bf9cdfc4847f4c4e2b"
+    },
+    {
+      "id": "ai-liability-directive-proposal",
+      "before_sha256": "58ade22477374ca4b4a2114d12db84b93c337873d92b6919d685cf9620d3f706",
+      "after_sha256": "58ade22477374ca4b4a2114d12db84b93c337873d92b6919d685cf9620d3f706"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-note-st-10752-2026",
+      "before_sha256": "c77df317641aacd21ac05efb7d54c35fb6fb1106d02f87d7605b66af9cc977b2",
+      "after_sha256": "c77df317641aacd21ac05efb7d54c35fb6fb1106d02f87d7605b66af9cc977b2"
+    },
+    {
+      "id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
+      "before_sha256": "43d85f5cba7e17e7a6f55f0479bd550c1932356e9e907e3c683e4855fa5529ed",
+      "after_sha256": "43d85f5cba7e17e7a6f55f0479bd550c1932356e9e907e3c683e4855fa5529ed"
+    },
+    {
+      "id": "ai-omnibus-council-information-note-st-10599-2026",
+      "before_sha256": "61b45a203c473e020cf625a6071ac3331bd251cd65b2dde24a4bbb681d3e49b3",
+      "after_sha256": "61b45a203c473e020cf625a6071ac3331bd251cd65b2dde24a4bbb681d3e49b3"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026",
+      "before_sha256": "7a34753e7990fe1dc2eae6ac2dd65dab28b541cb973bec31fe77e077e1ee7c96",
+      "after_sha256": "7a34753e7990fe1dc2eae6ac2dd65dab28b541cb973bec31fe77e077e1ee7c96"
+    },
+    {
+      "id": "ai-omnibus-pe-cons-30-2026-rev-1",
+      "before_sha256": "4cf558930572d6e77605774326b3f23d5b4be3fdf4b3fc246ef040b761dc5d5a",
+      "after_sha256": "4cf558930572d6e77605774326b3f23d5b4be3fdf4b3fc246ef040b761dc5d5a"
+    },
+    {
+      "id": "ai-omnibus-proposal-2025",
+      "before_sha256": "742d82e3c6aa4963871377de0e0387a747b2a7c1f6b03ffce4c3a6a1b6b1e4b4",
+      "after_sha256": "742d82e3c6aa4963871377de0e0387a747b2a7c1f6b03ffce4c3a6a1b6b1e4b4"
+    },
+    {
+      "id": "ai-omnibus-regulation-2026-1744",
+      "before_sha256": "074331b014b82960548583f5af5898f446c3cfc196abb0885c946029c62e4f67",
+      "after_sha256": "074331b014b82960548583f5af5898f446c3cfc196abb0885c946029c62e4f67"
+    },
+    {
+      "id": "ai-omnibus-staff-working-document-2025",
+      "before_sha256": "78e8eea01840d71c5a351ca9d306eb0b9c9bdea09ccc1f522e3ee9110fad750a",
+      "after_sha256": "78e8eea01840d71c5a351ca9d306eb0b9c9bdea09ccc1f522e3ee9110fad750a"
+    },
+    {
+      "id": "ai-standardisation-request-c-2023-3215",
+      "before_sha256": "21726ffda73507403dcd32756e9d082e244c612a4faa46f4ddb2ad5490a3bb7f",
+      "after_sha256": "21726ffda73507403dcd32756e9d082e244c612a4faa46f4ddb2ad5490a3bb7f"
+    },
+    {
+      "id": "ai-system-definition-guidelines-2025",
+      "before_sha256": "b760e58f440372b894271d2788bd441ef2a05bede532fcadf26c20863b0b6bff",
+      "after_sha256": "b760e58f440372b894271d2788bd441ef2a05bede532fcadf26c20863b0b6bff"
+    },
+    {
+      "id": "ai-system-definition-guidelines-approval-communication-2025",
+      "before_sha256": "50c117fe10ed712ed944f4f6d362fd46f0fe671fc4f911af766dc149771a982b",
+      "after_sha256": "50c117fe10ed712ed944f4f6d362fd46f0fe671fc4f911af766dc149771a982b"
+    },
+    {
+      "id": "altai-assessment-list",
+      "before_sha256": "aa91801a26d168eda91a3ac4673a18c059c8b73b892ae71d2013568c4fee8959",
+      "after_sha256": "aa91801a26d168eda91a3ac4673a18c059c8b73b892ae71d2013568c4fee8959"
+    },
+    {
+      "id": "apply-ai-strategy",
+      "before_sha256": "f694cff9b858ef32804f4bc32947eb97fb967a38847735b5c1a05f0aec384658",
+      "after_sha256": "f694cff9b858ef32804f4bc32947eb97fb967a38847735b5c1a05f0aec384658"
+    },
+    {
+      "id": "apply-ai-strategy-annexes",
+      "before_sha256": "ebdc73b033079ca1dbcca32baf14f747d7886146aef4603d5244503cc06d53d3",
+      "after_sha256": "ebdc73b033079ca1dbcca32baf14f747d7886146aef4603d5244503cc06d53d3"
+    },
+    {
+      "id": "artificial-intelligence-act",
+      "before_sha256": "0940bd759dbff9d8ed89840c9b4182e745d96e42d96e2b084ad9e2badc5acb6d",
+      "after_sha256": "0940bd759dbff9d8ed89840c9b4182e745d96e42d96e2b084ad9e2badc5acb6d"
+    },
+    {
+      "id": "artificial-intelligence-for-europe",
+      "before_sha256": "dac7c01e37e4ec28072bd37e1352a736ee6c5bd8c6166a7a201807c66fb249d8",
+      "after_sha256": "dac7c01e37e4ec28072bd37e1352a736ee6c5bd8c6166a7a201807c66fb249d8"
+    },
+    {
+      "id": "boosting-startups-innovation-trustworthy-ai",
+      "before_sha256": "b5047cc4c2367655105bf6245babc4d3efa2503b9a89e11770a6e292df4e1c7a",
+      "after_sha256": "b5047cc4c2367655105bf6245babc4d3efa2503b9a89e11770a6e292df4e1c7a"
+    },
+    {
+      "id": "building-a-european-data-economy",
+      "before_sha256": "506497e265db1a32322c16c361e8d234108582ad13921a169b876c8a42406c8d",
+      "after_sha256": "506497e265db1a32322c16c361e8d234108582ad13921a169b876c8a42406c8d"
+    },
+    {
+      "id": "building-trust-human-centric-ai",
+      "before_sha256": "c2af92dcafa4b7e2844fccb906b4fde05b0d360f04564c06d74f340ff5e724d8",
+      "after_sha256": "c2af92dcafa4b7e2844fccb906b4fde05b0d360f04564c06d74f340ff5e724d8"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024",
+      "before_sha256": "605dab68c9d463890d6a828063772a570fe0d659df938835e4aabf895daeda66",
+      "after_sha256": "605dab68c9d463890d6a828063772a570fe0d659df938835e4aabf895daeda66"
+    },
+    {
+      "id": "chief-scientific-advisors-ai-science-opinion-2024-first-edition",
+      "before_sha256": "ab41d2118d73fc315f1f1395620fa8dfbdeb9ba3a582a181679555ef23312894",
+      "after_sha256": "ab41d2118d73fc315f1f1395620fa8dfbdeb9ba3a582a181679555ef23312894"
+    },
+    {
+      "id": "civil-law-rules-on-robotics-resolution-2017",
+      "before_sha256": "332f0c9ea14ff362cbafc7217c05034889cf70550b8e6309dbbc18f64dcf8557",
+      "after_sha256": "332f0c9ea14ff362cbafc7217c05034889cf70550b8e6309dbbc18f64dcf8557"
+    },
+    {
+      "id": "commission-ai-act-article-112-review-2026",
+      "before_sha256": "dd1e6ba5c28863965da91dff1b204b964cf8aea7e0793528d2528c5b8653533b",
+      "after_sha256": "dd1e6ba5c28863965da91dff1b204b964cf8aea7e0793528d2528c5b8653533b"
+    },
+    {
+      "id": "commission-ai-science-strategy-2025",
+      "before_sha256": "9df1b10eaaf3e9f763ddc177697251d9dba889d8cf14ef4e9a689807eaaa7a72",
+      "after_sha256": "9df1b10eaaf3e9f763ddc177697251d9dba889d8cf14ef4e9a689807eaaa7a72"
+    },
+    {
+      "id": "commission-decision-ai-office-2024",
+      "before_sha256": "cd7cfab0c93cf1732cb09aaedc67f8d87a9f57f3843d97fc0c6337a4c01b0e71",
+      "after_sha256": "cd7cfab0c93cf1732cb09aaedc67f8d87a9f57f3843d97fc0c6337a4c01b0e71"
+    },
+    {
+      "id": "commission-opinion-gpai-code-2025",
+      "before_sha256": "f1b63aba45c8da07f4f3d7846d8a0831acb14d36b5e8d6192a58172e54174135",
+      "after_sha256": "f1b63aba45c8da07f4f3d7846d8a0831acb14d36b5e8d6192a58172e54174135"
+    },
+    {
+      "id": "commission-opinion-transparency-code-2026",
+      "before_sha256": "7f66f4751eb2f01a18e7e237abe3f9b810c2730da48ce0979196fe96fbe8f114",
+      "after_sha256": "7f66f4751eb2f01a18e7e237abe3f9b810c2730da48ce0979196fe96fbe8f114"
+    },
+    {
+      "id": "coordinated-plan-2018-annex",
+      "before_sha256": "5116c0d71e4a05ca08c96897b43c54466692a093cc4e5558c19bcf6e5554e7d6",
+      "after_sha256": "5116c0d71e4a05ca08c96897b43c54466692a093cc4e5558c19bcf6e5554e7d6"
+    },
+    {
+      "id": "coordinated-plan-2021-annex",
+      "before_sha256": "91b5cf9bca5cb01ff1ce2617f6acf263b0cddd00117fdc20a12ec6c55c14d59c",
+      "after_sha256": "91b5cf9bca5cb01ff1ce2617f6acf263b0cddd00117fdc20a12ec6c55c14d59c"
+    },
+    {
+      "id": "coordinated-plan-2021-review",
+      "before_sha256": "e9e508fbf5dd2a8636e3ed20bd9324fda7bde293b8a8c5940258b84f1e6aa8ab",
+      "after_sha256": "e9e508fbf5dd2a8636e3ed20bd9324fda7bde293b8a8c5940258b84f1e6aa8ab"
+    },
+    {
+      "id": "coordinated-plan-on-artificial-intelligence",
+      "before_sha256": "381a4b8a8c649f84880eccd725810ed50d3526e94751fe5e4b91a15ee71fd599",
+      "after_sha256": "381a4b8a8c649f84880eccd725810ed50d3526e94751fe5e4b91a15ee71fd599"
+    },
+    {
+      "id": "cor-opinion-ai-act-2021",
+      "before_sha256": "2e08dc402f0d26219d3180ab144964b02213c013a43bb2186bdd60570d61462d",
+      "after_sha256": "2e08dc402f0d26219d3180ab144964b02213c013a43bb2186bdd60570d61462d"
+    },
+    {
+      "id": "cor-opinion-ai-omnibus-2026",
+      "before_sha256": "a593c376f531340b24cef369bf283e382b3c1bb18b1009f3d67339bf58c374da",
+      "after_sha256": "a593c376f531340b24cef369bf283e382b3c1bb18b1009f3d67339bf58c374da"
+    },
+    {
+      "id": "council-ai-science-conclusions-2025",
+      "before_sha256": "a3416472830f47f309378027b4140b5c06317ee098e2b5399eef68adeb615709",
+      "after_sha256": "a3416472830f47f309378027b4140b5c06317ee098e2b5399eef68adeb615709"
+    },
+    {
+      "id": "council-decision-84-130-eec-esprit",
+      "before_sha256": "7b053375cde675f44f8a42f3eb22d131aa4cd97930c57ab965252244cf81961e",
+      "after_sha256": "7b053375cde675f44f8a42f3eb22d131aa4cd97930c57ab965252244cf81961e"
+    },
+    {
+      "id": "council-decision-88-279-eec-esprit-ii",
+      "before_sha256": "3136f3e3f8a9b0ce8d95499227ceb156325c212e383bcce2cb26a871bfcb83d6",
+      "after_sha256": "3136f3e3f8a9b0ce8d95499227ceb156325c212e383bcce2cb26a871bfcb83d6"
+    },
+    {
+      "id": "council-decision-88-417-eec-delta",
+      "before_sha256": "c8575497dd08fa5c9fcfc2210bf95ef2985830841d7cef005233b8a232ccb287",
+      "after_sha256": "c8575497dd08fa5c9fcfc2210bf95ef2985830841d7cef005233b8a232ccb287"
+    },
+    {
+      "id": "council-decision-89-415-eec-doses",
+      "before_sha256": "e75c418325a5ee80bc7a445da2e10d160eb7c67f4656a93411e0f95fdd6bc7fa",
+      "after_sha256": "e75c418325a5ee80bc7a445da2e10d160eb7c67f4656a93411e0f95fdd6bc7fa"
+    },
+    {
+      "id": "council-decision-94-802-ec-esprit",
+      "before_sha256": "cb14cb1260deb70b0986445ed27ad5e953ed1f193e4c75b8b84dad8c66c0fa47",
+      "after_sha256": "cb14cb1260deb70b0986445ed27ad5e953ed1f193e4c75b8b84dad8c66c0fa47"
+    },
+    {
+      "id": "digital-europe-regulation-2021-694",
+      "before_sha256": "0fd1983413b778f2b6c073551c68194e101c6e13b572ece307800d1ccbd2250d",
+      "after_sha256": "0fd1983413b778f2b6c073551c68194e101c6e13b572ece307800d1ccbd2250d"
+    },
+    {
+      "id": "digitising-european-industry",
+      "before_sha256": "5a31f6f6859d91850aa54be180ec91c63d073e87115abbc0de1397905f021abd",
+      "after_sha256": "5a31f6f6859d91850aa54be180ec91c63d073e87115abbc0de1397905f021abd"
+    },
+    {
+      "id": "draft-guidance-serious-ai-incidents-2025",
+      "before_sha256": "96b08655d0e954df4cb51a92075026002e51a341d37c72d94db1d05467c5916c",
+      "after_sha256": "96b08655d0e954df4cb51a92075026002e51a341d37c72d94db1d05467c5916c"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-2026",
+      "before_sha256": "d0c53ef674a5e06da3bdf16ab931fe9590003a7811226c58fc2a74c1820ac9e5",
+      "after_sha256": "d0c53ef674a5e06da3bdf16ab931fe9590003a7811226c58fc2a74c1820ac9e5"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "before_sha256": "24c06bb90275b319f70e01147be40a163925dc01a3eacd6125f449d1055b9357",
+      "after_sha256": "24c06bb90275b319f70e01147be40a163925dc01a3eacd6125f449d1055b9357"
+    },
+    {
+      "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "before_sha256": "09266f3eac1541124fcdde4af28608f7449d60bd6a75dd50192a9bacd87e3654",
+      "after_sha256": "09266f3eac1541124fcdde4af28608f7449d60bd6a75dd50192a9bacd87e3654"
+    },
+    {
+      "id": "draft-serious-ai-incident-report-template-2025",
+      "before_sha256": "c7c65fb8e2a579c66bffa715c30d5cf1f09838b81ec88c60087aa69519cee217",
+      "after_sha256": "c7c65fb8e2a579c66bffa715c30d5cf1f09838b81ec88c60087aa69519cee217"
+    },
+    {
+      "id": "draft-transparency-guidelines-2026",
+      "before_sha256": "9ce8f33e081968ebb3cb9ea85f550d3ba664fb637661022631cc265b3c58a620",
+      "after_sha256": "9ce8f33e081968ebb3cb9ea85f550d3ba664fb637661022631cc265b3c58a620"
+    },
+    {
+      "id": "easa-ai-concept-paper-issue-2-2024",
+      "before_sha256": "6a3968c1db5e5163e50420ff5812c820fd26b797a53a673835fd32657d2beb11",
+      "after_sha256": "6a3968c1db5e5163e50420ff5812c820fd26b797a53a673835fd32657d2beb11"
+    },
+    {
+      "id": "easa-ai-concept-paper-proposed-issue-2-2023",
+      "before_sha256": "46d9f9d33da932084d0ac7acdef6ff70e724510572d7a3886bb9bf3ae092861d",
+      "after_sha256": "46d9f9d33da932084d0ac7acdef6ff70e724510572d7a3886bb9bf3ae092861d"
+    },
+    {
+      "id": "easa-ai-roadmap-1-2020",
+      "before_sha256": "002f0cca3f785f4e91bfa68dab3c65c48005a47b21e1e24668f7f7c8a4b06e2e",
+      "after_sha256": "002f0cca3f785f4e91bfa68dab3c65c48005a47b21e1e24668f7f7c8a4b06e2e"
+    },
+    {
+      "id": "easa-ai-roadmap-2-2023",
+      "before_sha256": "8395a23d01f19d0b8b6adcc4a857126ecd921e41d3acb3fdedab252d3498550f",
+      "after_sha256": "8395a23d01f19d0b8b6adcc4a857126ecd921e41d3acb3fdedab252d3498550f"
+    },
+    {
+      "id": "eba-discussion-paper-machine-learning-irb-models-2021",
+      "before_sha256": "9e5cdf4a6f5900bc586b34baf907df9b607a5dd1d1345da4865ef71d0bdba849",
+      "after_sha256": "9e5cdf4a6f5900bc586b34baf907df9b607a5dd1d1345da4865ef71d0bdba849"
+    },
+    {
+      "id": "eba-follow-up-machine-learning-irb-models-2023",
+      "before_sha256": "5889e11b138cee4142150883d851ed7cc133b5448e384a77a17ba4ade3f76fa2",
+      "after_sha256": "5889e11b138cee4142150883d851ed7cc133b5448e384a77a17ba4ade3f76fa2"
+    },
+    {
+      "id": "eba-report-big-data-advanced-analytics-2020",
+      "before_sha256": "05d31cc827eefb1f4969dae810ee879a5bc32bad56a06bf2c42df8af5eb9e9c2",
+      "after_sha256": "05d31cc827eefb1f4969dae810ee879a5bc32bad56a06bf2c42df8af5eb9e9c2"
+    },
+    {
+      "id": "ecb-opinion-con-2021-40",
+      "before_sha256": "04ae381fef96553f22d5ec6d42eeeddab4affe4a95201aedd663b1aabbc0bcf5",
+      "after_sha256": "04ae381fef96553f22d5ec6d42eeeddab4affe4a95201aedd663b1aabbc0bcf5"
+    },
+    {
+      "id": "ecb-opinion-con-2026-10",
+      "before_sha256": "aefe74bc501e849239803349c28deec047d3e39d66fe4a4aa98d3b4c7483f5d0",
+      "after_sha256": "aefe74bc501e849239803349c28deec047d3e39d66fe4a4aa98d3b4c7483f5d0"
+    },
+    {
+      "id": "eda-card-public-report-2024",
+      "before_sha256": "0b17d6a1cb15d2fe8ae439a5e9aa931efe67c1284ecd71b5bb1db16f8b96152f",
+      "after_sha256": "0b17d6a1cb15d2fe8ae439a5e9aa931efe67c1284ecd71b5bb1db16f8b96152f"
+    },
+    {
+      "id": "edpb-ai-models-opinion-28-2024",
+      "before_sha256": "19c776711becee87017b43a751d1d1b579f1a63cd770ae27af166bd5cdb8c255",
+      "after_sha256": "19c776711becee87017b43a751d1d1b579f1a63cd770ae27af166bd5cdb8c255"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-1-2026",
+      "before_sha256": "82299caee4ec48e8767973be02083de4fb5a37b14242ff97adb96cd33b2a4b59",
+      "after_sha256": "82299caee4ec48e8767973be02083de4fb5a37b14242ff97adb96cd33b2a4b59"
+    },
+    {
+      "id": "edpb-edps-joint-opinion-5-2021",
+      "before_sha256": "cacd425850602943e9a37d1f98b1aa0b661ff94dea275641a94b0a81de492e03",
+      "after_sha256": "cacd425850602943e9a37d1f98b1aa0b661ff94dea275641a94b0a81de492e03"
+    },
+    {
+      "id": "eesc-ai-consequences-2017",
+      "before_sha256": "4289901189abb317bf195f5625e02feeb5e1e1b32d7a9cdfa084a68d5d97fa2c",
+      "after_sha256": "4289901189abb317bf195f5625e02feeb5e1e1b32d7a9cdfa084a68d5d97fa2c"
+    },
+    {
+      "id": "eesc-opinion-ai-act-2021",
+      "before_sha256": "1f386f1df044d912780ffea8630acddd0afb04d10552eab9d7908b63c2032133",
+      "after_sha256": "1f386f1df044d912780ffea8630acddd0afb04d10552eab9d7908b63c2032133"
+    },
+    {
+      "id": "eesc-opinion-ai-omnibus-2026",
+      "before_sha256": "ec36917f2ceee9a3a02d8bf3adea6dfc0180624ff0510a70565ede0319c90130",
+      "after_sha256": "ec36917f2ceee9a3a02d8bf3adea6dfc0180624ff0510a70565ede0319c90130"
+    },
+    {
+      "id": "eesc-opinion-coordinated-plan-2021",
+      "before_sha256": "d5eb480e2929b5baa363db810ef21893f824d50087ab3f243356b6b11c1c20f1",
+      "after_sha256": "d5eb480e2929b5baa363db810ef21893f824d50087ab3f243356b6b11c1c20f1"
+    },
+    {
+      "id": "eiopa-ai-governance-principles-2021",
+      "before_sha256": "7975a1864098790f8592c8850f16f98fd70aa834aca549da9d7fcf1feb5f3755",
+      "after_sha256": "7975a1864098790f8592c8850f16f98fd70aa834aca549da9d7fcf1feb5f3755"
+    },
+    {
+      "id": "eiopa-ai-insurance-regulatory-framework-factsheet-2024",
+      "before_sha256": "442fa0dc2643827e54ba5a2e5e319759b58e869a741b38a228bb193eea418aeb",
+      "after_sha256": "442fa0dc2643827e54ba5a2e5e319759b58e869a741b38a228bb193eea418aeb"
+    },
+    {
+      "id": "eiopa-digitalisation-european-insurance-sector-report-2024",
+      "before_sha256": "0c96ba18431629ebd4c21120bc824be9adc222646322d229f610ae8a3296b06d",
+      "after_sha256": "0c96ba18431629ebd4c21120bc824be9adc222646322d229f610ae8a3296b06d"
+    },
+    {
+      "id": "eiopa-opinion-ai-governance-risk-management-2025",
+      "before_sha256": "74779ceb1ab7c7cd7f06cb927f0a90f1794c2a8207d0beeabdd1fe13d3b7e80c",
+      "after_sha256": "74779ceb1ab7c7cd7f06cb927f0a90f1794c2a8207d0beeabdd1fe13d3b7e80c"
+    },
+    {
+      "id": "ema-2025-ai-observatory-report-2026",
+      "before_sha256": "9450ce748982da7b6ccbda0cd36f5045d34754e80a207070359b7f78904d457a",
+      "after_sha256": "9450ce748982da7b6ccbda0cd36f5045d34754e80a207070359b7f78904d457a"
+    },
+    {
+      "id": "ema-ai-medicinal-product-lifecycle-reflection-paper-2024",
+      "before_sha256": "de13f417b17f42f9cb1360e47adb4bc8e087ccfaa8427d432669e6d5603f9935",
+      "after_sha256": "de13f417b17f42f9cb1360e47adb4bc8e087ccfaa8427d432669e6d5603f9935"
+    },
+    {
+      "id": "ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023",
+      "before_sha256": "ff754784d165cb08809cb30d8f54165e18fb0058ce64a649ada8f9dfbee4a030",
+      "after_sha256": "ff754784d165cb08809cb30d8f54165e18fb0058ce64a649ada8f9dfbee4a030"
+    },
+    {
+      "id": "enisa-frontier-ai-cybersecurity-2026",
+      "before_sha256": "4ad0ddb17f1c964eb9a1ab16f30b6a53f2ea3fbf8ba2649b07364c93c02505b3",
+      "after_sha256": "4ad0ddb17f1c964eb9a1ab16f30b6a53f2ea3fbf8ba2649b07364c93c02505b3"
+    },
+    {
+      "id": "ep-ai-act-cult-opinion-pe-719637",
+      "before_sha256": "0f321023fb130c01eb6c0bb55a9ef7e2caf0551da05d85f7323206e6590b5335",
+      "after_sha256": "0f321023fb130c01eb6c0bb55a9ef7e2caf0551da05d85f7323206e6590b5335"
+    },
+    {
+      "id": "ep-ai-act-draft-report-pe-731563",
+      "before_sha256": "286590658617d1027055e2b793403f1e38069cce14b638ce8657564b35ca0fbf",
+      "after_sha256": "286590658617d1027055e2b793403f1e38069cce14b638ce8657564b35ca0fbf"
+    },
+    {
+      "id": "ep-ai-act-envi-opinion-pe-699056",
+      "before_sha256": "9a934ce147a0a2348a0fd2dea2506b75453c89bdecd1f6b9889850f588f21b21",
+      "after_sha256": "9a934ce147a0a2348a0fd2dea2506b75453c89bdecd1f6b9889850f588f21b21"
+    },
+    {
+      "id": "ep-ai-act-itre-opinion-pe-719801",
+      "before_sha256": "a878a9a238d2509f64872aaad826284e7b4201605b96b256022aeb2f890df975",
+      "after_sha256": "a878a9a238d2509f64872aaad826284e7b4201605b96b256022aeb2f890df975"
+    },
+    {
+      "id": "ep-ai-act-juri-opinion-pe-719827",
+      "before_sha256": "8260c78689f64b2378c380c8b1d779c530a7459bbd4267a291ce1d3d34df78f7",
+      "after_sha256": "8260c78689f64b2378c380c8b1d779c530a7459bbd4267a291ce1d3d34df78f7"
+    },
+    {
+      "id": "ep-ai-act-tran-opinion-pe-730085",
+      "before_sha256": "4c98bb8366e92e0dcdb0469af9654b237ad120d69c8cc35b007824867a0134ab",
+      "after_sha256": "4c98bb8366e92e0dcdb0469af9654b237ad120d69c8cc35b007824867a0134ab"
+    },
+    {
+      "id": "ep-ai-civil-liability-2020",
+      "before_sha256": "5512be2b80086cd3ef1a9d93b565139796e066ff9bbd06de35738b0510573cdd",
+      "after_sha256": "5512be2b80086cd3ef1a9d93b565139796e066ff9bbd06de35738b0510573cdd"
+    },
+    {
+      "id": "ep-ai-digital-age-2022",
+      "before_sha256": "2cc2790d3404b1b10a6893d302dd170af53f085cb5ce1d830987ab30e06b872a",
+      "after_sha256": "2cc2790d3404b1b10a6893d302dd170af53f085cb5ce1d830987ab30e06b872a"
+    },
+    {
+      "id": "ep-ai-education-culture-audiovisual-2021",
+      "before_sha256": "cac3f7043726f3935b9c39a1c7631a76e3d09515dcc75bc0bb67f14e57be9c09",
+      "after_sha256": "cac3f7043726f3935b9c39a1c7631a76e3d09515dcc75bc0bb67f14e57be9c09"
+    },
+    {
+      "id": "ep-ai-intellectual-property-2020",
+      "before_sha256": "684e9b43e687ef37ec7652df6d48b1e28fbc64bec8527ab803b3728b250a534d",
+      "after_sha256": "684e9b43e687ef37ec7652df6d48b1e28fbc64bec8527ab803b3728b250a534d"
+    },
+    {
+      "id": "ep-ai-international-military-2021",
+      "before_sha256": "73f389600cfdd5d7e01ee81799d5155db0686cf5628e13aee2856a7ae73c8603",
+      "after_sha256": "73f389600cfdd5d7e01ee81799d5155db0686cf5628e13aee2856a7ae73c8603"
+    },
+    {
+      "id": "ep-ai-omnibus-amendments-p10-ta-2026-0098",
+      "before_sha256": "79cafac48811a34e16137849d3256e345bcf59fd09c8f5951e7efa772cffb69e",
+      "after_sha256": "79cafac48811a34e16137849d3256e345bcf59fd09c8f5951e7efa772cffb69e"
+    },
+    {
+      "id": "ep-ai-omnibus-cult-opinion-pe-784261",
+      "before_sha256": "1ce13814ceba600c49f6535800017e1c8f5516370761292e18185c6c245fede0",
+      "after_sha256": "1ce13814ceba600c49f6535800017e1c8f5516370761292e18185c6c245fede0"
+    },
+    {
+      "id": "ep-ai-omnibus-juri-opinion-pe-784179",
+      "before_sha256": "b0c5c9eb7c3eb5d960d165cf57428e483f72610c9094e70104f75ff218c590bd",
+      "after_sha256": "b0c5c9eb7c3eb5d960d165cf57428e483f72610c9094e70104f75ff218c590bd"
+    },
+    {
+      "id": "ep-ai-omnibus-position-p10-ta-2026-0198",
+      "before_sha256": "21713abfed4f2f95a5c65c2eea4b00c73189b0d95b7282135ae8e80c28586750",
+      "after_sha256": "21713abfed4f2f95a5c65c2eea4b00c73189b0d95b7282135ae8e80c28586750"
+    },
+    {
+      "id": "ep-ai-omnibus-report-a10-0073-2026",
+      "before_sha256": "ed78b64596634b73388d81730eb56d150cad91b8feaa9fab64471a6cb9ee4cc4",
+      "after_sha256": "ed78b64596634b73388d81730eb56d150cad91b8feaa9fab64471a6cb9ee4cc4"
+    },
+    {
+      "id": "ep-ethical-cyber-physical-systems-2016",
+      "before_sha256": "8294146bb29eb5f3a10a589bd269cd72dc1a74a087612f986209e536bfb5411e",
+      "after_sha256": "8294146bb29eb5f3a10a589bd269cd72dc1a74a087612f986209e536bfb5411e"
+    },
+    {
+      "id": "ep-ethical-framework-ai-2020",
+      "before_sha256": "76db5c9e549c9319de36f359154018e381e36ee05431130eb0709910e862a5d4",
+      "after_sha256": "76db5c9e549c9319de36f359154018e381e36ee05431130eb0709910e862a5d4"
+    },
+    {
+      "id": "ep-joint-committee-report-a9-0188-2023",
+      "before_sha256": "d7e91860c914c9c82deb1936d8dc22b910954cd84da02685002cec57c18bba7c",
+      "after_sha256": "d7e91860c914c9c82deb1936d8dc22b910954cd84da02685002cec57c18bba7c"
+    },
+    {
+      "id": "ep-position-p9-ta-2023-0236",
+      "before_sha256": "b94257fa19f77c8fc69e135af01430cdac2e8cb80275641d3b2c4e2b029ddf1d",
+      "after_sha256": "b94257fa19f77c8fc69e135af01430cdac2e8cb80275641d3b2c4e2b029ddf1d"
+    },
+    {
+      "id": "ep-position-p9-ta-2024-0138",
+      "before_sha256": "6d7f676ae503f39ab673d206e061a923087bdd0b542d9b5c23ce2225776fa933",
+      "after_sha256": "6d7f676ae503f39ab673d206e061a923087bdd0b542d9b5c23ce2225776fa933"
+    },
+    {
+      "id": "eprs-ai-eu-borders-2021",
+      "before_sha256": "d2c5c6eb98f4cfc661c51e6668faf7f383f7f273931e172c6ee687a92b76dcdd",
+      "after_sha256": "d2c5c6eb98f4cfc661c51e6668faf7f383f7f273931e172c6ee687a92b76dcdd"
+    },
+    {
+      "id": "esma-ai-adoption-trends-securities-markets-2026",
+      "before_sha256": "9eec9012199641db99104253748c23d7d467952500e8c31ee8a47b83aafdd44a",
+      "after_sha256": "9eec9012199641db99104253748c23d7d467952500e8c31ee8a47b83aafdd44a"
+    },
+    {
+      "id": "esma-ai-eu-investment-funds-2025",
+      "before_sha256": "ef6951a77b90bfeb22bcff88d98d56b974e1b2986ab111b1d99d656acf732fbf",
+      "after_sha256": "ef6951a77b90bfeb22bcff88d98d56b974e1b2986ab111b1d99d656acf732fbf"
+    },
+    {
+      "id": "esma-ai-eu-securities-markets-2023",
+      "before_sha256": "ebdaee6e876f135d824130f2afefae83a0cccb0d6fa14cb9e04117940f389986",
+      "after_sha256": "ebdaee6e876f135d824130f2afefae83a0cccb0d6fa14cb9e04117940f389986"
+    },
+    {
+      "id": "esma-public-statement-ai-retail-investment-services-2024",
+      "before_sha256": "56f24abe396433243b3f0c728f8fc29d3f984ea7e70ebc2d2bd039b47816c33b",
+      "after_sha256": "56f24abe396433243b3f0c728f8fc29d3f984ea7e70ebc2d2bd039b47816c33b"
+    },
+    {
+      "id": "ethics-guidelines-for-trustworthy-ai",
+      "before_sha256": "b597804b5e26528ccdfaeb5dab8bba765cf26ff7af9d36e36d8419102670fc0e",
+      "after_sha256": "b597804b5e26528ccdfaeb5dab8bba765cf26ff7af9d36e36d8419102670fc0e"
+    },
+    {
+      "id": "eurohpc-ai-factories-regulation-2024-1732",
+      "before_sha256": "3157981ec49b757a6ab2b7adeda7beaf0d2e7f33d9c6251119fc7cabf351871c",
+      "after_sha256": "3157981ec49b757a6ab2b7adeda7beaf0d2e7f33d9c6251119fc7cabf351871c"
+    },
+    {
+      "id": "european-civil-law-rules-in-robotics-study-2016",
+      "before_sha256": "80bb0623f93eaa471e67c6fcda376e00260c84282342bbf5c7a27c5a0731d208",
+      "after_sha256": "80bb0623f93eaa471e67c6fcda376e00260c84282342bbf5c7a27c5a0731d208"
+    },
+    {
+      "id": "european-council-conclusions-2017-10-19",
+      "before_sha256": "8c11724d7612ee5487eef40fe664e42c4d27a5dc5e26389b3d3a3b7e710cde97",
+      "after_sha256": "8c11724d7612ee5487eef40fe664e42c4d27a5dc5e26389b3d3a3b7e710cde97"
+    },
+    {
+      "id": "european-council-conclusions-2017-12-14",
+      "before_sha256": "46e5be59f922b7f0c243569d4c7b39ec6a0f62884595aaee98dd0098aa21fcb8",
+      "after_sha256": "46e5be59f922b7f0c243569d4c7b39ec6a0f62884595aaee98dd0098aa21fcb8"
+    },
+    {
+      "id": "europol-chatgpt-llm-law-enforcement-2023",
+      "before_sha256": "559fda6c66cc1793caf09944717e47f570023317eb5a1a3df34dccce9de69ee1",
+      "after_sha256": "559fda6c66cc1793caf09944717e47f570023317eb5a1a3df34dccce9de69ee1"
+    },
+    {
+      "id": "expert-group-liability-ai-report-2019",
+      "before_sha256": "769d11e82300caf99a524dae93f50b333403c30e4053d7fc498cd85ab7599824",
+      "after_sha256": "769d11e82300caf99a524dae93f50b333403c30e4053d7fc498cd85ab7599824"
+    },
+    {
+      "id": "final-transparency-guidelines-2026",
+      "before_sha256": "88edf44a882fac05414dca9edef62b3f841f10193e929f4338ab7f99cc8b8884",
+      "after_sha256": "88edf44a882fac05414dca9edef62b3f841f10193e929f4338ab7f99cc8b8884"
+    },
+    {
+      "id": "fra-assessing-high-risk-ai-2025",
+      "before_sha256": "cfa7acc0e0a99651bc6443b2334a9c2d6bf524707fe0384158a5acec61679e92",
+      "after_sha256": "cfa7acc0e0a99651bc6443b2334a9c2d6bf524707fe0384158a5acec61679e92"
+    },
+    {
+      "id": "fra-bias-algorithms-2022",
+      "before_sha256": "9111e6951bda9173573ac14b9b3512b4a0d0ec315899d4f6a36bc8bfe3d03c9f",
+      "after_sha256": "9111e6951bda9173573ac14b9b3512b4a0d0ec315899d4f6a36bc8bfe3d03c9f"
+    },
+    {
+      "id": "fra-getting-future-right-ai-2020",
+      "before_sha256": "508073046e83c4e67c276185c71df5dcf727c6266a03701e830e4081f16dea3b",
+      "after_sha256": "508073046e83c4e67c276185c71df5dcf727c6266a03701e830e4081f16dea3b"
+    },
+    {
+      "id": "frontex-ai-capabilities-2021",
+      "before_sha256": "0ecc1be7be559b67960bc4f1d04af1f6c222250e60dae261f64a0ad29a17960e",
+      "after_sha256": "0ecc1be7be559b67960bc4f1d04af1f6c222250e60dae261f64a0ad29a17960e"
+    },
+    {
+      "id": "fundamental-rights-implications-of-big-data-resolution-2017",
+      "before_sha256": "2190b14e3344c0a1030e1dcbce2346121add2ab15f15b44ccdac5eb86983e321",
+      "after_sha256": "2190b14e3344c0a1030e1dcbce2346121add2ab15f15b44ccdac5eb86983e321"
+    },
+    {
+      "id": "gpai-code-final",
+      "before_sha256": "c37c7f93bde55b83e3d5152ed96cf91599d6ab118df1d4f7663b89cca93d336c",
+      "after_sha256": "c37c7f93bde55b83e3d5152ed96cf91599d6ab118df1d4f7663b89cca93d336c"
+    },
+    {
+      "id": "gpai-code-final-copyright",
+      "before_sha256": "0b3735ef3d6c070a443fba64e855858ccd8934e33fc6cee4b675520302e760b2",
+      "after_sha256": "0b3735ef3d6c070a443fba64e855858ccd8934e33fc6cee4b675520302e760b2"
+    },
+    {
+      "id": "gpai-code-final-safety-security",
+      "before_sha256": "e6c36d085063684df2c1d3f2a495910783a2577b3a3e55d9c0d9d45abadd2353",
+      "after_sha256": "e6c36d085063684df2c1d3f2a495910783a2577b3a3e55d9c0d9d45abadd2353"
+    },
+    {
+      "id": "gpai-code-final-transparency",
+      "before_sha256": "8055caddb0aa035fa7ef44dafab5786517017654a09355a27b855f547b87b805",
+      "after_sha256": "8055caddb0aa035fa7ef44dafab5786517017654a09355a27b855f547b87b805"
+    },
+    {
+      "id": "gpai-code-first-draft",
+      "before_sha256": "aba3e2e3fa4dc26cba75fb37b5761705518708638a0db24380ee86fe8ce7baa5",
+      "after_sha256": "aba3e2e3fa4dc26cba75fb37b5761705518708638a0db24380ee86fe8ce7baa5"
+    },
+    {
+      "id": "gpai-code-model-documentation-form-2025",
+      "before_sha256": "9f8355c0ef7ce7d51081d0cf70c22e69734ffb5bb1ea65978d6c5e9b82f8b4c7",
+      "after_sha256": "9f8355c0ef7ce7d51081d0cf70c22e69734ffb5bb1ea65978d6c5e9b82f8b4c7"
+    },
+    {
+      "id": "gpai-code-second-draft",
+      "before_sha256": "bcf2ff53d4856fafb2e50d3ea1c770ce8b034c672161a096963387b9285fcb84",
+      "after_sha256": "bcf2ff53d4856fafb2e50d3ea1c770ce8b034c672161a096963387b9285fcb84"
+    },
+    {
+      "id": "gpai-code-signatory-form-2025",
+      "before_sha256": "2015f5e23b65913e94e7b555f28bae3aca6a935f1a01fc13f4cf1418674fc373",
+      "after_sha256": "2015f5e23b65913e94e7b555f28bae3aca6a935f1a01fc13f4cf1418674fc373"
+    },
+    {
+      "id": "gpai-code-third-draft",
+      "before_sha256": "7c3e48e3ced73826fce6c9eb4f70162feb435d1e3653006ce02589fe51528de6",
+      "after_sha256": "7c3e48e3ced73826fce6c9eb4f70162feb435d1e3653006ce02589fe51528de6"
+    },
+    {
+      "id": "gpai-code-third-draft-commitments",
+      "before_sha256": "f35f4663bfce919f12586ba55155a92da05c5918c973cfeceb28cea7d5642626",
+      "after_sha256": "f35f4663bfce919f12586ba55155a92da05c5918c973cfeceb28cea7d5642626"
+    },
+    {
+      "id": "gpai-code-third-draft-copyright",
+      "before_sha256": "791f9e16ad08cafca733ae5d64c12475a7c13f7968c2b577d97ca4a884da7e65",
+      "after_sha256": "791f9e16ad08cafca733ae5d64c12475a7c13f7968c2b577d97ca4a884da7e65"
+    },
+    {
+      "id": "gpai-code-third-draft-safety-security",
+      "before_sha256": "725bf940e57353175eb0e4f3ecfbfefef20832a0b64ae2debe46ed6ff27710de",
+      "after_sha256": "725bf940e57353175eb0e4f3ecfbfefef20832a0b64ae2debe46ed6ff27710de"
+    },
+    {
+      "id": "gpai-code-third-draft-transparency",
+      "before_sha256": "0e0562b6b8915df7ffd9cd9a714165d5a34f40a831316ca7f88c43276e24b527",
+      "after_sha256": "0e0562b6b8915df7ffd9cd9a714165d5a34f40a831316ca7f88c43276e24b527"
+    },
+    {
+      "id": "gpai-provider-guidelines-approval-communication-2025",
+      "before_sha256": "273154a81b8ac6b241a02b7835d643330717e7c74187c392c5015de6858e3ed7",
+      "after_sha256": "273154a81b8ac6b241a02b7835d643330717e7c74187c392c5015de6858e3ed7"
+    },
+    {
+      "id": "gpai-serious-incident-reporting-template-2025",
+      "before_sha256": "46ba13f6839d44bc387695d18b06abfdc339b5a9013be38926bf924150183d23",
+      "after_sha256": "46ba13f6839d44bc387695d18b06abfdc339b5a9013be38926bf924150183d23"
+    },
+    {
+      "id": "gpai-training-content-explanatory-notice-2025",
+      "before_sha256": "de47b739353eed4486b5006fd92ad23bfa7247f932f7d6cc1b23d33db14997a7",
+      "after_sha256": "de47b739353eed4486b5006fd92ad23bfa7247f932f7d6cc1b23d33db14997a7"
+    },
+    {
+      "id": "gpai-training-content-template-2025",
+      "before_sha256": "474c97051ffeaca9bfbfa6851feaf32ffa236159a01d9c9ace6f2e01f861d18a",
+      "after_sha256": "474c97051ffeaca9bfbfa6851feaf32ffa236159a01d9c9ace6f2e01f861d18a"
+    },
+    {
+      "id": "historical-com-2017-228-dsm-mid-term-review",
+      "before_sha256": "75521c508ecf427993fda1a3aa08a2699d0d927288597a4486a32a06fc2e8d75",
+      "after_sha256": "75521c508ecf427993fda1a3aa08a2699d0d927288597a4486a32a06fc2e8d75"
+    },
+    {
+      "id": "historical-esprit-1984-work-programme",
+      "before_sha256": "baade774404e28d22ec698f80810abd10dde4142a12e948398ce045e7f21cb49",
+      "after_sha256": "baade774404e28d22ec698f80810abd10dde4142a12e948398ce045e7f21cb49"
+    },
+    {
+      "id": "historical-esprit-1985-work-programme",
+      "before_sha256": "7cda474cd376225960b5a3ccaf8e4bc18f9b07fbb78c9b4ce13b56c8cd4ce46c",
+      "after_sha256": "7cda474cd376225960b5a3ccaf8e4bc18f9b07fbb78c9b4ce13b56c8cd4ce46c"
+    },
+    {
+      "id": "historical-fp5-ist-specific-programme",
+      "before_sha256": "2bdc751abbfa138a97031b73a1d70c5e9f8b3288a23a5e4a077fd40bffeb2618",
+      "after_sha256": "2bdc751abbfa138a97031b73a1d70c5e9f8b3288a23a5e4a077fd40bffeb2618"
+    },
+    {
+      "id": "historical-fp6-integrating-strengthening-programme",
+      "before_sha256": "f12f8cc00ae43ff2af15421df02222ed23eadc31c6d046524446bc09119e55a5",
+      "after_sha256": "f12f8cc00ae43ff2af15421df02222ed23eadc31c6d046524446bc09119e55a5"
+    },
+    {
+      "id": "historical-fp7-framework-1982-2006",
+      "before_sha256": "d1a231fa8a0f3d5a2960e1e7fd11aca78b4af5ad5bee0c32c46e2efd9703e5fa",
+      "after_sha256": "d1a231fa8a0f3d5a2960e1e7fd11aca78b4af5ad5bee0c32c46e2efd9703e5fa"
+    },
+    {
+      "id": "historical-juri-robotics-report-2017",
+      "before_sha256": "4a10a4db41717988637151dbbe73675a85e3badd8a33a0f39a32d73db0654c5a",
+      "after_sha256": "4a10a4db41717988637151dbbe73675a85e3badd8a33a0f39a32d73db0654c5a"
+    },
+    {
+      "id": "hleg-policy-investment-recommendations-2019",
+      "before_sha256": "86c9dcb92cc27d17ec8aa4d9f04d8b17b8b1f5409372e43414955d17b394b9e6",
+      "after_sha256": "86c9dcb92cc27d17ec8aa4d9f04d8b17b8b1f5409372e43414955d17b394b9e6"
+    },
+    {
+      "id": "hleg-sectoral-considerations-2020",
+      "before_sha256": "b816be3f77fc546b385f2e01222c269de70489c1622082c1ad81ed1de2731795",
+      "after_sha256": "b816be3f77fc546b385f2e01222c269de70489c1622082c1ad81ed1de2731795"
+    },
+    {
+      "id": "hma-ema-multi-annual-ai-workplan-2023-2028",
+      "before_sha256": "a74b217d55607cb3e4e595726eb4d0515959b291ce1f3b9aabafde112bfa31ae",
+      "after_sha256": "a74b217d55607cb3e4e595726eb4d0515959b291ce1f3b9aabafde112bfa31ae"
+    },
+    {
+      "id": "hma-ema-ndsg-workplan-2025-2028-v1-4",
+      "before_sha256": "995b2690e848f972019070fd0ddf6dbf88de10d841ebdd2ea7dec1c9ef4fbdb3",
+      "after_sha256": "995b2690e848f972019070fd0ddf6dbf88de10d841ebdd2ea7dec1c9ef4fbdb3"
+    },
+    {
+      "id": "hma-ema-ndsg-workplan-2026-2028-v2",
+      "before_sha256": "551c21615ce4a0f289ed4bbf387844fd5ce3359c6a773fdaec79aab3a9820ce0",
+      "after_sha256": "551c21615ce4a0f289ed4bbf387844fd5ce3359c6a773fdaec79aab3a9820ce0"
+    },
+    {
+      "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "before_sha256": "b6d9e436fe4f151e45c119cae0ad2a881645d6f6d93ff443f4e190121aff8a3b",
+      "after_sha256": "b6d9e436fe4f151e45c119cae0ad2a881645d6f6d93ff443f4e190121aff8a3b"
+    },
+    {
+      "id": "osha-ai-worker-management-2022",
+      "before_sha256": "1a9d4483b0567c849b37e9f469c7c51ed0f15e33d3daf58c1ca391074d15b416",
+      "after_sha256": "1a9d4483b0567c849b37e9f469c7c51ed0f15e33d3daf58c1ca391074d15b416"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-2025",
+      "before_sha256": "3acdcf2fc7502042f3de6130d1d6e70686cbc3927db9af11740e16de1be5285c",
+      "after_sha256": "3acdcf2fc7502042f3de6130d1d6e70686cbc3927db9af11740e16de1be5285c"
+    },
+    {
+      "id": "prohibited-ai-practices-guidelines-approval-communication-2025",
+      "before_sha256": "5af47f20b4c2bcd1e9e9416566cdac3cb905bc8cbb556eefaa37e46d309dbcad",
+      "after_sha256": "5af47f20b4c2bcd1e9e9416566cdac3cb905bc8cbb556eefaa37e46d309dbcad"
+    },
+    {
+      "id": "report-ai-safety-liability-2020",
+      "before_sha256": "b6be7c9ae62af7c4d922b65723f52d6e9e3c6a72b410933c5c87a739f782d25b",
+      "after_sha256": "b6be7c9ae62af7c4d922b65723f52d6e9e3c6a72b410933c5c87a739f782d25b"
+    },
+    {
+      "id": "scientific-panel-implementing-regulation-2025-454",
+      "before_sha256": "4d1c3f1c432a22d188af6e31016140de87f17658b4be49cf870b5245b3ee472f",
+      "after_sha256": "4d1c3f1c432a22d188af6e31016140de87f17658b4be49cf870b5245b3ee472f"
+    },
+    {
+      "id": "sixth-framework-programme-decision-1513-2002-ec",
+      "before_sha256": "a32b76bd98bba222aa0ee721b8e00f422b0a8a9776b40bd63d8cb3402ad9a5f7",
+      "after_sha256": "a32b76bd98bba222aa0ee721b8e00f422b0a8a9776b40bd63d8cb3402ad9a5f7"
+    },
+    {
+      "id": "standardisation-request-c-2025-3871",
+      "before_sha256": "f9250d8fb04f84c285bd4ec2cb28da181b4cd659c6a25cb93d73274782dfac43",
+      "after_sha256": "f9250d8fb04f84c285bd4ec2cb28da181b4cd659c6a25cb93d73274782dfac43"
+    },
+    {
+      "id": "transparency-code-final-2026",
+      "before_sha256": "e616af844ed9ba824d6727013e49aaeeece036e7f965abae746245a01f46ad55",
+      "after_sha256": "e616af844ed9ba824d6727013e49aaeeece036e7f965abae746245a01f46ad55"
+    },
+    {
+      "id": "transparency-code-first-draft-2025",
+      "before_sha256": "5e128bf779cdcc1e94ebb4858aac562e5c87190404f33a881079a0cc7b50e93c",
+      "after_sha256": "5e128bf779cdcc1e94ebb4858aac562e5c87190404f33a881079a0cc7b50e93c"
+    },
+    {
+      "id": "transparency-code-second-draft-2026",
+      "before_sha256": "add24e10a1852a60153dd95517fb5be90cb0eb1cd850a210e63073b29dce50c0",
+      "after_sha256": "add24e10a1852a60153dd95517fb5be90cb0eb1cd850a210e63073b29dce50c0"
+    },
+    {
+      "id": "transparency-code-signatory-form-2026",
+      "before_sha256": "25b73b2a02d087a8b9864319a357b3fa67b165169ebf2d70f66132d5d3b7c053",
+      "after_sha256": "25b73b2a02d087a8b9864319a357b3fa67b165169ebf2d70f66132d5d3b7c053"
+    },
+    {
+      "id": "transparency-guidelines-approval-communication-2026",
+      "before_sha256": "9bf85af9d3abd38fdc212109e1d2b2c846e0ef648d5a9ac7059b29875c7761bd",
+      "after_sha256": "9bf85af9d3abd38fdc212109e1d2b2c846e0ef648d5a9ac7059b29875c7761bd"
+    },
+    {
+      "id": "white-paper-on-artificial-intelligence",
+      "before_sha256": "4a05d4ebef52ee2823c1869ef6bb331249589d112e1403f4bf42471f5dcde585",
+      "after_sha256": "4a05d4ebef52ee2823c1869ef6bb331249589d112e1403f4bf42471f5dcde585"
+    }
+  ]
+}

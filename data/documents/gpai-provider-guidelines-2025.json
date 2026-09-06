@@ -3,19 +3,19 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T05:53:33Z",
   "slug": "gpai-provider-guidelines-2025",
-  "official_title": "Guidelines on the scope of the obligations for providers of general-purpose AI models under Regulation (EU) 2024/1689 (AI Act)",
+  "official_title": "ANNEX to the Communication to the Commission — Approval of the content of the draft Communication from the Commission – Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act)",
   "short_title": "Guidelines for GPAI model providers",
   "document_type": "guidelines",
-  "record_level": "principal",
-  "official_reference": "C(2025) 5045 final",
+  "record_level": "attachment",
+  "official_reference": "C(2025) 5045 final ANNEX",
   "procedure_references": [],
   "oj_reference": null,
   "document_date": "2025-07-18",
-  "version_label": "Final",
-  "version_status": "final",
-  "publication_date": "2025-07-18",
+  "version_label": "Content-approved draft annex",
+  "version_status": "draft",
+  "publication_date": "2025-08-27",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -24,7 +24,9 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+      "evidence_locator": "Original July annex p. 1 European Commission masthead and C(2025) 5045 final ANNEX heading."
     }
   ],
   "policy_ids": [
@@ -38,13 +40,17 @@
     "accountability"
   ],
   "source_ids": [
-    "gpai-guidelines-commission"
+    "gpai-guidelines-commission",
+    "gpai-provider-guidelines-2025-service-desk-publication",
+    "gpai-provider-guidelines-2025-july-annex-pdf",
+    "gpai-provider-guidelines-2025-approval-pdf",
+    "gpai-provider-guidelines-2025-register-metadata"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "implementation",
-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "inclusion_rationale": "Original content-approved draft annex giving non-binding Commission guidance on the scope of GPAI-provider obligations under the AI Act.",
+    "researcher_notes": "This stable July ID/slug represents the original C(2025) 5045 final ANNEX, not the distinct November C(2025) 7719 final guidelines. The 18 July approval communication approved the enclosed draft annex's content while deferring formal adoption until language versions were available. The 27 August Service Desk resource card directly links the original July PDF and dates that manifestation without claiming first-ever publication. Prior source history is retained.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -55,5 +61,58 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+      "locator": "Original annex p. 1: Brussels, 18.7.2025; C(2025) 5045 final; ANNEX to the content-approval communication.",
+      "meaning": "Establishes 2025-07-18 as the issue date of this exact original draft annex."
+    },
+    "publication_date": {
+      "source_id": "gpai-provider-guidelines-2025-service-desk-publication",
+      "locator": "Official resources card dated 27/08/2025 directly links the July PDF ending 118340-3.pdf.",
+      "meaning": "Establishes an official dated publication manifestation of this exact July annex on 2025-08-27, without claiming first-ever release or publication of C(2025) 7719."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+      "locator": "Original pp. 4-5 paragraphs 1-10 explain and operationalise the AI Act obligations for general-purpose AI model providers.",
+      "rationale": "The annex directly interprets and operationalises EU AI policy."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+      "locator": "Original paragraphs 1-10 address GPAI models and providers under the horizontal AI Act without limiting the guidance to one economic sector.",
+      "rationale": "The guidance applies horizontally across GPAI providers and downstream uses."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+      "locator": "Original p. 1 European Commission masthead and C(2025) 5045 final ANNEX heading.",
+      "rationale": "The exact annex is a Commission institutional artifact."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "gpai-provider-guidelines-2025-service-desk-publication",
+      "locator": "Official Service Desk resource card dated 27/08/2025 directly links the original July annex PDF.",
+      "rationale": "An official Commission service provides a dated manifestation of the exact original annex."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
+    "locator": "Original paragraph 9 states that the guidelines are non-binding; the approval communication p. 2 says formal adoption was deferred.",
+    "meaning": "Supports retained non-binding status and draft-version classification."
+  },
+  "historical_review_status": "verified"
 }
