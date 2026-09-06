@@ -1,0 +1,13 @@
+{
+  "id": "gpai-provider-guidelines-2025-register-metadata",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:11:42.458563+01:00",
+  "updated_at": "2026-09-06T06:11:42.458563+01:00",
+  "source_type": "official_register",
+  "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)5045?lang=en",
+  "publisher": "European Commission",
+  "retrieved_at": "2026-09-06T06:11:42.458563+01:00",
+  "last_verified_at": "2026-09-06T06:11:42.458563+01:00",
+  "verification_note": "Commission register metadata distinguishes C(2025) 5045 main communication /4239008 from ANNEX /4239009 and identifies CNECT. Its final marker concerns registration of the package and is not treated as formal adoption of the draft annex. Preserved source SHA-256 d05f04c58574b133ce5280da59d9244278b5bde6243b72f45c03d164e001e6bd."
+}

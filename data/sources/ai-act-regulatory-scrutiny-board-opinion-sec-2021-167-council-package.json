@@ -1,0 +1,13 @@
+{
+  "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:09:28.10865+01:00",
+  "updated_at": "2026-09-06T06:09:28.10865+01:00",
+  "source_type": "official_pdf",
+  "url": "https://data.consilium.europa.eu/doc/document/ST-8115-2021-ADD-5/en/pdf",
+  "publisher": "Council of the European Union",
+  "retrieved_at": "2026-09-06T06:09:28.10865+01:00",
+  "last_verified_at": "2026-09-06T06:09:28.10865+01:00",
+  "verification_note": "Exact eight-page ST 8115/21 ADD 5 wrapper and enclosed SEC(2021) 167 package. The cover identifies the Commission sender, 22 April Council receipt and 23 April wrapper issue; it does not by itself establish publication. Preserved source SHA-256 d7cd025ae5b6ab0ab806f40973e68aecc3e3159a17cfd7f61d81e51f4d7c729f."
+}

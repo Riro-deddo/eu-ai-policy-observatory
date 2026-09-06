@@ -1,0 +1,13 @@
+{
+  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:12:33.377338+01:00",
+  "updated_at": "2026-09-06T06:12:33.377338+01:00",
+  "source_type": "publications_office",
+  "url": "https://op.europa.eu/en/publication-detail/-/publication/e69a1045-6fa1-11f1-ae88-01aa75ed71a1/language-en",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T06:12:33.377338+01:00",
+  "last_verified_at": "2026-09-06T06:12:33.377338+01:00",
+  "verification_note": "Exact OP catalogue card for IMMC ST 10752 2026 ADD 1; explicitly states Published: 2026-06-22. It dates the exact OP manifestation without claiming first-ever release or the date of the current fully translated Council file. Preserved source SHA-256 3a15a0c1e0cbaf54cc0ebb4314424b7e3c3111e53677973610ffae5968167c88."
+}

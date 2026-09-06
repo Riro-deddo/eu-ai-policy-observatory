@@ -1,0 +1,1912 @@
+--- before/data/documents/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167.json
++++ after/data/documents/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167.json
+@@ -1,16 +1,16 @@
+ {
+   "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+   "entity_type": "document",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "slug": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+   "official_title": "REGULATORY SCRUTINY BOARD OPINION Proposal for a Regulation of the European Parliament and of the Council laying down harmonized rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+   "short_title": "Regulatory Scrutiny Board opinion on the AI Act proposal",
+   "document_type": "opinion",
+   "record_level": "supporting",
+   "official_reference": "SEC(2021) 167 final",
+   "procedure_references": [
+     "2021/0106(COD)"
+   ],
+   "oj_reference": null,
+@@ -19,42 +19,107 @@
+   "version_status": "final",
+   "publication_date": "2021-04-23",
+   "legal_status": "non_binding",
+   "celex": null,
+   "eli": null,
+   "language": "en",
+   "official_summary": null,
+   "institution_roles": [
+     {
+       "institution_id": "european-commission",
+-      "role": "author"
++      "role": "author",
++      "evidence_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++      "evidence_locator": "Original SEC package p. 1 Commission masthead and p. 2 heading 'European Commission, Regulatory Scrutiny Board'."
++    },
++    {
++      "institution_id": "council-of-the-european-union",
++      "role": "publisher",
++      "evidence_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
++      "evidence_locator": "Publication details identify the Council-hosted IMMC ST 8115 2021 ADD 5 manifestation; the enclosed opinion remains Commission/RSB-authored."
+     }
+   ],
+   "policy_ids": [
+     "european-ai-policy-pathway",
+     "artificial-intelligence-act-legislative-process"
+   ],
+   "concept_ids": [
+     "risk",
+     "accountability",
+     "compliance"
+   ],
+   "source_ids": [
+-    "ai-act-rsb-opinion-eur-lex"
++    "ai-act-rsb-opinion-eur-lex",
++    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
++    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package",
++    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata"
+   ],
+   "corpus_assessment": {
+     "corpus_tier": "directly_related",
+     "policy_stage": "proposal",
+     "inclusion_rationale": "The opinion is part of the published Commission proposal package and evaluates the supporting impact assessment.",
+-    "researcher_notes": "The SEC(2021) 167 package contains the positive second opinion and its quantification annex together with the earlier negative opinion. The 22 March date is printed on the signed package; the retained publication date records the Council transmission wrapper and remains an evidence hold, not a date inferred from proposal adoption.",
++    "researcher_notes": "The SEC(2021) 167 compound package contains the positive second opinion and quantification annex together with the earlier negative opinion. The original cover and signature establish issue on 22 March 2021. The exact OP card dates publication of the Council-hosted ST 8115/21 ADD 5 manifestation on 23 April, not first-ever SEC publication. Cellar's competing DATE_DOCUMENT 21 April is catalogue issue metadata and does not override the visible cover/signature. Commission/RSB authorship is distinct from Council transmission and publication hosting.",
+     "review_status": "verified",
+     "reviewed_by": "Yichen Hao",
+     "reviewed_at": "2026-09-04T00:00:00Z"
+   },
+   "sector_tags": [
+     "general_cross_sector"
+   ],
+   "provenance_tags": [
+     "eu_institution_authored",
+     "officially_published"
+-  ]
++  ],
++  "temporal_collection": "contemporary_eu_ai_policy",
++  "relevance_class": "direct_ai_substantive",
++  "document_date_kind": "document_issue",
++  "date_evidence": {
++    "document_date": {
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++      "locator": "Original SEC package p. 1 cover: SEC(2021) 167, 22.03.2021; p. 7 electronic signature is also dated 22 March 2021. Cellar separately records DATE_DOCUMENT 2021-04-21.",
++      "meaning": "Establishes 2021-03-22 as the artifact's issue date; the disclosed 21 April catalogue field neither overrides the signed artifact nor establishes publication."
++    },
++    "publication_date": {
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
++      "locator": "Publication details: Published 2021-04-23; exact IMMC ST 8115 2021 ADD 5; matching SEC(2021) 167 subject.",
++      "meaning": "Establishes publication on 2021-04-23 for the explicitly identified Council-hosted manifestation, without claiming first-ever publication of every SEC format."
++    }
++  },
++  "classification_evidence": [
++    {
++      "field": "relevance_class",
++      "value": "direct_ai_substantive",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++      "locator": "Original pp. 2-7 evaluate the impact assessment for COM(2021) 206 and SWD(2021) 84/85, including the proposed horizontal AI regulatory framework.",
++      "rationale": "The opinion directly evaluates the evidence base for the AI Act proposal."
++    },
++    {
++      "field": "sector_tags",
++      "value": "general_cross_sector",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++      "locator": "Original opinion and quantification annex assess the proposal's economy-wide risk categories, costs and affected businesses rather than one sector.",
++      "rationale": "The retained horizontal sector classification follows the assessed AI Act proposal's cross-sector scope."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "eu_institution_authored",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++      "locator": "Original p. 1 Commission masthead and p. 2 Regulatory Scrutiny Board heading.",
++      "rationale": "The exact package is authored by the Commission's Regulatory Scrutiny Board."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "officially_published",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
++      "locator": "Publication details explicitly date exact IMMC ST 8115 2021 ADD 5 and link the official manifestation.",
++      "rationale": "The exact package is distributed through an official EU publication endpoint."
++    }
++  ],
++  "bibliographic_authors": [],
++  "additional_dates": [],
++  "legal_status_evidence": {
++    "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++    "locator": "Original p. 2 states that the opinion concerns a draft impact assessment; pp. 2 and 5 are positive and negative scrutiny opinions rather than an adopted act.",
++    "meaning": "Supports retained non-binding opinion status."
++  },
++  "historical_review_status": "verified"
+ }
+--- before/data/documents/ai-omnibus-council-adoption-statements-st-10752-add-1.json
++++ after/data/documents/ai-omnibus-council-adoption-statements-st-10752-add-1.json
+@@ -1,60 +1,144 @@
+ {
+   "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+   "entity_type": "document",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "slug": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+-  "official_title": "Digital Omnibus AI proposal — Statements",
++  "official_title": "Draft Regulation of the European Parliament and of the Council amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (first reading) – Adoption of the legislative act – Statements",
+   "short_title": "Council Digital Omnibus adoption statements",
+   "document_type": "institutional_position",
+   "record_level": "attachment",
+   "official_reference": "ST 10752/26 ADD 1",
+   "procedure_references": [
+     "2025/0359(COD)"
+   ],
+   "oj_reference": null,
+   "document_date": "2026-06-22",
+   "version_label": "ADD 1",
+   "version_status": "final",
+   "publication_date": "2026-06-22",
+   "legal_status": "non_binding",
+   "celex": null,
+   "eli": null,
+   "language": "en",
+   "official_summary": null,
+   "institution_roles": [
+     {
+       "institution_id": "council-of-the-european-union",
+-      "role": "author"
++      "role": "publisher",
++      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
++      "evidence_locator": "Publication details identify the Council as corporate body for exact IMMC ST 10752 2026 ADD 1; this describes the wrapper/host and not sole substantive authorship."
++    },
++    {
++      "institution_id": "general-secretariat-of-the-council",
++      "role": "cover_note_sender",
++      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "evidence_locator": "PDF p. 1 cover: From General Secretariat of the Council to Permanent Representatives Committee/Council."
++    },
++    {
++      "institution_id": "european-commission",
++      "role": "author",
++      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "evidence_locator": "PDF p. 2 heading: 'The Commission has requested that the following statement be entered in the Council minutes'."
+     }
+   ],
+   "policy_ids": [
+     "european-ai-policy-pathway",
+     "digital-omnibus-ai-act-amendments"
+   ],
+   "concept_ids": [
+     "risk",
+     "compliance",
+     "accountability"
+   ],
+   "source_ids": [
+-    "council-st-10752-2026-add-1"
++    "council-st-10752-2026-add-1",
++    "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
++    "ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf",
++    "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++    "ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata"
+   ],
+   "corpus_assessment": {
+     "corpus_tier": "core",
+     "policy_stage": "adoption",
+-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+-    "researcher_notes": "Belgium and the European Commission are the substantive authors of their respective statements; the General Secretariat transmits the Council wrapper. The exact-version publication date remains unresolved, so the record stays pending without a partial extension.",
++    "inclusion_rationale": "Officially published ADD 1 containing the separately attributed Belgian and European Commission statements attached to the Council Digital Omnibus adoption note.",
++    "researcher_notes": "Belgium and the European Commission are the substantive authors of their respective statements; the General Secretariat sends the wrapper and the Council is publisher, not sole substantive author. The OP English-labelled manifestation is mixed EN/FR, whereas the current Council /en/pdf is a fully English translation. Publication on 22 June 2026 is tied to the exact OP ADD 1 manifestation and is not a claim that the English translation first appeared that day.",
+     "review_status": "verified",
+     "reviewed_by": "Yichen Hao",
+     "reviewed_at": "2026-09-04T00:00:00Z"
+   },
+   "sector_tags": [
+     "general_cross_sector"
+   ],
+   "provenance_tags": [
+     "eu_institution_authored",
+     "officially_published"
+-  ]
++  ],
++  "temporal_collection": "contemporary_eu_ai_policy",
++  "relevance_class": "direct_ai_substantive",
++  "document_date_kind": "document_issue",
++  "date_evidence": {
++    "document_date": {
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "locator": "PDF p. 1 cover: Brussels, 22 June 2026; ST 10752/26 ADD 1; interinstitutional file 2025/0359(COD).",
++      "meaning": "Establishes the issue date of this exact ADD 1 wrapper and statements package."
++    },
++    "publication_date": {
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
++      "locator": "Publication details: Published 2026-06-22; exact IMMC ST 10752 2026 ADD 1; linked English-labelled PDF.",
++      "meaning": "Establishes publication of the exact OP ADD 1 manifestation without claiming first-ever release or dating the current fully English translation."
++    }
++  },
++  "classification_evidence": [
++    {
++      "field": "relevance_class",
++      "value": "direct_ai_substantive",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "locator": "PDF pp. 1-3 address deepfake labelling, bias detection, AI Act deadlines and sectoral-law interaction in the Digital Omnibus on AI.",
++      "rationale": "The statements take substantive positions on amendments and implementation of the AI Act."
++    },
++    {
++      "field": "sector_tags",
++      "value": "general_cross_sector",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "locator": "PDF cover subject and pp. 1-3 concern horizontal AI Act transparency, bias and sectoral product-law coordination.",
++      "rationale": "The statements address regulation-wide AI policy across sectors."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "eu_institution_authored",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "locator": "PDF p. 2 expressly attributes one statement to the European Commission; p. 1 separately attributes the other to Belgium.",
++      "rationale": "The package includes a substantive Commission-authored contribution, with mixed authorship expressly disclosed."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "officially_published",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
++      "locator": "Publication details identify exact IMMC ST 10752 2026 ADD 1 and explicitly date its publication.",
++      "rationale": "The exact ADD 1 manifestation is catalogued and distributed through an official EU endpoint."
++    }
++  ],
++  "bibliographic_authors": [
++    {
++      "name": "Belgium",
++      "affiliation": null,
++      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "evidence_locator": "PDF p. 1 heading: 'Belgium has requested that the following statement be entered in the Council minutes'."
++    },
++    {
++      "name": "European Commission",
++      "affiliation": null,
++      "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "evidence_locator": "PDF p. 2 heading: 'The Commission has requested that the following statement be entered in the Council minutes'."
++    }
++  ],
++  "additional_dates": [],
++  "legal_status_evidence": {
++    "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++    "locator": "PDF pp. 1-3 label the contents as statements requested for entry in Council minutes and do not enact operative rules.",
++    "meaning": "Supports retained non-binding statement status."
++  },
++  "historical_review_status": "verified"
+ }
+--- before/data/documents/ecb-technical-working-document-con-2026-10.json
++++ after/data/documents/ecb-technical-working-document-con-2026-10.json
+@@ -1,16 +1,16 @@
+ {
+   "id": "ecb-technical-working-document-con-2026-10",
+   "entity_type": "document",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "slug": "ecb-technical-working-document-con-2026-10",
+   "official_title": "Technical working document produced in connection with ECB Opinion CON/2026/10 — Drafting proposals in relation to the proposed amendments to Regulation (EU) 2024/1689 (the AI Act)",
+   "short_title": "ECB technical working document for CON/2026/10",
+   "document_type": "staff_working_document",
+   "record_level": "attachment",
+   "official_reference": "TWD/2026/10",
+   "procedure_references": [
+     "2025/0359(COD)"
+   ],
+   "oj_reference": null,
+@@ -19,43 +19,114 @@
+   "version_status": "final",
+   "publication_date": "2026-03-13",
+   "legal_status": "non_binding",
+   "celex": null,
+   "eli": null,
+   "language": "en",
+   "official_summary": null,
+   "institution_roles": [
+     {
+       "institution_id": "european-central-bank",
+-      "role": "author"
++      "role": "author",
++      "evidence_source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
++      "evidence_locator": "Cellar WORK_CREATED_BY_AGENT identifies the European Central Bank; the exact PDF is headed ECB-PUBLIC."
++    },
++    {
++      "institution_id": "publications-office-of-the-european-union",
++      "role": "publisher",
++      "evidence_source_id": "ecb-technical-working-document-con-2026-10-op-publication",
++      "evidence_locator": "Exact OP catalogue card for IMMC TWD/2026/10 explicitly states Published 2026-03-13."
+     }
+   ],
+   "policy_ids": [
+     "european-ai-policy-pathway",
+     "digital-omnibus-ai-act-amendments"
+   ],
+   "concept_ids": [
+     "risk",
+     "compliance",
+     "accountability"
+   ],
+   "source_ids": [
+-    "ecb-technical-working-document-con-2026-10-eur-lex"
++    "ecb-technical-working-document-con-2026-10-eur-lex",
++    "ecb-technical-working-document-con-2026-10-op-publication",
++    "ecb-technical-working-document-con-2026-10-cellar-metadata",
++    "ecb-technical-working-document-con-2026-10-official-companion"
+   ],
+   "corpus_assessment": {
+     "corpus_tier": "directly_related",
+     "policy_stage": "negotiation",
+     "inclusion_rationale": "Verified official English drafting proposals formally linked by EUR-Lex to ECB Opinion CON/2026/10.",
+-    "researcher_notes": "The attachment status is a researcher classification; the official title and relationship to CON/2026/10 come from EUR-Lex.",
++    "researcher_notes": "The attachment status and annex_to edge are analytical classifications for a separate companion, not a claim that the five-page TWD is literally annexed inside the authentic OJ opinion. The exact OP card asserts Published 13 March 2026; this is not treated as proof of first EUR-Lex availability. The ECB bulletin of 20 March concerns future publication of the opinion, Cellar repository creation occurred later, and the opinion's authentic OJ publication was 15 April; none replaces the TWD catalogue assertion.",
+     "review_status": "verified",
+     "reviewed_by": "Yichen Hao",
+     "reviewed_at": "2026-09-04T00:00:00Z"
+   },
+   "sector_tags": [
+     "general_cross_sector",
+     "financial_services"
+   ],
+   "provenance_tags": [
+     "eu_institution_authored",
+     "officially_published"
+-  ]
++  ],
++  "temporal_collection": "contemporary_eu_ai_policy",
++  "relevance_class": "direct_ai_substantive",
++  "document_date_kind": "document_issue",
++  "date_evidence": {
++    "document_date": {
++      "source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
++      "locator": "Cellar WORK_DATE_DOCUMENT for exact TWD/2026/10 is 2026-03-13; the PDF heading connects the document to CON/2026/10.",
++      "meaning": "Establishes 2026-03-13 as the exact technical working document's issue date."
++    },
++    "publication_date": {
++      "source_id": "ecb-technical-working-document-con-2026-10-op-publication",
++      "locator": "Publication details: Published 2026-03-13; exact IMMC TWD/2026/10; English PDF option.",
++      "meaning": "Records the official catalogue's publication assertion for this exact TWD, without claiming first public availability, first EUR-Lex deployment or the opinion's later OJ date."
++    }
++  },
++  "classification_evidence": [
++    {
++      "field": "relevance_class",
++      "value": "direct_ai_substantive",
++      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
++      "locator": "PDF pp. 1-5 propose five amendments to Regulation (EU) 2024/1689 and explain their operation.",
++      "rationale": "The working document directly proposes drafting changes to the AI Act."
++    },
++    {
++      "field": "sector_tags",
++      "value": "general_cross_sector",
++      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
++      "locator": "PDF amendments address AI Act scope, standards, market surveillance and Commission guidance across the horizontal framework.",
++      "rationale": "The retained cross-sector tag reflects amendments beyond a single financial rule."
++    },
++    {
++      "field": "sector_tags",
++      "value": "financial_services",
++      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
++      "locator": "PDF p. 1 Amendment 1 and explanation address ECB prudential supervision of credit institutions and Union financial-services law.",
++      "rationale": "Financial-services supervision is a material focus of the ECB drafting proposals."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "eu_institution_authored",
++      "source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
++      "locator": "Cellar WORK_CREATED_BY_AGENT identifies the European Central Bank; exact PDF is ECB-PUBLIC.",
++      "rationale": "The official metadata identifies an EU institution as author."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "officially_published",
++      "source_id": "ecb-technical-working-document-con-2026-10-op-publication",
++      "locator": "Publication details identify and explicitly date exact IMMC TWD/2026/10.",
++      "rationale": "The exact working document is distributed through the Publications Office catalogue."
++    }
++  ],
++  "bibliographic_authors": [],
++  "additional_dates": [],
++  "legal_status_evidence": {
++    "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
++    "locator": "PDF heading says 'Drafting proposals'; its two-column table proposes amendments and explanations in connection with an ECB opinion.",
++    "meaning": "Supports retained non-binding final-companion identity rather than an adopted amending regulation."
++  },
++  "historical_review_status": "verified"
+ }
+--- before/data/documents/gpai-provider-guidelines-2025.json
++++ after/data/documents/gpai-provider-guidelines-2025.json
+@@ -1,59 +1,118 @@
+ {
+   "id": "gpai-provider-guidelines-2025",
+   "entity_type": "document",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "slug": "gpai-provider-guidelines-2025",
+-  "official_title": "Guidelines on the scope of the obligations for providers of general-purpose AI models under Regulation (EU) 2024/1689 (AI Act)",
++  "official_title": "ANNEX to the Communication to the Commission — Approval of the content of the draft Communication from the Commission – Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act)",
+   "short_title": "Guidelines for GPAI model providers",
+   "document_type": "guidelines",
+-  "record_level": "principal",
+-  "official_reference": "C(2025) 5045 final",
++  "record_level": "attachment",
++  "official_reference": "C(2025) 5045 final ANNEX",
+   "procedure_references": [],
+   "oj_reference": null,
+   "document_date": "2025-07-18",
+-  "version_label": "Final",
+-  "version_status": "final",
+-  "publication_date": "2025-07-18",
++  "version_label": "Content-approved draft annex",
++  "version_status": "draft",
++  "publication_date": "2025-08-27",
+   "legal_status": "non_binding",
+   "celex": null,
+   "eli": null,
+   "language": "en",
+   "official_summary": null,
+   "institution_roles": [
+     {
+       "institution_id": "european-commission",
+-      "role": "author"
++      "role": "author",
++      "evidence_source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++      "evidence_locator": "Original July annex p. 1 European Commission masthead and C(2025) 5045 final ANNEX heading."
+     }
+   ],
+   "policy_ids": [
+     "european-ai-policy-pathway",
+     "ai-act-implementation-and-governance",
+     "general-purpose-ai-code-of-practice"
+   ],
+   "concept_ids": [
+     "risk",
+     "compliance",
+     "accountability"
+   ],
+   "source_ids": [
+-    "gpai-guidelines-commission"
++    "gpai-guidelines-commission",
++    "gpai-provider-guidelines-2025-service-desk-publication",
++    "gpai-provider-guidelines-2025-july-annex-pdf",
++    "gpai-provider-guidelines-2025-approval-pdf",
++    "gpai-provider-guidelines-2025-register-metadata"
+   ],
+   "corpus_assessment": {
+     "corpus_tier": "core",
+     "policy_stage": "implementation",
+-    "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
++    "inclusion_rationale": "Original content-approved draft annex giving non-binding Commission guidance on the scope of GPAI-provider obligations under the AI Act.",
++    "researcher_notes": "This stable July ID/slug represents the original C(2025) 5045 final ANNEX, not the distinct November C(2025) 7719 final guidelines. The 18 July approval communication approved the enclosed draft annex's content while deferring formal adoption until language versions were available. The 27 August Service Desk resource card directly links the original July PDF and dates that manifestation without claiming first-ever publication. Prior source history is retained.",
+     "review_status": "verified",
+     "reviewed_by": "Yichen Hao",
+     "reviewed_at": "2026-09-04T00:00:00Z"
+   },
+   "sector_tags": [
+     "general_cross_sector"
+   ],
+   "provenance_tags": [
+     "eu_institution_authored",
+     "officially_published"
+-  ]
++  ],
++  "temporal_collection": "contemporary_eu_ai_policy",
++  "relevance_class": "direct_ai_substantive",
++  "document_date_kind": "document_issue",
++  "date_evidence": {
++    "document_date": {
++      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++      "locator": "Original annex p. 1: Brussels, 18.7.2025; C(2025) 5045 final; ANNEX to the content-approval communication.",
++      "meaning": "Establishes 2025-07-18 as the issue date of this exact original draft annex."
++    },
++    "publication_date": {
++      "source_id": "gpai-provider-guidelines-2025-service-desk-publication",
++      "locator": "Official resources card dated 27/08/2025 directly links the July PDF ending 118340-3.pdf.",
++      "meaning": "Establishes an official dated publication manifestation of this exact July annex on 2025-08-27, without claiming first-ever release or publication of C(2025) 7719."
++    }
++  },
++  "classification_evidence": [
++    {
++      "field": "relevance_class",
++      "value": "direct_ai_substantive",
++      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++      "locator": "Original pp. 4-5 paragraphs 1-10 explain and operationalise the AI Act obligations for general-purpose AI model providers.",
++      "rationale": "The annex directly interprets and operationalises EU AI policy."
++    },
++    {
++      "field": "sector_tags",
++      "value": "general_cross_sector",
++      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++      "locator": "Original paragraphs 1-10 address GPAI models and providers under the horizontal AI Act without limiting the guidance to one economic sector.",
++      "rationale": "The guidance applies horizontally across GPAI providers and downstream uses."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "eu_institution_authored",
++      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++      "locator": "Original p. 1 European Commission masthead and C(2025) 5045 final ANNEX heading.",
++      "rationale": "The exact annex is a Commission institutional artifact."
++    },
++    {
++      "field": "provenance_tags",
++      "value": "officially_published",
++      "source_id": "gpai-provider-guidelines-2025-service-desk-publication",
++      "locator": "Official Service Desk resource card dated 27/08/2025 directly links the original July annex PDF.",
++      "rationale": "An official Commission service provides a dated manifestation of the exact original annex."
++    }
++  ],
++  "bibliographic_authors": [],
++  "additional_dates": [],
++  "legal_status_evidence": {
++    "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++    "locator": "Original paragraph 9 states that the guidelines are non-binding; the approval communication p. 2 says formal adoption was deferred.",
++    "meaning": "Supports retained non-binding status and draft-version classification."
++  },
++  "historical_review_status": "verified"
+ }
+--- before/data/relationships/ai-act-rsb-opinion-procedural-step.json
++++ after/data/relationships/ai-act-rsb-opinion-procedural-step.json
+@@ -1,16 +1,16 @@
+ {
+   "id": "ai-act-rsb-opinion-procedural-step",
+   "entity_type": "relationship",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "source_entity_type": "document",
+   "source_entity_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
+   "target_entity_type": "document",
+   "target_entity_id": "ai-act-proposal",
+   "relationship_type": "procedural_step_for",
+   "basis": "official",
+   "rationale": "The official SEC opinion identifies COM(2021) 206 and its supporting impact-assessment documents.",
+-  "evidence_source_id": "ai-act-rsb-opinion-eur-lex",
++  "evidence_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+   "verification_status": "verified"
+ }
+--- before/data/relationships/ai-omnibus-add-1-annex-to-adoption-note.json
++++ after/data/relationships/ai-omnibus-add-1-annex-to-adoption-note.json
+@@ -1,16 +1,16 @@
+ {
+   "id": "ai-omnibus-add-1-annex-to-adoption-note",
+   "entity_type": "relationship",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "source_entity_type": "document",
+   "source_entity_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+   "target_entity_type": "document",
+   "target_entity_id": "ai-omnibus-council-adoption-note-st-10752-2026",
+   "relationship_type": "annex_to",
+   "basis": "official",
+   "rationale": "ADD 1 is formally attached to ST 10752/26.",
+-  "evidence_source_id": "council-st-10752-2026-add-1",
++  "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
+   "verification_status": "verified"
+ }
+--- before/data/relationships/ecb-technical-working-document-annex-to-opinion.json
++++ after/data/relationships/ecb-technical-working-document-annex-to-opinion.json
+@@ -1,16 +1,16 @@
+ {
+   "id": "ecb-technical-working-document-annex-to-opinion",
+   "entity_type": "relationship",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "source_entity_type": "document",
+   "source_entity_id": "ecb-technical-working-document-con-2026-10",
+   "target_entity_type": "document",
+   "target_entity_id": "ecb-opinion-con-2026-10",
+   "relationship_type": "annex_to",
+-  "basis": "official",
+-  "rationale": "EUR-Lex identifies the file as a technical working document produced in connection with ECB Opinion CON/2026/10.",
+-  "evidence_source_id": "ecb-technical-working-document-con-2026-10-eur-lex",
++  "basis": "analytical",
++  "rationale": "The annex_to type analytically models the TWD as a separate companion to CON/2026/10; the official heading and footnote establish the connection but do not say the five-page file is literally annexed inside the authentic OJ opinion.",
++  "evidence_source_id": "ecb-technical-working-document-con-2026-10-official-companion",
+   "verification_status": "verified"
+ }
+--- before/data/relationships/gpai-provider-guidelines-annex-to-approval-communication.json
++++ after/data/relationships/gpai-provider-guidelines-annex-to-approval-communication.json
+@@ -0,0 +1,16 @@
++{
++  "id": "gpai-provider-guidelines-annex-to-approval-communication",
++  "entity_type": "relationship",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:10:25.682+01:00",
++  "updated_at": "2026-09-06T06:10:25.682+01:00",
++  "source_entity_type": "document",
++  "source_entity_id": "gpai-provider-guidelines-2025",
++  "target_entity_type": "document",
++  "target_entity_id": "gpai-provider-guidelines-approval-communication-2025",
++  "relationship_type": "annex_to",
++  "basis": "official",
++  "rationale": "The July annex cover identifies the parent communication, whose page 2 approves the content of the enclosed draft guidelines while deferring formal adoption.",
++  "evidence_source_id": "gpai-provider-guidelines-2025-approval-pdf",
++  "verification_status": "verified"
++}
+--- before/data/relationships/gpai-provider-guidelines-implements-ai-act.json
++++ after/data/relationships/gpai-provider-guidelines-implements-ai-act.json
+@@ -1,16 +1,16 @@
+ {
+   "id": "gpai-provider-guidelines-implements-ai-act",
+   "entity_type": "relationship",
+   "publication_status": "published",
+   "created_at": "2026-09-04T00:00:00Z",
+-  "updated_at": "2026-09-04T00:00:00Z",
++  "updated_at": "2026-09-06T05:53:33Z",
+   "source_entity_type": "document",
+   "source_entity_id": "gpai-provider-guidelines-2025",
+   "target_entity_type": "document",
+   "target_entity_id": "artificial-intelligence-act",
+   "relationship_type": "implements",
+   "basis": "official",
+-  "rationale": "The guidelines clarify obligations for GPAI model providers under the AI Act.",
+-  "evidence_source_id": "gpai-guidelines-commission",
+-  "verification_status": "verified"
+-}
++  "rationale": "Original July annex paragraphs 7-10 clarify and operationalise obligations for GPAI model providers under the AI Act without legally amending it.",
++  "evidence_source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++  "verification_status": "verified"
++}
+--- before/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata.json
++++ after/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:10:21.901179+01:00",
++  "updated_at": "2026-09-06T06:10:21.901179+01:00",
++  "source_type": "publications_office",
++  "url": "https://publications.europa.eu/resource/intcom/SEC%282021%29167",
++  "publisher": "Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
++  "last_verified_at": "2026-09-06T06:10:21.901179+01:00",
++  "verification_note": "Cellar object metadata for SEC(2021) 167 records DATE_DOCUMENT 2021-04-21 and the exact English expression. That catalogue field is retained as a disclosed conflict and is not treated as publication or as overriding the artifact's 22 March cover/signature. Preserved source SHA-256 9c8575a4073f234e1e94b1309a7841847788aaffa91dd554dd15232ce4012c3a."
++}
+--- before/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package.json
++++ after/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:09:28.10865+01:00",
++  "updated_at": "2026-09-06T06:09:28.10865+01:00",
++  "source_type": "official_pdf",
++  "url": "https://data.consilium.europa.eu/doc/document/ST-8115-2021-ADD-5/en/pdf",
++  "publisher": "Council of the European Union",
++  "retrieved_at": "2026-09-06T06:09:28.10865+01:00",
++  "last_verified_at": "2026-09-06T06:09:28.10865+01:00",
++  "verification_note": "Exact eight-page ST 8115/21 ADD 5 wrapper and enclosed SEC(2021) 167 package. The cover identifies the Commission sender, 22 April Council receipt and 23 April wrapper issue; it does not by itself establish publication. Preserved source SHA-256 d7cd025ae5b6ab0ab806f40973e68aecc3e3159a17cfd7f61d81e51f4d7c729f."
++}
+--- before/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec.json
++++ after/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:10:42.443634+01:00",
++  "updated_at": "2026-09-06T06:10:42.443634+01:00",
++  "source_type": "publications_office",
++  "url": "https://publications.europa.eu/resource/intcom/SEC%282021%29167.ENG",
++  "publisher": "European Commission / Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:10:42.443634+01:00",
++  "last_verified_at": "2026-09-06T06:10:42.443634+01:00",
++  "verification_note": "Original seven-page SEC(2021) 167 English package: cover and electronic signature establish 22 March 2021; inner headings identify the Commission Regulatory Scrutiny Board and the positive and negative opinions. Preserved source SHA-256 80210a79981bc91903834c182e0a1f9d3936c545bbcd1d5c5d71ee1ffa46c126."
++}
+--- before/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication.json
++++ after/data/sources/ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:10:42.442634+01:00",
++  "updated_at": "2026-09-06T06:10:42.442634+01:00",
++  "source_type": "publications_office",
++  "url": "https://op.europa.eu/en/publication-detail/-/publication/ee0d5478-a428-11eb-9585-01aa75ed71a1/language-en",
++  "publisher": "Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:10:42.442634+01:00",
++  "last_verified_at": "2026-09-06T06:10:42.442634+01:00",
++  "verification_note": "Exact OP catalogue card for IMMC ST 8115 2021 ADD 5; explicitly states Published: 2021-04-23. It dates this Council-hosted manifestation, not first-ever SEC publication. Preserved source SHA-256 e4eb594cb998fbb767ca6a704b90ce22b2e7ed48d9cf350b08c688db62176652."
++}
+--- before/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata.json
++++ after/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:12:24.423821+01:00",
++  "updated_at": "2026-09-06T06:12:24.423821+01:00",
++  "source_type": "publications_office",
++  "url": "https://publications.europa.eu/resource/consil/ST_10752_2026_ADD_1",
++  "publisher": "Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:12:24.423821+01:00",
++  "last_verified_at": "2026-09-06T06:12:24.423821+01:00",
++  "verification_note": "Cellar metadata resolves exact ST 10752 2026 ADD 1 to UUID e69a1045-6fa1-11f1-ae88-01aa75ed71a1 and records the work date; generic creation and transmission fields are not publication evidence. Preserved source SHA-256 219199d652a9307fd6dc53a1471ce7aceaacfdb7eff98c5784d6e1faad0cdd9a."
++}
+--- before/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf.json
++++ after/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:09:26.315097+01:00",
++  "updated_at": "2026-09-06T06:09:26.315097+01:00",
++  "source_type": "official_pdf",
++  "url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
++  "publisher": "Council of the European Union",
++  "retrieved_at": "2026-09-06T06:09:26.315097+01:00",
++  "last_verified_at": "2026-09-06T06:09:26.315097+01:00",
++  "verification_note": "Current fully English Council PDF: cover establishes ST 10752/26 ADD 1, 22 June 2026, procedure and General Secretariat sender; headings separately identify Belgium and the Commission as statement authors. It does not establish when this translation appeared. Preserved source SHA-256 109c4356040349a5c5592eae265925bfd5b0ea6c9906c5a29c3582923c9d221f."
++}
+--- before/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf.json
++++ after/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:13:04.534481+01:00",
++  "updated_at": "2026-09-06T06:13:04.534481+01:00",
++  "source_type": "official_pdf",
++  "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=e69a1045-6fa1-11f1-ae88-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
++  "publisher": "Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:13:04.534481+01:00",
++  "last_verified_at": "2026-09-06T06:13:04.534481+01:00",
++  "verification_note": "Exact three-page ADD 1 PDF offered as English by the OP card; it retains the original EN/FR manifestation (Belgium statement in French, Commission statement in English). Preserved source SHA-256 da1b100be59c6aeddffca11af3b46b6cbb25fa1f37ff9a6f8390c6a746d00a5d."
++}
+--- before/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication.json
++++ after/data/sources/ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:12:33.377338+01:00",
++  "updated_at": "2026-09-06T06:12:33.377338+01:00",
++  "source_type": "publications_office",
++  "url": "https://op.europa.eu/en/publication-detail/-/publication/e69a1045-6fa1-11f1-ae88-01aa75ed71a1/language-en",
++  "publisher": "Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:12:33.377338+01:00",
++  "last_verified_at": "2026-09-06T06:12:33.377338+01:00",
++  "verification_note": "Exact OP catalogue card for IMMC ST 10752 2026 ADD 1; explicitly states Published: 2026-06-22. It dates the exact OP manifestation without claiming first-ever release or the date of the current fully translated Council file. Preserved source SHA-256 3a15a0c1e0cbaf54cc0ebb4314424b7e3c3111e53677973610ffae5968167c88."
++}
+--- before/data/sources/ecb-technical-working-document-con-2026-10-cellar-metadata.json
++++ after/data/sources/ecb-technical-working-document-con-2026-10-cellar-metadata.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:09:28.012717+01:00",
++  "updated_at": "2026-09-06T06:09:28.012717+01:00",
++  "source_type": "publications_office",
++  "url": "https://publications.europa.eu/resource/ecb/TWD-2026-0010?language=eng",
++  "publisher": "European Central Bank / Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
++  "last_verified_at": "2026-09-06T06:09:28.012717+01:00",
++  "verification_note": "Cellar metadata identifies TWD/2026/10, ECB authorship, final version, document date 2026-03-13 and influence by CON/2026/10; repository creation is not publication evidence. Preserved source SHA-256 a7bab2e60d25a310b681f58ebd032d4f6d4ab0bde6ad883dee44f99fdbdb8ec8."
++}
+--- before/data/sources/ecb-technical-working-document-con-2026-10-official-companion.json
++++ after/data/sources/ecb-technical-working-document-con-2026-10-official-companion.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ecb-technical-working-document-con-2026-10-official-companion",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:10:21.901179+01:00",
++  "updated_at": "2026-09-06T06:10:21.901179+01:00",
++  "source_type": "publications_office",
++  "url": "https://publications.europa.eu/resource/ecb/TWD-2026-0010.ENG",
++  "publisher": "European Central Bank / Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
++  "last_verified_at": "2026-09-06T06:10:21.901179+01:00",
++  "verification_note": "Exact five-page ECB-PUBLIC TWD/2026/10. The heading and footnote identify a separate non-binding companion produced in connection with CON/2026/10, and the proposed amendments substantiate horizontal AI and financial-services scope. Preserved source SHA-256 70f66dea621bef6ba5c8840b06db56d5e3cb30d37bb59ff89f2c8580d0ccd4ab."
++}
+--- before/data/sources/ecb-technical-working-document-con-2026-10-op-publication.json
++++ after/data/sources/ecb-technical-working-document-con-2026-10-op-publication.json
+@@ -0,0 +1,13 @@
++{
++  "id": "ecb-technical-working-document-con-2026-10-op-publication",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:09:28.012717+01:00",
++  "updated_at": "2026-09-06T06:09:28.012717+01:00",
++  "source_type": "publications_office",
++  "url": "https://op.europa.eu/en/publication-detail/-/publication/c249d527-34cb-11f1-be39-01aa75ed71a1/language-en",
++  "publisher": "Publications Office of the European Union",
++  "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
++  "last_verified_at": "2026-09-06T06:09:28.012717+01:00",
++  "verification_note": "Exact OP catalogue card for IMMC TWD/2026/10; explicitly states Published: 2026-03-13. This is a qualified catalogue assertion, not proof of first public availability or exact EUR-Lex deployment. Preserved source SHA-256 cbc98f1c49dd0c34561587615c9f65ccba3d2e60139afc62eee52eacc1f6d6a9."
++}
+--- before/data/sources/gpai-provider-guidelines-2025-approval-pdf.json
++++ after/data/sources/gpai-provider-guidelines-2025-approval-pdf.json
+@@ -0,0 +1,13 @@
++{
++  "id": "gpai-provider-guidelines-2025-approval-pdf",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:10:25.682+01:00",
++  "updated_at": "2026-09-06T06:10:25.682+01:00",
++  "source_type": "official_pdf",
++  "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118343",
++  "publisher": "European Commission",
++  "retrieved_at": "2026-09-06T06:10:25.682+01:00",
++  "last_verified_at": "2026-09-06T06:10:25.682+01:00",
++  "verification_note": "Exact C(2025) 5045 approval communication. Page 2 approves the content of the enclosed draft annex while deferring formal adoption until language versions are available, establishing the official parent without final-guidelines status. Preserved source SHA-256 e33d18eefc4dfceaa9d6b1a38ec10bac8775605d1bc49c42461dabcc1f520824."
++}
+--- before/data/sources/gpai-provider-guidelines-2025-july-annex-pdf.json
++++ after/data/sources/gpai-provider-guidelines-2025-july-annex-pdf.json
+@@ -0,0 +1,13 @@
++{
++  "id": "gpai-provider-guidelines-2025-july-annex-pdf",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:09:58.51766+01:00",
++  "updated_at": "2026-09-06T06:09:58.51766+01:00",
++  "source_type": "official_pdf",
++  "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
++  "publisher": "European Commission",
++  "retrieved_at": "2026-09-06T06:09:58.51766+01:00",
++  "last_verified_at": "2026-09-06T06:09:58.51766+01:00",
++  "verification_note": "Original July C(2025) 5045 final ANNEX, dated 18.7.2025. Its cover and paragraphs establish a content-approved draft annex, Commission origin, non-binding AI Act implementation guidance and horizontal GPAI scope. Preserved source SHA-256 6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517."
++}
+--- before/data/sources/gpai-provider-guidelines-2025-register-metadata.json
++++ after/data/sources/gpai-provider-guidelines-2025-register-metadata.json
+@@ -0,0 +1,13 @@
++{
++  "id": "gpai-provider-guidelines-2025-register-metadata",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:11:42.458563+01:00",
++  "updated_at": "2026-09-06T06:11:42.458563+01:00",
++  "source_type": "official_register",
++  "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)5045?lang=en",
++  "publisher": "European Commission",
++  "retrieved_at": "2026-09-06T06:11:42.458563+01:00",
++  "last_verified_at": "2026-09-06T06:11:42.458563+01:00",
++  "verification_note": "Commission register metadata distinguishes C(2025) 5045 main communication /4239008 from ANNEX /4239009 and identifies CNECT. Its final marker concerns registration of the package and is not treated as formal adoption of the draft annex. Preserved source SHA-256 d05f04c58574b133ce5280da59d9244278b5bde6243b72f45c03d164e001e6bd."
++}
+--- before/data/sources/gpai-provider-guidelines-2025-service-desk-publication.json
++++ after/data/sources/gpai-provider-guidelines-2025-service-desk-publication.json
+@@ -0,0 +1,13 @@
++{
++  "id": "gpai-provider-guidelines-2025-service-desk-publication",
++  "entity_type": "source",
++  "publication_status": "published",
++  "created_at": "2026-09-06T06:09:59.429248+01:00",
++  "updated_at": "2026-09-06T06:09:59.429248+01:00",
++  "source_type": "commission_webpage",
++  "url": "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
++  "publisher": "European Commission",
++  "retrieved_at": "2026-09-06T06:09:59.429248+01:00",
++  "last_verified_at": "2026-09-06T06:09:59.429248+01:00",
++  "verification_note": "Official Service Desk resources card dated 27/08/2025 directly links the preserved original July C(2025) 5045 ANNEX PDF. This dates that manifestation, not first-ever publication or C(2025) 7719. Preserved source SHA-256 941bddc80071ddeeebb540d3a5e1f1563a15804e3e89163c41de0d58745ee505."
++}
+--- before/docs/historical-readiness.md
++++ after/docs/historical-readiness.md
+@@ -1,19 +1,21 @@
+ # Historical document readiness contract
+ 
+ This repository now applies a compatibility-gated historical metadata contract in the production pipeline. New published documents must carry a complete, evidence-backed extension and pass the readiness checks. The routes frozen before activation remain publishable as `legacy_review_pending` until individually reviewed; they do not receive inferred classifications. The initial migration produced 17 `verified` records. The 5 September 2026 expanded evidence review upgraded 77 more records and retained 37 explicit evidence holds, producing 94 `verified` and 37 `legacy_review_pending` documents in a 131-document corpus. A verified status records passage through this evidence gate; it is not a researcher-approved PhD sample or a claim that historical source discovery is complete.
+ 
+ The second pass on 5 September 2026 rechecked those 37 holds, upgraded seven Council records and retained 30 explicit holds, producing 101 `verified` and 30 `legacy_review_pending` records. Its ledger is `research/migrations/2026-09-05-remaining-evidence-review.json`; the earlier 77/37 decision and this 7/30 decision remain immutable historical audit results.
+ 
+ The continuation on 5 September reviewed all 30 remaining records through additional official-source routes and admitted four: the adopted Parliament amendments, the content-approved transparency-guideline draft annex, and two Commission guidelines with later dated Service Desk manifestations. At completion of that continuation, the local canonical corpus contained 105 `verified` and 26 `legacy_review_pending` records. All 101 records verified before that checkpoint and all 131 then-existing route identities remained unchanged. Its chronological ledger is `research/migrations/2026-09-05-review-continuation.json`.
+ 
+-The new-admission evidence gate is active. On 6 September 2026, exact Publications Office catalogue evidence admitted seven of the 26 retained records. The current corpus contains 167 `verified` and 19 `legacy_review_pending` documents across 186 stable routes; earlier ledgers remain immutable. The chronological ledger is `research/migrations/2026-09-06-evidence-corrections.json`. Pending state does not mean an official document is fictitious or that its prior official-record checks failed. Public UI/build verification and remote publication checks remain separate release gates.
++The new-admission evidence gate is active. On 6 September 2026, exact Publications Office catalogue evidence admitted seven of the 26 retained records. At that checkpoint the corpus contained 167 `verified` and 19 `legacy_review_pending` documents across 186 stable routes; earlier ledgers remain immutable. The chronological ledger is `research/migrations/2026-09-06-evidence-corrections.json`.
++
++A later four-record correction on 6 September admitted the RSB opinion package, ECB technical working document, Council ADD 1 statements and original July GPAI draft annex using exact dated manifestations and retained caveats. The current corpus contains 171 `verified` and 15 `legacy_review_pending` documents across the same 186 routes. Its chronological ledger is `research/migrations/2026-09-06-four-evidence-admissions.json`. Pending state does not mean an official document is fictitious or that its prior official-record checks failed. Public UI/build verification and remote publication checks remain separate release gates.
+ 
+ ## Command and API
+ 
+ Run the preflight with an explicit cutoff:
+ 
+ ```text
+ python -m observatory.historical_readiness --project-root . --publication-cutoff 2026-09-04
+ ```
+ 
+ That command assumes the package is installed. From an uninstalled source checkout, expose `src` first—for example, in PowerShell:
+@@ -74,19 +76,19 @@
+ ## Preservation baseline and compatibility boundary
+ 
+ `research/migrations/2026-09-05-public-document-baseline.json` freezes the current 117 published route identities as sorted `id`/`slug` pairs and records full file hashes for audit. Route-preservation checks require that set to remain a subset of later published records, so legitimate additions are allowed and later reviewed metadata revisions are not blocked merely because a hash changes.
+ 
+ This all-route baseline is not an analytical sample. Existing `corpus_tier` values are also not a new PhD sample definition. The database's versioned seed subset is limited to the seven original seed IDs and is likewise operational metadata, not a PhD sample.
+ 
+ The compatibility gate never treats field presence as verification: `historical_review_status: verified` is accepted only when the complete date, classification, attribution, source and relationship checks pass. Partial extension blocks fail. Evidence source IDs must resolve to declared, published, verified official sources. The old automatic classification migration must not be rerun over reviewed records. The publication cutoff remains 4 September 2026 unless a separate audit authorizes a change.
+ 
+ The initial admission remains deliberately bounded to the 14 `evidence_ready` rows in the private admission review. Three held candidates remain private and were not imported. Four historical source-family scopes are registered as `in_progress`; empty type or sector scopes mean unspecified, not comprehensive coverage. A later expanded review examined all 114 retained routes, upgraded 77, and left 37 named evidence holds.
+ 
+-On the current corpus, the standalone all-document preflight remains nonzero because 26 retained legacy routes have not completed the extension. The continuation expects 131 checked and 105 ready; the fresh measured result is recorded in its ledger. That does not indicate a production-build regression: the compatibility gate validates the complete extension on reviewed records while preserving exact baseline ID/slug routes for pending legacy records. Three published draft-guideline section records carry retained-route notices; these explain why their stable routes remain available but do not suppress historical relationship issues or claim a parent relationship.
++On the current corpus, the standalone all-document preflight remains nonzero because 15 retained legacy routes have not completed the extension and three noticed draft-guideline sections retain missing-parent relationship holds. The continuation's historical checkpoint expected 131 checked and 105 ready; its measured result remains recorded in that immutable ledger. This does not indicate a production-build regression: the compatibility gate validates the complete extension on reviewed records while preserving exact baseline ID/slug routes for pending legacy records. The three retained-route notices explain why those stable routes remain available but do not suppress historical relationship issues or claim a parent relationship.
+ 
+ The user expressly approved two narrow compatibility corrections on 5 September 2026. An `institutional_position` can use `institutional_adoption` only with `legal_status: adopted` and independent official date evidence. This represents the Parliament's 14 June 2023 amendments without confusing adoption with their 23 January 2024 OJ publication. A version can link to an attachment manifestation only when that attachment has its own valid outgoing official parent relationship. This represents the 20 July 2026 content-approved transparency-guideline draft annex without changing the earlier verified consultation draft. Formal adoption remains expressly deferred in the approval communication, so the annex remains `draft` and `non_binding`.
+ 
+ The AI-system-definition and prohibited-practices guidelines retain their 29 July 2025 issue dates. Their primary cited publication manifestations are the separate AI Act Service Desk resource cards dated 6 May 2026, each directly linking the exact final communication. Complete normalized text matches the current newsroom texts despite different PDF wrapper bytes. These later publication dates are not claims about first-ever publication; generic page updates, repository ingestion dates and file creation timestamps remain insufficient substitutes.
+ 
+ The inventory's nine “disconnected” records and the preflight's 15 relationship issues were measurements from an earlier 5 September readiness review, not current counts. After the subsequent reviewed identity corrections, the current historical relationship check retains exactly three missing-parent holds, one for each noticed draft-guideline section. The inventory count describes stored parent context under the active model. This prospective preflight accepts an evidenced incoming or outgoing `version_of`/`revises` edge between a version and a published non-attachment peer, or a published attachment peer with its own valid outgoing `annex_to`/`part_of` parent; a predecessor may therefore be the target of a later revision. An attachment instead needs outgoing `annex_to`/`part_of`, or an outgoing `version_of`/`revises` edge to another published attachment. Generic incoming child-attachment links do not establish the attachment's own lineage. The CLI must not be read as asserting that either earlier number is current or that the two categories are interchangeable.
+ 
+ Every published relationship is checked independently, even when another edge already establishes valid lineage. Both endpoints must use one of the seven canonical entity types, resolve uniquely to a published record in the corresponding canonical directory, and refer to different records; legitimate non-document relationships remain supported. Official evidence is required for every relationship, and an analytical edge also needs a nonblank rationale before it can qualify as lineage. A relationship issue makes both declared document endpoints not ready in CLI counts, including the target of an incoming dependency.
+--- before/docs/superpowers/plans/2026-09-06-four-evidence-admissions.md
++++ after/docs/superpowers/plans/2026-09-06-four-evidence-admissions.md
+@@ -36,31 +36,31 @@
+ 
+ ### Evidence-specific changes
+ 
+ 1. `ai-act-regulatory-scrutiny-board-opinion-sec-2021-167`: retain compound package and issue `2021-03-22`; use OP exact Council-hosted ST 8115 ADD 5 publication `2021-04-23`, UUID `ee0d5478-a428-11eb-9585-01aa75ed71a1`. Explain competing SEC catalogue DATE_DOCUMENT `2021-04-21`; it does not override the actual cover/signature. Commission/RSB authorship is distinct from Council transmission. Complete all date, classification, roles, source and relationship citations.
+ 2. `ecb-technical-working-document-con-2026-10`: retain issue `2026-03-13` and qualified catalogue publication `2026-03-13`, UUID `c249d527-34cb-11f1-be39-01aa75ed71a1`. Keep non-binding final companion identity and financial-services tag. Distinguish the catalogue assertion from first EUR-Lex availability and the opinion's 15 April OJ publication. Change the existing attachment edge basis to analytical with a precise rationale and official companion evidence; keep endpoints.
+ 3. `ai-omnibus-council-adoption-statements-st-10752-add-1`: issue/publication `2026-06-22`, OP UUID `e69a1045-6fa1-11f1-ae88-01aa75ed71a1`. Full official title from the actual cover. Attribute Belgium and Commission statements separately; Council is publisher/General Secretariat sender, not sole substantive author. Preserve mixed EN/FR OP manifestation versus current English translation caveat; no claim the English translation first appeared on that date. Complete classification/role evidence consistent with partial EU institutional authorship.
+ 4. `gpai-provider-guidelines-2025`: retain July ID/slug and issue `2025-07-18`; correct to `attachment`, `draft`, a content-approved draft-annex label and exact C(2025)5045 ANNEX title/reference. Publication `2025-08-27` cites the dated Service Desk resource card directly linking the original July PDF, not the current November C(2025)7719 file. Add official `annex_to` pointing to existing verified `gpai-provider-guidelines-approval-communication-2025`. Preserve old source history and non-binding status. Complete all extension fields.
+ 
+ ### Steps and acceptance checks
+ 
+-- [ ] Read the four ready rows and cited originals/receipts from the completed audit, the gate, and comparable already-verified canonical records. Read project instructions if present.
+-- [ ] Write failing regression tests against the real pipeline's public payload before changing canonical data. Parameterize literal expected publication dates for all four and assert resolved official source URLs, complete admitted extension and preserved ID/slug. Add separate cases showing original GPAI draft/parent identity, ECB analytical companion relationship, and Belgium/Commission versus Council attribution.
+-- [ ] Run the focused tests and capture expected pre-admission failures (not environment errors). Use a fresh short temporary directory to avoid Windows MAX_PATH failures:
++- [x] Read the four ready rows and cited originals/receipts from the completed audit, the gate, and comparable already-verified canonical records. Read project instructions if present.
++- [x] Write failing regression tests against the real pipeline's public payload before changing canonical data. Parameterize literal expected publication dates for all four and assert resolved official source URLs, complete admitted extension and preserved ID/slug. Add separate cases showing original GPAI draft/parent identity, ECB analytical companion relationship, and Belgium/Commission versus Council attribution.
++- [x] Run the focused tests and capture expected pre-admission failures (not environment errors). Use a fresh short temporary directory to avoid Windows MAX_PATH failures:
+ 
+ ```powershell
+ & '.\.venv\Scripts\python.exe' -m pytest tests/test_four_evidence_admissions.py -q --basetemp "$env:TEMP/euai4-red"
+ ```
+ 
+-- [ ] Apply the four minimal JSON correction packages with `apply_patch`, using precise locators and retained caveats rather than generic verification assertions. Supply complete candidate extensions, then call the existing readiness validator for these four IDs before persisting their verified status. Do not weaken any gate if a candidate fails.
+-- [ ] Archive cited source bytes with deterministic gzip compression where useful; preserve their original retrieval timestamps and hashes. Add the new migration ledger with exact before/after counts, four upgraded IDs, fifteen held IDs, preservation proof and prior-ledger hashes. Never rewrite historical migration outcomes.
+-- [ ] Adjust old test expectations only through the expressly recorded later admissions; retain assertions for historical counts/dispositions and reject silent unledgered upgrades. Run the focused new and affected historical-ledger tests, then run the full Python suite once. Record commands/results.
+-- [ ] Measure byte-preservation of the other 182 documents, all 186 routes, all previous sources/migration ledgers and reviewed-by attribution envelopes. Check any corpus-inventory changes are limited to four candidate IDs and are factually required.
+-- [ ] Update current-count documentation, write report with RED/GREEN evidence, changed paths and any concerns. Do not commit or deploy. The controller independently reviews and runs the final pipeline/build checks.
++- [x] Apply the four minimal JSON correction packages with `apply_patch`, using precise locators and retained caveats rather than generic verification assertions. Supply complete candidate extensions, then call the existing readiness validator for these four IDs before persisting their verified status. Do not weaken any gate if a candidate fails.
++- [x] Archive cited source bytes with deterministic gzip compression where useful; preserve their original retrieval timestamps and hashes. Add the new migration ledger with exact before/after counts, four upgraded IDs, fifteen held IDs, preservation proof and prior-ledger hashes. Never rewrite historical migration outcomes.
++- [x] Adjust old test expectations only through the expressly recorded later admissions; retain assertions for historical counts/dispositions and reject silent unledgered upgrades. Run the focused new and affected historical-ledger tests, then run the full Python suite once. Record commands/results.
++- [x] Measure byte-preservation of the other 182 documents, all 186 routes, all previous sources/migration ledgers and reviewed-by attribution envelopes. Check any corpus-inventory changes are limited to four candidate IDs and are factually required.
++- [x] Update current-count documentation, write report with RED/GREEN evidence, changed paths and any concerns. Do not commit or deploy. The controller independently reviews and runs the final pipeline/build checks.
+ 
+ ## Controller integration and finish
+ 
+-- [ ] Read-only snapshot/diff review against the exact start state, not the old Git HEAD.
+-- [ ] Independent task review: both spec compliance and evidence/data quality; resolve important findings before accepting admissions.
+-- [ ] Run fresh pipeline to `generated/` and confirm SQLite/public JSON counts, record fields and source/relationship resolutions. Run the existing static website build/check if the available runtime permits, without modifying frontend source or dependencies; report an environment limitation instead of making an unsupported success claim.
+-- [ ] Independent final scoped review of the complete local change, including immutable old ledgers and pending records.
+-- [ ] Deliver measured outcome, actual test/build results and explicit not-pushed/not-deployed state. Keep evidence/snapshots for recovery; no cleanup of earlier work.
++- [x] Read-only snapshot/diff review against the exact start state, not the old Git HEAD.
++- [x] Independent task review: both spec compliance and evidence/data quality; resolve important findings before accepting admissions.
++- [x] Run fresh pipeline to `generated/` and confirm SQLite/public JSON counts, record fields and source/relationship resolutions. Run the existing static website build/check if the available runtime permits, without modifying frontend source or dependencies; report an environment limitation instead of making an unsupported success claim.
++- [x] Independent final scoped review of the complete local change, including immutable old ledgers and pending records.
++- [x] Deliver measured outcome, actual test/build results and explicit not-pushed/not-deployed state. Keep evidence/snapshots for recovery; no cleanup of earlier work.
+--- before/research/corpus-inventory.json
++++ after/research/corpus-inventory.json
+@@ -660,35 +660,35 @@
+       "document_id": "gpai-code-final",
+       "merged_into_document_id": null,
+       "reviewed_at": "2026-09-04T00:00:00Z",
+       "reviewed_by": "Yichen Hao"
+     },
+     {
+       "id": "gpai-provider-guidelines-2025",
+       "source_ids": [
+         "commission-ai-act-framework"
+       ],
+-      "official_reference": "C(2025) 5045 final",
+-      "official_title": "Guidelines on the scope of the obligations for providers of general-purpose AI models under Regulation (EU) 2024/1689 (AI Act)",
++      "official_reference": "C(2025) 5045 final ANNEX",
++      "official_title": "ANNEX to the Communication to the Commission — Approval of the content of the draft Communication from the Commission – Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act)",
+       "year": 2025,
+       "issuing_institution": "European Commission",
+-      "record_level": "principal",
+-      "version_label": "Final",
+-      "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act",
+-      "commissioning_body": null,
+-      "candidate_provenance": "eu_institution_authored",
+-      "provisional_sector_tags": [
+-        "general_cross_sector"
+-      ],
+-      "discovered_at": "2026-09-04T00:00:00Z",
+-      "decision": "included",
+-      "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
++      "record_level": "attachment",
++      "version_label": "Content-approved draft annex",
++      "official_source_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
++      "commissioning_body": null,
++      "candidate_provenance": "eu_institution_authored",
++      "provisional_sector_tags": [
++        "general_cross_sector"
++      ],
++      "discovered_at": "2026-09-04T00:00:00Z",
++      "decision": "included",
++      "decision_reason": "Verified original July C(2025) 5045 content-approved draft annex; the later C(2025) 7719 guidelines are a distinct document.",
+       "document_id": "gpai-provider-guidelines-2025",
+       "merged_into_document_id": null,
+       "reviewed_at": "2026-09-04T00:00:00Z",
+       "reviewed_by": "Yichen Hao"
+     },
+     {
+       "id": "gpai-training-content-template-2025",
+       "source_ids": [
+         "ai-office-gpai-code"
+       ],
+@@ -2926,34 +2926,34 @@
+       "merged_into_document_id": null,
+       "reviewed_at": "2026-09-04T00:00:00Z",
+       "reviewed_by": "Yichen Hao"
+     },
+     {
+       "id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+       "source_ids": [
+         "eur-lex-procedure-2025-0359"
+       ],
+       "official_reference": "ST 10752/26 ADD 1",
+-      "official_title": "Digital Omnibus AI proposal — Statements",
++      "official_title": "Draft Regulation of the European Parliament and of the Council amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (first reading) – Adoption of the legislative act – Statements",
+       "year": 2026,
+-      "issuing_institution": "Council of the European Union",
++      "issuing_institution": "Belgium and European Commission; Council-hosted",
+       "record_level": "attachment",
+       "version_label": "ADD 1",
+       "official_source_url": "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
+       "commissioning_body": null,
+       "candidate_provenance": "eu_institution_authored",
+       "provisional_sector_tags": [
+         "general_cross_sector"
+       ],
+       "discovered_at": "2026-09-04T00:00:00Z",
+       "decision": "included",
+-      "decision_reason": "Verified independently citable official English text within the defined corpus scope.",
++      "decision_reason": "Verified Council-hosted ADD 1 with separately attributed Belgium and European Commission statements; the General Secretariat is sender, not sole substantive author.",
+       "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
+       "merged_into_document_id": null,
+       "reviewed_at": "2026-09-04T00:00:00Z",
+       "reviewed_by": "Yichen Hao"
+     },
+     {
+       "id": "ai-omnibus-council-information-note-st-10599-2026",
+       "source_ids": [
+         "eur-lex-procedure-2025-0359"
+       ],
+--- before/research/migrations/2026-09-06-four-evidence-admissions.json
++++ after/research/migrations/2026-09-06-four-evidence-admissions.json
+@@ -0,0 +1,328 @@
++{
++  "migration_date": "2026-09-06",
++  "scope": "Four exact-manifestation evidence admissions from the 19-record pending queue",
++  "publication_cutoff": "2026-09-04",
++  "before_counts": {
++    "verified": 167,
++    "legacy_review_pending": 19,
++    "total": 186
++  },
++  "after_counts": {
++    "verified": 171,
++    "legacy_review_pending": 15,
++    "total": 186
++  },
++  "approved_snapshot": {
++    "state_path": "../evidence-four-corrections-20260906/before-state.json",
++    "state_sha256": "6905b098c62d931e5bc6a80ccb572ea55f9851bb6d150ca34732764d21ec1bcc",
++    "zip_path": "../evidence-four-corrections-20260906/before.zip",
++    "zip_sha256": "281c9dd1f4cb7c53b93b404047ebc8c9f1a2f9af78c6b0c850cbd038128dcfed",
++    "document_count": 186,
++    "meaning": "The immutable byte snapshot, rather than old Git HEAD, is the preservation baseline for this batch."
++  },
++  "prior_ledgers": [
++    {
++      "path": "research/migrations/2026-09-05-expanded-evidence-review.json",
++      "sha256": "9376ded38fafa1ab33a98f5349336e746cd91803dddca69029bb8e96abe92437"
++    },
++    {
++      "path": "research/migrations/2026-09-05-remaining-evidence-review.json",
++      "sha256": "bca28661d171ab5af3b3669352c26d1de96dc7fa504aaafafb04c3fc39538985"
++    },
++    {
++      "path": "research/migrations/2026-09-05-review-continuation.json",
++      "sha256": "8ae74d6013f4e1909d1db8ce30bd0417f221dc490520189e0edb5bb8efcb5713"
++    },
++    {
++      "path": "research/migrations/2026-09-06-evidence-corrections.json",
++      "sha256": "9e4bbfdcff004b23aefcefbe6e680e8e5bd6408bb28c255443d32043899dd20e"
++    }
++  ],
++  "starting_pending_ids": [
++    "ai-act-council-coreper-general-approach-st-14336-2022",
++    "ai-act-council-final-compromise-st-13955-2022",
++    "ai-act-council-first-consolidated-compromise-st-10069-2022",
++    "ai-act-council-fourth-compromise-st-13102-2022",
++    "ai-act-council-second-compromise-st-11124-2022",
++    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
++    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
++    "ai-act-council-third-compromise-part-two-st-12549-2022",
++    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++    "ai-omnibus-council-adoption-statements-st-10752-add-1",
++    "ai-standardisation-request-c-2023-3215",
++    "draft-high-risk-classification-guidelines-2026",
++    "draft-high-risk-classification-guidelines-annex-i-2026",
++    "draft-high-risk-classification-guidelines-annex-iii-2026",
++    "ecb-technical-working-document-con-2026-10",
++    "gpai-provider-guidelines-2025",
++    "gpai-training-content-explanatory-notice-2025",
++    "gpai-training-content-template-2025",
++    "standardisation-request-c-2025-3871"
++  ],
++  "upgraded_ids": [
++    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++    "ai-omnibus-council-adoption-statements-st-10752-add-1",
++    "ecb-technical-working-document-con-2026-10",
++    "gpai-provider-guidelines-2025"
++  ],
++  "held_ids": [
++    "ai-act-council-coreper-general-approach-st-14336-2022",
++    "ai-act-council-final-compromise-st-13955-2022",
++    "ai-act-council-first-consolidated-compromise-st-10069-2022",
++    "ai-act-council-fourth-compromise-st-13102-2022",
++    "ai-act-council-second-compromise-st-11124-2022",
++    "ai-act-council-third-compromise-part-one-st-12206-2022-init",
++    "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
++    "ai-act-council-third-compromise-part-two-st-12549-2022",
++    "ai-standardisation-request-c-2023-3215",
++    "draft-high-risk-classification-guidelines-2026",
++    "draft-high-risk-classification-guidelines-annex-i-2026",
++    "draft-high-risk-classification-guidelines-annex-iii-2026",
++    "gpai-training-content-explanatory-notice-2025",
++    "gpai-training-content-template-2025",
++    "standardisation-request-c-2025-3871"
++  ],
++  "dispositions": [
++    {
++      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++      "disposition": "admitted",
++      "publication_date": "2021-04-23",
++      "publication_scope": "Exact Council-hosted ST 8115/21 ADD 5 manifestation; not first-ever SEC publication",
++      "primary_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication"
++    },
++    {
++      "document_id": "ecb-technical-working-document-con-2026-10",
++      "disposition": "admitted",
++      "publication_date": "2026-03-13",
++      "publication_scope": "Qualified exact-TWD OP catalogue assertion; not first EUR-Lex availability or opinion OJ publication",
++      "primary_source_id": "ecb-technical-working-document-con-2026-10-op-publication"
++    },
++    {
++      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "disposition": "admitted",
++      "publication_date": "2026-06-22",
++      "publication_scope": "Exact mixed EN/FR OP ADD 1 manifestation; not a date for the current fully English translation",
++      "primary_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication"
++    },
++    {
++      "document_id": "gpai-provider-guidelines-2025",
++      "disposition": "admitted",
++      "publication_date": "2025-08-27",
++      "publication_scope": "Dated Service Desk resource card directly linking the original July draft annex; not C(2025) 7719",
++      "primary_source_id": "gpai-provider-guidelines-2025-service-desk-publication"
++    },
++    {
++      "document_id": "ai-act-council-coreper-general-approach-st-14336-2022",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-final-compromise-st-13955-2022",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-first-consolidated-compromise-st-10069-2022",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-fourth-compromise-st-13102-2022",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-second-compromise-st-11124-2022",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-init",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-third-compromise-part-one-st-12206-2022-rev-1",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-act-council-third-compromise-part-two-st-12549-2022",
++      "disposition": "held"
++    },
++    {
++      "document_id": "ai-standardisation-request-c-2023-3215",
++      "disposition": "held"
++    },
++    {
++      "document_id": "draft-high-risk-classification-guidelines-2026",
++      "disposition": "held"
++    },
++    {
++      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
++      "disposition": "held"
++    },
++    {
++      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
++      "disposition": "held"
++    },
++    {
++      "document_id": "gpai-training-content-explanatory-notice-2025",
++      "disposition": "held"
++    },
++    {
++      "document_id": "gpai-training-content-template-2025",
++      "disposition": "held"
++    },
++    {
++      "document_id": "standardisation-request-c-2025-3871",
++      "disposition": "held"
++    }
++  ],
++  "evidence_receipts": [
++    {
++      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-op-card.html.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:10:42.442634+01:00",
++      "sha256": "e4eb594cb998fbb767ca6a704b90ce22b2e7ed48d9cf350b08c688db62176652"
++    },
++    {
++      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-council-package.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:09:28.10865+01:00",
++      "sha256": "d7cd025ae5b6ab0ab806f40973e68aecc3e3159a17cfd7f61d81e51f4d7c729f"
++    },
++    {
++      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-direct-sec.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:10:42.443634+01:00",
++      "sha256": "80210a79981bc91903834c182e0a1f9d3936c545bbcd1d5c5d71ee1ffa46c126"
++    },
++    {
++      "document_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-cellar.xml.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
++      "sha256": "9c8575a4073f234e1e94b1309a7841847788aaffa91dd554dd15232ce4012c3a"
++    },
++    {
++      "document_id": "ecb-technical-working-document-con-2026-10",
++      "source_id": "ecb-technical-working-document-con-2026-10-op-publication",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-op-card.html.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
++      "sha256": "cbc98f1c49dd0c34561587615c9f65ccba3d2e60139afc62eee52eacc1f6d6a9"
++    },
++    {
++      "document_id": "ecb-technical-working-document-con-2026-10",
++      "source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-cellar.xml.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
++      "sha256": "a7bab2e60d25a310b681f58ebd032d4f6d4ab0bde6ad883dee44f99fdbdb8ec8"
++    },
++    {
++      "document_id": "ecb-technical-working-document-con-2026-10",
++      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-twd.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:10:21.901179+01:00",
++      "sha256": "70f66dea621bef6ba5c8840b06db56d5e3cb30d37bb59ff89f2c8580d0ccd4ab"
++    },
++    {
++      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-publication",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-card.html.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:12:33.377338+01:00",
++      "sha256": "3a15a0c1e0cbaf54cc0ebb4314424b7e3c3111e53677973610ffae5968167c88"
++    },
++    {
++      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-op-mixed-language-pdf",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-mixed.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:13:04.534481+01:00",
++      "sha256": "da1b100be59c6aeddffca11af3b46b6cbb25fa1f37ff9a6f8390c6a746d00a5d"
++    },
++    {
++      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-council-en.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:09:26.315097+01:00",
++      "sha256": "109c4356040349a5c5592eae265925bfd5b0ea6c9906c5a29c3582923c9d221f"
++    },
++    {
++      "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-cellar-metadata",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-cellar.rdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:12:24.423821+01:00",
++      "sha256": "219199d652a9307fd6dc53a1471ce7aceaacfdb7eff98c5784d6e1faad0cdd9a"
++    },
++    {
++      "document_id": "gpai-provider-guidelines-2025",
++      "source_id": "gpai-provider-guidelines-2025-service-desk-publication",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-service-card.html.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:09:59.429248+01:00",
++      "sha256": "941bddc80071ddeeebb540d3a5e1f1563a15804e3e89163c41de0d58745ee505"
++    },
++    {
++      "document_id": "gpai-provider-guidelines-2025",
++      "source_id": "gpai-provider-guidelines-2025-july-annex-pdf",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-july-annex.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:09:58.51766+01:00",
++      "sha256": "6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517"
++    },
++    {
++      "document_id": "gpai-provider-guidelines-2025",
++      "source_id": "gpai-provider-guidelines-2025-approval-pdf",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-approval.pdf.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:10:25.682+01:00",
++      "sha256": "e33d18eefc4dfceaa9d6b1a38ec10bac8775605d1bc49c42461dabcc1f520824"
++    },
++    {
++      "document_id": "gpai-provider-guidelines-2025",
++      "source_id": "gpai-provider-guidelines-2025-register-metadata",
++      "local_path": "research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-register.json.gz",
++      "compression": "gzip-mtime-0",
++      "retrieved_at": "2026-09-06T06:11:42.458563+01:00",
++      "sha256": "d05f04c58574b133ce5280da59d9244278b5bde6243b72f45c03d164e001e6bd"
++    }
++  ],
++  "inventory_alignment": {
++    "before_sha256": "10f7c690bfdcbb462cea0562cbdbdae170e67128249d461d8aa38e0831fb1992",
++    "changed_candidate_ids": [
++      "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "gpai-provider-guidelines-2025"
++    ],
++    "unchanged_review_credit": true,
++    "reason": "Only the ADD 1 full title/mixed substantive attribution and GPAI original-annex identity fields required canonical alignment."
++  },
++  "readiness_gate": {
++    "validator": "validate_historical_readiness",
++    "document_ids": [
++      "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++      "ai-omnibus-council-adoption-statements-st-10752-add-1",
++      "ecb-technical-working-document-con-2026-10",
++      "gpai-provider-guidelines-2025"
++    ],
++    "issues": 0,
++    "status_persisted_only_after_gate": true
++  },
++  "preservation": {
++    "comparison_helper": "../evidence-four-corrections-20260906/workspace_check.py",
++    "comparison_artifact": "research/reviews/2026-09-06-four-evidence-admissions/preservation-proof.json",
++    "delta_artifact": "research/reviews/2026-09-06-four-evidence-admissions/delta-checks.json",
++    "review_diff": "research/reviews/2026-09-06-four-evidence-admissions/review.diff",
++    "preserved_non_target_documents": 182,
++    "routes_identical": true,
++    "prior_sources_and_ledgers_byte_identical": true,
++    "review_attribution_changes": []
++  },
++  "preservation_note": "All reviewed_by and reviewed_at fields are unchanged. This automated evidence correction is recorded only in this chronological ledger."
++}
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/delta-checks.json; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/README.md; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-cellar.rdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-council-en.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-card.html.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/add1-op-mixed.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-cellar.xml.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-op-card.html.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/ecb-twd.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-approval.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-july-annex.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-register.json.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/gpai-service-card.html.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-cellar.xml.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-council-package.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-direct-sec.pdf.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/evidence/rsb-op-card.html.gz; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/preservation-proof.json; content hashes in delta-checks.json
+Evidence/proof artifact: research/reviews/2026-09-06-four-evidence-admissions/review.diff; content hashes in delta-checks.json
+--- before/tests/test_evidence_corrections.py
++++ after/tests/test_evidence_corrections.py
+@@ -5,20 +5,21 @@
+ import json
+ from pathlib import Path
+ 
+ import pytest
+ 
+ from observatory.pipeline import run_pipeline
+ 
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ LEDGER = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
++FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+ 
+ EXPECTED_PUBLICATIONS = {
+     "ai-act-council-general-approach-st-15698-2022": ("2022-12-06", "fd86e2b0-758c-11ed-9887-01aa75ed71a1"),
+     "ai-act-council-adoption-note-st-9645-2024-rev-1": ("2024-05-15", "e80c49bd-12d8-11ef-a251-01aa75ed71a1"),
+     "ai-act-council-adoption-statements-st-9645-add-1-rev-2": ("2024-05-15", "b1da3f85-143f-11ef-a251-01aa75ed71a1"),
+     "ai-omnibus-council-adoption-note-st-10752-2026": ("2026-06-22", "10220a8a-6fa1-11f1-ae88-01aa75ed71a1"),
+     "ai-omnibus-council-adoption-statement-st-10752-add-2": ("2026-06-24", "f76aad95-7089-11f1-9800-01aa75ed71a1"),
+     "ai-omnibus-council-information-note-st-10599-2026": ("2026-06-17", "37937497-6b1d-11f1-ae88-01aa75ed71a1"),
+     "ai-act-consolidated-2026-07-27": ("2026-07-27", "b1730fb2-8f1c-11f1-9262-01aa75ed71a1"),
+ }
+@@ -92,13 +93,18 @@
+         evidence_bytes = gzip.decompress(evidence_path.read_bytes())
+         assert hashlib.sha256(evidence_bytes).hexdigest() == receipt["sha256"]
+         assert receipt["retrieved_at"]
+     preservation = ledger["prior_verified_preservation"]
+     assert preservation["count"] == 160
+     assert preservation["changed_ids"] == []
+     proof_path = (ROOT / preservation["comparison_artifact"]).resolve()
+     assert proof_path.is_relative_to(ROOT)
+     proof_lf_bytes = proof_path.read_text(encoding="utf-8").encode("utf-8")
+     assert hashlib.sha256(proof_lf_bytes).hexdigest() == preservation["comparison_artifact_sha256_lf"]
++    later_upgrades = set(json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
+     for row in ledger["dispositions"]:
+-        expected = "verified" if row["disposition"] == "admitted" else "legacy_review_pending"
++        expected = (
++            "verified"
++            if row["disposition"] == "admitted" or row["document_id"] in later_upgrades
++            else "legacy_review_pending"
++        )
+         assert documents[row["document_id"]]["historical_review_status"] == expected
+--- before/tests/test_expanded_evidence_review.py
++++ after/tests/test_expanded_evidence_review.py
+@@ -4,20 +4,21 @@
+ 
+ from observatory.io import load_records
+ from observatory.pipeline import run_pipeline
+ 
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ LEDGER_PATH = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
+ FOLLOWUP_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.json"
+ CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
+ EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
++FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+ DOCUMENT_ROOT = ROOT / "data/documents"
+ SOURCE_ROOT = ROOT / "data/sources"
+ BUILD_TIMESTAMP = "2026-09-05T18:30:00Z"
+ HISTORICAL_EXTENSION_FIELDS = {
+     "historical_review_status",
+     "temporal_collection",
+     "relevance_class",
+     "document_date_kind",
+     "date_evidence",
+     "classification_evidence",
+@@ -69,21 +70,23 @@
+     expected_routes = {
+         row["id"]: row["slug"] for row in ledger["baseline"]["documents"]
+     }
+     actual_routes = {identifier: row["slug"] for identifier, row in documents.items()}
+ 
+     assert expected_routes.items() <= actual_routes.items()
+     for identifier in ledger["upgraded_ids"]:
+         assert documents[identifier]["historical_review_status"] == "verified"
+     followup_upgrades = set(_read_json(FOLLOWUP_LEDGER_PATH)["upgraded_ids"]) | set(
+         _read_json(CONTINUATION_LEDGER_PATH)["upgraded_ids"]
+-    ) | set(_read_json(EVIDENCE_CORRECTIONS_LEDGER_PATH)["upgraded_ids"])
++    ) | set(_read_json(EVIDENCE_CORRECTIONS_LEDGER_PATH)["upgraded_ids"]) | set(
++        _read_json(FOUR_ADMISSIONS_LEDGER_PATH)["upgraded_ids"]
++    )
+     for held in ledger["held_records"]:
+         identifier = held["document_id"]
+         if identifier in followup_upgrades:
+             assert documents[identifier]["historical_review_status"] == "verified"
+         else:
+             assert HISTORICAL_EXTENSION_FIELDS.isdisjoint(documents[identifier])
+ 
+     for row in ledger["baseline"]["preexisting_verified_records"]:
+         assert documents[row["id"]]["historical_review_status"] == "verified"
+     for row in ledger["source_changes"]:
+@@ -92,42 +95,43 @@
+         assert source["publication_status"] == "published"
+         assert source["url"].startswith("https://")
+         assert source["verification_note"].strip()
+ 
+ 
+ def test_pipeline_exports_reviewed_upgrades_and_keeps_holds_pending(tmp_path):
+     """The public pipeline must expose the reviewed split, not the old 17/114 split."""
+     ledger = _read_json(LEDGER_PATH)
+     followup = _read_json(CONTINUATION_LEDGER_PATH)
+     corrections = _read_json(EVIDENCE_CORRECTIONS_LEDGER_PATH)
++    four_admissions = _read_json(FOUR_ADMISSIONS_LEDGER_PATH)
+     outputs = run_pipeline(ROOT, BUILD_TIMESTAMP, output_root=tmp_path / "output")
+     payload = _read_json(outputs.public_json)
+     documents = {row["id"]: row for row in payload["documents"]}
+ 
+     assert len(documents) >= 131
+     # The historical split applies to the original cohort, not later admissions.
+     cohort_status = Counter(
+         documents[row["id"]]["historical_review_status"]
+         for row in ledger["baseline"]["documents"]
+     )
+     assert cohort_status == {
+-        "verified": followup["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]),
+-        "legacy_review_pending": followup["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]),
++        "verified": followup["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]),
++        "legacy_review_pending": followup["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]),
+     }
+     assert payload["coverage"]["historical_review"] == Counter(
+         record.data.get("historical_review_status") or "legacy_review_pending"
+         for record in load_records(ROOT / "data")["documents"]
+         if record.data["publication_status"] == "published"
+     )
+     assert all(
+         documents[identifier]["historical_review_status"] == "verified"
+         for identifier in ledger["upgraded_ids"]
+     )
+-    later_upgrades = set(corrections["upgraded_ids"])
++    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"])
+     for row in followup["held_records"]:
+         expected = "verified" if row["document_id"] in later_upgrades else "legacy_review_pending"
+         assert documents[row["document_id"]]["historical_review_status"] == expected
+     assert {
+         row["id"]: row["slug"] for row in ledger["baseline"]["documents"]
+     }.items() <= {
+         identifier: row["slug"] for identifier, row in documents.items()
+     }.items()
+--- before/tests/test_four_evidence_admissions.py
++++ after/tests/test_four_evidence_admissions.py
+@@ -0,0 +1,126 @@
++"""Regressions for the four 6 September evidence-backed admissions."""
++
++import json
++from pathlib import Path
++
++import pytest
++
++from observatory.pipeline import run_pipeline
++
++
++ROOT = Path(__file__).resolve().parents[1]
++
++EXPECTED_DATES_AND_PUBLICATION_URLS = (
++    (
++        "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
++        "2021-03-22",
++        "2021-04-23",
++        "https://op.europa.eu/en/publication-detail/-/publication/ee0d5478-a428-11eb-9585-01aa75ed71a1/language-en",
++    ),
++    (
++        "ecb-technical-working-document-con-2026-10",
++        "2026-03-13",
++        "2026-03-13",
++        "https://op.europa.eu/en/publication-detail/-/publication/c249d527-34cb-11f1-be39-01aa75ed71a1/language-en",
++    ),
++    (
++        "ai-omnibus-council-adoption-statements-st-10752-add-1",
++        "2026-06-22",
++        "2026-06-22",
++        "https://op.europa.eu/en/publication-detail/-/publication/e69a1045-6fa1-11f1-ae88-01aa75ed71a1/language-en",
++    ),
++    (
++        "gpai-provider-guidelines-2025",
++        "2025-07-18",
++        "2025-08-27",
++        "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1",
++    ),
++)
++
++
++@pytest.fixture(scope="module")
++def payload(tmp_path_factory):
++    output = tmp_path_factory.mktemp("four-evidence-admissions")
++    result = run_pipeline(ROOT, "2026-09-06T07:00:00Z", output_root=output)
++    return json.loads(result.public_json.read_text(encoding="utf-8"))
++
++
++@pytest.mark.parametrize(
++    "document_id,issue_date,publication_date,publication_url",
++    EXPECTED_DATES_AND_PUBLICATION_URLS,
++)
++def test_four_admissions_publish_complete_evidence_without_route_changes(
++    payload, document_id, issue_date, publication_date, publication_url
++):
++    """Catch a missing extension, date transfer, unofficial citation or route mutation."""
++    documents = {row["id"]: row for row in payload["documents"]}
++    document = documents[document_id]
++    assert document["id"] == document_id
++    assert document["slug"] == document_id
++    assert document["historical_review_status"] == "verified"
++    assert document["document_date"] == issue_date
++    assert document["publication_date"] == publication_date
++    assert document["document_date_kind"] == "document_issue"
++    assert document["temporal_collection"] == "contemporary_eu_ai_policy"
++    assert document["relevance_class"] == "direct_ai_substantive"
++    assert document["classification_evidence"]
++    assert document["bibliographic_authors"] is not None
++    assert document["additional_dates"] is not None
++    citation = document["date_evidence"]["publication_date"]
++    sources = {row["id"]: row for row in document["sources"]}
++    assert sources[citation["source_id"]]["url"] == publication_url
++
++
++def test_gpai_route_remains_the_original_content_approved_draft_annex(payload):
++    """Catch substitution of the November final guidelines for the July draft annex."""
++    document = next(
++        row for row in payload["documents"] if row["id"] == "gpai-provider-guidelines-2025"
++    )
++    assert document["record_level"] == "attachment"
++    assert document["version_status"] == "draft"
++    assert document["version_label"] == "Content-approved draft annex"
++    assert document["official_reference"] == "C(2025) 5045 final ANNEX"
++    assert document["legal_status"] == "non_binding"
++    assert "draft Communication from the Commission" in document["official_title"]
++    assert any(
++        row["source_entity_id"] == document["id"]
++        and row["target_entity_id"]
++        == "gpai-provider-guidelines-approval-communication-2025"
++        and row["relationship_type"] == "annex_to"
++        and row["basis"] == "official"
++        for row in payload["relationships"]
++    )
++
++
++def test_ecb_companion_is_not_modelled_as_a_literal_official_annex(payload):
++    """Catch an official-basis claim that the separate TWD is inside the OJ opinion."""
++    relationship = next(
++        row
++        for row in payload["relationships"]
++        if row["id"] == "ecb-technical-working-document-annex-to-opinion"
++    )
++    assert relationship["source_entity_id"] == "ecb-technical-working-document-con-2026-10"
++    assert relationship["target_entity_id"] == "ecb-opinion-con-2026-10"
++    assert relationship["relationship_type"] == "annex_to"
++    assert relationship["basis"] == "analytical"
++    assert "separate companion" in relationship["rationale"].lower()
++
++
++def test_add1_preserves_named_statement_authors_and_separate_council_roles(payload):
++    """Catch replacing Belgium and Commission authorship with the Council host."""
++    document = next(
++        row
++        for row in payload["documents"]
++        if row["id"] == "ai-omnibus-council-adoption-statements-st-10752-add-1"
++    )
++    assert {row["name"] for row in document["bibliographic_authors"]} == {
++        "Belgium",
++        "European Commission",
++    }
++    roles = {(row["id"], row["role"]) for row in document["institutions"]}
++    assert ("european-commission", "author") in roles
++    assert ("council-of-the-european-union", "publisher") in roles
++    assert ("general-secretariat-of-the-council", "cover_note_sender") in roles
++    assert ("council-of-the-european-union", "author") not in roles
++    assert "mixed en/fr" in document["corpus_assessment"]["researcher_notes"].lower()
++
+--- before/tests/test_incident_instrument_identity.py
++++ after/tests/test_incident_instrument_identity.py
+@@ -4,20 +4,21 @@
+ from pathlib import Path
+ import sqlite3
+ 
+ from observatory.historical_readiness import validate_historical_readiness
+ from observatory.io import load_records
+ from observatory.pipeline import run_pipeline
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ LEDGER = ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json"
+ EXPANDED_LEDGER = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
++FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+ TITLES = {
+     "draft-guidance-serious-ai-incidents-2025": "DRAFT GUIDANCE ARTICLE 73 AI ACT- INCIDENT REPORTING (HIGH-RISK AI SYSTEMS)",
+     "draft-serious-ai-incident-report-template-2025": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
+ }
+ HELD = {
+     "draft-high-risk-classification-guidelines-2026",
+     "draft-high-risk-classification-guidelines-annex-i-2026",
+     "draft-high-risk-classification-guidelines-annex-iii-2026",
+ }
+ 
+@@ -35,22 +36,26 @@
+         assert sorted(item["id"] for item in public[entity]) == sorted(
+             record.data["id"] for record in canonical[entity]
+             if record.data["publication_status"] == "published"
+         )
+     assert public["coverage"]["principal_documents"] == sum(
+         record.data["record_level"] == "principal"
+         for record in canonical["documents"]
+         if record.data["publication_status"] == "published"
+     )
+     reviewed_baseline = json.loads(EXPANDED_LEDGER.read_text(encoding="utf-8"))["baseline"]["documents"]
++    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))
++    assert "gpai-provider-guidelines-2025" in four_admissions["upgraded_ids"]
++    # The reviewed baseline previously had 48 principals; GPAI is now an attachment.
+     assert sum(documents[item["id"]]["record_level"] == "principal"
+-               for item in reviewed_baseline) == 48
++               for item in reviewed_baseline) == 47
++    assert documents["gpai-provider-guidelines-2025"]["record_level"] == "attachment"
+     with sqlite3.connect(outputs.database) as connection:
+         for doc_id, title in TITLES.items():
+             document = documents[doc_id]
+             assert document["record_level"] == "principal"
+             assert document["official_title"] == title
+             assert document["version_status"] == "draft"
+             assert document["document_date"] == document["publication_date"] == "2025-09-26"
+             assert document["legal_status"] == "non_binding"
+             assert connection.execute(
+                 "SELECT record_level, official_title, version_status FROM documents WHERE id = ?", (doc_id,)
+--- before/tests/test_remaining_evidence_review.py
++++ after/tests/test_remaining_evidence_review.py
+@@ -5,20 +5,21 @@
+ 
+ import pytest
+ 
+ from observatory.pipeline import run_pipeline
+ 
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ LEDGER_PATH = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.json"
+ CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
+ EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
++FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+ COUNCIL_UPGRADES = (
+     "ai-act-council-general-approach-st-14954-2022",
+     "ai-act-council-general-approach-german-statement-14954-add-1",
+ )
+ PRESS_URL = (
+     "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/"
+     "artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/"
+ )
+ 
+ LATER_COUNCIL_DATES = (
+@@ -97,28 +98,29 @@
+     assert len(upgraded) == len(set(upgraded)) == 7
+     assert set(upgraded) == expected_upgrades
+     assert len(held) == len(set(held)) == 30
+     assert not set(upgraded) & set(held)
+     assert set(starting) == set(upgraded) | set(held)
+     assert len(audited) == len(set(audited)) == 37
+     assert set(audited) == set(starting)
+     assert all(row["reasons"] for row in ledger["held_records"])
+     continuation = json.loads(CONTINUATION_LEDGER_PATH.read_text(encoding="utf-8"))
+     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
++    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+     documents = {row["id"]: row for row in public_payload["documents"]}
+     current = Counter(
+         documents[row["id"]]["historical_review_status"]
+         for row in ledger["baseline"]["documents"]
+     )
+     assert current == {
+-        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]),
+-        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]),
++        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]),
++        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]),
+     }
+     assert {row["id"]: row["slug"] for row in ledger["baseline"]["documents"]}.items() <= {
+         row["id"]: row["slug"] for row in public_payload["documents"]
+     }.items()
+ 
+ 
+ def test_previous_verified_documents_and_previous_audit_remain_unchanged():
+     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+     previous_path = "research/migrations/2026-09-05-expanded-evidence-review.json"
+     normalized = (ROOT / previous_path).read_text(encoding="utf-8").encode("utf-8")
+--- before/tests/test_review_continuation.py
++++ after/tests/test_review_continuation.py
+@@ -6,20 +6,21 @@
+ from pathlib import Path
+ 
+ import pytest
+ 
+ from observatory.pipeline import run_pipeline
+ 
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
+ EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
++FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+ 
+ 
+ @pytest.fixture(scope="module")
+ def public_payload(tmp_path_factory):
+     result = run_pipeline(
+         ROOT, "2026-09-05T20:40:00Z",
+         output_root=tmp_path_factory.mktemp("continuation-output"),
+     )
+     return json.loads(result.public_json.read_text(encoding="utf-8"))
+ 
+@@ -54,21 +55,22 @@
+     publication = document["date_evidence"]["publication_date"]
+     sources = {s["id"]: s for s in document["sources"]}
+     assert sources[publication["source_id"]]["url"] == "https://ai-act-service-desk.ec.europa.eu/en/resources?page=1"
+     assert "2026-05-06T16:" in publication["locator"]
+     assert "first" in publication["meaning"]
+ 
+ 
+ def test_transparency_route_represents_the_evidenced_draft_annex(public_payload):
+     documents = {d["id"]: d for d in public_payload["documents"]}
+     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+-    later_upgrades = set(corrections["upgraded_ids"])
++    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
++    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"])
+     annex = documents["final-transparency-guidelines-2026"]
+     assert annex["historical_review_status"] == "verified"
+     assert annex["record_level"] == "attachment"
+     assert annex["version_status"] == "draft"
+     assert annex["legal_status"] == "non_binding"
+     assert annex["institutions"]
+     assert all(role["role"] != "adopter" for role in annex["institutions"])
+     assert annex["official_reference"] == "C(2026) 5054 final"
+     assert annex["document_date"] == annex["publication_date"] == "2026-07-20"
+     assert documents["draft-transparency-guidelines-2026"]["historical_review_status"] == "verified"
+@@ -100,21 +102,22 @@
+     assert set(starting) == {row["document_id"] for row in previous["held_records"]}
+     assert len(upgraded) == len(set(upgraded)) == ledger["expected_after"]["upgraded"]
+     assert len(held) == len(set(held)) == ledger["expected_after"]["held"]
+     assert not set(upgraded) & set(held)
+     assert set(starting) == set(upgraded) | set(held)
+     assert len(audited) == len(set(audited)) == 30
+     assert set(audited) == set(starting)
+     assert all(row["reasons"] for row in ledger["held_records"])
+     documents = {d["id"]: d for d in public_payload["documents"]}
+     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+-    later_upgrades = set(corrections["upgraded_ids"])
++    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
++    later_upgrades = set(corrections["upgraded_ids"]) | set(four_admissions["upgraded_ids"])
+     for document_id in upgraded:
+         assert documents[document_id]["historical_review_status"] == "verified"
+     for document_id in held:
+         expected = "verified" if document_id in later_upgrades else "legacy_review_pending"
+         assert documents[document_id]["historical_review_status"] == expected
+     assert Counter(
+         documents[row["id"]]["historical_review_status"]
+         for row in ledger["baseline"]["documents"]
+     ) == {
+         "verified": ledger["expected_after"]["historical_review"]["verified"] + len(later_upgrades),
+--- before/tests/test_seed_corpus.py
++++ after/tests/test_seed_corpus.py
+@@ -388,21 +388,21 @@
+     documents = {
+         document["id"]: document
+         for document in (
+             json.loads(path.read_text(encoding="utf-8"))
+             for path in Path("data/documents").glob("*.json")
+         )
+     }
+     expected = {
+         "ai-system-definition-guidelines-2025": ("C(2025) 5053 final", None),
+         "prohibited-ai-practices-guidelines-2025": ("C(2025) 5052 final", None),
+-        "gpai-provider-guidelines-2025": ("C(2025) 5045 final", None),
++        "gpai-provider-guidelines-2025": ("C(2025) 5045 final ANNEX", None),
+         "scientific-panel-implementing-regulation-2025-454": ("Commission Implementing Regulation (EU) 2025/454", "32025R0454"),
+         "ai-act-proceedings-implementing-regulation-2026-1755": ("Commission Implementing Regulation (EU) 2026/1755", "32026R1755"),
+         "standardisation-request-c-2025-3871": ("C(2025) 3871 final", None),
+         "ai-continent-action-plan": ("COM(2025) 165 final", "52025DC0165"),
+         "apply-ai-strategy": ("COM(2025) 723 final", "52025DC0723"),
+         "ai-omnibus-proposal-2025": ("COM(2025) 836 final", "52025PC0836"),
+         "ai-omnibus-staff-working-document-2025": ("SWD(2025) 836 final", "52025SC0836"),
+         "eesc-opinion-ai-omnibus-2026": ("EESC 2025/03929", "52025AE3929"),
+         "cor-opinion-ai-omnibus-2026": ("COR 2025/04240", "52025AR4240"),
+         "ecb-opinion-con-2026-10": ("CON/2026/10", "52026AB0010"),

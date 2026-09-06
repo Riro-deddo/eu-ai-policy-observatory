@@ -3,7 +3,7 @@
   "entity_type": "relationship",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T05:53:33Z",
   "source_entity_type": "document",
   "source_entity_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
   "target_entity_type": "document",
@@ -11,6 +11,6 @@
   "relationship_type": "annex_to",
   "basis": "official",
   "rationale": "ADD 1 is formally attached to ST 10752/26.",
-  "evidence_source_id": "council-st-10752-2026-add-1",
+  "evidence_source_id": "ai-omnibus-council-adoption-statements-st-10752-add-1-council-pdf",
   "verification_status": "verified"
 }

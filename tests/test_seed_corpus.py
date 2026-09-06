@@ -395,7 +395,7 @@ def test_2025_to_2026_implementation_and_amendment_anchors_are_verified():
     expected = {
         "ai-system-definition-guidelines-2025": ("C(2025) 5053 final", None),
         "prohibited-ai-practices-guidelines-2025": ("C(2025) 5052 final", None),
-        "gpai-provider-guidelines-2025": ("C(2025) 5045 final", None),
+        "gpai-provider-guidelines-2025": ("C(2025) 5045 final ANNEX", None),
         "scientific-panel-implementing-regulation-2025-454": ("Commission Implementing Regulation (EU) 2025/454", "32025R0454"),
         "ai-act-proceedings-implementing-regulation-2026-1755": ("Commission Implementing Regulation (EU) 2026/1755", "32026R1755"),
         "standardisation-request-c-2025-3871": ("C(2025) 3871 final", None),

@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T05:53:33Z",
   "slug": "ecb-technical-working-document-con-2026-10",
   "official_title": "Technical working document produced in connection with ECB Opinion CON/2026/10 — Drafting proposals in relation to the proposed amendments to Regulation (EU) 2024/1689 (the AI Act)",
   "short_title": "ECB technical working document for CON/2026/10",
@@ -26,7 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-central-bank",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
+      "evidence_locator": "Cellar WORK_CREATED_BY_AGENT identifies the European Central Bank; the exact PDF is headed ECB-PUBLIC."
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "ecb-technical-working-document-con-2026-10-op-publication",
+      "evidence_locator": "Exact OP catalogue card for IMMC TWD/2026/10 explicitly states Published 2026-03-13."
     }
   ],
   "policy_ids": [
@@ -39,13 +47,16 @@
     "accountability"
   ],
   "source_ids": [
-    "ecb-technical-working-document-con-2026-10-eur-lex"
+    "ecb-technical-working-document-con-2026-10-eur-lex",
+    "ecb-technical-working-document-con-2026-10-op-publication",
+    "ecb-technical-working-document-con-2026-10-cellar-metadata",
+    "ecb-technical-working-document-con-2026-10-official-companion"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
     "policy_stage": "negotiation",
     "inclusion_rationale": "Verified official English drafting proposals formally linked by EUR-Lex to ECB Opinion CON/2026/10.",
-    "researcher_notes": "The attachment status is a researcher classification; the official title and relationship to CON/2026/10 come from EUR-Lex.",
+    "researcher_notes": "The attachment status and annex_to edge are analytical classifications for a separate companion, not a claim that the five-page TWD is literally annexed inside the authentic OJ opinion. The exact OP card asserts Published 13 March 2026; this is not treated as proof of first EUR-Lex availability. The ECB bulletin of 20 March concerns future publication of the opinion, Cellar repository creation occurred later, and the opinion's authentic OJ publication was 15 April; none replaces the TWD catalogue assertion.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -57,5 +68,65 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
+      "locator": "Cellar WORK_DATE_DOCUMENT for exact TWD/2026/10 is 2026-03-13; the PDF heading connects the document to CON/2026/10.",
+      "meaning": "Establishes 2026-03-13 as the exact technical working document's issue date."
+    },
+    "publication_date": {
+      "source_id": "ecb-technical-working-document-con-2026-10-op-publication",
+      "locator": "Publication details: Published 2026-03-13; exact IMMC TWD/2026/10; English PDF option.",
+      "meaning": "Records the official catalogue's publication assertion for this exact TWD, without claiming first public availability, first EUR-Lex deployment or the opinion's later OJ date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
+      "locator": "PDF pp. 1-5 propose five amendments to Regulation (EU) 2024/1689 and explain their operation.",
+      "rationale": "The working document directly proposes drafting changes to the AI Act."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
+      "locator": "PDF amendments address AI Act scope, standards, market surveillance and Commission guidance across the horizontal framework.",
+      "rationale": "The retained cross-sector tag reflects amendments beyond a single financial rule."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
+      "locator": "PDF p. 1 Amendment 1 and explanation address ECB prudential supervision of credit institutions and Union financial-services law.",
+      "rationale": "Financial-services supervision is a material focus of the ECB drafting proposals."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ecb-technical-working-document-con-2026-10-cellar-metadata",
+      "locator": "Cellar WORK_CREATED_BY_AGENT identifies the European Central Bank; exact PDF is ECB-PUBLIC.",
+      "rationale": "The official metadata identifies an EU institution as author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ecb-technical-working-document-con-2026-10-op-publication",
+      "locator": "Publication details identify and explicitly date exact IMMC TWD/2026/10.",
+      "rationale": "The exact working document is distributed through the Publications Office catalogue."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ecb-technical-working-document-con-2026-10-official-companion",
+    "locator": "PDF heading says 'Drafting proposals'; its two-column table proposes amendments and explanations in connection with an ECB opinion.",
+    "meaning": "Supports retained non-binding final-companion identity rather than an adopted amending regulation."
+  },
+  "historical_review_status": "verified"
 }

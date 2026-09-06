@@ -1,0 +1,13 @@
+{
+  "id": "ecb-technical-working-document-con-2026-10-op-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T06:09:28.012717+01:00",
+  "updated_at": "2026-09-06T06:09:28.012717+01:00",
+  "source_type": "publications_office",
+  "url": "https://op.europa.eu/en/publication-detail/-/publication/c249d527-34cb-11f1-be39-01aa75ed71a1/language-en",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T06:09:28.012717+01:00",
+  "last_verified_at": "2026-09-06T06:09:28.012717+01:00",
+  "verification_note": "Exact OP catalogue card for IMMC TWD/2026/10; explicitly states Published: 2026-03-13. This is a qualified catalogue assertion, not proof of first public availability or exact EUR-Lex deployment. Preserved source SHA-256 cbc98f1c49dd0c34561587615c9f65ccba3d2e60139afc62eee52eacc1f6d6a9."
+}

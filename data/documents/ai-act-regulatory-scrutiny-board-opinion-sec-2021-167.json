@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T05:53:33Z",
   "slug": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167",
   "official_title": "REGULATORY SCRUTINY BOARD OPINION Proposal for a Regulation of the European Parliament and of the Council laying down harmonized rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
   "short_title": "Regulatory Scrutiny Board opinion on the AI Act proposal",
@@ -26,7 +26,15 @@
   "institution_roles": [
     {
       "institution_id": "european-commission",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+      "evidence_locator": "Original SEC package p. 1 Commission masthead and p. 2 heading 'European Commission, Regulatory Scrutiny Board'."
+    },
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
+      "evidence_locator": "Publication details identify the Council-hosted IMMC ST 8115 2021 ADD 5 manifestation; the enclosed opinion remains Commission/RSB-authored."
     }
   ],
   "policy_ids": [
@@ -39,13 +47,17 @@
     "compliance"
   ],
   "source_ids": [
-    "ai-act-rsb-opinion-eur-lex"
+    "ai-act-rsb-opinion-eur-lex",
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-council-package",
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+    "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-cellar-metadata"
   ],
   "corpus_assessment": {
     "corpus_tier": "directly_related",
     "policy_stage": "proposal",
     "inclusion_rationale": "The opinion is part of the published Commission proposal package and evaluates the supporting impact assessment.",
-    "researcher_notes": "The SEC(2021) 167 package contains the positive second opinion and its quantification annex together with the earlier negative opinion. The 22 March date is printed on the signed package; the retained publication date records the Council transmission wrapper and remains an evidence hold, not a date inferred from proposal adoption.",
+    "researcher_notes": "The SEC(2021) 167 compound package contains the positive second opinion and quantification annex together with the earlier negative opinion. The original cover and signature establish issue on 22 March 2021. The exact OP card dates publication of the Council-hosted ST 8115/21 ADD 5 manifestation on 23 April, not first-ever SEC publication. Cellar's competing DATE_DOCUMENT 21 April is catalogue issue metadata and does not override the visible cover/signature. Commission/RSB authorship is distinct from Council transmission and publication hosting.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -56,5 +68,58 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+      "locator": "Original SEC package p. 1 cover: SEC(2021) 167, 22.03.2021; p. 7 electronic signature is also dated 22 March 2021. Cellar separately records DATE_DOCUMENT 2021-04-21.",
+      "meaning": "Establishes 2021-03-22 as the artifact's issue date; the disclosed 21 April catalogue field neither overrides the signed artifact nor establishes publication."
+    },
+    "publication_date": {
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
+      "locator": "Publication details: Published 2021-04-23; exact IMMC ST 8115 2021 ADD 5; matching SEC(2021) 167 subject.",
+      "meaning": "Establishes publication on 2021-04-23 for the explicitly identified Council-hosted manifestation, without claiming first-ever publication of every SEC format."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+      "locator": "Original pp. 2-7 evaluate the impact assessment for COM(2021) 206 and SWD(2021) 84/85, including the proposed horizontal AI regulatory framework.",
+      "rationale": "The opinion directly evaluates the evidence base for the AI Act proposal."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+      "locator": "Original opinion and quantification annex assess the proposal's economy-wide risk categories, costs and affected businesses rather than one sector.",
+      "rationale": "The retained horizontal sector classification follows the assessed AI Act proposal's cross-sector scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+      "locator": "Original p. 1 Commission masthead and p. 2 Regulatory Scrutiny Board heading.",
+      "rationale": "The exact package is authored by the Commission's Regulatory Scrutiny Board."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-op-publication",
+      "locator": "Publication details explicitly date exact IMMC ST 8115 2021 ADD 5 and link the official manifestation.",
+      "rationale": "The exact package is distributed through an official EU publication endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ai-act-regulatory-scrutiny-board-opinion-sec-2021-167-direct-sec",
+    "locator": "Original p. 2 states that the opinion concerns a draft impact assessment; pp. 2 and 5 are positive and negative scrutiny opinions rather than an adopted act.",
+    "meaning": "Supports retained non-binding opinion status."
+  },
+  "historical_review_status": "verified"
 }

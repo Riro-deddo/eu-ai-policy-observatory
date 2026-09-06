@@ -11,6 +11,7 @@ from observatory.pipeline import run_pipeline
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json"
 EXPANDED_LEDGER = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
+FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 TITLES = {
     "draft-guidance-serious-ai-incidents-2025": "DRAFT GUIDANCE ARTICLE 73 AI ACT- INCIDENT REPORTING (HIGH-RISK AI SYSTEMS)",
     "draft-serious-ai-incident-report-template-2025": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
@@ -42,8 +43,12 @@ def test_pipeline_presents_two_standalone_instruments_without_new_records(tmp_pa
         if record.data["publication_status"] == "published"
     )
     reviewed_baseline = json.loads(EXPANDED_LEDGER.read_text(encoding="utf-8"))["baseline"]["documents"]
+    four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))
+    assert "gpai-provider-guidelines-2025" in four_admissions["upgraded_ids"]
+    # The reviewed baseline previously had 48 principals; GPAI is now an attachment.
     assert sum(documents[item["id"]]["record_level"] == "principal"
-               for item in reviewed_baseline) == 48
+               for item in reviewed_baseline) == 47
+    assert documents["gpai-provider-guidelines-2025"]["record_level"] == "attachment"
     with sqlite3.connect(outputs.database) as connection:
         for doc_id, title in TITLES.items():
             document = documents[doc_id]
