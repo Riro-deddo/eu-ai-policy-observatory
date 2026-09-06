@@ -113,12 +113,12 @@ def validate_retained_route_notices(
             )
         _validate_nonblank(notice, "reason", path, issues)
         _validate_nonblank(notice, "reviewed_by", path, issues)
-        if notice.get("reviewed_by") != "Codex":
+        if notice.get("reviewed_by") != "AI-assisted reviewer":
             issues.append(
                 _issue(
                     path,
                     "retained_route_notice.reviewed_by",
-                    "The reviewed exception must retain its Codex editorial attribution.",
+                    "The reviewed exception must retain its AI-assisted reviewer attribution.",
                 )
             )
         _validate_reviewed_at(data, notice, path, issues)

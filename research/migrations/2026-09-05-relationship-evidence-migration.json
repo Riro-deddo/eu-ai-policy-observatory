@@ -3,7 +3,7 @@
   "review": {
     "reviewed_at": "2026-09-05T07:35:00Z",
     "publication_cutoff": "2026-09-04",
-    "reviewer": "Codex",
+    "reviewer": "AI-assisted reviewer",
     "base_commit": "f4085fdf6ada9da4954f815738ff2b8bffe81ec0"
   },
   "scope_note": "This was a narrow relationship and record-level editorial review. It does not verify every field or classification in each record, establish corpus completeness, or activate the prospective historical schema or gate.",
@@ -180,7 +180,7 @@
       "changes": [
         {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
         {"field": "record_level", "before": "attachment", "after": "supporting"},
-        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified."}
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified."}
       ]
     },
     {
@@ -189,7 +189,7 @@
       "changes": [
         {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
         {"field": "record_level", "before": "attachment", "after": "supporting"},
-        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified."}
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified."}
       ]
     },
     {
@@ -198,7 +198,7 @@
       "changes": [
         {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
         {"field": "record_level", "before": "attachment", "after": "supporting"},
-        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified."}
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified."}
       ]
     },
     {
@@ -207,7 +207,7 @@
       "changes": [
         {"field": "updated_at", "before": "2026-09-04T00:00:00Z", "after": "2026-09-05T07:35:00Z"},
         {"field": "record_level", "before": "version", "after": "attachment"},
-        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed."}
+        {"field": "corpus_assessment.researcher_notes", "before": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.", "after": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed."}
       ]
     }
   ],

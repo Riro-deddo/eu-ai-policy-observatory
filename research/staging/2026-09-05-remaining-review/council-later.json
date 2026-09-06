@@ -1,13 +1,13 @@
 {
   "batch_id": "2026-09-05-remaining-review-council-later",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T19:52:01Z",
   "cutoff": "2026-09-04",
   "records": [
     {
       "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-9645-2024-REV-1/en/pdf",
@@ -38,7 +38,7 @@
     {
       "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-9645-2024-ADD-1-REV-2/en/pdf",
@@ -69,7 +69,7 @@
     {
       "document_id": "ai-act-pe-cons-24-2024",
       "decision": "upgrade",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/PE-24-2024-INIT/en/pdf",
@@ -124,7 +124,7 @@
           "inclusion_rationale": "Formal legislative-act version prepared after Parliament's first reading and adopted by the Council before signature.",
           "researcher_notes": "The primary official Council release directly linked PE-CONS 24/24 on 21 May 2024. The 14 May cover date remains the exact version's document-issue date; the 21 May Council adoption is recorded separately.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:52:01Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -202,7 +202,7 @@
     {
       "document_id": "ai-act-pe-cons-24-2024-rev-1",
       "decision": "upgrade",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/PE-24-2024-REV-1/en/pdf",
@@ -251,7 +251,7 @@
           "inclusion_rationale": "Revised signed legislative-act text dated 13 June 2024 and explicitly identified by EUR-Lex as PE/24/2024/REV/1.",
           "researcher_notes": "Kept as the exact REV 1 version while using the independently evidenced OJ publication date of the same exact PE identifier.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:52:01Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -329,7 +329,7 @@
     {
       "document_id": "ai-act-provisional-agreement-st-5662-2024",
       "decision": "upgrade",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-5662-2024-INIT/en/pdf",
@@ -373,7 +373,7 @@
           "inclusion_rationale": "Official Presidency text of the final interinstitutional compromise before formal first-reading adoption.",
           "researcher_notes": "The PDF was issued 26 January; the Council release explicitly records that it added the exact compromise text on 2 February 2024. Institutional attribution follows the register's Presidency originator field rather than treating negotiated content as Parliament authorship.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:52:01Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -429,7 +429,7 @@
     {
       "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-10752-2026-INIT/en/pdf",
@@ -459,7 +459,7 @@
     {
       "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-2/en/pdf",
@@ -488,7 +488,7 @@
     {
       "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-10752-2026-ADD-1/en/pdf",
@@ -517,7 +517,7 @@
     {
       "document_id": "ai-omnibus-council-information-note-st-10599-2026",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/en/pdf",
@@ -546,7 +546,7 @@
     {
       "document_id": "ai-omnibus-pe-cons-30-2026",
       "decision": "upgrade",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/PE-30-2026-INIT/en/pdf",
@@ -598,7 +598,7 @@
           "inclusion_rationale": "Formal Digital Omnibus legislative-act version adopted by the Council after Parliament's first reading.",
           "researcher_notes": "The primary official Council release directly linked PE-CONS 30/26 on 29 June 2026. The 18 June cover date remains the exact version's document-issue date; the 29 June Council adoption is recorded separately.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:52:01Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -676,7 +676,7 @@
     {
       "document_id": "ai-omnibus-pe-cons-30-2026-rev-1",
       "decision": "upgrade",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:52:01Z",
       "checked_urls": [
         "https://data.consilium.europa.eu/doc/document/PE-30-2026-REV-1/en/pdf",
@@ -724,7 +724,7 @@
           "inclusion_rationale": "Revised signed Digital Omnibus legislative-act text explicitly identified by EUR-Lex as PE/30/2026/REV/1.",
           "researcher_notes": "Kept as the exact REV 1 version while using the independently evidenced OJ publication date of the same exact PE identifier.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:52:01Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",

@@ -1,7 +1,7 @@
 {
   "migration_id": "2026-09-05-retained-section-notices",
   "review": {
-    "reviewed_by": "Codex",
+    "reviewed_by": "AI-assisted reviewer",
     "reviewed_at": "2026-09-05T08:59:02Z",
     "publication_cutoff": "2026-09-04",
     "scope": "Editorial retained-route notices for three already-published draft guideline sections with unresolved whole-work parent relationships."
@@ -79,7 +79,7 @@
           "corpus_tier": "core",
           "policy_stage": "consultation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by AI-assisted reviewer at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
           "review_status": "verified",
           "reviewed_by": "Yichen Hao",
           "reviewed_at": "2026-09-04T00:00:00Z"
@@ -109,7 +109,7 @@
         "retained_route_notice": {
           "status": "parent_relationship_under_review",
           "reason": "This record contains the General principles section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft.",
-          "reviewed_by": "Codex",
+          "reviewed_by": "AI-assisted reviewer",
           "reviewed_at": "2026-09-05T08:59:02Z",
           "evidence": [
             {
@@ -173,7 +173,7 @@
           "corpus_tier": "core",
           "policy_stage": "consultation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by AI-assisted reviewer at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
           "review_status": "verified",
           "reviewed_by": "Yichen Hao",
           "reviewed_at": "2026-09-04T00:00:00Z"
@@ -202,7 +202,7 @@
         "retained_route_notice": {
           "status": "parent_relationship_under_review",
           "reason": "This record contains the Article 6(1) and AI Act Annex I section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
-          "reviewed_by": "Codex",
+          "reviewed_by": "AI-assisted reviewer",
           "reviewed_at": "2026-09-05T08:59:02Z",
           "evidence": [
             {
@@ -266,7 +266,7 @@
           "corpus_tier": "core",
           "policy_stage": "consultation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128561 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by AI-assisted reviewer at 2026-09-05T08:20:53Z: retrieved official PDF 128561 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
           "review_status": "verified",
           "reviewed_by": "Yichen Hao",
           "reviewed_at": "2026-09-04T00:00:00Z"
@@ -295,7 +295,7 @@
         "retained_route_notice": {
           "status": "parent_relationship_under_review",
           "reason": "This record contains the Article 6(2) and AI Act Annex III section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
-          "reviewed_by": "Codex",
+          "reviewed_by": "AI-assisted reviewer",
           "reviewed_at": "2026-09-05T08:59:02Z",
           "evidence": [
             {

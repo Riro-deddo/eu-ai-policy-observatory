@@ -115,7 +115,7 @@
       "scan_status": "recheck_due",
       "checked_at": "2026-09-05T05:38:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (scope-review reopening)",
+      "reviewer": "AI-assisted scope-review reopening",
       "verification_note": "The earlier reviewed result needs rechecking because the broadened inclusion boundary leaves the independent citability, version identity and metadata of nine listed amendment files unresolved; this scope/status review did not retrieve or verify those files."
     },
     {
@@ -395,7 +395,7 @@
       "scan_status": "recheck_due",
       "checked_at": "2026-09-05T05:38:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (scope-review reopening)",
+      "reviewer": "AI-assisted scope-review reopening",
       "verification_note": "The earlier reviewed result needs rechecking because three listed reports still lack record-level verification of an independently citable English version and required metadata; this scope/status review did not retrieve or verify those files."
     },
     {
@@ -621,7 +621,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-05T06:37:06Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "The bounded admitted set was checked; surrounding years, programmes and reverse citations remain incomplete."
     },
     {
@@ -647,7 +647,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-05T06:37:06Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Only the two admitted communications and their source manifestations are covered; the broader department search remains incomplete."
     },
     {
@@ -668,7 +668,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-05T06:28:17Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "The bounded three-record set is reviewed; empty sector scope is unspecified and wider Parliament searches remain incomplete."
     },
     {
@@ -693,7 +693,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-05T06:28:17Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "The two admitted conclusions are covered; no complete search of all 2017 conclusions is claimed."
     },
     {
@@ -733,7 +733,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -762,7 +762,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T01:28:20Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed. Bounded follow-up 6 September 2026: historical-juri-robotics-report-2017 admitted after recovery of the 64-page English report, distinct committee-adoption and official-tabling dates, full AI text and resolution relationship. Original frozen 53-candidate scope is unchanged; see research/admission/2026-09-06-three-record-admission/report.md."
     },
     {
@@ -784,7 +784,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -813,7 +813,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -835,7 +835,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -858,7 +858,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -880,7 +880,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -902,7 +902,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -926,7 +926,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -952,7 +952,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T01:28:20Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed. Bounded follow-up 6 September 2026: hma-ema-ndsg-workplan-2026-2028-v2 admitted with verified v1.4 predecessor and revision edge. Newly identified v1.4 belongs to separate ndsg-v1-4-dependency-follow-up-20260906 scope; it is not retroactively part of the frozen 53-candidate set. Earlier manifestations and wider catalogue completeness remain unverified; see research/admission/2026-09-06-three-record-admission/report.md."
     },
     {
@@ -975,7 +975,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -999,7 +999,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -1025,7 +1025,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -1048,7 +1048,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -1074,7 +1074,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -1103,7 +1103,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -1125,7 +1125,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T00:03:45Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions and access/version holds are recorded individually. Wider source-family completeness is unassessed."
     },
     {
@@ -1150,7 +1150,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T02:24:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Record-level inclusion decisions are retained individually. The Scientific Opinion No. 15 corrected-edition hold was resolved on 6 September through the approved bounded institutional archive supplements for the independently published original parent, plus official release/catalogue evidence and a researcher comparison. Original recovery is separately recorded at gcsa-original-dependency-follow-up-20260906. Wider source-family completeness remains unassessed; the coverage cutoff is unchanged."
     },
     {
@@ -1174,7 +1174,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T01:28:20Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "v1.4 is included as one new dependency with an evidenced incoming v2.0 revises v1.4 relationship. Unrecovered earlier v1.0-v1.3 manifestations and wider source-family coverage remain gaps; no source completeness upgrade follows from admission."
     },
     {
@@ -1196,7 +1196,7 @@
       "scan_status": "in_progress",
       "checked_at": "2026-09-06T02:24:52Z",
       "coverage_cutoff": "2026-09-04",
-      "reviewer": "Codex (AI-assisted evidence review)",
+      "reviewer": "AI-assisted evidence review",
       "verification_note": "Original dependency and corrected candidate included with one analytical corrected-to-original revises relationship. No original EU-hosted PDF or official correction schedule was recovered in this bounded search. Academy text equality does not establish byte or visual identity. This resolves the identified dependency without asserting source-family or EU-wide completeness or advancing the publication cutoff."
     }
   ]

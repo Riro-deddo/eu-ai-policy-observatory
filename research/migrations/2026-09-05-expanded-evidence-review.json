@@ -1,7 +1,7 @@
 {
   "schema_version": "expanded-evidence-review-migration-1",
   "created_at": "2026-09-05T18:17:11Z",
-  "prepared_by": "Codex (AI-assisted evidence review)",
+  "prepared_by": "AI-assisted evidence review",
   "publication_cutoff": "2026-09-04",
   "integration_status": "reviewed_local_build_blocked",
   "tdd_red": {
@@ -54,7 +54,7 @@
       "path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "sha256": "3ade776d6f54f50137e29d14e91bbf205798615c549ce2e7190bffe0eafe4a9a",
       "batch_id": "2026-09-05-expanded-review-legislative",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "records": 36,
       "upgrades": 13,
@@ -65,7 +65,7 @@
       "path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "sha256": "8f089fd1203dee5ca9c444dc9b93a6339384c73cdcf5f5a7553e3d1a5143094a",
       "batch_id": "2026-09-05-expanded-review-eurlex",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "records": 34,
       "upgrades": 31,
@@ -76,7 +76,7 @@
       "path": "research/staging/2026-09-05-expanded-review/commission.json",
       "sha256": "bbee0a452ea8967c675ace2d4a532d66705044eea16c45e5382a1364fc184559",
       "batch_id": "2026-09-05-expanded-review-commission",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "records": 44,
       "upgrades": 33,
@@ -617,119 +617,119 @@
         "id": "artificial-intelligence-for-europe",
         "slug": "artificial-intelligence-for-europe",
         "record_sha256": "dac7c01e37e4ec28072bd37e1352a736ee6c5bd8c6166a7a201807c66fb249d8",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T10:34:49Z"
       },
       {
         "id": "building-a-european-data-economy",
         "slug": "building-a-european-data-economy",
         "record_sha256": "506497e265db1a32322c16c361e8d234108582ad13921a169b876c8a42406c8d",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "building-trust-human-centric-ai",
         "slug": "building-trust-human-centric-ai",
         "record_sha256": "c2af92dcafa4b7e2844fccb906b4fde05b0d360f04564c06d74f340ff5e724d8",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T10:34:49Z"
       },
       {
         "id": "civil-law-rules-on-robotics-resolution-2017",
         "slug": "civil-law-rules-on-robotics-resolution-2017",
         "record_sha256": "332f0c9ea14ff362cbafc7217c05034889cf70550b8e6309dbbc18f64dcf8557",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:28:17.769Z"
       },
       {
         "id": "coordinated-plan-on-artificial-intelligence",
         "slug": "coordinated-plan-on-artificial-intelligence",
         "record_sha256": "381a4b8a8c649f84880eccd725810ed50d3526e94751fe5e4b91a15ee71fd599",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T10:34:49Z"
       },
       {
         "id": "council-decision-84-130-eec-esprit",
         "slug": "council-decision-84-130-eec-esprit",
         "record_sha256": "7b053375cde675f44f8a42f3eb22d131aa4cd97930c57ab965252244cf81961e",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "council-decision-88-279-eec-esprit-ii",
         "slug": "council-decision-88-279-eec-esprit-ii",
         "record_sha256": "3136f3e3f8a9b0ce8d95499227ceb156325c212e383bcce2cb26a871bfcb83d6",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "council-decision-88-417-eec-delta",
         "slug": "council-decision-88-417-eec-delta",
         "record_sha256": "c8575497dd08fa5c9fcfc2210bf95ef2985830841d7cef005233b8a232ccb287",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "council-decision-89-415-eec-doses",
         "slug": "council-decision-89-415-eec-doses",
         "record_sha256": "e75c418325a5ee80bc7a445da2e10d160eb7c67f4656a93411e0f95fdd6bc7fa",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "council-decision-94-802-ec-esprit",
         "slug": "council-decision-94-802-ec-esprit",
         "record_sha256": "cb14cb1260deb70b0986445ed27ad5e953ed1f193e4c75b8b84dad8c66c0fa47",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "digitising-european-industry",
         "slug": "digitising-european-industry",
         "record_sha256": "5a31f6f6859d91850aa54be180ec91c63d073e87115abbc0de1397905f021abd",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "european-civil-law-rules-in-robotics-study-2016",
         "slug": "european-civil-law-rules-in-robotics-study-2016",
         "record_sha256": "80bb0623f93eaa471e67c6fcda376e00260c84282342bbf5c7a27c5a0731d208",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:28:17.769Z"
       },
       {
         "id": "european-council-conclusions-2017-10-19",
         "slug": "european-council-conclusions-2017-10-19",
         "record_sha256": "8c11724d7612ee5487eef40fe664e42c4d27a5dc5e26389b3d3a3b7e710cde97",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:28:17.769Z"
       },
       {
         "id": "european-council-conclusions-2017-12-14",
         "slug": "european-council-conclusions-2017-12-14",
         "record_sha256": "46e5be59f922b7f0c243569d4c7b39ec6a0f62884595aaee98dd0098aa21fcb8",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:28:17.769Z"
       },
       {
         "id": "fundamental-rights-implications-of-big-data-resolution-2017",
         "slug": "fundamental-rights-implications-of-big-data-resolution-2017",
         "record_sha256": "2190b14e3344c0a1030e1dcbce2346121add2ab15f15b44ccdac5eb86983e321",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:28:17.769Z"
       },
       {
         "id": "horizon-2020-specific-programme-decision-2013-743-eu",
         "slug": "horizon-2020-specific-programme-decision-2013-743-eu",
         "record_sha256": "b6d9e436fe4f151e45c119cae0ad2a881645d6f6d93ff443f4e190121aff8a3b",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       },
       {
         "id": "sixth-framework-programme-decision-1513-2002-ec",
         "slug": "sixth-framework-programme-decision-1513-2002-ec",
         "record_sha256": "a32b76bd98bba222aa0ee721b8e00f422b0a8a9776b40bd63d8cb3402ad9a5f7",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T06:37:06.8601555Z"
       }
     ]
@@ -1218,7 +1218,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 0,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "f204212901e3c404cc7db669ab055e21127254f1fee3a77ed59c6e5796012942",
@@ -1250,7 +1250,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 0,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "464085f4175c8bddde2ef46a937e7b931d521c3b817f05ab702c92793eee78cd",
@@ -1285,7 +1285,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 1,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "18d81be05b875bc238402ca3df2132a4188cd2809a1bf930eaf9e1b57f396d5e",
@@ -1320,7 +1320,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 2,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "26a76bee8448434c4c4b89439f5b2efdfefb149fba2c750a1e991383ed7d0e3b",
@@ -1355,7 +1355,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 3,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "8af6a53b29003d4c1e0c08fc4c03eaac4b8321cb9c3ede7639e76bb70358539f",
@@ -1390,7 +1390,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 4,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "50fe9c60af74e2873185d7b43523be1b29572e0963c9643c15d440cdf5e1a331",
@@ -1425,7 +1425,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 5,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "41b3c8b2e12f641bd864767496b2c2b8a920472d93d8f628c3af9e6fe8a2dc29",
@@ -1460,7 +1460,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 6,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "ec5e0d9db43c6ce6390eadbb1d8441de44111f4d40ec73683c200ab867bd0f08",
@@ -1495,7 +1495,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 7,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "cc8671495b3595dd16673e2918695320667a542ec5eaf3e84f2cba9ea93648f1",
@@ -1530,7 +1530,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 8,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "b98dabf4368f596e8e8541429e25951bd9a808c42d8d0709b16b4308c73daf45",
@@ -1565,7 +1565,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 9,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "4becb9451bdc84fef2acf0666d24c32740a323e5d78c41e6f4cb7c410fd40890",
@@ -1600,7 +1600,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 10,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "5271c400ec3217b3605c5364a50d3564463156e1e697d72a6e4f4e1bda730a5b",
@@ -1635,7 +1635,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 11,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "a1730cc369aa02ff411c1c011a00325e34a55a1819eabc50bb2f642630fe9c04",
@@ -1670,7 +1670,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 12,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "2d9703778e0bc3bca094fd2fe90a3fbe1abbf64b52571f61da465bdb607a36b7",
@@ -1705,7 +1705,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 1,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "e666adf6870b957ded812e3f265c8461d2c01a0c98c4832aa64bdde0a650c14c",
@@ -1749,7 +1749,7 @@
         "record_sha256": "2adb0b24ced0c62a0d9c3f388068de011b4b8b4d9148d160a776f1bd4472c26c",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -1758,7 +1758,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 2,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "39fcadeca4c94b50033de1ff316862b98776395c568e11b25e7cbb9bc3852cde",
@@ -1800,7 +1800,7 @@
         "record_sha256": "92863974711484b0b820e14d6b4985222d7825602d8b8eea1c45a9ef80d50338",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -1809,7 +1809,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 3,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "cc7fedae51f829dc188774b6e01b1854d2679c2dbc6872243a6bf2d982a72ef6",
@@ -1851,7 +1851,7 @@
         "record_sha256": "0b959df4f168ec68dfab5496b1d7985edc48afaeb0c4cc1200a0018121123570",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -1860,7 +1860,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 14,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "fa0d0cb57811bce319956742a2cbc24a94eaab931585775baec5ebef1cba550d",
@@ -1895,7 +1895,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 13,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "3cfc01ccc31e9d79ea56facbaff9a69dc456477d5ae22a901994be6fa57dd1f8",
@@ -1930,7 +1930,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 4,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "df0a497e0d0d1f4095208b480a644b99a8882f2f9cff7cc6eed7b0b30d25be18",
@@ -1971,7 +1971,7 @@
         "record_sha256": "aa5cfe37e300ad1590593c5a0134e6890ce7ab276e02bfc3d967e2ffc7103b52",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -1980,7 +1980,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 6,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "36a0116f36d25726825febc2f30aee896d4e377882c75380c1eafc27b8c8a7e9",
@@ -2022,7 +2022,7 @@
         "record_sha256": "fd1f1c429e12a3455c67201e14423713002a240889223be6ed8e6d1e9c479415",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2031,7 +2031,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 5,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "565b0637a228871fc9c0747f79e7edd365016aa9516baf1eec6510eab8f0a2a8",
@@ -2073,7 +2073,7 @@
         "record_sha256": "d2b843d2de33b2a968fad85700b465f5ea60ceebb457304a10a8d1ec249f6a94",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2082,7 +2082,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 15,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "fd725c874545043858c05704707d348f76265b9b4cbbbc0be0a9b84b2b5e3b76",
@@ -2117,7 +2117,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 7,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "4f7b4591d9b580b5b27455d6b2fa2853080fc1613defc1c0747e711f9497c7cb",
@@ -2149,7 +2149,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 0,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "e265e6fc88ae5d51142b1cbe9085e71c47b1919f3563f3af2b41f1293d60eaad",
@@ -2190,7 +2190,7 @@
         "record_sha256": "cf2440f6991e449dfa5937863aaf3f4d16d10380224a4efb468168528d237ff3",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -2199,7 +2199,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 1,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "28141eea4a3e07055224e77bbcadd00095edbc59efc433b1acd78d10ecfa3583",
@@ -2240,7 +2240,7 @@
         "record_sha256": "540b063a8741a0b9412171aa9845bb4b29625f5d24912be227fe4e76d34a4d54",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -2249,7 +2249,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 9,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "1404eefb56ebd13983b5905c562f31b159862c762507b87f2842d1f32f15357c",
@@ -2291,7 +2291,7 @@
         "record_sha256": "18b4068666507c4b3f6db0ed8337543294a29edeea60213706b607ea15a8bc16",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2300,7 +2300,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 8,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "734bac87e212a91470fa3eff20e8d91e3aea4f8e941d575b9d023baed9f2a0a9",
@@ -2342,7 +2342,7 @@
         "record_sha256": "1b530e618c79c9b61f94b36b3ad0530ef408e3d199d3f0bf9cdfc4847f4c4e2b",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2351,7 +2351,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 10,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "84fae751353753b7208ca1eae74e574fc0c89211978f86d4df3c3ff8184ebc82",
@@ -2395,7 +2395,7 @@
         "record_sha256": "58ade22477374ca4b4a2114d12db84b93c337873d92b6919d685cf9620d3f706",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2404,7 +2404,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 16,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "9ba77d9207fc6c87bcd6220545e3e6fb01141195cbd7099c7d5de67d9604ba14",
@@ -2439,7 +2439,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 17,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "95b2f270975f2876b66e0aa1d14aa984dc42ddaaf384bca283ff11837f6a320e",
@@ -2474,7 +2474,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 18,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "4a1eabe98b658c24198f51ef9c0465f8e7c5f100e86a1053cd3c6582992917d9",
@@ -2509,7 +2509,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 19,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "f35516839e17ecf2db38202855f05d5e296ea0108ba01f77dc16528929bade68",
@@ -2544,7 +2544,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 21,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "9daee95f77968e595177e8ea2b2d12c89bf30b617062b53818ac58bf1c0a4c51",
@@ -2579,7 +2579,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 20,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "94bc47a7ac504b0886ef4b0eda49fb16080c05dbd90e8266329eaef21dec85b4",
@@ -2614,7 +2614,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 11,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "0c73f7813b1df0f27e75915f19194a27811744ffc98ed78d3eec52ff8637be14",
@@ -2656,7 +2656,7 @@
         "record_sha256": "742d82e3c6aa4963871377de0e0387a747b2a7c1f6b03ffce4c3a6a1b6b1e4b4",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2665,7 +2665,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 12,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "371ebfe4a994ac95455708ac1f410eeba80f87a23431788a0f2271821776c24b",
@@ -2706,7 +2706,7 @@
         "record_sha256": "074331b014b82960548583f5af5898f446c3cfc196abb0885c946029c62e4f67",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2715,7 +2715,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 13,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "bc4fdad9f197b5a193f244a452ce589b3974be591a385a3bebe9b6776a25ddb8",
@@ -2757,7 +2757,7 @@
         "record_sha256": "78e8eea01840d71c5a351ca9d306eb0b9c9bdea09ccc1f522e3ee9110fad750a",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2766,7 +2766,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 2,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "21726ffda73507403dcd32756e9d082e244c612a4faa46f4ddb2ad5490a3bb7f",
@@ -2799,7 +2799,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 3,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "b0510c7a51b3d6b3a94641b6d0d752ccba66e13472975d4844ebc4f47905bcff",
@@ -2831,7 +2831,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 4,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "6bd8b0451dfa3a5451c9f3ed36eba6f179c0f8efeceddf84a6e34cf0b371a20b",
@@ -2872,7 +2872,7 @@
         "record_sha256": "50c117fe10ed712ed944f4f6d362fd46f0fe671fc4f911af766dc149771a982b",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -2881,7 +2881,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 5,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "1753f8ef75592b65bbd56ec1926ac47aa0054d61d07155726564e86a37895bd9",
@@ -2922,7 +2922,7 @@
         "record_sha256": "aa91801a26d168eda91a3ac4673a18c059c8b73b892ae71d2013568c4fee8959",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -2931,7 +2931,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 15,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "8cfe5235717a0b133bab6c4577a52807d6af56bb05aa4520e78965510edb8d21",
@@ -2973,7 +2973,7 @@
         "record_sha256": "f694cff9b858ef32804f4bc32947eb97fb967a38847735b5c1a05f0aec384658",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -2982,7 +2982,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 14,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "c5e3a4276314cbab0c716400d990b3addb9f21660d3ef731981cf0a68d1e851c",
@@ -3024,7 +3024,7 @@
         "record_sha256": "ebdc73b033079ca1dbcca32baf14f747d7886146aef4603d5244503cc06d53d3",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3033,7 +3033,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 16,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "31b1243dc9e4300d64135a3aa1724ff71a8d700d5360ccd2edabe3e46c858660",
@@ -3074,7 +3074,7 @@
         "record_sha256": "0940bd759dbff9d8ed89840c9b4182e745d96e42d96e2b084ad9e2badc5acb6d",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3083,7 +3083,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 17,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "3b3652cbd609bdc6bc5271593ae91e330ee62f40818952538cd2b361e963b6cf",
@@ -3125,7 +3125,7 @@
         "record_sha256": "b5047cc4c2367655105bf6245babc4d3efa2503b9a89e11770a6e292df4e1c7a",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3134,7 +3134,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 18,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "998f4afae033837a7835e1951987183d506c41ee8d27e3ea2e22504314bde38c",
@@ -3178,7 +3178,7 @@
         "record_sha256": "dd1e6ba5c28863965da91dff1b204b964cf8aea7e0793528d2528c5b8653533b",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3187,7 +3187,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 19,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "429c652c80e1e0ac94c86cfc7367ba19bb78a211af3b60e6dfdb9192da2846de",
@@ -3228,7 +3228,7 @@
         "record_sha256": "cd7cfab0c93cf1732cb09aaedc67f8d87a9f57f3843d97fc0c6337a4c01b0e71",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3237,7 +3237,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 6,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "84dc9559a5ca28586849adcf9c9b168d1f5686d86840ac97e1606fd06f6d9e1b",
@@ -3280,7 +3280,7 @@
         "record_sha256": "f1b63aba45c8da07f4f3d7846d8a0831acb14d36b5e8d6192a58172e54174135",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -3289,7 +3289,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 7,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "c260a27d541909bd228e35cebc5bb1a452985b7261db9f03da3ce89316a802bd",
@@ -3334,7 +3334,7 @@
         "record_sha256": "7f66f4751eb2f01a18e7e237abe3f9b810c2730da48ce0979196fe96fbe8f114",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -3343,7 +3343,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 20,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "b32f077bd17051823e75a2f0d8dc69920a270ef9cba36bea63cfbcb05518d0e9",
@@ -3385,7 +3385,7 @@
         "record_sha256": "5116c0d71e4a05ca08c96897b43c54466692a093cc4e5558c19bcf6e5554e7d6",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3394,7 +3394,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 21,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "a2a040dc6af9661a53ac47c514a8f2ccf964cf93f2ad4833944e8b56dc3c1240",
@@ -3436,7 +3436,7 @@
         "record_sha256": "91b5cf9bca5cb01ff1ce2617f6acf263b0cddd00117fdc20a12ec6c55c14d59c",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3445,7 +3445,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 22,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "24201e4b13fcf43472fa0a16f942ee0289f40df1d01fc2ed2245ff0f07058915",
@@ -3487,7 +3487,7 @@
         "record_sha256": "e9e508fbf5dd2a8636e3ed20bd9324fda7bde293b8a8c5940258b84f1e6aa8ab",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3496,7 +3496,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 23,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "b5ad8fc5bdb9c0e6df59bfaa3e25f480c4d552aa550280d8f071341479f48f6e",
@@ -3537,7 +3537,7 @@
         "record_sha256": "2e08dc402f0d26219d3180ab144964b02213c013a43bb2186bdd60570d61462d",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3546,7 +3546,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 24,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "8b070f6a5ae6fa7d73270c23a2c3ff0253072aa40bdf7f95dfe14ae1b9c5bb60",
@@ -3587,7 +3587,7 @@
         "record_sha256": "a593c376f531340b24cef369bf283e382b3c1bb18b1009f3d67339bf58c374da",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3596,7 +3596,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 8,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "e83b5f87000b5ee11fa9112ccb240e640f93c7b9893b03a0c36e29c93037df76",
@@ -3637,7 +3637,7 @@
         "record_sha256": "96b08655d0e954df4cb51a92075026002e51a341d37c72d94db1d05467c5916c",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -3646,7 +3646,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 9,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "d0c53ef674a5e06da3bdf16ab931fe9590003a7811226c58fc2a74c1820ac9e5",
@@ -3679,7 +3679,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 10,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "24c06bb90275b319f70e01147be40a163925dc01a3eacd6125f449d1055b9357",
@@ -3712,7 +3712,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 11,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "09266f3eac1541124fcdde4af28608f7449d60bd6a75dd50192a9bacd87e3654",
@@ -3745,7 +3745,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 12,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "4597cc8f73156a820dcb4b63672427aa3418c38d1b5de0f42f36b32e51707ff4",
@@ -3786,7 +3786,7 @@
         "record_sha256": "c7c65fb8e2a579c66bffa715c30d5cf1f09838b81ec88c60087aa69519cee217",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -3795,7 +3795,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 13,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "d641c96ea157a2917aeb9c1be07f0a5870086ae0e173ce93de9349762586d879",
@@ -3836,7 +3836,7 @@
         "record_sha256": "9ce8f33e081968ebb3cb9ea85f550d3ba664fb637661022631cc265b3c58a620",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -3845,7 +3845,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 25,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "83f3e0249f261c21d29cfac11d2be754ae4a303d25fd0a3bcb3d0fce7fc07c44",
@@ -3886,7 +3886,7 @@
         "record_sha256": "04ae381fef96553f22d5ec6d42eeeddab4affe4a95201aedd663b1aabbc0bcf5",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3895,7 +3895,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 26,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "da18da9b97c310c9c2d3a563ab29be90f56db766021232a1cbe2af428f104684",
@@ -3936,7 +3936,7 @@
         "record_sha256": "aefe74bc501e849239803349c28deec047d3e39d66fe4a4aa98d3b4c7483f5d0",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -3945,7 +3945,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 27,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "9f8ec161bc6f872a1a9c788b1fa85bd196dd83d5c20ea9df3ff0d236ab9dcaf3",
@@ -3977,7 +3977,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 14,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "2ebc9bfc66f14b9a030c8515f4b820e5ef1262f586c89e56c5242a2948b7f3e2",
@@ -4021,7 +4021,7 @@
         "record_sha256": "82299caee4ec48e8767973be02083de4fb5a37b14242ff97adb96cd33b2a4b59",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -4030,7 +4030,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 15,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "67245cbb72dbd9deb273ba70b7956ea11bb786646566a1fc0965d24f44e0c07a",
@@ -4072,7 +4072,7 @@
         "record_sha256": "cacd425850602943e9a37d1f98b1aa0b661ff94dea275641a94b0a81de492e03",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -4081,7 +4081,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 28,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "84457baf7929993997f6810dd0625437ff225c47dd0468cc6d25f572f700edaf",
@@ -4122,7 +4122,7 @@
         "record_sha256": "1f386f1df044d912780ffea8630acddd0afb04d10552eab9d7908b63c2032133",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -4131,7 +4131,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 29,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "ff34feeafc1e3a6fe5f90224a39e83e787c7e235827fd1ba47e996364c077781",
@@ -4172,7 +4172,7 @@
         "record_sha256": "ec36917f2ceee9a3a02d8bf3adea6dfc0180624ff0510a70565ede0319c90130",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -4181,7 +4181,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 30,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "9638af88ea1a5fbe286486cc8f027621d17e5a1e5aad7c7948bba79db64f18a1",
@@ -4222,7 +4222,7 @@
         "record_sha256": "d5eb480e2929b5baa363db810ef21893f824d50087ab3f243356b6b11c1c20f1",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -4231,7 +4231,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 22,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "703118312cf01184eb64cb717dcfad141dcbcacbabcac9fafbfb35e2eebb9c2e",
@@ -4273,7 +4273,7 @@
         "record_sha256": "0f321023fb130c01eb6c0bb55a9ef7e2caf0551da05d85f7323206e6590b5335",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4282,7 +4282,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 23,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "6c988b8c0c11d6134f828d725cffaa75b78a82cf7a75b09b19a81a08d9c19f3d",
@@ -4324,7 +4324,7 @@
         "record_sha256": "286590658617d1027055e2b793403f1e38069cce14b638ce8657564b35ca0fbf",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4333,7 +4333,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 24,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "8a03534af80bd69a2af76c03a90578b454799da1b0a9c671060cc7f4dabaebf4",
@@ -4375,7 +4375,7 @@
         "record_sha256": "9a934ce147a0a2348a0fd2dea2506b75453c89bdecd1f6b9889850f588f21b21",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4384,7 +4384,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 25,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "b3fcde1744f94a4c0d7cd43737da053d192183c7d7abc8db1da159ad17699cec",
@@ -4426,7 +4426,7 @@
         "record_sha256": "a878a9a238d2509f64872aaad826284e7b4201605b96b256022aeb2f890df975",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4435,7 +4435,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 26,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "69c3ad717d43c37611708a91f03aebd9b96bfcd21c4de1fb1adabf1ba7ecc755",
@@ -4477,7 +4477,7 @@
         "record_sha256": "8260c78689f64b2378c380c8b1d779c530a7459bbd4267a291ce1d3d34df78f7",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4486,7 +4486,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 27,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "a53cc38af014c727988aec3e82575d80a54eca3f0b5a57705500e80eee121fbe",
@@ -4528,7 +4528,7 @@
         "record_sha256": "4c98bb8366e92e0dcdb0469af9654b237ad120d69c8cc35b007824867a0134ab",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4537,7 +4537,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 28,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "7a4325670bfb69f32c83ba391aa649c95cd29797788651c8a3d7d33e951bc523",
@@ -4579,7 +4579,7 @@
         "record_sha256": "79cafac48811a34e16137849d3256e345bcf59fd09c8f5951e7efa772cffb69e",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4588,7 +4588,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 29,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "5523735086414da4aeb4b702d732967b14ed63dcd79fe4f44080f82a6042c03c",
@@ -4630,7 +4630,7 @@
         "record_sha256": "1ce13814ceba600c49f6535800017e1c8f5516370761292e18185c6c245fede0",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4639,7 +4639,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 30,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "bea7a0e1b9c6e50f90bdaa2cc20963c7f97bd0dbd2197bee69f3efd4ea8e845d",
@@ -4683,7 +4683,7 @@
         "record_sha256": "b0c5c9eb7c3eb5d960d165cf57428e483f72610c9094e70104f75ff218c590bd",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4692,7 +4692,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 31,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "95f3ad8b7ca841b1a0640f11c349a9fc36f9464da162e15d7f67041266ea9dcf",
@@ -4734,7 +4734,7 @@
         "record_sha256": "21713abfed4f2f95a5c65c2eea4b00c73189b0d95b7282135ae8e80c28586750",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4743,7 +4743,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 32,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "6368bf40bb4bb9c4885ae3b1f08e9e77b5c12a4414e52aeed9d720c043c93cac",
@@ -4785,7 +4785,7 @@
         "record_sha256": "ed78b64596634b73388d81730eb56d150cad91b8feaa9fab64471a6cb9ee4cc4",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4794,7 +4794,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 33,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "57f404c3252c236247a76354aa9402378800c64ef786b7e121539b1af2177b55",
@@ -4836,7 +4836,7 @@
         "record_sha256": "d7e91860c914c9c82deb1936d8dc22b910954cd84da02685002cec57c18bba7c",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4845,7 +4845,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 34,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "bc3a207eb7469b75718fe04a8d5718ba109a1e686f7c39f4a24175cdb87f4a9c",
@@ -4879,7 +4879,7 @@
       "partition": "legislative",
       "handoff_path": "research/staging/2026-09-05-expanded-review/legislative.json",
       "handoff_record_index": 35,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:12:42Z",
       "before": {
         "record_sha256": "84cb47537619166cf9fa4f2ec2e66688cda82d7ec6cb858c6cdc6f100848c466",
@@ -4920,7 +4920,7 @@
         "record_sha256": "6d7f676ae503f39ab673d206e061a923087bdd0b542d9b5c23ce2225776fa933",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T17:51:59Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T17:51:59Z"
       }
     },
@@ -4929,7 +4929,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 16,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "4775cc34aa464c99b55868dc4412cd46b973927b003b7b30711a906000ac4327",
@@ -4970,7 +4970,7 @@
         "record_sha256": "b597804b5e26528ccdfaeb5dab8bba765cf26ff7af9d36e36d8419102670fc0e",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -4979,7 +4979,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 17,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "b3bf1b8b1ffba478965e4bab704c840dd8e90434115ab5118a01812ee796f8d6",
@@ -5011,7 +5011,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 21,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "1f2f4a5b552e30ab42d74ab098810b9f9fca9a211e6f7d9e4538301ef326ebe9",
@@ -5053,7 +5053,7 @@
         "record_sha256": "c37c7f93bde55b83e3d5152ed96cf91599d6ab118df1d4f7663b89cca93d336c",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5062,7 +5062,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 18,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "d0d9086a944c3bd537832fa2e897bd376d3072556c94f64cb142fec33bf74e3a",
@@ -5104,7 +5104,7 @@
         "record_sha256": "0b3735ef3d6c070a443fba64e855858ccd8934e33fc6cee4b675520302e760b2",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5113,7 +5113,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 19,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "3a1d7a32679be543bec90554303ce68fa3b2c35b1935572b7923ee18462160f1",
@@ -5155,7 +5155,7 @@
         "record_sha256": "e6c36d085063684df2c1d3f2a495910783a2577b3a3e55d9c0d9d45abadd2353",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5164,7 +5164,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 20,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "6330d3ada7a8853b99f251f6d9928932312500e9ec29585c4d966f76abd28b4d",
@@ -5206,7 +5206,7 @@
         "record_sha256": "8055caddb0aa035fa7ef44dafab5786517017654a09355a27b855f547b87b805",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5215,7 +5215,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 22,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "b3b4a87ac20354c2770a1fabbb4d17e1abe1c39f99ad08ef51c6c4e691976a06",
@@ -5257,7 +5257,7 @@
         "record_sha256": "aba3e2e3fa4dc26cba75fb37b5761705518708638a0db24380ee86fe8ce7baa5",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5266,7 +5266,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 23,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "ebe1d43310789be76c16b93827097b880710cc49645629c8c715992a91bde294",
@@ -5308,7 +5308,7 @@
         "record_sha256": "9f8355c0ef7ce7d51081d0cf70c22e69734ffb5bb1ea65978d6c5e9b82f8b4c7",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:11:15Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:11:15Z"
       }
     },
@@ -5317,7 +5317,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 24,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "af3bad07baa2007951bd4c7f7f6c6825964169e5c66aba263cdf231214c9f00d",
@@ -5359,7 +5359,7 @@
         "record_sha256": "bcf2ff53d4856fafb2e50d3ea1c770ce8b034c672161a096963387b9285fcb84",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5368,7 +5368,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 25,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "82e853614d1da8234ed2a4ff8affc0979c71eef785d16c09cb9e80a71fd805f4",
@@ -5414,7 +5414,7 @@
         "record_sha256": "2015f5e23b65913e94e7b555f28bae3aca6a935f1a01fc13f4cf1418674fc373",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:11:15Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:11:15Z"
       }
     },
@@ -5423,7 +5423,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 30,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "dffc196934bf067bdacd89282a07086115f0c83ae0fd0923e9f4c0ddd169c83e",
@@ -5465,7 +5465,7 @@
         "record_sha256": "7c3e48e3ced73826fce6c9eb4f70162feb435d1e3653006ce02589fe51528de6",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5474,7 +5474,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 26,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "74c06ef372245b26cbd3541a9fd243bbd5ec5123f73c7868ded691be65c2336c",
@@ -5516,7 +5516,7 @@
         "record_sha256": "f35f4663bfce919f12586ba55155a92da05c5918c973cfeceb28cea7d5642626",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5525,7 +5525,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 27,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "d6192ba4225deacbdf990b7bb37d2bcee04ba130e0610d760318f3dbc02c05fb",
@@ -5567,7 +5567,7 @@
         "record_sha256": "791f9e16ad08cafca733ae5d64c12475a7c13f7968c2b577d97ca4a884da7e65",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5576,7 +5576,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 28,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "983a0be8fb65a7ae969fb1ece36c2ea45ff533cdcff4bb1b0caf52ba008a0221",
@@ -5618,7 +5618,7 @@
         "record_sha256": "725bf940e57353175eb0e4f3ecfbfefef20832a0b64ae2debe46ed6ff27710de",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5627,7 +5627,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 29,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "773795430ab3992dbd72f088366bfeb935b14b2823351cc8b294809e16d88fd6",
@@ -5669,7 +5669,7 @@
         "record_sha256": "0e0562b6b8915df7ffd9cd9a714165d5a34f40a831316ca7f88c43276e24b527",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5678,7 +5678,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 31,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "b2f48d9abf27f5613db9542e9e1bea2eab962410cd4ebebb7ee86cd8f7720e82",
@@ -5711,7 +5711,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 32,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "5ad68d45b180f885fd2648df3c7f2e79c7cf1e5665e2e7c25791cba1870ca97c",
@@ -5754,7 +5754,7 @@
         "record_sha256": "273154a81b8ac6b241a02b7835d643330717e7c74187c392c5015de6858e3ed7",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5763,7 +5763,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 33,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "17b59ede63ccc8ac3e4413124b45558d7435c5b73739f585847efbe6c295963f",
@@ -5804,7 +5804,7 @@
         "record_sha256": "46ba13f6839d44bc387695d18b06abfdc339b5a9013be38926bf924150183d23",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5813,7 +5813,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 34,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "de47b739353eed4486b5006fd92ad23bfa7247f932f7d6cc1b23d33db14997a7",
@@ -5846,7 +5846,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 35,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "474c97051ffeaca9bfbfa6851feaf32ffa236159a01d9c9ace6f2e01f861d18a",
@@ -5879,7 +5879,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 36,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "1bcda7a2bce55f518605c304cccea457a5a313db9c2805da82a63ad442ece879",
@@ -5911,7 +5911,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 37,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "a07202a3fcca467a7e1ca24a318e53cbd9a5fbef955f0013c69159ee54ad2f38",
@@ -5952,7 +5952,7 @@
         "record_sha256": "5af47f20b4c2bcd1e9e9416566cdac3cb905bc8cbb556eefaa37e46d309dbcad",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -5961,7 +5961,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 31,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "b6003ff6d49d4d4b8d29e36bf0ba084505778e7c616c4ee9e0b93812ef75a19c",
@@ -6003,7 +6003,7 @@
         "record_sha256": "b6be7c9ae62af7c4d922b65723f52d6e9e3c6a72b410933c5c87a739f782d25b",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -6012,7 +6012,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 32,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "2d1bb30559ac1037b448339045a3c2e4aa3cd2d9ed8de5ec38d33b0295cf11ad",
@@ -6053,7 +6053,7 @@
         "record_sha256": "4d1c3f1c432a22d188af6e31016140de87f17658b4be49cf870b5245b3ee472f",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     },
@@ -6062,7 +6062,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 38,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "f9250d8fb04f84c285bd4ec2cb28da181b4cd659c6a25cb93d73274782dfac43",
@@ -6095,7 +6095,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 39,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "c83a1dce931c4b89d942262cb7cc887b5b75bb4afddb35a327e59f5d8a8b0020",
@@ -6137,7 +6137,7 @@
         "record_sha256": "e616af844ed9ba824d6727013e49aaeeece036e7f965abae746245a01f46ad55",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -6146,7 +6146,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 40,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "6ceff705815daaaa689fb63a2e5be4e7cc9a0b5b4f22029c77cfcb6064ae4e87",
@@ -6188,7 +6188,7 @@
         "record_sha256": "5e128bf779cdcc1e94ebb4858aac562e5c87190404f33a881079a0cc7b50e93c",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -6197,7 +6197,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 41,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "ab91ec9627a6d496ac61d1307dcdd3bb43edb2b064ac60393e2ee2c8338e6209",
@@ -6239,7 +6239,7 @@
         "record_sha256": "add24e10a1852a60153dd95517fb5be90cb0eb1cd850a210e63073b29dce50c0",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -6248,7 +6248,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 42,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "4ca27f80d31cc05eb1a7b05197a7fba113bd849df71ba80ca14d3a6bd8140720",
@@ -6289,7 +6289,7 @@
         "record_sha256": "25b73b2a02d087a8b9864319a357b3fa67b165169ebf2d70f66132d5d3b7c053",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:11:15Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:11:15Z"
       }
     },
@@ -6298,7 +6298,7 @@
       "partition": "commission",
       "handoff_path": "research/staging/2026-09-05-expanded-review/commission.json",
       "handoff_record_index": 43,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:11:15Z",
       "before": {
         "record_sha256": "166a1506ed68992cda15db5d1b5d301f15c772711a487fd667c92b36ef871507",
@@ -6341,7 +6341,7 @@
         "record_sha256": "9bf85af9d3abd38fdc212109e1d2b2c846e0ef648d5a9ac7059b29875c7761bd",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:07:46Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:07:46Z"
       }
     },
@@ -6350,7 +6350,7 @@
       "partition": "eurlex",
       "handoff_path": "research/staging/2026-09-05-expanded-review/eurlex.json",
       "handoff_record_index": 33,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T18:06:34Z",
       "before": {
         "record_sha256": "ff79a69c69b11385362776d59212ee8125dee8dd515b47a2e9df98aa558e5ec1",
@@ -6392,7 +6392,7 @@
         "record_sha256": "4a05d4ebef52ee2823c1869ef6bb331249589d112e1403f4bf42471f5dcde585",
         "historical_review_status": "verified",
         "updated_at": "2026-09-05T18:06:34Z",
-        "corpus_reviewed_by": "Codex (AI-assisted evidence review)",
+        "corpus_reviewed_by": "AI-assisted evidence review",
         "corpus_reviewed_at": "2026-09-05T18:06:34Z"
       }
     }

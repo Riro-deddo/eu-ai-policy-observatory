@@ -301,7 +301,7 @@ def test_known_unresolved_exclusions_are_reopened_with_history():
 
 > The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.
 
-Use the actual execution timestamp and `Codex (scope-review reopening)` when this action is automated. Preserve the prior recorded reviewer and timestamp only inside the history snapshot. A later individual source verification may resolve the candidate in Phase C; reopening does not assert it will be included.
+Use the actual execution timestamp and `AI-assisted scope-review reopening` when this action is automated. Preserve the prior recorded reviewer and timestamp only inside the history snapshot. A later individual source verification may resolve the candidate in Phase C; reopening does not assert it will be included.
 
 For the union of their existing discovery source IDs, set `scan_status` to `recheck_due`, record the actual status-review timestamp and reviewer, and explain the unresolved document/changed-boundary reason in `verification_note`. Preserve prior query intervals and cutoff; `covered_through` is the previously recorded bounded search interval, not a new completed review. The note must say that the earlier result needs rechecking. Do not mark unrelated source entrances unreviewed without evidence.
 

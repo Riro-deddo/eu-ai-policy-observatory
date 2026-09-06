@@ -1,7 +1,7 @@
 # Historical requirement recheck
 
 Review date: 5 September 2026. Publication cutoff: 4 September 2026, unchanged.
-Reviewer: Codex, AI-assisted source and contract review. No human admission decision is inferred.
+Reviewer: AI-assisted reviewer, AI-assisted source and contract review. No human admission decision is inferred.
 
 ## Requirement and outcome
 

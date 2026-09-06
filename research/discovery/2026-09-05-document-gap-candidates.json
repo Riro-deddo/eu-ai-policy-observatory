@@ -2,7 +2,7 @@
   "schema_version": "private-discovery-notes-v1",
   "purpose": "A bounded gap-discovery handoff, not a canonical dataset, publication decision or completeness audit.",
   "reviewed_at": "2026-09-05T06:20:31Z",
-  "reviewer": "Codex (AI-assisted research and consolidation); no human approval recorded",
+  "reviewer": "AI-assisted research and consolidation; no human approval recorded",
   "publication_cutoff": "2026-09-04",
   "baseline": {
     "git_commit": "e74b4a9c65a1c86edb01ecfd34f24423efd7fd16",
@@ -2670,7 +2670,7 @@
   ],
   "search_logs": {
     "historical_programmes": {
-      "reviewer": "Codex",
+      "reviewer": "AI-assisted reviewer",
       "language": "English",
       "session_started_at": "2026-09-05T06:11:50Z",
       "session_logged_at": "2026-09-05T06:15:11Z",
@@ -2781,7 +2781,7 @@
       }
     },
     "historical_institutional": {
-      "reviewer": "Codex",
+      "reviewer": "AI-assisted reviewer",
       "review_date": "2026-09-05",
       "language": "English",
       "period_scope": "2010-01-01 through 2017-12-31",
@@ -2916,7 +2916,7 @@
           "EMA Artificial intelligence page -> scientific guideline, AI Observatory, and NDSG workplan links"
         ],
         "searched_at": "2026-09-05T06:13:52.370Z",
-        "reviewer": "OpenAI Codex",
+        "reviewer": "AI-assisted reviewer",
         "status": "bounded_pass_logged_not_source_complete",
         "candidate_decisions": {
           "strong_pending_candidates": 3,
@@ -2943,7 +2943,7 @@
           "site:eba.europa.eu/sites/default/files/document_library \"EBA/REP/2023/28\""
         ],
         "searched_at": "2026-09-05T06:13:52.370Z",
-        "reviewer": "OpenAI Codex",
+        "reviewer": "AI-assisted reviewer",
         "status": "bounded_pass_logged_not_source_complete",
         "candidate_decisions": {
           "strong_pending_candidates": 2,
@@ -2970,7 +2970,7 @@
           "site:eiopa.europa.eu \"Artificial intelligence governance principles\""
         ],
         "searched_at": "2026-09-05T06:13:52.370Z",
-        "reviewer": "OpenAI Codex",
+        "reviewer": "AI-assisted reviewer",
         "status": "bounded_pass_logged_not_source_complete",
         "candidate_decisions": {
           "strong_pending_candidates": 2,
@@ -2997,7 +2997,7 @@
           "ESMA Topical Analysis -> exact AI report entries"
         ],
         "searched_at": "2026-09-05T06:13:52.370Z",
-        "reviewer": "OpenAI Codex",
+        "reviewer": "AI-assisted reviewer",
         "status": "bounded_pass_logged_not_source_complete",
         "candidate_decisions": {
           "strong_pending_candidates": 3,
@@ -3023,7 +3023,7 @@
           "Inspected generated/public-data.json documents array count and metadata"
         ],
         "searched_at": "2026-09-05T06:13:52.370Z",
-        "reviewer": "OpenAI Codex",
+        "reviewer": "AI-assisted reviewer",
         "status": "bounded_pass_logged_not_source_complete",
         "candidate_decisions": {
           "actual_existing_document_count": 117,

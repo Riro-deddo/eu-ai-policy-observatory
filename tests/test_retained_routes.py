@@ -61,7 +61,7 @@ def _notice(document_id: str) -> dict[str, object]:
     return {
         "status": "parent_relationship_under_review",
         "reason": reason,
-        "reviewed_by": "Codex",
+        "reviewed_by": "AI-assisted reviewer",
         "reviewed_at": REVIEWED_AT,
         "evidence": [
             {"source_id": LANDING_SOURCE, "locator": LANDING_LOCATOR},
@@ -162,6 +162,16 @@ def test_exact_reviewed_notices_are_accepted(tmp_path):
     assert _issues(data_root) == []
 
 
+def test_neutral_review_actor_retains_the_evidenced_exception(tmp_path):
+    data_root = _copy_data(tmp_path)
+    _inject_valid_notices(data_root)
+    for document_id in HELD:
+        path, document = _document(data_root, document_id)
+        document["retained_route_notice"]["reviewed_by"] = "AI-assisted reviewer"
+        _save(path, document)
+    assert _issues(data_root) == []
+
+
 def test_malformed_nested_source_ids_return_issues_without_throwing(tmp_path):
     data_root = _copy_data(tmp_path)
     path, document = _document(data_root, next(iter(HELD)))
@@ -186,6 +196,7 @@ def test_malformed_nested_source_ids_return_issues_without_throwing(tmp_path):
         (lambda notice: notice.update(reason="   "), "retained_route_notice.reason"),
         (lambda notice: notice.pop("reviewed_by"), "retained_route_notice.reviewed_by"),
         (lambda notice: notice.update(reviewed_by=""), "retained_route_notice.reviewed_by"),
+        (lambda notice: notice.update(reviewed_by="Yichen Hao"), "retained_route_notice.reviewed_by"),
         (
             lambda notice: notice["evidence"][0].pop("locator"),
             "retained_route_notice.evidence.0.locator",
@@ -376,7 +387,7 @@ def test_real_pipeline_round_trips_notices_without_changing_routes_or_holds(tmp_
     assert {"documents", "document_retained_route_notices", "sources"} <= evidence_foreign_keys
     assert [row[0] for row in notice_rows] == sorted(HELD)
     assert all(row[1] == "parent_relationship_under_review" for row in notice_rows)
-    assert all(row[3:] == ("Codex", REVIEWED_AT) for row in notice_rows)
+    assert all(row[3:] == ("AI-assisted reviewer", REVIEWED_AT) for row in notice_rows)
     assert len(evidence_rows) == 6
     for document_id in sorted(HELD):
         expected = _notice(document_id)
@@ -418,7 +429,7 @@ def test_migration_ledger_replays_only_declared_document_changes():
         item["document_id"]: item for item in admission["document_changes"]
     }
     assert set(admission["upgraded_existing_ids"]) == set(HELD)
-    assert ledger["review"]["reviewed_by"] == "Codex"
+    assert ledger["review"]["reviewed_by"] == "AI-assisted reviewer"
     assert ledger["review"]["reviewed_at"] == REVIEWED_AT
     assert ledger["existing_state"] == {
         "published_documents": 117,

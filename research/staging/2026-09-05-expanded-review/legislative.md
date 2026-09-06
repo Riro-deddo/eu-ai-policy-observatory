@@ -1,6 +1,6 @@
 # Legislative evidence review
 
-Reviewed by Codex (AI-assisted evidence review) at 2026-09-05T18:12:42Z; publication cutoff 2026-09-04.
+Reviewed by AI-assisted evidence review at 2026-09-05T18:12:42Z; publication cutoff 2026-09-04.
 
 ## Outcome
 

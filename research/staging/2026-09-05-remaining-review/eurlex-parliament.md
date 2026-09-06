@@ -1,6 +1,6 @@
 # Remaining review: EUR-Lex and Parliament
 
-Reviewed by Codex (AI-assisted evidence review) on 5 September 2026. The fixed publication cutoff remains 4 September 2026.
+Reviewed by AI-assisted evidence review on 5 September 2026. The fixed publication cutoff remains 4 September 2026.
 
 All four assigned records were rechecked. Three still lack an exact publication date for the identified manifestation. One Parliament record has sufficient official date evidence but exposes a narrow incompatibility in the existing validator. No canonical records or publication statuses were changed.
 

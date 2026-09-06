@@ -141,11 +141,12 @@ def test_continuation_accounts_for_every_starting_record_once(public_payload):
 
 
 def test_continuation_preserves_all_prior_verified_records_and_second_pass_ledger():
+    from normalization_assertions import assert_preserved_lf_hash
+
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    previous_path = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.json"
-    assert hashlib.sha256(previous_path.read_text(encoding="utf-8").encode("utf-8")).hexdigest() == ledger["baseline"]["prior_ledger_sha256_lf"]
+    previous_path = "research/migrations/2026-09-05-remaining-evidence-review.json"
+    assert_preserved_lf_hash(ROOT, previous_path, ledger["baseline"]["prior_ledger_sha256_lf"])
     previous_verified = [d for d in ledger["baseline"]["documents"] if d["historical_review_status"] == "verified"]
     assert len(previous_verified) == 101
     for row in previous_verified:
-        document = ROOT / "data/documents" / f"{row['id']}.json"
-        assert hashlib.sha256(document.read_text(encoding="utf-8").encode("utf-8")).hexdigest() == row["sha256_lf"]
+        assert_preserved_lf_hash(ROOT, f"data/documents/{row['id']}.json", row["sha256_lf"])

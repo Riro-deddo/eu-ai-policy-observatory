@@ -1,6 +1,6 @@
 # Council 2024/2026 second-pass evidence review
 
-Review actor: Codex (AI-assisted evidence review)
+Review actor: AI-assisted evidence review
 
 Review timestamp: 2026-09-05T19:52:01Z
 

@@ -1,6 +1,6 @@
 # Local admission of three verified records
 
-Reviewed: 2026-09-06T01:28:20Z. Reviewer: Codex (AI-assisted evidence review). Fixed corpus cutoff: 4 September 2026. User scope: local admission only.
+Reviewed: 2026-09-06T01:28:20Z. Reviewer: AI-assisted evidence review. Fixed corpus cutoff: 4 September 2026. User scope: local admission only.
 
 The canonical corpus now contains three additional records: JURI's 2017 robotics report, NDSG workplan v1.4 (July 2025), and NDSG workplan v2.0 (February 2026). These are two resolved candidates from the former three-candidate remainder plus one newly identified version dependency. The scientific opinion remains pending and absent from canonical published documents. Local structural, reference, inventory and historical-publication gates passed for 184 documents. Independent generated-output checks passed: JSON and SQLite exactly match all 184 canonical document IDs, with 158 verified and 26 unchanged legacy holds. The complete Python suite passed 404 tests with one skip; Node source tests passed 65/65. Vitest was blocked before executing tests by a local directory-access error.
 

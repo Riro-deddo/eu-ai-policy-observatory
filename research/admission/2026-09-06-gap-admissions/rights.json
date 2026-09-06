@@ -70,7 +70,7 @@
         "inclusion_rationale": "Dedicated ethical framework recommendations; paragraphs 109–110 address AI worker monitoring and recruitment, written notice and human review of automated human-resource decisions.",
         "researcher_notes": "Principal adopted resolution, including its recommendations annex within this manifestation. The requested regulation is not an enacted act. Committee report A9-0186/2020 is a separate preparatory document, not this identity.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -200,7 +200,7 @@
         "inclusion_rationale": "Recommends civil-liability rules and compensation for AI harms, including strict liability for operators of high-risk AI systems. The annex is a legislative recommendation, not a law in force.",
         "researcher_notes": "One non-binding adopted resolution includes its proposed-regulation annex. The annex is a recommendation and has no independent enacted status; the 2022 Commission proposal is not a version of this resolution.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -330,7 +330,7 @@
         "inclusion_rationale": "Distinguishes AI-assisted and AI-generated creations and considers ownership, originality, remuneration and human review in intellectual-property administration.",
         "researcher_notes": "Principal adopted resolution; committee-stage materials are not merged with the adopted text.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -461,7 +461,7 @@
         "inclusion_rationale": "Dedicated sectoral AI resolution requiring fundamental-rights, cultural-diversity and intellectual-property safeguards and addressing dataset bias.",
         "researcher_notes": "The OJ-addressed manifestation expressly identifies P9_TA(2021)0238 and CELEX 52021IP0238. It is the same adopted resolution, not another version.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -598,7 +598,7 @@
         "inclusion_rationale": "A broad AI policy resolution outside the AI Act legislative procedure; the reviewed labour-market passage identifies ethical, legal and employment implications of workplace AI and supporting training needs.",
         "researcher_notes": "Adopted resolution P9_TA(2022)0140; A9-0088/2022 is its distinct committee report and is not counted here.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -726,7 +726,7 @@
         "inclusion_rationale": "Addresses anonymity of trained models, legitimate interests for development/deployment, and consequences of unlawful personal-data processing during model development.",
         "researcher_notes": "Adoption on 17 December is distinct from publication on 18 December 2024. One adopted opinion; its Irish-authority request is a separate input.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -844,7 +844,7 @@
         "inclusion_rationale": "Empirical rights analysis of AI used for social benefits, predictive policing, health services and targeted advertising in five Member States.",
         "researcher_notes": "FRA report with fieldwork outsourced to Ecorys; FRA staff designed and supervised research (printed page 18 / PDF page 20). This is not evidence that Ecorys authored the report. The 2024 webpage notice adds Slovenian availability; English report identity remains 2020. Separately listed annexes and summary are not counted here.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -981,7 +981,7 @@
         "inclusion_rationale": "Tests bias in predictive policing and offensive-speech detection and recommends assessment of training data, discrimination and appropriate safeguards.",
         "researcher_notes": "FRA designed the research and drafted this report after research by a consortium led by Rania Wazir (printed page 21). The consortium credit is retained as a research contribution, not substituted for report authorship.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -1105,7 +1105,7 @@
         "inclusion_rationale": "Analyses high-risk AI classification and fundamental-rights impact assessment, including migration/asylum systems. The official report page also identifies education and employment as examined domains.",
         "researcher_notes": "FRA's 2025 report. Title/imprint and methodology identify the publication; no named personal author is credited in the reviewed front matter. Publication-day fallback preserves the year-only issue information without inventing an issue day.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -1234,7 +1234,7 @@
         "inclusion_rationale": "Substantive AI cybersecurity policy recommendations for competent authorities, service providers and defenders responding to frontier models and accelerated vulnerability exploitation.",
         "researcher_notes": "Public July 2026 report linked by the official 7 July catalogue and report page to the current _0 PDF. Page 3 lists internal and embargoed drafting history, not separately established public versions. Publication date is the exact-day fallback; cover month is preserved. No local bytes or checksum retained.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -1358,7 +1358,7 @@
         "inclusion_rationale": "Europol Innovation Lab report on criminal misuse and law-enforcement implications of large language models; discusses how generated tools lower technical barriers to malicious activity.",
         "researcher_notes": "Identity is the 2023 Tech Watch Flash report, ISBN 978-92-95220-57-7. Official metadata still cites Europol (2023), despite a 25 November 2025 webpage update; no revised report identity is claimed. A longer law-enforcement-only version mentioned by the launch notice is not this public report. No historical byte-comparison claim is made.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -1488,7 +1488,7 @@
         "inclusion_rationale": "Sets Parliament's position on meaningful human control, responsibility and oversight of military AI and AI exercised through state authority.",
         "researcher_notes": "One non-binding adopted resolution; the OJ appearance is the same text.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -1612,7 +1612,7 @@
         "inclusion_rationale": "Reviews border biometrics, emotion detection, algorithmic risk assessment and migration monitoring. Credits EPRS staff authorship and disclaims an official Parliament position.",
         "researcher_notes": "Staff-authored parliamentary research, not an adopted Parliament position. Exact catalogue publication date is used as fallback for month-only July issue date. The 26 July Publications Office release is a later manifestation of this analysis.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",
@@ -1756,7 +1756,7 @@
         "inclusion_rationale": "Examines AI-based workforce management risks and prevention. External named authors and EU-OSHA commissioning are explicit; agency hosting does not establish agency authorship.",
         "researcher_notes": "External authorship and EU-OSHA commissioning are explicit. Full report identity is distinguished from separately hosted summaries or policy briefs. Exact official publication date is used because the report gives only 2022.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:41:49.332+01:00"
       },
       "historical_review_status": "verified",

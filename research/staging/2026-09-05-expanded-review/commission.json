@@ -1,6 +1,6 @@
 {
   "batch_id": "2026-09-05-expanded-review-commission",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T18:11:15Z",
   "records": [
     {
@@ -34,7 +34,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -119,7 +119,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -243,7 +243,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -334,7 +334,7 @@
           "inclusion_rationale": "The final self-assessment list operationalises the seven requirements introduced by the Ethics Guidelines and therefore anchors analysis of proceduralisation.",
           "researcher_notes": "Analytical selection; authorship and publication date are verified on the Commission library page.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -427,7 +427,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -514,7 +514,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -599,9 +599,9 @@
           "corpus_tier": "core",
           "policy_stage": "consultation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 119624 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Complete selected pages transcribed for identity/scope review; pages 4-12 not reviewed. Page 1 identifies Article 73 high-risk incident reporting and expressly excludes systemic-risk GPAI reporting. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. Identity review by Codex at 2026-09-05T08:35:01Z: The separately titled Article 73 guidance is a substantive standalone policy text with its own background, objectives, definitions and analysis. Its principal classification describes standalone documentary identity, not final adoption. The title is transcribed from official PDF 119624, page 1, with line breaks joined. Draft status remains explicit; the other incident document is not its parent or another version. This field-limited review preserves all other metadata, classifications and earlier review attribution.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by AI-assisted reviewer at 2026-09-05T08:20:53Z: retrieved official PDF 119624 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Complete selected pages transcribed for identity/scope review; pages 4-12 not reviewed. Page 1 identifies Article 73 high-risk incident reporting and expressly excludes systemic-risk GPAI reporting. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. Identity review by AI-assisted reviewer at 2026-09-05T08:35:01Z: The separately titled Article 73 guidance is a substantive standalone policy text with its own background, objectives, definitions and analysis. Its principal classification describes standalone documentary identity, not final adoption. The title is transcribed from official PDF 119624, page 1, with line breaks joined. Draft status remains explicit; the other incident document is not its parent or another version. This field-limited review preserves all other metadata, classifications and earlier review attribution.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -744,9 +744,9 @@
           "corpus_tier": "core",
           "policy_stage": "consultation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 119623 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. The version_label is transcribed from PDF page 1; draft status and editorial record level remain unchanged. Identity review by Codex at 2026-09-05T08:35:01Z: The separately titled reporting template is an independently citable operational instrument with five reporting sections and its own version label 1.0.0. Its principal classification describes standalone documentary identity, not final adoption. The title is transcribed from official PDF 119623, page 1, with line breaks joined. Draft status remains explicit; the other incident document is not its parent or another version. This field-limited review preserves all other metadata, classifications and earlier review attribution.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by AI-assisted reviewer at 2026-09-05T08:20:53Z: retrieved official PDF 119623 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. The version_label is transcribed from PDF page 1; draft status and editorial record level remain unchanged. Identity review by AI-assisted reviewer at 2026-09-05T08:35:01Z: The separately titled reporting template is an independently citable operational instrument with five reporting sections and its own version label 1.0.0. Its principal classification describes standalone documentary identity, not final adoption. The title is transcribed from official PDF 119623, page 1, with line breaks joined. Draft status remains explicit; the other incident document is not its parent or another version. This field-limited review preserves all other metadata, classifications and earlier review attribution.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -838,7 +838,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -939,7 +939,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1039,7 +1039,7 @@
           "inclusion_rationale": "The joint opinion is a formal data-protection intervention in the AI Act procedure and is central to comparing institutional constructions of risk and fundamental-rights safeguards.",
           "researcher_notes": "Analytical selection; title and adoption date follow the official joint PDF and EDPB record.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1139,7 +1139,7 @@
           "inclusion_rationale": "Core non-binding ethics framework that introduces the trustworthiness lens.",
           "researcher_notes": "Analytical assessment, not a claim about legal force.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1248,7 +1248,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1341,7 +1341,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1476,7 +1476,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1569,7 +1569,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1728,7 +1728,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1885,9 +1885,9 @@
           "corpus_tier": "core",
           "policy_stage": "implementation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by Codex opened and read exact DOCX 118118: the form headings and fields were inspected, and the final-Code page was checked for its statement that the Transparency Chapter includes the Model Documentation Form. The linked Transparency Chapter cover, not an unsupported host inference, supplies the two named chapter-author credits.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by AI-assisted reviewer opened and read exact DOCX 118118: the form headings and fields were inspected, and the final-Code page was checked for its statement that the Transparency Chapter includes the Model Documentation Form. The linked Transparency Chapter cover, not an unsupported host inference, supplies the two named chapter-author credits.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:11:15Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1980,7 +1980,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2139,9 +2139,9 @@
           "corpus_tier": "core",
           "policy_stage": "implementation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified. This historical note describes a prior canonical record-level correction; this handoff preserves the existing supporting level and proposes no record_level change. Later expanded evidence review by Codex opened and read exact DOCX 118312, including its binding statement, chapter-selection declarations and reference to Code text published 10 July 2025; the dedicated page independently dates the form to 17 July 2025.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified. This historical note describes a prior canonical record-level correction; this handoff preserves the existing supporting level and proposes no record_level change. Later expanded evidence review by AI-assisted reviewer opened and read exact DOCX 118312, including its binding statement, chapter-selection declarations and reference to Code text published 10 July 2025; the dedicated page independently dates the form to 17 July 2025.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:11:15Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2221,7 +2221,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2380,7 +2380,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2473,7 +2473,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2608,7 +2608,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2701,7 +2701,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2875,7 +2875,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2960,7 +2960,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3085,7 +3085,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3188,7 +3188,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3305,7 +3305,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3422,7 +3422,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3535,9 +3535,9 @@
           "corpus_tier": "core",
           "policy_stage": "implementation",
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by Codex opened and read exact DOCX 129548, including the signatory declarations and its express application to the final Code published 10 June 2026.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by AI-assisted reviewer opened and read exact DOCX 129548, including the signatory declarations and its express application to the final Code published 10 June 2026.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:11:15Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3616,7 +3616,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:07:46Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -3750,7 +3750,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official policy page publishes the final Code of Practice on Transparency of AI-Generated Content of 10 June 2026 (newsroom document 129555). Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official policy page publishes the final Code of Practice on Transparency of AI-Generated Content of 10 June 2026 (newsroom document 129555). Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-code-first-draft-commission": {
       "id": "gpai-code-first-draft-commission",
@@ -3763,7 +3763,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official library publication identifies the independently authored first draft of the GPAI Code, published 14 November 2024. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official library publication identifies the independently authored first draft of the GPAI Code, published 14 November 2024. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "standardisation-request-c-2025-3871-register": {
       "id": "standardisation-request-c-2025-3871-register",
@@ -3776,7 +3776,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Commission register webpage confirms C(2025) 3871 final / M/613, adopted 23 June 2025, requests CEN and CENELEC standards for high-risk AI systems and repeals C(2023) 3215. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Commission register webpage confirms C(2025) 3871 final / M/613, adopted 23 June 2025, requests CEN and CENELEC standards for high-risk AI systems and repeals C(2023) 3215. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "commission-newsroom-128560-pdf": {
       "id": "commission-newsroom-128560-pdf",
@@ -3789,7 +3789,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-05T08:08:53.458Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Codex retrieved this official download with normal TLS verification. The 337928-byte response is a 13-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: 10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "AI-assisted reviewer retrieved this official download with normal TLS verification. The 337928-byte response is a 13-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: 10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "high-risk-guidelines-draft-commission": {
       "id": "high-risk-guidelines-draft-commission",
@@ -3802,7 +3802,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 19 May 2026 provides three separate consultation-draft files: general principles, Annex I and Annex III guidance (newsroom documents 128559, 128560 and 128561). These downloads are presented as drafts; this bounded review does not establish the absence of every possible final successor. Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained. Follow-up by Codex at 2026-09-05T08:20:53Z: actual linked PDF bytes were retrieved and narrowly inspected; individual source records, checksums, selected page locators and local-only retention are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. This supplements the earlier landing-page review; it is not a full-field or all-page re-verification, and unresolved relationship holds remain. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 19 May 2026 provides three separate consultation-draft files: general principles, Annex I and Annex III guidance (newsroom documents 128559, 128560 and 128561). These downloads are presented as drafts; this bounded review does not establish the absence of every possible final successor. Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained. Follow-up by AI-assisted reviewer at 2026-09-05T08:20:53Z: actual linked PDF bytes were retrieved and narrowly inspected; individual source records, checksums, selected page locators and local-only retention are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. This supplements the earlier landing-page review; it is not a full-field or all-page re-verification, and unresolved relationship holds remain. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-code-final-commission": {
       "id": "gpai-code-final-commission",
@@ -3815,7 +3815,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T18:11:15Z",
-      "verification_note": "Official Commission page publishes the final GPAI Code and separate Transparency, Copyright, Safety and Security, Model Documentation Form and Signatory Form files (newsroom documents 118120, 118115, 118119, 118118, 118312). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained. Follow-up clarification: in this later expanded review, Codex opened and read DOCX 118118 and checked its headings and substantive documentation fields. The earlier sentence about uninspected binaries is preserved as historical scope for the earlier narrow review, not a description of this later pass."
+      "verification_note": "Official Commission page publishes the final GPAI Code and separate Transparency, Copyright, Safety and Security, Model Documentation Form and Signatory Form files (newsroom documents 118120, 118115, 118119, 118118, 118312). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained. Follow-up clarification: in this later expanded review, AI-assisted reviewer opened and read DOCX 118118 and checked its headings and substantive documentation fields. The earlier sentence about uninspected binaries is preserved as historical scope for the earlier narrow review, not a description of this later pass."
     },
     "transparency-code-assessment-commission": {
       "id": "transparency-code-assessment-commission",
@@ -3828,7 +3828,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 9 July 2026 provides the Commission opinion dated 8 July and AI Board assessment dated 9 July (newsroom documents 130913 and 130916). Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 9 July 2026 provides the Commission opinion dated 8 July and AI Board assessment dated 9 July (newsroom documents 130913 and 130916). Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "commission-newsroom-119624-pdf": {
       "id": "commission-newsroom-119624-pdf",
@@ -3841,7 +3841,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-05T08:08:53.261079Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Codex retrieved this official download with normal TLS verification. The 341927-byte response is a 13-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: f1d58ecf69004b361d2201ea44e6219f00c27ba249ad5011965152de9167686d. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Complete selected pages transcribed for identity/scope review; pages 4-12 not reviewed. Page 1 identifies Article 73 high-risk incident reporting and expressly excludes systemic-risk GPAI reporting. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "AI-assisted reviewer retrieved this official download with normal TLS verification. The 341927-byte response is a 13-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: f1d58ecf69004b361d2201ea44e6219f00c27ba249ad5011965152de9167686d. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Complete selected pages transcribed for identity/scope review; pages 4-12 not reviewed. Page 1 identifies Article 73 high-risk incident reporting and expressly excludes systemic-risk GPAI reporting. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-code-third-draft-commission": {
       "id": "gpai-code-third-draft-commission",
@@ -3854,7 +3854,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official library page published 11 March 2025 supplies the third-draft overview and separate Commitments, Transparency, Copyright, and Safety and Security English files (newsroom documents 113606, 113607, 113605, 113608). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official library page published 11 March 2025 supplies the third-draft overview and separate Commitments, Transparency, Copyright, and Safety and Security English files (newsroom documents 113606, 113607, 113605, 113608). Narrow verification on 2026-09-05 checked the landing-page structure, stated purposes and download labels recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; linked binary file interiors and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "transparency-guidelines-final-commission": {
       "id": "transparency-guidelines-final-commission",
@@ -3867,7 +3867,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 20 July 2026 provides the final Article 50 guidelines and separate approval communication (newsroom documents 131215 and 131214). Live re-review by Codex on 5 September 2026 found that C(2026) 5054 approves guideline content and states formal adoption will occur later; the page's final label does not by itself establish a separately adopted final guideline; prior history and retrieved_at are retained."
+      "verification_note": "Official page published 20 July 2026 provides the final Article 50 guidelines and separate approval communication (newsroom documents 131215 and 131214). Live re-review by AI-assisted reviewer on 5 September 2026 found that C(2026) 5054 approves guideline content and states formal adoption will occur later; the page's final label does not by itself establish a separately adopted final guideline; prior history and retrieved_at are retained."
     },
     "high-risk-incident-consultation-commission": {
       "id": "high-risk-incident-consultation-commission",
@@ -3880,7 +3880,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official consultation opened 26 September 2025 and supplies separate draft guidance and reporting-template files (newsroom documents 119624 and 119623). Follow-up by Codex at 2026-09-05T08:20:53Z: actual linked PDF bytes were retrieved and narrowly inspected; individual source records, checksums, selected page locators and local-only retention are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. This supplements the earlier landing-page review; it is not a full-field or all-page re-verification, and unresolved relationship holds remain. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official consultation opened 26 September 2025 and supplies separate draft guidance and reporting-template files (newsroom documents 119624 and 119623). Follow-up by AI-assisted reviewer at 2026-09-05T08:20:53Z: actual linked PDF bytes were retrieved and narrowly inspected; individual source records, checksums, selected page locators and local-only retention are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. This supplements the earlier landing-page review; it is not a full-field or all-page re-verification, and unresolved relationship holds remain. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-code-assessment-commission": {
       "id": "gpai-code-assessment-commission",
@@ -3893,7 +3893,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 1 August 2025 provides separate Commission opinion and AI Board adequacy assessment (newsroom documents 118688 and 118687). Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 1 August 2025 provides separate Commission opinion and AI Board adequacy assessment (newsroom documents 118688 and 118687). Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-incident-template-commission": {
       "id": "gpai-incident-template-commission",
@@ -3906,7 +3906,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 4 November 2025 provides the same serious-incident reporting template in PDF and DOCX manifestations (newsroom documents 121268 and 121270). Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 4 November 2025 provides the same serious-incident reporting template in PDF and DOCX manifestations (newsroom documents 121268 and 121270). Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "ethics-guidelines-publications-office": {
       "id": "ethics-guidelines-publications-office",
@@ -3919,7 +3919,7 @@
       "publisher": "Publications Office of the European Union",
       "retrieved_at": "2026-09-03T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official publication record provides the English PDF and identifies the Commission's Directorate-General for Communications Networks, Content and Technology and the AI HLEG as corporate authors. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official publication record provides the English PDF and identifies the Commission's Directorate-General for Communications Networks, Content and Technology and the AI HLEG as corporate authors. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-code-second-draft-commission": {
       "id": "gpai-code-second-draft-commission",
@@ -3932,7 +3932,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official library publication identifies the independently authored second draft of the GPAI Code, published 19 December 2024. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official library publication identifies the independently authored second draft of the GPAI Code, published 19 December 2024. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "transparency-guidelines-draft-commission": {
       "id": "transparency-guidelines-draft-commission",
@@ -3945,7 +3945,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 8 May 2026 provides the consultation draft as newsroom document 128275. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 8 May 2026 provides the consultation draft as newsroom document 128275. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "transparency-code-signatory-commission": {
       "id": "transparency-code-signatory-commission",
@@ -3958,7 +3958,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T18:11:15Z",
-      "verification_note": "Official page published 10 June 2026 provides the separately issued signatory form (newsroom document 129548). Narrow verification on 2026-09-05 checked the landing-page structure, stated purpose and download label recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; the linked binary file interior and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained. Follow-up clarification: in this later expanded review, Codex opened and read DOCX 129548 and checked its signatory declarations. The earlier sentence about an uninspected binary is preserved as historical scope for the earlier narrow review, not a description of this later pass."
+      "verification_note": "Official page published 10 June 2026 provides the separately issued signatory form (newsroom document 129548). Narrow verification on 2026-09-05 checked the landing-page structure, stated purpose and download label recorded in research/migrations/2026-09-05-relationship-evidence-migration.json; the linked binary file interior and retained bytes were not verified in this review, and no source snapshot was retained. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained. Follow-up clarification: in this later expanded review, AI-assisted reviewer opened and read DOCX 129548 and checked its signatory declarations. The earlier sentence about an uninspected binary is preserved as historical scope for the earlier narrow review, not a description of this later pass."
     },
     "altai-commission": {
       "id": "altai-commission",
@@ -3971,7 +3971,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "The Commission library page identifies the final Assessment List, its AI HLEG authorship and publication on 17 July 2020, and links the English PDF. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "The Commission library page identifies the final Assessment List, its AI HLEG authorship and publication on 17 July 2020, and links the English PDF. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "prohibited-guidelines-commission": {
       "id": "prohibited-guidelines-commission",
@@ -3984,7 +3984,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official library page and English PDF confirm C(2025) 5052 final, dated 29 July 2025; the downloadable English file is Commission newsroom document 112367. Live re-review by Codex on 5 September 2026 found that the page's Publication 4 February 2025 identifies the approval release and cannot evidence first publication of C(2025) 5052 final dated 29 July 2025; prior history and retrieved_at are retained."
+      "verification_note": "Official library page and English PDF confirm C(2025) 5052 final, dated 29 July 2025; the downloadable English file is Commission newsroom document 112367. Live re-review by AI-assisted reviewer on 5 September 2026 found that the page's Publication 4 February 2025 identifies the approval release and cannot evidence first publication of C(2025) 5052 final dated 29 July 2025; prior history and retrieved_at are retained."
     },
     "definition-guidelines-commission": {
       "id": "definition-guidelines-commission",
@@ -3997,7 +3997,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official library page and English PDF confirm C(2025) 5053 final, dated 29 July 2025; the downloadable English file is Commission newsroom document 112455. Live re-review by Codex on 5 September 2026 found that the page's Publication 6 February 2025 identifies the approval release and cannot evidence first publication of C(2025) 5053 final dated 29 July 2025; prior history and retrieved_at are retained."
+      "verification_note": "Official library page and English PDF confirm C(2025) 5053 final, dated 29 July 2025; the downloadable English file is Commission newsroom document 112455. Live re-review by AI-assisted reviewer on 5 September 2026 found that the page's Publication 6 February 2025 identifies the approval release and cannot evidence first publication of C(2025) 5053 final dated 29 July 2025; prior history and retrieved_at are retained."
     },
     "gpai-guidelines-commission": {
       "id": "gpai-guidelines-commission",
@@ -4010,7 +4010,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official library page supplies the adopted English guidelines and approval communication; the guideline is C(2025) 5045 final, dated 18 July 2025. Live re-review by Codex on 5 September 2026 found the current guideline PDF is C(2025) 7719 final dated 19 November 2025, while C(2025) 5045 / 18 July is the approval communication; prior history and retrieved_at are retained."
+      "verification_note": "Official library page supplies the adopted English guidelines and approval communication; the guideline is C(2025) 5045 final, dated 18 July 2025. Live re-review by AI-assisted reviewer on 5 September 2026 found the current guideline PDF is C(2025) 7719 final dated 19 November 2025, while C(2025) 5045 / 18 July is the approval communication; prior history and retrieved_at are retained."
     },
     "commission-newsroom-128559-pdf": {
       "id": "commission-newsroom-128559-pdf",
@@ -4023,7 +4023,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-05T08:08:53.264585Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Codex retrieved this official download with normal TLS verification. The 260362-byte response is a 6-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "AI-assisted reviewer retrieved this official download with normal TLS verification. The 260362-byte response is a 6-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "ai-standardisation-request-c-2023-3215-register": {
       "id": "ai-standardisation-request-c-2023-3215-register",
@@ -4036,7 +4036,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "The Register of Commission Documents confirms Implementing Decision C(2023) 3215 final of 22 May 2023 and its attached standardisation request M/593. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "The Register of Commission Documents confirms Implementing Decision C(2023) 3215 final of 22 May 2023 and its attached standardisation request M/593. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "commission-newsroom-128561-pdf": {
       "id": "commission-newsroom-128561-pdf",
@@ -4049,7 +4049,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-05T08:08:53.836269Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Codex retrieved this official download with normal TLS verification. The 1547742-byte response is a 148-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "AI-assisted reviewer retrieved this official download with normal TLS verification. The 1547742-byte response is a 148-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "transparency-code-second-draft-commission": {
       "id": "transparency-code-second-draft-commission",
@@ -4062,7 +4062,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 5 March 2026 provides the second draft (newsroom document 125388). Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 5 March 2026 provides the second draft (newsroom document 125388). Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "commission-newsroom-119623-pdf": {
       "id": "commission-newsroom-119623-pdf",
@@ -4075,7 +4075,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-05T08:08:53.258506Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Codex retrieved this official download with normal TLS verification. The 238290-byte response is a 7-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: 20f90c54a7cd0fb952d08965947dabfa6e423515cab925d9c4b9c81364ed5a82. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "AI-assisted reviewer retrieved this official download with normal TLS verification. The 238290-byte response is a 7-page PDF, confirmed by PDF signature, Poppler and pypdf despite the malformed HTTP Content-Type value '/'. SHA-256: 20f90c54a7cd0fb952d08965947dabfa6e423515cab925d9c4b9c81364ed5a82. retrieved_at uses observed UTC local file-write completion immediately following download as an operational retrieval-time proxy; it does not claim precise HTTP timing and is not the publication date. All seven pages extracted and read; page 1 visually checked. Explicit version 1.0.0; separate reporting form. A date-like value on page 7 is a form field, not verified publication metadata. Original bytes exist only in a local ignored review directory; no committed archive is claimed. Exact observation limits and timestamps are recorded in research/migrations/2026-09-05-official-pdf-evidence.json. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "ethics-guidelines-commission": {
       "id": "ethics-guidelines-commission",
@@ -4088,7 +4088,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-03T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Commission page records publication on 8 April 2019 and presentation by the High-Level Expert Group on AI. Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Commission page records publication on 8 April 2019 and presentation by the High-Level Expert Group on AI. Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     },
     "gpai-training-summary-commission": {
       "id": "gpai-training-summary-commission",
@@ -4101,7 +4101,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 24 July 2025 provides the explanatory notice and editable template as separate English files (newsroom documents 118480 and 118578). Live re-review by Codex on 5 September 2026 found the current explanatory notice is C(2025) 8311 final dated 5 December 2025, so the page's Publication 24 July 2025 cannot be transferred to that later exact file; prior history and retrieved_at are retained."
+      "verification_note": "Official page published 24 July 2025 provides the explanatory notice and editable template as separate English files (newsroom documents 118480 and 118578). Live re-review by AI-assisted reviewer on 5 September 2026 found the current explanatory notice is C(2025) 8311 final dated 5 December 2025, so the page's Publication 24 July 2025 cannot be transferred to that later exact file; prior history and retrieved_at are retained."
     },
     "transparency-code-first-draft-commission": {
       "id": "transparency-code-first-draft-commission",
@@ -4114,7 +4114,7 @@
       "publisher": "European Commission",
       "retrieved_at": "2026-09-04T00:00:00Z",
       "last_verified_at": "2026-09-05T17:58:09Z",
-      "verification_note": "Official page published 17 December 2025 provides the first draft (newsroom document 123074). Live re-review by Codex on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
+      "verification_note": "Official page published 17 December 2025 provides the first draft (newsroom document 123074). Live re-review by AI-assisted reviewer on 5 September 2026 checked the official endpoint and exact-version identity, substantive scope, relevant dates and institutional attribution; prior verification history and retrieved_at are retained."
     }
   },
   "summary": {

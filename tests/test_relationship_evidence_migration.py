@@ -180,7 +180,7 @@ def test_record_levels_statuses_and_published_identity_routes_are_preserved():
         assert audit["before"]["corpus_reviewed_by"] == "Yichen Hao"
         assert audit["before"]["corpus_reviewed_at"] == "2026-09-04T00:00:00Z"
         assert document["updated_at"] == audit["after"]["updated_at"]
-        assert "Codex" in document["corpus_assessment"]["researcher_notes"]
+        assert "AI-assisted reviewer" in document["corpus_assessment"]["researcher_notes"]
         assert document["corpus_assessment"]["reviewed_by"] == audit["after"]["corpus_reviewed_by"]
         assert document["corpus_assessment"]["reviewed_at"] == audit["after"]["corpus_reviewed_at"]
 
@@ -250,7 +250,7 @@ def test_evidence_ledger_covers_exact_review_scope_with_concrete_sources():
     assert ledger["review"] == {
         "reviewed_at": REVIEW_TIMESTAMP,
         "publication_cutoff": "2026-09-04",
-        "reviewer": "Codex",
+        "reviewer": "AI-assisted reviewer",
         "base_commit": "f4085fdf6ada9da4954f815738ff2b8bffe81ec0",
     }
     evidence = {item["source_id"]: item for item in ledger["source_evidence"]}

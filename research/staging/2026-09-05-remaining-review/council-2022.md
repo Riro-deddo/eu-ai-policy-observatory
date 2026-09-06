@@ -1,6 +1,6 @@
 # Council 2022 pending-record second pass
 
-Reviewed 11 retained Council AI Act records dated 2022 against their exact PDFs, live Council public-register results and bounded searches for dated official publication manifestations. Reviewer: Codex (AI-assisted evidence review), 5 September 2026 at 19:47:08 UTC. Publication cutoff remains 4 September 2026.
+Reviewed 11 retained Council AI Act records dated 2022 against their exact PDFs, live Council public-register results and bounded searches for dated official publication manifestations. Reviewer: AI-assisted evidence review, 5 September 2026 at 19:47:08 UTC. Publication cutoff remains 4 September 2026.
 
 ## Outcome
 

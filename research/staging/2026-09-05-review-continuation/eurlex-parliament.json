@@ -1,6 +1,6 @@
 {
   "batch_id": "review-continuation-eurlex-parliament-2026-09-05",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T20:55:03.056Z",
   "publication_cutoff": "2026-09-04",
   "method": "Targeted official search, EUR-Lex procedure and document views, documented Cellar RDF tree and XML object notices, and direct examination of previously retrieved exact Commission PDFs. Repository creation/modification timestamps were not treated as publication dates.",

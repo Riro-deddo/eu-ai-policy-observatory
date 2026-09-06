@@ -1,6 +1,6 @@
 # Commission remaining-record second pass
 
-Reviewed by `Codex (AI-assisted evidence review)` at `2026-09-05T19:57:42Z`, against the fixed publication cutoff `2026-09-04`.
+Reviewed by `AI-assisted evidence review` at `2026-09-05T19:57:42Z`, against the fixed publication cutoff `2026-09-04`.
 
 This is a research handoff only. It proposes one evidence-ready correction and retains ten explicit holds. It does not change canonical data, schemas, tests, prior ledgers, generated exports or Git state.
 

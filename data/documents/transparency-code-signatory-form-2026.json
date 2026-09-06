@@ -46,9 +46,9 @@
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by Codex opened and read exact DOCX 129548, including the signatory declarations and its express application to the final Code published 10 June 2026.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose for the final Transparency Code; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by AI-assisted reviewer opened and read exact DOCX 129548, including the signatory declarations and its express application to the final Code published 10 June 2026.",
     "review_status": "verified",
-    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-05T18:11:15Z"
   },
   "sector_tags": [

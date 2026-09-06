@@ -3,7 +3,7 @@
   "purpose": "Bounded discovery of possible omissions, not canonical admission or a completed source audit.",
   "researched_on": "2026-09-06",
   "publication_cutoff": "2026-09-04",
-  "reviewer": "Codex, AI-assisted research; no human classification approval recorded",
+  "reviewer": "AI-assisted reviewer, AI-assisted research; no human classification approval recorded",
   "baseline": {"canonical_document_files": 131, "inventory_candidates": 171, "prior_discovery_candidates": 34},
   "scope": "English substantive Parliament AI resolutions outside the AI Act procedure and selected EDPB, FRA, ENISA and Europol reports/opinions. EDPS retrieval attempts and earlier EU-OSHA/Frontex backlog are recorded as limitations. Contemporary collection only in this bounded result; the approved historical boundary remains unrestricted.",
   "counts": {"primary_text_reviewed_new_candidates": 11, "canonical_imports": 0, "follow_up_leads_not_in_primary_count": 4},

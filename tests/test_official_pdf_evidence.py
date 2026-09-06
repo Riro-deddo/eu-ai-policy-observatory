@@ -89,7 +89,7 @@ def test_pipeline_retains_pdf_provenance_without_adding_documents(tmp_path):
     assert template["record_level"] == "principal"
     assert template["document_date"] == "2025-09-26"
     assert template["publication_date"] == "2025-09-26"
-    assert template["corpus_assessment"]["reviewed_by"] == "Codex (AI-assisted evidence review)"
+    assert template["corpus_assessment"]["reviewed_by"] == "AI-assisted evidence review"
     assert template["corpus_assessment"]["reviewed_at"] == "2026-09-05T18:07:46Z"
 
 

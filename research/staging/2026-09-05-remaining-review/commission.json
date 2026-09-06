@@ -1,6 +1,6 @@
 {
   "batch_id": "2026-09-05-remaining-review-commission",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T19:57:42Z",
   "publication_cutoff": "2026-09-04",
   "scope": "Second-pass review of the 11 Commission records held in the 2026-09-05 expanded evidence review.",
@@ -32,7 +32,7 @@
         "No independently labelled official publication date for the exact C(2023) 3215 / M/593 version was recovered in the bounded second pass."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -62,7 +62,7 @@
         "The exact current C(2025) 5053 version lacks a version-specific official publication date."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -99,7 +99,7 @@
         "The retained attachment route still has no evidenced parent document identity; sibling relationships do not satisfy attachment lineage."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -129,7 +129,7 @@
         "The retained attachment route still lacks an evidenced parent document identity."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -159,7 +159,7 @@
         "The retained attachment route still lacks an evidenced parent document identity."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -219,7 +219,7 @@
           "inclusion_rationale": "Official Commission guidance directly operationalising Article 50 transparency obligations for AI providers and deployers.",
           "researcher_notes": "Second-pass exact-file review corrects this stable route to the content-approved draft annex released on 20 July 2026. The separate approval communication expressly says formal adoption will occur later; neither its approval nor the landing-page wording is represented as formal adoption of the guidelines.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:57:42Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -289,7 +289,7 @@
           "verification_status": "verified"
         }
       ],
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -319,7 +319,7 @@
         "No version-specific official publication date for exact C(2025) 7719 was recovered."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -349,7 +349,7 @@
         "No version-specific official publication date for exact C(2025) 8311 was recovered."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -380,7 +380,7 @@
         "Exact-version publication identity remains unresolved because the current official DOCX was created/modified on 28 July 2025 while the cited official release is dated 24 July 2025."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -410,7 +410,7 @@
         "No version-specific official publication date for exact C(2025) 5052 was recovered."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     },
     {
@@ -440,7 +440,7 @@
         "No independently labelled official publication date for exact C(2025) 3871 / M/613 was recovered."
       ],
       "proposed_patch": null,
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T19:57:42Z"
     }
   ],

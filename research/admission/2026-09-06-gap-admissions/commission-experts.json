@@ -75,7 +75,7 @@
         "inclusion_rationale": "Detailed independent expert recommendations address civil liability for AI systems, harms, burden of proof and victim compensation.",
         "researcher_notes": "The full report supplies no exact issue day, so the verified catalogue release date supplies the explicit publication fallback. Catalogue code DS-03-19-742-EN-N and PDF code DS-03-19-853-EN-N are retained as a source discrepancy; matching title, DOI and ISBN resolve document identity. DG JUST catalogue attribution is not substituted for the expert-group written-by credit. Annex printedp.65 lists group members: Ryan Abbott, Georg Borges, Eugenia Dacoronia, Nathalie Devillier, Marlena Jankowska-Augustyn, Ernst Karner, Bernhard Alexander Koch, Alžběta Krausova, Piotr Machnikowski, Maria Lillà Montagnani, Marie Motzfeldt, Finbarr Murphy, Ugo Pagallo, Teresa Rodriguez de las Heras Ballell, Gerald Spindler and Christiane Wendehorst. Cooley(UK) LLP and Universidad Carlos III de Madrid are institutional observers, not report authors. Membership is preserved in notes rather than converted to an unsupported named-author list.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:51:12Z"
       },
       "historical_review_status": "verified",

@@ -1,6 +1,6 @@
 # Commission third-pass evidence review
 
-Reviewed by Codex (AI-assisted evidence review) at 2026-09-05T20:45:17Z, with the fixed publication cutoff 2026-09-04.
+Reviewed by AI-assisted evidence review at 2026-09-05T20:45:17Z, with the fixed publication cutoff 2026-09-04.
 
 ## Outcome
 

@@ -2,7 +2,7 @@
 
 ## Outcome
 
-Codex (AI-assisted evidence review) reviewed the complete 114-record retained queue against the existing historical-readiness contract and the fixed publication cutoff of 4 September 2026. Independent Task 1 cross-review approved 77 upgrades and retained 37 explicit holds. Together with the 17 previously verified records, the canonical corpus now contains 94 verified and 37 legacy-review-pending documents across 131 unchanged document routes.
+AI-assisted evidence review reviewed the complete 114-record retained queue against the existing historical-readiness contract and the fixed publication cutoff of 4 September 2026. Independent Task 1 cross-review approved 77 upgrades and retained 37 explicit holds. Together with the 17 previously verified records, the canonical corpus now contains 94 verified and 37 legacy-review-pending documents across 131 unchanged document routes.
 
 | Partition | Reviewed | Upgraded | Held | Review timestamp |
 |---|---:|---:|---:|---|

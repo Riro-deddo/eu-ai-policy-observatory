@@ -55,7 +55,7 @@
     "inclusion_rationale": "The report directly measures AI adoption and regulatory implications across securities markets, including use cases, model and data vulnerabilities, cybersecurity, cloud reliance, and third-party concentration.",
     "researcher_notes": "Distinct empirical survey report; 2025 is the survey year, not its publication year.",
     "review_status": "verified",
-    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-05T23:48:11Z"
   },
   "historical_review_status": "verified",

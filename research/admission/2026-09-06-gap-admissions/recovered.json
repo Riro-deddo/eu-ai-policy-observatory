@@ -65,7 +65,7 @@
         "inclusion_rationale": "Substantive assessment of AI capabilities, adoption pathways and barriers for European border management.",
         "researcher_notes": "Externally authored RAND Europe report commissioned by Frontex. Five named authors are retained separately from the agency. The 17 March issue date differs from official publication on 31 March 2021. Current PDF metadata has a 2025 modification timestamp, but the public cover and imprint identify the same 2021 final report; no new version is inferred from file metadata. Embedded annexes remain part of this principal report.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:51:04.811+01:00"
       },
       "temporal_collection": "contemporary_eu_ai_policy",
@@ -214,7 +214,7 @@
         "inclusion_rationale": "Dedicated research priorities fund intelligent medical systems, language understanding, knowledge extraction, intelligent assistants and learner modelling. These substantial precursor provisions document the transition from earlier European information-technology programmes toward later AI research priorities.",
         "researcher_notes": "Original specific-programme decision, separate from the FP5 framework. EUR-Lex currently labels it In force; the programme's 2002 completion does not establish legal expiry or repeal. Relevance and sector tags are editorial classifications supported by Annex II.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-06T00:51:04.811+01:00"
       },
       "temporal_collection": "historical_lineage",

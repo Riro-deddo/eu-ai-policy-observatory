@@ -129,15 +129,15 @@ def test_second_pass_accounts_for_every_hold_and_only_the_reviewed_upgrades(publ
 
 
 def test_previous_verified_documents_and_previous_audit_remain_unchanged():
+    from normalization_assertions import assert_preserved_lf_hash
+
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
     previous_path = "research/migrations/2026-09-05-expanded-evidence-review.json"
-    normalized = (ROOT / previous_path).read_text(encoding="utf-8").encode("utf-8")
-    assert hashlib.sha256(normalized).hexdigest() == ledger["baseline"]["prior_ledger_sha256_lf"]
+    assert_preserved_lf_hash(ROOT, previous_path, ledger["baseline"]["prior_ledger_sha256_lf"])
     previous_verified = [row for row in ledger["baseline"]["documents"] if row["historical_review_status"] == "verified"]
     assert len(previous_verified) == 94
     for row in previous_verified:
-        raw = (ROOT / "data/documents" / f"{row['id']}.json").read_text(encoding="utf-8").encode("utf-8")
-        assert hashlib.sha256(raw).hexdigest() == row["sha256_lf"]
+        assert_preserved_lf_hash(ROOT, f"data/documents/{row['id']}.json", row["sha256_lf"])
 
 
 def test_transparency_upgrade_preserves_the_historical_lineage_hold_decision(public_payload):

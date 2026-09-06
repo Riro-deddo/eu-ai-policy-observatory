@@ -2,7 +2,7 @@
 
 ## Review scope
 
-This ledger records a bounded scope/status review performed at `2026-09-05T05:38:52Z` by `Codex (scope-review reopening)`. The review examined the decisions, reasons, source identifiers and official URLs already stored in the research inventory. It did not freshly retrieve, open, checksum or verify any English document file. Reopening therefore records unresolved evidence; it is not approval for publication and does not predict the eventual Phase C decision.
+This ledger records a bounded scope/status review performed at `2026-09-05T05:38:52Z` by `AI-assisted scope-review reopening`. The review examined the decisions, reasons, source identifiers and official URLs already stored in the research inventory. It did not freshly retrieve, open, checksum or verify any English document file. Reopening therefore records unresolved evidence; it is not approval for publication and does not predict the eventual Phase C decision.
 
 No canonical document was created, removed or reclassified. Candidate IDs, discovery source IDs, the `2026-09-04` coverage cutoff and the previously recorded `covered_through` values remain unchanged.
 
@@ -68,6 +68,6 @@ New reason:
 
 ## Source-state correction and result
 
-The earlier `reviewed` result for each affected source entrance needs rechecking because its linked unresolved candidates are no longer valid exclusions under the approved boundary. Both source entrances are now `recheck_due`, reviewed by `Codex (scope-review reopening)` at `2026-09-05T05:38:52Z`. Their recorded interval still ends at `2026-09-04`; this status review is not a new completed source search.
+The earlier `reviewed` result for each affected source entrance needs rechecking because its linked unresolved candidates are no longer valid exclusions under the approved boundary. Both source entrances are now `recheck_due`, reviewed by `AI-assisted scope-review reopening` at `2026-09-05T05:38:52Z`. Their recorded interval still ends at `2026-09-04`; this status review is not a new completed source search.
 
 Inventory counts changed from 117 included, 18 merged, 22 excluded and 0 pending to 117 included, 18 merged, 10 excluded and 12 pending. The public corpus remains 117 published documents. The prior decision facts are retained in each candidate's private `decision_history` and are excluded from the public export.

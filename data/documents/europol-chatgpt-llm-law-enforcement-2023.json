@@ -61,7 +61,7 @@
     "inclusion_rationale": "Europol Innovation Lab report on criminal misuse and law-enforcement implications of large language models; discusses how generated tools lower technical barriers to malicious activity.",
     "researcher_notes": "Identity is the 2023 Tech Watch Flash report, ISBN 978-92-95220-57-7. Official metadata still cites Europol (2023), despite a 25 November 2025 webpage update; no revised report identity is claimed. A longer law-enforcement-only version mentioned by the launch notice is not this public report. No historical byte-comparison claim is made.",
     "review_status": "verified",
-    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-06T00:41:49.332+01:00"
   },
   "historical_review_status": "verified",

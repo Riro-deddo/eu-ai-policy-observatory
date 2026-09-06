@@ -47,9 +47,9 @@
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified. This historical note describes a prior canonical record-level correction; this handoff preserves the existing supporting level and proposes no record_level change. Later expanded evidence review by Codex opened and read exact DOCX 118312, including its binding statement, chapter-selection declarations and reference to Code text published 10 July 2025; the dedicated page independently dates the form to 17 July 2025.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page establishes the form's administrative signing purpose; stronger structural claims about the uninspected binary were not verified. This historical note describes a prior canonical record-level correction; this handoff preserves the existing supporting level and proposes no record_level change. Later expanded evidence review by AI-assisted reviewer opened and read exact DOCX 118312, including its binding statement, chapter-selection declarations and reference to Code text published 10 July 2025; the dedicated page independently dates the form to 17 July 2025.",
     "review_status": "verified",
-    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-05T18:11:15Z"
   },
   "sector_tags": [

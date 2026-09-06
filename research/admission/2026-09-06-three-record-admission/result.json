@@ -1,7 +1,7 @@
 {
   "admission_id": "2026-09-06-three-record-admission",
   "reviewed_at": "2026-09-06T01:28:20Z",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "status": "local_admission_complete_with_environment_limited_frontend_test",
   "coverage_cutoff": "2026-09-04",
   "scope": "Two resolved candidates from the former three-candidate remainder plus one newly identified NDSG v1.4 dependency. The scientific opinion remains pending; the earlier frozen 53-candidate scope and historical ledger are unchanged.",

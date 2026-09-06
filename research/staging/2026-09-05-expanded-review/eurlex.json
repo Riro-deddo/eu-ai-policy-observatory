@@ -1,6 +1,6 @@
 {
   "batch_id": "2026-09-05-expanded-review-eurlex",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T18:06:34Z",
   "publication_cutoff": "2026-09-04",
   "records": [
@@ -53,7 +53,7 @@
           "inclusion_rationale": "The separately transmitted impact-assessment annexes contain the evidence, consultation and cost material underpinning SWD(2021) 84 final.",
           "researcher_notes": "Analytical selection; official title and attachment identity are verified through Council record ST 8115/21 ADD 2.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -142,7 +142,7 @@
           "inclusion_rationale": "The separately citable executive summary condenses the impact assessment's problem framing and preferred policy option.",
           "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -230,7 +230,7 @@
           "inclusion_rationale": "The impact assessment records the problem definition, policy options and evidence base for the Commission proposal.",
           "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -314,7 +314,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -400,7 +400,7 @@
           "inclusion_rationale": "The separately downloadable annexes define the original proposal's techniques, high-risk uses and amendment schedules and are essential to version comparison.",
           "researcher_notes": "Analytical selection; the annexes are modelled separately from the proposal's main text.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -486,7 +486,7 @@
           "inclusion_rationale": "Core Commission legislative proposal for the EU Artificial Intelligence Act.",
           "researcher_notes": "Analytical assessment; this record remains distinct from the final regulation.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -586,7 +586,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -672,7 +672,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -759,7 +759,7 @@
           "inclusion_rationale": "Core liability proposal in the selected EU AI policy pathway.",
           "researcher_notes": "Analytical assessment; it is not represented as an adopted directive.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -851,7 +851,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -941,7 +941,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1034,7 +1034,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1120,7 +1120,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1206,7 +1206,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1296,7 +1296,7 @@
           "inclusion_rationale": "Final in-force regulation anchoring the 2018–2024 core pathway.",
           "researcher_notes": "Analytical assessment; the metadata retains the Official Journal publication date rather than the signature date.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1388,7 +1388,7 @@
           "inclusion_rationale": "Commission policy communication linking trustworthy-AI governance with European AI innovation capacity.",
           "researcher_notes": "The scope link is analytical and kept separate from official metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1475,7 +1475,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1559,7 +1559,7 @@
           "inclusion_rationale": "Foundational institutional decision for centralised AI Act implementation and enforcement support.",
           "researcher_notes": "The implementation-stage classification is analytical; identifiers and dates are official metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1645,7 +1645,7 @@
           "inclusion_rationale": "The separately identifiable annex contains the substantive 2018 Coordinated Plan and is required to interpret the shorter covering communication.",
           "researcher_notes": "Analytical selection; official title and reference follow the English EUR-Lex text.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1731,7 +1731,7 @@
           "inclusion_rationale": "This separately downloadable annex is the substantive 2021 review of the Coordinated Plan and revises the 2018 coordination framework.",
           "researcher_notes": "Analytical selection; the annex remains distinct from the covering communication.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1817,7 +1817,7 @@
           "inclusion_rationale": "The communication presents the Commission's 2021 AI package and introduces the revised Coordinated Plan and regulatory proposal.",
           "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1901,7 +1901,7 @@
           "inclusion_rationale": "The revised regional opinion formally addresses both the European approach to AI and the AI Act proposal.",
           "researcher_notes": "Analytical selection; document and vote date follow the EUR-Lex record, while publication occurred in 2022.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1985,7 +1985,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2069,7 +2069,7 @@
           "inclusion_rationale": "The ECB opinion is a formal procedure contribution addressing the proposal's application to central banking and prudential supervision.",
           "researcher_notes": "Analytical selection; document and OJ dates follow EUR-Lex.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2160,7 +2160,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2266,7 +2266,7 @@
           "inclusion_rationale": "The mandatory EESC opinion is a formal institutional contribution to procedure 2021/0106(COD).",
           "researcher_notes": "EUR-Lex assigns this AI Act proposal opinion 2021/C 517/09, not 2021/C 517/08; the latter is the separate opinion on COM(2021) 205.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2350,7 +2350,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2434,7 +2434,7 @@
           "inclusion_rationale": "The formal EESC response is a distinct institutional interpretation of COM(2021) 205 and its revised Coordinated Plan.",
           "researcher_notes": "Included separately from the EESC opinion on COM(2021) 206; EUR-Lex assigns this record 2021/C 517/08 and CELEX 52021AE2456.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2519,7 +2519,7 @@
           "inclusion_rationale": "Published alongside the AI White Paper, the report frames the safety and liability problems that inform subsequent regulatory choices.",
           "researcher_notes": "Analytical selection, separate from the official EUR-Lex metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2603,7 +2603,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -2689,7 +2689,7 @@
           "inclusion_rationale": "Core consultation document connecting excellence, trust and a future regulatory framework.",
           "researcher_notes": "Analytical assessment, separate from EUR-Lex metadata.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T18:06:34Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
