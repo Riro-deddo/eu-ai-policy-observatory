@@ -1,0 +1,13 @@
+{
+  "id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021D0764",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T22:13:27.354753+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "Official act, OJ masthead, preamble, Arts.15-17 and Annex I section4.2.5 inspected. Inspected capture SHA-256 9ce711514251f5b7743e35a2dfcace0c47003698b3965f6e249036e698bf9cf6; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

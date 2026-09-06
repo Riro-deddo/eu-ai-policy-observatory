@@ -1,0 +1,13 @@
+{
+  "id": "medical-device-ai-interplay-mdcg-2025-6-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "commission_webpage",
+  "url": "https://health.ec.europa.eu/latest-updates/mdcg-2025-6-faq-interplay-between-medical-devices-regulation-vitro-diagnostic-medical-devices-2025-06-19_en",
+  "publisher": "European Commission, Directorate-General for Health and Food Safety",
+  "retrieved_at": "2026-09-06T22:13:27.354753+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "Publication field and exact linked English file both dated 19 June 2025. Inspected capture SHA-256 d758fb10700023efb4f48f2c27cb79c628eee214cc1ce18496f531f999d0c426; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

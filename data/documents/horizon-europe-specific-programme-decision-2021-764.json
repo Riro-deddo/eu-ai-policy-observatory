@@ -1,0 +1,120 @@
+{
+  "id": "horizon-europe-specific-programme-decision-2021-764",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "slug": "horizon-europe-specific-programme-decision-2021-764",
+  "official_title": "Council Decision (EU) 2021/764 of 10 May 2021 establishing the Specific Programme implementing Horizon Europe - the Framework Programme for Research and Innovation, and repealing Decision 2013/743/EU",
+  "short_title": "Horizon Europe specific programme",
+  "document_type": "decision",
+  "sector_tags": [
+    "research_and_innovation",
+    "industry_and_manufacturing"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Council Decision (EU) 2021/764",
+  "procedure_references": [],
+  "oj_reference": "OJ L 167I, 12.5.2021, pp. 1-80",
+  "document_date": "2021-05-10",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "2021-05-12",
+  "legal_status": "in_force",
+  "celex": "32021D0764",
+  "eli": "http://data.europa.eu/eli/dec/2021/764/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "evidence_locator": "Enacting body and signature: Council of the European Union."
+    },
+    {
+      "institution_id": "european-commission",
+      "role": "proposer",
+      "evidence_source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "evidence_locator": "Preamble: Having regard to the proposal from the European Commission."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "horizon-europe-specific-programme-decision-2021-764-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Annex I, Pillar II, cluster 4, section 4.2.5 Artificial Intelligence and Robotics: dedicated AI R&I, ethical and human-controlled AI, safety and discrimination risks.",
+    "researcher_notes": "Article 15 repeals the Horizon 2020 specific-programme decision from 1 January 2021; Article 16 saves existing actions. Entry into force and retrospective application are distinct. Original OJ manifestation, not a consolidated substitute. Concept coding and policy grouping have not been completed; empty arrays do not mean absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:16:06Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "Heading and signature: 10 May 2021.",
+      "meaning": "Date of the adopted legal act."
+    },
+    "publication_date": {
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "OJ masthead LI 167/1, 12.5.2021; identity panel pp.1-80.",
+      "meaning": "Publication in the Official Journal."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "Annex I, Pillar II, cluster 4, section 4.2.5 Artificial Intelligence and Robotics: dedicated AI R&I, ethical and human-controlled AI, safety and discrimination risks.",
+      "rationale": "Substantive AI policy content, not a keyword-only mention."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "Annex I, Pillar II, cluster 4, section 4.2.5 Artificial Intelligence and Robotics: dedicated AI R&I, ethical and human-controlled AI, safety and discrimination risks.",
+      "rationale": "Researcher classification grounded in the cited substantive sector scope."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "Annex I, Pillar II, cluster 4, section 4.2.5 Artificial Intelligence and Robotics: dedicated AI R&I, ethical and human-controlled AI, safety and discrimination risks.",
+      "rationale": "Researcher classification grounded in the cited substantive sector scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+      "locator": "Official publication record and matching manifestation.",
+      "rationale": "Published through the named official EU endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+    "locator": "Identity panel In force; Article 17.",
+    "meaning": "Enters into force on publication; applies from 1 January 2021. No later repeal identified in this check."
+  }
+}

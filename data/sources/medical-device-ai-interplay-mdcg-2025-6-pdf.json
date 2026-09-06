@@ -1,0 +1,13 @@
+{
+  "id": "medical-device-ai-interplay-mdcg-2025-6-pdf",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "official_pdf",
+  "url": "https://health.ec.europa.eu/document/download/b78a17d7-e3cd-4943-851d-e02a2f22bbb4_en",
+  "publisher": "European Commission, Directorate-General for Health and Food Safety",
+  "retrieved_at": "2026-09-06T22:13:27.353752+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "27-page joint AIB/MDCG document; cover and pp.2-5 inspected. Explicitly not Commission-authored. Inspected capture SHA-256 48db859581fb5f1677068cd4eca770e062c5fcc2a8483d6459daceeb98478626; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

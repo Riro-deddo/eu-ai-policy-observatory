@@ -1,0 +1,114 @@
+{
+  "id": "ep-autonomous-weapon-systems-resolution-2018",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "slug": "ep-autonomous-weapon-systems-resolution-2018",
+  "official_title": "European Parliament resolution of 12 September 2018 on autonomous weapon systems (2018/2752(RSP))",
+  "short_title": "Parliament resolution on autonomous weapon systems",
+  "document_type": "resolution",
+  "sector_tags": [
+    "defence_and_security"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "P8_TA(2018)0341",
+  "procedure_references": [
+    "2018/2752(RSP)"
+  ],
+  "oj_reference": "OJ C 433, 23.12.2019, pp. 86-88 (2019/C 433/11)",
+  "document_date": "2018-09-12",
+  "version_label": "Adopted resolution; Official Journal manifestation",
+  "version_status": "final",
+  "publication_date": "2019-12-23",
+  "legal_status": "non_binding",
+  "celex": "52018IP0341",
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-parliament",
+      "role": "author",
+      "evidence_source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "evidence_locator": "Act heading and enacting text: The European Parliament."
+    },
+    {
+      "institution_id": "european-parliament",
+      "role": "adopter",
+      "evidence_source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "evidence_locator": "Act heading and enacting text: The European Parliament."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ep-autonomous-weapon-systems-resolution-2018-eur-lex"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "Recitals B-J and operative points 1-7: AI-enabled autonomous weapons, human control, accountability and international prohibition policy.",
+    "researcher_notes": "The OJ publication is later than parliamentary adoption; no claim that December 2019 was first public availability. This is a non-binding resolution, not a regulation or AI Act implementation measure. Concept coding and policy grouping have not been completed; empty arrays do not mean absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:16:06Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "institutional_adoption",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "locator": "Act title: European Parliament resolution of 12 September 2018.",
+      "meaning": "Parliamentary adoption, distinct from OJ publication."
+    },
+    "publication_date": {
+      "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "locator": "OJ C433/86 masthead 23.12.2019; item2019/C433/11.",
+      "meaning": "Primary cited OJ manifestation, not inferred first-ever publication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "locator": "Recitals B-J and operative points 1-7: AI-enabled autonomous weapons, human control, accountability and international prohibition policy.",
+      "rationale": "Substantive AI policy content, not a keyword-only mention."
+    },
+    {
+      "field": "sector_tags",
+      "value": "defence_and_security",
+      "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "locator": "Recitals B-J and operative points 1-7: AI-enabled autonomous weapons, human control, accountability and international prohibition policy.",
+      "rationale": "Researcher classification grounded in the cited substantive sector scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "locator": "Cover, credits and issuing-body statement.",
+      "rationale": "The cited authorship and institutional roles support this provenance classification; publisher is not automatically author."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+      "locator": "Official publication record and matching manifestation.",
+      "rationale": "Published through the named official EU endpoint."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+    "locator": "Act title and operative points 1-7.",
+    "meaning": "Non-binding parliamentary resolution calling for policy action, not legislation."
+  }
+}

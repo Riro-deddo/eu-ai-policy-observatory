@@ -1,0 +1,16 @@
+{
+  "id": "horizon-europe-replaces-horizon-2020-specific-programme",
+  "entity_type": "relationship",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_entity_type": "document",
+  "source_entity_id": "horizon-europe-specific-programme-decision-2021-764",
+  "target_entity_type": "document",
+  "target_entity_id": "horizon-2020-specific-programme-decision-2013-743-eu",
+  "relationship_type": "replaces",
+  "basis": "official",
+  "rationale": "Decision2021/764 establishes the successor programme and expressly repeals Decision2013/743 in Article15; Article16 preserves existing actions until closure. Replacement does not mean every existing action terminated.",
+  "evidence_source_id": "horizon-europe-specific-programme-decision-2021-764-eur-lex",
+  "verification_status": "verified"
+}

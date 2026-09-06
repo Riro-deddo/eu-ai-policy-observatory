@@ -1,0 +1,13 @@
+{
+  "id": "eda-trustworthiness-ai-defence-white-paper-2025-publication",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "official_register",
+  "url": "https://eda.europa.eu/publications-and-data/thematic-policy-reports",
+  "publisher": "European Defence Agency",
+  "retrieved_at": "2026-09-06T22:15:03.011915+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "Thematic and policy reports: matching white paper entry dated12May2025; linked exact PDF captured. Inspected capture SHA-256 30c599abcd8e22a598b3adbead4ab9186289c80df13ea70532014b536ea3f0b8; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

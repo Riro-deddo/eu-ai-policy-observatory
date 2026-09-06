@@ -1,0 +1,903 @@
+{
+  "baseline_commit": "5ed89e1ba71f476f9ca14814e97d8f5f8043cc16",
+  "prepared_at": "2026-09-06T22:16:06Z",
+  "publication_cutoff": "2026-09-04",
+  "scope": "Bounded academic audit and evidence-backed backfill; not an exhaustive EU bibliography or a fresh full-text review of all 187 records.",
+  "before_counts": {
+    "published": 187,
+    "verified": 183,
+    "qualified_pending": 4,
+    "unpublished_candidates": 12
+  },
+  "admitted_ids": [
+    "medical-device-ai-interplay-mdcg-2025-6",
+    "eiopa-ai-governance-consultation-2025",
+    "horizon-europe-specific-programme-decision-2021-764",
+    "ep-autonomous-weapon-systems-resolution-2018",
+    "eda-trustworthiness-ai-defence-white-paper-2025"
+  ],
+  "correction_before": {
+    "council-decision-88-279-eec-esprit-ii": {
+      "id": "council-decision-88-279-eec-esprit-ii",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:53:00Z",
+      "updated_at": "2026-09-05T11:54:18Z",
+      "slug": "council-decision-88-279-eec-esprit-ii",
+      "official_title": "88/279/EEC: Council Decision of 11 April 1988 concerning the European strategic programme for research and development in information technologies (Esprit)",
+      "short_title": "ESPRIT II",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "88/279/EEC",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "1988-04-11",
+      "version_label": "Official Journal text",
+      "version_status": "final",
+      "publication_date": "1988-05-06",
+      "legal_status": "no_longer_in_force",
+      "celex": "31988D0279",
+      "eli": "http://data.europa.eu/eli/dec/1988/279/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-communities",
+          "role": "adopter",
+          "evidence_source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "evidence_locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "council-decision-88-279-eec-esprit-ii-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "coordination",
+        "inclusion_rationale": "Official identity, dates, roles and validity are resolved, and AI is an expressly named research area.",
+        "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+        "review_status": "verified",
+        "reviewed_by": "AI-assisted evidence review",
+        "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "meaning": "The cited official manifestation establishes the document date 1988-04-11 and its stated meaning."
+        },
+        "publication_date": {
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "meaning": "The cited official manifestation establishes official publication on 1988-05-06."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "rationale": "Annex II expressly lists artificial intelligence and cognitive science, making direct classification first applicable."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "rationale": "AI and cognitive science are basic-research work areas."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "rationale": "Other programme sections address knowledge engineering, computer-integrated manufacturing and robotics."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. The historical heading remains Council of the European Communities, and the Commission is separately represented as proposer."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+          "rationale": "EUR-Lex identifies OJ L 118, 6 May 1988, pp. 32-41."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "1991-12-31",
+          "precision": "day",
+          "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+          "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "council-decision-88-279-eec-esprit-ii-eur-lex",
+        "locator": "Identity panel; Annex II section B, Actions in basic research; OJ L 118/41",
+        "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+      }
+    },
+    "council-decision-88-417-eec-delta": {
+      "id": "council-decision-88-417-eec-delta",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:53:00Z",
+      "updated_at": "2026-09-05T11:54:18Z",
+      "slug": "council-decision-88-417-eec-delta",
+      "official_title": "88/417/EEC: Council Decision of 29 June 1988 on a Community action in the field of learning technologies - development of European learning through technological advance (Delta) exploratory action",
+      "short_title": "DELTA exploratory action",
+      "document_type": "decision",
+      "sector_tags": [
+        "education",
+        "research_and_innovation"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "88/417/EEC",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "1988-06-29",
+      "version_label": "Official Journal text",
+      "version_status": "final",
+      "publication_date": "1988-07-30",
+      "legal_status": "no_longer_in_force",
+      "celex": "31988D0417",
+      "eli": "http://data.europa.eu/eli/dec/1988/417/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-communities",
+          "role": "adopter",
+          "evidence_source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "evidence_locator": "Identity panel"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "council-decision-88-417-eec-delta-eur-lex",
+        "council-decision-88-417-eec-delta-official-pdf"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "coordination",
+        "inclusion_rationale": "The official record resolves identity, dates, roles and validity; the official PDF supplies the cited AI and learning-technology passage.",
+        "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+        "review_status": "verified",
+        "reviewed_by": "AI-assisted evidence review",
+        "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "direct_ai_substantive",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "locator": "Identity panel",
+          "meaning": "The cited official manifestation establishes the document date 1988-06-29 and its stated meaning."
+        },
+        "publication_date": {
+          "source_id": "council-decision-88-417-eec-delta-official-pdf",
+          "locator": "Annex II section 2, OJ L 206/26-27, PDF pp. 7-8",
+          "meaning": "The cited official manifestation establishes official publication on 1988-07-30."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "direct_ai_substantive",
+          "source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "locator": "Identity panel",
+          "rationale": "The official PDF treats artificial-intelligence computing as a material learning-technology milestone and specifies advanced knowledge-base work."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "locator": "Identity panel",
+          "rationale": "The decision establishes an exploratory Community R&D action."
+        },
+        {
+          "field": "sector_tags",
+          "value": "education",
+          "source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "locator": "Identity panel",
+          "rationale": "AI computing and knowledge bases are applied to learning information and technologies."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "locator": "Identity panel",
+          "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. The historical heading remains Council of the European Communities, and the Commission proposal is separately represented."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "council-decision-88-417-eec-delta-official-pdf",
+          "locator": "Annex II section 2, OJ L 206/26-27, PDF pp. 7-8",
+          "rationale": "EUR-Lex identifies OJ L 206, 30 July 1988, pp. 20-28 and exposes the official PDF."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "1990-05-31",
+          "precision": "day",
+          "source_id": "council-decision-88-417-eec-delta-eur-lex",
+          "locator": "Identity panel"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "council-decision-88-417-eec-delta-eur-lex",
+        "locator": "Identity panel",
+        "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+      }
+    },
+    "council-decision-89-415-eec-doses": {
+      "id": "council-decision-89-415-eec-doses",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:53:00Z",
+      "updated_at": "2026-09-05T11:54:18Z",
+      "slug": "council-decision-89-415-eec-doses",
+      "official_title": "89/415/EEC: Council Decision of 20 June 1989 instituting a specific programme for the research and development of statistical expert systems (Doses)",
+      "short_title": "DOSES statistical expert systems programme",
+      "document_type": "decision",
+      "sector_tags": [
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "89/415/EEC",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "1989-06-20",
+      "version_label": "Official Journal text",
+      "version_status": "final",
+      "publication_date": "1989-07-13",
+      "legal_status": "no_longer_in_force",
+      "celex": "31989D0415",
+      "eli": "http://data.europa.eu/eli/dec/1989/415/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-communities",
+          "role": "adopter",
+          "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "evidence_locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "council-decision-89-415-eec-doses-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "coordination",
+        "inclusion_rationale": "The formerly blocked full official text now resolves exact identity, dates, roles, validity and programme-wide expert-systems relevance.",
+        "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+        "review_status": "verified",
+        "reviewed_by": "AI-assisted evidence review",
+        "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "meaning": "The cited official manifestation establishes the document date 1989-06-20 and its stated meaning."
+        },
+        "publication_date": {
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "meaning": "The cited official manifestation establishes official publication on 1989-07-13."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "rationale": "The whole programme concerns statistical expert systems and knowledge rules across the statistical-processing chain, not generic computing."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "rationale": "Article 1 and Annex I establish a specific R&D programme."
+        },
+        {
+          "field": "sector_tags",
+          "value": "public_administration",
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "rationale": "Annex I applies expert systems to official statistics and Member State statistical needs."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. The historical heading remains Council of the European Communities, and the Commission proposal stays a separate role."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+          "rationale": "EUR-Lex identifies OJ L 200, 13 July 1989, pp. 46-49."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "1993-06-20",
+          "precision": "day",
+          "source_id": "council-decision-89-415-eec-doses-eur-lex",
+          "locator": "Identity panel; heading; Articles 1 and 8; Annex I"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "council-decision-89-415-eec-doses-eur-lex",
+        "locator": "Identity panel; heading; Articles 1 and 8; Annex I",
+        "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+      }
+    },
+    "council-decision-94-802-ec-esprit": {
+      "id": "council-decision-94-802-ec-esprit",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:53:00Z",
+      "updated_at": "2026-09-05T11:54:18Z",
+      "slug": "council-decision-94-802-ec-esprit",
+      "official_title": "94/802/EC: Council Decision of 23 November 1994 adopting a specific programme for research and technological development, including demonstration, in the field of information technologies (1994 to 1998)",
+      "short_title": "ESPRIT under the Fourth Framework Programme",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "94/802/EC",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "1994-11-23",
+      "version_label": "Official Journal text",
+      "version_status": "final",
+      "publication_date": "1994-12-22",
+      "legal_status": "no_longer_in_force",
+      "celex": "31994D0802",
+      "eli": "http://data.europa.eu/eli/dec/1994/802/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "evidence_locator": "Identity panel; Articles 1 and 9; Annex I RTD activities"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "council-decision-94-802-ec-esprit-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "coordination",
+        "inclusion_rationale": "The formerly blocked full official text resolves identity, dates, roles and validity and contains multiple substantive precursor passages.",
+        "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+        "review_status": "verified",
+        "reviewed_by": "AI-assisted evidence review",
+        "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "meaning": "The cited official manifestation establishes the document date 1994-11-23 and its stated meaning."
+        },
+        "publication_date": {
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "meaning": "The cited official manifestation establishes official publication on 1994-12-22."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "rationale": "The annex funds neural networks, knowledge-based systems, pattern recognition, intelligent machinery and intelligent control. The cited provisions do not explicitly use the term artificial intelligence, so the named precursor technologies satisfy the first applicable precursor class."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "rationale": "The decision establishes a specific RTD programme with detailed technical areas."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "rationale": "The annex ties intelligent control and machinery to manufacturing and industrial competitiveness."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author. Adoption by the Council and proposal by the Commission of the European Communities remain separately recorded roles."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+          "rationale": "EUR-Lex identifies OJ L 334, 22 December 1994, pp. 24-46."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "official_end_of_validity",
+          "value": "1998-12-31",
+          "precision": "day",
+          "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+          "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "council-decision-94-802-ec-esprit-eur-lex",
+        "locator": "Identity panel; Articles 1 and 9; Annex I RTD activities",
+        "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+      }
+    },
+    "horizon-2020-specific-programme-decision-2013-743-eu": {
+      "id": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:53:00Z",
+      "updated_at": "2026-09-05T11:54:18Z",
+      "slug": "horizon-2020-specific-programme-decision-2013-743-eu",
+      "official_title": "2013/743/EU: Council Decision of 3 December 2013 establishing the specific programme implementing Horizon 2020 - the Framework Programme for Research and Innovation (2014-2020) and repealing Decisions 2006/971/EC, 2006/972/EC, 2006/973/EC, 2006/974/EC and 2006/975/EC",
+      "short_title": "Horizon 2020 specific programme",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "eu_institution_authored",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "2013/743/EU",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2013-12-03",
+      "version_label": "Official Journal text",
+      "version_status": "final",
+      "publication_date": "2013-12-20",
+      "legal_status": "in_force",
+      "celex": "32013D0743",
+      "eli": "http://data.europa.eu/eli/dec/2013/743/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "evidence_locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
+        },
+        {
+          "institution_id": "european-commission",
+          "role": "proposer",
+          "evidence_source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "evidence_locator": "Preamble: 'Having regard to the proposal from the European Commission'"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "coordination",
+        "inclusion_rationale": "The official record resolves identity, dates, roles, current status and dedicated machine-learning, robotics and adaptive-system provisions.",
+        "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+        "review_status": "verified",
+        "reviewed_by": "AI-assisted evidence review",
+        "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "meaning": "The cited official manifestation establishes the document date 2013-12-03 and its stated meaning."
+        },
+        "publication_date": {
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "meaning": "The cited official manifestation establishes official publication on 2013-12-20."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "rationale": "Dedicated provisions fund machine learning, industrial and service robotics, cognitive and communicative systems, sentient machines and adaptive learning. The provisions are substantive, but they do not explicitly use the term artificial intelligence; the named learning and cognitive systems therefore satisfy the first applicable precursor class."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "rationale": "The act establishes the Horizon 2020 specific R&I programme."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "rationale": "The cited section targets industrial/service robotics and industrial leadership."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "eu_institution_authored",
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "rationale": "EUR-Lex Document information explicitly identifies the Council of the European Union as Author; the European Commission remains separately represented as proposer."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5",
+          "rationale": "EUR-Lex identifies OJ L 347, 20 December 2013, pp. 965-1041."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "consolidation",
+          "value": "2021-01-01",
+          "precision": "day",
+          "source_id": "horizon-2020-specific-programme-decision-2013-743-eu-eur-lex",
+          "locator": "Identity panel; Annex I Part II sections 1.1.4-1.1.5"
+        }
+      ]
+    },
+    "sixth-framework-programme-decision-1513-2002-ec": {
+      "id": "sixth-framework-programme-decision-1513-2002-ec",
+      "entity_type": "document",
+      "publication_status": "published",
+      "created_at": "2026-09-05T10:53:00Z",
+      "updated_at": "2026-09-05T11:54:18Z",
+      "slug": "sixth-framework-programme-decision-1513-2002-ec",
+      "official_title": "Decision No 1513/2002/EC of the European Parliament and of the Council of 27 June 2002 concerning the sixth framework programme of the European Community for research, technological development and demonstration activities, contributing to the creation of the European Research Area and to innovation (2002 to 2006)",
+      "short_title": "Sixth Framework Programme (FP6)",
+      "document_type": "decision",
+      "sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "provenance_tags": [
+        "joint_institutional",
+        "officially_published"
+      ],
+      "record_level": "principal",
+      "official_reference": "Decision No 1513/2002/EC",
+      "procedure_references": [],
+      "oj_reference": null,
+      "document_date": "2002-06-27",
+      "version_label": "Official Journal text",
+      "version_status": "final",
+      "publication_date": "2002-08-29",
+      "legal_status": "no_longer_in_force",
+      "celex": "32002D1513",
+      "eli": "http://data.europa.eu/eli/dec/2002/1513/oj",
+      "language": "en",
+      "official_summary": null,
+      "institution_roles": [
+        {
+          "institution_id": "european-parliament",
+          "role": "adopter",
+          "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+        },
+        {
+          "institution_id": "council-of-the-european-union",
+          "role": "adopter",
+          "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "evidence_locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+        },
+        {
+          "institution_id": "commission-of-the-european-communities",
+          "role": "proposer",
+          "evidence_source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "evidence_locator": "Preamble: 'Having regard to the proposal from the Commission'"
+        }
+      ],
+      "policy_ids": [],
+      "concept_ids": [],
+      "source_ids": [
+        "sixth-framework-programme-decision-1513-2002-ec-eur-lex"
+      ],
+      "corpus_assessment": {
+        "corpus_tier": "directly_related",
+        "policy_stage": "coordination",
+        "inclusion_rationale": "The official act resolves identity, separate dates, joint adopters, validity and substantive ambient-intelligence, cognitive-systems and robotics passages.",
+        "researcher_notes": "Historical collection and corpus classifications are AI-assisted researcher assessments, separate from official metadata.",
+        "review_status": "verified",
+        "reviewed_by": "AI-assisted evidence review",
+        "reviewed_at": "2026-09-05T06:37:06.8601555Z"
+      },
+      "historical_review_status": "verified",
+      "temporal_collection": "historical_lineage",
+      "relevance_class": "ai_related_precursor",
+      "document_date_kind": "official_act_date",
+      "date_evidence": {
+        "document_date": {
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "meaning": "The cited official manifestation establishes the document date 2002-06-27 and its stated meaning."
+        },
+        "publication_date": {
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "meaning": "The cited official manifestation establishes official publication on 2002-08-29."
+        }
+      },
+      "classification_evidence": [
+        {
+          "field": "relevance_class",
+          "value": "ai_related_precursor",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "rationale": "FP6 materially prioritises ambient intelligence, cognitive systems, knowledge management, intelligent manufacturing and innovative robotics. The cited provisions do not explicitly use the term artificial intelligence, so the named precursor technologies satisfy the first applicable precursor class."
+        },
+        {
+          "field": "sector_tags",
+          "value": "research_and_innovation",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "rationale": "The act is the Community RTD framework programme."
+        },
+        {
+          "field": "sector_tags",
+          "value": "industry_and_manufacturing",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "rationale": "The annex supports intelligent manufacturing, decision aids and innovative robotics."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "joint_institutional",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "rationale": "EUR-Lex Document information explicitly lists European Parliament and Council of the European Union together as Author; the act heading independently identifies them as joint adopters."
+        },
+        {
+          "field": "provenance_tags",
+          "value": "officially_published",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+          "rationale": "EUR-Lex identifies OJ L 232, 29 August 2002, pp. 1-33."
+        }
+      ],
+      "bibliographic_authors": [],
+      "additional_dates": [
+        {
+          "kind": "consolidation",
+          "value": "2004-04-30",
+          "precision": "day",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+        },
+        {
+          "kind": "official_end_of_validity",
+          "value": "2006-12-31",
+          "precision": "day",
+          "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+          "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities"
+        }
+      ],
+      "legal_status_evidence": {
+        "source_id": "sixth-framework-programme-decision-1513-2002-ec-eur-lex",
+        "locator": "Identity panel; Annex I section 1.1.2 and manufacturing priorities",
+        "meaning": "The official record states that the act is no longer in force and supplies its end-of-validity date; no repeal-versus-expiry inference is made."
+      }
+    }
+  },
+  "source_receipts": [
+    {
+      "name": "v02-mdcg.pdf",
+      "url": "https://health.ec.europa.eu/document/download/b78a17d7-e3cd-4943-851d-e02a2f22bbb4_en",
+      "retrieved_at": "2026-09-06T22:13:27.353752+00:00",
+      "status": 200,
+      "final_url": "https://health.ec.europa.eu/document/download/b78a17d7-e3cd-4943-851d-e02a2f22bbb4_en",
+      "content_type": "application/pdf",
+      "bytes": 474514,
+      "sha256": "48db859581fb5f1677068cd4eca770e062c5fcc2a8483d6459daceeb98478626"
+    },
+    {
+      "name": "v02-eiopa.pdf",
+      "url": "https://www.eiopa.europa.eu/document/download/8953a482-e587-429c-b416-1e24765ab250_en?filename=EIOPA-BoS-25-007-AI+Opinion.pdf",
+      "retrieved_at": "2026-09-06T22:13:27.353752+00:00",
+      "status": 200,
+      "final_url": "https://www.eiopa.europa.eu/document/download/8953a482-e587-429c-b416-1e24765ab250_en?filename=EIOPA-BoS-25-007-AI+Opinion.pdf",
+      "content_type": "application/pdf",
+      "bytes": 545596,
+      "sha256": "9752b7b4e04937df60667407f8f6f2801bab63e98eb03f2e39d61141bddd16b5"
+    },
+    {
+      "name": "v02-horizon.html",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021D0764",
+      "retrieved_at": "2026-09-06T22:13:27.354753+00:00",
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021D0764",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 920666,
+      "sha256": "9ce711514251f5b7743e35a2dfcace0c47003698b3965f6e249036e698bf9cf6"
+    },
+    {
+      "name": "v02-mdcg-page.html",
+      "url": "https://health.ec.europa.eu/latest-updates/mdcg-2025-6-faq-interplay-between-medical-devices-regulation-vitro-diagnostic-medical-devices-2025-06-19_en",
+      "retrieved_at": "2026-09-06T22:13:27.354753+00:00",
+      "status": 200,
+      "final_url": "https://health.ec.europa.eu/latest-updates/mdcg-2025-6-faq-interplay-between-medical-devices-regulation-vitro-diagnostic-medical-devices-2025-06-19_en",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 68091,
+      "sha256": "d758fb10700023efb4f48f2c27cb79c628eee214cc1ce18496f531f999d0c426"
+    },
+    {
+      "name": "v02-eiopa-page.html",
+      "url": "https://www.eiopa.europa.eu/consultations/consultation-paper-and-impact-assessment-eiopas-opinion-ai-governance-and-risk-management_en",
+      "retrieved_at": "2026-09-06T22:13:27.508732+00:00",
+      "status": 200,
+      "final_url": "https://www.eiopa.europa.eu/consultations/consultation-paper-and-impact-assessment-eiopas-opinion-ai-governance-and-risk-management_en",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 101450,
+      "sha256": "c0fffb575fc5a980fe5f69beb58edc41687c04735b7095e1aab79f945ee8b836"
+    },
+    {
+      "name": "v02-ep-weapons.html",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018IP0341",
+      "retrieved_at": "2026-09-06T22:15:02.916422+00:00",
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018IP0341",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 177205,
+      "sha256": "b62e12355c6d9b0073ae3f235a272623a6597f885df79afd88be9ffd645b54b7"
+    },
+    {
+      "name": "v02-melzer.pdf",
+      "url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET%282013%29410220_EN.pdf",
+      "retrieved_at": "2026-09-06T22:15:02.917422+00:00",
+      "status": 202,
+      "final_url": "https://www.europarl.europa.eu/RegData/etudes/etudes/join/2013/410220/EXPO-DROI_ET%282013%29410220_EN.pdf",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "v02-melzer-page.html",
+      "url": "https://www.europarl.europa.eu/thinktank/en/document/EXPO-DROI_ET%282013%29410220",
+      "retrieved_at": "2026-09-06T22:15:02.917422+00:00",
+      "status": 202,
+      "final_url": "https://www.europarl.europa.eu/thinktank/en/document/EXPO-DROI_ET%282013%29410220",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "v02-eda.pdf",
+      "url": "https://eda.europa.eu/docs/default-source/brochures/taid-white-paper-final-09052025.pdf",
+      "retrieved_at": "2026-09-06T22:15:02.917422+00:00",
+      "status": 200,
+      "final_url": "https://eda.europa.eu/docs/default-source/brochures/taid-white-paper-final-09052025.pdf",
+      "content_type": "application/pdf",
+      "bytes": 4484566,
+      "sha256": "728f955de6f63b2e8f95dcf3e1bc035cd6e59a1557b5f01b78d36fc8ea799ad0"
+    },
+    {
+      "name": "v02-eda-page.html",
+      "url": "https://eda.europa.eu/publications-and-data/thematic-policy-reports",
+      "retrieved_at": "2026-09-06T22:15:03.011915+00:00",
+      "status": 200,
+      "final_url": "https://eda.europa.eu/publications-and-data/thematic-policy-reports",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 89103,
+      "sha256": "30c599abcd8e22a598b3adbead4ab9186289c80df13ea70532014b536ea3f0b8"
+    }
+  ],
+  "source_receipt_note": "Only HTTP 200 non-empty substantive captures count as source snapshots. Melzer HTTP 202 empty responses are failures, not documents. Binary snapshots remain in the local evidence cache; hashes in this ledger identify inspected bytes, not a public archival guarantee.",
+  "immutable_release": "v0.1.0",
+  "preservation": "All baseline IDs, slugs, historical ledgers, existing hold statuses and cutoff are retained."
+}

@@ -1,6 +1,692 @@
 {
-  "generated_at": "2026-09-06T21:42:50Z",
+  "generated_at": "2026-09-06T22:21:51Z",
   "candidates": [
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "included",
+      "document_id": "medical-device-ai-interplay-mdcg-2025-6",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": "June 2025 endorsed guidance",
+      "id": "medical-device-ai-interplay-mdcg-2025-6",
+      "official_title": "Interplay between the Medical Devices Regulation (MDR) & In vitro Diagnostic Medical Devices Regulation (IVDR) and the Artificial Intelligence Act (AIA)",
+      "year": 2025,
+      "official_reference": "AIB 2025-1; MDCG 2025-6",
+      "official_source_url": "https://health.ec.europa.eu/latest-updates/mdcg-2025-6-faq-interplay-between-medical-devices-regulation-vitro-diagnostic-medical-devices-2025-06-19_en",
+      "issuing_institution": "european-artificial-intelligence-board; medical-device-coordination-group; european-commission",
+      "record_level": "principal",
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "health"
+      ],
+      "decision_reason": "Primary manifestation, identity, dates and attribution checked; retained-byte receipts and limits in research/migrations/2026-09-06-academic-backfill.json."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "included",
+      "document_id": "eiopa-ai-governance-consultation-2025",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": "Consultation draft",
+      "id": "eiopa-ai-governance-consultation-2025",
+      "official_title": "Consultation Paper on Opinion on Artificial Intelligence Governance and Risk Management",
+      "year": 2025,
+      "official_reference": "EIOPA-BoS-25-007",
+      "official_source_url": "https://www.eiopa.europa.eu/consultations/consultation-paper-and-impact-assessment-eiopas-opinion-ai-governance-and-risk-management_en",
+      "issuing_institution": "european-insurance-and-occupational-pensions-authority",
+      "record_level": "principal",
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "financial_services"
+      ],
+      "decision_reason": "Primary manifestation, identity, dates and attribution checked; retained-byte receipts and limits in research/migrations/2026-09-06-academic-backfill.json."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "included",
+      "document_id": "horizon-europe-specific-programme-decision-2021-764",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": "Official Journal text",
+      "id": "horizon-europe-specific-programme-decision-2021-764",
+      "official_title": "Council Decision (EU) 2021/764 of 10 May 2021 establishing the Specific Programme implementing Horizon Europe - the Framework Programme for Research and Innovation, and repealing Decision 2013/743/EU",
+      "year": 2021,
+      "official_reference": "Council Decision (EU) 2021/764",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021D0764",
+      "issuing_institution": "council-of-the-european-union; european-commission",
+      "record_level": "principal",
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "decision_reason": "Primary manifestation, identity, dates and attribution checked; retained-byte receipts and limits in research/migrations/2026-09-06-academic-backfill.json."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "included",
+      "document_id": "ep-autonomous-weapon-systems-resolution-2018",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": "Adopted resolution; Official Journal manifestation",
+      "id": "ep-autonomous-weapon-systems-resolution-2018",
+      "official_title": "European Parliament resolution of 12 September 2018 on autonomous weapon systems (2018/2752(RSP))",
+      "year": 2018,
+      "official_reference": "P8_TA(2018)0341",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018IP0341",
+      "issuing_institution": "european-parliament",
+      "record_level": "principal",
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "defence_and_security"
+      ],
+      "decision_reason": "Primary manifestation, identity, dates and attribution checked; retained-byte receipts and limits in research/migrations/2026-09-06-academic-backfill.json."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "included",
+      "document_id": "eda-trustworthiness-ai-defence-white-paper-2025",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": "Published white paper; front-matter version 1.0 (history also lists 1.1)",
+      "id": "eda-trustworthiness-ai-defence-white-paper-2025",
+      "official_title": "Trustworthiness for AI in Defence: Developing Responsible, Ethical, and Trustworthy AI Systems for European Defence",
+      "year": 2025,
+      "official_reference": null,
+      "official_source_url": "https://eda.europa.eu/publications-and-data/thematic-policy-reports",
+      "issuing_institution": "eda-trustworthiness-ai-defence-working-group; european-defence-agency",
+      "record_level": "principal",
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "defence_and_security"
+      ],
+      "decision_reason": "Primary manifestation, identity, dates and attribution checked; retained-byte receipts and limits in research/migrations/2026-09-06-academic-backfill.json."
+    },
+    {
+      "id": "hma-ema-llm-guiding-principles-2024",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": null,
+      "official_title": "Guiding principles on the use of large language models in regulatory science and for medicines regulatory activities",
+      "year": 2024,
+      "issuing_institution": "European Medicines Agency; Heads of Medicines Agencies",
+      "record_level": "principal",
+      "version_label": "Published guiding principles (2024); no numbered version established",
+      "official_source_url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-use-large-language-models-regulatory-science-medicines-regulatory-activities_en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "health",
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Reconciliation of the bounded omission search, not an assertion of nonexistence. Full official 10-page PDF was retrieved and its cover establishes issue on 29 August 2024. Publication on 5 September 2024 is corroborated by indexed official EMA catalogue/announcement evidence, but direct release-page retrieval returned 429. Parent-level source preservation, publication evidence review and canonical admission remain incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 2, for exact official URLs, locators and retrieval limitations. Timestamps here record inventory reconciliation, not reconstructed first discovery.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "ema-fda-good-ai-practice-drug-development-2026",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": null,
+      "official_title": "Guiding principles of good AI practice in drug development",
+      "year": 2026,
+      "issuing_institution": "European Medicines Agency; U.S. Food and Drug Administration",
+      "record_level": "principal",
+      "version_label": "Published joint guiding principles, January 2026",
+      "official_source_url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "joint_institutional",
+      "provisional_sector_tags": [
+        "health",
+        "research_and_innovation",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Reconciliation of an identified joint EMA/FDA work. The official FDA co-author's complete two-page PDF and official release bulletin were retrieved, establishing January 2026 issue precision and release on 14 January 2026; EMA's document-specific indexed catalogue agrees. Direct EMA PDF retrieval returned 429. Parent review of the EU manifestation, institutional roles and permitted official co-author corroboration is incomplete; byte equivalence was not tested and the agency manifestations differ in spelling. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 3, including https://www.fda.gov/media/189581/download and https://content.govdelivery.com/accounts/USFDA/bulletins/4045c84. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "draft-gmp-annex-22-artificial-intelligence-2025",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "EudraLex Volume 4, proposed new Annex 22",
+      "official_title": "Annex 22: Artificial Intelligence",
+      "year": 2025,
+      "issuing_institution": "EMA GMDP-Inspectors Working Group in cooperation with PIC/S; European Commission DG SANTE hosts the consultation",
+      "record_level": "principal",
+      "version_label": "Consultation draft, July 2025",
+      "official_source_url": "https://health.ec.europa.eu/document/download/5f38a92d-bb8e-4264-8898-ea076e926db6_en?filename=mp_vol4_chap4_annex22_consultation_guideline_en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "official_consultation_material",
+      "provisional_sector_tags": [
+        "health",
+        "industry_and_manufacturing"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "The complete official six-page consultation draft and its Commission consultation page were retrieved. The page establishes consultation opening on 7 July 2025, while no exact printed document issue day was found; 1 July dates a separate privacy statement and must not be reused. This is a draft, with no final adoption verified. Parent review of the consultation-release fallback, precise drafting/publishing roles and canonical admission remains incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 4, and its linked official consultation/date locators. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "eiopa-big-data-motor-health-insurance-2019",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "ISBN 978-92-9473-142-5; DOI 10.2854/54208; EI-02-19-220-EN-N",
+      "official_title": "Big Data Analytics in motor and health insurance: A thematic review",
+      "year": 2019,
+      "issuing_institution": "European Insurance and Occupational Pensions Authority",
+      "record_level": "principal",
+      "version_label": "Published thematic review (2019)",
+      "official_source_url": "https://register.eiopa.europa.eu/Publications/EIOPA_BigDataAnalytics_ThematicReview_April2019.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "financial_services",
+        "health"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Complete official 68-page report was retrieved; identifiers and substantive AI/ML analysis are verified. Imprint establishes 2019 but not an exact issue day. Official indexed contemporaneous announcement and press release establish publication on 8 May 2019, while a later catalogue displays 19 June 2019; direct announcement/press-release requests returned 429/403. Parent review of publication evidence and its distinction from later catalogue metadata remains incomplete. Filename April2019 is not independent issue-date proof. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 6, for exact official release URLs and printed/PDF page locators. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "eba-ai-act-mapping-letter-2025",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "EBA/2025/D/5384",
+      "official_title": "Outcome of EBA’s AI Act mapping exercise",
+      "year": 2025,
+      "issuing_institution": "European Banking Authority; José Manuel Campa, Chairperson",
+      "record_level": "principal",
+      "version_label": "Issued Chairperson letter with annex",
+      "official_source_url": "https://www.eba.europa.eu/sites/default/files/2025-11/2019d1b5-59f8-4149-ad3b-23cfcd4388a1/EBA%2520Chair%2520letter%2520to%2520Mr%2520Berrigan%2520and%2520Mr%2520Viola%2520on%2520outcome%2520of%2520EBA%25E2%2580%2599s%2520AI%2520Act%2520mapping%2520exercise.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "financial_services",
+        "consumer_protection"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Complete official nine-page letter and substantive mapping annex were retrieved. Cover gives reference EBA/2025/D/5384 and issue on 21 November 2025; signature identifies the EBA Chairperson. Publication metadata remain discrepant: indexed correspondence archive lists 21 November, whereas general EBA result lists display 20 November. Direct archive retrieval failed. Parent review must preserve or resolve that discrepancy and distinguish this letter-plus-annex from the separate summarising factsheet; neither Commission recipient is a co-author. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 7. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "ecb-ai-financial-stability-special-feature-2024",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "Financial Stability Review, May 2024, special feature B",
+      "official_title": "The rise of artificial intelligence: benefits and risks for financial stability",
+      "year": 2024,
+      "issuing_institution": "European Central Bank; Georg Leitner, Jaspal Singh, Anton van der Kraaij and Balázs Zsámboki",
+      "record_level": "principal",
+      "version_label": "Published Financial Stability Review special feature",
+      "official_source_url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202405_02~58c3ce5246.en.html",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "financial_services"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Complete official HTML article, ECB release announcement and Governing Council publication-authorisation record were successfully retrieved. The article identifies the May 2024 FSR; actual volume release on 16 May 2024 is independently established. The 8 May authorisation is not substantive adoption, and 10 May dates the authorisation webpage. Parent review of article-level dating, named authorship, work/part treatment and canonical admission remains incomplete; this pending decision is not a missing-full-text finding. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 8, for exact primary date URLs and locators. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "ema-2024-ai-observatory-report-2025",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "EMA/76534/2025",
+      "official_title": "2024 AI Observatory report",
+      "year": 2025,
+      "issuing_institution": "European Medicines Agency",
+      "record_level": "principal",
+      "version_label": "Published annual report covering 2024",
+      "official_source_url": "https://www.ema.europa.eu/en/documents/report/2024-ai-observatory-report_en.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "health",
+        "public_administration",
+        "research_and_innovation"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Official indexed PDF cover identifies EMA/76534/2025 and issue on 8 May 2025; the document-specific EMA catalogue entry gives first publication on 10 July 2025. Direct full-PDF retrieval returned 429, so full primary text, exact institutional roles and independent admission remain unverified. Activity year 2024 is not publication year. The already included 2025 AI Observatory report is a different annual work; related 2024 compilation and horizon-scanning attachments require separate work/part assessment. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 9. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": null,
+      "official_title": "Rising application of AI in EU banking and payments sector",
+      "year": 2025,
+      "issuing_institution": "European Banking Authority",
+      "record_level": "principal",
+      "version_label": "Digital Finance Factsheet Series, September 2025",
+      "official_source_url": "https://www.eba.europa.eu/sites/default/files/2025-09/146b3558-d026-47bf-a872-f05e93ed30d2/Rising%20application%20of%20AI%20in%20EU%20banking%20and%20payments%20sector.pdf",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "financial_services"
+      ],
+      "discovered_at": "2026-09-06T22:15:52Z",
+      "decision": "pending",
+      "decision_reason": "Official indexed PDF first-page text and the document-specific EBA result list both give 25 September 2025 and identify the AI-adoption factsheet. Direct full-PDF requests returned 403. Full primary text, pagination, any further identifiers and parent canonical admission remain incomplete. The official Factsheet category should not be overridden by the listing description's generic use of report. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 10, for the exact one-result official catalogue URL and retrieval limitations. Timestamps record inventory reconciliation.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:15:52Z",
+      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+    },
+    {
+      "id": "human-rights-drones-unmanned-robots-warfare-2013",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "EXPO/B/DROI/2012/12; PE 410.220",
+      "official_title": "Human Rights Implications of the Usage of Drones and Unmanned Robots in Warfare",
+      "year": 2013,
+      "issuing_institution": "European Parliament, Directorate-General for External Policies",
+      "record_level": "principal",
+      "version_label": "Final study",
+      "official_source_url": "https://www.europarl.europa.eu/thinktank/en/document/EXPO-DROI_ET%282013%29410220",
+      "commissioning_body": "European Parliament, Directorate-General for External Policies",
+      "candidate_provenance": "eu_commissioned_external",
+      "provisional_sector_tags": [
+        "defence_and_security"
+      ],
+      "discovered_at": "2026-09-06T22:16:12Z",
+      "decision": "pending",
+      "decision_reason": "Official Parliament identity, May 2013 issue month, 3 May 2013 publication record, external authorship by Nils Melzer and defence/autonomous-weapons substance are resolved. Direct parent capture of the official PDF returned HTTP 202 with an empty body, so no independently retained document bytes, media-type validation, byte length or SHA-256 exists. Pending until a non-empty official English artifact is captured and hashed; not approved for publication.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-border-control-migration-security-main-report-2020",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "ISBN 978-92-76-18447-8; DOI 10.2837/923610; DR-02-20-303-EN-N",
+      "official_title": "Opportunities and challenges for the use of artificial intelligence in border control, migration and security. Volume 1, Main report",
+      "year": 2020,
+      "issuing_institution": "European Commission, Directorate-General for Migration and Home Affairs",
+      "record_level": "principal",
+      "version_label": "Final main report, Volume 1",
+      "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/c8823cd1-a152-11ea-9d2d-01aa75ed71a1/language-en",
+      "commissioning_body": "European Commission, Directorate-General for Migration and Home Affairs",
+      "candidate_provenance": "eu_commissioned_external",
+      "provisional_sector_tags": [
+        "migration_asylum_and_border_management",
+        "law_enforcement"
+      ],
+      "discovered_at": "2026-09-06T22:16:12Z",
+      "decision": "pending",
+      "decision_reason": "Official Publications Office metadata resolves the title, references, May 2020 report month and 28 May 2020 release; the report identifies Deloitte as writer and DG HOME as commissioner/publisher. Repeated HTTP 429 responses prevented capture of independently retained English report bytes and a SHA-256. Pending source capture and hash; the exact canonical day must remain an explicit publication-date fallback rather than an invented internal issue day.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "people-machines-robots-skills-2017",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "DOI 10.2801/057353; ISBN 978-92-896-2316-2; TI-BB-17-003-EN-N",
+      "official_title": "People, machines, robots and skills",
+      "year": 2017,
+      "issuing_institution": "European Centre for the Development of Vocational Training (Cedefop)",
+      "record_level": "principal",
+      "version_label": "Final briefing note",
+      "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/973495f4-ad64-11e7-837e-01aa75ed71a1/language-en",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_agency_or_body_authored",
+      "provisional_sector_tags": [
+        "employment_and_labour"
+      ],
+      "discovered_at": "2026-09-06T22:16:12Z",
+      "decision": "pending",
+      "decision_reason": "Official Cedefop material resolves the July 2017 issue month, institutional authorship and employment/skills automation substance; Publications Office gives a 6 March 2018 release. No retained official English bytes or SHA-256 were captured in this bounded audit. Pending byte capture and an explicit decision to use the exact publication date as canonical fallback while preserving the month-only internal issue date.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "advanced-robotics-ai-task-automation-osh-2022",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "ISBN 978-92-9479-672-1; DOI 10.2802/681779; TE-RO-22-005-EN-N",
+      "official_title": "Advanced robotics, artificial intelligence and the automation of tasks: definitions, uses, policies and strategies and Occupational Safety and Health",
+      "year": 2022,
+      "issuing_institution": "European Agency for Safety and Health at Work (EU-OSHA)",
+      "record_level": "principal",
+      "version_label": "Final report",
+      "official_source_url": "https://osha.europa.eu/en/publications/advanced-robotics-artificial-intelligence-and-automation-tasks-definitions-uses-policies-and-strategies-and-occupational-safety-and-health",
+      "commissioning_body": "European Agency for Safety and Health at Work (EU-OSHA)",
+      "candidate_provenance": "eu_commissioned_external",
+      "provisional_sector_tags": [
+        "employment_and_labour"
+      ],
+      "discovered_at": "2026-09-06T22:16:12Z",
+      "decision": "pending",
+      "decision_reason": "The official page resolves publication on 26 April 2022, the report references and substantive workplace/OSH AI scope. The credited external authors are Patricia Helen Rosen, Eva Heinold, Elena Fries-Tersch, Phoebe Moore and Sascha Wischniewski; EU-OSHA project managers are not bibliographic authors. The official PDF retrieval failed in the browsing layer, leaving no retained bytes or SHA-256. Pending successful official English capture and hash.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ai-watch-ai-uptake-smart-mobility-2021",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "JRC126302; EUR 30821 EN; DOI 10.2760/879190; ISBN 978-92-76-41403-2",
+      "official_title": "AI Watch: AI Uptake in Smart Mobility",
+      "year": 2021,
+      "issuing_institution": "European Commission, Joint Research Centre",
+      "record_level": "principal",
+      "version_label": "Final JRC technical report",
+      "official_source_url": "https://ai-watch.ec.europa.eu/publications/ai-watch-ai-uptake-smart-mobility_en",
+      "commissioning_body": null,
+      "candidate_provenance": "eu_institution_authored",
+      "provisional_sector_tags": [
+        "transport_and_mobility"
+      ],
+      "discovered_at": "2026-09-06T22:16:12Z",
+      "decision": "pending",
+      "decision_reason": "AI Watch and Publications Office resolve publication on 15 September 2021, JRC references, authors S. De Nigris, J. Hradec, M. Craglia and D. Nepelski, and substantive AI-in-mobility coverage. No official English file was retained or hashed during the bounded audit. Pending byte capture, media-type validation and SHA-256 before admission.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "id": "ethics-connected-automated-vehicles-2020",
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "official_reference": "DOI 10.2777/035239; ISBN 978-92-76-17867-5; KI-03-20-238-EN-N",
+      "official_title": "Ethics of connected and automated vehicles: Recommendations on road safety, privacy, fairness, explainability and responsibility",
+      "year": 2020,
+      "issuing_institution": "Independent Expert Group on the Ethics of Connected and Automated Vehicles; European Commission, Directorate-General for Research and Innovation",
+      "record_level": "principal",
+      "version_label": "Final recommendations report",
+      "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/89624e2c-f98c-11ea-b44f-01aa75ed71a1/language-en/",
+      "commissioning_body": "European Commission, Directorate-General for Research and Innovation",
+      "candidate_provenance": "eu_expert_group_authored",
+      "provisional_sector_tags": [
+        "transport_and_mobility"
+      ],
+      "discovered_at": "2026-09-06T22:16:12Z",
+      "decision": "pending",
+      "decision_reason": "Publications Office resolves the title, references and 17 September 2020 release, and the report is substantively about AI ethics in connected and automated vehicles. Admission remains blocked on two evidence items: retained official English bytes with SHA-256, and inspection of the PDF credit page to distinguish the independent expert group as substantive author from DG Research and Innovation as commissioner/publisher. Pending; no canonical document identifier assigned.",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:12Z",
+      "reviewed_by": "AI-assisted evidence review"
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "jrc-ai-watch-defining-ai-2020",
+      "official_title": "AI Watch. Defining Artificial Intelligence",
+      "year": 2020,
+      "official_reference": "JRC118163",
+      "official_source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC118163",
+      "issuing_institution": "JRC, European Commission",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "research_and_innovation"
+      ],
+      "decision_reason": "Official catalogue inspected; full English PDF, personal credits and publication correspondence require completion."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "jrc-ai-watch-defining-ai-2-2021",
+      "official_title": "AI Watch. Defining Artificial Intelligence 2.0",
+      "year": 2021,
+      "official_reference": "JRC126426",
+      "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/83838dbc-3d1f-11ec-89db-01aa75ed71a1",
+      "issuing_institution": "JRC, European Commission",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "research_and_innovation"
+      ],
+      "decision_reason": "Official OP release29October2021 and second-edition description inspected; full text and version lineage review incomplete."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "jrc-ai-watch-public-services-2020",
+      "official_title": "AI Watch - Artificial Intelligence in public services",
+      "year": 2020,
+      "official_reference": "JRC120399",
+      "official_source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC120399",
+      "issuing_institution": "JRC, European Commission",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "public_administration"
+      ],
+      "decision_reason": "Catalogue inspected; full credit and exact-publication correspondence review incomplete."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "jrc-ai-watch-public-sector-workshop-2020",
+      "official_title": "AI Watch - Artificial Intelligence for the public sector",
+      "year": 2020,
+      "official_reference": "JRC120315",
+      "official_source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC120315",
+      "issuing_institution": "JRC, European Commission",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "public_administration"
+      ],
+      "decision_reason": "Workshop report lead; full manifestation/date review incomplete. Meeting11-12February2020 is not a publication date."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "council-decision-82-878-eec-esprit-pilot",
+      "official_title": "Council Decision82/878/EEC on an experimental phase of a Community research and development programme in information technology",
+      "year": 1982,
+      "official_reference": "82/878/EEC",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31982D0878",
+      "issuing_institution": "Council of the European Communities",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "research_and_innovation"
+      ],
+      "decision_reason": "Pre-1984 lead; full-text access failed and substantive AI/precursor connection remains unestablished. Generic information technology is insufficient."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "council-decision-2022-2269-responsible-ai",
+      "official_title": "Council Decision(CFSP)2022/2269",
+      "year": 2022,
+      "official_reference": "2022/2269",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2269",
+      "issuing_institution": "Council of the European Union",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "defence_and_security"
+      ],
+      "decision_reason": "Incidental responsible-AI peace/security lead. Full title, dates and operative evidence review incomplete."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "eurohpc-ai-gigafactories-regulation-2026-150",
+      "official_title": "Regulation(EU)2026/150",
+      "year": 2026,
+      "official_reference": "2026/150",
+      "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0150",
+      "issuing_institution": "European Union institutions; precise roles pending",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "research_and_innovation"
+      ],
+      "decision_reason": "Incidental AI gigafactories lead. Full title, institutional roles, publication and substantive review incomplete."
+    },
+    {
+      "source_ids": [
+        "academic-coverage-backfill-20260906"
+      ],
+      "commissioning_body": null,
+      "discovered_at": "2026-09-06T22:16:06Z",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "version_label": null,
+      "id": "gpai-provider-guidelines-c-2025-7719",
+      "official_title": "Communication from the Commission - Guidelines for providers of general-purpose AI models",
+      "year": 2025,
+      "official_reference": "C(2025)7719 final",
+      "official_source_url": "https://ec.europa.eu/transparency/documents-register/detail?ref=C(2025)7719&lang=en",
+      "issuing_institution": "European Commission",
+      "record_level": "principal",
+      "candidate_provenance": "unknown_pending_review",
+      "provisional_sector_tags": [
+        "general_cross_sector"
+      ],
+      "decision_reason": "Active-queue reconciliation, not new discovery/fresh publication verification. research/staging/2026-09-05-review-continuation/commission.json records19November2025 issue and unresolved exact publication. Distinct from JulyC(2025)5045ANNEX; do not copy July release date."
+    },
     {
       "id": "draft-high-risk-classification-guidelines-consultation-work-2026",
       "source_ids": ["commission-consultation-high-risk"],

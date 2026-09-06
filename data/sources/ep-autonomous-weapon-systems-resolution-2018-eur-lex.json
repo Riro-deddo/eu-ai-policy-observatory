@@ -1,0 +1,13 @@
+{
+  "id": "ep-autonomous-weapon-systems-resolution-2018-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:16:06Z",
+  "updated_at": "2026-09-06T22:16:06Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52018IP0341",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T22:15:02.916422+00:00",
+  "last_verified_at": "2026-09-06T22:16:06Z",
+  "verification_note": "Complete English OJ text retrieved; masthead, title, recitals B-J and points1-7 inspected. OJ item is 2019/C433/11, not /10. Inspected capture SHA-256 b62e12355c6d9b0073ae3f235a272623a6597f885df79afd88be9ffd645b54b7; receipt in research/migrations/2026-09-06-academic-backfill.json. Local bytes retained; no public archive guarantee."
+}

@@ -16,11 +16,11 @@ def payload():
         result = run_pipeline(ROOT, '2026-09-06T21:00:00Z', output_root=Path(out))
         return json.loads(result.public_json.read_text(encoding='utf-8'))
 
-def test_only_st10069_is_admitted(payload):
-    assert len(payload['documents']) == 187
-    assert payload['coverage']['historical_review'] == {'verified':183,'legacy_review_pending':4}
+def test_st10069_and_later_backfill_preserve_the_four_qualified_holds(payload):
+    assert len(payload['documents']) == 192
+    assert payload['coverage']['historical_review'] == {'verified':188,'legacy_review_pending':4}
     assert {d['id'] for d in payload['documents'] if d['historical_review_status']!='verified'} == HOLDS
-    assert len(payload['relationships']) == 114
+    assert len(payload['relationships']) == 115
 
 def test_st10069_preserves_issue_and_records_documented_access(payload):
     d = next(d for d in payload['documents'] if d['id']==TARGET)
