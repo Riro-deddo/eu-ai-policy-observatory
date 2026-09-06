@@ -1,0 +1,296 @@
+{
+  "reviewed_at": "2026-09-06T21:42:50Z",
+  "review_actor": "AI-assisted evidence review",
+  "baseline_commit": "5fbc48667826ae05b3ef37e40775c6755b63d7fe",
+  "scope": "The twelve existing pending candidates, not an exhaustive wider search.",
+  "method": "Follow official AI Board links to meeting 67904 and its downloads. Follow page 3 OEIL links to Parliament HTML entries and PDFs. Direct HTTP returned empty 202; normal Edge browsing recovered all nine PDFs. Check magic, SHA-256, covers and body samples. Keep catalogue, cover, approval and registration dates distinct. No admission rule changes.",
+  "scope_cutoff": "2026-09-04",
+  "sources": [
+    {
+      "name": "board-meeting-67904.json",
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/meetings/67904",
+      "retrieved_at": "2026-09-06T21:37:08.655565+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/meetings/67904",
+      "content_type": "application/json",
+      "bytes": 1869,
+      "sha256": "4f4233ddd9177169f6ceba651d91a91967ee63852dcca32b920637c37a2bec32"
+    },
+    {
+      "name": "board-D1.pdf",
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134542/download",
+      "retrieved_at": "2026-09-06T21:37:08.655565+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134542/download",
+      "content_type": "application/octet-stream",
+      "bytes": 292237,
+      "sha256": "6d1d2efd7ad72e6a93964cd57abca55f29104a1f627f12dc8cb751236b144a3c"
+    },
+    {
+      "name": "board-D2.pdf",
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134543/download",
+      "retrieved_at": "2026-09-06T21:37:08.655565+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134543/download",
+      "content_type": "application/octet-stream",
+      "bytes": 587851,
+      "sha256": "798a466291242dcd4128953b0326beb3548d1476d044b1c15c4a941af0b3858d"
+    },
+    {
+      "name": "board-D3.pdf",
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134213/download",
+      "retrieved_at": "2026-09-06T21:37:08.656568+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134213/download",
+      "content_type": "application/octet-stream",
+      "bytes": 2006127,
+      "sha256": "f097df0178467a7ef7664bf619348498be8c35e0bfeebd02133b2112089f3a86"
+    },
+    {
+      "name": "board-minutes.docx",
+      "format_note": "The register labels this draft-minutes download as DOCX, but the retrieved bytes are PDF (%PDF-1.7); it was read with a PDF parser.",
+      "url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134352/download",
+      "retrieved_at": "2026-09-06T21:37:08.802750+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134352/download",
+      "content_type": "application/octet-stream",
+      "bytes": 187141,
+      "sha256": "2abd33f24dcf42503a2de37e8467a6d8cca0e5603a6073ee97d966048f9fdb80"
+    },
+    {
+      "url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "sha256": "9edadb01263a0f59d27c0bb27e03377b5b3ee3eafde5d1ce0773c77fa0763bc7",
+      "locator": "PDF p. 3: nine exact PE references, amendments tabled in committee, 10/06/2022. Followed link annotations."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732802_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732802_EN.html",
+      "retrieved_at": "2026-09-06T21:39:07.599Z",
+      "sha256": "f7cf97016ac53eb6c2ba94ce353efecb5b57a0d415b3b836bca278999e05db10",
+      "bytes": 626876,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732836_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732836_EN.html",
+      "retrieved_at": "2026-09-06T21:39:07.598Z",
+      "sha256": "0303e12f5f55477055c749ae19c748ef3973db105c24c9d9b4f59bdfb1bd9693",
+      "bytes": 634476,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732837_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732837_EN.html",
+      "retrieved_at": "2026-09-06T21:39:07.615Z",
+      "sha256": "b51afd43ba3c1f18c79206df47f4cac41cd99a88a2e7cea38961abc626a2fe2c",
+      "bytes": 568230,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732838_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732838_EN.html",
+      "retrieved_at": "2026-09-06T21:39:26.817Z",
+      "sha256": "2b4cd58b5e69c34c46041f924e2f781039e1d6e0985324ea1a0432cee1a17b56",
+      "bytes": 560499,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732839_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732839_EN.html",
+      "retrieved_at": "2026-09-06T21:39:26.818Z",
+      "sha256": "ad1cf00b54405d1d8b394e85827b6b90b8e6d365fd51cedaa2a54e395b0ebdad",
+      "bytes": 570221,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732840_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732840_EN.html",
+      "retrieved_at": "2026-09-06T21:39:26.829Z",
+      "sha256": "b7d6e717bc1cb4e78dceea967ed4714f3497c0af2519b5a28cadfdca28232d59",
+      "bytes": 584324,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732841_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732841_EN.html",
+      "retrieved_at": "2026-09-06T21:39:27.449Z",
+      "sha256": "2d5c26ef57fc2936471d82c7d6fa130f371048776b9514a34367960d10b491cd",
+      "bytes": 574114,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732843_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732843_EN.html",
+      "retrieved_at": "2026-09-06T21:39:27.452Z",
+      "sha256": "d52156ba0e959bd2a50e3b7e74fa2b06cf92178a2ba2ee01dd35e7baa198b4ff",
+      "bytes": 479860,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    },
+    {
+      "url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732844_EN.pdf",
+      "landing_page": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732844_EN.html",
+      "retrieved_at": "2026-09-06T21:39:27.462Z",
+      "sha256": "d4e1383ee5675799a270d299b7715a5a150a8b05676d59c3a073ea264f42bdad",
+      "bytes": 430763,
+      "result": "Normal browser retrieval; English PDF cover visually checked. HTML 10.6.2022; PDF cover 13.6.2022."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_id": "ai-board-harmonised-standards-report-2026",
+      "decision": "pending",
+      "official_reference": "AIB2025-doc2 / SG Standards2025-1",
+      "official_source_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134542/download",
+      "pdf_sha256": "6d1d2efd7ad72e6a93964cd57abca55f29104a1f627f12dc8cb751236b144a3c",
+      "confirmed": "Distinct independent English Standards Subgroup report, not a Commission-authored document.",
+      "cover_date": "2026-03",
+      "date_precision": "month",
+      "additional_evidence": "Minutes document/134352/download dated 23 March 2026, section 4, p. 3: Standards Subgroup reports approved by consensus at 20 March meeting. Minutes call it sixth meeting, register says seventh; no enumeration of report IDs or exact versions.",
+      "unresolved": "Exact version-specific issue/adoption and public-release dates. June Ares registration is not proof of public release.",
+      "reopen_when": "Official evidence ties this precise version to exact issue/adoption and public-release dates. Do not substitute meeting or Ares dates without that link."
+    },
+    {
+      "candidate_id": "ai-board-article-40-standardisation-report-2026",
+      "decision": "pending",
+      "official_reference": "AIB2025-doc3 / SG Standards2025-2",
+      "official_source_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134543/download",
+      "pdf_sha256": "798a466291242dcd4128953b0326beb3548d1476d044b1c15c4a941af0b3858d",
+      "confirmed": "Distinct independent English Standards Subgroup report, not a Commission-authored document.",
+      "cover_date": "2026-03",
+      "date_precision": "month",
+      "additional_evidence": "Minutes document/134352/download dated 23 March 2026, section 4, p. 3: Standards Subgroup reports approved by consensus at 20 March meeting. Minutes call it sixth meeting, register says seventh; no enumeration of report IDs or exact versions.",
+      "unresolved": "Exact version-specific issue/adoption and public-release dates. June Ares registration is not proof of public release.",
+      "reopen_when": "Official evidence ties this precise version to exact issue/adoption and public-release dates. Do not substitute meeting or Ares dates without that link."
+    },
+    {
+      "candidate_id": "ai-board-international-standardisation-report-2026",
+      "decision": "pending",
+      "official_reference": "AIB2025-doc4 / SG Standards2025-3",
+      "official_source_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134213/download",
+      "pdf_sha256": "f097df0178467a7ef7664bf619348498be8c35e0bfeebd02133b2112089f3a86",
+      "confirmed": "Distinct independent English Standards Subgroup report, not a Commission-authored document.",
+      "cover_date": "2026-03",
+      "date_precision": "month",
+      "additional_evidence": "Minutes document/134352/download dated 23 March 2026, section 4, p. 3: Standards Subgroup reports approved by consensus at 20 March meeting. Minutes call it sixth meeting, register says seventh; no enumeration of report IDs or exact versions.",
+      "unresolved": "Exact version-specific issue/adoption and public-release dates. June Ares registration is not proof of public release.",
+      "reopen_when": "Official evidence ties this precise version to exact issue/adoption and public-release dates. Do not substitute meeting or Ares dates without that link."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732802",
+      "decision": "pending",
+      "official_reference": "PE732.802v01-00",
+      "amendment_range": "310 - 538",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732802_EN.pdf",
+      "pdf_sha256": "f7cf97016ac53eb6c2ba94ce353efecb5b57a0d415b3b836bca278999e05db10",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732836",
+      "decision": "pending",
+      "official_reference": "PE732.836v01-00",
+      "amendment_range": "539 - 773",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732836_EN.pdf",
+      "pdf_sha256": "0303e12f5f55477055c749ae19c748ef3973db105c24c9d9b4f59bdfb1bd9693",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732837",
+      "decision": "pending",
+      "official_reference": "PE732.837v01-00",
+      "amendment_range": "774 - 1189",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732837_EN.pdf",
+      "pdf_sha256": "b51afd43ba3c1f18c79206df47f4cac41cd99a88a2e7cea38961abc626a2fe2c",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732838",
+      "decision": "pending",
+      "official_reference": "PE732.838v01-00",
+      "amendment_range": "1190 - 1580",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732838_EN.pdf",
+      "pdf_sha256": "2b4cd58b5e69c34c46041f924e2f781039e1d6e0985324ea1a0432cee1a17b56",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732839",
+      "decision": "pending",
+      "official_reference": "PE732.839v01-00",
+      "amendment_range": "1581 - 2005",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732839_EN.pdf",
+      "pdf_sha256": "ad1cf00b54405d1d8b394e85827b6b90b8e6d365fd51cedaa2a54e395b0ebdad",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732840",
+      "decision": "pending",
+      "official_reference": "PE732.840v01-00",
+      "amendment_range": "2006 - 2355",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732840_EN.pdf",
+      "pdf_sha256": "b7d6e717bc1cb4e78dceea967ed4714f3497c0af2519b5a28cadfdca28232d59",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732841",
+      "decision": "pending",
+      "official_reference": "PE732.841v01-00",
+      "amendment_range": "2356 - 2726",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732841_EN.pdf",
+      "pdf_sha256": "2d5c26ef57fc2936471d82c7d6fa130f371048776b9514a34367960d10b491cd",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732843",
+      "decision": "pending",
+      "official_reference": "PE732.843v01-00",
+      "amendment_range": "2727 - 3019",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732843_EN.pdf",
+      "pdf_sha256": "d52156ba0e959bd2a50e3b7e74fa2b06cf92178a2ba2ee01dd35e7baa198b4ff",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    },
+    {
+      "candidate_id": "ep-ai-act-committee-amendments-pe-732844",
+      "decision": "pending",
+      "official_reference": "PE732.844v01-00",
+      "amendment_range": "3020 - 3312",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732844_EN.pdf",
+      "pdf_sha256": "d4e1383ee5675799a270d299b7715a5a150a8b05676d59c3a073ea264f42bdad",
+      "confirmed": "Distinct English compilation for PE731.563v01-00 and procedure 2021/0106(COD). Proposed amendments, not an adopted position or enacted law. Sponsors are named per amendment; underlying rapporteurs are not authors of every amendment.",
+      "catalogue_date": "2022-06-10",
+      "pdf_cover_issue_date": "2022-06-13",
+      "unresolved": "Catalogue/HTML date precedes the currently linked PDF cover. Different date meanings may be legitimate, but no version/publication history explains their correspondence.",
+      "reopen_when": "Official version history or publication evidence reconciles 10 June catalogue entry and 13 June PDF; do not infer adoption or make dates identical."
+    }
+  ]
+}

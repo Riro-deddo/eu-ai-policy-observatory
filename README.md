@@ -4,6 +4,8 @@ The EU AI Policy Observatory is a verified research database of European Union a
 
 ## Version 0.1 release
 
+For a fixed research citation and downloadable snapshot, use [dataset release v0.1.0](https://github.com/Riro-deddo/eu-ai-policy-observatory/releases/tag/v0.1.0), [citation metadata](CITATION.cff) and the [release boundaries and limitations](docs/releases/v0.1.0.md). The website remains a changing view of the database.
+
 - [Browse the public research atlas](https://riro-deddo.github.io/eu-ai-policy-observatory/)
 - [View the GitHub repository](https://github.com/Riro-deddo/eu-ai-policy-observatory)
 - [Download the published SQLite database](https://riro-deddo.github.io/eu-ai-policy-observatory/downloads/eu-ai-policy-observatory.sqlite)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T21:03:47Z",
+  "generated_at": "2026-09-06T21:42:50Z",
   "candidates": [
     {
       "id": "draft-high-risk-classification-guidelines-consultation-work-2026",
@@ -1040,13 +1040,13 @@
       "source_ids": [
         "european-ai-board-documents"
       ],
-      "official_reference": null,
-      "official_title": "Harmonised Standards for High-Risk AI Systems under the AI Act: Progress and Availability",
+      "official_reference": "AIB2025-doc2 / SG Standards2025-1",
+      "official_title": "Harmonised Standards for High-Risk AI Systems under the EU AI Act: Progress and Availability (in response to the European Commission Standardisation Request C(2025)3871, repealing C(2023)3215)",
       "year": 2026,
       "issuing_institution": "European Artificial Intelligence Board",
       "record_level": "supporting",
       "version_label": "Endorsed document",
-      "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+      "official_source_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134542/download",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
       "provisional_sector_tags": [
@@ -1054,11 +1054,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
+      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -1067,6 +1067,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -1075,13 +1083,13 @@
       "source_ids": [
         "european-ai-board-documents"
       ],
-      "official_reference": null,
-      "official_title": "Report on the possible elements of forthcoming standardisation requests, to comply with Article 40 of the AI Act",
+      "official_reference": "AIB2025-doc3 / SG Standards2025-2",
+      "official_title": "Report on the possible elements of the forthcoming additional standardisation requests, to comply with Article 40 of the AI Act for the delivery and implementation of these requests",
       "year": 2026,
       "issuing_institution": "European Artificial Intelligence Board",
       "record_level": "supporting",
       "version_label": "Endorsed document",
-      "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+      "official_source_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134543/download",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
       "provisional_sector_tags": [
@@ -1089,11 +1097,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
+      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -1102,6 +1110,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -1110,13 +1126,13 @@
       "source_ids": [
         "european-ai-board-documents"
       ],
-      "official_reference": null,
+      "official_reference": "AIB2025-doc4 / SG Standards2025-3",
       "official_title": "Report on the ongoing AI standardisation activities in other international fora",
       "year": 2026,
       "issuing_institution": "European Artificial Intelligence Board",
       "record_level": "supporting",
       "version_label": "Endorsed document",
-      "official_source_url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+      "official_source_url": "https://ec.europa.eu/transparency/expert-groups-register/core/api/front/document/134213/download",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
       "provisional_sector_tags": [
@@ -1124,11 +1140,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
+      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -1137,6 +1153,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Official listing identified this report, but its independently citable English version and required metadata still need record-level verification. Reopened under the approved unresolved-evidence rule; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2414,12 +2438,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.802",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 310 - 538 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732802_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2427,11 +2451,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.802v01-00 PDF recovered; amendments 310 - 538 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2440,6 +2464,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2449,12 +2481,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.836",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 539 - 773 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732836_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2462,11 +2494,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.836v01-00 PDF recovered; amendments 539 - 773 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2475,6 +2507,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2484,12 +2524,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.837",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 774 - 1189 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732837_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2497,11 +2537,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.837v01-00 PDF recovered; amendments 774 - 1189 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2510,6 +2550,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2519,12 +2567,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.838",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 1190 - 1580 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732838_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2532,11 +2580,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.838v01-00 PDF recovered; amendments 1190 - 1580 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2545,6 +2593,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2554,12 +2610,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.839",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 1581 - 2005 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732839_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2567,11 +2623,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.839v01-00 PDF recovered; amendments 1581 - 2005 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2580,6 +2636,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2589,12 +2653,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.840",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 2006 - 2355 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732840_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2602,11 +2666,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.840v01-00 PDF recovered; amendments 2006 - 2355 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2615,6 +2679,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2624,12 +2696,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.841",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 2356 - 2726 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732841_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2637,11 +2709,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.841v01-00 PDF recovered; amendments 2356 - 2726 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2650,6 +2722,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2659,12 +2739,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.843",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 2727 - 3019 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732843_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2672,11 +2752,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.843v01-00 PDF recovered; amendments 2727 - 3019 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2685,6 +2765,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
@@ -2694,12 +2782,12 @@
         "ep-oeil-2021-0106"
       ],
       "official_reference": "PE732.844",
-      "official_title": "Amendments to the draft report on the Artificial Intelligence Act",
+      "official_title": "Amendments 3020 - 3312 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
       "version_label": "Committee amendments",
-      "official_source_url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2021%2F0106%28COD%29",
+      "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732844_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
@@ -2707,11 +2795,11 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+      "decision_reason": "Exact English PE732.844v01-00 PDF recovered; amendments 3020 - 3312 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-05T05:38:52Z",
-      "reviewed_by": "AI-assisted scope-review reopening",
+      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
           "decision": "excluded",
@@ -2720,6 +2808,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-04T00:00:00Z",
           "reviewed_by": "Yichen Hao"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "The prior discovery-only exclusion predates the broadened inclusion rule. The independently citable amendment file, version identity and metadata require review. Reopened for that review; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-05T05:38:52Z",
+          "reviewed_by": "AI-assisted scope-review reopening"
         }
       ]
     },
