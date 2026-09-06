@@ -148,7 +148,17 @@
             "document_date": { "$ref": "#/$defs/date" },
             "version_label": { "$ref": "#/$defs/nullable_string" },
             "version_status": { "enum": ["draft", "revised", "final", "consolidated", "not_applicable"] },
-            "publication_date": { "$ref": "#/$defs/date" },
+            "publication_date": { "anyOf": [{ "$ref": "#/$defs/date" }, { "type": "null" }] },
+            "review_qualification": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "kind": { "enum": ["parent_evidence_pending", "publication_date_pending", "official_version_conflict"] },
+                "confirmed": { "type": "string", "pattern": "\\S" },
+                "unresolved": { "type": "string", "pattern": "\\S" }
+              },
+              "required": ["kind", "confirmed", "unresolved"]
+            },
             "legal_status": { "enum": ["non_binding", "proposed", "adopted", "in_force", "withdrawn", "superseded", "no_longer_in_force", "repealed", "expired"] },
             "celex": { "$ref": "#/$defs/nullable_string" },
             "eli": { "$ref": "#/$defs/nullable_string" },
@@ -201,6 +211,23 @@
             "concept_ids",
             "source_ids",
             "corpus_assessment"
+          ],
+          "allOf": [
+            {
+              "if": { "properties": { "publication_date": { "type": "null" } }, "required": ["publication_date"] },
+              "then": {
+                "required": ["review_qualification"],
+                "properties": { "review_qualification": { "properties": { "kind": { "const": "publication_date_pending" } } } }
+              }
+            },
+            {
+              "if": { "required": ["review_qualification"] },
+              "then": { "properties": { "historical_review_status": { "const": "legacy_review_pending" } } }
+            },
+            {
+              "if": { "required": ["review_qualification"], "properties": { "review_qualification": { "properties": { "kind": { "const": "publication_date_pending" } }, "required": ["kind"] } } },
+              "then": { "properties": { "publication_date": { "type": "null" } } }
+            }
           ]
         }
       ]

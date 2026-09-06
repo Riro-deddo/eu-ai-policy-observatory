@@ -522,9 +522,19 @@ test('pending legacy records show a separate expanded-review notice without infe
   )!;
   await page.goto(`corpus/${pending.slug}/`);
 
-  const notice = page.getByRole('complementary', { name: 'Expanded evidence review pending' });
-  await expect(notice).toBeVisible();
-  await expect(notice).toContainText('no temporal collection or relevance class is inferred');
+  if (pending.review_qualification) {
+    const notice = page.locator('aside[aria-labelledby="qualified-evidence-review"]');
+    await expect(notice).toBeVisible();
+    await expect(notice).toContainText(pending.review_qualification.confirmed);
+    await expect(notice).toContainText(pending.review_qualification.unresolved);
+    await expect(notice).toContainText('not a completed expanded verification');
+  } else {
+    const notice = page.getByRole('complementary', { name: 'Expanded evidence review pending' });
+    await expect(notice).toBeVisible();
+    await expect(notice).toContainText('no temporal collection or relevance class is inferred');
+  }
+  await expect(page.getByRole('region', { name: 'Verification', exact: true }))
+    .toContainText('Expanded evidence review pending');
   const classifications = page.getByRole('region', { name: 'Research classifications' });
   await expect(
     classifications.locator('dt').filter({ hasText: /^Record level$/ })

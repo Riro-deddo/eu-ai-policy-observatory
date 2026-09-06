@@ -158,6 +158,18 @@ const data = loadPublicData();
         publication or release date; and <code>event_date</code> dates a policy event. The coverage
         range is derived from published documents’ <code>document_date</code> values.
       </p>
+      <p>
+        For a retained record with an explicit pending-review qualification, an unconfirmed
+        publication date is stored as null and displayed as “Publication date not yet confirmed”.
+        It is excluded from publication-year filters and sorted after dated records; an adoption
+        or retrieval date is never substituted. The previous value and correction reason remain
+        in the audit history. Fully verified records still require exact dates and supporting evidence.
+      </p>
+      <p>
+        Qualified review notes distinguish confirmed original text and publication from missing
+        parent-approval evidence, an unconfirmed public-release date, or conflicting official version
+        information. These notes do not promote a record to completed expanded verification.
+      </p>
     </section>
 
     <section aria-labelledby="provenance">

@@ -9,6 +9,7 @@ from observatory.pipeline import run_pipeline
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ST10069_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-st10069-evidence-admission.json"
 LEDGER_PATH = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.json"
 CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
 EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
@@ -64,7 +65,7 @@ def test_initial_compromise_keeps_its_own_issue_date_without_false_upgrade(publi
     assert initial["historical_review_status"] == "legacy_review_pending"
 
 
-def test_first_compromise_uses_the_official_multilingual_file_without_false_upgrade(public_payload):
+def test_first_compromise_keeps_multilingual_file_after_dated_access_admission(public_payload):
     """Catch reintroducing the broken English-only manifestation URL."""
     documents = {row["id"]: row for row in public_payload["documents"]}
     record = documents["ai-act-council-first-consolidated-compromise-st-10069-2022"]
@@ -72,7 +73,9 @@ def test_first_compromise_uses_the_official_multilingual_file_without_false_upgr
         source["url"] == "https://data.consilium.europa.eu/doc/document/ST-10069-2022-INIT/x/pdf"
         for source in record["sources"]
     )
-    assert record["historical_review_status"] == "legacy_review_pending"
+    assert record["historical_review_status"] == "verified"
+    assert record["publication_date"] == "2022-06-20"
+    assert "not first-ever" in record["date_evidence"]["publication_date"]["meaning"]
 
 
 @pytest.mark.parametrize("document_id,issue_date,publication_date,date_kind", LATER_COUNCIL_DATES)
@@ -110,14 +113,15 @@ def test_second_pass_accounts_for_every_hold_and_only_the_reviewed_upgrades(publ
     four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     six_record_update = json.loads(SIX_RECORD_LEDGER_PATH.read_text(encoding="utf-8"))
     seven_admissions = json.loads(SEVEN_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+    st10069 = json.loads(ST10069_LEDGER_PATH.read_text(encoding="utf-8"))
     documents = {row["id"]: row for row in public_payload["documents"]}
     current = Counter(
         documents[row["id"]]["historical_review_status"]
         for row in ledger["baseline"]["documents"]
     )
     assert current == {
-        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]) + len(six_record_update["upgraded_existing_ids"]) + len(seven_admissions["upgraded_ids"]),
-        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]) - len(six_record_update["upgraded_existing_ids"]) - len(seven_admissions["upgraded_ids"]),
+        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]) + len(six_record_update["upgraded_existing_ids"]) + len(seven_admissions["upgraded_ids"]) + len(st10069["upgraded_ids"]),
+        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]) - len(six_record_update["upgraded_existing_ids"]) - len(seven_admissions["upgraded_ids"]) - len(st10069["upgraded_ids"]),
     }
     assert {row["id"]: row["slug"] for row in ledger["baseline"]["documents"]}.items() <= {
         row["id"]: row["slug"] for row in public_payload["documents"]

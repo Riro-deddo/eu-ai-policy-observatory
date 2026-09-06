@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-09-06T19:38:53Z",
+  "change_type": "qualified_evidence_presentation",
+  "authorization": "User approved null publication dates for pending records and explicit field-level qualifications, without full-verification upgrades.",
+  "documents": [
+    {"id": "standardisation-request-c-2025-3871", "field": "publication_date", "before": "2025-06-23", "after": null, "reason": "23 June 2025 is established as adoption, not as public release. No qualifying exact-day public manifestation has been established."},
+    {"id": "gpai-training-content-explanatory-notice-2025", "qualification": "parent_evidence_pending"},
+    {"id": "gpai-training-content-template-2025", "qualification": "parent_evidence_pending"},
+    {"id": "ai-act-council-third-compromise-part-one-st-12206-2022-init", "qualification": "official_version_conflict"}
+  ],
+  "source_basis": [
+    {"url": "https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818", "locator": "Cover and operative text: adoption on 23 June 2025; not proof of a public-release day.", "sha256": "617f68127736552ac968804dc2e7dd2293b0bb569fa38ab65cb5b3a0c5178384"},
+    {"url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/mex_25_1906/MEX_25_1906_EN.pdf", "locator": "24 July 2025 Daily News, pages 1-2: template publication; not release of the distinct MAIN approval.", "sha256": "0729efac480270b6cff198fb132fa2073caee08c0728ef9952451fa791dd9873"},
+    {"url": "https://data.consilium.europa.eu/doc/document/CM-4409-2022-INIT/en/pdf", "locator": "Page 1: forthcoming third-compromise reference; does not correct the INIT register identity.", "sha256": "aa59a9a7e8bb0f723d5e1cb3b4a7b58fb95912c878ee00a01a1c775373c6ae07"}
+  ],
+  "preservation": "Existing notes, evidence, identifiers, routes and review credits retained. No historical verification upgrade; 187 documents, 183 complete, four pending. Qualification is not a new legal status."
+}

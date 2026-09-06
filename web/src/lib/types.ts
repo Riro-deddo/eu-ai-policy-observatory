@@ -136,7 +136,12 @@ export interface DocumentRecord extends PublishedEntity {
   document_date: string;
   version_label: string | null;
   version_status: 'draft' | 'revised' | 'final' | 'consolidated' | 'not_applicable';
-  publication_date: string;
+  publication_date: string | null;
+  review_qualification?: {
+    kind: 'parent_evidence_pending' | 'publication_date_pending' | 'official_version_conflict';
+    confirmed: string;
+    unresolved: string;
+  } | null;
   historical_review_status: 'verified' | 'legacy_review_pending';
   temporal_collection: 'historical_lineage' | 'contemporary_eu_ai_policy' | null;
   relevance_class: 'direct_ai_substantive' | 'ai_related_precursor' | 'indirect_adm_legal_context' | null;

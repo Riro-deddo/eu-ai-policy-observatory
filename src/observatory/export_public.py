@@ -107,6 +107,7 @@ def _export_documents(
             "classification_evidence",
             "bibliographic_authors",
             "additional_dates",
+            "review_qualification",
         ):
             document[field] = (
                 json.loads(document[field]) if document[field] is not None else None

@@ -1,9 +1,14 @@
 {
   "id": "gpai-training-content-explanatory-notice-2025",
   "entity_type": "document",
+  "review_qualification": {
+    "kind": "parent_evidence_pending",
+    "confirmed": "Original July 2025 explanatory notice and its public release confirmed; the original C(2025)5235 ANNEX has been recovered from the Commission host.",
+    "unresolved": "Parent approval evidence pending: the separate MAIN approval is bibliographically identified, but its public release has not been established. The full parent-record chain remains incomplete under this database's admission rules; the notice text itself is available."
+  },
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-06T17:05:16Z",
+  "updated_at": "2026-09-06T19:11:39Z",
   "slug": "gpai-training-content-explanatory-notice-2025",
   "official_title": "Explanatory notice on the template for the public summary of training content of general-purpose AI models",
   "short_title": "Explanatory notice for GPAI training summary",
@@ -39,13 +44,14 @@
   ],
   "source_ids": [
     "gpai-training-summary-commission",
-    "gpai-training-summary-july-publication-oj-2026"
+    "gpai-training-summary-july-publication-oj-2026",
+    "gpai-training-summary-july-original-annex"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. 2026-09-06 evidence update — Limited work-level evidence only: OJ C/2026/4006 PDF page 2 independently corroborates Commission publication of the notice/template work on 24 July 2025. It does not print C(2025) 5235 or prove publication of the distinct main approval communication. The register and preserved original identify the July ANNEX, while the currently linked PDF is the separate December C(2025) 8311 communication. The existing final and record-level metadata remain legacy-review-pending under correction review; approval-parent admission, source eligibility and exact formal identity corrections remain unresolved.",
+    "researcher_notes": "Expanded evidence review update, 6 September 2026: the original July C(2025)5235 ANNEX is now recovered directly from the European Commission repository. Its exact official manifestation and source eligibility are resolved. The cover identifies an annex to approval of the content of the draft communication; December C(2025)8311 remains distinct. OJ C/2026/4006 corroborates July work-level publication, but the distinct main approval communication still lacks independently evidenced publication timing. The required parent admission therefore remains unresolved. Existing final and record-level metadata remain legacy-review-pending under correction review, not newly verified; no partial extension or inferred parent contents are added.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"

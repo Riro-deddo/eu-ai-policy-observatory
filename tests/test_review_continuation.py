@@ -11,6 +11,7 @@ from observatory.pipeline import run_pipeline
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ST10069_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-st10069-evidence-admission.json"
 LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
 EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
@@ -111,11 +112,12 @@ def test_continuation_accounts_for_every_starting_record_once(public_payload):
     four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     six_record_update = json.loads(SIX_RECORD_LEDGER_PATH.read_text(encoding="utf-8"))
     seven_admissions = json.loads(SEVEN_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+    st10069 = json.loads(ST10069_LEDGER_PATH.read_text(encoding="utf-8"))
     later_upgrades = (
         set(corrections["upgraded_ids"])
         | set(four_admissions["upgraded_ids"])
         | set(six_record_update["upgraded_existing_ids"])
-        | set(seven_admissions["upgraded_ids"])
+        | set(seven_admissions["upgraded_ids"]) | set(st10069["upgraded_ids"])
     )
     for document_id in upgraded:
         assert documents[document_id]["historical_review_status"] == "verified"

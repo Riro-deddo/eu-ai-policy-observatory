@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T19:11:39Z",
   "slug": "ai-act-council-first-consolidated-compromise-st-10069-2022",
   "official_title": "Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts – Consolidated Presidency compromise text",
   "short_title": "First consolidated Council Presidency compromise",
@@ -17,7 +17,7 @@
   "document_date": "2022-06-15",
   "version_label": "First consolidated Presidency compromise",
   "version_status": "revised",
-  "publication_date": "2022-06-15",
+  "publication_date": "2022-06-20",
   "legal_status": "non_binding",
   "celex": null,
   "eli": null,
@@ -26,7 +26,9 @@
   "institution_roles": [
     {
       "institution_id": "council-of-the-european-union",
-      "role": "author"
+      "role": "author",
+      "evidence_source_id": "council-st-10069-2022",
+      "evidence_locator": "PDF p. 1 identifies the Presidency as originator and delegations as recipient. The Council association represents the Presidency acting within the Council, without implying Council adoption."
     }
   ],
   "policy_ids": [
@@ -40,13 +42,16 @@
     "trustworthiness"
   ],
   "source_ids": [
-    "council-st-10069-2022"
+    "council-st-10069-2022",
+    "council-access-request-22-1313",
+    "council-access-request-22-1307",
+    "council-access-dataset-semantics"
   ],
   "corpus_assessment": {
     "corpus_tier": "core",
     "policy_stage": "negotiation",
-    "inclusion_rationale": "First formally published consolidated Council compromise in the AI Act procedure.",
-    "researcher_notes": "The official multilingual manifestation has a French cover and an English legislative annex. The English display title translates and preserves the cover's consolidated-version qualifier; the ordinal label and analytical corpus fields remain distinct.",
+    "inclusion_rationale": "Consolidated Presidency compromise in the AI Act negotiation pathway, with separately evidenced public access.",
+    "researcher_notes": "The whole official multilingual manifestation has a French cover and an English legislative annex. The English display title translates the consolidated-version qualifier; the ordinal short label and corpus classification remain analytical. The Presidency is the corporate author and delegations are the recipient, not co-authors. Issue remains 15 June 2022. Council access requests 22/1313 and 22/1307 document public-access replies on 20 June 2022. The dataset guide distinguishes historical reply outcomes from current register availability. This is documented access, not first-ever publication; neither original reply-letter bytes nor a historical binary snapshot is claimed. The supported incoming ST 11124 revision link preserves version lineage.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
@@ -57,5 +62,60 @@
   "provenance_tags": [
     "eu_institution_authored",
     "officially_published"
-  ]
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-st-10069-2022",
+      "locator": "PDF p. 1: Brussels, 15 June 2022; ST 10069/22; consolidated Presidency compromise.",
+      "meaning": "Issue date of the exact multilingual INIT note, distinct from its dated public-access evidence."
+    },
+    "publication_date": {
+      "source_id": "council-access-request-22-1313",
+      "locator": "Request 22/1313 result panel: reply 20/06/2022; sole requested document 10069/2022 INIT; Type of reply: Public in Register. Corroborated by request 22/1307 and dataset guide sections 2.2.6 and 2.3.2.",
+      "meaning": "The Council's historical reply record establishes documented public access on 2022-06-20, not first-ever publication. The date is neither today's retrieval nor the document's issue date."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-st-10069-2022",
+      "locator": "PDF p. 1 subject and annex containing the harmonised AI rules.",
+      "rationale": "This consolidated Presidency text substantively develops the proposed Artificial Intelligence Act."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "council-st-10069-2022",
+      "locator": "PDF p. 1 subject and consolidated legislative annex.",
+      "rationale": "The work concerns the horizontal AI regulatory framework, not a single sector."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-st-10069-2022",
+      "locator": "PDF p. 1 originator: Presidency; subject: consolidated Presidency compromise.",
+      "rationale": "The Presidency prepared the official Council negotiation text; transmission to delegations does not mean Council adoption."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-access-request-22-1313",
+      "locator": "Request result identifies the exact INIT document and Public in Register reply on 20 June 2022.",
+      "rationale": "The Council's dated access outcome independently establishes official public access."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Presidency of the Council of the European Union",
+      "affiliation": null,
+      "evidence_source_id": "council-st-10069-2022",
+      "evidence_locator": "PDF p. 1 attributes the note to the Presidency and names delegations as recipient."
+    }
+  ],
+  "additional_dates": [],
+  "historical_review_status": "verified"
 }

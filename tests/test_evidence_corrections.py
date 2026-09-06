@@ -11,6 +11,7 @@ from observatory.pipeline import run_pipeline
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ST10069_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-st10069-evidence-admission.json"
 LEDGER = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
 SIX_RECORD_LEDGER = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
@@ -108,6 +109,7 @@ def test_ledger_preserves_routes_and_retains_unadmitted_holds(payload):
     later_upgrades = set(json.loads(FOUR_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
     later_upgrades.update(six_record_update["upgraded_existing_ids"])
     later_upgrades.update(json.loads(SEVEN_ADMISSIONS_LEDGER.read_text(encoding="utf-8"))["upgraded_ids"])
+    later_upgrades.update(json.loads(ST10069_LEDGER_PATH.read_text(encoding="utf-8"))["upgraded_ids"])
     for row in ledger["dispositions"]:
         expected = (
             "verified"

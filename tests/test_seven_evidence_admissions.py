@@ -36,7 +36,6 @@ COREPER_DOCUMENT = "ai-act-council-coreper-general-approach-st-14336-2022"
 STANDARDISATION_ADMISSION = "ai-standardisation-request-c-2023-3215"
 ADMISSIONS = {*COUNCIL_ADMISSIONS, STANDARDISATION_ADMISSION}
 HOLDS = {
-    "ai-act-council-first-consolidated-compromise-st-10069-2022",
     "ai-act-council-third-compromise-part-one-st-12206-2022-init",
     "standardisation-request-c-2025-3871",
     "gpai-training-content-explanatory-notice-2025",
@@ -52,13 +51,13 @@ def payload():
         return json.loads(result.public_json.read_text(encoding="utf-8"))
 
 
-def test_exact_seven_admissions_leave_exact_five_holds(payload):
+def test_seven_admissions_remain_verified_after_st10069_admission(payload):
     """Catch an omitted upgrade, an unauthorized hold upgrade, or a route-count change."""
     documents = {row["id"]: row for row in payload["documents"]}
     assert len(documents) == 187
     assert payload["coverage"]["historical_review"] == {
-        "verified": 182,
-        "legacy_review_pending": 5,
+        "verified": 183,
+        "legacy_review_pending": 4,
     }
     assert {identifier for identifier, row in documents.items() if row["historical_review_status"] == "legacy_review_pending"} == HOLDS
     assert all(documents[identifier]["historical_review_status"] == "verified" for identifier in ADMISSIONS)

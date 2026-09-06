@@ -69,7 +69,7 @@ const titleValue = (value: string) => value.replaceAll('_', ' ');
       {relatedDocuments.length === 0 ? <p>No published documents are linked to this policy record.</p> : (
         <ul>
           {relatedDocuments.map((document) => (
-            <li><a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a> · {document.publication_date}</li>
+            <li><a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a> · {document.publication_date ?? 'Publication date not yet confirmed'}</li>
           ))}
         </ul>
       )}

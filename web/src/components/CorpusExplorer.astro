@@ -15,7 +15,7 @@ const pendingPublishedCount = documents.filter(
   (document) => document.historical_review_status === 'legacy_review_pending',
 ).length;
 
-const years = [...new Set(documents.map((document) => document.publication_date.slice(0, 4)))].sort().reverse();
+const years = [...new Set(documents.flatMap((document) => document.publication_date === null ? [] : [document.publication_date.slice(0, 4)]))].sort().reverse();
 const collections = ['historical_lineage', 'contemporary_eu_ai_policy'].filter((collection) => (
   documents.some((document) => document.temporal_collection === collection)
 ));
@@ -187,11 +187,14 @@ const policies = [...new Map(
         <a href={`${base}corpus/${document.slug}/`}>{document.short_title}</a>
         <span class="record-summary">
           {' · '}Document date {document.document_date}
-          {' · '}Publication date {document.publication_date}
+          {' · '}{document.publication_date === null ? 'Publication date not yet confirmed' : `Publication date ${document.publication_date}`}
           {' · '}{vocabularyLabel(document.document_type)}
           {' · '}{vocabularyLabel(document.record_level)}
           {' · '}{vocabularyLabel(document.version_status)}
         </span>
+        {document.review_qualification && <p class="record-review-qualification">
+          {document.review_qualification.confirmed} {document.review_qualification.unresolved}
+        </p>}
         <dl class="record-classifications">
           <div>
             <dt>Collection</dt>

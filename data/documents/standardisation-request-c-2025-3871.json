@@ -3,7 +3,7 @@
   "entity_type": "document",
   "publication_status": "published",
   "created_at": "2026-09-04T00:00:00Z",
-  "updated_at": "2026-09-04T00:00:00Z",
+  "updated_at": "2026-09-06T19:11:39Z",
   "slug": "standardisation-request-c-2025-3871",
   "official_title": "Commission Implementing Decision of 23.6.2025 on a standardisation request to CEN and CENELEC as regards high-risk AI systems in support of Regulation (EU) 2024/1689 and repealing Implementing Decision C(2023) 3215",
   "short_title": "Updated AI standardisation request",
@@ -15,7 +15,12 @@
   "document_date": "2025-06-23",
   "version_label": "M/613",
   "version_status": "final",
-  "publication_date": "2025-06-23",
+  "publication_date": null,
+  "review_qualification": {
+    "kind": "publication_date_pending",
+    "confirmed": "Official final text and adoption on 23 June 2025 confirmed. This date is the adoption date, not an established public-release date.",
+    "unresolved": "Publication date not yet confirmed. The former value 2025-06-23 was unsupported as a publication date and is retained in the correction history, not used as a replacement for missing evidence."
+  },
   "legal_status": "adopted",
   "celex": null,
   "eli": null,
@@ -43,7 +48,7 @@
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+    "researcher_notes": "Expanded evidence review update, 6 September 2026: fresh authentic English, French and German texts and the Commission register confirm C(2025)3871 dated 23 June 2025. The register transmission timestamp, 27 June 2025, is not explicitly public release. CEN/CENELEC's November 2025 Technical Board newsletter corroborates Commission issue on 23 June and technical-board decisions applicable from 2 July; these are process dates, not publication evidence, and the CEN host is outside the active official-EU source predicate. No qualifying exact-day public manifestation has been established. The legacy publication date remains unverified; the record retains its expanded-review hold. Article 5's anomalous identifier is preserved without silent correction.",
     "review_status": "verified",
     "reviewed_by": "Yichen Hao",
     "reviewed_at": "2026-09-04T00:00:00Z"
