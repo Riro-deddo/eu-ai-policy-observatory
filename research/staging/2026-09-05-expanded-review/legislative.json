@@ -1,6 +1,6 @@
 {
   "batch_id": "2026-09-05-expanded-review-legislative",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T18:12:42Z",
   "records": [
     {
@@ -455,7 +455,7 @@
           "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
           "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -564,7 +564,7 @@
           "inclusion_rationale": "Initial published joint-committee draft establishing Parliament's detailed negotiating amendments.",
           "researcher_notes": "Draft status and identifier are official; corpus tier is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -664,7 +664,7 @@
           "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
           "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -773,7 +773,7 @@
           "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
           "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -874,7 +874,7 @@
           "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
           "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -983,7 +983,7 @@
           "inclusion_rationale": "Formal committee opinion contributing to Parliament's report.",
           "researcher_notes": "Committee attribution and PE identifier are official; selection tier is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1085,7 +1085,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1172,7 +1172,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1282,7 +1282,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1392,7 +1392,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1479,7 +1479,7 @@
           "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
           "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1587,7 +1587,7 @@
           "inclusion_rationale": "Adopted joint-committee report forming the basis for Parliament's June 2023 amendments.",
           "researcher_notes": "Report status and date are official; policy-stage classification is analytical.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -1710,7 +1710,7 @@
           "inclusion_rationale": "Formal Parliament first-reading position embodying the interinstitutional compromise.",
           "researcher_notes": "The 2024 adoption date and 2025 Official Journal publication date are separately recorded.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T17:51:59Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",

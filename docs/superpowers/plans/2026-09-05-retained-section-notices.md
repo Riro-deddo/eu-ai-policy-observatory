@@ -42,7 +42,7 @@ Canonical shape (optional property, non-null object when present):
 type RetainedRouteNotice = {
   status: 'parent_relationship_under_review';
   reason: string; // nonblank English editorial reason
-  reviewed_by: string; // Codex, not the original Yichen Hao metadata reviewer
+  reviewed_by: string; // AI-assisted reviewer, not the original Yichen Hao metadata reviewer
   reviewed_at: string; // timezone-aware ISO timestamp
   evidence: Array<{ source_id: string; locator: string }>;
 };
@@ -129,7 +129,7 @@ await page.goto('corpus/draft-high-risk-classification-guidelines-2026/');
 await expect(page.getByRole('heading', { level: 1 })).toContainText('General principles');
 const notice = page.getByRole('region', { name: 'Parent relationship under review' });
 await expect(notice).toBeVisible();
-await expect(notice).toContainText('Codex');
+await expect(notice).toContainText('AI-assisted reviewer');
 await expect(notice.getByRole('link')).toHaveCount(2);
 await page.getByRole('link', { name: 'Return to the Corpus' }).click();
 await expect(page).toHaveURL(/\/corpus\/$/);

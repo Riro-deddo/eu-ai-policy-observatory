@@ -2,7 +2,7 @@
   "migration_id": "2026-09-05-historical-admissions",
   "applied_at": "2026-09-05T10:53:00Z",
   "publication_cutoff": "2026-09-04",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "inputs": [
     "research/admission/2026-09-05-document-admission-review.json",
     "research/staging/2026-09-05-historical-first-batch-mapping.md",
@@ -11,7 +11,7 @@
   "correction_history": [
     {
       "corrected_at": "2026-09-05T11:54:18Z",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_commit": "9ca3aea0b8ede22299df572d11be58d27fb17839",
       "publisher_role_correction": {
         "action": "Removed unsupported optional document-level publisher roles while retaining publisher/host facts on source records and the study's explicitly credited publisher role.",

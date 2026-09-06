@@ -78,7 +78,7 @@
     "inclusion_rationale": "AI and machine learning are the document's regulatory subject, with lifecycle-wide principles for evaluation, risk mitigation, governance, data, explainability, and trustworthy use in medicines.",
     "researcher_notes": "Cover issue differs from the later CVMP adoption on 11 September 2024. CHMP and CVMP are both EMA committees, not separate institutions for joint-authorship tagging.",
     "review_status": "verified",
-    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-05T23:48:11Z"
   },
   "historical_review_status": "verified",

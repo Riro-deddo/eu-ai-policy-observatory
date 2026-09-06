@@ -1,7 +1,7 @@
 # EUR-Lex evidence review
 
 - Batch: 2026-09-05-expanded-review-eurlex
-- Reviewer: Codex (AI-assisted evidence review)
+- Reviewer: AI-assisted evidence review
 - Reviewed at: 2026-09-05T18:06:34Z
 - Publication cutoff: 2026-09-04
 - Disposition: 31 evidence-ready / 3 hold (34 assigned)
@@ -90,4 +90,4 @@ Each declared EUR-Lex/ELI or linked official Commission manifestation was opened
 
 ## Preservation
 
-No canonical document, source, relationship, schema, code, test, or Git file was changed by this partition. Proposed patches preserve IDs, slugs, policy membership, concept membership, corpus tiers, and the 2026-09-04 cutoff. Ready patches use the truthful reviewer Codex (AI-assisted evidence review), real timestamps, and an updated_at value; source_updates remains empty so existing shared-source verification notes are retained.
+No canonical document, source, relationship, schema, code, test, or Git file was changed by this partition. Proposed patches preserve IDs, slugs, policy membership, concept membership, corpus tiers, and the 2026-09-04 cutoff. Ready patches use the truthful reviewer AI-assisted evidence review, real timestamps, and an updated_at value; source_updates remains empty so existing shared-source verification notes are retained.

@@ -4,7 +4,7 @@
   "research_date_local": "2026-09-06",
   "timezone": "Europe/London",
   "publication_cutoff": "2026-09-04",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "baseline": {
     "documents": 131,
     "expanded_verified": 105,

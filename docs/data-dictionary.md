@@ -70,7 +70,7 @@ A retained-route notice is an attributed editorial disclosure, not official EU m
 | --- | --- | --- | --- | --- |
 | `status` | string | Yes | System | Exactly `parent_relationship_under_review`. |
 | `reason` | string | Yes | Analytical | Nonblank English explanation that the route is retained while the whole-work parent remains unadmitted; draft status remains unchanged. |
-| `reviewed_by` | string | Yes | System | Named editorial reviewer; `Codex` for this reviewed batch, distinct from the original metadata reviewer. |
+| `reviewed_by` | string | Yes | System | Named editorial reviewer; `AI-assisted reviewer` for this reviewed batch, distinct from the original metadata reviewer. |
 | `reviewed_at` | offset ISO-8601 timestamp | Yes | System | Must satisfy `created_at <= reviewed_at <= updated_at`. |
 | `evidence` | ordered array | Yes | Official | At least the common Commission landing page and the section's own PDF; source IDs must be distinct, declared by the document, and resolve uniquely to published official HTTPS sources. |
 | `evidence[].source_id` | string | Yes | Official | Existing canonical source ID. |

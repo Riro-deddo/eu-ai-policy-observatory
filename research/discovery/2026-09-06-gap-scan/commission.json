@@ -4,7 +4,7 @@
   "research_date": "2026-09-06",
   "timezone": "Europe/London",
   "publication_cutoff": "2026-09-04",
-  "reviewer": "Codex (AI-assisted discovery); no human approval recorded",
+  "reviewer": "AI-assisted discovery; no human approval recorded",
   "baseline": {
     "canonical_document_count": 131,
     "inventory_candidate_count": 171,

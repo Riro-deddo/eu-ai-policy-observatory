@@ -6,7 +6,7 @@
   "checked_at_utc": "2026-09-05T23:04:06Z",
   "timestamp_note": "UTC time is previous calendar day; local research date is 6 September 2026 (BST).",
   "publication_cutoff": "2026-09-04",
-  "reviewer": "OpenAI Codex historical-gap-scan subagent",
+  "reviewer": "AI-assisted reviewer historical-gap-scan subagent",
   "baseline": {
     "canonical_document_count": 131,
     "inventory_candidate_count": 171,

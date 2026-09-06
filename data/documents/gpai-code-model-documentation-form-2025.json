@@ -47,9 +47,9 @@
     "corpus_tier": "core",
     "policy_stage": "implementation",
     "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
-    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by Codex opened and read exact DOCX 118118: the form headings and fields were inspected, and the final-Code page was checked for its statement that the Transparency Chapter includes the Model Documentation Form. The linked Transparency Chapter cover, not an unsupported host inference, supplies the two named chapter-author credits.",
+    "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, AI-assisted reviewer editorially corrected record_level from attachment to supporting because the Commission landing page states that the model-documentation form supports the Transparency chapter; stronger structural claims about the uninspected binary were not verified. Later expanded evidence review by AI-assisted reviewer opened and read exact DOCX 118118: the form headings and fields were inspected, and the final-Code page was checked for its statement that the Transparency Chapter includes the Model Documentation Form. The linked Transparency Chapter cover, not an unsupported host inference, supplies the two named chapter-author credits.",
     "review_status": "verified",
-    "reviewed_by": "Codex (AI-assisted evidence review)",
+    "reviewed_by": "AI-assisted evidence review",
     "reviewed_at": "2026-09-05T18:11:15Z"
   },
   "sector_tags": [

@@ -1,6 +1,6 @@
 # Incident Instrument Identity Review
 
-Review by Codex at 2026-09-05T08:35:01Z; publication cutoff 2026-09-04.
+Review by AI-assisted reviewer at 2026-09-05T08:35:01Z; publication cutoff 2026-09-04.
 Base commit: 01e6108328952a078c41a8608464093ddd0cf932.
 
 ## Applied scope

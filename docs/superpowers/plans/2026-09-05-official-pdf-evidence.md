@@ -13,7 +13,7 @@
 - Preserve all 117 public document IDs, slugs, dates, record levels, publication states, legal statuses, sector/provenance tags and the 95 relationship records.
 - Keep the English-only project, seven entities, six pages and publication cutoff 2026-09-04.
 - Keep the prospective historical contract inactive and the protected generated JSON/SQLite pair unchanged.
-- Preserve prior review attribution. Credit this field-limited evidence review to Codex, not Yichen Hao.
+- Preserve prior review attribution. Credit this field-limited evidence review to AI-assisted reviewer, not Yichen Hao.
 - No new public document, invented parent, final version, formal number, combined PDF or whole-corpus verification.
 - A real retrieved file can have snapshot metadata with archived_path null. This means no deliberately committed binary archive, even though a local ignored review copy exists.
 - Use existing isolated checkout and git --git-dir=work/sdd-gitmeta --work-tree=.; no push, merge, deployment, dependency installation or cleanup.

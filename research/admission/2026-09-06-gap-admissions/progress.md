@@ -1,6 +1,6 @@
 # Admission ledger — plan: docs/superpowers/plans/2026-09-06-fifty-three-candidate-admissions.md
 
-Baseline: 131 published canonical documents; 105 expanded reviews verified; 26 legacy expanded-review holds remain outside this task. Existing isolated repository and codex/remaining-evidence-review branch retained under prior explicit workspace preference.
+Baseline: 131 published canonical documents; 105 expanded reviews verified; 26 legacy expanded-review holds remain outside this task. Existing isolated repository and maintenance/remaining-evidence-review branch retained under prior explicit workspace preference.
 
 Queue: 33 new main identities plus 20 outstanding prior candidates, exactly as audit.json. No follow-up leads or other inventory pending records added.
 

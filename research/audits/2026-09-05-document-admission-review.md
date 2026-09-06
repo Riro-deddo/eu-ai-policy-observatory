@@ -1,7 +1,7 @@
 # Document admission-evidence review
 
 Review date: 5 September 2026. Publication cutoff: **4 September 2026, unchanged**.  
-Reviewer: Codex, AI-assisted source review and consolidation. No new human inclusion approval is recorded.
+Reviewer: AI-assisted reviewer, AI-assisted source review and consolidation. No new human inclusion approval is recorded.
 
 ## Outcome
 

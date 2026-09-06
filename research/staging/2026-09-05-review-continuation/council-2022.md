@@ -1,6 +1,6 @@
 # Council 2022 third-pass evidence audit
 
-Reviewed by **Codex (AI-assisted evidence review)** at **2026-09-05T20:41:35Z**. Publication cutoff remains **2026-09-04**.
+Reviewed by **AI-assisted evidence review** at **2026-09-05T20:41:35Z**. Publication cutoff remains **2026-09-04**.
 
 ## Outcome
 

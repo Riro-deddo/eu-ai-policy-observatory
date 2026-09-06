@@ -94,7 +94,7 @@ def test_pipeline_publishes_real_complete_guidelines_work_and_original_routes(pa
         assert commission_author["id"] == "european-commission"
         assert commission_author["evidence_source_id"] in {row["id"] for row in document["sources"]}
 
-    assert parent["corpus_assessment"]["reviewed_by"] == "Codex"
+    assert parent["corpus_assessment"]["reviewed_by"] == "AI-assisted reviewer"
     assert parent["corpus_assessment"]["reviewed_at"] == "2026-09-06T17:05:16Z"
 
     for document_id, expected_sectors in SECTIONS.items():

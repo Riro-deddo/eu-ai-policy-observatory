@@ -1,6 +1,6 @@
 {
   "batch_id": "2026-09-05-remaining-review-council-2022",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T19:47:08Z",
   "publication_cutoff": "2026-09-04",
   "records": [
@@ -148,7 +148,7 @@
           "inclusion_rationale": "Official national statement attached to the Council general approach and directly addressing Germany's position on the AI Act text.",
           "researcher_notes": "The Government of the Federal Republic of Germany is the statement author; the Council is separately recorded as official publisher. The 6 December date is the dated primary Council release that directly links this manifestation, not a claim about its globally first availability.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:47:08Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",
@@ -249,7 +249,7 @@
           "inclusion_rationale": "Final Coreper-submitted Council text subsequently adopted as the Council's common position on the AI Act.",
           "researcher_notes": "The cover and body preserve the exact Coreper I/Czech Presidency preparation roles; the Council's 6 December adoption is separately evidenced. ST 15698/22 remains the distinct outcome-of-proceedings record.",
           "review_status": "verified",
-          "reviewed_by": "Codex (AI-assisted evidence review)",
+          "reviewed_by": "AI-assisted evidence review",
           "reviewed_at": "2026-09-05T19:47:08Z"
         },
         "temporal_collection": "contemporary_eu_ai_policy",

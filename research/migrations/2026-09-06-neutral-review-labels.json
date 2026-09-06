@@ -1,0 +1,999 @@
+{
+  "change_type": "editorial_label_normalization",
+  "date": "2026-09-06",
+  "prior_commit": "aefd9a7a349f5967abc9dfc7e476a135c00d1c27",
+  "purpose": "Replace product-specific review labels with neutral descriptions, retaining the distinction between AI-assisted work and human review.",
+  "scope": "Current canonical records, editorial notes, historical ledger display labels, documentation, related validation and tests, and regenerated exports.",
+  "preservation": [
+    "No document identifiers, routes, official titles, dates, source URLs, evidence hashes, classifications, relationships or verification outcomes change.",
+    "Historical Git commits and pull requests are not rewritten; the prior commit retains the original label wording.",
+    "AI-assisted work remains explicitly identified as AI-assisted; no new human review is inferred.",
+    "Public project review credit remains Yichen Hao.",
+    "Official evidence captures remain byte-for-byte unchanged."
+  ],
+  "published_documents": 187,
+  "expanded_review_verified": 183,
+  "expanded_review_pending": 4,
+  "normalized_file_hashes": {
+    "data/documents/ai-act-council-general-approach-german-statement-14954-add-1.json": {
+      "original_sha256_lf": "5f2c1a3e6e618f87ab7f5d0e41e60be60464d7c9172240e0ce47c91c3a8c1827",
+      "normalized_sha256_lf": "c242e9994232b785f06bf810f9567131d0696661835e63b76335b501da31a7d6"
+    },
+    "data/documents/ai-act-council-general-approach-st-14954-2022.json": {
+      "original_sha256_lf": "b3202f69f27756115ac87521d64d0d85f17055a939cce99be2eb7c8309e44884",
+      "normalized_sha256_lf": "29f8dabf29273f896119bce0283779c43d02a4451683688520ee0b51740b266d"
+    },
+    "data/documents/ai-act-impact-assessment-annexes-swd-2021-84.json": {
+      "original_sha256_lf": "2adb0b24ced0c62a0d9c3f388068de011b4b8b4d9148d160a776f1bd4472c26c",
+      "normalized_sha256_lf": "90e0b444140e7de35dc516410c6dcdee86f9b31fcd9a5d85a7ccac90480201e8"
+    },
+    "data/documents/ai-act-impact-assessment-executive-summary-swd-2021-85.json": {
+      "original_sha256_lf": "92863974711484b0b820e14d6b4985222d7825602d8b8eea1c45a9ef80d50338",
+      "normalized_sha256_lf": "274ba0a498e250e7cbd86b82199d6204b803bb571f0e075998c72ec7afe25008"
+    },
+    "data/documents/ai-act-impact-assessment-swd-2021-84.json": {
+      "original_sha256_lf": "0b959df4f168ec68dfab5496b1d7985edc48afaeb0c4cc1200a0018121123570",
+      "normalized_sha256_lf": "9ba4348b7847c60562b4371e79cb33de2e3e2b1960b5029af4cbc8f0291b5af7"
+    },
+    "data/documents/ai-act-pe-cons-24-2024-rev-1.json": {
+      "original_sha256_lf": "76a57f04b255d7f25fe25b6c76a0fe00562676aa3a48c31fc1d0ef175ad35e7f",
+      "normalized_sha256_lf": "e7fd641087f257abe2d140ed05a24cf909f2e9d6f3f9ba0b4467f44ce0c3a826"
+    },
+    "data/documents/ai-act-pe-cons-24-2024.json": {
+      "original_sha256_lf": "8300f6d8f4302b48df188b7a01391b2183a0a145e14b62d432a3ee38f9565f3b",
+      "normalized_sha256_lf": "fd936f9da0466dcc7e2eea1849dca37a308c1377a8d35761cfaeb97e3087c351"
+    },
+    "data/documents/ai-act-proceedings-implementing-regulation-2026-1755.json": {
+      "original_sha256_lf": "aa5cfe37e300ad1590593c5a0134e6890ce7ab276e02bfc3d967e2ffc7103b52",
+      "normalized_sha256_lf": "a5892202b2ea7d403b5c7606f660cf5b5a41c0323bbd139643448d71e4f47c15"
+    },
+    "data/documents/ai-act-proposal-annexes.json": {
+      "original_sha256_lf": "d2b843d2de33b2a968fad85700b465f5ea60ceebb457304a10a8d1ec249f6a94",
+      "normalized_sha256_lf": "36d29497af9dc44782bdebc41cb1ef52cae81ac935e81ac36326f0be6d96584a"
+    },
+    "data/documents/ai-act-proposal.json": {
+      "original_sha256_lf": "fd1f1c429e12a3455c67201e14423713002a240889223be6ed8e6d1e9c479415",
+      "normalized_sha256_lf": "f4762afaa392dc38bf32ddf965f0ae7e620c453a5930d25c20cd02314609478b"
+    },
+    "data/documents/ai-act-provisional-agreement-st-5662-2024.json": {
+      "original_sha256_lf": "6f5f1477f6fbe89ea8159ef0c73549e711292e6216ee0e168bdee13ca37df2dd",
+      "normalized_sha256_lf": "e2a97eb97c5d4ba5d553010ed89b94b3022ede5c4cc23abac14b014e00c807b1"
+    },
+    "data/documents/ai-board-assessment-gpai-code-2025.json": {
+      "original_sha256_lf": "cf2440f6991e449dfa5937863aaf3f4d16d10380224a4efb468168528d237ff3",
+      "normalized_sha256_lf": "1bfd826f37ab54c09a7947087c17ccb92f03fc69be34c3be31199ec3520a4b14"
+    },
+    "data/documents/ai-board-assessment-transparency-code-2026.json": {
+      "original_sha256_lf": "540b063a8741a0b9412171aa9845bb4b29625f5d24912be227fe4e76d34a4d54",
+      "normalized_sha256_lf": "40c0ebe1058a24758d69e6351973e26c579b2c03dd5749728067dc9f5e9c2669"
+    },
+    "data/documents/ai-continent-action-plan-annex.json": {
+      "original_sha256_lf": "1b530e618c79c9b61f94b36b3ad0530ef408e3d199d3f0bf9cdfc4847f4c4e2b",
+      "normalized_sha256_lf": "4bb0e6ce21b4fd94bb2a73d39d4e65754178e278450cb2c8fa306d71b0842cfc"
+    },
+    "data/documents/ai-continent-action-plan.json": {
+      "original_sha256_lf": "18b4068666507c4b3f6db0ed8337543294a29edeea60213706b607ea15a8bc16",
+      "normalized_sha256_lf": "e2db507ac16bb3b7916617be666c498dfe54ed01f56d0629db7a3580944c245b"
+    },
+    "data/documents/ai-liability-directive-proposal.json": {
+      "original_sha256_lf": "58ade22477374ca4b4a2114d12db84b93c337873d92b6919d685cf9620d3f706",
+      "normalized_sha256_lf": "b1944c5f2f3a30442ba063fb626fe4979d023777059293eccdf2731b8ea9da9b"
+    },
+    "data/documents/ai-omnibus-pe-cons-30-2026-rev-1.json": {
+      "original_sha256_lf": "4cf558930572d6e77605774326b3f23d5b4be3fdf4b3fc246ef040b761dc5d5a",
+      "normalized_sha256_lf": "c1ae6f3512b61466bd2def5d0d982e645974c844ef4768e4d60f7e069af5ef62"
+    },
+    "data/documents/ai-omnibus-pe-cons-30-2026.json": {
+      "original_sha256_lf": "7a34753e7990fe1dc2eae6ac2dd65dab28b541cb973bec31fe77e077e1ee7c96",
+      "normalized_sha256_lf": "cf79d03793e081690b6d2614bbc46f6dd0ac960aca174e59b5f101679bd81ae6"
+    },
+    "data/documents/ai-omnibus-proposal-2025.json": {
+      "original_sha256_lf": "742d82e3c6aa4963871377de0e0387a747b2a7c1f6b03ffce4c3a6a1b6b1e4b4",
+      "normalized_sha256_lf": "849aff854f9bb8ca57a2f7996a7c394a045bd791f3c7044d5ee3c002a81103d4"
+    },
+    "data/documents/ai-omnibus-regulation-2026-1744.json": {
+      "original_sha256_lf": "074331b014b82960548583f5af5898f446c3cfc196abb0885c946029c62e4f67",
+      "normalized_sha256_lf": "b08ee3c6ddce20a903ac4d308801d55cf4aad63a68f87672f3b45af7d30ae7e0"
+    },
+    "data/documents/ai-omnibus-staff-working-document-2025.json": {
+      "original_sha256_lf": "78e8eea01840d71c5a351ca9d306eb0b9c9bdea09ccc1f522e3ee9110fad750a",
+      "normalized_sha256_lf": "e0e3c73d76486e8a67809b2f0400eef5d66a1e7347ed38a0bc7f1b5a45af997e"
+    },
+    "data/documents/ai-system-definition-guidelines-2025.json": {
+      "original_sha256_lf": "b760e58f440372b894271d2788bd441ef2a05bede532fcadf26c20863b0b6bff",
+      "normalized_sha256_lf": "e027a0d8ef80fc0d9c3d2a87656b5625de2c501c07d242008ffa0d350512a46d"
+    },
+    "data/documents/ai-system-definition-guidelines-approval-communication-2025.json": {
+      "original_sha256_lf": "50c117fe10ed712ed944f4f6d362fd46f0fe671fc4f911af766dc149771a982b",
+      "normalized_sha256_lf": "73547076432b373bf4ec7d2aff3f1778920e6f0c9731eb80d67b0865adb9b932"
+    },
+    "data/documents/altai-assessment-list.json": {
+      "original_sha256_lf": "aa91801a26d168eda91a3ac4673a18c059c8b73b892ae71d2013568c4fee8959",
+      "normalized_sha256_lf": "aa2a102b728b92f99336e837b58ac4e14da1923b33e346d521c6aa947a8539be"
+    },
+    "data/documents/apply-ai-strategy-annexes.json": {
+      "original_sha256_lf": "ebdc73b033079ca1dbcca32baf14f747d7886146aef4603d5244503cc06d53d3",
+      "normalized_sha256_lf": "b88e45fc0ab8a6ce6eb445f577195b3c9da716dbb3ecd605bf0f052a5456a675"
+    },
+    "data/documents/apply-ai-strategy.json": {
+      "original_sha256_lf": "f694cff9b858ef32804f4bc32947eb97fb967a38847735b5c1a05f0aec384658",
+      "normalized_sha256_lf": "a77119c57f2a6bbe298e1e1643a310d0d63c1d4eeeee01f8377cb3c43a40894e"
+    },
+    "data/documents/artificial-intelligence-act.json": {
+      "original_sha256_lf": "0940bd759dbff9d8ed89840c9b4182e745d96e42d96e2b084ad9e2badc5acb6d",
+      "normalized_sha256_lf": "cbb98dc176f64058368cd800457e0e571078826eaf7f37d9910bcb6061840412"
+    },
+    "data/documents/artificial-intelligence-for-europe.json": {
+      "original_sha256_lf": "dac7c01e37e4ec28072bd37e1352a736ee6c5bd8c6166a7a201807c66fb249d8",
+      "normalized_sha256_lf": "bcd14e15dadfd54cf03243957992e4881bbf277f9e52380025a5a4fc69044f1a"
+    },
+    "data/documents/boosting-startups-innovation-trustworthy-ai.json": {
+      "original_sha256_lf": "b5047cc4c2367655105bf6245babc4d3efa2503b9a89e11770a6e292df4e1c7a",
+      "normalized_sha256_lf": "a25e1034f2772ec19068cfe2bcfd9559649b47ae121f1ea8225493890ccaeda7"
+    },
+    "data/documents/building-a-european-data-economy.json": {
+      "original_sha256_lf": "506497e265db1a32322c16c361e8d234108582ad13921a169b876c8a42406c8d",
+      "normalized_sha256_lf": "dafc9696855148cffa50630076382603d220c3f513f71d08b87b628da3903952"
+    },
+    "data/documents/building-trust-human-centric-ai.json": {
+      "original_sha256_lf": "c2af92dcafa4b7e2844fccb906b4fde05b0d360f04564c06d74f340ff5e724d8",
+      "normalized_sha256_lf": "efe5fb00acedfcd34df6282db18fcfaaf95a8faf86b698599599e90f9a9ac31e"
+    },
+    "data/documents/chief-scientific-advisors-ai-science-opinion-2024-first-edition.json": {
+      "original_sha256_lf": "ab41d2118d73fc315f1f1395620fa8dfbdeb9ba3a582a181679555ef23312894",
+      "normalized_sha256_lf": "7b48f6922b3b44f0c708973802f1e96a72de26698165d5e129f6668d98c21d19"
+    },
+    "data/documents/chief-scientific-advisors-ai-science-opinion-2024.json": {
+      "original_sha256_lf": "605dab68c9d463890d6a828063772a570fe0d659df938835e4aabf895daeda66",
+      "normalized_sha256_lf": "2df1775c57f56c83a09b884e215ec44f7224ded0098888ba056f3c6daacd8de3"
+    },
+    "data/documents/civil-law-rules-on-robotics-resolution-2017.json": {
+      "original_sha256_lf": "332f0c9ea14ff362cbafc7217c05034889cf70550b8e6309dbbc18f64dcf8557",
+      "normalized_sha256_lf": "8f6f37de10f8bff554622987ea6934e3dc4998916fdc430486e62ea73517c5f3"
+    },
+    "data/documents/commission-ai-act-article-112-review-2026.json": {
+      "original_sha256_lf": "dd1e6ba5c28863965da91dff1b204b964cf8aea7e0793528d2528c5b8653533b",
+      "normalized_sha256_lf": "3ca444e2361b34872ad1e271a66e2dc8b197173c2984f988a2a2ce6bcb449ff1"
+    },
+    "data/documents/commission-ai-science-strategy-2025.json": {
+      "original_sha256_lf": "9df1b10eaaf3e9f763ddc177697251d9dba889d8cf14ef4e9a689807eaaa7a72",
+      "normalized_sha256_lf": "638180258a11e2f3ce1fa7861446c714e7818a6c4c826503b61338ad26dd7940"
+    },
+    "data/documents/commission-decision-ai-office-2024.json": {
+      "original_sha256_lf": "cd7cfab0c93cf1732cb09aaedc67f8d87a9f57f3843d97fc0c6337a4c01b0e71",
+      "normalized_sha256_lf": "796bacd7397441a7e976955b604a3264e506f580eb2939c62f7096dcd71e2a71"
+    },
+    "data/documents/commission-opinion-gpai-code-2025.json": {
+      "original_sha256_lf": "f1b63aba45c8da07f4f3d7846d8a0831acb14d36b5e8d6192a58172e54174135",
+      "normalized_sha256_lf": "56f37f7a5081b27cabfde804acd2233bacc2c594eb3e7d0c48a2271ec0930f4b"
+    },
+    "data/documents/commission-opinion-transparency-code-2026.json": {
+      "original_sha256_lf": "7f66f4751eb2f01a18e7e237abe3f9b810c2730da48ce0979196fe96fbe8f114",
+      "normalized_sha256_lf": "27dda085d96ada11553fea7b2957969c41ab5f5bb65488b967818bbab6076a97"
+    },
+    "data/documents/coordinated-plan-2018-annex.json": {
+      "original_sha256_lf": "5116c0d71e4a05ca08c96897b43c54466692a093cc4e5558c19bcf6e5554e7d6",
+      "normalized_sha256_lf": "a7fa10a8089128115bbe83956ef3f773c130e26f09149c98249ca939d2ee3eba"
+    },
+    "data/documents/coordinated-plan-2021-annex.json": {
+      "original_sha256_lf": "91b5cf9bca5cb01ff1ce2617f6acf263b0cddd00117fdc20a12ec6c55c14d59c",
+      "normalized_sha256_lf": "39d69fab730e79bd8b1be08d641edc71a7000ebcda639057f304789dde2147b3"
+    },
+    "data/documents/coordinated-plan-2021-review.json": {
+      "original_sha256_lf": "e9e508fbf5dd2a8636e3ed20bd9324fda7bde293b8a8c5940258b84f1e6aa8ab",
+      "normalized_sha256_lf": "b766582691c947a1783581ce3369235736b9485e8fc476af02d1422b8d0584c6"
+    },
+    "data/documents/coordinated-plan-on-artificial-intelligence.json": {
+      "original_sha256_lf": "381a4b8a8c649f84880eccd725810ed50d3526e94751fe5e4b91a15ee71fd599",
+      "normalized_sha256_lf": "6369060cb71107a421a49ab92412be6c82dfe39529697d028948e0fb22b61ad9"
+    },
+    "data/documents/cor-opinion-ai-act-2021.json": {
+      "original_sha256_lf": "2e08dc402f0d26219d3180ab144964b02213c013a43bb2186bdd60570d61462d",
+      "normalized_sha256_lf": "bbb5731e383c4af8937f7b112adf9d37b89ff146dd5e6377ef551a2940920c34"
+    },
+    "data/documents/cor-opinion-ai-omnibus-2026.json": {
+      "original_sha256_lf": "a593c376f531340b24cef369bf283e382b3c1bb18b1009f3d67339bf58c374da",
+      "normalized_sha256_lf": "a8af67d6290cbdd5882e1d66104c1a21d96c83c96c8e6f47b7e5ab2b9481fa0c"
+    },
+    "data/documents/council-ai-science-conclusions-2025.json": {
+      "original_sha256_lf": "a3416472830f47f309378027b4140b5c06317ee098e2b5399eef68adeb615709",
+      "normalized_sha256_lf": "916733e77304bb964d602c1203de25697f73b28be16fb3aff0186567710c2fc0"
+    },
+    "data/documents/council-decision-84-130-eec-esprit.json": {
+      "original_sha256_lf": "7b053375cde675f44f8a42f3eb22d131aa4cd97930c57ab965252244cf81961e",
+      "normalized_sha256_lf": "b2052e7d352f66a74e45e1abd0404e652ae04b977b17e5319e68c8f237e5391a"
+    },
+    "data/documents/council-decision-88-279-eec-esprit-ii.json": {
+      "original_sha256_lf": "3136f3e3f8a9b0ce8d95499227ceb156325c212e383bcce2cb26a871bfcb83d6",
+      "normalized_sha256_lf": "b7767a62e6b420581638a417d33cf439ba7a0adedf2b31ffdf574a891468c5c3"
+    },
+    "data/documents/council-decision-88-417-eec-delta.json": {
+      "original_sha256_lf": "c8575497dd08fa5c9fcfc2210bf95ef2985830841d7cef005233b8a232ccb287",
+      "normalized_sha256_lf": "c331e216acf9c7a4133cc453fb27fcdee0727df66603ab022db77ba54f397690"
+    },
+    "data/documents/council-decision-89-415-eec-doses.json": {
+      "original_sha256_lf": "e75c418325a5ee80bc7a445da2e10d160eb7c67f4656a93411e0f95fdd6bc7fa",
+      "normalized_sha256_lf": "7ec3a6671b966df2ecb6b8b9024815218816614ff37605b873559a10875d56f2"
+    },
+    "data/documents/council-decision-94-802-ec-esprit.json": {
+      "original_sha256_lf": "cb14cb1260deb70b0986445ed27ad5e953ed1f193e4c75b8b84dad8c66c0fa47",
+      "normalized_sha256_lf": "f85f4fc05b2d2de90dca661d28c77a0e8dbfb9a07bab07fd7e9c1eb16c58b9e6"
+    },
+    "data/documents/digital-europe-regulation-2021-694.json": {
+      "original_sha256_lf": "0fd1983413b778f2b6c073551c68194e101c6e13b572ece307800d1ccbd2250d",
+      "normalized_sha256_lf": "44f6febf3727ff398415dd877793fd102a3d93d55d6b695f459f66748e15572e"
+    },
+    "data/documents/digitising-european-industry.json": {
+      "original_sha256_lf": "5a31f6f6859d91850aa54be180ec91c63d073e87115abbc0de1397905f021abd",
+      "normalized_sha256_lf": "b8318f6d80abcc5777bfb2a5128556160c9ddae5c2f622279b12fe03781ce18e"
+    },
+    "data/documents/draft-guidance-serious-ai-incidents-2025.json": {
+      "original_sha256_lf": "96b08655d0e954df4cb51a92075026002e51a341d37c72d94db1d05467c5916c",
+      "normalized_sha256_lf": "3a83352102825b636b5013a4b5f67223528b74b2cca915671bc7c4a11b9348b2"
+    },
+    "data/documents/draft-high-risk-classification-guidelines-2026.json": {
+      "original_sha256_lf": "b10995b95ab36be763310b637419b9a06c44ffaef5d009e3d05e3b8caba09c8c",
+      "normalized_sha256_lf": "9a86dffaee4fe05a262777246fc0b47cc2301aa52f6a60a03fdb0e18037aa169"
+    },
+    "data/documents/draft-high-risk-classification-guidelines-annex-i-2026.json": {
+      "original_sha256_lf": "b2d60ec9346ccaa281745522d3fe3564d1e3544cf2392236fd1b65c59964a1f2",
+      "normalized_sha256_lf": "4b206e88ff97b4143dde06de0f2697b4556d84ab156061212ac5c8df05195b09"
+    },
+    "data/documents/draft-high-risk-classification-guidelines-annex-iii-2026.json": {
+      "original_sha256_lf": "ca30b261168920337fab125f752b0c36e958bc571ea312b76815a6d7a0b90516",
+      "normalized_sha256_lf": "427c21f91da01eea4dc3191fc1f5e51756358dbf16b9a8eb3c43d39e3fd1ad2b"
+    },
+    "data/documents/draft-high-risk-classification-guidelines-consultation-work-2026.json": {
+      "original_sha256_lf": "351eef1433c89d708bbd65148258c7f7d1b76e017cf6dc0041d280d98a4583b7",
+      "normalized_sha256_lf": "f684392cd1ea95bad023adf48f68b0f91cff12eaea30813c4178f45256c05097"
+    },
+    "data/documents/draft-serious-ai-incident-report-template-2025.json": {
+      "original_sha256_lf": "c7c65fb8e2a579c66bffa715c30d5cf1f09838b81ec88c60087aa69519cee217",
+      "normalized_sha256_lf": "19c018c798af6af3447ccbd9dd265df9f12cdc011064e2c7da43421d995ed853"
+    },
+    "data/documents/draft-transparency-guidelines-2026.json": {
+      "original_sha256_lf": "9ce8f33e081968ebb3cb9ea85f550d3ba664fb637661022631cc265b3c58a620",
+      "normalized_sha256_lf": "e5a1adf7dc254711dd536b354fc5fde8963b213ae4092a9e3c022407265426bc"
+    },
+    "data/documents/easa-ai-concept-paper-issue-2-2024.json": {
+      "original_sha256_lf": "6a3968c1db5e5163e50420ff5812c820fd26b797a53a673835fd32657d2beb11",
+      "normalized_sha256_lf": "86d108a29cfa19e92fa3fa0887881f8a4d4f641b93ae0661c09950f50c032717"
+    },
+    "data/documents/easa-ai-concept-paper-proposed-issue-2-2023.json": {
+      "original_sha256_lf": "46d9f9d33da932084d0ac7acdef6ff70e724510572d7a3886bb9bf3ae092861d",
+      "normalized_sha256_lf": "ba4fafbdf34b2e5ba7b5a206d50167e5a431ca38844f7e2fcac4a860b10968ac"
+    },
+    "data/documents/easa-ai-roadmap-1-2020.json": {
+      "original_sha256_lf": "002f0cca3f785f4e91bfa68dab3c65c48005a47b21e1e24668f7f7c8a4b06e2e",
+      "normalized_sha256_lf": "fcc85fdea37ebd216ddd160ab0e91715dc6ccf5b01c8c4ecbf0f8a65421997c2"
+    },
+    "data/documents/easa-ai-roadmap-2-2023.json": {
+      "original_sha256_lf": "8395a23d01f19d0b8b6adcc4a857126ecd921e41d3acb3fdedab252d3498550f",
+      "normalized_sha256_lf": "22bf13a081f63b9d272b44f3940700f13cf1f169797b51cc145fbf62958ad2e4"
+    },
+    "data/documents/eba-discussion-paper-machine-learning-irb-models-2021.json": {
+      "original_sha256_lf": "9e5cdf4a6f5900bc586b34baf907df9b607a5dd1d1345da4865ef71d0bdba849",
+      "normalized_sha256_lf": "159f11ef8a696a6554872bc72b1043bf792694626bb2427482b15800650cfb31"
+    },
+    "data/documents/eba-follow-up-machine-learning-irb-models-2023.json": {
+      "original_sha256_lf": "5889e11b138cee4142150883d851ed7cc133b5448e384a77a17ba4ade3f76fa2",
+      "normalized_sha256_lf": "e69050b0bf8608235674cc336041b1068bd050e2bc1a9b96f6e409f64c68ee26"
+    },
+    "data/documents/eba-report-big-data-advanced-analytics-2020.json": {
+      "original_sha256_lf": "05d31cc827eefb1f4969dae810ee879a5bc32bad56a06bf2c42df8af5eb9e9c2",
+      "normalized_sha256_lf": "d97e812846260aafe6a1657f2e5d8663a22d24f457f7096943edec0e52668064"
+    },
+    "data/documents/ecb-opinion-con-2021-40.json": {
+      "original_sha256_lf": "04ae381fef96553f22d5ec6d42eeeddab4affe4a95201aedd663b1aabbc0bcf5",
+      "normalized_sha256_lf": "5b5b7f23587434fa25b6998cd593dc03007bb8636104977c221f5e9b05c60197"
+    },
+    "data/documents/ecb-opinion-con-2026-10.json": {
+      "original_sha256_lf": "aefe74bc501e849239803349c28deec047d3e39d66fe4a4aa98d3b4c7483f5d0",
+      "normalized_sha256_lf": "a7634e851788e000c51460741b8c520ea04a108aa500bf95e9b4240a1d3a779e"
+    },
+    "data/documents/eda-card-public-report-2024.json": {
+      "original_sha256_lf": "0b17d6a1cb15d2fe8ae439a5e9aa931efe67c1284ecd71b5bb1db16f8b96152f",
+      "normalized_sha256_lf": "d6b37c09dddde53607d510f21de81468637d9fd1fe30a9d628d81365abe0fd79"
+    },
+    "data/documents/edpb-ai-models-opinion-28-2024.json": {
+      "original_sha256_lf": "19c776711becee87017b43a751d1d1b579f1a63cd770ae27af166bd5cdb8c255",
+      "normalized_sha256_lf": "623d2533179cb98feefbee699fe9b2fa5ccf6748afa51cb1f081d9523d2e3432"
+    },
+    "data/documents/edpb-edps-joint-opinion-1-2026.json": {
+      "original_sha256_lf": "82299caee4ec48e8767973be02083de4fb5a37b14242ff97adb96cd33b2a4b59",
+      "normalized_sha256_lf": "3c5bdd5cc7f6e0b4976bd2497aa5359d9cc976e785253dfd740d5bc971c43ed4"
+    },
+    "data/documents/edpb-edps-joint-opinion-5-2021.json": {
+      "original_sha256_lf": "cacd425850602943e9a37d1f98b1aa0b661ff94dea275641a94b0a81de492e03",
+      "normalized_sha256_lf": "f15f0e1da5d0c71a082c547eaee5215f3dc28e65f2bdcf8c3c075fc03989785e"
+    },
+    "data/documents/eesc-ai-consequences-2017.json": {
+      "original_sha256_lf": "4289901189abb317bf195f5625e02feeb5e1e1b32d7a9cdfa084a68d5d97fa2c",
+      "normalized_sha256_lf": "6859688f5826da5640724ca44b924b2dfc168a3be326cc6131fd4196b177e406"
+    },
+    "data/documents/eesc-opinion-ai-act-2021.json": {
+      "original_sha256_lf": "1f386f1df044d912780ffea8630acddd0afb04d10552eab9d7908b63c2032133",
+      "normalized_sha256_lf": "0f5481351952b17c724edcbbb9631c6bf17a689385b9ba2c0a4d7abd00481eb4"
+    },
+    "data/documents/eesc-opinion-ai-omnibus-2026.json": {
+      "original_sha256_lf": "ec36917f2ceee9a3a02d8bf3adea6dfc0180624ff0510a70565ede0319c90130",
+      "normalized_sha256_lf": "0264ea125793dc4a0c71445a36fcdd82fe7859b10f34be98ca32af53643f96ae"
+    },
+    "data/documents/eesc-opinion-coordinated-plan-2021.json": {
+      "original_sha256_lf": "d5eb480e2929b5baa363db810ef21893f824d50087ab3f243356b6b11c1c20f1",
+      "normalized_sha256_lf": "4107123f37e8c79d391d0836d312ae3d93db9cbab0e4ada6bf3ae7b2c65e3d86"
+    },
+    "data/documents/eiopa-ai-governance-principles-2021.json": {
+      "original_sha256_lf": "7975a1864098790f8592c8850f16f98fd70aa834aca549da9d7fcf1feb5f3755",
+      "normalized_sha256_lf": "795a7ab6e6b59cc5927ab5cf7a63becc92606443c0e80f37326f93c89708d13d"
+    },
+    "data/documents/eiopa-ai-insurance-regulatory-framework-factsheet-2024.json": {
+      "original_sha256_lf": "442fa0dc2643827e54ba5a2e5e319759b58e869a741b38a228bb193eea418aeb",
+      "normalized_sha256_lf": "5f80873b475eba46383cb01d13b770f7f484a7efcdaa9d8fba0a98d397447d3c"
+    },
+    "data/documents/eiopa-digitalisation-european-insurance-sector-report-2024.json": {
+      "original_sha256_lf": "0c96ba18431629ebd4c21120bc824be9adc222646322d229f610ae8a3296b06d",
+      "normalized_sha256_lf": "dd716d6c966670979d7addee090b30ec19f9696b25908f7ae250caaaf22cdabe"
+    },
+    "data/documents/eiopa-opinion-ai-governance-risk-management-2025.json": {
+      "original_sha256_lf": "74779ceb1ab7c7cd7f06cb927f0a90f1794c2a8207d0beeabdd1fe13d3b7e80c",
+      "normalized_sha256_lf": "28acfa22b321feeabea2bf4b2f4a06540947c855aa90fd85be630c78e58c919a"
+    },
+    "data/documents/ema-2025-ai-observatory-report-2026.json": {
+      "original_sha256_lf": "9450ce748982da7b6ccbda0cd36f5045d34754e80a207070359b7f78904d457a",
+      "normalized_sha256_lf": "66ee00ded089decb48c0dbab4a988d23c78f6d4764e25427f12962020f9177e6"
+    },
+    "data/documents/ema-ai-medicinal-product-lifecycle-reflection-paper-2024.json": {
+      "original_sha256_lf": "de13f417b17f42f9cb1360e47adb4bc8e087ccfaa8427d432669e6d5603f9935",
+      "normalized_sha256_lf": "626441f85f51d83db5733d4437a75fd4f540e0152d8f52c09dcb3fa8b4be97fd"
+    },
+    "data/documents/ema-draft-ai-medicinal-product-lifecycle-reflection-paper-2023.json": {
+      "original_sha256_lf": "ff754784d165cb08809cb30d8f54165e18fb0058ce64a649ada8f9dfbee4a030",
+      "normalized_sha256_lf": "fec0041918a736085d512018f30f7ea2d4972dc9704a71ff87735fcf815510e6"
+    },
+    "data/documents/enisa-frontier-ai-cybersecurity-2026.json": {
+      "original_sha256_lf": "4ad0ddb17f1c964eb9a1ab16f30b6a53f2ea3fbf8ba2649b07364c93c02505b3",
+      "normalized_sha256_lf": "bf08887a65e7b33116622e3133f2b0edf68f81b06cba1005e1741f39d5d1d252"
+    },
+    "data/documents/ep-ai-act-cult-opinion-pe-719637.json": {
+      "original_sha256_lf": "0f321023fb130c01eb6c0bb55a9ef7e2caf0551da05d85f7323206e6590b5335",
+      "normalized_sha256_lf": "dd944f7b9b9a3bcf69404a1b4d2282d23da7eb65a7a2ca89db6702d9f6149709"
+    },
+    "data/documents/ep-ai-act-draft-report-pe-731563.json": {
+      "original_sha256_lf": "286590658617d1027055e2b793403f1e38069cce14b638ce8657564b35ca0fbf",
+      "normalized_sha256_lf": "8d6d0c87540ceca9ad8c991556f2d98e94e10088c42e1bc0099c6d88052d3c0b"
+    },
+    "data/documents/ep-ai-act-envi-opinion-pe-699056.json": {
+      "original_sha256_lf": "9a934ce147a0a2348a0fd2dea2506b75453c89bdecd1f6b9889850f588f21b21",
+      "normalized_sha256_lf": "fd8d0868d949b53fe7a144a53e1b897cda16afddc5dc0000941e5e1b18765620"
+    },
+    "data/documents/ep-ai-act-itre-opinion-pe-719801.json": {
+      "original_sha256_lf": "a878a9a238d2509f64872aaad826284e7b4201605b96b256022aeb2f890df975",
+      "normalized_sha256_lf": "9dac7160c6b143c101743b4934f626442641d31b2cf7688c9c33836c5b607f72"
+    },
+    "data/documents/ep-ai-act-juri-opinion-pe-719827.json": {
+      "original_sha256_lf": "8260c78689f64b2378c380c8b1d779c530a7459bbd4267a291ce1d3d34df78f7",
+      "normalized_sha256_lf": "cf4e9b7ca7cf6873cf558fbb4673d23f92340671d9bc13c2cabfb791407a3f89"
+    },
+    "data/documents/ep-ai-act-tran-opinion-pe-730085.json": {
+      "original_sha256_lf": "4c98bb8366e92e0dcdb0469af9654b237ad120d69c8cc35b007824867a0134ab",
+      "normalized_sha256_lf": "7d2692394b200b83bb09a73fb0f9cc450c34c9862a3d5759a9399f59748d55f9"
+    },
+    "data/documents/ep-ai-civil-liability-2020.json": {
+      "original_sha256_lf": "5512be2b80086cd3ef1a9d93b565139796e066ff9bbd06de35738b0510573cdd",
+      "normalized_sha256_lf": "fdaf4aa68041d5839915dceb211005fc5552243ab10da99a172fa041812f5997"
+    },
+    "data/documents/ep-ai-digital-age-2022.json": {
+      "original_sha256_lf": "2cc2790d3404b1b10a6893d302dd170af53f085cb5ce1d830987ab30e06b872a",
+      "normalized_sha256_lf": "c487b8d6d06299c64e4ed49477ca1e485bdc17e86d075c569c458d0fc7f2fed8"
+    },
+    "data/documents/ep-ai-education-culture-audiovisual-2021.json": {
+      "original_sha256_lf": "cac3f7043726f3935b9c39a1c7631a76e3d09515dcc75bc0bb67f14e57be9c09",
+      "normalized_sha256_lf": "9fcdbb6b9d0a072a1e66d0afc2b173d0f010d8126187dd608e712c318e3d1fa4"
+    },
+    "data/documents/ep-ai-intellectual-property-2020.json": {
+      "original_sha256_lf": "684e9b43e687ef37ec7652df6d48b1e28fbc64bec8527ab803b3728b250a534d",
+      "normalized_sha256_lf": "28599d5a16a2b1286a7b26755c9e863e4f25e232e2d094d718b89345c4bdb635"
+    },
+    "data/documents/ep-ai-international-military-2021.json": {
+      "original_sha256_lf": "73f389600cfdd5d7e01ee81799d5155db0686cf5628e13aee2856a7ae73c8603",
+      "normalized_sha256_lf": "5e3a55fc41e96f3d812139f24ba2e0d8461a3510e50a3e9d28a72c551d402f85"
+    },
+    "data/documents/ep-ai-omnibus-amendments-p10-ta-2026-0098.json": {
+      "original_sha256_lf": "79cafac48811a34e16137849d3256e345bcf59fd09c8f5951e7efa772cffb69e",
+      "normalized_sha256_lf": "f29f80633f62ae4dd2006782582ff6e40343a9d82623c12f882e8bf704492592"
+    },
+    "data/documents/ep-ai-omnibus-cult-opinion-pe-784261.json": {
+      "original_sha256_lf": "1ce13814ceba600c49f6535800017e1c8f5516370761292e18185c6c245fede0",
+      "normalized_sha256_lf": "464b4762f252dde88a01573ed2b30609c04b912c9ef8f4107a060203151a6c91"
+    },
+    "data/documents/ep-ai-omnibus-juri-opinion-pe-784179.json": {
+      "original_sha256_lf": "b0c5c9eb7c3eb5d960d165cf57428e483f72610c9094e70104f75ff218c590bd",
+      "normalized_sha256_lf": "f8c37da39fc16109e9579e61e5d756a1b50a01b8a843f622d3d95d6f4c0a7e27"
+    },
+    "data/documents/ep-ai-omnibus-position-p10-ta-2026-0198.json": {
+      "original_sha256_lf": "21713abfed4f2f95a5c65c2eea4b00c73189b0d95b7282135ae8e80c28586750",
+      "normalized_sha256_lf": "9c7ee16b760744dbb4e519e3d702910efb8d22107405e4178f0b17881bb1c073"
+    },
+    "data/documents/ep-ai-omnibus-report-a10-0073-2026.json": {
+      "original_sha256_lf": "ed78b64596634b73388d81730eb56d150cad91b8feaa9fab64471a6cb9ee4cc4",
+      "normalized_sha256_lf": "484c489a318c003f5d1d9cd42103aa99a85785c83804f631eae36fd412b4575e"
+    },
+    "data/documents/ep-ethical-cyber-physical-systems-2016.json": {
+      "original_sha256_lf": "8294146bb29eb5f3a10a589bd269cd72dc1a74a087612f986209e536bfb5411e",
+      "normalized_sha256_lf": "0bccdda3ac576faba21711b776e2f62e26c3027ce3daf710b580d9e32f8384a0"
+    },
+    "data/documents/ep-ethical-framework-ai-2020.json": {
+      "original_sha256_lf": "76db5c9e549c9319de36f359154018e381e36ee05431130eb0709910e862a5d4",
+      "normalized_sha256_lf": "dcc430901bb7251be7c4dc186d7853d17fdbc7de25b045883c40f5813f4ada64"
+    },
+    "data/documents/ep-joint-committee-report-a9-0188-2023.json": {
+      "original_sha256_lf": "d7e91860c914c9c82deb1936d8dc22b910954cd84da02685002cec57c18bba7c",
+      "normalized_sha256_lf": "b9e83d5c44c09281e4434a4718c768826ac5043295a4a8290a9d5183dc25d51a"
+    },
+    "data/documents/ep-position-p9-ta-2023-0236.json": {
+      "original_sha256_lf": "b94257fa19f77c8fc69e135af01430cdac2e8cb80275641d3b2c4e2b029ddf1d",
+      "normalized_sha256_lf": "482f16d0a6c35eb889caa108f45c7ea7ed59872c0724685395b45ae1faead702"
+    },
+    "data/documents/ep-position-p9-ta-2024-0138.json": {
+      "original_sha256_lf": "6d7f676ae503f39ab673d206e061a923087bdd0b542d9b5c23ce2225776fa933",
+      "normalized_sha256_lf": "8c2226f4bba9904660f91d048e997f2ed5c409d556e849134c2e275df57c2ef3"
+    },
+    "data/documents/eprs-ai-eu-borders-2021.json": {
+      "original_sha256_lf": "d2c5c6eb98f4cfc661c51e6668faf7f383f7f273931e172c6ee687a92b76dcdd",
+      "normalized_sha256_lf": "d245dcb61c8f42e4b2f610e9ea9502bb0bc219d87f781b0304199c7039608321"
+    },
+    "data/documents/esma-ai-adoption-trends-securities-markets-2026.json": {
+      "original_sha256_lf": "9eec9012199641db99104253748c23d7d467952500e8c31ee8a47b83aafdd44a",
+      "normalized_sha256_lf": "db75587bbd190c2b5477a58fb1f0364efc6bc90f8657a1ca081a657e21e49fdf"
+    },
+    "data/documents/esma-ai-eu-investment-funds-2025.json": {
+      "original_sha256_lf": "ef6951a77b90bfeb22bcff88d98d56b974e1b2986ab111b1d99d656acf732fbf",
+      "normalized_sha256_lf": "9538aef12d6be2bd4f14f9c2ecf0a46a558c2c707400c5b174485f7643d61edd"
+    },
+    "data/documents/esma-ai-eu-securities-markets-2023.json": {
+      "original_sha256_lf": "ebdaee6e876f135d824130f2afefae83a0cccb0d6fa14cb9e04117940f389986",
+      "normalized_sha256_lf": "e38c80dd336ea43b71439692d9b6a20edcc0e9b2dfdfc125132675e9287f1bce"
+    },
+    "data/documents/esma-public-statement-ai-retail-investment-services-2024.json": {
+      "original_sha256_lf": "56f24abe396433243b3f0c728f8fc29d3f984ea7e70ebc2d2bd039b47816c33b",
+      "normalized_sha256_lf": "6f520fc24501bb08bcbf3f8e1d9b82450c0acaec298bc904dc0b4727aa3f2181"
+    },
+    "data/documents/ethics-guidelines-for-trustworthy-ai.json": {
+      "original_sha256_lf": "b597804b5e26528ccdfaeb5dab8bba765cf26ff7af9d36e36d8419102670fc0e",
+      "normalized_sha256_lf": "e28bbad823086dce084e6467c76c642aeac6a7e54ba54219a0f2e2690c571aa0"
+    },
+    "data/documents/eurohpc-ai-factories-regulation-2024-1732.json": {
+      "original_sha256_lf": "3157981ec49b757a6ab2b7adeda7beaf0d2e7f33d9c6251119fc7cabf351871c",
+      "normalized_sha256_lf": "f58b80b9d795aeb7c3b6672935d8934924c1822f862125647a50244eb272c04a"
+    },
+    "data/documents/european-civil-law-rules-in-robotics-study-2016.json": {
+      "original_sha256_lf": "80bb0623f93eaa471e67c6fcda376e00260c84282342bbf5c7a27c5a0731d208",
+      "normalized_sha256_lf": "b3cab0692065a4cf054770a4a337b116ec3d748088253e175445a59478bcca69"
+    },
+    "data/documents/european-council-conclusions-2017-10-19.json": {
+      "original_sha256_lf": "8c11724d7612ee5487eef40fe664e42c4d27a5dc5e26389b3d3a3b7e710cde97",
+      "normalized_sha256_lf": "13f1d35b0a3707c8c00fe7d5e38d58e1ccc1569f0b0c81ff607b695bd1f709d8"
+    },
+    "data/documents/european-council-conclusions-2017-12-14.json": {
+      "original_sha256_lf": "46e5be59f922b7f0c243569d4c7b39ec6a0f62884595aaee98dd0098aa21fcb8",
+      "normalized_sha256_lf": "35841b463e848f1dce4c36f226812ea43d8ae8f009078c17527c4e3513b837eb"
+    },
+    "data/documents/europol-chatgpt-llm-law-enforcement-2023.json": {
+      "original_sha256_lf": "559fda6c66cc1793caf09944717e47f570023317eb5a1a3df34dccce9de69ee1",
+      "normalized_sha256_lf": "7938bc33545913d163326ae089173cd262a51e6017cb27e9f483f0e1b7255868"
+    },
+    "data/documents/expert-group-liability-ai-report-2019.json": {
+      "original_sha256_lf": "769d11e82300caf99a524dae93f50b333403c30e4053d7fc498cd85ab7599824",
+      "normalized_sha256_lf": "0390c45d5dfa9d648d158a746f92f1a912d85d29d1c0711f055aad0160ab4511"
+    },
+    "data/documents/final-transparency-guidelines-2026.json": {
+      "original_sha256_lf": "88edf44a882fac05414dca9edef62b3f841f10193e929f4338ab7f99cc8b8884",
+      "normalized_sha256_lf": "3f017df766e2471e529ba6d670e5236e1c0a081a3f23f19a881a6a20db7851aa"
+    },
+    "data/documents/fra-assessing-high-risk-ai-2025.json": {
+      "original_sha256_lf": "cfa7acc0e0a99651bc6443b2334a9c2d6bf524707fe0384158a5acec61679e92",
+      "normalized_sha256_lf": "b0db71ea11fa5975b2adbf6da9a556b2e27acb276c47c9587023d1848f403ed9"
+    },
+    "data/documents/fra-bias-algorithms-2022.json": {
+      "original_sha256_lf": "9111e6951bda9173573ac14b9b3512b4a0d0ec315899d4f6a36bc8bfe3d03c9f",
+      "normalized_sha256_lf": "a0cf75c8e5cb0c1a64d025786fb9d2acbbb15a42b793f743bc4feb8ea2d9fd0e"
+    },
+    "data/documents/fra-getting-future-right-ai-2020.json": {
+      "original_sha256_lf": "508073046e83c4e67c276185c71df5dcf727c6266a03701e830e4081f16dea3b",
+      "normalized_sha256_lf": "f1828d3f900fb917839ae40e0ffd6377b61402459298cc23546ef031c0b360d1"
+    },
+    "data/documents/frontex-ai-capabilities-2021.json": {
+      "original_sha256_lf": "0ecc1be7be559b67960bc4f1d04af1f6c222250e60dae261f64a0ad29a17960e",
+      "normalized_sha256_lf": "963b25c7fc435d9895f4f65d3f12290efaf7f0faa445ebe8377c784fd29b9801"
+    },
+    "data/documents/fundamental-rights-implications-of-big-data-resolution-2017.json": {
+      "original_sha256_lf": "2190b14e3344c0a1030e1dcbce2346121add2ab15f15b44ccdac5eb86983e321",
+      "normalized_sha256_lf": "2086307ccd9746b6f5e8bcc25012b2895829064bac5bf791fabd4996874633a3"
+    },
+    "data/documents/gpai-code-final-copyright.json": {
+      "original_sha256_lf": "0b3735ef3d6c070a443fba64e855858ccd8934e33fc6cee4b675520302e760b2",
+      "normalized_sha256_lf": "37bff242cfdc17a191af3c22c1d718df5120cc4ab920c67e20ab8215745f0c85"
+    },
+    "data/documents/gpai-code-final-safety-security.json": {
+      "original_sha256_lf": "e6c36d085063684df2c1d3f2a495910783a2577b3a3e55d9c0d9d45abadd2353",
+      "normalized_sha256_lf": "b9a5ea12e5e6c1b00e7d6253764539d672c8f21423c1bca690997dad7c4ba172"
+    },
+    "data/documents/gpai-code-final-transparency.json": {
+      "original_sha256_lf": "8055caddb0aa035fa7ef44dafab5786517017654a09355a27b855f547b87b805",
+      "normalized_sha256_lf": "35328e2937ab91b65fc22e7b09bf8c3cbf23ff02ba44831c42bdfdb3be2570ce"
+    },
+    "data/documents/gpai-code-final.json": {
+      "original_sha256_lf": "c37c7f93bde55b83e3d5152ed96cf91599d6ab118df1d4f7663b89cca93d336c",
+      "normalized_sha256_lf": "8e67a09c1d1cccb7ef2dd240fa4fac8a9dcf81fb2de4fb0be8710c380f7402e1"
+    },
+    "data/documents/gpai-code-first-draft.json": {
+      "original_sha256_lf": "aba3e2e3fa4dc26cba75fb37b5761705518708638a0db24380ee86fe8ce7baa5",
+      "normalized_sha256_lf": "9506bfb5542285c59466042cb5146d54dcc0beb1585e7e1cf0d2b22a1147b80e"
+    },
+    "data/documents/gpai-code-model-documentation-form-2025.json": {
+      "original_sha256_lf": "9f8355c0ef7ce7d51081d0cf70c22e69734ffb5bb1ea65978d6c5e9b82f8b4c7",
+      "normalized_sha256_lf": "edf1ce7499087738f9fa0f40f27d2509a630dbe28567716e36ae3e687ec30a27"
+    },
+    "data/documents/gpai-code-second-draft.json": {
+      "original_sha256_lf": "bcf2ff53d4856fafb2e50d3ea1c770ce8b034c672161a096963387b9285fcb84",
+      "normalized_sha256_lf": "9685580c526fa51ba0a296c3f1572b950684f11edc874bada275738970eda1b5"
+    },
+    "data/documents/gpai-code-signatory-form-2025.json": {
+      "original_sha256_lf": "2015f5e23b65913e94e7b555f28bae3aca6a935f1a01fc13f4cf1418674fc373",
+      "normalized_sha256_lf": "1ee05e47f9e0df876d395a0a49cbc5adf69d2e8e803de20602f1ea802061527d"
+    },
+    "data/documents/gpai-code-third-draft-commitments.json": {
+      "original_sha256_lf": "f35f4663bfce919f12586ba55155a92da05c5918c973cfeceb28cea7d5642626",
+      "normalized_sha256_lf": "59cc654f7f35b665211f0ee3706af7916bd5af3720e55891171c02cd25030de0"
+    },
+    "data/documents/gpai-code-third-draft-copyright.json": {
+      "original_sha256_lf": "791f9e16ad08cafca733ae5d64c12475a7c13f7968c2b577d97ca4a884da7e65",
+      "normalized_sha256_lf": "6d71e1e6200c45e7be58145df57e00184645aa49725c41be9e50a4d69cdc8130"
+    },
+    "data/documents/gpai-code-third-draft-safety-security.json": {
+      "original_sha256_lf": "725bf940e57353175eb0e4f3ecfbfefef20832a0b64ae2debe46ed6ff27710de",
+      "normalized_sha256_lf": "b992919d35e0a542307fa6c52c88fcbab77c2e140a0eb0bb2025ff5604fdf8d1"
+    },
+    "data/documents/gpai-code-third-draft-transparency.json": {
+      "original_sha256_lf": "0e0562b6b8915df7ffd9cd9a714165d5a34f40a831316ca7f88c43276e24b527",
+      "normalized_sha256_lf": "90fa4997143dfbf33b61c273e023e33ef963ac8dc77b69be70ddbe4a9843656b"
+    },
+    "data/documents/gpai-code-third-draft.json": {
+      "original_sha256_lf": "7c3e48e3ced73826fce6c9eb4f70162feb435d1e3653006ce02589fe51528de6",
+      "normalized_sha256_lf": "b5341c7fbe3a18df594df0b543ada093e48d08ad7f27415de6eb5a5b4195c289"
+    },
+    "data/documents/gpai-provider-guidelines-approval-communication-2025.json": {
+      "original_sha256_lf": "273154a81b8ac6b241a02b7835d643330717e7c74187c392c5015de6858e3ed7",
+      "normalized_sha256_lf": "ada20bcc9fad5411993833e973059f969c97059e2e0aa65865c021f0afb3e490"
+    },
+    "data/documents/gpai-serious-incident-reporting-template-2025.json": {
+      "original_sha256_lf": "46ba13f6839d44bc387695d18b06abfdc339b5a9013be38926bf924150183d23",
+      "normalized_sha256_lf": "ace1ff1831cdd6064a677c189c05a85ed3682e9047f51f9b1c4a0a1b92ab2b09"
+    },
+    "data/documents/historical-com-2017-228-dsm-mid-term-review.json": {
+      "original_sha256_lf": "75521c508ecf427993fda1a3aa08a2699d0d927288597a4486a32a06fc2e8d75",
+      "normalized_sha256_lf": "73480db7fa4952239b4ab33573a0382d8d630acffd5a14f93daacaa86c265d2b"
+    },
+    "data/documents/historical-esprit-1984-work-programme.json": {
+      "original_sha256_lf": "baade774404e28d22ec698f80810abd10dde4142a12e948398ce045e7f21cb49",
+      "normalized_sha256_lf": "a312b151e370791910e424608ce71766e26ae7cc9e3b38e9284463fa3d75c6d6"
+    },
+    "data/documents/historical-esprit-1985-work-programme.json": {
+      "original_sha256_lf": "7cda474cd376225960b5a3ccaf8e4bc18f9b07fbb78c9b4ce13b56c8cd4ce46c",
+      "normalized_sha256_lf": "1fa2d333cd24de1b2dcbf5c0a34b8faba29342870b1c20e1e8009ae1e6d13d15"
+    },
+    "data/documents/historical-fp5-ist-specific-programme.json": {
+      "original_sha256_lf": "2bdc751abbfa138a97031b73a1d70c5e9f8b3288a23a5e4a077fd40bffeb2618",
+      "normalized_sha256_lf": "bb01c8ac6ee5d6ad166945841d2792d70894e6a6fcfdf62b293243d1dc246b78"
+    },
+    "data/documents/historical-fp6-integrating-strengthening-programme.json": {
+      "original_sha256_lf": "f12f8cc00ae43ff2af15421df02222ed23eadc31c6d046524446bc09119e55a5",
+      "normalized_sha256_lf": "cd8fe314b1836778c5f78bb7d50151ff8634a3f660530dc81b7acff1dd5052a4"
+    },
+    "data/documents/historical-fp7-framework-1982-2006.json": {
+      "original_sha256_lf": "d1a231fa8a0f3d5a2960e1e7fd11aca78b4af5ad5bee0c32c46e2efd9703e5fa",
+      "normalized_sha256_lf": "8db2bc1546cd700b1a2dff193af0314690f2956d3e95b037289351cedeff7475"
+    },
+    "data/documents/historical-juri-robotics-report-2017.json": {
+      "original_sha256_lf": "4a10a4db41717988637151dbbe73675a85e3badd8a33a0f39a32d73db0654c5a",
+      "normalized_sha256_lf": "d1587aa9bad8f9fa4c5aeacfa564c6ce4061698de9df64fe1ee85380a262fac4"
+    },
+    "data/documents/hleg-policy-investment-recommendations-2019.json": {
+      "original_sha256_lf": "86c9dcb92cc27d17ec8aa4d9f04d8b17b8b1f5409372e43414955d17b394b9e6",
+      "normalized_sha256_lf": "a615e8927a65196cc7e19f74478cdbc5503b123f46c0da8c2a24899ad7b829b2"
+    },
+    "data/documents/hleg-sectoral-considerations-2020.json": {
+      "original_sha256_lf": "b816be3f77fc546b385f2e01222c269de70489c1622082c1ad81ed1de2731795",
+      "normalized_sha256_lf": "eb000f9527d2d2d030121b8d65600fc0dabe0a0074250d3504100f224ce940cc"
+    },
+    "data/documents/hma-ema-multi-annual-ai-workplan-2023-2028.json": {
+      "original_sha256_lf": "a74b217d55607cb3e4e595726eb4d0515959b291ce1f3b9aabafde112bfa31ae",
+      "normalized_sha256_lf": "e63063661e96fc43d18b4891c59e7b32b1a0787afd64882d0611e5627d4a6f13"
+    },
+    "data/documents/hma-ema-ndsg-workplan-2025-2028-v1-4.json": {
+      "original_sha256_lf": "995b2690e848f972019070fd0ddf6dbf88de10d841ebdd2ea7dec1c9ef4fbdb3",
+      "normalized_sha256_lf": "044dbc9bc32467da98013b5c9d70801eea64e67850341b4f9d0b5a3969974599"
+    },
+    "data/documents/hma-ema-ndsg-workplan-2026-2028-v2.json": {
+      "original_sha256_lf": "551c21615ce4a0f289ed4bbf387844fd5ce3359c6a773fdaec79aab3a9820ce0",
+      "normalized_sha256_lf": "0b54ce3a893ed3040d4baadd1eb67fa0d1fa68e2449287e2e93b287332daa89f"
+    },
+    "data/documents/horizon-2020-specific-programme-decision-2013-743-eu.json": {
+      "original_sha256_lf": "b6d9e436fe4f151e45c119cae0ad2a881645d6f6d93ff443f4e190121aff8a3b",
+      "normalized_sha256_lf": "f4d1dc95fc23427f52737df2c6e75ce4819236c0f5c9a5cd5e37a6b86cab8f46"
+    },
+    "data/documents/osha-ai-worker-management-2022.json": {
+      "original_sha256_lf": "1a9d4483b0567c849b37e9f469c7c51ed0f15e33d3daf58c1ca391074d15b416",
+      "normalized_sha256_lf": "e52e331bdb0910a66a26e457c496c991305d71b41aee81587069f72253cbbb0a"
+    },
+    "data/documents/prohibited-ai-practices-guidelines-2025.json": {
+      "original_sha256_lf": "3acdcf2fc7502042f3de6130d1d6e70686cbc3927db9af11740e16de1be5285c",
+      "normalized_sha256_lf": "56f4300f7b9a3349dc6e2ee195b979b6a68e0c1cc946dc7667071c5909c8d3dd"
+    },
+    "data/documents/prohibited-ai-practices-guidelines-approval-communication-2025.json": {
+      "original_sha256_lf": "5af47f20b4c2bcd1e9e9416566cdac3cb905bc8cbb556eefaa37e46d309dbcad",
+      "normalized_sha256_lf": "86e8fd2693e20df19401d1a53e852e7651e8c7f65145c9d467723ef3139bf832"
+    },
+    "data/documents/report-ai-safety-liability-2020.json": {
+      "original_sha256_lf": "b6be7c9ae62af7c4d922b65723f52d6e9e3c6a72b410933c5c87a739f782d25b",
+      "normalized_sha256_lf": "5196aca756e52df0843c9f7b86c9d2a42def6c607e4b69b8cd446b5cd0f4f85a"
+    },
+    "data/documents/scientific-panel-implementing-regulation-2025-454.json": {
+      "original_sha256_lf": "4d1c3f1c432a22d188af6e31016140de87f17658b4be49cf870b5245b3ee472f",
+      "normalized_sha256_lf": "41851ec478bc644b5caf3be7c50dbd14f78b703760c7473dd578917bafab11a6"
+    },
+    "data/documents/sixth-framework-programme-decision-1513-2002-ec.json": {
+      "original_sha256_lf": "a32b76bd98bba222aa0ee721b8e00f422b0a8a9776b40bd63d8cb3402ad9a5f7",
+      "normalized_sha256_lf": "84df409ababc148bc5e47d3450134867bdfed3f1c1dbc7bf19f44b37f980c6b9"
+    },
+    "data/documents/transparency-code-final-2026.json": {
+      "original_sha256_lf": "e616af844ed9ba824d6727013e49aaeeece036e7f965abae746245a01f46ad55",
+      "normalized_sha256_lf": "fc122f9c7759457a32dabef17d14de4ab5bb2244eb2f65005f70bbde88bbf452"
+    },
+    "data/documents/transparency-code-first-draft-2025.json": {
+      "original_sha256_lf": "5e128bf779cdcc1e94ebb4858aac562e5c87190404f33a881079a0cc7b50e93c",
+      "normalized_sha256_lf": "962c20e5e4dbd44f4609de21df813b379eb62106c72e663c6e202ceae8180e18"
+    },
+    "data/documents/transparency-code-second-draft-2026.json": {
+      "original_sha256_lf": "add24e10a1852a60153dd95517fb5be90cb0eb1cd850a210e63073b29dce50c0",
+      "normalized_sha256_lf": "b6a4e8e35184d11d93ccb3c4065c6e7f8542fbb10f0debf370e7f9db6450d0b5"
+    },
+    "data/documents/transparency-code-signatory-form-2026.json": {
+      "original_sha256_lf": "25b73b2a02d087a8b9864319a357b3fa67b165169ebf2d70f66132d5d3b7c053",
+      "normalized_sha256_lf": "124623f5e3bca7c2086a865a2a1fec2eff65865ebbfb67073e70680e395d4ed4"
+    },
+    "data/documents/transparency-guidelines-approval-communication-2026.json": {
+      "original_sha256_lf": "9bf85af9d3abd38fdc212109e1d2b2c846e0ef648d5a9ac7059b29875c7761bd",
+      "normalized_sha256_lf": "2b2364e35092ae923741b7d1006b6f227e8ebcb58dfb1a0621b0daff821940e7"
+    },
+    "data/documents/white-paper-on-artificial-intelligence.json": {
+      "original_sha256_lf": "4a05d4ebef52ee2823c1869ef6bb331249589d112e1403f4bf42471f5dcde585",
+      "normalized_sha256_lf": "9aca0bafe1cd4d1419c8a703a933497f10e88879482770d3f2f7b8f2eddd7646"
+    },
+    "data/sources/altai-commission.json": {
+      "original_sha256_lf": "7c3f1579f28e116f194ada48cb5096c64a99c45d6e7210ae4c1309555046ee4b",
+      "normalized_sha256_lf": "5f06cb5d21513ff9588bd1f851005f92b3e9570740caba1dc3a7fb425fc96ca1"
+    },
+    "data/sources/commission-newsroom-119623-pdf.json": {
+      "original_sha256_lf": "4d1e3a073371ff6dd5e22571ea8d83696809bb9978689edf7ef28304761f459d",
+      "normalized_sha256_lf": "8ababfa1dff5b14cc71acddbb9449dab0300a8035131ab7ba6a621d0c48b5bc5"
+    },
+    "data/sources/commission-newsroom-119624-pdf.json": {
+      "original_sha256_lf": "8d53f9a0ebc60211f0f0a864d36eacc5c7ac5322ee07f1180c8ce68019a2cead",
+      "normalized_sha256_lf": "182c023e340e4d0b61758af6d3dc1a2b63b1d548f70ba0e7dd9631622b06f3cc"
+    },
+    "data/sources/commission-newsroom-128559-pdf.json": {
+      "original_sha256_lf": "1e071aec8bbd9360487df8563689d9d0baf4788a9261c8f44d350ab85a623b02",
+      "normalized_sha256_lf": "5fdfcbd577b33a978d5ecac53d4705b5f1bf5a01e45634d18cf009f7b6cf92ae"
+    },
+    "data/sources/commission-newsroom-128560-pdf.json": {
+      "original_sha256_lf": "f5e373bd3ec82e5c63f302bd5b6464774d6a6c8a91327fe39767d6017dece035",
+      "normalized_sha256_lf": "1c33100ae384e923ca946cdb58d1df6f25968d56f7f4a4f6138caa51792d01d7"
+    },
+    "data/sources/commission-newsroom-128561-pdf.json": {
+      "original_sha256_lf": "4f05696c79108f42310fc0cc9d6c42d2507bfabb68bdc25c92d815f54b4d5360",
+      "normalized_sha256_lf": "cc9f8b7016c3639a07b5f17d48a2c3aa3664492d78c39e61321848a72d20db61"
+    },
+    "data/sources/definition-guidelines-commission.json": {
+      "original_sha256_lf": "14a0c0f9466dbc62d9b7b8ff38b7c9f6a13ee736904d43e5f6f6fccdad97042d",
+      "normalized_sha256_lf": "64c70512715029c16218c47611a387de5a5018919f392c9ebaa33906e4c57a62"
+    },
+    "data/sources/ethics-guidelines-commission.json": {
+      "original_sha256_lf": "7c90c408d68e9fd2541ec94247a0e61b9d962181de8f1373534b87a12702dffe",
+      "normalized_sha256_lf": "7639b8ef061dcaebf1a241d752dbf93e9a112c2b777f04b7e95e9375869b0a8a"
+    },
+    "data/sources/ethics-guidelines-publications-office.json": {
+      "original_sha256_lf": "091784b896f255a8990d1cd26faa3357977f696fe0cda7ae6e38fc38a63ea6ce",
+      "normalized_sha256_lf": "11c568b616dce66eeaf8f39b4bef30a9a08e7a7d967bcd687e8aab91961f9702"
+    },
+    "data/sources/gpai-code-assessment-commission.json": {
+      "original_sha256_lf": "08d333c59afaf91073fd337fbe4620de1fec8ca4512ac49ccd1f85822db6e008",
+      "normalized_sha256_lf": "323244f3b4d3b97441b71b845f7c9180560603211a9bc36fdaf9e2c4c08e6ea3"
+    },
+    "data/sources/gpai-code-final-commission.json": {
+      "original_sha256_lf": "ee1bffeba279b70e8bbf7a26a64597407df4963704652dbadd80fec1b8677f95",
+      "normalized_sha256_lf": "59b8d8fba5d1a6d6a545e44a0f361958a120bfe5fcd465ba952a0357be0ec189"
+    },
+    "data/sources/gpai-code-first-draft-commission.json": {
+      "original_sha256_lf": "282b31ffb804e6cd5df1aae34790ede3f312a5f4c3f75af3c40023201617b73f",
+      "normalized_sha256_lf": "2fc9b6a57b91b9d6375f3a3aa6e0d1de0cb24c028a64d69ee046825f77c73ea9"
+    },
+    "data/sources/gpai-code-second-draft-commission.json": {
+      "original_sha256_lf": "b6e3bc1dcafe71bb6f0e67f4a266cd45b322b5fe738c5068e1fe966b6593ba90",
+      "normalized_sha256_lf": "6f0006c55968399408a174ac879c55e624a8ddb6ff5f5f0206d2e591e8463f68"
+    },
+    "data/sources/gpai-code-third-draft-commission.json": {
+      "original_sha256_lf": "6a775f682c5ab121fbcfe87e4e01f3435e079e193e1706f1957ee241c5badb20",
+      "normalized_sha256_lf": "b7b0ff27648efdb6c0b6eaf01bf1f9e4866f1f3ea8f4ce07dab13a2c64fc678d"
+    },
+    "data/sources/gpai-guidelines-commission.json": {
+      "original_sha256_lf": "cc7a828c096e82523f83e5b7f645ac01f67898a4ebb7e3cac624454342f0a1c0",
+      "normalized_sha256_lf": "7dfce4e0de213381b8a95180d610b2e4c2780e119b637c518308db658af10a9b"
+    },
+    "data/sources/gpai-incident-template-commission.json": {
+      "original_sha256_lf": "2018dc93f94053310235dbba25b6536260d01fc0d2a4df01787c6849c476ca45",
+      "normalized_sha256_lf": "4a9c7c95df42105b910622d2a3b374c71b61d22e4bc749b6e5633f095d3d07ee"
+    },
+    "data/sources/high-risk-guidelines-draft-commission.json": {
+      "original_sha256_lf": "01b43a18a4e8562b0ffa4fe821bbc6cb15246a9070ca7e567aa8e0f56d2d7266",
+      "normalized_sha256_lf": "392ea697e779513965c49b8b133bd9709af704585ce3ee87416c7a500906065b"
+    },
+    "data/sources/high-risk-incident-consultation-commission.json": {
+      "original_sha256_lf": "b8e5a7e4cdab75504abe4a3263f0ef2a4aae0a166c9489e90a8b1c1e381d2d1f",
+      "normalized_sha256_lf": "5e33431fa0721813ab456d2773c2755fe2b2eaa7e90e072475c21c308712fbdc"
+    },
+    "data/sources/prohibited-guidelines-commission.json": {
+      "original_sha256_lf": "dfe06a2ea1db0cd88938571c3396f87d8d7e2e7538cb49c2ec8396674b4e051c",
+      "normalized_sha256_lf": "a44eaf7b10de8c08e9e609dd45f3c97e24db5f75477972bbb1f29a806f14ed80"
+    },
+    "data/sources/transparency-code-assessment-commission.json": {
+      "original_sha256_lf": "409499f0f1ace9be5f542e8e18c23514390cb580ce7d6d4279a62236cbe366d5",
+      "normalized_sha256_lf": "1f790ec88acecc3e069cce2f0cc3d1d549fe58fe541d17402ec223058e81cc3d"
+    },
+    "data/sources/transparency-code-final-commission.json": {
+      "original_sha256_lf": "06b6ed3d951dc4687b14cb9c1f9f9eeb9d2437cf3a2bbf90051d6614763a9a46",
+      "normalized_sha256_lf": "8c1a41c2862c1ee6e334f0f64942e8697949b5583c4f85b6a556e2bd44531c0c"
+    },
+    "data/sources/transparency-code-first-draft-commission.json": {
+      "original_sha256_lf": "38b686a8321cedd5f41664ed10063f30ec0d2ff177cf94acb2712dfab3849d7f",
+      "normalized_sha256_lf": "f26f1ae0bd72d3bfb0c0d4d9452e402673e2210037cd70b4974e6c5d443899ec"
+    },
+    "data/sources/transparency-code-second-draft-commission.json": {
+      "original_sha256_lf": "f4c6ba7c74051d351e122e8fbf3abf51dc4ac7d96ceffcc5fde0af9399189e10",
+      "normalized_sha256_lf": "e468ad4fa2d7ec11ff7a1dc2f58257641f0ee96043bcad180776cf4bfb63ee1e"
+    },
+    "data/sources/transparency-code-signatory-commission.json": {
+      "original_sha256_lf": "984252955596b0bf2b7549b3b2062f86f9fa547d767fa6cacd9b017475efa847",
+      "normalized_sha256_lf": "5d00d4578de5b424b700a7f6f21a796c71ed90fea194fc75729d1acc403f0e6b"
+    },
+    "data/sources/transparency-guidelines-draft-commission.json": {
+      "original_sha256_lf": "9656d08bda8e1f97b9f8247994e0ff9eacf21b70598b34a0c51a429d7aacf4a6",
+      "normalized_sha256_lf": "1a75e68262f4b4279610c46ff8f4f6d6b022ac6dd77fafdf9c636f92827e40fc"
+    },
+    "research/admission/2026-09-05-document-admission-review.json": {
+      "original_sha256_lf": "692fd19e52e7f8032950a94e61837ec08ca5deffad9b16f9b81cc45626e84c5d",
+      "normalized_sha256_lf": "caa87138985d746f64169a4c3beb81b9a52b03736d09044cd89813b20694c524"
+    },
+    "research/admission/2026-09-06-gap-admissions/commission-base.json": {
+      "original_sha256_lf": "d0a932c86da9304dee4ed272830ede2f0d9938eeaab34d2ca9d23915172aac0a",
+      "normalized_sha256_lf": "f6de7e2fdee99a087038f9d702f889f99e8c813867444906851c15f9f0d14b99"
+    },
+    "research/admission/2026-09-06-gap-admissions/commission-experts.json": {
+      "original_sha256_lf": "dbbc1f2dff8f24c841bf4bd8a500afda0c162ffcdf79d4da43baa47e9530daa5",
+      "normalized_sha256_lf": "a08b7ea58ce3e85a7c2e0b8c36976f99f4692624a671c8bcd51e714ec1b9192a"
+    },
+    "research/admission/2026-09-06-gap-admissions/historical.json": {
+      "original_sha256_lf": "79a793f580d5d5c0e75caaeab307e5ee820e4ad2c513c391d0c14ca40b19b6e4",
+      "normalized_sha256_lf": "6d44f065544ac05267709b742473731c5f2a9ac19af6c0854e3988ea3007ca30"
+    },
+    "research/admission/2026-09-06-gap-admissions/progress.md": {
+      "original_sha256_lf": "eacc6c5f5e44992d5af091bb4835ac576ff8501166d18182e59eda49a25bc8a5",
+      "normalized_sha256_lf": "5949824a7306008dbecaf1e4b1869b1374bc12d3cbb92393c68fd542bf777dd0"
+    },
+    "research/admission/2026-09-06-gap-admissions/recovered.json": {
+      "original_sha256_lf": "db130e6a5227698bf0c574c45d72ec49b9d2d7ca47b7391d8b98e19d60d34f08",
+      "normalized_sha256_lf": "37e37c56cd43ed94ef73f7a65b7fe0a837b7e0ba499d6fe8ce862b53ca5ff3a8"
+    },
+    "research/admission/2026-09-06-gap-admissions/result.json": {
+      "original_sha256_lf": "3d22bd2bcd21430b51448a08b3ff4d306101e6be967b02cd962b935ce05f10c0",
+      "normalized_sha256_lf": "79903522323ce5b7dd266c9865962791581aa63f6bb0d5918eff467c424b893b"
+    },
+    "research/admission/2026-09-06-gap-admissions/rights.json": {
+      "original_sha256_lf": "99953e7a4ea4e2402a05fb34a6991d74181acd873e11a68b9350ccb874384453",
+      "normalized_sha256_lf": "5cc33ae801cce4449244b5da5f3924aecf77aad9b78024e7a3d3fe48dc481057"
+    },
+    "research/admission/2026-09-06-gap-admissions/sectoral.json": {
+      "original_sha256_lf": "cdca0ce225de495f3685d71fe8ee132356ad4c13d06ee70eafbff846cc0cf034",
+      "normalized_sha256_lf": "7f979aae911644f7677d3e143c6709d826988b6a333567f4d6b1ef734929bd64"
+    },
+    "research/admission/2026-09-06-science-opinion-admission/before-state.json": {
+      "original_sha256_lf": "0ae351ca61239df20c8f5f4ee8da3bcdab7db6de9d61ad7d87c1bf5d6c8e7ef1",
+      "normalized_sha256_lf": "78d3d5728f8fea16b02b119ac8e3517d75df6c8188132069f11c9226342e70fb"
+    },
+    "research/admission/2026-09-06-three-record-admission/report.md": {
+      "original_sha256_lf": "0c18fb59d126d889b088b32280326470d7fb182075bef9d16d25be5e31349a6e",
+      "normalized_sha256_lf": "100a68a4321880c88cc3c4d243b3d1e22d4c063fc260f04de8b39c94f6c58c7b"
+    },
+    "research/admission/2026-09-06-three-record-admission/result.json": {
+      "original_sha256_lf": "45627aa8c359ab3f0aa6c1fc295279704226027e9a271e0c1f517aa740059330",
+      "normalized_sha256_lf": "3e5f5feec2985fea85c42f178bb87f7673658a6361506b4b2fa0f997a62a3352"
+    },
+    "research/audits/2026-09-05-coverage-reopening.md": {
+      "original_sha256_lf": "2e1c609585a54055714a26e2a9435be6b1576e4f1853418e168cc01feb668ca7",
+      "normalized_sha256_lf": "ec82e9b42d9082babf40589eea0a8f637876f9aae0da2a3766eee942f891e38d"
+    },
+    "research/audits/2026-09-05-document-admission-review.md": {
+      "original_sha256_lf": "6b60b4fcdbea1c89babb05fe882d70afd73e1b9128d1ae935fa86653699282c5",
+      "normalized_sha256_lf": "7135e2ea994657061f31427b3d4ab74a502b1bdbde1061aec01a6255cd533824"
+    },
+    "research/audits/2026-09-05-document-gap-scan.md": {
+      "original_sha256_lf": "ad43e7c419c2fd59710206ebc01971f9e20193d4dd293f343929db3bab5f9c2d",
+      "normalized_sha256_lf": "7d2af7a41df605eb6a8f22aab8cead0512085977796066cca4edce76c25933d4"
+    },
+    "research/audits/2026-09-05-expanded-evidence-review.md": {
+      "original_sha256_lf": "3e67a45a6f841e78c73c5ed2becc1fb107b868efc30558fba574cd7636695467",
+      "normalized_sha256_lf": "23d319323b81e4e7d0240974eaf57d59c8a82e469ae5257d359b3e414932851b"
+    },
+    "research/audits/2026-09-05-historical-requirement-recheck.md": {
+      "original_sha256_lf": "a57b2ff7946f7b2686c49df1d1cabb54cb37b574912a5ec98be8aae09f62292d",
+      "normalized_sha256_lf": "7e224cbe89c81361e7ec49f76df3c368c30866f897a4b4db0a7187afa96bd988"
+    },
+    "research/corpus-inventory.json": {
+      "original_sha256_lf": "3498e85cf64202e79f35b4efcb5fb06566a56c888bef487925ef5f19bd1e6020",
+      "normalized_sha256_lf": "b561cff5a9c97ef9b1e757da4586f96457bcd2b8f628c8fea8ecf4784fb2c7bd"
+    },
+    "research/discovery/2026-09-05-document-gap-candidates.json": {
+      "original_sha256_lf": "b41e7a6b878c8ab162d787904da9dc965b14f5fdb04385734877fa02573476fd",
+      "normalized_sha256_lf": "89c9c01775eb4309c4c3bdaad5028755c8e35e51fbdea0f64f7c9d211fdcae87"
+    },
+    "research/discovery/2026-09-06-gap-scan/commission.json": {
+      "original_sha256_lf": "392c529ab0eda7eaaa867d990f1c3affac9db76374ebe27dbc3564ed70999bfe",
+      "normalized_sha256_lf": "635ffb836fedf21902c919053babbfdcd32713f6ef6c0582a24bdd9071b0fbcc"
+    },
+    "research/discovery/2026-09-06-gap-scan/historical.json": {
+      "original_sha256_lf": "eff519e784047bff41250b6c9755d76031a036735d70f8eda192378ba9251d96",
+      "normalized_sha256_lf": "24472a93fc572349fb7c4db8c59575cbacfa06fa86b63815b5ffc9e50a2c1156"
+    },
+    "research/discovery/2026-09-06-gap-scan/rights.json": {
+      "original_sha256_lf": "e4042474f8a9fa318f8db620d1aec6b7e0691f38159430a1f745ab8fb36a6620",
+      "normalized_sha256_lf": "781f5851f7d4cfe3d66b28d542dafb9e7948f153053cca7072de765d3e18330a"
+    },
+    "research/discovery/2026-09-06-gap-scan/sectoral.json": {
+      "original_sha256_lf": "28cecc43b691409b473f4aeab0ca0d35ba1286cac51a9a35dcbca6e8e7cbc26f",
+      "normalized_sha256_lf": "f588cc80a4f9344b00ff592b978125e07149d710455b0614e224c7b20d4feb0b"
+    },
+    "research/migrations/2026-09-05-expanded-evidence-review.json": {
+      "original_sha256_lf": "9376ded38fafa1ab33a98f5349336e746cd91803dddca69029bb8e96abe92437",
+      "normalized_sha256_lf": "de772f5874c2da0c1a8b769033fcde3895eb6fc2a2c5bed44e84b31a93ad7618"
+    },
+    "research/migrations/2026-09-05-historical-admissions.json": {
+      "original_sha256_lf": "2d9349fc5686eeb89cfeed79695a5be7f31d8953433ecda6c8b6be7b1a4a7cb5",
+      "normalized_sha256_lf": "273eae510e5854b5a137321b7c59d4fc4d2f91aa79295341065760fe09e69244"
+    },
+    "research/migrations/2026-09-05-incident-instrument-identity.json": {
+      "original_sha256_lf": "9ad6fe4df47735692c41766ce35a9a4698dcc148b50a226573698eb01e12b2f2",
+      "normalized_sha256_lf": "1bec1c7c5605faa6b9e3311beaab0722a7cbbdf402a05667c371698db4c740e7"
+    },
+    "research/migrations/2026-09-05-incident-instrument-identity.md": {
+      "original_sha256_lf": "4c41adb97eae2eae7faef3c756d92135b6cfef4053218688c61fae1fad7825f9",
+      "normalized_sha256_lf": "cd39f8550f6ea938be57ac62e577097b95167e6ce12b0392907d6b345dc2d639"
+    },
+    "research/migrations/2026-09-05-official-pdf-evidence.json": {
+      "original_sha256_lf": "c944efe610396165641abeada54ba60b4c074d3928a12958092aed157e4f9669",
+      "normalized_sha256_lf": "8c64baa9fc5758cacb7182b8f400f494c7a72cc45e0a5cfe45aa8f75b14daec2"
+    },
+    "research/migrations/2026-09-05-relationship-evidence-migration.json": {
+      "original_sha256_lf": "c2ef2e4c69145713b3710b9d29503387f0c8379912435bed4825e89b9642fb7f",
+      "normalized_sha256_lf": "4fd78a5d23c9ca17bea9e97c0a01b7f60715e39b1560731c02685c61ddfe9f8e"
+    },
+    "research/migrations/2026-09-05-relationship-evidence-migration.md": {
+      "original_sha256_lf": "06edeaf180a0799023acf107bbee549b5260ecc4d0c504a002233790e58b2928",
+      "normalized_sha256_lf": "a937bd7d7ccd1deb79a712b00ad3e409e38b7eb77d21a92e594c58d273b7d2a9"
+    },
+    "research/migrations/2026-09-05-remaining-evidence-review.json": {
+      "original_sha256_lf": "bca28661d171ab5af3b3669352c26d1de96dc7fa504aaafafb04c3fc39538985",
+      "normalized_sha256_lf": "0b2245b98834114d094937e2ef99035b3ddfd1a685474c406fe8e9570b640b9c"
+    },
+    "research/migrations/2026-09-05-retained-section-notices.json": {
+      "original_sha256_lf": "72ec6645007d7cf575abe2ed05a651010304315f523dbc51f2300542e1034ffe",
+      "normalized_sha256_lf": "b301294c737aefe36e9d162ba921813823f9f10522e27b2edc6b46d303278217"
+    },
+    "research/migrations/2026-09-05-review-continuation.json": {
+      "original_sha256_lf": "8ae74d6013f4e1909d1db8ce30bd0417f221dc490520189e0edb5bb8efcb5713",
+      "normalized_sha256_lf": "fdea0001922b938d03fdbec709a81c2fa22ee488f8dd066d7a603a34800d2127"
+    },
+    "research/migrations/2026-09-06-six-record-evidence-update.json": {
+      "original_sha256_lf": "9ff1426745ac17f38ffd15e00a3031f533146fe429c43908c6bcf4ecc07c0be5",
+      "normalized_sha256_lf": "6f6ff43329211d283fd543a885bf80c2b75ad743d9eb0a8b1562e4b0b1e59e97"
+    },
+    "research/source-sweep.json": {
+      "original_sha256_lf": "281ae634c107f8b2231926ebe354b217e9b30cdd6c837a4d22e56e3ca1648e18",
+      "normalized_sha256_lf": "3e527680d807625f35947494d502f6b7aba1ed8d81edbb11630b12ed2989263c"
+    },
+    "research/staging/2026-09-05-expanded-review/commission.json": {
+      "original_sha256_lf": "50918a0631301ab688ae7936cdec5c8ba30a579940fafd208f56853e663cf710",
+      "normalized_sha256_lf": "492a1b12ad51f021e0e67b2fea3736c20398ad328c816c8c29d62c4e79288c6a"
+    },
+    "research/staging/2026-09-05-expanded-review/eurlex.json": {
+      "original_sha256_lf": "8f089fd1203dee5ca9c444dc9b93a6339384c73cdcf5f5a7553e3d1a5143094a",
+      "normalized_sha256_lf": "64d8d8b41eb244d80e8b57f887def1e9f6a9b201d2cda2e8f3133e7d4739a8bf"
+    },
+    "research/staging/2026-09-05-expanded-review/eurlex.md": {
+      "original_sha256_lf": "29462eae1eecb22f484f7b0ab462f44c36666a50586f592c0048f864a8ff71c6",
+      "normalized_sha256_lf": "14aef03adc0b724b70ce1e3ac5509bee7f05c1e453e9a84b8c47a7669fda0419"
+    },
+    "research/staging/2026-09-05-expanded-review/legislative.json": {
+      "original_sha256_lf": "3ade776d6f54f50137e29d14e91bbf205798615c549ce2e7190bffe0eafe4a9a",
+      "normalized_sha256_lf": "42931425c0e764f3e86dd67f80db22f9c935dd281b16f764cc8317ea0a7c3117"
+    },
+    "research/staging/2026-09-05-expanded-review/legislative.md": {
+      "original_sha256_lf": "f3b556ac343ab05497cae9724fdfa1dc70c09fc332077ec182b329f8c3caeedf",
+      "normalized_sha256_lf": "3c5e9079567a3bf92082748e6eb39a9f3c511597d590f08d38fabbf0a59203fb"
+    },
+    "research/staging/2026-09-05-legacy-three-evidence.json": {
+      "original_sha256_lf": "32393d45aeaa987cfb7b6af3d8736b6ea22170364c7be766d4e724290d05bbad",
+      "normalized_sha256_lf": "c1c312724a5021e7307de3784f9a13a0db0922b4b913f4fdc384bbf68ed937c1"
+    },
+    "research/staging/2026-09-05-remaining-review/commission.json": {
+      "original_sha256_lf": "857fee0de54b3778b0f259a46b50be27a1c4f942a0525ae08cf589acde7131c8",
+      "normalized_sha256_lf": "e712dcdadd1bbe4eee2241205ccddc2296543bfd5ef58042ff35f4adb4adb9e6"
+    },
+    "research/staging/2026-09-05-remaining-review/commission.md": {
+      "original_sha256_lf": "18644ea47a25b9a3e4c7e5d76eb9c6a4c36f91a054ed61519f55bea331698e60",
+      "normalized_sha256_lf": "3e3cd85a13f89ac01d4032a764b3f944316f0625989dc2a8f40ec3a506439eed"
+    },
+    "research/staging/2026-09-05-remaining-review/council-2022.json": {
+      "original_sha256_lf": "b52f92092c95f2f2831ed2250e95870835b5a06b64dc10d90dd6af810cd22127",
+      "normalized_sha256_lf": "5c5099dfd683e9d82a1db6c2f4c81e57f351ee26e035ed452bd811cd331b9497"
+    },
+    "research/staging/2026-09-05-remaining-review/council-2022.md": {
+      "original_sha256_lf": "6ca2ecaf8ada9d302149f694254efc69639262c2791a45d272b083fd822279af",
+      "normalized_sha256_lf": "305659a23651171fe05f47aaa37e837440e542b6fe2fcba68e10b25086dfdeee"
+    },
+    "research/staging/2026-09-05-remaining-review/council-later.json": {
+      "original_sha256_lf": "16bd4c059a0014e528d0b34b216855210f981ca88f99bfcecb5de005d5ea3e6b",
+      "normalized_sha256_lf": "2f8b6db262f133d4208037522d99b10808647010f842178acb8c04239e606e98"
+    },
+    "research/staging/2026-09-05-remaining-review/council-later.md": {
+      "original_sha256_lf": "a6a435d338febbc3f33d5f4ca97a6a7f0c35567611baed8b95e8869e71fe9867",
+      "normalized_sha256_lf": "b23d910b4b9417243180b94dba31366ccc5a04aadcde46d9be36f01aa6637f9f"
+    },
+    "research/staging/2026-09-05-remaining-review/eurlex-parliament.json": {
+      "original_sha256_lf": "90bd4440d67c195aee3dbf0dc9cf0b27fc32366e9a455f11338c9c00f99cc374",
+      "normalized_sha256_lf": "f2f6f67b0fc5896e84a56d3b4c88147ed9ab54997c0e799ecad1655b63a0d105"
+    },
+    "research/staging/2026-09-05-remaining-review/eurlex-parliament.md": {
+      "original_sha256_lf": "dab961b2bbef92cda579b8bb4469432c623956a10ed8db2e35436a868e9b7968",
+      "normalized_sha256_lf": "858492c229c48946a0ddc2c5e348a4434751877cc443820e4f15cd730b73dc28"
+    },
+    "research/staging/2026-09-05-review-continuation/commission.json": {
+      "original_sha256_lf": "9cdb336ccc0439a87500ac91da88b766dad24b6d0539e658c49e709cba44d800",
+      "normalized_sha256_lf": "23f9fb8cbbd86501c52f0b3332ba0462abd8ae9f8832b1648e0b7073b1265c8c"
+    },
+    "research/staging/2026-09-05-review-continuation/commission.md": {
+      "original_sha256_lf": "aa4c6f642b3911922dddcd61b51993a44ae2cc70f948fe564614b4144e66c07c",
+      "normalized_sha256_lf": "d208c17ae574327e3220e49d62f6f049175d0d2a23556aa55619d37be3fa7c47"
+    },
+    "research/staging/2026-09-05-review-continuation/council-2022.json": {
+      "original_sha256_lf": "6ec77edacec235607afb19ff638060213c21c7496826d5a07d7a299b3679b2a0",
+      "normalized_sha256_lf": "87192713ddce1998c47c061a573eb6d13eb8ad5c9be16c67c4060ce9ff9cf27e"
+    },
+    "research/staging/2026-09-05-review-continuation/council-2022.md": {
+      "original_sha256_lf": "cec573168f3eaa2385d98d8d780969b0c6b200bb28f5b0ddf938683b7543570b",
+      "normalized_sha256_lf": "cdc4198cbace2dde0d35c4909f81b22eade933da7568595f48a60432d3a1144b"
+    },
+    "research/staging/2026-09-05-review-continuation/council-later.json": {
+      "original_sha256_lf": "924bc16019f78c5d6538b74f279efc953f0a466a659f4ec583eb6a2d76760e9b",
+      "normalized_sha256_lf": "b546fe1bd25463cd36bcbc676ae834ec86c372b71b2169106801d58dfac2c550"
+    },
+    "research/staging/2026-09-05-review-continuation/council-later.md": {
+      "original_sha256_lf": "5ccbe41805ef91e3f7207462dddfa48e93b773e073b05a3537115ddf34c69612",
+      "normalized_sha256_lf": "374a121f87c89d80fc1cc08c08e48840a617ec79aad37e92bc5de49c30f8a0f8"
+    },
+    "research/staging/2026-09-05-review-continuation/eurlex-parliament.json": {
+      "original_sha256_lf": "cecc33d22c49f32e7dd4b472640a5c6559856560436e4f05fb7a4328f5ab99a8",
+      "normalized_sha256_lf": "7b5d81ae70b7e101228368561a733be3d0397efa5f34073dbd7855ed1ddbfa2d"
+    }
+  }
+}

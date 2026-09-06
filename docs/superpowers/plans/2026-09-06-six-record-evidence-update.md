@@ -71,6 +71,6 @@ The two new official sources link respectively to `https://eur-lex.europa.eu/eli
 
 - [ ] Generate a snapshot-based diff package and conduct independent spec/evidence-quality review of Task 1; fix important findings through the original implementer.
 - [ ] Run fresh database/public export, frontend unit/source checks, Astro build, public-build validation and proportionate browser smoke checks. Build outputs are generated artifacts, not new source records.
-- [ ] Read current remote main and verify every pre-existing changed path still matches the starting snapshot or resolve any mismatch explicitly. Upload only reviewed delta paths to a new `codex/` branch; never push the dirty checkout wholesale.
+- [ ] Read current remote main and verify every pre-existing changed path still matches the starting snapshot or resolve any mismatch explicitly. Upload only reviewed delta paths to a new `maintenance/` branch; never push the dirty checkout wholesale.
 - [ ] Create the English PR, await required checks, merge only the reviewed passing head, and verify the corresponding Pages deployment plus live representative records/counts.
 - [ ] Report six-record update scope, actual verified/pending counts, PR/live links and any remaining limits. Keep all prior work and audit snapshots; no cleanup or deletion.

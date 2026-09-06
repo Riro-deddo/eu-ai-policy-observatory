@@ -1,6 +1,6 @@
 # Council later documents: third-pass evidence review
 
-Reviewed by: Codex (AI-assisted evidence review)
+Reviewed by: AI-assisted evidence review
 
 Reviewed at: 2026-09-05T20:34:24Z
 

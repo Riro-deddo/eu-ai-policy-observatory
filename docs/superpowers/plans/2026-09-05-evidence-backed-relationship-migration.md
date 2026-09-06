@@ -17,7 +17,7 @@
 - Use evidence for relationships and distinguish editorial judgments from official facts. Do not invent parenthood, lineage, attribution, dates or retained source snapshots.
 - Keep prospective historical fields/gate inactive; no schema, production Python, SQL, web, inventory, source-sweep or candidate-admission changes.
 - No GitHub push, merge, deployment, package installation, user-run terminal steps, reset or cleanup.
-- Use only git --git-dir=work/sdd-gitmeta --work-tree=. in the existing isolated checkout on codex/historical-corpus-design. Preserve unrelated untracked work.
+- Use only git --git-dir=work/sdd-gitmeta --work-tree=. in the existing isolated checkout on maintenance/historical-corpus-design. Preserve unrelated untracked work.
 - Leave generated/public-data.json and generated/eu-ai-policy-observatory.sqlite unchanged in this bounded migration. Verify an alternate temporary output pair; activation/publication is later work.
 
 ## Task 1: Correct evidenced relationships and retain explicit holds
@@ -32,7 +32,7 @@ Modify exactly these four existing document JSON files under data/documents/:
 - transparency-code-signatory-form-2026.json: record_level attachment -> supporting.
 - draft-high-risk-classification-guidelines-2026.json: record_level version -> attachment (this record is the General-principles section, not the entire guidelines).
 
-Only change record_level, updated_at, and append a field-specific English explanation to corpus_assessment.researcher_notes. Credit this narrow editorial correction to Codex on 2026-09-05, not Yichen; retain existing researcher review fields because other classifications were not re-reviewed. Retain draft/final version_status, dates, titles, IDs/slugs, source/tags/policy memberships.
+Only change record_level, updated_at, and append a field-specific English explanation to corpus_assessment.researcher_notes. Credit this narrow editorial correction to AI-assisted reviewer on 2026-09-05, not Yichen; retain existing researcher review fields because other classifications were not re-reviewed. Retain draft/final version_status, dates, titles, IDs/slugs, source/tags/policy memberships.
 
 Modify five existing relationship JSON files under data/relationships/ without renaming their IDs/files or endpoints:
 - gpai-code-final-copyright-version-of-final.json
@@ -57,7 +57,7 @@ Use valid existing relationship schema fields. Existing created_at stays unchang
 Modify four sources under data/sources/: gpai-code-final-commission.json, gpai-code-third-draft-commission.json, high-risk-guidelines-draft-commission.json, transparency-code-signatory-commission.json. Preserve prior retrieved_at and created_at. Set updated_at/last_verified_at to the review timestamp. Append a narrow verification_note: landing-page structure/purpose and download labels checked; linked binary file interiors and retained bytes were NOT verified in this review. Point to the migration ledger.
 
 Create research/migrations/2026-09-05-relationship-evidence-migration.json and a concise companion .md.
-The ledger must record actual review date/time, cutoff, reviewer Codex, base commit, all 15 target document IDs, before/after editorial levels, relationship before/after or new edge IDs, shared source URL/locator evidence, action rationale, resolved/held status and hold reasons. Preserve pre-change values for fields actually changed (nested review notes/source notes may be recorded as before/after in a compact changes array). Do not imply whole-record/every-classification verification. No source snapshots are retained. Generated pair remains pre-migration pending a later controlled rebuild; say so explicitly.
+The ledger must record actual review date/time, cutoff, reviewer AI-assisted reviewer, base commit, all 15 target document IDs, before/after editorial levels, relationship before/after or new edge IDs, shared source URL/locator evidence, action rationale, resolved/held status and hold reasons. Preserve pre-change values for fields actually changed (nested review notes/source notes may be recorded as before/after in a compact changes array). Do not imply whole-record/every-classification verification. No source snapshots are retained. Generated pair remains pre-migration pending a later controlled rebuild; say so explicitly.
 
 Five holds remain:
 - draft-high-risk-classification-guidelines-2026

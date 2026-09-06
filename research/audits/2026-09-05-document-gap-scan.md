@@ -3,7 +3,7 @@
 Follow-up: the [admission-evidence review](2026-09-05-document-admission-review.md) records later metadata checks and outcomes for these same 34 candidates. The discovery snapshot and counts below are preserved as the first-pass record, not the latest admission status.
 
 Review date: 5 September 2026. Publication cutoff: **4 September 2026 (unchanged)**.  
-Reviewer: Codex, AI-assisted research and consolidation. No human inclusion approval is recorded.
+Reviewer: AI-assisted reviewer, AI-assisted research and consolidation. No human inclusion approval is recorded.
 
 ## Outcome
 

@@ -2,7 +2,7 @@
   "schema_version": "private-sectoral-gap-scan-v1",
   "purpose": "Bounded read-only omission discovery for selected EU sectoral regulators and agencies; this is not an import decision or a completeness claim.",
   "reviewed_at": "2026-09-05T23:08:00Z",
-  "reviewer": "Codex (AI-assisted research); no human approval recorded",
+  "reviewer": "AI-assisted research; no human approval recorded",
   "research_date": "2026-09-06",
   "publication_cutoff": "2026-09-04",
   "baseline": {

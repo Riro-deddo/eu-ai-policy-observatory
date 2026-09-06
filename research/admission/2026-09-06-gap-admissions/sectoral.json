@@ -63,7 +63,7 @@
         "inclusion_rationale": "Direct aviation AI assurance and oversight guidance, and a distinct final version following the 2023 proposed Issue 2 consultation text.",
         "researcher_notes": "Named author Guillaume Soudain; reviewer and approver are not co-authors. Final Issue 02 follows the separately published proposed Issue 02. Publication date used because no independent exact issue day is printed in the extracted text.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -198,7 +198,7 @@
         "inclusion_rationale": "Independently citable consultation version in the aviation AI policy lineage; it must not be collapsed into the March 2024 final Issue 2.",
         "researcher_notes": "Separately citable consultation version; named author Guillaume Soudain. Its foreword implements Roadmap 1.0, not the later Roadmap 2.0.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -350,7 +350,7 @@
         "inclusion_rationale": "Substantive health-sector AI consultation text and a distinct predecessor version to the known September 2024 final reflection paper.",
         "researcher_notes": "Corrects screened 10 July document date to the actual 13 July cover issue. CHMP adopted for consultation on 10 July and CVMP on 13 July; these are committees within EMA.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -518,7 +518,7 @@
         "inclusion_rationale": "Joint multi-year operational AI policy for the European medicines regulatory network, distinct from the later NDSG 2026-2028 workplan already in the known backlog.",
         "researcher_notes": "Cover issue has month precision. December 2023 adoption is preserved at month precision; a planned 14 December meeting is not proof of an actual adoption day. Hosted file updated 25 January 2024 still identifies Version 1, November 2023. HMA is a national-authorities network.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -675,7 +675,7 @@
         "inclusion_rationale": "Direct banking-supervision AI/ML consultation document and the explicit precursor to the known 2023 follow-up report.",
         "researcher_notes": "Consultation document with expressly preliminary, non-binding views. The follow-up report independently confirms publication on 11 November 2021.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -810,7 +810,7 @@
         "inclusion_rationale": "Direct, operative sectoral guidance on AI use by investment firms, not merely an AI market-monitoring study or press announcement.",
         "researcher_notes": "Officially titled Public Statement; mapped to guidelines because it supplies initial supervisory guidance. Existing MiFID II obligations are distinguished from the statement's non-binding guidance.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -944,7 +944,7 @@
         "inclusion_rationale": "Empirical EIOPA market-monitoring report with a substantial dedicated AI and AI-governance chapter; distinct from the known 2021 governance principles and 2025 opinion.",
         "researcher_notes": "Dedicated AI chapter qualifies under the material sectoral issue boundary despite the broader digitalisation title.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1079,7 +1079,7 @@
         "inclusion_rationale": "Compact but directly substantive EIOPA mapping of the AI Act to insurance-sector regulation and supervision; distinct from the later governance opinion.",
         "researcher_notes": "Independently citable two-page explanatory PDF qualifies as briefing. Its disclaimer expressly states that it has no legal value; no formal reference is invented.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1219,7 +1219,7 @@
         "inclusion_rationale": "Machine learning is treated as a core advanced-analytics technique and the report develops governance pillars and trust elements for its use in regulated banking and financial services.",
         "researcher_notes": "Cover gives January 2020 only; exact publication is the document-date fallback. PDF software author metadata is not treated as bibliographic authorship.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1353,7 +1353,7 @@
         "inclusion_rationale": "Defines aviation-specific AI trustworthiness, learning assurance, human oversight and a regulatory action programme.",
         "researcher_notes": "Published initial roadmap; a living strategic document, not binding aviation rules. Month-only cover date retained separately.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1487,7 +1487,7 @@
         "inclusion_rationale": "The report develops six AI governance principles and an insurance-specific impact-assessment framework addressing fairness, explainability, oversight, data governance, robustness, and performance.",
         "researcher_notes": "2021 edition identified by ISBN, DOI and Publications Office imprint. Website file label 31 January 2023 is a later hosted manifestation, not evidence of a new edition; byte identity with the original is not claimed. Views belong to the expert group, not necessarily EIOPA.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1608,7 +1608,7 @@
         "inclusion_rationale": "AI use cases, adoption, concentration, and supervisory risk in EU securities markets are the report's sole substantive subject.",
         "researcher_notes": "Distinct report identity ESMA50-164-6247. Named authors retained; acknowledgments are not co-authors.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1746,7 +1746,7 @@
         "inclusion_rationale": "Updates the aviation AI programme with certification, oversight and trustworthiness objectives; identifies the earlier roadmap and concept papers.",
         "researcher_notes": "Explicit update of Roadmap 1.0. Future roadmap milestones are projections, not completed events.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -1880,7 +1880,7 @@
         "inclusion_rationale": "Machine learning is the report's central regulatory object, including explainability, supervisory compliance, GDPR interaction, AI Act scope, and principle-based recommendations.",
         "researcher_notes": "Cover has August 2023 only; publication supplies exact fallback date. Distinct follow-up report, not a revised manifestation of the discussion paper.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -2032,7 +2032,7 @@
         "inclusion_rationale": "AI and machine learning are the document's regulatory subject, with lifecycle-wide principles for evaluation, risk mitigation, governance, data, explainability, and trustworthy use in medicines.",
         "researcher_notes": "Cover issue differs from the later CVMP adoption on 11 September 2024. CHMP and CVMP are both EMA committees, not separate institutions for joint-authorship tagging.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -2198,7 +2198,7 @@
         "inclusion_rationale": "A dedicated AI section addresses defence data spaces, testing, validation and certification. Coordination with EEAS and EUMS is stated; joint authorship is not assumed.",
         "researcher_notes": "Only the 14-page public CARD report is represented. EDA authorship; EEAS and EUMS coordination is contributor provenance, not co-authorship. Adoption preserved separately; report has no distinct evidenced exact issue date.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -2334,7 +2334,7 @@
         "inclusion_rationale": "The report directly evaluates operational AI use by fund managers, AI-based strategies, AI-washing risk, and market-risk implications of portfolio exposure to AI firms.",
         "researcher_notes": "Distinct investment-funds analysis with its own reference and author team; not a revision of the 2023 report.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -2466,7 +2466,7 @@
         "inclusion_rationale": "The opinion interprets insurance-sector legislation for AI systems and sets risk-based supervisory expectations on fairness, data governance, records, explainability, oversight, accuracy, robustness, and cybersecurity.",
         "researcher_notes": "Final interpretative opinion; paragraph 2.8 expressly disclaims new requirements. The BoS reference is not alone treated as an adoption-date record.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -2587,7 +2587,7 @@
         "inclusion_rationale": "The report directly measures AI adoption and regulatory implications across securities markets, including use cases, model and data vulnerabilities, cybersecurity, cloud reliance, and third-party concentration.",
         "researcher_notes": "Distinct empirical survey report; 2025 is the survey year, not its publication year.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",
@@ -2732,7 +2732,7 @@
         "inclusion_rationale": "The entire report surveys AI guidance and policy, regulated-product applications, regulator tooling, collaborations, and research priorities for medicines regulation.",
         "researcher_notes": "2025 is the activity year. EMA is credited on the cover; EMA and HMA are joint publishers. NDSG's monitoring role does not establish authorship.",
         "review_status": "verified",
-        "reviewed_by": "Codex (AI-assisted evidence review)",
+        "reviewed_by": "AI-assisted evidence review",
         "reviewed_at": "2026-09-05T23:48:11Z"
       },
       "historical_review_status": "verified",

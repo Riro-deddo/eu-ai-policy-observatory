@@ -1,6 +1,6 @@
 {
   "batch_id": "2026-09-05-review-continuation-council-later",
-  "reviewed_by": "Codex (AI-assisted evidence review)",
+  "reviewed_by": "AI-assisted evidence review",
   "reviewed_at": "2026-09-05T20:34:24Z",
   "publication_cutoff": "2026-09-04",
   "scope": {
@@ -31,7 +31,7 @@
       "document_id": "ai-act-council-adoption-note-st-9645-2024-rev-1",
       "exact_manifestation": "ST 9645/1/24 REV 1",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T20:34:24Z",
       "queries": [
         "site:consilium.europa.eu \"ST 9645/1/24 REV 1\"",
@@ -85,7 +85,7 @@
       "document_id": "ai-act-council-adoption-statements-st-9645-add-1-rev-2",
       "exact_manifestation": "ST 9645/24 ADD 1 REV 2",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T20:34:24Z",
       "queries": [
         "site:consilium.europa.eu \"9645/24 ADD 1 REV 2\"",
@@ -134,7 +134,7 @@
       "document_id": "ai-omnibus-council-adoption-note-st-10752-2026",
       "exact_manifestation": "ST 10752/26 INIT",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T20:34:24Z",
       "queries": [
         "site:consilium.europa.eu \"ST 10752/26\"",
@@ -189,7 +189,7 @@
       "document_id": "ai-omnibus-council-adoption-statements-st-10752-add-1",
       "exact_manifestation": "ST 10752/26 ADD 1",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T20:34:24Z",
       "queries": [
         "site:consilium.europa.eu \"ST 10752/26 ADD 1\"",
@@ -237,7 +237,7 @@
       "document_id": "ai-omnibus-council-adoption-statement-st-10752-add-2",
       "exact_manifestation": "ST 10752/26 ADD 2",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T20:34:24Z",
       "queries": [
         "site:consilium.europa.eu \"ST 10752/26 ADD 2\"",
@@ -285,7 +285,7 @@
       "document_id": "ai-omnibus-council-information-note-st-10599-2026",
       "exact_manifestation": "ST 10599/26 INIT",
       "decision": "hold",
-      "reviewed_by": "Codex (AI-assisted evidence review)",
+      "reviewed_by": "AI-assisted evidence review",
       "reviewed_at": "2026-09-05T20:34:24Z",
       "queries": [
         "site:consilium.europa.eu \"ST 10599/26\"",
