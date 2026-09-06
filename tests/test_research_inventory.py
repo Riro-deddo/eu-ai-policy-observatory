@@ -242,8 +242,11 @@ def test_known_unresolved_exclusions_are_reopened_with_history():
         row = candidates[identifier]
         assert row["decision"] == "pending"
         assert row["document_id"] is None and row["merged_into_document_id"] is None
-        assert row["decision_history"][-1]["decision"] == "excluded"
-        assert row["decision_history"][-1]["decision_reason"] != row["decision_reason"]
+        # Rechecks append history: the original exclusion must remain first,
+        # not necessarily last after a later evidence review.
+        assert row["decision_history"][0]["decision"] == "excluded"
+        assert row["decision_history"][0]["decision_reason"] != row["decision_reason"]
+        assert row["decision_history"][-1]["reviewed_at"] < row["reviewed_at"]
     sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
     affected = {
         source_id
