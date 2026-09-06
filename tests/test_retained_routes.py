@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "schema/record.schema.json"
 VOCABULARY = ROOT / "schema/controlled-vocabularies.json"
 LEDGER = ROOT / "research/migrations/2026-09-05-retained-section-notices.json"
+ADMISSION_LEDGER = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
 BASELINE = ROOT / "research/migrations/2026-09-05-public-document-baseline.json"
 REVIEWED_AT = "2026-09-05T08:59:02Z"
 LANDING_SOURCE = "high-risk-guidelines-draft-commission"
@@ -72,7 +73,48 @@ def _notice(document_id: str) -> dict[str, object]:
 def _copy_data(tmp_path: Path) -> Path:
     destination = tmp_path / "data"
     shutil.copytree(ROOT / "data", destination)
+    _restore_missing_parent_state(destination)
     return destination
+
+
+def _restore_missing_parent_state(data_root: Path) -> None:
+    """Recreate the reviewed exception before the later whole-work admission."""
+    admission = json.loads(ADMISSION_LEDGER.read_text(encoding="utf-8"))
+    assert set(admission["upgraded_existing_ids"]) == set(HELD)
+    parent_id = admission["guidelines_admission"]["parent_id"]
+    assert admission["new_document_ids"] == [parent_id]
+    (data_root / "documents" / f"{parent_id}.json").unlink()
+    for relationship_id in admission["guidelines_admission"]["relationship_ids"]:
+        path = data_root / "relationships" / f"{relationship_id}.json"
+        relationship = json.loads(path.read_text(encoding="utf-8"))
+        assert relationship["source_entity_id"] in HELD
+        assert relationship["target_entity_id"] == parent_id
+        assert relationship["relationship_type"] == "part_of"
+        path.unlink()
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+    for item in ledger["documents"]:
+        # Replaying the old record also removes the later complete extension and
+        # institution-role evidence, avoiding a partial-extension fixture.
+        document = deepcopy(item["before"])
+        document.update(deepcopy(item["after_changes"]))
+        _save(data_root / "documents" / f"{item['document_id']}.json", document)
+
+
+def _copy_missing_parent_project(tmp_path: Path) -> Path:
+    project = tmp_path / "project"
+    for directory in ("data", "schema", "research"):
+        shutil.copytree(ROOT / directory, project / directory)
+    _restore_missing_parent_state(project / "data")
+    # Inventory classifications are coupled to canonical tags by the real gate;
+    # recreate those three historical entries alongside their section records.
+    inventory_path = project / "research/corpus-inventory.json"
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    for candidate in inventory["candidates"]:
+        if candidate.get("document_id") in HELD:
+            _, document = _document(project / "data", candidate["document_id"])
+            candidate["provisional_sector_tags"] = deepcopy(document["sector_tags"])
+    _save(inventory_path, inventory)
+    return project
 
 
 def _inject_valid_notices(data_root: Path) -> None:
@@ -117,7 +159,7 @@ def test_scoped_published_sections_require_a_notice(tmp_path):
 def test_exact_reviewed_notices_are_accepted(tmp_path):
     data_root = _copy_data(tmp_path)
     _inject_valid_notices(data_root)
-    assert _notice_issues(data_root) == []
+    assert _issues(data_root) == []
 
 
 def test_malformed_nested_source_ids_return_issues_without_throwing(tmp_path):
@@ -274,53 +316,32 @@ def test_notice_is_rejected_outside_the_reviewed_record_contract(
 def test_notice_is_stale_after_a_genuine_evidenced_parent_link(tmp_path):
     data_root = _copy_data(tmp_path)
     _inject_valid_notices(data_root)
+    assert _notice_issues(data_root) == []
     document_id = next(iter(HELD))
-    _, section = _document(data_root, document_id)
-    parent_id = "draft-high-risk-classification-guidelines-whole-2026"
-    parent = deepcopy(section)
-    parent.update(
-        id=parent_id,
-        slug=parent_id,
-        official_title="Draft Commission Guidelines on the classification of high-risk AI systems",
-        short_title="Draft high-risk classification guidelines — complete work",
-        record_level="principal",
-        version_label="Consultation draft — complete work",
-        source_ids=[LANDING_SOURCE],
-        snapshots=[],
-    )
-    parent.pop("retained_route_notice")
+    admission = json.loads(ADMISSION_LEDGER.read_text(encoding="utf-8"))
+    parent_id = admission["guidelines_admission"]["parent_id"]
+    _, parent = _document(ROOT / "data", parent_id)
     _save(data_root / "documents" / f"{parent_id}.json", parent)
-    relationship = {
-        "id": "reviewed-section-part-of-ai-act",
-        "entity_type": "relationship",
-        "publication_status": "published",
-        "created_at": REVIEWED_AT,
-        "updated_at": REVIEWED_AT,
-        "source_entity_type": "document",
-        "source_entity_id": document_id,
-        "target_entity_type": "document",
-        "target_entity_id": parent_id,
-        "relationship_type": "part_of",
-        "basis": "official",
-        "rationale": None,
-        "evidence_source_id": LANDING_SOURCE,
-        "verification_status": "verified",
-    }
-    _save(data_root / "relationships" / "reviewed-section-part-of-ai-act.json", relationship)
-    assert any(
-        Path(issue.record_path).stem == document_id
-        and issue.field == "retained_route_notice"
-        for issue in _notice_issues(data_root)
+    relationship_name = f"{document_id}-part-of-consultation-work.json"
+    shutil.copyfile(
+        ROOT / "data/relationships" / relationship_name,
+        data_root / "relationships" / relationship_name,
     )
+    issues = _notice_issues(data_root)
+    assert len(issues) == 1
+    assert Path(issues[0].record_path).stem == document_id
+    assert issues[0].field == "retained_route_notice"
+    assert "notice is stale" in issues[0].message
 
 
 def test_real_pipeline_round_trips_notices_without_changing_routes_or_holds(tmp_path):
-    first = run_pipeline(ROOT, "2026-09-05T09:00:00Z", output_root=tmp_path / "first")
-    second = run_pipeline(ROOT, "2026-09-05T09:00:00Z", output_root=tmp_path / "second")
+    project = _copy_missing_parent_project(tmp_path)
+    first = run_pipeline(project, "2026-09-05T09:00:00Z", output_root=tmp_path / "first")
+    second = run_pipeline(project, "2026-09-05T09:00:00Z", output_root=tmp_path / "second")
     public = json.loads(first.public_json.read_text(encoding="utf-8"))
     documents = {document["id"]: document for document in public["documents"]}
     frozen = json.loads(BASELINE.read_text(encoding="utf-8"))["documents"]
-    canonical = load_records(ROOT / "data")
+    canonical = load_records(project / "data")
     for entity in ("documents", "relationships"):
         assert sorted(item["id"] for item in public[entity]) == sorted(
             record.data["id"] for record in canonical[entity]
@@ -366,7 +387,7 @@ def test_real_pipeline_round_trips_notices_without_changing_routes_or_holds(tmp_
         ]
 
     historical = validate_historical_readiness(
-        load_records(ROOT / "data"), ROOT / "schema", "2026-09-04"
+        canonical, project / "schema", "2026-09-04"
     )
     assert {
         Path(issue.record_path).stem
@@ -376,9 +397,7 @@ def test_real_pipeline_round_trips_notices_without_changing_routes_or_holds(tmp_
 
 
 def test_invalid_notice_blocks_pipeline_without_replacing_outputs(tmp_path):
-    project = tmp_path / "project"
-    for directory in ("data", "schema", "research"):
-        shutil.copytree(ROOT / directory, project / directory)
+    project = _copy_missing_parent_project(tmp_path)
     output = tmp_path / "output"
     run_pipeline(project, "2026-09-05T09:00:00Z", output_root=output)
     prior = {path.name: path.read_bytes() for path in output.iterdir()}
@@ -394,6 +413,11 @@ def test_invalid_notice_blocks_pipeline_without_replacing_outputs(tmp_path):
 
 def test_migration_ledger_replays_only_declared_document_changes():
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+    admission = json.loads(ADMISSION_LEDGER.read_text(encoding="utf-8"))
+    later_changes = {
+        item["document_id"]: item for item in admission["document_changes"]
+    }
+    assert set(admission["upgraded_existing_ids"]) == set(HELD)
     assert ledger["review"]["reviewed_by"] == "Codex"
     assert ledger["review"]["reviewed_at"] == REVIEWED_AT
     assert ledger["existing_state"] == {
@@ -406,9 +430,22 @@ def test_migration_ledger_replays_only_declared_document_changes():
         current = json.loads((ROOT / item["path"]).read_text(encoding="utf-8"))
         replayed = deepcopy(item["before"])
         replayed.update(item["after_changes"])
-        assert current == replayed
         assert set(item["after_changes"]) <= {
             "updated_at",
             "short_title",
             "retained_route_notice",
         }
+        later = later_changes[item["document_id"]]
+        # The old correction remains exact at the next review's frozen baseline.
+        assert later["path"] == item["path"]
+        assert replayed == later["before"]
+        assert replayed["retained_route_notice"] == _notice(item["document_id"])
+        # Then replay only the separately declared later admission into today.
+        replayed.update(deepcopy(later["after_changes"]))
+        assert later["removed_fields"] == ["retained_route_notice"]
+        for field in later["removed_fields"]:
+            del replayed[field]
+        assert current == replayed
+        assert current["historical_review_status"] == "verified"
+        for field in ("reviewed_by", "reviewed_at"):
+            assert current["corpus_assessment"][field] == item["before"]["corpus_assessment"][field]

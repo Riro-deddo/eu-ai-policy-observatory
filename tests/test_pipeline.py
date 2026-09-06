@@ -15,6 +15,8 @@ from observatory.io import load_records
 from observatory.pipeline import run_pipeline
 from observatory.validate import RecordValidationError
 
+ROOT = Path(__file__).resolve().parents[1]
+
 
 def test_repository_build_produces_database_and_public_export(tmp_path):
     outputs = run_pipeline(Path.cwd(), "2026-09-03T00:00:00Z", output_root=tmp_path)
@@ -47,13 +49,23 @@ def test_repository_build_produces_database_and_public_export(tmp_path):
     }
     candidate_ids = [row["id"] for row in inventory["candidates"]]
     assert len(candidate_ids) == len(set(candidate_ids))
-    assert {
+    included_document_ids = {
         row["document_id"] for row in inventory["candidates"]
         if row["decision"] == "included"
-    } == {
+    }
+    published_document_ids = {
         record.data["id"] for record in load_records(Path("data"))["documents"]
         if record.data["publication_status"] == "published"
     }
+    six_record_update = json.loads(
+        (ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert included_document_ids <= published_document_ids
+    assert published_document_ids - included_document_ids == set(
+        six_record_update["new_document_ids"]
+    )
     source_sweep = json.loads(Path("research/source-sweep.json").read_text(encoding="utf-8"))
     family_statuses = {}
     for source in source_sweep["sources"]:

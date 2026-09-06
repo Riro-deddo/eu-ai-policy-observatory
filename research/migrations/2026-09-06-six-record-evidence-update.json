@@ -1,0 +1,984 @@
+{
+  "migration_date": "2026-09-06",
+  "scope": "One complete high-risk-guidelines consultation-work admission, three section upgrades, and three evidence-only held updates",
+  "publication_cutoff": "2026-09-04",
+  "before_counts": {
+    "total": 186,
+    "verified": 171,
+    "legacy_review_pending": 15
+  },
+  "after_counts": {
+    "total": 187,
+    "verified": 175,
+    "legacy_review_pending": 12
+  },
+  "approved_snapshot": {
+    "state_path": "../evidence-six-updates-20260906/before-state.json",
+    "state_sha256": "212efa693f1e8ddc3386a927abf09a28f6684af7ad5f21507f196e57d150dea9",
+    "zip_path": "../evidence-six-updates-20260906/before.zip",
+    "zip_sha256": "256c7256421d3fa71abcd3e6ef7854b71cc4006e27859c20cc5a1164716c4f0f",
+    "document_count": 186,
+    "meaning": "The immutable byte snapshot, not the checkout's old Git HEAD, is the preservation baseline for this batch."
+  },
+  "new_document_ids": [
+    "draft-high-risk-classification-guidelines-consultation-work-2026"
+  ],
+  "upgraded_existing_ids": [
+    "draft-high-risk-classification-guidelines-2026",
+    "draft-high-risk-classification-guidelines-annex-i-2026",
+    "draft-high-risk-classification-guidelines-annex-iii-2026"
+  ],
+  "evidence_only_held_ids": [
+    "ai-standardisation-request-c-2023-3215",
+    "gpai-training-content-explanatory-notice-2025",
+    "gpai-training-content-template-2025"
+  ],
+  "guidelines_admission": {
+    "parent_id": "draft-high-risk-classification-guidelines-consultation-work-2026",
+    "parent_identity": "Real complete consultation work jointly published through three section downloads; not the prospective numbered Commission communication named by placeholder text on the covers",
+    "parent_review": {
+      "reviewed_by": "Codex",
+      "reviewed_at": "2026-09-06T17:05:16Z",
+      "reason": "New work-level assessment recorded at the actual batch review time; no prior personal-review attestation was copied."
+    },
+    "preserved_section_review_credit": {
+      "reviewed_by": "Yichen Hao",
+      "reviewed_at": "2026-09-04T00:00:00Z"
+    },
+    "relationship_ids": [
+      "draft-high-risk-classification-guidelines-2026-part-of-consultation-work",
+      "draft-high-risk-classification-guidelines-annex-i-2026-part-of-consultation-work",
+      "draft-high-risk-classification-guidelines-annex-iii-2026-part-of-consultation-work"
+    ],
+    "relationship_basis": "official",
+    "relationship_source_id": "high-risk-guidelines-draft-commission",
+    "candidate_gate": {
+      "validator": "validate_historical_readiness plus validate_historical_publication",
+      "document_ids": [
+        "draft-high-risk-classification-guidelines-consultation-work-2026",
+        "draft-high-risk-classification-guidelines-2026",
+        "draft-high-risk-classification-guidelines-annex-i-2026",
+        "draft-high-risk-classification-guidelines-annex-iii-2026"
+      ],
+      "readiness_issues": 0,
+      "publication_issues": 0,
+      "status_persisted_only_after_gate": true,
+      "log": "../evidence-six-updates-20260906/candidate-in-memory-gate.log"
+    },
+    "retained_route_notices_removed_after_gate": true
+  },
+  "evidence_only_updates": [
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "source_id": "gpai-training-summary-july-publication-oj-2026",
+      "finding": "OJ C/2026/4006 PDF page 2 corroborates Commission publication of the notice/template work on 24 July 2025.",
+      "hold": "The OJ does not identify C(2025) 5235, prove publication of the distinct approval parent, date the December C(2025) 8311 file, or resolve exact formal identity/source eligibility. Existing version and record-level metadata remain legacy and unverified."
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "source_id": "gpai-training-summary-july-publication-oj-2026",
+      "finding": "The same OJ recital corroborates July publication of the notice/template work.",
+      "hold": "The original template is an internal annex and the current editable DOCX is not independently established as the historical July manifestation. Parent/source requirements and version/format identity remain unresolved; attributed in-force wording is not independent legal-status evidence."
+    },
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "source_id": "ai-standardisation-request-c-2023-3215-jrc-publication-month",
+      "finding": "JRC134461 PDF page 8 / printed page 5 establishes May 2023 publication, with exact C(2023) 3215 final identity at PDF page 16 / printed page 13.",
+      "hold": "No exact publication day is established; adoption on 22 May must not be relabelled publication. Article 4 of C(2025) 3871 establishes repeal, but exact operative timing and the complete extension remain unresolved."
+    }
+  ],
+  "new_source_receipts": [
+    {
+      "source_id": "gpai-training-summary-july-publication-oj-2026",
+      "retrieved_at": "2026-09-06T16:29:59.155975+00:00",
+      "sha256": "3ca0c0d30e55db5d50dfc02cc614ba74ac1a305b6cbfc12aa82eb7d27ff0134f",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/gpai-oj-c-2026-4006.pdf.gz"
+    },
+    {
+      "source_id": "ai-standardisation-request-c-2023-3215-jrc-publication-month",
+      "retrieved_at": "2026-09-06T17:29:52.50302+01:00",
+      "sha256": "3e322888198bf1c22b69cee815ac67d2ac27ea65724603b394b6d5a900006a67",
+      "archive_path": "research/reviews/2026-09-06-six-record-evidence-update/evidence/jrc134461.pdf.gz"
+    }
+  ],
+  "preservation": {
+    "comparison_helper": "../evidence-six-updates-20260906/workspace_check.py",
+    "comparison_artifact": "../evidence-six-updates-20260906/delta-checks.json",
+    "receipt_proof": "research/reviews/2026-09-06-six-record-evidence-update/preservation-proof.json",
+    "original_routes_preserved": 186,
+    "previously_verified_document_bytes_preserved": 171,
+    "unchanged_existing_documents_outside_six_record_scope": 180,
+    "old_sources_and_migration_ledgers_unchanged": true,
+    "review_attribution_changes_on_existing_documents": []
+  },
+  "document_changes": [
+    {
+      "document_id": "draft-high-risk-classification-guidelines-2026",
+      "path": "data/documents/draft-high-risk-classification-guidelines-2026.json",
+      "before": {
+        "id": "draft-high-risk-classification-guidelines-2026",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-05T08:59:02Z",
+        "slug": "draft-high-risk-classification-guidelines-2026",
+        "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — General principles",
+        "short_title": "Draft high-risk classification guidelines — General principles",
+        "document_type": "guidelines",
+        "record_level": "attachment",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2026-05-19",
+        "version_label": "Consultation draft — General principles",
+        "version_status": "draft",
+        "publication_date": "2026-05-19",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "high-risk-guidelines-draft-commission",
+          "commission-newsroom-128559-pdf"
+        ],
+        "retained_route_notice": {
+          "status": "parent_relationship_under_review",
+          "reason": "This record contains the General principles section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft.",
+          "reviewed_by": "Codex",
+          "reviewed_at": "2026-09-05T08:59:02Z",
+          "evidence": [
+            {
+              "source_id": "high-risk-guidelines-draft-commission",
+              "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
+            },
+            {
+              "source_id": "commission-newsroom-128559-pdf",
+              "locator": "Pages 1–2 (cover and first body page)."
+            }
+          ]
+        },
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "official_consultation_material",
+          "officially_published"
+        ],
+        "snapshots": [
+          {
+            "id": "snapshot-newsroom-128559-20260905",
+            "source_id": "commission-newsroom-128559-pdf",
+            "retrieved_at": "2026-09-05T08:08:53.264585Z",
+            "format": "pdf",
+            "content_hash": "b127bbdc50b1741bb2d97e8aff5839cccd1a4484445be4e8cca246c12541fc42",
+            "archived_path": null
+          }
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-06T17:05:16Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "commission-newsroom-128559-pdf",
+            "evidence_locator": "PDF page 1 cover carries the European Commission masthead for this General principles section."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. On 2026-09-05, Codex editorially corrected record_level from version to attachment because the Commission landing page presents General principles as one separately downloadable section of the draft guidelines; a represented whole-guidelines endpoint was not verified, and the linked binary interior was not reviewed. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128559 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all six pages. Cover identifies an annex to a draft Commission communication; body identifies the shared guidelines, general principles and a draft disclaimer. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. 2026-09-06 expanded-evidence update: the independently evidenced whole consultation-work parent, official part_of edge, publication-date citations, complete classification/role evidence and retained official receipts now complete this section's historical-readiness review without inferring a numbered communication or altering the prior personal review credit.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "publication",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+            "meaning": "Establishes 2026-05-19 as the dated publication of the shared draft consultation work and this separately supplied section, not a formal adoption date."
+          },
+          "publication_date": {
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+            "meaning": "Establishes an official Commission publication date for this section within the jointly published consultation work."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "commission-newsroom-128559-pdf",
+            "locator": "PDF page 3 / printed page 2, paragraphs 3-7 describe the draft guidelines' interpretation of Article 6 of the AI Act.",
+            "rationale": "This section directly interprets the AI Act's high-risk classification rules."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "commission-newsroom-128559-pdf",
+            "locator": "PDF page 3 / printed page 2, paragraphs 3-7 introduce horizontal Article 6 classification principles and the two separately supplied sector-spanning sections.",
+            "rationale": "The General principles section applies across the high-risk categories rather than to one sector."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "commission-newsroom-128559-pdf",
+            "locator": "PDF page 1 cover carries the European Commission masthead.",
+            "rationale": "The exact section is authored by the European Commission."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "official_consultation_material",
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Official library publication dated 19 May 2026 presents the three section downloads as draft guidelines for consultation.",
+            "rationale": "The Commission issued the section as material for the targeted consultation."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Official library Publication 19 May 2026 and Downloads 1-3.",
+            "rationale": "The Commission library officially publishes this section as part of the consultation work."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "legal_status_evidence": {
+          "source_id": "commission-newsroom-128559-pdf",
+          "locator": "PDF page 3 / printed page 2, paragraphs 3-7 identify draft guidelines for consultation and explain their non-binding interpretive character.",
+          "meaning": "Supports the retained draft version and non-binding legal status; the placeholder cover supplies no adopted communication reference."
+        },
+        "historical_review_status": "verified"
+      },
+      "removed_fields": [
+        "retained_route_notice"
+      ]
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-i-2026",
+      "path": "data/documents/draft-high-risk-classification-guidelines-annex-i-2026.json",
+      "before": {
+        "id": "draft-high-risk-classification-guidelines-annex-i-2026",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-05T08:59:02Z",
+        "slug": "draft-high-risk-classification-guidelines-annex-i-2026",
+        "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — Annex I systems",
+        "short_title": "Draft Annex I high-risk classification guidelines",
+        "document_type": "guidelines",
+        "record_level": "attachment",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2026-05-19",
+        "version_label": "Consultation draft — Annex I",
+        "version_status": "draft",
+        "publication_date": "2026-05-19",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "high-risk-guidelines-draft-commission",
+          "commission-newsroom-128560-pdf"
+        ],
+        "retained_route_notice": {
+          "status": "parent_relationship_under_review",
+          "reason": "This record contains the Article 6(1) and AI Act Annex I section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
+          "reviewed_by": "Codex",
+          "reviewed_at": "2026-09-05T08:59:02Z",
+          "evidence": [
+            {
+              "source_id": "high-risk-guidelines-draft-commission",
+              "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
+            },
+            {
+              "source_id": "commission-newsroom-128560-pdf",
+              "locator": "Pages 1–2 (cover and first body page)."
+            }
+          ]
+        },
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "official_consultation_material",
+          "officially_published"
+        ],
+        "snapshots": [
+          {
+            "id": "snapshot-newsroom-128560-20260905",
+            "source_id": "commission-newsroom-128560-pdf",
+            "retrieved_at": "2026-09-05T08:08:53.458000Z",
+            "format": "pdf",
+            "content_hash": "10f1302c9090d2bcfdb8eacd2b36ff7a09860fc7909f7c1c4b42cc3b9bed3b50",
+            "archived_path": null
+          }
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-06T17:05:16Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "commission-newsroom-128560-pdf",
+            "evidence_locator": "PDF page 1 cover carries the European Commission masthead for this Annex I systems section."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128560 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first body page reviewed, not all thirteen pages. Shared cover/title; table of contents concentrates on Article 6(1)/Annex I; references to separate chapters and draft disclaimer corroborate section identity. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. 2026-09-06 expanded-evidence update: the independently evidenced whole consultation-work parent, official part_of edge, publication-date citations, complete classification/role evidence, paragraph 23 sector evidence and retained official receipts now complete this section's historical-readiness review without inferring a numbered communication or altering the prior personal review credit.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector",
+          "health",
+          "transport_and_mobility",
+          "industry_and_manufacturing"
+        ],
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "publication",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+            "meaning": "Establishes 2026-05-19 as the publication date of the shared consultation work and this separately supplied Annex I systems section."
+          },
+          "publication_date": {
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+            "meaning": "Establishes official Commission publication of this section on 2026-05-19, not formal adoption of a numbered communication."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "commission-newsroom-128560-pdf",
+            "locator": "PDF pages 2-4, including printed page 3 paragraph 23, address Article 6(1) and AI Act Annex I high-risk systems.",
+            "rationale": "The section directly interprets AI Act high-risk classification."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "commission-newsroom-128560-pdf",
+            "locator": "PDF page 4 / printed page 3, paragraph 23 lists regulated product categories spanning multiple sectors.",
+            "rationale": "The Article 6(1) framework applies horizontally across multiple product sectors."
+          },
+          {
+            "field": "sector_tags",
+            "value": "health",
+            "source_id": "commission-newsroom-128560-pdf",
+            "locator": "PDF page 4 / printed page 3, paragraph 23: medical devices and in vitro diagnostic medical devices.",
+            "rationale": "The body expressly covers regulated medical products."
+          },
+          {
+            "field": "sector_tags",
+            "value": "transport_and_mobility",
+            "source_id": "commission-newsroom-128560-pdf",
+            "locator": "PDF page 4 / printed page 3, paragraph 23: automotive and aviation products.",
+            "rationale": "The body expressly covers transport product categories."
+          },
+          {
+            "field": "sector_tags",
+            "value": "industry_and_manufacturing",
+            "source_id": "commission-newsroom-128560-pdf",
+            "locator": "PDF page 4 / printed page 3, paragraph 23: machinery and industrial equipment.",
+            "rationale": "The body expressly covers machinery and industrial equipment."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "commission-newsroom-128560-pdf",
+            "locator": "PDF page 1 cover carries the European Commission masthead.",
+            "rationale": "The exact section is authored by the European Commission."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "official_consultation_material",
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Official library publication dated 19 May 2026 presents the Annex I systems download as a section of the draft consultation guidelines.",
+            "rationale": "The Commission issued the section for the targeted consultation."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Official library Publication 19 May 2026 and Downloads 1-3.",
+            "rationale": "The Commission library officially publishes this section."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "legal_status_evidence": {
+          "source_id": "commission-newsroom-128560-pdf",
+          "locator": "PDF pages 1-2 identify the section as draft guidelines and include the consultation draft disclaimer.",
+          "meaning": "Supports the retained draft version and non-binding status without inferring a reference or adoption from cover placeholders."
+        },
+        "historical_review_status": "verified"
+      },
+      "removed_fields": [
+        "retained_route_notice"
+      ]
+    },
+    {
+      "document_id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+      "path": "data/documents/draft-high-risk-classification-guidelines-annex-iii-2026.json",
+      "before": {
+        "id": "draft-high-risk-classification-guidelines-annex-iii-2026",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-05T08:59:02Z",
+        "slug": "draft-high-risk-classification-guidelines-annex-iii-2026",
+        "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems — Annex III systems",
+        "short_title": "Draft Annex III high-risk classification guidelines",
+        "document_type": "guidelines",
+        "record_level": "attachment",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2026-05-19",
+        "version_label": "Consultation draft — Annex III",
+        "version_status": "draft",
+        "publication_date": "2026-05-19",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "high-risk-guidelines-draft-commission",
+          "commission-newsroom-128561-pdf"
+        ],
+        "retained_route_notice": {
+          "status": "parent_relationship_under_review",
+          "reason": "This record contains the Article 6(2) and AI Act Annex III section of the draft Commission guidelines. The Observatory has not admitted a separate record for the whole guidelines; the parent relationship remains under review. This existing route is retained for access. The document remains a consultation draft. The annex designation identifies the AI Act annex addressed; it does not make this file an annex to the General principles section.",
+          "reviewed_by": "Codex",
+          "reviewed_at": "2026-09-05T08:59:02Z",
+          "evidence": [
+            {
+              "source_id": "high-risk-guidelines-draft-commission",
+              "locator": "Publication date; paragraph immediately before Downloads explaining the separate sections; Downloads 1–3."
+            },
+            {
+              "source_id": "commission-newsroom-128561-pdf",
+              "locator": "Pages 1–2 (cover and first body page)."
+            }
+          ]
+        },
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128561 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "official_consultation_material",
+          "officially_published"
+        ],
+        "snapshots": [
+          {
+            "id": "snapshot-newsroom-128561-20260905",
+            "source_id": "commission-newsroom-128561-pdf",
+            "retrieved_at": "2026-09-05T08:08:53.836269Z",
+            "format": "pdf",
+            "content_hash": "b1df0ffb30310e126c7e060e03c9b5aab97c0a2ab61a2f3e3e00ede3655e2792",
+            "archived_path": null
+          }
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-06T17:05:16Z",
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "author",
+            "evidence_source_id": "commission-newsroom-128561-pdf",
+            "evidence_locator": "PDF page 1 cover carries the European Commission masthead for this Annex III systems section."
+          }
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "consultation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. Subsequent file-level review by Codex at 2026-09-05T08:20:53Z: retrieved official PDF 128561 and recorded its real SHA-256 and local file-write-completion timestamp (an operational retrieval-time proxy). Cover and first contents page reviewed, not all 148 pages. Shared cover/title and detailed Article 6(2)/Annex III contents support section identity, not a separately verified combined full work. The review copy is local only, not a committed archive. This narrow review does not reverify the other metadata or classifications. 2026-09-06 expanded-evidence update: the independently evidenced whole consultation-work parent, official part_of edge, publication-date citations, complete classification/role evidence, audited body-supported sector locators and retained official receipts now complete this section's historical-readiness review without inferring a numbered communication or altering the prior personal review credit.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector",
+          "health",
+          "employment_and_labour",
+          "migration_asylum_and_border_management",
+          "financial_services",
+          "transport_and_mobility",
+          "law_enforcement",
+          "justice",
+          "education",
+          "public_administration",
+          "critical_infrastructure"
+        ],
+        "temporal_collection": "contemporary_eu_ai_policy",
+        "relevance_class": "direct_ai_substantive",
+        "document_date_kind": "publication",
+        "date_evidence": {
+          "document_date": {
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+            "meaning": "Establishes 2026-05-19 as the publication date of the shared consultation work and this separately supplied Annex III systems section."
+          },
+          "publication_date": {
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Publication 19 May 2026; paragraph immediately above Downloads; Downloads 1-3.",
+            "meaning": "Establishes official Commission publication of this section on 2026-05-19, not formal adoption of a numbered communication."
+          }
+        },
+        "classification_evidence": [
+          {
+            "field": "relevance_class",
+            "value": "direct_ai_substantive",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "PDF pages 2-4 contents and Section IV body address Article 6(2) and the AI Act Annex III high-risk use cases.",
+            "rationale": "The section directly interprets substantive AI Act high-risk classification."
+          },
+          {
+            "field": "sector_tags",
+            "value": "general_cross_sector",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "PDF pages 2-4 contents enumerate Annex III use cases across infrastructure, education, employment, services, enforcement, migration and justice.",
+            "rationale": "The section spans the full horizontal Annex III taxonomy."
+          },
+          {
+            "field": "sector_tags",
+            "value": "critical_infrastructure",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.2, printed pages 38-47.",
+            "rationale": "The body expressly covers critical infrastructure high-risk use cases."
+          },
+          {
+            "field": "sector_tags",
+            "value": "transport_and_mobility",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.2.3, printed pages 42-43, road-traffic use case.",
+            "rationale": "The critical-infrastructure discussion expressly covers road traffic."
+          },
+          {
+            "field": "sector_tags",
+            "value": "education",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.3, printed pages 48-59.",
+            "rationale": "The body expressly covers education and vocational-training use cases."
+          },
+          {
+            "field": "sector_tags",
+            "value": "employment_and_labour",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.4, printed pages 60-77.",
+            "rationale": "The body expressly covers employment and worker-management use cases."
+          },
+          {
+            "field": "sector_tags",
+            "value": "public_administration",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.5.2, printed pages 79-84, public-assistance benefits and services.",
+            "rationale": "The body expressly covers public-authority delivery of essential assistance."
+          },
+          {
+            "field": "sector_tags",
+            "value": "financial_services",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Sections IV.3.5.3-IV.3.5.5, printed pages 85-93, creditworthiness and insurance.",
+            "rationale": "The body expressly covers credit and insurance decisions."
+          },
+          {
+            "field": "sector_tags",
+            "value": "health",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Sections IV.3.5.4 and IV.3.5.6, printed pages 89-91 and 94-98, health insurance and emergency services.",
+            "rationale": "The body expressly covers health-insurance and emergency-service use cases."
+          },
+          {
+            "field": "sector_tags",
+            "value": "law_enforcement",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.6, printed pages 99-115.",
+            "rationale": "The body expressly covers law-enforcement use cases."
+          },
+          {
+            "field": "sector_tags",
+            "value": "migration_asylum_and_border_management",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.7, printed pages 116-129.",
+            "rationale": "The body expressly covers migration, asylum and border-management use cases."
+          },
+          {
+            "field": "sector_tags",
+            "value": "justice",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "Section IV.3.8, administration of justice and democratic processes.",
+            "rationale": "The body expressly covers administration-of-justice use cases."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "eu_institution_authored",
+            "source_id": "commission-newsroom-128561-pdf",
+            "locator": "PDF page 1 cover carries the European Commission masthead.",
+            "rationale": "The exact section is authored by the European Commission."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "official_consultation_material",
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Official library publication dated 19 May 2026 presents the Annex III systems download as a section of the draft consultation guidelines.",
+            "rationale": "The Commission issued the section for the targeted consultation."
+          },
+          {
+            "field": "provenance_tags",
+            "value": "officially_published",
+            "source_id": "high-risk-guidelines-draft-commission",
+            "locator": "Official library Publication 19 May 2026 and Downloads 1-3.",
+            "rationale": "The Commission library officially publishes this section."
+          }
+        ],
+        "bibliographic_authors": [],
+        "additional_dates": [],
+        "legal_status_evidence": {
+          "source_id": "commission-newsroom-128561-pdf",
+          "locator": "PDF pages 1-4 identify the section as draft guidelines and include the consultation draft disclaimer.",
+          "meaning": "Supports the retained draft version and non-binding status without inferring a reference or adoption from cover placeholders."
+        },
+        "historical_review_status": "verified"
+      },
+      "removed_fields": [
+        "retained_route_notice"
+      ]
+    },
+    {
+      "document_id": "gpai-training-content-explanatory-notice-2025",
+      "path": "data/documents/gpai-training-content-explanatory-notice-2025.json",
+      "before": {
+        "id": "gpai-training-content-explanatory-notice-2025",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-04T00:00:00Z",
+        "slug": "gpai-training-content-explanatory-notice-2025",
+        "official_title": "Explanatory notice on the template for the public summary of training content of general-purpose AI models",
+        "short_title": "Explanatory notice for GPAI training summary",
+        "document_type": "guidelines",
+        "record_level": "supporting",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2025-07-24",
+        "version_label": "Final notice",
+        "version_status": "final",
+        "publication_date": "2025-07-24",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-ai-office",
+            "role": "publisher"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance",
+          "general-purpose-ai-code-of-practice"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "gpai-training-summary-commission"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "officially_published"
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-06T17:05:16Z",
+        "source_ids": [
+          "gpai-training-summary-commission",
+          "gpai-training-summary-july-publication-oj-2026"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. 2026-09-06 evidence update — Limited work-level evidence only: OJ C/2026/4006 PDF page 2 independently corroborates Commission publication of the notice/template work on 24 July 2025. It does not print C(2025) 5235 or prove publication of the distinct main approval communication. The register and preserved original identify the July ANNEX, while the currently linked PDF is the separate December C(2025) 8311 communication. The existing final and record-level metadata remain legacy-review-pending under correction review; approval-parent admission, source eligibility and exact formal identity corrections remain unresolved.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        }
+      },
+      "removed_fields": []
+    },
+    {
+      "document_id": "gpai-training-content-template-2025",
+      "path": "data/documents/gpai-training-content-template-2025.json",
+      "before": {
+        "id": "gpai-training-content-template-2025",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-04T00:00:00Z",
+        "slug": "gpai-training-content-template-2025",
+        "official_title": "Template for the public summary of training content of general-purpose AI models",
+        "short_title": "GPAI training-content summary template",
+        "document_type": "template",
+        "record_level": "principal",
+        "official_reference": null,
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2025-07-24",
+        "version_label": "Final template",
+        "version_status": "final",
+        "publication_date": "2025-07-24",
+        "legal_status": "non_binding",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-ai-office",
+            "role": "publisher"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "ai-act-implementation-and-governance",
+          "general-purpose-ai-code-of-practice"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability"
+        ],
+        "source_ids": [
+          "gpai-training-summary-commission"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "officially_published"
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-06T17:05:16Z",
+        "source_ids": [
+          "gpai-training-summary-commission",
+          "gpai-training-summary-july-publication-oj-2026"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Verified official English text within the AI Act implementation and amendment corpus.",
+          "researcher_notes": "Official metadata is transcribed from the cited source; corpus tier and policy-stage classification are researcher assessments. 2026-09-06 evidence update — Limited work-level evidence only: OJ C/2026/4006 PDF page 2 corroborates Commission publication of the notice/template work on 24 July 2025. The original template is an internal annex; this does not prove that today's editable DOCX is the historical July version. The work, formal version and downloadable format remain distinct, and parent/source requirements remain unresolved. The Parliament resolution's attributed 'in force' wording is not an independent legal-status assertion. Existing record-level, version and date fields remain legacy-review-pending rather than newly verified.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        }
+      },
+      "removed_fields": []
+    },
+    {
+      "document_id": "ai-standardisation-request-c-2023-3215",
+      "path": "data/documents/ai-standardisation-request-c-2023-3215.json",
+      "before": {
+        "id": "ai-standardisation-request-c-2023-3215",
+        "entity_type": "document",
+        "publication_status": "published",
+        "created_at": "2026-09-04T00:00:00Z",
+        "updated_at": "2026-09-04T00:00:00Z",
+        "slug": "ai-standardisation-request-c-2023-3215",
+        "official_title": "Commission Implementing Decision of 22.5.2023 on a standardisation request to the European Committee for Standardisation and the European Committee for Electrotechnical Standardisation in support of Union policy on artificial intelligence",
+        "short_title": "AI standardisation request M/593",
+        "document_type": "standardisation_request",
+        "record_level": "principal",
+        "official_reference": "C(2023) 3215 final",
+        "procedure_references": [],
+        "oj_reference": null,
+        "document_date": "2023-05-22",
+        "version_label": "Final",
+        "version_status": "final",
+        "publication_date": "2023-05-22",
+        "legal_status": "adopted",
+        "celex": null,
+        "eli": null,
+        "language": "en",
+        "official_summary": null,
+        "institution_roles": [
+          {
+            "institution_id": "european-commission",
+            "role": "adopter"
+          }
+        ],
+        "policy_ids": [
+          "european-ai-policy-pathway",
+          "artificial-intelligence-act-legislative-process"
+        ],
+        "concept_ids": [
+          "risk",
+          "compliance",
+          "accountability",
+          "trustworthiness"
+        ],
+        "source_ids": [
+          "ai-standardisation-request-c-2023-3215-register"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Original Commission standardisation request supporting technical standards for the emerging AI Act framework.",
+          "researcher_notes": "The register identifies the decision and annexed request as M/593; implementation-stage classification is analytical.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        },
+        "sector_tags": [
+          "general_cross_sector"
+        ],
+        "provenance_tags": [
+          "eu_institution_authored",
+          "officially_published"
+        ]
+      },
+      "after_changes": {
+        "updated_at": "2026-09-06T17:05:16Z",
+        "source_ids": [
+          "ai-standardisation-request-c-2023-3215-register",
+          "ai-standardisation-request-c-2023-3215-jrc-publication-month"
+        ],
+        "corpus_assessment": {
+          "corpus_tier": "core",
+          "policy_stage": "implementation",
+          "inclusion_rationale": "Original Commission standardisation request supporting technical standards for the emerging AI Act framework.",
+          "researcher_notes": "The register identifies the decision and annexed request as M/593; implementation-stage classification is analytical. 2026-09-06 evidence update — Limited publication-month evidence only: JRC134461 PDF page 8 / printed page 5 says the request was published in May 2023, and PDF page 16 / printed page 13 identifies C(2023) 3215 final. This is not an exact day and does not verify the existing 22 May adoption date as publication. Article 4 of C(2025) 3871 supplies the previously evidenced repeal finding, but the operative repeal date and complete admission remain unresolved. The legacy record stays pending; no partial month-precision or legal-status extension is added.",
+          "review_status": "verified",
+          "reviewed_by": "Yichen Hao",
+          "reviewed_at": "2026-09-04T00:00:00Z"
+        }
+      },
+      "removed_fields": []
+    }
+  ],
+  "preservation_note": "This automated correction is recorded only in this chronological ledger. Existing reviewed_by and reviewed_at values are unchanged; the new parent carries its own Codex assessment and actual batch time."
+}

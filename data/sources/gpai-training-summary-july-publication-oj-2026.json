@@ -1,0 +1,13 @@
+{
+  "id": "gpai-training-summary-july-publication-oj-2026",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T16:29:59.155975+00:00",
+  "updated_at": "2026-09-06T16:29:59.155975+00:00",
+  "source_type": "eli",
+  "url": "https://eur-lex.europa.eu/eli/C/2026/4006/oj/eng/pdf",
+  "publisher": "Official Journal of the European Union",
+  "retrieved_at": "2026-09-06T16:29:59.155975+00:00",
+  "last_verified_at": "2026-09-06T16:29:59.155975+00:00",
+  "verification_note": "Limited work-level evidence only: OJ C/2026/4006, PDF page 2, says the Commission published the Explanatory Notice and Template on 24 July 2025. It does not print C(2025) 5235, prove publication of the distinct approval communication, date the later December C(2025) 8311 PDF, identify the current editable DOCX as the historical July version, or independently establish legal status from the Parliament resolution's attributed 'in force' wording. Retrieved after the source's 26 August 2026 publication; retrieval time is not the notice/template publication date. Retained PDF SHA-256: 3ca0c0d30e55db5d50dfc02cc614ba74ac1a305b6cbfc12aa82eb7d27ff0134f."
+}

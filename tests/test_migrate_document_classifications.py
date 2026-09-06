@@ -187,9 +187,15 @@ def test_migration_primary_write_changes_only_classifications_and_timestamp(
     tmp_path, starting_tags
 ):
     copied = tmp_path / "document.json"
-    record = json.loads(
-        Path("data/documents/draft-high-risk-classification-guidelines-2026.json")
+    # Exercise the old migration on the immutable pre-expanded-review record,
+    # not today's evidence-bearing record, which must remain protected.
+    ledger = json.loads(
+        Path("research/migrations/2026-09-05-retained-section-notices.json")
         .read_text(encoding="utf-8")
+    )
+    record = next(
+        item["before"] for item in ledger["documents"]
+        if item["document_id"] == "draft-high-risk-classification-guidelines-2026"
     )
     record["updated_at"] = "2026-09-03T00:00:00Z"
     if starting_tags is None:
@@ -238,10 +244,14 @@ def test_migration_is_idempotent(tmp_path):
     assert copied.read_bytes() == before
 
 
-def test_migration_never_rewrites_verified_evidence_bearing_document(tmp_path):
+@pytest.mark.parametrize("document_id", [
+    "council-decision-84-130-eec-esprit",
+    "draft-high-risk-classification-guidelines-2026",
+])
+def test_migration_never_rewrites_verified_evidence_bearing_document(tmp_path, document_id):
     copied = tmp_path / "historical-document.json"
     copied.write_bytes(
-        Path("data/documents/council-decision-84-130-eec-esprit.json").read_bytes()
+        Path(f"data/documents/{document_id}.json").read_bytes()
     )
     before = copied.read_bytes()
 

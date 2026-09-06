@@ -22,6 +22,8 @@ LEDGER = ROOT / "research/migrations/2026-09-05-official-pdf-evidence.json"
 RETAINED_LEDGER = ROOT / "research/migrations/2026-09-05-retained-section-notices.json"
 BASELINE = ROOT / "research/migrations/2026-09-05-public-document-baseline.json"
 EXPANDED_LEDGER = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
+IDENTITY_LEDGER = ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json"
+ADMISSION_LEDGER = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
 # Hand-checked observations, not values derived by the exporter under test.
 FILES = [
     ("draft-guidance-serious-ai-incidents-2025", "119624", "f1d58ecf69004b361d2201ea44e6219f00c27ba249ad5011965152de9167686d", "2026-09-05T08:08:53.261079Z", 341927, 13),
@@ -111,11 +113,13 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
     assert ledger["whole_guidelines_identity_lead"]["public_endpoint_added"] is False
     assert ledger["review"]["publication_cutoff"] == "2026-09-04"
     assert ledger["changes"]
-    identity_review = json.loads(
-        (ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json").read_text(encoding="utf-8")
-    )
+    identity_review = json.loads(IDENTITY_LEDGER.read_text(encoding="utf-8"))
     retained_review = json.loads(RETAINED_LEDGER.read_text(encoding="utf-8"))
     expanded_review = json.loads(EXPANDED_LEDGER.read_text(encoding="utf-8"))
+    admission_review = json.loads(ADMISSION_LEDGER.read_text(encoding="utf-8"))
+    admission_changes = {
+        item["document_id"]: item for item in admission_review["document_changes"]
+    }
     retained_changes = {
         item["document_id"]: item for item in retained_review["documents"]
     }
@@ -142,7 +146,26 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
     }
     for change in ledger["changes"]:
         record = json.loads((ROOT / change["path"]).read_text(encoding="utf-8"))
-        # First reverse the chronologically latest expanded evidence review.
+        # Account for the complete later admission before testing the immutable
+        # PDF/retained-route reviews. Check exact replay, including all untouched
+        # fields, then reverse only the declared patch in this local copy.
+        if record.get("entity_type") == "document" and record["id"] in admission_changes:
+            admission = admission_changes[record["id"]]
+            assert admission["path"] == change["path"]
+            applied = deepcopy(admission["before"])
+            applied.update(deepcopy(admission["after_changes"]))
+            for field in admission["removed_fields"]:
+                del applied[field]
+            assert record == applied
+            for field in admission["after_changes"]:
+                if field in admission["before"]:
+                    record[field] = deepcopy(admission["before"][field])
+                else:
+                    del record[field]
+            for field in admission["removed_fields"]:
+                record[field] = deepcopy(admission["before"][field])
+            assert record == admission["before"]
+        # Reverse the earlier expanded evidence review next.
         # Its exact patch scope is declared in the reviewed handoff; the older
         # ledgers below then remain independently testable and immutable.
         if record.get("entity_type") == "document" and record["id"] in expanded_audit:
@@ -210,13 +233,29 @@ def test_evidence_ledger_preserves_inspection_limits_and_applied_changes():
 
 def test_pdf_acquisition_alone_does_not_fabricate_relationship_readiness():
     records = load_records(ROOT / "data")
-    # Recreate B3's pre-identity-review levels in memory, without editing data.
+    retained_review = json.loads(RETAINED_LEDGER.read_text(encoding="utf-8"))
+    identity_review = json.loads(IDENTITY_LEDGER.read_text(encoding="utf-8"))
+    admission_review = json.loads(ADMISSION_LEDGER.read_text(encoding="utf-8"))
+    frozen_documents = {
+        **{item["document_id"]: item["before"] for item in retained_review["documents"]},
+        **{item["before"]["id"]: item["before"] for item in identity_review["documents"]},
+    }
+    assert set(frozen_documents) == {item[0] for item in FILES}
+    parent_id = admission_review["guidelines_admission"]["parent_id"]
+    parent_edges = set(admission_review["guidelines_admission"]["relationship_ids"])
+    records["documents"] = [
+        record for record in records["documents"] if record.data["id"] != parent_id
+    ]
+    records["relationships"] = [
+        record for record in records["relationships"] if record.data["id"] not in parent_edges
+    ]
+    # Restore the exact post-PDF/pre-identity records, including removal of later
+    # extensions, and exclude the parent/edges that did not yet exist at B3.
     for record in records["documents"]:
-        if record.data["id"] in {
-            "draft-guidance-serious-ai-incidents-2025",
-            "draft-serious-ai-incident-report-template-2025",
-        }:
-            record.data["record_level"] = "version"
+        if record.data["id"] in frozen_documents:
+            before = frozen_documents[record.data["id"]]
+            record.data.clear()
+            record.data.update(deepcopy(before))
     issues = validate_historical_readiness(records, ROOT / "schema", "2026-09-04")
     holds = {
         Path(issue.record_path).stem

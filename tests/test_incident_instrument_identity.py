@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "research/migrations/2026-09-05-incident-instrument-identity.json"
 EXPANDED_LEDGER = ROOT / "research/migrations/2026-09-05-expanded-evidence-review.json"
 FOUR_ADMISSIONS_LEDGER = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+SIX_RECORD_LEDGER = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
 TITLES = {
     "draft-guidance-serious-ai-incidents-2025": "DRAFT GUIDANCE ARTICLE 73 AI ACT- INCIDENT REPORTING (HIGH-RISK AI SYSTEMS)",
     "draft-serious-ai-incident-report-template-2025": "Incident Report for Serious Incidents under the AI Act (High-risk AI systems)",
@@ -67,10 +68,16 @@ def test_pipeline_presents_two_standalone_instruments_without_new_records(tmp_pa
     assert documents["draft-guidance-serious-ai-incidents-2025"]["version_label"] == "Consultation draft"
 
 
-def test_only_three_section_parent_holds_remain():
+def test_later_whole_work_admission_resolves_the_three_recorded_parent_holds():
+    six_record_update = json.loads(SIX_RECORD_LEDGER.read_text(encoding="utf-8"))
+    assert set(six_record_update["upgraded_existing_ids"]) == HELD
     issues = validate_historical_readiness(load_records(ROOT / "data"), ROOT / "schema", "2026-09-04")
-    assert {Path(issue.record_path).stem for issue in issues
-            if issue.code == "historical_relationship" and issue.field == "record_level"} == HELD
+    current_holds = {
+        Path(issue.record_path).stem
+        for issue in issues
+        if issue.code == "historical_relationship" and issue.field == "record_level"
+    }
+    assert current_holds == set()
 
 
 def test_inventory_reconciliation_keeps_the_same_included_identities():

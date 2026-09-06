@@ -1,0 +1,212 @@
+{
+  "id": "draft-high-risk-classification-guidelines-consultation-work-2026",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T17:05:16Z",
+  "updated_at": "2026-09-06T17:05:16Z",
+  "slug": "draft-high-risk-classification-guidelines-consultation-work-2026",
+  "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems",
+  "short_title": "Draft high-risk classification guidelines — Complete consultation work",
+  "document_type": "guidelines",
+  "record_level": "principal",
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2026-05-19",
+  "version_label": "Consultation draft — Complete work",
+  "version_status": "draft",
+  "publication_date": "2026-05-19",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-commission",
+      "role": "author",
+      "evidence_source_id": "commission-newsroom-128559-pdf",
+      "evidence_locator": "PDF page 1 cover carries the European Commission masthead; the official library identifies this file as one section of the complete draft guidelines work."
+    }
+  ],
+  "policy_ids": [
+    "european-ai-policy-pathway",
+    "ai-act-implementation-and-governance"
+  ],
+  "concept_ids": [
+    "risk",
+    "compliance",
+    "accountability"
+  ],
+  "source_ids": [
+    "high-risk-guidelines-draft-commission",
+    "commission-newsroom-128559-pdf",
+    "commission-newsroom-128560-pdf",
+    "commission-newsroom-128561-pdf"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "core",
+    "policy_stage": "consultation",
+    "inclusion_rationale": "Complete Commission consultation work jointly published through three official section downloads interpreting the AI Act's high-risk classification rules.",
+    "researcher_notes": "This record represents the real complete consultation work published by the Commission library through three separately downloadable sections. It is not the prospective numbered Commission communication shown only as a placeholder on the draft covers. The library supplies the work-level publication date and section structure; the three PDFs supply the complete work's substantive, sector, authorship and draft-status evidence. No cover placeholder is treated as a reference or adoption date.",
+    "review_status": "verified",
+    "reviewed_by": "Codex",
+    "reviewed_at": "2026-09-06T17:05:16Z"
+  },
+  "sector_tags": [
+    "general_cross_sector",
+    "health",
+    "employment_and_labour",
+    "migration_asylum_and_border_management",
+    "financial_services",
+    "transport_and_mobility",
+    "law_enforcement",
+    "justice",
+    "education",
+    "public_administration",
+    "industry_and_manufacturing",
+    "critical_infrastructure"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "official_consultation_material",
+    "officially_published"
+  ],
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Publication 19 May 2026; paragraph immediately above Downloads explaining that the guidelines are provided in separate sections; Downloads 1-3.",
+      "meaning": "Establishes 2026-05-19 as the publication date of the complete consultation work represented by the three section downloads."
+    },
+    "publication_date": {
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Publication 19 May 2026; paragraph immediately above Downloads explaining that the guidelines are provided in separate sections; Downloads 1-3.",
+      "meaning": "Establishes official Commission publication of the whole draft consultation work, not formal adoption of a numbered communication."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "commission-newsroom-128559-pdf",
+      "locator": "PDF page 3 / printed page 2, paragraphs 3-7 introduce the complete draft guidelines' interpretation of Article 6 of the AI Act.",
+      "rationale": "The complete work directly interprets substantive AI Act high-risk classification."
+    },
+    {
+      "field": "sector_tags",
+      "value": "general_cross_sector",
+      "source_id": "commission-newsroom-128559-pdf",
+      "locator": "PDF page 3 / printed page 2, paragraphs 3-7 introduce horizontal principles and the separately supplied Article 6(1) and Article 6(2) sections.",
+      "rationale": "The complete work applies across the full high-risk classification framework."
+    },
+    {
+      "field": "sector_tags",
+      "value": "critical_infrastructure",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.2, printed pages 38-47.",
+      "rationale": "The Annex III section expressly covers critical infrastructure."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.2.3, printed pages 42-43, road-traffic use case.",
+      "rationale": "The Annex III section expressly covers transport and mobility."
+    },
+    {
+      "field": "sector_tags",
+      "value": "education",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.3, printed pages 48-59.",
+      "rationale": "The Annex III section expressly covers education."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.4, printed pages 60-77.",
+      "rationale": "The Annex III section expressly covers employment and worker management."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.5.2, printed pages 79-84, public-assistance benefits and services.",
+      "rationale": "The Annex III section expressly covers public-authority assistance decisions."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Sections IV.3.5.3-IV.3.5.5, printed pages 85-93, creditworthiness and insurance.",
+      "rationale": "The Annex III section expressly covers credit and insurance."
+    },
+    {
+      "field": "sector_tags",
+      "value": "health",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Sections IV.3.5.4 and IV.3.5.6, printed pages 89-91 and 94-98, health insurance and emergency services.",
+      "rationale": "The Annex III section expressly covers health-related services."
+    },
+    {
+      "field": "sector_tags",
+      "value": "law_enforcement",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.6, printed pages 99-115.",
+      "rationale": "The Annex III section expressly covers law enforcement."
+    },
+    {
+      "field": "sector_tags",
+      "value": "migration_asylum_and_border_management",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.7, printed pages 116-129.",
+      "rationale": "The Annex III section expressly covers migration, asylum and border management."
+    },
+    {
+      "field": "sector_tags",
+      "value": "justice",
+      "source_id": "commission-newsroom-128561-pdf",
+      "locator": "Section IV.3.8, administration of justice and democratic processes.",
+      "rationale": "The Annex III section expressly covers administration of justice."
+    },
+    {
+      "field": "sector_tags",
+      "value": "industry_and_manufacturing",
+      "source_id": "commission-newsroom-128560-pdf",
+      "locator": "PDF page 4 / printed page 3, paragraph 23: machinery and industrial equipment.",
+      "rationale": "The Annex I section expressly covers machinery and industrial equipment."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "commission-newsroom-128559-pdf",
+      "locator": "PDF page 1 cover carries the European Commission masthead; the official library identifies it as a section of the common work.",
+      "rationale": "The complete work is authored by the European Commission."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "official_consultation_material",
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Official library Publication 19 May 2026 presents the three downloads as sections of the draft guidelines consultation work.",
+      "rationale": "The complete work was issued as official Commission consultation material."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "high-risk-guidelines-draft-commission",
+      "locator": "Official library Publication 19 May 2026 and Downloads 1-3.",
+      "rationale": "The Commission library officially publishes the complete work through its section downloads."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "commission-newsroom-128559-pdf",
+    "locator": "PDF page 3 / printed page 2, paragraphs 3-7 identify draft guidelines for consultation and their non-binding interpretive role.",
+    "meaning": "Supports the complete work's draft and non-binding status; cover placeholders do not establish a numbered or adopted communication."
+  },
+  "historical_review_status": "verified"
+}

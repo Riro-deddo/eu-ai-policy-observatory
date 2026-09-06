@@ -13,6 +13,7 @@ LEDGER_PATH = ROOT / "research/migrations/2026-09-05-remaining-evidence-review.j
 CONTINUATION_LEDGER_PATH = ROOT / "research/migrations/2026-09-05-review-continuation.json"
 EVIDENCE_CORRECTIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-evidence-corrections.json"
 FOUR_ADMISSIONS_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-four-evidence-admissions.json"
+SIX_RECORD_LEDGER_PATH = ROOT / "research/migrations/2026-09-06-six-record-evidence-update.json"
 COUNCIL_UPGRADES = (
     "ai-act-council-general-approach-st-14954-2022",
     "ai-act-council-general-approach-german-statement-14954-add-1",
@@ -106,14 +107,15 @@ def test_second_pass_accounts_for_every_hold_and_only_the_reviewed_upgrades(publ
     continuation = json.loads(CONTINUATION_LEDGER_PATH.read_text(encoding="utf-8"))
     corrections = json.loads(EVIDENCE_CORRECTIONS_LEDGER_PATH.read_text(encoding="utf-8"))
     four_admissions = json.loads(FOUR_ADMISSIONS_LEDGER_PATH.read_text(encoding="utf-8"))
+    six_record_update = json.loads(SIX_RECORD_LEDGER_PATH.read_text(encoding="utf-8"))
     documents = {row["id"]: row for row in public_payload["documents"]}
     current = Counter(
         documents[row["id"]]["historical_review_status"]
         for row in ledger["baseline"]["documents"]
     )
     assert current == {
-        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]),
-        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]),
+        "verified": continuation["expected_after"]["historical_review"]["verified"] + len(corrections["upgraded_ids"]) + len(four_admissions["upgraded_ids"]) + len(six_record_update["upgraded_existing_ids"]),
+        "legacy_review_pending": continuation["expected_after"]["historical_review"]["legacy_review_pending"] - len(corrections["upgraded_ids"]) - len(four_admissions["upgraded_ids"]) - len(six_record_update["upgraded_existing_ids"]),
     }
     assert {row["id"]: row["slug"] for row in ledger["baseline"]["documents"]}.items() <= {
         row["id"]: row["slug"] for row in public_payload["documents"]

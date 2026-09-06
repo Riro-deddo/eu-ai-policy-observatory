@@ -18,25 +18,28 @@ const retainedRoutes = [
   },
 ] as const;
 
+const parentHeading = 'Draft high-risk classification guidelines — Complete consultation work';
+const parentRoute = 'corpus/draft-high-risk-classification-guidelines-consultation-work-2026/';
+const libraryHref = 'https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems';
+
 for (const { route, heading, pdfHref } of retainedRoutes) {
-  test(heading + ' renders its reviewed parent notice', async ({ page }) => {
+  test(heading + ' links to its verified whole-work parent', async ({ page }) => {
     await page.goto(route);
 
     await expect(page.getByRole('heading', { level: 1, name: heading, exact: true }))
       .toHaveCount(1);
-    const notice = page.getByRole('region', { name: 'Parent relationship under review' });
-    await expect(notice).toBeVisible();
-    await expect(notice).toContainText('This is an editorial notice, not official EU metadata.');
-    await expect(notice).toContainText('Codex');
-    await expect(notice).toContainText('2026-09-05T08:59:02Z');
-    const evidenceLinks = notice.getByRole('link');
-    await expect(evidenceLinks).toHaveCount(2);
-    await expect(evidenceLinks.nth(0)).toHaveAttribute(
-      'href',
-      'https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems',
-    );
-    await expect(evidenceLinks.nth(1)).toHaveAttribute('href', pdfHref);
-    await expect(notice).toContainText('Pages 1–2 (cover and first body page).');
+    await expect(page.getByRole('region', { name: 'Parent relationship under review' }))
+      .toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'Expanded evidence review pending', exact: true }))
+      .toHaveCount(0);
+    const sources = page.getByRole('region', { name: 'Official sources and identifiers' });
+    await expect(sources.locator(`a[href="${libraryHref}"]`)).toHaveCount(1);
+    await expect(sources.locator(`a[href="${pdfHref}"]`)).toHaveCount(1);
+    const verification = page.getByRole('region', { name: 'Verification', exact: true });
+    await expect(verification.locator('dt').filter({ hasText: /^Expanded evidence review$/ })
+      .locator('xpath=following-sibling::dd[1]')).toHaveText('Verified');
+    await expect(verification.locator('dt').filter({ hasText: /^Reviewed by$/ })
+      .locator('xpath=following-sibling::dd[1]')).toHaveText('Yichen Hao');
 
     const officialMetadata = page.getByRole('region', { name: 'Official metadata' });
     await expect(officialMetadata.getByText('Version status', { exact: true })).toHaveCount(0);
@@ -48,6 +51,25 @@ for (const { route, heading, pdfHref } of retainedRoutes) {
     await expect.poll(() => page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
     )).toBe(true);
+
+    const parent = page.getByRole('region', { name: 'Parent or principal record' });
+    await expect(parent).toContainText('Part of · Official relationship · Verified');
+    const parentLink = parent.getByRole('link', { name: parentHeading, exact: true });
+    await expect(parentLink).toHaveAttribute('href', `/eu-ai-policy-observatory/${parentRoute}`);
+    await parentLink.click();
+    await expect(page).toHaveURL(new RegExp(`/${parentRoute}$`));
+    await expect(page.getByRole('heading', { level: 1, name: parentHeading, exact: true }))
+      .toHaveCount(1);
+    // Incoming part_of links appear under Relationships; Attachments is for annex_to.
+    const parts = page.getByRole('region', { name: 'Relationships', exact: true });
+    for (const section of retainedRoutes) {
+      await expect(parts.getByRole('link', { name: section.heading, exact: true }))
+        .toHaveAttribute('href', `/eu-ai-policy-observatory/${section.route}`);
+    }
+    await parts.getByRole('link', { name: heading, exact: true }).click();
+    await expect(page).toHaveURL(new RegExp(`/${route}$`));
+    await expect(page.getByRole('heading', { level: 1, name: heading, exact: true }))
+      .toHaveCount(1);
 
     await page.getByRole('link', { name: 'Return to the Corpus' }).click();
     await expect(page).toHaveURL(/\/corpus\/$/);
