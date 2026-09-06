@@ -1,0 +1,132 @@
+{
+  "id": "jrc-ai-watch-public-services-2020",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "slug": "jrc-ai-watch-public-services-2020",
+  "official_title": "AI Watch - Artificial Intelligence in public services: Overview of the use and impact of AI in public services in the EU",
+  "short_title": "AI Watch: AI in public services",
+  "document_type": "report",
+  "sector_tags": [
+    "public_administration"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "JRC120399; EUR 30255 EN; DOI 10.2760/039619",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2020-07-02",
+  "version_label": "Published report",
+  "version_status": "final",
+  "publication_date": "2020-07-02",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "joint-research-centre",
+      "role": "author",
+      "evidence_source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "evidence_locator": "PDF p.2: report by the Joint Research Centre; personal author credits retained separately."
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "evidence_locator": "PDF p.2 imprint: Publications Office of the European Union."
+    },
+    {
+      "institution_id": "joint-research-centre",
+      "role": "official_host",
+      "evidence_source_id": "jrc-ai-watch-public-services-2020-catalogue",
+      "evidence_locator": "JRC Publications Repository and linked English PDF."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "jrc-ai-watch-public-services-2020-pdf",
+    "jrc-ai-watch-public-services-2020-catalogue"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "PDF p.7 (printed p.5), Executive summary: mapping AI use in public services, governance, risks and opportunities across European administrations.",
+    "researcher_notes": "Repository availability dates the cited publication to 2 July 2020. The filename contains 30062020, but a filename is not publication evidence. Individual authors include an external expert; their credits are not replaced by sole Commission authorship. Concept and policy annotations remain uncompleted; empty arrays are not negative findings.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:17Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "jrc-ai-watch-public-services-2020-catalogue",
+      "locator": "Date available panel and embedded dc.date.available = 2020-07-02; linked English PDF and matching JRC identifier.",
+      "meaning": "Official repository publication availability used as document-date fallback; no exact independent issue day is asserted."
+    },
+    "publication_date": {
+      "source_id": "jrc-ai-watch-public-services-2020-catalogue",
+      "locator": "Date available / dc.date.available = 2020-07-02.",
+      "meaning": "Release of the cited official repository manifestation; not asserted to be first publication on every EU host."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "locator": "PDF p.7 (printed p.5), Executive summary: mapping AI use in public services, governance, risks and opportunities across European administrations.",
+      "rationale": "AI is the substantive object of this policy-support report."
+    },
+    {
+      "field": "sector_tags",
+      "value": "public_administration",
+      "source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "locator": "PDF p.7 (printed p.5), Executive summary: mapping AI use in public services, governance, risks and opportunities across European administrations.",
+      "rationale": "Researcher sector classification based on the report's substantive scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "locator": "PDF p.2 report-by-JRC statement; named author credits.",
+      "rationale": "JRC institutional report, with named personal authors retained; hosting alone is not authorship."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "jrc-ai-watch-public-services-2020-catalogue",
+      "locator": "Public repository availability and linked English manifestation.",
+      "rationale": "Official institutional publication record."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Gianluca Misuraca",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "evidence_locator": "PDF p.2, How to cite this report; catalogue author list."
+    },
+    {
+      "name": "Colin van Noordt",
+      "affiliation": null,
+      "evidence_source_id": "jrc-ai-watch-public-services-2020-pdf",
+      "evidence_locator": "PDF p.2, How to cite this report; catalogue author list."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "jrc-ai-watch-public-services-2020-pdf",
+    "locator": "PDF p.2, scientific-report disclaimer.",
+    "meaning": "Evidence-based scientific support report, expressly not a Commission policy position or binding legal act."
+  }
+}

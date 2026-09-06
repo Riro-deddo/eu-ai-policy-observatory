@@ -609,10 +609,11 @@ def test_route_baseline_is_preserved_but_allows_additions():
     added["documents"].append(LoadedRecord({"id": "future-document", "slug": "future-document", "publication_status": "published"}, Path("future.json")))
     assert expected <= _published_pairs(added)
     removed = deepcopy(current)
-    removed["documents"] = removed["documents"][1:]
+    preserved_id = sorted(expected)[0][0]
+    removed["documents"] = [row for row in removed["documents"] if row.data["id"] != preserved_id]
     assert not expected <= _published_pairs(removed)
     changed = deepcopy(current)
-    changed["documents"][0].data["slug"] = "changed-route"
+    next(row for row in changed["documents"] if row.data["id"] == preserved_id).data["slug"] = "changed-route"
     assert not expected <= _published_pairs(changed)
 
 

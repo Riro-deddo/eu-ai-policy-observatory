@@ -1,0 +1,16 @@
+English metadata excerpt from the actual web extraction.
+Retrieval started: 2026-09-06T22:52:25Z
+Official URL: https://www.cedefop.europa.eu/en/publications/9121
+
+The complete original extraction remains in the local audit package. This public excerpt omits navigation and non-English manifestations. It is not original HTML and has no claim of byte identity with the full page. Direct local HTTP retrieval returned challenge HTML.
+
+Observed publication identity: 9121; year2017; monthJuly.
+Observed English download row (extraction lines103-107):
+Title: People, machines, robots and skills
+DOI:10.2801/057353
+Catalogue code:TI-BB-17-003-EN-N
+ISBN:978-92-896-2316-2
+Release date shown:31/07/2017
+File size shown:622.35 KB
+
+This is the row used to date the inspected English PDF. The separate English electronic edition has a different DOI/ISBN and is not silently substituted.

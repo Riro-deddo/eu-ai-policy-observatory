@@ -1,0 +1,163 @@
+{
+  "id": "ai-watch-ai-uptake-smart-mobility-2021",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:09Z",
+  "updated_at": "2026-09-06T22:54:09Z",
+  "slug": "ai-watch-ai-uptake-smart-mobility-2021",
+  "official_title": "AI Watch: AI Uptake in Smart Mobility",
+  "short_title": "AI Watch: AI Uptake in Smart Mobility",
+  "document_type": "report",
+  "sector_tags": [
+    "transport_and_mobility"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "JRC126302; EUR 30821 EN; DOI 10.2760/879190; ISBN 978-92-76-41403-2; KJ-NA-30821-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2021-09-15",
+  "version_label": "First edition, JRC technical report",
+  "version_status": "final",
+  "publication_date": "2021-09-15",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "joint-research-centre",
+      "role": "author",
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-page",
+      "evidence_locator": "AI Watch page, Author: Joint Research Centre; PDF p.2 identifies JRC technical report"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "publisher",
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "evidence_locator": "PDF p.2 imprint"
+    },
+    {
+      "institution_id": "publications-office-of-the-european-union",
+      "role": "official_host",
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "evidence_locator": "Official Publications Office English PDF download"
+    },
+    {
+      "institution_id": "joint-research-centre",
+      "role": "official_host",
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-page",
+      "evidence_locator": "AI Watch publication page managed by JRC"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+    "ai-watch-ai-uptake-smart-mobility-2021-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The JRC report analyses AI uptake in smart mobility, including traffic, access to transport, road safety, data governance and algorithmic fairness.",
+    "researcher_notes": "Year 2021 is the report's internal precision; the exact official publication date supplies the canonical fallback. PDF p.5 calls this the first edition. Acknowledged reviewers and contributors are not bibliographic authors. The JRC endpoint returned a rejection HTML body, so the equivalent official Publications Office English PDF was captured and inspected.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-page",
+      "locator": "AI Watch page, Details, Publication date: 15 September 2021",
+      "meaning": "Exact official publication fallback; month/year internal precision is preserved separately."
+    },
+    "publication_date": {
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-page",
+      "locator": "AI Watch page, Details, Publication date: 15 September 2021",
+      "meaning": "Official release of the cited English manifestation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "locator": "PDF pp.7-9 (printed pp.4-6), abstract and executive summary; chapter 5",
+      "rationale": "The JRC report analyses AI uptake in smart mobility, including traffic, access to transport, road safety, data governance and algorithmic fairness."
+    },
+    {
+      "field": "sector_tags",
+      "value": "transport_and_mobility",
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "locator": "PDF pp.7-9 (printed pp.4-6), abstract and executive summary; chapter 5",
+      "rationale": "The JRC report analyses AI uptake in smart mobility, including traffic, access to transport, road safety, data governance and algorithmic fairness."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "locator": "PDF p.6 (printed p.3), Authors block",
+      "rationale": "PDF p.2 identifies a JRC technical report; AI Watch explicitly names the Joint Research Centre as author. Four personal authors are separately credited on PDF p.6."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-page",
+      "locator": "AI Watch page, Details, Publication date: 15 September 2021",
+      "rationale": "Dated official publication and English report availability are evidenced."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Sarah de Nigris",
+      "affiliation": null,
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "evidence_locator": "PDF p.6 (printed p.3), Authors block"
+    },
+    {
+      "name": "Jiri Hradec",
+      "affiliation": null,
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "evidence_locator": "PDF p.6 (printed p.3), Authors block"
+    },
+    {
+      "name": "Massimo Craglia",
+      "affiliation": null,
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "evidence_locator": "PDF p.6 (printed p.3), Authors block"
+    },
+    {
+      "name": "Daniel Nepelski",
+      "affiliation": null,
+      "evidence_source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "evidence_locator": "PDF p.6 (printed p.3), Authors block"
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "document_issue",
+      "value": "2021",
+      "precision": "year",
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "locator": "PDF p.2 imprint and citation"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "ai-watch-ai-uptake-smart-mobility-2021-english-snapshot-20260906",
+      "source_id": "ai-watch-ai-uptake-smart-mobility-2021-official-pdf",
+      "retrieved_at": "2026-09-06T23:51:08.703684+01:00",
+      "format": "pdf",
+      "content_hash": "840b536aaecec060638d2a5bbef09a7ca447f890c03599bca502faf3568ecd01",
+      "archived_path": null
+    }
+  ]
+}

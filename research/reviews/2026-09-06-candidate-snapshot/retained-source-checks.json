@@ -1,0 +1,411 @@
+{
+  "archive_boundary": "Metadata-only receipts. Full responses, excerpts and original PDFs remain in the local audit package, not the release archive.",
+  "receipts": [
+    {
+      "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)3871?lang=en",
+      "retrieved_at": "2026-09-06T23:07:37.761978+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)3871?lang=en",
+      "bytes": 3241,
+      "sha256": "314996c619a475617593d93011d40375e5c95301739f6ab99e7055f7588157c2"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)5235?lang=en",
+      "retrieved_at": "2026-09-06T23:07:37.813979+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)5235?lang=en",
+      "bytes": 1358,
+      "sha256": "355200fe38623bf22780e889d3571c6461c851f155f20467cbe26c7e08fcaab0"
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/external-documents?format=application%2Fld%2Bjson&limit=1",
+      "retrieved_at": "2026-09-06T23:07:37.879485+00:00",
+      "status": 200,
+      "final_url": "https://data.europarl.europa.eu/api/v2/external-documents?format=application%2Fld%2Bjson&limit=1",
+      "bytes": 2942,
+      "sha256": "15536665085e68cd507a867b43a1a936344d35c6d24f4068f8492b66c0319496"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/documents-publications/public-register/public-register-search/?AllLanguagesSearch=false&OnlyPublicDocuments=false&DocumentNumber=12206%2F22&DocumentLanguage=EN",
+      "retrieved_at": "2026-09-06T23:07:37.943722+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf",
+      "retrieved_at": "2026-09-06T23:08:09.338355+00:00",
+      "status": 200,
+      "final_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-INIT/en/pdf",
+      "bytes": 1158961,
+      "sha256": "cf7c067d715123cf19e8838443efbb427a64bc812334357635332615fa50e6d9"
+    },
+    {
+      "url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf",
+      "retrieved_at": "2026-09-06T23:08:09.495945+00:00",
+      "status": 200,
+      "final_url": "https://data.consilium.europa.eu/doc/document/ST-12206-2022-REV-1/en/pdf",
+      "bytes": 1152370,
+      "sha256": "5d36d0418dc6fd4fc99ec8e1ad064bad3879d829f5c5b04414b083d8ec5b60f0"
+    },
+    {
+      "url": "https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818",
+      "retrieved_at": "2026-09-06T23:08:09.666416+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/transparency/documents-register/api/files/C(2025)3871_0/de00000001072818",
+      "bytes": 115998,
+      "sha256": "617f68127736552ac968804dc2e7dd2293b0bb569fa38ab65cb5b3a0c5178384"
+    },
+    {
+      "url": "https://ec.europa.eu/newsroom/repository/document/2025-30/Explanatory_Notice_and_Template_for_the_Public_Summary_of_Training_Content_for_generalpurpose_AI_models_f6PjGTwoDHpCrDAudq005aQeMg_118480.pdf",
+      "retrieved_at": "2026-09-06T23:08:09.865434+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/newsroom/repository/document/2025-30/Explanatory_Notice_and_Template_for_the_Public_Summary_of_Training_Content_for_generalpurpose_AI_models_f6PjGTwoDHpCrDAudq005aQeMg_118480.pdf",
+      "bytes": 363262,
+      "sha256": "3245f6efbf00694a71bce67ea0b0c66a766428d1f631f9fcbfba9cb76f87dbc3"
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/",
+      "retrieved_at": "2026-09-06T23:08:41.729117+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/",
+      "bytes": 83898,
+      "sha256": "e68d2d0261957ffac2ed1dc21a4e28037d9b38dceca54e6250af4a5c4ef05ebc",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        "<!doctype html>\n<html lang=\"en\" class=\"eui-t-eui-legacy\" data-beasties-container>\n    <head>\n        <meta charset=\"utf-8\">\n        <title>eNorm Platform</title>\n        <base href=\"https://ec.europa.eu/growth/tools-databases/enorm/\">\n        <meta name=\"description\" content=\"Online database that contains standardisation requests adopted by the Commission.\n            Addressed to the European standardisation organisations (CEN, Cenelec and ETSI).\n            The texts of the requests are available in English, French and German.\">\n\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta content=\"IE=edge,chrome=1\" http-equiv=\"X-UA-Compatible\">\n        <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n        <script type=\"text/javascript\" src=\"assets/jsrsasign-all-min.js\"></script>\n        <script type=\"text/javascript\" src=\"assets/oidc-client.min"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/assets/env-json-config.js",
+      "retrieved_at": "2026-09-06T23:09:15.069179+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/assets/env-json-config.js",
+      "bytes": 83898,
+      "sha256": "e68d2d0261957ffac2ed1dc21a4e28037d9b38dceca54e6250af4a5c4ef05ebc",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        "        <base href=\"https://ec.europa.eu/growth/tools-databases/enorm/\">"
+      ],
+      "script_links": [
+        "assets/jsrsasign-all-min.js",
+        "assets/oidc-client.min.js",
+        "assets/openid-login.js",
+        "chunk-GA4EPNTJ.js",
+        "chunk-6LTKACIP.js",
+        "chunk-JCBGV4GW.js",
+        "chunk-LOGMXGPT.js",
+        "chunk-TSRGIXR5.js",
+        "polyfills-5CFQRCPP.js",
+        "main-AIWHUCBW.js"
+      ],
+      "script_imports": [
+        "assets/jsrsasign-all-min.js",
+        "assets/oidc-client.min.js",
+        "assets/openid-login.js",
+        "chunk-6LTKACIP.js",
+        "chunk-GA4EPNTJ.js",
+        "chunk-JCBGV4GW.js",
+        "chunk-LOGMXGPT.js",
+        "chunk-TSRGIXR5.js",
+        "main-AIWHUCBW.js",
+        "polyfills-5CFQRCPP.js"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JAYI55LM.js",
+      "retrieved_at": "2026-09-06T23:09:15.908105+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JAYI55LM.js",
+      "bytes": 20213,
+      "sha256": "d64d0f8fddfdd32574832cc9ef3f96e63e03a2d345aa7355d0d9a53171316d7b",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        ")=>a.reference;function Ae(e,a){if(e&1&&(l(0,\"a\",0),p(1),h(2,\"ecl-icon\",2),r()),e&2){let t=_().$implicit,n=_();f(\"href\",n.display.decisionLink(n.config.modules.mandate.registerDocuments,t.cid,n.language),k),i(),u(\" \",t.cid,\" \")}}function $e(e,a){e&1&&p(0,\" , \")}function Re(e,a){if(e&1&&(s(0,Ae,3,2,\"a\",0),p(1,\" [\"),l(2,\"a\",1),p(3),r(),p(4,\"] \"),s(5,$e,1,0)),e&2){let t=a.$implicit,n=a.$index,o=a.$count,g=_();c(t.cid",
+        "?0:-1),i(2),f(\"routerLink\",g.display.mandateLink(t.reference)),i(),N(g.display.mandateNumber(t)),i(2),c(n!==o-1?5:-1)}}var Se=(()=>{class e{constructor(){this.display=E,this.config=C(A)}static{this.\\u0275fac=function(n){return new(n||e)}}static{this.\\u0275cmp=B({type:e,selectors:[[\"app-mandates-links\"]],inputs:{mandates:\"mandates\",lan",
+        "rrer\",3,\"href\"],[\"eclLink\",\"\",3,\"routerLink\"],[\"icon\",\"external\",\"size\",\"2xs\",\"color\",\"primary\"]],template:function(n,o){n&1&&L(0,Re,6,4,null,null,we),n&2&&H(o.mandates)},dependencies:[I,$,oe],encapsulation:2})}}return e})();var Ge=e=>({number:e});function Oe(e,a){e&1&&(p(0),d(1,\"translate\")),e&2&&u(\" \",m(1,1,\"app.description.loading\"),\" \")}function Ue(e,a){if(e&1&&p(0),e&2){let t=_(3);u(\" \",t.mandate().cid,\" \\u20",
+        "13 \")}}function Pe(e,a){if(e&1&&(s(0,Ue,1,1),p(1)),e&2){let t=_(2);c(t.mandate().cid?0:-1),i(),ee(\" \",t.mandate().type,\" \",t.display.mandateNumber(t.mandate()),\" \")}}function je(e,a){if(e&1&&(p(0),d(1,\"translate\")),e&2){let t=_(2);u(\" \",w(1,1,\"app.label.mandateNotFound\",te(4,Ge,t.reference())),\" \")}}function Ve(e,a){if(e&1&&(l(0,\"p\",4),p(1),r()),e&2){let t=_(2);i(),u(\" \",t.headerDescription(),\" \")}}func",
+        "(7),d(8,\"translate\"),r()),e&2){let t=_(2);i(),u(\" \",m(2,4,\"app.description.downloadLegalAct1Before\"),\" \"),i(2),f(\"href\",t.display.decisionLink(t.config.modules.mandate.registerDocuments,t.mandate().cid,t.language()),k),i(),u(\" \",m(5,6,\"app.description.downloadLegalAct2Link\"),\" \"),i(3),u(\" \",m(8,8,\"app.description.downloadLegalAct3After\"),\" \")}}function Qe(e,a){if(e&1&&(l(0,\"h1\",3),s(1,Oe,2,3),s(2,Pe,2,3),s(3,je,2,",
+        "6),r(),s(4,Ve,2,1,\"p\",4),s(5,ze,9,10,\"p\",5)),e&2){let t=_();i(),c(t.isLoading()?1:-1),i(),c(t.mandate()?2:-1),i(),c(!t.mandate()&&!t.isLoading()?3:-1),i(),c(t.headerDescription()?4:-1),i(),c(t.mandate()&&t.mandate().cid?5:-1)}}function qe(e,a){e&1&&(p(0),d(1,\"translate\")),e&2&&u(\" \",m(1,1,\"app.description.loading\"),\" \")}function Ze(e,a){e&1&&(l(0,\"ecl-notification\",8),p(1),",
+        "(e&1&&(l(0,\"td\",19),d(1,\"translate\"),p(2),d(3,\"translatedDate\"),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,2,\"app.field.adoptionDate\")),i(2),u(\" \",w(3,4,t.mandate().adoptionDate,\"longDate\"),\" \")}}function Ye(e,a){if(e&1&&(l(0,\"td\",19),d(1,\"translate\"),p(2),d(3,\"translate\"),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,2,\"app.field.status\")),i(2),u(\" \",m(3,4,t.display.string(t.mandate().status)),\" \")}}functi",
+        ")(2,\"tr\",16),s(3,Je,3,3,\"th\",17),s(4,We,3,3,\"th\",17),r()(),l(5,\"tbody\",18)(6,\"tr\",16),s(7,Xe,4,7,\"td\",19),s(8,Ye,4,6,\"td\",19),r()()()),e&2){let t=_(2);i(3),c(t.mandate().adoptionDate?3:-1),i(),c(t.mandate().status?4:-1),i(3),c(t.mandate().adoptionDate?7:-1),i(),c(t.mandate().status?8:-1)}}function tt(e,a){e&1&&p(0,\" , \")}function it(e,a){if(e&1&&(p(0),d(1,\"translate\"),s(2,tt,1,0)),e&2){let t=_(),n=t.$implicit,o=t.",
+        "slate\"),L(10,nt,2,2,null,null,P),r()()()()),e&2){let t=_(2);i(4),u(\" \",m(5,2,\"app.field.eso\"),\" \"),i(4),f(\"eclTableCellHeader\",m(9,4,\"app.field.eso\")),i(2),H(t.mandate().esoDetails)}}function ot(e,a){if(e&1&&(l(0,\"table\",11)(1,\"thead\",15)(2,\"tr\",16)(3,\"th\",17),p(4),d(5,\"translate\"),r()()(),l(6,\"tbody\",18)(7,\"tr\",16)(8,\"td\",19),d(9,\"translate\"),p(10),r()()()()),e&2){let t=_(2);i(4),u(\" \",m(5,3,\"app.field.intendedPu",
+        "rpose\"),\" \"),i(4),f(\"eclTableCellHeader\",m(9,5,\"app.field.intendedPurpose\")),i(2),u(\" \",t.mandate().intendedPurpose,\" \")}}function lt(e,a){e&1&&h(0,\"br\")}function rt(e,a){if(e&1&&(p(0),s(1,lt,1,0,\"br\")),e&2){let t=a.$implicit,n=a.$index,o=a.$count;u(\" \",t,\" \"),i(),c(n!==o-1?1:-1)}}function dt(e,a){if(e&1&&(l(0,\"table\",11)(1,\"thead\",15)(2,\"tr\",16",
+        ",\"td\",19),d(1,\"translate\"),p(2),d(3,\"translate\"),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,2,\"app.field.policyAreas\")),i(2),u(\" \",m(3,4,t.display.array(t.mandate().policyAreas)),\" \")}}function mt(e,a){if(e&1&&(l(0,\"td\",19),d(1,\"translate\"),p(2),d(3,\"translate\"),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,2,\"app.field.topics\")),i(2),u(\" \",m(3,4,t.display.array(t.mandate().topics)),\" \")}}function ut(e,a){i",
+        ")(2,\"tr\",16),s(3,st,3,3,\"th\",17),s(4,ct,3,3,\"th\",17),r()(),l(5,\"tbody\",18)(6,\"tr\",16),s(7,pt,4,6,\"td\",19),s(8,mt,4,6,\"td\",19),r()()()),e&2){let t=_(2);i(3),c(t.mandate().policyAreas.length?3:-1),i(),c(t.mandate().topics.length?4:-1),i(3),c(t.mandate().policyAreas.length?7:-1),i(),c(t.mandate().topics.length?8:-1)}}function _t(e,a){e&1&&(l(0,\"th\",17),p(1),d(2,\"translate\"),r()),e&2&&(i(),u(\" \",m(2,1,\"app.field.amend",
+        ",\"th\",17),p(1),d(2,\"translate\"),r()),e&2&&(i(),u(\" \",m(2,1,\"app.field.repealedMandates\"),\" \"))}function Ct(e,a){if(e&1&&(l(0,\"td\",19),d(1,\"translate\"),h(2,\"app-mandates-links\",20),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,3,\"app.field.amendedMandates\")),i(2),f(\"mandates\",t.mandate().amendedMandates)(\"language\",t.language())}}function ht(e,a){if(e&1&&(l(0,\"td\",19),d(1,\"translate\"),h(2,\"app-mandates-links\",20)",
+        ",r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,3,\"app.field.repealedMandates\")),i(2),f(\"mandates\",t.mandate().repealedMandates)(\"language\",t.language())}}function gt(e,a){if(e&1&&(l(0,\"table\",11)(1,\"thead\",15)(2,\"tr\",16),s(3,_t,3,3,\"th\",17),s(4,ft,3,3,\"th\",17),r()(),l(5,\"tbody\",18)(6,\"tr\",16),s(7,Ct,3,5,\"td\",19),s(8,ht,3,5,\"td\",19),r()()()),e&2){let t=_(2",
+        ");i(3),c(t.mandate().amendedMandates.length?3:-1),i(),c(t.mandate().repealedMandates.length?4:-1),i(3),c(t.mandate().amendedMandates.length?7:-1),i(),c(t.mandate().repealedMandates.length?8:-1)}}function bt(e,a){e&1&&(l(0,\"th\",17),p(1),d(2,\"translate\"),r()),e&2&&(i(),u(\" \",m(2,1,\"app.field.amendedByMandates\"),\" \"))}function xt(e,a){e&1&&(l(0,\"th\",17),p(1),d(2,\"translate\"),r()),e&2&&(i(),u(\" \",m(2,1,\"app.fiel",
+        "d.repealedByMandates\"),\" \"))}function vt(e,a){if(e&1&&(l(0,\"td\",19),d(1,\"translate\"),h(2,\"app-mandates-links\",20),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,3,\"app.field.amendedByMandates\")),i(2),f(\"mandates\",t.mandate().amendedByMandates)(\"language\",t.language())}}function yt(e,a){if(e&1&&(l(0,\"td\",19),d(1,\"translate\"),h(2,\"app-mandates-links\"",
+        ",20),r()),e&2){let t=_(3);f(\"eclTableCellHeader\",m(1,3,\"app.field.repealedByMandates\")),i(2),f(\"mandates\",t.mandate().repealedByMandates)(\"language\",t.language())}}function Tt(e,a){if(e&1&&(l(0,\"table\",11)(1,\"thead\",15)(2,\"tr\",16),s(3,bt,3,3,\"th\",17),s(4,xt,3,3,\"th\",17),r()(),l(5,\"tbody\",18)(6,\"tr\",16),s(7,vt,3,5,\"td\",19),s(8,yt,3,5,\"td\",19),r()()()),e&2){let t=_",
+        "(2);i(3),c(t.mandate().amendedByMandates.length?3:-1),i(),c(t.mandate().repealedByMandates.length?4:-1),i(3),c(t.mandate().amendedByMandates.length?7:-1),i(),c(t.mandate().repealedByMandates.length?8:-1)}}function Dt(e,a){if(e&1&&(l(0,\"table\",11)(1,\"thead\",15)(2,\"tr\",16)(3,\"th\",17),p(4),d(5,\"translate\"),r()()(),l(6,\"tbody\",18)(7,\"tr\",16)(8,\"td\",19),d(9,\"translate\"),p(",
+        "r()()()()),e&2){let t=_(2);i(4),u(\" \",m(5,3,\"app.field.expirationDate\"),\" \"),i(4),f(\"eclTableCellHeader\",m(9,5,\"app.field.expirationDate\")),i(2),u(\" \",w(11,7,t.mandate().expirationDate,\"longDate\"),\" \")}}function Et(e,a){e&1&&(l(0,\"table\",12)(1,\"thead\",15)(2,\"tr\",16)(3,\"th\",21),p(4),d(5,\"translate\"),r()()(),l(6,\"tbody\",18)(7,\"tr\",16)(8,\"td\",22),p(9),d(10,\"translate\"),r()()()()),e&2&&(i(3),f(\"colSpan\",2),i(),u(\" \",m",
+        "t,9,4,\"table\",11),s(10,Dt,12,10,\"table\",11),s(11,Et,11,7,\"table\",12),r()(),l(12,\"div\",9)(13,\"div\",13),s(14,Mt,5,3,\"button\",14),r()()()),e&2){let t=_();i(3),c(t.mandate().adoptionDate||t.mandate().status?3:-1),i(),c(t.mandate().esoDetails.length?4:-1),i(),c(t.mandate().intendedPurpose&&!t.mandate().intendedPurpose.match(\"^(Undefined|Ind\\xE9fini|Nicht definiert)$\")?5:-1),i(),c(t.getRelatedLegislation().length?6:-1),",
+        "i(),c(t.mandate().policyAreas.length||t.mandate().topics.length?7:-1),i(),c(t.mandate().amendedMandates.length||t.mandate().repealedMandates.length?8:-1),i(),c(t.mandate().amendedByMandates.length||t.mandate().repealedByMandates.length?9:-1),i(),c(t.mandate().expirationDate?10:-1),i(),c(t.mandate().cid?11:-1),i(3),c(t.canNavigateBack()?14:-1)}}var Le=(()=>{class e{cons",
+        "tructor(){this.reference=x(null),this.mandate=x(null),this.language=x(null),this.display=E,this.breadcrumbs=x(null),this.headerDescription=x(\"\"),this.isLoading=x(!0),this.isSelectedLanguageTranslated=x(!1),this.config=C(A),this.supportedLanguages=new Set,this.document=C(se),this.route=C(ne),thi",
+        "router=C(ae),this.translate=C(le),this.userMessage=C(ce),this.utilsService=C(pe);let t=this.utilsService;this.breadcrumbs.set(E.breadcrumbs(this.config.modules.mandate.unknownMandate,t.homeBreadcrumbs)),this.supportedLanguages=new Set(this.config.modules.shared.verifiedTranslationLanguages)}ngOnInit(){this.route.paramMap.subscribe({next:t=>{this.loadPage(t.get(\"reference\"))},error:t=>this.userMessage.report(t)}),t",
+        "){if(t===!0)return\"app.label.accepted\";if(t===!1)return\"app.label.rejected\"}canNavigateBack(){return window.history.length>1}getRelatedLegislation(){let t=this.mandate();return t?.relatedLegislationDisplay?.length?t.relatedLegislationDisplay:t?.relatedLegislation??[]}loadPage(t){if(this.reference.set(t),this.isLoading.set(!0),this.mandate.set(null),t){let n=t.match(this.utilsService.urlLanguageMatcher);n&&this.tra",
+        "next:n=>{if(n===null){this.router.navigate([\"\"]);return}this.loadMandate(n)},error:n=>{this.userMessage.report(n),this.loadMandate(null)}})}loadMandate(t){this.mandate.set(t),this.isLoading.set(!1),t&&(this.language.set(t.language),this.isSelectedLanguageTranslated.set(this.supportedLanguages.has(this.language())),this.breadcrumbs.set(E.breadcrumbs(E.mandateNumber(t),this.utilsService.homeBreadcrumbs)),this.header",
+        "\",1,\"ecl-u-mv-l\"],[\"eclTableHead\",\"\"],[\"eclTableRow\",\"\"],[\"eclTableHeader\",\"\",\"scope\",\"col\"],[\"eclTableBody\",\"\"],[\"eclTableCell\",\"\",3,\"eclTableCellHeader\"],[3,\"mandates\",\"language\"],[\"eclTableHeader\",\"\",\"scope\",\"col\",3,\"colSpan\"],[\"eclTableCell\",\"\"],[\"icon\",\"arrow-left\"],[\"eclButtonLabel\",\"\"]],template:function(n,o){n&1&&(l(0,\"ecl-page-header\"),h(1,\"app-breadcrumbs\",0),s(2,Qe,6,5)(3,Ke,2,1),r(),l(4,\"main\",1),s(5,B",
+        "t,15,10,\"div\",2),r()),n&2&&(i(),f(\"breadcrumbs\",o.breadcrumbs()),i(),c(o.isSelectedLanguageTranslated()?2:3),i(3),c(o.mandate()&&o.isSelectedLanguageTranslated()?5:-1))},dependencies:[fe,_e,I,$,ve,be,ge,he,De,Ee,R,Me,Be,Ie,Ce,Se,de,re,xe],encapsulation:2})}}return e})();var pi=[{path:\":reference\",component:Le}];export{pi as mandateRoutes};"
+      ],
+      "script_links": [],
+      "script_imports": [
+        "./chunk-6LTKACIP.js",
+        "./chunk-FHSSIVUO.js",
+        "./chunk-JCBGV4GW.js",
+        "./chunk-LOGMXGPT.js",
+        "./chunk-TSRGIXR5.js"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-UPEJCAVI.js",
+      "retrieved_at": "2026-09-06T23:09:16.697408+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-UPEJCAVI.js",
+      "bytes": 49452,
+      "sha256": "3a5aa3f7e7c9f6d3afca1c9b2d0095b9a4f94ce3f4694d4d2d0a200d4a7ca1cf",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        "2),f(\"disabled\",e.searchForm.invalid),o(),E(\" \",u(4,26,\"app.label.searchAction\"),\" \"),o(3),E(\" \",u(7,28,\"app.label.resetAction\"),\" \"),o(4),w(u(11,30,\"app.field.mandateNumber\")),o(3),E(\"\",u(14,32,\"app.label.example\"),\" 123\"),o(5),w(u(19,34,\"app.field.cid\")),o(3),E(\" \",u(22,36,\"app.label.example\"),\" C(2019)1234 \"),o(5),w(u(27,38,\"app.field.title\")),o(5),w(u(32,40,\"app.field.eso\")),o(2),f(\"eclPlaceholder\",u(34,42,\"ap",
+        "p.label.unspecified\")),o(2),Q(e.mandateReferenceData().eso),o(4),w(u(40,44,\"app.field.adoptionDate\")),o(4),E(\" \",u(44,46,\"app.label.greaterThanOrEqualTo\"),\" \"),o(3),E(\" \",u(47,48,\"app.label.lessThanOrEqualTo\"),\" \"),o(3),f(\"yearRange\",5),o(3),w(u(53,50,\"app.field.newApproach\")),o(4),E(\" \",",
+        ".unspecified\"),\" \"),o(2),Q(e.getRelatedLegislationOptions()),o(4),w(u(77,62,\"app.field.policyAreas\")),o(4),E(\" \",u(81,64,\"app.label.unspecified\"),\" \"),o(2),Q(e.mandateReferenceData().policyAreas),o(6),w(u(89,66,\"app.field.isValid\"))}}var gi=\" - \",Rn=(()=>{class n{constructor(){this.submitFields=ae(null),this.currentPage=ae(void 0),this.constants=lt,this.mandateReferenceData=ae(null),this.mandateNumberPrefix=\"M/\",t",
+        "error(i))}resetSearch(){this.searchForm.reset(this.fieldDefaults),this.router.navigate([]).catch(e=>console.error(e))}getRelatedLegislationOptions(){let e=this.mandateReferenceData(),i=e?.relatedLegislation??[],t=new Map;for(let s of e?.relatedLegislationDisplay??[]){let d=this.findMatchingReference(s,i);d&&t.set(d,s)}return i.map(s=>({value:s,label:t.get(s)??s}))}findMatchingReference(e,i){return i.find(t=>e===t|",
+        "|e.startsWith(t+gi))}getReferenceData(e=this.translate.getCurrentLang()){this.document.getReferenceData(e).subscribe({next:i=>this.mandateReferenceData.set(i),error:i=>this.userMessage.report(i)})}updateSearchResults(e){this.langChangeSubscription&&this.langChangeSubscription.unsubscribe();let i=\"language\"in e?e.language:this.translate.getCurrentLang();\"language\"in e&&this.i18nService.",
+        "optionDate,\"YYYY-MM-DD\").toDate()),i}getSubmitFields(e,i){let t=new Ie(e);return this.removeMandateNumberPrefix(t),new De([i],t)}removeMandateNumberPrefix(e){e.mandateNumber&&e.mandateNumber.toUpperCase().startsWith(this.mandateNumberPrefix)&&(e.mandateNumber=e.mandateNumber.substring(this.mandateNumberPrefix.length))}static{this.\\u0275fac=function(i){return new(i||n)}}static{this.\\u0275cmp=A({type:n,selectors:[[\"",
+        ",1,\"ecl-u-ml-s\",3,\"click\"],[\"eclFormGroup\",\"\"],[\"eclFormLabel\",\"\",\"for\",\"searchMandateNumber\"],[\"eclTextInput\",\"\",\"id\",\"searchMandateNumber\",\"formControlName\",\"mandateNumber\",\"type\",\"text\",\"size\",\"m\"],[\"eclFormGroup\",\"\",1,\"ecl-u-mt-m\"],[\"eclFormLabel\",\"\",\"for\",\"cid\"],[\"eclTextInput\",\"\",\"id\",\"cid\",\"formControlName\",\"cid\",\"type\",\"text\",\"size\",\"m\"],[\"eclFormLabel\",\"\",\"for\",\"searchTitle\"],[\"eclTextInput\",\"\",\"id\",\"sear",
+        "(5,7,\"app.description.standardisationRequests\",Ke(14,hi)),pe),o(5),w(u(10,10,\"app.label.searchTip\")),o(3),E(\" \",u(13,12,\"app.label.searchFields\"),\" \"),o(2),R(t.mandateReferenceData()?14:-1),o(2),f(\"submitFields\",t.submitFields())(\"currentPage\",t.currentPage()))},dependencies:[q,ee,re,te,bt,ke,ft,be,_e,kt,Oe,xt,Ct,ht,st,Ze,tt,it,qe,We,et,Ge,Ye,Je,Xe,mt,W,j],encapsulation:2})}}return n})();export{Rn as Standardisati"
+      ],
+      "script_links": [],
+      "script_imports": [
+        "./chunk-6LTKACIP.js",
+        "./chunk-DFRG4Z4E.js",
+        "./chunk-GA4EPNTJ.js",
+        "./chunk-GOMMCJ36.js",
+        "./chunk-JCBGV4GW.js",
+        "./chunk-LOGMXGPT.js",
+        "./chunk-S5PC5RSX.js",
+        "./chunk-TSRGIXR5.js"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "retrieved_at": "2026-09-06T23:08:46.906232+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "bytes": 251505,
+      "sha256": "b168c05ae3aaa7b793e645fbbf6feec722f88495a76ed03a10309c222445b42c",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [],
+      "script_links": []
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+      "retrieved_at": "2026-09-06T23:08:47.699394+00:00",
+      "status": 200,
+      "final_url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+      "bytes": 71698,
+      "sha256": "995b02308283de3186d261db12737fd81be00b8bda826196c646319dee2b4a2f",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        "AI models</span></h1><ul class=\"ecl-page-header__meta\"><li class=\"ecl-page-header__meta-item\">POLICY AND LEGISLATION</li><li class=\"ecl-page-header__meta-item\">Publication 24 July 2025</li></ul></div></div></div>",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/118480\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/118578\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126301\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126310\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126316\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126312\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126306\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126315\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126317\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126309\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126321\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126314\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126320\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126318\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126311\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126308\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126313\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126304\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126307\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126300\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126302\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126305\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126299\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126319\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">",
+        "    <a download=\"\" href=\"https://ec.europa.eu/newsroom/dae/redirection/document/126303\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">"
+      ],
+      "script_links": [
+        "/themes/contrib/oe_theme/dist/duet/duet/duet.esm.js",
+        "https://webtools.europa.eu/load.js"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "retrieved_at": "2026-09-06T23:09:06.584416+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "bytes": 251505,
+      "sha256": "b168c05ae3aaa7b793e645fbbf6feec722f88495a76ed03a10309c222445b42c",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        ")}})}static{this.\\u0275fac=function(t){return new(t||r)}}static{this.\\u0275prov=ue({token:r,factory:r.\\u0275fac,providedIn:\"root\"})}}return r})();var Ks={name:\"enorm-europa-website\",version:\"2.14.3\",license:\"EUPL-1.1\",scripts:{ng:\"ng\",\"start-mock-server\":\"nodemon --watch ./mock ./mock/server.js\",\"start-serve\":\"eui-cli serve-app --configuration=proxy-mock --configEnvTarget=mock\",start:\"npm-run-all --parallel star",
+        "roxy --configEnvTarget=local\",build:\"eui-cli build-app\",\"build-local\":\"eui-cli build-app --configuration=development --configEnvTarget=local-tomcat --baseHref /enorm-europa-website/\",\"build-dev\":\"eui-cli build-app --configuration=development --configEnvTarget=dev --baseHref https://webgate.development.ec.europa.eu/enorm/\",\"build-test\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=test",
+        " --baseHref https://webgate.test.ec.europa.eu/enorm/\",\"build-acc\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=acc --baseHref https://webgate.acceptance.ec.europa.eu/enorm/\",\"build-prod\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=prod --base",
+        "Href https://ec.europa.eu/growth/tools-databases/enorm/\",\"build-prod-skip-test\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=prod --skipTest --baseHref https://ec.europa.eu/growth/tools-databases/enorm/\",\"build-prod-stats\":\"eui-cli build-app --configuration=production-optimi",
+        "zed --configEnvTarget=prod --statsJson --baseHref https://ec.europa.eu/growth/tools-databases/enorm/\",\"app:build\":\"eui-cli build-app\",\"app:inject-config\":\"eui-cli inject-config-app\",\"generate-sprite\":\"eui-cli generate-sprite\",\"start-local-open-id\":\"eui-cli serve-app --configuration=proxy --configEnvTarget=local-open-id\",\"start-local-dev\":\"eui-cli ",
+        ")}static{this.\\u0275fac=function(t){return new(t||r)}}static{this.\\u0275prov=ue({token:r,factory:r.\\u0275fac,providedIn:\"root\"})}}return r})();var So=[{path:\"\",loadChildren:()=>import(\"./chunk-6SWP37AK.js\").then(r=>r.homeRoutes)},{path:\"standardisation_requests\",loadComponent:()=>import(\"./chunk-UPEJCAVI.js\").then(r=>r.StandardisationRequestsComponent)},{path:\"access_to_harmonised_standards\",loadChildren:()=>import(\"./",
+        "chunk-LOOQXNUP.js\").then(r=>r.harmonisedStandardsRoutes)},{path:\"mandate\",loadChildren:()=>import(\"./chunk-JAYI55LM.js\").then(r=>r.mandateRoutes)},{path:\"accessibility_statement\",loadChildren:()=>import(\"./chunk-IO5CWD7L.js\").then(r=>r.accessibilityStatementRoutes)},{path:\"**\",component:Cs}];function vo(r){return new ee(3e3,!1)}function zu(){return new ee(3100,!1)}function Vu(){return ",
+        "\"ro\",\"sk\",\"sl\",\"sv\"]},i18nLoader:{i18nFolders:[\"i18n-eui\",\"i18n-ecl\",\"i18n\"]}},user:{defaultUserPreferences:{dashboard:{},lang:\"en\"}},eui:{theme:\"ec\"}};var Ma={mandate:{unknownMandate:\"M/???\",registerDocuments:\"https://ec.europa.eu/transparency/documents-register/detail\"},shared:{defaultPageSize:10,searchDocumentUrlPath:\"/rest/search\",referenceDataUrlPath:\"/rest/facet\",documentsUrlPath:\"/rest/document\"}};var Ea={g"
+      ],
+      "script_links": [],
+      "script_imports": [
+        "./chunk-54376XNM.js",
+        "./chunk-6LTKACIP.js",
+        "./chunk-6SWP37AK.js",
+        "./chunk-GA4EPNTJ.js",
+        "./chunk-IO5CWD7L.js",
+        "./chunk-JAYI55LM.js",
+        "./chunk-JCBGV4GW.js",
+        "./chunk-LOGMXGPT.js",
+        "./chunk-LOOQXNUP.js",
+        "./chunk-TSRGIXR5.js",
+        "./chunk-UPEJCAVI.js",
+        "./mock/server.js",
+        "assets/env-json-config.js",
+        "openid-login.js"
+      ]
+    },
+    {
+      "url": "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf",
+      "retrieved_at": "2026-09-06T23:10:53.694485+00:00",
+      "status": 200,
+      "final_url": "https://data.consilium.europa.eu/doc/document/ST-12549-2022-INIT/en/pdf",
+      "bytes": 1149349,
+      "sha256": "9b0157bc2518d82debd575cc10d6ae41d9ee2a3296a4b6987170fd0d25e65179",
+      "pages": 149,
+      "extracted_first_three_pages": [
+        " \n \n \n12549/22\n \n \n \nRB/ek\n \n1\n \n \nTREE.2.B\n \nLIMITE\n \nEN\n \n \n \n \nCouncil of the \nEuropean Union  \n \n \n \n \n \n \nBrussels, 23 September 2022 \n(OR. en) \n \n \n12549/22 \n \n \nLIMITE \n \nTELECOM 372 \nJAI 1196 \nCOPEN 319 \nCYBER 300 \nDATAPROTECT 257 \nEJUSTICE 76 \nCOSI 230 \nIXIM 223 \nENFOPOL 464 \nFREMP 184 \nRELEX 1204 \nMI 669 \nCOMPET 713 \nCODEC 1315 \n \n \nInterinstitutional File: \n2021/0106(COD)  \n  \n \nNOTE \nFrom: Presidency \nTo: Delegations \nNo. prev. doc.: 12206/1/22 REV 1 \nNo. Cion doc.: 8115/21 \nSubject: Proposal for a Regulation of the European Parliament and of the Council \nlaying down harmonised rules on artificial intelligence (Artificial Intelligence \nAct)  and amending certain Union legislative acts \n-Third Presidency compromise text (Title IA, Articles 30-85 and the relevant \nrecitals, Annexes V-IX) \n \n \n \nI.\n \nINTRODUCTION \n \n \n1.\n \nThe Commission adopted the proposal for a Regulation laying down harmonised rules on \nartificial intelligence \n(Artificial Intelligence Act, AIA)\n \non 21 April 2021.\n \n \n \n \n \n",
+        " \n \n \n12549/22\n \n \n \nRB/ek\n \n2\n \n \nTREE.2.B\n \nLIMITE\n \nEN\n \n \n \n2.\n \nT\nhe Slovenian Presidency drafted the first, partial compromise proposal, which covered \nArticles 1\n-\n7 and Annexes I\n-\nIII\n \nof the proposed AIA. The French Presidency continued the \ndrafting process and by the end of its term it redrafted the remaining \nparts of the text \n(Articles \n8\n-\n85 and Annexes IV\n-\nIX)\n \nand presented the entire first consolidated compromise proposal on \nthe AIA on 17 June 2022. \n \n \n3.\n \nOn 5 July 2022, the Czech Presidency held a policy debate in WP TELECOM on the basis of \na policy options pa\nper, in which the delegations were asked to reflect on the possible ways \nahead on some of the main outstanding issues in relation to the AIA proposal, namely the \ndefinition of an AI system, the classification of AI systems as high\n-\nrisk, governance and \nenfo\nrcement, and the national security exclusion.\n \n \n4.\n \nBased on the preferred choices expressed by the Member States at the above\n-\nmentioned \nmeeting, for each of the four topics the Czech Presidency has selected the options which \ngained the widest support and it\n \nhas incorporated them into the text as part of the second \ncompromise proposal, which was presented and discussed in WP TELECOM on 20 July \n2022.\n \n \n5. \n \nAfter the WP TELECOM meeting on 20 July 2022, the delegations were asked to provide \ndrafting suggestions and written comments on the entire second compromise proposal, by 2 \nSeptember 2022, covering both the changes regarding the four topics discussed at th\ne meeting \nand the changes introduced by the French Presidency as part of the first compromise proposal. \nThis written input has been used by the Czech Presidency to prepare \nthe first part of the third \ncompromise proposal of the AIA, covering Articles 1\n-\n29 a\nnd Annexes I\n-\nIV\n \n(with the \nexception of Title I\nA\n), which \nwas presented and discussed in WP TELECOM on 22 \nSeptember 2022. \nBased on the same input, t\nhe Cz\nech Presidency has now drafted \nthe seco\nnd \nand final part of the third compromise text\n, covering \nTitle I\nA\n \n(Articles 4a\n-\n4\nc\n), Articles \n30\n-\n85\n \nand Annexes V\n-\nIX\n, \nas well as the related recitals, \nwhich \ncan be found in the Annex. \n \n",
+        " \n \n \n12549/22\n \n \n \nRB/ek\n \n3\n \n \nTREE.2.B\n \nLIMITE\n \nEN\n \n \n \n6\n.\n \nDuring the WP TELECOM meeting on 2\n9\n \nSeptember 2022, the Czech Presidency \nintends to present the changes made in the \nsecond\n \npart of the third compromise \nproposal, covering the articles and annexes listed above, and invites the delegations to \nprovide their comments on the proposed changes and indicate their \nstrongest points\n.\n \n \n7\n.\n \nThe changes in the document compared with the sec\nond compromise text issued by the Czech \nPresidency (doc. 1\n2206\n/22) are \nunderlined\n. Compared with the \nCommission\n’\ns\n \nproposal, \nadditions are marked with \nbold\n, deletions with \nstrikethrough\n.\n \n \nII.\n \nMAIN CHANGES \n \n \n1.\n \nTitle I\nA\n \n-\n \nGeneral \npurpose AI systems\n \n \n \n \n1.1\n \nThe changes in \nArticle \n4b\n(1)\n \nhave been introduced\n \nto tailor the requirements \nof the AI \nAct to the specific characteristics of general purpose AI system\ns\n. Instead of direct application \nof selected \nrequirements\n, the Commission \nwould\n \nnow be obliged to adopt an implementing \nact specifying how these requirements should be applied\n \nin relation to general purpose AI \nsystems\n, based on a detailed impact assessment and taking into account in particular \ntechnical \nfeasibility and market and tec\nhnological developments\n. \n \n \n \n1.2\n \nThe modifications in \nArticle \n4b\n(\n5\n)\n \ncreate \na\n \npossibility\n \nfor the Commission to adopt \nfurther implementing acts which would lay down the \nmodalities of cooperation between \nproviders of general purpose AI systems \nand \nother \nproviders intending to put into service or \nplace such systems on the Union market as high\n-\nrisk AI systems\n, in particular as regards the \nprovision of information.\n \n \n \n1.3\n \nIn \nArticle \n4c\n, \nthe reference to \n'\nstatistically significant trends\n'\n \nof market misuse\n \nhas been \nreplaced with a clearer\n \nformulation laying down a\n \nrequirement for the provider \nto\n \ntake all \nnecessary and proportionate measures to prevent such further misuse\n.\n \n"
+      ],
+      "retention": "PDF read in memory; only receipt and text excerpts retained."
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-LOGMXGPT.js",
+      "retrieved_at": "2026-09-06T23:10:59.963243+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-LOGMXGPT.js",
+      "bytes": 60885,
+      "sha256": "5a86ae540a9e0cc0017b8924fad24393f766c8661cc83dc6d21ce191105c0dd1",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [],
+      "script_links": [],
+      "script_imports": [
+        "./chunk-TSRGIXR5.js"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/rest/document/613",
+      "retrieved_at": "2026-09-06T23:11:00.261765+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/rest/document/613",
+      "bytes": 83898,
+      "sha256": "e68d2d0261957ffac2ed1dc21a4e28037d9b38dceca54e6250af4a5c4ef05ebc",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        "        <base href=\"https://ec.europa.eu/growth/tools-databases/enorm/\">"
+      ],
+      "script_links": [
+        "assets/jsrsasign-all-min.js",
+        "assets/oidc-client.min.js",
+        "assets/openid-login.js",
+        "chunk-GA4EPNTJ.js",
+        "chunk-6LTKACIP.js",
+        "chunk-JCBGV4GW.js",
+        "chunk-LOGMXGPT.js",
+        "chunk-TSRGIXR5.js",
+        "polyfills-5CFQRCPP.js",
+        "main-AIWHUCBW.js"
+      ],
+      "script_imports": [
+        "assets/jsrsasign-all-min.js",
+        "assets/oidc-client.min.js",
+        "assets/openid-login.js",
+        "chunk-6LTKACIP.js",
+        "chunk-GA4EPNTJ.js",
+        "chunk-JCBGV4GW.js",
+        "chunk-LOGMXGPT.js",
+        "chunk-TSRGIXR5.js",
+        "main-AIWHUCBW.js",
+        "polyfills-5CFQRCPP.js"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "retrieved_at": "2026-09-06T23:11:09.195071+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/main-AIWHUCBW.js",
+      "bytes": 251505,
+      "sha256": "b168c05ae3aaa7b793e645fbbf6feec722f88495a76ed03a10309c222445b42c",
+      "excerpts": [
+        "n=development --configEnvTarget=local-tomcat --baseHref /enorm-europa-website/\",\"build-dev\":\"eui-cli build-app --configuration=development --configEnvTarget=dev --baseHref https://webgate.development.ec.europa.eu/enorm/\",\"build-test\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=test --baseHref https://webgate.test.ec.europa.eu/enorm/\",\"build-acc\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=acc --baseHref https://webgate.acceptance.ec.europa.eu/enorm/\",\"build-prod\":\"eui-cli build-app --configuration=production-optimized --configEnvTarget=prod --baseHref https://ec.europa.eu/growth/tools-databases/enorm/\",\"build-prod-skip-test\":\"eui-cli build-app --configuration=productio",
+        "registerDocuments:\"https://ec.europa.eu/transparency/documents-register/detail\"},shared:{defaultPageSize:10,searchDocumentUrlPath:\"/rest/search\",referenceDataUrlPath:\"/rest/facet\",documentsUrlPath:\"/rest/document\"}};var Ea={global:va,modules:Ma};var ii={production:!0,enableDevToolRedux:!1,envDynamicConfig:{uri:\"assets/env-json-config.json\",deepMerge:!0,merge:[\"modules\"]}};var Vd=()=>_(Pn).start(),ba={providers:[{provide:ts,useValue:{appConfig:Ea,environment:ii}},os(),Ir(Vd),Hr(zr()),Sa(),Mr(rs.forRoot(),pe.forRoot(as)),Pn,Wr(So,qr({urlUpdateStrategy:\"eager\"}),Gr()),_a(),xr]};re(ws,\"en\");re(Ms);re(Es);re(bs);re(Is);re(Ar);re(ks);re(Ts);re(Ds);re(Rr);re(Ls);re(xs);re(As);re(Rs);re(Fs);re(Ps);re(Bs);re(Os);re(Ns);re(Hs,\"pt\");re(zs);re(Vs);"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/assets/env-json-config.json",
+      "retrieved_at": "2026-09-06T23:11:14.396988+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/assets/env-json-config.json",
+      "bytes": 2466,
+      "sha256": "d8e5fa550e29dadb1c04cf5c50a3dbc415c0f78ff54e4d9ddb908281dc89e386",
+      "content_retention": "Selected excerpts only; byte count and SHA-256 describe the entire received response.",
+      "excerpts": [
+        "{\"apiUrl\":\"https://webgate.ec.europa.eu/es/search-api\",\"apiKey\":\"ENORM_PROD\"}"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JAYI55LM.js",
+      "retrieved_at": "2026-09-06T23:11:21.768296+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JAYI55LM.js",
+      "bytes": 20213,
+      "sha256": "d64d0f8fddfdd32574832cc9ef3f96e63e03a2d345aa7355d0d9a53171316d7b",
+      "excerpts": [
+        "import{b as ve}from\"./chunk-FHSSIVUO.js\";import{H as xe,a as me,c as T,g as ue,i as I,k as $,l as _e,m as fe,n as Ce,w as he,x as ge,y as be}from\"./chunk-6LTKACIP.js\";import{$ as J,$c as pe,Ba as X,Ca as _,Fa as j,H as U,Ha as V,Ia as z,J as x,M,N as K,Na as Y,Pa as y,Qa as p,Ra as N,Sa as u,T as k,Ta as ee,Uc as E,W as i,Xb as ne,Yc as se,Zb as ae,Zc as ce,_b as oe,ab as te,b as G,ba as W,ca as B,cc as le,db as d,dc as re,ea as D,eb as m,ec as de,fb as w,ha as v,ka as S,la as s,mb as Q,na as c,nb as q,oa as P,pa as L,qa as H,ra as f,sa as l,t as O,ta as r,tb as ie,ua as h,yc as A,z as C}from\"./chunk-JCBGV4GW.js\";import\"./chunk-LOGMXGPT.js\";import\"./chunk-TSRGIXR5.js\";var He=[\"eclTableSortButton\",\"\"],Fe=(()=>{class e extends T{constructor(){super(...arguments),this.eclThemeService=C(ue),this.ariaLabel=\"Sort table\"}get cssClasses(){return[super.getCssClasses(\"ecl-table__arrow\")].join(\" \").trim()}static{this.\\u0275fac=(()=>{let t;return function(o){return(t||(t=M(e)))(o||e)}})()}static{this.\\u0275cmp=B({type:e,selectors:[[\"button\",\"eclTableSortButton\",\"\"]],hostVars:3,hostBindings:function(n,o){n&2&&(S(\"aria-label\",o.ariaLabel),y(o.cssClasses))},features:[v],attrs:He,decls:4,vars:6,consts:[[\"icon\",\"solid-arrow\",1,\"ecl-table__icon\",\"ecl-table__icon-up\",3,\"size\"],[\"icon\",\"solid-arrow\",1,\"ecl-table__icon\",\"ecl-table__icon-down\",3,\"size\"]],template:function(n,o){n&1&&(h(0,\"ecl-icon\",0),d(1,\"async\"),h(2,\"ecl-icon\",1),d(3,\"async\")),n&2&&(f(\"size\",m(1,2,o.eclThemeService.isEC$)?\"xs\":\"m\"),i(2),f(\"size\",m(3,4,o.eclThemeService.isEC$)?\"xs\":\"m\"))},dependencies:[I,ie],encapsulation:2})}}return e})(),Z=class extends me{constructor(a,t){super(),this.sortOrder=a,this.columnId=t}},F=(function(e){return e.DESCENDING=\"descending\",e.ASCENDING=\"ascending\",e})(F||{}),De=(()=>{class e extends T",
+        "ervice;this.breadcrumbs.set(E.breadcrumbs(this.config.modules.mandate.unknownMandate,t.homeBreadcrumbs)),this.supportedLanguages=new Set(this.config.modules.shared.verifiedTranslationLanguages)}ngOnInit(){this.route.paramMap.subscribe({next:t=>{this.loadPage(t.get(\"reference\"))},error:t=>this.userMessage.report(t)}),this.translate.onLangChange.subscribe({next:t=>{this.isSelectedLanguageTranslated.set(this.supportedLanguages.has(t.lang))}})}esoDecisionLabel(t){if(t===!0)return\"app.label.accepted\";if(t===!1)return\"app.label.rejected\"}canNavigateBack(){return window.history.length>1}getRelatedLegislation(){let t=this.mandate();return t?.relatedLegislationDisplay?.length?t.relatedLegislationDisplay:t?.relatedLegislation??[]}loadPage(t){if(this.reference.set(t),this.isLoading.set(!0),this.mandate.set(null),t){let n=t.match(this.utilsService.urlLanguageMatcher);n&&this.translate.use(n[1])}this.document.getDocument(t).subscribe({next:n=>{if(n===null){this.router.navigate([\"\"]);return}this.loadMandate(n)},error:n=>{this.userMessage.report(n),this.load"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JCBGV4GW.js",
+      "retrieved_at": "2026-09-06T23:11:28.357854+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JCBGV4GW.js",
+      "bytes": 656516,
+      "sha256": "72a2af10dd86dd8f18bb52389c17c636f5369772a16b45f6177b013b0e24faf9",
+      "excerpts": [
+        "totalResults=u.length,l.mandates=u.slice(s,c),ve(l)}getReferenceData(t){let r=new Nu,i=Object.keys(r),s={};i.forEach(c=>s[c]=new Set);for(let c of I0)if(c.language===t)for(let u of i){let l=s[u];typeof c[u]==\"string\"?l.add(c[u]):c[u].forEach(l.add,l)}return i.forEach(c=>r[c]=Array.from(s[c])),ve(r)}getDocument(t){for(let r of I0)if(r.reference===t)return ve(r)}static{this.\\u0275fac=function(r){return new(r||e)}}static{this.\\u0275prov=Y({token:e,factory:e.\\u0275fac,providedIn:\"root\"})}}return e})();var UCe=(()=>{class e{constructor(){this.config=N(Dn),this.documentMock=N(KL),this.httpClient=N(vi)}searchDocuments(t,r=1,i=this.config.modules.shared.defaultPageSize){if(this.config.modules.shared.mockData)return this.documentMock.searchDocuments(t,r,i);let s=this.config.modules.shared.corporateSearch.apiUrl+this.config.modules.shared.searchDocumentUrlPath,c=new Xd().append(\"query\",t.getQuery()).append(\"languages\",t.getLanguages()).append(\"sort\",t.getSort()).build(),u=new zn().append(\"apiKey\",this.config.modules.shared.corporateSearch.apiKey).append(\"text\",\"*\").append(\"pageNumber\",r.toString()).append(\"pageSize\",i.toString());return this.httpClient.post(s,c,{params:u}).pipe(De(l=>e.mapSearchResults(l,this.config.modules.shared.defaultPageSize)))}getReferenceData(t){if(this.config.modules.shared.mockData)return this.documentMock.getReferenceData(t);let r=this.config.modules.shared.corporateSearch.apiUrl+this.config.modules.shared.referenceDataUrlPath,i=new Xd().append(\"languages\",[t]).build(),s=new zn().append(\"apiKey\",this.config.modules.shared.corporateSearch.apiKey).append(\"text\",\"*\").append(\"sort\",\"ALPHABETICAL\");return this.httpClient.post(r,i,{params:s}).pipe(De(e.mapReferenceData))}getDocument(t){if(this.config.modules.shared.mockData)return this.documentMock.getDocument(t);let r=t",
+        "his.config.modules.shared.corporateSearch.apiUrl+this.config.modules.shared.documentsUrlPath+\"/\"+t,i=new zn().append(\"apiKey\",this.config.modules.shared.corporateSearch.apiKey);return this.httpClient.get(r,{params:i}).pipe(De(e.mapMandate),Lr(s=>{if(this.isNoResultFoundError(s))return ve(null);throw s}))}isNoResultFoundError(t){return t instanceof Io&&t.status===mg.BadRequest&&t.error.message===\"No result found\"}static mapSearchResults(t,r){let i=new Ou;return i.totalResults=t.totalResults,i.pageSize=t.pageSize??r,i.pageNumber=t.pageNumber,i.mandates=t.results.map(e.mapMandate),i}static getString(t){return t?.length?t[0]:\"\"}static getBoolean(t){return t?.length?t[0]===qr.true:!1}static getArray(t){return t||[]}static getJsonArray(t){return t?t.map(r=>JSON.parse(r)):[]}static getDate(t){return t?.length&&t[0]?new Date(t[0]):null}static mapMandate(t){let r=t.metadata;return{reference:t.reference,language:t.language,mandateNumber:e.getString(r.mandateNumber),cid:e.getString(r.cid),status:e.getString(r.status),isValid:e.getBoolean(r.isValid),type:e.getString(r.type),adoptionDate:e.getDate(r.adoptionDate),newApproach:e.getBoolean(r.newApproach),title:e.getString(r.title),attachment:e.getString(r.attachment),eso:e.getArray(r.eso),esoDetails:e.getJsonArray(r.esoDetails),policyAreas:e.getArray(r.policyAreas),topics:e.getArray(r.topics),amendedMandates:e.getJsonArray(r.amendedMandates),amendedByMandates:e.getJsonArray(r.amendedByMandates),repealedMandates:e.getJsonArray(r.repealedMandates),repealedByMandates:e.getJsonArray(r.repealedByMandates),intendedPurpose:e.getString(r.intendedPurpose),relatedLegislation:e.getArray(r.relatedLegislation),related"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JCBGV4GW.js",
+      "retrieved_at": "2026-09-06T23:11:36.750167+00:00",
+      "status": 200,
+      "final_url": "https://ec.europa.eu/growth/tools-databases/enorm/chunk-JCBGV4GW.js",
+      "bytes": 656516,
+      "sha256": "72a2af10dd86dd8f18bb52389c17c636f5369772a16b45f6177b013b0e24faf9",
+      "excerpts": [
+        "matches(t[r.name]))).sort(this.getComparator(this.sort))}getLanguages(){return this.languages.value}getQuery(){return new D0(this.query.filter(n=>n.hasValue()).map(n=>n.getTermType()))}getSort(){return this.sort.map(n=>new b0(n.getField(),n.getOrder()))}getSearchDisplay(){let n=[];for(let t of this.query)t.hasChanges()&&(n=n.concat(t.getSearchDisplay()));return n}getQueryParams(){let n=this.query.filter(t=>t.hasChanges()).flatMap(t=>t.getQueryParams()).reduce((t,r)=>(t[r.name]=r.value,t),{});return n.language=this.getLanguages()[0],n}};var WL=class{constructor(n={}){Object.assign(this,n)}getFields(){return[new ef(\"mandateNumber\",this.mandateNumber),new ko(\"cid\",this.cid),new ef(\"title\",this.title),new tf(\"eso\",this.eso),new A0(\"adoptionDate\",this.adoptionDate,this.adoptionDateType),new C0(\"newApproach\",this.newApproach),new ko(\"policyAreas\",this.policyAreas),new ko(\"topics\",this.topics),new ko(\"relatedLegislation\",this.relatedLegislation),new _0(\"isValid\",this.isValid,!0)]}getSortFields(){return[new nf(\"adoptionDate\",\"DESC\"),new nf(\"mandateNumber\",\"DESC\")]}};var sQ=(function(e){return e.StandardViewer=\"STANDARD_VIEWER\",e})(sQ||{});var w0=class{static mandateNumber(n){return\"M/\"+n.mandateNumber}static breadcrumbs(n,t){return t.concat(new Ls(n))}static string(n){return n||\"app.label.none\"}static array(n){return n?.length?n.join(\", \"):\"app.label.none\"}static mandateLink(n){return[\"/mandate\",n]}static decisionLink(n,t,r){let i=new URL(n);return i.searchParams.append(\"ref\",t),i.searchParams.append(\"lang\",r),i.href}};var Ps={reference:\"100_en\",language:\"en\",mandateNumber:\"100\",cid:\"\",status:\"Under execution\",isValid:!0,type:\"Standardisation request\",adoptionDate:null,newApproach:!0,title:\"Empty document\",attachment:\"\",eso:[],esoDetails:[],policyAreas:[],topics:[],amendedMandates:[],amendedByMandates:[],repealedMandates:[],repealedByMandates:[],intendedPurpose:\"\",relatedLegislation:[],relatedLegislationDisplay:[],expirationDate:null},qL=te(B({},Ps),{reference:\"001_en\",mandateNumber:\"001\",title:\"Duplicate document test 1\"}),aQ=te(B({},qL),{title:\"Duplicate document test 2\"}),Po=te(B({},Ps),{reference:\"101_en\",mandateNumber:\"101\",title:\"Test title 101.\",eso:[\"CEN\",\"CENELEC\",\"ETSI\"],esoDetails:[{name:\"CEN\",decision:!0},{name:\"CENELEC\",decision:!0},{name:\"ETSI\",decision:!0}],policyAreas:[\"Mechanical equipment\",\"Security industrial policy\",\"Public procurement\"],topics:[\"Test\",\"Test2\"],relatedLegislation:[\"Commission Regulation (EU) 2019/424\"]}),Vo=te(B({},Ps),{reference:\"575_en\",mandateNumber:\"575\",cid:\"C(2021)2406\",adoptionDate:new Date(\"2021-04-14T12:00:00.000Z\"),title:\"CO",
+        "corporateSearch.apiUrl+this.config.modules.shared.searchDocumentUrlPath,c=new Xd().append(\"query\",t.getQuery()).append(\"languages\",t.getLanguages()).append(\"sort\",t.getSort()).build(),u=new zn().append(\"apiKey\",this.config.modules.shared.corporateSearch.apiKey).append(\"text\",\"*\").append(\"pageNumber\",r.toString()).append(\"pageSize\",i.toString());return this.httpClient.post(s,c,{params:u}).pipe(De(l=>e.mapSearchResults(l,this.config.modules.shared.defaultPageSize)))}getReferenceData(t){if(this.config.modules.shared.mockData)return this.documentMock.getReferenceData(t);let r=this.config.modules.shared.corporateSearch.apiUrl+this.config.modules.shared.referenceDataUrlPath,i=new Xd().append(\"languages\",[t]).build(),s=new zn().append(\"apiKey\",this.config.modules.shared.corporateSearch.apiKey).append(\"text\",\"*\").append(\"sort\",\"ALPHABETICAL\");return this.httpClient.post(r,i,{params:s}).pipe(De(e.mapReferenceData))}getDocument(t){if(this.config.modules.shared.mockData)return this.documentMock.getDocument(t);let r=this.config.modules.shared.corporateSearch.apiUrl+this.config.modules.shared.documentsUrlPath+\"/\"+t,i=new zn().append(\"apiKey\",this.config.modules.shared.corporateSearch.apiKey);return this.httpClient.get(r,{params:i}).pipe(De(e.mapMandate),Lr(s=>{if(this.isNoResultFoundError(s))return ve(null);throw s}))}isNoResultFoundError(t){return t instanceof Io&&t.status===mg.BadRequest&&t.error.message===\"No result found\"}static mapSearchResults(t,r){let i=new Ou;return i.totalResults=t.totalResults,i.pageSize=t.pageSize??r,i.pageNumber=t.pageNumber,i.mandates=t.results.map(e.mapMandate),i}static getString(t){return t?.length?t[0]:\"\"}static getBoolean(t){return t?.length?t[0]===qr.true:!1}static getArray(t){return t||[]}static getJsonArray(t){return t?t.map(r=>JSON.parse(r)):[]}static getDate(t){return t?.length&&t[0]?new Date(t[0]):null}static mapMandate(t){let r=t.metadata;return{reference:t.reference,language:t.language,mandateNumber:e.getString(r.mandateNumber),cid:e.getString(r.cid),status:e.getString(r.status),isValid:e.getBoolean(r.isValid),type:e.getString(r.type),adoptionDate:e.getDate(r.adoptionDate),newApproach:e.getBoolean(r.newApproach),title:e.getString(r.title),attachment:e.getString(r.attachment),eso:e.getArray(r.eso),esoDetails:e.getJsonArray(r.esoDetails),policyAreas:e.getArray(r.policyAreas),topics:e.getArray(r.topics),amendedMandates:e.getJsonArray(r.amendedMandates),amendedByMandates:e.getJsonArray(r.amendedByMandates),repealedMandates:e.getJsonArray(r.repealedMandates),repealedByMandates:e.getJsonArray(r.repealedByMandates),intendedPurpose:e.getStrin"
+      ]
+    },
+    {
+      "url": "https://webgate.ec.europa.eu/es/search-api/rest/document/613_en?apiKey=ENORM_PROD",
+      "retrieved_at": "2026-09-06T23:11:41.808007+00:00",
+      "status": 200,
+      "final_url": "https://webgate.ec.europa.eu/es/search-api/rest/document/613_en?apiKey=ENORM_PROD",
+      "bytes": 2505,
+      "sha256": "7a1d5ea1fc226646670b8b6c224708b53bf9481124a3501234f5e8233cd31bf8"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "council-decision-82-878-eec-esprit-pilot-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31982D0878",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T23:50:05.002928+01:00",
+  "last_verified_at": "2026-09-06T22:54:17Z",
+  "verification_note": "Official identity, dates, cited operative provisions and status qualifications inspected. Captured SHA-256 fed84f179fee07abad645d640a5634f84975270719245e829f211172554f9961; receipt in research/reviews/2026-09-06-candidate-snapshot/root-source-checks.json. The original act and later status evidence are not conflated."
+}

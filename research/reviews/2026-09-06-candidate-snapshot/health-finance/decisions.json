@@ -1,0 +1,89 @@
+{
+  "reviewed_at": "2026-09-06T22:52:47Z",
+  "reviewed_by": "AI-assisted evidence review",
+  "coverage_cutoff": "2026-09-04",
+  "decisions": [
+    {
+      "id": "hma-ema-llm-guiding-principles-2024",
+      "decision": "included",
+      "document_id": "hma-ema-llm-guiding-principles-2024",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High, subject to parent integration and canonical validation.",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied."
+    },
+    {
+      "id": "ema-fda-good-ai-practice-drug-development-2026",
+      "decision": "included",
+      "document_id": "ema-fda-good-ai-practice-drug-development-2026",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High, subject to parent integration and canonical validation.",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied."
+    },
+    {
+      "id": "draft-gmp-annex-22-artificial-intelligence-2025",
+      "decision": "included",
+      "document_id": "draft-gmp-annex-22-artificial-intelligence-2025",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High, subject to parent integration and canonical validation.",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied."
+    },
+    {
+      "id": "eiopa-big-data-motor-health-insurance-2019",
+      "decision": "included",
+      "document_id": "eiopa-big-data-motor-health-insurance-2019",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High, subject to parent integration and canonical validation.",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied."
+    },
+    {
+      "id": "ema-2024-ai-observatory-report-2025",
+      "decision": "included",
+      "document_id": "ema-2024-ai-observatory-report-2025",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High, subject to parent integration and canonical validation.",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied."
+    },
+    {
+      "id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "decision": "included",
+      "document_id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High, subject to parent integration and canonical validation.",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied."
+    },
+    {
+      "id": "eba-ai-act-mapping-letter-2025",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High identity/content confidence; unresolved exact publication date.",
+      "decision_reason": "The nine-page EBA/2025/D/5384 letter prints 21 November 2025 and the directly retrieved correspondence archive associates it with 21/11/2025. The directly retrieved publication catalogue associates the same work with 20 November 2025. Neither date can be silently promoted to a settled publication date.",
+      "reopening_criterion": "Obtain document-specific EBA release/register evidence explaining whether 20 November is catalogue metadata, initial publication or an error and whether 21 November is dispatch/issue alone; alternatively a dated official correction resolves the discrepancy."
+    },
+    {
+      "id": "ecb-ai-financial-stability-special-feature-2024",
+      "decision": "pending",
+      "document_id": null,
+      "merged_into_document_id": null,
+      "reviewed_at": "2026-09-06T22:52:47Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "confidence": "High identity, complete-text and named-author confidence; unresolved article-level release date.",
+      "decision_reason": "Fresh complete HTML reveals article-specific meta name citation_online_date content 15 May 2024 (HTML line29), absent from the prior discovery memo. The official FSR launch announcement states volume publication on 16 May2024. This could reflect an online article manifestation preceding the volume or inconsistent metadata; neither explanation is verified. The HTML also contains a placeholder citation_doi, so its metadata cannot be assumed infallible.",
+      "reopening_criterion": "Obtain a document-specific ECB release record or corroborated manifestation schedule distinguishing the article's 15 May online date from the 16 May volume launch. Then use the exact primary-manifestation publication date and retain the separate volume date explicitly."
+    }
+  ]
+}

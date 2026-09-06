@@ -71,7 +71,8 @@ def test_defence_records_preserve_publication_and_personal_authorship(exported):
 
 def test_pending_discoveries_do_not_enter_public_documents(exported):
     rows = {d["id"] for d in exported["documents"]}
-    assert exported["coverage"]["unresolved_candidates"] == 34
+    assert exported["coverage"]["unresolved_candidates"] == 8
     assert "gpai-provider-guidelines-c-2025-7719" not in rows
-    assert "jrc-ai-watch-defining-ai-2020" not in rows
-    assert len(rows) == 192
+    assert "draft-gmp-annex-22-artificial-intelligence-2025" not in rows
+    assert "jrc-ai-watch-defining-ai-2020" in rows
+    assert len(rows) == 218

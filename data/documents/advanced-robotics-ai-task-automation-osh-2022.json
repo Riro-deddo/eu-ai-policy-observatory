@@ -1,0 +1,163 @@
+{
+  "id": "advanced-robotics-ai-task-automation-osh-2022",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:09Z",
+  "updated_at": "2026-09-06T22:54:09Z",
+  "slug": "advanced-robotics-ai-task-automation-osh-2022",
+  "official_title": "Advanced robotics, artificial intelligence and the automation of tasks: definitions, uses, policies and strategies and Occupational Safety and Health",
+  "short_title": "Advanced robotics, AI and task automation: occupational safety and health",
+  "document_type": "report",
+  "sector_tags": [
+    "employment_and_labour"
+  ],
+  "provenance_tags": [
+    "eu_commissioned_external",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "ISBN 978-92-9479-672-1; DOI 10.2802/681779; TE-RO-22-005-EN-N",
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2022-04-26",
+  "version_label": "Full English report, 71 pages",
+  "version_status": "final",
+  "publication_date": "2022-04-26",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-agency-for-safety-and-health-at-work",
+      "role": "commissioner",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF p.2, explicit commissioning statement"
+    },
+    {
+      "institution_id": "european-agency-for-safety-and-health-at-work",
+      "role": "publisher",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF pp.1-2, agency report imprint"
+    },
+    {
+      "institution_id": "european-agency-for-safety-and-health-at-work",
+      "role": "official_host",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-page",
+      "evidence_locator": "Official report catalogue and English download"
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+    "advanced-robotics-ai-task-automation-osh-2022-official-page"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "agenda_setting",
+    "inclusion_rationale": "The report analyses AI-based systems and advanced robotics for workplace task automation, with a taxonomy, sectoral uses and occupational-safety-and-health policies.",
+    "researcher_notes": "The PDF provides the year 2022 but no exact internal issue day. The official report release of 26 April 2022 is the publication fallback. Project managers Ioannis Anyfantis, Annick Starren and Emmanuelle Brun are not represented as authors. This full report is distinct from the already included AI worker-management report.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:09Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "publication",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-page",
+      "locator": "Official publication page date 26/04/2022",
+      "meaning": "Exact official publication fallback; month/year internal precision is preserved separately."
+    },
+    "publication_date": {
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-page",
+      "locator": "Official publication page date 26/04/2022",
+      "meaning": "Official release of the cited English manifestation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "locator": "PDF p.5 (printed p.4), section 1 Introduction and objectives; chapters 3-5",
+      "rationale": "The report analyses AI-based systems and advanced robotics for workplace task automation, with a taxonomy, sectoral uses and occupational-safety-and-health policies."
+    },
+    {
+      "field": "sector_tags",
+      "value": "employment_and_labour",
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "locator": "PDF p.5 (printed p.4), section 1 Introduction and objectives; chapters 3-5",
+      "rationale": "The report analyses AI-based systems and advanced robotics for workplace task automation, with a taxonomy, sectoral uses and occupational-safety-and-health policies."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_commissioned_external",
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "locator": "PDF p.2 (printed p.1), Authors block",
+      "rationale": "PDF p.2 explicitly names five external authors and states that EU-OSHA commissioned the report."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-page",
+      "locator": "Official publication page date 26/04/2022",
+      "rationale": "Dated official publication and English report availability are evidenced."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "Patricia Helen Rosen",
+      "affiliation": "Federal Institute for Occupational Safety and Health (BAuA)",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF p.2 (printed p.1), Authors block"
+    },
+    {
+      "name": "Eva Heinold",
+      "affiliation": "Federal Institute for Occupational Safety and Health (BAuA)",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF p.2 (printed p.1), Authors block"
+    },
+    {
+      "name": "Elena Fries-Tersch",
+      "affiliation": "Milieu Consulting SRL",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF p.2 (printed p.1), Authors block"
+    },
+    {
+      "name": "Phoebe Moore",
+      "affiliation": "University of Leicester, School of Business",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF p.2 (printed p.1), Authors block"
+    },
+    {
+      "name": "Sascha Wischniewski",
+      "affiliation": "Federal Institute for Occupational Safety and Health (BAuA)",
+      "evidence_source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "evidence_locator": "PDF p.2 (printed p.1), Authors block"
+    }
+  ],
+  "additional_dates": [
+    {
+      "kind": "document_issue",
+      "value": "2022",
+      "precision": "year",
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "locator": "PDF p.2 copyright/year"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "advanced-robotics-ai-task-automation-osh-2022-english-snapshot-20260906",
+      "source_id": "advanced-robotics-ai-task-automation-osh-2022-official-pdf",
+      "retrieved_at": "2026-09-06T23:50:31.926441+01:00",
+      "format": "pdf",
+      "content_hash": "e98a5e22a7143e63262531fa44db97bd1fe6b82e19d83d4d7879101b0d2a098a",
+      "archived_path": null
+    }
+  ]
+}

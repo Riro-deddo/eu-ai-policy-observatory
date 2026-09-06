@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)3871?lang=en",
+    "retrieved_at": "2026-09-06T23:13:47.511386+00:00",
+    "bytes": 3241,
+    "sha256": "314996c619a475617593d93011d40375e5c95301739f6ab99e7055f7588157c2"
+  },
+  {
+    "url": "https://ec.europa.eu/transparency/documents-register/api/search/C(2025)5235?lang=en",
+    "retrieved_at": "2026-09-06T23:13:47.579200+00:00",
+    "bytes": 1358,
+    "sha256": "355200fe38623bf22780e889d3571c6461c851f155f20467cbe26c7e08fcaab0"
+  }
+]

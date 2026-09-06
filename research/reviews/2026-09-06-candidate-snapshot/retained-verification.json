@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-09-06T23:14:33.026096+00:00",
+  "decisions": 4,
+  "changed_decisions": 0,
+  "receipts": 24,
+  "additional_byte_receipts": 2,
+  "full_raw_response_hashes_verified": 4,
+  "retained_pdf_hashes_verified": {
+    "council-init.pdf": "cf7c067d715123cf19e8838443efbb427a64bc812334357635332615fa50e6d9",
+    "council-rev1.pdf": "5d36d0418dc6fd4fc99ec8e1ad064bad3879d829f5c5b04414b083d8ec5b60f0",
+    "standardisation-main.pdf": "617f68127736552ac968804dc2e7dd2293b0bb569fa38ab65cb5b3a0c5178384",
+    "july-original-annex.pdf": "3245f6efbf00694a71bce67ea0b0c66a766428d1f631f9fcbfba9cb76f87dbc3"
+  },
+  "canonical_qualification_kinds_match": true,
+  "scope": "Audit package checks only, not repository tests or publication."
+}

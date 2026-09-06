@@ -1,0 +1,13 @@
+{
+  "id": "jrc-ai-watch-defining-ai-2020-aiwatch-release",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_type": "commission_webpage",
+  "url": "https://ai-watch.ec.europa.eu/publications/defining-artificial-intelligence-10_en",
+  "publisher": "European Commission, Joint Research Centre",
+  "retrieved_at": "2026-09-06T23:50:40.338904+01:00",
+  "last_verified_at": "2026-09-06T23:01:39Z",
+  "verification_note": "Publication date 21 February 2020 is earlier than repository availability27 February, preserved separately. Later linked file date21 January2022 is not the report issue. SHA-256 1d5a6a583133434703d32de91a729afec4122b2e8518a40479b5e4ba35a06ab8; receipt in research/reviews/2026-09-06-candidate-snapshot/root-source-checks.json."
+}

@@ -57,9 +57,9 @@ def test_pipeline_publishes_real_complete_guidelines_work_and_original_routes(pa
     """Catch a cloned section, invented reference, route replacement, or incomplete gate."""
     documents = {row["id"]: row for row in payload["documents"]}
     parent = documents[PARENT_ID]
-    assert len(documents) == 192
+    assert len(documents) == 218
     assert payload["coverage"]["historical_review"] == {
-        "verified": 188,
+        "verified": 214,
         "legacy_review_pending": 4,
     }
     assert parent["slug"] == PARENT_ID

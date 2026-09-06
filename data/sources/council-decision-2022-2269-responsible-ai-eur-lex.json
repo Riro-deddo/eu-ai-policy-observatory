@@ -1,0 +1,13 @@
+{
+  "id": "council-decision-2022-2269-responsible-ai-eur-lex",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_type": "eur_lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2269",
+  "publisher": "Publications Office of the European Union",
+  "retrieved_at": "2026-09-06T23:50:04.999929+01:00",
+  "last_verified_at": "2026-09-06T22:54:17Z",
+  "verification_note": "Official identity, dates, cited operative provisions and status qualifications inspected. Captured SHA-256 ef79d8258c9e72c06510abecb03ded3ff57cee4cb04fe94e932d0048f90bc354; receipt in research/reviews/2026-09-06-candidate-snapshot/root-source-checks.json. The original act and later status evidence are not conflated."
+}

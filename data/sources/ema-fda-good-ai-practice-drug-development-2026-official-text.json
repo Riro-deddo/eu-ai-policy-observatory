@@ -1,0 +1,13 @@
+{
+  "id": "ema-fda-good-ai-practice-drug-development-2026-official-text",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "source_type": "official_pdf",
+  "url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
+  "publisher": "European Medicines Agency",
+  "retrieved_at": "2026-09-06T23:49:36.666641+01:00",
+  "last_verified_at": "2026-09-06T22:52:47Z",
+  "verification_note": "AI-assisted evidence review. Fresh HTTP 200 capture, 580822 bytes, SHA-256 08880e6fe51a0f17ba40168ea21953e5a4b600d97d66e2193000cbc87ab75f99. PDF pp.1-2: evidence generation throughout nonclinical, clinical, post-marketing and manufacturing phases; ten AI governance, validation and monitoring principles. Capture retained outside canonical data; no public archive guarantee. Exact receipt in candidate-health-finance-20260906 audit. PDF extraction recovered with pypdf after optional fitz module was unavailable."
+}

@@ -1,0 +1,121 @@
+{
+  "id": "council-decision-2022-2269-responsible-ai",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "slug": "council-decision-2022-2269-responsible-ai",
+  "official_title": "Council Decision (CFSP) 2022/2269 of 18 November 2022 on Union support for the implementation of a project 'Promoting Responsible Innovation in Artificial Intelligence for Peace and Security'",
+  "short_title": "Responsible AI innovation for peace and security",
+  "document_type": "decision",
+  "sector_tags": [
+    "defence_and_security",
+    "research_and_innovation"
+  ],
+  "provenance_tags": [
+    "eu_institution_authored",
+    "officially_published"
+  ],
+  "record_level": "principal",
+  "official_reference": "Council Decision (CFSP) 2022/2269",
+  "procedure_references": [],
+  "oj_reference": "OJ L 300, 21.11.2022, pp. 11-20",
+  "document_date": "2022-11-18",
+  "version_label": "Official Journal text",
+  "version_status": "final",
+  "publication_date": "2022-11-21",
+  "legal_status": "adopted",
+  "celex": "32022D2269",
+  "eli": "http://data.europa.eu/eli/dec/2022/2269/oj",
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "council-of-the-european-union",
+      "role": "adopter",
+      "evidence_source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "evidence_locator": "Enacting body, heading and signature."
+    },
+    {
+      "institution_id": "high-representative-for-foreign-affairs-and-security-policy",
+      "role": "proposer",
+      "evidence_source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "evidence_locator": "Preamble: Having regard to the proposal from the named proposing institution."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "council-decision-2022-2269-responsible-ai-eur-lex",
+    "council-decision-2022-2269-responsible-ai-status-evidence"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "Article 1 and Annex sections 1-3: responsible civilian AI innovation and risks of diversion or misuse for peace and security, engaging AI research and education communities.",
+    "researcher_notes": "The record preserves the original 2022 OJ text. Current EUR-Lex labels the act In force and links a December 2025 amendment, which changes expiry to 39 months after the contribution agreement and refers to project extension until 31 March 2026. The agreement conclusion date was not established here. Legal status records evidenced adoption, not an unqualified claim of present applicability or a guessed expiry. The amendment is retained as status evidence, not counted as an additional admitted candidate. Concept/policy annotations are not yet completed.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:54:17Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "official_act_date",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "Act heading and signature: 2022-11-18.",
+      "meaning": "Date of the adopted act, separate from publication."
+    },
+    "publication_date": {
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "OJ L 300, 21.11.2022, pp. 11-20",
+      "meaning": "Publication of the cited original English OJ manifestation."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "Article 1 and Annex sections 1-3: responsible civilian AI innovation and risks of diversion or misuse for peace and security, engaging AI research and education communities.",
+      "rationale": "AI is an explicit substantive regulatory or policy object."
+    },
+    {
+      "field": "sector_tags",
+      "value": "defence_and_security",
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "Article 1 and Annex sections 1-3: responsible civilian AI innovation and risks of diversion or misuse for peace and security, engaging AI research and education communities.",
+      "rationale": "Researcher sector classification grounded in operative substantive provisions."
+    },
+    {
+      "field": "sector_tags",
+      "value": "research_and_innovation",
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "Article 1 and Annex sections 1-3: responsible civilian AI innovation and risks of diversion or misuse for peace and security, engaging AI research and education communities.",
+      "rationale": "Researcher sector classification grounded in operative substantive provisions."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_institution_authored",
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "Enacting institution and signature.",
+      "rationale": "Official EU or European Communities act; exact historical adopter retained."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "council-decision-2022-2269-responsible-ai-eur-lex",
+      "locator": "OJ L 300, 21.11.2022, pp. 11-20",
+      "rationale": "Published original Official Journal text."
+    }
+  ],
+  "bibliographic_authors": [],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "council-decision-2022-2269-responsible-ai-status-evidence",
+    "locator": "Original act heading and signature, 18 November 2022; Article 5 conditional expiry. Decision 2025/2539 Article 1 changes the interval to 39 months.",
+    "meaning": "Adoption of the legal act is established. Present validity is not resolved by the original duration alone; conditional expiry and the later amendment are expressly disclosed."
+  }
+}

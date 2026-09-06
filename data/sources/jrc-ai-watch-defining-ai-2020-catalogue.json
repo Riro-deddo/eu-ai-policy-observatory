@@ -1,0 +1,13 @@
+{
+  "id": "jrc-ai-watch-defining-ai-2020-catalogue",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:54:17Z",
+  "updated_at": "2026-09-06T22:54:17Z",
+  "source_type": "publications_office",
+  "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC118163",
+  "publisher": "European Commission, Joint Research Centre",
+  "retrieved_at": "2026-09-06T23:50:04.762853+01:00",
+  "last_verified_at": "2026-09-06T22:54:17Z",
+  "verification_note": "JRC title, identity, Date available, embedded dc.date.available, author list and linked PDF inspected. Captured bytes SHA-256 27a0326d9833eb01c6ea657689899571a47a9b5fc5c8495cc4b2c52b271bbf61; receipt in research/reviews/2026-09-06-candidate-snapshot/root-source-checks.json. Local capture, not a permanent public archive."
+}

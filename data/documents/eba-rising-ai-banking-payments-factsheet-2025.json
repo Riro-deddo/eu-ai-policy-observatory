@@ -1,0 +1,136 @@
+{
+  "id": "eba-rising-ai-banking-payments-factsheet-2025",
+  "entity_type": "document",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "slug": "eba-rising-ai-banking-payments-factsheet-2025",
+  "official_title": "Rising application of AI in EU banking and payments sector",
+  "short_title": "EBA AI adoption in banking and payments",
+  "document_type": "briefing",
+  "record_level": "principal",
+  "sector_tags": [
+    "financial_services"
+  ],
+  "provenance_tags": [
+    "eu_agency_or_body_authored",
+    "officially_published"
+  ],
+  "official_reference": null,
+  "procedure_references": [],
+  "oj_reference": null,
+  "document_date": "2025-09-25",
+  "publication_date": "2025-09-25",
+  "version_label": "Factsheet, 25 September 2025",
+  "version_status": "final",
+  "legal_status": "non_binding",
+  "celex": null,
+  "eli": null,
+  "language": "en",
+  "official_summary": null,
+  "institution_roles": [
+    {
+      "institution_id": "european-banking-authority",
+      "role": "author",
+      "evidence_source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "evidence_locator": "PDF pp.1-2: EBA account of its own AI monitoring and survey findings."
+    },
+    {
+      "institution_id": "european-banking-authority",
+      "role": "publisher",
+      "evidence_source_id": "eba-rising-ai-banking-payments-factsheet-2025-release-evidence",
+      "evidence_locator": "Official catalogue entry linking this exact EBA factsheet."
+    },
+    {
+      "institution_id": "european-banking-authority",
+      "role": "official_host",
+      "evidence_source_id": "eba-rising-ai-banking-payments-factsheet-2025-release-evidence",
+      "evidence_locator": "EBA official PDF and catalogue."
+    }
+  ],
+  "policy_ids": [],
+  "concept_ids": [],
+  "source_ids": [
+    "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+    "eba-rising-ai-banking-payments-factsheet-2025-release-evidence"
+  ],
+  "corpus_assessment": {
+    "corpus_tier": "directly_related",
+    "policy_stage": "implementation",
+    "inclusion_rationale": "PDF pp.1-2: banking/payment AI use cases, creditworthiness, AML/fraud, customer support and GPAI/agentic AI risks, governance, oversight and explanations.",
+    "researcher_notes": "Official document genre is Factsheet; briefing is the closest existing canonical type, rather than overriding the genre with the catalogue description's generic word report. This is a standalone two-page factsheet; no issue-series title is verified in the extracted PDF. It is distinct from the separate November AI Act mapping letter and accompanying factsheet. Named personal author credits were not found. Concept coding and policy-group assignment remain uncompleted; empty arrays do not establish absence.",
+    "review_status": "verified",
+    "reviewed_by": "AI-assisted evidence review",
+    "reviewed_at": "2026-09-06T22:52:47Z"
+  },
+  "historical_review_status": "verified",
+  "temporal_collection": "contemporary_eu_ai_policy",
+  "relevance_class": "direct_ai_substantive",
+  "document_date_kind": "document_issue",
+  "date_evidence": {
+    "document_date": {
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "locator": "PDF p.1: 25/09/2025.",
+      "meaning": "Exact printed document issue date, distinct from publication."
+    },
+    "publication_date": {
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-release-evidence",
+      "locator": "Official filtered catalogue: one result; 25 September 2025; exact title and matching PDF link; Factsheet category.",
+      "meaning": "Official release evidence for this independently citable text."
+    }
+  },
+  "classification_evidence": [
+    {
+      "field": "relevance_class",
+      "value": "direct_ai_substantive",
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "locator": "PDF pp.1-2: banking/payment AI use cases, creditworthiness, AML/fraud, customer support and GPAI/agentic AI risks, governance, oversight and explanations.",
+      "rationale": "AI is a substantive policy or sectoral subject throughout the cited passages."
+    },
+    {
+      "field": "sector_tags",
+      "value": "financial_services",
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "locator": "PDF pp.1-2: banking/payment AI use cases, creditworthiness, AML/fraud, customer support and GPAI/agentic AI risks, governance, oversight and explanations.",
+      "rationale": "Positive researcher classification based on the stated substantive scope."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "eu_agency_or_body_authored",
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "locator": "Corporate attribution and substantive institutional account.",
+      "rationale": "Provenance reflects evidenced production or official publication; hosting is not itself authorship."
+    },
+    {
+      "field": "provenance_tags",
+      "value": "officially_published",
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-release-evidence",
+      "locator": "Official filtered catalogue: one result; 25 September 2025; exact title and matching PDF link; Factsheet category.",
+      "rationale": "Provenance reflects evidenced production or official publication; hosting is not itself authorship."
+    }
+  ],
+  "bibliographic_authors": [
+    {
+      "name": "European Banking Authority",
+      "affiliation": null,
+      "evidence_source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "evidence_locator": "PDF pp.1-2 institutional account of EBA monitoring."
+    }
+  ],
+  "additional_dates": [],
+  "legal_status_evidence": {
+    "source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+    "locator": "Document title and substantive institutional report/factsheet content.",
+    "meaning": "Institutional research or high-level guidance, not a binding legal instrument."
+  },
+  "snapshots": [
+    {
+      "id": "eba-rising-ai-banking-payments-factsheet-2025-capture-20260906",
+      "source_id": "eba-rising-ai-banking-payments-factsheet-2025-official-text",
+      "retrieved_at": "2026-09-06T23:49:37.140527+01:00",
+      "format": "pdf",
+      "content_hash": "f062620ac835a00563686815b2b6a74a30be1554f4433879a22c37f167883320",
+      "archived_path": null
+    }
+  ]
+}

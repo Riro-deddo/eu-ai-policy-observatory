@@ -1,0 +1,78 @@
+{
+  "review_date": "2026-09-06",
+  "reviewer": "AI-assisted evidence review",
+  "language_scope": "English primary documents",
+  "cutoff": "2026-09-04",
+  "candidate_count": 6,
+  "search_scope": "Named-candidate verification only; no institution-wide completeness claim",
+  "query_timestamp_precision": "Search date recorded; individual search start times were not separately persisted. Direct capture receipts contain actual per-request timestamps.",
+  "queries": [
+    {
+      "order": 1,
+      "query": "site:europarl.europa.eu \"Human Rights Implications\" \"03-05-2013\""
+    },
+    {
+      "order": 2,
+      "query": "site:cedefop.europa.eu \"People, machines, robots and skills\""
+    },
+    {
+      "order": 3,
+      "query": "site:osha.europa.eu \"Advanced robotics, artificial intelligence\" \"26/04/2022\""
+    },
+    {
+      "order": 4,
+      "query": "site:cedefop.europa.eu/en/publications \"People, machines, robots and skills\""
+    },
+    {
+      "order": 5,
+      "query": "site:osha.europa.eu/en/publications \"Advanced robotics\" \"26/04/2022\""
+    },
+    {
+      "order": 6,
+      "query": "site:publications.jrc.ec.europa.eu \"JRC126302\""
+    },
+    {
+      "order": 7,
+      "query": "site:research-and-innovation.ec.europa.eu \"Ethics of connected and automated vehicles\""
+    },
+    {
+      "order": 8,
+      "query": "\"Ethics of connected and automated vehicles\" pdf"
+    },
+    {
+      "order": 9,
+      "query": "\"Opportunities and challenges\" \"Written by Deloitte\" pdf"
+    },
+    {
+      "order": 10,
+      "query": "site:europa.eu \"border control, migration and security\" pdf Deloitte"
+    },
+    {
+      "order": 11,
+      "query": "site:europa.eu \"Ethics of connected and automated vehicles\" filetype:pdf"
+    },
+    {
+      "order": 12,
+      "query": "site:europarl.europa.eu \"EXPO/B/DROI/2012/12\" pdf"
+    },
+    {
+      "order": 13,
+      "query": "site:op.europa.eu \"Human rights implications of the usage of drones\""
+    },
+    {
+      "order": 14,
+      "query": "site:europarl.europa.eu \"410220\" \"pdf\" \"Human\""
+    }
+  ],
+  "navigation": "Official pages were opened by candidate URLs from the repository and result links. Captured OP HTML contained data-uri download-handler paths: English pdf was selected, not pdfx or another language. JRC OP download used the matching registered OP UUID, then confirmed DOI, ISBN and JRC reference in the actual file. Batch manifests and receipts preserve all exact direct request URLs, redirects, response types and hashes. Cedefop release metadata was inspected through the web retrieval tool; retained local HTTP pages are challenge responses and must not be cited as if they contained the metadata.",
+  "zero_result": "The exact OP drones-title query returned no results; this is not proof of absence or an exclusion basis.",
+  "irrelevant_results": "A broad Deloitte query returned unrelated commercial results; none was used as decisive evidence. Search results mentioning other reports were not adjudicated.",
+  "institution_url_checks": "The proposed E03659 expert-register URL could not be safely opened by the web tool. The institution draft instead links the inspected official OP report record whose PDF explicitly names E03659. JRC and DG HOME official homepages were opened and returned language selectors.",
+  "source_limitations": [
+    "EP downloads: HTTP 202 and zero-length text/html; web opener robot check.",
+    "JRC repository: HTTP 200 Request Rejected HTML, not a PDF; official OP mirror succeeded.",
+    "Cedefop catalogue: HTTP 200 challenge HTML, but official PDF succeeded and official web extraction provided dated metadata.",
+    "OP border page: browsing initially HTTP 429; direct HTML and PDF captures succeeded.",
+    "EU-OSHA PDF browsing click: timeout; direct PDF retrieval succeeded."
+  ]
+}

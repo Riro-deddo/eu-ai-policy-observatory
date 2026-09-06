@@ -1,0 +1,125 @@
+{
+  "recorded_at": "2026-09-06 22:54:52 UTC",
+  "reviewer": "AI-assisted evidence review",
+  "search_date": "2026-09-06",
+  "coverage_cutoff": "2026-09-04",
+  "scope": {
+    "candidates": [
+      "hma-ema-llm-guiding-principles-2024",
+      "ema-fda-good-ai-practice-drug-development-2026",
+      "draft-gmp-annex-22-artificial-intelligence-2025",
+      "eiopa-big-data-motor-health-insurance-2019",
+      "ema-2024-ai-observatory-report-2025",
+      "eba-rising-ai-banking-payments-factsheet-2025",
+      "eba-ai-act-mapping-letter-2025",
+      "ecb-ai-financial-stability-special-feature-2024"
+    ],
+    "language": "English",
+    "types": [
+      "guidelines",
+      "consultation_document",
+      "report",
+      "institutional_position",
+      "briefing"
+    ],
+    "sectors": [
+      "health",
+      "financial_services"
+    ],
+    "period": "Candidate-specific 2019-2026; no source-family coverage certification"
+  },
+  "methods": [
+    {
+      "order": 1,
+      "method": "Read assigned inventory records and prior health-finance discovery memo; inspect canonical document exemplars and institution/source IDs.",
+      "limitations": "Prior memo used for navigation, not substituted for fresh evidence."
+    },
+    {
+      "order": 2,
+      "method": "Web search",
+      "exact_queries": [
+        "site.ema.europa.eu \"guiding principles\" \"5 September 2024\"",
+        "site.ema.europa.eu \"Guiding principles of good AI practice\" \"14\"",
+        "site.eba.europa.eu \"Rising application\" \"25 September\"",
+        "site.eiopa.europa.eu \"Big Data Analytics\" \"8 May 2019\""
+      ],
+      "result_evidence": "EMA/EIOPA release pages and EBA one-result Factsheet catalogue identified; non-primary hits ignored.",
+      "pagination": "Not exhaustive; ranked discovery results only."
+    },
+    {
+      "order": 3,
+      "method": "Fresh direct open through web tool",
+      "exact_urls": [
+        "https://www.ema.europa.eu/en/documents/other/guiding-principles-use-large-language-models-regulatory-science-medicines-regulatory-activities_en.pdf",
+        "https://www.ema.europa.eu/en/news/harnessing-ai-medicines-regulation-use-large-language-models-llms",
+        "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
+        "https://www.ema.europa.eu/en/documents/report/2024-ai-observatory-report_en.pdf",
+        "https://www.eba.europa.eu/sites/default/files/2025-09/146b3558-d026-47bf-a872-f05e93ed30d2/Rising%20application%20of%20AI%20in%20EU%20banking%20and%20payments%20sector.pdf",
+        "https://health.ec.europa.eu/consultations/stakeholders-consultation-eudralex-volume-4-good-manufacturing-practice-guidelines-chapter-4-annex_en",
+        "https://www.eiopa.europa.eu/eiopa-reviews-use-big-data-analytics-motor-and-health-insurance-2019-05-08_en"
+      ],
+      "result_evidence": "LLM PDF and release and Commission consultation opened. EMA FDA/Observatory returned internal errors; EBA factsheet 403; EIOPA release429. Subsequent direct byte capture recovered all of them.",
+      "limitations": "Tool paths differ; failed web-tool requests do not negate successful direct captures."
+    },
+    {
+      "order": 4,
+      "method": "Direct HTTPS capture of eight assigned primary URLs and six official release/catalogue pages, using capture.py",
+      "receipt": "receipts.json",
+      "result_evidence": "All14 HTTP200 with actual bytes and SHA256. Seven PDF extractor attempts reported missing fitz only after bytes were saved. extract.py recovered complete text using pypdf.",
+      "pagination": "Correspondence archive single page; exact work entry inspected. Captures do not establish comprehensive archive review."
+    },
+    {
+      "order": 5,
+      "method": "Web search for institutional identities and exact EBA discrepancy",
+      "exact_queries": [
+        "site.ema.europa.eu \"Good Manufacturing and Distribution Practice Inspectors Working Group\"",
+        "site.ema.europa.eu \"Pharmaceutical Inspection Co-operation Scheme\" \"PIC/S\"",
+        "site.eba.europa.eu \"Outcome of EBA\" \"20 November 2025\""
+      ],
+      "result_evidence": "EMA group/profile pages and EBA publication catalogue page46 identified; captured fresh using supplement.py.",
+      "receipt": "supplement-receipts.json",
+      "pagination": "EBA page46 is the bounded observed page; not a sweep of all pages."
+    },
+    {
+      "order": 6,
+      "method": "Primary HTML metadata and exact PDF page inspection",
+      "result_evidence": "EMA first-published fields and PDF issue dates checked separately; EBA factsheet one-result catalogue links matching bytes; EIOPA release states report published today8May2019; EBA letter discrepancy21/20Nov preserved; ECB article citation_online_date15May2024 newly identified against volume16May launch.",
+      "limitations": "Unresolved discrepancies retained as pending. No release chronology inferred from file creation/modification timestamps."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "hma-ema-llm-guiding-principles-2024",
+      "decision": "included"
+    },
+    {
+      "id": "ema-fda-good-ai-practice-drug-development-2026",
+      "decision": "included"
+    },
+    {
+      "id": "draft-gmp-annex-22-artificial-intelligence-2025",
+      "decision": "included"
+    },
+    {
+      "id": "eiopa-big-data-motor-health-insurance-2019",
+      "decision": "included"
+    },
+    {
+      "id": "ema-2024-ai-observatory-report-2025",
+      "decision": "included"
+    },
+    {
+      "id": "eba-rising-ai-banking-payments-factsheet-2025",
+      "decision": "included"
+    },
+    {
+      "id": "eba-ai-act-mapping-letter-2025",
+      "decision": "pending"
+    },
+    {
+      "id": "ecb-ai-financial-stability-special-feature-2024",
+      "decision": "pending"
+    }
+  ],
+  "timing_note": "Actual capture timestamps are recorded per request. Individual web-search clock times were not logged separately; search_date is known from this run and no exact earlier timestamps are reconstructed."
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "id": "hma-ema-llm-guiding-principles-2024",
+    "url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-use-large-language-models-regulatory-science-medicines-regulatory-activities_en.pdf",
+    "retrieved_at": "2026-09-06T22:49:36.665638+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-use-large-language-models-regulatory-science-medicines-regulatory-activities_en.pdf",
+    "content_type": "application/pdf",
+    "bytes": 203261,
+    "sha256": "a624cf53d374dc7b7d78eae92b5e783f36b82099e7fb82ca0f7238e81a45f24a",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "ema-fda-good-ai-practice-drug-development-2026",
+    "url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
+    "retrieved_at": "2026-09-06T22:49:36.666641+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
+    "content_type": "application/pdf",
+    "bytes": 580822,
+    "sha256": "08880e6fe51a0f17ba40168ea21953e5a4b600d97d66e2193000cbc87ab75f99",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "draft-gmp-annex-22-artificial-intelligence-2025",
+    "url": "https://health.ec.europa.eu/document/download/5f38a92d-bb8e-4264-8898-ea076e926db6_en?filename=mp_vol4_chap4_annex22_consultation_guideline_en.pdf",
+    "retrieved_at": "2026-09-06T22:49:36.666641+00:00",
+    "status": 200,
+    "final_url": "https://health.ec.europa.eu/document/download/5f38a92d-bb8e-4264-8898-ea076e926db6_en?filename=mp_vol4_chap4_annex22_consultation_guideline_en.pdf",
+    "content_type": "application/pdf",
+    "bytes": 211990,
+    "sha256": "284729b4601b748b6b4238c8aef161ad2d3361ee08c9254cb6e9d8a7ef2e6814",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "eiopa-big-data-motor-health-insurance-2019",
+    "url": "https://register.eiopa.europa.eu/Publications/EIOPA_BigDataAnalytics_ThematicReview_April2019.pdf",
+    "retrieved_at": "2026-09-06T22:49:36.666641+00:00",
+    "status": 200,
+    "final_url": "https://register.eiopa.europa.eu/Publications/EIOPA_BigDataAnalytics_ThematicReview_April2019.pdf",
+    "content_type": "application/pdf",
+    "bytes": 3037963,
+    "sha256": "6b30027da9863aea7b1e6b229a4ceb205193d67ad37bdfbc70f223108bb20ba8",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "eba-ai-act-mapping-letter-2025",
+    "url": "https://www.eba.europa.eu/sites/default/files/2025-11/2019d1b5-59f8-4149-ad3b-23cfcd4388a1/EBA%2520Chair%2520letter%2520to%2520Mr%2520Berrigan%2520and%2520Mr%2520Viola%2520on%2520outcome%2520of%2520EBA%25E2%2580%2599s%2520AI%2520Act%2520mapping%2520exercise.pdf",
+    "retrieved_at": "2026-09-06T22:49:36.912287+00:00",
+    "status": 200,
+    "final_url": "https://www.eba.europa.eu/sites/default/files/2025-11/2019d1b5-59f8-4149-ad3b-23cfcd4388a1/EBA%2520Chair%2520letter%2520to%2520Mr%2520Berrigan%2520and%2520Mr%2520Viola%2520on%2520outcome%2520of%2520EBA%25E2%2580%2599s%2520AI%2520Act%2520mapping%2520exercise.pdf",
+    "content_type": "application/pdf",
+    "bytes": 862896,
+    "sha256": "28b5eb1952c439b72c64144f4fbd79ec9485c5753afd59ecf1056808e202a333",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "ecb-ai-financial-stability-special-feature-2024",
+    "url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202405_02~58c3ce5246.en.html",
+    "retrieved_at": "2026-09-06T22:49:37.008872+00:00",
+    "status": 200,
+    "final_url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202405_02~58c3ce5246.en.html",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 169445,
+    "sha256": "10b2ce07c0e5855368acaa9983134f4d6e1896353c258ae1e1014808a518d9a8"
+  },
+  {
+    "id": "ema-2024-ai-observatory-report-2025",
+    "url": "https://www.ema.europa.eu/en/documents/report/2024-ai-observatory-report_en.pdf",
+    "retrieved_at": "2026-09-06T22:49:37.033388+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/documents/report/2024-ai-observatory-report_en.pdf",
+    "content_type": "application/pdf",
+    "bytes": 170997,
+    "sha256": "9d4b2fbd28d0ca96a8388c12405f04b79f337a189ff7da43b7daeb0c56117665",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "eba-rising-ai-banking-payments-factsheet-2025",
+    "url": "https://www.eba.europa.eu/sites/default/files/2025-09/146b3558-d026-47bf-a872-f05e93ed30d2/Rising%20application%20of%20AI%20in%20EU%20banking%20and%20payments%20sector.pdf",
+    "retrieved_at": "2026-09-06T22:49:37.140527+00:00",
+    "status": 200,
+    "final_url": "https://www.eba.europa.eu/sites/default/files/2025-09/146b3558-d026-47bf-a872-f05e93ed30d2/Rising%20application%20of%20AI%20in%20EU%20banking%20and%20payments%20sector.pdf",
+    "content_type": "application/pdf",
+    "bytes": 860317,
+    "sha256": "f062620ac835a00563686815b2b6a74a30be1554f4433879a22c37f167883320",
+    "error": "No module named 'fitz'"
+  },
+  {
+    "id": "ema-llm-release",
+    "url": "https://www.ema.europa.eu/en/news/harnessing-ai-medicines-regulation-use-large-language-models-llms",
+    "retrieved_at": "2026-09-06T22:49:37.334013+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/news/harnessing-ai-medicines-regulation-use-large-language-models-llms",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 67689,
+    "sha256": "052a350bd7c161947eb11e4bd05e03853da52c7d6748dac8544563ce712e8115"
+  },
+  {
+    "id": "ema-ai-catalogue",
+    "url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence",
+    "retrieved_at": "2026-09-06T22:49:37.431201+00:00",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 104048,
+    "sha256": "e7c169f99f4e0c5373c58a89373c35ea1f8e31716fdd7be16ec7bdfb752141d1"
+  },
+  {
+    "id": "gmp-consultation",
+    "url": "https://health.ec.europa.eu/consultations/stakeholders-consultation-eudralex-volume-4-good-manufacturing-practice-guidelines-chapter-4-annex_en",
+    "retrieved_at": "2026-09-06T22:49:37.457202+00:00",
+    "status": 200,
+    "final_url": "https://health.ec.europa.eu/consultations/stakeholders-consultation-eudralex-volume-4-good-manufacturing-practice-guidelines-chapter-4-annex_en",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 74198,
+    "sha256": "8e972708ffd08ae8216f65dc4c08efe3419328e5b4c2f8bfd30848cf300dd4ab"
+  },
+  {
+    "id": "eiopa-release",
+    "url": "https://www.eiopa.europa.eu/eiopa-reviews-use-big-data-analytics-motor-and-health-insurance-2019-05-08_en",
+    "retrieved_at": "2026-09-06T22:49:37.507199+00:00",
+    "status": 200,
+    "final_url": "https://www.eiopa.europa.eu/eiopa-reviews-use-big-data-analytics-motor-and-health-insurance-2019-05-08_en",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 93558,
+    "sha256": "3f8bd75bfee1646e68752c81e4fc207b064a162e070d2380719bad4c63c5ecf4"
+  },
+  {
+    "id": "eba-correspondence",
+    "url": "https://www.eba.europa.eu/about-us/organisation-and-governance/accountability/correspondence/archive",
+    "retrieved_at": "2026-09-06T22:49:37.562233+00:00",
+    "status": 200,
+    "final_url": "https://www.eba.europa.eu/about-us/organisation-and-governance/accountability/correspondence/archive",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 125536,
+    "sha256": "75d30f85c0f83b846ed494e14905d55402f2df51a4744741cc2b1df0e2e66a0d"
+  },
+  {
+    "id": "ecb-release",
+    "url": "https://www.ecb.europa.eu/press/pr/date/2024/html/ecb.pr240516~b140d28dd6.en.html",
+    "retrieved_at": "2026-09-06T22:49:37.604230+00:00",
+    "status": 200,
+    "final_url": "https://www.ecb.europa.eu/press/pr/date/2024/html/ecb.pr240516~b140d28dd6.en.html",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 106214,
+    "sha256": "a220ece33cbcd530071c361cb88a8ee1735f92de6a5c906da78dd11ad0d362c1"
+  }
+]

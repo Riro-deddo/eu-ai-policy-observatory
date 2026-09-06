@@ -1,0 +1,13 @@
+{
+  "id": "eba-rising-ai-banking-payments-factsheet-2025-release-evidence",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "source_type": "official_register",
+  "url": "https://www.eba.europa.eu/search?f%5B0%5D=date%3A2025-09&f%5B1%5D=document_type%3A5606&f%5B2%5D=type%3ADocuments",
+  "publisher": "European Banking Authority",
+  "retrieved_at": "2026-09-06T23:51:15.81941+01:00",
+  "last_verified_at": "2026-09-06T22:52:47Z",
+  "verification_note": "AI-assisted evidence review. Fresh HTTP 200 capture, 53945 bytes, SHA-256 566515e89ee2e8e6108aaa2062510eedf07740554bee6d9811dfcc08a2e0dd57. Official filtered catalogue: one result; 25 September 2025; exact title and matching PDF link; Factsheet category. Capture retained outside canonical data; no public archive guarantee. Exact receipt in candidate-health-finance-20260906 audit. PDF extraction recovered with pypdf after optional fitz module was unavailable."
+}

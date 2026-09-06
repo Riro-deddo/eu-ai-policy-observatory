@@ -40,8 +40,11 @@ test('principal and expanded family views preserve membership, context and recor
   assert.equal(principal.nodes.length, 9);
   assert.equal(principal.edges.length, 7);
   assert.ok(principal.nodes.every((node) => !node.context && node.level === 'principal'));
-  assert.equal(all.memberCount, 40);
-  assert.equal(all.nodes.length, 49);
+  assert.equal(all.memberCount, 49);
+  assert.equal(all.nodes.length, 58);
+  for (const number of ['732802', '732836', '732837', '732838', '732839', '732840', '732841', '732843', '732844']) {
+    assert.ok(all.nodes.some((node) => node.entityId === 'ep-ai-act-committee-amendments-pe-' + number));
+  }
   assert.ok(all.nodes.filter((node) => node.context).every((node) => !node.policyIds.includes(family)));
 });
 

@@ -90,7 +90,10 @@ def test_ledger_preserves_routes_and_retains_unadmitted_holds(payload):
     six_record_update = json.loads(SIX_RECORD_LEDGER.read_text(encoding="utf-8"))
     assert routes.items() <= current_routes.items()
     backfill = json.loads((ROOT / "research/migrations/2026-09-06-academic-backfill.json").read_text(encoding="utf-8"))
-    assert set(current_routes) - set(routes) == set(six_record_update["new_document_ids"]) | set(backfill["admitted_ids"])
+    candidate_review = json.loads((ROOT / "research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json").read_text(encoding="utf-8"))
+    newly_admitted = {row["document_id"] for row in candidate_review["decisions"] if row["decision"] == "included"}
+    assert len(newly_admitted) == 26
+    assert set(current_routes) - set(routes) == set(six_record_update["new_document_ids"]) | set(backfill["admitted_ids"]) | newly_admitted
     receipts = {row["document_id"]: row for row in ledger["evidence_receipts"]}
     assert set(receipts) == set(ledger["upgraded_ids"])
     for receipt in receipts.values():

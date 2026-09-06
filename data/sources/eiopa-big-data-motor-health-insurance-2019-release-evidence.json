@@ -1,0 +1,13 @@
+{
+  "id": "eiopa-big-data-motor-health-insurance-2019-release-evidence",
+  "entity_type": "source",
+  "publication_status": "published",
+  "created_at": "2026-09-06T22:52:47Z",
+  "updated_at": "2026-09-06T22:52:47Z",
+  "source_type": "official_register",
+  "url": "https://www.eiopa.europa.eu/eiopa-reviews-use-big-data-analytics-motor-and-health-insurance-2019-05-08_en",
+  "publisher": "European Insurance and Occupational Pensions Authority",
+  "retrieved_at": "2026-09-06T23:49:37.507199+01:00",
+  "last_verified_at": "2026-09-06T22:52:47Z",
+  "verification_note": "AI-assisted evidence review. Fresh HTTP 200 capture, 93558 bytes, SHA-256 3f8bd75bfee1646e68752c81e4fc207b064a162e070d2380719bad4c63c5ecf4. 8 May 2019 release, opening paragraph and related-resource link to this thematic review. Capture retained outside canonical data; no public archive guarantee. Exact receipt in candidate-health-finance-20260906 audit. PDF extraction recovered with pypdf after optional fitz module was unavailable."
+}

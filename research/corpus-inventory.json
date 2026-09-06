@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T22:21:51Z",
+  "generated_at": "2026-09-06T23:01:39Z",
   "candidates": [
     {
       "source_ids": [
@@ -137,22 +137,32 @@
       "year": 2024,
       "issuing_institution": "European Medicines Agency; Heads of Medicines Agencies",
       "record_level": "principal",
-      "version_label": "Published guiding principles (2024); no numbered version established",
+      "version_label": "First published guiding principles",
       "official_source_url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-use-large-language-models-regulatory-science-medicines-regulatory-activities_en.pdf",
       "commissioning_body": null,
-      "candidate_provenance": "joint_institutional",
+      "candidate_provenance": "eu_agency_or_body_authored",
       "provisional_sector_tags": [
         "health",
         "public_administration",
         "research_and_innovation"
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
-      "decision": "pending",
-      "decision_reason": "Reconciliation of the bounded omission search, not an assertion of nonexistence. Full official 10-page PDF was retrieved and its cover establishes issue on 29 August 2024. Publication on 5 September 2024 is corroborated by indexed official EMA catalogue/announcement evidence, but direct release-page retrieval returned 429. Parent-level source preservation, publication evidence review and canonical admission remain incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 2, for exact official URLs, locators and retrieval limitations. Timestamps here record inventory reconciliation, not reconstructed first discovery.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "hma-ema-llm-guiding-principles-2024",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Reconciliation of the bounded omission search, not an assertion of nonexistence. Full official 10-page PDF was retrieved and its cover establishes issue on 29 August 2024. Publication on 5 September 2024 is corroborated by indexed official EMA catalogue/announcement evidence, but direct release-page retrieval returned 429. Parent-level source preservation, publication evidence review and canonical admission remain incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 2, for exact official URLs, locators and retrieval limitations. Timestamps here record inventory reconciliation, not reconstructed first discovery.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "ema-fda-good-ai-practice-drug-development-2026",
@@ -164,22 +174,32 @@
       "year": 2026,
       "issuing_institution": "European Medicines Agency; U.S. Food and Drug Administration",
       "record_level": "principal",
-      "version_label": "Published joint guiding principles, January 2026",
+      "version_label": "January 2026 guiding principles",
       "official_source_url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
       "commissioning_body": null,
-      "candidate_provenance": "joint_institutional",
+      "candidate_provenance": "eu_agency_or_body_authored",
       "provisional_sector_tags": [
         "health",
         "research_and_innovation",
         "industry_and_manufacturing"
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
-      "decision": "pending",
-      "decision_reason": "Reconciliation of an identified joint EMA/FDA work. The official FDA co-author's complete two-page PDF and official release bulletin were retrieved, establishing January 2026 issue precision and release on 14 January 2026; EMA's document-specific indexed catalogue agrees. Direct EMA PDF retrieval returned 429. Parent review of the EU manifestation, institutional roles and permitted official co-author corroboration is incomplete; byte equivalence was not tested and the agency manifestations differ in spelling. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 3, including https://www.fda.gov/media/189581/download and https://content.govdelivery.com/accounts/USFDA/bulletins/4045c84. Timestamps record inventory reconciliation.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ema-fda-good-ai-practice-drug-development-2026",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Reconciliation of an identified joint EMA/FDA work. The official FDA co-author's complete two-page PDF and official release bulletin were retrieved, establishing January 2026 issue precision and release on 14 January 2026; EMA's document-specific indexed catalogue agrees. Direct EMA PDF retrieval returned 429. Parent review of the EU manifestation, institutional roles and permitted official co-author corroboration is incomplete; byte equivalence was not tested and the agency manifestations differ in spelling. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 3, including https://www.fda.gov/media/189581/download and https://content.govdelivery.com/accounts/USFDA/bulletins/4045c84. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "draft-gmp-annex-22-artificial-intelligence-2025",
@@ -201,11 +221,21 @@
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
       "decision": "pending",
-      "decision_reason": "The complete official six-page consultation draft and its Commission consultation page were retrieved. The page establishes consultation opening on 7 July 2025, while no exact printed document issue day was found; 1 July dates a separate privacy statement and must not be reused. This is a draft, with no final adoption verified. Parent review of the consultation-release fallback, precise drafting/publishing roles and canonical admission remains incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 4, and its linked official consultation/date locators. Timestamps record inventory reconciliation.",
+      "decision_reason": "Official draft text, release date and drafting roles established. Independent review identified unresolved annex/parent boundary: the text is Annex22 to EudraLex Volume4, while independently linked publication alone does not justify principal classification under the existing dictionary. No admission or schema exception applied. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "The complete official six-page consultation draft and its Commission consultation page were retrieved. The page establishes consultation opening on 7 July 2025, while no exact printed document issue day was found; 1 July dates a separate privacy statement and must not be reused. This is a draft, with no final adoption verified. Parent review of the consultation-release fallback, precise drafting/publishing roles and canonical admission remains incomplete. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 4, and its linked official consultation/date locators. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "eiopa-big-data-motor-health-insurance-2019",
@@ -217,21 +247,31 @@
       "year": 2019,
       "issuing_institution": "European Insurance and Occupational Pensions Authority",
       "record_level": "principal",
-      "version_label": "Published thematic review (2019)",
+      "version_label": "Published thematic review",
       "official_source_url": "https://register.eiopa.europa.eu/Publications/EIOPA_BigDataAnalytics_ThematicReview_April2019.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
       "provisional_sector_tags": [
-        "financial_services",
-        "health"
+        "health",
+        "financial_services"
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
-      "decision": "pending",
-      "decision_reason": "Complete official 68-page report was retrieved; identifiers and substantive AI/ML analysis are verified. Imprint establishes 2019 but not an exact issue day. Official indexed contemporaneous announcement and press release establish publication on 8 May 2019, while a later catalogue displays 19 June 2019; direct announcement/press-release requests returned 429/403. Parent review of publication evidence and its distinction from later catalogue metadata remains incomplete. Filename April2019 is not independent issue-date proof. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 6, for exact official release URLs and printed/PDF page locators. Timestamps record inventory reconciliation.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Exact publication is the document-date fallback. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "eiopa-big-data-motor-health-insurance-2019",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Complete official 68-page report was retrieved; identifiers and substantive AI/ML analysis are verified. Imprint establishes 2019 but not an exact issue day. Official indexed contemporaneous announcement and press release establish publication on 8 May 2019, while a later catalogue displays 19 June 2019; direct announcement/press-release requests returned 429/403. Parent review of publication evidence and its distinction from later catalogue metadata remains incomplete. Filename April2019 is not independent issue-date proof. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 6, for exact official release URLs and printed/PDF page locators. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "eba-ai-act-mapping-letter-2025",
@@ -253,11 +293,21 @@
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
       "decision": "pending",
-      "decision_reason": "Complete official nine-page letter and substantive mapping annex were retrieved. Cover gives reference EBA/2025/D/5384 and issue on 21 November 2025; signature identifies the EBA Chairperson. Publication metadata remain discrepant: indexed correspondence archive lists 21 November, whereas general EBA result lists display 20 November. Direct archive retrieval failed. Parent review must preserve or resolve that discrepancy and distinguish this letter-plus-annex from the separate summarising factsheet; neither Commission recipient is a co-author. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 7. Timestamps record inventory reconciliation.",
+      "decision_reason": "The nine-page EBA/2025/D/5384 letter prints 21 November 2025 and the directly retrieved correspondence archive associates it with 21/11/2025. The directly retrieved publication catalogue associates the same work with 20 November 2025. Neither date can be silently promoted to a settled publication date. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Complete official nine-page letter and substantive mapping annex were retrieved. Cover gives reference EBA/2025/D/5384 and issue on 21 November 2025; signature identifies the EBA Chairperson. Publication metadata remain discrepant: indexed correspondence archive lists 21 November, whereas general EBA result lists display 20 November. Direct archive retrieval failed. Parent review must preserve or resolve that discrepancy and distinguish this letter-plus-annex from the separate summarising factsheet; neither Commission recipient is a co-author. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 7. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "ecb-ai-financial-stability-special-feature-2024",
@@ -278,11 +328,21 @@
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
       "decision": "pending",
-      "decision_reason": "Complete official HTML article, ECB release announcement and Governing Council publication-authorisation record were successfully retrieved. The article identifies the May 2024 FSR; actual volume release on 16 May 2024 is independently established. The 8 May authorisation is not substantive adoption, and 10 May dates the authorisation webpage. Parent review of article-level dating, named authorship, work/part treatment and canonical admission remains incomplete; this pending decision is not a missing-full-text finding. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 8, for exact primary date URLs and locators. Timestamps record inventory reconciliation.",
+      "decision_reason": "Fresh complete HTML reveals article-specific meta name citation_online_date content 15 May 2024 (HTML line29), absent from the prior discovery memo. The official FSR launch announcement states volume publication on 16 May2024. This could reflect an online article manifestation preceding the volume or inconsistent metadata; neither explanation is verified. The HTML also contains a placeholder citation_doi, so its metadata cannot be assumed infallible. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Complete official HTML article, ECB release announcement and Governing Council publication-authorisation record were successfully retrieved. The article identifies the May 2024 FSR; actual volume release on 16 May 2024 is independently established. The 8 May authorisation is not substantive adoption, and 10 May dates the authorisation webpage. Parent review of article-level dating, named authorship, work/part treatment and canonical admission remains incomplete; this pending decision is not a missing-full-text finding. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 8, for exact primary date URLs and locators. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "ema-2024-ai-observatory-report-2025",
@@ -294,7 +354,7 @@
       "year": 2025,
       "issuing_institution": "European Medicines Agency",
       "record_level": "principal",
-      "version_label": "Published annual report covering 2024",
+      "version_label": "Annual report covering 2024",
       "official_source_url": "https://www.ema.europa.eu/en/documents/report/2024-ai-observatory-report_en.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
@@ -304,12 +364,22 @@
         "research_and_innovation"
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
-      "decision": "pending",
-      "decision_reason": "Official indexed PDF cover identifies EMA/76534/2025 and issue on 8 May 2025; the document-specific EMA catalogue entry gives first publication on 10 July 2025. Direct full-PDF retrieval returned 429, so full primary text, exact institutional roles and independent admission remain unverified. Activity year 2024 is not publication year. The already included 2025 AI Observatory report is a different annual work; related 2024 compilation and horizon-scanning attachments require separate work/part assessment. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 9. Timestamps record inventory reconciliation.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ema-2024-ai-observatory-report-2025",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official indexed PDF cover identifies EMA/76534/2025 and issue on 8 May 2025; the document-specific EMA catalogue entry gives first publication on 10 July 2025. Direct full-PDF retrieval returned 429, so full primary text, exact institutional roles and independent admission remain unverified. Activity year 2024 is not publication year. The already included 2025 AI Observatory report is a different annual work; related 2024 compilation and horizon-scanning attachments require separate work/part assessment. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 9. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "eba-rising-ai-banking-payments-factsheet-2025",
@@ -321,7 +391,7 @@
       "year": 2025,
       "issuing_institution": "European Banking Authority",
       "record_level": "principal",
-      "version_label": "Digital Finance Factsheet Series, September 2025",
+      "version_label": "Factsheet, 25 September 2025",
       "official_source_url": "https://www.eba.europa.eu/sites/default/files/2025-09/146b3558-d026-47bf-a872-f05e93ed30d2/Rising%20application%20of%20AI%20in%20EU%20banking%20and%20payments%20sector.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
@@ -329,12 +399,22 @@
         "financial_services"
       ],
       "discovered_at": "2026-09-06T22:15:52Z",
-      "decision": "pending",
-      "decision_reason": "Official indexed PDF first-page text and the document-specific EBA result list both give 25 September 2025 and identify the AI-adoption factsheet. Direct full-PDF requests returned 403. Full primary text, pagination, any further identifiers and parent canonical admission remain incomplete. The official Factsheet category should not be overridden by the listing description's generic use of report. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 10, for the exact one-result official catalogue URL and retrieval limitations. Timestamps record inventory reconciliation.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Fresh official full-text and document-specific release evidence resolves the prior hold. Printed issue and exact publication remain distinct. See candidate-health-finance-20260906/report.md and receipts; draft canonical records supplied. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "eba-rising-ai-banking-payments-factsheet-2025",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:15:52Z",
-      "reviewed_by": "AI-assisted candidate inventory reconciliation"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official indexed PDF first-page text and the document-specific EBA result list both give 25 September 2025 and identify the AI-adoption factsheet. Direct full-PDF requests returned 403. Full primary text, pagination, any further identifiers and parent canonical admission remain incomplete. The official Factsheet category should not be overridden by the listing description's generic use of report. See research/discovery/2026-09-06-academic-backfill/health-finance.md, ranked candidate 10, for the exact one-result official catalogue URL and retrieval limitations. Timestamps record inventory reconciliation.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:15:52Z",
+          "reviewed_by": "AI-assisted candidate inventory reconciliation"
+        }
+      ]
     },
     {
       "id": "human-rights-drones-unmanned-robots-warfare-2013",
@@ -355,11 +435,21 @@
       ],
       "discovered_at": "2026-09-06T22:16:12Z",
       "decision": "pending",
-      "decision_reason": "Official Parliament identity, May 2013 issue month, 3 May 2013 publication record, external authorship by Nils Melzer and defence/autonomous-weapons substance are resolved. Direct parent capture of the official PDF returned HTTP 202 with an empty body, so no independently retained document bytes, media-type validation, byte length or SHA-256 exists. Pending until a non-empty official English artifact is captured and hashed; not approved for publication.",
+      "decision_reason": "Fresh official indexed Think Tank metadata confirms Study 03-05-2013, Nils Melzer as external author and PE 410.220 / EXPO/B/DROI/2012/12 identity. Indexed official PDF cover gives May 2013 and substantial autonomous-weapons/human-rights policy recommendations. Three actual official English PDF requests returned HTTP 202, text/html and zero bytes; the page request did likewise. The web opener returned a JavaScript robot-check page. No valid primary English PDF bytes were captured; empty-body hashes in receipts are failed-response hashes, not document snapshots. No exclusion or merge is warranted. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:12Z",
-      "reviewed_by": "AI-assisted evidence review"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official Parliament identity, May 2013 issue month, 3 May 2013 publication record, external authorship by Nils Melzer and defence/autonomous-weapons substance are resolved. Direct parent capture of the official PDF returned HTTP 202 with an empty body, so no independently retained document bytes, media-type validation, byte length or SHA-256 exists. Pending until a non-empty official English artifact is captured and hashed; not approved for publication.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:12Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "id": "ai-border-control-migration-security-main-report-2020",
@@ -371,33 +461,42 @@
       "year": 2020,
       "issuing_institution": "European Commission, Directorate-General for Migration and Home Affairs",
       "record_level": "principal",
-      "version_label": "Final main report, Volume 1",
+      "version_label": "Volume 1: Main Report",
       "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/c8823cd1-a152-11ea-9d2d-01aa75ed71a1/language-en",
       "commissioning_body": "European Commission, Directorate-General for Migration and Home Affairs",
       "candidate_provenance": "eu_commissioned_external",
       "provisional_sector_tags": [
-        "migration_asylum_and_border_management",
-        "law_enforcement"
+        "migration_asylum_and_border_management"
       ],
       "discovered_at": "2026-09-06T22:16:12Z",
-      "decision": "pending",
-      "decision_reason": "Official Publications Office metadata resolves the title, references, May 2020 report month and 28 May 2020 release; the report identifies Deloitte as writer and DG HOME as commissioner/publisher. Repeated HTTP 429 responses prevented capture of independently retained English report bytes and a SHA-256. Pending source capture and hash; the exact canonical day must remain an explicit publication-date fallback rather than an invented internal issue day.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The main report develops AI applications and a roadmap for border control and migration, including their ethical, legal and organisational implications. PDF cover issue month is May 2020. PDF p.5 retains a February 2020 internal deliverable cover (D04.01 & D07.01); neither provides an exact day. The dated official May release is used as publication fallback. The main report is independently citable; Volume 2 is a separate addendum outside this review. Only the positively reviewed migration/border sector is assigned. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ai-border-control-migration-security-main-report-2020",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:12Z",
-      "reviewed_by": "AI-assisted evidence review"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official Publications Office metadata resolves the title, references, May 2020 report month and 28 May 2020 release; the report identifies Deloitte as writer and DG HOME as commissioner/publisher. Repeated HTTP 429 responses prevented capture of independently retained English report bytes and a SHA-256. Pending source capture and hash; the exact canonical day must remain an explicit publication-date fallback rather than an invented internal issue day.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:12Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "id": "people-machines-robots-skills-2017",
       "source_ids": [
         "academic-coverage-backfill-20260906"
       ],
-      "official_reference": "DOI 10.2801/057353; ISBN 978-92-896-2316-2; TI-BB-17-003-EN-N",
+      "official_reference": "Briefing note 9121 EN; DOI 10.2801/057353; ISBN 978-92-896-2316-2; TI-BB-17-003-EN-N",
       "official_title": "People, machines, robots and skills",
       "year": 2017,
       "issuing_institution": "European Centre for the Development of Vocational Training (Cedefop)",
       "record_level": "principal",
-      "version_label": "Final briefing note",
+      "version_label": "Briefing note, July 2017",
       "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/973495f4-ad64-11e7-837e-01aa75ed71a1/language-en",
       "commissioning_body": null,
       "candidate_provenance": "eu_agency_or_body_authored",
@@ -405,12 +504,22 @@
         "employment_and_labour"
       ],
       "discovered_at": "2026-09-06T22:16:12Z",
-      "decision": "pending",
-      "decision_reason": "Official Cedefop material resolves the July 2017 issue month, institutional authorship and employment/skills automation substance; Publications Office gives a 6 March 2018 release. No retained official English bytes or SHA-256 were captured in this bounded audit. Pending byte capture and an explicit decision to use the exact publication date as canonical fallback while preserving the month-only internal issue date.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The briefing examines employment and skills consequences of robotics performing non-routine cognitive work and self-driving vehicles, then develops workforce adaptation and training responses. This is a substantive intelligent-robotics/autonomous-systems precursor, while the wider digital-skills discussion alone would not meet the boundary. The PDF masthead supplies July 2017 only. Cedefop's English download entry independently dates this manifestation to 31 July 2017, supporting a historical publication fallback. The later OP catalogue release of 6 March 2018 does not create a contemporary duplicate. PDF software metadata naming an editor and an August creation timestamp is not treated as bibliographic author or issue-date evidence. Personal bibliographic authors are not credited in the report. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "people-machines-robots-skills-2017",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:12Z",
-      "reviewed_by": "AI-assisted evidence review"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official Cedefop material resolves the July 2017 issue month, institutional authorship and employment/skills automation substance; Publications Office gives a 6 March 2018 release. No retained official English bytes or SHA-256 were captured in this bounded audit. Pending byte capture and an explicit decision to use the exact publication date as canonical fallback while preserving the month-only internal issue date.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:12Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "id": "advanced-robotics-ai-task-automation-osh-2022",
@@ -422,7 +531,7 @@
       "year": 2022,
       "issuing_institution": "European Agency for Safety and Health at Work (EU-OSHA)",
       "record_level": "principal",
-      "version_label": "Final report",
+      "version_label": "Full English report, 71 pages",
       "official_source_url": "https://osha.europa.eu/en/publications/advanced-robotics-artificial-intelligence-and-automation-tasks-definitions-uses-policies-and-strategies-and-occupational-safety-and-health",
       "commissioning_body": "European Agency for Safety and Health at Work (EU-OSHA)",
       "candidate_provenance": "eu_commissioned_external",
@@ -430,24 +539,34 @@
         "employment_and_labour"
       ],
       "discovered_at": "2026-09-06T22:16:12Z",
-      "decision": "pending",
-      "decision_reason": "The official page resolves publication on 26 April 2022, the report references and substantive workplace/OSH AI scope. The credited external authors are Patricia Helen Rosen, Eva Heinold, Elena Fries-Tersch, Phoebe Moore and Sascha Wischniewski; EU-OSHA project managers are not bibliographic authors. The official PDF retrieval failed in the browsing layer, leaving no retained bytes or SHA-256. Pending successful official English capture and hash.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The report analyses AI-based systems and advanced robotics for workplace task automation, with a taxonomy, sectoral uses and occupational-safety-and-health policies. The PDF provides the year 2022 but no exact internal issue day. The official report release of 26 April 2022 is the publication fallback. Project managers Ioannis Anyfantis, Annick Starren and Emmanuelle Brun are not represented as authors. This full report is distinct from the already included AI worker-management report. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "advanced-robotics-ai-task-automation-osh-2022",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:12Z",
-      "reviewed_by": "AI-assisted evidence review"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "The official page resolves publication on 26 April 2022, the report references and substantive workplace/OSH AI scope. The credited external authors are Patricia Helen Rosen, Eva Heinold, Elena Fries-Tersch, Phoebe Moore and Sascha Wischniewski; EU-OSHA project managers are not bibliographic authors. The official PDF retrieval failed in the browsing layer, leaving no retained bytes or SHA-256. Pending successful official English capture and hash.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:12Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "id": "ai-watch-ai-uptake-smart-mobility-2021",
       "source_ids": [
         "academic-coverage-backfill-20260906"
       ],
-      "official_reference": "JRC126302; EUR 30821 EN; DOI 10.2760/879190; ISBN 978-92-76-41403-2",
+      "official_reference": "JRC126302; EUR 30821 EN; DOI 10.2760/879190; ISBN 978-92-76-41403-2; KJ-NA-30821-EN-N",
       "official_title": "AI Watch: AI Uptake in Smart Mobility",
       "year": 2021,
       "issuing_institution": "European Commission, Joint Research Centre",
       "record_level": "principal",
-      "version_label": "Final JRC technical report",
+      "version_label": "First edition, JRC technical report",
       "official_source_url": "https://ai-watch.ec.europa.eu/publications/ai-watch-ai-uptake-smart-mobility_en",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -455,24 +574,34 @@
         "transport_and_mobility"
       ],
       "discovered_at": "2026-09-06T22:16:12Z",
-      "decision": "pending",
-      "decision_reason": "AI Watch and Publications Office resolve publication on 15 September 2021, JRC references, authors S. De Nigris, J. Hradec, M. Craglia and D. Nepelski, and substantive AI-in-mobility coverage. No official English file was retained or hashed during the bounded audit. Pending byte capture, media-type validation and SHA-256 before admission.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The JRC report analyses AI uptake in smart mobility, including traffic, access to transport, road safety, data governance and algorithmic fairness. Year 2021 is the report's internal precision; the exact official publication date supplies the canonical fallback. PDF p.5 calls this the first edition. Acknowledged reviewers and contributors are not bibliographic authors. The JRC endpoint returned a rejection HTML body, so the equivalent official Publications Office English PDF was captured and inspected. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ai-watch-ai-uptake-smart-mobility-2021",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:12Z",
-      "reviewed_by": "AI-assisted evidence review"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "AI Watch and Publications Office resolve publication on 15 September 2021, JRC references, authors S. De Nigris, J. Hradec, M. Craglia and D. Nepelski, and substantive AI-in-mobility coverage. No official English file was retained or hashed during the bounded audit. Pending byte capture, media-type validation and SHA-256 before admission.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:12Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "id": "ethics-connected-automated-vehicles-2020",
       "source_ids": [
         "academic-coverage-backfill-20260906"
       ],
-      "official_reference": "DOI 10.2777/035239; ISBN 978-92-76-17867-5; KI-03-20-238-EN-N",
+      "official_reference": "E03659; DOI 10.2777/035239; ISBN 978-92-76-17867-5; KI-03-20-238-EN-N",
       "official_title": "Ethics of connected and automated vehicles: Recommendations on road safety, privacy, fairness, explainability and responsibility",
       "year": 2020,
       "issuing_institution": "Independent Expert Group on the Ethics of Connected and Automated Vehicles; European Commission, Directorate-General for Research and Innovation",
       "record_level": "principal",
-      "version_label": "Final recommendations report",
+      "version_label": "1st edition",
       "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/89624e2c-f98c-11ea-b44f-01aa75ed71a1/language-en/",
       "commissioning_body": "European Commission, Directorate-General for Research and Innovation",
       "candidate_provenance": "eu_expert_group_authored",
@@ -480,12 +609,22 @@
         "transport_and_mobility"
       ],
       "discovered_at": "2026-09-06T22:16:12Z",
-      "decision": "pending",
-      "decision_reason": "Publications Office resolves the title, references and 17 September 2020 release, and the report is substantively about AI ethics in connected and automated vehicles. Admission remains blocked on two evidence items: retained official English bytes with SHA-256, and inspection of the PDF credit page to distinguish the independent expert group as substantive author from DG Research and Innovation as commissioner/publisher. Pending; no canonical document identifier assigned.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "Official English primary bytes, exact publication fallback, identity and authorship have been reviewed. The report proposes twenty ethical recommendations for connected and automated vehicles, with sustained treatment of AI, data protection, fairness and explainability in road mobility. PDF p.2 says manuscript completed in June 2020 and first edition; it does not state an exact internal day. The official OP release of 17 September 2020 is used as publication fallback. The PDF credits the expert group as bibliographic author. PDF p.4 lists members Jean-François Bonnefon (Chairman), David Černý, John Danaher, Nathalie Devillier, Veronica Johansson, Tatiana Kovacikova, Marieke Martens, Milos N. Mladenovic, Paula Palade, Nick Reed, Filippo Santoni de Sio (Rapporteur), Stavroula Tsinorema, Sandra Wachter and Karolina Zawieska. Their membership is preserved without converting each member into an individually credited author. DG RTD's OP corporate-metadata entry does not supersede the report's explicit authorship citation. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ethics-connected-automated-vehicles-2020",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:12Z",
-      "reviewed_by": "AI-assisted evidence review"
+      "reviewed_at": "2026-09-06T23:01:39Z",
+      "reviewed_by": "AI-assisted evidence review",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Publications Office resolves the title, references and 17 September 2020 release, and the report is substantively about AI ethics in connected and automated vehicles. Admission remains blocked on two evidence items: retained official English bytes with SHA-256, and inspection of the PDF credit page to distinguish the independent expert group as substantive author from DG Research and Innovation as commissioner/publisher. Pending; no canonical document identifier assigned.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:12Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -493,24 +632,35 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "jrc-ai-watch-defining-ai-2020",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Published report",
       "id": "jrc-ai-watch-defining-ai-2020",
-      "official_title": "AI Watch. Defining Artificial Intelligence",
+      "official_title": "AI Watch. Defining Artificial Intelligence: Towards an operational definition and taxonomy of artificial intelligence",
       "year": 2020,
-      "official_reference": "JRC118163",
+      "official_reference": "JRC118163; EUR 30117 EN; DOI 10.2760/382730",
       "official_source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC118163",
       "issuing_institution": "JRC, European Commission",
       "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
+        "general_cross_sector",
         "research_and_innovation"
       ],
-      "decision_reason": "Official catalogue inspected; full English PDF, personal credits and publication correspondence require completion."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official catalogue inspected; full English PDF, personal credits and publication correspondence require completion.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -518,24 +668,35 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "jrc-ai-watch-defining-ai-2-2021",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Second edition",
       "id": "jrc-ai-watch-defining-ai-2-2021",
-      "official_title": "AI Watch. Defining Artificial Intelligence 2.0",
+      "official_title": "AI Watch. Defining Artificial Intelligence 2.0: Towards an operational definition and taxonomy for the AI landscape",
       "year": 2021,
-      "official_reference": "JRC126426",
+      "official_reference": "JRC126426; EUR 30873 EN; DOI 10.2760/019901",
       "official_source_url": "https://op.europa.eu/en/publication-detail/-/publication/83838dbc-3d1f-11ec-89db-01aa75ed71a1",
       "issuing_institution": "JRC, European Commission",
-      "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "record_level": "version",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
+        "general_cross_sector",
         "research_and_innovation"
       ],
-      "decision_reason": "Official OP release29October2021 and second-edition description inspected; full text and version lineage review incomplete."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Official OP release29October2021 and second-edition description inspected; full text and version lineage review incomplete.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -543,24 +704,34 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "jrc-ai-watch-public-services-2020",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Published report",
       "id": "jrc-ai-watch-public-services-2020",
-      "official_title": "AI Watch - Artificial Intelligence in public services",
+      "official_title": "AI Watch - Artificial Intelligence in public services: Overview of the use and impact of AI in public services in the EU",
       "year": 2020,
-      "official_reference": "JRC120399",
+      "official_reference": "JRC120399; EUR 30255 EN; DOI 10.2760/039619",
       "official_source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC120399",
       "issuing_institution": "JRC, European Commission",
       "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
         "public_administration"
       ],
-      "decision_reason": "Catalogue inspected; full credit and exact-publication correspondence review incomplete."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Catalogue inspected; full credit and exact-publication correspondence review incomplete.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -568,24 +739,34 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "jrc-ai-watch-public-sector-workshop-2020",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Published report",
       "id": "jrc-ai-watch-public-sector-workshop-2020",
-      "official_title": "AI Watch - Artificial Intelligence for the public sector",
+      "official_title": "AI Watch - Artificial Intelligence for the public sector: Report of the 1st Peer Learning Workshop on the use and impact of AI in public services, Brussels 11-12 February 2020",
       "year": 2020,
-      "official_reference": "JRC120315",
+      "official_reference": "JRC120315; DOI 10.2760/25756",
       "official_source_url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC120315",
       "issuing_institution": "JRC, European Commission",
       "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
         "public_administration"
       ],
-      "decision_reason": "Workshop report lead; full manifestation/date review incomplete. Meeting11-12February2020 is not a publication date."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Workshop report lead; full manifestation/date review incomplete. Meeting11-12February2020 is not a publication date.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -593,24 +774,35 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "council-decision-82-878-eec-esprit-pilot",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Official Journal text",
       "id": "council-decision-82-878-eec-esprit-pilot",
-      "official_title": "Council Decision82/878/EEC on an experimental phase of a Community research and development programme in information technology",
+      "official_title": "Council Decision of 21 December 1982 on a preparatory phase for a Community research and development programme in the field of information technologies (82/878/EEC)",
       "year": 1982,
       "official_reference": "82/878/EEC",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31982D0878",
       "issuing_institution": "Council of the European Communities",
       "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
-        "research_and_innovation"
+        "research_and_innovation",
+        "industry_and_manufacturing"
       ],
-      "decision_reason": "Pre-1984 lead; full-text access failed and substantive AI/precursor connection remains unestablished. Generic information technology is insufficient."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Pre-1984 lead; full-text access failed and substantive AI/precursor connection remains unestablished. Generic information technology is insufficient.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -618,24 +810,35 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "council-decision-2022-2269-responsible-ai",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Official Journal text",
       "id": "council-decision-2022-2269-responsible-ai",
-      "official_title": "Council Decision(CFSP)2022/2269",
+      "official_title": "Council Decision (CFSP) 2022/2269 of 18 November 2022 on Union support for the implementation of a project 'Promoting Responsible Innovation in Artificial Intelligence for Peace and Security'",
       "year": 2022,
-      "official_reference": "2022/2269",
+      "official_reference": "Council Decision (CFSP) 2022/2269",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2269",
       "issuing_institution": "Council of the European Union",
       "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
-        "defence_and_security"
+        "defence_and_security",
+        "research_and_innovation"
       ],
-      "decision_reason": "Incidental responsible-AI peace/security lead. Full title, dates and operative evidence review incomplete."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Incidental responsible-AI peace/security lead. Full title, dates and operative evidence review incomplete.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -643,24 +846,35 @@
       ],
       "commissioning_body": null,
       "discovered_at": "2026-09-06T22:16:06Z",
-      "decision": "pending",
-      "document_id": null,
+      "decision": "included",
+      "document_id": "eurohpc-ai-gigafactories-regulation-2026-150",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
-      "version_label": null,
+      "version_label": "Official Journal text",
       "id": "eurohpc-ai-gigafactories-regulation-2026-150",
-      "official_title": "Regulation(EU)2026/150",
+      "official_title": "Council Regulation (EU) 2026/150 of 16 January 2026 amending Regulation (EU) 2021/1173 on establishing the European High Performance Computing Joint Undertaking",
       "year": 2026,
-      "official_reference": "2026/150",
+      "official_reference": "Council Regulation (EU) 2026/150",
       "official_source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0150",
       "issuing_institution": "European Union institutions; precise roles pending",
       "record_level": "principal",
-      "candidate_provenance": "unknown_pending_review",
+      "candidate_provenance": "eu_institution_authored",
       "provisional_sector_tags": [
-        "research_and_innovation"
+        "research_and_innovation",
+        "critical_infrastructure"
       ],
-      "decision_reason": "Incidental AI gigafactories lead. Full title, institutional roles, publication and substantive review incomplete."
+      "decision_reason": "Primary identity, full text, date semantics and attribution independently reviewed; see root-source-checks.json. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Incidental AI gigafactories lead. Full title, institutional roles, publication and substantive review incomplete.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "source_ids": [
@@ -671,7 +885,7 @@
       "decision": "pending",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T22:16:06Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "version_label": null,
       "id": "gpai-provider-guidelines-c-2025-7719",
@@ -685,11 +899,23 @@
       "provisional_sector_tags": [
         "general_cross_sector"
       ],
-      "decision_reason": "Active-queue reconciliation, not new discovery/fresh publication verification. research/staging/2026-09-05-review-continuation/commission.json records19November2025 issue and unresolved exact publication. Distinct from JulyC(2025)5045ANNEX; do not copy July release date."
+      "decision_reason": "Exact36-page C(2025)7719 final PDF and November19 issue confirmed; official register transmission on November19 is not public release. July18 library publication predates this exact version; current library updateApril20,2026 is not its first publication. November24 search result concerns whistleblowing, not these guidelines. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "decision_history": [
+        {
+          "decision": "pending",
+          "decision_reason": "Active-queue reconciliation, not new discovery/fresh publication verification. research/staging/2026-09-05-review-continuation/commission.json records19November2025 issue and unresolved exact publication. Distinct from JulyC(2025)5045ANNEX; do not copy July release date.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T22:16:06Z",
+          "reviewed_by": "AI-assisted evidence review"
+        }
+      ]
     },
     {
       "id": "draft-high-risk-classification-guidelines-consultation-work-2026",
-      "source_ids": ["commission-consultation-high-risk"],
+      "source_ids": [
+        "commission-consultation-high-risk"
+      ],
       "official_reference": null,
       "official_title": "Draft Commission Guidelines on the classification of high-risk AI systems",
       "year": 2026,
@@ -699,7 +925,20 @@
       "official_source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems",
       "commissioning_body": null,
       "candidate_provenance": "official_consultation_material",
-      "provisional_sector_tags": ["general_cross_sector", "health", "employment_and_labour", "migration_asylum_and_border_management", "financial_services", "transport_and_mobility", "law_enforcement", "justice", "education", "public_administration", "industry_and_manufacturing", "critical_infrastructure"],
+      "provisional_sector_tags": [
+        "general_cross_sector",
+        "health",
+        "employment_and_labour",
+        "migration_asylum_and_border_management",
+        "financial_services",
+        "transport_and_mobility",
+        "law_enforcement",
+        "justice",
+        "education",
+        "public_administration",
+        "industry_and_manufacturing",
+        "critical_infrastructure"
+      ],
       "discovered_at": "2026-09-06T21:03:47Z",
       "decision": "included",
       "decision_reason": "Retrospective inventory reconciliation, not a new document admission or a reconstructed search. The complete consultation work was admitted and reviewed at 2026-09-06T17:05:16Z in research/migrations/2026-09-06-six-record-evidence-update.json. That ledger and the existing canonical record establish the work identity, three official sections and publication on 19 May 2026. The discovered_at and reviewed_at values here date the identification and reconciliation of the missing inventory entry, not the original source retrieval or admission. No prior candidate decision is invented and the publication cutoff is unchanged.",
@@ -1740,10 +1979,10 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "decision_reason": "New evidence strengthens separation of endorsement from public release and corroborates seventh meeting; it still does not establish exact version-specific issue/adoption and public-release dates. Keep pending. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -1761,6 +2000,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -1783,10 +2030,10 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "decision_reason": "New evidence strengthens separation of endorsement from public release and corroborates seventh meeting; it still does not establish exact version-specific issue/adoption and public-release dates. Keep pending. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -1804,6 +2051,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -1826,10 +2081,10 @@
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
       "decision": "pending",
-      "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+      "decision_reason": "New evidence strengthens separation of endorsement from public release and corroborates seventh meeting; it still does not establish exact version-specific issue/adoption and public-release dates. Keep pending. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
       "document_id": null,
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -1847,6 +2102,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Independent English PDF recovered and cover reference confirmed. Cover gives March 2026; June Ares registration is not a public-release date. Minutes report approval on 20 March but do not enumerate these versions and disagree with the register's meeting ordinal. Exact version-specific issue/adoption and public-release dates remain unresolved. Retained pending under the unchanged exact-date rule. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3123,12 +3386,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.802",
-      "official_title": "Amendments 310 - 538 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.802v01-00",
+      "official_title": "AMENDMENTS 310 - 538 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 310 - 538 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732802_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3136,11 +3399,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.802v01-00 PDF recovered; amendments 310 - 538 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732802",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3158,6 +3421,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.802v01-00 PDF recovered; amendments 310 - 538 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3166,12 +3437,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.836",
-      "official_title": "Amendments 539 - 773 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.836v01-00",
+      "official_title": "AMENDMENTS 539 - 773 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 539 - 773 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732836_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3179,11 +3450,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.836v01-00 PDF recovered; amendments 539 - 773 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732836",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3201,6 +3472,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.836v01-00 PDF recovered; amendments 539 - 773 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3209,12 +3488,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.837",
-      "official_title": "Amendments 774 - 1189 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.837v01-00",
+      "official_title": "AMENDMENTS 774 - 1189 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 774 - 1189 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732837_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3222,11 +3501,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.837v01-00 PDF recovered; amendments 774 - 1189 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732837",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3244,6 +3523,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.837v01-00 PDF recovered; amendments 774 - 1189 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3252,12 +3539,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.838",
-      "official_title": "Amendments 1190 - 1580 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.838v01-00",
+      "official_title": "AMENDMENTS 1190 - 1580 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 1190 - 1580 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732838_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3265,11 +3552,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.838v01-00 PDF recovered; amendments 1190 - 1580 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732838",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3287,6 +3574,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.838v01-00 PDF recovered; amendments 1190 - 1580 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3295,12 +3590,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.839",
-      "official_title": "Amendments 1581 - 2005 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.839v01-00",
+      "official_title": "AMENDMENTS 1581 - 2005 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 1581 - 2005 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732839_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3308,11 +3603,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.839v01-00 PDF recovered; amendments 1581 - 2005 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732839",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3330,6 +3625,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.839v01-00 PDF recovered; amendments 1581 - 2005 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3338,12 +3641,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.840",
-      "official_title": "Amendments 2006 - 2355 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.840v01-00",
+      "official_title": "AMENDMENTS 2006 - 2355 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 2006 - 2355 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732840_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3351,11 +3654,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.840v01-00 PDF recovered; amendments 2006 - 2355 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732840",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3373,6 +3676,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.840v01-00 PDF recovered; amendments 2006 - 2355 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3381,12 +3692,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.841",
-      "official_title": "Amendments 2356 - 2726 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.841v01-00",
+      "official_title": "AMENDMENTS 2356 - 2726 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 2356 - 2726 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732841_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3394,11 +3705,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.841v01-00 PDF recovered; amendments 2356 - 2726 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732841",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3416,6 +3727,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.841v01-00 PDF recovered; amendments 2356 - 2726 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3424,12 +3743,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.843",
-      "official_title": "Amendments 2727 - 3019 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.843v01-00",
+      "official_title": "AMENDMENTS 2727 - 3019 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 2727 - 3019 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732843_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3437,11 +3756,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.843v01-00 PDF recovered; amendments 2727 - 3019 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732843",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3459,6 +3778,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.843v01-00 PDF recovered; amendments 2727 - 3019 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
@@ -3467,12 +3794,12 @@
       "source_ids": [
         "ep-oeil-2021-0106"
       ],
-      "official_reference": "PE732.844",
-      "official_title": "Amendments 3020 - 3312 to the draft report on harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
+      "official_reference": "PE732.844v01-00",
+      "official_title": "AMENDMENTS 3020 - 3312 - Draft report Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts",
       "year": 2022,
       "issuing_institution": "European Parliament",
       "record_level": "supporting",
-      "version_label": "Committee amendments",
+      "version_label": "Proposed committee amendments 3020 - 3312 -; v01-00",
       "official_source_url": "https://www.europarl.europa.eu/doceo/document/CJ40-AM-732844_EN.pdf",
       "commissioning_body": null,
       "candidate_provenance": "eu_institution_authored",
@@ -3480,11 +3807,11 @@
         "general_cross_sector"
       ],
       "discovered_at": "2026-09-04T00:00:00Z",
-      "decision": "pending",
-      "decision_reason": "Exact English PE732.844v01-00 PDF recovered; amendments 3020 - 3312 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
-      "document_id": null,
+      "decision": "included",
+      "decision_reason": "New official Open Data API distinguishes work date from exact English PDF formal issuance; fresh distribution PDF checksum and byte size match retained cover-verified v01-00. Date/identity hold resolved without using 10 June as publication. Final adjudication: research/reviews/2026-09-06-candidate-snapshot/candidate-decisions.json.",
+      "document_id": "ep-ai-act-committee-amendments-pe-732844",
       "merged_into_document_id": null,
-      "reviewed_at": "2026-09-06T21:42:50Z",
+      "reviewed_at": "2026-09-06T23:01:39Z",
       "reviewed_by": "AI-assisted evidence review",
       "decision_history": [
         {
@@ -3502,6 +3829,14 @@
           "merged_into_document_id": null,
           "reviewed_at": "2026-09-05T05:38:52Z",
           "reviewed_by": "AI-assisted scope-review reopening"
+        },
+        {
+          "decision": "pending",
+          "decision_reason": "Exact English PE732.844v01-00 PDF recovered; amendments 3020 - 3312 and procedure confirmed. HTML and OEIL date the entry 10 June 2022; PDF cover dates 13 June 2022. Catalogue date is not silently assigned as publication of later-dated bytes. Retained pending manifestation/publication reconciliation, not excluded merely for being proposed amendments. See research/reviews/2026-09-06-release-closure/candidate-decisions.json.",
+          "document_id": null,
+          "merged_into_document_id": null,
+          "reviewed_at": "2026-09-06T21:42:50Z",
+          "reviewed_by": "AI-assisted evidence review"
         }
       ]
     },
