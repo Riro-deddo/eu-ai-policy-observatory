@@ -280,8 +280,20 @@ test('record relationships expose parent, attachment, version and procedure navi
 
   await page.goto('corpus/ai-act-council-third-compromise-part-one-st-12206-2022-init/');
   const versions = page.getByRole('region', { name: 'Previous and next versions' });
-  await expect(versions.getByRole('link', { name: 'Second Council Presidency compromise' })).toBeVisible();
-  await expect(versions.getByRole('link', { name: 'Third Council compromise, part one' })).toBeVisible();
+  await expect(versions.getByRole('link', { name: 'Second Council Presidency compromise' })).toHaveCount(0);
+  const revision = versions.getByRole('link', { name: 'Third Council compromise, part one', exact: true });
+  await expect(revision).toHaveAttribute(
+    'href', `${expectedBasePath}corpus/ai-act-council-third-compromise-part-one-st-12206-2022-rev-1/`,
+  );
+  await revision.click();
+  await expect(page).toHaveURL(/\/corpus\/ai-act-council-third-compromise-part-one-st-12206-2022-rev-1\/$/);
+  const revisedVersions = page.getByRole('region', { name: 'Previous and next versions' });
+  await expect(revisedVersions.getByRole('link', { name: 'Second Council Presidency compromise' })).toHaveAttribute(
+    'href', `${expectedBasePath}corpus/ai-act-council-second-compromise-st-11124-2022/`,
+  );
+  await expect(revisedVersions.getByRole('link', { name: 'Third Council compromise, part one — initial version' })).toHaveAttribute(
+    'href', `${expectedBasePath}corpus/ai-act-council-third-compromise-part-one-st-12206-2022-init/`,
+  );
 
   await page.goto('corpus/ai-act-proposal/');
   const procedure = page.getByRole('region', { name: 'Formal procedure' });
